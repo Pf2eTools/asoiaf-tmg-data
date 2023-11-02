@@ -179,7 +179,14 @@ def BuildUnitCard(faction, UnitData, units_folder, AsoiafFonts, unit_card_output
     large_onright_vertical_gold_bar = large_onleft_vertical_gold_bar.copy()
     right_onright_vertical_gold_bar = right_onleft_vertical_gold_bar.copy()
 
+    # Skill Panel
+    skill_panel_bottom = Image.open(f"{units_folder}SkillBottom{faction}.webp").convert('RGBA')
+    skill_panel_separator = Image.open(f"{units_folder}Divider{faction}.webp").convert('RGBA')
+    skill_panel_top = skill_panel_bottom.copy().transpose(Image.FLIP_TOP_BOTTOM)
+    skills_tan_background_for_text = Image.open(f"{units_folder}SkillsBg.webp").convert('RGBA')
+
     # Actually probably need to parse unit data to dynamically pull these
+    # In units folder
     additional_images_to_load = """
     AttackBgGold.webp
     AttackBgSilver.webp
@@ -199,18 +206,98 @@ def BuildUnitCard(faction, UnitData, units_folder, AsoiafFonts, unit_card_output
     SkillOrderSilver.webp
     SkillPillageGold.webp
     SkillPillageSilver.webp
-    SkillsBg.webp
     SkillVenomGold.webp
     SkillWoundsGold.webp
     SkillWoundsSilver.webp
     """
+    # In assets/graphics/ folder, some of these are used by the app and not are cards. Will need to check in on them:
+    # Like for sure RangeShortSilver.png etc...
+    additional_images_to_check = """
+    AppBGHeader.jpg
+    AppBGNone.jpg
+    ArmyError.png
+    ArmyOk.png
+    AttachmentArrow.png
+    barNone.png
+    Bar.png
+    BGCollection.webp
+    BGContent.jpg
+    bgCount.png
+    BGCreateArmy.jpg
+    BGStart.jpg
+    BGText.png
+    Bt2.png
+    BtArrow.png
+    BtBGLeft.png
+    BtBGRight.png
+    BtCreateArmy.png
+    BtGold.png
+    Bt.png
+    CROWN.png
+    HeaderBar0.png
+    HeaderBar1.png
+    HeaderBar2.png
+    HeaderDecoration.png
+    HORSE.png
+    IconCard.png
+    IconCheck.png
+    IconCrown.png
+    IconDefense.png
+    IconEdit.png
+    IconExclamation.png
+    IconEye.png
+    IconFaith.png
+    IconFire.png
+    IconMelee.png
+    IconMorale.png
+    IconMovement.png
+    IconOrder.png
+    IconPen.png
+    IconPillage.png
+    IconQuestion.png
+    IconRanged.png
+    IconShare.png
+    IconVenom.png
+    IconWound.png
+    LETTER.png
+    Logo.webp
+    LONGRANGE.png
+    MONEY.png
+    MOVEMENT.png
+    OASIS.png
+    RangeLongGold.png
+    RangeLongSilver.png
+    RangeShortGold.png
+    RangeShortSilver.png
+    SmallBtBGBlue.png
+    SmallBtBGGreen.png
+    SmallBtBGPurple.png
+    SmallBtBGRed.png
+    SmallBtBow.png
+    SmallBtFrame.png
+    SmallBtSword.png
+    SquareBorder.png
+    SWORDS.png
+    ToggleOff.png
+    ToggleOn.png
+    UNDYING.png
+    UnitTypeCavalry.png
+    UnitTypeInfantry.png
+    UnitTypeMonster.png
+    UnitTypeNCU.png
+    UnitTypeNone.png
+    UnitTypeSiegeEngine.png
+    WOUND.png
+    """
+    
 
-    unit_bg_image = add_debug_border(unit_bg_image)
-    top_left_red_gold_bar = add_debug_border(top_left_red_gold_bar)
-    large_bar = add_debug_border(large_bar)
-    next_red_gold_bar_below = add_debug_border(next_red_gold_bar_below)
-    movement_foot_image = add_debug_border(movement_foot_image)
-    movement_foot_stat_bg_image = add_debug_border(movement_foot_stat_bg_image)
+    # This does nothing if you dont uncomment pass debug true. I only add to see where images are. Which are which
+    #unit_bg_image = add_debug_border(unit_bg_image)
+    #top_left_red_gold_bar = add_debug_border(top_left_red_gold_bar)
+    #large_bar = add_debug_border(large_bar)
+    #next_red_gold_bar_below = add_debug_border(next_red_gold_bar_below)
+    #movement_foot_image = add_debug_border(movement_foot_image)
+    #movement_foot_stat_bg_image = add_debug_border(movement_foot_stat_bg_image)
 
     # Create unit card
     unit_card = Image.new('RGBA', unit_bg_image.size)
@@ -232,7 +319,10 @@ def BuildUnitCard(faction, UnitData, units_folder, AsoiafFonts, unit_card_output
 
     # Add text
     draw = ImageDraw.Draw(unit_card)
-    # Not sure what 
+    # Retrieve font text
+    # Tuff-Italic appears to be the 2021 numbering on left side of card and for the attack name (Long Sword etc...)
+    # Tuff-Bold appears to be for title of abilities (in red) and keywords (in black)
+    # Tuff-Normal for all other ability text
     GaramondBoldFont = AsoiafFonts.get('Garamond-Bold', ImageFont.load_default()) # this should be the correct font for stat lines
     draw.text((175, 85), UnitData['Spd'], font=GaramondBoldFont, fill="white")
     TuffBoldFont = AsoiafFonts.get('Tuff-Bold', ImageFont.load_default()) # this should be the correct font for unit name
