@@ -3,7 +3,7 @@ import csv
 import os
 import tkinter as tk
 import pdb
-from PIL import Image, ImageDraw, ImageFont, ImageTk
+from PIL import Image, ImageDraw, ImageFont, ImageTk, ImageFilter
 
 #pip install pillow
 
@@ -63,22 +63,49 @@ def import_csvs_to_dicts(assets_data_folder):
 # I use this so I can load the unit card and get x + y on the card so I can more easily get coordinates of images on click
 
 class ImageEditor:
-    def __init__(self, master, unit_card_image):
+    modes = [
+        "genenerated",
+        "original",
+        "overlayed"
+    ]
+
+    def __init__(self, master, generated_image, original_image):
         self.master = master
+        self.mode = "genenerated"
         master.title("Image Editor")
 
-        self.unit_card_image = unit_card_image
-        self.tk_image = ImageTk.PhotoImage(self.unit_card_image)
-        
-        self.label = tk.Label(master, image=self.tk_image)
+        cpy_generated = generated_image.copy()
+        cpy_generated.putalpha(int(255 * 0.4))
+        cpy_original = original_image.copy()
+        cpy_original.putalpha(255)
+        overlayed = Image.new('RGBA', cpy_original.size)
+        overlayed.paste(cpy_original, mask=cpy_original)
+        overlayed.paste(cpy_generated, mask=cpy_generated)
+
+        self.tk_images = {
+            "genenerated": ImageTk.PhotoImage(generated_image),
+            "original": ImageTk.PhotoImage(original_image),
+            "overlayed": ImageTk.PhotoImage(overlayed)
+        }
+
+        self.label = tk.Label(master, image=self.tk_images[self.mode])
         self.label.pack()
 
         self.label.bind("<Button-1>", self.log_coordinates)
+        self.master.bind("<Key>", self.switch_mode)
 
-    def log_coordinates(self, event):
+    @staticmethod
+    def log_coordinates(event):
         x = event.x
         y = event.y
         print("Clicked at:", x, y)
+
+    def switch_mode(self, event):
+        char = event.char.lower()
+        if char == "s":
+            ix = self.modes.index(self.mode)
+            self.mode = self.modes[(ix + 1) % len(self.modes)]
+            self.label.configure(image=self.tk_images[self.mode])
 
 
 def draw_centered_text(draw, position, text_lines_list, font, fill, line_padding=0):
@@ -102,6 +129,16 @@ def draw_centered_text(draw, position, text_lines_list, font, fill, line_padding
         draw.text((x - text_width / 2, y), line, font=font, fill=fill)
         y += text_height + line_padding
 
+def apply_drop_shadow(image, shadow_size=3, colour="black"):
+    border = 20
+    shadow = Image.new('RGBA', (image.size[0] + shadow_size*2 + border*2, image.size[1] + shadow_size*2 + border*2))
+    mask = image.copy()
+    mask = mask.resize((image.size[0] + shadow_size*2, image.size[1] + shadow_size*2))
+    shadow.paste(colour, (border - shadow_size, border - shadow_size), mask=mask)
+    for i in range(10):
+        shadow = shadow.filter(ImageFilter.BLUR)
+    shadow.paste(image, (border, border), mask=image)
+    return shadow
 
 def BuildUnitCard(faction, UnitData, units_folder, AsoiafFonts, unit_card_output_dir, debug=False):
     """
@@ -289,7 +326,7 @@ def BuildUnitCard(faction, UnitData, units_folder, AsoiafFonts, unit_card_output
     UnitTypeSiegeEngine.png
     WOUND.png
     """
-    
+
 
     # This does nothing if you dont uncomment pass debug true. I only add to see where images are. Which are which
     #unit_bg_image = add_debug_border(unit_bg_image)
@@ -301,7 +338,7 @@ def BuildUnitCard(faction, UnitData, units_folder, AsoiafFonts, unit_card_output
 
     # Create unit card
     unit_card = Image.new('RGBA', unit_bg_image.size)
-    
+
     # Place images on unit card
     unit_card.paste(unit_bg_image, (0, 0), unit_bg_image)
     yOffset = 60
@@ -351,7 +388,8 @@ def main():
     unit_card = BuildUnitCard(faction, LannisterGuardsmenUnitData, units_folder, AsoiafFonts, unit_card_output_dir, debug=False) #debug draws lines around images
     # This is just for viewing / debugging purposes. Can click to get coordinates on image:
     root = tk.Tk()
-    app = ImageEditor(root, unit_card)
+    guards_original_image = Image.open("guards.jpg")
+    app = ImageEditor(root, unit_card, guards_original_image)
     root.mainloop()
 
 
