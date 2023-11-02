@@ -129,15 +129,25 @@ def draw_centered_text(draw, position, text_lines_list, font, fill, line_padding
         draw.text((x - text_width / 2, y), line, font=font, fill=fill)
         y += text_height + line_padding
 
-def apply_drop_shadow(image, shadow_size=3, colour="black"):
-    border = 20
-    shadow = Image.new('RGBA', (image.size[0] + shadow_size*2 + border*2, image.size[1] + shadow_size*2 + border*2))
+def apply_drop_shadow(image, shadow_size=3, border_size=20, colour="black"):
+    """
+    Draw drop shadow around the image. Increases image size.
+
+    :param image: PIL image object to apply the shadow to.
+    :param shadow_size: Number of pixels
+    :param colour: Colour string supported by ImageColor
+    :param border_size: Number of transparent pixels around the original image
+
+    :returs: PIL image object
+    """
+
+    shadow = Image.new('RGBA', (image.size[0] + shadow_size*2 + border_size*2, image.size[1] + shadow_size*2 + border_size*2))
     mask = image.copy()
     mask = mask.resize((image.size[0] + shadow_size*2, image.size[1] + shadow_size*2))
-    shadow.paste(colour, (border - shadow_size, border - shadow_size), mask=mask)
+    shadow.paste(colour, (border_size - shadow_size, border_size - shadow_size), mask=mask)
     for i in range(10):
         shadow = shadow.filter(ImageFilter.BLUR)
-    shadow.paste(image, (border, border), mask=image)
+    shadow.paste(image, (border_size, border_size), mask=image)
     return shadow
 
 def BuildUnitCard(faction, UnitData, units_folder, AsoiafFonts, unit_card_output_dir, debug=False):
