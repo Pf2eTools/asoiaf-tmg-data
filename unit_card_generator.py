@@ -2,8 +2,9 @@
 import csv
 import os
 import tkinter as tk
+import re
 import pdb
-from PIL import Image, ImageDraw, ImageFont, ImageTk, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageTk, ImageFilter, ImageOps
 import sys
 
 #pip install pillow
@@ -82,22 +83,49 @@ def import_csvs_to_dicts(assets_data_folder):
 # I use this so I can load the unit card and get x + y on the card so I can more easily get coordinates of images on click
 
 class ImageEditor:
-    def __init__(self, master, unit_card_image):
+    modes = [
+        "genenerated",
+        "original",
+        # "overlayed"
+    ]
+
+    def __init__(self, master, generated_image, original_image):
         self.master = master
+        self.mode = "genenerated"
         master.title("Image Editor")
 
-        self.unit_card_image = unit_card_image
-        self.tk_image = ImageTk.PhotoImage(self.unit_card_image)
-        
-        self.label = tk.Label(master, image=self.tk_image)
+        cpy_generated = generated_image.copy()
+        cpy_generated.putalpha(int(255 * 0.4))
+        cpy_original = original_image.copy()
+        cpy_original.putalpha(255)
+        overlayed = Image.new('RGBA', cpy_original.size)
+        overlayed.paste(cpy_original, mask=cpy_original)
+        overlayed.paste(cpy_generated, mask=cpy_generated)
+
+        self.tk_images = {
+            "genenerated": ImageTk.PhotoImage(generated_image),
+            "original": ImageTk.PhotoImage(original_image),
+            "overlayed": ImageTk.PhotoImage(overlayed)
+        }
+
+        self.label = tk.Label(master, image=self.tk_images[self.mode])
         self.label.pack()
 
         self.label.bind("<Button-1>", self.log_coordinates)
+        self.master.bind("<Key>", self.switch_mode)
 
-    def log_coordinates(self, event):
+    @staticmethod
+    def log_coordinates(event):
         x = event.x
         y = event.y
         print(f"Clicked at: {x}, {y}")
+
+    def switch_mode(self, event):
+        char = event.char.lower()
+        if char == "s":
+            ix = self.modes.index(self.mode)
+            self.mode = self.modes[(ix + 1) % len(self.modes)]
+            self.label.configure(image=self.tk_images[self.mode])
 
 
 def draw_centered_text(draw, position, text_lines_list, font, fill, line_padding=0):
@@ -182,7 +210,7 @@ def BuildUnitCardFactionBackground(UnitData, units_folder, graphics_folder):
     UnitType = UnitData['Type'].replace(' ','')
     # Images points of origin are always top-left most corner of the loaded image.
     unit_faction_bg_image = Image.open(f"{units_folder}UnitBg{faction}.jpg").convert('RGBA')
-    
+
     shadow_size = 4
     shadow_strength = 125
 
@@ -476,25 +504,27 @@ def draw_markdown_text(image, bold_font, bold_font2, regular_font, title, text_b
         y_current += max_height + padding
     return image, y_current
 
+def get_faction_colour(faction):
+    faction_colours = {
+        "martell": "#9e4c00",
+        "neutral": "#3e2a19",
+        "nightswatch": "#302a28",
+        "stark": "#3b6680",
+        "targaryen": "#530818",
+        "baratheon": "#904523",
+        "bolton": "#7a312b",
+        "freefolk": "#8da884",
+        "greyjoy": "#10363b",
+        "lannister": "#9d1323",
+    }
+    faction = re.sub(r"[^a-z]", "", faction.lower())
+    return faction_colours.get(faction) or "#7FDBFF"
+
 def BuildUnitCardWithData(unit_card, UnitData, units_folder, graphics_folder, AsoiafFonts, AsoiafData):
     canvas = LayeredImageCanvas(unit_card.size[0], unit_card.size[1])
     canvas.add_layer(unit_card, 0, 0, depth=0)
     faction = UnitData['Faction']
-    FactionColor = "#7FDBFF" # AQUA default in case new army or somethign
-    FactionColors = {
-        "Martell":"#9e4c00",
-        "Neutral":"#3e2a19",
-        "Night's Watch":"#302a28",
-        "Stark":"#447386",
-        "Targaryen":"#530818",
-        "Baratheon":"#f3c631",
-        "Bolton":"#7a312b",
-        "Free Folk":"#8da884",
-        "Greyjoy":"#10363b",
-        "Lannister":"#b30300",
-    }
-    if faction in FactionColors:
-        FactionColor = FactionColors[faction]
+    FactionColor = get_faction_colour(faction)
     ArmyAttackAndAbilitiesBorderColor = "Gold"
     ArmyAttackAndAbilitiesBorderColors = {
         "Neutral":"Silver",
@@ -648,7 +678,7 @@ def BuildUnitCardWithData(unit_card, UnitData, units_folder, graphics_folder, As
                 yAbilityOffset += div.size[1]
                 yAbilityOffset += dividerOffset
     unit_card.paste(SkillBottom, (SkillBarsOffset, yAbilityOffset), SkillBottom)
-    pdb.set_trace()
+    # pdb.set_trace()
     # {'Faction': 'Stark', 'Name': 'Crannogman Trackers', 'Character': '', 'Cost': '5', 'Type': 'Infantry', 'Spd': '6', 'Attack 1': '[RS]Crannog Bow', '8': '4+', '9': '7.6.4', 'Attack 2': "[M]Tracker's Blade", '11': '4+', '12': '6.4.3', 'Def': '6+', 'Moral': '7+', 'Abilities': 'Order: Hidden Traps /\nOrder: Mark Target', 
     #SkillFaithSilver.webp
     #SkillFireSilver.webp
@@ -702,6 +732,8 @@ def main():
     AsoiafFonts = load_fonts(fonts_dir)
     data_folder=f"{assets_folder}data/"
     units_folder=f"{assets_folder}Units/"
+    tactics_folder=f"{assets_folder}Tactics/"
+    attachments_folder=f"{assets_folder}Attachments/"
     graphics_folder = f"{assets_folder}graphics"
     UnitCardsOutputDir  = "./unitscards/"
     if not os.path.exists(UnitCardsOutputDir):
@@ -712,12 +744,13 @@ def main():
     SelectedUnitCardData = [x for x in AsoiafData['units'] if x['Name'] == "Crannogman Trackers"][0]
     unit_card = BuildUnitCardFactionBackground(SelectedUnitCardData, units_folder, graphics_folder)
     unit_card = BuildUnitCardWithData(unit_card, SelectedUnitCardData, units_folder, graphics_folder, AsoiafFonts, AsoiafData)
+    #pdb.set_trace()
     # This is just for viewing / debugging purposes. Can click to get coordinates on image:
     unit_card_output_path = os.path.join(UnitCardsOutputDir, f"{SelectedUnitCardData['Id'].replace(' ', '_')}.png")
     unit_card.save(unit_card_output_path)
     # If You Want to View the Card AND click debug to find positioning uncommont these lines:
     root = tk.Tk()
-    app = ImageEditor(root, unit_card)
+    app = ImageEditor(root, unit_card, unit_card)
     root.mainloop()
 
 
