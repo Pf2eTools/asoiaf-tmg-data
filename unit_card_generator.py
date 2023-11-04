@@ -4,8 +4,22 @@ import os
 import tkinter as tk
 import pdb
 from PIL import Image, ImageDraw, ImageFont, ImageTk, ImageFilter
+import sys
 
 #pip install pillow
+
+#ALLICONS = {
+#CROWN
+#HORSE
+#LETTER
+#LONGRANGE
+#MONEY
+#MOVEMENT
+#OASIS
+#SWORDS
+#UNDYING
+#WOUND
+#}
 
 def add_rounded_corners(im, rad):
     circle = Image.new('L', (rad * 2, rad * 2), 0)
@@ -33,31 +47,35 @@ def load_fonts(fonts_folder):
     for font_file in font_files:
         try:
             font_path = os.path.join(fonts_folder, font_file)
-            font = ImageFont.truetype(font_path, size=44)  # You can specify the font size here
-            fonts[font_file.split(".")[0]] = font
-            fonts[font_file.split(".")[0]+'-smaller'] = ImageFont.truetype(font_path, size=30)
+            fonts[font_file.split(".")[0]+'-50'] = ImageFont.truetype(font_path, size=50)
+            fonts[font_file.split(".")[0]] = ImageFont.truetype(font_path, size=44)
+            fonts[font_file.split(".")[0]+'-40'] = ImageFont.truetype(font_path, size=40)
+            fonts[font_file.split(".")[0]+'-35'] = ImageFont.truetype(font_path, size=35)
+            fonts[font_file.split(".")[0]+'-30'] = ImageFont.truetype(font_path, size=30)
+            fonts[font_file.split(".")[0]+'-25'] = ImageFont.truetype(font_path, size=25)
             print(f"Successfully loaded font: {font_file}")
         except Exception as e:
             print(f"Failed to load font {font_file}: {str(e)}")
     return fonts
 
-
 def import_csvs_to_dicts(assets_data_folder):
-    # Step 2: Get the list of all CSV files in the specified directory
     csv_files = [f for f in os.listdir(assets_data_folder) if f.endswith('.csv')]
-    # Main dictionary to store the content of all CSV files
     all_data = {}
-    # Step 3: Iterate over the list of CSV files
     for csv_file in csv_files:
-        # Create the full path to the CSV file
         file_path = os.path.join(assets_data_folder, csv_file)
-        # Open the CSV file
         with open(file_path, mode='r', encoding='utf-8') as f:
-            # Create a CSV DictReader object
-            reader = csv.DictReader(f)
+            # Read the first line to get the headers
+            original_headers = next(csv.reader(f))
+            # Replace empty headers with incremental numbers as strings
+            headers = [header if header else str(i) for i, header in enumerate(original_headers, 1)]
+            # Go back to the start of the file before reading the rest
+            f.seek(0)
+            # Create a DictReader with the modified headers
+            reader = csv.DictReader(f, fieldnames=headers)
+            # Skip the original header row, since we already processed it
+            next(reader)
             # Convert the content of the CSV file to a list of dictionaries
             data = [row for row in reader]
-        # Step 4: Store the list of dictionaries in the main dictionary
         all_data[csv_file.split('.')[0]] = data
     return all_data
 
@@ -79,7 +97,7 @@ class ImageEditor:
     def log_coordinates(self, event):
         x = event.x
         y = event.y
-        print("Clicked at:", x, y)
+        print(f"Clicked at: {x}, {y}")
 
 
 def draw_centered_text(draw, position, text_lines_list, font, fill, line_padding=0):
@@ -103,239 +121,6 @@ def draw_centered_text(draw, position, text_lines_list, font, fill, line_padding
         draw.text((x - text_width / 2, y), line, font=font, fill=fill)
         y += text_height + line_padding
 
-
-def BuildUnitCard(UnitData, units_folder, AsoiafFonts, unit_card_output_dir, debug=False):
-    """
-    AsoiafFonts = 
-    {'StoneTypeFoundry-Tuff-Bold': '', 'LXGWWenKaiGB-Regular': '', 'StoneTypeFoundry-Tuff-Italic': '', 
-    'Tuff-Bold': '', 'StoneTypeFoundry-Tuff-Normal': '', 'Iansui0': '', 'StoneTypeFoundry-Tuff-SemiboldItalic': '', 
-    'Tuff-Normal': '', 'StoneTypeFoundry-Tuff-BoldItalic': '', 'MaterialIcons-Regular': '', 
-    'StoneTypeFoundry-Tuff-Semibold': '', 'Garamond-Bold': '', 'Tuff-BoldItalic': '', 'Tuff-Italic': ''}
-
-    UnitData = 
-    {'Faction': 'Lannister', 'Name': 'Lannister Guardsmen', 'Character': '', 'Cost': '5', 'Type': 'Infantry', 
-    'Spd': '4', 'Attack 1': '[M]Long Sword', '': '', 'Attack 2': '', 'Def': '3+', 'Moral': '7+', 
-    'Abilities': 'Order: Lannister Supremacy', 'Requirements': '', 'Boxes': 'SIF001/SIF001/SIF001B/SIF001B/SIF201', 
-    'Id': '10101', 'Version': '2021', 'Requirement Text': '', 'Quote': '', 
-    'Lore': ''}
-    """
-
-    def add_debug_border(image):
-        if debug:
-            draw = ImageDraw.Draw(image)
-            for i in range(image.size[0]):
-                draw.point((i, 0), fill="black")
-                draw.point((i, image.size[1] - 1), fill="black")
-            for i in range(image.size[1]):
-                draw.point((0, i), fill="black")
-                draw.point((image.size[0] - 1, i), fill="black")
-        return image
-
-    faction = UnitData['Faction'].replace(' ','') # faction file names dont include spaces
-    UnitType = UnitData['Type'].replace(' ','')
-    # Images points of origin are always top-left most corner of the loaded image.
-    unit_faction_bg_image = Image.open(f"{units_folder}UnitBg{faction}.jpg").convert('RGBA')
-    top_left_red_gold_bar = Image.open(f"{units_folder}Bar{faction}.webp").convert('RGBA')
-    large_bar = Image.open(f"{units_folder}LargeBar{faction}.webp").convert('RGBA')
-    next_red_gold_bar_below = Image.open(f"{units_folder}Bar{faction}.webp").convert('RGBA')
-    movement_foot_image = Image.open(f"{units_folder}Movement.webp").convert('RGBA')
-    movement_foot_stat_bg_image = Image.open(f"{units_folder}StatBg.webp").convert('RGBA')
-
-    # Attack Bar
-    # These will actually probably be pulled from the unit data and plugged in dynamically.
-    silver_attack_type_sword = Image.open(f"{units_folder}AttackTypeBgSilver.webp").convert('RGBA')
-    silver_attack_type_border = Image.open(f"{units_folder}AttackType.MeleeSilver.webp").convert('RGBA')
-    silver_attack_tan_background = Image.open(f"{units_folder}AttackBgSilver.webp").convert('RGBA')
-    silver_attack_dice_background = Image.open(f"{units_folder}DiceBg.webp").convert('RGBA')
-    melee_attack_stat_bg_image = movement_foot_stat_bg_image.copy()
-
-    # Shield and morale stuff
-    shield_top_gold_bar = next_red_gold_bar_below.copy()
-    shield_large_bar = large_bar.copy()
-    shield_next_gold_bar = next_red_gold_bar_below.copy()
-    shield_image = Image.open(f"{units_folder}Defense.webp").convert('RGBA')
-    shield_stat_bg_image = movement_foot_stat_bg_image.copy()
-    morale_image = Image.open(f"{units_folder}Morale.webp").convert('RGBA')
-    morale_stat_bg_image = movement_foot_stat_bg_image.copy()
-
-    #First Vertical Gold bar left of portrait
-    # Have to rotate them
-    left_onleft_vertical_gold_bar = next_red_gold_bar_below.copy().rotate(90, expand=True)
-    large_onleft_vertical_gold_bar = large_bar.copy().rotate(90, expand=True)
-    right_onleft_vertical_gold_bar = next_red_gold_bar_below.copy().rotate(90, expand=True)
-    #Unit Type on bottom of the left side portrait gold bar
-    unit_type_image = Image.open(f"{units_folder}UnitType.{UnitType}{faction}.webp").convert('RGBA')
-
-    # Unit Portrait Stuff
-    left_bottom_gold_corner = Image.open(f"{units_folder}Corner{faction}.webp").convert('RGBA')
-    right_bottom_gold_corner = left_bottom_gold_corner.copy().transpose(Image.FLIP_LEFT_RIGHT)
-    left_gold_corner_top = left_bottom_gold_corner.copy().transpose(Image.FLIP_TOP_BOTTOM)
-    right_gold_corner = left_gold_corner_top.copy().transpose(Image.FLIP_LEFT_RIGHT)
-    unit_portrait = Image.open(f"{units_folder}{UnitData['Id']}.jpg").convert('RGBA')
-    portrait_attachment_on_middleof_trim = Image.open(f"./assets/graphics/attachment{faction}.png").convert('RGBA')
-    faction_crest = Image.open(f"{units_folder}Crest{faction}.webp").convert('RGBA')
-
-    # Gold bars to the right of the portrait:
-    left_onright_vertical_gold_bar = left_onleft_vertical_gold_bar.copy()
-    large_onright_vertical_gold_bar = large_onleft_vertical_gold_bar.copy()
-    right_onright_vertical_gold_bar = right_onleft_vertical_gold_bar.copy()
-
-    # Skill Panel
-    skill_panel_bottom = Image.open(f"{units_folder}SkillBottom{faction}.webp").convert('RGBA')
-    skill_panel_separator = Image.open(f"{units_folder}Divider{faction}.webp").convert('RGBA')
-    skill_panel_top = skill_panel_bottom.copy().transpose(Image.FLIP_TOP_BOTTOM)
-    skills_tan_background_for_text = Image.open(f"{units_folder}SkillsBg.webp").convert('RGBA')
-
-    # Actually probably need to parse unit data to dynamically pull these
-    # In units folder
-    additional_images_to_load = """
-    AttackBgGold.webp
-    AttackBgSilver.webp
-    AttackTypeBgGold.webp
-    AttackTypeBgSilver.webp
-    AttackType.MeleeGold.webp
-    AttackType.MeleeSilver.webp
-    AttackType.RangedGold.webp
-    AttackType.RangedSilver.webp
-    CostGoldCommander.webp
-    CostGoldRegular.webp
-    CostSilverCommander.webp
-    CostSilverRegular.webp
-    SkillFaithSilver.webp
-    SkillFireSilver.webp
-    SkillOrderGold.webp
-    SkillOrderSilver.webp
-    SkillPillageGold.webp
-    SkillPillageSilver.webp
-    SkillVenomGold.webp
-    SkillWoundsGold.webp
-    SkillWoundsSilver.webp
-    """
-    # In assets/graphics/ folder, some of these are used by the app and not are cards. Will need to check in on them:
-    # Like for sure RangeShortSilver.png etc...
-    additional_images_to_check = """
-    AppBGHeader.jpg
-    AppBGNone.jpg
-    ArmyError.png
-    ArmyOk.png
-    AttachmentArrow.png
-    barNone.png
-    Bar.png
-    BGCollection.webp
-    BGContent.jpg
-    bgCount.png
-    BGCreateArmy.jpg
-    BGStart.jpg
-    BGText.png
-    Bt2.png
-    BtArrow.png
-    BtBGLeft.png
-    BtBGRight.png
-    BtCreateArmy.png
-    BtGold.png
-    Bt.png
-    CROWN.png
-    HeaderBar0.png
-    HeaderBar1.png
-    HeaderBar2.png
-    HeaderDecoration.png
-    HORSE.png
-    IconCard.png
-    IconCheck.png
-    IconCrown.png
-    IconDefense.png
-    IconEdit.png
-    IconExclamation.png
-    IconEye.png
-    IconFaith.png
-    IconFire.png
-    IconMelee.png
-    IconMorale.png
-    IconMovement.png
-    IconOrder.png
-    IconPen.png
-    IconPillage.png
-    IconQuestion.png
-    IconRanged.png
-    IconShare.png
-    IconVenom.png
-    IconWound.png
-    LETTER.png
-    Logo.webp
-    LONGRANGE.png
-    MONEY.png
-    MOVEMENT.png
-    OASIS.png
-    RangeLongGold.png
-    RangeLongSilver.png
-    RangeShortGold.png
-    RangeShortSilver.png
-    SmallBtBGBlue.png
-    SmallBtBGGreen.png
-    SmallBtBGPurple.png
-    SmallBtBGRed.png
-    SmallBtBow.png
-    SmallBtFrame.png
-    SmallBtSword.png
-    SquareBorder.png
-    SWORDS.png
-    ToggleOff.png
-    ToggleOn.png
-    UNDYING.png
-    UnitTypeCavalry.png
-    UnitTypeInfantry.png
-    UnitTypeMonster.png
-    UnitTypeNCU.png
-    UnitTypeNone.png
-    UnitTypeSiegeEngine.png
-    WOUND.png
-    """
-    
-
-    # This does nothing if you dont uncomment pass debug true. I only add to see where images are. Which are which
-    #unit_faction_bg_image = add_debug_border(unit_faction_bg_image)
-    #top_left_red_gold_bar = add_debug_border(top_left_red_gold_bar)
-    #large_bar = add_debug_border(large_bar)
-    #next_red_gold_bar_below = add_debug_border(next_red_gold_bar_below)
-    #movement_foot_image = add_debug_border(movement_foot_image)
-    #movement_foot_stat_bg_image = add_debug_border(movement_foot_stat_bg_image)
-
-    # Create unit card
-    unit_card = Image.new('RGBA', unit_faction_bg_image.size)
-    
-    # Place images on unit card
-    unit_card.paste(unit_faction_bg_image, (0, 0), unit_faction_bg_image)
-    yOffset = 60
-    #yOffset += top_left_red_gold_bar.size[1]
-    unit_card.paste(large_bar, (0, yOffset), large_bar)
-    unit_card.paste(top_left_red_gold_bar, (0, yOffset), top_left_red_gold_bar)
-    # Adjust the positions below according to your layout requirements
-    yOffset += large_bar.size[1] - next_red_gold_bar_below.size[1]
-    unit_card.paste(next_red_gold_bar_below, (0, yOffset), next_red_gold_bar_below)
-    yOffset -= large_bar.size[1]
-    xoffset = 30 + movement_foot_image.size[0]
-    unit_card.paste(movement_foot_stat_bg_image, (xoffset, yOffset + int(movement_foot_stat_bg_image.size[0]/4)), movement_foot_stat_bg_image)
-    xoffset = 50
-    unit_card.paste(movement_foot_image, (xoffset, yOffset), movement_foot_image)
-
-    # Add text
-    draw = ImageDraw.Draw(unit_card)
-    # Retrieve font text
-    # Tuff-Italic appears to be the 2021 numbering on left side of card and for the attack name (Long Sword etc...)
-    # Tuff-Bold appears to be for title of abilities (in red) and keywords (in black)
-    # Tuff-Normal for all other ability text
-    GaramondBoldFont = AsoiafFonts.get('Garamond-Bold', ImageFont.load_default()) # this should be the correct font for stat lines
-    draw.text((175, 85), UnitData['Spd'], font=GaramondBoldFont, fill="white")
-    TuffBoldFont = AsoiafFonts.get('Tuff-Bold', ImageFont.load_default()) # this should be the correct font for unit name
-    text_lines_list = UnitData['Name'].upper().split(' ') # Lannister Guardsmen Gits split into multiple lines
-    draw_centered_text(draw, (550, 715), text_lines_list, TuffBoldFont, "white", line_padding=10)
-    # Apply rounded corners with a radius of 20
-    unit_card = add_rounded_corners(unit_card, 20)
-    # Save image
-    unit_card_output_path = os.path.join(unit_card_output_dir, f"{UnitData['Id'].replace(' ', '_')}.png")
-    unit_card.save(unit_card_output_path)
-    #unit_card.show()
-    return unit_card
 
 def add_shadow(original_image, shadow_size, shadow_strength, sides=('left', 'top', 'right', 'bottom')):
     if original_image.mode != 'RGBA':
@@ -576,16 +361,330 @@ def split_name_string(s):
     # If string doesn't need splitting
     return [s], False
 
-def BuildUnitCardWithData(unit_card, UnitData, units_folder, graphics_folder, AsoiafFonts):
+def split_on_center_space(text):
+    # If the length of the text is less than 10 or there's no space, return the text in a single-item list
+    if len(text) < 10 or ' ' not in text:
+        return [text]
+
+    # Find the middle index of the string
+    middle = len(text) // 2
+    left_index = text.rfind(' ', 0, middle)  # Search for space going left from the middle
+    right_index = text.find(' ', middle)     # Search for space going right from the middle
+
+    # Determine the closest space to the middle to use as the split point
+    # If no space to the left, use the right one; if both exist, choose the closest
+    if left_index == -1 or (right_index != -1 and (middle - left_index) > (right_index - middle)):
+        split_index = right_index
+    else:
+        split_index = left_index
+
+    # Split the string into two parts
+    part1 = text[:split_index]
+    part2 = text[split_index+1:]  # +1 to exclude the space itself
+
+    # Return the parts in a list
+    return [part1, part2]
+
+def draw_circle(draw, center, radius, fill):
+    """Draws a circle on the ImageDraw object"""
+    left_up_point = (center[0] - radius, center[1] - radius)
+    right_down_point = (center[0] + radius, center[1] + radius)
+    draw.ellipse([left_up_point, right_down_point], fill=fill)
+
+def draw_icon(image, icon, x_current, y_current, max_height):
+    # Scale the icon to fit the max_height while maintaining aspect ratio
+    aspect_ratio = icon.width / icon.height
+    scaled_height = max_height
+    scaled_width = int(aspect_ratio * scaled_height)
+
+    # Resize the icon using LANCZOS resampling
+    icon = icon.resize((scaled_width, scaled_height), Image.Resampling.LANCZOS)
+
+    # Get the coordinates for the icon's top-left corner
+    icon_top_left = (x_current, y_current - (scaled_height // 2))  # Center vertically with the text
+
+    # Paste the icon onto the image, using the alpha channel of the icon as the mask
+    image.paste(icon, icon_top_left, mask=icon)
+
+    # Return the new x position, which is to the right of the icon we just drew
+    return x_current + scaled_width
+
+def draw_markdown_text(image, bold_font, bold_font2, regular_font, title, text_body, color, y_top, x_left, x_right, graphics_folder, padding=2):
+    # Initialize the drawing context
+    draw = ImageDraw.Draw(image)
+    # Draw the title using the bold font
+    draw.text((x_left, y_top), title.strip(), font=bold_font, fill=color)
+    title_height = bold_font.getmask(title.strip()).getbbox()[3]  # Bottom of the title bbox
+    # Update the y-coordinate for the text body
+    y_current = y_top + title_height + int(padding * 2)
+    # Define the radius of the bullet point
+    bullet_radius = 3  # Radius of the bullet point circle
+    # Get the height of the regular font which we will use as a line height
+    max_height = regular_font.getmask('Hy').getbbox()[3]  # Use 'Hy' to account for descenders and ascenders
+    # Split the text body by lines
+    lines = [x.strip() for x in text_body.split('\n')]
+    for line in lines:
+        # Check for bullet points at the start of the line
+        if line.startswith('•'):
+            # Draw the bullet circle and adjust x_current
+            bullet_center = (x_left + bullet_radius, (y_current + bullet_radius + max_height / 2)-5)
+            draw_circle(draw, bullet_center, bullet_radius, fill="black")
+            x_current = x_left + bullet_radius * 2 + padding
+            line = line[1:].lstrip()  # Remove the bullet point and any leading whitespace
+        else:
+            x_current = x_left
+        # Check for markdown bold syntax and split if necessary
+        parts = line.split('**')
+        for i, part in enumerate(parts):
+            if i % 2 == 1:
+                # This part is bold
+                font = bold_font2
+            else:
+                # This part is regular
+                font = regular_font
+            # Break the part into words to check for word wrapping
+            words = part.split(' ')
+            for word in words:
+                if '[' in word and ']' in word:
+                    # Replace the [STRING] with an icon
+                    icon_key = word.split('[')[1].split(']')[0]
+                    word = word.split('[')[0]
+                    word_bbox = draw.textbbox((x_current, y_current), word, font=font)
+                    word_width = word_bbox[2] - word_bbox[0]
+                    if x_current + word_width > x_right:
+                        # If the word exceeds the line, move to the next line
+                        x_current = x_left
+                        y_current += max_height + padding
+                    # Draw the word
+                    draw.text((x_current, y_current), word, font=font, fill="black")
+                    x_current += word_width
+                    icon = Image.open(f"{graphics_folder}/{icon_key}.png").convert('RGBA')
+                    if icon:
+                        x_current = draw_icon(image, icon, x_current, y_current+14, max_height+ 18)
+                        continue  # Skip the rest of the loop and don't draw this word as text
+                word += ' '  # Add space after each word for separation
+                word_bbox = draw.textbbox((x_current, y_current), word, font=font)
+                word_width = word_bbox[2] - word_bbox[0]
+                if x_current + word_width > x_right:
+                    # If the word exceeds the line, move to the next line
+                    x_current = x_left
+                    y_current += max_height + padding
+                # Draw the word
+                draw.text((x_current, y_current), word, font=font, fill="black")
+                x_current += word_width
+        # After a line is processed, move to the next line
+        y_current += max_height + padding
+    return image, y_current
+
+def BuildUnitCardWithData(unit_card, UnitData, units_folder, graphics_folder, AsoiafFonts, AsoiafData):
     canvas = LayeredImageCanvas(unit_card.size[0], unit_card.size[1])
     canvas.add_layer(unit_card, 0, 0, depth=0)
-
+    faction = UnitData['Faction']
+    FactionColor = "#7FDBFF" # AQUA default in case new army or somethign
+    FactionColors = {
+        "Martell":"#9e4c00",
+        "Neutral":"#3e2a19",
+        "Night's Watch":"#302a28",
+        "Stark":"#447386",
+        "Targaryen":"#530818",
+        "Baratheon":"#f3c631",
+        "Bolton":"#7a312b",
+        "Free Folk":"#8da884",
+        "Greyjoy":"#10363b",
+        "Lannister":"#b30300",
+    }
+    if faction in FactionColors:
+        FactionColor = FactionColors[faction]
+    ArmyAttackAndAbilitiesBorderColor = "Gold"
+    ArmyAttackAndAbilitiesBorderColors = {
+        "Neutral":"Silver",
+        "Night's Watch":"Gold",
+        "Stark":"Gold",
+        "Targaryen":"Gold",
+        "Baratheon":"Silver",
+        "Bolton":"Gold",
+        "Free Folk":"Gold",
+        "Greyjoy":"Gold",
+        "Martell":"Gold",
+        "Lannister":"Silver",
+    }
+    if faction in ArmyAttackAndAbilitiesBorderColors:
+        ArmyAttackAndAbilitiesBorderColor = ArmyAttackAndAbilitiesBorderColors[faction]
+    def attackType(atkstring):
+        atktype = "Melee"
+        atkrange = False
+        if atkstring.startswith("[RL]"):
+            atktype = "Ranged"
+            atkrange = "Long"
+        elif atkstring.startswith("[R]"):
+            atktype = "Ranged"
+        elif atkstring.startswith("[RS]"):
+            atktype = "Ranged"
+            atkrange = "Short"
+        return atktype, atkrange, atkstring.split(']')[1]
+    
+    def MakeAttackBar(atkdata, atk_ranks, tohit, xoffset=0, yoffset=0):
+        atktype, atkrange, atkText = attackType(atkdata)
+        silver_attack_type_sword = Image.open(f"{units_folder}AttackTypeBg{ArmyAttackAndAbilitiesBorderColor}.webp").convert('RGBA')
+        silver_attack_type_border = Image.open(f"{units_folder}AttackType.{atktype}{ArmyAttackAndAbilitiesBorderColor}.webp").convert('RGBA')
+        width, height = [int(x*1.1) for x in silver_attack_type_border.size]
+        silver_attack_type_border = silver_attack_type_border.resize((width, height))
+        silver_attack_tan_background = Image.open(f"{units_folder}AttackBg{ArmyAttackAndAbilitiesBorderColor}.webp").convert('RGBA')
+        silver_attack_dice_background = Image.open(f"{units_folder}DiceBg.webp").convert('RGBA')
+        atk_stat_bg_image = Image.open(f"{units_folder}StatBg.webp").convert('RGBA')
+        atkColor = "#001a53"
+        if atkrange:
+            atkColor = "#a71208" # dark red
+            range_bg_image = Image.open(f"{graphics_folder}/Range{atkrange}{ArmyAttackAndAbilitiesBorderColor}.png").convert('RGBA')
+            canvas.add_layer(range_bg_image, xoffset+90, yoffset+210, depth=4)
+        #silver_attack_tan_background
+        GBFont = AsoiafFonts.get('Tuff-Italic-30', ImageFont.load_default())
+        text_lines_list = split_on_center_space(atkText.upper())
+        draw = ImageDraw.Draw(silver_attack_tan_background)
+        x,y = [int(x/2) for x in silver_attack_tan_background.size]
+        draw_centered_text(draw, (x+10, y - 12), text_lines_list, GBFont, atkColor, line_padding=4)
+        #draw.text((17, 17), atkText, font=GBFont, fill=atkColor)
+        canvas.add_layer(silver_attack_tan_background, xoffset+60, yoffset+220, depth=0)
+        canvas.add_layer(silver_attack_dice_background, xoffset+100, yoffset+293, depth=2)
+        draw = ImageDraw.Draw(atk_stat_bg_image)
+        GBFont = AsoiafFonts.get('Garamond-Bold',ImageFont.load_default())
+        draw.text((17, 17), tohit, font=GBFont, fill="white")
+        canvas.add_layer(atk_stat_bg_image, xoffset+83, yoffset+280, depth=3)
+        canvas.add_layer(silver_attack_type_border, xoffset+8, yoffset+210, depth=2)
+        canvas.add_layer(silver_attack_type_sword, xoffset+20, yoffset+220, depth=1)
+        colors = [(74,124,41,240),(231,144,14,240),(207,10,10,240)]
+        yoffset += 10
+        xoffset += 65
+        #Garamond-Bold
+        GBSmallFont = AsoiafFonts.get('Garamond-Bold-35',ImageFont.load_default())
+        for i in range(len(atk_ranks)):
+            #  Image.new('RGBA', [160, 40], (255, 255, 255, 0))
+            img = Image.new("RGBA", (34, 34), colors[i])
+            draw = ImageDraw.Draw(img)
+            draw.text((8, 1), atk_ranks[i], font=GBSmallFont, fill="white")
+            canvas.add_layer( add_rounded_corners( img , 4) , xoffset+100, yoffset+293, depth=3)
+            xoffset += 42
+    if 'Attack 1' in UnitData and UnitData['Attack 1']:
+        atk1 = UnitData['Attack 1']
+        xoffset = 40
+        yoffset = 0
+        tohit = UnitData['8']
+        atk_ranks = UnitData['9'].split('.')
+        MakeAttackBar(atk1, atk_ranks, tohit, xoffset=xoffset, yoffset=yoffset)
+    if 'Attack 2' in UnitData and UnitData['Attack 2']:
+        atk2 = UnitData['Attack 2']
+        xoffset = 40
+        yoffset = 200
+        tohit = UnitData['11']
+        atk_ranks = UnitData['12'].split('.')
+        MakeAttackBar(atk2, atk_ranks, tohit, xoffset=xoffset, yoffset=yoffset)
+    # AsoiafData
+    SkillBottom = Image.open(f"{units_folder}SkillBottom{faction}.webp").convert('RGBA')
+    SkillTop = SkillBottom.copy().transpose(Image.FLIP_TOP_BOTTOM)
+    SkillDivider = Image.open(f"{units_folder}Divider{faction}.webp").convert('RGBA')
+    yAbilityOffset = 35
+    dividerOffset = 15
+    SkillBarsOffset = 860
+    canvas.add_layer( SkillTop , SkillBarsOffset-5, yAbilityOffset - SkillTop.size[1], depth=3)
     unit_card = canvas.render()
+    yAbilityOffset += dividerOffset
+    if 'Abilities' in UnitData and UnitData['Abilities']:
+        all_abilities = [x.strip() for x in UnitData['Abilities'].split('/')]
+        for index in range(len(all_abilities)):
+            ability = all_abilities[index]
+            SkillType = "Order"
+            #if not ability.startswith(f"{SkillType}:"):
+            # {'Name': 'Order: Hidden Traps', 'Description': '**When an unengaged enemy in Long Range performs any Action, before resolving that Action:**\nChoose 1:\n• That enemy suffers 1 Hit, +1 Hit for each of its remaining ranks.\n• That Enemy suffers -1[MOVEMENT] until the end of the Turn.', 'Icons': '', 'Version': '2021-S01'}
+            skilldata = [x for x in AsoiafData['newskills'] if x['Name'] == ability][0]
+            GBFont = AsoiafFonts.get('Tuff-Bold-35',ImageFont.load_default())
+            TN = AsoiafFonts.get('Tuff-Bold-35',ImageFont.load_default())
+            TN30 = AsoiafFonts.get('Tuff-Normal-30',ImageFont.load_default())
+            starty = yAbilityOffset+0
+            unit_card, yAbilityOffset = draw_markdown_text(unit_card, GBFont, TN, TN30, ability.upper(), skilldata['Description'], FactionColor, yAbilityOffset, 885, 1400, graphics_folder, padding=10)
+            midy = starty + int((yAbilityOffset-starty) / 2 )
+            if 'Icons' in skilldata and skilldata['Icons']:
+                pass
+                #unit_card.paste(SkillBottom, (SkillBarsOffset, midy), SkillBottom)
+                #unit_card.paste(SkillBottom, (SkillBarsOffset, midy), SkillBottom)
+                #└─$ ls -lah ./assets/graphics/Icon* | awk '{print $9}'
+                #./assets/graphics/IconCard.png
+                #./assets/graphics/IconCheck.png
+                #./assets/graphics/IconCrown.png
+                #./assets/graphics/IconDefense.png
+                #./assets/graphics/IconEdit.png
+                #./assets/graphics/IconExclamation.png
+                #./assets/graphics/IconEye.png
+                #./assets/graphics/IconFaith.png
+                #./assets/graphics/IconFire.png
+                #./assets/graphics/IconMelee.png
+                #./assets/graphics/IconMorale.png
+                #./assets/graphics/IconMovement.png
+                #./assets/graphics/IconOrder.png
+                #./assets/graphics/IconPen.png
+                #./assets/graphics/IconPillage.png
+                #./assets/graphics/IconQuestion.png
+                #./assets/graphics/IconRanged.png
+                #./assets/graphics/IconShare.png
+                #./assets/graphics/IconVenom.png
+                #./assets/graphics/IconWound.png
+                #"F" Faith
+                #"Fire" Fire 
+                #"M" Melee
+                #"Morale5" Moral and a stat bar with 5+ in it
+                #"M,R" Melee, Ranges
+                #"M,V" Melee, Venom
+                #"M,W" Melee, Wound
+                #null # No icon
+                #"P" # Pillage
+                #"R"    # Ranged
+                #"R,M" Range, Melee
+                #"R,W" Ranged, Wounds
+                #"V,M" Venom, Melee
+                #"W" Wounds
+                #"W,M" Wounds melee
+            if index < len(all_abilities)-1:
+                div = SkillDivider.copy()
+                unit_card.paste(div, (SkillBarsOffset - 52, yAbilityOffset), div)
+                yAbilityOffset += div.size[1]
+                yAbilityOffset += dividerOffset
+    unit_card.paste(SkillBottom, (SkillBarsOffset, yAbilityOffset), SkillBottom)
+    pdb.set_trace()
+    # {'Faction': 'Stark', 'Name': 'Crannogman Trackers', 'Character': '', 'Cost': '5', 'Type': 'Infantry', 'Spd': '6', 'Attack 1': '[RS]Crannog Bow', '8': '4+', '9': '7.6.4', 'Attack 2': "[M]Tracker's Blade", '11': '4+', '12': '6.4.3', 'Def': '6+', 'Moral': '7+', 'Abilities': 'Order: Hidden Traps /\nOrder: Mark Target', 
+    #SkillFaithSilver.webp
+    #SkillFireSilver.webp
+    #SkillOrderGold.webp
+    #SkillOrderSilver.webp
+    #SkillPillageGold.webp
+    #SkillPillageSilver.webp
+    #SkillVenomGold.webp
+    #SkillWoundsGold.webp
+    #SkillWoundsSilver.webp
+    
+    # Retrieve font text
+    # Tuff-Italic appears to be the 2021 numbering on left side of card and for the attack name (Long Sword etc...)
+    # Tuff-Bold appears to be for title of abilities (in red) and keywords (in black)
+    # Tuff-Normal for all other ability text
     draw = ImageDraw.Draw(unit_card)
     GaramondBoldFont = AsoiafFonts.get('Garamond-Bold', ImageFont.load_default())
     draw.text((183, 86), UnitData['Spd'], font=GaramondBoldFont, fill="white")
-    TuffBoldFont = AsoiafFonts.get('Tuff-Bold', ImageFont.load_default()) 
-    TuffBoldFontSmall = AsoiafFonts.get('Tuff-Bold-smaller', TuffBoldFont.size-10) 
+    draw.text((175, 630), UnitData['Def'], font=GaramondBoldFont, fill="white")
+    draw.text((375, 630), UnitData['Moral'], font=GaramondBoldFont, fill="white")
+    # Version Text:
+    # Create an image for the text
+    text_image = Image.new('RGBA', [160, 40], (255, 255, 255, 0))  # transparent background
+    text_draw = ImageDraw.Draw(text_image)
+    # Draw the text onto this image (consider using textsize to determine size dynamically)
+    VersionFont = AsoiafFonts.get('Tuff-Italic-25', ImageFont.load_default())
+    text_draw.text((0, 0), UnitData['Version'], font=VersionFont, fill="white")
+    # Rotate the text image
+    rotated_text_image = text_image.rotate(90, expand=1)
+    # Paste the rotated text image onto your main image (consider using the alpha channel for proper transparency)
+    unit_card.paste(rotated_text_image, (rotated_text_image.width - 10, unit_card.size[1] - rotated_text_image.height - 20), rotated_text_image)
+    # "Abilities"
+    # "Attack 1"
+    # "Attack 2"
+    TuffBoldFont = AsoiafFonts.get('Tuff-Bold-50', ImageFont.load_default()) 
+    TuffBoldFontSmall = AsoiafFonts.get('Tuff-Bold-25', ImageFont.load_default()) 
     #print(UnitData)
     text_lines_list, hadAComma = split_name_string(UnitData['Name'].upper())
     if not hadAComma:
@@ -604,18 +703,19 @@ def main():
     data_folder=f"{assets_folder}data/"
     units_folder=f"{assets_folder}Units/"
     graphics_folder = f"{assets_folder}graphics"
-    unit_card_output_dir = "./"
+    UnitCardsOutputDir  = "./unitscards/"
+    if not os.path.exists(UnitCardsOutputDir):
+        os.mkdir(UnitCardsOutputDir)
     AsoiafData = import_csvs_to_dicts(data_folder) # contains the keys: attachments,boxes,ncus,newskills,rules,special,tactics,units
-    #LannisterGuardsmenUnitData = [x for x in AsoiafData['units'] if x['Name'] == "Gregor Clegane, The Mountain That Rides"][0]
-    #LannisterGuardsmenUnitData = [x for x in AsoiafData['units'] if x['Name'] == "Lannister Crossbowmen"][0]
-    LannisterGuardsmenUnitData = [x for x in AsoiafData['units'] if x['Name'] == "Crannogman Trackers"][0]
-    #pdb.set_trace()
-    unit_card = BuildUnitCardFactionBackground(LannisterGuardsmenUnitData, units_folder, graphics_folder)
-    unit_card = BuildUnitCardWithData(unit_card, LannisterGuardsmenUnitData, units_folder, graphics_folder, AsoiafFonts)
-    #unit_card = BuildUnitCard(LannisterGuardsmenUnitData, units_folder, AsoiafFonts, unit_card_output_dir, debug=False)
+    #SelectedUnitCardData = [x for x in AsoiafData['units'] if x['Name'] == "Gregor Clegane, The Mountain That Rides"][0]
+    #SelectedUnitCardData = [x for x in AsoiafData['units'] if x['Name'] == "Lannister Crossbowmen"][0]
+    SelectedUnitCardData = [x for x in AsoiafData['units'] if x['Name'] == "Crannogman Trackers"][0]
+    unit_card = BuildUnitCardFactionBackground(SelectedUnitCardData, units_folder, graphics_folder)
+    unit_card = BuildUnitCardWithData(unit_card, SelectedUnitCardData, units_folder, graphics_folder, AsoiafFonts, AsoiafData)
     # This is just for viewing / debugging purposes. Can click to get coordinates on image:
-    unit_card_output_path = os.path.join(unit_card_output_dir, f"{LannisterGuardsmenUnitData['Id'].replace(' ', '_')}.png")
+    unit_card_output_path = os.path.join(UnitCardsOutputDir, f"{SelectedUnitCardData['Id'].replace(' ', '_')}.png")
     unit_card.save(unit_card_output_path)
+    # If You Want to View the Card AND click debug to find positioning uncommont these lines:
     root = tk.Tk()
     app = ImageEditor(root, unit_card)
     root.mainloop()
