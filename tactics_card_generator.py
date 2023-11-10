@@ -50,10 +50,10 @@ def split_on_center_space(text, maxlen=14):
     return [part1, part2]
 
 
-def make_attack_bar(atk_type, atk_range, atk_name, atk_ranks, tohit, border_color="Gold"):
+def make_attack_bar(atk_type, atk_name, atk_ranks, tohit, border_color="Gold"):
     units_folder = f"{ASSETS_DIR}/Units/"
     attack_type_bg = Image.open(f"{ASSETS_DIR}/Units/AttackTypeBg{border_color}.webp").convert('RGBA')
-    attack_type = Image.open(f"{ASSETS_DIR}/Units/AttackType.{atk_type}{border_color}.webp").convert('RGBA')
+    attack_type = Image.open(f"{ASSETS_DIR}/Units/AttackType.{'Melee' if atk_type == 'melee' else 'ranged'}{border_color}.webp").convert('RGBA')
     attack_type = attack_type.resize((124, 124))
     attack_bg = Image.open(f"{ASSETS_DIR}/Units/AttackBg{border_color}.webp").convert('RGBA')
     attack_dice_bg = Image.open(f"{units_folder}DiceBg.webp").convert('RGBA')
@@ -65,23 +65,20 @@ def make_attack_bar(atk_type, atk_range, atk_name, atk_ranks, tohit, border_colo
     attack_bar.alpha_composite(attack_type_bg, (14, 14))
     attack_bar.alpha_composite(apply_drop_shadow(attack_type), (-15, -14))
 
-    atk_name_colors = {
-        "Melee": "#0e2e45",
-        "Ranged": "#87282a",
-    }
+    atk_name_color = "#0e2e45" if atk_type == "melee" else "#87282a"
     text_lines_list = split_on_center_space(atk_name.upper())
-    rd_atk_name = render_paragraph(text_lines_list, atk_name_colors[atk_type], 30, 6, font_family="Tuff-Italic",
+    rd_atk_name = render_paragraph(text_lines_list, atk_name_color, 30, 6, font_family="Tuff-Italic",
                                    thickness_factor=1.8)
     attack_bar.alpha_composite(rd_atk_name, (224 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
 
-    if atk_range is not None:
-        range_graphic = Image.open(f"{ASSETS_DIR}/graphics/Range{atk_range}{border_color}.png").convert('RGBA')
+    if atk_type != "melee":
+        range_graphic = Image.open(f"{ASSETS_DIR}/graphics/Range{atk_type.capitalize()}{border_color}.png").convert('RGBA')
         attack_bar.alpha_composite(apply_drop_shadow(range_graphic), (60, -14))
 
     rd_statistics = Image.new("RGBA", attack_bar.size)
     rd_statistics.alpha_composite(attack_dice_bg, (84, 68))
     rd_statistics.alpha_composite(attack_stat_bg, (58, 56))
-    rd_tohit = render_text_line(tohit, "white", 44, font_family="Garamond-Bold")
+    rd_tohit = render_text_line(f"{tohit}+", "white", 44, font_family="Garamond-Bold")
     rd_statistics.alpha_composite(rd_tohit, (
     58 + (attack_stat_bg.size[0] - rd_tohit.size[0]) // 2, 56 + (attack_stat_bg.size[1] - rd_tohit.size[1]) // 2))
     rank_colors = ["#648f4a", "#dd8e29", "#bd1a2b"]
@@ -267,12 +264,11 @@ def render_paragraphs(paragraphs, font_color="#5d4d40", font_size=41, line_paddi
     for paragraph in paragraphs:
         offset = (0, 0)
         if isinstance(paragraph, dict) and paragraph.get("content") is None:
-            atk_type = paragraph.get("type")
-            atk_range = paragraph.get("range")
             atk_name = paragraph.get("name")
-            tohit = paragraph.get("to_hit")
-            atk_ranks = paragraph.get("atk_ranks")
-            bar = make_attack_bar(atk_type, atk_range, atk_name, atk_ranks, tohit)
+            atk_type = paragraph.get("type")
+            tohit = paragraph.get("hit")
+            atk_ranks = paragraph.get("dice")
+            bar = make_attack_bar(atk_type, atk_name, atk_ranks, tohit)
             rendered_paragraph = apply_drop_shadow(bar, color="#00000099")
             offset = (-38, -82)
         else:
@@ -294,10 +290,9 @@ def render_paragraphs(paragraphs, font_color="#5d4d40", font_size=41, line_paddi
 
 
 def build_tactics_card(card_info):
-    faction = card_info.get("faction")
+    faction = re.sub(r"[^A-Za-z]", "", card_info.get("faction"))
     name = card_info.get("name")
-    trigger = card_info.get("trigger")
-    card_text = card_info.get("card_text")
+    card_text = card_info.get("text")
     version = card_info.get("version")
     commander_id = card_info.get("commander_id")
     commander_name = card_info.get("commander_name")
@@ -353,6 +348,48 @@ def build_tactics_card(card_info):
     if commander_id is not None:
         bars.alpha_composite(decor, (33, 232))
         bars.alpha_composite(decor, (678, 232))
+
+    all_text = Image.new('RGBA', tactics_bg.size)
+
+    rendered_name = render_paragraph([f"**{l.upper()}**" for l in name], font_color="white", font_size=51, padding_lines=12)
+    if commander_name is not None:
+        rendered_cmdr_name = render_text_line(commander_name.upper(), font_color="white", font_size=32)
+        all_text.alpha_composite(rendered_cmdr_name, ((tactics_bg.size[0] - rendered_cmdr_name.size[0]) // 2, 275))
+        all_text.alpha_composite(rendered_name, (
+        (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 162, 136 - rendered_name.size[1] // 2))
+    else:
+        all_text.alpha_composite(rendered_name, (
+        (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 128, 140 - rendered_name.size[1] // 2))
+
+    card_text_y = 360
+    for ix, trigger_effect in enumerate(card_text):
+        trigger = trigger_effect.get("trigger")
+        effect = trigger_effect.get("effect")
+        is_remove_text = ix > 0 and card_info.get("remove") is not None
+        if ix > 0:
+            card_text_y += 30
+            bars.alpha_composite(small_bar.crop((0, 0, tactics_bg2.size[0], 100)),
+                                 ((tactics_bg.size[0] - tactics_bg2.size[0]) // 2, card_text_y))
+            bars.alpha_composite(decor, (33, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
+            bars.alpha_composite(decor, (678, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
+            card_text_y += small_bar.size[1] + 30
+
+        font_color = get_faction_color(faction) if not is_remove_text  else "#5d4d40"
+        rd_trigger = render_paragraph(trigger, font_color=font_color, font_size=41, padding_lines=18)
+        trigger_x, trigger_y = (tactics_bg.size[0] - rd_trigger.size[0]) // 2, card_text_y
+        all_text.alpha_composite(rd_trigger, (trigger_x, trigger_y))
+        card_text_y += rd_trigger.size[1]
+
+        if not is_remove_text:
+            rd_effect_text = render_paragraphs(effect)
+            effect_text_x, effect_text_y = (tactics_bg.size[0] - rd_effect_text.size[0]) // 2, card_text_y + 12
+            all_text.alpha_composite(rd_effect_text, (effect_text_x, effect_text_y))
+            card_text_y += rd_effect_text.size[1]
+    
+    rendered_version = render_text_line(version, font_color="white", font_size=20)
+    version_x, version_y = 21, tactics_bg.size[1] - rendered_version.size[0] - 70
+    all_text.alpha_composite(rendered_version.rotate(90, expand=1), (version_x, version_y))
+
     tactics_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
 
     crest = Image.open(f"{ASSETS_DIR}/Tactics/Crest{faction}.webp").convert('RGBA')
@@ -363,31 +400,48 @@ def build_tactics_card(card_info):
         tactics_card.alpha_composite(
             apply_drop_shadow(crest.resize((int(crest.size[0] * 0.68), int(crest.size[1] * 0.68)))), (200, 100))
 
-    all_text = Image.new('RGBA', tactics_bg.size)
 
-    rendered_name = render_paragraph([l.upper() for l in name], font_color="white", font_size=51, padding_lines=12)
-    if commander_name is not None:
-        rendered_cmdr_name = render_text_line(commander_name.upper(), font_color="white", font_size=32)
-        all_text.alpha_composite(rendered_cmdr_name, ((tactics_bg.size[0] - rendered_cmdr_name.size[0]) // 2, 275))
-        all_text.alpha_composite(rendered_name, (
-        (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 162, 136 - rendered_name.size[1] // 2))
-    else:
-        all_text.alpha_composite(rendered_name, (
-        (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 128, 140 - rendered_name.size[1] // 2))
-    rendered_trigger = render_paragraph(trigger, font_color=get_faction_color(faction), font_size=41, padding_lines=18)
-    all_text.alpha_composite(rendered_trigger, ((tactics_bg.size[0] - rendered_trigger.size[0]) // 2, 360))
-    rendered_text = render_paragraphs(card_text)
-    all_text.alpha_composite(rendered_text,
-                             ((tactics_bg.size[0] - rendered_text.size[0]) // 2, rendered_trigger.size[1] + 372))
-    rendered_version = render_text_line(version, font_color="white", font_size=20)
-    all_text.alpha_composite(rendered_version.rotate(90, expand=1),
-                             (21, tactics_bg.size[1] - rendered_version.size[0] - 70))
     tactics_card.alpha_composite(all_text)
 
     return tactics_card
 
 
 def main():
+    hurl = {
+        "faction": "FreeFolk",
+        "commander_id": "10313",
+        "commander_name": "**Mag the Mighty** - Mag Mar Tun Doh Weg",
+        "version": "*2021*",
+        "name": ["**HURL BOULDER**"],
+        "trigger": [
+            "**When a friendly Giant Unit**",
+            "**performs an Action, before**",
+            "**resolving that Action:**",
+        ],
+        "text": [
+            [
+                "That unit replaces that",
+                "Action with performing",
+                "the following Ranged Attack:",
+            ],
+            {
+                "name": "Hurl Boulder",
+                "type": "long",
+                "to_hit": 3,
+                "atk_ranks": [1]
+            },
+            {
+                "font_size": 36,
+                "line_padding": 12,
+                "content": [
+                    "If this Attack generates any Hits, instead",
+                    "of rolling Defense Dice, the Defender",
+                    "suffers D3 Wounds, +1 Wound",
+                    "for each remaining rank in that unit.",
+                ],
+            }
+        ]
+    }
     exploit = {
         "faction": "Lannister",
         "commander_id": "20104",
@@ -395,7 +449,7 @@ def main():
         "version": "*2021-S03*",
         "name": ["**EXPLOIT**", "**WEAKNESS**"],
         "trigger": ["**When a friendly unit is performing**", "**an Attack, before rolling Attack Dice:**"],
-        "card_text": [
+        "text": [
             [
                 "The Defender becomes **Vulnerable**."
             ],
@@ -411,7 +465,7 @@ def main():
         "version": "*2021*",
         "name": ["**INTRIGUE AND**", "**SUBTERFUGE**"],
         "trigger": ["**When an enemy NCU Activates:**"],
-        "card_text": [
+        "text": [
             [
                 "That NCU loses all Abilities",
                 "until the end of the Round."
@@ -430,7 +484,7 @@ def main():
         "version": "*2021-S03*",
         "name": ["**CRANNOG**", "**TRAPS**"],
         "trigger": ["**When an enemy unit Activates:**"],
-        "card_text": [
+        "text": [
             [
                 "If that enemy is in Long Range of",
                 "a friendly Crannogman unit, it",
@@ -441,42 +495,6 @@ def main():
                 "March, or Retreat Action, it is treated",
                 "as moving through Dangerous terrain.",
             ],
-        ]
-    }
-    hurl = {
-        "faction": "FreeFolk",
-        "commander_id": "10313",
-        "commander_name": "**Mag the Mighty** - Mag Mar Tun Doh Weg",
-        "version": "*2021*",
-        "name": ["**HURL BOULDER**"],
-        "trigger": [
-            "**When a friendly Giant Unit**",
-            "**performs an Action, before**",
-            "**resolving that Action:**",
-        ],
-        "card_text": [
-            [
-                "That unit replaces that",
-                "Action with performing",
-                "the following Ranged Attack:",
-            ],
-            {
-                "type": "Ranged",
-                "range": "Long",
-                "name": "Hurl Boulder",
-                "to_hit": "3+",
-                "atk_ranks": [1]
-            },
-            {
-                "font_size": 36,
-                "line_padding": 12,
-                "content": [
-                    "If this Attack generates any Hits, instead",
-                    "of rolling Defense Dice, the Defender",
-                    "suffers D3 Wounds, +1 Wound",
-                    "for each remaining rank in that unit.",
-                ],
-            }
         ]
     }
 
