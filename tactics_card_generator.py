@@ -53,7 +53,9 @@ def split_on_center_space(text, maxlen=14):
 def make_attack_bar(atk_type, atk_name, atk_ranks, tohit, border_color="Gold"):
     units_folder = f"{ASSETS_DIR}/Units/"
     attack_type_bg = Image.open(f"{ASSETS_DIR}/Units/AttackTypeBg{border_color}.webp").convert('RGBA')
-    attack_type = Image.open(f"{ASSETS_DIR}/Units/AttackType.{'Melee' if atk_type == 'melee' else 'ranged'}{border_color}.webp").convert('RGBA')
+    attack_type = Image.open(
+        f"{ASSETS_DIR}/Units/AttackType.{'Melee' if atk_type == 'melee' else 'ranged'}{border_color}.webp").convert(
+        'RGBA')
     attack_type = attack_type.resize((124, 124))
     attack_bg = Image.open(f"{ASSETS_DIR}/Units/AttackBg{border_color}.webp").convert('RGBA')
     attack_dice_bg = Image.open(f"{units_folder}DiceBg.webp").convert('RGBA')
@@ -61,7 +63,7 @@ def make_attack_bar(atk_type, atk_name, atk_ranks, tohit, border_color="Gold"):
 
     attack_bar = Image.new("RGBA", (367, 166))
     attack_bar.alpha_composite(attack_bg, (
-    14 + attack_type_bg.size[0] // 2, 14 + (attack_bg.size[1] - attack_type_bg.size[1]) // 2))
+        14 + attack_type_bg.size[0] // 2, 14 + (attack_bg.size[1] - attack_type_bg.size[1]) // 2))
     attack_bar.alpha_composite(attack_type_bg, (14, 14))
     attack_bar.alpha_composite(apply_drop_shadow(attack_type), (-15, -14))
 
@@ -72,7 +74,8 @@ def make_attack_bar(atk_type, atk_name, atk_ranks, tohit, border_color="Gold"):
     attack_bar.alpha_composite(rd_atk_name, (224 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
 
     if atk_type != "melee":
-        range_graphic = Image.open(f"{ASSETS_DIR}/graphics/Range{atk_type.capitalize()}{border_color}.png").convert('RGBA')
+        range_graphic = Image.open(f"{ASSETS_DIR}/graphics/Range{atk_type.capitalize()}{border_color}.png").convert(
+            'RGBA')
         attack_bar.alpha_composite(apply_drop_shadow(range_graphic), (60, -14))
 
     rd_statistics = Image.new("RGBA", attack_bar.size)
@@ -80,7 +83,7 @@ def make_attack_bar(atk_type, atk_name, atk_ranks, tohit, border_color="Gold"):
     rd_statistics.alpha_composite(attack_stat_bg, (58, 56))
     rd_tohit = render_text_line(f"{tohit}+", "white", 44, font_family="Garamond-Bold")
     rd_statistics.alpha_composite(rd_tohit, (
-    58 + (attack_stat_bg.size[0] - rd_tohit.size[0]) // 2, 56 + (attack_stat_bg.size[1] - rd_tohit.size[1]) // 2))
+        58 + (attack_stat_bg.size[0] - rd_tohit.size[0]) // 2, 56 + (attack_stat_bg.size[1] - rd_tohit.size[1]) // 2))
     rank_colors = ["#648f4a", "#dd8e29", "#bd1a2b"]
     for i in range(len(atk_ranks)):
         rank_bg = Image.new("RGBA", (35, 35), rank_colors[i])
@@ -102,19 +105,36 @@ def make_attack_bar(atk_type, atk_name, atk_ranks, tohit, border_color="Gold"):
 
 def get_faction_color(faction):
     faction_colors = {
-        "martell": "#9e4c00",
-        "neutral": "#3e2a19",
+        "martell": "#a85b25",
+        "neutral": "#8a300e",
         "nightswatch": "#302a28",
         "stark": "#3b6680",
-        "targaryen": "#530818",
+        "targaryen": "#ac4c5d",
         "baratheon": "#904523",
         "bolton": "#7a312b",
         "freefolk": "#4b4138",
-        "greyjoy": "#10363b",
+        "greyjoy": "#577b79",
         "lannister": "#9d1323",
     }
     faction = re.sub(r"[^a-z]", "", faction.lower())
     return faction_colors.get(faction) or "#7FDBFF"
+
+
+def get_faction_bg_rotation(faction):
+    faction_bg_rotation = {
+        "martell": 180,
+        "neutral": 0,
+        "nightswatch": 0,
+        "stark": 180,
+        "targaryen": 0,
+        "baratheon": 0,
+        "bolton": 0,
+        "freefolk": 0,
+        "greyjoy": 180,
+        "lannister": 0,
+    }
+    faction = re.sub(r"[^a-z]", "", faction.lower())
+    return faction_bg_rotation.get(faction) or 0
 
 
 def apply_drop_shadow(image, shadow_size=3, color="black", passes=5):
@@ -130,28 +150,17 @@ def apply_drop_shadow(image, shadow_size=3, color="black", passes=5):
     shadow.alpha_composite(image, (border, border))
     return shadow
 
-
-def combine_images_horizontal_center(images, vertical_padding, fixed_height=0, offsets=None):
-    if offsets is None:
-        offsets = [(0, 0) for _ in images]
-    max_width = max([im.size[0] for im in images])
-    if fixed_height != 0:
-        # The last line should be full height, because we only care about line spacing.
-        # Letters such as "g" or "y" might be clipped otherwise.
-        total_height = images[-1].size[1] + (len(images) - 1) * (vertical_padding + fixed_height)
-    else:
-        total_height = sum([im.size[1] for im in images]) + vertical_padding * (len(images) - 1)
-
-    out = Image.new("RGBA", (max_width, total_height))
-    x, y = 0, 0
-    for offset, image in zip(offsets, images):
-        x = (max_width - image.size[0]) // 2
-        out.alpha_composite(image, (x, y + offset[0]))
-        y += (fixed_height or image.size[1]) + vertical_padding + offset[1]
-    return out
+# TODO: Breaks down for specials
+def calc_height_paragraph(paragraph, font_size, line_padding):
+    return sum([font_size * FACTOR_FIXED_LINE_HEIGHT for _ in paragraph]) + (len(paragraph) - 1) * line_padding
 
 
-def text_to_image(text, font_path, font_size, font_color, thickness_factor=3):
+def calc_height_paragraphs(paragraphs, font_size, line_padding, paragraph_padding):
+    h = [calc_height_paragraph(p, font_size, line_padding) for p in paragraphs]
+    return sum(h) + (len(h) - 1) * (paragraph_padding + 7)
+
+
+def text_to_image(text, font_path, font_size, font_color, thickness_factor=3, letter_spacing=0):
     # The stroke_width property (see below) would be really nice if it worked with smaller font sizes
     # As a workaround, we use a bigger fontsize, then downscale the image later
     stroke_width = 0 if thickness_factor == 0 else 1
@@ -162,14 +171,21 @@ def text_to_image(text, font_path, font_size, font_color, thickness_factor=3):
     offset_x, offset_y = 0, 1
     # For vertical center alignment, ensure the height is consistent. "yjg" are the tallest letters.
     # Usually, this means h == font_size
-    w, h = bbox[2], font.getbbox("yjg")[3] + 1
+    w, h = bbox[2] + int((len(text) - 1) * letter_spacing), font.getbbox("yjg")[3] + 1
     # Avoid clipping of letters such as "j"
     if bbox[0] < 0:
         w -= bbox[0]
         offset_x += bbox[0]
     canvas = Image.new('RGBA', (w, h), (0, 0, 0, 0))
     draw = ImageDraw.Draw(canvas)
-    draw.text((offset_x, offset_y), text, font_color, font=font, stroke_width=stroke_width)
+
+    for i in range(len(text)):
+        char = text[i]
+        draw.text((offset_x, offset_y), char, font_color, font=font, stroke_width=stroke_width)
+
+        char_next = text[i + 1] if i + 1 < len(text) else " "
+        offset_next = font.getlength(char + char_next) - font.getlength(char_next)
+        offset_x += offset_next + letter_spacing
 
     return canvas.resize((int(canvas.size[0] / thickness_factor), int(canvas.size[1] / thickness_factor)))
 
@@ -198,9 +214,10 @@ def render_text_icon(token, font_color, font_size):
             "Tried to render [ATTACK] inline. You should parse it first and leave it to paragraph rendering.")
     else:
         icon = Image.open(f"{ASSETS_DIR}/graphics/{token}.png").convert("RGBA")
-        icon = icon.crop(icon.getbbox())
         icon_h = int(font_size * 1.15)
         icon = icon.resize((int(icon_h * icon.size[0] / icon.size[1]), icon_h))
+        bbox = icon.getbbox()
+        icon = icon.crop((bbox[0], 0, bbox[2], bbox[3]))
         rendered = Image.new("RGBA", (icon.size[0] + 2, icon.size[1]))
         if icons[token] == "simple":
             rendered.paste(font_color, (1, 0), mask=icon)
@@ -210,9 +227,8 @@ def render_text_icon(token, font_color, font_size):
     return rendered
 
 
-def render_text_line(line, font_color, font_size, font_family=None, thickness_factor=3):
-    is_bold = False
-    is_italic = False
+def render_text_line(line, font_color, font_size, font_family=None, font_style=None, **kwargs):
+    font_style = font_style or {"is_bold": False, "is_italic": False}
     rendered_tokens = []
     for token in re.split(r"(\*+|\[[A-Z]+])", line):
         if token == "":
@@ -221,13 +237,15 @@ def render_text_line(line, font_color, font_size, font_family=None, thickness_fa
             rendered = render_text_icon(token, font_color, font_size)
             rendered_tokens.append({"im": rendered, "type": "icon"})
         elif token == "*":
-            is_italic = not is_italic
+            font_style["is_italic"] = not font_style["is_italic"]
         elif token == "**":
-            is_bold = not is_bold
+            font_style["is_bold"] = not font_style["is_bold"]
         else:
-            font_style = f"{'Bold' if is_bold else ''}{'Italic' if is_italic else ''}{'Normal' if not is_italic and not is_bold else ''}"
-            font_path = f"./fonts/Tuff-{font_style}.ttf" if font_family is None else f"./fonts/{font_family}.ttf"
-            rendered = text_to_image(token, font_path, font_size, font_color, thickness_factor)
+            font_style_str = f"{'Bold' if font_style['is_bold'] else ''}"
+            font_style_str += f"{'Italic' if font_style['is_italic'] else ''}"
+            font_style_str = font_style_str or "Normal"
+            font_path = f"./fonts/Tuff-{font_style_str}.ttf" if font_family is None else f"./fonts/{font_family}.ttf"
+            rendered = text_to_image(token, font_path, font_size, font_color, **kwargs)
             rendered_tokens.append({"im": rendered, "type": "text"})
 
     total_width = sum([tkn["im"].size[0] for tkn in rendered_tokens])
@@ -248,17 +266,40 @@ def render_text_line(line, font_color, font_size, font_family=None, thickness_fa
     return rendered_line
 
 
-def render_paragraph(paragraph, font_color, font_size, padding_lines, font_family=None, thickness_factor=3):
+def combine_images_horizontal_center(images, vertical_padding, fixed_height=0, offsets=None):
+    if offsets is None:
+        offsets = [(0, 0) for _ in images]
+    max_width = max([im.size[0] for im in images])
+    if fixed_height != 0:
+        # The last line should be full height, because we only care about line spacing.
+        # Letters such as "g" or "y" might be clipped otherwise.
+        total_height = images[-1].size[1] + (len(images) - 1) * (vertical_padding + fixed_height)
+    else:
+        total_height = sum([im.size[1] for im in images]) + vertical_padding * (len(images) - 1)
+
+    out = Image.new("RGBA", (max_width, total_height))
+    x, y = 0, 0
+    for offset, image in zip(offsets, images):
+        x = (max_width - image.size[0]) // 2
+        out.alpha_composite(image, (x, y + offset[0]))
+        y += (fixed_height or image.size[1]) + vertical_padding + offset[1]
+    return out
+
+FACTOR_FIXED_LINE_HEIGHT = 0.7
+def render_paragraph(paragraph, font_color, font_size, padding_lines, **kwargs):
+    font_style = {
+        "is_bold": False,
+        "is_italic": False
+    }
     rendered_lines = []
     for line in paragraph:
-        rendered_line = render_text_line(line, font_color, font_size, font_family=font_family,
-                                         thickness_factor=thickness_factor)
+        rendered_line = render_text_line(line, font_color, font_size, font_style=font_style, **kwargs)
         rendered_lines.append(rendered_line)
 
-    return combine_images_horizontal_center(rendered_lines, padding_lines, int(font_size * 0.7))
+    return combine_images_horizontal_center(rendered_lines, padding_lines, int(font_size * FACTOR_FIXED_LINE_HEIGHT))
 
 
-def render_paragraphs(paragraphs, font_color="#5d4d40", font_size=41, line_padding=18, padding_paragraph=16):
+def render_paragraphs(paragraphs, font_color, font_size, line_padding, padding_paragraph):
     rendered_paragraphs = []
     offsets = []
     for paragraph in paragraphs:
@@ -270,7 +311,7 @@ def render_paragraphs(paragraphs, font_color="#5d4d40", font_size=41, line_paddi
             atk_ranks = paragraph.get("dice")
             bar = make_attack_bar(atk_type, atk_name, atk_ranks, tohit)
             rendered_paragraph = apply_drop_shadow(bar, color="#00000099")
-            offset = (-38, -82)
+            offset = (-22 - padding_paragraph, -66 - padding_paragraph)
         else:
             if isinstance(paragraph, dict):
                 content = paragraph.get("content")
@@ -296,11 +337,12 @@ def build_tactics_card(card_info):
     version = card_info.get("version")
     commander_id = card_info.get("commander_id")
     commander_name = card_info.get("commander_name")
+    commander_subname = card_info.get("commander_subname")
 
     tactics_bg = Image.open(f"{ASSETS_DIR}/Tactics/Bg_{faction}.jpg").convert('RGBA')
     tactics_bg2 = Image.open(f"{ASSETS_DIR}/Tactics/Bg2.jpg").convert('RGBA')
     tactics_card = Image.new('RGBA', tactics_bg.size)
-    tactics_card.paste(tactics_bg.rotate(180))
+    tactics_card.paste(tactics_bg.rotate(get_faction_bg_rotation(faction)))
     tactics_card.paste(tactics_bg2, (47, 336))
 
     if commander_id is not None:
@@ -316,8 +358,8 @@ def build_tactics_card(card_info):
     if commander_id is not None:
         bars.paste(Image.new("RGBA", (646, 82), (0, 0, 0, 0)), (55, 246))
 
-    bars.alpha_composite(ImageOps.flip(weird_bar.rotate(270, expand=1)), (-460, 25))
-    bars.alpha_composite(weird_bar.rotate(270, expand=1), (-460, -95))
+    bars.alpha_composite(ImageOps.flip(weird_bar.rotate(270, expand=1)), (242 - weird_bar.size[1], 25))
+    bars.alpha_composite(weird_bar.rotate(270, expand=1), (242 - weird_bar.size[1], -95))
     if commander_id is not None:
         bars.alpha_composite(large_bar.rotate(90, expand=1), (240, 235 - large_bar.size[0]))
         bars.alpha_composite(weird_bar.rotate(90, expand=1), (323, 25))
@@ -351,55 +393,104 @@ def build_tactics_card(card_info):
 
     all_text = Image.new('RGBA', tactics_bg.size)
 
-    rendered_name = render_paragraph([f"**{l.upper()}**" for l in name], font_color="white", font_size=51, padding_lines=12)
+    rendered_name = render_paragraph([f"**{l.upper()}**" for l in name], font_color="white", font_size=51,
+                                     padding_lines=12)
     if commander_name is not None:
-        rendered_cmdr_name = render_text_line(commander_name.upper(), font_color="white", font_size=32)
-        all_text.alpha_composite(rendered_cmdr_name, ((tactics_bg.size[0] - rendered_cmdr_name.size[0]) // 2, 275))
+        full_commander_name = f"**{commander_name}** - {commander_subname}".upper()
+        letter_spacing = 0 if len(full_commander_name) < 36 else -1.5
+        font_size = 32 if len(full_commander_name) < 45 else 29
+        if len(full_commander_name) < 48:
+            rendered_cmdr_name = render_text_line(full_commander_name, "white", font_size, letter_spacing=letter_spacing)
+        else:
+            rendered_cmdr_name = render_paragraph([f"**{commander_name.upper()}**", commander_subname.upper()], "white", 29, 4)
+        cmdr_x, cmdr_y = (tactics_bg.size[0] - rendered_cmdr_name.size[0]) // 2, 294 - rendered_cmdr_name.size[1] // 2
+        all_text.alpha_composite(rendered_cmdr_name, (cmdr_x, cmdr_y))
         all_text.alpha_composite(rendered_name, (
-        (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 162, 136 - rendered_name.size[1] // 2))
+            (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 162, 136 - rendered_name.size[1] // 2))
     else:
         all_text.alpha_composite(rendered_name, (
-        (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 128, 140 - rendered_name.size[1] // 2))
+            (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 128, 140 - rendered_name.size[1] // 2))
 
     card_text_y = 360
+    font_size = 41
+    line_padding = 18
+    paragraph_padding = 16
+    total_text_height = sum([calc_height_paragraph(te.get("trigger"), 41, 18) for te in card_text])
+    total_text_height += sum([calc_height_paragraphs(te.get("effect"), 41, 18, 16) for te in card_text])
+    # height of the bars
+    total_text_height += (len(card_text) - 1) * (60 + small_bar.size[1])
+    # height of the space between trigger and effect
+    total_text_height += len(card_text) * (paragraph_padding - 4)
+
+    if total_text_height > 560:
+        line_padding = 16
+    if total_text_height > 570:
+        paragraph_padding = 12
+    if total_text_height > 580:
+        line_padding = 14
+    if total_text_height > 590:
+        paragraph_padding = 8
+    if total_text_height > 600:
+        line_padding = 12
+    if total_text_height > 610:
+        font_size = 38
+    if total_text_height > 620:
+        paragraph_padding = 6
+    # might need more aggressive measures in the future
+
     for ix, trigger_effect in enumerate(card_text):
         trigger = trigger_effect.get("trigger")
         effect = trigger_effect.get("effect")
         is_remove_text = ix > 0 and card_info.get("remove") is not None
+
+        should_render_low = is_remove_text or (total_text_height < 540 and ix == 1)
+        font_color = get_faction_color(faction) if not is_remove_text else "#5d4d40"
+        rd_trigger = render_paragraph(trigger, font_color, font_size, line_padding)
+        if not is_remove_text:
+            rd_effect_text = render_paragraphs(effect, "#5d4d40", font_size, line_padding, paragraph_padding)
+        else:
+            rd_effect_text = Image.new("RGBA", (0,0))
+        if should_render_low:
+            height_remaining = rd_trigger.size[1] + rd_effect_text.size[1] + paragraph_padding - 4
+            height_remaining += small_bar.size[1] + 2 * paragraph_padding + 18
+            card_text_y = max(card_text_y, 961 - height_remaining)
+
+        # paste the divider
         if ix > 0:
-            card_text_y += 30
+            card_text_y += paragraph_padding + 14
             bars.alpha_composite(small_bar.crop((0, 0, tactics_bg2.size[0], 100)),
                                  ((tactics_bg.size[0] - tactics_bg2.size[0]) // 2, card_text_y))
             bars.alpha_composite(decor, (33, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
             bars.alpha_composite(decor, (678, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
-            card_text_y += small_bar.size[1] + 30
+            card_text_y += small_bar.size[1] + paragraph_padding + 4
 
-        font_color = get_faction_color(faction) if not is_remove_text  else "#5d4d40"
-        rd_trigger = render_paragraph(trigger, font_color=font_color, font_size=41, padding_lines=18)
+        # finally paste the text
         trigger_x, trigger_y = (tactics_bg.size[0] - rd_trigger.size[0]) // 2, card_text_y
         all_text.alpha_composite(rd_trigger, (trigger_x, trigger_y))
         card_text_y += rd_trigger.size[1]
 
-        if not is_remove_text:
-            rd_effect_text = render_paragraphs(effect)
-            effect_text_x, effect_text_y = (tactics_bg.size[0] - rd_effect_text.size[0]) // 2, card_text_y + 12
-            all_text.alpha_composite(rd_effect_text, (effect_text_x, effect_text_y))
-            card_text_y += rd_effect_text.size[1]
-    
-    rendered_version = render_text_line(version, font_color="white", font_size=20)
+        effect_text_x = (tactics_bg.size[0] - rd_effect_text.size[0]) // 2
+        effect_text_y = card_text_y + paragraph_padding - 4
+        all_text.alpha_composite(rd_effect_text, (effect_text_x, effect_text_y))
+        card_text_y += rd_effect_text.size[1]
+
+    rendered_version = render_text_line(f"*{version.strip('*')}*", font_color="white", font_size=20)
     version_x, version_y = 21, tactics_bg.size[1] - rendered_version.size[0] - 70
     all_text.alpha_composite(rendered_version.rotate(90, expand=1), (version_x, version_y))
 
     tactics_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
 
     crest = Image.open(f"{ASSETS_DIR}/Tactics/Crest{faction}.webp").convert('RGBA')
+    crest = crest.crop(crest.getbbox())
+    crest = crest.resize(((189 + crest.size[0]) // 2, int(crest.size[1] * ((189 + crest.size[0]) / 2) / crest.size[0])))
     if commander_id is None:
-        tactics_card.alpha_composite(
-            apply_drop_shadow(crest.rotate(16, expand=1, resample=Image.BILINEAR), shadow_size=2), (54, 48))
+        crest_rot = crest.rotate(16, expand=1, resample=Image.BILINEAR)
+        crest_rot_x, crest_rot_y = 175 - crest_rot.size[0] // 2, 181 - crest_rot.size[1] // 2
+        tactics_card.alpha_composite(apply_drop_shadow(crest_rot, shadow_size=2), (crest_rot_x, crest_rot_y))
     else:
-        tactics_card.alpha_composite(
-            apply_drop_shadow(crest.resize((int(crest.size[0] * 0.68), int(crest.size[1] * 0.68)))), (200, 100))
-
+        crest_resize = crest.resize((int(crest.size[0] * 0.68), int(crest.size[1] * 0.68)))
+        crest_resize_x, crest_resize_y = 264 - crest_resize.size[0] // 2, 175 - crest_resize.size[1] // 2
+        tactics_card.alpha_composite(apply_drop_shadow(crest_resize), (crest_resize_x, crest_resize_y))
 
     tactics_card.alpha_composite(all_text)
 
@@ -413,32 +504,36 @@ def main():
         "commander_name": "**Mag the Mighty** - Mag Mar Tun Doh Weg",
         "version": "*2021*",
         "name": ["**HURL BOULDER**"],
-        "trigger": [
-            "**When a friendly Giant Unit**",
-            "**performs an Action, before**",
-            "**resolving that Action:**",
-        ],
         "text": [
-            [
-                "That unit replaces that",
-                "Action with performing",
-                "the following Ranged Attack:",
-            ],
             {
-                "name": "Hurl Boulder",
-                "type": "long",
-                "to_hit": 3,
-                "atk_ranks": [1]
-            },
-            {
-                "font_size": 36,
-                "line_padding": 12,
-                "content": [
-                    "If this Attack generates any Hits, instead",
-                    "of rolling Defense Dice, the Defender",
-                    "suffers D3 Wounds, +1 Wound",
-                    "for each remaining rank in that unit.",
+                "trigger": [
+                    "**When a friendly Giant Unit**",
+                    "**performs an Action, before**",
+                    "**resolving that Action:**",
                 ],
+                "effect": [
+                    [
+                        "That unit replaces that",
+                        "Action with performing",
+                        "the following Ranged Attack:",
+                    ],
+                    {
+                        "name": "Hurl Boulder",
+                        "type": "long",
+                        "to_hit": 3,
+                        "atk_ranks": [1]
+                    },
+                    {
+                        "font_size": 36,
+                        "line_padding": 12,
+                        "content": [
+                            "If this Attack generates any Hits, instead",
+                            "of rolling Defense Dice, the Defender",
+                            "suffers D3 Wounds, +1 Wound",
+                            "for each remaining rank in that unit.",
+                        ],
+                    }
+                ]
             }
         ]
     }
@@ -463,18 +558,22 @@ def main():
     intrigue = {
         "faction": "Lannister",
         "version": "*2021*",
-        "name": ["**INTRIGUE AND**", "**SUBTERFUGE**"],
-        "trigger": ["**When an enemy NCU Activates:**"],
+        "name": ["INTRIGUE AND", "SUBTERFUGE"],
         "text": [
-            [
-                "That NCU loses all Abilities",
-                "until the end of the Round."
-            ],
-            [
-                "If you Control [MONEY], target",
-                "1 enemy Combat Unit. That",
-                "enemy becomes **Weakened**."
-            ]
+            {
+                "trigger": ["**When an enemy NCU Activates:**"],
+                "effect": [
+                    [
+                        "That NCU loses all Abilities",
+                        "until the end of the Round."
+                    ],
+                    [
+                        "If you Control [MONEY], target",
+                        "1 enemy Combat Unit. That",
+                        "enemy becomes **Weakened**."
+                    ]
+                ]
+            },
         ]
     }
     traps = {
@@ -498,9 +597,8 @@ def main():
         ]
     }
 
-    tactics_card = build_tactics_card(exploit)
-    tactics_card.save("int.png")
-    tactics_card_original = Image.open("exploit.jpg")
+    tactics_card = build_tactics_card(intrigue)
+    tactics_card_original = Image.open("intrigue.jpg")
     app = ImageEditor(tactics_card, tactics_card_original)
 
 

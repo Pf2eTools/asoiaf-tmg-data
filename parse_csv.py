@@ -28,7 +28,8 @@ def parse_tactics():
             parsed["remove"] = card_data.get("Remove")
         if card_data.get("Unit") != "":
             parsed["commander_id"] = card_data.get("Unit")
-            parsed["commander_name"] = card_data.get("Deck").replace(", ", " - ")
+            parsed["commander_name"] = card_data.get("Deck").split(", ")[0].strip()
+            parsed["commander_subname"] = card_data.get("Deck").split(", ")[1].strip()
         parsed_cards.append(parsed)
     return parsed_cards
 
@@ -36,13 +37,13 @@ def parse_tactics():
 def parse_ability_trigger(paragraphs):
     if len(paragraphs) > 1:
         return {
-            "trigger": [f"**{l.strip('*')}**" for l in paragraphs[0]],
+            "trigger": paragraphs[0],
             "effect": paragraphs[1:],
         }
     else:
         ix_end_bold = [i for i, v in enumerate(paragraphs[0]) if v.endswith("**")][0]
         return {
-            "trigger": [f"**{l.strip('*')}**" for l in paragraphs[0][:ix_end_bold + 1]],
+            "trigger": paragraphs[0][:ix_end_bold + 1],
             "effect": paragraphs[0][ix_end_bold + 1:],
         }
 
@@ -71,10 +72,8 @@ def main():
     # In the future, dump this info as JSON (It's useful for TTS).
     tactics = parse_tactics()
     for ix, t in enumerate(tactics):
-        # if ix < 187:
-        #     continue
-        gen = build_tactics_card(t)
-        outpath = f"./tactics/{t['id']}.png"
+        gen = build_tactics_card(t).convert("RGB")
+        outpath = f"./tactics/{t['id']}.jpg"
         print(f"Saving \"{' '.join(t['name'])}\" (ix: {ix}) to {outpath}...")
         gen.save(outpath)
 
