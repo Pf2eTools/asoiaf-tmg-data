@@ -448,15 +448,21 @@ def build_tactics_card(card_info):
         if text_overflow_px >= 60:
             font_size -= 3
             text_overflow_px -= int(num_lines * FACTOR_FIXED_LINE_HEIGHT * 3)
-        for i in range(15):
+        for i in range(18):
             if text_overflow_px <= 0:
                 break
-            if i % 2 == 0:
+            if i == 15:
+                font_size -= 3
+                text_overflow_px -= int(num_lines * FACTOR_FIXED_LINE_HEIGHT * 3)
+            elif i % 2 == 0:
                 line_padding -= 1
                 text_overflow_px -= num_lines
             else:
                 paragraph_padding -= 2
                 text_overflow_px -= 2 * num_paragraphs
+
+        if text_overflow_px > 0:
+            print(f'[WARNING] "{" ".join(name)}" might render with clipping text!')
 
     for ix, trigger_effect in enumerate(card_text):
         trigger = trigger_effect.get("trigger")

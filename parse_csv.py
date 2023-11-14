@@ -60,12 +60,12 @@ def parse_ability_text(text):
 
 def split_paragraph(paragraph_text, max_len=None, ignore_hurenkind=False):
     max_len = max_len or 38
-    # Split on space or hyphen, but not before a comma
-    words = [w for w in re.split(r"([^\s-]+-)|\s(?!,)", paragraph_text.strip()) if w]
+    # Split on space or hyphen, but not a hyphen before a space
+    words = [w for w in re.split(r"([^\s-]+-)(?!\s)|\s", paragraph_text.strip()) if w]
     lines = []
     line = []
     for word in words:
-        len_2 = lambda x: 3 if x.startswith("[") else len(x)
+        len_2 = lambda x: 2 if x.startswith("[") else len(x.strip("*"))
         len_line = sum([len_2(w) + 1 for w in line]) + len_2(word)
         if len_line > max_len:
             if not line:
