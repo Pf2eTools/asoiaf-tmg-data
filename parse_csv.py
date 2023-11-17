@@ -1,7 +1,7 @@
 import csv
 import json
 import re
-from tactics_card_generator import build_tactics_card
+from generate_tactics import generate_tactics
 
 
 def csv_to_dict(path):
@@ -146,7 +146,7 @@ def main():
         # if lang == "en":
         #     continue
         for ix, t in enumerate(data.values()):
-            gen = build_tactics_card(t).convert("RGB")
+            gen = generate_tactics(t).convert("RGB")
             outpath = f"./tactics/{lang}/{t['id']}.jpg"
             print(f"Saving \"{' '.join(t['name'])}\" (ix: {ix}) to {outpath}...")
             gen.save(outpath)

@@ -15,13 +15,7 @@ class ImageEditor:
         self.root.title("Image Editor")
         self.root.focus_force()
 
-        cpy_generated = generated_image.copy()
-        cpy_generated.putalpha(int(255 * 0.4))
-        cpy_original = original_image.copy()
-        cpy_original.putalpha(255)
-        overlayed = Image.new('RGBA', cpy_original.size)
-        overlayed.paste(cpy_original, mask=cpy_original)
-        overlayed.paste(cpy_generated, mask=cpy_generated)
+        overlayed = self.overlay_images(generated_image, original_image)
 
         self.tk_images = {
             "genenerated": ImageTk.PhotoImage(generated_image),
@@ -35,6 +29,16 @@ class ImageEditor:
         self.label.bind("<Button-1>", self.log_coordinates)
         self.root.bind("<Key>", self.switch_mode)
         self.root.mainloop()
+
+
+    @staticmethod
+    def overlay_images(top_layer, background):
+        copy = top_layer.copy().convert("RGBA")
+        copy.putalpha(int(255 * 0.4))
+        overlayed = background.copy().convert("RGBA")
+        overlayed.alpha_composite(copy)
+        return overlayed
+
 
     @staticmethod
     def log_coordinates(event):
