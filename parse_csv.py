@@ -231,7 +231,7 @@ def main():
             if ix != 116:
                 pass
             gen = generate_unit(u, abilities[lang]).convert("RGB")
-            outpath = f"./units/{lang}/{u['id']}.jpg"
+            outpath = f"./generated/{lang}/units/{u['id']}.jpg"
             print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
             gen.save(outpath)
 
@@ -244,7 +244,7 @@ def main():
 #         #     continue
 #         for ix, t in enumerate(data.values()):
 #             gen = generate_tactics(t).convert("RGB")
-#             outpath = f"./tactics/{lang}/{t['id']}.jpg"
+#             outpath = f"./generated/{lang}/tactics/{t['id']}.jpg"
 #             print(f"Saving \"{' '.join(t['name'])}\" (ix: {ix}) to {outpath}...")
 #             gen.save(outpath)
 
