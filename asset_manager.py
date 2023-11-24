@@ -8,7 +8,7 @@ class AssetManager:
         return Image.open(f"{AssetManager.ASSETS_DIR}/Tactics/Bg_{faction}.jpg").convert('RGBA')
 
     @staticmethod
-    def get_tactics_bg():
+    def get_text_bg():
         return Image.open(f"{AssetManager.ASSETS_DIR}/Tactics/Bg2.jpg").convert('RGBA')
 
     @staticmethod
@@ -45,7 +45,8 @@ class AssetManager:
 
     @staticmethod
     def get_unit_type(unit_type, faction):
-        return Image.open(f"{AssetManager.ASSETS_DIR}/Units/UnitType.{unit_type}{faction}.webp").convert("RGBA")
+        folder_prefix = "NCUs/UnitType" if unit_type == "NCU" else "Units/UnitType."
+        return Image.open(f"{AssetManager.ASSETS_DIR}/{folder_prefix}{unit_type}{faction}.webp").convert("RGBA")
 
     @staticmethod
     def get_stat_background():
@@ -98,6 +99,10 @@ class AssetManager:
     @staticmethod
     def get_tactics_commmander_img(commander_id):
         return Image.open(f"{AssetManager.ASSETS_DIR}/Tactics/{commander_id}.jpg").convert('RGBA')
+
+    @staticmethod
+    def get_ncu_img(ncu_id):
+        return Image.open(f"{AssetManager.ASSETS_DIR}/NCUs/{ncu_id}.jpg").convert('RGBA')
 
     @staticmethod
     def get_text_icon(icon):

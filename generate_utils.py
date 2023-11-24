@@ -188,6 +188,9 @@ def render_text_icon(token, font_color, font_size):
         # rendered = make_attack_bar("Ranged", "Long", "Hurl Boulder", [1], "3+")
         raise NotImplementedError(
             "Tried to render [ATTACK] inline. You should parse it first and leave it to paragraph rendering.")
+    elif token.startswith("SKILL"):
+        rendered = apply_drop_shadow(render_skill_icons(token.replace("SKILL:", "")), color="black")
+        rendered = rendered.crop(rendered.getbbox())
     else:
         icon = AssetManager.get_text_icon(token)
         icon_h = int(font_size * 1.15)

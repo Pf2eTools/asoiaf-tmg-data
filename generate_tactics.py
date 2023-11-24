@@ -12,7 +12,7 @@ def generate_tactics(tactics_data):
     commander_subname = tactics_data.get("commander_subname")
 
     tactics_bg = AssetManager.get_bg(faction)
-    tactics_bg2 = AssetManager.get_tactics_bg()
+    tactics_bg2 = AssetManager.get_text_bg()
     tactics_card = Image.new('RGBA', tactics_bg.size)
     tactics_card.paste(tactics_bg.rotate(get_faction_bg_rotation(faction)))
     tactics_card.paste(tactics_bg2, (47, 336))

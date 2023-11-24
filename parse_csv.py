@@ -3,6 +3,7 @@ import json
 import re
 from generate_tactics import generate_tactics
 from generate_units import generate_unit
+from generate_ncus import generate_ncu
 
 
 def csv_to_dict(path):
@@ -10,7 +11,7 @@ def csv_to_dict(path):
         line = csv_file.readline()
         headers = [h if h else str(ix) for ix, h in enumerate(line.strip().split(","))]
         csv_reader = csv.DictReader(csv_file, fieldnames=headers)
-        data = [dict(row) for row in csv_reader]
+        data = [dict(row) for row in csv_reader if len([v for v in dict(row).values() if v]) > 0]
     return data
 
 
@@ -66,7 +67,7 @@ def split_paragraph(paragraph_text, max_len=None, ignore_hurenkind=False):
     lines = []
     line = []
     for word in words:
-        len_2 = lambda x: 2 if x.startswith("[") else len(x.strip("*"))
+        len_2 = lambda x: 2 if x.startswith("[") else len(x.replace("*", ""))
         len_line = sum([len_2(w) + 1 for w in line]) + len_2(word)
         if len_line > max_len and not line:
             line = [word]
@@ -223,17 +224,61 @@ def parse_units():
     return parsed_cards
 
 
+def parse_ncus():
+    data = csv_to_dict(f"{CSV_PATH}/ncus.csv")
+    parsed_cards = {
+        "en": {}
+    }
+
+    for card_data in data:
+        card_id = card_data.get("Id")
+        name_parts = card_data.get("Name").split(", ")
+        parsed = {
+            "id": card_id,
+            "name": name_parts[0].strip(),
+            "version": card_data.get("Version"),
+            "faction": card_data.get("Faction"),
+            "abilities": [],
+        }
+        if len(name_parts) > 1:
+            parsed["subname"] = name_parts[1]
+        ability_names = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Names"))]
+        ability_text = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Descriptions"))]
+        for name, text in zip(ability_names, ability_text):
+            ability = {
+                "name": name,
+                "text": [split_paragraph(p) for p in text.split("\n")]
+            }
+            parsed["abilities"].append(ability)
+        parsed_cards["en"][card_id] = parsed
+
+    return parsed_cards
+
 def main():
-    units = parse_units()
-    abilities = parse_abilities()
-    for lang, data in units.items():
+    ncus = parse_ncus()
+    for lang, data in ncus.items():
         for ix, u in enumerate(data.values()):
-            if ix != 116:
+            if ix < 78:
                 pass
-            gen = generate_unit(u, abilities[lang]).convert("RGB")
-            outpath = f"./generated/{lang}/units/{u['id']}.jpg"
-            print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
-            gen.save(outpath)
+            try:
+                gen = generate_ncu(u).convert("RGB")
+                outpath = f"./generated/{lang}/ncus/{u['id']}.jpg"
+                print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
+                gen.save(outpath)
+            except NotImplementedError:
+                pass
+
+# def main():
+#     units = parse_units()
+#     abilities = parse_abilities()
+#     for lang, data in units.items():
+#         for ix, u in enumerate(data.values()):
+#             if ix != 116:
+#                 pass
+#             gen = generate_unit(u, abilities[lang]).convert("RGB")
+#             outpath = f"./generated/{lang}/units/{u['id']}.jpg"
+#             print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
+#             gen.save(outpath)
 
 
 # def main():
