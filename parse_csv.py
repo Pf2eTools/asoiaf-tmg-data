@@ -2,6 +2,7 @@ import csv
 import json
 import re
 from generate_tactics import generate_tactics
+from generate_units import generate_unit
 
 
 def csv_to_dict(path):
@@ -67,14 +68,13 @@ def split_paragraph(paragraph_text, max_len=None, ignore_hurenkind=False):
     for word in words:
         len_2 = lambda x: 2 if x.startswith("[") else len(x.strip("*"))
         len_line = sum([len_2(w) + 1 for w in line]) + len_2(word)
-        if len_line > max_len:
-            if not line:
-                line = [word]
-                lines.append(line)
-                line = []
-            else:
-                lines.append(line)
-                line = [word]
+        if len_line > max_len and not line:
+            line = [word]
+            lines.append(line)
+            line = []
+        elif line and (len_line > max_len or word.startswith("•")):
+            lines.append(line)
+            line = [word]
         else:
             line.append(word)
     if line:
@@ -92,6 +92,7 @@ def split_paragraph(paragraph_text, max_len=None, ignore_hurenkind=False):
             else:
                 out += f" {w}"
         return out
+
     return [join(l) for l in lines]
 
 
@@ -110,7 +111,8 @@ def parse_tactics():
             "name": card_data.get("Name").split("\n"),
             "version": card_data.get("Version"),
             "faction": card_data.get("Faction"),
-            "text": [parse_ability_trigger(parse_ability_text(p)) for p in card_data.get("Text").replace("./", ". /").split(" /")],
+            "text": [parse_ability_trigger(parse_ability_text(p)) for p in
+                     card_data.get("Text").replace("./", ". /").split(" /")],
         }
         if card_data.get("Remove") != "":
             parsed["remove"] = card_data.get("Remove")
@@ -139,17 +141,112 @@ def parse_tactics():
     return parsed_cards
 
 
+def parse_abilities():
+    data = csv_to_dict(f"{CSV_PATH}/newskills.csv")
+    parsed_abilities = {
+        "en": {}
+    }
+    icons_to_long = {
+        "M": "melee",
+        "Melee": "melee",
+        "R": "ranged",
+        "W": "wounds",
+        "F": "faith",
+        "Fire": "fire",
+        "P": "pillage",
+        "V": "venom",
+    }
+    for ability_data in data:
+        name = ability_data.get("Name")
+        description = ability_data.get("Description")
+        if name.startswith("Order"):
+            parts = [p for p in re.split(r"(\*\*.*?\*\*)", description) if p]
+            parsed = {
+                "trigger": split_paragraph(parts[0], max_len=40),
+                "effect": split_paragraph("".join(parts[1:]), max_len=40),
+            }
+        else:
+            parsed = {
+                "effect": split_paragraph(description, max_len=40)
+            }
+        if name.startswith("Order"):
+            parsed["icons"] = ["order"]
+        if ability_data.get("Icons") != "":
+            parsed["icons"] = parsed.get("icons") or []
+            for icon in ability_data.get("Icons").split(","):
+                parsed_icon = icons_to_long.get(icon)
+                if parsed_icon is None:
+                    print(f"Nice icon: {icon}, {name}")
+                    parsed_icon = icon
+                parsed["icons"].append(parsed_icon)
+        parsed_abilities["en"][name.upper()] = parsed
+
+    return parsed_abilities
+
+
+def parse_units():
+    data = csv_to_dict(f"{CSV_PATH}/units.csv")
+    parsed_cards = {
+        "en": {}
+    }
+
+    def parse_attack(name_type, hit, dice):
+        t, name = name_type.split("]")
+        return {
+            "name": name,
+            "type": "melee" if t == "[M" else "short" if t == "[RS" else "long",
+            "hit": int(hit.strip("+")),
+            "dice": [int(d) for d in dice.split(".")],
+        }
+
+    for card_data in data:
+        card_id = card_data.get("Id")
+        parsed = {
+            "id": card_id,
+            "name": card_data.get("Name"),
+            "version": card_data.get("Version"),
+            "faction": card_data.get("Faction"),
+            "type": card_data.get("Type").replace(" ", ""),
+            "cost": "C" if card_data.get("Cost") == "C" else int(card_data.get("Cost")),
+            "speed": int(card_data.get("Spd")),
+            "defense": int(card_data.get("Def").strip("+")),
+            "morale": int(card_data.get("Moral").strip("+")),
+            "attacks": [],
+            "abilities": [a.strip() for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
+        }
+        parsed["attacks"].append(parse_attack(card_data.get("Attack 1"), card_data.get("7"), card_data.get("8")))
+        if card_data.get("Attack 2") != "":
+            parsed["attacks"].append(parse_attack(card_data.get("Attack 2"), card_data.get("10"), card_data.get("11")))
+
+        parsed_cards["en"][card_id] = parsed
+
+    return parsed_cards
+
+
 def main():
-    # In the future, dump this info as JSON (It's useful for TTS).
-    tactics = parse_tactics()
-    for lang, data in tactics.items():
-        # if lang == "en":
-        #     continue
-        for ix, t in enumerate(data.values()):
-            gen = generate_tactics(t).convert("RGB")
-            outpath = f"./tactics/{lang}/{t['id']}.jpg"
-            print(f"Saving \"{' '.join(t['name'])}\" (ix: {ix}) to {outpath}...")
+    units = parse_units()
+    abilities = parse_abilities()
+    for lang, data in units.items():
+        for ix, u in enumerate(data.values()):
+            if ix != 116:
+                pass
+            gen = generate_unit(u, abilities[lang]).convert("RGB")
+            outpath = f"./units/{lang}/{u['id']}.jpg"
+            print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
             gen.save(outpath)
+
+
+# def main():
+#     # In the future, dump this info as JSON (It's useful for TTS).
+#     tactics = parse_tactics()
+#     for lang, data in tactics.items():
+#         # if lang == "en":
+#         #     continue
+#         for ix, t in enumerate(data.values()):
+#             gen = generate_tactics(t).convert("RGB")
+#             outpath = f"./tactics/{lang}/{t['id']}.jpg"
+#             print(f"Saving \"{' '.join(t['name'])}\" (ix: {ix}) to {outpath}...")
+#             gen.save(outpath)
 
 
 CSV_PATH = "./data/warcouncil"

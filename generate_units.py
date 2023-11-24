@@ -4,7 +4,7 @@ from asset_manager import AssetManager
 
 
 def generate_unit(unit_data, abilities_data):
-    faction = unit_data.get("faction")
+    faction = re.sub(r"[^A-Za-z]", "", unit_data.get("faction"))
     unit_id = unit_data.get("id")
     name = unit_data.get("name")
     version = unit_data.get("version")
@@ -21,7 +21,7 @@ def generate_unit(unit_data, abilities_data):
         unit_card.paste(skills_bg, (w - skills_bg.size[0], 0))
 
     unit_image = AssetManager.get_unit_image(unit_id)
-    unit_card.paste(unit_image, (497 - unit_image.size[0] // 2, 289 - unit_image.size[1] // 2))
+    unit_card.paste(unit_image, (497 - unit_image.size[0] // 2, min(0, 642 - unit_image.size[1])))
 
     bars = Image.new("RGBA", (w, h))
     large_bar, small_bar, weird_bar = AssetManager.get_bars(faction)
@@ -52,11 +52,11 @@ def generate_unit(unit_data, abilities_data):
     bars.alpha_composite(crop_crossbar, (bar_vl_x + large_bar.size[1], 638 - small_bar_ds.size[1] // 2))
     bars.alpha_composite(apply_drop_shadow(decor), (479 - decor.size[0] // 2, 618 - decor.size[1] // 2))
 
-    bars.alpha_composite(large_bar.rotate(270, expand=1), (bar_vl_x, bar_vl_y))
+    bars.alpha_composite(large_bar.rotate(270, expand=1), (bar_vl_x, max(bar_vl_y, h - large_bar.size[0])))
     bars.alpha_composite(small_bar_ds.rotate(270, expand=1), (bar_vl_x - small_bar_ds.size[1] // 2, bar_vl_y))
     bars.alpha_composite(small_bar_ds.rotate(270, expand=1), (bar_vl_x + 86 - small_bar_ds.size[1] // 2, bar_vl_y))
 
-    bars.alpha_composite(large_bar.rotate(270, expand=1), (bar_vr_x, bar_vr_y))
+    bars.alpha_composite(large_bar.rotate(270, expand=1), (bar_vr_x, max(bar_vr_y, h - large_bar.size[0])))
     bars.alpha_composite(small_bar_ds.rotate(270, expand=1), (bar_vr_x + 83 - small_bar_ds.size[1] // 2, bar_vr_y))
     bars.alpha_composite(small_bar_ds.rotate(270, expand=1), (bar_vr_x - small_bar_ds.size[1] // 2, bar_vr_y))
 
@@ -66,7 +66,7 @@ def generate_unit(unit_data, abilities_data):
     crest = crest.rotate(-12, expand=1, resample=Image.BICUBIC)
     crest_w, crest_h = int(188 * crest.size[0] / crest.size[1]), 188
     crest = crest.resize((crest_w, crest_h), resample=Image.LANCZOS)
-    crests.alpha_composite(apply_drop_shadow(crest), (558, 456))
+    crests.alpha_composite(apply_drop_shadow(crest), (704 - crest_w, 456))
     unit_type = AssetManager.get_unit_type(unit_data.get("type"), faction)
     crests.alpha_composite(unit_type, (228 - unit_type.size[0] // 2, h - unit_type.size[1]))
 
@@ -102,24 +102,58 @@ def generate_unit(unit_data, abilities_data):
 
     rd_abilities = Image.new("RGBA", (w,h))
     abilities_part_y = 64
-    for ix, ability_name in enumerate(abilities):
+    filtered_abilities_data = []
+    for ability_name in abilities:
+        ability_data = abilities_data.get(ability_name.upper())
+        if ability_data is None:
+            print(f'WARNING: Couldn\'t find ability "{ability_name}" in unit "{name}"')
+            continue
+        ability_data["name"] = ability_name
+        filtered_abilities_data.append(ability_data)
+
+    skill_top = ImageOps.flip(AssetManager.get_skill_bottom(faction))
+    skill_divider = AssetManager.get_skill_divider(faction)
+    skill_bottom = AssetManager.get_skill_bottom(faction)
+
+    font_size = 36
+    line_padding = 16
+    divider_padding = 15
+    get_all_text = lambda a: [a.get("name")] + (a.get("trigger") or []) + a.get("effect")
+    h_abilities = sum([calc_height_paragraph(get_all_text(a), 36, 16) for a in filtered_abilities_data])
+    h_abilities += 150 + (len(filtered_abilities_data) - 1) * (skill_divider.size[1] + 30)
+    overflow_px = h_abilities - h
+
+    num_lines = sum([len(get_all_text(a)) for a in filtered_abilities_data])
+    if overflow_px > 0:
+        for i in range(18):
+            if overflow_px <= 0:
+                break
+            if i == 0:
+                abilities_part_y -= 5
+                overflow_px -= 5
+            elif i == 15:
+                font_size -= 3
+                overflow_px -= int(num_lines * FACTOR_FIXED_LINE_HEIGHT * 3)
+            elif i % 3 == 0:
+                divider_padding -= 2
+                overflow_px -= 4 * (len(filtered_abilities_data) - 0.5)
+            else:
+                line_padding -= 1
+                overflow_px -= num_lines
+
+    for ix, ability_data in enumerate(filtered_abilities_data):
         if ix == 0:
-            skill_top = ImageOps.flip(AssetManager.get_skill_bottom(faction))
             rd_abilities.alpha_composite(apply_drop_shadow(skill_top), (783, abilities_part_y - skill_top.size[1] - 35))
 
-        ability_data = abilities_data[ability_name]
-        ability_data["name"] = ability_name
-        rd_ability, h_text = render_ability(ability_data, faction, font_size=36, line_padding=16)
+        rd_ability, h_text = render_ability(ability_data, faction, font_size=font_size, line_padding=line_padding)
         ability_y = abilities_part_y + (h_text - rd_ability.size[1]) // 2
-        abilities_part_y += h_text + 15
+        abilities_part_y += h_text + divider_padding
 
-        if ix + 1 == len(abilities):
-            skill_bottom = AssetManager.get_skill_bottom(faction)
+        if ix + 1 == len(filtered_abilities_data):
             rd_abilities.alpha_composite(apply_drop_shadow(skill_bottom), (783, abilities_part_y - 25))
         else:
-            divider = AssetManager.get_skill_divider(faction)
-            rd_abilities.alpha_composite(apply_drop_shadow(divider), (740, abilities_part_y - 20))
-            abilities_part_y += divider.size[1] + 15
+            rd_abilities.alpha_composite(apply_drop_shadow(skill_divider), (740, abilities_part_y - 20))
+            abilities_part_y += skill_divider.size[1] + divider_padding
         rd_abilities.alpha_composite(rd_ability, (694, ability_y))
 
     unit_card.alpha_composite(apply_drop_shadow(bars, passes=10, shadow_size=5), (-20, -20))
@@ -140,7 +174,7 @@ def render_ability(ability_data, faction, **kwargs):
     rd_name = render_text_line(f"**{name.upper()}**", font_color=name_font_color, font_size=font_size, letter_spacing=2.3)
     trigger_effect = (ability_data.get("trigger") or []) + (ability_data.get("effect") or [])
     rd_trigger_effect = render_paragraph(trigger_effect, font_color="#5d4d40", align="left", **kwargs)
-    highlight_color = "Gold"
+    highlight_color = get_faction_highlight_color(faction)
     rd_icons = [render_skill_icons(icon, highlight_color) for icon in icons]
     h_icons = sum([114 for _ in rd_icons]) + 20
     w_icons = 134
@@ -199,7 +233,7 @@ def main():
         "version": "2021-S03"
     }
     abilities = {
-        "Order: Divide the Spoils": {
+        "ORDER: DIVIDE THE SPOILS": {
             "trigger": [
                 "**Start of any Turn:**"
             ],
@@ -214,7 +248,7 @@ def main():
                 "order",
             ]
         },
-        "Ironborn Arrows": {
+        "IRONBORN ARROWS": {
             "effect": [
                 "May re-roll Attack Dice when",
                 "Attacking enemies in the **Flank** or **Rear.**",
