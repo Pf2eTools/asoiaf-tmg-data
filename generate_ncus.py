@@ -9,6 +9,7 @@ def generate_ncu(ncu_data):
     ncu_id = ncu_data.get("id")
     subname = ncu_data.get("subname")
     version = ncu_data.get("version")
+    abilities = ncu_data.get("abilities")
 
     background = AssetManager.get_bg(faction)
     w, h = background.size
@@ -26,10 +27,10 @@ def generate_ncu(ncu_data):
     decor = AssetManager.get_decor(faction)
 
     wb_w, wb_h = weird_bar.size
-    bars.alpha_composite(weird_bar.crop((0,0,130, 150)), (54, 54))
-    bars.alpha_composite(ImageOps.flip(weird_bar).crop((0, wb_h - 150, 130, wb_h)), (54, 208))
-    bars.alpha_composite(ImageOps.mirror(weird_bar).crop((wb_w - 130, 0, wb_w, 150)), (190, 54))
-    bars.alpha_composite(weird_bar.crop((0,0,130, 150)).rotate(180), (190, 208))
+    bars.alpha_composite(weird_bar.crop((0,0,130, 150)), (52, 52))
+    bars.alpha_composite(ImageOps.flip(weird_bar).crop((0, wb_h - 150, 130, wb_h)), (52, 210))
+    bars.alpha_composite(ImageOps.mirror(weird_bar).crop((wb_w - 130, 0, wb_w, 150)), (191, 52))
+    bars.alpha_composite(weird_bar.crop((0,0,130, 150)).rotate(180), (191, 210))
     bars.alpha_composite(large_bar.crop((0, 0, 370, 200)), (320, 222))
     bars.alpha_composite(large_bar.crop((0, large_bar.size[1] // 2, 370, 200)), (320, 315))
     bars.alpha_composite(small_bar.crop((0, 0, text_bg.size[0] + 10, 100)), (50, 46))
@@ -56,12 +57,47 @@ def generate_ncu(ncu_data):
     bars.alpha_composite(decor, (674, 971))
 
     all_text = Image.new("RGBA", (w, h))
-    card_text_y = 380
+    card_text_y = 385
     font_size = 38
-    line_padding = 14
-    paragraph_padding = 8
-    total_text_height = sum([calc_height_paragraphs(a.get("text"), 41, 18, 16) for a in ncu_data.get("abilities")])
-    for ix, ability_data in enumerate(ncu_data.get("abilities")):
+    line_padding = 16
+    paragraph_padding = 10
+    total_text_height = sum([calc_height_paragraphs(a.get("text"), 38, 16, 10) for a in abilities])
+    total_text_height += sum([calc_height_paragraph(split_on_center_space(a.get("name"), maxlen=30), 38, 16) for a in abilities])
+    total_text_height += (len(abilities) - 1) * (2 * paragraph_padding + small_bar.size[1] + 16)
+    max_text_height = 585
+    text_overflow_px = total_text_height - max_text_height
+    if text_overflow_px > 0:
+        num_lines = -1
+        num_paragraphs = 0
+        for te in abilities:
+            for p in te.get("text", []):
+                num_paragraphs += 1
+                for l in p:
+                    num_lines += 1
+
+        if text_overflow_px >= 150:
+            # allow getting closer to the edge
+            card_text_y -= 12
+            text_overflow_px -= 12
+            max_text_height += 12
+        for i in range(18):
+            if text_overflow_px <= 0:
+                break
+            if i == 7:
+                font_size -= 3
+                text_overflow_px -= int(num_lines * FACTOR_FIXED_LINE_HEIGHT * 3)
+            elif i % 2 == 0:
+                line_padding -= 1
+                text_overflow_px -= num_lines
+            else:
+                paragraph_padding -= 2
+                text_overflow_px -= 2 * num_paragraphs
+
+        if text_overflow_px > 0:
+            print(f'[WARNING] "{" ".join(name)}" might render with clipping text!')
+
+
+    for ix, ability_data in enumerate(abilities):
         font_color = get_faction_text_color(faction)
         ability_name_split = [f"**{s}**" for s in split_on_center_space(ability_data.get("name").upper(), maxlen=30)]
         rd_name = render_paragraph(ability_name_split, font_color=font_color, font_size=font_size, line_padding=line_padding)
@@ -73,7 +109,7 @@ def generate_ncu(ncu_data):
             bars.alpha_composite(small_bar.crop((0, 0, text_bg.size[0], 100)), ((w - text_bg.size[0]) // 2, card_text_y))
             bars.alpha_composite(decor, (33, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
             bars.alpha_composite(decor, (674, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
-            card_text_y += small_bar.size[1] + paragraph_padding
+            card_text_y += small_bar.size[1] + paragraph_padding + 10
 
         name_x, name_y = (w - rd_name.size[0]) // 2, card_text_y
         all_text.alpha_composite(rd_name, (name_x, name_y))
@@ -84,13 +120,18 @@ def generate_ncu(ncu_data):
         all_text.alpha_composite(rd_ability_text, (ability_text_x, ability_text_y))
         card_text_y += rd_ability_text.size[1]
 
-    rd_name = render_text_line(f"**{name.upper()}**", font_color="white", font_size=50)
-    name_x, name_y = 506 - rd_name.size[0] // 2, 130 - rd_name.size[1] // 2
-    all_text.alpha_composite(rd_name, (name_x, name_y))
+    name_split = [f"**{np.upper()}**" for np in split_on_center_space(name)]
+    rd_name = render_paragraph(name_split, font_color="white", font_size=50, line_padding=8)
     if subname is not None:
-        rd_subname = render_text_line(f"{subname.upper()}", font_color="white", font_size=30, stroke_width=0.1)
-        subname_x, subname_y = 506 - rd_subname.size[0] // 2, 36 + name_y + rd_name.size[1] // 2 - rd_subname.size[1] // 2
-        all_text.alpha_composite(rd_subname, (subname_x, subname_y))
+        subname_split = [f"**{np.upper()}**" for np in split_on_center_space(subname, maxlen=22)]
+        rd_subname = render_paragraph(subname_split, font_color="white", font_size=30, stroke_width=0.1, line_padding=2)
+        rd_names = Image.new("RGBA", (max(rd_name.size[0], rd_subname.size[0]), rd_name.size[1] + rd_subname.size[1] - 12))
+        rd_names.alpha_composite(rd_name, ((rd_names.size[0] - rd_name.size[0]) // 2, 0))
+        rd_names.alpha_composite(rd_subname, ((rd_names.size[0] - rd_subname.size[0]) // 2, rd_name.size[1] - 12))
+        all_text.alpha_composite(rd_names, (506 - rd_names.size[0] // 2, 140 - rd_names.size[1] // 2))
+    else:
+        name_x, name_y = 506 - rd_name.size[0] // 2, 140 - rd_name.size[1] // 2
+        all_text.alpha_composite(rd_name, (name_x, name_y))
 
     rendered_version = render_text_line(f"*{version.strip('*')}*", font_color="white", font_size=20)
     version_x, version_y = 21, h - rendered_version.size[0] - 70

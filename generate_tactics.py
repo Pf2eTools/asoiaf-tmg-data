@@ -260,7 +260,9 @@ def main():
         "name": ["INTRIGUE AND", "SUBTERFUGE"],
         "text": [
             {
-                "trigger": ["**When an enemy NCU Activates:**"],
+                "trigger": [
+                    "**When an enemy NCU Activates:**"
+                ],
                 "effect": [
                     [
                         "That NCU loses all Abilities",
@@ -297,7 +299,7 @@ def main():
     }
 
     tactics_card = generate_tactics(intrigue)
-    tactics_card_original = Image.open("tactics/en/40101.jpg")
+    tactics_card_original = Image.open("generated/en/tactics/40101.jpg")
     app = ImageEditor(tactics_card, tactics_card_original)
 
 
