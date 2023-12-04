@@ -4,6 +4,7 @@ import re
 from generate_tactics import generate_tactics
 from generate_units import generate_unit
 from generate_ncus import generate_ncu
+from generate_attachments import generate_attachment
 
 
 def csv_to_dict(path):
@@ -160,7 +161,7 @@ def parse_abilities():
     for ability_data in data:
         name = ability_data.get("Name")
         description = ability_data.get("Description")
-        if name.startswith("Order"):
+        if name.startswith("Order:"):
             parts = [p for p in re.split(r"(\*\*.*?\*\*)", description) if p]
             parsed = {
                 "trigger": split_paragraph(parts[0], max_len=40),
@@ -170,7 +171,7 @@ def parse_abilities():
             parsed = {
                 "effect": split_paragraph(description, max_len=40)
             }
-        if name.startswith("Order"):
+        if name.startswith("Order:"):
             parsed["icons"] = ["order"]
         if ability_data.get("Icons") != "":
             parsed["icons"] = parsed.get("icons") or []
@@ -254,18 +255,49 @@ def parse_ncus():
 
     return parsed_cards
 
+
+def parse_attachments():
+    data = csv_to_dict(f"{CSV_PATH}/attachments.csv")
+    parsed_cards = {
+        "en": {}
+    }
+
+    for card_data in data:
+        card_id = card_data.get("Id")
+        name_parts = card_data.get("Name").split(", ")
+
+        parsed = {
+            "id": card_id,
+            "name": name_parts[0].strip(),
+            "version": card_data.get("Version"),
+            "faction": card_data.get("Faction"),
+            "type": card_data.get("Type").replace(" ", ""),
+            "cost": "C" if card_data.get("Cost") == "C" else int(card_data.get("Cost")),
+            "abilities": [a.strip() for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
+        }
+        if len(name_parts) > 1:
+            parsed["subname"] = name_parts[1]
+        if parsed["cost"] == "C":
+            parsed["commander"] = True
+
+        parsed_cards["en"][card_id] = parsed
+
+    return parsed_cards
+
+
 def main():
-    ncus = parse_ncus()
-    for lang, data in ncus.items():
+    parsed = parse_attachments()
+    abilities = parse_abilities()
+    for lang, data in parsed.items():
         for ix, u in enumerate(data.values()):
             if ix < 78:
                 pass
             try:
-                gen = generate_ncu(u).convert("RGB")
-                outpath = f"./generated/{lang}/ncus/{u['id']}.jpg"
+                gen = generate_attachment(u, abilities[lang]).convert("RGB")
+                outpath = f"./generated/{lang}/attachments/{u['id']}.jpg"
                 print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
                 gen.save(outpath)
-            except NotImplementedError:
+            except FileNotFoundError:
                 pass
 
 # def main():

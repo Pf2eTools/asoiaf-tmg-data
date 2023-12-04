@@ -44,9 +44,18 @@ class AssetManager:
         return Image.open(f"{AssetManager.ASSETS_DIR}/Units/{unit_id}.jpg").convert("RGBA")
 
     @staticmethod
+    def get_attachment_image(attachment_id):
+        return Image.open(f"{AssetManager.ASSETS_DIR}/Attachments/{attachment_id}.jpg").convert("RGBA")
+
+    @staticmethod
     def get_unit_type(unit_type, faction):
         folder_prefix = "NCUs/UnitType" if unit_type == "NCU" else "Units/UnitType."
         return Image.open(f"{AssetManager.ASSETS_DIR}/{folder_prefix}{unit_type}{faction}.webp").convert("RGBA")
+
+    @staticmethod
+    def get_attachment_type(unit_type, faction):
+        return Image.open(f"{AssetManager.ASSETS_DIR}/Attachments/UnitType.{unit_type}{faction}.webp").convert("RGBA")
+
 
     @staticmethod
     def get_stat_background():

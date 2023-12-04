@@ -101,20 +101,13 @@ def generate_unit(unit_data, abilities_data):
     all_text.alpha_composite(rd_version.rotate(90, expand=1), (version_x, version_y))
 
     rd_abilities = Image.new("RGBA", (w,h))
-    abilities_part_y = 64
-    filtered_abilities_data = []
-    for ability_name in abilities:
-        ability_data = abilities_data.get(ability_name.upper())
-        if ability_data is None:
-            print(f'WARNING: Couldn\'t find ability "{ability_name}" in unit "{name}"')
-            continue
-        ability_data["name"] = ability_name
-        filtered_abilities_data.append(ability_data)
+    filtered_abilities_data = get_filtered_ability_data(abilities, abilities_data)
 
     skill_top = ImageOps.flip(AssetManager.get_skill_bottom(faction))
     skill_divider = AssetManager.get_skill_divider(faction)
     skill_bottom = AssetManager.get_skill_bottom(faction)
 
+    abilities_part_y = 64
     font_size = 36
     line_padding = 16
     divider_padding = 15
@@ -163,35 +156,6 @@ def generate_unit(unit_data, abilities_data):
     unit_card.alpha_composite(rd_abilities)
 
     return unit_card
-
-
-def render_ability(ability_data, faction, **kwargs):
-    font_size = kwargs.get("font_size")
-
-    name = ability_data.get("name")
-    icons = ability_data.get("icons") or []
-    name_font_color = get_faction_text_color(faction)
-    rd_name = render_text_line(f"**{name.upper()}**", font_color=name_font_color, font_size=font_size, letter_spacing=2.3)
-    trigger_effect = (ability_data.get("trigger") or []) + (ability_data.get("effect") or [])
-    rd_trigger_effect = render_paragraph(trigger_effect, font_color="#5d4d40", align="left", **kwargs)
-    highlight_color = get_faction_highlight_color(faction)
-    rd_icons = [render_skill_icons(icon, highlight_color) for icon in icons]
-    h_icons = sum([114 for _ in rd_icons]) + 20
-    w_icons = 134
-    h_text = rd_name.size[1] + rd_trigger_effect.size[1]
-    w_text = max(rd_name.size[0], rd_trigger_effect.size[0])
-
-    all_icons = Image.new("RGBA", (w_icons, h_icons))
-    for ix, icon in enumerate(rd_icons):
-        all_icons.alpha_composite(apply_drop_shadow(icon), (-20, ix * 114 -20))
-    w, h = w_icons + w_text + 100, max(h_text, h_icons)
-    rendered = Image.new("RGBA", (w, h))
-    rendered.alpha_composite(rd_name, (144, (h - h_text) // 2))
-    rendered.alpha_composite(rd_trigger_effect, (144, (h - h_text) // 2 + rd_name.size[1]))
-    rendered.alpha_composite(all_icons, (0, (rendered.size[1] - h_icons) // 2))
-
-    return rendered, h_text
-
 
 
 def main():

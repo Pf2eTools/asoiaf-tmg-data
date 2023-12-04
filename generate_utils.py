@@ -379,5 +379,47 @@ def render_skill_icons(name, highlight_color="Gold"):
         rendered.alpha_composite(icon, (x, y))
     return rendered
 
+
+def get_filtered_ability_data(ability_names, abilities_data):
+    filtered_abilities_data = []
+    for ability_name in ability_names:
+        ability_data = abilities_data.get(ability_name.upper())
+        if ability_data is None:
+            print(f"Couldn't find ability: {ability_name}")
+            continue
+        ability_data["name"] = re.sub(r"\(.+", "", ability_name)
+        filtered_abilities_data.append(ability_data)
+
+    return filtered_abilities_data
+
+def render_ability(ability_data, faction, **kwargs):
+    font_size = kwargs.get("font_size")
+    x_spacing = kwargs.get("x_spacing", 20)
+
+    name = ability_data.get("name")
+    icons = ability_data.get("icons") or []
+    name_font_color = get_faction_text_color(faction)
+    rd_name = render_text_line(f"**{name.upper()}**", font_color=name_font_color, font_size=font_size, letter_spacing=2.3)
+    trigger_effect = (ability_data.get("trigger") or []) + (ability_data.get("effect") or [])
+    rd_trigger_effect = render_paragraph(trigger_effect, font_color="#5d4d40", align="left", **kwargs)
+    highlight_color = get_faction_highlight_color(faction)
+    rd_icons = [render_skill_icons(icon, highlight_color) for icon in icons]
+    h_icons = sum([114 for _ in rd_icons]) + 20
+    w_icons = 134
+    h_text = rd_name.size[1] + rd_trigger_effect.size[1]
+    w_text = max(rd_name.size[0], rd_trigger_effect.size[0])
+
+    all_icons = Image.new("RGBA", (w_icons, h_icons))
+    for ix, icon in enumerate(rd_icons):
+        all_icons.alpha_composite(apply_drop_shadow(icon, color="#00000055"), (-20, ix * 114 -20))
+    w, h = w_icons + w_text + 100, max(h_text, h_icons)
+    rendered = Image.new("RGBA", (w, h))
+    rendered.alpha_composite(rd_name, (124 + x_spacing, (h - h_text) // 2))
+    rendered.alpha_composite(rd_trigger_effect, (124 + x_spacing, (h - h_text) // 2 + rd_name.size[1]))
+    rendered.alpha_composite(all_icons, (0, (rendered.size[1] - h_icons) // 2))
+
+    return rendered, h_text
+
+
 FACTOR_FIXED_LINE_HEIGHT = 0.7
 ASSETS_DIR = "./assets"
