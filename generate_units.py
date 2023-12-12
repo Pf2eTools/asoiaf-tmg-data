@@ -16,7 +16,7 @@ def generate_unit(unit_data, abilities_data):
     unit_card = Image.new("RGBA", (w, h))
     unit_card.paste(unit_bg)
 
-    if len(abilities) > 0 :
+    if len(abilities) > 0:
         skills_bg = AssetManager.get_unit_skills_bg()
         unit_card.paste(skills_bg, (w - skills_bg.size[0], 0))
 
@@ -92,62 +92,48 @@ def generate_unit(unit_data, abilities_data):
         statistics.alpha_composite(rd_attack, (30, 198 + ix * 188))
 
     all_text = Image.new("RGBA", (w, h))
-    name_split = [f"**{l.upper()}**" for l in split_on_center_space(name, maxlen=14)]
-    rd_name = render_paragraph(name_split, font_color="white", font_size=45, line_padding=14, stroke_width=0, letter_spacing=-0.7)
-    name_x, name_y = 499 - rd_name.size[0] // 2, 734 - rd_name.size[1] // 2
+    renderer_name = TextRenderer(name.upper(), "Tuff", (340, 120), font_size=45, bold=True, font_color="white", leading=1, tracking=-15,
+                                 stroke_width=0, supersample=4, align_y=TextRenderer.ALIGN_CENTER)
+    rd_name = renderer_name.render()
+    name_x, name_y = 499 - rd_name.size[0] // 2, 740 - rd_name.size[1] // 2
     all_text.alpha_composite(rd_name, (name_x, name_y))
-    rd_version = render_text_line(f"*{version.strip('*')}*", font_color="white", font_size=20, stroke_width=0.15, letter_spacing=-0.2)
-    version_x, version_y = 21, h - rd_version.size[0] - 30
+    renderer_version = TextRenderer(version, "Tuff", (100, 25), font_size=20, italic=True, font_color="white", stroke_width=0, leading=1,
+                                    tracking=-10, align_y=TextRenderer.ALIGN_BOTTOM, align_x=TextRenderer.ALIGN_LEFT, padding=(5, 0, 5, 0))
+    rd_version = renderer_version.render()
+    version_x, version_y = 25, h - rd_version.size[0] - 25
     all_text.alpha_composite(rd_version.rotate(90, expand=1), (version_x, version_y))
 
-    rd_abilities = Image.new("RGBA", (w,h))
+    rd_abilities = Image.new("RGBA", (w, h))
     filtered_abilities_data = get_filtered_ability_data(abilities, abilities_data)
+    abilities_to_render = get_ability_data_for_renderer(filtered_abilities_data, get_faction_text_color(faction))
 
     skill_top = ImageOps.flip(AssetManager.get_skill_bottom(faction))
     skill_divider = AssetManager.get_skill_divider(faction)
     skill_bottom = AssetManager.get_skill_bottom(faction)
+    section_padding = skill_divider.size[1]
+    renderer_abilities = TextRenderer(abilities_to_render, "Tuff", (560, h - 100), font_size=36, align_x=TextRenderer.ALIGN_LEFT,
+                                      align_y=TextRenderer.ALIGN_TOP, section_padding=section_padding, font_color="#5d4d40",
+                                      padding=(10, 20, 10, 20))
+    rendered = renderer_abilities.render()
+    rd_abilities.alpha_composite(rendered, (830, 50))
 
-    abilities_part_y = 64
-    font_size = 36
-    line_padding = 16
-    divider_padding = 15
-    get_all_text = lambda a: [a.get("name")] + (a.get("trigger") or []) + a.get("effect")
-    h_abilities = sum([calc_height_paragraph(get_all_text(a), 36, 16) for a in filtered_abilities_data])
-    h_abilities += 150 + (len(filtered_abilities_data) - 1) * (skill_divider.size[1] + 30)
-    overflow_px = h_abilities - h
+    section_coords = renderer_abilities.rendered_section_coords
+    # 30 = 50 (offset from rendered) - 20 (offset from dropshadow)
+    rd_abilities.alpha_composite(apply_drop_shadow(skill_top), (783, int(section_coords[0][0]) + 30 - skill_top.size[1]))
+    rd_abilities.alpha_composite(apply_drop_shadow(skill_bottom), (783, int(section_coords[-1][1]) + 30))
+    for ix in range(len(section_coords) - 1):
+        top, bot = section_coords[ix][1], section_coords[ix + 1][0]
+        center = int(top + (bot - top) / 2) + 30
+        rd_abilities.alpha_composite(apply_drop_shadow(skill_divider), (740, center - skill_divider.size[1] // 2))
 
-    num_lines = sum([len(get_all_text(a)) for a in filtered_abilities_data])
-    if overflow_px > 0:
-        for i in range(18):
-            if overflow_px <= 0:
-                break
-            if i == 0:
-                abilities_part_y -= 5
-                overflow_px -= 5
-            elif i == 15:
-                font_size -= 3
-                overflow_px -= int(num_lines * FACTOR_FIXED_LINE_HEIGHT * 3)
-            elif i % 3 == 0:
-                divider_padding -= 2
-                overflow_px -= 4 * (len(filtered_abilities_data) - 0.5)
-            else:
-                line_padding -= 1
-                overflow_px -= num_lines
-
-    for ix, ability_data in enumerate(filtered_abilities_data):
-        if ix == 0:
-            rd_abilities.alpha_composite(apply_drop_shadow(skill_top), (783, abilities_part_y - skill_top.size[1] - 35))
-
-        rd_ability, h_text = render_ability(ability_data, faction, font_size=font_size, line_padding=line_padding)
-        ability_y = abilities_part_y + (h_text - rd_ability.size[1]) // 2
-        abilities_part_y += h_text + divider_padding
-
-        if ix + 1 == len(filtered_abilities_data):
-            rd_abilities.alpha_composite(apply_drop_shadow(skill_bottom), (783, abilities_part_y - 25))
-        else:
-            rd_abilities.alpha_composite(apply_drop_shadow(skill_divider), (740, abilities_part_y - 20))
-            abilities_part_y += skill_divider.size[1] + divider_padding
-        rd_abilities.alpha_composite(rd_ability, (694, ability_y))
+    for data, coords in zip(filtered_abilities_data, section_coords):
+        icons = data.get("icons")
+        if icons is None:
+            continue
+        highlight_color = get_faction_highlight_color(faction)
+        rd_icons = render_skill_icons(icons, highlight_color)
+        x, y = 694, 50 + coords[0] + (coords[1] - coords[0] - rd_icons.size[1]) // 2
+        rd_abilities.alpha_composite(rd_icons, (x, int(y)))
 
     unit_card.alpha_composite(apply_drop_shadow(bars, passes=10, shadow_size=5), (-20, -20))
     unit_card.alpha_composite(crests)
@@ -198,15 +184,9 @@ def main():
     }
     abilities = {
         "ORDER: DIVIDE THE SPOILS": {
-            "trigger": [
-                "**Start of any Turn:**"
-            ],
+            "trigger": "Start of any Turn:",
             "effect": [
-                "Target 1 friendly House Greyjoy unit in",
-                "Short Range. You may remove 1 Pillage",
-                "token from that unit and then place 1",
-                "Pillage token on 1 other friendly House",
-                "Greyjoy unit in Short Range of them.",
+                "Target 1 friendly House Greyjoy unit in Short Range. You may remove 1 Pillage token from that unit and then place 1 Pillage token on 1 other friendly House Greyjoy unit in Short Range of them.",
             ],
             "icons": [
                 "order",
@@ -214,8 +194,7 @@ def main():
         },
         "IRONBORN ARROWS": {
             "effect": [
-                "May re-roll Attack Dice when",
-                "Attacking enemies in the **Flank** or **Rear.**",
+                "May re-roll Attack Dice when Attacking enemies in the **Flank** or **Rear.**",
             ],
             "icons": [
                 "ranged",

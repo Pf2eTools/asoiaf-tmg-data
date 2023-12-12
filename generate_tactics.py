@@ -1,6 +1,7 @@
 from image_editor import ImageEditor
 from generate_utils import *
 
+
 # FIXME: recalculate the offsets with shadow stuffs
 def generate_tactics(tactics_data):
     faction = re.sub(r"[^A-Za-z]", "", tactics_data.get("faction"))
@@ -12,8 +13,9 @@ def generate_tactics(tactics_data):
     commander_subname = tactics_data.get("commander_subname")
 
     tactics_bg = AssetManager.get_bg(faction)
+    w, h = tactics_bg.size
     tactics_bg2 = AssetManager.get_text_bg()
-    tactics_card = Image.new('RGBA', tactics_bg.size)
+    tactics_card = Image.new("RGBA", (w, h))
     tactics_card.paste(tactics_bg.rotate(get_faction_bg_rotation(faction)))
     tactics_card.paste(tactics_bg2, (47, 336))
 
@@ -21,7 +23,7 @@ def generate_tactics(tactics_data):
         cmdr_image = AssetManager.get_tactics_commmander_img(commander_id)
         tactics_card.paste(cmdr_image, (-1, -2))
 
-    bars = Image.new('RGBA', tactics_bg.size)
+    bars = Image.new("RGBA", (w, h))
     large_bar, small_bar, weird_bar = AssetManager.get_bars(faction)
 
     bars.alpha_composite(large_bar.rotate(180), (-96, 252))
@@ -47,8 +49,7 @@ def generate_tactics(tactics_data):
     else:
         bars.alpha_composite(small_bar.rotate(90, expand=1).crop((0, 0, 100, tactics_bg2.size[1] + 82)), (46, 246))
         bars.alpha_composite(small_bar.rotate(90, expand=1).crop((0, 0, 100, tactics_bg2.size[1] + 82)), (687, 246))
-    bars.alpha_composite(small_bar.crop((0, 0, tactics_bg2.size[0], 100)),
-                         ((tactics_bg.size[0] - tactics_bg2.size[0]) // 2, 985))
+    bars.alpha_composite(small_bar.crop((0, 0, tactics_bg2.size[0], 100)), ((w - tactics_bg2.size[0]) // 2, 985))
     bars.alpha_composite(small_bar, (0, 246))
     bars.alpha_composite(small_bar, (0, 328))
 
@@ -61,120 +62,86 @@ def generate_tactics(tactics_data):
         bars.alpha_composite(decor, (33, 232))
         bars.alpha_composite(decor, (673, 232))
 
-    all_text = Image.new('RGBA', tactics_bg.size)
+    all_text = Image.new("RGBA", (w, h))
 
-    rendered_name = render_paragraph([f"**{l.upper()}**" for l in name], font_color="white", font_size=51,
-                                     line_padding=12)
     name_max_w = 440 if commander_name is None else 392
-    if rendered_name.getbbox()[2] > name_max_w:
-        rendered_name = rendered_name.resize((name_max_w, int(rendered_name.size[1] * name_max_w / rendered_name.size[0])))
+    renderer_name = TextRenderer(name.upper(), "Tuff", (name_max_w, 200), font_size=50, bold=True, font_color="white", leading=0.94,
+                                 align_y=TextRenderer.ALIGN_CENTER, overflow_policy_x=TextRenderer.OVERFLOW_AUTO)
+    rendered_name = renderer_name.render()
     if commander_name is not None:
-        full_commander_name = f"**{commander_name}**".upper()
-        full_commander_name += f" - {commander_subname}".upper() if commander_subname is not None else ""
-        letter_spacing = 0 if len(full_commander_name) < 36 else -1.5
-        font_size = 32 if len(full_commander_name) < 43 else 29
-        if len(full_commander_name) < 46 or commander_subname is None:
-            rendered_cmdr_name = render_text_line(full_commander_name, font_color="white", font_size=font_size, letter_spacing=letter_spacing)
-        else:
-            # yeah, that's not happening if commander_subname == None
-            rendered_cmdr_name = render_paragraph([f"**{commander_name.upper()}**", commander_subname.upper()], font_color="white", font_size=29, line_padding=4)
-        cmdr_x, cmdr_y = (tactics_bg.size[0] - rendered_cmdr_name.size[0]) // 2, 294 - rendered_cmdr_name.size[1] // 2
-        all_text.alpha_composite(rendered_cmdr_name, (cmdr_x, cmdr_y))
         name_x, name_y = (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 170, 136 - rendered_name.size[1] // 2
         all_text.alpha_composite(rendered_name, (name_x, name_y))
     else:
-        name_x, name_y = (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 138, 140 - rendered_name.size[1] // 2
+        name_x, name_y = (w - rendered_name.size[0]) // 2 + 138, 140 - rendered_name.size[1] // 2
         all_text.alpha_composite(rendered_name, (name_x, name_y))
 
-    card_text_y = 360
-    font_size = 41
-    line_padding = 18
-    paragraph_padding = 16
-    total_text_height = sum([calc_height_paragraph(te.get("trigger"), 41, 18) for te in card_text])
-    total_text_height += sum([calc_height_paragraphs(te.get("effect"), 41, 18, 16) for te in card_text])
-    # height of the bars
-    total_text_height += (len(card_text) - 1) * (18 + paragraph_padding + small_bar.size[1])
-    # height of the space between trigger and effect
-    total_text_height += len(card_text) * (paragraph_padding - 4)
+    if commander_name is not None:
+        renderer_cmdr_name = TextRenderer("", "Tuff", (622, 65), font_size=32, font_color="white",
+                                          leading=0.94, align_y=TextRenderer.ALIGN_CENTER)
+        rendered_cmdr_name = renderer_cmdr_name.render_cmdr_name(commander_name, commander_subname)
+        cmdr_x, cmdr_y = (tactics_bg.size[0] - rendered_cmdr_name.size[0]) // 2, 294 - rendered_cmdr_name.size[1] // 2
+        all_text.alpha_composite(rendered_cmdr_name, (cmdr_x, cmdr_y))
 
-    # text taller than this will clip
-    max_text_height = 600
-    text_overflow_px = total_text_height - max_text_height
-    if text_overflow_px > 0:
-        num_lines = 0
-        num_paragraphs = 0
-        for te in card_text:
-            if te.get("trigger") is not None:
-                num_paragraphs += 1
-                for l in te.get("trigger"):
-                    num_lines += 1
-            for p in te.get("effect") or []:
-                num_paragraphs += 1
-                for l in p:
-                    num_lines += 1
+    card_text_to_render = []
+    for trigger_effect in card_text:
+        data = {
+            "type": "section",
+            "content": [
+            ]
+        }
+        if trigger_effect.get("trigger") is not None:
+            data["content"].append({
+                "type": "paragraph",
+                "content": [
+                    {
+                        "type": "text",
+                        "style": {"color": get_faction_text_color(faction)},
+                        "content": f"**{trigger_effect.get('trigger')}**"
+                    }
+                ]
+            })
+        for paragraph in trigger_effect.get("effect", []):
+            data["content"].append({
+                "type": "paragraph",
+                "content": [
+                    {
+                        "type": "text",
+                        "content": paragraph
+                    },
+                ]
+            })
+        if trigger_effect.get("remove") is not None:
+            data["content"].append({
+                "type": "paragraph",
+                "content": [
+                    {
+                        "type": "text",
+                        "style": {"color": "#5d4d40"},
+                        "content": f"**{trigger_effect.get('remove')}**"
+                    }
+                ]
+            })
+        card_text_to_render.append(data)
+    section_padding = small_bar.size[1]
+    align_y = TextRenderer.CENTER_SECTION if len(card_text_to_render) > 1 else TextRenderer.ALIGN_TOP
+    renderer_card_text = TextRenderer(card_text_to_render, "Tuff", (620, 635), font_size=36, align_y=align_y,
+                                      section_padding=section_padding, font_color="#5d4d40", padding=(15, 15, 15, 15))
+    rendered_card_text = renderer_card_text.render()
+    all_text.alpha_composite(rendered_card_text, ((w - 620) // 2, 347))
 
-        if text_overflow_px >= 100:
-            # allow getting closer to the edge
-            card_text_y -= 12
-            text_overflow_px -= 12
-        if text_overflow_px >= 60:
-            font_size -= 3
-            text_overflow_px -= int(num_lines * FACTOR_FIXED_LINE_HEIGHT * 3)
-        for i in range(18):
-            if text_overflow_px <= 0:
-                break
-            if i == 15:
-                font_size -= 3
-                text_overflow_px -= int(num_lines * FACTOR_FIXED_LINE_HEIGHT * 3)
-            elif i % 2 == 0:
-                line_padding -= 1
-                text_overflow_px -= num_lines
-            else:
-                paragraph_padding -= 2
-                text_overflow_px -= 2 * num_paragraphs
+    section_coords = renderer_card_text.rendered_section_coords
+    for ix in range(len(section_coords) - 1):
+        top, bot = section_coords[ix][1], section_coords[ix + 1][0]
+        center = int(top + (bot - top) / 2) + 347
+        bars.alpha_composite(small_bar.crop((0, 0, tactics_bg2.size[0], 100)),
+                             ((tactics_bg.size[0] - tactics_bg2.size[0]) // 2, center - small_bar.size[1] // 2))
+        bars.alpha_composite(decor, (33, center - decor.size[1] // 2))
+        bars.alpha_composite(decor, (673, center - decor.size[1] // 2))
 
-        if text_overflow_px > 0:
-            print(f'[WARNING] "{" ".join(name)}" might render with clipping text!')
-
-    for ix, trigger_effect in enumerate(card_text):
-        trigger = trigger_effect.get("trigger")
-        effect = trigger_effect.get("effect")
-        is_remove_text = ix > 0 and tactics_data.get("remove") is not None
-
-        should_render_low = is_remove_text or (ix == len(card_text) - 1 and ix > 0)
-        font_color = get_faction_text_color(faction) if not is_remove_text else "#5d4d40"
-        rd_trigger = render_paragraph(trigger, font_color=font_color, font_size=font_size, line_padding=line_padding, max_width=590)
-        if not is_remove_text:
-            rd_effect_text = render_paragraphs(effect, font_color="#5d4d40", font_size=font_size, line_padding=line_padding, paragraph_padding=paragraph_padding,
-                                               max_width=590)
-        else:
-            rd_effect_text = Image.new("RGBA", (0, 0))
-        if should_render_low:
-            height_remaining = rd_trigger.size[1] + rd_effect_text.size[1] + paragraph_padding - 4
-            height_remaining += small_bar.size[1] + 2 * paragraph_padding + 18
-            card_text_y = max(card_text_y, 961 - height_remaining)
-
-        # paste the divider
-        if ix > 0:
-            card_text_y += paragraph_padding + 14
-            bars.alpha_composite(small_bar.crop((0, 0, tactics_bg2.size[0], 100)),
-                                 ((tactics_bg.size[0] - tactics_bg2.size[0]) // 2, card_text_y))
-            bars.alpha_composite(decor, (33, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
-            bars.alpha_composite(decor, (673, card_text_y + (small_bar.size[1] - decor.size[1]) // 2))
-            card_text_y += small_bar.size[1] + paragraph_padding + 4
-
-        # finally paste the text
-        trigger_x, trigger_y = (tactics_bg.size[0] - rd_trigger.size[0]) // 2, card_text_y
-        all_text.alpha_composite(rd_trigger, (trigger_x, trigger_y))
-        card_text_y += rd_trigger.size[1]
-
-        effect_text_x = (tactics_bg.size[0] - rd_effect_text.size[0]) // 2
-        effect_text_y = card_text_y + paragraph_padding - 4
-        all_text.alpha_composite(rd_effect_text, (effect_text_x, effect_text_y))
-        card_text_y += rd_effect_text.size[1]
-
-    rendered_version = render_text_line(f"*{version.strip('*')}*", font_color="white", font_size=20)
-    version_x, version_y = 21, tactics_bg.size[1] - rendered_version.size[0] - 70
+    renderer_version = TextRenderer(version, "Tuff", (100, 25), font_size=20, italic=True, font_color="white", stroke_width=0, leading=1,
+                                    tracking=-10, align_y=TextRenderer.ALIGN_BOTTOM, align_x=TextRenderer.ALIGN_LEFT, padding=(5, 0, 5, 0))
+    rendered_version = renderer_version.render()
+    version_x, version_y = 21, h - rendered_version.size[0] - 70
     all_text.alpha_composite(rendered_version.rotate(90, expand=1), (version_x, version_y))
 
     tactics_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
@@ -239,40 +206,30 @@ def main():
     exploit = {
         "faction": "Lannister",
         "commander_id": "20104",
-        "commander_name": "**TYWIN LANNISTER** - LORD OF CASTERLY ROCK",
-        "version": "*2021-S03*",
-        "name": ["**EXPLOIT**", "**WEAKNESS**"],
-        "trigger": ["**When a friendly unit is performing**", "**an Attack, before rolling Attack Dice:**"],
+        "commander_name": "Tywin Lannister",
+        "commander_subname": "Lord of Casterly Rock",
+        "version": "2021-S03",
+        "name": "Exploit Weakness",
         "text": [
-            [
-                "The Defender becomes **Vulnerable**."
-            ],
-            [
-                "If the Defender is **Weakened**,",
-                "the Attacker may re-roll",
-                "any Attack Dice.",
-            ],
+            {
+                "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
+                "effect": [
+                    "The Defender becomes **Vulnerable**.",
+                    "If the Defender is **Weakened**, the Attacker may re-roll any Attack Dice.",
+                ]
+            }
         ]
     }
     intrigue = {
         "faction": "Lannister",
-        "version": "*2021*",
-        "name": ["INTRIGUE AND", "SUBTERFUGE"],
+        "version": "2021",
+        "name": "Intrigue and Subterfuge",
         "text": [
             {
-                "trigger": [
-                    "**When an enemy NCU Activates:**"
-                ],
+                "trigger": "When an enemy NCU Activates:",
                 "effect": [
-                    [
-                        "That NCU loses all Abilities",
-                        "until the end of the Round."
-                    ],
-                    [
-                        "If you Control [MONEY], target",
-                        "1 enemy Combat Unit. That",
-                        "enemy becomes **Weakened**."
-                    ]
+                    "That NCU loses all Abilities until the end of the Round.",
+                    "If you Control [MONEY], target 1 enemy Combat Unit. That enemy becomes **Weakened**."
                 ]
             },
         ]
@@ -298,8 +255,8 @@ def main():
         ]
     }
 
-    tactics_card = generate_tactics(intrigue)
-    tactics_card_original = Image.open("generated/en/tactics/40101.jpg")
+    tactics_card = generate_tactics(exploit)
+    tactics_card_original = Image.open(r"C:\Users\Leon Miera\Desktop\asoiaftts\data\lannister\tactics\exploit_weakness.jpg")
     app = ImageEditor(tactics_card, tactics_card_original)
 
 

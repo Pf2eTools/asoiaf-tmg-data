@@ -1,6 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageChops
 import re
 from asset_manager import AssetManager
+from copy import deepcopy
 
 
 def add_rounded_corners(im, rad, supersample=4):
@@ -13,38 +14,13 @@ def add_rounded_corners(im, rad, supersample=4):
     alpha.paste(circle.crop((0, 0, rad, rad)), (0, 0))
     alpha.paste(circle.crop((rad, 0, 2 * rad, rad)), (w - rad, 0))
     alpha.paste(circle.crop((0, rad, rad, 2 * rad)), (0, h - rad))
-    alpha.paste(circle.crop((rad, rad, 2 * rad, 2* rad)), (w - rad, h - rad))
+    alpha.paste(circle.crop((rad, rad, 2 * rad, 2 * rad)), (w - rad, h - rad))
 
     im = im.convert("RGBA")
     old_alpha = im.getchannel("A")
     im.putalpha(ImageChops.darker(alpha, old_alpha))
 
     return im
-
-
-def split_on_center_space(text, maxlen=14):
-    # If the length of the text is less than the maximum length or there's no space, return the text in a single-item list
-    if len(text) < maxlen or ' ' not in text:
-        return [text]
-
-    # Find the middle index of the string
-    middle = len(text) // 2
-    left_index = text.rfind(' ', 0, middle)  # Search for space going left from the middle
-    right_index = text.find(' ', middle)  # Search for space going right from the middle
-
-    # Determine the closest space to the middle to use as the split point
-    # If no space to the left, use the right one; if both exist, choose the closest
-    if left_index == -1 or (right_index != -1 and (middle - left_index) > (right_index - middle)):
-        split_index = right_index
-    else:
-        split_index = left_index
-
-    # Split the string into two parts
-    part1 = text[:split_index]
-    part2 = text[split_index + 1:]  # +1 to exclude the space itself
-
-    # Return the parts in a list
-    return [part1, part2]
 
 
 def get_faction_text_color(faction):
@@ -63,21 +39,23 @@ def get_faction_text_color(faction):
     faction = re.sub(r"[^a-z]", "", faction.lower())
     return faction_colors.get(faction) or "#7FDBFF"
 
+
 def get_faction_highlight_color(faction):
     faction_colors = {
-        "neutral":"Silver",
-        "nightswatch":"Gold",
-        "stark":"Gold",
-        "targaryen":"Gold",
-        "baratheon":"Silver",
-        "bolton":"Gold",
-        "freefolk":"Gold",
-        "greyjoy":"Gold",
-        "martell":"Gold",
-        "lannister":"Silver",
-}
+        "neutral": "Silver",
+        "nightswatch": "Gold",
+        "stark": "Gold",
+        "targaryen": "Gold",
+        "baratheon": "Silver",
+        "bolton": "Gold",
+        "freefolk": "Gold",
+        "greyjoy": "Gold",
+        "martell": "Gold",
+        "lannister": "Silver",
+    }
     faction = re.sub(r"[^a-z]", "", faction.lower())
     return faction_colors.get(faction) or "Gold"
+
 
 def get_faction_bg_rotation(faction):
     faction_bg_rotation = {
@@ -98,7 +76,7 @@ def get_faction_bg_rotation(faction):
 
 def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
     border = 20
-    shadow = Image.new('RGBA', (image.size[0] + border * 2, image.size[1] + border * 2))
+    shadow = Image.new("RGBA", (image.size[0] + border * 2, image.size[1] + border * 2))
     image_alpha_channel = image.split()[-1]
     pixels = image_alpha_channel.load()
     for x in range(0, image_alpha_channel.size[0]):
@@ -107,7 +85,7 @@ def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
                 pixels[x, y] = 0
 
     mask = Image.new("RGBA", image.size)
-    for xy in [(0,0), (shadow_size, 0), (-shadow_size, 0), (0, shadow_size), (0, -shadow_size)]:
+    for xy in [(0, 0), (shadow_size, 0), (-shadow_size, 0), (0, shadow_size), (0, -shadow_size)]:
         mask.paste(image_alpha_channel, xy, mask=image_alpha_channel)
 
     shadow.paste(color, (border, border), mask=mask)
@@ -117,204 +95,15 @@ def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
     return shadow
 
 
-# TODO: Breaks down for specials
-def calc_height_paragraph(paragraph, font_size, line_padding):
-    return (len(paragraph) - 1) * int(font_size * FACTOR_FIXED_LINE_HEIGHT + line_padding) + font_size + 7
-
-
-def calc_height_paragraphs(paragraphs, font_size, line_padding, paragraph_padding):
-    h = [calc_height_paragraph(p, font_size, line_padding) for p in paragraphs]
-    return sum(h) + (len(h) - 1) * paragraph_padding
-
-
-def text_to_image(text, font_path, font_size, font_color, stroke_width=0.35, letter_spacing=0, max_width=0, **kwargs):
-    # The stroke_width property (see below) would be really nice if it worked with smaller font sizes (or floats)
-    # As a workaround, we use a bigger fontsize, then downscale the image later
-    scale = 1 if int(stroke_width) == stroke_width else 1 / (stroke_width % 1)
-    stroke_width = 0 if stroke_width == 0 else int(stroke_width / (stroke_width % 1))
-
-    font = ImageFont.truetype(font_path, int(font_size * scale))
-    bbox = font.getbbox(text)
-    # Dynamically adjust the letter-spacing if the text is too wide
-    if max_width != 0 and bbox[2] > max_width * scale:
-        letter_spacing -= min(1.1, ((bbox[2] - max_width * scale) * 1.05) / len(text))
-
-    # Offset, otherwise tall letters are clipped, Umlaute (ÖÄÜ) in particular
-    offset_x, offset_y = 0, 1 + int(7 * scale)
-    # For vertical center alignment, ensure the height is consistent. "yjg" are the tallest letters.
-    # Usually, this means h == font_size + 7 after scaling the image back to size
-    w, h = bbox[2] + int((len(text) - 1) * letter_spacing), font.getbbox("yjg")[3] + 1 + int(7 * scale)
-    # Avoid clipping of letters such as "j" at the start of the text
-    if bbox[0] < 0:
-        w -= bbox[0]
-        offset_x -= bbox[0]
-    canvas = Image.new('RGBA', (w, h), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(canvas)
-
-    for i in range(len(text)):
-        char = text[i]
-        draw.text((offset_x, offset_y), char, font_color, font=font, stroke_width=stroke_width)
-
-        char_next = text[i + 1] if i + 1 < len(text) else " "
-        offset_next = font.getlength(char + char_next) - font.getlength(char_next)
-        # Fix the disgusting Kerning of uppercase T and small letters
-        if "Tuff" in font_path and char == "T" and font.getbbox(char_next)[1] >= font.getbbox("a")[1]:
-            offset_next -= 4
-        offset_x += offset_next + letter_spacing
-
-    canvas = canvas.resize((int(canvas.size[0] / scale), int(canvas.size[1] / scale)))
-    return canvas
-
-
-def render_text_icon(token, font_color, font_size):
-    token = token.strip('[]')
-    icons = {
-        "CROWN": "simple",
-        "MONEY": "simple",
-        "LETTER": "simple",
-        "SWORDS": "simple",
-        "HORSE": "simple",
-        "UNDYING": "simple",
-        "OASIS": "simple",
-
-        "MOVEMENT": "image",
-        "WOUND": "image",
-        "LONGRANGE": "image",
-    }
-
-    if token.startswith("ATTACK"):
-        # [ATTACK:LongRanged:Hurl Boulder:3+1]
-        # _, atk_range, atk_name, atk_stats = token.split(":")
-        # rendered = make_attack_bar("Ranged", "Long", "Hurl Boulder", [1], "3+")
-        raise NotImplementedError(
-            "Tried to render [ATTACK] inline. You should parse it first and leave it to paragraph rendering.")
-    elif token.startswith("SKILL"):
-        rendered = apply_drop_shadow(render_skill_icons(token.replace("SKILL:", "")), color="black")
-        rendered = rendered.crop(rendered.getbbox())
-    else:
-        icon = AssetManager.get_text_icon(token)
-        icon_h = int(font_size * 1.15)
-        icon = icon.resize((int(icon_h * icon.size[0] / icon.size[1]), icon_h))
-        bbox = icon.getbbox()
-        icon = icon.crop((bbox[0], 0, bbox[2], bbox[3]))
-        rendered = Image.new("RGBA", (icon.size[0] + 2, icon.size[1]))
-        if icons[token] == "simple":
-            rendered.paste(font_color, (1, 0), mask=icon)
-        elif icons[token] == "image":
-            rendered.alpha_composite(icon, (1, 0))
-
-    return rendered
-
-
-def render_text_line(line, font_color, font_size, font_family=None, font_style=None, **kwargs):
-    font_style = font_style or {"is_bold": False, "is_italic": False}
-    rendered_tokens = []
-    for token in re.split(r"(\*+|\[[A-Z]+])", line):
-        if token == "":
-            continue
-        elif token.startswith("["):
-            rendered = render_text_icon(token, font_color, font_size)
-            rendered_tokens.append(rendered)
-        elif token == "*":
-            font_style["is_italic"] = not font_style["is_italic"]
-        elif token == "**":
-            font_style["is_bold"] = not font_style["is_bold"]
-        else:
-            font_style_str = f"{'Bold' if font_style['is_bold'] else ''}"
-            font_style_str += f"{'Italic' if font_style['is_italic'] else ''}"
-            font_style_str = font_style_str or "Normal"
-            font_path = f"./fonts/Tuff-{font_style_str}.ttf" if font_family is None else f"./fonts/{font_family}.ttf"
-            rendered = text_to_image(token, font_path, font_size, font_color, **kwargs)
-            rendered_tokens.append(rendered)
-
-    total_width = sum([image.size[0] for image in rendered_tokens])
-    max_height = max([image.size[1] for image in rendered_tokens])
-    rendered_line = Image.new("RGBA", (total_width, max_height))
-    x = 0
-    for image in rendered_tokens:
-        rendered_line.paste(image, (x, 0), image)
-        x += image.size[0]
-
-    return rendered_line
-
-
-def combine_text_images(images, vertical_padding, **kwargs):
-    align = kwargs.get("align") or "center"
-    offsets = kwargs.get("offsets")
-    fixed_height = kwargs.get("fixed_height") or 0
-
-    if offsets is None:
-        offsets = [(0, 0) for _ in images]
-    max_width = max([im.size[0] for im in images])
-    if fixed_height != 0:
-        # The last line should be full height, because we only care about line spacing.
-        # Letters such as "g" or "y" might be clipped otherwise.
-        total_height = images[-1].size[1] + (len(images) - 1) * (vertical_padding + fixed_height)
-    else:
-        total_height = sum([im.size[1] for im in images]) + vertical_padding * (len(images) - 1)
-
-    out = Image.new("RGBA", (max_width, total_height))
-    x, y = 0, 0
-    for offset, image in zip(offsets, images):
-        if align == "left":
-            x = 0
-        elif align == "right":
-            x = max_width - image.size[0]
-        else: # align == "center"
-            x = (max_width - image.size[0]) // 2
-        out.alpha_composite(image, (x, y + offset[0]))
-        y += (fixed_height or image.size[1]) + vertical_padding + offset[1]
-    return out
-
-
-def render_paragraph(paragraph, **kwargs):
-    font_style = {
-        "is_bold": False,
-        "is_italic": False
-    }
-    rendered_lines = []
-    for line in paragraph:
-        rendered_line = render_text_line(line, font_style=font_style, **kwargs)
-        rendered_lines.append(rendered_line)
-
-    fixed_height = int(kwargs.get("font_size") * FACTOR_FIXED_LINE_HEIGHT)
-    line_padding = kwargs.get("line_padding")
-    return combine_text_images(rendered_lines, vertical_padding=line_padding, fixed_height=fixed_height, **kwargs)
-
-
-def render_paragraphs(paragraphs, **kwargs):
-    rendered_paragraphs = []
-    offsets = []
-    paragraph_padding = kwargs.get("paragraph_padding")
-
-    for paragraph in paragraphs:
-        offset = (0, 0)
-        if isinstance(paragraph, dict) and paragraph.get("content") is None:
-            rd_attack = render_attack(paragraph)
-            rendered_paragraph = apply_drop_shadow(rd_attack, color="#00000077")
-            offset = (-22 - paragraph_padding, -66 - paragraph_padding)
-        else:
-            if isinstance(paragraph, dict):
-                content = paragraph.get("content")
-                kwargs["font_color"] = paragraph.get("font_color") or kwargs.get("font_color")
-                kwargs["font_size"] = paragraph.get("font_size") or kwargs.get("font_size")
-                kwargs["line_padding"] = paragraph.get("line_padding") or kwargs.get("line_padding")
-            else:
-                content = paragraph
-            rendered_paragraph = render_paragraph(content,  **kwargs)
-        rendered_paragraphs.append(rendered_paragraph)
-        offsets.append(offset)
-
-    return combine_text_images(rendered_paragraphs, paragraph_padding, offsets=offsets)
-
-
 def render_stat_value(stat):
-    bg = AssetManager.get_stat_background()
+    background = AssetManager.get_stat_background()
     stat = str(stat)
-    rd_stat = render_text_line(stat, font_color="white", font_size=46, font_family="Garamond-Bold", stroke_width=0)
-    offset = 2 if stat.endswith("+") else 0
-    bg.alpha_composite(rd_stat, (offset + (bg.size[0] - rd_stat.size[0]) // 2, (bg.size[1] - rd_stat.size[1]) // 2))
-    return bg
+    renderer = TextRenderer(stat, "Garamond", background.size, font_size=46, font_color="white", stroke_width=0, supersample=4, bold=True,
+                            align_y=TextRenderer.ALIGN_CENTER)
+    rd_stat = renderer.render()
+    offset = (2, 0) if stat.endswith("+") else (0, 0)
+    background.alpha_composite(rd_stat, offset)
+    return background
 
 
 def render_attack(attack_data, border_color="Gold"):
@@ -327,14 +116,14 @@ def render_attack(attack_data, border_color="Gold"):
     attack_dice_bg = AssetManager.get_attack_dice_bg()
 
     attack_bar = Image.new("RGBA", (367, 166))
-    skill_icon = render_skill_icons(atk_type, border_color)
+    skill_icon = render_skill_icon(atk_type, border_color)
     attack_bar.alpha_composite(attack_bg, (skill_icon.size[0] // 2, 14 + (attack_bg.size[1] - 106) // 2))
     attack_bar.alpha_composite(skill_icon)
 
     atk_name_color = "#0e2e45" if atk_type == "melee" else "#87282a"
-    text_lines_list = split_on_center_space(atk_name.upper())
-    rd_atk_name = render_paragraph(text_lines_list, font_color=atk_name_color, font_size=29, line_padding=6, font_family="Tuff-Italic",
-                                   stroke_width=0.7)
+    name_renderer = TextRenderer(atk_name.upper(), "Tuff", (180, 60), font_size=29, font_color=atk_name_color, stroke_width=0.7,
+                                 leading=0.9, italic=True, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER)
+    rd_atk_name = name_renderer.render()
     attack_bar.alpha_composite(rd_atk_name, (221 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
 
     if atk_type != "melee":
@@ -348,24 +137,25 @@ def render_attack(attack_data, border_color="Gold"):
     rank_colors = ["#648f4a", "#dd8e29", "#bd1a2b"]
     for i in range(len(atk_ranks)):
         rank_bg = Image.new("RGBA", (35, 35), rank_colors[i])
-        rd_num_dice = render_text_line(str(atk_ranks[i]), font_color="#cdcecb", font_size=37, font_family="Garamond-Bold", stroke_width=0.1)
+        renderer_num_dice = TextRenderer(str(atk_ranks[i]), "Garamond", (44, 44), font_size=37, font_color="#cdcecb", stroke_width=0.1,
+                                         bold=True, padding=(0, 0, 0, 0))
+        rd_num_dice = renderer_num_dice.render()
 
-        # This was an interesting programming journey, but having a transparent font makes it pretty hard to read the text
-        # rd_num_dice = render_text_line(str(atk_ranks[i]), "black", 35, "Garamond-Bold", stroke_width=0)
-        rd_num_dice = rd_num_dice.crop(rd_num_dice.getbbox())
-        rank_bg.alpha_composite(rd_num_dice, (16 - rd_num_dice.size[0] // 2, 5))
+        # This was an interesting programming journey, but having a transparent font makes it pretty hard to read the
+        # text rd_num_dice = render_text_line(str(atk_ranks[i]), "black", 35, "Garamond-Bold", stroke_width=0)
+        rank_bg.alpha_composite(rd_num_dice, (-5, 1))
         # mask = Image.new("RGBA", (35, 35))
         # mask.alpha_composite(rd_num_dice, (16 - rd_num_dice.size[0] // 2, 5))
         # r,g,b,_ = rank_bg.split()
         # rank_bg = Image.merge("RGBA", (r,g,b,ImageChops.invert(mask.getchannel("A"))))
         rd_statistics.alpha_composite(add_rounded_corners(rank_bg, 10), (164 + i * 43, 98))
-    attack_bar.alpha_composite(apply_drop_shadow(rd_statistics, color="#00000077"), (-20 ,-20))
+    attack_bar.alpha_composite(apply_drop_shadow(rd_statistics, color="#00000077"), (-20, -20))
 
     return attack_bar
 
 
-def render_skill_icons(name, highlight_color="Gold"):
-    rendered = Image.new("RGBA", (134,134))
+def render_skill_icon(name, highlight_color="Gold"):
+    rendered = Image.new("RGBA", (134, 134))
     if name in ["ranged", "melee", "long", "short"]:
         attack_type_bg = AssetManager.get_attack_type_bg(highlight_color)
         x, y = (134 - attack_type_bg.size[0]) // 2, (134 - attack_type_bg.size[1]) // 2
@@ -380,6 +170,18 @@ def render_skill_icons(name, highlight_color="Gold"):
     return rendered
 
 
+def render_skill_icons(icons, highlight_color="Gold"):
+    rd_icons = [render_skill_icon(icon, highlight_color) for icon in icons]
+    h = sum([114 for _ in rd_icons]) + 20
+    w = 134
+
+    all_icons = Image.new("RGBA", (w, h))
+    for ix, icon in enumerate(rd_icons):
+        all_icons.alpha_composite(apply_drop_shadow(icon, color="#00000055"), (-20, ix * 114 - 20))
+
+    return all_icons
+
+
 def get_filtered_ability_data(ability_names, abilities_data):
     filtered_abilities_data = []
     for ability_name in ability_names:
@@ -392,34 +194,654 @@ def get_filtered_ability_data(ability_names, abilities_data):
 
     return filtered_abilities_data
 
-def render_ability(ability_data, faction, **kwargs):
-    font_size = kwargs.get("font_size")
-    x_spacing = kwargs.get("x_spacing", 20)
 
-    name = ability_data.get("name")
-    icons = ability_data.get("icons") or []
-    name_font_color = get_faction_text_color(faction)
-    rd_name = render_text_line(f"**{name.upper()}**", font_color=name_font_color, font_size=font_size, letter_spacing=2.3)
-    trigger_effect = (ability_data.get("trigger") or []) + (ability_data.get("effect") or [])
-    rd_trigger_effect = render_paragraph(trigger_effect, font_color="#5d4d40", align="left", **kwargs)
-    highlight_color = get_faction_highlight_color(faction)
-    rd_icons = [render_skill_icons(icon, highlight_color) for icon in icons]
-    h_icons = sum([114 for _ in rd_icons]) + 20
-    w_icons = 134
-    h_text = rd_name.size[1] + rd_trigger_effect.size[1]
-    w_text = max(rd_name.size[0], rd_trigger_effect.size[0])
-
-    all_icons = Image.new("RGBA", (w_icons, h_icons))
-    for ix, icon in enumerate(rd_icons):
-        all_icons.alpha_composite(apply_drop_shadow(icon, color="#00000055"), (-20, ix * 114 -20))
-    w, h = w_icons + w_text + 100, max(h_text, h_icons)
-    rendered = Image.new("RGBA", (w, h))
-    rendered.alpha_composite(rd_name, (124 + x_spacing, (h - h_text) // 2))
-    rendered.alpha_composite(rd_trigger_effect, (124 + x_spacing, (h - h_text) // 2 + rd_name.size[1]))
-    rendered.alpha_composite(all_icons, (0, (rendered.size[1] - h_icons) // 2))
-
-    return rendered, h_text
+def get_ability_data_for_renderer(abilities_data, color):
+    abilities_to_render = []
+    for ability in abilities_data:
+        data = {
+            "type": "section",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [c for c in [
+                        {
+                            "type": "text",
+                            "style": {
+                                "color": color,
+                                "tracking": 24,
+                            },
+                            "content": f"**{ability.get('name').upper()}**"
+                        },
+                        {"type": "text", "content": f"**{ability.get('trigger')}**"} if ability.get("trigger") is not None else None,
+                        {"type": "text", "content": " ".join(ability.get("effect"))}
+                    ] if c is not None]
+                }
+            ]
+        }
+        abilities_to_render.append(data)
+    return abilities_to_render
 
 
 FACTOR_FIXED_LINE_HEIGHT = 0.7
-ASSETS_DIR = "./assets"
+CHAR_BULLET = "•"
+
+
+class Cursor:
+    x = 0
+    y = 0
+
+
+class TextRenderer:
+    FONTS_BASEPATH = "./fonts"
+    FONTS = {
+        "Tuff-Normal": f"{FONTS_BASEPATH}/Tuff-Normal.ttf",
+        "Tuff-Bold": f"{FONTS_BASEPATH}/Tuff-Bold.ttf",
+        "Tuff-Italic": f"{FONTS_BASEPATH}/Tuff-Italic.ttf",
+        "Tuff-BoldItalic": f"{FONTS_BASEPATH}/Tuff-BoldItalic.ttf",
+
+        "Garamond-Normal": f"{FONTS_BASEPATH}/Garamond-Bold.ttf",
+        "Garamond-Bold": f"{FONTS_BASEPATH}/Garamond-Bold.ttf",
+    }
+
+    TOKEN_ITALIC = "*"
+    TOKEN_BOLD = "**"
+    TOKEN_NEWLINE = "\n"
+
+    ALIGN_TOP = "top"
+    ALIGN_BOTTOM = "bottom"
+    ALIGN_LEFT = "left"
+    ALIGN_RIGHT = "right"
+    ALIGN_CENTER = "center"
+    CENTER_SECTION = "center_section"
+
+    OVERFLOW_AUTO = "auto"
+    OVERFLOW_CLIP = "clip"
+
+    ICONS = {
+        "CROWN": "simple",
+        "MONEY": "simple",
+        "LETTER": "simple",
+        "SWORDS": "simple",
+        "HORSE": "simple",
+        "UNDYING": "simple",
+        "OASIS": "simple",
+
+        "MOVEMENT": "image",
+        "WOUND": "image",
+        "LONGRANGE": "image",
+    }
+
+    def __init__(self, data, font_family, bounding_box, **kwargs):
+        """
+        Documentation text
+        
+        :param data: The text to render. Either as str, or an array of dictionaries.
+        :param str font_family: Font name
+        :param tuple bounding_box:
+        :key str overflow_policy_x:
+        :key str overflow_policy_y:
+        :key str align_x:
+        :key str align_y:
+        :key int font_size: Target font size
+        :key str font_color: Font color
+        :key float stroke_width: Determines the thickness of text. Sensible values between 0-1. Default: 0.3.
+        :key int supersample: Determines the scale to render text at a higher resolution. The final image is then downscaled. Creates a
+            smoother image.
+        :key bool fix_kerning: For fonts that don't provide a kerning table. Default: True
+        :key float tracking: Determines the spacing between letters. Unit: 1/1000 em. Default: 0.
+        :key float word_spacing: Determines the spacing between words. Unit: 1/1000 em. Default: 200.
+        :key float leading: Determines the spacing between lines. Unit: em. Default 1.15.
+        :key bool bold: If the text should be rendered bold by default. Default: False.
+        :key bool italic: If the text should be rendered italic by default. Default: False.
+        :key tuple padding: (left, top, right, bottom)
+        :key float paragraph_padding:
+        :key int section_padding:
+        :return: None
+        """
+        self._max_w, self._max_h = bounding_box
+        self.overflow_policy_y = kwargs.get("overflow_policy_y", self.OVERFLOW_AUTO)
+        self.overflow_policy_x = kwargs.get("overflow_policy_x", self.OVERFLOW_CLIP)
+        self.font_family = font_family
+        self._fonts = {}
+        self._font_size = kwargs.get("font_size", 20)
+        self.font_color = kwargs.get("font_color", "black")
+        self.background_color = kwargs.get("background_color", (0, 0, 0, 0))
+        self._stroke_width = kwargs.get("stroke_width", 0.3)
+        self.bold = self._bold = kwargs.get("bold", False)
+        self.italic = self._italic = kwargs.get("italic", False)
+        self.align_x = kwargs.get("align_x", self.ALIGN_CENTER)
+        self.align_y = kwargs.get("align_y", self.ALIGN_TOP)
+        self._supersample = kwargs.get("supersample", 1)
+        self.fix_kerning = kwargs.get("fix_kerning", True)
+        self._tracking = kwargs.get("tracking", 0)
+        self.tracking = self._tracking * self.font_size / 1000
+        self._word_spacing = kwargs.get("word_spacing", 200)
+        self._leading = kwargs.get("leading", 1.15)
+        self._padding = kwargs.get("padding", (10, 10, 10, 10))
+        self._paragraph_padding = kwargs.get("paragraph_padding", 0.7)
+        self._section_padding = kwargs.get("section_padding", 0)
+
+        self.input = self.fix_input(data)
+        self.cursor = Cursor()
+        self.image = Image.new("RGBA", (self.max_w, self.max_h), self.background_color)
+        self.draw = ImageDraw.Draw(self.image)
+        self.rendered_section_coords = []
+
+    @property
+    def supersample(self):
+        if int(self._stroke_width) == self._stroke_width:
+            return self._supersample
+        else:
+            # TODO: Make sure this is at least as big as self._supersample. Care with the stroke_width math
+            return 1 / (self._stroke_width % 1)
+
+    @property
+    def stroke_width(self):
+        """
+        The stroke_width property (see self.render below) would be really nice if it worked with smaller font sizes (or floats)
+        As a workaround, we use a bigger fontsize, then downscale the image later
+        """
+        if self._stroke_width == 0:
+            return 0
+        elif int(self._stroke_width) == self._stroke_width:
+            return self._stroke_width
+        else:
+            return int(self._stroke_width / (self._stroke_width % 1))
+
+    @property
+    def max_w(self):
+        return int(self._max_w * self.supersample)
+
+    @property
+    def max_h(self):
+        return int(self._max_h * self.supersample)
+
+    @property
+    def font_size(self):
+        return self._font_size * self.supersample
+
+    @property
+    def leading(self):
+        return self.font_size * self._leading
+
+    def set_styles(self, styles):
+        self.tracking = styles.get("tracking", self._tracking) * self.font_size / 1000
+        self.bold = styles.get("bold", self.bold)
+        self.italic = styles.get("italic", self.italic)
+
+    @property
+    def word_spacing(self):
+        return self.font_size * self._word_spacing / 1000
+
+    @property
+    def padding(self):
+        return tuple(self.supersample * x for x in self._padding)
+
+    @property
+    def paragraph_padding(self):
+        return self.font_size * self._paragraph_padding
+
+    @property
+    def section_padding(self):
+        return int(self.supersample * self._section_padding)
+
+    def get_font(self, bold=None, italic=None):
+        bold = bold if bold is not None else self.bold
+        italic = italic if italic is not None else self.italic
+        font_style_str = "Bold" if bold else ""
+        font_style_str += "Italic" if italic else ""
+        font_style_str = font_style_str or "Normal"
+        key = f"{self.font_family}-{font_style_str}-{self.font_size}"
+        font = self._fonts.get(key)
+        if font is None:
+            font_path = self.FONTS.get(f"{self.font_family}-{font_style_str}")
+            font = ImageFont.truetype(font_path, self.font_size)
+            self._fonts[key] = font
+            return font
+        else:
+            return font
+
+    @staticmethod
+    def fix_input(input_data):
+        if type(input_data) == str:
+            return [
+                {
+                    "type": "section",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": input_data
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        return input_data
+
+    @staticmethod
+    def iterate_chars(token):
+        for ix, char in enumerate(token):
+            char_next = token[ix + 1] if ix + 1 < len(token) else " "
+            yield char, char_next
+
+    def calculate_line_width(self, line):
+        width = self.padding[0] + self.padding[2]
+        bold = self.bold
+        italic = self.italic
+        for ix, token in enumerate(line):
+            if token == self.TOKEN_BOLD:
+                bold = not bold
+                continue
+            elif token == self.TOKEN_ITALIC:
+                italic = not italic
+                continue
+            font = self.get_font(bold=bold, italic=italic)
+            token_w = self.calculate_token_width(font, token)
+            width += token_w
+            if token_w != 0 and ix != len(line) - 1:
+                width += self.word_spacing
+
+        return width
+
+    def calculate_token_width(self, font, token):
+        if token == self.TOKEN_ITALIC or token == self.TOKEN_BOLD:
+            return 0
+        elif token == self.TOKEN_NEWLINE:
+            return self.max_w
+        elif token.startswith("[") and token.endswith("]"):
+            token = token.strip("[]")
+            if self.ICONS.get(token) is None:
+                return self.max_w
+            icon = self.get_icon(token)
+            return self.get_icon_width(icon)
+        w = 0
+        for char, char_next in self.iterate_chars(token):
+            w += self.calculate_char_width(font, char, char_next)
+        return w
+
+    def calculate_char_width(self, font, char, char_next):
+        offset_chars = font.getlength(char + char_next) - font.getlength(char_next)
+        return offset_chars + self.tracking + self.fix_kern(font, char, char_next)
+
+    def get_icon_width(self, icon):
+        return icon.size[0] + 0.1 * self.font_size + self.tracking
+
+    @staticmethod
+    def tokenize(string):
+        tokens = [t for t in re.split(r"(\[.*?]|(?<!\\)\*{1,2}| |\n)", string.strip()) if t.strip(" ")]
+        return tokens
+
+    def split_text(self, input_string):
+        tokens = self.tokenize(input_string)
+        lines = [[]]
+        cur_len = 0
+        skipped = []
+        font = self.get_font()
+        for token in tokens:
+            token_len = self.calculate_token_width(font, token)
+            if token_len == 0:
+                skipped.append(token)
+                continue
+
+            break_line = False
+            if token.startswith(CHAR_BULLET):
+                break_line = True
+            # don't put single commas and periods in a new line
+            elif cur_len + token_len + self.word_spacing > self.max_w - self.padding[0] - self.padding[2] and len(token) > 1:
+                break_line = True
+            else:
+                pass
+
+            if token == self.TOKEN_NEWLINE:
+                cur_len = 0
+                lines.append([])
+            elif break_line:
+                cur_len = token_len
+                lines.append(skipped + [token])
+                skipped = []
+            else:
+                cur_len += token_len + self.word_spacing
+                lines[-1] += skipped
+                skipped = []
+                lines[-1].append(token)
+        lines[-1] += skipped
+
+        return [ln for ln in lines if len(ln) > 0]
+
+    def split_data(self, data):
+        self.bold = self._bold
+        self.italic = self._italic
+        new_data = deepcopy(data)
+        for section in new_data:
+            for paragraph in section["content"]:
+                for lines in paragraph["content"]:
+                    styles = lines.get("style", paragraph.get("style", section.get("style", {})))
+                    self.set_styles(styles)
+                    lines["content"] = self.split_text(lines["content"])
+        return new_data
+
+    @staticmethod
+    def count_data(data):
+        section_counts = []
+        for section in data:
+            sc = {
+                "section": 1,
+                "paragraph": 0,
+                "line": 0,
+            }
+            for paragraph in section["content"]:
+                sc["paragraph"] += 1
+                for lines in paragraph["content"]:
+                    for line in lines["content"]:
+                        sc["line"] += 1
+            section_counts.append(sc)
+
+        count = {
+            "section": len(section_counts),
+            "paragraph": sum([sc["paragraph"] for sc in section_counts]),
+            "line": sum([sc["line"] for sc in section_counts]),
+        }
+
+        return count, section_counts
+
+    def calculate_height(self, count):
+        height = (count["line"] - count["paragraph"]) * self.leading
+        height += count["paragraph"] * 0.82 * self.font_size
+        height += max(count["paragraph"] - count["section"], 0) * self.paragraph_padding
+        height += max(count["section"] - 1, 0) * (self.section_padding + self.padding[1] + self.padding[3])
+        height += self.padding[1] + self.padding[3]
+
+        return height
+
+    def fix_kern(self, font, char1, char2):
+        if not self.fix_kerning:
+            return 0
+        mem = self.font_size / 1000
+        if self.font_family == "Tuff":
+            match (char1, char2):
+                # uppercase T and small letters
+                case ("T", c) if font.getbbox(c)[1] >= font.getbbox("a")[1]:
+                    return -100 * mem
+                case ("g", "y"):
+                    return 30 * mem
+                case ("V", "A") | ("A", "V"):
+                    return -110 * mem
+                case ("W", "A") | ("A", "W"):
+                    return -60 * mem
+                case ("P", "A"):
+                    return -30 * mem
+                case ("A", "T"):
+                    return -50 * mem
+                case ("R", "O"):
+                    return -20 * mem
+                case ("Y", "J"):
+                    return -30 * mem
+                case ("L", "Y"):
+                    return -30 * mem
+        return 0
+
+    def adjust_vertical_spacing(self, data):
+        count, section_counts = self.count_data(data)
+        height = self.calculate_height(count)
+        overflow_y = height - self.max_h
+
+        # if there is a lot of overflow, we need to reduce the font size and recalculate line breaks
+        # these bounds are largely based on what feels right
+        # TODO: Improve this
+        if overflow_y / height > 0.4:
+            self._tracking = max(-20, self._tracking - 20)
+            self._word_spacing = max(150, self._word_spacing * 0.75)
+        if overflow_y / height > 0.25:
+            self._padding = (self._padding[0], 0.5 * self._padding[1], self._padding[2], 0.5 * self._padding[3])
+            fs = 0.2 * overflow_y / (count["line"] * self._leading + count["paragraph"] * self._paragraph_padding)
+            self._font_size -= min(int(fs), int(0.25 * self._font_size))
+            data = self.split_data(self.input)
+            count, section_counts = self.count_data(data)
+            height = self.calculate_height(count)
+            overflow_y = height - self.max_h
+
+        if overflow_y > 0:
+            if count["paragraph"] - count["section"] > 0:
+                self._leading -= 0.8 * overflow_y / (self.font_size * (count["line"] - count["paragraph"] + 1))
+                self._paragraph_padding -= 0.2 * overflow_y / (self.font_size * (count["paragraph"] - 1))
+            else:
+                self._leading -= overflow_y / (self.font_size * count["line"])
+            data = self.split_data(self.input)
+            count, section_counts = self.count_data(data)
+            height = self.calculate_height(count)
+
+        return data, height
+
+    def adjust_horizontal_spacing(self, data):
+        max_width = 0
+        max_textlen = 0
+        for section in data:
+            for paragraph in section["content"]:
+                for lines in paragraph["content"]:
+                    for line in lines["content"]:
+                        w = self.calculate_line_width(line)
+                        if w > max_width:
+                            max_width = w
+                            max_textlen = len(" ".join([tk for tk in line if tk.strip("*") and not tk.startswith("[")]))
+                            max_textlen += 2 * len([tk for tk in line if tk.startswith("[")])
+        if max_width < self.max_w:
+            return data
+
+        # TODO: Do we need to calculate the linebreaks again?
+        self._font_size -= self._font_size * (self.font_size * max_textlen + 50 * (self.max_w - max_width)) / (
+                    self.font_size * max_textlen - 50 * max_width)
+        self._tracking = -20
+
+        return data
+
+    def set_cursor_x(self, line):
+        if self.align_x == self.ALIGN_LEFT:
+            self.cursor.x = self.padding[0]
+        elif self.align_x == self.ALIGN_RIGHT:
+            w = self.calculate_line_width(line)
+            self.cursor.x = self.max_w - w + self.padding[0]
+        elif self.align_x == self.ALIGN_CENTER:
+            w = self.calculate_line_width(line)
+            self.cursor.x = (self.max_w - w) // 2 + self.padding[0]
+        else:
+            raise Exception(f"Invalid horizontal align: {self.align_x}")
+
+    def set_cursor_y(self, height, num_sections):
+        extra_padding = [0 for _ in range(num_sections)]
+        if self.align_y == self.ALIGN_TOP:
+            self.cursor.y = 0
+        elif self.align_y == self.ALIGN_BOTTOM:
+            self.cursor.y = self.max_h - height
+        elif self.align_y == self.ALIGN_CENTER:
+            # This isn't exactly the visual center some of the time. More noticeable if the text is only 1-2 lines. We'll fix it in post
+            self.cursor.y = (self.max_h - height) // 2
+        elif self.align_y == self.CENTER_SECTION:
+            self.cursor.y = 0
+            extra_height = self.max_h - height
+            bias = 0.7 ** (num_sections - 1)
+            weights_extra_height = [bias if i == 0 else (1 - bias) / (num_sections - 1) for i in range(num_sections)]
+            return [w * extra_height * 0.5 for w in weights_extra_height]
+        else:
+            raise Exception(f"Invalid vertical align: {self.align_y}")
+        return extra_padding
+
+    def render(self):
+        data = self.split_data(self.input)
+        if self.overflow_policy_x == self.OVERFLOW_AUTO:
+            self.adjust_horizontal_spacing(data)
+        if self.overflow_policy_y == self.OVERFLOW_AUTO:
+            data, height = self.adjust_vertical_spacing(data)
+        else:
+            count, section_counts = self.count_data(data)
+            height = self.calculate_height(count)
+
+        extra_padding = self.set_cursor_y(height, len(data))
+        # TODO: Mr. President, a sixth layer of indentation has hit the render function. The codebase is under attack.
+        for ix_section, section in enumerate(data):
+            y_start_section = self.cursor.y / self.supersample
+            self.cursor.y += self.padding[1] + extra_padding[ix_section]
+            for ix_paragraph, paragraph in enumerate(section["content"]):
+                for lines in paragraph["content"]:
+                    self.bold = self._bold
+                    self.italic = self._italic
+                    styles = lines.get("style", paragraph.get("style", section.get("style", {})))
+                    for line in lines["content"]:
+                        self._render_line(line, styles)
+                # The last line in each paragraph should only be calculated as cap-height instead of full leading. 0.82 is a good estimate
+                self.cursor.y -= self.leading - 0.82 * self.font_size
+                if ix_paragraph < len(section["content"]) - 1:
+                    self.cursor.y += self.paragraph_padding
+            coords = (y_start_section, (self.cursor.y + self.padding[3] + extra_padding[ix_section]) / self.supersample)
+            self.rendered_section_coords.append(coords)
+            self.cursor.y += self.padding[3] + extra_padding[ix_section] + self.section_padding
+
+        self.image = self.image.resize((self._max_w, self._max_h), resample=Image.LANCZOS)
+        return self.image
+
+    def _render_line(self, line, styles):
+        self.set_styles(styles)
+        color = styles.get("color", self.font_color)
+        self.set_cursor_x(line)
+
+        for ix, token in enumerate(line):
+            if token == self.TOKEN_BOLD:
+                self.bold = not self.bold
+                continue
+            elif token == self.TOKEN_ITALIC:
+                self.italic = not self.italic
+                continue
+            elif token.startswith("[") and token.endswith("]"):
+                self.render_icon(token, color)
+                if ix < len(line) - 1 and line[ix + 1].startswith(","):
+                    self.cursor.x -= self.tracking + 0.75 * self.word_spacing
+                continue
+            # TODO: Whats going on here?
+            if re.match(r"^[,.:?!]", token) is not None:
+                if ix != 0 and line[ix - 1] in [self.TOKEN_BOLD, self.TOKEN_ITALIC]:
+                    self.cursor.x -= self.tracking + self.word_spacing
+            font = self.get_font()
+            for char, char_next in self.iterate_chars(token):
+                self.draw.text((self.cursor.x, self.cursor.y), char, color, font=font, stroke_width=self.stroke_width)
+                self.cursor.x += self.calculate_char_width(font, char, char_next)
+            self.cursor.x += self.tracking + self.word_spacing
+        self.cursor.y += self.leading
+
+    def render_icon(self, token, color=None):
+        color = color or self.font_color
+        token = token.strip("[]")
+        if token.startswith("ATTACK"):
+            _, atk_type, atk_name, atk_stats = token.split(":")
+            hit, dice = atk_stats.split("+")
+            atk_data = {
+                "name": atk_name,
+                "type": "long" if "Long" in atk_type else "short" if "Short" in atk_type else "melee",
+                "hit": int(hit),
+                "dice": [int(d) for d in dice.split(",")]
+            }
+            rendered = render_attack(atk_data)
+            self._do_render_full_width_icon(rendered)
+        elif token.startswith("SKILL"):
+            rendered = apply_drop_shadow(render_skill_icon(token.replace("SKILL:", "")), color="black")
+            self._do_render_full_width_icon(rendered)
+        else:
+            icon = self.get_icon(token)
+            if self.ICONS[token] == "simple":
+                self.image.paste(color, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * self.font_size)), mask=icon)
+            elif self.ICONS[token] == "image":
+                self.image.alpha_composite(icon, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * self.font_size)))
+            self.cursor.x += self.get_icon_width(icon)
+
+    def _do_render_full_width_icon(self, rendered):
+        rendered = rendered.crop(rendered.getbbox())
+        rendered = rendered.resize((int(self.supersample * rendered.size[0]), int(self.supersample * rendered.size[1])))
+        # Icons should always be centered?
+        self.cursor.x = (self.max_w - self.padding[0] - self.padding[2] - rendered.size[0]) // 2 + self.padding[0]
+        self.image.alpha_composite(rendered, (int(self.cursor.x), int(self.cursor.y - 0.2 * self.leading)))
+        # subtract the leading which gets added in self._render_line
+        self.cursor.y += rendered.size[1] - self.leading
+
+    def get_icon(self, token):
+        icon = AssetManager.get_text_icon(token)
+        icon = icon.resize((int(self.font_size * 1.15 * icon.size[0] / icon.size[1]), int(self.font_size * 1.15)), resample=Image.LANCZOS)
+        icon_bbox = icon.getbbox()
+        icon = icon.crop((icon_bbox[0], 0, icon_bbox[2], icon_bbox[3]))
+        return icon
+
+    def render_cmdr_name(self, name, subname):
+        name_string = f"**{name}** - {subname}".upper() if subname is not None else f"**{name}**".upper()
+        tokenized = self.tokenize(name_string)
+        width_line = self.calculate_line_width(tokenized)
+        height = 0.82 * self.font_size + self.padding[1] + self.padding[3]
+        text_len = len(name_string) - 4
+        tracking = (self.max_w - width_line) * 1000 / (self.font_size * text_len)
+        if width_line < self.max_w:
+            tracking = 0
+        elif tracking >= -20:
+            # actually do nothing
+            pass
+        # Welcome to 3 am
+        elif tracking > -20 - width_line * (1 - (self._font_size - 3) / self._font_size) * 1000 / (self.font_size * text_len):
+            self._font_size -= 3
+            width_line = self.calculate_line_width(tokenized)
+            tracking = (self.max_w - width_line) * 1000 / (self.font_size * text_len)
+            tracking = min(0, tracking)
+        else:
+            self._font_size -= 3
+            height += self.leading
+            self.set_cursor_y(height, 1)
+            self.cursor.y += self.padding[1]
+            self._render_line(self.tokenize(f"**{name}**".upper()), {})
+            self._render_line(self.tokenize(subname.upper()), {})
+            self.image = self.image.resize((self._max_w, self._max_h), resample=Image.LANCZOS)
+            return self.image
+
+        self.set_cursor_y(height, 1)
+        self.cursor.y += self.padding[1]
+        self._render_line(tokenized, {"tracking": tracking})
+        self.image = self.image.resize((self._max_w, self._max_h), resample=Image.LANCZOS)
+        return self.image
+
+
+if __name__ == "__main__":
+    rd = render_attack({"type": "long", "name": "Ironborn", "hit": 4, "dice": [6, 5, 4]})
+    rd.show()
+    rd.save("test2.png")
+    '''
+    bg = Image.new("RGBA", (1000, 1000), "#333333")
+    renderer = TextRenderer("Tuff", 50, (750, 750),
+                            align_x=TextRenderer.ALIGN_CENTER,
+                            align_y=TextRenderer.ALIGN_CENTER,
+                            background_color="white"
+                            )
+    to_render = [
+        {
+            "type": "section",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "style": {
+                                "color": "red"
+                            },
+                            "content": "This is a heading"
+                        },
+                        {
+                            "type": "text",
+                            "content": "This is some **very long** [SKILL:Venom] text. It will need to be split across multiple lines."
+                        }
+                    ]
+                },
+            ]
+        },
+    ]
+    rd = renderer.render(to_render)
+    bg.alpha_composite(rd, (125, 125))
+    bg.show()
+    bg.save("test.png")
+    '''

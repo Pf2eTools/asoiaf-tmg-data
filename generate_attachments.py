@@ -52,6 +52,10 @@ def generate_attachment(attachment_data, abilities_data):
         bars.alpha_composite(small_bar_ds.rotate(90, expand=1), (215, 222 - small_bar.size[0]))
         bars.alpha_composite(small_bar_ds.rotate(90, expand=1), (298, 222 - small_bar.size[0]))
     else:
+        bars.alpha_composite(weird_bar.rotate(90, expand=1).crop((0, 0, 370, weird_bar.size[0])), (327, 290 - weird_bar.size[0]))
+        weird_bar_cropped = ImageOps.mirror(weird_bar.rotate(90, expand=1)).crop((weird_bar.size[1] - portrait.size[0], 0, weird_bar.size[1], weird_bar.size[0]))
+        bars.alpha_composite(weird_bar_cropped, (245 - weird_bar_cropped.size[0], 290 - weird_bar_cropped.size[1]))
+
         bars.alpha_composite(large_horizontal_crop.rotate(180), (55, 292))
         bars.alpha_composite(large_bar.rotate(90, expand=1).crop((0, 106, large_bar.size[1], large_bar.size[0])), (54, 338))
         bars.alpha_composite(small_bar_ds.rotate(90, expand=1), (26, 30))
@@ -70,7 +74,7 @@ def generate_attachment(attachment_data, abilities_data):
     if is_commander:
         bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, -23))
     else:
-        unit_type = unit_type.crop((0, 34, unit_type.size[0], unit_type.size[1]))
+        unit_type = unit_type.crop((0, unit_type.size[1] - 142, unit_type.size[0], unit_type.size[1]))
         bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, 30))
 
     crest = AssetManager.get_crest_tactics(faction)
@@ -79,40 +83,55 @@ def generate_attachment(attachment_data, abilities_data):
     crest_resize_x, crest_resize_y = 265 - crest.size[0] // 2, 244 - crest.size[1] // 2
     bars.alpha_composite(apply_drop_shadow(crest), (crest_resize_x, crest_resize_y))
 
-    rd_abilities = Image.new("RGBA", (w,h))
+    layer_abilities = Image.new("RGBA", (w, h))
     skill_divider = AssetManager.get_skill_divider(faction)
     skill_bottom = AssetManager.get_skill_bottom(faction)
     if not is_commander:
-        skill_divider = skill_divider.crop((0, 0, 590, skill_divider.size[1]))
+        skill_divider = skill_divider.crop((0, 0, 600, skill_divider.size[1]))
         skill_bottom = skill_bottom.crop((0, 0, 560, skill_bottom.size[1]))
     filtered_abilities_data = get_filtered_ability_data(abilities, abilities_data)
+    abilities_to_render = get_ability_data_for_renderer(filtered_abilities_data, get_faction_text_color(faction))
 
-    abilities_part_y = 354
-    font_size = 36
-    line_padding = 16
-    divider_padding = 15
-    for ix, ability_data in enumerate(filtered_abilities_data):
-        rd_ability, h_text = render_ability(ability_data, faction, font_size=font_size, line_padding=line_padding, x_spacing=12)
-        ability_y = abilities_part_y + (h_text - rd_ability.size[1]) // 2
-        abilities_part_y += h_text + divider_padding
+    section_padding = skill_divider.size[1]
+    w_abilities = w - 150 if is_commander else 536
+    renderer_abilities = TextRenderer(abilities_to_render, "Tuff", (w_abilities, h - 396), font_size=36, align_x=TextRenderer.ALIGN_LEFT,
+                                      align_y=TextRenderer.ALIGN_TOP, section_padding=section_padding, font_color="#5d4d40",
+                                      padding=(15, 16, 25, 16), leading=1.08)
+    rd_abilities = renderer_abilities.render()
+    layer_abilities.alpha_composite(rd_abilities, (150, 346))
+    section_coords = renderer_abilities.rendered_section_coords
+    bars.alpha_composite(apply_drop_shadow(skill_bottom, shadow_size=7), (117, min(int(section_coords[-1][1]), h - 396) + 326))
+    for ix in range(len(section_coords) - 1):
+        top, bot = section_coords[ix][1], section_coords[ix + 1][0]
+        center = int(top + (bot - top) / 2) + 326
+        bars.alpha_composite(apply_drop_shadow(skill_divider), (73, center - skill_divider.size[1] // 2))
 
-        if ix + 1 == len(filtered_abilities_data):
-            bars.alpha_composite(apply_drop_shadow(skill_bottom, shadow_size=7), (119, abilities_part_y - 25))
-        else:
-            bars.alpha_composite(apply_drop_shadow(skill_divider, shadow_size=7), (73, abilities_part_y - 20))
-            abilities_part_y += skill_divider.size[1] + divider_padding
-        rd_abilities.alpha_composite(rd_ability, (27, ability_y))
+    for data, coords in zip(filtered_abilities_data, section_coords):
+        icons = data.get("icons")
+        if icons is None:
+            continue
+        highlight_color = get_faction_highlight_color(faction)
+        rd_icons = render_skill_icons(icons, highlight_color)
+        x, y = 28, 346 + coords[0] + (coords[1] - coords[0] - rd_icons.size[1]) // 2
+        layer_abilities.alpha_composite(rd_icons, (x, int(y)))
 
     all_text = Image.new("RGBA", (w, h))
-    name_split = [f"**{np.upper()}**" for np in split_on_center_space(name, maxlen=10)]
-    rd_name = render_paragraph(name_split, font_color="white", font_size=50, line_padding=8)
+    renderer_name = TextRenderer(name.upper(), "Tuff", (340, 100), font_size=50, bold=True, font_color="white", leading=0.9,
+                                 stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
+    rd_name = renderer_name.render()
+    rd_name = rd_name.crop((0, 0, rd_name.size[0], int(renderer_name.rendered_section_coords[0][1])))
+
     if is_commander:
         name_x, name_y = 536, 130
+        subname_w = 340
     else:
         name_x, name_y = 511, 170
+        subname_w = 280
     if subname is not None:
-        subname_split = [np.upper() for np in split_on_center_space(subname, maxlen=24)]
-        rd_subname = render_paragraph(subname_split, font_color="white", font_size=30, stroke_width=0.1, line_padding=8)
+        renderer_subname = TextRenderer(subname.upper(), "Tuff", (subname_w, 80), font_size=30, font_color="white", leading=1,
+                                        stroke_width=0.1, padding=(5, 5, 5, 5))
+        rd_subname = renderer_subname.render()
+        rd_subname = rd_subname.crop((0, 0, rd_subname.size[0], int(renderer_subname.rendered_section_coords[0][1])))
         rd_names = Image.new("RGBA", (max(rd_name.size[0], rd_subname.size[0]), rd_name.size[1] + rd_subname.size[1] - 8))
         rd_names.alpha_composite(rd_name, ((rd_names.size[0] - rd_name.size[0]) // 2, 0))
         rd_names.alpha_composite(rd_subname, ((rd_names.size[0] - rd_subname.size[0]) // 2, rd_name.size[1] - 8))
@@ -120,8 +139,10 @@ def generate_attachment(attachment_data, abilities_data):
     else:
         all_text.alpha_composite(rd_name, (name_x - rd_name.size[0] // 2, name_y - rd_name.size[1] // 2))
 
-    rendered_version = render_text_line(f"*{version.strip('*')}*", font_color="white", font_size=20)
-    version_x, version_y = 21, h - rendered_version.size[0] - 40
+    renderer_version = TextRenderer(version, "Tuff", (100, 25), font_size=20, italic=True, font_color="white", stroke_width=0, leading=1,
+                                    tracking=-10, align_y=TextRenderer.ALIGN_BOTTOM, align_x=TextRenderer.ALIGN_LEFT, padding=(5, 0, 5, 0))
+    rendered_version = renderer_version.render()
+    version_x, version_y = 19, h - rendered_version.size[0] - 30
     all_text.alpha_composite(rendered_version.rotate(90, expand=1), (version_x, version_y))
 
     if not is_commander:
@@ -132,8 +153,8 @@ def generate_attachment(attachment_data, abilities_data):
         bars.alpha_composite(decor, (33, 33))
         bars.alpha_composite(decor, (674, 33))
 
-    attachment_card.alpha_composite(apply_drop_shadow(bars, shadow_size=7, color="#00000055"), (-20, -20))
-    attachment_card.alpha_composite(rd_abilities)
+    attachment_card.alpha_composite(apply_drop_shadow(bars, shadow_size=7, color="#00000033"), (-20, -20))
+    attachment_card.alpha_composite(layer_abilities)
     attachment_card.alpha_composite(all_text)
 
     return attachment_card
