@@ -1,0 +1,1549 @@
+{
+    "units": [
+        {
+            "id": "10101",
+            "name": "Gardes Lannister",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 5,
+            "speed": 4,
+            "defense": 3,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Ordre : Suprématie des Lannister"
+            ]
+        },
+        {
+            "id": "10102",
+            "name": "Hallebardiers Lannister",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Hallebarde",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Ordre : Recevoir la Charge",
+                "Hallebarde"
+            ]
+        },
+        {
+            "id": "10103",
+            "name": "Hommes de la Montagne de la Maison Clegane",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Lames de Soudard",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Lames de Soudards",
+                "Se Nourrir de la Peur"
+            ]
+        },
+        {
+            "id": "10104",
+            "name": "Pyromanciens",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 6,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Feu Grégeois",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Feu Grégeois",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Feu Grégeois",
+                "Visage Horrifique"
+            ]
+        },
+        {
+            "id": "10105",
+            "name": "Chevaliers de Castral Roc",
+            "version": "2021-S01",
+            "faction": "Lannister",
+            "type": "Cavalry",
+            "cost": 8,
+            "speed": 5,
+            "defense": 3,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Ordre : Suprématie des Lannister",
+                "Cavalerie",
+                "Lance"
+            ]
+        },
+        {
+            "id": "10106",
+            "name": "Arbalétriers Lannister",
+            "version": "2021-S01",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 5,
+            "defense": 4,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Arbalète",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "abilities": [
+                "Arbalète"
+            ]
+        },
+        {
+            "id": "10107",
+            "name": "Gregor Clegane, La Montagne à Cheval",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Cavalry",
+            "cost": 4,
+            "speed": 4,
+            "defense": 2,
+            "morale": 4,
+            "attacks": [
+                {
+                    "name": "Équarrissage",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "abilities": [
+                "La Montagne à Cheval",
+                "Équarrissage",
+                "Présence Intimidante"
+            ]
+        },
+        {
+            "id": "10108",
+            "name": "Les Fils du Guerrier",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 4,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Lame Ointe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Prière de Bataille"
+            ]
+        },
+        {
+            "id": "10109",
+            "name": "Pauvres Hères",
+            "version": "2021-S01",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 4,
+            "speed": 5,
+            "defense": 6,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Gourdin",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Zèle Fanatique",
+                "Résurgence Zélée"
+            ]
+        },
+        {
+            "id": "10110",
+            "name": "Garde Royale",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 5,
+            "defense": 3,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Lame de Maître",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        7,
+                        7
+                    ]
+                }
+            ],
+            "abilities": [
+                "Escorte de Joffrey",
+                "Riposte",
+                "Volonté de Fer",
+                "Must be attached to 'Joffrey Baratheon, First of His Name'"
+            ]
+        },
+        {
+            "id": "10111",
+            "name": "Manteaux Rouges",
+            "version": "2021-S01",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Cupidité Intrépide",
+                "Justice des Lannister"
+            ]
+        },
+        {
+            "id": "10112",
+            "name": "Brigands de la Maison Clegane",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Cavalry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 5,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Armes Brutales",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                }
+            ],
+            "abilities": [
+                "Cavalerie",
+                "Armes Brutales"
+            ]
+        },
+        {
+            "id": "10113",
+            "name": "Guet de Port-Lannis",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 5,
+            "defense": 4,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Ordre : Technique Réactive",
+                "Fierté Dominatrice"
+            ]
+        },
+        {
+            "id": "10114",
+            "name": "Garde d'Honneur de Castral Roc",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 3,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Oppression Lannister",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "abilities": [
+                "Oppression Lannister "
+            ]
+        },
+        {
+            "id": "10115",
+            "name": "Manteaux d'Or",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 4,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Gourdin",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Ordre : Lois du Royaume",
+                "Pacification Oppressive"
+            ]
+        }
+    ],
+    "ncus": [
+        {
+            "id": "30101",
+            "name": "Tywin Lannister",
+            "subname": "La Grand Lion",
+            "version": "2021",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Les Pluies de Castamere",
+                    "effect": [
+                        "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d'Unités Combattantes ennemies de votre choix :",
+                        "• 1 de ces ennemis devient **Paniqué**.",
+                        "• 1 de ces ennemis devient **Vulnérable**.",
+                        "• 1 de ces ennemis subit 4 Touches.",
+                        "• 1 de ces ennemis subit 1 Test de Panique.",
+                        "• 1 de ces ennemis perd toutes ses Capacités jusqu’à la fin du Round.",
+                        "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30102",
+            "name": "Pycelle",
+            "subname": "Grand Mestre",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Manipulation et Tromperie",
+                    "effect": [
+                        "Chaque fois que Pycelle s’empare d’une zone, ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30103",
+            "name": "Le Grand Moineau",
+            "subname": "Père de la Foi",
+            "version": "2021",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Allégeance aux Sept",
+                    "effect": [
+                        "Tant que cette carte Influence un ennemi, chaque fois que celui-ci subit des Blessures en ayant échoué un Test de Panique, ciblez 1 unité alliée située à Longue Portée ou moins. Elle se soigne du même nombre de Blessures, maximum 3."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30104",
+            "name": "Tyrion Lannister",
+            "subname": "Le Lutin",
+            "version": "2021",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Tacticien de Génie",
+                    "effect": [
+                        "Votre limite de cartes Tactique est augmentée de 1. Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main.",
+                        "Une fois par partie, quand un adversaire joue une carte Tactique, avant de résoudre celle-ci, vous pouvez chercher 1 exemplaire de **Contre-Complot** dans votre paquet ou défausse Tactique et le jouer. Mélangez votre paquet Tactique."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30105",
+            "name": "Cersei Lannister",
+            "subname": "Reine Régente",
+            "version": "2021",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Jouer le Jeu",
+                    "effect": [
+                        "Cersei commence la partie avec 2 pions Ordre.",
+                        "Quand Cersei s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
+                        "Si vous contrôlez [CROWN], cherchez 1 exemplaire de **Je Rugis !** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
+                        "Si vous contrôlez [MONEY], cherchez 1 exemplaire de **Soumission au Pouvoir** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30106",
+            "name": "Joffrey Baratheon",
+            "subname": "Seigneur des Sept Royaumes",
+            "version": "2021-S01",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Puissance du Trône De Fer",
+                    "effect": [
+                        "Tant que Joffrey se trouve sur le Tableau Stratégique, vous êtes considéré comme contrôlant [CROWN].",
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence un ennemi, celui-ci subit +1 Blessure lorsqu’il échoue un Test de Panique."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30107",
+            "name": "Kevan Lannister",
+            "subname": "Maître des Lois",
+            "version": "2021",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Justice Implacable",
+                    "effect": [
+                        "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d’Unités Combattantes alliées au choix :",
+                        "• 1 de ces unités soigne 2 de ses Blessures.",
+                        "• 1 de ces unités retire tous ses pions État.",
+                        "• 1 de ces unités se décale de 2’’.",
+                        "• Jusqu’à la fin du round, 1 de ces unités utilise sa valeur de dés d’Attaque la plus élevée et peut relancer n’importe quels dés d’Attaque.",
+                        "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30108",
+            "name": "Qyburn",
+            "subname": "Maître des Chuchoteurs",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Petites Colombes",
+                    "effect": [
+                        "Qyburn commence la partie avec 4 pions Ordre sur sa carte.",
+                        "Chaque fois qu’une UNC ennemie s’empare d’une zone, après en avoir résolu l’effet, vous pouvez retirer 1 pion Ordre de Qyburn. Si vous le faites, gagnez l’effet suivant en fonction de la zone :",
+                        "[CROWN] : 1 ennemi devient **Paniqué**.",
+                        "[MONEY] : 1 Unité Combattante ennemie subit 1 Blessure.",
+                        "[SWORDS] : L’attaquant compte comme ayant −1 rang pour ses dés d’Attaque.",
+                        "[LETTER] : L’adversaire pioche 1 carte Tactique de moins.",
+                        "[HORSE] : L’ennemi se déplace à −1 [MOVEMENT]."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30109",
+            "name": "Tommen Baratheon",
+            "subname": "Suivant de  la Lignée",
+            "version": "2021",
+            "faction": "Lannister",
+            "abilities": [
+                {
+                    "name": "Influence de la Reine",
+                    "effect": [
+                        "Tommen commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Chaque fois que Tommen s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
+                        "Si vous contrôlez [CROWN], cherchez 1 exemplaire d’**Allégeance à la Couronne** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
+                        "Si vous contrôlez [MONEY], cherchez 1 exemplaire de **Pot-De-Vin** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
+                    ]
+                }
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "id": "20101",
+            "name": "Vétéran d'Assaut",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Présence Intimidante"
+            ]
+        },
+        {
+            "id": "20102",
+            "name": "Capitaine de la Garde",
+            "version": "2021-S01",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Ordre : Tenez Bon !"
+            ]
+        },
+        {
+            "id": "20103",
+            "name": "Sandor Clegane",
+            "subname": "Le Limier",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Affiliation : Maison Clegane",
+                "Soif de Massacre",
+                "Charge Furieuse"
+            ]
+        },
+        {
+            "id": "20104",
+            "name": "Tywin Lannister",
+            "subname": "Seigneur de Castral Roc",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Ordre : Suprématie des Lannister",
+                "Ordre : Menacer"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20105",
+            "name": "Tyrion Lannister",
+            "subname": "Le Mi-Homme",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Ordre : Contre Stratégie",
+                "Ordre : Repositionnement Tactique"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20106",
+            "name": "Barristan Selmy",
+            "subname": "Lord Commandant de la Garde Royale",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Devoir Envers la Couronne",
+                "Vaillance"
+            ]
+        },
+        {
+            "id": "20107",
+            "name": "Jaime Lannister",
+            "subname": "Garde Royal",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Duelliste Chevronné",
+                "Riposte"
+            ]
+        },
+        {
+            "id": "20108",
+            "name": "Mandon Moore",
+            "subname": "Garde Royal",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Dominance de la Couronne"
+            ]
+        },
+        {
+            "id": "20109",
+            "name": "Meryn Trant",
+            "subname": "Garde Royal",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Intimidation de la Couronne"
+            ]
+        },
+        {
+            "id": "20110",
+            "name": "Arys du Rouvre",
+            "subname": "Garde Royal",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Protection de la Couronne"
+            ]
+        },
+        {
+            "id": "20111",
+            "name": "Boros Blount",
+            "subname": "Garde Royal",
+            "version": "2021-S01",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Vengeance de la Couronne"
+            ]
+        },
+        {
+            "id": "20112",
+            "name": "Preston Verschamps",
+            "subname": "Garde Royal",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Ordres de la Couronne "
+            ]
+        },
+        {
+            "id": "20113",
+            "name": "Champion de la Foi",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Ordre : Cri de Guerre"
+            ]
+        },
+        {
+            "id": "20114",
+            "name": "Gregor Clegane",
+            "subname": "Chien Enragé de Lord Tywin's",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Fureur Incoercible",
+                "Rage Incontrôlable"
+            ]
+        },
+        {
+            "id": "20115",
+            "name": "Jaime Lannister",
+            "subname": "Le Régicide",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Précision",
+                "Riposte",
+                "Déstabilisation"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20116",
+            "name": "Gregor Clegane",
+            "subname": "La Montagne",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Affiliation : Maison Clegane",
+                "Indominable",
+                "The Mountain's Strength"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20117",
+            "name": "Jaime Lannister",
+            "subname": "Le Jeune Lion",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Ordre : Entraînement Martial",
+                "Vaillance"
+            ]
+        },
+        {
+            "id": "20118",
+            "name": "Gregor Clegane",
+            "subname": "Mastodonte Monté",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Cavalry",
+            "cost": 3,
+            "abilities": [
+                "Fureur Incoercible",
+                "Rage Incontrôlable"
+            ]
+        },
+        {
+            "id": "20120",
+            "name": "Tyrion Lannister",
+            "subname": "Le Géant Lannister",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Ordre : Plan de Bataille",
+                "Ordre : Contre Stratégie"
+            ]
+        },
+        {
+            "id": "20121",
+            "name": "Joffrey Baratheon",
+            "subname": "Premier du Nom",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Ordres de la Couronne"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20123",
+            "name": "Exécuteur Sentinelle",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Ordre : Provocation"
+            ]
+        },
+        {
+            "id": "20124",
+            "name": "Boucher Clegane",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Cavalry",
+            "cost": 1,
+            "abilities": [
+                "Soif de Massacre"
+            ]
+        },
+        {
+            "id": "20125",
+            "name": "Le Grand Moineau",
+            "subname": "Sa Sainteté Suprême",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Ordre : Incitation",
+                "Enhardir"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20126",
+            "name": "Qyburn",
+            "subname": "Connaissances Interdites",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Améliorations Expérimentales",
+                "Réactions Violentes"
+            ]
+        },
+        {
+            "id": "20127",
+            "name": "Addam Marpheux",
+            "subname": "Banneret de Confiance",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Vassal de Jaime",
+                "Ordre : Sentinelle"
+            ]
+        },
+        {
+            "id": "20128",
+            "name": "Ser Robert Fort",
+            "subname": "Le Géant Silencieux",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 3,
+            "abilities": [
+                "Ordre : Résilience",
+                "Fureur Incoercible"
+            ]
+        },
+        {
+            "id": "20129",
+            "name": "Addam Marpheux",
+            "subname": "Commandant du Guet",
+            "version": "2021-S02",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Endurci",
+                "Volonté de Fer"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20130",
+            "name": "Kevan Lannister",
+            "subname": "Protecteur du Royaume",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Ordre : Suprématie des Lannister",
+                "Might of the Throne (Kevan Lannister)"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20131",
+            "name": "Gardien des Portes",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Supériorité Numérique",
+                "Renforts"
+            ]
+        },
+        {
+            "id": "20119",
+            "name": "Jaime Lannister",
+            "subname": "Otage Mutilé",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Otage Précieux  ",
+                "Otage Rancunier"
+            ]
+        },
+        {
+            "id": "20122",
+            "name": "Félon",
+            "version": "2021",
+            "faction": "Lannister",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Sabotage et Subversion"
+            ]
+        }
+    ],
+    "tactics": [
+        {
+            "id": "40101",
+            "name": "Intrigue et  faux-semblants",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une UNC ennemie est activée :",
+                    "effect": [
+                        "Cette UNC perd toutes ses Capacités jusqu’à la fin du round.",
+                        "Si vous contrôlez [MONEY], ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40102",
+            "name": "Un Lannister paie toujours ses dettes",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité de Cavalerie ou d’Infanterie alliée est détruite, placez 1 pion Ordre sur cette carte.",
+                        "Tant que cette carte est pourvue d’un pion, les Attaques de Mêlée de l’unité attachée gagnent **Cruel** et, tant que contrôlez [CROWN], +1 pour Toucher."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40103",
+            "name": "Je Rugis !",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue un Test de Moral, avant de lancer les dés :",
+                    "effect": [
+                        "Cet ennemi subit −1 à son lancer, et −1 supplémentaire pour chacun de ses rangs détruits. S’il échoue, il subit 1 Blessure *(ou +1 Blessure lors d’un test de Panique échoué)*."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40104",
+            "name": "Pot-de-Vin",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez l’effet de cette zone par :",
+                        "*Ciblez 1 Unité Combattante ennemie et attachez-lui la carte Pot-de-vin jusqu’à ce qu’elle réussisse un Test de Moral ou qu’elle soit ciblée par [MONEY]*.",
+                        "Tant que cette carte est attachée, cette unité attaque en utilisant sa valeur de dés d’Attaque la plus basse."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40105",
+            "name": "Contre-complot",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un adversaire joue une carte Tactique, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Lancez 1 dé : Sur un résultat de 3+, annulez les effets de la carte Tactique.",
+                        "Si vous contrôlez [CROWN], vous pouvez relancer ce dé."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40106",
+            "name": "Allégeance à la Couronne",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi échoue un Test de Panique :",
+                    "effect": [
+                        "Ciblez 1 unité alliée située à Longue Portée ou moins. Pour chaque Blessure que cet ennemi a subie lors de ce Test, soignez 1 Blessure de l’unité alliée ciblée, maximum 3.",
+                        "Si vous contrôlez [CROWN], soignez 1 Blessure supplémentaire *(maximum 4)*."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40107",
+            "name": "Assujetissement au pouvoir",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante ennemie est activée :",
+                    "effect": [
+                        "Cet ennemi effectue un Test de Moral. Pour chaque zone que vous contrôlez entre [CROWN] et [MONEY], il subit −2 à son lancer.",
+                        "S’il échoue, jusqu’à la fin du tour, il ne peut plus être ciblé par des cartes Tactique alliées et perd toutes ses Capacités."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40108",
+            "name": "La réputation du Régicide",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "S’il échoue, jusqu’à la fin du tour, il ne peut plus être ciblé par des cartes Tactique alliées et perd toutes ses Capacités :",
+                    "effect": [
+                        "Cette unité réussit son Test."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander_id": "20115",
+            "commander_name": "Jaime Lannister",
+            "commander_subname": "Le Régicide"
+        },
+        {
+            "id": "40109",
+            "name": "La prouesse du Régicide",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand l’unité de Jaime Lannister effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque lance sa valeur de dés la plus élevée, peut relancer tous les Échecs et le défenseur devient **Vulnérable**."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander_id": "20115",
+            "commander_name": "Jaime Lannister",
+            "commander_subname": "Le Régicide"
+        },
+        {
+            "id": "40110",
+            "name": "L'infamie du Régicide",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi situé à Longue Portée ou moins de l’unité de Jaime Lannister est activé :",
+                    "effect": [
+                        "Cet ennemi subit 1 Test de Panique. S’il est engagé avec l’unité de Jaime Lannister, il devient également **Paniqué**.",
+                        "S’il échoue, cet ennemi devient aussi **Affaibli**."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander_id": "20115",
+            "commander_name": "Jaime Lannister",
+            "commander_subname": "Le Régicide"
+        },
+        {
+            "id": "40111",
+            "name": "Débordement",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Percée :",
+                    "effect": [
+                        "Au lieu de faire une Percée, cette unité effectue 1 action de Charge.",
+                        "Si cette carte cible une unité de la Maison Clegane, celle-ci peut relancer n’importe quels dés de Distance de Charge."
+                    ]
+                }
+            ],
+            "commander_id": "20116",
+            "commander_name": "Gregor Clegane",
+            "commander_subname": "La Montagne"
+        },
+        {
+            "id": "40112",
+            "name": "Ordres d'assaut",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez les effets de cette zone par :",
+                        "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée.*",
+                        "*Si cette carte cible une unité de la Maison Clegane, celle-ci peut effectuer 1 action de Charge à la place.*"
+                    ]
+                }
+            ],
+            "commander_id": "20116",
+            "commander_name": "Gregor Clegane",
+            "commander_subname": "La Montagne"
+        },
+        {
+            "id": "40113",
+            "name": "Le prix de l'échec",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Tous les résultats des dés de cette attaque Touchent automatiquement. Pour chaque résultat qui aurait normalement dû être un Échec, l’attaquant subit 1 Blessure."
+                    ]
+                }
+            ],
+            "commander_id": "20116",
+            "commander_name": "Gregor Clegane",
+            "commander_subname": "La Montagne"
+        },
+        {
+            "id": "40114",
+            "name": "Exploiter La faiblesse",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Vous pouvez dépenser 1 pion **Affaibli** du défenseur. Si vous le faites, il devient **Paniqué**, **Vulnérable** et, si l’attaquant est l’unité de Tywin, il peut relancer n’importe quels dés d’Attaque."
+                    ]
+                }
+            ],
+            "commander_id": "20104",
+            "commander_name": "Tywin Lannister",
+            "commander_subname": "Seigneur de Castral Roc"
+        },
+        {
+            "id": "40115",
+            "name": "Volonté brisée",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi Affaibli est activé :",
+                    "effect": [
+                        "Attachez cette carte à cet ennemi jusqu’à ce que le pion **Affaibli** soit retiré.",
+                        "Tant que cette carte est attachée, cette unité subit −2 à ses lancers de Tests de Moral."
+                    ]
+                }
+            ],
+            "commander_id": "20104",
+            "commander_name": "Tywin Lannister",
+            "commander_subname": "Seigneur de Castral Roc"
+        },
+        {
+            "id": "40116",
+            "name": "Donner des ordres",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand l’unité de votre Général est activée :",
+                    "effect": [
+                        "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée située à Longue Portée ou moins. Elle effectue 1 action d’Attaque ou de Charge."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 unité Combattante alliée. Retirez 1 pion Ordre de cette unité. Elle peut utiliser cet Ordre une nouvelle fois ce round-ci."
+                    ]
+                }
+            ],
+            "commander_id": "20104",
+            "commander_name": "Tywin Lannister",
+            "commander_subname": "Seigneur de Castral Roc"
+        },
+        {
+            "id": "40117",
+            "name": "Objectif trompeur",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une UNC ennemie est activée :",
+                    "effect": [
+                        "Si cette UNC s’empare d’une zone ce tour-ci, après avoir résolu l’effet de cette dernière, vous pouvez déplacer cette UNC sur n’importe quelle autre zone libre.",
+                        "Si vous avez déplacé cette UNC depuis [LETTER], ciblez 1 Unité Combattante ennemie. Elle gagne 1 pion État."
+                    ]
+                }
+            ],
+            "commander_id": "20105",
+            "commander_name": "Tyrion Lannister",
+            "commander_subname": "Le Mi-Homme"
+        },
+        {
+            "id": "40118",
+            "name": "Habile stratagème",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action soit de Manœuvre, soit de Marche, soit de Repli.",
+                        "Si vous contrôlez [LETTER], avant que cette unité n’effectue son action, 1 ennemi situé à Longue Portée ou moins devient **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander_id": "20105",
+            "commander_name": "Tyrion Lannister",
+            "commander_subname": "Le Mi-Homme"
+        },
+        {
+            "id": "40119",
+            "name": "Intercepter les ordres",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un adversaire cible une unité avec une zone Stratégique :",
+                    "effect": [
+                        "Lancez un dé. Sur un résultat de 3+, votre adversaire doit cibler une unité différente avec l’effet de cette zone *(si possible)*.",
+                        "Si vous contrôlez [LETTER], vous pouvez relancer ce dé."
+                    ]
+                }
+            ],
+            "commander_id": "20105",
+            "commander_name": "Tyrion Lannister",
+            "commander_subname": "Le Mi-Homme"
+        },
+        {
+            "id": "40120",
+            "name": "Miséricorde de la Mère",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral.",
+                        "Si elle réussit, soignez 2 Blessures de cette unité, +1 par chacun de ses rangs détruits.",
+                        "Si elle échoue, soignez 1 de ses Blessures."
+                    ]
+                }
+            ],
+            "commander_id": "20125",
+            "commander_name": "Le Grand Moineau",
+            "commander_subname": "Sa Sainteté Suprême"
+        },
+        {
+            "id": "40121",
+            "name": "Protection  du Père",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après avoir lancé les dés de Défense :",
+                    "effect": [
+                        "Le défenseur effectue 1 Test de Moral. S’il réussit, il peut relancer n’importe quels dés de Défense. S’il échoue, il bloque +1 Touche."
+                    ]
+                }
+            ],
+            "commander_id": "20125",
+            "commander_name": "Le Grand Moineau",
+            "commander_subname": "Sa Sainteté Suprême"
+        },
+        {
+            "id": "40122",
+            "name": "Colère du Guerrier",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si elle réussit, cette attaque gagne +1 pour Toucher et **Fracasser**. Si elle échoue, cette attaque inflige +1 Touche."
+                    ]
+                }
+            ],
+            "commander_id": "20125",
+            "commander_name": "Le Grand Moineau",
+            "commander_subname": "Sa Sainteté Suprême"
+        },
+        {
+            "id": "40123",
+            "name": "Vous allez m'obéir !",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque gagne +2 dés d’Attaque et **Fracasser**.",
+                        "Pour chaque Échec, l’attaquant subit 1 Blessure. S’il ne détruit pas le défenseur, il devient également **Paniqué**."
+                    ]
+                }
+            ],
+            "commander_id": "20121",
+            "commander_name": "Joffrey Baratheon",
+            "commander_subname": "Premier du Nom"
+        },
+        {
+            "id": "40124",
+            "name": "Traîtres ! J'aurai leurs têtes !",
+            "version": "2021-S03",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie et attachez-lui cette carte.",
+                        "Tant que cette carte est attachée, les Attaques de Mêlée alliées effectuées sur cette unité gagnent **Cruel**.",
+                        "la fin du round, si cet ennemi n’a pas été détruit, retirez-lui cette carte. Chacune de vos unités alliées situées à Courte Portée ou moins devient **Paniquée** and **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander_id": "20121",
+            "commander_name": "Joffrey Baratheon",
+            "commander_subname": "Premier du Nom"
+        },
+        {
+            "id": "40125",
+            "name": "Je suis le Roi !",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après le lancer des dés de Défense :",
+                    "effect": [
+                        "Ciblez le défenseur. Il bloque +2 Touches. Après que cette attaque a été résolue, le défenseur devient **Paniqué** and **Affaibli**."
+                    ]
+                }
+            ],
+            "commander_id": "20121",
+            "commander_name": "Joffrey Baratheon",
+            "commander_subname": "Premier du Nom"
+        },
+        {
+            "id": "40126",
+            "name": "Diriger avec charisme",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée est ciblée par un Ordre ennemi, une UNC ou une zone Stratégique, avant de résoudre l’effet :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral. En cas de réussite, annulez l’effet de cet Ordre, UNC, ou zone Stratégique.",
+                        "Si cette unité est située à Courte Portée ou moins de celle d’Addam Marpheux, elle gagne +2 à son Test de Moral."
+                    ]
+                }
+            ],
+            "commander_id": "20129",
+            "commander_name": "Addam Marpheux",
+            "commander_subname": "Commandant du Guet"
+        },
+        {
+            "id": "40127",
+            "name": "Retour de bâton",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est l’unité d’Addam Marpheux, l’attaquant devient également **Paniqué**."
+                    ]
+                }
+            ],
+            "commander_id": "20129",
+            "commander_name": "Addam Marpheux",
+            "commander_subname": "Commandant du Guet"
+        },
+        {
+            "id": "40128",
+            "name": "Exemple de vaillance",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Après que l’unité d’Addam Marpheux a réussi un Test de Moral :",
+                    "effect": [
+                        "Toutes les autres unités alliées situées à Longue Portée ou moins soignent 1 de leurs Blessures, +1 pour chaque rang détruit dans l’unité d’Addam.",
+                        "Ensuite, soignez 2 Blessures de l’unité d’Addam."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez une carte Tactique."
+                    ]
+                }
+            ],
+            "commander_id": "20129",
+            "commander_name": "Addam Marpheux",
+            "commander_subname": "Commandant du Guet"
+        },
+        {
+            "id": "40129",
+            "name": "Manœuvres  prévisibles",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour ennemi :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie et 1 UNC ennemie.",
+                        "Si l’une ou l’autre de ces unités effectue une action ce tour-ci, avant de résoudre celle-ci, 1 Unité Combattante alliée effectue 1 action d’Attaque, de Manœuvre ou de Repli."
+                    ]
+                }
+            ],
+            "commander_id": "20130",
+            "commander_name": "Kevan Lannister",
+            "commander_subname": "Protecteur du Royaume"
+        },
+        {
+            "id": "40130",
+            "name": "Trouver la faille",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
+                    "effect": [
+                        "Cet ennemi devient **Vulnérable** et **Paniqué**.",
+                        "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité de Kevan Lannister attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
+                    ]
+                }
+            ],
+            "commander_id": "20130",
+            "commander_name": "Kevan Lannister",
+            "commander_subname": "Protecteur du Royaume"
+        },
+        {
+            "id": "40131",
+            "name": "La richesse du Roc",
+            "version": "2021",
+            "faction": "Lannister",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une attaque, après avoir lancé les dés d’Attaque :",
+                    "effect": [
+                        "Ciblez le Défenseur.",
+                        "Si vous contrôlez [CROWN], le défenseur gagne +2 à son lancer de Test de Panique.",
+                        "Si vous contrôlez [MONEY],le défenseur gagne +1 à ses lancers de dés de Défense.",
+                        "Si la cible est l’unité de Kevan Lannister, vous comptez comme contrôlant les deux zones."
+                    ]
+                }
+            ],
+            "commander_id": "20130",
+            "commander_name": "Kevan Lannister",
+            "commander_subname": "Protecteur du Royaume"
+        }
+    ]
+}

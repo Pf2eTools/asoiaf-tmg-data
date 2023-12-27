@@ -1,91 +1,33 @@
 import csv
 import json
+import os
+from pathlib import Path
 import re
-from generate_tactics import generate_tactics
-from generate_units import generate_unit
-from generate_ncus import generate_ncu
-from generate_attachments import generate_attachment
+from copy import deepcopy
+
+
+def split_name(string):
+    if string.startswith("Baelor Schwarzfluth"):
+        pass
+    string = re.sub(r"\s", " ", string)
+    string = re.sub(r"\s[-–]\s", ", ", string)
+    return [s.strip() for s in string.split(", ", 1)]
+
+
+def keymap(key):
+    key_map = {
+        "Name2": "Translated Name",
+    }
+    return key_map.get(key, key)
 
 
 def csv_to_dict(path):
     with open(path, "r", encoding="utf-8") as csv_file:
         line = csv_file.readline()
-        headers = [h if h else str(ix) for ix, h in enumerate(line.strip().split(","))]
+        headers = [keymap(h) if h else str(ix) for ix, h in enumerate(line.strip().split(","))]
         csv_reader = csv.DictReader(csv_file, fieldnames=headers)
         data = [dict(row) for row in csv_reader if len([v for v in dict(row).values() if v]) > 0]
     return data
-
-
-# def parse_ability_trigger(paragraphs):
-#     if len(paragraphs) > 1:
-#         return {
-#             "trigger": paragraphs[0],
-#             "effect": paragraphs[1:],
-#         }
-#     else:
-#         ix_end_bold = [i for i, v in enumerate(paragraphs[0]) if v.endswith("**")][0]
-#         return {
-#             "trigger": paragraphs[0][:ix_end_bold + 1],
-#             "effect": paragraphs[0][ix_end_bold + 1:],
-#         }
-
-
-# def parse_ability_text(text):
-#     def parse_para(para, split_func=None):
-#         para = para.strip()
-#         if split_func is not None:
-#             return split_func(para)
-#         else:
-#             return [line.strip() for line in para.split("\n")]
-#
-#     split_by_double = re.split(r"\n\s*?\n", text.strip())
-#     split_by_single = re.split(r"\n+\s*", text.strip())
-#     # FIXME/TODO: This heuristic is terrible!
-#     if max([max([len(l) for l in p.split("\n")]) for p in split_by_double]) > 50:
-#         max_line_len = 38 if len(text) / 32 < 16 else 41
-#         split_function = lambda x: split_paragraph(x, max_line_len)
-#         paragraphs = [parse_para(p, split_function) for p in split_by_single if p]
-#     else:
-#         paragraphs = [parse_para(p) for p in split_by_double if p]
-#
-#     return paragraphs
-
-
-def split_paragraph(paragraph_text, max_len=None, ignore_hurenkind=False):
-    max_len = max_len or 38
-    # Split on space or hyphen, but not a hyphen before a space
-    words = [w for w in re.split(r"([^\s-]+-)(?!\s)|\s", paragraph_text.strip()) if w]
-    lines = []
-    line = []
-    for word in words:
-        len_2 = lambda x: 2 if x.startswith("[") else len(x.replace("*", ""))
-        len_line = sum([len_2(w) + 1 for w in line]) + len_2(word)
-        if len_line > max_len and not line:
-            line = [word]
-            lines.append(line)
-            line = []
-        elif line and (len_line > max_len or word.startswith("•")):
-            lines.append(line)
-            line = [word]
-        else:
-            line.append(word)
-    if line:
-        lines.append(line)
-
-    if not ignore_hurenkind and len(lines) > 1 and len(lines[-1]) == 1 and len(lines[-2]) > 1:
-        word = lines[-2].pop()
-        lines[-1].insert(0, word)
-
-    def join(l):
-        out = ""
-        for w in l:
-            if out == "" or out.endswith("-"):
-                out += w
-            else:
-                out += f" {w}"
-        return out
-
-    return [join(l) for l in lines]
 
 
 def parse_tactics_text(text_trigger_effect):
@@ -122,9 +64,6 @@ def parse_tactics_text(text_trigger_effect):
 
 
 def parse_tactics():
-    translations = [
-        "de",
-    ]
     data = csv_to_dict(f"{CSV_PATH}/tactics.csv")
     parsed_cards = {
         "en": {}
@@ -142,28 +81,31 @@ def parse_tactics():
             parsed["remove"] = card_data.get("Remove")
         if card_data.get("Unit") != "":
             parsed["commander_id"] = card_data.get("Unit")
-            parsed["commander_name"] = card_data.get("Deck").split(", ")[0].strip()
-            parsed["commander_subname"] = card_data.get("Deck").split(", ")[1].strip()
+            parsed["commander_name"] = split_name(card_data.get("Deck"))[0]
+            parsed["commander_subname"] = split_name(card_data.get("Deck"))[1]
         parsed_cards["en"][id] = parsed
-    for lang in translations:
+    for lang in LANGS:
+        if lang == "en":
+            continue
         translated_data = csv_to_dict(f"{CSV_PATH}/tactics.{lang}.csv")
         parsed_cards[lang] = {}
         for card_data in translated_data:
             id = card_data.get("Id")
-            parsing = parsed_cards["en"][id].copy()
+            parsing = deepcopy(parsed_cards["en"][id])
             parsing["name"] = card_data.get("Name").replace("\n", " ").strip()
             parsing["text"] = [parse_tactics_text(p) for p in card_data.get("Text").replace("./", ". /").split(" /")]
-            if not re.search(r"deck", card_data.get("Deck")):
-                cmdr_name_split = card_data.get("Deck").split(", ")
-                parsing["commander_name"] = cmdr_name_split[0].strip()
+            if parsed_cards["en"][id].get("commander_id") is not None:
+                cmdr_name_split = split_name(card_data.get("Deck"))
+                parsing["commander_name"] = cmdr_name_split[0]
                 if len(cmdr_name_split) == 2:
-                    parsing["commander_subname"] = cmdr_name_split[1].strip()
+                    parsing["commander_subname"] = cmdr_name_split[1]
                 else:
                     del parsing["commander_subname"]
             parsed_cards[lang][id] = parsing
     return parsed_cards
 
 
+# TODO: Don't do this .upper() bullshit
 def parse_abilities():
     data = csv_to_dict(f"{CSV_PATH}/newskills.csv")
     parsed_abilities = {
@@ -199,10 +141,32 @@ def parse_abilities():
             for icon in ability_data.get("Icons").split(","):
                 parsed_icon = icons_to_long.get(icon)
                 if parsed_icon is None:
-                    print(f"Nice icon: {icon}, {name}")
+                    print(f'Uknown icon: "{icon}" in ability "{name}"')
                     parsed_icon = icon
                 parsed["icons"].append(parsed_icon)
         parsed_abilities["en"][name.upper()] = parsed
+
+    for lang in LANGS:
+        if lang == "en":
+            continue
+        translated_abilities = csv_to_dict(f"{CSV_PATH}/newskills.{lang}.csv")
+        parsed_abilities[lang] = {}
+        for translated_data in translated_abilities:
+            orig_name = translated_data.get("Original Name").upper()
+            orig = parsed_abilities["en"].get(orig_name)
+            if orig is None:
+                parsing = {}
+            else:
+                parsing = deepcopy(orig)
+            description = translated_data.get("Translated Description")
+            if parsing.get("trigger") is not None:
+                parts = [p for p in re.split(r"(\*\*.*?\*\*)", description) if p]
+                parsing["trigger"] = parts[0].strip("*")
+                parsing["effect"] = ["".join(parts[1:]).strip()]
+            else:
+                parsing["effect"] = [ln.strip() for ln in description.split("\n") if ln.strip()]
+            name = translated_data.get("Translated Name").upper()
+            parsed_abilities[lang][name] = parsing
 
     return parsed_abilities
 
@@ -243,6 +207,29 @@ def parse_units():
 
         parsed_cards["en"][card_id] = parsed
 
+    for lang in LANGS:
+        if lang == "en":
+            continue
+        translated_data = csv_to_dict(f"{CSV_PATH}/units.{lang}.csv")
+        translated_skills = csv_to_dict(f"{CSV_PATH}/newskills.{lang}.csv")
+        parsed_cards[lang] = {}
+        for card_data in translated_data:
+            id = card_data.get("Id")
+            original = parsed_cards["en"][id]
+            parsing = deepcopy(original)
+            parsing["name"] = card_data.get("Translated Name")
+            for ix, attack in enumerate(original["attacks"]):
+                parsing["attacks"][ix]["name"] = card_data.get(f"Attack {ix + 1}")
+            parsing["abilities"] = []
+            for ability in original["abilities"]:
+                translated = next((a for a in translated_skills if a["Original Name"].lower() == ability.lower()), None)
+                if translated is None:
+                    print(f'Did not find tranlation ({lang}) for "{ability}" in unit "{parsing["name"]}".')
+                    parsing["abilities"].append(ability)
+                else:
+                    parsing["abilities"].append(translated.get("Translated Name"))
+            parsed_cards[lang][id] = parsing
+
     return parsed_cards
 
 
@@ -254,16 +241,19 @@ def parse_ncus():
 
     for card_data in data:
         card_id = card_data.get("Id")
-        name_parts = card_data.get("Name").split(", ")
+        name_parts = split_name(card_data.get("Name"))
         parsed = {
             "id": card_id,
-            "name": name_parts[0].strip(),
+            "name": name_parts[0],
+            "subname": None,
             "version": card_data.get("Version"),
             "faction": card_data.get("Faction"),
             "abilities": [],
         }
         if len(name_parts) > 1:
             parsed["subname"] = name_parts[1]
+        else:
+            del parsed["subname"]
         ability_names = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Names"))]
         ability_text = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Descriptions"))]
         for name, text in zip(ability_names, ability_text):
@@ -274,102 +264,151 @@ def parse_ncus():
             parsed["abilities"].append(ability)
         parsed_cards["en"][card_id] = parsed
 
+    for lang in LANGS:
+        if lang == "en":
+            continue
+        translated_data = csv_to_dict(f"{CSV_PATH}/ncus.{lang}.csv")
+        translated_abilities = csv_to_dict(f"{CSV_PATH}/newskills.{lang}.csv")
+        parsed_cards[lang] = {}
+        for card_data in translated_data:
+            id = card_data.get("Id")
+            parsing = deepcopy(parsed_cards["en"][id])
+            name_parts = split_name(card_data.get("Translated Name"))
+            parsing["name"] = name_parts[0]
+            if len(name_parts) == 2:
+                parsing["subname"] = name_parts[1]
+            elif parsing.get("subname") is not None:
+                del parsing["subname"]
+            for ability in parsing["abilities"]:
+                translated = next((a for a in translated_abilities if a["Original Name"] == ability["name"]), None)
+                if translated is None:
+                    print(f'Did not find tranlation ({lang}) for "{ability["name"]}" in NCU "{parsing["name"]}".')
+                    continue
+                ability["name"] = translated["Translated Name"].strip()
+                ability["effect"] = [x.strip() for x in translated["Translated Description"].split("\n")]
+            parsed_cards[lang][id] = parsing
+
     return parsed_cards
 
 
 def parse_attachments():
     data = csv_to_dict(f"{CSV_PATH}/attachments.csv")
+    data_specials = csv_to_dict(f"{CSV_PATH}/special.csv")
     parsed_cards = {
         "en": {}
     }
 
-    for card_data in data:
+    # Add enemy attachments
+    all_data = data + data_specials
+    for card_data in all_data:
         card_id = card_data.get("Id")
-        name_parts = card_data.get("Name").split(", ")
+        name_parts = split_name(card_data.get("Name"))
 
         parsed = {
             "id": card_id,
-            "name": name_parts[0].strip(),
+            "name": name_parts[0],
+            "subname": None,
             "version": card_data.get("Version"),
             "faction": card_data.get("Faction"),
             "type": card_data.get("Type").replace(" ", ""),
             "cost": "C" if card_data.get("Cost") == "C" else int(card_data.get("Cost")),
-            "abilities": [a.strip() for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
+            "abilities": [re.sub(r"\[(\w|Fire)]", "", a.strip()) for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
         }
         if len(name_parts) > 1:
             parsed["subname"] = name_parts[1]
+        else:
+            del parsed["subname"]
         if parsed["cost"] == "C":
             parsed["commander"] = True
 
         parsed_cards["en"][card_id] = parsed
 
+    for lang in LANGS:
+        if lang == "en":
+            continue
+        translated_data = csv_to_dict(f"{CSV_PATH}/attachments.{lang}.csv")
+        translated_skills = csv_to_dict(f"{CSV_PATH}/newskills.{lang}.csv")
+        parsed_cards[lang] = {}
+        for card_data in translated_data:
+            id = card_data.get("Id")
+            original = parsed_cards["en"][id]
+            parsing = deepcopy(original)
+            name_parts = split_name(card_data.get("Translated Name"))
+            parsing["name"] = name_parts[0]
+            if len(name_parts) == 2:
+                parsing["subname"] = name_parts[1]
+            elif parsing.get("subname") is not None:
+                del parsing["subname"]
+            parsing["abilities"] = []
+            for ability in original["abilities"]:
+                translated = next((a for a in translated_skills if a["Original Name"].lower() == ability.lower()), None)
+                if translated is None:
+                    print(f'Did not find tranlation ({lang}) for "{ability}" in attachment "{parsing["name"]}".')
+                    parsing["abilities"].append(ability)
+                else:
+                    parsing["abilities"].append(translated.get("Translated Name"))
+            parsed_cards[lang][id] = parsing
+
     return parsed_cards
 
 
-# def main():
-#     parsed = parse_attachments()
-#     abilities = parse_abilities()
-#     delete = [k for k in abilities["en"].keys() if k.startswith("LOYALTY:")]
-#     for k in delete:
-#         del abilities["en"][k]
-#     for lang, data in parsed.items():
-#         for ix, u in enumerate(data.values()):
-#             if ix != 129:
-#                 pass
-#             try:
-#                 gen = generate_attachment(u, abilities[lang]).convert("RGB")
-#                 outpath = f"./generated/{lang}/attachments/{u['id']}.jpg"
-#                 print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
-#                 gen.save(outpath)
-#             except FileNotFoundError:
-#                 pass
-
-# def main():
-#     units = parse_units()
-#     abilities = parse_abilities()
-#     delete = [k for k in abilities["en"].keys() if k.startswith("LOYALTY:")]
-#     for k in delete:
-#         del abilities["en"][k]
-#     for lang, data in units.items():
-#         for ix, u in enumerate(data.values()):
-#             if ix != 116:
-#                 pass
-#             gen = generate_unit(u, abilities[lang]).convert("RGB")
-#             outpath = f"./generated/{lang}/units/{u['id']}.jpg"
-#             print(f"Saving \"{u['name']}\" (ix: {ix}) to {outpath}...")
-#             gen.save(outpath)
+def faction_to_hash(faction):
+    return re.sub(r"[^a-z]", "", faction.lower())
 
 
-# def main():
-#     # In the future, dump this info as JSON (It's useful for TTS).
-#     tactics = parse_tactics()
-#     for lang, data in tactics.items():
-#         if lang == "en":
-#             pass
-#         for ix, t in enumerate(data.values()):
-#             if ix != 220:
-#                 pass
-#             gen = generate_tactics(t).convert("RGB")
-#             outpath = f"./generated/{lang}/tactics/{t['id']}.jpg"
-#             print(f"Saving \"{t['name']}\" (ix: {ix}) to {outpath}...")
-#             gen.save(outpath)
+def dump(data, path):
+    print(f'Writing to "{path}"...')
+    with open(path, "wb") as f:
+        as_string = json.dumps(data, indent=4, ensure_ascii=False).replace(" ", " ").replace(" ", " ")
+        f.write(as_string.encode("utf-8"))
 
 
 def main():
+    abilities = parse_abilities()
+    units = parse_units()
     ncus = parse_ncus()
-    for lang, data in ncus.items():
-        if lang == "en":
+    attachments = parse_attachments()
+    tactics = parse_tactics()
+
+    for lang in LANGS:
+        ab = abilities.get(lang)
+        if ab is None:
             pass
-        for ix, ncu in enumerate(data.values()):
-            if ix != 16:
-                pass
-            gen = generate_ncu(ncu).convert("RGB")
-            outpath = f"./generated/{lang}/ncus/{ncu['id']}.jpg"
-            print(f"Saving \"{ncu['name']}\" (ix: {ix}) to {outpath}...")
-            gen.save(outpath)
+            # raise Exception("")
+        else:
+            dump(ab, f"{DATA_PATH}/{lang}/abilities.json")
+
+        for faction in FACTIONS:
+            path = f"{DATA_PATH}/{lang}"
+            Path(path).mkdir(parents=True, exist_ok=True)
+            data = {
+                "units": [u for u in units.get(lang, {}).values() if faction_to_hash(u["faction"]) == faction],
+                "ncus": [n for n in ncus.get(lang, {}).values() if faction_to_hash(n["faction"]) == faction],
+                "attachments": [a for a in attachments.get(lang, {}).values() if faction_to_hash(a["faction"]) == faction],
+                "tactics": [t for t in tactics.get(lang, {}).values() if faction_to_hash(t["faction"]) == faction],
+            }
+            dump(data, f"{path}/{faction}.json")
 
 
+DATA_PATH = "./data"
 CSV_PATH = "./data/warcouncil"
+FACTIONS = [
+    "lannister",
+    "stark",
+    "baratheon",
+    "targaryen",
+    "freefolk",
+    "nightswatch",
+    "greyjoy",
+    "martell",
+    "bolton",
+    "neutral",
+]
+LANGS = [
+    "en",
+    "de",
+    "fr"
+]
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,1072 @@
+{
+    "units": [
+        {
+            "id": "10901",
+            "name": "Speerträger von Haus Martell",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 5,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Speer",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Speerwall",
+                "Befehl: Taktisches Umstellen"
+            ]
+        },
+        {
+            "id": "10902",
+            "name": "Sand-Plänkler",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 6,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Bogen des Plänklers",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Klinge des Plänklers",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Schnellfeuer",
+                "Befehl: Schwachstellen entdecken"
+            ]
+        },
+        {
+            "id": "10903",
+            "name": "Derwische von Sonnspeer",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Klingen der Derwische",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Rascher Rückzug",
+                "Klingen der Derwische",
+                "Trügerische Flucht"
+            ]
+        },
+        {
+            "id": "10904",
+            "name": "Königliche Garde von Sonnspeer",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 4,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Königlicher Speer",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Kampfausbildung",
+                "Befehl: Schildwall"
+            ]
+        },
+        {
+            "id": "10905",
+            "name": "Dünenvipern",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Speer & Netz",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Speer & Netz",
+                "Gegenschlag",
+                "Zusammenrotten"
+            ]
+        },
+        {
+            "id": "10906",
+            "name": "Vorreiter von Sternfall",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Cavalry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 5,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Krummsäbel",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Kavallerie",
+                "Krummsäbel",
+                "Sammelruf"
+            ]
+        },
+        {
+            "id": "10907",
+            "name": "Ritter von Sternfall",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Cavalry",
+            "cost": 8,
+            "speed": 6,
+            "defense": 4,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Sternfall-Lanze",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Kavallerie",
+                "Sternfall-Lanze"
+            ]
+        }
+    ],
+    "ncus": [
+        {
+            "id": "30901",
+            "name": "Doran Martell",
+            "subname": "Lord von Sonnspeer",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Ersatzbefehle",
+                    "effect": [
+                        "Immer wenn Doran Martell eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Wähle 1 der folgenden Effekte:*",
+                        "• *Areo Hotahs Einheit darf sich drehen und dann 1 Marschaktion durchführen.*",
+                        "• *Areo Hotahs Einheit darf 1 Rückzugsaktion durchführen.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30902",
+            "name": "Doran Martell",
+            "subname": "Fürst von Dorne",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Geheimnisse von Sonnspeer",
+                    "effect": [
+                        "Immer wenn Doran Martell die Zone auf der Taktiktafel beansprucht, die der Runde entspricht, lege 1 Befehlsmarker auf ihn.",
+                        "• Runde 1: [MONEY] oder [SWORDS]",
+                        "• Runde 2: [CROWN] oder [OASIS]",
+                        "• Runde 3: [LETTER] oder [HORSE]",
+                        "• Runde 4: [CROWN] oder [SWORDS]",
+                        "• Runde 5: [MONEY] oder [OASIS]",
+                        "• Runde 6: [LETTER] oder [HORSE]",
+                        "Falls am Ende einer Runde 4+ Befehlsmarker auf Doran Martell liegen, erhältst du 2 Siegpunkte."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30903",
+            "name": "Ellaria Sand",
+            "subname": "Mätresse der Viper",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Zauber aus Lys",
+                    "effect": [
+                        "Immer wenn Ellaria eine Zone auf der Taktiktafel beansprucht, bestimme 1 befreundete Kampfeinheit zum Ziel. Du darfst 1 Zustandsmarker von ihr ablegen.",
+                        "Falls du [SWORDS] kontrollierst, bestimme 2 feindliche Einheiten innerhalb **Langer Reichweite** zu der zum Ziel bestimmten befreundeten Einheit. Lege 1 Zustandsmarker auf jede jener Feinde."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30904",
+            "name": "Oberyn Martell",
+            "subname": "Die Rote Viper",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Jähzornig",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Oberyn Einfluss auf eine befreundete Einheit ausübt, immer wenn ein Feind diese Einheit mit einem Nahkampfangriff angreift, bevor jener Angriff abgehandelt wird, erleidet der Angreifer 2 Treffer, +1 Treffer für jede verbleibende Schlachtreihe des Verteidigers."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30905",
+            "name": "Tyene Sand",
+            "subname": "Tochter einer Septa",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Heilende Hände",
+                    "effect": [
+                        "Zu Beginn der zweiten Runde wähle 1 Taktikzone. Sobald eine feindliche zivile Einheit jene Zone beansprucht, lege die Giftkarte **Der Würger** an jene zivile Einheit an.",
+                        "[SKILL:Venom]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30906",
+            "name": "Nymeria Sand",
+            "subname": "Lady Nym",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Widersprüchliche Reaktionen",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Nymeria Einfluss auf eine befreundete Infanterie-Einheit ausübt:",
+                        "• Falls du oder dein Gegner [CROWN] kontrolliert, erhalten ihre Nahkampfangriffe **Grausam**.",
+                        "• Falls du oder dein Gegner [SWORDS] kontrolliert, erhalten ihre Nahkampfangriffe **Kritischer Treffer**.",
+                        "• Falls du oder dein Gegner [OASIS] kontrolliert, erhält sie +1 [MOVEMENT]."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30907",
+            "name": "Arianne Martell",
+            "subname": "Erbin von Dorne",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Vermittlerin",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Immer wenn Arianne Martell Einfluss auf eine Einheit ausübt, wähle 1 der folgenden Effekte:",
+                        "• Solange Arianne Martell Einfluss auf eine feindliche Einheit ausübt, verlieren die Verstärkungen jener Einheit alle Fähigkeiten.",
+                        "• Solange Arianne Martell Einfluss auf eine feindliche Einheit ausübt, kann jene Einheit nicht zum Ziel von befreundeten Befehlen bestimmt werden."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30908",
+            "name": "Arys Eichenherz",
+            "subname": "Gesandter der Krone",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Unbeugsame Politik",
+                    "effect": [
+                        "Ein Mal pro Partie, während der Aufräumphase, darfst du Arys Eichenherz auf der Taktiktafel stehen lassen. Er wird in der nächsten Runde nicht aktiviert.",
+                        "Falls Arys Eichenherz eine Runde auf der Taktiktafel beginnt, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Geschwächt**."
+                    ]
+                }
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "id": "20901",
+            "name": "Oberyn Martell",
+            "subname": "Prinz von Dorne",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Mantikorgift",
+                "Präzision",
+                "Fangzahn der Viper"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20902",
+            "name": "Oberyn Martell",
+            "subname": "Die Rote Viper",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Meisterhafter Duellant",
+                "Fangzahn der Viper"
+            ]
+        },
+        {
+            "id": "20903",
+            "name": "Areo Hotah",
+            "subname": "Hauptmann der Wache",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Koordinierter Angriff",
+                "Wütender Ansturm",
+                "Der Krone verpflichtet"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20905",
+            "name": "Areo Hotah",
+            "subname": "Pflichtbewusster Riese",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Befehl: Schlachtplan",
+                "Befehl: Ziel markieren"
+            ]
+        },
+        {
+            "id": "20906",
+            "name": "Hauptmann der Derwische",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Befehl: Zwietracht säen",
+                "Unterbrechen"
+            ]
+        },
+        {
+            "id": "20907",
+            "name": "Hauptmann der Speerträger",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Befehl: Bedrohen"
+            ]
+        },
+        {
+            "id": "20908",
+            "name": "Speerlord",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Mut und Kühnheit"
+            ]
+        },
+        {
+            "id": "20909",
+            "name": "Obara Sand",
+            "subname": "Älteste Schwester",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Befehl: Waghalsiger Heldenmut",
+                "Durch das Gemetzel befeuert",
+                "Spaltschlag"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20910",
+            "name": "Obara Sand",
+            "subname": "Sandschlange",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Spaltschlag",
+                "Unbändige Wut"
+            ]
+        },
+        {
+            "id": "20911",
+            "name": "Nymeria Sand",
+            "subname": "Sandschlange",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Überlegener Schlag",
+                "Dornische Vergeltung"
+            ]
+        },
+        {
+            "id": "20912",
+            "name": "Elia Sand",
+            "subname": "Sandschlange",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Präzision",
+                "Wilde Ausstrahlung"
+            ]
+        },
+        {
+            "id": "20913",
+            "name": "Harmen Uller",
+            "subname": "Dornischer Gesandter",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Dornische Überzeugung",
+                "Verstärkungen"
+            ]
+        },
+        {
+            "id": "20914",
+            "name": "Harmen Uller",
+            "subname": "Lord von Höllhain",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Eiserne Entschlossenheit",
+                "Verstärkungen"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20915",
+            "name": "Arys Eichenherz",
+            "subname": "Der weisse Ritter",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Schutz durch die Krone"
+            ]
+        },
+        {
+            "id": "20916",
+            "name": "Quentyn Martell",
+            "subname": "Prinz von Dorne",
+            "version": "2021-S02",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Die Flanke umgehen"
+            ]
+        },
+        {
+            "id": "20917",
+            "name": "Gerold Dayn",
+            "subname": "Ritter von Hochklause",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Befehl: Anspornen",
+                "Wütender Ansturm"
+            ]
+        },
+        {
+            "id": "20918",
+            "name": "Edric Dayn",
+            "subname": "Lord von Sternfall",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Feste Überzeugung",
+                "Verwegenheit"
+            ]
+        },
+        {
+            "id": "20919",
+            "name": "Daemon Sand",
+            "subname": "Bastard von Göttergnad",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Befehl: Ungeahnter Ansturm"
+            ]
+        },
+        {
+            "id": "20920",
+            "name": "Daemon Sand",
+            "subname": "Rachsüchtiger Ritter",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Einschüchterung durch die Krone",
+                "Sammelruf"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20921",
+            "name": "Gerold Dayn",
+            "subname": "Dunkelstern",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Befehl: Kampfausbildung",
+                "Mut und Kühnheit"
+            ],
+            "commander": true
+        }
+    ],
+    "tactics": [
+        {
+            "id": "40901",
+            "name": "Überlegene Position",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind eine Ansturmaktion durchführt, bevor jene Aktion abgehandelt wird:",
+                    "effect": [
+                        "Falls jener Feind auf die Front einer Einheit einen Ansturm durchführt, erleidet er bei einem Wurf auf die Bewegungsweite des Ansturms von 3 oder weniger einen ungeordneten Ansturm.",
+                        "Falls er einen ungeordneten Ansturm erleidet, wird er **Verwundbar**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40902",
+            "name": "Ungebeugt, Ungezähmt, Ungebrochen",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Jene Einheit darf beliebig viele Würfel für diese Probe neu werfen. Falls du [SWORDS] kontrollierst,",
+                        "besteht sie diese Probe stattdessen.",
+                        "Bestimme 1 Feind innerhalb **Langer Reichweite** zu dieser Einheit zum Ziel und lege diese Karte an ihn an, bis er von der [SWORDS]-Zone zum Ziel bestimmt wird oder 1 deiner befreundeten Kampfeinheiten vernichtet wird.",
+                        "Solange diese Karte an jenem Feind anliegt, erhält er –2 auf das Ergebnis von Moralproben."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40903",
+            "name": "Rhoynische Rache",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
+                        "Solange auf dieser Karte ein Befehlsmarker liegt, immer wenn diese Einheit angreift, erleidet sie 1 **Wunde** für jede gewürfelte 1 auf einem Angriffswürfel. Solange auf dieser Karte ein Befehlsmarker liegt und der Gegner dieser Einheit [CROWN] kontrolliert, immer wenn diese Einheit von einer Taktikzone zum Ziel bestimmt wird, bevor der Effekt jener Zone abgehandelt wird, erleidet sie 1 **Wunde**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40904",
+            "name": "Sand-Diplomatie",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Zu Beginn einer beliebigen Runde:",
+                    "effect": [
+                        "Dein Gegner wählt 1 Taktikzone. Dann wählst du 1 Taktikzone. Sobald 1 jener Zonen zum ersten Mal in dieser Runde beansprucht wird, bevor der Effekt jener Zone abgehandelt wird, verliert die zivile Einheit, die jene Zone beansprucht hat, bis zum Ende der Runde alle Fähigkeiten und der Gegner jenes Spielers darf 1 Kampfeinheit zum Ziel bestimmen. Sie wird **Geschwächt**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40905",
+            "name": "Steigende Temperaturen",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Lege diese Karte an jene Einheit an, bis sie von der [SWORDS]-Zone zum Ziel bestimmt wird.",
+                        "Solange diese Karte an dieser Einheit anliegt, erleidet sie die folgenden Effekte basierend auf der Spielrunde *(die Effekte sind kumulativ)*:",
+                        "**2+**: Die Einheit kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden.",
+                        "**3+**: Die Angriffe der Einheit erleiden –1 auf den Trefferwurf.",
+                        "**4+**: Die Einheit kann keine **Wunden** heilen."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40906",
+            "name": "Raffinierte List",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere befreundete Kampfeinheit zum Ziel. Sie führt 1 Manöver-, Marsch- oder Rückzugsaktion durch.",
+                        "Falls du [SWORDS] kontrollierst, bevor sie diese Aktion durchführt, wird 1 Feind innerhalb **Langer Reichweite** **Verwundbar**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40907",
+            "name": "Dünentaktik",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls der Verteidiger gleich viele oder mehr vernichtete Schlachtreihen als der Angreifer hat, wird bei diesem Angriff der niedrigste Angriffswürfelwert verwendet.",
+                        "Falls du [CROWN] kontrollierst, nachdem dieser Angriff abgeschlossen worden ist, wird der Angreifer **Verwundbar** und **Panisch**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40908",
+            "name": "Überraschende Erschöpfung",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald ein Verwundbarer Feind aktiviert wird:",
+                    "effect": [
+                        "Lege diese Karte an jenen Feind an, bis der **Verwundbar**-Marker abgelegt wird.",
+                        "Solange diese Karte an dieser Einheit anliegt, immer wenn sie angreift, erleidet sie –1 auf den Trefferwurf.",
+                        "Solange diese Karte an dieser Einheit anliegt, immer wenn sie Oberyn Martells Einheit angreift, bevor die Angriffswürfel geworden werden, wird sie **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander_id": "20901",
+            "commander_name": "Oberyn Martell",
+            "commander_subname": "Prinz von Dorne"
+        },
+        {
+            "id": "40909",
+            "name": "Abgefangene Befehle",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald ein Gegner eine Einheit zum Ziel einer Taktikzone bestimmt:",
+                    "effect": [
+                        "Wirf einen Würfel: Bei 3+ muss dein Gegner eine andere Einheit zum Ziel des Effekts jener Taktikzone bestimmen *(falls möglich)*.",
+                        "Falls du [CROWN] kontrollierst, darfst du diesen Würfel neu werfen.",
+                        "Falls die neu zum Ziel bestimmte Einheit innerhalb **Langer Reichweite** zu Oberyns Einheit ist, erhält sie einen Zustandsmarker."
+                    ]
+                }
+            ],
+            "commander_id": "20901",
+            "commander_name": "Oberyn Martell",
+            "commander_subname": "Prinz von Dorne"
+        },
+        {
+            "id": "40910",
+            "name": "Die Ruchlosigkeit der Viper",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Jener Feind erleidet –2 [MOVEMENT], sobald er in diesem Zug einen Ansturm auf Oberyn Martells Einheit durchführt.",
+                        "Falls jener Feind in diesem Zug an einem Ansturm scheitert, wird er **Verwundbar**."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Wähle 1 der folgenden Effekte:",
+                        "*• Ziehe 1 Taktikkarte.*",
+                        "*• Falls Oberyn Martells Einheit im Nahkampf ist, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Heerführer-Taktikkarte und füge sie deiner Hand hinzu.*"
+                    ]
+                }
+            ],
+            "commander_id": "20901",
+            "commander_name": "Oberyn Martell",
+            "commander_subname": "Prinz von Dorne"
+        },
+        {
+            "id": "40911",
+            "name": "Trügerische Absichten",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
+                    "effect": [
+                        "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, darfst du jene zivile Einheit auf eine beliebige unbeanspruchte Zone bewegen.",
+                        "Falls du jene zivile Einheit von der [CROWN]-Zone entfernt hast, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker."
+                    ]
+                }
+            ],
+            "commander_id": "30901",
+            "commander_name": "Doran Martell",
+            "commander_subname": "Lord von Sonnspeer"
+        },
+        {
+            "id": "40912",
+            "name": "Friedensverhandlung",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Jene Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme 1 Feind innerhalb **Kurzer Reichweite** zum Ziel. Er wird aktiviert, aber führt keine Aktionen durch.",
+                        "Falls diese Karte Areo Hotahs Einheit zum Ziel hat, darfst du beide Einheiten 2 **Wunden** heilen lassen."
+                    ]
+                }
+            ],
+            "commander_id": "30901",
+            "commander_name": "Doran Martell",
+            "commander_subname": "Lord von Sonnspeer"
+        },
+        {
+            "id": "40913",
+            "name": "Zeit zu Handeln",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete zivile Einheit die [CROWN]-Zone beansprucht:",
+                    "effect": [
+                        "Ersetze den Effekt jener Zone durch:",
+                        "*Jede feindliche Kampfeinheit wird **Verwundbar**.*"
+                    ]
+                }
+            ],
+            "commander_id": "30901",
+            "commander_name": "Doran Martell",
+            "commander_subname": "Lord von Sonnspeer"
+        },
+        {
+            "id": "40914",
+            "name": "Ausdauernder Angriff",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert.",
+                        "Falls diese Karte Obara Sands Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "commander_id": "20909",
+            "commander_name": "Obara Sand",
+            "commander_subname": "Älteste Schwester"
+        },
+        {
+            "id": "40915",
+            "name": "Rücksichtslose Schläge",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff erhält **Kritischer Treffer** und **Präzision**. Der Angreifer erleidet 1 **Wunde** für jede gewürfelte 1 auf einem Angriffswürfel.",
+                        "Falls diese Karte Obaras Sands  Einheit zum Ziel hat, verwendet dieser Angriff seinen höchsten Angriffswürfelwert."
+                    ]
+                }
+            ],
+            "commander_id": "20909",
+            "commander_name": "Obara Sand",
+            "commander_subname": "Älteste Schwester"
+        },
+        {
+            "id": "40916",
+            "name": "Wüstenerfahrung",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Einheit eine Aktion abschließt:",
+                    "effect": [
+                        "Falls sie jene Aktion innerhalb **Langer Reichweite** zu Obara Sands Einheit beendet, wird sie **Panisch** und **Geschwächt**."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander_id": "20909",
+            "commander_name": "Obara Sand",
+            "commander_subname": "Älteste Schwester"
+        },
+        {
+            "id": "40917",
+            "name": "Speerwall",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald auf eine befreundete Einheit ein erfolgreicher Ansturm durchgeführt wird, bevor der Angreifer seinen Nahkampfangriff durchführt:",
+                    "effect": [
+                        "Falls jene befreundete Einheit nicht mit einem anderen Feind im Nahkampf ist und der Ansturm auf die Front oder in die Flanke durchgeführt worden ist, führt sie 1 Nahkampfangriffsaktion auf den Angreifer durch, bevor der Angreifer seinen Nahkampfangriff abhandelt."
+                    ]
+                }
+            ],
+            "commander_id": "20914",
+            "commander_name": "Harmen Uller",
+            "commander_subname": "Lord von Höllhain"
+        },
+        {
+            "id": "40918",
+            "name": "Durchhaltevermögen",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Solange diese Karte an dieser Einheit anliegt, erhalten die Nahkampfangriffe dieser Einheit die folgenden Effekte basierend auf der Spielrunde *(die Effekte sind kumulativ)*:",
+                        "**3+**: Die Einheit darf beliebig viele Fehlschläge neu werfen.",
+                        "**4+**: **Spaltschlag**",
+                        "**5+**: **Kritischer Treffer**",
+                        "**6+**: +2 Angriffswürfel"
+                    ]
+                }
+            ],
+            "commander_id": "20914",
+            "commander_name": "Harmen Uller",
+            "commander_subname": "Lord von Höllhain"
+        },
+        {
+            "id": "40919",
+            "name": "Widerwillige Waffenruhe",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Einheit eine Moralprobe besteht:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit innerhalb **Langer Reichweite** zu jener Einheit zum Ziel. Sie heilt 2 **Wunden**, +1 **Wunde** für jede ihrer vernichteten Schlachtreihen."
+                    ]
+                }
+            ],
+            "commander_id": "20914",
+            "commander_name": "Harmen Uller",
+            "commander_subname": "Lord von Höllhain"
+        },
+        {
+            "id": "40920",
+            "name": "Durst nach Rache",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Zu Beginn einer beliebigen Runde:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit führt 1 Angriffsaktion durch.",
+                        "Falls diese Karte Daemon Sands Einheit zum Ziel hat, erhält sie +1 auf den Trefferwurf.",
+                        "Nachdem jener Angriff abgeschlossen worden ist, darf dein Gegner 1 zivile Einheit aktivieren."
+                    ]
+                }
+            ],
+            "commander_id": "20920",
+            "commander_name": "Daemon Sand",
+            "commander_subname": "Rachsüchtiger Ritter"
+        },
+        {
+            "id": "40921",
+            "name": "Koordinierte Verschwörung",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Bestimme 1 andere befreundete Kampfeinheit innerhalb **Langer Reichweite** zum Angreifer zum Ziel. Jene Einheit führt 1 Manöver- oder Rückzugsaktion durch."
+                    ]
+                }
+            ],
+            "commander_id": "20920",
+            "commander_name": "Daemon Sand",
+            "commander_subname": "Rachsüchtiger Ritter"
+        },
+        {
+            "id": "40922",
+            "name": "Erbärmlicher Versuch",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Panikprobe besteht, wenn sie mit einem Nahkampfangriff angegriffen worden ist:",
+                    "effect": [
+                        "Bestimme den Angreifer zum Ziel. Er erleidet 2 Treffer für jede verbleibende Schlachtreihe dieser Einheit.",
+                        "Falls der Verteidiger Daemon Sands Einheit war, wird er zudem **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander_id": "20920",
+            "commander_name": "Daemon Sand",
+            "commander_subname": "Rachsüchtiger Ritter"
+        },
+        {
+            "id": "40923",
+            "name": "Einsamer Ritter",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme Gerold Dayns Einheit zum Ziel.  Falls keine anderen befreundeten Einheiten innerhalb **Langer Reichweite** zu ihr sind, darf Gerolds Einheit 1 Manöver- oder Marschaktion durchführen."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander_id": "20921",
+            "commander_name": "Gerold Dayn",
+            "commander_subname": "Dunkelstern"
+        },
+        {
+            "id": "40924",
+            "name": "Umsturzversuch",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines feindlichen Zuges:",
+                    "effect": [
+                        "Bestimme 1 Zone auf der Taktiktafel zum Ziel.",
+                        "Bis zum Ende des Zuges, sobald eine feindliche zivile Einheit jene Zone beansprucht, darf Gerold Dayns Einheit 1 Ansturmaktion durchführen."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander_id": "20921",
+            "commander_name": "Gerold Dayn",
+            "commander_subname": "Dunkelstern"
+        },
+        {
+            "id": "40925",
+            "name": "Rücksichtslose Schläge",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff erhält **Kritischer Treffer** und **Präzision**. Der Angreifer erleidet 1 **Wunde** für jede gewürfelte 1 auf einem Angriffswürfel.",
+                        "Falls diese Karte Gerold Dayns Einheit zum Ziel hat, verwendet dieser Angriff seinen höchsten Angriffswürfelwert."
+                    ]
+                }
+            ],
+            "commander_id": "20921",
+            "commander_name": "Gerold Dayn",
+            "commander_subname": "Dunkelstern"
+        }
+    ]
+}

@@ -52,4 +52,4 @@ def main(filter_lang, filter_files):
 
 
 if __name__ == "__main__":
-    main(["de", "fr", "en"], ["units", "attachments", "tactics", "newskills", "ncus"])
+    main(["de", "fr", "en"], ["units", "attachments", "tactics", "newskills", "ncus", "special"])

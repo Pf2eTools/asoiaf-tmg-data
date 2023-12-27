@@ -1,0 +1,1234 @@
+{
+    "units": [
+        {
+            "id": "10801",
+            "name": "Plünderer der Eisenmänner",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 5,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Plünderäxte",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Plünderäxte",
+                "Wütender Ansturm"
+            ]
+        },
+        {
+            "id": "10802",
+            "name": "Bogenschützen der Eisenmänner",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 4,
+            "speed": 5,
+            "defense": 6,
+            "morale": 8,
+            "attacks": [
+                {
+                    "name": "Pfeile der Eisenmänner",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Kurzschwert",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Die Beute aufteilen",
+                "Pfeile der Eisenmänner"
+            ]
+        },
+        {
+            "id": "10803",
+            "name": "Schnitter von Haus Harlau",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 5,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Bartaxt",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Bartaxt",
+                "Angst ausnutzen",
+                "Inbrunst der Schnitter"
+            ]
+        },
+        {
+            "id": "10804",
+            "name": "Eisenmacher",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 3,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Großhammer",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Großhammer",
+                "Geraubte Rüstungen"
+            ]
+        },
+        {
+            "id": "10805",
+            "name": "Fallensteller der Eisenmänner",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 4,
+            "speed": 6,
+            "defense": 6,
+            "morale": 8,
+            "attacks": [
+                {
+                    "name": "Spitze Piken",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Werkzeuge der Fallensteller",
+                "Unterbrechen"
+            ]
+        },
+        {
+            "id": "10806",
+            "name": "Auserkorene von Haus Schwarzfluth",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 4,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Mastercraft Axe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Die Beute aufteilen",
+                "Befehl: Kampfausbildung",
+                "Ermutigen"
+            ]
+        },
+        {
+            "id": "10807",
+            "name": "Stumme Männer",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 6,
+            "defense": 5,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Großaxt",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Grossaxt",
+                "Verwegenheit",
+                "Die Ruchlosigkeit der Stummen"
+            ]
+        },
+        {
+            "id": "10808",
+            "name": "Ertrunkene",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 4,
+            "speed": 5,
+            "defense": 6,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Knüppel",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Befehl: Segen des Ertrunkenen Gottes",
+                "Fanatische Anhänger des Ertrunkenen Gottes"
+            ]
+        }
+    ],
+    "ncus": [
+        {
+            "id": "30801",
+            "name": "Rodrik Harlau",
+            "subname": "Der Leser",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Ein Gelehrter unter Räubern",
+                    "effect": [
+                        "Bei Spielbeginn werden 2 **Befehlsmarker** auf Rodrik gelegt.",
+                        "Zu Beginn eines beliebigen Zuges darfst du 1 **Befehlsmarker** von Rodrik ablegen.",
+                        "Falls du das tust, lege eine beliebige Anzahl an Taktikkarten von deiner Hand beiseite und ziehe dann ebenso viele Karten +1. Mische danach die beiseite gelegten Karten in dein Taktikdeck."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30802",
+            "name": "Aeron Graufreud",
+            "subname": "Feuchthaar",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Erhebt euch erneut, härter und stärker",
+                    "effect": [
+                        "**Aeron darf nur Graufreud-Einheiten beeinflussen.**",
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Aeron Einfluss auf eine Einheit ausübt, sobald jene Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird, heilt sie 1 **Wunde**. Sobald sie einen Feind mit einem Nahkampfangriff vernichtet, heilt sie 1 **Wunde** für jede ihrer vernichteten Schlachtreihen."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30803",
+            "name": "Balon Graufreud",
+            "subname": "König von Salz und Stein",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Erhebt sich erneut mit der Klinge in der Hand",
+                    "effect": [
+                        "Ein Mal pro Partie, sobald Balon eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Stelle 1 zuvor vernichtete Graufreud-Kampfeinheit innerhalb **Langer Reichweite** zum Rand einer befreundeten Aufstellungszone oder vollständig innerhalb **Kurzer Reichweite** zu einem beliebigen Seitenrand wieder auf. Sie wird aktiviert aufgestellt und mit allen Plündermarkern, die sie vorher hatte.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30804",
+            "name": "Wendamyr",
+            "subname": "Maester von Haus Graufreud",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Rabenpflege",
+                    "effect": [
+                        "Zu Spielbeginn wird 1 **Befehlsmarker** auf Wendamyr gelegt.",
+                        "Zu Beginn eines befreundeten Zuges darfst du 1 **Befehlsmarker** von Wendamyr entfernen. Falls du das tust, wähle 1 der folgenden Effekte:",
+                        "• Ziehe 1 Taktikkarte und heile 2 **Wunden** von einer befreundeten Kampfeinheit.",
+                        "• Verschiebe 1 befreundete Kampfeinheit um 3 Zoll. Sobald Wendamyr eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Lege 1 **Befehlsmarker** auf Wendamyr.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30805",
+            "name": "Erik Eisenmacher",
+            "subname": "Der Gerechte",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Eiserne, goldene und stählerne Geschenke",
+                    "effect": [
+                        "Lege bei Spielbeginn 1 **Plündermarker** auf Erik.",
+                        "Immer wenn Erik oder eine feindliche zivile Einheit die [MONEY]-Zone beansprucht, lege 1 Plündermarker auf Erik.",
+                        "Immer wenn Erik eine Zone außer der [MONEY]-Zone beansprucht, darfst du 1 Plündermarker von ihm entfernen und auf 1 befreundete Einheit mit der Fähigkeit Plündern legen."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30806",
+            "name": "Tristifer Botlin",
+            "subname": "Lord von Herrenhort",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Diplomat der Eisenmänner",
+                    "effect": [
+                        "Du darfst ein Mal pro Partie zu Beginn einer Runde 1 Zone auf der Taktiktafel auswählen. Falls du das tust, darf diese Zone in dieser Runde nicht beansprucht werden.",
+                        "Du darfst ein Mal pro Partie, falls eine feindliche zivile Einheit aktiviert wird, 2 Zonen auf der Taktiktafel auswählen. Falls jene zivile Einheit während dieser Aktivierung eine dieser Zonen beansprucht, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30807",
+            "name": "Moqorro",
+            "subname": "Schwarze Flamme",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "R’hllor-Magie",
+                    "effect": [
+                        "Bei Spielbeginn werden 2 Befehlsmarker auf Moqorro gelegt.",
+                        "Immer wenn Moqorro eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, schau dir die oberste Karte eines beliebigen Taktikdecks an. Dann darfst du jenes Taktikdeck mischen.",
+                        "Du darfst ein Mal pro Partie, sobald Moqorro eine Zone auf der Taktiktafel beansprucht, den Effekt jener Zone ersetzen durch:",
+                        "*Lege 1 zuvor vernichtete befreundete Verstärkung an eine befreundete Kampfeinheit an (ersetze wie gewohnt die Figur, aber ignoriere die üblichen Verstärkungs-Beschränkungen).*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30808",
+            "name": "Ben Schwarzfluth",
+            "subname": "Blinder Ben",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Eifer des ertrunkenen Gottes",
+                    "effect": [
+                        "**Ben darf nur Einfluss auf Graufreud-Einheiten ausüben.**",
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Ben Einfluss auf eine befreundete Einheit ausübt, erleidet jene Einheit nur 1 **Wunde** für je 2 nicht abgewehrte Treffer jedes Angriffs oder Effekts.",
+                        "Entferne Bens Einfluss, falls jene Einheit an einer Panikprobe scheitert."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30809",
+            "name": "Asha Graufreud",
+            "subname": "Möchtegern-Königin",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Versprechen der Königin",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Asha Einfluss auf eine befreundete Einheit ausübt, erhält jene Einheit +1 auf das Ergebnis von Moralproben für jeden Plündermarker auf ihr.",
+                        "Falls jene Einheit 2 Plündermarker hat, erleidet sie –1 **Wunde**, wenn sie an einer Panikprobe scheitert."
+                    ]
+                }
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "id": "20801",
+            "name": "Asha Graufreud",
+            "subname": "Die Tochter des Kraken",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Wilde Ausstrahlung",
+                "Eiserne Entschlossenheit",
+                "Beharrlich Bleiben"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20802",
+            "name": "Asha Graufreud",
+            "subname": "Kapitänin der Schwarzer Wind",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Befehl: Schlachtruf",
+                "Eiserne Entschlossenheit"
+            ]
+        },
+        {
+            "id": "20803",
+            "name": "Victarion Graufreud",
+            "subname": "Der Eiserne Kapitän",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Befehl: Überrennen",
+                "Wütender Ansturm",
+                "Grausam"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20804",
+            "name": "Victarion Graufreud",
+            "subname": "Kapitän der Eiserner Sieg",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Wütender Ansturm",
+                "Unermüdlich"
+            ]
+        },
+        {
+            "id": "20805",
+            "name": "Hauptmann der Plünderer",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Die Flanke umgehen",
+                "Attached to Faction: Greyjoy"
+            ]
+        },
+        {
+            "id": "20806",
+            "name": "Kriegsgeschworener",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Durch das Gemetzel befeuert"
+            ]
+        },
+        {
+            "id": "20807",
+            "name": "Theon Graufreud",
+            "subname": "Sippenmörder",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Befehl: Waghalsiger Heldenmut",
+                "Schneller Hieb"
+            ]
+        },
+        {
+            "id": "20808",
+            "name": "Theon Graufreud",
+            "subname": "„Prinz“ von Winterfell",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Befehl: Bewachen",
+                "Überfall",
+                "Verbesserte Mobilität"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20809",
+            "name": "Qarl",
+            "subname": "Ashas Recke",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Meisterhafter Duellant"
+            ]
+        },
+        {
+            "id": "20810",
+            "name": "Qarl",
+            "subname": "Die Jungfrau",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Meisterhafter Duellant",
+                "Standhaft"
+            ]
+        },
+        {
+            "id": "20811",
+            "name": "Nut",
+            "subname": "Der Barbier",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Wütender Ansturm",
+                "Victarions Vasall",
+                "Durch Geld motiviert"
+            ]
+        },
+        {
+            "id": "20812",
+            "name": "Euron Graufreud",
+            "subname": "Lord Schnitter von Peik",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Befehl: Zwietracht säen",
+                "Bedrohliche Erscheinung"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20813",
+            "name": "Balon Graufreud",
+            "subname": "Der Krakenkönig",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Durch das Gemetzel befeuert",
+                "Soll des Kraken"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20814",
+            "name": "Euron Graufreud",
+            "subname": "Krähenauge",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Befehl: Seltsame Relikte",
+                "Vergiftete Geschenke"
+            ]
+        },
+        {
+            "id": "20815",
+            "name": "Erik Eisenmacher",
+            "subname": "Ambossbrecher",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Befehl: Die Beute aufteilen",
+                "Silberne und bronzene Geschenke"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20816",
+            "name": "Asha Graufreud",
+            "subname": "„Lady Graufreud“",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Befehl: Bewachen",
+                "Zusammenrotten"
+            ]
+        },
+        {
+            "id": "20817",
+            "name": "Dagmer Spaltkinn",
+            "subname": "Kapitän der Gischttrinker",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Kampfnarben"
+            ]
+        },
+        {
+            "id": "20818",
+            "name": "Baelor Schwarzfluth",
+            "subname": "Kapitän der Nachtflieger",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Mut und Kühnheit",
+                "Unbeugsam"
+            ]
+        },
+        {
+            "id": "20819",
+            "name": "Moqorro",
+            "subname": "Sklave von R’hllor",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Befehl: Anspornen",
+                "Befehl: Hilfslieferung"
+            ]
+        },
+        {
+            "id": "20820",
+            "name": "Baelor Schwarzfluth",
+            "subname": "Lord von Schwarzfluth",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Bis zum letzten Mann!",
+                "Abgehärtet"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20821",
+            "name": "Dagmer Spaltkinn",
+            "subname": "Waffenmeister",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Befehl: Kampfausbildung",
+                "Zusammenrotten"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20822",
+            "name": "Prophet der Ertrunkenen",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Befehl: Widerstandskraft",
+                "Kämpfend untergehen"
+            ]
+        }
+    ],
+    "tactics": [
+        {
+            "id": "40801",
+            "name": "Wir säen nicht",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                    "effect": [
+                        "Ersetze den Effekt jener Zone durch:",
+                        "*1 befreundete Kampfeinheit führt 1 Angriffsaktion durch.*",
+                        "Falls ein Gegner die [MONEY]-Zone kontrolliert, heilt diese Einheit 1 **Wunde** und +1 **Wunde** für jede ihrer vernichteten Schlachtreihen.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40802",
+            "name": "Was tot ist, kann niemals sterben",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit vernichtet werden würde:",
+                    "effect": [
+                        "Jene Einheit wird nicht vernichtet, sondern verbleibt mit 1 geheilten **Wunde** im Spiel."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit heilt 1 **Wunde**, +1 **Wunde** für jede ihrer vernichteten Schlachtreihen."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40803",
+            "name": "Der Zorn des Kraken",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls du [SWORDS] kontrollierst, erhält dieser Angriff **Präzision**.",
+                        "Falls ein Gegner [SWORDS] kontrolliert, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden und der Angriff erhält **Präzision**.",
+                        "Falls du [MONEY] kontrollierst, wird der Verteidiger **Panisch**.",
+                        "Falls ein Gegner [MONEY] kontrolliert, wird der Verteidiger **Verwundbar**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40804",
+            "name": "Der eiserne Preis",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Du darfst 1 Plündermarker von jener Einheit ablegen. Falls du das tust, wähle 1 der folgenden Effekte:",
+                        "• Jene Einheit darf 1 Zustandsmarker ablegen.",
+                        "• Jene Einheit darf in diesem Zug alle Würfel für die Bewegungsweite des Ansturms neu werfen.",
+                        "• Jene Einheit verwendet in diesem Zug ihren höchsten Angriffswürfelwert."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40805",
+            "name": "Fingertanz",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege diese Karte bis zum Ende der Partie an sie an.",
+                        "Solange diese Karte an dieser Einheit anliegt, sobald sie einen Nahkampfangriff auf Feinde mit gleich vielen oder weniger verbleibenden Schlachtreihen durchführt, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**.",
+                        "Sobald ein Feind mit gleich vielen oder mehr verbleibenden Schlachtreihen einen Nahkampfangriff auf diese Einheit durchführt, bevor die Angriffswürfel geworfen werden, wird diese Einheit **Verwundbar**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40806",
+            "name": "Aufruf zum Raubzug",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Graufreud-Infanterie-Einheit aktiviert wird:",
+                    "effect": [
+                        "Entferne bis zu 4 Figuren und bis zu 1 **Plündermarker** von 1 anderen befreundeten Graufreud-Infanterie-Einheit innerhalb **Langer Reichweite**. Heile ebenso viele **Wunden** von dieser Einheit und lege den entfernten Plündermarker auf diese Einheit.",
+                        "Falls ein beliebiger Spieler [MONEY] kontrolliert, erhält 1 befreundete Graufreud-Infanterie-Einheit 1 Plündermarker."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40807",
+            "name": "Mit Stein segnen, mit Stahl segnen",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Bestimme 1 Feind zum Ziel, der mit jener Einheit im Nahkampf ist. Für jede vernichtete Schlachtreihe jenes Feindes heilt diese Einheit 2 **Wunden**.",
+                        "Falls du [MONEY] oder [SWORDS] kontrollierst, heile +1 **Wunde** oder entferne 1 Zustandsmarker von jener Einheit für jede dieser Zonen, die du kontrollierst."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40808",
+            "name": "Eifer der Eisenmänner",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe besteht:",
+                    "effect": [
+                        "Heile 2 **Wunden** jener Einheit.",
+                        "Falls diese befreundete Einheit innerhalb **Kurzer Reichweite** zu Asha Graufreuds Einheit ist, heile +1 **Wunde** für jede ihrer vernichteten Schlachtreihen."
+                    ]
+                }
+            ],
+            "commander_id": "20801",
+            "commander_name": "Asha Graufreud"
+        },
+        {
+            "id": "40809",
+            "name": "Mut der Räuber",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe besteht:",
+                    "effect": [
+                        "Lege diese Karte an jene Einheit an, bis sie an einer Moralprobe scheitert.",
+                        "Solange diese Karte an dieser Einheit anliegt, sobald diese Einheit angreift, falls sie noch alle Schlachtreihen hat, erhält sie +1 Angriffswürfel. Falls nicht, wird sie so behandelt, als hätte sie +1 Schlachtreihe für die Anzahl der Angriffswürfel."
+                    ]
+                }
+            ],
+            "commander_id": "20801",
+            "commander_name": "Asha Graufreud"
+        },
+        {
+            "id": "40810",
+            "name": "Schlachtruf",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Jene Einheit legt 1 Moralprobe ab.",
+                        "Bei Bestehen bestimme 1 Feind innerhalb **Langer Reichweite** zum Ziel. Er wird **Panisch** oder **Verwundbar**.",
+                        "Falls sie Asha Graufreuds Einheit ist, wird er bei Bestehen stattdessen **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander_id": "20801",
+            "commander_name": "Asha Graufreud"
+        },
+        {
+            "id": "40811",
+            "name": "Angriffsrausch",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Ansturm-Aktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
+                    "effect": [
+                        "Die Würfe für die Bewegungsweite des Ansturms dieser Einheit zählen automatisch, als hättest du eine 6 gewürfelt, und ihre Nahkampfangriffe erhalten **Kritischer Treffer**.",
+                        "Nachdem dieser Angriff abgeschlossen worden ist, wird der Angreifer verwundet, es sei denn, er ist Victarion Graufreuds Einheit."
+                    ]
+                }
+            ],
+            "commander_id": "20803",
+            "commander_name": "Victarion Graufreud"
+        },
+        {
+            "id": "40812",
+            "name": "Angriffsbefehle",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                    "effect": [
+                        "Ersetze den Effekt jener Zone durch:",
+                        "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
+                        "*Falls diese Karte Victarion Graufreuds Einheit zum Ziel hat, darf sie stattdessen 1 Ansturm-Aktion durchführen.*"
+                    ]
+                }
+            ],
+            "commander_id": "20803",
+            "commander_name": "Victarion Graufreud"
+        },
+        {
+            "id": "40813",
+            "name": "Ausdauernder Angriff",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert.",
+                        "Falls diese Karte Victarion Graufreuds Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "commander_id": "20803",
+            "commander_name": "Victarion Graufreud"
+        },
+        {
+            "id": "40814",
+            "name": "Opportunist",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls der Verteidiger in dieser Runde noch nicht aktiviert wurde, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden und der Angriff erhält **Präzision** oder **Grausam**. Falls der Angreifer Theon Graufreuds Einheit ist, erhält der Angriff stattdessen beides."
+                    ]
+                }
+            ],
+            "commander_id": "20808",
+            "commander_name": "Theon Graufreud"
+        },
+        {
+            "id": "40815",
+            "name": "Umgehungstaktik",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Bestimme 1 andere befreundete Einheit innerhalb **Langer Reichweite** zum Verteidiger zum Ziel. Sie führt 1 Manöveraktion durch."
+                    ]
+                }
+            ],
+            "commander_id": "20808",
+            "commander_name": "Theon Graufreud"
+        },
+        {
+            "id": "40816",
+            "name": "Bloßstellung der Starks",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
+                    "effect": [
+                        "Wähle 1 der folgenden Effekte. Falls du [SWORDS] kontrollierst, wähle stattdessen 2 Effekte:",
+                        "• Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, können in diesem Zug nicht zum Ziel von befreundeten Befehlen oder Taktikkarten bestimmt werden.",
+                        "• Der Angreifer verwendet seinen höchsten Angriffswürfelwert."
+                    ]
+                }
+            ],
+            "commander_id": "20808",
+            "commander_name": "Theon Graufreud"
+        },
+        {
+            "id": "40817",
+            "name": "Annehmbare Opfer",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 andere befreundete Kampfeinheit außer Balon Graufreuds Einheit zum Ziel. Du darfst jene Einheit bis zu 2 **Wunden** erleiden und sie **Panisch** werden lassen.",
+                        "Falls du das tust, bestimme 1 andere befreundete Graufreud-Einheit innerhalb **Langer Reichweite** zum Ziel. Sie erhält 1 **Plündermarker** für jede erlittene **Wunde**."
+                    ]
+                }
+            ],
+            "commander_id": "20813",
+            "commander_name": "Balon Graufreud"
+        },
+        {
+            "id": "40818",
+            "name": "Der Preis des Versagens",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer. Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander_id": "20813",
+            "commander_name": "Balon Graufreud"
+        },
+        {
+            "id": "40819",
+            "name": "Der alte Weg",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Falls diese Einheit 1 **Plündermarker** hat, darf sie beliebig viele Würfel für diese Probe neu werfen.",
+                        "Falls diese Einheit 2 Plündermarker hat, besteht sie stattdessen diese Probe."
+                    ]
+                },
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, nachdem die Angriffswürfel geworfen worden sind:",
+                    "effect": [
+                        "Falls diese Einheit 1 **Plündermarker** hat, wird der Verteidiger **Verwundbar**.",
+                        "Falls diese Einheit 2 Plündermarker hat, darf sie zudem beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "commander_id": "20813",
+            "commander_name": "Balon Graufreud"
+        },
+        {
+            "id": "40820",
+            "name": "Hinterhältige Methoden",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Lege 1 andere Taktikkarte ab. Falls du das tust, nimm 1 Karte vom Ablagestapel deines Gegner und füge sie deiner Hand hinzu.",
+                        "Lege jene Karte zurück auf den Ablagestapel deines Gegner, falls sie deine Hand verlässt.",
+                        "Ersetze jeden Heerführer-Namen auf jener Karte durch Euron Graufreud."
+                    ]
+                }
+            ],
+            "commander_id": "20812",
+            "commander_name": "Euron Graufreud"
+        },
+        {
+            "id": "40821",
+            "name": "Raffinierte List",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Jene Einheit kann in diesem Zug keine Aktionen durchführen. Stattdessen führt 1 andere befreundete Kampfeinheit 1 Manöver-, Marsch- oder Rückzugsaktion durch.",
+                        "Fall das Euron Graufreuds Einheit ist, wird 1 Feind innerhalb **Langer Reichweite** **Verwundbar**, bevor sie diese Aktion durchführt."
+                    ]
+                }
+            ],
+            "commander_id": "20812",
+            "commander_name": "Euron Graufreud"
+        },
+        {
+            "id": "40822",
+            "name": "Gedankenmanipulation",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 Zone auf der Taktiktafel zum Ziel.",
+                        "Sobald jene Zone das nächste Mal in dieser Runde beansprucht wird, nachdem der Effekt der Zone abgehandelt worden ist, darf der Spieler, der die Zone nicht beansprucht hat, sofort den Effekt jener Zone aktivieren."
+                    ]
+                }
+            ],
+            "commander_id": "20812",
+            "commander_name": "Euron Graufreud"
+        },
+        {
+            "id": "40823",
+            "name": "Beständigkeit des Eisens",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
+                    "effect": [
+                        "Bestimme den Verteidiger zum Ziel. Er wehrt +1 Treffer ab.",
+                        "Falls diese Karte eine Graufreud-Einheit zum Ziel hat, nachdem der Angriff abgeschlossen worden ist, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                        "Solange diese Karte an dieser Einheit anliegt, erhält sie die folgenden Effekte basierend auf der Anzahl der Plündermarker *(die Effekte sind kumulativ)*:",
+                        "• **1+:** Immer wenn diese Einheit angegriffen wird, nachdem der Angriff abgeschlossen worden ist, wird 1 Feind, der mit dieser Einheit im Nahkampf ist, **Geschwächt**.",
+                        "• **2:** Immer wenn diese Einheit eine Moralprobe besteht, heilt sie 1 **Wunde**."
+                    ]
+                }
+            ],
+            "commander_id": "20815",
+            "commander_name": "Erik Eisenmacher"
+        },
+        {
+            "id": "40824",
+            "name": "Gewalt des Stahls",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Entferne eine beliebige Anzahl an Plündermarkern vom Angreifer.",
+                        "Wähle für jeden entfernten Marker 1 der folgenden Effekte:",
+                        "• Bei diesem Angriff dürfen beliebig viele Angriffswürfel neu geworfen werden.",
+                        "• Dieser Angriff erhält **Präzision**.",
+                        "• Dieser Angriff erhält **Grausam**.",
+                        "*(Die entfernten Marker zählen immer noch für alle Effekte, die während des Angriffs eintreten können.)*"
+                    ]
+                }
+            ],
+            "commander_id": "20815",
+            "commander_name": "Erik Eisenmacher"
+        },
+        {
+            "id": "40825",
+            "name": "Verlockung des Goldes",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Sie darf beliebig viele Würfel für diese Probe neu werfen. Bei Bestehen, falls diese Karte eine Graufreud-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                        "Solange diese Karte an dieser Einheit anliegt, erhält sie die folgenden Effekte basierend auf der Anzahl der Plündermarker *(die Effekte sind kumulativ)*:",
+                        "• **1+:** +1 auf das Ergebnis von Moralproben.",
+                        "• **2:** Falls diese Einheit einen Plündermarker erhalten würde, heilt sie stattdessen 1 **Wunde**."
+                    ]
+                }
+            ],
+            "commander_id": "20815",
+            "commander_name": "Erik Eisenmacher"
+        },
+        {
+            "id": "40826",
+            "name": "Peitschenhieb",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 **Wunden** für jede vernichtete Schlachtreihe des Verteidigers. Falls der Verteidiger Baelor Schwarzfluths Einheit ist, wird der Angreifer zudem **Panisch**."
+                    ]
+                }
+            ],
+            "commander_id": "20820",
+            "commander_name": "Baelor Schwarzfluth",
+            "commander_subname": "Lord von Schwarzfluth"
+        },
+        {
+            "id": "40827",
+            "name": "Groll der Schwarzfluths",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Lege diese Karte an eine befreundete Kampfeinheit an. Falls diese Einheit Wunden heilt, entferne diese Karte.",
+                        "Sobald diese Einheit einen Nahkampfangriff durchführt, wähle 1 der folgenden Effekte für jede ihrer vernichteten Schlachtreihen:",
+                        "• Dieser Angriff erhält +1 auf den Trefferwurf und +1 Angriffswürfel für jede vernichtete Schlachtreihe dieser Einheit.",
+                        "• Dieser Angriff erhält **Grausam** und, falls der Verteidiger an seiner Panikprobe scheitert, erleidet er +1 **Wunde** für jede vernichtete Schlachtreihe dieser Einheit."
+                    ]
+                }
+            ],
+            "commander_id": "20820",
+            "commander_name": "Baelor Schwarzfluth",
+            "commander_subname": "Lord von Schwarzfluth"
+        },
+        {
+            "id": "40828",
+            "name": "Überzeugung der Schwarzfluths",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Diese Einheit erhält +1 auf das Ergebnis der Moralprobe für jede ihrer vernichteten Schlachtreihen und zusätzlich +1 für jede vernichtete Schlachtreihe aller Feinde, mit denen sie im Nahkampf ist."
+                    ]
+                }
+            ],
+            "commander_id": "20820",
+            "commander_name": "Baelor Schwarzfluth",
+            "commander_subname": "Lord von Schwarzfluth"
+        },
+        {
+            "id": "40829",
+            "name": "Gier nach Ruhm",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Lege diese Karte bis zum Ende der Runde an eine befreundete Kampfeinheit an.",
+                        "Solange diese Karte an dieser Einheit anliegt, zählt sie, als hätte sie 2 Plündermarker und ihre Nahkampfangriffe erhalten +1 auf den Trefferwurf.",
+                        "Solange diese Karte an dieser Einheit anliegt, erleidet sie zudem –1 auf das Ergebnis von Verteidigungswürfen."
+                    ]
+                }
+            ],
+            "commander_id": "20821",
+            "commander_name": "Dagmer Spaltkinn",
+            "commander_subname": "Waffenmeister"
+        },
+        {
+            "id": "40830",
+            "name": "Koordinationstaktik",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 2 befreundete Infanterie-Einheiten innerhalb **Kurzer Reichweite** zueinander zum Ziel.",
+                        "Beide Einheiten erhalten bis zum Ende des Zuges alle nicht-angeborenen Fähigkeiten der anderen Einheit.",
+                        "Du darfst sofort 1 nicht verwendeten „Zu Beginn eines Zuges“-Befehl einer jener Einheiten auslösen."
+                    ]
+                }
+            ],
+            "commander_id": "20821",
+            "commander_name": "Dagmer Spaltkinn",
+            "commander_subname": "Waffenmeister"
+        },
+        {
+            "id": "40831",
+            "name": "Wissen mit Eisen bezahlen",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Du darfst 1 **Plündermarker** von 1 befreundeten Einheit ablegen. Falls du das tust, wähle 1 der folgenden Effekte:",
+                        "• Schicke 1 Taktikkarte aus deinem Ablagestapel zurück auf deine Hand.",
+                        "• Schau dir die Taktikkarten auf der Hand deines Gegners an und lege 1 Karte davon ab."
+                    ]
+                }
+            ],
+            "commander_id": "20821",
+            "commander_name": "Dagmer Spaltkinn",
+            "commander_subname": "Waffenmeister"
+        }
+    ]
+}

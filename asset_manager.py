@@ -1,4 +1,6 @@
 from PIL import Image
+import os
+
 
 class AssetManager:
     ASSETS_DIR = "./assets"
@@ -43,19 +45,28 @@ class AssetManager:
     def get_unit_image(unit_id):
         return Image.open(f"{AssetManager.ASSETS_DIR}/Units/{unit_id}.jpg").convert("RGBA")
 
+    # FIXME: hack alert
     @staticmethod
     def get_attachment_image(attachment_id):
-        return Image.open(f"{AssetManager.ASSETS_DIR}/Attachments/{attachment_id}.jpg").convert("RGBA")
+        path_attachments = f"{AssetManager.ASSETS_DIR}/Attachments/{attachment_id}.jpg"
+        if os.path.exists(path_attachments):
+            return Image.open(path_attachments).convert("RGBA")
+        else:
+            return Image.open(f"{AssetManager.ASSETS_DIR}/Specials/{attachment_id}.jpg")
 
     @staticmethod
     def get_unit_type(unit_type, faction):
         folder_prefix = "NCUs/UnitType" if unit_type == "NCU" else "Units/UnitType."
         return Image.open(f"{AssetManager.ASSETS_DIR}/{folder_prefix}{unit_type}{faction}.webp").convert("RGBA")
 
+    # FIXME:
     @staticmethod
     def get_attachment_type(unit_type, faction):
-        return Image.open(f"{AssetManager.ASSETS_DIR}/Attachments/UnitType.{unit_type}{faction}.webp").convert("RGBA")
-
+        path = f"{AssetManager.ASSETS_DIR}/Attachments/UnitType.{unit_type}{faction}.webp"
+        if os.path.exists(path):
+            return Image.open(path).convert("RGBA")
+        else:
+            return Image.new("RGBA", (100, 100))
 
     @staticmethod
     def get_stat_background():
@@ -93,9 +104,14 @@ class AssetManager:
         atk_type = attack_type.capitalize()
         return Image.open(f"{AssetManager.ASSETS_DIR}/graphics/Range{atk_type}{highlight_color}.png").convert("RGBA")
 
+    # FIXME:
     @staticmethod
     def get_skill_icon(name, color):
-        return Image.open(f"{AssetManager.ASSETS_DIR}/Units/Skill{name.capitalize()}{color}.webp").convert('RGBA')
+        path = f"{AssetManager.ASSETS_DIR}/Units/Skill{name.capitalize()}{color}.webp"
+        if os.path.exists(path):
+            return Image.open(path).convert('RGBA')
+        else:
+            return Image.new("RGBA", (134, 134))
 
     @staticmethod
     def get_skill_divider(faction):

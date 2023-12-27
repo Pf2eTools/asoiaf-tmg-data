@@ -70,12 +70,14 @@ def generate_attachment(attachment_data, abilities_data):
     bars.alpha_composite(decor, (33, 314))
     bars.alpha_composite(decor, (118, 314))
 
-    unit_type = AssetManager.get_attachment_type(attachment_data.get("type"), faction)
-    if is_commander:
-        bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, -23))
-    else:
-        unit_type = unit_type.crop((0, unit_type.size[1] - 142, unit_type.size[0], unit_type.size[1]))
-        bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, 30))
+    attach_type = attachment_data.get("type")
+    if attach_type is not None and attach_type != "None":
+        unit_type = AssetManager.get_attachment_type(attach_type, faction)
+        if is_commander:
+            bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, -23))
+        else:
+            unit_type = unit_type.crop((0, unit_type.size[1] - 142, unit_type.size[0], unit_type.size[1]))
+            bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, 30))
 
     crest = AssetManager.get_crest_tactics(faction)
     crest = crest.crop(crest.getbbox())

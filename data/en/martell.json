@@ -1,0 +1,1048 @@
+{
+    "units": [
+        {
+            "id": "10901",
+            "name": "Martell Spearmen",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 5,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Spear",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Set For Charge",
+                "Order: Tactical Reposition"
+            ]
+        },
+        {
+            "id": "10902",
+            "name": "Sand Skirmishers",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 6,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Skirmisher’s Bow",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Skirmisher’s Blade",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Quick Fire",
+                "Order: Scout Openings"
+            ]
+        },
+        {
+            "id": "10903",
+            "name": "Sunspear Dervishes",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Dervish Blades",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Swift Retreat",
+                "Dervish Blades",
+                "Elusive Escape"
+            ]
+        },
+        {
+            "id": "10904",
+            "name": "Sunspear Royal Guard",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 4,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Royal Spear",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Martial Training",
+                "Order: Shieldwall"
+            ]
+        },
+        {
+            "id": "10905",
+            "name": "Dune Vipers",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Spear & Net",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Spear & Net",
+                "Counterstrike",
+                "Gang-Up"
+            ]
+        },
+        {
+            "id": "10906",
+            "name": "Starfall Outriders",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Cavalry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 5,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Scimitar",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Cavalry",
+                "Scimitar",
+                "Rally Cry"
+            ]
+        },
+        {
+            "id": "10907",
+            "name": "Starfall Knights",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Cavalry",
+            "cost": 8,
+            "speed": 6,
+            "defense": 4,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Starfall Lance",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Cavalry",
+                "Starfall Lance"
+            ]
+        }
+    ],
+    "ncus": [
+        {
+            "id": "30901",
+            "name": "Doran Martell",
+            "subname": "Lord of Sunspear",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Proxy Orders",
+                    "effect": [
+                        "Each time Doran Martell Claims a zone, you may replace that zone's effect with:\n*Choose 1:*\n*•Areo Hotah's unit may Pivot then perform 1 March Action.*\n*•Areo Hotah's unit may perform 1 Retreat Action.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30902",
+            "name": "Doran Martell",
+            "subname": "Prince of Dorne",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Sunspear Secrets",
+                    "effect": [
+                        "Each time Doran Martell Claims the zone indicated for the Round, place 1 Order token on him.\n• Round 1: Claim [MONEY] or [SWORDS]\n• Round 2: Claim [CROWN] or [OASIS]\n• Round 3: Claim [LETTER] or [HORSE]\n• Round 4: Claim [CROWN] or [SWORDS]\n• Round 5: Claim [MONEY] or [OASIS]\n• Round 6: Claim [LETTER] or [HORSE]\nAt the End of each Round, if there are 4+ Order tokens on Doran Martell, gain 1 Victory Point."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30903",
+            "name": "Ellaria Sand",
+            "subname": "Viper's Paramour",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Lysene Charm",
+                    "effect": [
+                        "Each time Ellaria Claims a zone, target 1 friendly Combat Unit. You may remove 1 Condition token from them.\nIf you Control [SWORDS], target up to 2 enemy units in Long Range of the targeted friendly unit. Place 1 Condition token on each of those enemies."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30904",
+            "name": "Oberyn Martell",
+            "subname": "Red Viper",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Hot Tempered",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly unit, each time an enemy Attacks this unit with a Melee Attack, after resolving that Attack, the Attacker suffers 1 Hits, +1 Hit for each of the Defender's remaining Ranks."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30905",
+            "name": "Tyene Sand",
+            "subname": "Septa's Daughter",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Healing Hands",
+                    "effect": [
+                        "Each time Tyene Claims a zone, you may target 1 friendly Combat unit. They restore 1 Wound.\nAt the Start of Round 2, choose 1 Tactics Zone. The next time an enemy NCU Claims that zone, attach **The Strangler** posion card to that NCU.\n[SKILL:Venom]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30906",
+            "name": "Nymeria Sand",
+            "subname": "Lady Nym",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Conflicting Reactions",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly Infantry unit:\n• If you or your opponent Controls [CROWN], its Melee Attacks gain **Vicious**.\n• If you or your opponent Controls [SWORDS], its Melee Attacks gain **Critical Blow**.\n• If you or your opponent Controls [OASIS], it gains +1[MOVEMENT]."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30907",
+            "name": "Arianne Martell",
+            "subname": "Heiress To Dorne",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Negotiator",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nEach time Arianne Martell Influences a unit, Choose 1:\n• While Influencing an enemy unit, Attachments on that unit lose all Abilities.\n• While Influencing an enemy unit, they cannot be the target of friendly Orders."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30908",
+            "name": "Arys Oakheart",
+            "subname": "Crown's Ambassador",
+            "version": "2021",
+            "faction": "Martell",
+            "abilities": [
+                {
+                    "name": "Unfaltering Politics",
+                    "effect": [
+                        "Once per game, during the Clean-up Phase, you may keep Arys Oakheart on the Tactics Board. He does not Activate next Round.\nIf Arys Oakheart begins any Round on the Tactics Board, target 1 enemy Combat Unit, they become **Weakened**."
+                    ]
+                }
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "id": "20901",
+            "name": "Oberyn Martell",
+            "subname": "Prince of Dorne",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Manticore Venom",
+                "Precision",
+                "Viper's Fangs"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20902",
+            "name": "Oberyn Martell",
+            "subname": "The Snake",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Expert Duelist",
+                "Viper's Fangs"
+            ]
+        },
+        {
+            "id": "20903",
+            "name": "Areo Hotah",
+            "subname": "Captain of The Guard",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Coordinated Assault",
+                "Furious Charge",
+                "Duty to The Crown"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20905",
+            "name": "Areo Hotah",
+            "subname": "Dutiful Juggernaut",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Battle Plan",
+                "Order: Mark Target"
+            ]
+        },
+        {
+            "id": "20906",
+            "name": "Dervish Captain",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Sow Discord",
+                "Disrupt"
+            ]
+        },
+        {
+            "id": "20907",
+            "name": "Spearmen Captain",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Threaten"
+            ]
+        },
+        {
+            "id": "20908",
+            "name": "Spearlord",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Boldness and Courage"
+            ]
+        },
+        {
+            "id": "20909",
+            "name": "Obara Sand",
+            "subname": "Eldest Sister",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Reckless Heroism",
+                "Fueled by Slaughter",
+                "Sundering"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20910",
+            "name": "Obara Sand",
+            "subname": "Sand Snake",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Sundering",
+                "Uncontrolled Rage"
+            ]
+        },
+        {
+            "id": "20911",
+            "name": "Nymeria Sand",
+            "subname": "Sand Snake",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Advantage Strike",
+                "Dornish Vengeance"
+            ]
+        },
+        {
+            "id": "20912",
+            "name": "Elia Sand",
+            "subname": "Sand Snake",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Precision",
+                "Boisterous Charisma"
+            ]
+        },
+        {
+            "id": "20913",
+            "name": "Harmen Uller",
+            "subname": "Dornish Envoy",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Dornish Conviction",
+                "Reinforcements"
+            ]
+        },
+        {
+            "id": "20914",
+            "name": "Harmen Uller",
+            "subname": "Lord of Hellholt",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Iron Resolve",
+                "Reinforcements"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20915",
+            "name": "Arys Oakheart",
+            "subname": "The White Knight",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Protection of the Crown"
+            ]
+        },
+        {
+            "id": "20916",
+            "name": "Quentyn Martell",
+            "subname": "Prince Of Dorne",
+            "version": "2021-S02",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Outflank"
+            ]
+        },
+        {
+            "id": "20917",
+            "name": "Gerold Dayne",
+            "subname": "Knight Of High Hermitage",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Incite",
+                "Furious Charge"
+            ]
+        },
+        {
+            "id": "20918",
+            "name": "Edric Dayne",
+            "subname": "Lord Of Starfall",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "True Conviction (Martell)",
+                "Dauntless"
+            ]
+        },
+        {
+            "id": "20919",
+            "name": "Daemon Sand",
+            "subname": "Bastard Of Godsgrace",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Unsuspecting Charge"
+            ]
+        },
+        {
+            "id": "20920",
+            "name": "Daemon Sand",
+            "subname": "Vengeful Knight",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Intimidation of the Crown",
+                "Rally Cry"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20921",
+            "name": "Gerold Dayne",
+            "subname": "Darkstar",
+            "version": "2021",
+            "faction": "Martell",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Martial Training",
+                "Boldness and Courage"
+            ],
+            "commander": true
+        }
+    ],
+    "tactics": [
+        {
+            "id": "40901",
+            "name": "Superior Positioning",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an enemy performs a Charge Action, before resolving that Action:",
+                    "effect": [
+                        "If that enemy Charges a unit in the Front, they suffer a Disorderly Charge on Charge Distance rolls of 3 or less.",
+                        "If they suffer a Disorderly Charge, they become **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40902",
+            "name": "Unbowed, Unbent, Unbroken",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Panic Test, after rolling dice:",
+                    "effect": [
+                        "That unit may re-roll any dice for this test. If you Control [SWORDS], they pass this test instead.",
+                        "Target 1 enemy in Long Range of this unit and attach this card to them until they are targeted by [SWORDS] or until 1 of your friendly Combat Units is destroyed.",
+                        "While attached, that enemy suffers -2 to Morale Test rolls."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40903",
+            "name": "Rhoynish Vengeance",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit and attach this card to them until the end of the game. When a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
+                        "While this card has a token, each time this unit Attacks, for each Attack Die roll of a 1, they suffer 1 Wound. While this card has a token and this unit's opponent Controls [CROWN], each time this unit is targeted by a Tactics Zone, before resolving that zone's effect, they suffer 1 Wound."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40904",
+            "name": "Sand Diplomacy",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Start of any Round:",
+                    "effect": [
+                        "Your opponent chooses 1Tactics Zone. Then, you choose 1 Tactics Zone.The first time 1 of those zones is Claimed this Round, before resolving that zone's effect, the NCU that Claimed that zone loses all Abilities until the end of the Round and that player's opponent may target 1 Combat Unit. They become **Weakened**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40905",
+            "name": "Rising Temperatures",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "Attach this card to that unit until they are targeted by [SWORDS].",
+                        "While attached, this unit suffers the following effects, based on the Game Round *(effects are cumulative)*:",
+                        "**2+:** Unit cannot be targeted by friendly Tactics cards.",
+                        "**3+:** Unit's Attacks suffer -1 to Hit. **4+:** Unit cannot restore Wounds."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40906",
+            "name": "Cunning Ploy",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "This unit cannot perform Actions this Turn. Instead, target 1 other friendly Combat Unit. It performs 1 Maneuver, March, or Retreat Action.",
+                        "If you Control [SWORDS], before they perform this Action, 1 enemy in Long Range becomes **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40907",
+            "name": "Dune Tactics",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an enemy unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If the Defender has the same or more destroyed ranks as the Attacker, this Attack rolls its lowest Attack Die Value.",
+                        "If you Control [CROWN], after this Attack is completed, the Attacker becomes **Vulnerable** and **Panicked**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40908",
+            "name": "Unexpected Exhaustion",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a Vulnerable enemy Activates:",
+                    "effect": [
+                        "Attach this card to that enemy until the Vulnerable token is removed.",
+                        "While this card is attached, each time this unit Attacks, it suffers -1 to Hit.",
+                        "While this card is attached, each time this unit Attacks Oberyn Martell's unit, before rolling Attack dice, it becomes **Weakened**."
+                    ]
+                }
+            ],
+            "commander_id": "20901",
+            "commander_name": "Oberyn Martell",
+            "commander_subname": "Prince of Dorne"
+        },
+        {
+            "id": "40909",
+            "name": "Intercept Orders",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an opponent targets a unit with a Tactics Zone:",
+                    "effect": [
+                        "Roll a die. On a 3+, your opponent  must target a different unit with  that zone's effect *(if able)*.",
+                        "If you Control [CROWN],  you may re-roll this die.",
+                        "If the newly targeted unit is in  Long Range of Oberyn's unit,  it gains a Condition token."
+                    ]
+                }
+            ],
+            "commander_id": "20901",
+            "commander_name": "Oberyn Martell",
+            "commander_subname": "Prince of Dorne"
+        },
+        {
+            "id": "40910",
+            "name": "Viper's Infamy",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "That enemy suffers -2[MOVEMENT] when Charging Oberyn Martell's unit this Turn. If that enemy fails a Charge this Turn, it becomes **Vulnerable**."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Choose 1:",
+                        "*• Draw 1 Tactics card.*",
+                        "*• If Oberyn Martell's unit is engaged, search your Tactics Deck or discard pile for 1 Commander Tactics card and add it to your hand.*"
+                    ]
+                }
+            ],
+            "commander_id": "20901",
+            "commander_name": "Oberyn Martell",
+            "commander_subname": "Prince of Dorne"
+        },
+        {
+            "id": "40911",
+            "name": "False Agenda",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an enemy NCU Activates:",
+                    "effect": [
+                        "If that NCU Claims a zone this Turn, after resolving that zone's effect, you may move that NCU to any unclaimed zone.",
+                        "If you removed that NCU from [CROWN], target 1 enemy Combat Unit. They gain 1 Condition token."
+                    ]
+                }
+            ],
+            "commander_id": "30901",
+            "commander_name": "Doran Martell",
+            "commander_subname": "Lord of Sunspear"
+        },
+        {
+            "id": "40912",
+            "name": "Parlay",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "That unit cannot perform Actions this Turn. Target 1 enemy in Short Range. It Activates but does not perform any Actions.",
+                        "If this targets Areo Hotah's unit, you may have both units restore 2 Wounds."
+                    ]
+                }
+            ],
+            "commander_id": "30901",
+            "commander_name": "Doran Martell",
+            "commander_subname": "Lord of Sunspear"
+        },
+        {
+            "id": "40913",
+            "name": "Ripe to Act",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims [CROWN]:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*Each enemy Combat Unit becomes **Vulnerable**.*"
+                    ]
+                }
+            ],
+            "commander_id": "30901",
+            "commander_name": "Doran Martell",
+            "commander_subname": "Lord of Sunspear"
+        },
+        {
+            "id": "40914",
+            "name": "Sustained Assault",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If this unit began the Turn engaged  with the Defender, it rolls its highest  Attack Die Value.",
+                        "If this targets Obara's unit, it  may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander_id": "20909",
+            "commander_name": "Obara Sand",
+            "commander_subname": "Eldest Sister"
+        },
+        {
+            "id": "40915",
+            "name": "Reckless Strikes",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
+                        "If this targets Obara Sand's unit, this Attack rolls its highest Attack Die Value."
+                    ]
+                }
+            ],
+            "commander_id": "20909",
+            "commander_name": "Obara Sand",
+            "commander_subname": "Eldest Sister"
+        },
+        {
+            "id": "40916",
+            "name": "Desert Preparation",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an enemy unit completes an action:",
+                    "effect": [
+                        "If they finished that Action in Long Range of Obara Sand's unit, they become **Panicked** and **Weakened**."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander_id": "20909",
+            "commander_name": "Obara Sand",
+            "commander_subname": "Eldest Sister"
+        },
+        {
+            "id": "40917",
+            "name": "Set For Charge",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is Successfully Charged, before the Attacker performs their Melee Attack:",
+                    "effect": [
+                        "If that friendly unit is not engaged with another enemy, and was Charged from the Front or Flank, it performs 1 Melee Attack Action on the Attacker before the Attacker resolves their Melee Attack."
+                    ]
+                }
+            ],
+            "commander_id": "20914",
+            "commander_name": "Harmen Uller",
+            "commander_subname": "Lord of Hellholt"
+        },
+        {
+            "id": "40918",
+            "name": "Battle Endurance",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round *(effects are cumulative)*:",
+                        "**3+:** May re-roll any Misses",
+                        "**4+: Sundering**",
+                        "**5+: Critical Blow**",
+                        "**6+:** +2 Attack Dice"
+                    ]
+                }
+            ],
+            "commander_id": "20914",
+            "commander_name": "Harmen Uller",
+            "commander_subname": "Lord of Hellholt"
+        },
+        {
+            "id": "40919",
+            "name": "Spiteful Truce",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When an enemy unit passes a Morale Test:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit in Long Range of that unit. They restore 2 Wounds, +1 Wound for each of their destroyed ranks."
+                    ]
+                }
+            ],
+            "commander_id": "20914",
+            "commander_name": "Harmen Uller",
+            "commander_subname": "Lord of Hellholt"
+        },
+        {
+            "id": "40920",
+            "name": "A Need For Vengeance",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Start of any Round:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit performs 1 Attack Action.",
+                        "If this targets Daemon Sand's unit, it gains +1 to Hit.",
+                        "After completing that Attack, your opponent may Activate 1 NCU."
+                    ]
+                }
+            ],
+            "commander_id": "20920",
+            "commander_name": "Daemon Sand",
+            "commander_subname": "Vengeful Knight"
+        },
+        {
+            "id": "40921",
+            "name": "Coordinated Plotting",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 other friendly Combat Unit in Long Range of the Attacker. That unit performs 1 Maneuver or Retreat Action."
+                    ]
+                }
+            ],
+            "commander_id": "20920",
+            "commander_name": "Daemon Sand",
+            "commander_subname": "Vengeful Knight"
+        },
+        {
+            "id": "40922",
+            "name": "Pathetic Attempt",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly unit passes a Panic Test from being Attacked by a Melee Attack:",
+                    "effect": [
+                        "Target the Attacker. They suffer 2 Hits for each remaining rank in this unit.",
+                        "If the Defender was Daemon Sand's unit, they also become **Weakened**."
+                    ]
+                }
+            ],
+            "commander_id": "20920",
+            "commander_name": "Daemon Sand",
+            "commander_subname": "Vengeful Knight"
+        },
+        {
+            "id": "40923",
+            "name": "Lone Knight",
+            "version": "2021-S03",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target Gerold Dayne's unit. If there  are no other friendly units in Long  Range of it, Gerold's unit may perform  1 Maneuver or March Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander_id": "20921",
+            "commander_name": "Gerold Dayne",
+            "commander_subname": "Darkstar"
+        },
+        {
+            "id": "40924",
+            "name": "Coup Attempt",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "Start of enemy Turn:",
+                    "effect": [
+                        "Target 1 zone on the Tactics Board.",
+                        "Until the end of the Turn, when an enemy NCU Claims that zone, Gerold Dayne's unit may perform 1 Charge Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander_id": "20921",
+            "commander_name": "Gerold Dayne",
+            "commander_subname": "Darkstar"
+        },
+        {
+            "id": "40925",
+            "name": "Reckless Strikes",
+            "version": "2021",
+            "faction": "Martell",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
+                        "If this targets Gerold Dayne's unit, this Attack rolls its highest Attack Die Value."
+                    ]
+                }
+            ],
+            "commander_id": "20921",
+            "commander_name": "Gerold Dayne",
+            "commander_subname": "Darkstar"
+        }
+    ]
+}

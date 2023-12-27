@@ -1,0 +1,1231 @@
+{
+    "units": [
+        {
+            "id": "10801",
+            "name": "Ironborn Reavers",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 5,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Reaver Axes",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Reaver Axes",
+                "Furious Charge"
+            ]
+        },
+        {
+            "id": "10802",
+            "name": "Ironborn Bowmen",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 4,
+            "speed": 5,
+            "defense": 6,
+            "morale": 8,
+            "attacks": [
+                {
+                    "name": "Ironborn Arrows",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Divide The Spoils",
+                "Ironborn Arrows"
+            ]
+        },
+        {
+            "id": "10803",
+            "name": "House Harlaw Reapers",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 6,
+            "speed": 6,
+            "defense": 5,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Bardiche",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Bardiche",
+                "Prey on Fear",
+                "Reaper’s Fervor"
+            ]
+        },
+        {
+            "id": "10804",
+            "name": "Ironmakers",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 3,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Great Hammer",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Great Hammer",
+                "Raided Armaments"
+            ]
+        },
+        {
+            "id": "10805",
+            "name": "Ironborn Trappers",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 4,
+            "speed": 6,
+            "defense": 6,
+            "morale": 8,
+            "attacks": [
+                {
+                    "name": "Barbed Pikes",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Trapper’s Tools",
+                "Disrupt"
+            ]
+        },
+        {
+            "id": "10806",
+            "name": "Blacktyde Chosen",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 4,
+            "morale": 7,
+            "attacks": [
+                {
+                    "name": "Mastercraft Axe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Divide The Spoils",
+                "Order: Martial Training",
+                "Embolden"
+            ]
+        },
+        {
+            "id": "10807",
+            "name": "Silenced Men",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 7,
+            "speed": 6,
+            "defense": 5,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Great Axe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Great Axe",
+                "Dauntless",
+                "The Silence's Infamy"
+            ]
+        },
+        {
+            "id": "10808",
+            "name": "Drowned Men",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 4,
+            "speed": 5,
+            "defense": 6,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Cudgel",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Drowned God’s Blessing",
+                "Drowned God’s Fanatics"
+            ]
+        }
+    ],
+    "ncus": [
+        {
+            "id": "30801",
+            "name": "Rodrik Harlaw",
+            "subname": "The Reader",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Scholar Among Raiders",
+                    "effect": [
+                        "Rodrik begins the game with 2 Order Tokens.\nAt the start of any Turn, you may remove 1 Order token from Rodrik. If you do, place any number of Tactics cards from your hand to the side, then draw 1+ that many cards. Shuffle the cards you set aside into your Tactics Deck."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30802",
+            "name": "Aeron Greyjoy",
+            "subname": "The Damphair",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Rise Again, Harder and Stronger",
+                    "effect": [
+                        "**Aeron may only Influence Greyjoy units.**\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, when that unit performs an Action, before resolving that Action, it restores 1 Wound.\nWhen it destroys an enemy with a Melee Attack, it restores 1 Wound for each of its destroyed ranks."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30803",
+            "name": "Balon Greyjoy",
+            "subname": "King of Salt and Rock",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Rise Again, Blade in Hand",
+                    "effect": [
+                        "Once per game, when Balon activates, instead of Claiming a Zone, redeploy 1 previously destroyed House Greyjoy Combat Unit fully within Long Range of a friendly Deployment Edge, or fully within Short Range of any Flank table edge. It deploys with any Pillage tokens it previously had. If the unit had not Activated this Round, it deploys Unactivated. Otherwise, it deploys Activated."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30804",
+            "name": "Wendamyr",
+            "subname": "Maester of the House Greyjoy",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Raven Tending",
+                    "effect": [
+                        "When Wendamyr Claims a zone, you may replace that zone's effect with:\n*Place 1 Order token on Wendamyr.*\nAt the start of a friendly Turn, you may remove 1 Order token from Wendamyr. If you do, choose 1:\n• Draw 1 Tactics card and restore 2 Wounds to 1 friendly Combat Unit.\n• 1 friendly Combat Unit performs a 3\" shift."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30805",
+            "name": "Erik Ironmaker",
+            "subname": "The Just",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Gifts of Iron, Gold, and Steel",
+                    "effect": [
+                        "At the start of the game, place 1 Pillage token on Erik. \nWhen Erik or an enemy NCU claims [MONEY] place 1 Pillage token on Erik.\nWhen Erik Claims a zone other than [MONEY], you may remove 1 Pillage token from him and place it on 1 friendly Greyjoy unit."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30806",
+            "name": "Tristifer Botley",
+            "subname": "Lord of Lordsport",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Ironborn Diplomat",
+                    "effect": [
+                        "Once per game, at the start of any Turn, you may select 1 Tactics Zone. If you do, both players counts as Controlling that Zone until the end of the Round.\nOnce per game, when an enemy NCU Activates, you may select 2 Tactics Zones. If that NCU Claims either zone this Activation, target up to 2 enemy Combat Units. they become **Panicked** and **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30807",
+            "name": "Moqorro",
+            "subname": "The Black Flame",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "R'hllor's Magics",
+                    "effect": [
+                        "Once per game, at the start of any Turn, you may use this ability. If you do, until the end of the Turn, your opponent may not use Orders or Tactics card.\nOnce per game, when Moqorro Claims a zone, you may replace that zone's effect with:\n*Return 1 previously destroyed friendly Attachment to a friendly Combat Unit, replacing a model as usual but ignoring the usual Attachment limits.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30808",
+            "name": "Beron Blacktyde",
+            "subname": "Blind Beron",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Zeal of the Drowned God",
+                    "effect": [
+                        "**Beron may only Influence Greyjoy units.**\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly unit, that unit gains the **Hardened** Ability:\n**HARDENED**\n*Each time an enemy is performing an Attack on this unit, after rolling Defense Dice, this unit blocks 1 Hit for each of its destroyed ranks.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30809",
+            "name": "Asha Greyjoy",
+            "subname": "Would-be Queen",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "abilities": [
+                {
+                    "name": "Queen's Promises",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*\nWhile Influencing a friendly unit, that unit gains +1 to Morale Test rolls for each Pillage token on it.\nIf that unit has 2 Pillage tokens, it suffers -1 Wound from failing Panic Tests."
+                    ]
+                }
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "id": "20801",
+            "name": "Asha Greyjoy",
+            "subname": "The Kraken's Daughter",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Boisterous Charisma",
+                "Iron Resolve",
+                "Stubborn Tenacity"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20802",
+            "name": "Asha Greyjoy",
+            "subname": "Captain of the Black Wind",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: War Cry",
+                "Iron Resolve"
+            ]
+        },
+        {
+            "id": "20803",
+            "name": "Victarion Greyjoy",
+            "subname": "The Iron Captain",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Overrun",
+                "Furious Charge",
+                "Vicious"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20804",
+            "name": "Victarion Greyjoy",
+            "subname": "Master of the Iron Victory",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Furious Charge",
+                "Relentless"
+            ]
+        },
+        {
+            "id": "20805",
+            "name": "Reaver Captain",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Outflank",
+                "Attached to Faction: Greyjoy"
+            ]
+        },
+        {
+            "id": "20806",
+            "name": "Warsworn",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Fueled By Slaughter"
+            ]
+        },
+        {
+            "id": "20807",
+            "name": "Theon Greyjoy",
+            "subname": "Kinslayer",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Reckless Heroism",
+                "Swift Strike"
+            ]
+        },
+        {
+            "id": "20808",
+            "name": "Theon Greyjoy",
+            "subname": "\"Prince\" of Winterfell",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Sentinel",
+                "Ambush",
+                "Enhanced Mobility"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20809",
+            "name": "Qarl",
+            "subname": "Asha's Champion",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Expert Duelist"
+            ]
+        },
+        {
+            "id": "20810",
+            "name": "Qarl",
+            "subname": "The Maid",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Expert Duelist",
+                "Stalwart"
+            ]
+        },
+        {
+            "id": "20811",
+            "name": "Nute",
+            "subname": "The Barber",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Furious Charge",
+                "Victarion's Vassal",
+                "Motivated by Coin (Nute)"
+            ]
+        },
+        {
+            "id": "20812",
+            "name": "Euron Greyjoy",
+            "subname": "Lord Reaper of Pyke",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Sow Discord",
+                "Intimidating Presence"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20813",
+            "name": "Balon Greyjoy",
+            "subname": "The Kraken King",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Fueled By Slaughter",
+                "The Kraken's Dues"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20814",
+            "name": "Euron Greyjoy",
+            "subname": "Crow's Eye",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Strange Relics",
+                "Poisoned Gifts"
+            ]
+        },
+        {
+            "id": "20815",
+            "name": "Erik Ironmaker",
+            "subname": "Anvil-Breaker",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Divide The Spoils",
+                "Gifts of Silver and Bronze"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20816",
+            "name": "Asha Greyjoy",
+            "subname": "\"Lady Greyjoy\"",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Sentinel",
+                "Gang-Up"
+            ]
+        },
+        {
+            "id": "20817",
+            "name": "Dagmer Cleftjaw",
+            "subname": "Captain of the Foamdrinker",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Battle Scars (Dagmer)"
+            ]
+        },
+        {
+            "id": "20818",
+            "name": "Baelor Blacktyde",
+            "subname": "Captain of the Nightflyer",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 1,
+            "abilities": [
+                "Boldness and Courage",
+                "Unyielding"
+            ]
+        },
+        {
+            "id": "20819",
+            "name": "Moqorro",
+            "subname": "Slave of R'hllor",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Incite",
+                "Order: Supply Aid"
+            ]
+        },
+        {
+            "id": "20820",
+            "name": "Baelor Blacktyde",
+            "subname": "Lord of Blacktyde",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "To The Last!",
+                "Hardened"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20821",
+            "name": "Dagmer Cleftjaw",
+            "subname": "Master-at-Arms",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Martial Training",
+                "Gang-Up"
+            ],
+            "commander": true
+        },
+        {
+            "id": "20822",
+            "name": "Drowned Prophet",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "type": "Infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Resilience",
+                "Go Down Fighting"
+            ]
+        }
+    ],
+    "tactics": [
+        {
+            "id": "40801",
+            "name": "We Do Not Sow",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Attack Action.*",
+                        "*If an opponent Controls [MONEY], this unit restores 1 Wound, +1 Wound for each of its destroyed ranks.*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40802",
+            "name": "What Is Dead May Never Die",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat  unit would be destroyed:",
+                    "effect": [
+                        "That unit is not destroyed,  but instead remains in play  with 1 Wound."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit.",
+                        "That unit restores 1 Wound,  +1 Wound for each of its  destroyed ranks."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40803",
+            "name": "The Kraken's Wrath",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If you Control [SWORDS], this Attack gains **Precision**.",
+                        "If an opponent Controls [SWORDS], this Attack may re-roll any Attack Dice and gains **Precision**.",
+                        "If you Control [MONEY], the Defender becomes **Panicked**.",
+                        "If an opponent Controls [MONEY], the Defender becomes **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40804",
+            "name": "The Iron Price",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit.  You may remove 1 Pillage  token from that unit.  If you do, choose 1:",
+                        "• That unit may remove  1 Condition token.",
+                        "• That unit may re-roll Charge  Distance Dice this Turn.",
+                        "• That unit Attacks using its highest  Attack Die Value this Turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40805",
+            "name": "Finger Dance",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit.",
+                        "Attach this card to them until  the end of the game.",
+                        "While attached, when performing a  Melee Attack on enemies with the  same or fewer remaining ranks, before  Attack Dice are rolled, the Defender  becomes **Vulnerable**. When an enemy  with the same or more remaining ranks  is performing a Melee Attack on  this unit, before rolling Attack Dice,  this unit becomes **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40806",
+            "name": "Raiding Call",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly Greyjoy Infantry Unit Activates:",
+                    "effect": [
+                        "Remove up to 4 models and up to  1 Pillage token from 1 other friendly  Greyjoy Infantry unit in Long Range.  Restore that many Wounds to this  unit and place the removed  Pillage token on this unit.",
+                        "If any player Controls [MONEY],  1 friendly Greyjoy Infantry  unit gains 1 Pillage token."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40807",
+            "name": "Bless With Stone, Bless With Steel",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "Target 1 enemy engaged with that unit. For each of that enemy's destroyed ranks, this unit restores 2 Wounds.",
+                        "If you Control [MONEY] or [SWORDS], restore +1 Wound or remove 1 Condition token from that unit for each of those zones you Control."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "40808",
+            "name": "Ironborn Mettle",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit passes a Morale Test:",
+                    "effect": [
+                        "Restore 2 Wounds to that unit.",
+                        "If that friendly unit is in Short Range of Asha Greyjoy's unit, restore +1 Wound for each of their destroyed ranks."
+                    ]
+                }
+            ],
+            "commander_id": "20801",
+            "commander_name": "Asha Greyjoy",
+            "commander_subname": "The Kraken's Daughter"
+        },
+        {
+            "id": "40809",
+            "name": "Raider Bravery",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit passes a Morale Test:",
+                    "effect": [
+                        "Attach this card to that unit until it fails a Morale Test.",
+                        "While attached, when this unit Attacks, if it has full ranks, it gains +1 Attack Die. Otherwise, it is treated as having +1 rank for Attack Dice."
+                    ]
+                }
+            ],
+            "commander_id": "20801",
+            "commander_name": "Asha Greyjoy",
+            "commander_subname": "The Kraken's Daughter"
+        },
+        {
+            "id": "40810",
+            "name": "War Cry",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "That unit performs 1 Morale Test.",
+                        "On a success, target 1 enemy in  Long Range. It becomes **Panicked**  or **Vulnerable**.",
+                        "If this is Asha's unit, on a success,  it becomes **Panicked** and  **Vulnerable** instead."
+                    ]
+                }
+            ],
+            "commander_id": "20801",
+            "commander_name": "Asha Greyjoy",
+            "commander_subname": "The Kraken's Daughter"
+        },
+        {
+            "id": "40811",
+            "name": "Rush of Aggression",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Charge Action, before rolling Charge Distance dice:",
+                    "effect": [
+                        "This unit automatically counts as rolling a 6 on all Charge Distance dice and their Melee Attack gains **Critical Blow**.",
+                        "After this Attack has been completed, unless the Attacker is Victarion Greyjoy's unit, they become **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander_id": "20803",
+            "commander_name": "Victarion Greyjoy",
+            "commander_subname": "The Iron Captain"
+        },
+        {
+            "id": "40812",
+            "name": "Assault Orders",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
+                        "*If this targets Victarion Greyjoy's unit, it may perform 1 Charge Action instead.*"
+                    ]
+                }
+            ],
+            "commander_id": "20803",
+            "commander_name": "Victarion Greyjoy",
+            "commander_subname": "The Iron Captain"
+        },
+        {
+            "id": "40813",
+            "name": "Sustained Assault",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is  performing a Melee Attack,  before rolling Attack Dice:",
+                    "effect": [
+                        "If this unit began the Turn  engaged with the Defender, it  rolls its highest Attack Die Value.",
+                        "If this targets Victarion Greyjoy's  unit, it may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander_id": "20803",
+            "commander_name": "Victarion Greyjoy",
+            "commander_subname": "The Iron Captain"
+        },
+        {
+            "id": "40814",
+            "name": "Opportunist",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or **Vicious**. If the Attacker is Theon Greyjoy's unit, gain both instead."
+                    ]
+                }
+            ],
+            "commander_id": "20808",
+            "commander_name": "Theon Greyjoy",
+            "commander_subname": "\"Prince\" of Winterfell"
+        },
+        {
+            "id": "40815",
+            "name": "Diversion Tactics",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 other friendly unit in Long Range of the Defender. It performs 1 Maneuver Action."
+                    ]
+                }
+            ],
+            "commander_id": "20808",
+            "commander_name": "Theon Greyjoy",
+            "commander_subname": "\"Prince\" of Winterfell"
+        },
+        {
+            "id": "40816",
+            "name": "Stark Exposure",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Successfully Charges:",
+                    "effect": [
+                        "Choose 1. If you Control  [SWORDS], gain both:",
+                        "• Enemies Successfully Charged  by this unit cannot be the target  of friendly Orders or Tactics  cards this Turn.",
+                        "• The Attacker Attacks using  its highest Die Value."
+                    ]
+                }
+            ],
+            "commander_id": "20808",
+            "commander_name": "Theon Greyjoy",
+            "commander_subname": "\"Prince\" of Winterfell"
+        },
+        {
+            "id": "40817",
+            "name": "Acceptable Sacrifices",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit  other than Balon's unit.",
+                        "You may have that unit suffer up  to 2 Wounds and become **Panicked**.  If you do, target 1 other friendly  Greyjoy unit in Long Range.  They gain 1 Pillage token  for each Wound suffered."
+                    ]
+                }
+            ],
+            "commander_id": "20813",
+            "commander_name": "Balon Greyjoy",
+            "commander_subname": "The Kraken King"
+        },
+        {
+            "id": "40818",
+            "name": "Price of Failure",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "All Attack Dice rolls automatically Hit for this Attack.",
+                        "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander_id": "20813",
+            "commander_name": "Balon Greyjoy",
+            "commander_subname": "The Kraken King"
+        },
+        {
+            "id": "40819",
+            "name": "The Old Way",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
+                    "effect": [
+                        "If this unit has 1 Pillage token, it  may re-roll any dice for this test.",
+                        "If this unit has 2 Pillage tokens,  it passes this test instead."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly unit is performing an Attack, after rolling Attack Dice:",
+                    "effect": [
+                        "If this unit has 1 Pillage token,  the Defender becomes **Vulnerable**.",
+                        "If this unit has 2 Pillage tokens, it  also may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander_id": "20813",
+            "commander_name": "Balon Greyjoy",
+            "commander_subname": "The Kraken King"
+        },
+        {
+            "id": "40820",
+            "name": "Devious Methods",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Discard 1 other Tactics card. If you do, take 1 card from your opponent's discard pile and add it to your hand.",
+                        "Return that card to your opponent's discard pile if it leaves your hand.",
+                        "Replace any Commander Name on that card with Euron Greyjoy."
+                    ]
+                }
+            ],
+            "commander_id": "20812",
+            "commander_name": "Euron Greyjoy",
+            "commander_subname": "Lord Reaper of Pyke"
+        },
+        {
+            "id": "40821",
+            "name": "Cunning Ploy",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "That unit cannot perform Actions this Turn. Instead, 1 other friendly Combat Unit performs 1 Maneuver, March, or Retreat Action.",
+                        "If this is Euron Greyjoy's unit, before they perform this Action, 1 enemy in Long Range becomes Vulnerable."
+                    ]
+                }
+            ],
+            "commander_id": "20812",
+            "commander_name": "Euron Greyjoy",
+            "commander_subname": "Lord Reaper of Pyke"
+        },
+        {
+            "id": "40822",
+            "name": "Mind Games",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 Tactics Zone.",
+                        "The next time that zone is Claimed this Round, after resolving that zone's effect, the player who did not Claim that zone may immediately activate that zone's effect."
+                    ]
+                }
+            ],
+            "commander_id": "20812",
+            "commander_name": "Euron Greyjoy",
+            "commander_subname": "Lord Reaper of Pyke"
+        },
+        {
+            "id": "40823",
+            "name": "Iron's Endurance",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When an enemy is performing a Melee Attack, after rolling Defense Dice:",
+                    "effect": [
+                        "Target the Defender. It blocks +1 Hit.",
+                        "If this targeted a Greyjoy unit, after the  attack is completed, attach this card  to that unit until the end of the game.",
+                        "While attached, gain the following  bonus based on the number of Pillage  tokens *(effects are cumulative)*:",
+                        "**•1+:** Each time this unit is attacked, after  the attack is completed, 1 enemy engaged  with this unit becomes **Weakened**. **•2:** Each time this unit passes a  Morale Test, it restores 1 Wound."
+                    ]
+                }
+            ],
+            "commander_id": "20815",
+            "commander_name": "Erik Ironmaker",
+            "commander_subname": "Anvil-Breaker"
+        },
+        {
+            "id": "40824",
+            "name": "Steel's Might",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Remove any number of Pillage tokens from the Attacker.",
+                        "For each removed token, choose 1:",
+                        "• Attack may re-roll any Attack Dice. • This Attack gains **Precision**. • This Attack gains **Vicious**.",
+                        "*(The removed tokens still count for any effects happening during the Attack.)*"
+                    ]
+                }
+            ],
+            "commander_id": "20815",
+            "commander_name": "Erik Ironmaker",
+            "commander_subname": "Anvil-Breaker"
+        },
+        {
+            "id": "40825",
+            "name": "Gold's Allure",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
+                    "effect": [
+                        "It may re-roll any dice for this test. On a success, if this targeted a Greyjoy  unit, attach this card to that unit until  the end of the game.",
+                        "While attached, gain the following  bonus based on number of Pillage  tokens *(effects are cumulative)*:",
+                        "**•1+:** +1 to Morale Test rolls.",
+                        "**•2:** If this unit would gain a Pillage  token, it restores 1 Wound instead."
+                    ]
+                }
+            ],
+            "commander_id": "20815",
+            "commander_name": "Erik Ironmaker",
+            "commander_subname": "Anvil-Breaker"
+        },
+        {
+            "id": "40826",
+            "name": "Lash Out",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is Baelor Blacktyde's unit, the Attacker also becomes **Panicked**."
+                    ]
+                }
+            ],
+            "commander_id": "20820",
+            "commander_name": "Baelor Blacktyde",
+            "commander_subname": "Lord of Blacktyde"
+        },
+        {
+            "id": "40827",
+            "name": "Blacktyde Resentment",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to a friendly Combat Unit. If this unit ever restores Wounds, remove this card.",
+                        "When this unit is performing a Melee Attack, for each of its destroyed ranks, choose 1:",
+                        "• This Attack gains +1 to Hit and +1 Attack Die for each of this unit's destroyed ranks.",
+                        "• This Attack gains **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound for each of this unit's destroyed ranks."
+                    ]
+                }
+            ],
+            "commander_id": "20820",
+            "commander_name": "Baelor Blacktyde",
+            "commander_subname": "Lord of Blacktyde"
+        },
+        {
+            "id": "40828",
+            "name": "Blacktyde Conviction",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Morale Test, after rolling dice:",
+                    "effect": [
+                        "This unit gains +1 to their roll for each of their destroyed ranks, and an additional +1 for each destroyed rank among all enemies they are engaged with."
+                    ]
+                }
+            ],
+            "commander_id": "20820",
+            "commander_name": "Baelor Blacktyde",
+            "commander_subname": "Lord of Blacktyde"
+        },
+        {
+            "id": "40829",
+            "name": "Lust for Glory",
+            "version": "2021",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to a friendly Combat Unit until the end of the Round.",
+                        "While attached, this unit counts as having 2 Pillage tokens and its Melee Attacks gain +1 to Hit.",
+                        "Also while attached, this unit suffers -1 to Defense Dice rolls."
+                    ]
+                }
+            ],
+            "commander_id": "20821",
+            "commander_name": "Dagmer Cleftjaw",
+            "commander_subname": "Master-at-Arms"
+        },
+        {
+            "id": "40830",
+            "name": "Coordination Tactics",
+            "version": "2021-S02",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 2 friendly Infantry units in Short Range of each other.",
+                        "Until the end of the Turn, both units gain any non-Innate Abilities on the other unit.",
+                        "You may immediately trigger 1 unused \"Start of Turn\" Order on either of those units."
+                    ]
+                }
+            ],
+            "commander_id": "20821",
+            "commander_name": "Dagmer Cleftjaw",
+            "commander_subname": "Master-at-Arms"
+        },
+        {
+            "id": "40831",
+            "name": "Knowledge Paid in Iron",
+            "version": "2021-S03",
+            "faction": "Greyjoy",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "You may discard 1 Pillage token from  1 friendly unit. If you do, choose 1:",
+                        "• Return 1 Tactics card from your  discard pile to your hand.",
+                        "• Look at your opponent's hand of  Tactics cards and discard 1 card."
+                    ]
+                }
+            ],
+            "commander_id": "20821",
+            "commander_name": "Dagmer Cleftjaw",
+            "commander_subname": "Master-at-Arms"
+        }
+    ]
+}
