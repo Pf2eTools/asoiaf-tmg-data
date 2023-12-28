@@ -201,7 +201,11 @@ def render_skill_icons(icons, highlight_color="Gold"):
 def get_filtered_ability_data(ability_names, abilities_data):
     filtered_abilities_data = []
     for ability_name in ability_names:
-        ability_data = abilities_data.get(ability_name.upper())
+        name_upper = ability_name.upper()
+        # TODO: Actually good way to filter out abilities that should be on the back of the card
+        if name_upper.startswith("LOYA"):
+            continue
+        ability_data = abilities_data.get(name_upper)
         if ability_data is None:
             print(f"Couldn't find ability: {ability_name}")
             continue
