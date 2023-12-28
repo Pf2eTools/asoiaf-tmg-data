@@ -156,6 +156,7 @@ def render_attack(attack_data, border_color="Gold"):
 
 def render_skill_icon(name, highlight_color="Gold"):
     rendered = Image.new("RGBA", (134, 134))
+    name, number, _ = re.split(r"(\d+)|$", name, maxsplit=1)
     if name in ["ranged", "melee", "long", "short"]:
         attack_type_bg = AssetManager.get_attack_type_bg(highlight_color)
         x, y = (134 - attack_type_bg.size[0]) // 2, (134 - attack_type_bg.size[1]) // 2
@@ -163,21 +164,36 @@ def render_skill_icon(name, highlight_color="Gold"):
         attack_type = apply_drop_shadow(AssetManager.get_attack_type(name, highlight_color))
         x, y = (136 - attack_type.size[0]) // 2, (136 - attack_type.size[1]) // 2
         rendered.alpha_composite(attack_type, (x, y))
+    # Buff asha
+    elif name == "morale":
+        rendered = Image.new("RGBA", (134, 196))
+        icon_morale = AssetManager.get_stat_icon("morale")
+        rd_morale = render_stat_value(f'{number or 5}+')
+        x, y = (134 - rd_morale.size[0]) // 2, 196 - 9 - rd_morale.size[1]
+        rendered.alpha_composite(rd_morale, (x, y))
+        x, y = (134 - icon_morale.size[0]) // 2, 9
+        rendered.alpha_composite(icon_morale, (x, y))
     else:
         icon = AssetManager.get_skill_icon(name, highlight_color)
         x, y = (134 - icon.size[0]) // 2, (134 - icon.size[1]) // 2
         rendered.alpha_composite(icon, (x, y))
+        if number is not None:
+            renderer_number = TextRenderer(number, "Garamond", (134, 134), bold=True, font_color="white", font_size=36,
+                                           align_y=TextRenderer.ALIGN_CENTER)
+            rendered.alpha_composite(renderer_number.render())
     return rendered
 
 
 def render_skill_icons(icons, highlight_color="Gold"):
     rd_icons = [render_skill_icon(icon, highlight_color) for icon in icons]
-    h = sum([114 for _ in rd_icons]) + 20
+    h = sum([i.size[1] - 20 for i in rd_icons]) + 20
     w = 134
 
     all_icons = Image.new("RGBA", (w, h))
+    y = 0
     for ix, icon in enumerate(rd_icons):
-        all_icons.alpha_composite(apply_drop_shadow(icon, color="#00000055"), (-20, ix * 114 - 20))
+        all_icons.alpha_composite(apply_drop_shadow(icon, color="#00000055"), (-20, y - 20))
+        y += icon.size[1] - 20
 
     return all_icons
 

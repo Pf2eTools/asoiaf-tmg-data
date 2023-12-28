@@ -142,7 +142,11 @@ def parse_abilities():
                 parsed_icon = icons_to_long.get(icon)
                 if parsed_icon is None:
                     print(f'Uknown icon: "{icon}" in ability "{name}"')
-                    parsed_icon = icon
+                    parsed_icon = icon.lower()
+                elif parsed_icon == "wounds":
+                    match = re.search(r"this unit has (\d+) wounds", description, re.IGNORECASE)
+                    if match:
+                        parsed_icon += match.group(1)
                 parsed["icons"].append(parsed_icon)
         parsed_abilities["en"][name.upper()] = parsed
 
@@ -359,7 +363,13 @@ def faction_to_hash(faction):
 def dump(data, path):
     print(f'Writing to "{path}"...')
     with open(path, "wb") as f:
-        as_string = json.dumps(data, indent=4, ensure_ascii=False).replace(" ", " ").replace(" ", " ")
+        as_string = json.dumps(data, indent=4, ensure_ascii=False)
+        as_string = as_string.replace(" ", " ")
+        as_string = as_string.replace(" ", " ")
+        as_string = as_string.replace(" ", " ")
+        as_string = as_string.replace("­", "")
+        as_string = as_string.replace("", "")
+        as_string = as_string.replace("[LONG RANGE]", "[LONGRANGE]")
         f.write(as_string.encode("utf-8"))
 
 
