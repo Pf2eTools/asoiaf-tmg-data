@@ -7,6 +7,7 @@ def generate_unit(unit_data, abilities_data):
     faction = re.sub(r"[^A-Za-z]", "", unit_data.get("faction"))
     unit_id = unit_data.get("id")
     name = unit_data.get("name")
+    subname = unit_data.get("subname")
     version = unit_data.get("version")
     attacks = unit_data.get("attacks")
     abilities = unit_data.get("abilities") or []
@@ -95,8 +96,21 @@ def generate_unit(unit_data, abilities_data):
     renderer_name = TextRenderer(name.upper(), "Tuff", (340, 120), font_size=45, bold=True, font_color="white", leading=1, tracking=-15,
                                  stroke_width=0, supersample=4, align_y=TextRenderer.ALIGN_CENTER)
     rd_name = renderer_name.render()
-    name_x, name_y = 499 - rd_name.size[0] // 2, 740 - rd_name.size[1] // 2
-    all_text.alpha_composite(rd_name, (name_x, name_y))
+    name_x, name_y = 499, 740
+    if subname is not None:
+        renderer_subname = TextRenderer(subname.upper(), "Tuff", (300, 80), font_size=30, font_color="white", leading=1,
+                                        stroke_width=0.1, padding=(5, 5, 5, 5))
+        rd_subname = renderer_subname.render()
+        name_sect = renderer_subname.rendered_section_coords[0]
+        rd_subname = rd_subname.crop((0, int(name_sect[0]), rd_subname.size[0], int(name_sect[1])))
+        rd_name = rd_name.crop(rd_name.getbbox())
+        rd_names = Image.new("RGBA", (max(rd_name.size[0], rd_subname.size[0]), rd_name.size[1] + rd_subname.size[1] + 4))
+        rd_names.alpha_composite(rd_name, ((rd_names.size[0] - rd_name.size[0]) // 2, 0))
+        rd_names.alpha_composite(rd_subname, ((rd_names.size[0] - rd_subname.size[0]) // 2, rd_name.size[1] + 4))
+        all_text.alpha_composite(rd_names, (name_x - rd_names.size[0] // 2, name_y - rd_names.size[1] // 2))
+    else:
+        all_text.alpha_composite(rd_name, (name_x - rd_name.size[0] // 2, name_y - rd_name.size[1] // 2))
+
     renderer_version = TextRenderer(version, "Tuff", (100, 25), font_size=20, italic=True, font_color="white", stroke_width=0, leading=1,
                                     tracking=-10, align_y=TextRenderer.ALIGN_BOTTOM, align_x=TextRenderer.ALIGN_LEFT, padding=(5, 0, 5, 0))
     rd_version = renderer_version.render()

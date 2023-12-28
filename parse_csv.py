@@ -192,9 +192,11 @@ def parse_units():
 
     for card_data in data:
         card_id = card_data.get("Id")
+        name_parts = split_name(card_data.get("Name"))
         parsed = {
             "id": card_id,
-            "name": card_data.get("Name"),
+            "name": name_parts[0],
+            "subname": None,
             "version": card_data.get("Version"),
             "faction": card_data.get("Faction"),
             "type": card_data.get("Type").replace(" ", ""),
@@ -205,6 +207,10 @@ def parse_units():
             "attacks": [],
             "abilities": [a.strip() for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
         }
+        if len(name_parts) == 2:
+            parsed["subname"] = name_parts[1]
+        else:
+            del parsed["subname"]
         parsed["attacks"].append(parse_attack(card_data.get("Attack 1"), card_data.get("7"), card_data.get("8")))
         if card_data.get("Attack 2") != "":
             parsed["attacks"].append(parse_attack(card_data.get("Attack 2"), card_data.get("10"), card_data.get("11")))
@@ -221,7 +227,12 @@ def parse_units():
             id = card_data.get("Id")
             original = parsed_cards["en"][id]
             parsing = deepcopy(original)
-            parsing["name"] = card_data.get("Translated Name")
+            name_parts = split_name(card_data.get("Translated Name"))
+            parsing["name"] = name_parts[0]
+            if len(name_parts) == 2:
+                parsing["subname"] = name_parts[1]
+            elif parsing.get("subname") is not None:
+                del parsing["subname"]
             for ix, attack in enumerate(original["attacks"]):
                 parsing["attacks"][ix]["name"] = card_data.get(f"Attack {ix + 1}")
             parsing["abilities"] = []
