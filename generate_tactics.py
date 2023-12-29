@@ -66,7 +66,7 @@ def generate_tactics(tactics_data):
 
     name_max_w = 440 if commander_name is None else 392
     renderer_name = TextRenderer(name.upper(), "Tuff", (name_max_w, 200), font_size=50, bold=True, font_color="white", leading=0.94,
-                                 align_y=TextRenderer.ALIGN_CENTER, overflow_policy_x=TextRenderer.OVERFLOW_AUTO)
+                                 align_y=TextRenderer.ALIGN_CENTER)
     rendered_name = renderer_name.render()
     if commander_name is not None:
         name_x, name_y = (tactics_bg.size[0] - rendered_name.size[0]) // 2 + 170, 136 - rendered_name.size[1] // 2

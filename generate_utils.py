@@ -320,7 +320,7 @@ class TextRenderer:
         """
         self._max_w, self._max_h = bounding_box
         self.overflow_policy_y = kwargs.get("overflow_policy_y", self.OVERFLOW_AUTO)
-        self.overflow_policy_x = kwargs.get("overflow_policy_x", self.OVERFLOW_CLIP)
+        self.overflow_policy_x = kwargs.get("overflow_policy_x", self.OVERFLOW_AUTO)
         self.font_family = font_family
         self._fonts = {}
         self._font_size = kwargs.get("font_size", 20)
