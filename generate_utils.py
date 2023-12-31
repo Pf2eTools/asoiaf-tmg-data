@@ -316,11 +316,13 @@ class TextRenderer:
         :key tuple padding: (left, top, right, bottom)
         :key float paragraph_padding:
         :key int section_padding:
+        :key float base_bias_extra_height: 0.7
         :return: None
         """
         self._max_w, self._max_h = bounding_box
         self.overflow_policy_y = kwargs.get("overflow_policy_y", self.OVERFLOW_AUTO)
         self.overflow_policy_x = kwargs.get("overflow_policy_x", self.OVERFLOW_AUTO)
+        self.scale_padding_x = kwargs.get("scale_padding_x", 0)
         self.font_family = font_family
         self._fonts = {}
         self._font_size = kwargs.get("font_size", 20)
@@ -340,6 +342,7 @@ class TextRenderer:
         self._padding = kwargs.get("padding", (10, 10, 10, 10))
         self._paragraph_padding = kwargs.get("paragraph_padding", 0.7)
         self._section_padding = kwargs.get("section_padding", 0)
+        self.base_bias_extra_height = kwargs.get("base_bias_extra_height", 0.7)
 
         self.input = self.fix_input(data)
         self.cursor = Cursor()
@@ -510,7 +513,7 @@ class TextRenderer:
             break_line = False
             if token.startswith(CHAR_BULLET):
                 break_line = True
-            # don't put single commas and periods in a new line
+            # don't put single commas and periods in a new line. I guess numbers as well.
             elif cur_len + token_len + self.word_spacing > self.max_w - self.padding[0] - self.padding[2] and len(token) > 1:
                 break_line = True
             else:
@@ -568,12 +571,27 @@ class TextRenderer:
 
         return count, section_counts
 
-    def calculate_height(self, count):
-        height = (count["line"] - count["paragraph"]) * self.leading
-        height += count["paragraph"] * 0.82 * self.font_size
-        height += max(count["paragraph"] - count["section"], 0) * self.paragraph_padding
-        height += max(count["section"] - 1, 0) * (self.section_padding + self.padding[1] + self.padding[3])
-        height += self.padding[1] + self.padding[3]
+    def calculate_height(self, data):
+        height = 0
+        # I have cancer
+        for ix_section, section in enumerate(data):
+            height += self.padding[1]
+            for ix_paragraph, paragraph in enumerate(section["content"]):
+                for lines in paragraph["content"]:
+                    for line in lines["content"]:
+                        if len(line) == 1 and line[0].startswith("[") and line[0].endswith("["):
+                            if line[0].startswith("[ATTACK"):
+                                height += 165 * self.supersample
+                            else:
+                                height += self.get_icon(line[0].strip("[]")).size[1] * self.supersample
+                        else:
+                            height += self.leading
+                height -= self.leading - 0.82 * self.font_size
+                if ix_paragraph < len(section["content"]) - 1:
+                    height += self.paragraph_padding
+            height += self.padding[3]
+            if ix_section < len(data) - 1:
+                height += self.section_padding
 
         return height
 
@@ -602,39 +620,40 @@ class TextRenderer:
                     return -30 * mem
                 case ("L", "Y"):
                     return -30 * mem
+                case("L", "T"):
+                    return -40 * mem
         return 0
 
     def adjust_vertical_spacing(self, data):
-        count, section_counts = self.count_data(data)
-        height = self.calculate_height(count)
-        overflow_y = height - self.max_h
+        initial_leading = self._leading
+        for i in range(17):
+            height = self.calculate_height(data)
+            if height < self.max_h:
+                break
+            if i in [0, 2, 10, 13, 15] and self._leading >= 0.75:
+                self._leading -= 0.05
+            elif i in [1, 7, 16] and self._paragraph_padding > 0.3:
+                self._paragraph_padding -= 0.15
+            elif i in [3, 4, 5, 6, 9, 12, 14]:
+                self._font_size -= 1
+                data = self.split_data(self.input)
+            elif i == 8:
+                self._padding = (self._padding[0], self._padding[1] // 2, self._padding[2], self._padding[3] // 2)
+            elif i == 11:
+                self._tracking = max(-20, self._tracking - 20)
+                self._word_spacing = max(150, self._word_spacing * 0.75)
+                data = self.split_data(self.input)
 
-        # if there is a lot of overflow, we need to reduce the font size and recalculate line breaks
-        # these bounds are largely based on what feels right
-        # TODO: Improve this
-        if overflow_y / height > 0.4:
-            self._tracking = max(-20, self._tracking - 20)
-            self._word_spacing = max(150, self._word_spacing * 0.75)
-        if overflow_y / height > 0.25:
-            self._padding = (self._padding[0], 0.5 * self._padding[1], self._padding[2], 0.5 * self._padding[3])
-            fs = 0.2 * overflow_y / (count["line"] * self._leading + count["paragraph"] * self._paragraph_padding)
-            self._font_size -= min(int(fs), int(0.25 * self._font_size))
-            data = self.split_data(self.input)
-            count, section_counts = self.count_data(data)
-            height = self.calculate_height(count)
-            overflow_y = height - self.max_h
+        height = self.calculate_height(data)
+        if height < self.max_h:
+            count, _ = self.count_data(data)
+            if count["line"] - count["paragraph"] > 0:
+                self._leading += (self.max_h - height) / (self.font_size * (count["line"] - count["paragraph"]))
+                self._leading = min(initial_leading, self._leading)
+        elif height > self.max_h + self.padding[1] + self.padding[3]:
+            print(f"Text exceeded maximum height, after adjusting spacing!")
 
-        if overflow_y > 0:
-            if count["paragraph"] - count["section"] > 0:
-                self._leading -= 0.8 * overflow_y / (self.font_size * (count["line"] - count["paragraph"] + 1))
-                self._paragraph_padding -= 0.2 * overflow_y / (self.font_size * (count["paragraph"] - 1))
-            else:
-                self._leading -= overflow_y / (self.font_size * count["line"])
-            data = self.split_data(self.input)
-            count, section_counts = self.count_data(data)
-            height = self.calculate_height(count)
-
-        return data, height
+        return data
 
     def adjust_horizontal_spacing(self, data):
         max_width = 0
@@ -682,7 +701,7 @@ class TextRenderer:
         elif self.align_y == self.CENTER_SECTION:
             self.cursor.y = 0
             extra_height = self.max_h - height
-            bias = 0.7 ** (num_sections - 1)
+            bias = self.base_bias_extra_height ** (num_sections - 1)
             weights_extra_height = [bias if i == 0 else (1 - bias) / (num_sections - 1) for i in range(num_sections)]
             return [w * extra_height * 0.5 for w in weights_extra_height]
         else:
@@ -691,14 +710,17 @@ class TextRenderer:
 
     def render(self):
         data = self.split_data(self.input)
+
+        if self.scale_padding_x:
+            height = self.calculate_height(data)
+            scale = max(self.scale_padding_x, min(1, 2 - self.scale_padding_x - (1 - self.scale_padding_x) * 2 * height / self.max_h))
+            self._padding = (int(scale * self._padding[0]), self._padding[1], int(scale * self._padding[2]), self._padding[3])
         if self.overflow_policy_x == self.OVERFLOW_AUTO:
             self.adjust_horizontal_spacing(data)
         if self.overflow_policy_y == self.OVERFLOW_AUTO:
-            data, height = self.adjust_vertical_spacing(data)
-        else:
-            count, section_counts = self.count_data(data)
-            height = self.calculate_height(count)
+            data = self.adjust_vertical_spacing(data)
 
+        height = self.calculate_height(data)
         extra_padding = self.set_cursor_y(height, len(data))
         # TODO: Mr. President, a sixth layer of indentation has hit the render function. The codebase is under attack.
         for ix_section, section in enumerate(data):
@@ -827,41 +849,4 @@ class TextRenderer:
 
 
 if __name__ == "__main__":
-    rd = render_attack({"type": "long", "name": "Ironborn", "hit": 4, "dice": [6, 5, 4]})
-    rd.show()
-    rd.save("test2.png")
-    '''
-    bg = Image.new("RGBA", (1000, 1000), "#333333")
-    renderer = TextRenderer("Tuff", 50, (750, 750),
-                            align_x=TextRenderer.ALIGN_CENTER,
-                            align_y=TextRenderer.ALIGN_CENTER,
-                            background_color="white"
-                            )
-    to_render = [
-        {
-            "type": "section",
-            "content": [
-                {
-                    "type": "paragraph",
-                    "content": [
-                        {
-                            "type": "text",
-                            "style": {
-                                "color": "red"
-                            },
-                            "content": "This is a heading"
-                        },
-                        {
-                            "type": "text",
-                            "content": "This is some **very long** [SKILL:Venom] text. It will need to be split across multiple lines."
-                        }
-                    ]
-                },
-            ]
-        },
-    ]
-    rd = renderer.render(to_render)
-    bg.alpha_composite(rd, (125, 125))
-    bg.show()
-    bg.save("test.png")
-    '''
+    pass

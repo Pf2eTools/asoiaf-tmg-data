@@ -92,11 +92,11 @@ def generate_ncu(ncu_data):
     renderer_card_text = TextRenderer(card_text_to_render, "Tuff", (620, 605), font_size=36, align_y=align_y,
                                       section_padding=section_padding, font_color="#5d4d40", padding=(15, 15, 15, 15))
     rendered_card_text = renderer_card_text.render()
-    all_text.alpha_composite(rendered_card_text, ((w - 620) // 2, 377))
+    all_text.alpha_composite(rendered_card_text, ((w - 620) // 2, 372))
     section_coords = renderer_card_text.rendered_section_coords
     for ix in range(len(section_coords) - 1):
         top, bot = section_coords[ix][1], section_coords[ix + 1][0]
-        center = int(top + (bot - top) / 2) + 377
+        center = int(top + (bot - top) / 2) + 372
         bars.alpha_composite(small_bar.crop((0, 0, text_bg.size[0], 100)),
                              ((w - text_bg.size[0]) // 2, center - small_bar.size[1] // 2))
         bars.alpha_composite(decor, (33, center - decor.size[1] // 2))

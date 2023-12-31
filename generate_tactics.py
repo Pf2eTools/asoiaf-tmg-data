@@ -125,7 +125,8 @@ def generate_tactics(tactics_data):
     section_padding = small_bar.size[1]
     align_y = TextRenderer.CENTER_SECTION if len(card_text_to_render) > 1 else TextRenderer.ALIGN_TOP
     renderer_card_text = TextRenderer(card_text_to_render, "Tuff", (620, 635), font_size=36, align_y=align_y,
-                                      section_padding=section_padding, font_color="#5d4d40", padding=(15, 15, 15, 15))
+                                      section_padding=section_padding, font_color="#5d4d40", padding=(50, 15, 50, 15),
+                                      scale_padding_x=15 / 50)
     rendered_card_text = renderer_card_text.render()
     all_text.alpha_composite(rendered_card_text, ((w - 620) // 2, 347))
 
