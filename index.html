@@ -72,24 +72,24 @@
                 h2.innerText = `${lang}-${faction}`;
                 container.appendChild(h2)
                 try {
-                    const data = await loadJSON(`../data/${lang}/${faction}.json`);
+                    const data = await loadJSON(`./data/${lang}/${faction}.json`);
                     for (const unit of data.units) {
                         const img = document.createElement("img");
-                        img.src = `../generated/${lang}/${faction}/cards/${unit.id}.jpg`;
+                        img.src = `./generated/${lang}/${faction}/cards/${unit.id}.jpg`;
                         img.style.width = "30%"
                         img.style.padding = "2px"
                         container.appendChild(img)
                     }
                     for (const unit of [...data.attachments, ...data.ncus]) {
                         const img = document.createElement("img");
-                        img.src = `../generated/${lang}/${faction}/cards/${unit.id}.jpg`;
+                        img.src = `./generated/${lang}/${faction}/cards/${unit.id}.jpg`;
                         img.style.width = "15%"
                         img.style.padding = "2px"
                         container.appendChild(img)
                     }
                     for (const unit of data.tactics) {
                         const img = document.createElement("img");
-                        img.src = `../generated/${lang}/${faction}/tactics/${unit.id}.jpg`;
+                        img.src = `./generated/${lang}/${faction}/tactics/${unit.id}.jpg`;
                         img.style.width = "15%"
                         img.style.padding = "2px"
                         container.appendChild(img)
