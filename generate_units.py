@@ -89,7 +89,7 @@ def generate_unit(unit_data, abilities_data):
         # TODO: ???
         if ix > 1:
             continue
-        rd_attack = render_attack(attack_data)
+        rd_attack = render_attack(attack_data, get_faction_highlight_color(faction))
         statistics.alpha_composite(rd_attack, (30, 198 + ix * 188))
 
     all_text = Image.new("RGBA", (w, h))
@@ -149,7 +149,7 @@ def generate_unit(unit_data, abilities_data):
         x, y = 694, 50 + coords[0] + (coords[1] - coords[0] - rd_icons.size[1]) // 2
         rd_abilities.alpha_composite(rd_icons, (x, int(y)))
 
-    unit_card.alpha_composite(apply_drop_shadow(bars, passes=10, shadow_size=5), (-20, -20))
+    unit_card.alpha_composite(apply_drop_shadow(bars, color="#00000033", shadow_size=7), (-20, -20))
     unit_card.alpha_composite(crests)
     unit_card.alpha_composite(apply_drop_shadow(statistics), (-20, -20))
     unit_card.alpha_composite(all_text)
