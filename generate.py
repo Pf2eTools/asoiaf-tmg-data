@@ -6,6 +6,19 @@ from generate_ncus import generate_ncu
 from generate_attachments import generate_attachment
 
 
+def gen_generic(all_data, key, gen_func, basepath):
+    if len(TYPES_FILTER) and key not in TYPES_FILTER:
+        return
+    for data in all_data.get(key, []):
+        data_id = data["id"]
+        if len(ID_FILTER) and data_id not in ID_FILTER:
+            continue
+        gen = gen_func(data).convert("RGB")
+        outpath = f'{basepath}/{data["id"]}.jpg'
+        print(f'Saving "{data["name"]}" to {outpath}...')
+        gen.save(outpath)
+
+
 def main():
     with open(f"{DATA_PATH}/en/abilities.json", "r", encoding="utf-8") as file:
         en_abilities_data = json.load(file)
@@ -21,43 +34,16 @@ def main():
         for faction in FACTIONS:
             with open(f"{DATA_PATH}/{lang}/{faction}.json", "r", encoding="utf-8") as file:
                 data = json.load(file)
-                tactics_path = f"./generated/{lang}/{faction}/tactics"
-                Path(tactics_path).mkdir(parents=True, exist_ok=True)
-                for tactics in data.get("tactics", []):
-                    id = tactics['id']
-                    if len(ID_FILTER) and id not in ID_FILTER:
-                        continue
-                    gen = generate_tactics(tactics).convert("RGB")
-                    outpath = f"{tactics_path}/{id}.jpg"
-                    print(f"Saving \"{tactics['name']}\" to {outpath}...")
-                    gen.save(outpath)
 
-                cards_path = f"./generated/{lang}/{faction}/cards"
-                Path(cards_path).mkdir(parents=True, exist_ok=True)
-                for unit in data.get("units", []):
-                    id = unit['id']
-                    if len(ID_FILTER) and id not in ID_FILTER:
-                        continue
-                    gen = generate_unit(unit, abilities_data).convert("RGB")
-                    outpath = f"{cards_path}/{id}.jpg"
-                    print(f"Saving \"{unit['name']}\" to {outpath}...")
-                    gen.save(outpath)
-                for attachment in data.get("attachments", []):
-                    id = attachment['id']
-                    if len(ID_FILTER) and id not in ID_FILTER:
-                        continue
-                    gen = generate_attachment(attachment, abilities_data).convert("RGB")
-                    outpath = f"{cards_path}/{id}.jpg"
-                    print(f"Saving \"{attachment['name']}\" to {outpath}...")
-                    gen.save(outpath)
-                for ncu in data.get("ncus", []):
-                    id = ncu['id']
-                    if len(ID_FILTER) and id not in ID_FILTER:
-                        continue
-                    gen = generate_ncu(ncu).convert("RGB")
-                    outpath = f"{cards_path}/{id}.jpg"
-                    print(f"Saving \"{ncu['name']}\" to {outpath}...")
-                    gen.save(outpath)
+            tactics_path = f"./generated/{lang}/{faction}/tactics"
+            Path(tactics_path).mkdir(parents=True, exist_ok=True)
+            gen_generic(data, "tactics", generate_tactics, tactics_path)
+
+            cards_path = f"./generated/{lang}/{faction}/cards"
+            Path(cards_path).mkdir(parents=True, exist_ok=True)
+            gen_generic(data, "units", lambda x: generate_unit(x, abilities_data), cards_path)
+            gen_generic(data, "attachments", lambda x: generate_attachment(x, abilities_data), cards_path)
+            gen_generic(data, "ncus", generate_ncu, cards_path)
 
 
 DATA_PATH = "./data"
@@ -66,6 +52,7 @@ LANGUAGES = [
     "de",
     "fr",
 ]
+
 FACTIONS = [
     "lannister",
     "stark",
@@ -80,6 +67,9 @@ FACTIONS = [
 ]
 
 ID_FILTER = [
+]
+
+TYPES_FILTER = [
 ]
 
 if __name__ == "__main__":
