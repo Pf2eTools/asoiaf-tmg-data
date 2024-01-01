@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>asoiaf:tmg data</title>
+</head>
+<body>
+    <h1>asoiaf:tmg data</h1>
+    <p>
+        This page is a preview. You should visit the <a href="https://github.com/Pf2eTools/asoiaf-tmg-data">GitHub repo</a>.
+    </p>
+    <div id="container-en"></div>
+    <div id="container-de"></div>
+    <div id="container-fr"></div>
+</body>
+<script>
+    const data = {
+        _loading: {},
+        _loaded: {},
+    }
+    const langs = [
+        "en",
+        "de",
+        "fr"
+    ]
+    const factions = [
+        "lannister",
+        "stark",
+        "baratheon",
+        "targaryen",
+        "freefolk",
+        "nightswatch",
+        "greyjoy",
+        "martell",
+        "bolton",
+        "neutral",
+    ]
+    async function loadJSON (url) {
+        if (data._loading[url]) {
+            await data._loading[url]
+            return data._loaded[url]
+        }
+        data._loading[url] = new Promise((resolve, reject) => {
+            const request = new XMLHttpRequest();
+
+            request.open("GET", url, true);
+            request.overrideMimeType("application/json");
+
+            request.onload = function () {
+                try {
+                    data._loaded[url] = JSON.parse(this.response);
+                    resolve();
+                } catch (e) {
+                    reject(new Error(`Could not parse JSON from ${url}: ${e.message}`));
+                }
+            };
+            request.onerror = (e) => reject(new Error(`Error during JSON request: ${e.target.status}`));
+            request.send();
+        });
+        await data._loading[url];
+        return data._loaded[url];
+    }
+
+    window.addEventListener("load", async () => {
+        for (let ix_lang = 0; ix_lang < langs.length; ix_lang++) {
+            const lang = langs[ix_lang];
+            const container = document.getElementById(`container-${lang}`)
+            if (container === null) continue;
+            for (let ix_faction = 0; ix_faction < factions.length; ix_faction++) {
+                const faction = factions[ix_faction];
+                const h2 = document.createElement("h2");
+                h2.innerText = `${lang}-${faction}`;
+                container.appendChild(h2)
+                try {
+                    const data = await loadJSON(`../data/${lang}/${faction}.json`);
+                    for (const unit of data.units) {
+                        const img = document.createElement("img");
+                        img.src = `../generated/${lang}/${faction}/cards/${unit.id}.jpg`;
+                        img.style.width = "30%"
+                        img.style.padding = "2px"
+                        container.appendChild(img)
+                    }
+                    for (const unit of [...data.attachments, ...data.ncus]) {
+                        const img = document.createElement("img");
+                        img.src = `../generated/${lang}/${faction}/cards/${unit.id}.jpg`;
+                        img.style.width = "15%"
+                        img.style.padding = "2px"
+                        container.appendChild(img)
+                    }
+                    for (const unit of data.tactics) {
+                        const img = document.createElement("img");
+                        img.src = `../generated/${lang}/${faction}/tactics/${unit.id}.jpg`;
+                        img.style.width = "15%"
+                        img.style.padding = "2px"
+                        container.appendChild(img)
+                    }
+                } catch (e) { }
+            }
+        }
+    })
+</script>
+</html>
