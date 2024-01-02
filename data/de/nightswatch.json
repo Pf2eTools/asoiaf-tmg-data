@@ -3,391 +3,417 @@
         {
             "id": "10501",
             "name": "Veteranen der Wache",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 7,
-            "speed": 5,
-            "defense": 4,
-            "morale": 5,
-            "attacks": [
-                {
-                    "name": "Beidhändig",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        7,
-                        6,
-                        5
-                    ]
-                }
-            ],
-            "abilities": [
-                "Dual Weapons",
-                "Gegenschlag",
-                "Unterbrechen"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Beidhändig",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            5
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Dual Weapons",
+                    "Gegenschlag",
+                    "Unterbrechen"
+                ]
+            }
         },
         {
             "id": "10502",
             "name": "Geschworene Brüder",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 7,
-            "speed": 5,
-            "defense": 4,
-            "morale": 5,
-            "attacks": [
-                {
-                    "name": "Großschwert",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        7,
-                        5,
-                        4
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Kampfausbildung",
-                "Großschwert"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Großschwert",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Kampfausbildung",
+                    "Großschwert"
+                ]
+            }
         },
         {
             "id": "10503",
             "name": "Fährtenleser der Grenzer",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Cavalry",
-            "cost": 6,
-            "speed": 6,
-            "defense": 5,
-            "morale": 5,
-            "attacks": [
-                {
-                    "name": "Reflexbogen",
-                    "type": "short",
-                    "hit": 3,
-                    "dice": [
-                        7,
-                        5
-                    ]
-                },
-                {
-                    "name": "Kurzschwert",
-                    "type": "melee",
-                    "hit": 4,
-                    "dice": [
-                        5,
-                        4
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Ziel markieren",
-                "Kavallerie",
-                "Wegbereiter"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "cavalry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 5,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Reflexbogen",
+                        "type": "short",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5
+                        ]
+                    },
+                    {
+                        "name": "Kurzschwert",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Ziel markieren",
+                    "Kavallerie",
+                    "Wegbereiter"
+                ]
+            }
         },
         {
             "id": "10504",
             "name": "Geist",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Monster",
-            "cost": 3,
-            "speed": 6,
-            "defense": 4,
-            "morale": 2,
-            "attacks": [
-                {
-                    "name": "Zähne & Klauen",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        4
-                    ]
-                }
-            ],
-            "abilities": [
-                "Schattenwolf",
-                "Treue Verbundenheit",
-                "Zähne & Klauen"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "monster",
+                "cost": 3,
+                "speed": 6,
+                "defense": 4,
+                "morale": 2,
+                "attacks": [
+                    {
+                        "name": "Zähne & Klauen",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Schattenwolf",
+                    "Treue Verbundenheit",
+                    "Zähne & Klauen"
+                ]
+            }
         },
         {
             "id": "10505",
             "name": "Jäger der Grenzer",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 7,
-            "speed": 6,
-            "defense": 5,
-            "morale": 5,
-            "attacks": [
-                {
-                    "name": "Jagdbogen",
-                    "type": "short",
-                    "hit": 4,
-                    "dice": [
-                        7,
-                        6,
-                        4
-                    ]
-                },
-                {
-                    "name": "Schneller Hieb",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        7,
-                        6,
-                        4
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Schnellfeuer",
-                "Schneller Hieb"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 6,
+                "defense": 5,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Jagdbogen",
+                        "type": "short",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Schneller Hieb",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Schnellfeuer",
+                    "Schneller Hieb"
+                ]
+            }
         },
         {
             "id": "10506",
             "name": "Skorpion-Mannschaft der Baumeister",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "SiegeEngine",
-            "cost": 5,
-            "speed": 4,
-            "defense": 5,
-            "morale": 2,
-            "attacks": [
-                {
-                    "name": "Bolzenwerfer",
-                    "type": "long",
-                    "hit": 3,
-                    "dice": [
-                        3
-                    ]
-                },
-                {
-                    "name": "Bewaffnete Mannschaft",
-                    "type": "melee",
-                    "hit": 4,
-                    "dice": [
-                        3
-                    ]
-                }
-            ],
-            "abilities": [
-                "Kriegsmaschine",
-                "Bolzenwerfer"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "siegeengine",
+                "cost": 5,
+                "speed": 4,
+                "defense": 5,
+                "morale": 2,
+                "attacks": [
+                    {
+                        "name": "Bolzenwerfer",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            3
+                        ]
+                    },
+                    {
+                        "name": "Bewaffnete Mannschaft",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Kriegsmaschine",
+                    "Bolzenwerfer"
+                ]
+            }
         },
         {
             "id": "10507",
             "name": "Steinwerfer der Baumeister",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "SiegeEngine",
-            "cost": 8,
-            "speed": 1,
-            "defense": 5,
-            "morale": 2,
-            "attacks": [
-                {
-                    "name": "Steinhagel",
-                    "type": "long",
-                    "hit": 4,
-                    "dice": [
-                        2
-                    ]
-                },
-                {
-                    "name": "Bewaffnete Mannschaft",
-                    "type": "melee",
-                    "hit": 4,
-                    "dice": [
-                        3
-                    ]
-                }
-            ],
-            "abilities": [
-                "Kriegsmaschine",
-                "Steinhagel"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "siegeengine",
+                "cost": 8,
+                "speed": 1,
+                "defense": 5,
+                "morale": 2,
+                "attacks": [
+                    {
+                        "name": "Steinhagel",
+                        "type": "long",
+                        "hit": 4,
+                        "dice": [
+                            2
+                        ]
+                    },
+                    {
+                        "name": "Bewaffnete Mannschaft",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Kriegsmaschine",
+                    "Steinhagel"
+                ]
+            }
         },
         {
             "id": "10508",
             "name": "Armbrustschützen der Baumeister",
-            "version": "2021-S01",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 7,
-            "speed": 5,
-            "defense": 5,
-            "morale": 6,
-            "attacks": [
-                {
-                    "name": "Armbrust",
-                    "type": "long",
-                    "hit": 3,
-                    "dice": [
-                        6,
-                        6,
-                        4
-                    ]
-                },
-                {
-                    "name": "Kurzschwert",
-                    "type": "melee",
-                    "hit": 4,
-                    "dice": [
-                        5,
-                        4,
-                        3
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Achtung! Zielen! Lösen!",
-                "Armbrust"
-            ]
+            "statistics": {
+                "version": "2021-S01",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 5,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Armbrust",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            6,
+                            6,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Kurzschwert",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Achtung! Zielen! Lösen!",
+                    "Armbrust"
+                ]
+            }
         },
         {
             "id": "10509",
             "name": "Rekruten der Wache",
-            "version": "2021-S01",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 5,
-            "speed": 5,
-            "defense": 5,
-            "morale": 7,
-            "attacks": [
-                {
-                    "name": "Einfache Waffen",
-                    "type": "melee",
-                    "hit": 4,
-                    "dice": [
-                        6,
-                        5,
-                        4
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Hilfslieferung",
-                "Chaotisch"
-            ]
+            "statistics": {
+                "version": "2021-S01",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 5,
+                "speed": 5,
+                "defense": 5,
+                "morale": 7,
+                "attacks": [
+                    {
+                        "name": "Einfache Waffen",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            6,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Hilfslieferung",
+                    "Chaotisch"
+                ]
+            }
         },
         {
             "id": "10510",
             "name": "Marschall der Wache",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Cavalry",
-            "cost": 4,
-            "speed": 6,
-            "defense": 4,
-            "morale": 3,
-            "attacks": [
-                {
-                    "name": "Langschwert",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        3
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Taktisches Umstellen",
-                "Marschall"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "cavalry",
+                "cost": 4,
+                "speed": 6,
+                "defense": 4,
+                "morale": 3,
+                "attacks": [
+                    {
+                        "name": "Langschwert",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Taktisches Umstellen",
+                    "Marschall"
+                ]
+            }
         },
         {
             "id": "10511",
             "name": "Kalthand",
             "subname": "Mysteriöser Mitstreiter",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Cavalry",
-            "cost": 5,
-            "speed": 5,
-            "defense": 3,
-            "morale": 2,
-            "attacks": [
-                {
-                    "name": "Langschwert",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        6
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Rabenschwarm",
-                "Auge der Krähe"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "cavalry",
+                "cost": 5,
+                "speed": 5,
+                "defense": 3,
+                "morale": 2,
+                "attacks": [
+                    {
+                        "name": "Langschwert",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            6
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Rabenschwarm",
+                    "Auge der Krähe"
+                ]
+            }
         },
         {
             "id": "10512",
             "name": "Vorhut der Grenzer",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Cavalry",
-            "cost": 7,
-            "speed": 6,
-            "defense": 4,
-            "morale": 5,
-            "attacks": [
-                {
-                    "name": "Langschwert",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        7,
-                        5
-                    ]
-                }
-            ],
-            "abilities": [
-                "Kavallerie",
-                "Überfall",
-                "Die Flanke umgehen"
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "cavalry",
+                "cost": 7,
+                "speed": 6,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Langschwert",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Kavallerie",
+                    "Überfall",
+                    "Die Flanke umgehen"
+                ]
+            }
         },
         {
             "id": "10513",
             "name": "Speerträger des Schattenturms",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 7,
-            "speed": 5,
-            "defense": 3,
-            "morale": 5,
-            "attacks": [
-                {
-                    "name": "Speer",
-                    "type": "melee",
-                    "hit": 3,
-                    "dice": [
-                        7,
-                        7,
-                        4
-                    ]
-                }
-            ],
-            "abilities": [
-                "Befehl: Speerwall",
-                "Unbeugsam"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 3,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Speer",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            7,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Speerwall",
+                    "Unbeugsam"
+                ]
+            }
         }
     ],
     "ncus": [
@@ -395,196 +421,218 @@
             "id": "30501",
             "name": "Bowen Marsch",
             "subname": "Erster Kämmerer",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Zahlen und Maße",
-                    "effect": [
-                        "Immer wenn Bowen eine Zone auf der Taktiktafel beansprucht, darfst du dir die obersten 2 Karten deines Taktikdecks anschauen. Nimm 1 dieser Karten auf die Hand und lege die andere unter dein Taktikdeck."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Zahlen und Maße",
+                        "effect": [
+                            "Immer wenn Bowen eine Zone auf der Taktiktafel beansprucht, darfst du dir die obersten 2 Karten deines Taktikdecks anschauen. Nimm 1 dieser Karten auf die Hand und lege die andere unter dein Taktikdeck."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30502",
             "name": "Aemon",
             "subname": "Maester der Schwarzen Festung",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Heilkunde des Maesters",
-                    "effect": [
-                        "Immer wenn Aemon eine Zone auf der Taktiktafel beansprucht, darfst du 1 befreundete Kampfeinheit zum Ziel bestimmen.",
-                        "Jene Einheit heilt 1 **Wunde**, +1 zusätzliche **Wunde** für jede ihrer vernichteten Schlachtreihen."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Heilkunde des Maesters",
+                        "effect": [
+                            "Immer wenn Aemon eine Zone auf der Taktiktafel beansprucht, darfst du 1 befreundete Kampfeinheit zum Ziel bestimmen.",
+                            "Jene Einheit heilt 1 **Wunde**, +1 zusätzliche **Wunde** für jede ihrer vernichteten Schlachtreihen."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30503",
             "name": "Jeor Mormont",
             "subname": "Der alte Bär",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Den Reichen der Menschen zu Diensten",
-                    "effect": [
-                        "Immer wenn Jeor eine Zone auf der Taktiktafel beansprucht, darfst du 2 befreundete Nachtwache-Kampfeinheiten innerhalb **Langer Reichweite** zueinander zum Ziel bestimmen. Bewege 1 befreundete angelegte Taktikkarte von 1 jener Einheiten zu der anderen.",
-                        "Ein Mal pro Partie, sobald Jeor eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Nimm 1 Taktikkarte, die an eine Einheit angelegt werden kann, von deinem Ablagestapel und lege sie an eine befreundete Nachtwache-Einheit an.*"
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Den Reichen der Menschen zu Diensten",
+                        "effect": [
+                            "Immer wenn Jeor eine Zone auf der Taktiktafel beansprucht, darfst du 2 befreundete Nachtwache-Kampfeinheiten innerhalb **Langer Reichweite** zueinander zum Ziel bestimmen. Bewege 1 befreundete angelegte Taktikkarte von 1 jener Einheiten zu der anderen.",
+                            "Ein Mal pro Partie, sobald Jeor eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                            "*Nimm 1 Taktikkarte, die an eine Einheit angelegt werden kann, von deinem Ablagestapel und lege sie an eine befreundete Nachtwache-Einheit an.*"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30506",
             "name": "Qhorin Halbhand",
             "subname": "Unerschütterlicher Grenzer",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Opfer für die Sache",
-                    "effect": [
-                        "Zu Beginn eines beliebigen Zuges, falls Qhorin nicht auf der Taktiktafel ist, darfst du ihn vernichten. Falls du das tust, bestimme 1 feindliche Einheit zum Ziel. Jener Feind kann in dieser Runde nicht aktiviert werden oder Aktionen durchführen."
-                    ]
-                },
-                {
-                    "name": "Halbhands Führung",
-                    "effect": [
-                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                        "Solange Qhorin Einfluss auf eine befreundete Kavallerie- oder Infanterie-Einheit ausübt, erhält sie +1 [MOVEMENT] und +1 Angriffswürfel."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Opfer für die Sache",
+                        "effect": [
+                            "Zu Beginn eines beliebigen Zuges, falls Qhorin nicht auf der Taktiktafel ist, darfst du ihn vernichten. Falls du das tust, bestimme 1 feindliche Einheit zum Ziel. Jener Feind kann in dieser Runde nicht aktiviert werden oder Aktionen durchführen."
+                        ]
+                    },
+                    {
+                        "name": "Halbhands Führung",
+                        "effect": [
+                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                            "Solange Qhorin Einfluss auf eine befreundete Kavallerie- oder Infanterie-Einheit ausübt, erhält sie +1 [MOVEMENT] und +1 Angriffswürfel."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30507",
             "name": "Donal Noye",
             "subname": "Meisterschmied",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Meisterhafte Instandhaltung",
-                    "effect": [
-                        "Bei Spielbeginn werden 2 **Befehlsmarker** auf Donal gelegt.",
-                        "Immer wenn eine Einheit einen Angriff durchführt, nachdem die Angriffswürfel geworfen worden sind, darfst du 1 **Befehlsmarker** von Donal ablegen. Falls du das tust, wähle 1 der folgenden Effekte:",
-                        "• Der Angreifer darf beliebig viele Angriffswürfel neu werfen und Gegner können keine **Geschwächt**-Marker von ihm ausgeben.",
-                        "• Der Verteidiger erhält +1 auf das Ergebnis seiner Verteidigungswürfe und Gegner können keine **Verwundbar**-Marker von ihm ausgeben."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Meisterhafte Instandhaltung",
+                        "effect": [
+                            "Bei Spielbeginn werden 2 **Befehlsmarker** auf Donal gelegt.",
+                            "Immer wenn eine Einheit einen Angriff durchführt, nachdem die Angriffswürfel geworfen worden sind, darfst du 1 **Befehlsmarker** von Donal ablegen. Falls du das tust, wähle 1 der folgenden Effekte:",
+                            "• Der Angreifer darf beliebig viele Angriffswürfel neu werfen und Gegner können keine **Geschwächt**-Marker von ihm ausgeben.",
+                            "• Der Verteidiger erhält +1 auf das Ergebnis seiner Verteidigungswürfe und Gegner können keine **Verwundbar**-Marker von ihm ausgeben."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30508",
             "name": "Othell Yarwyck",
             "subname": "Kriegsmaschinen-Spezialist",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Kriegsmaschinen der Mauer",
-                    "effect": [
-                        "Immer wenn Othell eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Führe den folgenden Fernkampfangriff auf 1 feindliche Kampfeinheit durch:*",
-                        "[ATTACK:Ranged:Salve:3+3]",
-                        "*Dieser Angriff erhält +1 Angriffswürfel für jede verbleibende Schlachtreihe des Verteidigers und den folgenden Effekt, basierend auf der Zone, die Othell beansprucht hat:*",
-                        "[CROWN]: **Grausam** [MONEY]: **Spaltschlag**",
-                        "[SWORDS]: Verteidiger wird **Geschwächt**"
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Kriegsmaschinen der Mauer",
+                        "effect": [
+                            "Immer wenn Othell eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                            "*Führe den folgenden Fernkampfangriff auf 1 feindliche Kampfeinheit durch:*",
+                            "[ATTACK:Ranged:Salve:3+3]",
+                            "*Dieser Angriff erhält +1 Angriffswürfel für jede verbleibende Schlachtreihe des Verteidigers und den folgenden Effekt, basierend auf der Zone, die Othell beansprucht hat:*",
+                            "[CROWN]: **Grausam** [MONEY]: **Spaltschlag**",
+                            "[SWORDS]: Verteidiger wird **Geschwächt**"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30509",
             "name": "Samwell Tarly",
             "subname": "Feiger Gelehrter",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Wissen ist Macht",
-                    "effect": [
-                        "Du hältst +1 Taktikkarte auf der Hand.",
-                        "Du beginnst das Spiel mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Wissen ist Macht",
+                        "effect": [
+                            "Du hältst +1 Taktikkarte auf der Hand.",
+                            "Du beginnst das Spiel mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30510",
             "name": "Goldy",
             "subname": "Das Wildlingsmädchen",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Samwells Einfluss",
-                    "effect": [
-                        "Goldy wird nicht jede Runde aktiviert. Du darfst Goldy ein Mal pro Partie zu Beginn eines befreundeten Zuges aktivieren. Aktiviere in diesem Zug keine andere Einheit."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Samwells Einfluss",
+                        "effect": [
+                            "Goldy wird nicht jede Runde aktiviert. Du darfst Goldy ein Mal pro Partie zu Beginn eines befreundeten Zuges aktivieren. Aktiviere in diesem Zug keine andere Einheit."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30511",
             "name": "Craster",
             "subname": "Verbündeter der Wache",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Rast und Zuflucht",
-                    "effect": [
-                        "Immer wenn Craster die folgenden Zonen beansprucht, erhalten sie einen zusätzlichen Effekt:",
-                        "[MONEY]: *Anstatt die **Wunden** einer Einheit zu heilen, darfst du 3 **Wunden** (insgesamt) von beliebig vielen befreundeten Kampfeinheiten heilen.*",
-                        "[SWORDS]: *Die zum Ziel bestimmte Einheit zählt, als hätte sie +1 verbleibende Schlachtreihe für die Bestimmung der Angriffswürfel.*",
-                        "[HORSE]: *Die zum Ziel bestimmte Einheit bewegt sich mit +1 [MOVEMENT].*"
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Rast und Zuflucht",
+                        "effect": [
+                            "Immer wenn Craster die folgenden Zonen beansprucht, erhalten sie einen zusätzlichen Effekt:",
+                            "[MONEY]: *Anstatt die **Wunden** einer Einheit zu heilen, darfst du 3 **Wunden** (insgesamt) von beliebig vielen befreundeten Kampfeinheiten heilen.*",
+                            "[SWORDS]: *Die zum Ziel bestimmte Einheit zählt, als hätte sie +1 verbleibende Schlachtreihe für die Bestimmung der Angriffswürfel.*",
+                            "[HORSE]: *Die zum Ziel bestimmte Einheit bewegt sich mit +1 [MOVEMENT].*"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30512",
             "name": "Yoren",
             "subname": "Wanderkrähe",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Rekrutierung",
-                    "effect": [
-                        "Immer wenn Yoren eine Zone auf der Taktiktafel beansprucht, bevor der Effekt jener Zone abgehandelt wird, lege 1 Befehlsmarker auf ihn.",
-                        "Immer wenn Yoren die [CROWN]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Lege 1 Befehlsmarker auf Yoren.*",
-                        "Immer wenn Yoren eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Lege 4 Befehlsmarker von Yoren ab.*",
-                        "*Falls du das tust, stelle 1 „Rekruten der Wache“-Einheit vollständig innerhalb **Langer Reichweite** zu einem befreundeten Aufstellungsrand auf.*"
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Rekrutierung",
+                        "effect": [
+                            "Immer wenn Yoren eine Zone auf der Taktiktafel beansprucht, bevor der Effekt jener Zone abgehandelt wird, lege 1 Befehlsmarker auf ihn.",
+                            "Immer wenn Yoren die [CROWN]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                            "*Lege 1 Befehlsmarker auf Yoren.*",
+                            "Immer wenn Yoren eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                            "*Lege 4 Befehlsmarker von Yoren ab.*",
+                            "*Falls du das tust, stelle 1 „Rekruten der Wache“-Einheit vollständig innerhalb **Langer Reichweite** zu einem befreundeten Aufstellungsrand auf.*"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "30513",
             "name": "Ser Denys Mallister",
             "subname": "Ehrenhafter Bruder",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "abilities": [
-                {
-                    "name": "Die Zeit wird noch kommen",
-                    "effect": [
-                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                        "Solange Ser Denys Mallister Einfluss auf eine befreundete Einheit ausübt, falls jene Einheit den Zug im Nahkampf begonnen hat, immer wenn sie einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden, wähle 1 der folgenden Effekte. Falls diese Einheit nur noch 1 verbleibende Schlachtreihe hat, erhältst du stattdessen beide:",
-                        "• Diese Einheit verwendet ihren höchsten Angriffswürfelwert.",
-                        "• 1 Feind, der mit dieser Einheit im Nahkampf ist, erhält 1 Zustandsmarker."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "abilities": [
+                    {
+                        "name": "Die Zeit wird noch kommen",
+                        "effect": [
+                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                            "Solange Ser Denys Mallister Einfluss auf eine befreundete Einheit ausübt, falls jene Einheit den Zug im Nahkampf begonnen hat, immer wenn sie einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden, wähle 1 der folgenden Effekte. Falls diese Einheit nur noch 1 verbleibende Schlachtreihe hat, erhältst du stattdessen beide:",
+                            "• Diese Einheit verwendet ihren höchsten Angriffswürfelwert.",
+                            "• 1 Feind, der mit dieser Einheit im Nahkampf ist, erhält 1 Zustandsmarker."
+                        ]
+                    }
+                ]
+            }
         }
     ],
     "attachments": [
@@ -592,995 +640,1125 @@
             "id": "20501",
             "name": "Jeor Mormont",
             "subname": "997. Lord Kommandant",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Befehl: Auf dem Posten bleiben!",
-                "Haltet stand!"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Befehl: Auf dem Posten bleiben!",
+                    "Haltet stand!"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20502",
             "name": "Jon Schnee",
             "subname": "998. Lord Kommandant",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Mut und Kühnheit",
-                "Wütender Ansturm"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Mut und Kühnheit",
+                    "Wütender Ansturm"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20503",
             "name": "Jon Schnee",
             "subname": "„Lord Schnee“",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 2,
-            "abilities": [
-                "Befehl: Waghalsiger Heldenmut",
-                "Befehl: Schlachtruf"
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Befehl: Waghalsiger Heldenmut",
+                    "Befehl: Schlachtruf"
+                ]
+            }
         },
         {
             "id": "20504",
             "name": "Hauptmann der Wache",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 2,
-            "abilities": [
-                "Mut und Kühnheit",
-                "Unermüdlich"
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Mut und Kühnheit",
+                    "Unermüdlich"
+                ]
+            }
         },
         {
             "id": "20505",
             "name": "Anwerber der Wache",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Anspornen",
-                "Verstärkungen"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Anspornen",
+                    "Verstärkungen"
+                ]
+            }
         },
         {
             "id": "20509",
             "name": "Allisar Thorn",
             "subname": "Waffenmeister",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Befehl: Bedrohen",
-                "Grausam",
-                "Angst ausnutzen"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Befehl: Bedrohen",
+                    "Grausam",
+                    "Angst ausnutzen"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20510",
             "name": "Allisar Thorn",
             "subname": "Rachsüchtiger Aufseher",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Eiserne Entschlossenheit",
-                "Beharrlich Bleiben"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Eiserne Entschlossenheit",
+                    "Beharrlich Bleiben"
+                ]
+            }
         },
         {
             "id": "20511",
             "name": "Donal Noye",
             "subname": "Verteidiger der Schwarzen Festung",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Befehl: Schildwall",
-                "Verbesserte Bewaffnung"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Befehl: Schildwall",
+                    "Verbesserte Bewaffnung"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20512",
             "name": "Grenn",
             "subname": "Auerochse",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Spott"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Spott"
+                ]
+            }
         },
         {
             "id": "20513",
             "name": "Pypar",
             "subname": "Affe",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Rascher Rückzug"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Rascher Rückzug"
+                ]
+            }
         },
         {
             "id": "20514",
             "name": "Qhorin Halbhand",
             "subname": "Grauer Grenzer",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Kampfnarben",
-                "Kämpfend untergehen"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Kampfnarben",
+                    "Kämpfend untergehen"
+                ]
+            }
         },
         {
             "id": "20516",
             "name": "Othell Yarwyck",
             "subname": "Aufklärer",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Verbesserte Verteidigung",
-                "Aufklärer"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Verbesserte Verteidigung",
+                    "Aufklärer"
+                ]
+            }
         },
         {
             "id": "20517",
             "name": "Skorpion-Modifizierungen (Othell Yarwyck)",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "SiegeEngine",
-            "cost": 1,
-            "abilities": [
-                "Befestigung aus Pfählen"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "siegeengine",
+                "cost": 1,
+                "abilities": [
+                    "Befestigung aus Pfählen"
+                ]
+            }
         },
         {
             "id": "20518",
             "name": "Leitender Baumeister",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Verbesserte Verteidigung",
-                "Pfähle bauen"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Verbesserte Verteidigung",
+                    "Pfähle bauen"
+                ]
+            }
         },
         {
             "id": "20519",
             "name": "Abgehärteter Grenzer",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Wütender Ansturm",
-                "Trügerische Flucht"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Wütender Ansturm",
+                    "Trügerische Flucht"
+                ]
+            }
         },
         {
             "id": "20520",
             "name": "Marschall der Wache",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Cavalry",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Pläne anpassen",
-                "Befehl: Rascher Rückzug"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "cavalry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Pläne anpassen",
+                    "Befehl: Rascher Rückzug"
+                ]
+            }
         },
         {
             "id": "20521",
             "name": "Skorpion-Modifizierungen (Baumeister)",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "SiegeEngine",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Überwachen"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "siegeengine",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Überwachen"
+                ]
+            }
         },
         {
             "id": "20522",
             "name": "Othell Yarwyck",
             "subname": "Erster Baumeister",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Zugehörigkeit: Baumeister",
-                "Abgehärtet",
-                "Aufklärer"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Zugehörigkeit: Baumeister",
+                    "Abgehärtet",
+                    "Aufklärer"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20523",
             "name": "Benjen Stark",
             "subname": "Wolf der Mauer",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Bewachen",
-                "Überfall"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Bewachen",
+                    "Überfall"
+                ]
+            }
         },
         {
             "id": "20524",
             "name": "Kalthand",
             "subname": "Mysteriöses Reisegeleit",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Die Flanke umgehen",
-                "Wegbereiter"
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Die Flanke umgehen",
+                    "Wegbereiter"
+                ]
+            }
         },
         {
             "id": "20525",
             "name": "Samwell Tarly",
             "subname": "Sam der Töter",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 2,
-            "abilities": [
-                "Befehl: Schlachtplan",
-                "Buchführung"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Befehl: Schlachtplan",
+                    "Buchführung"
+                ]
+            }
         },
         {
             "id": "20526",
             "name": "Kalthand",
             "subname": "Einstige Krähe",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Cavalry",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Bewachen",
-                "Bedrohliche Erscheinung"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "cavalry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Bewachen",
+                    "Bedrohliche Erscheinung"
+                ]
+            }
         },
         {
             "id": "20527",
             "name": "Benjen Stark",
             "subname": "Erster Grenzer",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Befehl: Zorn der Starks",
-                "Zugehörigkeit: Grenzer",
-                "Verbesserte Mobilität"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Befehl: Zorn der Starks",
+                    "Zugehörigkeit: Grenzer",
+                    "Verbesserte Mobilität"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20528",
             "name": "Cotter Peik",
             "subname": "Bruder von den Eiseninseln",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Befehl: Waghalsiger Heldenmut",
-                "Wütender Ansturm"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Waghalsiger Heldenmut",
+                    "Wütender Ansturm"
+                ]
+            }
         },
         {
             "id": "20529",
             "name": "Yoren",
             "subname": "Schroffer Rekrutierer",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 2,
-            "abilities": [
-                "Befehl: Anspornen",
-                "Bedrohliche Erscheinung",
-                "Verstärkungen"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Befehl: Anspornen",
+                    "Bedrohliche Erscheinung",
+                    "Verstärkungen"
+                ]
+            }
         },
         {
             "id": "20530",
             "name": "Satin",
             "subname": "Verwalter des Kommandaten",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Vasall des Kommandanten"
-            ]
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Vasall des Kommandanten"
+                ]
+            }
         },
         {
             "id": "20531",
             "name": "Satin",
             "subname": "Mutiger Rekrut",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Verwegenheit"
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Verwegenheit"
+                ]
+            }
         },
         {
             "id": "20532",
             "name": "Eddison Tollett",
             "subname": "Schwermütiger Edd",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": 1,
-            "abilities": [
-                "Galgenhumor"
-            ]
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Galgenhumor"
+                ]
+            }
         },
         {
             "id": "20533",
             "name": "Benjen Stark",
             "subname": "Hinter der Mauer",
-            "version": "2021-S01",
-            "faction": "Night's Watch",
-            "type": "Cavalry",
-            "cost": "C",
-            "abilities": [
-                "Grenzer-Spezialist",
-                "Befehl: Verborgene Fallen",
-                "Unterbrechen"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021-S01",
+                "faction": "nightswatch",
+                "type": "cavalry",
+                "cost": "C",
+                "abilities": [
+                    "Grenzer-Spezialist",
+                    "Befehl: Verborgene Fallen",
+                    "Unterbrechen"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20534",
             "name": "Cotter Peik",
             "subname": "Kommandant von Ostwacht",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Befehl: Waghalsiger Heldenmut",
-                "Durch das Gemetzel befeuert"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Befehl: Waghalsiger Heldenmut",
+                    "Durch das Gemetzel befeuert"
+                ],
+                "commander": true
+            }
         },
         {
             "id": "20535",
             "name": "Ser Denys Mallister",
             "subname": "Kommandant vom Schattenturm",
-            "version": "2021-S02",
-            "faction": "Night's Watch",
-            "type": "Infantry",
-            "cost": "C",
-            "abilities": [
-                "Ritterlicher Eid",
-                "Pflichtbewusster Kommandant"
-            ],
-            "commander": true
+            "statistics": {
+                "version": "2021-S02",
+                "faction": "nightswatch",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Ritterlicher Eid",
+                    "Pflichtbewusster Kommandant"
+                ],
+                "commander": true
+            }
         }
     ],
     "tactics": [
         {
             "id": "40501",
             "name": "Das Schwert in der Dunkelheit",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                    "effect": [
-                        "Falls der Verteidiger in dieser Runde noch nicht aktiviert wurde, wird er **Panisch** und **Verwundbar**.",
-                        "Falls der Angreifer eine Nachtwache- Einheit ist, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                        "Solange diese Karte an dieser Einheit anliegt, erhalten ihre Nahkampfangriffe +1 Angriffswürfel."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Falls der Verteidiger in dieser Runde noch nicht aktiviert wurde, wird er **Panisch** und **Verwundbar**.",
+                            "Falls der Angreifer eine Nachtwache- Einheit ist, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, erhalten ihre Nahkampfangriffe +1 Angriffswürfel."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "40502",
             "name": "Das Feuer, das gegen die Kälte brennt",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
-                    "effect": [
-                        "Jene Einheit darf beliebig viele Würfel dieser Moralprobe neu werfen.",
-                        "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                        "Solange diese Karte an dieser Einheit anliegt, immer wenn sie einen Zustandsmarker erhält, darf sie 2 **Wunden** erleiden, –1 für jede ihrer vernichteten Schlachtreihen. Falls sie das tut, lege jenen Zustandsmarker ab."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                        "effect": [
+                            "Jene Einheit darf beliebig viele Würfel dieser Moralprobe neu werfen.",
+                            "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, immer wenn sie einen Zustandsmarker erhält, darf sie 2 **Wunden** erleiden, –1 für jede ihrer vernichteten Schlachtreihen. Falls sie das tut, lege jenen Zustandsmarker ab."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "40503",
             "name": "Der Schild, der die Reiche der Menschen schützt",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald ein Feind einen Angriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
-                    "effect": [
-                        "Bestimme den Verteidiger zum Ziel. Er darf beliebig viele Verteidigungswürfel neu werfen.",
-                        "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, nachdem dieser Angriff abgeschlossen worden ist, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                        "Solange diese Karte an dieser Einheit anliegt, immer wenn sie angegriffen wird, nachdem die Verteidigungswürfel geworfen worden sind, wehrt sie +1 Treffer ab."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald ein Feind einen Angriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
+                        "effect": [
+                            "Bestimme den Verteidiger zum Ziel. Er darf beliebig viele Verteidigungswürfel neu werfen.",
+                            "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, nachdem dieser Angriff abgeschlossen worden ist, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, immer wenn sie angegriffen wird, nachdem die Verteidigungswürfel geworfen worden sind, wehrt sie +1 Treffer ab."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "40504",
             "name": "Der Wächter auf den Mauern",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Nachdem eine befreundete Einheit angegriffen worden ist:",
-                    "effect": [
-                        "Bestimme 1 befreundete Kampfeinheit außer den Verteidiger zum Ziel. Jene Einheit dreht sich und wird dann um 2 Zoll verschoben. Falls diese Einheit eine Nachtwache-Einheit ist, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                        "Solange diese Karte an jener Einheit anliegt, erhält sie +1 [MOVEMENT] und darf alle Würfel für die Bewegungsweite des Ansturms neu werfen."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Nachdem eine befreundete Einheit angegriffen worden ist:",
+                        "effect": [
+                            "Bestimme 1 befreundete Kampfeinheit außer den Verteidiger zum Ziel. Jene Einheit dreht sich und wird dann um 2 Zoll verschoben. Falls diese Einheit eine Nachtwache-Einheit ist, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an jener Einheit anliegt, erhält sie +1 [MOVEMENT] und darf alle Würfel für die Bewegungsweite des Ansturms neu werfen."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "40505",
             "name": "Das Licht, das den Morgen bringt",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                    "effect": [
-                        "Bei diesem Angriff dürfen beliebig viele Fehlschläge neu geworfen werden.",
-                        "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                        "Solange diese Karte an dieser Einheit anliegt, sobald sie Feinde mit mehr verbleibenden Schlachtreihen angreift, verwendet sie bei ihren Angriffen ihren höchsten Angriffswürfelwert."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Bei diesem Angriff dürfen beliebig viele Fehlschläge neu geworfen werden.",
+                            "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, sobald sie Feinde mit mehr verbleibenden Schlachtreihen angreift, verwendet sie bei ihren Angriffen ihren höchsten Angriffswürfelwert."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "40506",
             "name": "Das Schwarz anlegen",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine feindliche Einheit vernichtet wird:",
-                    "effect": [
-                        "Bestimme 1 befreundete Nachtwache-Infanterie-Einheit innerhalb **Kurzer Reichweite** zum Ziel. Jene Einheit heilt 4 **Wunden**. Du darfst 1 Infanterie-Verstärkung von dem vernichteten Feind nehmen und sie an jene Einheit anlegen *(ersetze wie gewohnt eine Figur in jener Einheit, aber ignoriere die üblichen Verstärkungsbeschränkungen)*."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine feindliche Einheit vernichtet wird:",
+                        "effect": [
+                            "Bestimme 1 befreundete Nachtwache-Infanterie-Einheit innerhalb **Kurzer Reichweite** zum Ziel. Jene Einheit heilt 4 **Wunden**. Du darfst 1 Infanterie-Verstärkung von dem vernichteten Feind nehmen und sie an jene Einheit anlegen *(ersetze wie gewohnt eine Figur in jener Einheit, aber ignoriere die üblichen Verstärkungsbeschränkungen)*."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "40507",
             "name": "Und nun ist seine Wache zu Ende",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines beliebigen Zuges:",
-                    "effect": [
-                        "Lege diese Karte an eine befreundete Nachtwache-Einheit an.",
-                        "Solange diese Karte an dieser Einheit anliegt, sobald eine andere befreundete Nachtwache-Einheit vernichtet wird, darfst du diese Karte ablegen. Falls du das tust, bewege 1 befreundete angelegte Taktikkarte von jener Einheit zu dieser Einheit. Diese Einheit führt dann 1 Angriffs-, Manöver- oder Marschaktion durch."
-                    ]
-                }
-            ]
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Lege diese Karte an eine befreundete Nachtwache-Einheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, sobald eine andere befreundete Nachtwache-Einheit vernichtet wird, darfst du diese Karte ablegen. Falls du das tust, bewege 1 befreundete angelegte Taktikkarte von jener Einheit zu dieser Einheit. Diese Einheit führt dann 1 Angriffs-, Manöver- oder Marschaktion durch."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "id": "40508",
             "name": "Und meine Wache beginnt",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Nachtwache- Kampfeinheit aktiviert wird:",
-                    "effect": [
-                        "Jene Einheit legt 1 Moralprobe ab. Bei Bestehen wähle 1 der folgenden Effekte:",
-                        "• Durchsuche dein Taktikdeck nach 1 beliebigen Taktikkarte und füge sie deiner Hand hinzu. Lege dann 1 Karte ab. Mische danach dein Taktikdeck.",
-                        "• Durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 beliebigen Taktikkarte, die an diese Einheit angelegt werden kann, und lege sie an diese Einheit an. Mische danach dein Taktikdeck."
-                    ]
-                }
-            ],
-            "commander_id": "20501",
-            "commander_name": "Jeor Mormont"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Nachtwache- Kampfeinheit aktiviert wird:",
+                        "effect": [
+                            "Jene Einheit legt 1 Moralprobe ab. Bei Bestehen wähle 1 der folgenden Effekte:",
+                            "• Durchsuche dein Taktikdeck nach 1 beliebigen Taktikkarte und füge sie deiner Hand hinzu. Lege dann 1 Karte ab. Mische danach dein Taktikdeck.",
+                            "• Durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 beliebigen Taktikkarte, die an diese Einheit angelegt werden kann, und lege sie an diese Einheit an. Mische danach dein Taktikdeck."
+                        ]
+                    }
+                ],
+                "commander_id": "20501",
+                "commander_name": "Jeor Mormont"
+            }
         },
         {
             "id": "40509",
             "name": "Auf meinem Posten leben und sterben",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe besteht:",
-                    "effect": [
-                        "Alle Feinde, die mit jener Einheit im Nahkampf sind, werden **Verwundbar**. Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an Jene Einheit an. Solange diese Karte an dieser Einheit anliegt, kann sie ihre letzte verbleibende Figur nicht verlieren, wenn sie an einer Panikprobe scheitert *(sie kann nur auf 1 verbleibende Figur reduziert werden)*."
-                    ]
-                }
-            ],
-            "commander_id": "20501",
-            "commander_name": "Jeor Mormont"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit eine Moralprobe besteht:",
+                        "effect": [
+                            "Alle Feinde, die mit jener Einheit im Nahkampf sind, werden **Verwundbar**. Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an Jene Einheit an. Solange diese Karte an dieser Einheit anliegt, kann sie ihre letzte verbleibende Figur nicht verlieren, wenn sie an einer Panikprobe scheitert *(sie kann nur auf 1 verbleibende Figur reduziert werden)*."
+                        ]
+                    }
+                ],
+                "commander_id": "20501",
+                "commander_name": "Jeor Mormont"
+            }
         },
         {
             "id": "40510",
             "name": "Die Nacht sinkt herab",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines beliebigen Zuges:",
-                    "effect": [
-                        "Bestimme 1 befreundete Nachtwache-Einheit, die im Nahkampf ist, zum Ziel. Jene Einheit legt 1 Moralprobe ab. Bei Bestehen lege diese Karte bis zum Ende der Partie an sie an.",
-                        "Solange diese Karte an dieser Einheit anliegt, immer wenn ein Feind einen Nahkampfangriff auf sie durchführt, bevor die Angriffswürfel geworfen werden, erleidet der Angreifer 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe dieser Einheit."
-                    ]
-                }
-            ],
-            "commander_id": "20501",
-            "commander_name": "Jeor Mormont"
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Bestimme 1 befreundete Nachtwache-Einheit, die im Nahkampf ist, zum Ziel. Jene Einheit legt 1 Moralprobe ab. Bei Bestehen lege diese Karte bis zum Ende der Partie an sie an.",
+                            "Solange diese Karte an dieser Einheit anliegt, immer wenn ein Feind einen Nahkampfangriff auf sie durchführt, bevor die Angriffswürfel geworfen werden, erleidet der Angreifer 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe dieser Einheit."
+                        ]
+                    }
+                ],
+                "commander_id": "20501",
+                "commander_name": "Jeor Mormont"
+            }
         },
         {
             "id": "40511",
             "name": "Sie soll nicht enden vor meinem Tod",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Kampfeinheit von einem Nahkampfangriff vernichtet werden würde:",
-                    "effect": [
-                        "Bevor jene Einheit entfernt wird, führt sie 1 Nahkampfangriffsaktion auf den Angreifer durch und verwendet dabei ihren niedrigsten Angriffswürfelwert. Falls diese Karte Jon Schnees Einheit zum Ziel hat, erhält sie +2 Angriffswürfel.",
-                        "Falls dieser Angriff den Verteidiger vernichtet, wird deine befreundete Einheit nicht vernichtet, sondern verbleibt mit 1 Figur im Spiel."
-                    ]
-                }
-            ],
-            "commander_id": "20502",
-            "commander_name": "Jon Schnee"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Kampfeinheit von einem Nahkampfangriff vernichtet werden würde:",
+                        "effect": [
+                            "Bevor jene Einheit entfernt wird, führt sie 1 Nahkampfangriffsaktion auf den Angreifer durch und verwendet dabei ihren niedrigsten Angriffswürfelwert. Falls diese Karte Jon Schnees Einheit zum Ziel hat, erhält sie +2 Angriffswürfel.",
+                            "Falls dieser Angriff den Verteidiger vernichtet, wird deine befreundete Einheit nicht vernichtet, sondern verbleibt mit 1 Figur im Spiel."
+                        ]
+                    }
+                ],
+                "commander_id": "20502",
+                "commander_name": "Jon Schnee"
+            }
         },
         {
             "id": "40512",
             "name": "Steht vereint, Brüder!",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines beliebigen Zuges:",
-                    "effect": [
-                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Entferne bis zu 4 Figuren *(insgesamt)* von anderen befreundeten Kampfeinheiten innerhalb **Langer Reichweite**. Heile ebenso viele **Wunden** dieser Einheit.",
-                        "Falls diese Karte Jon Schnees Einheit zum Ziel hat, darf sie +2 **Wunden** heilen *(ohne Figuren zu entfernen)*."
-                    ]
-                }
-            ],
-            "commander_id": "20502",
-            "commander_name": "Jon Schnee"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Entferne bis zu 4 Figuren *(insgesamt)* von anderen befreundeten Kampfeinheiten innerhalb **Langer Reichweite**. Heile ebenso viele **Wunden** dieser Einheit.",
+                            "Falls diese Karte Jon Schnees Einheit zum Ziel hat, darf sie +2 **Wunden** heilen *(ohne Figuren zu entfernen)*."
+                        ]
+                    }
+                ],
+                "commander_id": "20502",
+                "commander_name": "Jon Schnee"
+            }
         },
         {
             "id": "40513",
             "name": "Für die Wache!",
-            "version": "2021-S01",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines beliebigen Zuges:",
-                    "effect": [
-                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie darf in diesem Zug alle Würfel für die Bewegungsweite des Ansturms neu werfen.",
-                        "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                        "Solange diese Karte an dieser Einheit anliegt, immer wenn sie von der [HORSE]-Zone zum Ziel bestimmt wird, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Diese Einheit führt 1 Ansturmaktion durch.*"
-                    ]
-                }
-            ],
-            "commander_id": "20502",
-            "commander_name": "Jon Schnee"
+            "statistics": {
+                "version": "2021-S01",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie darf in diesem Zug alle Würfel für die Bewegungsweite des Ansturms neu werfen.",
+                            "Falls diese Karte eine Nachtwache-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, immer wenn sie von der [HORSE]-Zone zum Ziel bestimmt wird, darfst du den Effekt jener Zone ersetzen durch:",
+                            "*Diese Einheit führt 1 Ansturmaktion durch.*"
+                        ]
+                    }
+                ],
+                "commander_id": "20502",
+                "commander_name": "Jon Schnee"
+            }
         },
         {
             "id": "40514",
             "name": "Erbärmlicher Versuch",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit eine Panikprobe besteht, wenn sie mit einem Nahkampfangriff angegriffen worden ist:",
-                    "effect": [
-                        "Bestimme den Angreifer zum Ziel. Er erleidet 2 Treffer für jede verbleibende Schlachtreihe dieser Einheit.",
-                        "Falls der Verteidiger Allisars Einheit war, wird er zudem **Geschwächt**."
-                    ]
-                }
-            ],
-            "commander_id": "20509",
-            "commander_name": "Allisar Thorn"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit eine Panikprobe besteht, wenn sie mit einem Nahkampfangriff angegriffen worden ist:",
+                        "effect": [
+                            "Bestimme den Angreifer zum Ziel. Er erleidet 2 Treffer für jede verbleibende Schlachtreihe dieser Einheit.",
+                            "Falls der Verteidiger Allisars Einheit war, wird er zudem **Geschwächt**."
+                        ]
+                    }
+                ],
+                "commander_id": "20509",
+                "commander_name": "Allisar Thorn"
+            }
         },
         {
             "id": "40515",
             "name": "Schwächen erkennen",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Nachdem eine feindliche Kampfeinheit eine Aktion abgeschlossen hat:",
-                    "effect": [
-                        "Jener Feind wird **Verwundbar** und **Panisch**.",
-                        "Lege diese Karte bis zum Ende der Runde an jenen Feind an. Solange diese Karte an diesem Feind anliegt, solange Allisar Thorns Einheit ihn angreift, verliert er alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
-                    ]
-                }
-            ],
-            "commander_id": "20509",
-            "commander_name": "Allisar Thorn"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Nachdem eine feindliche Kampfeinheit eine Aktion abgeschlossen hat:",
+                        "effect": [
+                            "Jener Feind wird **Verwundbar** und **Panisch**.",
+                            "Lege diese Karte bis zum Ende der Runde an jenen Feind an. Solange diese Karte an diesem Feind anliegt, solange Allisar Thorns Einheit ihn angreift, verliert er alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
+                        ]
+                    }
+                ],
+                "commander_id": "20509",
+                "commander_name": "Allisar Thorn"
+            }
         },
         {
             "id": "40516",
             "name": "Der Preis des Versagens",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                    "effect": [
-                        "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer. Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
-                    ]
-                }
-            ],
-            "commander_id": "20509",
-            "commander_name": "Allisar Thorn"
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer. Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
+                        ]
+                    }
+                ],
+                "commander_id": "20509",
+                "commander_name": "Allisar Thorn"
+            }
         },
         {
             "id": "40517",
             "name": "Verteidigende Formation",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines beliebigen Zuges:",
-                    "effect": [
-                        "Lege diese Karte bis zu Beginn ihrer nächsten Aktivierung an eine befreundete Kampfeinheit an.",
-                        "Solange diese Karte an dieser Einheit anliegt, kann sie keine Angriffs- oder Ansturmaktionen durchführen, aber sie erhält +1 auf das Ergebnis von Verteidigungswürfen und die Angreifer erhalten auf sie keinen Bonus für Ansturm, Flankenangriffe oder Angriffe in den Rücken."
-                    ]
-                }
-            ],
-            "commander_id": "20511",
-            "commander_name": "Donal Noye"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Lege diese Karte bis zu Beginn ihrer nächsten Aktivierung an eine befreundete Kampfeinheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, kann sie keine Angriffs- oder Ansturmaktionen durchführen, aber sie erhält +1 auf das Ergebnis von Verteidigungswürfen und die Angreifer erhalten auf sie keinen Bonus für Ansturm, Flankenangriffe oder Angriffe in den Rücken."
+                        ]
+                    }
+                ],
+                "commander_id": "20511",
+                "commander_name": "Donal Noye"
+            }
         },
         {
             "id": "40518",
             "name": "Niemals aufgeben",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Nachdem eine befreundete Einheit eine Panikprobe bestanden hat:",
-                    "effect": [
-                        "Alle Feinde, die mit jener Einheit im Nahkampf sind, werden **Verwundbar**. Lege diese Karte an jene Einheit an, bis sie an einer Panikprobe scheitert.",
-                        "Solange diese Karte an dieser Einheit anliegt, immer wenn diese Einheit eine Panikprobe besteht, werden alle Einheiten, die mit jener Einheit im Nahkampf sind, **Verwundbar**. Falls diese Karte an Donal Noyes Einheit anliegt, erhält sie +1 auf das Ergebnis von Panikproben."
-                    ]
-                }
-            ],
-            "commander_id": "20511",
-            "commander_name": "Donal Noye"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Nachdem eine befreundete Einheit eine Panikprobe bestanden hat:",
+                        "effect": [
+                            "Alle Feinde, die mit jener Einheit im Nahkampf sind, werden **Verwundbar**. Lege diese Karte an jene Einheit an, bis sie an einer Panikprobe scheitert.",
+                            "Solange diese Karte an dieser Einheit anliegt, immer wenn diese Einheit eine Panikprobe besteht, werden alle Einheiten, die mit jener Einheit im Nahkampf sind, **Verwundbar**. Falls diese Karte an Donal Noyes Einheit anliegt, erhält sie +1 auf das Ergebnis von Panikproben."
+                        ]
+                    }
+                ],
+                "commander_id": "20511",
+                "commander_name": "Donal Noye"
+            }
         },
         {
             "id": "40519",
             "name": "Peitschenhieb",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                    "effect": [
-                        "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 **Wunden** für jede vernichtete Schlachtreihe des Verteidigers. Falls der Verteidiger Donal Noyes Einheit ist, wird der Angreifer zudem **Panisch**."
-                    ]
-                }
-            ],
-            "commander_id": "20511",
-            "commander_name": "Donal Noye"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                        "effect": [
+                            "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 **Wunden** für jede vernichtete Schlachtreihe des Verteidigers. Falls der Verteidiger Donal Noyes Einheit ist, wird der Angreifer zudem **Panisch**."
+                        ]
+                    }
+                ],
+                "commander_id": "20511",
+                "commander_name": "Donal Noye"
+            }
         },
         {
             "id": "40520",
             "name": "Geprüfte Verbesserung",
-            "version": "2021-S01",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                    "effect": [
-                        "Dieser Angriff erhält +1 auf den Trefferwurf.",
-                        "Falls dies eine Baumeister-Einheit ist, erhält dieser Angriff +1 Angriffswürfel."
-                    ]
-                }
-            ],
-            "commander_id": "20522",
-            "commander_name": "Othell Yarwyck"
+            "statistics": {
+                "version": "2021-S01",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Dieser Angriff erhält +1 auf den Trefferwurf.",
+                            "Falls dies eine Baumeister-Einheit ist, erhält dieser Angriff +1 Angriffswürfel."
+                        ]
+                    }
+                ],
+                "commander_id": "20522",
+                "commander_name": "Othell Yarwyck"
+            }
         },
         {
             "id": "40521",
             "name": "Schneller Bau",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn der Runde:",
-                    "effect": [
-                        "Platziere 1 Niedrige- Mauer-Geländeteil mit den Schlüsselwörtern **Zerstörbar**, **Befestigt** und **Einschränkend** innerhalb 1 Zoll zu einer befreundeten Einheit. Dieses Geländeteil darf nicht auf andere Geländeteile oder Einheiten platziert werden."
-                    ]
-                }
-            ],
-            "commander_id": "20522",
-            "commander_name": "Othell Yarwyck"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn der Runde:",
+                        "effect": [
+                            "Platziere 1 Niedrige- Mauer-Geländeteil mit den Schlüsselwörtern **Zerstörbar**, **Befestigt** und **Einschränkend** innerhalb 1 Zoll zu einer befreundeten Einheit. Dieses Geländeteil darf nicht auf andere Geländeteile oder Einheiten platziert werden."
+                        ]
+                    }
+                ],
+                "commander_id": "20522",
+                "commander_name": "Othell Yarwyck"
+            }
         },
         {
             "id": "40522",
             "name": "Wuchtige Verbesserung",
-            "version": "2021-S01",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                    "effect": [
-                        "Dieser Angriff erhält **Grausam**.",
-                        "Falls der Angreifer eine Baumeister-Einheit ist, werden Feinde, die bei diesem Angriff an einer Panikprobe scheitern, **Geschwächt**."
-                    ]
-                }
-            ],
-            "commander_id": "20522",
-            "commander_name": "Othell Yarwyck"
+            "statistics": {
+                "version": "2021-S01",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Dieser Angriff erhält **Grausam**.",
+                            "Falls der Angreifer eine Baumeister-Einheit ist, werden Feinde, die bei diesem Angriff an einer Panikprobe scheitern, **Geschwächt**."
+                        ]
+                    }
+                ],
+                "commander_id": "20522",
+                "commander_name": "Othell Yarwyck"
+            }
         },
         {
             "id": "40523",
             "name": "Überfalltaktik",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
-                    "effect": [
-                        "Jene Einheit führt 1 Rückzugsaktion durch.",
-                        "Falls diese Rückzugsaktion eine Grenzer-Einheit zum Ziel hat, wird jede feindliche Einheit, aus deren Nahkampf sich die Grenzer-Einheit löst, **Geschwächt**."
-                    ]
-                }
-            ],
-            "commander_id": "20527",
-            "commander_name": "Benjen Stark",
-            "commander_subname": "Erster Grenzer"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                        "effect": [
+                            "Jene Einheit führt 1 Rückzugsaktion durch.",
+                            "Falls diese Rückzugsaktion eine Grenzer-Einheit zum Ziel hat, wird jede feindliche Einheit, aus deren Nahkampf sich die Grenzer-Einheit löst, **Geschwächt**."
+                        ]
+                    }
+                ],
+                "commander_id": "20527",
+                "commander_name": "Benjen Stark",
+                "commander_subname": "Erster Grenzer"
+            }
         },
         {
             "id": "40524",
             "name": "Auf der Lauer liegen",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
-                    "effect": [
-                        "Bestimme 1 befreundete, nicht aktivierte Einheit innerhalb **Langer Reichweite** und in Sichtlinie zu jenem Feind zum Ziel.",
-                        "Sie führt 1 Fernkampfangriffsaktion auf jenen Feind durch.",
-                        "Falls diese Karte eine Grenzer-Einheit zum Ziel hat, darf sie alle Fehlschläge neu werfen."
-                    ]
-                }
-            ],
-            "commander_id": "20527",
-            "commander_name": "Benjen Stark",
-            "commander_subname": "Erster Grenzer"
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
+                        "effect": [
+                            "Bestimme 1 befreundete, nicht aktivierte Einheit innerhalb **Langer Reichweite** und in Sichtlinie zu jenem Feind zum Ziel.",
+                            "Sie führt 1 Fernkampfangriffsaktion auf jenen Feind durch.",
+                            "Falls diese Karte eine Grenzer-Einheit zum Ziel hat, darf sie alle Fehlschläge neu werfen."
+                        ]
+                    }
+                ],
+                "commander_id": "20527",
+                "commander_name": "Benjen Stark",
+                "commander_subname": "Erster Grenzer"
+            }
         },
         {
             "id": "40525",
             "name": "Erkenntnis des Jägers",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines befreundeten Zuges:",
-                    "effect": [
-                        "Bestimme 1 Feind innerhalb **Langer Reichweite** zu einer befreundeten Grenzer- Einheit und wähle 1 der folgenden Effekte:",
-                        "• Verschiebe 1 befreundete Einheit innerhalb **Langer Reichweite** zu jener feindlichen Einheit um 3 Zoll.",
-                        "• Befreundete Einheiten dürfen alle Würfel für den Angriff und die Bewegungsweite des Ansturms neu werfen, sobald sie jene feindliche Einheit in diesem Zug zum Ziel hat.",
-                        "• Jene feindliche Einheit darf in diesem Zug keine Befehle mehr verwenden oder zum Ziel von befreundeten Taktikkarten bestimmt werden."
-                    ]
-                }
-            ],
-            "commander_id": "20527",
-            "commander_name": "Benjen Stark",
-            "commander_subname": "Erster Grenzer"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
+                        "effect": [
+                            "Bestimme 1 Feind innerhalb **Langer Reichweite** zu einer befreundeten Grenzer- Einheit und wähle 1 der folgenden Effekte:",
+                            "• Verschiebe 1 befreundete Einheit innerhalb **Langer Reichweite** zu jener feindlichen Einheit um 3 Zoll.",
+                            "• Befreundete Einheiten dürfen alle Würfel für den Angriff und die Bewegungsweite des Ansturms neu werfen, sobald sie jene feindliche Einheit in diesem Zug zum Ziel hat.",
+                            "• Jene feindliche Einheit darf in diesem Zug keine Befehle mehr verwenden oder zum Ziel von befreundeten Taktikkarten bestimmt werden."
+                        ]
+                    }
+                ],
+                "commander_id": "20527",
+                "commander_name": "Benjen Stark",
+                "commander_subname": "Erster Grenzer"
+            }
         },
         {
             "id": "40526",
             "name": "Erkenntnis des Jägers",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines befreundeten Zuges:",
-                    "effect": [
-                        "Bestimme 1 Feind innerhalb **Langer Reichweite** zu einer befreundeten Grenzer-Einheit zum Ziel und wähle 1 der folgenden Effekte:",
-                        "• Verschiebe 1 befreundete Einheit innerhalb **Langer Reichweite** zu jenem Feind um 3 Zoll.",
-                        "• Befreundete Einheiten dürfen alle Würfel für den Angriff und die Bewegungsweite des Ansturms neu werfen, sobald sie jenen Feind in diesem Zug zum Ziel hat.",
-                        "• Jener Feind darf in diesem Zug keine Befehle mehr verwenden oder zum Ziel von befreundeten Taktikkarten bestimmt werden."
-                    ]
-                }
-            ],
-            "commander_id": "20533",
-            "commander_name": "Benjen Stark",
-            "commander_subname": "Hinter der Mauer"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
+                        "effect": [
+                            "Bestimme 1 Feind innerhalb **Langer Reichweite** zu einer befreundeten Grenzer-Einheit zum Ziel und wähle 1 der folgenden Effekte:",
+                            "• Verschiebe 1 befreundete Einheit innerhalb **Langer Reichweite** zu jenem Feind um 3 Zoll.",
+                            "• Befreundete Einheiten dürfen alle Würfel für den Angriff und die Bewegungsweite des Ansturms neu werfen, sobald sie jenen Feind in diesem Zug zum Ziel hat.",
+                            "• Jener Feind darf in diesem Zug keine Befehle mehr verwenden oder zum Ziel von befreundeten Taktikkarten bestimmt werden."
+                        ]
+                    }
+                ],
+                "commander_id": "20533",
+                "commander_name": "Benjen Stark",
+                "commander_subname": "Hinter der Mauer"
+            }
         },
         {
             "id": "40527",
             "name": "Aufstellen",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Kavallerie-Einheit, die nicht im Nahkampf ist, aktiviert wird:",
-                    "effect": [
-                        "Ein Mal in diesem Zug, falls jene Einheit eine Manöveraktion durchführen würde, darf sie stattdessen 3 **Wunden** heilen und 1 Zustandsmarker ablegen."
-                    ]
-                }
-            ],
-            "commander_id": "20533",
-            "commander_name": "Benjen Stark",
-            "commander_subname": "Hinter der Mauer"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Kavallerie-Einheit, die nicht im Nahkampf ist, aktiviert wird:",
+                        "effect": [
+                            "Ein Mal in diesem Zug, falls jene Einheit eine Manöveraktion durchführen würde, darf sie stattdessen 3 **Wunden** heilen und 1 Zustandsmarker ablegen."
+                        ]
+                    }
+                ],
+                "commander_id": "20533",
+                "commander_name": "Benjen Stark",
+                "commander_subname": "Hinter der Mauer"
+            }
         },
         {
             "id": "40528",
             "name": "Berittener Angriff",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Kavallerie-Einheit während ihrer Aktivierung ihre Aktion auswählt, bevor jene Aktion abgehandelt wird:",
-                    "effect": [
-                        "Als ihre Aktion darf sich jene Einheit drehen und dann 1 Marschaktion durchführen, auch wenn sie im Nahkampf ist. Sie darf sich bei diesem Marsch durch Feinde hindurchbewegen. Feinde, aus deren Nahkampf sie sich löst, dürfen sich nicht drehen.",
-                        "Nachdem dieser Marsch abgeschlossen worden ist, erleidet 1 Feind, durch den sie sich hindurchbewegt hat, 1 **Wunde**, +1 **Wunde** für jede verbleibende Schlachtreihe jenes Feindes."
-                    ]
-                }
-            ],
-            "commander_id": "20533",
-            "commander_name": "Benjen Stark",
-            "commander_subname": "Hinter der Mauer"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Kavallerie-Einheit während ihrer Aktivierung ihre Aktion auswählt, bevor jene Aktion abgehandelt wird:",
+                        "effect": [
+                            "Als ihre Aktion darf sich jene Einheit drehen und dann 1 Marschaktion durchführen, auch wenn sie im Nahkampf ist. Sie darf sich bei diesem Marsch durch Feinde hindurchbewegen. Feinde, aus deren Nahkampf sie sich löst, dürfen sich nicht drehen.",
+                            "Nachdem dieser Marsch abgeschlossen worden ist, erleidet 1 Feind, durch den sie sich hindurchbewegt hat, 1 **Wunde**, +1 **Wunde** für jede verbleibende Schlachtreihe jenes Feindes."
+                        ]
+                    }
+                ],
+                "commander_id": "20533",
+                "commander_name": "Benjen Stark",
+                "commander_subname": "Hinter der Mauer"
+            }
         },
         {
             "id": "40529",
             "name": "Angriffsbefehle",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
-                    "effect": [
-                        "Ersetze den Effekt jener Zone durch:",
-                        "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
-                        "*Falls diese Karte Cotter Peiks Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
-                    ]
-                }
-            ],
-            "commander_id": "20534",
-            "commander_name": "Cotter Peik",
-            "commander_subname": "Kommandant von Ostwacht"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                        "effect": [
+                            "Ersetze den Effekt jener Zone durch:",
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
+                            "*Falls diese Karte Cotter Peiks Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
+                        ]
+                    }
+                ],
+                "commander_id": "20534",
+                "commander_name": "Cotter Peik",
+                "commander_subname": "Kommandant von Ostwacht"
+            }
         },
         {
             "id": "40530",
             "name": "Peiksche Aggression",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
-                    "effect": [
-                        "Jene Einheit führt 1 Nahkampfangriff durch und verwendet dabei ihren niedrigsten Angriffswürfelwert. Dieser Angriff löst keine Panikprobe aus.",
-                        "Nachdem dieser Angriff abgeschlossen worden ist, erleidet der Angreifer 1 Treffer für jeden Treffer, der in jenem Angriff geworfen worden ist."
-                    ]
-                }
-            ],
-            "commander_id": "20534",
-            "commander_name": "Cotter Peik",
-            "commander_subname": "Kommandant von Ostwacht"
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                        "effect": [
+                            "Jene Einheit führt 1 Nahkampfangriff durch und verwendet dabei ihren niedrigsten Angriffswürfelwert. Dieser Angriff löst keine Panikprobe aus.",
+                            "Nachdem dieser Angriff abgeschlossen worden ist, erleidet der Angreifer 1 Treffer für jeden Treffer, der in jenem Angriff geworfen worden ist."
+                        ]
+                    }
+                ],
+                "commander_id": "20534",
+                "commander_name": "Cotter Peik",
+                "commander_subname": "Kommandant von Ostwacht"
+            }
         },
         {
             "id": "40531",
             "name": "Rücksichtslose Schläge",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                    "effect": [
-                        "Dieser Angriff erhält **Kritischer Treffer** und **Präzision**. Der Angreifer erleidet 1 **Wunde** für jede gewürfelte 1 auf einem Angriffswürfel.",
-                        "Falls diese Karte Cotter Peiks Einheit zum Ziel hat, verwendet dieser Angriff seinen höchsten Angriffswürfelwert."
-                    ]
-                }
-            ],
-            "commander_id": "20534",
-            "commander_name": "Cotter Peik",
-            "commander_subname": "Kommandant von Ostwacht"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Dieser Angriff erhält **Kritischer Treffer** und **Präzision**. Der Angreifer erleidet 1 **Wunde** für jede gewürfelte 1 auf einem Angriffswürfel.",
+                            "Falls diese Karte Cotter Peiks Einheit zum Ziel hat, verwendet dieser Angriff seinen höchsten Angriffswürfelwert."
+                        ]
+                    }
+                ],
+                "commander_id": "20534",
+                "commander_name": "Cotter Peik",
+                "commander_subname": "Kommandant von Ostwacht"
+            }
         },
         {
             "id": "40532",
             "name": "Flexible Methoden",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines beliebigen Zuges:",
-                    "effect": [
-                        "Bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker.",
-                        "Dann darfst du 1 Zustandsmarker auf 1 beliebigen Einheit durch einen beliebigen anderen Zustandsmarker ersetzen.",
-                        "Falls du [LETTER] kontrollierst, darfst du dann 1 Zustandsmarker von 1 Einheit auf eine beliebige andere Einheit bewegen."
-                    ]
-                }
-            ],
-            "commander_id": "20535",
-            "commander_name": "Ser Denys Mallister",
-            "commander_subname": "Kommandant vom Schattenturm"
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker.",
+                            "Dann darfst du 1 Zustandsmarker auf 1 beliebigen Einheit durch einen beliebigen anderen Zustandsmarker ersetzen.",
+                            "Falls du [LETTER] kontrollierst, darfst du dann 1 Zustandsmarker von 1 Einheit auf eine beliebige andere Einheit bewegen."
+                        ]
+                    }
+                ],
+                "commander_id": "20535",
+                "commander_name": "Ser Denys Mallister",
+                "commander_subname": "Kommandant vom Schattenturm"
+            }
         },
         {
             "id": "40533",
             "name": "Kampfgeschick",
-            "version": "2021",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Sobald ein Feind zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
-                    "effect": [
-                        "Du darfst 1 Zustandsmarker von jenem Feind ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
-                    ]
-                },
-                {
-                    "trigger": "Zu Beginn eines befreundeten Zuges:",
-                    "effect": [
-                        "Bestimme 1 befreundete Kampfeinheit, die im Nahkampf ist, zum Ziel. Lege 1 Zustandsmarker von jener Einheit ab."
-                    ]
-                }
-            ],
-            "commander_id": "20535",
-            "commander_name": "Ser Denys Mallister",
-            "commander_subname": "Kommandant vom Schattenturm"
+            "statistics": {
+                "version": "2021",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Sobald ein Feind zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
+                        "effect": [
+                            "Du darfst 1 Zustandsmarker von jenem Feind ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
+                        ]
+                    },
+                    {
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
+                        "effect": [
+                            "Bestimme 1 befreundete Kampfeinheit, die im Nahkampf ist, zum Ziel. Lege 1 Zustandsmarker von jener Einheit ab."
+                        ]
+                    }
+                ],
+                "commander_id": "20535",
+                "commander_name": "Ser Denys Mallister",
+                "commander_subname": "Kommandant vom Schattenturm"
+            }
         },
         {
             "id": "40534",
             "name": "Gemäß den Pflichten",
-            "version": "2021-S03",
-            "faction": "Night's Watch",
-            "text": [
-                {
-                    "trigger": "Zu Beginn eines befreundeten Zuges:",
-                    "effect": [
-                        "Bestimme 1 befreundete Nachtwache-Einheit zum Ziel und lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                        "Solange diese Karte an jener Einheit anliegt, immer wenn diese Einheit aktiviert wird, erhält 1 Feind innerhalb **Kurzer Reichweite** 1 Zustandsmarker, +1 Zustandsmarker für jede vernichtete Schlachtreihe dieser Einheit."
-                    ]
-                }
-            ],
-            "commander_id": "20535",
-            "commander_name": "Ser Denys Mallister",
-            "commander_subname": "Kommandant vom Schattenturm"
+            "statistics": {
+                "version": "2021-S03",
+                "faction": "nightswatch",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
+                        "effect": [
+                            "Bestimme 1 befreundete Nachtwache-Einheit zum Ziel und lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an jener Einheit anliegt, immer wenn diese Einheit aktiviert wird, erhält 1 Feind innerhalb **Kurzer Reichweite** 1 Zustandsmarker, +1 Zustandsmarker für jede vernichtete Schlachtreihe dieser Einheit."
+                        ]
+                    }
+                ],
+                "commander_id": "20535",
+                "commander_name": "Ser Denys Mallister",
+                "commander_subname": "Kommandant vom Schattenturm"
+            }
         }
     ]
 }

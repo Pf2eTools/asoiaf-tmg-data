@@ -1,38 +1,34 @@
 from generate_utils import *
 from image_editor import ImageEditor
-from asset_manager import AssetManager
 
 
-def generate_attachment(attachment_data, abilities_data):
-    faction = re.sub(r"[^A-Za-z]", "", attachment_data.get("faction"))
-    name = attachment_data.get("name")
-    subname = attachment_data.get("subname")
-    attachment_id = attachment_data.get("id")
+def generate_attachment(asset_manager, attachment_id, name, subname, attachment_data, abilities_data):
+    faction = attachment_data.get("faction")
     version = attachment_data.get("version")
     abilities = attachment_data.get("abilities")
     is_commander = attachment_data.get("commander", False)
 
-    background = AssetManager.get_bg(faction)
+    background = asset_manager.get_bg(faction)
     w, h = background.size
     attachment_card = Image.new("RGBA", (w, h))
     attachment_card.paste(background.rotate(get_faction_bg_rotation(faction)))
     if is_commander:
-        text_bg = AssetManager.get_unit_skills_bg()
+        text_bg = asset_manager.get_unit_skills_bg()
         attachment_card.paste(text_bg, (141, 338))
     else:
-        text_bg = AssetManager.get_unit_skills_bg()
+        text_bg = asset_manager.get_unit_skills_bg()
         text_bg = text_bg.crop((0, 0, 555, text_bg.size[1]))
         attachment_card.paste(text_bg, (141, 338))
-    portrait = AssetManager.get_attachment_image(attachment_id)
+    portrait = asset_manager.get_attachment_image(attachment_id)
     if is_commander:
         attachment_card.paste(portrait)
     else:
         attachment_card.paste(portrait, (50, 50))
 
     bars = Image.new("RGBA", (w, h))
-    large_bar, small_bar, weird_bar = AssetManager.get_bars(faction)
+    large_bar, small_bar, weird_bar = asset_manager.get_bars(faction)
     small_bar_ds = apply_drop_shadow(small_bar)
-    decor = AssetManager.get_decor(faction)
+    decor = asset_manager.get_decor(faction)
     small_horizontal_crop = small_bar_ds.crop((0, 0, 662, small_bar_ds.size[1]))
     large_horizontal_crop = large_bar.crop((200, large_bar.size[1] // 2 - 21, 842, large_bar.size[1] // 2 + 21))
     short_vertical = small_bar_ds.rotate(90, expand=1).crop((0, 20, small_bar_ds.size[0], 212))
@@ -72,14 +68,14 @@ def generate_attachment(attachment_data, abilities_data):
 
     attach_type = attachment_data.get("type")
     if attach_type is not None and attach_type != "None":
-        unit_type = AssetManager.get_attachment_type(attach_type, faction)
+        unit_type = asset_manager.get_attachment_type(attach_type, faction)
         if is_commander:
             bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, -23))
         else:
             unit_type = unit_type.crop((0, unit_type.size[1] - 142, unit_type.size[0], unit_type.size[1]))
             bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, 30))
 
-    crest = AssetManager.get_crest_tactics(faction)
+    crest = asset_manager.get_crest_tactics(faction)
     crest = crest.crop(crest.getbbox())
     crest_size = min(158, int(crest.size[0] * 182 / crest.size[1])), min(182, int(crest.size[1] * 158 / crest.size[0]))
     crest = crest.resize(crest_size)
@@ -87,8 +83,8 @@ def generate_attachment(attachment_data, abilities_data):
     bars.alpha_composite(apply_drop_shadow(crest), (crest_resize_x, crest_resize_y))
 
     layer_abilities = Image.new("RGBA", (w, h))
-    skill_divider = AssetManager.get_skill_divider(faction)
-    skill_bottom = AssetManager.get_skill_bottom(faction)
+    skill_divider = asset_manager.get_skill_divider(faction)
+    skill_bottom = asset_manager.get_skill_bottom(faction)
     if not is_commander:
         skill_divider = skill_divider.crop((0, 0, 600, skill_divider.size[1]))
         skill_bottom = skill_bottom.crop((0, 0, 560, skill_bottom.size[1]))
@@ -97,9 +93,9 @@ def generate_attachment(attachment_data, abilities_data):
 
     section_padding = skill_divider.size[1]
     w_abilities = w - 150 if is_commander else 536
-    renderer_abilities = TextRenderer(abilities_to_render, "Tuff", (w_abilities, h - 396), font_size=36, align_x=TextRenderer.ALIGN_LEFT,
-                                      align_y=TextRenderer.ALIGN_TOP, section_padding=section_padding, font_color="#5d4d40",
-                                      padding=(15, 16, 25, 16), leading=1.08)
+    renderer_abilities = TextRenderer(abilities_to_render, "Tuff", (w_abilities, h - 396), asset_manager, font_size=36,
+                                      align_x=TextRenderer.ALIGN_LEFT, align_y=TextRenderer.ALIGN_TOP, section_padding=section_padding,
+                                      font_color="#5d4d40", padding=(15, 16, 25, 16), leading=1.08)
     rd_abilities = renderer_abilities.render()
     layer_abilities.alpha_composite(rd_abilities, (150, 346))
     section_coords = renderer_abilities.rendered_section_coords
@@ -114,12 +110,12 @@ def generate_attachment(attachment_data, abilities_data):
         if icons is None:
             continue
         highlight_color = get_faction_highlight_color(faction)
-        rd_icons = render_skill_icons(icons, highlight_color)
+        rd_icons = render_skill_icons(asset_manager, icons, highlight_color)
         x, y = 28, 346 + coords[0] + (coords[1] - coords[0] - rd_icons.size[1]) // 2
         layer_abilities.alpha_composite(rd_icons, (x, int(y)))
 
     all_text = Image.new("RGBA", (w, h))
-    renderer_name = TextRenderer(name.upper(), "Tuff", (340, 100), font_size=50, bold=True, font_color="white", leading=0.9,
+    renderer_name = TextRenderer(name.upper(), "Tuff", (340, 100), asset_manager, font_size=50, bold=True, font_color="white", leading=0.9,
                                  stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
     rd_name = renderer_name.render()
     rd_name = rd_name.crop((0, 0, rd_name.size[0], int(renderer_name.rendered_section_coords[0][1])))
@@ -131,8 +127,8 @@ def generate_attachment(attachment_data, abilities_data):
         name_x, name_y = 511, 170
         subname_w = 280
     if subname is not None:
-        renderer_subname = TextRenderer(subname.upper(), "Tuff", (subname_w, 80), font_size=30, font_color="white", leading=1,
-                                        stroke_width=0.1, padding=(5, 5, 5, 5))
+        renderer_subname = TextRenderer(subname.upper(), "Tuff", (subname_w, 80), asset_manager, font_size=30, font_color="white",
+                                        leading=1, stroke_width=0.1, padding=(5, 5, 5, 5))
         rd_subname = renderer_subname.render()
         rd_subname = rd_subname.crop((0, 0, rd_subname.size[0], int(renderer_subname.rendered_section_coords[0][1])))
         rd_names = Image.new("RGBA", (max(rd_name.size[0], rd_subname.size[0]), rd_name.size[1] + rd_subname.size[1] - 8))
@@ -142,8 +138,9 @@ def generate_attachment(attachment_data, abilities_data):
     else:
         all_text.alpha_composite(rd_name, (name_x - rd_name.size[0] // 2, name_y - rd_name.size[1] // 2))
 
-    renderer_version = TextRenderer(version, "Tuff", (100, 25), font_size=20, italic=True, font_color="white", stroke_width=0, leading=1,
-                                    tracking=-10, align_y=TextRenderer.ALIGN_BOTTOM, align_x=TextRenderer.ALIGN_LEFT, padding=(5, 0, 5, 0))
+    renderer_version = TextRenderer(version, "Tuff", (100, 25), asset_manager, font_size=20, italic=True, font_color="white",
+                                    stroke_width=0, leading=1, tracking=-10, align_y=TextRenderer.ALIGN_BOTTOM,
+                                    align_x=TextRenderer.ALIGN_LEFT, padding=(5, 0, 5, 0))
     rendered_version = renderer_version.render()
     version_x, version_y = 19, h - rendered_version.size[0] - 30
     all_text.alpha_composite(rendered_version.rotate(90, expand=1), (version_x, version_y))
@@ -164,37 +161,7 @@ def generate_attachment(attachment_data, abilities_data):
 
 
 def main():
-    theon = {
-        "id": "20808",
-        "name": "Theon Greyjoy",
-        "subname": "\"Prince\" of Winterfell",
-        "faction": "Greyjoy",
-        "type": "Infantry",
-        "commander": True,
-        "abilities": [
-            "Order: Sentinel",
-            "Ambush",
-            "Enhanced Mobility"
-        ],
-        "version": "2021-S03"
-    }
-    asha = {
-        "id": "20802",
-        "name": "Asha Greyjoy",
-        "subname": "Captain of the Black Wind",
-        "faction": "Greyjoy",
-        "type": "Infantry",
-        "abilities": [
-            "Order: War Cry",
-            "Iron Resolve"
-        ],
-        "version": "2021-S03"
-    }
-    from parse_csv import parse_abilities
-    abilities = parse_abilities()
-    attachment_card = generate_attachment(asha, abilities["en"])
-    attachment_original = Image.open("asha.jpg")
-    ImageEditor(attachment_card, attachment_original)
+    pass
 
 
 if __name__ == "__main__":

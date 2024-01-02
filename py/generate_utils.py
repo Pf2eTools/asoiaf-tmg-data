@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageChops
 import re
-from asset_manager import AssetManager
 from copy import deepcopy
 
 
@@ -95,50 +94,50 @@ def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
     return shadow
 
 
-def render_stat_value(stat):
-    background = AssetManager.get_stat_background()
+def render_stat_value(asset_manager, stat):
+    background = asset_manager.get_stat_background()
     stat = str(stat)
-    renderer = TextRenderer(stat, "Garamond", background.size, font_size=46, font_color="white", stroke_width=0, supersample=4, bold=True,
-                            align_y=TextRenderer.ALIGN_CENTER)
+    renderer = TextRenderer(stat, "Garamond", background.size, asset_manager, font_size=46, font_color="white", stroke_width=0,
+                            supersample=4, bold=True, align_y=TextRenderer.ALIGN_CENTER)
     rd_stat = renderer.render()
     offset = (2, 0) if stat.endswith("+") else (0, 0)
     background.alpha_composite(rd_stat, offset)
     return background
 
 
-def render_attack(attack_data, border_color="Gold"):
+def render_attack(asset_manager, attack_data, border_color="Gold"):
     atk_type = attack_data.get("type")
     atk_name = attack_data.get("name")
     tohit = attack_data.get("hit")
     atk_ranks = attack_data.get("dice")
 
-    attack_bg = AssetManager.get_attack_bg(border_color)
-    attack_dice_bg = AssetManager.get_attack_dice_bg()
+    attack_bg = asset_manager.get_attack_bg(border_color)
+    attack_dice_bg = asset_manager.get_attack_dice_bg()
 
     attack_bar = Image.new("RGBA", (367, 166))
-    skill_icon = render_skill_icon(atk_type, border_color)
+    skill_icon = render_skill_icon(asset_manager, atk_type, border_color)
     attack_bar.alpha_composite(attack_bg, (skill_icon.size[0] // 2, 14 + (attack_bg.size[1] - 106) // 2))
     attack_bar.alpha_composite(skill_icon)
 
     atk_name_color = "#0e2e45" if atk_type == "melee" else "#87282a"
-    name_renderer = TextRenderer(atk_name.upper(), "Tuff", (180, 60), font_size=29, font_color=atk_name_color, stroke_width=0.7,
-                                 leading=0.9, italic=True, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER)
+    name_renderer = TextRenderer(atk_name.upper(), "Tuff", (180, 60), asset_manager, font_size=29, font_color=atk_name_color,
+                                 stroke_width=0.7, leading=0.9, italic=True, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER)
     rd_atk_name = name_renderer.render()
     attack_bar.alpha_composite(rd_atk_name, (221 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
 
     if atk_type != "melee":
-        range_icon = AssetManager.get_attack_range_icon(atk_type, border_color)
+        range_icon = asset_manager.get_attack_range_icon(atk_type, border_color)
         attack_bar.alpha_composite(apply_drop_shadow(range_icon), (60, -14))
 
     rd_statistics = Image.new("RGBA", attack_bar.size)
     rd_statistics.alpha_composite(attack_dice_bg, (104, 88))
-    rd_to_hit = render_stat_value(f"{tohit}+")
+    rd_to_hit = render_stat_value(asset_manager, f"{tohit}+")
     rd_statistics.alpha_composite(apply_drop_shadow(rd_to_hit), (58, 56))
     rank_colors = ["#648f4a", "#dd8e29", "#bd1a2b"]
     for i in range(len(atk_ranks)):
         rank_bg = Image.new("RGBA", (35, 35), rank_colors[i])
-        renderer_num_dice = TextRenderer(str(atk_ranks[i]), "Garamond", (44, 44), font_size=37, font_color="#cdcecb", stroke_width=0.1,
-                                         bold=True, padding=(0, 0, 0, 0))
+        renderer_num_dice = TextRenderer(str(atk_ranks[i]), "Garamond", (44, 44), asset_manager, font_size=37, font_color="#cdcecb",
+                                         stroke_width=0.1, bold=True, padding=(0, 0, 0, 0))
         rd_num_dice = renderer_num_dice.render()
 
         # This was an interesting programming journey, but having a transparent font makes it pretty hard to read the
@@ -154,38 +153,38 @@ def render_attack(attack_data, border_color="Gold"):
     return attack_bar
 
 
-def render_skill_icon(name, highlight_color="Gold"):
+def render_skill_icon(asset_manager, name, highlight_color="Gold"):
     rendered = Image.new("RGBA", (134, 134))
     name, number, _ = re.split(r"(\d+)|$", name, maxsplit=1)
     if name in ["ranged", "melee", "long", "short"]:
-        attack_type_bg = AssetManager.get_attack_type_bg(highlight_color)
+        attack_type_bg = asset_manager.get_attack_type_bg(highlight_color)
         x, y = (134 - attack_type_bg.size[0]) // 2, (134 - attack_type_bg.size[1]) // 2
         rendered.alpha_composite(attack_type_bg, (x, y))
-        attack_type = apply_drop_shadow(AssetManager.get_attack_type(name, highlight_color))
+        attack_type = apply_drop_shadow(asset_manager.get_attack_type(name, highlight_color))
         x, y = (136 - attack_type.size[0]) // 2, (136 - attack_type.size[1]) // 2
         rendered.alpha_composite(attack_type, (x, y))
     # Buff asha
     elif name == "morale":
         rendered = Image.new("RGBA", (134, 196))
-        icon_morale = AssetManager.get_stat_icon("morale")
-        rd_morale = render_stat_value(f'{number or 5}+')
+        icon_morale = asset_manager.get_stat_icon("morale")
+        rd_morale = render_stat_value(asset_manager, f'{number or 5}+')
         x, y = (134 - rd_morale.size[0]) // 2, 196 - 9 - rd_morale.size[1]
         rendered.alpha_composite(rd_morale, (x, y))
         x, y = (134 - icon_morale.size[0]) // 2, 9
         rendered.alpha_composite(icon_morale, (x, y))
     else:
-        icon = AssetManager.get_skill_icon(name, highlight_color)
+        icon = asset_manager.get_skill_icon(name, highlight_color)
         x, y = (134 - icon.size[0]) // 2, (134 - icon.size[1]) // 2
         rendered.alpha_composite(icon, (x, y))
         if number is not None:
-            renderer_number = TextRenderer(number, "Garamond", (134, 134), bold=True, font_color="white", font_size=36,
+            renderer_number = TextRenderer(number, "Garamond", (134, 134), asset_manager, bold=True, font_color="white", font_size=36,
                                            align_y=TextRenderer.ALIGN_CENTER)
             rendered.alpha_composite(renderer_number.render())
     return rendered
 
 
-def render_skill_icons(icons, highlight_color="Gold"):
-    rd_icons = [render_skill_icon(icon, highlight_color) for icon in icons]
+def render_skill_icons(asset_manager, icons, highlight_color="Gold"):
+    rd_icons = [render_skill_icon(asset_manager, icon, highlight_color) for icon in icons]
     h = sum([i.size[1] - 20 for i in rd_icons]) + 20
     w = 134
 
@@ -291,7 +290,7 @@ class TextRenderer:
         "LONGRANGE": "image",
     }
 
-    def __init__(self, data, font_family, bounding_box, **kwargs):
+    def __init__(self, data, font_family, bounding_box, asset_manager, **kwargs):
         """
         Documentation text
         
@@ -344,6 +343,7 @@ class TextRenderer:
         self._section_padding = kwargs.get("section_padding", 0)
         self.base_bias_extra_height = kwargs.get("base_bias_extra_height", 0.7)
 
+        self.asset_manager = asset_manager
         self.input = self.fix_input(data)
         self.cursor = Cursor()
         self.image = Image.new("RGBA", (self.max_w, self.max_h), self.background_color)
@@ -784,10 +784,10 @@ class TextRenderer:
                 "hit": int(hit),
                 "dice": [int(d) for d in dice.split(",")]
             }
-            rendered = render_attack(atk_data)
+            rendered = render_attack(self.asset_manager, atk_data)
             self._do_render_full_width_icon(rendered)
         elif token.startswith("SKILL"):
-            rendered = apply_drop_shadow(render_skill_icon(token.replace("SKILL:", "")), color="black")
+            rendered = apply_drop_shadow(render_skill_icon(self.asset_manager, token.replace("SKILL:", "")), color="black")
             self._do_render_full_width_icon(rendered)
         else:
             icon = self.get_icon(token)
@@ -807,7 +807,7 @@ class TextRenderer:
         self.cursor.y += rendered.size[1] - self.leading
 
     def get_icon(self, token):
-        icon = AssetManager.get_text_icon(token)
+        icon = self.asset_manager.get_text_icon(token)
         icon = icon.resize((int(self.font_size * 1.15 * icon.size[0] / icon.size[1]), int(self.font_size * 1.15)), resample=Image.LANCZOS)
         icon_bbox = icon.getbbox()
         icon = icon.crop((icon_bbox[0], 0, icon_bbox[2], icon_bbox[3]))
