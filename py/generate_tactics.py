@@ -146,7 +146,7 @@ def generate_tactics(asset_manager, name,  tactics_data):
 
     tactics_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
 
-    crest = asset_manager.get_crest_tactics(faction)
+    crest = asset_manager.get_crest(faction)
     crest = crest.crop(crest.getbbox())
     crest = crest.resize(((189 + crest.size[0]) // 2, int(crest.size[1] * ((189 + crest.size[0]) / 2) / crest.size[0])))
     if commander_id is None:

@@ -24,11 +24,10 @@ class AssetManager:
     def get_decor(self, faction):
         return Image.open(f"{self.ASSETS_DIR}/{faction}/bar-decor.png")
 
-    # TODO: DEPRECATE
-    def get_crest(self, faction):
+    def get_crest_shadow(self, faction):
         return Image.open(f"{self.ASSETS_DIR}/{faction}/crest-shadow.png")
 
-    def get_crest_tactics(self, faction):
+    def get_crest(self, faction):
         return Image.open(f"{self.ASSETS_DIR}/{faction}/crest.png")
 
     def get_unit_bg(self, faction):

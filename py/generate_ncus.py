@@ -123,7 +123,7 @@ def generate_ncu(asset_manager, ncu_id, name, subname, ncu_data):
     all_text.alpha_composite(rendered_version.rotate(90, expand=1), (version_x, version_y))
 
     ncu_card.alpha_composite(apply_drop_shadow(bars, color="#00000055", shadow_size=5), (-20, -20))
-    crest = asset_manager.get_crest_tactics(faction)
+    crest = asset_manager.get_crest(faction)
     crest = crest.rotate(-12, expand=1, resample=Image.BICUBIC)
     crest = crest.resize((int(crest.size[0] * 172 / crest.size[1]), 172), resample=Image.LANCZOS)
     ncu_card.alpha_composite(apply_drop_shadow(crest, color="#00000055", shadow_size=5), (523, 182))

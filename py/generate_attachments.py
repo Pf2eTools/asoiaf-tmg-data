@@ -75,7 +75,7 @@ def generate_attachment(asset_manager, attachment_id, name, subname, attachment_
             unit_type = unit_type.crop((0, unit_type.size[1] - 142, unit_type.size[0], unit_type.size[1]))
             bars.alpha_composite(apply_drop_shadow(unit_type), (265 - unit_type.size[0] // 2, 30))
 
-    crest = asset_manager.get_crest_tactics(faction)
+    crest = asset_manager.get_crest(faction)
     crest = crest.crop(crest.getbbox())
     crest_size = min(158, int(crest.size[0] * 182 / crest.size[1])), min(182, int(crest.size[1] * 158 / crest.size[0]))
     crest = crest.resize(crest_size)

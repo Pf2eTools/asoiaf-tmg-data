@@ -58,12 +58,14 @@ def generate_unit(asset_manager, unit_id, name, subname, unit_data, abilities_da
     bars.alpha_composite(small_bar_ds.rotate(270, expand=1), (bar_vr_x - small_bar_ds.size[1] // 2, bar_vr_y))
 
     crests = Image.new("RGBA", (w, h))
-    crest = asset_manager.get_crest(faction)
+    crest = asset_manager.get_crest_shadow(faction)
     crest = crest.crop(crest.getbbox())
     crest = crest.rotate(-12, expand=1, resample=Image.BICUBIC)
+    offset_crop = crest.crop((0, 0, crest.width, crests.height // 4))
+    offset = (offset_crop.width - offset_crop.getbbox()[2]) // 2
     crest_w, crest_h = int(188 * crest.size[0] / crest.size[1]), 188
     crest = crest.resize((crest_w, crest_h), resample=Image.LANCZOS)
-    crests.alpha_composite(apply_drop_shadow(crest), (704 - crest_w, 456))
+    crests.alpha_composite(apply_drop_shadow(crest), (704 - crest_w + offset, 456))
     unit_type = asset_manager.get_unit_type(unit_data.get("type"), faction)
     crests.alpha_composite(unit_type, (228 - unit_type.size[0] // 2, h - unit_type.size[1]))
 
