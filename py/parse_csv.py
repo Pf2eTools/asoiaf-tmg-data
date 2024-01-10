@@ -410,6 +410,7 @@ def main():
         for faction in FACTIONS:
             path = f"{DATA_PATH}/{lang}"
             Path(path).mkdir(parents=True, exist_ok=True)
+            # TODO/FIXME: This will wipe coords for portraits
             data = {
                 "units": [u for u in units.get(lang, {}).values() if normalize(u["statistics"]["faction"]) == faction],
                 "ncus": [n for n in ncus.get(lang, {}).values() if normalize(n["statistics"]["faction"]) == faction],
