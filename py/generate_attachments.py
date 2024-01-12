@@ -20,6 +20,9 @@ def generate_attachment(asset_manager, attachment_id, name, subname, attachment_
         text_bg = text_bg.crop((0, 0, 555, text_bg.size[1]))
         attachment_card.paste(text_bg, (141, 338))
     portrait = asset_manager.get_attachment_image(attachment_id)
+    # FIXME: HACK
+    if attachment_id == "20521" or attachment_id == "20517":
+        portrait = portrait.resize((portrait.width // 2, portrait.height // 2)).crop((0, 0, 197, 248))
     if is_commander:
         attachment_card.paste(portrait)
     else:
@@ -115,8 +118,10 @@ def generate_attachment(asset_manager, attachment_id, name, subname, attachment_
         layer_abilities.alpha_composite(rd_icons, (x, int(y)))
 
     all_text = Image.new("RGBA", (w, h))
-    renderer_name = TextRenderer(name.upper(), "Tuff", (340, 100), asset_manager, font_size=50, bold=True, font_color="white", leading=0.9,
-                                 stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
+    # FIXME: HACK
+    name_font_size = 50 if attachment_id != "20517" else 35
+    renderer_name = TextRenderer(name.upper(), "Tuff", (340, 100), asset_manager, font_size=name_font_size, bold=True, font_color="white",
+                                 leading=0.9, stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
     rd_name = renderer_name.render()
     rd_name = rd_name.crop((0, 0, rd_name.size[0], int(renderer_name.rendered_section_coords[0][1])))
 
