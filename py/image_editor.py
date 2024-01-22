@@ -30,7 +30,6 @@ class ImageEditor:
         self.root.bind("<Key>", self.switch_mode)
         self.root.mainloop()
 
-
     @staticmethod
     def overlay_images(top_layer, background):
         copy = top_layer.copy().convert("RGBA")
@@ -38,7 +37,6 @@ class ImageEditor:
         overlayed = background.copy().convert("RGBA")
         overlayed.alpha_composite(copy)
         return overlayed
-
 
     @staticmethod
     def log_coordinates(event):

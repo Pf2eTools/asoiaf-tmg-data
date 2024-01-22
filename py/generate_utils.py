@@ -232,7 +232,7 @@ def get_ability_data_for_renderer(abilities_data, color):
                             "content": f"**{ability.get('name').upper()}**"
                         },
                         {"type": "text", "content": f"**{ability.get('trigger')}**"} if ability.get("trigger") is not None else None,
-                        {"type": "text", "content": " ".join(ability.get("effect"))}
+                        {"type": "text", "content": "\n".join(ability.get("effect"))}
                     ] if c is not None]
                 }
             ]
@@ -241,7 +241,6 @@ def get_ability_data_for_renderer(abilities_data, color):
     return abilities_to_render
 
 
-FACTOR_FIXED_LINE_HEIGHT = 0.7
 CHAR_BULLET = "•"
 
 

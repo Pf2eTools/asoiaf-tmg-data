@@ -213,6 +213,36 @@
                     "Sternfall-Lanze"
                 ]
             }
+        },
+        {
+            "id": "10908",
+            "name": "Dunkelsterns Gefolgschaft",
+            "statistics": {
+                "version": "2021",
+                "faction": "martell",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 6,
+                "defense": 5,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Krummsäbel",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Überrennen",
+                    "Durch das Gemetzel befeuert",
+                    "Krummsäbel"
+                ]
+            }
         }
     ],
     "ncus": [
@@ -289,8 +319,8 @@
                     {
                         "name": "Jähzornig",
                         "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                            "Solange Oberyn Einfluss auf eine befreundete Einheit ausübt, immer wenn ein Feind diese Einheit mit einem Nahkampfangriff angreift, bevor jener Angriff abgehandelt wird, erleidet der Angreifer 2 Treffer, +1 Treffer für jede verbleibende Schlachtreihe des Verteidigers."
+                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                            "Solange Oberyn Einfluss auf eine befreundete Einheit ausübt, immer wenn ein Feind diese Einheit mit einem Nahkampfangriff angreift, nachdem jener Angriff abgehandelt worden ist, erleidet der Angreifer 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe des Verteidigers."
                         ]
                     }
                 ]
@@ -674,6 +704,20 @@
                     "Mut und Kühnheit"
                 ],
                 "commander": true
+            }
+        },
+        {
+            "id": "20922",
+            "name": "Wache von Hochklause",
+            "statistics": {
+                "version": "2021",
+                "faction": "martell",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Überfall",
+                    "Verbesserte Mobilität"
+                ]
             }
         }
     ],

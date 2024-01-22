@@ -23,6 +23,15 @@
             "Immer wenn Margaery eine Zone auf der Taktiktafel beansprucht, darfst du 1 befreundete Kampfeinheit zum Ziel bestimmen. Sie heilt 1 **Wunde**. Du darfst dann 1 Feind, der mit jener Einheit im Nahkampf ist, zum Ziel bestimmen. Er wird **Verwundbar**."
         ]
     },
+    "HOHE PRÄZISION": {
+        "effect": [
+            "Die Angriffe dieser Einheit erhalten Präzision."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
     "ANPASSUNGSFÄHIG": {
         "effect": [
             "Senke bei der Zusammenstellung der Armee die Kosten 1 Verstärkung dieser Einheit um 1."
@@ -639,9 +648,22 @@
             "wounds4"
         ]
     },
+    "BEIDHÄNDIG": {
+        "effect": [
+            "• **Präzision**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
     "PFLICHTBEWUSSTER KOMMANDANT": {
         "effect": [
             "Falls dies eine Nachtwache-Einheit ist, darfst du nach der Aufstellung dein Taktikdeck nach 1 Taktikkarte **Gemäß den Pflichten** durchsuchen und an diese Einheit anlegen. Mische danach dein Taktikdeck."
+        ]
+    },
+    "DER KRONE VERPFLICHTET": {
+        "effect": [
+            "Immer wenn diese Einheit eine Moralprobe besteht, heilt sie 1 **Wunde**. Falls du [CROWN] kontrollierst, heilt sie +1 **Wunde**."
         ]
     },
     "DEN REICHEN DER MENSCHEN ZU DIENSTEN": {
@@ -649,11 +671,6 @@
             "Immer wenn Jeor eine Zone auf der Taktiktafel beansprucht, darfst du 2 befreundete Nachtwache-Kampfeinheiten innerhalb **Langer Reichweite** zueinander zum Ziel bestimmen. Bewege 1 befreundete angelegte Taktikkarte von 1 jener Einheiten zu der anderen.",
             "Ein Mal pro Partie, sobald Jeor eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
             "*Nimm 1 Taktikkarte, die an eine Einheit angelegt werden kann, von deinem Ablagestapel und lege sie an eine befreundete Nachtwache-Einheit an.*"
-        ]
-    },
-    "DER KRONE VERPFLICHTET": {
-        "effect": [
-            "Immer wenn diese Einheit eine Moralprobe besteht, heilt sie 1 **Wunde**. Falls du [CROWN] kontrollierst, heilt sie +1 **Wunde**."
         ]
     },
     "DIE VORSICHT DER ÄLTEREN": {
@@ -763,6 +780,17 @@
             "melee"
         ]
     },
+    "DEN BESTEN FREIER AUSFINDIG MACHEN": {
+        "effect": [
+            "Bei Spielbeginn werden 3 Befehlsmarker auf Shae gelegt.",
+            "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, lege 1 Befehlsmarker von Shae ab.",
+            "Falls am Ende der Runde keine Befehlsmarker auf Shae liegen, vernichte Shae.",
+            "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, bevor der Effekt jener Zone abgehandelt wird, wähle 1 der folgenden Effekte:",
+            "• Heile 1 **Wunde** einer befreundeten Kampfeinheit.",
+            "• 1 feindliche Kampfeinheit wird **Geschwächt**.",
+            "• Shae erhält 2 Befehlsmarker."
+        ]
+    },
     "FEUERPFEILE": {
         "effect": [
             "• **Grausam**",
@@ -861,12 +889,12 @@
         "effect": [
             "Lege bei Spielbeginn 1 **Plündermarker** auf Erik.",
             "Immer wenn Erik oder eine feindliche zivile Einheit die [MONEY]-Zone beansprucht, lege 1 Plündermarker auf Erik.",
-            "Immer wenn Erik eine Zone außer der [MONEY]-Zone beansprucht, darfst du 1 Plündermarker von ihm entfernen und auf 1 befreundete Einheit mit der Fähigkeit Plündern legen."
+            "Immer wenn Erik eine Zone außer der [MONEY]-Zone beansprucht, darfst du 1 Plündermarker von ihm entfernen und auf 1 befreundete Graufreud-Einheit legen."
         ]
     },
     "SILBERNE UND BRONZENE GESCHENKE": {
         "effect": [
-            "Immer wenn eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, erhält diese Einheit 1 Plündermarker."
+            "Immer wenn eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, falls es sich um eine Haus-Graufreud-Einheit handelt, erhält diese Einheit 1 Plündermarker."
         ]
     },
     "KÄMPFEND UNTERGEHEN": {
@@ -1023,8 +1051,8 @@
     },
     "JÄHZORNIG": {
         "effect": [
-            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-            "Solange Oberyn Einfluss auf eine befreundete Einheit ausübt, immer wenn ein Feind diese Einheit mit einem Nahkampfangriff angreift, bevor jener Angriff abgehandelt wird, erleidet der Angreifer 2 Treffer, +1 Treffer für jede verbleibende Schlachtreihe des Verteidigers."
+            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+            "Solange Oberyn Einfluss auf eine befreundete Einheit ausübt, immer wenn ein Feind diese Einheit mit einem Nahkampfangriff angreift, nachdem jener Angriff abgehandelt worden ist, erleidet der Angreifer 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe des Verteidigers."
         ]
     },
     "DAS HAUS DER UNSTERBLICHEN": {
@@ -1082,6 +1110,14 @@
             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
             "Solange Axell Einfluss auf eine feindliche Einheit ausübt, immer wenn sie an einer Panikprobe scheitert, wird sie **Geschwächt**.",
             "Solange Axell Einfluss auf eine feindliche Einheit ausübt, falls sie mit einer R’hllor-Einheit im Nahkampf ist, erleidet sie +1 **Wunde**, wenn sie an einer Panikprobe scheitert."
+        ]
+    },
+    "UNBEZWINGBAR": {
+        "effect": [
+            "Diese Einheit kann nicht **Geschwächt** werden."
+        ],
+        "icons": [
+            "wounds"
         ]
     },
     "UNBEDEUTEND": {
@@ -1188,6 +1224,19 @@
             "wounds"
         ]
     },
+    "JOKINS BESCHÜTZER": {
+        "effect": [
+            "Nachdem Jokins Einheit angegriffen worden ist, führt diese Einheit 1 Angriffs- oder Ansturmaktion auf den Angreifer durch."
+        ]
+    },
+    "JOKINS VASALL": {
+        "effect": [
+            "Diese Figur zählt für alle Fähigkeiten und Effekte als Jokin."
+        ],
+        "icons": [
+            "wounds"
+        ]
+    },
     "JUNGER DRACHE": {
         "effect": [
             "• Diese Einheit kann 8 **Wunden** erleiden.",
@@ -1206,19 +1255,19 @@
             "melee"
         ]
     },
-    "RITTERLICHER EID": {
+    "KLINGE DES RITTERS": {
         "effect": [
-            "• Bestimme nach der Aufstellung 1 feindliche Einheit zum Ziel. Sobald diese Einheit einen Ansturm auf jene Einheit durchführt, darf sie alle Würfel für die Bewegungsweite des Ansturms neu werfen.",
-            "• Solange du [SWORDS] kontrollierst, erhalten die Nahkampfangriffe dieser Einheit +1 auf den Trefferwurf."
+            "• **Spaltschlag**",
+            "• Falls du [SWORDS] kontrollierst, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**."
         ],
         "icons": [
             "melee"
         ]
     },
-    "KLINGE DES RITTERS": {
+    "RITTERLICHER EID": {
         "effect": [
-            "• **Spaltschlag**",
-            "• Falls du [SWORDS] kontrollierst, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**."
+            "• Bestimme nach der Aufstellung 1 feindliche Einheit zum Ziel. Sobald diese Einheit einen Ansturm auf jene Einheit durchführt, darf sie alle Würfel für die Bewegungsweite des Ansturms neu werfen.",
+            "• Solange du [SWORDS] kontrollierst, erhalten die Nahkampfangriffe dieser Einheit +1 auf den Trefferwurf."
         ],
         "icons": [
             "melee"
@@ -1402,6 +1451,13 @@
             "Falls du das tust, lege 1 **Befehlsmarker** von einer befreundeten Einheit ab. Jener Befehl darf in dieser Runde erneut verwendet werden."
         ]
     },
+    "MEISTER DES SPIELS": {
+        "effect": [
+            "Bei Spielbeginn werden 3 Befehlsmarker auf Petyr Baelish gelegt.",
+            "Immer wenn Petyr eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen, um den Effekt jener Zone durch den Effekt einer beliebigen unbeanspruchten Zone zu ersetzen.",
+            "Ein Mal pro Partie zu Beginn eines beliebigen Zuges darfst du 1 Zone auf der Taktiktafel auswählen. Bis zum Ende der Runde zählst du, als würdest du jene Zone kontrollieren."
+        ]
+    },
     "MEISTERHAFTER LEIBWECHSLER": {
         "effect": [
             "• Diese Einheit kann 4 **Wunden** erleiden.",
@@ -1410,13 +1466,6 @@
         ],
         "icons": [
             "wounds4"
-        ]
-    },
-    "MEISTER DES SPIELS": {
-        "effect": [
-            "Bei Spielbeginn werden 3 Befehlsmarker auf Petyr Baelish gelegt.",
-            "Immer wenn Petyr eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen, um den Effekt jener Zone durch den Effekt einer beliebigen unbeanspruchten Zone zu ersetzen.",
-            "Ein Mal pro Partie zu Beginn eines beliebigen Zuges darfst du 1 Zone auf der Taktiktafel auswählen. Bis zum Ende der Runde zählst du, als würdest du jene Zone kontrollieren."
         ]
     },
     "MEISTER-LANGSCHWERT": {
@@ -1453,7 +1502,7 @@
             "Solange Joffrey Einfluss auf einen Feind ausübt, erleidet jener Feind +1 **Wunde**, wenn er an einer Panikprobe scheitert."
         ]
     },
-    "MACHT DES THRONS ": {
+    "MACHT DES THRONS": {
         "effect": [
             "Immer wenn eine befreundete zivile Einheit die [CROWN]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
             "*Kevan Lennisters Einheit führt 1 Angriffs- oder Ansturmaktion durch.*"
@@ -1495,6 +1544,12 @@
         ],
         "icons": [
             "melee"
+        ]
+    },
+    "NAMEN AUF DER LISTE": {
+        "effect": [
+            "Immer wenn eine befreundete Einheit innerhalb **Langer Reichweite** eine Schlachtreihe verliert, lege 1 Befehlsmarker auf diese Karte.",
+            "Immer wenn diese Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden, darfst du 1 Befehlsmarker von dieser Karte ablegen. Falls du das tust, vernichte 1 Infanterie-Verstärkung des Verteidigers, nachdem der Angriff abgeschlossen worden ist."
         ]
     },
     "NÖTIGE OPFER": {
@@ -2028,7 +2083,7 @@
     },
     "VERGIFTETE GESCHENKE": {
         "effect": [
-            "Falls diese Einheit die Fähigkeit Plündern hat, wird sie mit 2 Plündermarkern aufgestellt. Sobald sie eine Aktion durchführt, bevor jene Aktion abgehandelt wird, erleidet sie 1 **Wunde**."
+            "Falls diese Einheit eine Haus-Graufreud-Einheit ist, wird sie mit 2 **Plündermarkern** aufgestellt. Sobald sie eine Aktion durchführt, bevor jene Aktion abgehandelt wird, erleidet sie 1 **Wunde**."
         ]
     },
     "VERGIFTETER DREIZACK": {
@@ -2187,7 +2242,7 @@
     "PLÜNDERÄXTE": {
         "effect": [
             "• **Spaltschlag**",
-            "• Diese Einheit erhält +1 auf den Trefferwurf für jeden Plündermarker auf ihr."
+            "• Falls auf dieser Einheit 2 **Plündermarker** liegen, darf sie beliebig viele Angriffswürfel neu werfen."
         ],
         "icons": [
             "melee"
@@ -2331,16 +2386,16 @@
             "Zu Beginn eines beliebigen Zuges, falls Qhorin nicht auf der Taktiktafel ist, darfst du ihn vernichten. Falls du das tust, bestimme 1 feindliche Einheit zum Ziel. Jener Feind kann in dieser Runde nicht aktiviert werden oder Aktionen durchführen."
         ]
     },
+    "OPFER FÜR DEN KÖNIG": {
+        "effect": [
+            "Zu Beginn einer beliebigen Runde darfst du Cressen aktivieren. Falls du das tust, vernichte Cressen am Ende der Runde."
+        ]
+    },
     "OPFER FÜR DEN HERRN DES LICHTS": {
         "effect": [
             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
             "Sobald Melisandre Einfluss auf eine befreundete Einheit ausübt, darfst du sie 2 **Wunden** erleiden lassen und sie muss 1 Panikprobe ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Jener Feind muss 1 Panikprobe ablegen, erhält –2 auf das Ergebnis und erleidet bei einem Fehlschlag +2 **Wunden**.",
             "Solange Melisandre Einfluss auf eine befreundete Einheit ausübt, ist jene Einheit eine R’hllor-Einheit und ihre Nahkampfangriffe erhalten **Grausam**."
-        ]
-    },
-    "OPFER FÜR DEN KÖNIG": {
-        "effect": [
-            "Zu Beginn einer beliebigen Runde darfst du Cressen aktivieren. Falls du das tust, vernichte Cressen am Ende der Runde."
         ]
     },
     "SADISTISCHES GEMETZEL": {
@@ -2617,7 +2672,7 @@
     },
     "SOLL DES KRAKEN": {
         "effect": [
-            "Sobald diese Einheit aktiviert wird, darfst du 1 befreundete Haus-Graufreud-Einheit zum Ziel bestimmen. Du darfst 1 **Plündermarker** von jener Einheit ablegen und auf diese Einheit legen. Dann darfst du 1 Plündermarker von dieser Einheit ablegen, um 2 **Wunden** von dieser Einheit zu heilen."
+            "Sobald diese Einheit aktiviert wird, falls es sich um eine Haus-Graufreud-Einheit handelt, darfst du 1 andere befreundete Haus-Graufreud-Einheit zum Ziel bestimmen. Du darfst 1 **Plündermarker** von jener Einheit ablegen und auf diese Einheit legen. Dann darfst du 1 Plündermarker von dieser Einheit ablegen, um bis zu 2 **Wunden** von dieser Einheit zu heilen."
         ]
     },
     "DER SPÄTE WALDER FREY": {
@@ -2954,11 +3009,11 @@
     "REICHTUM DER DREIZEHN": {
         "effect": [
             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-            "Solange Xaro Einfluss auf eine Einheit ausübt, erleidet/erhält jene Einheit den folgenden Effekt basierend auf der Zone, die Xaro kontrolliert:",
-            "[CROWN]: Diese Einheit erleidet +1 **Wunde**, wenn sie an einer Panikprobe scheitert.",
-            "[MONEY]: Nachdem die Verteidigungswürfel geworfen worden sind, wehrt diese Einheit +1 Treffer ab.",
-            "[LETTER]: Die Angriffe dieser Einheit erhalten +1 Angriffswürfel.",
-            "[UNDYING]: Die Angriffe dieser Einheit erhalten –1 Angriffswürfel."
+            "Solange Xaro Einfluss auf eine Einheit ausübt, erleidet/erhält jene Einheit den folgenden Effekt basierend auf der Zone, die du kontrollierst:",
+            "[CROWN]: Falls es sich um eine feindliche Einheit handelt, erleidet sie +1 **Wunde**, wenn sie an einer Panikprobe scheitert.",
+            "[MONEY]: Falls es sich um ein befreundete Einheit handelt, nachdem die Verteidigungswürfel geworfen worden sind, wehrt sie +1 Treffer ab.",
+            "[LETTER]: Falls es sich um eine befreundete Einheit handelt, erhalten ihre Angriffe +1 Angriffswürfel.",
+            "[UNDYING]: Falls es sich um eine feindliche Einheit handelt, erhalten ihre Angriffe –1 Angriffswürfel."
         ]
     },
     "WAS AUCH IMMER DA KOMMEN MAG": {
@@ -2967,6 +3022,11 @@
         ],
         "icons": [
             "wounds"
+        ]
+    },
+    "BESCHÜTZER DES WITWERS": {
+        "effect": [
+            "Nachdem die Einheit des Witwers angegriffen worden ist, führt diese Einheit 1 Angriffs- oder Ansturmaktion auf den Angreifer durch."
         ]
     },
     "SEEFEUER": {

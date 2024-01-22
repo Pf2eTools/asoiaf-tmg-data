@@ -576,6 +576,29 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "30409",
+            "name": "Shae",
+            "subname": "Heimlich am Hofe",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "abilities": [
+                    {
+                        "name": "Den besten Freier ausfindig machen",
+                        "effect": [
+                            "Bei Spielbeginn werden 3 Befehlsmarker auf Shae gelegt.",
+                            "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, lege 1 Befehlsmarker von Shae ab.",
+                            "Falls am Ende der Runde keine Befehlsmarker auf Shae liegen, vernichte Shae.",
+                            "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, bevor der Effekt jener Zone abgehandelt wird, wähle 1 der folgenden Effekte:",
+                            "• Heile 1 **Wunde** einer befreundeten Kampfeinheit.",
+                            "• 1 feindliche Kampfeinheit wird **Geschwächt**.",
+                            "• Shae erhält 2 Befehlsmarker."
+                        ]
+                    }
+                ]
+            }
         }
     ],
     "attachments": [
@@ -844,6 +867,124 @@
                 "abilities": [
                     "Verhören",
                     "Tyrannischer Stolz"
+                ]
+            }
+        },
+        {
+            "id": "20420",
+            "name": "Arya Stark",
+            "subname": "Prinzessin auf der Flucht",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Namen auf der Liste"
+                ]
+            }
+        },
+        {
+            "id": "20421",
+            "name": "Sandor Clegane",
+            "subname": "Leibwächter auf der Flucht",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Bedrohen"
+                ]
+            }
+        },
+        {
+            "id": "20422",
+            "name": "Rorge",
+            "subname": "Der irre Hund von Salzpfann",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Befehl: Anspornen",
+                    "Trügerische Flucht"
+                ]
+            }
+        },
+        {
+            "id": "20423",
+            "name": "Beisser",
+            "subname": "Rorges irrer Hund",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Zusammenrotten"
+                ]
+            }
+        },
+        {
+            "id": "20424",
+            "name": "Jokin",
+            "subname": "Hauptmann der Sturmkrähen",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Befehl: Überwachen"
+                ],
+                "commander": true
+            }
+        },
+        {
+            "id": "20425",
+            "name": "Der Witwer",
+            "subname": "Hauptmann der Sturmkrähen",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": 0,
+                "abilities": [
+                    "Jokins Vasall",
+                    "Befehl: Linie halten!",
+                    "Spaltschlag"
+                ]
+            }
+        },
+        {
+            "id": "20426",
+            "name": "Jokin",
+            "subname": "Kommandant der Bogenschützen",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Beschützer des Witwers",
+                    "Hohe Präzision"
+                ]
+            }
+        },
+        {
+            "id": "20427",
+            "name": "Der Witwer",
+            "subname": "Zweiter Kommandant",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "type": "infantry",
+                "cost": 0,
+                "abilities": [
+                    "Jokins Beschützer",
+                    "Spaltschlag"
                 ]
             }
         }

@@ -138,7 +138,7 @@ def parse_abilities():
             }
         else:
             parsed = {
-                "effect": [description]
+                "effect": [ln.strip() for ln in description.split("\n") if ln.strip()]
             }
         if name.startswith("Order:"):
             parsed["icons"] = ["order"]
@@ -393,14 +393,14 @@ def dump(data, path):
 
 
 def main():
-    abilities = parse_abilities()
-    units = parse_units()
-    ncus = parse_ncus()
-    attachments = parse_attachments()
-    tactics = parse_tactics()
+    parsed_abilities = parse_abilities()
+    parsed_units = parse_units()
+    parsed_ncus = parse_ncus()
+    parsed_attachments = parse_attachments()
+    parsed_tactics = parse_tactics()
 
     for lang in LANGUAGES:
-        ab = abilities.get(lang)
+        ab = parsed_abilities.get(lang)
         if ab is None:
             pass
             # raise Exception("")
@@ -408,17 +408,51 @@ def main():
             dump(ab, f"{DATA_PATH}/{lang}/abilities.json")
 
         for faction in FACTIONS:
-            path = f"{DATA_PATH}/{lang}"
-            Path(path).mkdir(parents=True, exist_ok=True)
-            # TODO/FIXME: This will wipe coords for portraits
-            data = {
-                "units": [u for u in units.get(lang, {}).values() if normalize(u["statistics"]["faction"]) == faction],
-                "ncus": [n for n in ncus.get(lang, {}).values() if normalize(n["statistics"]["faction"]) == faction],
-                "attachments": [a for a in attachments.get(lang, {}).values() if normalize(a["statistics"]["faction"]) == faction],
-                "tactics": [t for t in tactics.get(lang, {}).values() if normalize(t["statistics"]["faction"]) == faction],
-            }
-            dump(data, f"{path}/{faction}.json")
+            base_path = f"{DATA_PATH}/{lang}"
+            Path(base_path).mkdir(parents=True, exist_ok=True)
+            path_data = f"{base_path}/{faction}.json"
+            with open(path_data, "r", encoding="utf-8") as f:
+                data = json.load(f)
 
+            units = [u for u in parsed_units.get(lang, {}).values() if normalize(u["statistics"]["faction"]) == faction]
+            ncus = [n for n in parsed_ncus.get(lang, {}).values() if normalize(n["statistics"]["faction"]) == faction]
+            attachments = [a for a in parsed_attachments.get(lang, {}).values() if normalize(a["statistics"]["faction"]) == faction]
+            tactics = [t for t in parsed_tactics.get(lang, {}).values() if normalize(t["statistics"]["faction"]) == faction]
+
+            def add_old_keys(obj, key):
+                old = next((item for item in data.get(key, []) if item["id"] == obj["id"]), None)
+                if old is None:
+                    return obj
+                for k, v in old.items():
+                    if obj.get(k) is not None:
+                        continue
+                    obj[k] = v
+                return obj
+
+            if MODE == MODE_REWRITE:
+                data = {
+                    "units": [add_old_keys(u, "units") for u in units],
+                    "ncus": [add_old_keys(n, "ncus") for n in ncus],
+                    "attachments": [add_old_keys(a, "attachments") for a in attachments],
+                    "tactics": [add_old_keys(t, "tactics") for t in tactics],
+                }
+            elif MODE == MODE_NEW_RELEASE:
+                pass
+            elif MODE == MODE_PATCH:
+                pass
+            else:
+                continue
+            dump(data, path_data)
+
+
+# Just write everything from csv
+MODE_REWRITE = "rewrite"
+# Just add new releases
+MODE_NEW_RELEASE = "release"
+# Update all changed
+MODE_PATCH = "patch"
+
+MODE = MODE_REWRITE
 
 if __name__ == "__main__":
     main()
