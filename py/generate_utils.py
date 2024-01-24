@@ -105,6 +105,18 @@ def render_stat_value(asset_manager, stat):
     return background
 
 
+def render_cost(asset_manager, cost, border="gold", is_commander=False):
+    commander = "commander" if is_commander else "regular"
+    background = asset_manager.get_cost_bg(border, commander)
+    cost = str(cost)
+    renderer = TextRenderer(cost, "Garamond", background.size, asset_manager, font_size=46, font_color="white", stroke_width=0,
+                            supersample=4, bold=True, align_y=TextRenderer.ALIGN_CENTER)
+    rd_stat = renderer.render()
+    offset = (-1, -2) if is_commander else (0, 0)
+    background.alpha_composite(rd_stat, offset)
+    return background
+
+
 def render_attack(asset_manager, attack_data, border_color="Gold"):
     atk_type = attack_data.get("type")
     atk_name = attack_data.get("name")
@@ -239,6 +251,16 @@ def get_ability_data_for_renderer(abilities_data, color):
         }
         abilities_to_render.append(data)
     return abilities_to_render
+
+
+def render_character_box(asset_manager, faction):
+    box_character = asset_manager.get_character_box(faction)
+    renderer_character = TextRenderer("CHARACTER", "Tuff", (200, 35), asset_manager, bold=True, stroke_width=0.1, font_size=38,
+                                      font_color="#5d4d40", tracking=50, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER,
+                                      overflow_policy_x=TextRenderer.OVERFLOW_CLIP)
+    rendered_character_text = renderer_character.render()
+    box_character.alpha_composite(rendered_character_text, (66, 13))
+    return box_character
 
 
 CHAR_BULLET = "•"
@@ -613,6 +635,8 @@ class TextRenderer:
                     return -30 * mem
                 case ("A", "T"):
                     return -50 * mem
+                case ("A", "C"):
+                    return -10 * mem
                 case ("R", "O"):
                     return -20 * mem
                 case ("Y", "J"):

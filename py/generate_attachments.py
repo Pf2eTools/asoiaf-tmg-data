@@ -165,8 +165,169 @@ def generate_attachment(asset_manager, attachment_id, name, subname, attachment_
     return attachment_card
 
 
+def generate_attachment_back(asset_manager, attachment_id, name, subname, attachment_data, attachment_fluff):
+    faction = attachment_data.get("faction")
+    background = asset_manager.get_bg(faction)
+    w, h = background.size
+    attachment_card = Image.new("RGBA", (w, h))
+    attachment_card.paste(background.rotate(get_faction_bg_rotation(faction)))
+
+    portrait = asset_manager.get_attachment_image(attachment_id + "b")
+    if attachment_data.get("commander"):
+        attachment_card.paste(portrait, (148, 292))
+    elif attachment_data.get("character"):
+        attachment_card.paste(portrait, (135, 345))
+    else:
+        attachment_card.paste(portrait, (135, 242))
+
+    bars = Image.new("RGBA", (w, h))
+    bars_lower = Image.new("RGBA", (w, h))
+    large_bar, small_bar, corner_bar = asset_manager.get_bars(faction)
+    decor = asset_manager.get_decor(faction)
+    lb_w, lb_h = large_bar.size
+    sb_w, sb_h = small_bar.size
+    if attachment_data.get("commander"):
+        bars_lower.alpha_composite(large_bar.crop((220, lb_h // 4, lb_w, 3 * lb_h // 4)), (140, 238))
+        bars_lower.alpha_composite(large_bar.rotate(90, expand=1), (98 - lb_h // 2, 0))
+        bars.alpha_composite(small_bar.crop((0, 0, sb_w, sb_h)), (140, 233))
+        bars.alpha_composite(small_bar.crop((0, 0, sb_w, sb_h)), (140, 280))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (98 - (lb_h + sb_h) // 2, 0))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (98 + (lb_h - sb_h) // 2, 0))
+    elif attachment_data.get("character"):
+        bars_lower.alpha_composite(large_bar.crop((220, lb_h // 4, 780, 3 * lb_h // 4)), (140, 292))
+        bars_lower.alpha_composite(large_bar.rotate(90, expand=1), (98 - lb_h // 2, 55))
+        bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, 287))
+        bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, 330))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (98 - (lb_h + sb_h) // 2, 55))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (98 + (lb_h - sb_h) // 2, 55))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (687, 55))
+        bars.alpha_composite(apply_drop_shadow(small_bar.crop((0, 0, 650, 100))), (30, 26))
+        bars.alpha_composite(decor, (98 - (lb_h + decor.width) // 2, 33))
+        bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, 33))
+        bars.alpha_composite(decor, (98 - (lb_h + decor.width) // 2, 273))
+        bars.alpha_composite(decor, (98 - (lb_h + decor.width) // 2, 316))
+        bars.alpha_composite(decor, (674, 273))
+        bars.alpha_composite(decor, (674, 316))
+        bars.alpha_composite(decor, (674, 33))
+    else:
+        bars_lower.alpha_composite(large_bar.rotate(90, expand=1), (98 - lb_h // 2, 55))
+        bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, 240))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (98 - (lb_h + sb_h) // 2, 55))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (98 + (lb_h - sb_h) // 2, 55))
+        bars.alpha_composite(small_bar.rotate(90, expand=1), (687, 55))
+        bars.alpha_composite(small_bar.crop((0, 0, 650, 100)), (50, 46))
+        bars.alpha_composite(decor, (98 - (lb_h + decor.width) // 2, 33))
+        bars.alpha_composite(decor, (98 - (lb_h + decor.width) // 2, 226))
+        bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, 33))
+        bars.alpha_composite(decor, (674, 226))
+        bars.alpha_composite(decor, (674, 33))
+
+    layer_crests = Image.new("RGBA", (w, h))
+
+    if attachment_data.get("commander"):
+        box_character = render_character_box(asset_manager, faction)
+        layer_crests.alpha_composite(apply_drop_shadow(box_character), (270, 212))
+    elif attachment_data.get("character"):
+        box_character = render_character_box(asset_manager, faction)
+        layer_crests.alpha_composite(apply_drop_shadow(box_character), (234, 266))
+    rendered_cost = render_cost(asset_manager, attachment_data.get("cost", 0), get_faction_highlight_color(faction), attachment_data.get("commander"))
+    layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (78 - rendered_cost.width // 2, 764))
+    crest = asset_manager.get_crest(faction)
+    crest = crest.crop(crest.getbbox())
+    crest = crest.rotate(14, expand=1, resample=Image.BICUBIC)
+    crest_size = min(198, int(crest.size[0] * 228 / crest.size[1])), min(228, int(crest.size[1] * 198 / crest.size[0]))
+    crest = crest.resize(crest_size)
+    if attachment_data.get("commander"):
+        crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 290 - crest.size[1] // 2
+    elif attachment_data.get("character"):
+        crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 340 - crest.size[1] // 2
+    else:
+        crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 290 - crest.size[1] // 2
+    layer_crests.alpha_composite(apply_drop_shadow(crest), (crest_resize_x, crest_resize_y))
+    # FIXME: HACK ALERT:
+    if attachment_data.get("type") != "none":
+        unit_type = asset_manager.get_unit_type(attachment_data.get("type"), faction)
+        layer_crests.alpha_composite(apply_drop_shadow(unit_type), (78 - unit_type.width // 2, h - unit_type.size[1] - 20))
+
+    layer_text = Image.new("RGBA", (w, h))
+    if attachment_data.get("commander"):
+        renderer_name = TextRenderer(name.upper(), "Tuff", (572, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
+                                     stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
+        rd_name = renderer_name.render()
+        layer_text.alpha_composite(rd_name, (164, 48))
+    elif attachment_data.get("character"):
+        renderer_name = TextRenderer(name.upper(), "Tuff", (520, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
+                                     stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
+        rd_name = renderer_name.render()
+        layer_text.alpha_composite(rd_name, (158, 92))
+    else:
+        renderer_name = TextRenderer(name.upper(), "Tuff", (520, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
+                                     stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
+        rd_name = renderer_name.render()
+        layer_text.alpha_composite(rd_name, (158, 122))
+
+    if attachment_data.get("commander") and subname is not None:
+        renderer_subname = TextRenderer(subname.upper(), "Tuff", (572, 40), asset_manager, font_size=30, font_color="white", leading=1,
+                                        stroke_width=0.1, padding=(5, 5, 5, 5))
+        rd_subname = renderer_subname.render()
+        layer_text.alpha_composite(rd_subname, (164, 98))
+    elif attachment_data.get("character") and subname is not None:
+        renderer_subname = TextRenderer(subname.upper(), "Tuff", (520, 40), asset_manager, font_size=30, font_color="white", leading=1,
+                                        stroke_width=0.1, padding=(5, 5, 5, 5))
+        rd_subname = renderer_subname.render()
+        layer_text.alpha_composite(rd_subname, (158, 142))
+
+    if attachment_data.get("commander"):
+        renderer_quote = TextRenderer(attachment_fluff.get("quote", ""), "Tuff", (532, 80), asset_manager, font_size=32, font_color="white",
+                                      italic=True, stroke_width=0.1, padding=(5, 5, 5, 5))
+        rd_quote = renderer_quote.render()
+        layer_text.alpha_composite(rd_quote, (184, 143))
+    elif attachment_data.get("character"):
+        renderer_quote = TextRenderer(attachment_fluff.get("quote", ""), "Tuff", (480, 90), asset_manager, font_size=32, font_color="white",
+                                      italic=True, stroke_width=0.1, padding=(5, 5, 5, 5))
+        rd_quote = renderer_quote.render()
+        layer_text.alpha_composite(rd_quote, (178, 182))
+
+    # TODO: Restrictions/Loyalty
+    # TODO: Commander tactics cards
+
+    attachment_card.alpha_composite(apply_drop_shadow(bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
+    attachment_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
+    attachment_card.alpha_composite(layer_crests)
+    attachment_card.alpha_composite(layer_text)
+
+    return attachment_card
+
+
 def main():
-    pass
+    from asset_manager import AssetManager
+    data_char = {
+        "faction": "greyjoy",
+        "cost": 1,
+        "type": "infantry",
+        "character": True,
+        "commander": False,
+    }
+    data_c = {
+        "faction": "greyjoy",
+        "cost": "C",
+        "type": "infantry",
+        "commander": True,
+    }
+    data = {
+        "faction": "greyjoy",
+        "cost": 1,
+        "type": "infantry",
+    }
+    fluff = {
+        "quote": "\"No fight is hopeless till it has been fought...\""
+    }
+    back = generate_attachment_back(AssetManager(), "20802", "Asha Greyjoy", "Captain of the Black Wind", data_char, fluff)
+    # back = generate_attachment_back(AssetManager(), "20801", "Asha Greyjoy", "Kraken's Daughter", data_c, fluff)
+    # back = generate_attachment_back(AssetManager(), "20806", "Warsworn", None, data, {})
+    # org = Image.open(r"").convert("RGBA")
+    # org = org.resize((750, 1050))
+    editor = ImageEditor(back, back)
 
 
 if __name__ == "__main__":

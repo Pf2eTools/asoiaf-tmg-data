@@ -157,8 +157,78 @@ def generate_unit(asset_manager, unit_id, name, subname, unit_data, abilities_da
     return unit_card
 
 
+def generate_unit_back(asset_manager, unit_id, name, subname, unit_data, unit_fluff):
+    faction = unit_data.get("faction")
+
+    unit_bg = asset_manager.get_unit_bg(faction)
+    w, h = unit_bg.size
+    unit_card = Image.new("RGBA", (w, h))
+    unit_card.paste(unit_bg)
+    img = asset_manager.get_unit_image(unit_id + "b")
+    unit_card.paste(img)
+    skills_bg = asset_manager.get_unit_skills_bg()
+    # TODO: Units with subname/quotes
+    unit_card.paste(skills_bg, (893, 166))
+
+    layer_bars = Image.new("RGBA", (w, h))
+    layer_bars_lower = Image.new("RGBA", (w, h))
+    large_bar, small_bar, corner_bar = asset_manager.get_bars(faction)
+    sb_w, sb_h = small_bar.size
+    lb_w, lb_h = large_bar.size
+    # TODO: Corner bar
+    layer_bars_lower.alpha_composite(large_bar.rotate(270, expand=1).crop((0, lb_w - h, lb_h, lb_w)), (846 - lb_h // 2, 0))
+    layer_bars.alpha_composite(small_bar.rotate(90, expand=1), (846 - (lb_h + sb_h) // 2, 0))
+    layer_bars.alpha_composite(small_bar.rotate(90, expand=1), (846 + (lb_h - sb_h) // 2, 0))
+    layer_bars.alpha_composite(small_bar, (846 + (lb_h - sb_h) // 2, 164))
+
+    layer_crests = Image.new("RGBA", (w, h))
+    unit_type = asset_manager.get_unit_type(unit_data.get("type"), faction)
+    layer_crests.alpha_composite(unit_type, (846 - unit_type.size[0] // 2, h - unit_type.size[1]))
+    # TODO: Varamyr Commander
+    rd_cost = render_cost(asset_manager, unit_data.get("cost", 0), get_faction_highlight_color(faction))
+    layer_crests.alpha_composite(rd_cost, (846 - rd_cost.size[0] // 2, 555))
+    crest = asset_manager.get_crest(faction)
+    crest = crest.crop(crest.getbbox())
+    crest_size = min(184, int(crest.size[0] * 213 / crest.size[1])), min(213, int(crest.size[1] * 184 / crest.size[0]))
+    crest = crest.resize(crest_size)
+    crest_x, crest_y = 826 - crest.size[0] // 2, 25
+    layer_crests.alpha_composite(apply_drop_shadow(crest), (crest_x, crest_y))
+
+    layer_text = Image.new("RGBA", (w, h))
+    renderer_name = TextRenderer(name.upper(), "Tuff", (440, 80), asset_manager, font_size=46, bold=True, font_color="white", leading=1,
+                                 stroke_width=0.2, align_y=TextRenderer.ALIGN_CENTER)
+    rd_name = renderer_name.render()
+    layer_text.alpha_composite(rd_name, (947, 50))
+    renderer_lore = TextRenderer(unit_fluff.get("lore"), "Tuff", (460, 620), asset_manager, font_size=38, italic=True, font_color="#5d4d40",
+                                 stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER, align_x=TextRenderer.ALIGN_LEFT,
+                                 padding=(20, 20, 20, 20))
+    rd_lore = renderer_lore.render()
+    layer_text.alpha_composite(rd_lore, (915, 190))
+
+    # TODO: Restrictions/Loyalty
+
+    unit_card.alpha_composite(apply_drop_shadow(layer_bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
+    unit_card.alpha_composite(apply_drop_shadow(layer_bars), (-20, -20))
+    unit_card.alpha_composite(apply_drop_shadow(layer_crests), (-20, -20))
+    unit_card.alpha_composite(layer_text)
+
+    return unit_card
+
+
 def main():
-    pass
+    from asset_manager import AssetManager
+    data = {
+        "faction": "greyjoy",
+        "cost": 7,
+        "type": "infantry"
+    }
+    fluff = {
+        "lore": "Of the different warriors that House Greyjoy sends to assault shoreline settlements, the Blacktyde Chosen are the most feared. When these elite warriors hit the beach, they rapidly form their ranks and sweep a path clear through any defences or defenders that stand in their way. Clad in scale mail, armed with master-crafted axes, and wielding large round shields, the Chosen are among the heaviest troops under the Kraken banner."
+    }
+    back = generate_unit_back(AssetManager(), "10806", "Blacktyde Chosen", None, data, fluff)
+    org = Image.open(r"").convert("RGBA")
+    org = org.resize((1417, 827))
+    editor = ImageEditor(back, org)
 
 
 if __name__ == "__main__":

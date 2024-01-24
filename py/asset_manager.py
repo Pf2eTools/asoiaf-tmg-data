@@ -96,6 +96,12 @@ class AssetManager:
     def get_text_icon(self, icon):
         return Image.open(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png")
 
+    def get_character_box(self, faction):
+        return Image.open(f"{self.ASSETS_DIR}/{faction}/box-character.png")
+
+    def get_cost_bg(self, border_color, commander):
+        return Image.open(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png")
+
     @staticmethod
     def get_warcouncil_faction(faction):
         if faction == "nightswatch":
@@ -128,6 +134,8 @@ class AssetManager:
             color_lower = color.lower()
             convert(f"{source}/Units/AttackBg{color}.webp", f"{path}/bg-attack-{color_lower}.png")
             convert(f"{source}/Units/AttackTypeBg{color}.webp", f"{path}/bg-attacktype-{color_lower}.png")
+            convert(f"{source}/Units/Cost{color}Commander.webp", f"{path}/bg-cost-{color_lower}-commander.png")
+            convert(f"{source}/Units/Cost{color}Regular.webp", f"{path}/bg-cost-{color_lower}-regular.png")
             for atk_type in ["Melee", "Ranged"]:
                 convert(f"{source}/Units/AttackType.{atk_type}{color}.webp", f"{path}/attacktype-{atk_type.lower()}-{color_lower}.png")
             for atk_range in ["Long", "Short"]:
@@ -154,6 +162,7 @@ class AssetManager:
             convert(f"{source}/Units/SkillBottom{warcouncil_faction}.webp", f"{base_path}/skill-bottom.png")
             convert(f"{source}/Units/Divider{warcouncil_faction}.webp", f"{base_path}/skill-divider.png")
             convert(f"{source}/NCUs/UnitTypeNCU{warcouncil_faction}.webp", f"{base_path}/unit-ncu.png")
+            convert(f"{source}/NCUs/Character{warcouncil_faction}.webp", f"{base_path}/box-character.png")
 
             types = ["Cavalry", "Infantry", "Monster", "SiegeEngine"]
             for unit_type in types:

@@ -214,6 +214,9 @@ def parse_units():
                 "attacks": [],
                 "abilities": [a.strip() for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
             },
+            "fluff": {
+                "lore": card_data.get("Lore")
+            },
         }
         if len(name_parts) == 2:
             parsed["subname"] = name_parts[1]
@@ -272,7 +275,11 @@ def parse_ncus():
             "statistics": {
                 "version": card_data.get("Version"),
                 "faction": normalize(card_data.get("Faction")),
+                "cost": card_data.get("Cost") if re.search(r"\D", card_data.get("Cost")) else int(card_data.get("Cost")),
                 "abilities": [],
+            },
+            "fluff": {
+                "quote": card_data.get("Quote")
             },
         }
         if len(name_parts) > 1:
@@ -347,6 +354,10 @@ def parse_attachments():
             del parsed["subname"]
         if parsed["statistics"]["cost"] == "C":
             parsed["statistics"]["commander"] = True
+        if card_data.get("Character"):
+            parsed["statistics"]["character"] = True
+        if card_data.get("Quote"):
+            parsed["fluff"] = {"quote": card_data.get("Quote")}
 
         parsed_cards["en"][card_id] = parsed
 
