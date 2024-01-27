@@ -35,8 +35,8 @@ def csv_to_dict(path):
 
 
 def parse_tactics_text(text_trigger_effect):
-    single_split = [re.sub(r"\s", " ", s.strip()) for s in text_trigger_effect.split("\n") if s.strip()]
-    double_split = [re.sub(r"\s", " ", s.strip()) for s in text_trigger_effect.split("\n\n")]
+    single_split = [re.sub(r"\s+", " ", s.strip()) for s in text_trigger_effect.split("\n") if s.strip()]
+    double_split = [re.sub(r"\s+", " ", s.strip()) for s in text_trigger_effect.split("\n\n")]
     out = {
         "trigger": "",
         "effect": []
@@ -226,6 +226,7 @@ def parse_units():
         if card_data.get("Attack 2") != "":
             parsed["statistics"]["attacks"].append(parse_attack(card_data.get("Attack 2"), card_data.get("10"), card_data.get("11")))
 
+        fix_name_obj(parsed)
         parsed_cards["en"][card_id] = parsed
 
     for lang in LANGUAGES:
@@ -294,6 +295,7 @@ def parse_ncus():
                 "effect": [t.strip() for t in text.split("\n\n") if t.strip()]
             }
             parsed["statistics"]["abilities"].append(ability)
+        fix_name_obj(parsed)
         parsed_cards["en"][card_id] = parsed
 
     for lang in LANGUAGES:
@@ -323,7 +325,7 @@ def parse_ncus():
     return parsed_cards
 
 
-def parse_attachments():
+def parse_attachments(tactics):
     data = csv_to_dict(f"{CSV_PATH}/attachments.csv")
     data_specials = csv_to_dict(f"{CSV_PATH}/special.csv")
     parsed_cards = {
@@ -354,11 +356,23 @@ def parse_attachments():
             del parsed["subname"]
         if parsed["statistics"]["cost"] == "C":
             parsed["statistics"]["commander"] = True
+            cards = [c for c in tactics["en"].values() if c["statistics"].get("commander_id") == card_id]
+            parsed["tactics"] = {"cards": [c["id"] for c in cards]}
+            if len(cards) == 10:
+                parsed["tactics"]["remove"] = ["ALL"]
+            elif len(cards) > 3:
+                parsed["tactics"]["remove"] = []
+                matches = [re.search(r'remove\s+the\s+"(.*?)"\s+Tactics', c["statistics"]["text"][-1].get("remove", "")) for c in cards]
+                for match in matches:
+                    if match is None:
+                        continue
+                    parsed["tactics"]["remove"].append(match.group(1))
         if card_data.get("Character"):
             parsed["statistics"]["character"] = True
         if card_data.get("Quote"):
             parsed["fluff"] = {"quote": card_data.get("Quote")}
 
+        fix_name_obj(parsed)
         parsed_cards["en"][card_id] = parsed
 
     for lang in LANGUAGES:
@@ -400,15 +414,37 @@ def dump(data, path):
         as_string = as_string.replace("­", "")
         as_string = as_string.replace("", "")
         as_string = as_string.replace("[LONG RANGE]", "[LONGRANGE]")
+        as_string = as_string.replace("Tarley", "Tarly")
+        as_string = as_string.replace("TARLEY", "TARLY")
         f.write(as_string.encode("utf-8"))
+
+
+def fix_name_obj(obj):
+    if obj.get("name"):
+        obj["name"] = fix_name(obj.get("name"))
+    if obj.get("subname"):
+        obj["subname"] = fix_name(obj.get("subname"))
+
+
+def fix_name(name):
+    lower = name.lower()
+    if lower == "pikeman captain":
+        return "Pikemen Captain"
+    elif lower == "captain of the wrath":
+        return "Captain of the Wraith"
+    elif lower == "maester of the house greyjoy":
+        return "Maester of House Greyjoy"
+    elif lower == "house tully sworn shield":
+        return "House Tully Sworn Shields"
+    return name
 
 
 def main():
     parsed_abilities = parse_abilities()
     parsed_units = parse_units()
     parsed_ncus = parse_ncus()
-    parsed_attachments = parse_attachments()
     parsed_tactics = parse_tactics()
+    parsed_attachments = parse_attachments(parsed_tactics)
 
     for lang in LANGUAGES:
         ab = parsed_abilities.get(lang)

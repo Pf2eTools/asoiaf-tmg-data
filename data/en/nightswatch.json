@@ -894,7 +894,7 @@
         },
         {
             "id": "30509",
-            "name": "Samwell Tarley",
+            "name": "Samwell Tarly",
             "subname": "Craven Scholar",
             "statistics": {
                 "version": "2021",
@@ -1095,6 +1095,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40508",
+                    "40509",
+                    "40510"
+                ]
+            },
             "fluff": {
                 "quote": "\"When dead men come hunting in the night, do you think it matters who sits the Iron Throne?\""
             },
@@ -1130,6 +1137,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40511",
+                    "40512",
+                    "40513"
+                ]
             },
             "fluff": {
                 "quote": "\"There's no shame in fear, my father told me, what matters is how we face it.\""
@@ -1263,6 +1277,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40514",
+                    "40515",
+                    "40516"
+                ]
+            },
             "fluff": {
                 "quote": "\"When the winter comes you will die like flies.\""
             },
@@ -1333,6 +1354,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40517",
+                    "40518",
+                    "40519"
+                ]
             },
             "fluff": {
                 "quote": "\"A one-armed smith slew Mag the Mighty? Har! That must o' been a fight to see.\""
@@ -1657,6 +1685,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40520",
+                    "40521",
+                    "40522"
+                ]
+            },
             "fluff": {
                 "quote": "\"Few men possess the knowledge or skills of the First Builder.\""
             },
@@ -1749,7 +1784,7 @@
         },
         {
             "id": "20525",
-            "name": "Samwell Tarley",
+            "name": "Samwell Tarly",
             "subname": "Sam The Slayer",
             "statistics": {
                 "version": "2021",
@@ -1758,7 +1793,7 @@
                 "cost": 2,
                 "abilities": [
                     "Order: Battle Plan",
-                    "Bookkeeping (Samwell Tarley)"
+                    "Bookkeeping (Samwell Tarly)"
                 ],
                 "character": true
             },
@@ -1833,6 +1868,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40523",
+                    "40524",
+                    "40525"
+                ]
             },
             "fluff": {
                 "quote": "\"There's not a man on the Wall knows the haunted forest better than Benjen Stark.\""
@@ -2044,6 +2086,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40526",
+                    "40527",
+                    "40528"
+                ]
+            },
             "fluff": {
                 "quote": "\"I've not seen Benjen Stark for three years. And if truth be told, I never once missed him.\" -Craster"
             },
@@ -2080,6 +2129,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40529",
+                    "40530",
+                    "40531"
+                ]
+            },
             "fluff": {
                 "quote": "\"Cotter Pyke always had more guts than sense.\" -Mance Rayder"
             },
@@ -2115,6 +2171,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40532",
+                    "40533",
+                    "40534"
+                ]
             },
             "fluff": {
                 "quote": "\"Do not make me die regretful.\""
@@ -2312,8 +2375,8 @@
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
-                            "Target 1 friendly engaged Night's  Watch unit. That unit performs  1 Morale Test. On a success,  attach this card to them until  the end of the game.",
-                            "While attached, each time an enemy  is performing a Melee Attack on this  unit, before Attack Dice are rolled,  the Attacker suffers 1 Hit, +1 Hit for  each remaining rank in this unit."
+                            "Target 1 friendly engaged Night's Watch unit. That unit performs 1 Morale Test. On a success, attach this card to them until the end of the game.",
+                            "While attached, each time an enemy is performing a Melee Attack on this unit, before Attack Dice are rolled, the Attacker suffers 1 Hit, +1 Hit for each remaining rank in this unit."
                         ]
                     }
                 ],
@@ -2570,10 +2633,10 @@
                 "faction": "nightswatch",
                 "text": [
                     {
-                        "trigger": "After a friendly unit completes  a Melee Attack:",
+                        "trigger": "After a friendly unit completes a Melee Attack:",
                         "effect": [
                             "That unit performs 1 Retreat Action.",
-                            "If this targets a Ranger unit,  any enemies it disengages  from becomes **Weakened**."
+                            "If this targets a Ranger unit, any enemies it disengages from becomes **Weakened**."
                         ]
                     }
                 ],
@@ -2592,9 +2655,9 @@
                     {
                         "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
-                            "Target 1 friendly, unactivated unit  in Long Range of that enemy that  has Line of Sight.",
-                            "They perform 1 Ranged  Attack Action on that enemy.",
-                            "If this targets a Ranger unit,  it may re-roll any misses."
+                            "Target 1 friendly, unactivated unit in Long Range of that enemy that has Line of Sight.",
+                            "They perform 1 Ranged Attack Action on that enemy.",
+                            "If this targets a Ranger unit, it may re-roll any misses."
                         ]
                     }
                 ],
@@ -2717,8 +2780,8 @@
                     {
                         "trigger": "After a friendly unit completes a Melee Attack:",
                         "effect": [
-                            "That unit performs 1 Melee  Attack using its lowest Attack  Die Value. This Attack does  not cause a Panic Test.",
-                            "After completing this Attack,  the Attacker suffers 1 Hit for each  Hit it rolled during that Attack."
+                            "That unit performs 1 Melee Attack using its lowest Attack Die Value. This Attack does not cause a Panic Test.",
+                            "After completing this Attack, the Attacker suffers 1 Hit for each Hit it rolled during that Attack."
                         ]
                     }
                 ],
@@ -2759,8 +2822,8 @@
                         "effect": [
                             "Target 1 enemy Combat Unit.",
                             "They gain 1 Condition token.",
-                            "Then, you may replace 1 Condition  token on any 1 unit with any other  Condition token.",
-                            "If you Control [LETTER], you may  then move 1 Condition token  from 1 unit to any other unit."
+                            "Then, you may replace 1 Condition token on any 1 unit with any other Condition token.",
+                            "If you Control [LETTER], you may then move 1 Condition token from 1 unit to any other unit."
                         ]
                     }
                 ],
@@ -2804,8 +2867,8 @@
                     {
                         "trigger": "Start of a friendly Turn:",
                         "effect": [
-                            "Target 1 friendly Night's Watch unit  and attach this card to that unit until  the end of the game.",
-                            "While Attached, each time this  unit Activates, 1 enemy in Short  Range gains 1 Condition token,  +1 Condition token for each of  this unit's destroyed ranks."
+                            "Target 1 friendly Night's Watch unit and attach this card to that unit until the end of the game.",
+                            "While Attached, each time this unit Activates, 1 enemy in Short Range gains 1 Condition token, +1 Condition token for each of this unit's destroyed ranks."
                         ]
                     }
                 ],

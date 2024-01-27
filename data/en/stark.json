@@ -249,7 +249,7 @@
         },
         {
             "id": "10206",
-            "name": "House Tully Sworn Shield",
+            "name": "House Tully Sworn Shields",
             "statistics": {
                 "version": "2021",
                 "faction": "stark",
@@ -1239,6 +1239,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40208",
+                    "40209",
+                    "40210"
+                ]
+            },
             "fluff": {
                 "quote": "\"All men should keep their word, kings most of all.\""
             },
@@ -1275,6 +1282,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40211",
+                    "40212",
+                    "40213"
+                ]
             },
             "fluff": {
                 "quote": "\"Grey Wind ate two of his fingers, and he laughed about it.\""
@@ -1476,6 +1490,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40214",
+                    "40215",
+                    "40216"
+                ]
+            },
             "fluff": {
                 "quote": "\"My first rule of war, Cat, is never give the enemy his wish.\""
             },
@@ -1548,6 +1569,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40217",
+                    "40218",
+                    "40219"
+                ]
+            },
             "fluff": {
                 "quote": "\"Know the men who follow you and let them know you. Don't ask your men to die for a stranger.\""
             },
@@ -1583,6 +1611,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40220",
+                    "40221",
+                    "40222"
+                ]
             },
             "fluff": {
                 "quote": "\"When we speak of the morrow nothing is ever certain.\""
@@ -1718,6 +1753,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40226",
+                    "40227",
+                    "40228"
+                ]
             },
             "fluff": {
                 "quote": "\"It is no good hammering your sword into a plowshare if you must forge it again on the morrow.\""
@@ -2020,6 +2062,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40223",
+                    "40224",
+                    "40225"
+                ]
+            },
             "fluff": {
                 "quote": "\"You never see them, but they see you. Those who go into the bogs after them get lost and never come out.\""
             },
@@ -2122,6 +2171,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40229",
+                    "40230",
+                    "40231"
+                ]
+            },
             "fluff": {
                 "quote": "\"In war you kill your enemies. Didn't your father teach you that, boy?\""
             },
@@ -2157,6 +2213,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40232",
+                    "40233",
+                    "40234"
+                ]
             },
             "fluff": {
                 "quote": "\"Like as not, my sister is marching in your brother’s host, her and those daughters of hers, dressed in men’s mail\" -Jeor Mormont to Jon Snow"
@@ -2258,7 +2321,7 @@
                 "faction": "stark",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is performing  a Charge Action, after rolling Charge  Distance Dice:",
+                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
                         "effect": [
                             "Enemies Successfully Charged by this unit become **Panicked** and **Vulnerable**.",
                             "If you Control [HORSE], this unit may re-roll any Charge Distance Dice."
@@ -2277,8 +2340,8 @@
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
-                            "Target 1 friendly Combat Unit and  attach this card to them until the end  of the game. When a friendly Infantry  or Cavalry unit is destroyed, place 1  Order token on this card.",
-                            "While this card has a token, the  attached unit always Attacks using  its highest Attack Die Value and,  while you Control [SWORDS],  gains +1 to Hit."
+                            "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
+                            "While this card has a token, the attached unit always Attacks using its highest Attack Die Value and, while you Control [SWORDS], gains +1 to Hit."
                         ]
                     }
                 ]
@@ -2292,11 +2355,11 @@
                 "faction": "stark",
                 "text": [
                     {
-                        "trigger": "When a friendly unit  Successfully Charges:",
+                        "trigger": "When a friendly unit Successfully Charges:",
                         "effect": [
-                            "Choose 1. If you Control [HORSE],  gain both:",
-                            "• Enemies Successfully Charged by  this unit cannot be the target  of friendly Orders or Tactics  cards this Turn.",
-                            "• The Attacker Attacks using its  highest Attack Die Value."
+                            "Choose 1. If you Control [HORSE], gain both:",
+                            "• Enemies Successfully Charged by this unit cannot be the target of friendly Orders or Tactics cards this Turn.",
+                            "• The Attacker Attacks using its highest Attack Die Value."
                         ]
                     }
                 ]
@@ -2387,7 +2450,7 @@
                         "trigger": "After a friendly unit completes a Melee Attack:",
                         "effect": [
                             "That unit performs 1 Retreat Action.",
-                            "If this targets Robb's unit, any  enemy it disengages from  becomes **Weakened**."
+                            "If this targets Robb's unit, any enemy it disengages from becomes **Weakened**."
                         ]
                     }
                 ],
@@ -2504,8 +2567,8 @@
                         "trigger": "When a friendly Combat Unit Activates:",
                         "effect": [
                             "That unit performs 1 Morale Test.",
-                            "On a success, target 1 enemy in  Long Range. It becomes **Panicked**  or **Vulnerable**.",
-                            "If this is Brynden's unit, on a success,  it becomes **Panicked** and  **Vulnerable** instead."
+                            "On a success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**.",
+                            "If this is Brynden's unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
                         ]
                     }
                 ],
@@ -2620,8 +2683,8 @@
                     {
                         "trigger": "When an enemy is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "The Attacker suffers  1 Hit for each Miss.",
-                            "If the Defender is Rodrik's unit,  this Attack also suffers -1 to Hit."
+                            "The Attacker suffers 1 Hit for each Miss.",
+                            "If the Defender is Rodrik's unit, this Attack also suffers -1 to Hit."
                         ]
                     }
                 ],
@@ -2640,10 +2703,10 @@
                     {
                         "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
                         "effect": [
-                            "Choose 1. For each Condition token  on the Defender, choose +1:",
-                            "•This Attack rolls its highest  Attack Die Value.",
+                            "Choose 1. For each Condition token on the Defender, choose +1:",
+                            "•This Attack rolls its highest Attack Die Value.",
                             "•This Attack gains +1 to Hit.",
-                            "•The Defender loses all Abilities  and cannot be the target of  friendly Tactics cards until  the end of the Turn."
+                            "•The Defender loses all Abilities and cannot be the target of friendly Tactics cards until the end of the Turn."
                         ]
                     }
                 ],
@@ -2662,8 +2725,8 @@
                     {
                         "trigger": "When an enemy unit Activates:",
                         "effect": [
-                            "If that enemy is in Long Range of  a friendly Crannogman unit, it  suffers -1[MOVEMENT] this Turn.",
-                            "If that enemy declares a Maneuver,  March, or Retreat Action, it is treated  as moving through Dangerous terrain."
+                            "If that enemy is in Long Range of a friendly Crannogman unit, it suffers -1[MOVEMENT] this Turn.",
+                            "If that enemy declares a Maneuver, March, or Retreat Action, it is treated as moving through Dangerous terrain."
                         ]
                     }
                 ],
@@ -2704,7 +2767,7 @@
                         "trigger": "Start of any Turn:",
                         "effect": [
                             "Target 1 enemy Combat Unit.",
-                            "If there is an unengaged friendly  Crannogman unit in Long Range of  it, that enemy becomes **Panicked**,  then suffers 1 Panic Test."
+                            "If there is an unengaged friendly Crannogman unit in Long Range of it, that enemy becomes **Panicked**, then suffers 1 Panic Test."
                         ]
                     }
                 ],
@@ -2783,7 +2846,7 @@
                         "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
                             "Target 1 friendly unit in Long Range.",
-                            "If that enemy could Attack or Charge  the targeted unit, and declares any  Action other than an Attack or Charge  on the targeted unit this Turn, before  performing that Action, that enemy  becomes **Vulnerable** and **Weakened**."
+                            "If that enemy could Attack or Charge the targeted unit, and declares any Action other than an Attack or Charge on the targeted unit this Turn, before performing that Action, that enemy becomes **Vulnerable** and **Weakened**."
                         ]
                     }
                 ],
@@ -2843,8 +2906,8 @@
                     {
                         "trigger": "Start of a friendly Turn:",
                         "effect": [
-                            "Attach this card to a friendly Combat  Unit until the end of the game.",
-                            "While attached, when this unit  would be destroyed, you may  discard this card. If you do, this  unit is not destroyed, but instead  remains in play with 1 Wound."
+                            "Attach this card to a friendly Combat Unit until the end of the game.",
+                            "While attached, when this unit would be destroyed, you may discard this card. If you do, this unit is not destroyed, but instead remains in play with 1 Wound."
                         ]
                     }
                 ],
@@ -2884,8 +2947,8 @@
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged  with the Defender, it rolls its highest  Attack Die Value.",
-                            "If this targets Maege's unit, it may  re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
+                            "If this targets Maege's unit, it may re-roll any Attack Dice."
                         ]
                     }
                 ],

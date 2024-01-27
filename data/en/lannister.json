@@ -1183,6 +1183,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40114",
+                    "40115",
+                    "40116"
+                ]
+            },
             "fluff": {
                 "quote": "\"There is a tool for every task, and a task for every tool.\""
             },
@@ -1218,6 +1225,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40117",
+                    "40118",
+                    "40119"
+                ]
             },
             "fluff": {
                 "quote": "\"Those are brave men. Let's go kill them.\""
@@ -1560,6 +1574,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40108",
+                    "40109",
+                    "40110"
+                ]
+            },
             "fluff": {
                 "quote": "\"They called him the Lion of Lannister to his face and whispered \"Kingslayer\" behind his back.\""
             },
@@ -1596,6 +1617,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40111",
+                    "40112",
+                    "40113"
+                ]
             },
             "fluff": {
                 "quote": "\"No other knight in the realm inspires such terror in our enemies.\""
@@ -1737,6 +1765,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40123",
+                    "40124",
+                    "40125"
+                ]
+            },
             "fluff": {
                 "quote": "\"My son. How could I have made a son like that, Ned?.\" -Robert Baratheon"
             },
@@ -1830,6 +1865,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40120",
+                    "40121",
+                    "40122"
+                ]
             },
             "fluff": {
                 "quote": "\"What have we become, when kings and high lords must dance to the twittering of Sparrows.\""
@@ -1972,6 +2014,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40126",
+                    "40127",
+                    "40128"
+                ]
+            },
             "fluff": {
                 "quote": "\"Like Jaime, he was the sort of man other men liked to follow.\" -Tyrion Lannister"
             },
@@ -2007,6 +2056,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40129",
+                    "40130",
+                    "40131"
+                ]
             },
             "fluff": {
                 "quote": "\"There are many like you, good men in service to bad causes ...\" -Varys"
@@ -2185,8 +2241,8 @@
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*Target 1 enemy Combat Unit and  attach the Bribery card to them  until they pass a Morale Test, or  are targeted by [MONEY].*",
-                            "While attached, this unit Attacks  using its lowest Attack Die Value and  suffers -1 to Morale Test rolls."
+                            "*Target 1 enemy Combat Unit and attach the Bribery card to them until they pass a Morale Test, or are targeted by [MONEY].*",
+                            "While attached, this unit Attacks using its lowest Attack Die Value and suffers -1 to Morale Test rolls."
                         ]
                     }
                 ]
@@ -2202,9 +2258,9 @@
                     {
                         "trigger": "When an opponent plays a Tactics card, before resolving that Tactics card:",
                         "effect": [
-                            "Roll a die: On a 3+, cancel the  effect of that Tactics Card.",
-                            "If you Control [CROWN] or [MONEY],  cancel the effect of that Tactics  card on a 2+ instead.",
-                            "If you Control both, this roll  automatically succeeds."
+                            "Roll a die: On a 3+, cancel the effect of that Tactics Card.",
+                            "If you Control [CROWN] or [MONEY], cancel the effect of that Tactics card on a 2+ instead.",
+                            "If you Control both, this roll automatically succeeds."
                         ]
                     }
                 ]
@@ -2218,11 +2274,11 @@
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "When an enemy fails  a Panic Test:",
+                        "trigger": "When an enemy fails a Panic Test:",
                         "effect": [
-                            "Target 1 friendly unit  in Long Range.",
-                            "For each Wound that  enemy suffered from this  test, restore 1 Wound to  that friendly unit, up to 3.",
-                            "If you Control [CROWN], that enemy  suffers +1 Wound and that friendly  unit restore +1 Wound *(to a  maximum of 4)*."
+                            "Target 1 friendly unit in Long Range.",
+                            "For each Wound that enemy suffered from this test, restore 1 Wound to that friendly unit, up to 3.",
+                            "If you Control [CROWN], that enemy suffers +1 Wound and that friendly unit restore +1 Wound *(to a maximum of 4)*."
                         ]
                     }
                 ]
@@ -2238,8 +2294,8 @@
                     {
                         "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
-                            "That enemy suffers 1 Panic Test. For  each zone you Control among [CROWN]  and [MONEY] they suffer -1 to their roll.",
-                            "On a failure, until the end of the Turn,  they cannot be targeted by friendly  Tactics cards and lose all Abilities."
+                            "That enemy suffers 1 Panic Test. For each zone you Control among [CROWN] and [MONEY] they suffer -1 to their roll.",
+                            "On a failure, until the end of the Turn, they cannot be targeted by friendly Tactics cards and lose all Abilities."
                         ]
                     }
                 ]
@@ -2256,7 +2312,7 @@
                         "trigger": "When a friendly unit in Long Range of Jaime Lannister's unit is performing a Morale Test, after rolling dice:",
                         "effect": [
                             "This unit passes that Test.",
-                            "If this is Jaime's unit, it also  restores 2 Wounds."
+                            "If this is Jaime's unit, it also restores 2 Wounds."
                         ]
                     },
                     {
@@ -2306,8 +2362,8 @@
                     {
                         "trigger": "When an enemy in Long Range of Jaime Lannister's unit Activates:",
                         "effect": [
-                            "That enemy become **Panicked**  and then suffers 1 Panic Test.",
-                            "On a failure, that enemy also  becomes **Weakened**."
+                            "That enemy become **Panicked** and then suffers 1 Panic Test.",
+                            "On a failure, that enemy also becomes **Weakened**."
                         ]
                     },
                     {
@@ -2391,10 +2447,10 @@
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is  performingan Attack, before  rolling Attack Dice:",
+                        "trigger": "When a friendly unit is performingan Attack, before rolling Attack Dice:",
                         "effect": [
                             "The Defender becomes **Vulnerable**.",
-                            "If the Defender is **Weakened**,  the Attacker may re-roll  any Attack Dice."
+                            "If the Defender is **Weakened**, the Attacker may re-roll any Attack Dice."
                         ]
                     }
                 ],
@@ -2411,11 +2467,11 @@
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "When an enemy Combat  Unit fails a Morale Test:",
+                        "trigger": "When an enemy Combat Unit fails a Morale Test:",
                         "effect": [
                             "That enemy becomes **Weakened**.",
-                            "Attach this card to that enemy  until they pass a Morale Test.",
-                            "While this card is attached, each  time this unit Activates, it  becomes **Weakened**."
+                            "Attach this card to that enemy until they pass a Morale Test.",
+                            "While this card is attached, each time this unit Activates, it becomes **Weakened**."
                         ]
                     }
                 ],
@@ -2482,8 +2538,8 @@
                     {
                         "trigger": "When a friendly Combat Unit Activates:",
                         "effect": [
-                            "This unit cannot perform Actions this  Turn. Instead, target 1 other friendly  Combat Unit. It performs 1 Maneuver,  March, or Retreat Action.",
-                            "If either unit is Tyrion's unit, before  performing this Action, 1 enemy in  Long Range of Tyrion's unit becomes  **Vulnerable**."
+                            "This unit cannot perform Actions this Turn. Instead, target 1 other friendly Combat Unit. It performs 1 Maneuver, March, or Retreat Action.",
+                            "If either unit is Tyrion's unit, before performing this Action, 1 enemy in Long Range of Tyrion's unit becomes **Vulnerable**."
                         ]
                     }
                 ],
@@ -2502,9 +2558,9 @@
                     {
                         "trigger": "When an opponent targets a unit with a Tactics Zone:",
                         "effect": [
-                            "Roll a die. On a 3+, your opponent  must target a different unit with that  zone's effect *(if able)*.",
-                            "If you Control [LETTER], you may  re-roll this die.",
-                            "If the newly targeted unit is in  Long Range of Tyrion's unit, it  gains a Condition token."
+                            "Roll a die. On a 3+, your opponent must target a different unit with that zone's effect *(if able)*.",
+                            "If you Control [LETTER], you may re-roll this die.",
+                            "If the newly targeted unit is in Long Range of Tyrion's unit, it gains a Condition token."
                         ]
                     }
                 ],
@@ -2582,8 +2638,8 @@
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "This Attack gains +2 Attack  Dice and **Sundering**.",
-                            "If this Attack did not destroy at  least 1 of the Defender's ranks,  the Attacker becomes  **Panicked** and **Vulnerable**."
+                            "This Attack gains +2 Attack Dice and **Sundering**.",
+                            "If this Attack did not destroy at least 1 of the Defender's ranks, the Attacker becomes **Panicked** and **Vulnerable**."
                         ]
                     }
                 ],
@@ -2602,9 +2658,9 @@
                     {
                         "trigger": "Start of a friendly Turn:",
                         "effect": [
-                            "Target 1 enemy Combat Unit  and attach this card to them.",
-                            "While attached, Melee Attacks  against this unit gain **Vicious**.",
-                            "At the end of the Round, if this unit  has not been destroyed, remove this  card from them, and each unit that  attacked them this Round becomes  **Panicked** and **Vulnerable**."
+                            "Target 1 enemy Combat Unit and attach this card to them.",
+                            "While attached, Melee Attacks against this unit gain **Vicious**.",
+                            "At the end of the Round, if this unit has not been destroyed, remove this card from them, and each unit that attacked them this Round becomes **Panicked** and **Vulnerable**."
                         ]
                     }
                 ],

@@ -22,7 +22,7 @@ def gen_all(all_data, key, basepath, asset_manager, abilities_data):
         outpath = f'{basepath}/{data["id"]}.jpg'
         if (not Path(outpath).exists() or not AMEND) and "cardface" in CARDSIDE_FILTER:
             if key == "tactics":
-                gen = generate_tactics(asset_manager, data_id, statistics).convert("RGB")
+                gen = generate_tactics(asset_manager, name, statistics).convert("RGB")
             elif key == "units":
                 gen = generate_unit(asset_manager, data_id, name, subname, statistics, abilities_data).convert("RGB")
             elif key == "attachments":
@@ -77,7 +77,7 @@ def main():
             gen_all(data, "ncus", cards_path, asset_manager, None)
 
 
-AMEND = True
+AMEND = False
 
 ID_FILTER = [
 ]
@@ -86,6 +86,7 @@ TYPES_FILTER = [
 ]
 
 LANG_FILTER = [
+    "en"
 ]
 
 CARDSIDE_FILTER = [

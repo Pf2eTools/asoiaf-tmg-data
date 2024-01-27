@@ -1223,6 +1223,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40620",
+                    "40621",
+                    "40622"
+                ]
+            },
             "fluff": {
                 "quote": "\"As in so much else, Renly was like his brother Robert, and utterly unlike Stannis.\""
             },
@@ -1259,6 +1266,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40623",
+                    "40624",
+                    "40625"
+                ]
             },
             "fluff": {
                 "quote": "\"Kings have no friends, only subjects and enemies.\""
@@ -1357,6 +1371,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40626",
+                    "40627",
+                    "40628"
+                ]
+            },
             "fluff": {
                 "quote": "\"His claim is the true one... and he is utterly without mercy.\" -Varys"
             },
@@ -1429,6 +1450,17 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40629",
+                    "40630",
+                    "40631",
+                    "40632"
+                ],
+                "remove": [
+                    "Final Strike"
+                ]
             },
             "fluff": {
                 "quote": "\"He makes me wish I had more smugglers in my service. And fewer lords.\" -Stannis Baratheon"
@@ -1539,6 +1571,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40633",
+                    "40634",
+                    "40635"
+                ]
+            },
             "fluff": {
                 "quote": "\"The Estermont's loyalty to Stannis is without question.\""
             },
@@ -1577,6 +1616,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40608",
+                    "40609",
+                    "40610"
+                ]
+            },
             "fluff": {
                 "quote": "\"As in so much else, Renly was like his brother Robert, and utterly unlike Stannis.\""
             },
@@ -1613,6 +1659,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40611",
+                    "40612",
+                    "40613"
+                ]
             },
             "fluff": {
                 "quote": "\"I will never betray Renly, by word or deed.\""
@@ -1722,6 +1775,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40614",
+                    "40615",
+                    "40616"
+                ]
+            },
             "fluff": {
                 "quote": "\"It takes a certain cunning to reach his age\""
             },
@@ -1774,7 +1834,7 @@
         },
         {
             "id": "20618",
-            "name": "Pikeman Captain",
+            "name": "Pikemen Captain",
             "statistics": {
                 "version": "2021",
                 "faction": "baratheon",
@@ -1918,6 +1978,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40636",
+                    "40637",
+                    "40638"
+                ]
+            },
             "fluff": {
                 "quote": "\"Stannis Baratheon will sit the Iron Throne. I have seen it. And I know what must be done.\""
             },
@@ -1991,6 +2058,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40617",
+                    "40618",
+                    "40619"
+                ]
+            },
             "fluff": {
                 "quote": "\"A stubborn man\" -Davos Seaworth"
             },
@@ -2027,6 +2101,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40639",
+                    "40640",
+                    "40641"
+                ]
             },
             "fluff": {
                 "quote": "\"Gold is cold and heavy on the head,\nbut so long as I am the king, I have a duty...\""
@@ -2135,6 +2216,13 @@
                 "commander": true,
                 "character": true
             },
+            "tactics": {
+                "cards": [
+                    "40642",
+                    "40643",
+                    "40644"
+                ]
+            },
             "fluff": {
                 "quote": "\"Your understanding is not required.\nOnly your obedience.\" -Stannis Baratheon"
             },
@@ -2158,7 +2246,7 @@
         {
             "id": "20629",
             "name": "Dale Seaworth",
-            "subname": "Captain of the Wrath",
+            "subname": "Captain of the Wraith",
             "statistics": {
                 "version": "2021-S02",
                 "faction": "baratheon",
@@ -2207,6 +2295,13 @@
                 ],
                 "commander": true,
                 "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "40645",
+                    "40646",
+                    "40647"
+                ]
             },
             "fluff": {
                 "quote": "\"Small wonder the lords gather around him with\nsuch fervor, she thought, he is Robert come again.\"\n-Catelyn Stark's thoughts"
@@ -2487,8 +2582,8 @@
                     {
                         "trigger": "After an enemy completes an Attack:",
                         "effect": [
-                            "The Attacker becomes **Panicked**  or **Vulnerable**.",
-                            "If you Control [CROWN] or [LETTER],  the Attacker becomes **Panicked**  and **Vulnerable** instead."
+                            "The Attacker becomes **Panicked** or **Vulnerable**.",
+                            "If you Control [CROWN] or [LETTER], the Attacker becomes **Panicked** and **Vulnerable** instead."
                         ]
                     }
                 ]
@@ -2541,7 +2636,7 @@
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
                             "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
-                            "If the Defender has more remaining  ranks than the Attacker, it may  re-roll any Attack Dice."
+                            "If the Defender has more remaining ranks than the Attacker, it may re-roll any Attack Dice."
                         ]
                     }
                 ]
@@ -2723,10 +2818,10 @@
                 "faction": "baratheon",
                 "text": [
                     {
-                        "trigger": "When a friendly Combat  Unit Activates:",
+                        "trigger": "When a friendly Combat Unit Activates:",
                         "effect": [
-                            "All enemies engaged with this unit  with the same or more remaining  ranks become **Vulnerable**.",
-                            "Then, this unit restores  1 Wound, +1 Wound for  each of its destroyed ranks."
+                            "All enemies engaged with this unit with the same or more remaining ranks become **Vulnerable**.",
+                            "Then, this unit restores 1 Wound, +1 Wound for each of its destroyed ranks."
                         ]
                     }
                 ],
@@ -2770,8 +2865,8 @@
                     {
                         "trigger": "When an enemy is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "The Attacker suffers  1 Hit for each Miss.",
-                            "If the Defender is Eldon’s unit,  this Attack also suffers -1 to Hit."
+                            "The Attacker suffers 1 Hit for each Miss.",
+                            "If the Defender is Eldon’s unit, this Attack also suffers -1 to Hit."
                         ]
                     }
                 ],
@@ -2858,9 +2953,9 @@
                     {
                         "trigger": "When an opponent plays a Tactics card, before resolving that Tactics card:",
                         "effect": [
-                            "Roll a die: On a 3+, cancel the  effect of that Tactics Card.",
-                            "If you Control [CROWN] or [LETTER],  cancel the effect of that Tactics  card on a 2+ instead.",
-                            "If you Control both, this roll  automatically succeeds."
+                            "Roll a die: On a 3+, cancel the effect of that Tactics Card.",
+                            "If you Control [CROWN] or [LETTER], cancel the effect of that Tactics card on a 2+ instead.",
+                            "If you Control both, this roll automatically succeeds."
                         ]
                     }
                 ],
@@ -2901,8 +2996,8 @@
                     {
                         "trigger": "When a friendly unit passes a Morale Test:",
                         "effect": [
-                            "Attach this card to that unit until  Renly Baratheon's unit is destroyed.",
-                            "While attached, and this unit is in  Long Range of Renly's unit, this  unit's Melee Attacks gain +1 Attack  Die and this unit restores 1 Wound  each time this unit Activates."
+                            "Attach this card to that unit until Renly Baratheon's unit is destroyed.",
+                            "While attached, and this unit is in Long Range of Renly's unit, this unit's Melee Attacks gain +1 Attack Die and this unit restores 1 Wound each time this unit Activates."
                         ]
                     },
                     {
@@ -3011,9 +3106,9 @@
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "This Attack gains 1 of the following.  If this targets a R'hllor unit, gain both:",
+                            "This Attack gains 1 of the following. If this targets a R'hllor unit, gain both:",
                             "• **Critical Blow** • **Sundering**",
-                            "After completing this Attack, if the  Defender was not destroyed, the  Attacker suffers 1 Panic Test."
+                            "After completing this Attack, if the Defender was not destroyed, the Attacker suffers 1 Panic Test."
                         ]
                     }
                 ],
@@ -3033,10 +3128,10 @@
                         "trigger": "Start of any Turn:",
                         "effect": [
                             "Target 1 friendly R'hllor unit. That unit performs 1 Morale Test.",
-                            "On a success, that unit removes  all Condition tokens.",
+                            "On a success, that unit removes all Condition tokens.",
                             "Attach this card to that unit.",
-                            "Remove this card after an enemy  completes an Attack on this unit.",
-                            "While attached, this unit gains +1  to Defense Dice rolls."
+                            "Remove this card after an enemy completes an Attack on this unit.",
+                            "While attached, this unit gains +1 to Defense Dice rolls."
                         ]
                     }
                 ],
@@ -3098,7 +3193,7 @@
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
-                            "Target 1 friendly Infantry unit. That  unit suffers up to 3 Wounds, then  target 1 other friendly Infantry unit  and restore 1+ that many Wounds  to that unit. If they do not have an  Attachment, as 1 of their restored  Wounds, you may attach 1  previously destroyed friendly  Infantry Attachment to that unit."
+                            "Target 1 friendly Infantry unit. That unit suffers up to 3 Wounds, then target 1 other friendly Infantry unit and restore 1+ that many Wounds to that unit. If they do not have an Attachment, as 1 of their restored Wounds, you may attach 1 previously destroyed friendly Infantry Attachment to that unit."
                         ]
                     }
                 ],
@@ -3117,9 +3212,9 @@
                     {
                         "trigger": "When an enemy fails a Panic Test:",
                         "effect": [
-                            "Target 1 friendly unit  in Long Range.",
-                            "For each Wound that  enemy suffered from this  test, restore 1 Wound to  that friendly unit, up to 3.",
-                            "If you Control [CROWN], that enemy  suffers +1 Wound and that friendly  unit restore +1 Wound *(to a  maximum of 4)*."
+                            "Target 1 friendly unit in Long Range.",
+                            "For each Wound that enemy suffered from this test, restore 1 Wound to that friendly unit, up to 3.",
+                            "If you Control [CROWN], that enemy suffers +1 Wound and that friendly unit restore +1 Wound *(to a maximum of 4)*."
                         ]
                     }
                 ],
@@ -3216,10 +3311,10 @@
                 "faction": "baratheon",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is performing  a Charge Action, before resolving  that Action:",
+                        "trigger": "When a friendly unit is performing a Charge Action, before resolving that Action:",
                         "effect": [
-                            "This unit automatically counts as  rolling a 6 on all Charge Distance  Dice and enemies Successfully  Charged become **Panicked**.",
-                            "After this Attack has been completed,  unless the Attacker is a R'hllor unit, the  Attacker becomes **Vulnerable**."
+                            "This unit automatically counts as rolling a 6 on all Charge Distance Dice and enemies Successfully Charged become **Panicked**.",
+                            "After this Attack has been completed, unless the Attacker is a R'hllor unit, the Attacker becomes **Vulnerable**."
                         ]
                     }
                 ],
@@ -3260,8 +3355,8 @@
                         "trigger": "When a R'hllor unit Activates:",
                         "effect": [
                             "This unit performs a Morale Test.",
-                            "On a success, 1 enemy engaged  with this unit suffers 1 Panic Test  with -1 for each remaining rank  in this unit.",
-                            "On a failure, 1 enemy engaged  with this unit becomes **Panicked**."
+                            "On a success, 1 enemy engaged with this unit suffers 1 Panic Test with -1 for each remaining rank in this unit.",
+                            "On a failure, 1 enemy engaged with this unit becomes **Panicked**."
                         ]
                     }
                 ],
@@ -3419,9 +3514,9 @@
                         "trigger": "Start of a friendly Turn:",
                         "effect": [
                             "Target 1 friendly Combat Unit.",
-                            "That unit performs 1 Morale Test.  For each zone you Control among  [CROWN] and [LETTER], they gain +1  to their roll.",
-                            "On a success, each enemy they are  engaged with performs 1 Panic Test.",
-                            "If this targets Renly's unit, on a  success, each enemy in Short Range  suffers 1 Panic Test instead."
+                            "That unit performs 1 Morale Test. For each zone you Control among [CROWN] and [LETTER], they gain +1 to their roll.",
+                            "On a success, each enemy they are engaged with performs 1 Panic Test.",
+                            "If this targets Renly's unit, on a success, each enemy in Short Range suffers 1 Panic Test instead."
                         ]
                     }
                 ],
@@ -3440,8 +3535,8 @@
                     {
                         "trigger": "When an enemy NCU Claims a Zone:",
                         "effect": [
-                            "After resolving that zone's effect,  move that NCU to any empty zone.",
-                            "If you removed them from [CROWN] or  [LETTER], target 1 enemy Combat unit.  It suffers 1 Panic Test."
+                            "After resolving that zone's effect, move that NCU to any empty zone.",
+                            "If you removed them from [CROWN] or [LETTER], target 1 enemy Combat unit. It suffers 1 Panic Test."
                         ]
                     }
                 ],
