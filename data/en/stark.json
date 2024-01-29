@@ -51,7 +51,7 @@
             "id": "10202",
             "name": "Stark Outriders",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "stark",
                 "type": "cavalry",
                 "cost": 6,
@@ -70,7 +70,7 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Swift Retreat",
+                    "Order: Tactical Reposition",
                     "Cavalry",
                     "Ambush"
                 ]
@@ -99,7 +99,7 @@
             "id": "10203",
             "name": "House Umber Berserkers",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
@@ -110,7 +110,7 @@
                     {
                         "name": "Berserker Axes",
                         "type": "melee",
-                        "hit": 4,
+                        "hit": 3,
                         "dice": [
                             7,
                             8,
@@ -119,8 +119,7 @@
                     }
                 ],
                 "abilities": [
-                    "Berserker Axes",
-                    "Unyielding"
+                    "Berserker's Fervor"
                 ]
             },
             "fluff": {
@@ -346,7 +345,7 @@
             "id": "10208",
             "name": "House Umber Greataxes",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 7,
@@ -359,15 +358,15 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            7,
                             6,
-                            5
+                            5,
+                            4
                         ]
                     }
                 ],
                 "abilities": [
                     "Executioner's Fury",
-                    "Unyielding"
+                    "Ferocious Assault"
                 ]
             },
             "fluff": {
@@ -595,7 +594,7 @@
             "id": "10214",
             "name": "House Mormont She-Bears",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
@@ -609,8 +608,8 @@
                         "hit": 4,
                         "dice": [
                             7,
-                            5,
-                            4
+                            6,
+                            5
                         ]
                     }
                 ],
@@ -643,10 +642,10 @@
             "id": "10215",
             "name": "House Karstark Spearmen",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 6,
+                "cost": 5,
                 "speed": 5,
                 "defense": 4,
                 "morale": 6,
@@ -663,7 +662,7 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Hold the Line!",
+                    "Order: Hold The Line!",
                     "Stand Your Ground!"
                 ]
             },
@@ -691,7 +690,7 @@
             "id": "10216",
             "name": "House Mormont Bruisers",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
@@ -712,7 +711,7 @@
                 ],
                 "abilities": [
                     "Mace & Spike",
-                    "Counterstrike"
+                    "Disrupt"
                 ]
             },
             "fluff": {
@@ -739,7 +738,7 @@
             "id": "10217",
             "name": "House Karstark Loyalists",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 5,
@@ -759,8 +758,9 @@
                     }
                 ],
                 "abilities": [
+                    "Ferocious Assault",
                     "Flail",
-                    "Perseverance and Valor"
+                    "Unleashed Ferocity"
                 ]
             },
             "fluff": {
@@ -997,14 +997,14 @@
             "name": "Rodrik Cassel",
             "subname": "Combat Veteran",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "stark",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Martial Expertise",
                         "effect": [
-                            "Each time Rodrik Claims [SWORDS], target 1 enemy Combat Unit. They become Vulnerable.\nRodrik begins the game with 2 Order tokens on him.\nAt the start of any Turn, you may remove 1 Order token from Rodrik. If you do, remove 1 Order token from 1 friendly unit. That Order may be used again this Round."
+                            "Each time Rodrik Claims [SWORDS], target 1 enemy Combat Unit. They become **Vulnerable**.\nRodrik begins the game with 2 Order tokens on him.\nEach time a friendly Combat Unit is performing a Melee Attack, after rolling Attack Dice, you may remove 1 Order Token from Rodrik. If you do, the Attacker may re-roll any Attack Dice."
                         ]
                     }
                 ]
@@ -1071,14 +1071,14 @@
             "name": "Howland Reed",
             "subname": "Protector of the Neck",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "stark",
-                "cost": 5,
+                "cost": 4,
                 "abilities": [
                     {
                         "name": "Hunter's Guile",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, that enemy's Attacks suffer -1 to Hit and they treat all Terrain as having the Hindering and Rough keywords."
+                            "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):\nWhile Influencing an enemy unit, they treat all Terrain as having the Hindering keyword.\nWhile Influencing an enemy unit, when that unit performs a Melee Attack, before resolving that Action, you may remove this card from that unit. If you do, that Attack suffers -1 to Hit."
                         ]
                     }
                 ]
@@ -1271,7 +1271,7 @@
             "name": "Greatjon Umber",
             "subname": "Lord of Last Hearth",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": "C",
@@ -2203,13 +2203,13 @@
             "name": "Maege Mormont",
             "subname": "Lady of Bear Island",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Affiliation: House Mormont",
-                    "Battle Scars (Maege)"
+                    "Battle Scars"
                 ],
                 "commander": true,
                 "character": true

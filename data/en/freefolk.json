@@ -155,11 +155,11 @@
             "id": "10304",
             "name": "Spearwives",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 5,
-                "speed": 5,
+                "speed": 6,
                 "defense": 5,
                 "morale": 7,
                 "attacks": [
@@ -178,8 +178,8 @@
                         "type": "melee",
                         "hit": 4,
                         "dice": [
-                            6,
-                            6,
+                            7,
+                            7,
                             4
                         ]
                     }
@@ -686,13 +686,13 @@
             "id": "10315",
             "name": "Frozen Shore Bear Riders",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "cavalry",
                 "cost": 8,
                 "speed": 4,
                 "defense": 4,
-                "morale": 6,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Spear Toss",
@@ -743,10 +743,10 @@
             "id": "10316",
             "name": "Borroq’s Boar",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "monster",
-                "cost": 2,
+                "cost": 0,
                 "speed": 5,
                 "defense": 4,
                 "morale": 2,
@@ -837,7 +837,7 @@
             "name": "Varamyr Sixskins",
             "subname": "Master Skinchanger",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": "C",
@@ -975,7 +975,7 @@
             "id": "10321",
             "name": "Frozen Shore Hunters",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 5,
@@ -989,7 +989,7 @@
                         "hit": 4,
                         "dice": [
                             6,
-                            5,
+                            6,
                             4
                         ]
                     },
@@ -999,7 +999,7 @@
                         "hit": 4,
                         "dice": [
                             6,
-                            5,
+                            6,
                             4
                         ]
                     }
@@ -1073,14 +1073,14 @@
             "name": "Mance Rayder",
             "subname": "Artful Tactician",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Skillful Preparations",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, each time that unit is targeted by a Tactics Zone, before resolving that zone's effect, you may draw 1 Tactics card."
+                            "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*\nWhile Influencing a unit, each time that unit Activates, or is targeted by a Tactics Zone, before resolving that zone's effect, you may draw 1 Tactics card."
                         ]
                     }
                 ]
@@ -1110,14 +1110,14 @@
             "name": "Craster",
             "subname": "Ally of Convenience",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Refuge and Supplies",
                         "effect": [
-                            "Once per game, at the start of any Turn, you may restore 2 Wounds to 1 friendly unit.\nEach time Craster Claims a zone, you may replace its effect with:\n*Draw 1 Tactics card and restore 2 Wounds to 1 friendly Combat Unit.*"
+                            "Once per game, at the start of any Turn, you may restore 2 Wounds to 1 friendly Infantry unit.\nEach time Craster Claims a zone, you may replace its effect with:\n*Draw 1 Tactics card and restore 2 Wounds to 1 friendly Infantry Unit.*"
                         ]
                     }
                 ]
@@ -1221,14 +1221,14 @@
             "name": "Lady Dalla",
             "subname": "Wife and Council",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
-                "cost": 5,
+                "cost": 4,
                 "abilities": [
                     {
                         "name": "Spearwife Council",
                         "effect": [
-                            "Each time Dalla Claims a zone, perform the following based on the zone she Claimed:\n[CROWN]: 1 enemy becomes Weakened.\n[MONEY]: Instead of removing a Condition token, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.\n[LETTER]: Instead of drawing cards, look at the top 2 cards of your opponent's Tactics deck. You may discard one of those cards. Then, place the remaining cards on the top of the Tactics deck."
+                            "Each time Dalla Claims a zone, perform the following based on the zone she Claimed:\n[CROWN]: 1 enemy becomes **Weakened**.\n[MONEY]: Instead of removing a Condition token, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.\n[LETTER]: Instead of drawing cards, look at the top 2 cards of your opponent's Tactics deck. You may discard one of those cards. Then, place the remaining cards on the top of the Tactics deck."
                         ]
                     }
                 ]
@@ -1301,20 +1301,20 @@
             "name": "Jon Snow",
             "subname": "Turncloak Crow",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "freefolk",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Northern Resilience",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, it gains +1 to Morale Test rolls."
+                            "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):\nWhile Influencing a unit, it gains +1 to Morale Test rolls and suffers -1 Wound from failing Panic Tests.."
                         ]
                     },
                     {
                         "name": "Southern Discipline",
                         "effect": [
-                            "Once per game, at the start of any Round, you may search your Tactics deck or discard pile for one **Coordination Tactics** or **Regroup and Reform** Tactics card and add it to your hand. Shuffle your Tactics deck."
+                            "Once per game, at the start of any Round, you may search your Tactics deck or discard pile for one **Cooordination Tactics** or **Regroup and Reform** Tactics card and add it to your hand. Shuffle your Tactics deck."
                         ]
                     }
                 ]
@@ -1346,7 +1346,7 @@
             "name": "Tormund Giantsbane",
             "subname": "Thunderfist",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
@@ -1424,15 +1424,14 @@
             "name": "Mance Rayder",
             "subname": "King Beyond the Wall",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+                    "Order: Counterstrategy",
                     "Boisterous Charisma",
-                    "The King is Dead!",
-                    "Inspiring Presence",
-                    "Order: Counterstrategy"
+                    "Inspiring Presence"
                 ],
                 "commander": true,
                 "character": true
@@ -1555,10 +1554,10 @@
             "id": "20307",
             "name": "Skinchanger",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bonded Skinchanger",
                     "Stalwart"
@@ -2118,12 +2117,12 @@
             "name": "The Great Walrus",
             "subname": "Steeled Through Ice and Snow",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars (The Great Walrus)"
+                    "Battle Scars"
                 ],
                 "character": true
             },
@@ -2530,14 +2529,13 @@
             "id": "40312",
             "name": "Predictable Maneuvers",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Start of an enemy Turn:",
+                        "trigger": "Start of the first Enemy Turn in a Round:",
                         "effect": [
-                            "Target 1 enemy Combat Unit and 1 enemy NCU.",
-                            "If either unit performs an Action this Turn, before they resolve that Action, 1 friendly Combat Unit performs 1 Attack, Maneuver, or Retreat Action."
+                            "Target 1 enemy Combat Unit and 1 enemy NCU. If either unit performs an Action this Turn, before they resolve that Action, 1 friendly Combat Unit performs 1 Attack, Maneuver, or Retreat Action."
                         ]
                     }
                 ],
@@ -2991,13 +2989,13 @@
             "id": "40334",
             "name": "Overrun",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "text": [
                     {
                         "trigger": "When a friendly Combat Unit Surges Forth:",
                         "effect": [
-                            "Instead of Surging Forth, that unit performs 1 Charge Action."
+                            "Instead of Surging Forth, that unit performs 1 Charge or March Action."
                         ]
                     }
                 ],

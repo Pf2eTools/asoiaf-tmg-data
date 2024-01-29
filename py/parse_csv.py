@@ -207,7 +207,7 @@ def parse_units():
                 "version": card_data.get("Version"),
                 "faction": normalize(card_data.get("Faction")),
                 "type": normalize(card_data.get("Type")),
-                "cost": "C" if card_data.get("Cost") == "C" else int(card_data.get("Cost")),
+                "cost": "C" if "C" in card_data.get("Cost") else int(card_data.get("Cost")),
                 "speed": int(card_data.get("Spd")),
                 "defense": int(card_data.get("Def").strip("+")),
                 "morale": int(card_data.get("Moral").strip("+")),

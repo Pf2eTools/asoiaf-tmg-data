@@ -263,13 +263,13 @@
             "id": "10506",
             "name": "Builder Scorpion Crew",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "siegeengine",
                 "cost": 5,
                 "speed": 4,
                 "defense": 5,
-                "morale": 2,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Bolt Thrower",
@@ -317,13 +317,13 @@
             "id": "10507",
             "name": "Builder Stone Thrower",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "siegeengine",
                 "cost": 8,
                 "speed": 1,
                 "defense": 5,
-                "morale": 2,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Rock Volley",
@@ -477,7 +477,7 @@
             "id": "10510",
             "name": "Watch Marshal",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 4,
@@ -524,20 +524,20 @@
             "name": "Coldhands",
             "subname": "Mysterious Ally",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 5,
                 "speed": 5,
                 "defense": 3,
-                "morale": 2,
+                "morale": 3,
                 "attacks": [
                     {
                         "name": "Longsword",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6
+                            5
                         ]
                     }
                 ],
@@ -780,20 +780,20 @@
             "name": "Qhorin Halfhand",
             "subname": "Unwavering Ranger",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 5,
                 "abilities": [
                     {
                         "name": "Sacrifice For The Cause",
                         "effect": [
-                            "At the start of any Turn, if Qhorin is not on the Tactics Board, you may destroy him. If you do, target 1 enemy unit. That enemy cannot Activate or perform Actions this Round."
+                            "At the start of any Turn, if Qhorin is not on the Tactics Board, you may destroy him. If you do, target 1 enemy unit. That enemy becomes **Vulnerable**, and cannot perform Attack or Charge Actions this Round."
                         ]
                     },
                     {
                         "name": "Halfhand's Guidance",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a friendly Cavalry or Infantry unit, it gains +1 [MOVEMENT] and +1 Attack Die."
+                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round):*\nWhile Influencing a friendly Cavalry or Infantry unit, it gains + 1 Attack Die."
                         ]
                     }
                 ]
@@ -897,9 +897,9 @@
             "name": "Samwell Tarly",
             "subname": "Craven Scholar",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
-                "cost": 5,
+                "cost": 4,
                 "abilities": [
                     {
                         "name": "Knowledge Is Power",
@@ -934,14 +934,20 @@
             "name": "Gilly",
             "subname": "The Wildling Girl",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "nightswatch",
-                "cost": 0,
+                "cost": 1,
                 "abilities": [
+                    {
+                        "name": "Gilly's Insight",
+                        "effect": [
+                            "At the start of the game, after drawing your Tactics Hand, you may draw 1 Tactics Card, then shuffle 1 card from your hand into your Tactics Deck."
+                        ]
+                    },
                     {
                         "name": "Samwell's Influence",
                         "effect": [
-                            "Gilly does not Activate each Round. Once per game, at the the start of a friendly Turn, you may Activate Gilly. Do not activate another unit this Turn."
+                            "Gilly begins the game with 1 Order token. Each time Gilly Claims a zone, after resolving that zone's effect, remove 1 Order token from Gilly.\nAt the end of each Round, if Gilly has no Order token, destroy Gilly."
                         ]
                     }
                 ]
@@ -971,14 +977,14 @@
             "name": "Craster",
             "subname": "Ally of the Watch",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Rest and Refuge",
                         "effect": [
-                            "Once per game, at the start of any Turn, you may restore 2 Wounds to 1 friendly unit.\nEach time Craster Claims a zone, perform the following based on the zone he Claimed:\n[MONEY]: Replace this zone's effect with: *Restore 4 Wounds (total) across any number of friendly Combat Units.*\n[SWORDS]: *The targeted unit counts as having +1 remaining rank for determining Attack Dice.*\n[HORSE]: *The targeted unit moves +1 [MOVEMENT] and ignores the Rough keyword.*"
+                            "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nEach time Craster Influences a unit, remove 1 Condition token from them.\nWhile Influencing a unit, that unit ignores the Rough and Hindering keyword."
                         ]
                     }
                 ]
@@ -1008,14 +1014,14 @@
             "name": "Yoren",
             "subname": "Wandering Crow",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 6,
                 "abilities": [
                     {
                         "name": "Recruitment",
                         "effect": [
-                            "Each time Yoren Claims a zone, before resolving that zone's effect, place 1 Order token on him.\nEach time Yoren Claims [CROWN], you may replace that zone's effect with: \n*Place 1 Order token on Yoren.*\nEach time Yoren Claims a zone, you may replace that zone's effect with:\n*Remove 4 Order tokens from Yoren.*\n*If you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge.*"
+                            "Each time Yoren Claims a zone, before resolving that zone's, place 1 Order token on him.\nEach time Yoren Claims [CROWN], you may replace that zone's effect with:\n*Place 1 Order token on Yoren.*\nAt the start of any Round, you may remove 4 Order tokens from Yoren. \nIf you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge."
                         ]
                     }
                 ]
@@ -1455,12 +1461,12 @@
             "name": "Qhorin Halfhand",
             "subname": "Grizzled Ranger",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars (Qhorin Halfhand)",
+                    "Battle Scars",
                     "Go Down Fighting"
                 ],
                 "character": true
@@ -2074,13 +2080,13 @@
             "name": "Benjen Stark",
             "subname": "Beyond The Wall",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": "C",
                 "abilities": [
-                    "Ranging Specialist (Benjen)",
                     "Order: Hidden Traps",
+                    "Ranging Specialist (Benjen)",
                     "Disrupt"
                 ],
                 "commander": true,
@@ -2205,15 +2211,19 @@
             "id": "40501",
             "name": "The Sword In The Darkness",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If the Defender has not Activated this Round, they become **Panicked** and **Vulnerable**.",
-                            "If the Attacker is a Night's Watch unit, attach this card to that unit until the end of the game.",
-                            "While attached, this unit's Melee Attacks gain +1 Attack Die."
+                            "If the Defender has not Activated this Round, they become **Panicked** and **Vulnerable**."
+                        ]
+                    },
+                    {
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
+                        "effect": [
+                            "Attach this card to them until they fail a Panic Test. While attached, this unit's Melee Attack is treated as having +1 rank for Attack Dice."
                         ]
                     }
                 ]
@@ -2223,15 +2233,19 @@
             "id": "40502",
             "name": "The Fire That Burns Against The Cold",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
                         "effect": [
-                            "That unit may re-roll any dice from this test.",
-                            "If this targeted a Night's Watch unit, attach this card to that unit until the end of the game.",
-                            "While attached, each time this unit gains a Condition token, it may suffer 2 Wounds, -1 for each of its destroyed ranks. If it does, remove that token."
+                            "That unit may re-roll any dice for this test."
+                        ]
+                    },
+                    {
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
+                        "effect": [
+                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit gains a Condition token, it may suffer 1 Wound to remove that token."
                         ]
                     }
                 ]
@@ -2241,15 +2255,19 @@
             "id": "40503",
             "name": "The Shield Of The Realms Of Men",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "When an enemy is performing an Attack, after rolling Defense Dice:",
                         "effect": [
-                            "Target the Defender. They may re-roll any Defense Dice.",
-                            "If this targeted a Night's Watch unit, after completing this Attack, attach this card to that unit until the end of the game.",
-                            "While attached, each time this unit is Attacked, after rolling Defense Dice, it blocks +1 Hit."
+                            "Target the Defender. They may re-roll any Defense Dice."
+                        ]
+                    },
+                    {
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
+                        "effect": [
+                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit is attacked, after rolling defense dice, this unit blocks + 1 Hit."
                         ]
                     }
                 ]
@@ -2259,14 +2277,19 @@
             "id": "40504",
             "name": "The Watcher On The Wall",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "After a friendly unit is Attacked:",
                         "effect": [
-                            "Target 1 friendly Combat Unit other than the Defender. That unit pivots, then shifts 2\". If this unit is a Night's Watch unit, attach this card to that unit until the end of the game.",
-                            "While attached, this unit gains +1[MOVEMENT] and may re-roll any Charge Distance dice."
+                            "Target 1 friendly Combat Unit other than the Defender. That unit pivots, then shifts 2\"."
+                        ]
+                    },
+                    {
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
+                        "effect": [
+                            "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 [MOVEMENT] and may re-roll Charge Distance dice."
                         ]
                     }
                 ]
@@ -2276,15 +2299,19 @@
             "id": "40505",
             "name": "The Light That Brings The Dawn",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "This Attack may re-roll any Misses.",
-                            "If this targeted a Night's Watch unit, attach this card to that unit until the end of the game.",
-                            "While attached, when Attacking enemies with more remaining ranks, this unit's Attacks roll their highest Attack Die Value."
+                            "This Attack may re-roll any Misses."
+                        ]
+                    },
+                    {
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
+                        "effect": [
+                            "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 to Morale Test results."
                         ]
                     }
                 ]
@@ -2294,13 +2321,13 @@
             "id": "40506",
             "name": "Take The Black",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
-                        "trigger": "When an enemy unit is destroyed:",
+                        "trigger": "After a friendly unit completes a Melee Attack:",
                         "effect": [
-                            "Target 1 friendly Night's Watch Infantry unit in Short Range. That unit restores 4 Wounds. You may take 1 Infantry Attachment from the destroyed enemy and Attach it to that unit *(replacing a model in that unit as normal, but but ignoring the usual Attachment limits)*."
+                            "If the Defender suffered any Wounds, the attacker restores 1 Wound, +1 additional Wound for each rank they destroyed with this attack. If an Infantry Attachment was destroyed, you may also take it and attach it to the Attacker, replacing a model as normal, but ignoring the usual Attachment limits."
                         ]
                     }
                 ]
@@ -2310,14 +2337,19 @@
             "id": "40507",
             "name": "And Now His Watch Is Ended",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
-                        "trigger": "Start of any Turn:",
+                        "trigger": "When a friendly unit is destroyed by a Melee Attack:",
                         "effect": [
-                            "Attach this card to a friendly Night's Watch unit.",
-                            "While attached, when another friendly Night's Watch unit is destroyed, you may discard this card. If you do, move 1 friendly attached Tactics card from that unit to this unit. This unit then performs 1 Attack, Maneuver, or March Action."
+                            "Target the Attacker. They become** Vulnerable**. Then, target any friendly units that were within Long Range. They restore 2 Wounds."
+                        ]
+                    },
+                    {
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
+                        "effect": [
+                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit passes a Morale Test, it may restore 1 Wound."
                         ]
                     }
                 ]
@@ -2369,14 +2401,13 @@
             "id": "40510",
             "name": "Night Gathers",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
-                        "trigger": "Start of any Turn:",
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
                         "effect": [
-                            "Target 1 friendly engaged Night's Watch unit. That unit performs 1 Morale Test. On a success, attach this card to them until the end of the game.",
-                            "While attached, each time an enemy is performing a Melee Attack on this unit, before Attack Dice are rolled, the Attacker suffers 1 Hit, +1 Hit for each remaining rank in this unit."
+                            "Attach this card to them until they fail a Panic Test. While attached, each time an enemy is performing a Melee Attack on this unit, before Attack Dice are rolled, the Attacker suffers 1 Hit, +1 Hit for each remaining rank in this unit."
                         ]
                     }
                 ],
@@ -2429,16 +2460,19 @@
             "id": "40513",
             "name": "For The Watch!",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
-                        "trigger": "Start of any Turn:",
+                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
                         "effect": [
-                            "Target 1 friendly Combat Unit. It may re-roll any Charge Distance Dice this Turn.",
-                            "If this targeted a Night's Watch unit, attach this card to that unit until the end of the game.",
-                            "While attached, each time this unit is targeted by the [HORSE] zone, you may replace that zone's effect with:",
-                            "*This unit performs 1 Charge Action.*"
+                            "This unit may re-roll any Charge Distance Dice."
+                        ]
+                    },
+                    {
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
+                        "effect": [
+                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit is targeted by the [HORSE] zone, you may replace that zone's effect with: *This unit performs 1 Charge Action.*"
                         ]
                     }
                 ],
@@ -2861,14 +2895,13 @@
             "id": "40534",
             "name": "Tempered by Duty",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
-                        "trigger": "Start of a friendly Turn:",
+                        "trigger": "When a friendly Night's Watch Unit Activates:",
                         "effect": [
-                            "Target 1 friendly Night's Watch unit and attach this card to that unit until the end of the game.",
-                            "While Attached, each time this unit Activates, 1 enemy in Short Range gains 1 Condition token, +1 Condition token for each of this unit's destroyed ranks."
+                            "Attach this card to them until they fail a Panic Test. When this card is attached and each time this unit Activates, you may target 1 enemy in Long Range and Line of Sight. They gain 1 Condition token."
                         ]
                     }
                 ],

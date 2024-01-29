@@ -183,13 +183,13 @@
             "id": "10506",
             "name": "Skorpion-Mannschaft der Baumeister",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "siegeengine",
                 "cost": 5,
                 "speed": 4,
                 "defense": 5,
-                "morale": 2,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Bolzenwerfer",
@@ -221,13 +221,13 @@
             "id": "10507",
             "name": "Steinwerfer der Baumeister",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "siegeengine",
                 "cost": 8,
                 "speed": 1,
                 "defense": 5,
-                "morale": 2,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Steinhagel",
@@ -333,7 +333,7 @@
             "id": "10510",
             "name": "Marschall der Wache",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 4,
@@ -364,20 +364,20 @@
             "name": "Kalthand",
             "subname": "Mysteriöser Mitstreiter",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 5,
                 "speed": 5,
                 "defense": 3,
-                "morale": 2,
+                "morale": 3,
                 "attacks": [
                     {
                         "name": "Langschwert",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6
+                            5
                         ]
                     }
                 ],
@@ -527,7 +527,7 @@
             "name": "Qhorin Halbhand",
             "subname": "Unerschütterlicher Grenzer",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 5,
                 "abilities": [
@@ -605,9 +605,9 @@
             "name": "Samwell Tarly",
             "subname": "Feiger Gelehrter",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
-                "cost": 5,
+                "cost": 4,
                 "abilities": [
                     {
                         "name": "Wissen ist Macht",
@@ -627,10 +627,16 @@
             "name": "Goldy",
             "subname": "Das Wildlingsmädchen",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "nightswatch",
-                "cost": 0,
+                "cost": 1,
                 "abilities": [
+                    {
+                        "name": "Gilly's Insight",
+                        "effect": [
+                            "At the start of the game, after drawing your Tactics Hand, you may draw 1 Tactics Card, then shuffle 1 card from your hand into your Tactics Deck."
+                        ]
+                    },
                     {
                         "name": "Samwells Einfluss",
                         "effect": [
@@ -648,7 +654,7 @@
             "name": "Craster",
             "subname": "Verbündeter der Wache",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 4,
                 "abilities": [
@@ -672,7 +678,7 @@
             "name": "Yoren",
             "subname": "Wanderkrähe",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 6,
                 "abilities": [
@@ -935,12 +941,12 @@
             "name": "Qhorin Halbhand",
             "subname": "Grauer Grenzer",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Kampfnarben",
+                    "Battle Scars",
                     "Kämpfend untergehen"
                 ],
                 "character": true
@@ -1113,7 +1119,7 @@
                 "cost": 2,
                 "abilities": [
                     "Befehl: Schlachtplan",
-                    "Buchführung"
+                    "Bookkeeping (Samwell Tarly)"
                 ],
                 "character": true
             },
@@ -1266,13 +1272,13 @@
             "name": "Benjen Stark",
             "subname": "Hinter der Mauer",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": "C",
                 "abilities": [
-                    "Grenzer-Spezialist",
                     "Befehl: Verborgene Fallen",
+                    "Grenzer-Spezialist",
                     "Unterbrechen"
                 ],
                 "commander": true,
@@ -1349,7 +1355,7 @@
             "id": "40501",
             "name": "Das Schwert in der Dunkelheit",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1367,7 +1373,7 @@
             "id": "40502",
             "name": "Das Feuer, das gegen die Kälte brennt",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1385,7 +1391,7 @@
             "id": "40503",
             "name": "Der Schild, der die Reiche der Menschen schützt",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1403,7 +1409,7 @@
             "id": "40504",
             "name": "Der Wächter auf den Mauern",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1420,7 +1426,7 @@
             "id": "40505",
             "name": "Das Licht, das den Morgen bringt",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1438,7 +1444,7 @@
             "id": "40506",
             "name": "Das Schwarz anlegen",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1454,7 +1460,7 @@
             "id": "40507",
             "name": "Und nun ist seine Wache zu Ende",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1509,7 +1515,7 @@
             "id": "40510",
             "name": "Die Nacht sinkt herab",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1566,7 +1572,7 @@
             "id": "40513",
             "name": "Für die Wache!",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1986,7 +1992,7 @@
             "id": "40534",
             "name": "Gemäß den Pflichten",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {

@@ -183,13 +183,13 @@
             "id": "10506",
             "name": "Scorpion et Équipe de Constructeurs",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "siegeengine",
                 "cost": 5,
                 "speed": 4,
                 "defense": 5,
-                "morale": 2,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Baliste",
@@ -221,13 +221,13 @@
             "id": "10507",
             "name": "Mangonneau des Constructeurs",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "siegeengine",
                 "cost": 8,
                 "speed": 1,
                 "defense": 5,
-                "morale": 2,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Tir de Rocher",
@@ -333,7 +333,7 @@
             "id": "10510",
             "name": "Maréchal de la Garde",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 4,
@@ -364,20 +364,20 @@
             "name": "Mains-Froides",
             "subname": "Allié Mystérieux",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 5,
                 "speed": 5,
                 "defense": 3,
-                "morale": 2,
+                "morale": 3,
                 "attacks": [
                     {
                         "name": "Épée Longue",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6
+                            5
                         ]
                     }
                 ],
@@ -526,7 +526,7 @@
             "name": "Qhorin Mimain",
             "subname": "Patrouilleur Inflexible",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 5,
                 "abilities": [
@@ -604,9 +604,9 @@
             "name": "Samwell Tarly",
             "subname": "Érudit Poltron",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
-                "cost": 5,
+                "cost": 4,
                 "abilities": [
                     {
                         "name": "Le Savoir, C'est le Pouvoir",
@@ -625,10 +625,16 @@
             "name": "Vère",
             "subname": "Fille Sauvageonne",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "nightswatch",
-                "cost": 0,
+                "cost": 1,
                 "abilities": [
+                    {
+                        "name": "Gilly's Insight",
+                        "effect": [
+                            "At the start of the game, after drawing your Tactics Hand, you may draw 1 Tactics Card, then shuffle 1 card from your hand into your Tactics Deck."
+                        ]
+                    },
                     {
                         "name": "Influence de Samwell",
                         "effect": [
@@ -647,7 +653,7 @@
             "name": "Craster",
             "subname": "Allié de la Garde",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 4,
                 "abilities": [
@@ -671,7 +677,7 @@
             "name": "Yoren",
             "subname": "Corbeau Intinérant",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "cost": 6,
                 "abilities": [
@@ -933,12 +939,12 @@
             "name": "Qhorin Mimain",
             "subname": "Patrouilleur Vétéran",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Cicatrices de Combat ",
+                    "Battle Scars",
                     "Tomber au Combat"
                 ],
                 "character": true
@@ -1111,7 +1117,7 @@
                 "cost": 2,
                 "abilities": [
                     "Ordre : Plan de Bataille",
-                    "Comptabilité "
+                    "Bookkeeping (Samwell Tarly)"
                 ],
                 "character": true
             },
@@ -1264,13 +1270,13 @@
             "name": "Benjen Stark",
             "subname": "Au-Delà du Mur",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": "C",
                 "abilities": [
-                    "Patrouilleur Expert ",
                     "Ordre : Pièges Cachés",
+                    "Patrouilleur Expert ",
                     "Déstabilisation"
                 ],
                 "commander": true,
@@ -1347,7 +1353,7 @@
             "id": "40501",
             "name": "L'épée dans les ténèbres",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1365,7 +1371,7 @@
             "id": "40502",
             "name": "Le feu qui flambe contre le froid",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1383,7 +1389,7 @@
             "id": "40503",
             "name": "Le bouclier protecteur des royaumes humains",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1401,7 +1407,7 @@
             "id": "40504",
             "name": "Le veilleur au rempart",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1417,7 +1423,7 @@
             "id": "40505",
             "name": "La lumière qui rallume l'aube",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1435,7 +1441,7 @@
             "id": "40506",
             "name": "Prendre le Noir",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1451,7 +1457,7 @@
             "id": "40507",
             "name": "Voici que se termine sa garde",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1510,7 +1516,7 @@
             "id": "40510",
             "name": "La nuit se regroupe",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1570,7 +1576,7 @@
             "id": "40513",
             "name": "Pour la  Garde !",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1997,7 +2003,7 @@
             "id": "40534",
             "name": "Temperé par  le devoir",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "nightswatch",
                 "text": [
                     {

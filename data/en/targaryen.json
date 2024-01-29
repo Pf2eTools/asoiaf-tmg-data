@@ -108,12 +108,12 @@
             "id": "10703",
             "name": "Dothraki Veterans",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": 8,
                 "speed": 6,
-                "defense": 5,
+                "defense": 4,
                 "morale": 5,
                 "attacks": [
                     {
@@ -448,20 +448,20 @@
             "id": "10710",
             "name": "Dothraki Hrakkars",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "monster",
-                "cost": 5,
+                "cost": 4,
                 "speed": 6,
-                "defense": 4,
-                "morale": 4,
+                "defense": 6,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Claw & Blade",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6
+                            5
                         ]
                     }
                 ],
@@ -495,13 +495,13 @@
             "id": "10711",
             "name": "Stormcrow Dervishes",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
                 "speed": 6,
                 "defense": 4,
-                "morale": 6,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Swift Strike",
@@ -544,7 +544,7 @@
             "id": "10712",
             "name": "Stormcrow Archers",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 6,
@@ -574,7 +574,8 @@
                     }
                 ],
                 "abilities": [
-                    "Mercenary’s Longbow"
+                    "Mercenary's Longbow",
+                    "Loyalty Through Coin"
                 ]
             },
             "fluff": {
@@ -601,13 +602,13 @@
             "id": "10713",
             "name": "Stormcrow Mercenaries",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 5,
                 "speed": 5,
                 "defense": 4,
-                "morale": 7,
+                "morale": 6,
                 "attacks": [
                     {
                         "name": "Longsword",
@@ -649,16 +650,16 @@
             "id": "10714",
             "name": "Freedmen",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 3,
-                "speed": 5,
+                "speed": 6,
                 "defense": 6,
                 "morale": 8,
                 "attacks": [
                     {
-                        "name": "Improvised Weapons",
+                        "name": "Improsived Weapons",
                         "type": "melee",
                         "hit": 5,
                         "dice": [
@@ -668,7 +669,7 @@
                 ],
                 "abilities": [
                     "Untrained Masses",
-                    "Gang-Up"
+                    "Gang-up"
                 ]
             },
             "fluff": {
@@ -695,16 +696,16 @@
             "id": "10715",
             "name": "Drogo's Bloodriders",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": 8,
                 "speed": 6,
-                "defense": 3,
+                "defense": 4,
                 "morale": 5,
                 "attacks": [
                     {
-                        "name": "Dothraki Arakh",
+                        "name": "Bloodriders' Arakh",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -715,8 +716,8 @@
                 ],
                 "abilities": [
                     "Order: War Cry",
-                    "Bloodrider",
-                    "Cavalry",
+                    "Drogo's Bloodriders",
+                    "Bloodriders' Arakh",
                     "Must be attached to 'Khal Drogo'"
                 ]
             },
@@ -881,14 +882,14 @@
             "name": "Illyrio Mopatis",
             "subname": "Magister of Pentos",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Illyrio's Boon",
                         "effect": [
-                            "Each time lllyrio Claims a zone, you may replace that zone's effect with:\n*Target 1 friendly Combat Unit. They restore 3 Wounds. 1 enemy they are engaged with becomes **Weakened**.*"
+                            "Illyrio begins the game with 2 Order tokens. \nEach time Illyrio Claims a Zone, you may remove 1 Order token from him. If you do, replace that zone's effect with:\n*Target 1 friendly Combat Unit. They restore 3 Wounds. 1 enemy they are engaged with becomes ****Weakened****.*"
                         ]
                     }
                 ]
@@ -992,14 +993,14 @@
             "name": "Xaro Xhoan Daxos",
             "subname": "Merchant Prince of Qarth",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "targaryen",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Wealth Of The Thirteen",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, that unit suffers/gains the following, based on which zones you Control:\n[CROWN]: If this is an enemy unit, it suffers +1 Wound from failing Panic Tests.\n[MONEY]: If this is a friendly unit, After rolling Defense Dice, this unit blocks +1 Hit.\n[LETTER]: If this is a friendly unit, its Attacks gain +1 Attack Die.\n[UNDYING]: If this is an enemy unit, its Attacks suffer -1 Attack Die."
+                            "Xaro begins the game with 2 Order Tokens on him.\nEach time Xaro Claims [MONEY], place 1 Order token on him. \nWhen a Combat Unit performs an Attack, you may remove 1 Order token from Xaro and target that Combat Unit. If you do, choose 1 of the following for the unit to gain/suffer until the end of that Attack:\n• This unit is treated as having +1 rank for Attack Dice.\n• This unit is treated as having -1 rank for Attack Dice."
                         ]
                     }
                 ]
@@ -1066,14 +1067,14 @@
             "name": "Mirri Maz Duur",
             "subname": "Godswife",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Maegi's Knowledge",
                         "effect": [
-                            "Each time Mirri Claims a zone, restore 1 Wound to 1 friendly Combat Unit.\nEach time Mirri Claims a zone, you may replace that zone's effect with:\n*Target 1 friendly Combat Unit. Attach 1 previously destroyed, friendly, non-Commander Attachment to that unit, replacing a model as usual, but ignoring the usual Attachment limits.*"
+                            "Each time Mirri Claims a zone, restore 1 Wound to 1 friendly Combat Unit.\nEach time Mirri Claims a zone, you may replace that zone's effect with:\n*Choose 1:\n• Target 1 friendly Combat Unit.\nAttach 1 previously destroyed, friendly,\nnon-Commander Attachment to that unit, replacing a model as usual, but ignoring the usual Attachment limits.\n• Target 1 enemy Combat Unit.\nThey become Panicked and Weakened.*"
                         ]
                     }
                 ]
@@ -1140,14 +1141,14 @@
             "name": "Hizdahr Zo Loraq",
             "subname": "Fourteenth Of That Noble Name",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "targaryen",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Merchant Lord's Reach",
                         "effect": [
-                            "Each time Hizdahr Claims a zone, unless its effect is replaced, its effect gains the following additional bonus:\n[CROWN]: If the unit fails this Panic Test, it may not be the target of friendly Orders this Round.\n[MONEY]: All other friendly units in Short Range restore 1 Wound.\n[LETTER]: May draw 1 fewer Tactics cards to place +1 Condition token on the targeted enemy.\n[UNDYING]: Also discard the top card of your opponent's Tactics Deck."
+                            "Each time a friendly NCU Claims a zone, unless its effect is replaced, its effect gains the following additional bonus:\n[CROWN]: If the unit fails this Panic Test, it may not be the target of friendly Orders this Round.\n[MONEY]: 1 other friendly unit in Short Range restores 1 Wound.\n[LETTER]: May draw 1 fewer Tactics cards to place +1 Condition token on the targeted enemy.\n[UNDYING]: Also discard the top card of your opponent's Tactics deck."
                         ]
                     }
                 ]
@@ -1480,12 +1481,12 @@
             "name": "Belwas",
             "subname": "Veteran Pit-Fighter",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars (Belwas)"
+                    "Battle Scars"
                 ],
                 "character": true
             },
@@ -1990,13 +1991,13 @@
             "name": "Cohollo",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": 2,
                 "abilities": [
                     "Bloodrider",
-                    "Battle Scars (Cohollo)"
+                    "Battle Scars"
                 ],
                 "character": true
             },
@@ -2290,13 +2291,13 @@
             "id": "40701",
             "name": "Overrun",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly unit Surges Forth:",
                         "effect": [
-                            "Instead of Surging Forth, that unit performs 1 Charge Action.",
+                            "Instead of Surging Forth, that unit performs 1 Charge or March Action.",
                             "If you Control [HORSE], it may re-roll any Charge Distance Dice."
                         ]
                     }
@@ -2307,13 +2308,14 @@
             "id": "40702",
             "name": "Sudden Retreat",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "After an enemy unit completes a Melee Attack:",
+                        "trigger": "After an enemy completes a Melee Attack:",
                         "effect": [
-                            "The Defender performs 1 Retreat Action."
+                            "The Defender performs 1 Retreat Action.",
+                            "If this targets your Commander's unit, it may re-roll any Retreat Distance Dice."
                         ]
                     }
                 ]
@@ -2340,16 +2342,16 @@
             "id": "40704",
             "name": "Fire and Blood",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
+                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
                             "Choose 1. If you Control [HORSE], choose 2 instead:",
-                            "• This unit may re-roll any Charge Distance Dice this Turn.",
-                            "• If this unit Successfully Charges, its Melee Attack gains **Sundering** this Turn.",
-                            "• If this unit Successfully Charges, its Melee Attack gains **Vicious** this Turn."
+                            "• This Attack may re-roll any Misses.",
+                            "• This Attack gains Sundering.",
+                            "• This Attack gains Vicious."
                         ]
                     }
                 ]
@@ -2377,20 +2379,19 @@
             "id": "40706",
             "name": "Unstoppable Advance",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "When a friendly unit ends a March:",
+                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
                         "effect": [
-                            "Target all enemies in Short Range.",
-                            "They become **Weakened**."
+                            "This unit may re-roll any Charge Distance Dice."
                         ]
                     },
                     {
                         "trigger": "When a friendly unit Surges Forth:",
                         "effect": [
-                            "That unit gains +3[MOVEMENT] when Maneuvering during this Surge Forth."
+                            "That unit gains +3[MOVEMENT] when Maneuvering during this Surge Forth. After moving, target all Enemies in Short Range. They become **Weakened**."
                         ]
                     }
                 ]
@@ -2463,15 +2464,15 @@
             "id": "40710",
             "name": "Assault Orders",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Attack Action.*",
-                            "*If this targets **Khal Drogo**'s unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
+                            "*If this targets Khal Drogo's unit, it may perform 1 Charge Action instead.*"
                         ]
                     },
                     {

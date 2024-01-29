@@ -453,13 +453,13 @@
             "id": "10110",
             "name": "Kingsguard",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 6,
                 "speed": 5,
                 "defense": 3,
-                "morale": 5,
+                "morale": 4,
                 "attacks": [
                     {
                         "name": "Masterwork Blade",
@@ -472,9 +472,9 @@
                     }
                 ],
                 "abilities": [
-                    "Joffrey’s Retinue",
+                    "Order: Resilience",
+                    "Joffrey's Retinue",
                     "Counterstrike",
-                    "Iron Resolve",
                     "Must be attached to 'Joffrey Baratheon, First of His Name'"
                 ]
             },
@@ -597,13 +597,13 @@
             "id": "10113",
             "name": "Lannisport City Watch",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 6,
                 "speed": 5,
                 "defense": 4,
-                "morale": 7,
+                "morale": 6,
                 "attacks": [
                     {
                         "name": "Spear",
@@ -780,14 +780,14 @@
             "name": "Pycelle",
             "subname": "Grand Maester",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "lannister",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Manipulation and Deception",
                         "effect": [
-                            "Each time Pycelle Claims a zone, target 1 enemy Combat Unit. They become **Vulnerable** or **Weakened**."
+                            "Pycelle begins the game with 3 Order tokens. \nEach time Pycelle Activates, you may remove 1 Order token from him. If you do, target 1 enemy Combat Unit. They become **Weakened**."
                         ]
                     }
                 ]
@@ -1002,14 +1002,14 @@
             "name": "Qyburn",
             "subname": "Master Of Whisperers",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "lannister",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Little Doves",
                         "effect": [
-                            "Qyburn begins the game with 4 Order tokens.\nEach time an enemy NCU Claims a zone, before resolving that zone's effect, you may remove 1 Order token from Qyburn. If you do, gain the following based on that zone:\n[CROWN]: 1 enemy becomes **Panicked**.\n[MONEY]: 1 enemy Combat Unit suffers 1 Wound.\n[SWORDS]: Attacker counts as having -1 rank for Attack Dice.\n[LETTER]: Opponent draws 1 fewer Tactics Card.\n[HORSE]: Enemy moves with -1 [MOVEMENT]."
+                            "Qyburn begins the game with 3 Order tokens on him.\nEach time an enemy NCU activates, you may remove 1 Order token from Qyburn. If you do, choose 2 zones. If that NCU Claims either zone this Turn, after resolving that zone's effect, target up to 2 enemy Combat Units. They become **Vulnerable**."
                         ]
                     }
                 ]
@@ -1039,14 +1039,14 @@
             "name": "Tommen Baratheon",
             "subname": "Next in Succession",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "lannister",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Queen's Influence",
                         "effect": [
-                            "Tommen begins the game with 2 Order tokens.\nEach time Tommen Claims a zone, you may remove 1 Order token from him. If you do, perform the following:\nIf you Control [CROWN], search your Tactics deck or discard pile for 1 **Fealty to the Crown** card and add it to your hand. Shuffle your Tactics deck.\nIf you Control [MONEY], search your Tactics deck or discard pile for 1 **Bribery** card and add it to your hand. Shuffle your Tactics deck."
+                            "Tommen begins the game with 2 Order tokens.\nEach time Tommen Claims a zone, you may remove 1 Order token from him. If you do, perform the following:\nIf you Control [CROWN], search your Tactics deck or discard pile for 1 **Intrigue and Subterfuge** card and add it to your hand. Shuffle your Tactics deck.\nIf you Control [MONEY], search your Tactics deck or discard pile for 1 **Bribery** card and add it to your hand. Shuffle your Tactics deck."
                         ]
                     }
                 ]
@@ -1606,13 +1606,13 @@
             "name": "Gregor Clegane",
             "subname": "The Mountain",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Affiliation: House Clegane",
-                    "Indominable",
+                    "Indomitable",
                     "The Mountain's Strength"
                 ],
                 "commander": true,
@@ -1933,13 +1933,13 @@
             "name": "Addam Marbrand",
             "subname": "Trusted Bannerman",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Jaime's Vassal",
-                    "Order: Sentinel"
+                    "Order: Sentinel",
+                    "Jaime's Vassal"
                 ],
                 "character": true
             },
@@ -2046,7 +2046,7 @@
             "name": "Kevan Lannister",
             "subname": "Protector of the Realm",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": "C",
@@ -2382,13 +2382,13 @@
             "id": "40111",
             "name": "Overrun",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "When a friendly unit Surges Forth:",
                         "effect": [
-                            "Instead of Surging Forth, this unit performs 1 Charge Action.",
+                            "Instead of Surging Forth, that unit performs 1 Charge or March Action.",
                             "If this targets a House Clegane unit, it may re-roll any Charge Distance Dice."
                         ]
                     }
@@ -2406,9 +2406,8 @@
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "When a friendly NCU Claims a zone:",
+                        "trigger": "When a friendly NCU Claims a zone: Replace that zone's effect with:",
                         "effect": [
-                            "Replace that zone's effect with:",
                             "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
                             "*If this targets a House Clegane unit, it may perform 1 Charge Action instead.*"
                         ]
@@ -2757,14 +2756,13 @@
             "id": "40129",
             "name": "Predictable Maneuvers",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "Start of an enemy Turn:",
+                        "trigger": "Start of the first Enemy Turn in a Round:",
                         "effect": [
-                            "Target 1 enemy Combat Unit and 1 enemy NCU.",
-                            "If either unit performs an Action this Turn, before they resolve that Action, 1 friendly Combat Unit performs 1 Attack, Maneuver, or Retreat Action."
+                            "Target 1 enemy Combat Unit and 1 enemy NCU. If either unit performs an Action this Turn, before they resolve that Action, 1 friendly Combat Unit performs 1 Attack, Maneuver, or Retreat Action."
                         ]
                     }
                 ],

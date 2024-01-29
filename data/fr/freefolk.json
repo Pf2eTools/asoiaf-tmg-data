@@ -107,11 +107,11 @@
             "id": "10304",
             "name": "Piqueuses",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 5,
-                "speed": 5,
+                "speed": 6,
                 "defense": 5,
                 "morale": 7,
                 "attacks": [
@@ -130,8 +130,8 @@
                         "type": "melee",
                         "hit": 4,
                         "dice": [
-                            6,
-                            6,
+                            7,
+                            7,
                             4
                         ]
                     }
@@ -462,13 +462,13 @@
             "id": "10315",
             "name": "Oursières de la Grève Glacée",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "cavalry",
                 "cost": 8,
                 "speed": 4,
                 "defense": 4,
-                "morale": 6,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Lancer de Pique",
@@ -503,10 +503,10 @@
             "id": "10316",
             "name": "Le Sanglier de Borroq",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "monster",
-                "cost": 2,
+                "cost": 0,
                 "speed": 5,
                 "defense": 4,
                 "morale": 2,
@@ -565,7 +565,7 @@
             "name": "Varamyr Sixpeaux",
             "subname": "Maître Change-Peau",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": "C",
@@ -655,7 +655,7 @@
             "id": "10321",
             "name": "Chasseurs de La Grève Glacée",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 5,
@@ -669,7 +669,7 @@
                         "hit": 4,
                         "dice": [
                             6,
-                            5,
+                            6,
                             4
                         ]
                     },
@@ -679,7 +679,7 @@
                         "hit": 4,
                         "dice": [
                             6,
-                            5,
+                            6,
                             4
                         ]
                     }
@@ -722,7 +722,7 @@
             "name": "Mance Rayder",
             "subname": "Tacticien Rusé",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "cost": 4,
                 "abilities": [
@@ -744,7 +744,7 @@
             "name": "Craster",
             "subname": "Allié de Convenance",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "cost": 4,
                 "abilities": [
@@ -812,9 +812,9 @@
             "name": "Lady Della",
             "subname": "Épouse et Conseillère",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
-                "cost": 5,
+                "cost": 4,
                 "abilities": [
                     {
                         "name": "Conseil de Piqueuse",
@@ -864,14 +864,14 @@
             "name": "Jon Snow",
             "subname": "Corbac Tourne-Casaque",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "freefolk",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Northern Resilience",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, it gains +1 to Morale Test rolls."
+                            "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):\nWhile Influencing a unit, it gains +1 to Morale Test rolls and suffers -1 Wound from failing Panic Tests.."
                         ]
                     },
                     {
@@ -893,7 +893,7 @@
             "name": "Tormund Fléau-d'Ogres",
             "subname": "Poing-la-Foudre",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
@@ -939,15 +939,14 @@
             "name": "Mance Rayder",
             "subname": "Roi d'Au-Délà du Mur",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+                    "Ordre : Contre Stratégie",
                     "Charisme Fougueux",
-                    "Le Roi Est Mort !",
-                    "Présence Motivante",
-                    "Ordre : Contre Stratégie"
+                    "Présence Motivante"
                 ],
                 "commander": true,
                 "character": true
@@ -1006,10 +1005,10 @@
             "id": "20307",
             "name": "Change-Peau",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Lien du Change-Peau",
                     "Vaillance"
@@ -1312,12 +1311,12 @@
             "name": "Le Grand Morse",
             "subname": "Trempé à la Glace et la Neige",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Cicatrices de Combat "
+                    "Battle Scars"
                 ],
                 "character": true
             },
@@ -1628,7 +1627,7 @@
             "id": "40312",
             "name": "Manœuvres prévisibles",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "text": [
                     {
@@ -2087,7 +2086,7 @@
             "id": "40334",
             "name": "Débordement",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "freefolk",
                 "text": [
                     {

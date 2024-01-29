@@ -197,16 +197,16 @@
             "id": "10605",
             "name": "R’hllor Faithful",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 5,
+                "speed": 6,
                 "defense": 5,
                 "morale": 4,
                 "attacks": [
                     {
-                        "name": "Sword of The Faith",
+                        "name": "Sword Of The Faith",
                         "type": "melee",
                         "hit": 4,
                         "dice": [
@@ -292,7 +292,7 @@
             "id": "10607",
             "name": "Dragonstone Noble",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "cavalry",
                 "cost": 4,
@@ -301,7 +301,7 @@
                 "morale": 3,
                 "attacks": [
                     {
-                        "name": "Noble’s Wrath",
+                        "name": "Mastercraft Warhammer",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -310,9 +310,9 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Sentinel",
+                    "Order: Noble's Bolster",
                     "Solo Rider",
-                    "Noble’s Wrath",
+                    "Mastercraft Warhammer",
                     "Loyalty: Stannis Baratheon"
                 ]
             },
@@ -340,28 +340,28 @@
             "id": "10608",
             "name": "King’s Men",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 7,
                 "speed": 5,
                 "defense": 4,
-                "morale": 6,
+                "morale": 5,
                 "attacks": [
                     {
-                        "name": "King’s Blade",
+                        "name": "King's Blade",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
                             7,
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
                 "abilities": [
                     "To The Last!",
-                    "King’s Blade",
+                    "King's Blade",
                     "Loyalty: Stannis Baratheon"
                 ]
             },
@@ -389,7 +389,7 @@
             "id": "10609",
             "name": "R’hllor Queen’s Men",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 7,
@@ -404,13 +404,14 @@
                         "dice": [
                             7,
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
                 "abilities": [
+                    "Order: Hold The Line!",
                     "To The Last!",
-                    "Order: Queen’s Blade",
+                    "Queen's Blade",
                     "Loyalty: Stannis Baratheon"
                 ]
             },
@@ -653,16 +654,16 @@
             "id": "10614",
             "name": "Rainbow Guard",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 6,
                 "speed": 5,
                 "defense": 3,
-                "morale": 5,
+                "morale": 4,
                 "attacks": [
                     {
-                        "name": "Masterwork Blades",
+                        "name": "Masterwork Blade",
                         "type": "melee",
                         "hit": 2,
                         "dice": [
@@ -672,9 +673,9 @@
                     }
                 ],
                 "abilities": [
-                    "Renly’s Retinue",
-                    "Perseverance and Valor",
-                    "Rally Point",
+                    "Order: Resilience",
+                    "Renly's Retinue",
+                    "Rally Cry",
                     "Must be attached to 'Renly Baratheon, King in the South'"
                 ]
             },
@@ -901,14 +902,14 @@
             "name": "Selyse & Shireen",
             "subname": "Queen and Princess",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "baratheon",
-                "cost": 6,
+                "cost": 5,
                 "abilities": [
                     {
                         "name": "Fervent Conviction",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, it gains +1 to Morale Test rolls and, each time it passes a Morale test, 1 enemy it is engaged with suffers 1 Wound."
+                            "**Influence ***(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, each time it passes a Morale Test, 1 enemy it is engaged with suffers 1 Wound."
                         ]
                     },
                     {
@@ -944,14 +945,14 @@
             "name": "Axell Florent",
             "subname": "Hand of the Queen",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "baratheon",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "In R'hllor's Name",
                         "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, each time they fail a Panic Test, they become **Weakened**.\nWhile Influencing an enemy unit, if they are engaged with a R'hllor unit, they suffer +1 Wound from failing Panic Tests."
+                            "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nEach time Axell Influences an enemy unit, it becomes **Panicked**.\nWhile Influencing a friendly unit, when that unit is performing a Melee Attack, before rolling Attack Dice, the Defender becomes **Vulnerable**."
                         ]
                     }
                 ]
@@ -2010,7 +2011,7 @@
             "name": "Cortnay Penrose",
             "subname": "Loyal Tactician",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 2,
@@ -2046,14 +2047,14 @@
             "name": "Cortnay Penrose",
             "subname": "Castellan of Storm's End",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Bookkeeping (Cortnay Penrose)",
-                    "Loyalty: Renly Baratheon",
-                    "Might Of The Throne (Cortnay Penrose)"
+                    "Might Of The Throne (Cortnay Penrose)",
+                    "Loyalty: Renly Baratheon"
                 ],
                 "commander": true,
                 "character": true
@@ -2398,12 +2399,12 @@
             "name": "Brienne",
             "subname": "Rainbow Guard",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars (Brienne)",
+                    "Battle Scars",
                     "Loyalty: Renly Baratheon"
                 ],
                 "character": true
@@ -2576,14 +2577,14 @@
             "id": "40601",
             "name": "Baratheon Justice",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "After an enemy completes an Attack:",
                         "effect": [
-                            "The Attacker becomes **Panicked** or **Vulnerable**.",
-                            "If you Control [CROWN] or [LETTER], the Attacker becomes **Panicked** and **Vulnerable** instead."
+                            "The Attacker gains 1 Condition token.",
+                            "If you Control [CROWN] or [LETTER], they gain +1 token."
                         ]
                     }
                 ]
@@ -2681,16 +2682,14 @@
             "id": "40607",
             "name": "Oath of Duty",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
                             "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
-                            "While this card has a token, the attached unit gains:",
-                            "This unit suffers -1 Wound from failing Panic Tests.",
-                            "While you Control [CROWN], each time this unit performs a Melee Attack, the Defender gains 1 Condition token."
+                            "While this card has a token, each time this unit performs an Melee Attack, before rolling Attack Dice, the Defender gains 1 Condition token and, while you Control [CROWN], this unit may re-roll any Attack Dice."
                         ]
                     }
                 ]
@@ -3247,14 +3246,14 @@
             "id": "40633",
             "name": "Assault Orders",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Attack Action.*",
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
                             "*If this targets Andrew Estermont's unit, it may perform 1 Charge Action instead.*"
                         ]
                     }

@@ -142,11 +142,11 @@
             "id": "10405",
             "name": "Plänkler des Blutigen Mummenschanzes",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S04",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 5,
+                "speed": 6,
                 "defense": 5,
                 "morale": 7,
                 "attacks": [
@@ -156,13 +156,13 @@
                         "hit": 3,
                         "dice": [
                             7,
-                            5,
-                            4
+                            6,
+                            5
                         ]
                     }
                 ],
                 "abilities": [
-                    "Klinge des Mummenschanzes",
+                    "Mummer's Blade",
                     "Gegenschlag",
                     "Unterbrechen"
                 ]
@@ -175,13 +175,13 @@
             "id": "10406",
             "name": "Söldner der Sturmkrähen",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
                 "speed": 5,
                 "defense": 4,
-                "morale": 7,
+                "morale": 6,
                 "attacks": [
                     {
                         "name": "Langschwert",
@@ -207,7 +207,7 @@
             "id": "10407",
             "name": "Bogenschützen der Sturmkrähen",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 6,
@@ -237,7 +237,8 @@
                     }
                 ],
                 "abilities": [
-                    "Langbogen des Söldners"
+                    "Mercenary's Longbow",
+                    "Erkaufte Loyalität"
                 ]
             },
             "fluff": {
@@ -280,13 +281,13 @@
             "id": "10409",
             "name": "Derwische der Sturmkrähen",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
                 "speed": 6,
                 "defense": 4,
-                "morale": 6,
+                "morale": 5,
                 "attacks": [
                     {
                         "name": "Schneller Hieb",
@@ -345,7 +346,7 @@
             "id": "10411",
             "name": "Schwertkämpfer der Goldenen Kompanie",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
@@ -450,7 +451,7 @@
             "id": "10414",
             "name": "Lysenische Söldner",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
@@ -470,8 +471,8 @@
                     }
                 ],
                 "abilities": [
-                    "Piratensäbel",
-                    "Räuber der Freien Städte"
+                    "Räuber der Freien Städte",
+                    "Pirate's Blades"
                 ]
             },
             "fluff": {
@@ -485,7 +486,7 @@
             "name": "Petyr Baelish",
             "subname": "Kleinfinger",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S04",
                 "faction": "neutral",
                 "cost": 4,
                 "abilities": [
@@ -508,7 +509,7 @@
             "name": "Lord Varys",
             "subname": "Die Spinne",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "neutral",
                 "cost": 4,
                 "abilities": [
@@ -605,16 +606,14 @@
             "name": "Walder Frey",
             "subname": "Lord vom Kreuzweg",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "neutral",
-                "cost": 4,
+                "cost": 5,
                 "abilities": [
                     {
-                        "name": "Der Späte Walder Frey",
+                        "name": "Strategic Alliance",
                         "effect": [
-                            "Du darfst Walder nur aktivieren, falls du in dieser Runde keine anderen Einheiten aktivieren kannst.",
-                            "Immer wenn Walder eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone durch den Effekt einer beliebigen anderen Zone ersetzen. Falls Walder die [CROWN]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*1 Feind wird **Geschwächt**. 1 befreundete Einheit heilt 2 **Wunden**. Zu Beginn der nächsten Runde wirst du Startspieler.*"
+                            "Once per game, when Walder Claims a zone, you may replace that zone's effect with:\n*Choose 2:\n• 1 enemy becomes Weakened, Vulnerable and Panicked. \n• 1 friendly unit restores 3 Wounds.\n• At the start of the next Round, you become the First Player.*"
                         ]
                     }
                 ]

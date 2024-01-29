@@ -403,14 +403,14 @@
             "name": "Doran Martell",
             "subname": "Lord of Sunspear",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "martell",
-                "cost": "5C",
+                "cost": "4C",
                 "abilities": [
                     {
                         "name": "Proxy Orders",
                         "effect": [
-                            "Each time Doran Martell Claims a zone, you may replace that zone's effect with:\n*Choose 1:*\n*•Areo Hotah's unit may Pivot then perform 1 March Action.*\n*•Areo Hotah's unit may perform 1 Retreat Action.*"
+                            "Each time Doran Martell Claims a zone, you may replace that zone's effect with:\n*Choose 1:\n• Areo Hotah's unit may Pivot then perform 1 March Action.\n• Areo Hotah's unit may perform 1 Retreat Action.*"
                         ]
                     }
                 ]
@@ -477,14 +477,14 @@
             "name": "Ellaria Sand",
             "subname": "Viper's Paramour",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "martell",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Lysene Charm",
                         "effect": [
-                            "Each time Ellaria Claims a zone, target 1 friendly Combat Unit. You may remove 1 Condition token from them.\nIf you Control [SWORDS], target up to 2 enemy units in Long Range of the targeted friendly unit. Place 1 Condition token on each of those enemies."
+                            "Each time Ellaria Claims a zone, target 1 friendly Combat Unit. You may remove 1 Condition token from them.\nIf you Control [SWORDS], target 1 enemy unit in Long Range of the targeted friendly unit. They gain 1 Condition token."
                         ]
                     }
                 ]
@@ -1511,13 +1511,13 @@
             "id": "40904",
             "name": "Sand Diplomacy",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "martell",
                 "text": [
                     {
                         "trigger": "Start of any Round:",
                         "effect": [
-                            "Your opponent chooses 1Tactics Zone. Then, you choose 1 Tactics Zone.The first time 1 of those zones is Claimed this Round, before resolving that zone's effect, the NCU that Claimed that zone loses all Abilities until the end of the Round and that player's opponent may target 1 Combat Unit. They become **Weakened**."
+                            "Your opponent chooses 1 Tactics Zone. Then, you choose 1 Tactics Zone.The first time 1 of those zones is Claimed this Round, after resolving that zone's effect, the opponent of the player who Claimed that Zone may target up to 2 enemy Combat Units. They become **Vulnerable** and **Weakened**."
                         ]
                     }
                 ]
@@ -1580,15 +1580,15 @@
             "id": "40908",
             "name": "Unexpected Exhaustion",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "martell",
                 "text": [
                     {
-                        "trigger": "When a Vulnerable enemy Activates:",
+                        "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
-                            "Attach this card to that enemy until the Vulnerable token is removed.",
+                            "That enemy becomes **Vulnerable**. Attach this card to that enemy until the Vulnerable token is removed.",
                             "While this card is attached, each time this unit Attacks, it suffers -1 to Hit.",
-                            "While this card is attached, each time this unit Attacks Oberyn Martell's unit, before rolling Attack dice, it becomes **Weakened**."
+                            "While this card is attached, each time this unit Attacks Oberyn's unit, before rolling Attack dice, it becomes **Weakened**."
                         ]
                     }
                 ],
@@ -1622,21 +1622,21 @@
             "id": "40910",
             "name": "Viper's Infamy",
             "statistics": {
-                "version": "2021",
+                "version": "S04",
                 "faction": "martell",
                 "text": [
                     {
                         "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
-                            "That enemy suffers -2[MOVEMENT] when Charging Oberyn Martell's unit this Turn. If that enemy fails a Charge this Turn, it becomes **Vulnerable**."
+                            "If that enemy is within Long Range of Oberyn's unit, it suffers -2 [MOVEMENT] this Turn.",
+                            "If that enemy fails a Charge this Turn, it becomes **Vulnerable**."
                         ]
                     },
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
                             "Choose 1:",
-                            "*• Draw 1 Tactics card.*",
-                            "*• If Oberyn Martell's unit is engaged, search your Tactics Deck or discard pile for 1 Commander Tactics card and add it to your hand.*"
+                            "• *Draw 1 Tactics card.* • *If Oberyn's unit is engaged, search your Tactics deck or discard pile for 1 Commander Tactics card and add it to your hand.*"
                         ]
                     }
                 ],
@@ -1709,14 +1709,13 @@
             "id": "40914",
             "name": "Sustained Assault",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S04",
                 "faction": "martell",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
-                            "If this targets Obara's unit, it may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice."
                         ]
                     }
                 ],
