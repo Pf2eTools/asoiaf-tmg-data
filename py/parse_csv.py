@@ -181,7 +181,7 @@ def parse_abilities():
     return parsed_abilities
 
 
-def parse_units():
+def parse_units(tactics):
     data = csv_to_dict(f"{CSV_PATH}/units.csv")
     parsed_cards = {
         "en": {}
@@ -207,7 +207,7 @@ def parse_units():
                 "version": card_data.get("Version"),
                 "faction": normalize(card_data.get("Faction")),
                 "type": normalize(card_data.get("Type")),
-                "cost": "C" if "C" in card_data.get("Cost") else int(card_data.get("Cost")),
+                "cost": "C" if card_data.get("Cost") == "C" else int(re.sub(r"\D", "", card_data.get("Cost"))),
                 "speed": int(card_data.get("Spd")),
                 "defense": int(card_data.get("Def").strip("+")),
                 "morale": int(card_data.get("Moral").strip("+")),
@@ -222,6 +222,9 @@ def parse_units():
             parsed["subname"] = name_parts[1]
         else:
             del parsed["subname"]
+        if "C" in card_data.get("Cost") or "Commander" in parsed["statistics"]["abilities"]:
+            parse_commander(parsed, tactics)
+        parsed["statistics"]["abilities"] = [a for a in parsed["statistics"]["abilities"] if re.search(r"Loyalty: .* Baratheon", a) is None]
         parsed["statistics"]["attacks"].append(parse_attack(card_data.get("Attack 1"), card_data.get("7"), card_data.get("8")))
         if card_data.get("Attack 2") != "":
             parsed["statistics"]["attacks"].append(parse_attack(card_data.get("Attack 2"), card_data.get("10"), card_data.get("11")))
@@ -260,7 +263,7 @@ def parse_units():
     return parsed_cards
 
 
-def parse_ncus():
+def parse_ncus(tactics):
     data = csv_to_dict(f"{CSV_PATH}/ncus.csv")
     parsed_cards = {
         "en": {}
@@ -276,7 +279,7 @@ def parse_ncus():
             "statistics": {
                 "version": card_data.get("Version"),
                 "faction": normalize(card_data.get("Faction")),
-                "cost": card_data.get("Cost") if re.search(r"\D", card_data.get("Cost")) else int(card_data.get("Cost")),
+                "cost": "C" if card_data.get("Cost") == "C" else int(re.sub(r"\D", "", card_data.get("Cost"))),
                 "abilities": [],
             },
             "fluff": {
@@ -287,6 +290,8 @@ def parse_ncus():
             parsed["subname"] = name_parts[1]
         else:
             del parsed["subname"]
+        if "C" in card_data.get("Cost"):
+            parse_commander(parsed, tactics)
         ability_names = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Names"))]
         ability_text = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Descriptions"))]
         for name, text in zip(ability_names, ability_text):
@@ -325,6 +330,21 @@ def parse_ncus():
     return parsed_cards
 
 
+def parse_commander(parsed, tactics):
+    parsed["statistics"]["commander"] = True
+    cards = [c for c in tactics["en"].values() if c["statistics"].get("commander_id") == parsed.get("id")]
+    parsed["tactics"] = {"cards": [c["id"] for c in cards]}
+    if len(cards) == 10:
+        parsed["tactics"]["remove"] = ["ALL"]
+    elif len(cards) > 3:
+        parsed["tactics"]["remove"] = []
+        matches = [re.search(r'remove\s+the\s+"(.*?)"\s+Tactics', c["statistics"]["text"][-1].get("remove", "")) for c in cards]
+        for match in matches:
+            if match is None:
+                continue
+            parsed["tactics"]["remove"].append(match.group(1))
+
+
 def parse_attachments(tactics):
     data = csv_to_dict(f"{CSV_PATH}/attachments.csv")
     data_specials = csv_to_dict(f"{CSV_PATH}/special.csv")
@@ -346,7 +366,7 @@ def parse_attachments(tactics):
                 "version": card_data.get("Version"),
                 "faction": normalize(card_data.get("Faction")),
                 "type": normalize(card_data.get("Type")),
-                "cost": "C" if card_data.get("Cost") == "C" else int(card_data.get("Cost")),
+                "cost": "C" if card_data.get("Cost") == "C" else int(re.sub(r"\D", "", card_data.get("Cost"))),
                 "abilities": [re.sub(r"\[(\w|Fire)]", "", a.strip()) for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
             },
         }
@@ -354,19 +374,11 @@ def parse_attachments(tactics):
             parsed["subname"] = name_parts[1]
         else:
             del parsed["subname"]
-        if parsed["statistics"]["cost"] == "C":
-            parsed["statistics"]["commander"] = True
-            cards = [c for c in tactics["en"].values() if c["statistics"].get("commander_id") == card_id]
-            parsed["tactics"] = {"cards": [c["id"] for c in cards]}
-            if len(cards) == 10:
-                parsed["tactics"]["remove"] = ["ALL"]
-            elif len(cards) > 3:
-                parsed["tactics"]["remove"] = []
-                matches = [re.search(r'remove\s+the\s+"(.*?)"\s+Tactics', c["statistics"]["text"][-1].get("remove", "")) for c in cards]
-                for match in matches:
-                    if match is None:
-                        continue
-                    parsed["tactics"]["remove"].append(match.group(1))
+        if "C" in card_data.get("Cost"):
+            parse_commander(parsed, tactics)
+        elif parsed["statistics"]["faction"] == "baratheon":
+            abitities = parsed["statistics"]["abilities"]
+            parsed["statistics"]["abilities"] = [a for a in abitities if re.search(r"Loyalty: .* Baratheon", a) is None]
         if card_data.get("Character"):
             parsed["statistics"]["character"] = True
         if card_data.get("Quote"):
@@ -441,9 +453,9 @@ def fix_name(name):
 
 def main():
     parsed_abilities = parse_abilities()
-    parsed_units = parse_units()
-    parsed_ncus = parse_ncus()
     parsed_tactics = parse_tactics()
+    parsed_units = parse_units(parsed_tactics)
+    parsed_ncus = parse_ncus(parsed_tactics)
     parsed_attachments = parse_attachments(parsed_tactics)
 
     for lang in LANGUAGES:

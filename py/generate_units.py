@@ -185,7 +185,7 @@ def generate_unit_back(asset_manager, unit_id, name, subname, unit_data, unit_fl
     unit_type = asset_manager.get_unit_type(unit_data.get("type"), faction)
     layer_crests.alpha_composite(unit_type, (846 - unit_type.size[0] // 2, h - unit_type.size[1]))
     # TODO: Varamyr Commander
-    rd_cost = render_cost(asset_manager, unit_data.get("cost", 0), get_faction_highlight_color(faction))
+    rd_cost = render_cost(asset_manager, unit_data.get("cost", 0), get_faction_highlight_color(faction), unit_data.get("commander"))
     layer_crests.alpha_composite(rd_cost, (846 - rd_cost.size[0] // 2, 555))
     crest = asset_manager.get_crest(faction)
     crest = crest.crop(crest.getbbox())

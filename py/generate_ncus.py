@@ -177,7 +177,7 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
     layer_crests = Image.new("RGBA", (w, h))
     box_character = render_character_box(asset_manager, faction)
     layer_crests.alpha_composite(apply_drop_shadow(box_character), (234, 266))
-    rendered_cost = render_cost(asset_manager, ncu_data.get("cost"), get_faction_highlight_color(faction))
+    rendered_cost = render_cost(asset_manager, ncu_data.get("cost", 0), get_faction_highlight_color(faction), ncu_data.get("commander"))
     layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (38, 194))
     crest = asset_manager.get_crest(faction)
     crest = crest.crop(crest.getbbox())

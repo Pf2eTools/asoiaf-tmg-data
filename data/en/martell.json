@@ -405,7 +405,7 @@
             "statistics": {
                 "version": "S04",
                 "faction": "martell",
-                "cost": "4C",
+                "cost": 4,
                 "abilities": [
                     {
                         "name": "Proxy Orders",
@@ -413,10 +413,18 @@
                             "Each time Doran Martell Claims a zone, you may replace that zone's effect with:\n*Choose 1:\n• Areo Hotah's unit may Pivot then perform 1 March Action.\n• Areo Hotah's unit may perform 1 Retreat Action.*"
                         ]
                     }
-                ]
+                ],
+                "commander": true
             },
             "fluff": {
                 "quote": "\"I am not blind, nor deaf.\""
+            },
+            "tactics": {
+                "cards": [
+                    "40911",
+                    "40912",
+                    "40913"
+                ]
             },
             "portrait": {
                 "x": 253,
@@ -1715,7 +1723,8 @@
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
+                            "If this targets Obara Sand's unit, it may re-roll any Attack Dice."
                         ]
                     }
                 ],
