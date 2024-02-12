@@ -22,6 +22,8 @@ def main(filter_lang, filter_files):
             # It's a directory, skip
             if key.endswith("/"):
                 continue
+            if key.endswith("documents.csv"):
+                continue
             _, version, filename = key.split("/")
             filename_split = filename.split(".")
             if len(filename_split) == 2:
