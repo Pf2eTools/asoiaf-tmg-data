@@ -492,9 +492,8 @@
                 ],
                 "abilities": [
                     "Befehl: Schlachtruf",
-                    "Drogo's Bloodriders",
-                    "Bloodriders' Arakh",
-                    "Must be attached to 'Khal Drogo'"
+                    "Drogo's Blutreiter",
+                    "Arakh der Blutreiter"
                 ]
             },
             "fluff": {
@@ -1524,15 +1523,15 @@
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Sobald eine befreundete Einheit eine Marschaktion beendet:",
+                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
                         "effect": [
-                            "Bestimme alle Feinde innerhalb **Kurzer Reichweite** zum Ziel. Sie werden **Geschwächt**."
+                            "Diese Einheit darf alle Würfel für die Bewegungsweite des Ansturms neu werfen."
                         ]
                     },
                     {
                         "trigger": "Sobald eine befreundete Einheit nachsetzt:",
                         "effect": [
-                            "Jene Einheit erhält +3 [MOVEMENT], sobald sie während dieses Nachsetzens ein Manöver durchführt."
+                            "Jene Einheit erhält +3 [MOVEMENT], sobald sie während dieses Nachsetzens ein Manöver durchführt. Nach dem Manöver werden alle feindlichen Einheiten in kurzer Reichweiter **Geschwächt**."
                         ]
                     }
                 ]
@@ -1610,8 +1609,7 @@
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt",
-                            "1 Angriffsaktion durch.*",
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
                             "*Falls diese Karte Khal Drogos Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
                         ]
                     },
