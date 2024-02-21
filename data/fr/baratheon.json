@@ -457,9 +457,8 @@
                 ],
                 "abilities": [
                     "Ordre : Résilience",
-                    "Renly's Retinue",
-                    "Cri de Ralliement",
-                    "Must be attached to 'Renly Baratheon, King in the South'"
+                    "Escorte de Renly",
+                    "Cri de Ralliement"
                 ]
             },
             "fluff": {
@@ -530,6 +529,13 @@
                             "Tant que Mélisandre Influence une unité alliée, celle-ci est une unité R’hllor et ses Attaques de Mêlée gagnent **Cruel**."
                         ]
                     }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             },
             "fluff": {
@@ -552,6 +558,13 @@
                             "Chaque fois qu’une unité alliée Charge, après avoir lancé les dés de Distance de Charge, vous pouvez retirer 1 pion Ordre de Davos. Si vous le faites, vous pouvez relancer n’importe quels dés de Distance de Charge.",
                             "Chaque fois qu’une unité alliée est activée, vous pouvez retirer 1 pion Ordre de Davos. Si vous le faites, jusqu’à la fin du tour, les ennemis engagés avec cette unité ne peuvent pas utiliser d’Ordres ou être ciblés par des cartes Tactique alliées."
                         ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
                     }
                 ]
             },
@@ -582,6 +595,13 @@
                             "de la partie, elle est une unité R’hllor."
                         ]
                     }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             },
             "fluff": {
@@ -605,6 +625,13 @@
                             "Tant que cette carte Influence une unité ennemie, si celle-ci est engagée avec une unité R’hllor, elle subit +1 Blessure quand elle échoue ses Tests de Panique."
                         ]
                     }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             },
             "fluff": {
@@ -625,6 +652,13 @@
                         "effect": [
                             "Chaque fois que Margaery s’empare d’une zone, vous pouvez cibler 1 Unité Combattante alliée. Elle soigne 1 de ses Blessures. Vous pouvez ensuite cibler 1 ennemi engagé avec cette unité. Il devient **Vulnérable**."
                         ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
                     }
                 ]
             },
@@ -649,6 +683,13 @@
                             "• Si cette UNC s’empare d’une zone ce round-ci, avant de résoudre l’effet de cette dernière, ciblez 1 Unité Combattante ennemie. Elle subit D3 Touches et devient **Affaiblie**."
                         ]
                     }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             },
             "fluff": {
@@ -671,6 +712,13 @@
                             "*Piochez 3 cartes Tactique, puis mélangez 1 carte de votre main dans votre paquet Tactique.*"
                         ]
                     }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             },
             "fluff": {
@@ -692,6 +740,13 @@
                             "Cortnay commence le jeu avec 3 pions Ordre sur sa carte.",
                             "Chaque fois qu’une UNC ennemie est activée, vous pouvez retirer 1 pion Ordre de Cortnay. Si vous le faites, choisissez 2 zones. Si cette UNC s’empare de l’une ou l’autre de ces zones ce tour-ci, avant de résoudre leur effet, ciblez n’importe quel nombre d’Unités Combattantes alliées. Soignez un total de D3+2 Blessures reparti entre ces unités."
                         ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
                     }
                 ]
             },
@@ -721,6 +776,13 @@
                             "*Piochez 2 cartes Tactique et placez 1 pion État sur 1 Unité Combattante ennemie.*"
                         ]
                     }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             },
             "fluff": {
@@ -743,6 +805,13 @@
                             "Au début de n’importe quel round, vous pouvez retirer 1 pion Ordre de cette carte.",
                             "Si vous le faites, vous pouvez nommer une carte Tactique. Si votre adversaire possède au moins 1 carte Tactique du même nom dans sa main, il défausse 1 carte Tactique ainsi nommée."
                         ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
                     }
                 ]
             },
@@ -875,7 +944,14 @@
                 "cost": 1,
                 "abilities": [
                     "Ordre : Héroïsme Téméraire",
-                    "Conviction Véritable"
+                    "True Conviction (Baratheon)"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -926,7 +1002,14 @@
                 "cost": 1,
                 "abilities": [
                     "Ordre : Assistance",
-                    "Conviction Véritable"
+                    "True Conviction (Baratheon)"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -945,7 +1028,14 @@
                 "cost": 1,
                 "abilities": [
                     "Ordre : Incitation",
-                    "Conviction Véritable"
+                    "True Conviction (Baratheon)"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -963,7 +1053,7 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Conviction Véritable",
+                    "True Conviction (Baratheon)",
                     "Premier des Hommes du Roi",
                     "Loyauté : Stannis Baratheon"
                 ],
@@ -1051,6 +1141,13 @@
                     "Duelliste Chevronné",
                     "Précision"
                 ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1068,6 +1165,13 @@
                 "cost": 1,
                 "abilities": [
                     "Protecteur de Renly"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -1113,6 +1217,13 @@
                 "cost": 1,
                 "abilities": [
                     "Sacrifices Divins"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             }
         },
@@ -1126,6 +1237,13 @@
                 "cost": 1,
                 "abilities": [
                     "Audace et Bravoure"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             }
         },
@@ -1140,6 +1258,13 @@
                 "abilities": [
                     "Audacieux",
                     "Éclaireur"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             }
         },
@@ -1153,6 +1278,13 @@
                 "cost": 1,
                 "abilities": [
                     "Ordre : Sentinelle"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ]
             }
         },
@@ -1169,6 +1301,13 @@
                     "Affiliation : R'hllor",
                     "Fanatisme Zélé",
                     "Présence Intimidante"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -1216,7 +1355,14 @@
                 "cost": 2,
                 "abilities": [
                     "Ordre : Repositionnement Tactique",
-                    "Might Of The Throne (Cortnay Penrose)"
+                    "Puissance du Trône De Fer"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -1234,8 +1380,8 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Comptabilité ",
-                    "Might Of The Throne (Cortnay Penrose)",
+                    "Comptabilité",
+                    "Puissance du Trône De Fer",
                     "Loyauté : Renly Baratheon"
                 ],
                 "commander": true,
@@ -1290,8 +1436,15 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Conviction Véritable",
+                    "True Conviction (Baratheon)",
                     "Protection de la Couronne"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -1310,7 +1463,14 @@
                 "cost": 2,
                 "abilities": [
                     "Ordre : Plan de Bataille",
-                    "Ordre : Menacer"
+                    "Order: Threaten"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
                 ],
                 "character": true
             },
@@ -1359,6 +1519,13 @@
                     "Vassal de Davos",
                     "Riposte"
                 ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1405,6 +1572,13 @@
                 "abilities": [
                     "Floraison Mortelle"
                 ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1421,7 +1595,17 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Ordre : Provocation"
+                    "Order: Taunt"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    },
+                    {
+                        "text": "*May not be fielded in an army containing the Rainbow Guard unit.*"
+                    }
                 ],
                 "character": true
             },
@@ -1441,6 +1625,13 @@
                 "abilities": [
                     "Battle Scars"
                 ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1459,6 +1650,16 @@
                 "abilities": [
                     "Cri de Ralliement"
                 ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    },
+                    {
+                        "text": "*May not be fielded in an army that includes the Rainbow Guard unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1476,6 +1677,16 @@
                 "cost": 1,
                 "abilities": [
                     "Vengeance de la Couronne"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    },
+                    {
+                        "text": "*May not be fielded in an army that includes the Rainbow Guard unit.*"
+                    }
                 ],
                 "character": true
             },
@@ -1496,6 +1707,16 @@
                     "Charge Furieuse",
                     "Frappes Téméraires"
                 ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    },
+                    {
+                        "text": "*May not be fielded in an army that includes the Rainbow Guard unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1514,6 +1735,16 @@
                 "abilities": [
                     "Riposte",
                     "Audacieux"
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "RENLY BARATHEON",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    },
+                    {
+                        "text": "*May not be fielded in an army that includes the Rainbow Guard unit.*"
+                    }
                 ],
                 "character": true
             },

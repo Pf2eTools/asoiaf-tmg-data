@@ -87,7 +87,7 @@
                     }
                 ],
                 "abilities": [
-                    "Lames de Soudards",
+                    "Marauder’s Blades",
                     "Se Nourrir de la Peur"
                 ]
             },
@@ -129,7 +129,7 @@
                     }
                 ],
                 "abilities": [
-                    "Feu Grégeois",
+                    "Wildfire",
                     "Visage Horrifique"
                 ]
             },
@@ -329,9 +329,8 @@
                 ],
                 "abilities": [
                     "Ordre : Résilience",
-                    "Joffrey's Retinue",
-                    "Riposte",
-                    "Must be attached to 'Joffrey Baratheon, First of His Name'"
+                    "Escorte de Joffrey",
+                    "Riposte"
                 ]
             },
             "fluff": {
@@ -425,7 +424,7 @@
                     }
                 ],
                 "abilities": [
-                    "Ordre : Technique Réactive",
+                    "Order: Adaptive Style",
                     "Fierté Dominatrice"
                 ]
             },
@@ -457,7 +456,7 @@
                     }
                 ],
                 "abilities": [
-                    "Oppression Lannister "
+                    "Lannister Oppression"
                 ]
             },
             "fluff": {
@@ -623,11 +622,9 @@
                 "cost": 5,
                 "abilities": [
                     {
-                        "name": "Puissance du Trône De Fer",
+                        "name": "Might of The Iron Throne",
                         "effect": [
-                            "Tant que Joffrey se trouve sur le Tableau Stratégique, vous êtes considéré comme contrôlant [CROWN].",
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence un ennemi, celui-ci subit +1 Blessure lorsqu’il échoue un Test de Panique."
+                            "While Joffrey is on the Tactics Board, you count as Controlling [CROWN].\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile lnfluencing an enemy, that enemy suffers +1 Wound from failing Panic Tests."
                         ]
                     }
                 ]
@@ -682,6 +679,11 @@
                             "[LETTER] : L’adversaire pioche 1 carte Tactique de moins.",
                             "[HORSE] : L’ennemi se déplace à −1 [MOVEMENT]."
                         ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army containing Varys.*"
                     }
                 ]
             },
@@ -772,7 +774,7 @@
                 "cost": "C",
                 "abilities": [
                     "Ordre : Suprématie des Lannister",
-                    "Ordre : Menacer"
+                    "Order: Threaten"
                 ],
                 "commander": true,
                 "character": true
@@ -828,6 +830,11 @@
                     "Devoir Envers la Couronne",
                     "Vaillance"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -847,6 +854,11 @@
                     "Duelliste Chevronné",
                     "Riposte"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -864,6 +876,11 @@
                 "cost": 1,
                 "abilities": [
                     "Dominance de la Couronne"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    }
                 ],
                 "character": true
             },
@@ -883,6 +900,11 @@
                 "abilities": [
                     "Intimidation de la Couronne"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -900,6 +922,11 @@
                 "cost": 1,
                 "abilities": [
                     "Protection de la Couronne"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    }
                 ],
                 "character": true
             },
@@ -919,6 +946,11 @@
                 "abilities": [
                     "Vengeance de la Couronne"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -935,7 +967,12 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Ordres de la Couronne "
+                    "Ordres de la Couronne"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    }
                 ],
                 "character": true
             },
@@ -1123,7 +1160,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Ordre : Provocation"
+                    "Order: Taunt"
                 ]
             }
         },
@@ -1218,6 +1255,11 @@
                     "Ordre : Résilience",
                     "Fureur Incoercible"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes Gregor Clegane. May only be fielded in an army that includes Qyburn or Tommen Baratheon, Next in Succession.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1262,7 +1304,7 @@
                 "cost": "C",
                 "abilities": [
                     "Ordre : Suprématie des Lannister",
-                    "Might of the Throne (Kevan Lannister)"
+                    "Puissance du Trône De Fer"
                 ],
                 "commander": true,
                 "character": true
@@ -1302,8 +1344,13 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Otage Précieux  ",
+                    "Otage Précieux",
                     "Otage Rancunier"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Before Deployment, attach Jaime to an enemy Infantry unit, ignoring the usual Attachment restrictions.*"
+                    }
                 ],
                 "character": true
             },
@@ -1321,6 +1368,11 @@
                 "cost": 1,
                 "abilities": [
                     "Sabotage et Subversion"
+                ],
+                "requirements": [
+                    {
+                        "text": "*After Deployment, attach this model to an enemy Infantry unit, ignoring the usual Attachment restrictions.*"
+                    }
                 ]
             }
         }

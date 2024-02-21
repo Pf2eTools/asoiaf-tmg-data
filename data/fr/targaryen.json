@@ -65,7 +65,7 @@
                 ],
                 "abilities": [
                     "Cavalerie",
-                    "Arc de Cavalerie"
+                    "Outrider’s Bow"
                 ]
             },
             "fluff": {
@@ -357,7 +357,7 @@
                 "abilities": [
                     "Embuscade",
                     "Frappe Éclair",
-                    "Appât du Gain "
+                    "Appât du Gain"
                 ]
             },
             "fluff": {
@@ -398,7 +398,7 @@
                     }
                 ],
                 "abilities": [
-                    "Mercenary's Longbow",
+                    "Arc Long de Mercenaire",
                     "Loyauté Intéressée"
                 ]
             },
@@ -430,8 +430,7 @@
                     }
                 ],
                 "abilities": [
-                    "Appât du Gain ",
-                    "Réactivité"
+                    "Appât du Gain"
                 ]
             },
             "fluff": {
@@ -493,8 +492,7 @@
                 "abilities": [
                     "Ordre : Cri de Guerre",
                     "Drogo's Bloodriders",
-                    "Bloodriders' Arakh",
-                    "Must be attached to 'Khal Drogo'"
+                    "Bloodriders' Arakh"
                 ]
             },
             "fluff": {
@@ -526,7 +524,7 @@
                 ],
                 "abilities": [
                     "Ordre : Sentinelle",
-                    "Armement Disparate"
+                    "Motley Armaments"
                 ]
             },
             "fluff": {
@@ -699,6 +697,11 @@
                             "Chaque fois que Daenerys s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
                             "*1 unité **Drogon**, **Rhaegal** ou **Viserion** alliée effectue 1 action d’Attaque.*"
                         ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "text": "*Reduce the cost of 1 **Drogon**, **Rhaegal**, or **Viserion** unit in your army by 1.*"
                     }
                 ]
             },
@@ -892,6 +895,11 @@
                 "cost": 1,
                 "abilities": [
                     "Ordre : Entraînement Martial"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May only be Attached to Targaryen units.*"
+                    }
                 ]
             }
         },
@@ -905,6 +913,11 @@
                 "cost": 1,
                 "abilities": [
                     "Déstabilisation"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May only be Attached to Targaryen units.*"
+                    }
                 ]
             }
         },
@@ -981,8 +994,12 @@
                 "type": "infantry",
                 "cost": 0,
                 "abilities": [
-                    "Quoi Qu’il Advienne",
-                    "Must be attached to 'Daenerys Targaryen'"
+                    "Whatever May Come"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Jorah may only be attached to a unit containing Daenerys Targaryen. He ignores the usual attachment limits.*"
+                    }
                 ],
                 "character": true
             },
@@ -1019,7 +1036,7 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Ordre : Provocation",
+                    "Order: Taunt",
                     "Endurci"
                 ],
                 "commander": true,
@@ -1130,7 +1147,7 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Ordre : Menacer",
+                    "Order: Threaten",
                     "Présence Intimidante",
                     "La Reine Légitime"
                 ],
@@ -1182,7 +1199,7 @@
                 "abilities": [
                     "Affiliation : Corbeaux Tornade",
                     "Armement Amélioré",
-                    "Appât du Gain "
+                    "Appât du Gain"
                 ],
                 "commander": true,
                 "character": true
@@ -1249,6 +1266,11 @@
                     "Présence Intimidante",
                     "Se Nourrir de la Peur"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1267,6 +1289,11 @@
                 "abilities": [
                     "Sang Coureur",
                     "Battle Scars"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                    }
                 ],
                 "character": true
             },
@@ -1287,6 +1314,11 @@
                     "Sang Coureur",
                     "Soif de Massacre"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1304,6 +1336,11 @@
                 "cost": 1,
                 "abilities": [
                     "Guérison de la Maegi"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Mirri ignores the usual Attachment limits.*"
+                    }
                 ],
                 "character": true
             },
@@ -1390,7 +1427,7 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Conviction Inébranlable",
+                    "Unfaltering Conviction",
                     "Audacieux"
                 ],
                 "commander": true,

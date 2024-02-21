@@ -73,6 +73,14 @@
             "wounds"
         ]
     },
+    "AFFILIATION :COMPAGNIE DORÉE": {
+        "effect": [
+            "Cette unité compte comme une unité de la Compagnie Dorée."
+        ],
+        "icons": [
+            "wounds"
+        ]
+    },
     "AFFILIATION : MAISON BOLTON": {
         "effect": [
             "Cette unité compte comme une unité de la Maison Bolton."
@@ -158,15 +166,6 @@
             "melee"
         ]
     },
-    "VOLÉE DE FLÈCHES": {
-        "effect": [
-            "• Cette attaque ignore les unités et les Terrains pour déterminer sa Ligne de Vue.",
-            "• Les Défenseurs qui échouent leur Test de Panique perdent toutes leurs Capacités Ordre jusqu’à la fin du round et deviennent **Affaiblis**."
-        ],
-        "icons": [
-            "ranged"
-        ]
-    },
     "VENGER LE NORD": {
         "effect": [
             "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
@@ -182,6 +181,14 @@
             "Une fois par partie, au début de n’importe quel tour, vous pouvez soigner un total de 5 Blessures réparties sur le nombre d’Unités Combattantes alliées de votre choix."
         ]
     },
+    "BARDICHE": {
+        "effect": [
+            "• **Cruel**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
     "PRIÈRE DE BATAILLE": {
         "effect": [
             "Cette unité commence la partie avec 1 **pion Foi**. Chaque fois qu’elle réussit un Test de Moral, elle gagne 1 pion Foi. Elle peut dépenser 1 pion Foi dans les situations suivantes :",
@@ -194,7 +201,7 @@
             "faith"
         ]
     },
-    "CICATRICES DE COMBAT ": {
+    "CICATRICES DE COMBAT": {
         "effect": [
             "Après que cette unité a été attaquée, placez 1 pion Ordre sur cette carte. Les Attaques de Mêlée de cette unité gagnent les effets suivants en fonction du nombre de pions Ordre *(cumulatif)* :",
             "• **1+ : Cruel**",
@@ -262,19 +269,6 @@
             "melee"
         ]
     },
-    "BALISTE": {
-        "effect": [
-            "• **Cruel**",
-            "• Mesurez la Portée et la Ligne de Vue depuis n’importe quelle partie du plateau de cette unité.",
-            "• Peut subir -3 pour Toucher afin d’ignorer la Ligne de Vue et de gagner **Portée Illimitée**.",
-            "• Les défenseurs ne lancent pas de dés de Défense.",
-            "• Pour chaque Touche non bloquée, les unités de Cavalerie, Monstrueuses et les Machines de Guerre subissent 2 Blessures."
-        ],
-        "icons": [
-            "ranged",
-            "wounds"
-        ]
-    },
     "OURS LIÉ": {
         "effect": [
             "• Cette unité possède 1 Blessure et ne peut pas faire gagner de Points de Victoire.",
@@ -312,7 +306,7 @@
             "round. Pour l’indiquer, placez la figurine à côté du plateau de l’unité. Cette figurine n’est affectée par aucun autre effet de jeu."
         ]
     },
-    "COMPTABILITÉ ": {
+    "COMPTABILITÉ": {
         "effect": [
             "Tant que Samwell Tarly se trouve sur le champ de bataille, votre limite de cartes Tactique est augmentée de 1. Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main."
         ]
@@ -845,11 +839,6 @@
             "Quand Erik s’empare d’une zone, vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité alliée disposant de la capacité Pillage."
         ]
     },
-    "CADEAUX D'ARGENT ET DE BRONZE": {
-        "effect": [
-            "Au début de la partie, ciblez 1 unité alliée qui possède Pillage. Elle gagne 1 pion Pillage."
-        ]
-    },
     "TOMBER AU COMBAT": {
         "effect": [
             "Chaque fois qu’un rang de cette unité est détruit, 1 ennemi engagé avec elle subit 1 Blessure."
@@ -869,14 +858,6 @@
         "effect": [
             "• **Fracasser**",
             "• Une fois cette attaque résolue, si le défenseur a subi des Blessures, cette unité soigne 1 de ses Blessures."
-        ],
-        "icons": [
-            "melee"
-        ]
-    },
-    "GRANDE HACHE": {
-        "effect": [
-            "• **Fracasser**"
         ],
         "icons": [
             "melee"
@@ -1149,9 +1130,12 @@
     "ESCORTE DE JOFFREY": {
         "effect": [
             "Cette unité comprend 8 figurines *(Joffrey compris)*, possède 8 Blessures et 2 Rangs."
+        ],
+        "icons": [
+            "wounds"
         ]
     },
-    "VERVUE DE JOJEN ": {
+    "VERVUE DE JOJEN": {
         "effect": [
             "Chaque fois que cette unité effectue une action d’Attaque ou de Charge, avant de résoudre celle-ci, elle gagne 1 des options suivantes :",
             "• Peut relancer n’importe quels dés d’Attaque.",
@@ -1216,17 +1200,6 @@
     "JUSTICE DES LANNISTER": {
         "effect": [
             "Tant que vous contrôlez [CROWN], chaque fois que cette unité effectue une action, 1 ennemi situé à Longue Portée ou moins subit 1 Test de Panique avec -1 au lancer pour chaque rang restant dans cette unité."
-        ]
-    },
-    "OPPRESSION LANNISTER ": {
-        "effect": [
-            "Avant de lancer les dés d’Attaque, vous pouvez dépenser des pions État du défenseur pour gagner les effets suivants :",
-            "• **Paniqué :** Jusqu’à la fin du tour, le défenseur perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées.",
-            "• **Vulnérable :** Cette attaque peut relancer n’importe quels dés d’Attaque. Après avoir résolu cette attaque, cette unité soigne 2 de ses Blessures pour chaque rang détruit du défenseur par cette attaque.",
-            "• **Affaibli :** Cette attaque lance sa valeur de dés d’Attaque la plus élevée et gagne **Fracasser**."
-        ],
-        "icons": [
-            "melee"
         ]
     },
     "OISILLONS": {
@@ -1340,15 +1313,6 @@
             "melee"
         ]
     },
-    "LAMES DE SOUDARDS": {
-        "effect": [
-            "• **Frappe Critique**",
-            "• Gagne +1 pour Toucher et **Cruel** en attaquant un ennemi qui possède autant ou moins de rangs restants."
-        ],
-        "icons": [
-            "melee"
-        ]
-    },
     "MARÉCHAL": {
         "effect": [
             "• Cette unité possède 3 Blessures.",
@@ -1389,6 +1353,9 @@
             "• Tant que vous contrôlez [MONEY], gagne **Fracasser**.",
             "• Tant que vous contrôlez [LETTER], avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**.",
             "• Tant que vous contrôlez [SWORDS], peut relancer n’importe quels dés d’Attaque."
+        ],
+        "icons": [
+            "ranged"
         ]
     },
     "L'EMPREINTE DU SEIGNEUR MARCHAND": {
@@ -1402,15 +1369,9 @@
     },
     "PUISSANCE DU TRÔNE DE FER": {
         "effect": [
-            "Tant que Joffrey se trouve sur le Tableau Stratégique, vous êtes considéré comme contrôlant [CROWN].",
+            "Tant que Kevan Lannister se trouve sur le Tableau Stratégique, vous êtes considéré comme contrôlant [CROWN].",
             "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
             "Tant que cette carte Influence un ennemi, celui-ci subit +1 Blessure lorsqu’il échoue un Test de Panique."
-        ]
-    },
-    "PUISSANCE DU TRÔNE": {
-        "effect": [
-            "Chaque fois qu’une UNC alliée s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par :",
-            "*L’unité de Kevan Lannister effectue une actiond’Attaque ou de Charge.*"
         ]
     },
     "PRÉSAGES INCOMPRIS": {
@@ -1430,29 +1391,16 @@
     },
     "APPÂT DU GAIN": {
         "effect": [
-            "Chaque fois qu’une UNC alliée s’empare de , vous pouvez remplacer l’effet de cette zone par :",
-            "*1 unité de [NAME] effectue 1 action d’Attaque.*"
-        ]
-    },
-    "APPÂT DU GAIN ": {
-        "effect": [
             "Chaque fois qu’une UNC alliée s’empare de [MONEY], vous pouvez remplacer l’effet de cette zone par :",
             "*1 unité de Mercenaires Corbeaux Tornade effectue 1 action d’Attaque.*"
-        ]
-    },
-    "ARMEMENT DISPARATE": {
-        "effect": [
-            "En attaquant de Flanc, choisissez 1 option. En attaquant de Dos, gagnez les deux :",
-            "• +1 dé d’Attaque et **Frappe Critique**.",
-            "• Le défenseur perd toutes ses Capacités ce tour-ci."
-        ],
-        "icons": [
-            "melee"
         ]
     },
     "LAME DE PITRE": {
         "effect": [
             "En attaquant un ennemi qui n’a pas été activé ce round-ci, avant de lancer les dés d’Attaque, cet ennemi devient **Affaibli**."
+        ],
+        "icons": [
+            "melee"
         ]
     },
     "SACRIFICES NÉCESSAIRES": {
@@ -1469,11 +1417,9 @@
             "• Tant que cette carte Influence une unité ennemie, elle ne peut pas être la cible d’Ordres alliés."
         ]
     },
-    "NE JAMAIS FAIRE LE GESTE ESCOMPTÉ ": {
+    "NE JAMAIS FAIRE LE GESTE ESCOMPTÉ": {
         "effect": [
-            "Arya commence la partie avec 3 pions Ordre.",
-            "Au début d’un tour ennemi, vous pouvez retirer 1 pion Ordre de cette carte.",
-            "Si vous le faites, ciblez 1 unité d’Infanterie alliée. Elle effectue 1 action de Manoeuvre ou de Repli."
+            "Arya commence la partie avec 3 pions Ordre.Au début d’un tour ennemi, vous pouvez retirer 1 pion Ordre de cette carte.Si vous le faites, ciblez 1 unité d’Infanterie alliée. Elle effectue 1 action de Manoeuvre ou de Repli."
         ]
     },
     "COLÈRE NOBLE": {
@@ -1495,15 +1441,6 @@
         "trigger": "Au début de n’importe quel tour :",
         "effect": [
             "Ciblez 1 Unité Combattante située à Longue Portée ou moins.\nRemplacez 1 pion État sur cette unité par 1 autre pion État de votre choix."
-        ],
-        "icons": [
-            "order"
-        ]
-    },
-    "ORDRE : TECHNIQUE RÉACTIVE": {
-        "trigger": "Quand cette unité attaque ou est attaquée, avant de lancer les dés d’Attaque :",
-        "effect": [
-            "Choisissez 1 option :\n• Cette unité gagne +1 à ses lancers de dés Défense.\n• Cette attaque inflige +1 Touche pour chaque rang restant dans cette unité."
         ],
         "icons": [
             "order"
@@ -1537,12 +1474,12 @@
         ]
     },
     "ORDRE : BÉNÉDICTION DU DIEU NOYÉ": {
+        "trigger": "Au début de n’importe quel Tour :",
         "effect": [
-            "**Au début de n’importe quel Tour :**",
-            "Ciblez 1 unité d’Infanterie Greyjoy alliée située à Courte Portée ou moins et choisissez 1 option :",
-            "• Cette unité soigne 2 de ses Blessures.",
-            "• Cette unité peut relancer n’importe quels dés d’Attaque ce tour-ci.",
-            "• Les ennemis qui attaquent cette unité ce tour-ci deviennent **Vulnérable**."
+            "Ciblez 1 unité d’Infanterie Greyjoy alliée située à Courte Portée ou moins et choisissez 1 option :\n• Cette unité soigne 2 de ses Blessures.\n• Cette unité peut relancer n’importe quels dés d’Attaque ce tour-ci.\n• Les ennemis qui attaquent cette unité ce tour-ci deviennent **Vulnérable**."
+        ],
+        "icons": [
+            "order"
         ]
     },
     "ORDRE : EXEMPLE MACABRE": {
@@ -1779,7 +1716,7 @@
             "order"
         ]
     },
-    "ORDRE : FUREUR DES STARK ": {
+    "ORDRE : FUREUR DES STARK": {
         "trigger": "Quand cette unité effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
         "effect": [
             "Cette Attaque gagne **Frappe Critique** et **Fracasser**. Après avoir résolu cette attaque, cette unité subit 2 Blessures, −1 pour chacun de ses rangs détruits."
@@ -1842,15 +1779,6 @@
             "order"
         ]
     },
-    "ORDRE : PROVOCATION": {
-        "trigger": "Quand un ennemi situé à Courte Portée ou moins est activé :",
-        "effect": [
-            "Si cet ennemi peut Charger cette unité, il effectue 1 Test de Moral avec −1 au lancer pour chaque rang restant dans cette unité. S’il échoue, il effectue 1 action de Charge sur cette unité *(cela compte comme son action du tour)*."
-        ],
-        "icons": [
-            "order"
-        ]
-    },
     "ORDRE : SUPRÉMATIE DES THENNS": {
         "trigger": "Après qu’un ennemi a résolu une attaque sur cette unité :",
         "effect": [
@@ -1860,34 +1788,10 @@
             "order"
         ]
     },
-    "ORDRE : MENACER": {
-        "trigger": "Quand cette unité est activée :",
-        "effect": [
-            "Ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Affaibli**."
-        ],
-        "icons": [
-            "order"
-        ]
-    },
     "ORDRE : JUSQU’AU DERNIER !": {
         "trigger": "Quand cette unité doit être détruite :",
         "effect": [
             "Cette unité effectue 1 Test de Moral.\nSi elle réussit, elle n’est pas détruite et reste en jeu avec 1 Blessure, puis devient **Paniquée** et **Vulnérable**."
-        ],
-        "icons": [
-            "order"
-        ]
-    },
-    "ORDRE : OUTILS DE TRAPPEUR": {
-        "effect": [
-            "**Au début de n’importe quel tour :**",
-            "Ciblez 1 ennemi engagé avec cette unité. Pour chaque pion Pillage sur cette unité, cet ennemi devient **Vulnérable** ou **Paniqué**."
-        ]
-    },
-    "ORDRE : COLLECTE DE TROPHÉES": {
-        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si elle a détruit un rang ennemi :",
-        "effect": [
-            "Dans votre paquet ou défausse Tactique, cherchez une carte de Général Clinquefrac et jouez-la. Mélangez votre paquet Tactique."
         ],
         "icons": [
             "order"
@@ -1914,26 +1818,12 @@
     "ORDRES DE LA COURONNE": {
         "effect": [
             "Chaque fois qu’une UNC alliée s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par :",
-            "*L’unité de Joffrey Baratheon effectue une action de Manoeuvre ou de Marche.*"
-        ]
-    },
-    "ORDRES DE LA COURONNE ": {
-        "effect": [
-            "Chaque fois qu’une UNC alliée s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par :",
             "*L’unité de Preston Verschamps effectue une action de Manoeuvre ou de Marche.*"
         ]
     },
     "ATTAQUE DE FLANC": {
         "effect": [
             "Vous pouvez laisser cette unité hors de la table *(en Réserve)* au lieu de la déployer. Au début de n’importe quel round, si vous n’êtes pas le premier joueur, vous pouvez déployer 1 unité en Réserve, non activée, entièrement à Courte Portée ou moins d’un bord de table allié ou d’un flanc de table."
-        ]
-    },
-    "ARC DE CAVALERIE": {
-        "effect": [
-            "Si cette unité n’a pas effectué la Manoeuvre octroyée par la Capacité Cavalerie ce tour-ci, cette attaque gagne +1 pour Toucher et devient [LONGRANGE],"
-        ],
-        "icons": [
-            "ranged"
         ]
     },
     "ÉCLAIREUR": {
@@ -1950,19 +1840,7 @@
             "melee"
         ]
     },
-    "PILLAGE": {
-        "effect": [
-            "Après avoir résolu une Attaque de Mêlée, cette unité gagne 1 **pion Pillage** par rang ennemi détruit lors de l’Attaque. Cette unité ne peut jamais avoir plus de 2 pions Pillage."
-        ]
-    },
-    "LAMES DE PIRATE": {
-        "effect": [
-            "• **Précision**",
-            "• Lance +1 dé d’Attaque pour chaque pion Pillage sur cette unité.",
-            "• Si cette unité possède 2 pions Pillage, elle lance toujours sa valeur de dés d’Attaque la plus élevée."
-        ]
-    },
-    "JOUER LE JEU ": {
+    "JOUER LE JEU": {
         "effect": [
             "Cersei commence la partie avec 2 pions Ordre.",
             "Quand Cersei s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
@@ -2064,11 +1942,6 @@
             "*Remettez en jeu 1 Attachement déjà détruit et attachez-le à une Unité Combattante alliée, en remplaçant normalement une figurine, mais en ignorant les restrictions d’Attachement.*"
         ]
     },
-    "ÉQUIPEMENT DE PILLARD": {
-        "effect": [
-            "Pour chaque pion Pillage sur cette unité, elle gagne +1 à ses lancers de dés de Défense."
-        ]
-    },
     "CRI DE RALLIEMENT": {
         "effect": [
             "Chaque fois que cette unité effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, ciblez 1 autre unité alliée située à Longue Portée ou moins. Elle soigne 2 de ses Blessures."
@@ -2093,7 +1966,7 @@
             "wounds"
         ]
     },
-    "PATROUILLEUR EXPERT ": {
+    "PATROUILLEUR EXPERT": {
         "effect": [
             "Benjen ne peut être attaché qu'à des unités de Patrouilleurs."
         ],
@@ -2109,14 +1982,6 @@
             "• 1 Unité Combattante alliée se décale de 3’’.",
             "Quand Wendamyr s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
             "*Placez 1 pion Ordre sur Wendamyr.*"
-        ]
-    },
-    "FERVEUR DU FAUCHEUR": {
-        "effect": [
-            "• **Cruel**",
-            "• Quand un ennemi échoue un Test de Panique provoqué par cette attaque, choisissez 1 option. Pour chaque pion Pillage sur cette unité, choisissez-en une de plus. Le même effet peut être choisi plusieurs fois :",
-            "• Cet ennemi subit +1 Blessure.",
-            "• Cette unité se soigne de 1 Blessure."
         ]
     },
     "HACHES DE RAVAGEURS": {
@@ -2175,6 +2040,9 @@
     "ESCORTE DE RENLY": {
         "effect": [
             "Cette unité comprend 8 figurines *(Renly compris)*, possède 8 Blessures et 2 Rangs."
+        ],
+        "icons": [
+            "wounds"
         ]
     },
     "RÉPÉTANT LES MOTS": {
@@ -2213,17 +2081,6 @@
             "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
             "Tant que cette carte Influence une unité, chaque fois que celle-ci effectue une action, elle se soigne de 1 Blessure avant de résoudre son action.",
             "Quand cette unité détruit un ennemi lors d’une Attaque de Mêlée, elle se soigne de 1 Blessure pour chacun de ses rangs détruits."
-        ]
-    },
-    "TIR DE ROCHER": {
-        "effect": [
-            "• Ne peut pas attaquer des unités Individuelles.",
-            "• Peut attaquer des ennemis sans restriction de Portée et de Ligne de Vue.",
-            "• Si l’attaque génère des Touches, au lieu de lancer les dés de Défense, le défenseur subit 1 Blessure, +1 pour chacun de ses rangs restants."
-        ],
-        "icons": [
-            "ranged",
-            "wounds"
         ]
     },
     "VASSAL DE ROOSE": {
@@ -2295,7 +2152,7 @@
             "Une fois par partie, au début d’un tour  allié, vous pouvez activer Gilly. N’activez  pas d’autres unités ce tour-ci."
         ]
     },
-    "MUTILATION SAUVAGE ": {
+    "MUTILATION SAUVAGE": {
         "effect": [
             "Les défenseurs ne lancent pas de dés de Défense."
         ],
@@ -2637,11 +2494,7 @@
     },
     "CONVICTION VÉRITABLE": {
         "effect": [
-            "Si cette unité est une unité Martell, chaque fois qu’elle attaque un ennemi qui possède plus de rangs restants, elle peut relancer n’importe quels dés d’Attaque."
-        ],
-        "icons": [
-            "ranged",
-            "melee"
+            "Si cette unité est une unité Baratheon, chaque fois qu’elle attaque un ennemi qui possède plus de rangs restants, elle peut relancer n’importe quels dés d’Attaque."
         ]
     },
     "JUSTICE IMPLACABLE": {
@@ -2657,16 +2510,6 @@
     "RAGE INCONTRÔLABLE": {
         "effect": [
             "Chaque fois que cette unité est activée, si elle peut Charger un ennemi, elle effectue 1 Test de Moral. Si elle échoue, elle effectue 1 action de Charge sur l’ennemi légal le plus proche et compte comme ayant obtenu 6 sur tous ses dés de Distance de Charge."
-        ]
-    },
-    "CONVICTION INÉBRANLABLE": {
-        "effect": [
-            "Chaque fois qu'une Unité Combattante alliée est détruite, placez 1 pion Ordre sur cete carte. L'unité de Marselen gagne les effets suivant en fonction du nombre de pions (cumulatif) :",
-            "• 2+ : Les attaques de cette unité gagnent +1 pour Toucher.",
-            "• 3+ : Cette unité gagne +1 à ses lancers de dés de Défense."
-        ],
-        "icons": [
-            "wounds"
         ]
     },
     "POLITIQUE INÉBRANLABLE": {
@@ -2708,7 +2551,7 @@
             "Quand elle échoue un Test de Panique, cette unité subit −1 Blessure pour chacun de ses rangs détruits."
         ]
     },
-    "OTAGE PRÉCIEUX  ": {
+    "OTAGE PRÉCIEUX": {
         "effect": [
             "Cette unité gagne +1 à ses lancers de Test de Moral.",
             "Quand Rickon est détruit, votre adversaire gagne 1 Point de Victoire."
@@ -2793,7 +2636,7 @@
             "melee"
         ]
     },
-    "ÉLÉPHANT DE GUERRE ": {
+    "ÉLÉPHANT DE GUERRE": {
         "effect": [
             "• Cette unité possède 8 Blessures et ne peut pas contrôler d’Objectif.",
             "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique.",
@@ -2861,25 +2704,6 @@
             "[MONEY] : Après avoir lancé les dés de Défense, cette unité bloque +1 Touche.",
             "[LETTER] : Les attaques de cette unité gagnent +1 dé d’Attaque.",
             "[UNDYING] : Les attaques de cette unité subissent −1 dé d’Attaque."
-        ]
-    },
-    "QUOI QU’IL ADVIENNE": {
-        "effect": [
-            "Chaque fois qu’un ennemi effectue une Attaque de Mêlée sur cette unité, après avoir lancé les dés d’Attaque, vous pouvez détruire Jorah. Si vous le faites, cet ennemi devient **Vulnérable** et **Affaibli**."
-        ],
-        "icons": [
-            "wounds"
-        ]
-    },
-    "FEU GRÉGEOIS": {
-        "effect": [
-            "• **Cruel**",
-            "• Les défenseurs ne lancent pas de dés de Défense.",
-            "• Après avoir résolu cette attaque, cette unité subit 1 Blessure pour chaque résultat de 1 sur les dés d’Attaque."
-        ],
-        "icons": [
-            "ranged",
-            "melee"
         ]
     },
     "MORSURE DE L’HIVER": {

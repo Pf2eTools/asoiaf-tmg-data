@@ -159,7 +159,7 @@
                     }
                 ],
                 "abilities": [
-                    "Volée de flèches"
+                    "Arrow Volley"
                 ]
             },
             "fluff": {
@@ -358,8 +358,7 @@
                 ],
                 "abilities": [
                     "Morsure de l’Hiver",
-                    "Tomber au Combat",
-                    "Must be attached to 'Eddard Stark, Lord of Winterfell'"
+                    "Tomber au Combat"
                 ]
             },
             "fluff": {
@@ -664,11 +663,9 @@
                 "cost": 4,
                 "abilities": [
                     {
-                        "name": "Ne Jamais Faire le Geste Escompté",
+                        "name": "Never Do What They Expect",
                         "effect": [
-                            "Arya commence la partie avec 3 pions Ordre.",
-                            "Au début d’un tour ennemi, vous pouvez retirer 1 pion Ordre de cette carte.",
-                            "Si vous le faites, ciblez 1 unité d’Infanterie alliée. Elle effectue 1 action de Manoeuvre ou de Repli."
+                            "Arya begins the game with 2 Order tokens on her. At the start of an enemy Turn, you may remove 1 Order token from Arya. If you do, target 1 friendly lnfantry unit. lt performs 1 Maneuver or Retreat Action."
                         ]
                     }
                 ]
@@ -768,6 +765,11 @@
                             "Après le déploiement, ciblez une Unité Combattante alliée. Placez-la hors de la table *(en réserve)*. Une fois par partie, quand Robb s’empare de [HORSE], vous pouvez remplacer l’effet de cette zone par :",
                             "*Déployez l’unité que Robb a placé en Réserve entièrement à Courte Portée ou moins d’un flanc de table et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les ennemis Chargés avec succès de Flanc ou de Dos par cette unité deviennent **Paniqués** et **Vulnérables**.*"
                         ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "text": "*Your army may not contain Eddard Stark.*"
                     }
                 ]
             },
@@ -1126,7 +1128,7 @@
                 "cost": 2,
                 "abilities": [
                     "Affiliation : Paludiers",
-                    "Vervue de Jojen "
+                    "Vervue de Jojen"
                 ],
                 "character": true
             },
@@ -1147,6 +1149,11 @@
                     "Précision",
                     "Agile"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May only be fielded in an army including Eddard Stark or Arya Stark, The Wolf Girl.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1163,7 +1170,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Otage Précieux  "
+                    "Otage Précieux"
                 ],
                 "character": true
             },
@@ -1182,8 +1189,12 @@
                 "cost": 0,
                 "abilities": [
                     "Riposte",
-                    "Ténacité Acharnée",
-                    "Must be attached to 'Rickon Stark'"
+                    "Ténacité Acharnée"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May only be fielded in an army that includes Rickon Stark, and must be attached to his unit, ignoring the usual Attachment limits.*"
+                    }
                 ],
                 "character": true
             },
@@ -1284,7 +1295,7 @@
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Ordre : Fureur des Stark ",
+                    "Ordre : Fureur des Stark",
                     "Rage Incontrôlable"
                 ],
                 "character": true
@@ -1358,8 +1369,12 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Un Homme Libéré, un Nom Dû",
-                    "May only be fielded in an army including 'Arya Stark'"
+                    "Un Homme Libéré, un Nom Dû"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May only be fielded in an army that includes Arya Stark. Before Deployment, attach Jaqen to an enemy lnfantry unit, ignoring the usual Attachment limits.*"
+                    }
                 ],
                 "character": true
             },

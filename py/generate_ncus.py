@@ -144,11 +144,13 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
 
     bars = Image.new("RGBA", (w, h))
     bars_lower = Image.new("RGBA", (w, h))
+    bars_upper = Image.new("RGBA", (w, h))
     large_bar, small_bar, corner_bar = asset_manager.get_bars(faction)
     unit_type = asset_manager.get_unit_type("NCU", faction)
     decor = asset_manager.get_decor(faction)
     wb_w, wb_h = corner_bar.size
     lb_w, lb_h = large_bar.size
+    sb_w, sb_h = small_bar.size
     bars_lower.alpha_composite(large_bar.crop((220, lb_h // 4, 780, 3 * lb_h // 4)), (140, 292))
     bars_lower.alpha_composite(large_bar.rotate(270, expand=1).crop((0, lb_w - 960, lb_h, lb_w - 20)), (56, 55))
     # TODO: Ughh...
@@ -163,18 +165,42 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
     bars.alpha_composite(small_bar.rotate(90, expand=1).crop((0, 0, 100, 940)), (687, 55))
     bars.alpha_composite(apply_drop_shadow(unit_type), (26, 31))
     bars.alpha_composite(small_bar.crop((0, 0, 650, 100)), (50, 984))
-    bars.alpha_composite(apply_drop_shadow(small_bar.crop((0, 0, 650, 100))), (30, 26))
-    bars.alpha_composite(decor, (33, 33))
+    # bars.alpha_composite(apply_drop_shadow(small_bar.crop((0, 0, 650, 100))), (30, 26))
+    bars_upper.alpha_composite(small_bar.crop((0, 0, 650, 100)), (50, 46))
+    bars_upper.alpha_composite(decor, (33, 33))
     bars.alpha_composite(decor, (33, 971))
     bars.alpha_composite(decor, (33, 273))
     bars.alpha_composite(decor, (118, 273))
     bars.alpha_composite(decor, (674, 273))
     bars.alpha_composite(decor, (674, 316))
     bars.alpha_composite(decor, (118, 971))
-    bars.alpha_composite(decor, (674, 33))
+    bars_upper.alpha_composite(decor, (674, 33))
     bars.alpha_composite(decor, (674, 971))
 
     layer_crests = Image.new("RGBA", (w, h))
+    layer_text = Image.new("RGBA", (w, h))
+
+    # TODO: not implemented: more than 1 requirement (as of now there are no ncus with more than 1)
+    requirements = ncu_data.get("requirements")
+    if requirements is not None:
+        requirement_y = 812
+        text_bg = asset_manager.get_text_bg().crop((0, 0, portrait.width, 180))
+        ncu_card.paste(text_bg, (135, requirement_y))
+        bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, requirement_y - sb_h // 2))
+        bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, requirement_y - decor.height // 2))
+        bars.alpha_composite(decor, (674, requirement_y - decor.height // 2))
+        requirements_to_render = get_requirement_data_for_renderer(requirements)
+        renderer_requirements = TextRenderer(requirements_to_render, "Tuff", (520, 164), asset_manager, font_size=30,
+                                             font_color="#5d4d40", stroke_width=0.2, align_y=TextRenderer.CENTER_SECTION,
+                                             padding=(10, 10, 10, 10))
+        rd_requirements = renderer_requirements.render()
+        layer_text.alpha_composite(rd_requirements, (155, requirement_y + sb_h // 2))
+
+        if requirements[0].get("name") is not None:
+            box_name = render_small_box(asset_manager, faction, requirements[0].get("name").upper(), get_faction_text_color(faction))
+            box_name = apply_drop_shadow(box_name)
+            layer_crests.alpha_composite(box_name, (415 - box_name.width // 2, requirement_y - box_name.height // 2))
+
     box_character = render_character_box(asset_manager, faction)
     layer_crests.alpha_composite(apply_drop_shadow(box_character), (234, 266))
     rendered_cost = render_cost(asset_manager, ncu_data.get("cost", 0), get_faction_highlight_color(faction), ncu_data.get("commander"))
@@ -187,7 +213,6 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
     crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 390 - crest.size[1] // 2
     layer_crests.alpha_composite(apply_drop_shadow(crest), (crest_resize_x, crest_resize_y))
 
-    layer_text = Image.new("RGBA", (w, h))
     renderer_name = TextRenderer(name.upper(), "Tuff", (520, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
                                  stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
     rd_name = renderer_name.render()
@@ -206,6 +231,7 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
 
     ncu_card.alpha_composite(apply_drop_shadow(bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
     ncu_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
+    ncu_card.alpha_composite(apply_drop_shadow(bars_upper), (-20, -20))
     ncu_card.alpha_composite(layer_crests)
     ncu_card.alpha_composite(layer_text)
     return ncu_card
@@ -213,16 +239,44 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
 
 def main():
     from asset_manager import AssetManager
-    data = {
-        "faction": "greyjoy",
-        "cost": 4
+    cressen = {
+        "id": "30613",
+        "name": "Cressen",
+        "subname": "Maester at Dragonstone",
+        "statistics": {
+            "version": "2021",
+            "faction": "baratheon",
+            "cost": 5,
+            "abilities": [
+                {
+                    "name": "Sacrifice for the King",
+                    "effect": [
+                        "At the start of any Round, you may Activate Cressen. If you do, destroy Cressen at the end of the Round."
+                    ]
+                },
+                {
+                    "name": "Loving Counsel",
+                    "effect": [
+                        "Each time Cressen Claims [CROWN], you may replace that zone's effect with:\n*Draw 2 Tactics cards and place any 1 Condition Token on an enemy Combat Unit.*"
+                    ]
+                }
+            ],
+            "requirements": [
+                {
+                    "name": "Loyalty",
+                    "heading": "STANNIS BARATHEON",
+                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"I had a maester on Dragonstone who was\nalmost a father to me.\"- Stannis Baratheon"
+        },
     }
-    fluff = {
-        "quote": "\"What is dead may never die, but rises again, harder and stronger.\""
-    }
-    back = generate_ncu_back(AssetManager(), "30802", "Aeron Greyjoy", "The Damphair", data, fluff)
-    org = Image.open(r"").convert("RGBA")
-    editor = ImageEditor(back, org)
+    data = cressen
+    back = generate_ncu_back(AssetManager(), data["id"], data["name"], data["subname"], data["statistics"], data["fluff"])
+    # org = Image.open(r"").convert("RGBA")
+    editor = ImageEditor(back, back)
 
 
 if __name__ == "__main__":

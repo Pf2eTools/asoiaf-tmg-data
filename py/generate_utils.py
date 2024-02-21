@@ -250,14 +250,44 @@ def get_ability_data_for_renderer(abilities_data, color):
     return abilities_to_render
 
 
+def get_requirement_data_for_renderer(requirements):
+    to_render = []
+    for req in requirements:
+        data = {
+            "type": "section",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [c for c in [
+                        {
+                            "type": "text",
+                            "style": {
+                                "tracking": 40,
+                            },
+                            "content": f"**{req.get('heading')}**"
+                        } if req.get("heading") is not None else None,
+                        {"type": "text", "content": req.get("text")},
+                    ] if c is not None]
+                }
+            ]
+        }
+        to_render.append(data)
+    return to_render
+
+
 def render_character_box(asset_manager, faction):
-    box_character = asset_manager.get_character_box(faction)
-    renderer_character = TextRenderer("CHARACTER", "Tuff", (200, 35), asset_manager, bold=True, stroke_width=0.1, font_size=38,
-                                      font_color="#5d4d40", tracking=50, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER,
+    return render_small_box(asset_manager, faction, "CHARACTER")
+
+
+def render_small_box(asset_manager, faction, text, font_color="#5d4d40"):
+    # TODO (MAYBE): Shrink (or crop out the center of) the box when the text is short?
+    box = asset_manager.get_character_box(faction)
+    renderer_character = TextRenderer(text, "Tuff", (200, 35), asset_manager, bold=True, stroke_width=0.1, font_size=38,
+                                      font_color=font_color, tracking=50, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER,
                                       overflow_policy_x=TextRenderer.OVERFLOW_CLIP)
     rendered_character_text = renderer_character.render()
-    box_character.alpha_composite(rendered_character_text, (66, 13))
-    return box_character
+    box.alpha_composite(rendered_character_text, (box.width // 2 - 100, 13))
+    return box
 
 
 CHAR_BULLET = "•"

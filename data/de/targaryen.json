@@ -398,7 +398,7 @@
                     }
                 ],
                 "abilities": [
-                    "Mercenary's Longbow",
+                    "Langbogen des Söldners",
                     "Erkaufte Loyalität"
                 ]
             },
@@ -430,8 +430,7 @@
                     }
                 ],
                 "abilities": [
-                    "Durch Geld motiviert",
-                    "Anpassungsfähig"
+                    "Durch Geld motiviert"
                 ]
             },
             "fluff": {
@@ -492,8 +491,8 @@
                 ],
                 "abilities": [
                     "Befehl: Schlachtruf",
-                    "Drogo's Blutreiter",
-                    "Arakh der Blutreiter"
+                    "Drogo's Bloodriders",
+                    "Bloodriders' Arakh"
                 ]
             },
             "fluff": {
@@ -700,6 +699,11 @@
                             "*1 befreundete Drogon-, Rhaegal- oder Viserion-Einheit führt 1 Angriffsaktion durch.*"
                         ]
                     }
+                ],
+                "requirements": [
+                    {
+                        "text": "*Reduce the cost of 1 **Drogon**, **Rhaegal**, or **Viserion** unit in your army by 1.*"
+                    }
                 ]
             },
             "fluff": {
@@ -892,6 +896,11 @@
                 "cost": 1,
                 "abilities": [
                     "Befehl: Kampfausbildung"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May only be Attached to Targaryen units.*"
+                    }
                 ]
             }
         },
@@ -905,6 +914,11 @@
                 "cost": 1,
                 "abilities": [
                     "Unterbrechen"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May only be Attached to Targaryen units.*"
+                    }
                 ]
             }
         },
@@ -981,8 +995,12 @@
                 "type": "infantry",
                 "cost": 0,
                 "abilities": [
-                    "Was auch immer da kommen mag",
-                    "Must be attached to 'Daenerys Targaryen'"
+                    "Was auch immer da kommen mag"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Jorah may only be attached to a unit containing Daenerys Targaryen. He ignores the usual attachment limits.*"
+                    }
                 ],
                 "character": true
             },
@@ -1249,6 +1267,11 @@
                     "Bedrohliche Erscheinung",
                     "Angst ausnutzen"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1267,6 +1290,11 @@
                 "abilities": [
                     "Blutreiter",
                     "Battle Scars"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                    }
                 ],
                 "character": true
             },
@@ -1287,6 +1315,11 @@
                     "Blutreiter",
                     "Durch das Gemetzel befeuert"
                 ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -1304,6 +1337,11 @@
                 "cost": 1,
                 "abilities": [
                     "Heilung der Maegi"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Mirri ignores the usual Attachment limits.*"
+                    }
                 ],
                 "character": true
             },
@@ -1523,15 +1561,15 @@
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
+                        "trigger": "Sobald eine befreundete Einheit eine Marschaktion beendet:",
                         "effect": [
-                            "Diese Einheit darf alle Würfel für die Bewegungsweite des Ansturms neu werfen."
+                            "Bestimme alle Feinde innerhalb **Kurzer Reichweite** zum Ziel. Sie werden **Geschwächt**."
                         ]
                     },
                     {
                         "trigger": "Sobald eine befreundete Einheit nachsetzt:",
                         "effect": [
-                            "Jene Einheit erhält +3 [MOVEMENT], sobald sie während dieses Nachsetzens ein Manöver durchführt. Nach dem Manöver werden alle feindlichen Einheiten in kurzer Reichweiter **Geschwächt**."
+                            "Jene Einheit erhält +3 [MOVEMENT], sobald sie während dieses Nachsetzens ein Manöver durchführt."
                         ]
                     }
                 ]
@@ -1609,7 +1647,8 @@
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
+                            "*1 befreundete Kampfeinheit führt",
+                            "1 Angriffsaktion durch.*",
                             "*Falls diese Karte Khal Drogos Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
                         ]
                     },

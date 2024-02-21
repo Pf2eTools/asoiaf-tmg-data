@@ -222,14 +222,48 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
         bars.alpha_composite(decor, (674, 226))
         bars.alpha_composite(decor, (674, 33))
 
+    layer_text = Image.new("RGBA", (w, h))
     layer_crests = Image.new("RGBA", (w, h))
+
+    requirements = attachment_data.get("requirements")
+    if attachment_data.get("commander") and requirements is not None:
+        pass
+    elif requirements is not None:
+        requirement_y = 985 - len(requirements) * 112
+        # FIXME: Hack alert
+        if attachment_id in ["20221", "20805"]:
+            requirement_y -= 70
+        text_bg = asset_manager.get_text_bg().crop((0, 0, portrait.width, 1000))
+        attachment_card.paste(text_bg, (135, requirement_y))
+        bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, requirement_y - sb_h // 2))
+        bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, requirement_y - decor.height // 2))
+        bars.alpha_composite(decor, (674, requirement_y - decor.height // 2))
+        requirements_to_render = get_requirement_data_for_renderer(requirements)
+        h_requirements = h - requirement_y - sb_h // 2
+        renderer_requirements = TextRenderer(requirements_to_render, "Tuff", (520, h_requirements), asset_manager, font_size=30,
+                                             font_color="#5d4d40", stroke_width=0.2, align_y=TextRenderer.CENTER_SECTION,
+                                             padding=(10, 10, 10, 10))
+        rd_requirements = renderer_requirements.render()
+        layer_text.alpha_composite(rd_requirements, (155, requirement_y + sb_h // 2))
+        section_coords = renderer_requirements.rendered_section_coords
+        for ix in range(len(section_coords) - 1):
+            top, bot = section_coords[ix][1], section_coords[ix + 1][0]
+            center = int(top + (bot - top) / 2) + requirement_y
+            bars.alpha_composite(small_bar.crop((0, 0, 560, 100)), (140, center - sb_h // 2))
+            bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, center - decor.height // 2))
+            bars.alpha_composite(decor, (674, center - decor.height // 2))
+
+        if requirements[0].get("name") is not None:
+            box_name = render_small_box(asset_manager, faction, requirements[0].get("name").upper(), get_faction_text_color(faction))
+            box_name = apply_drop_shadow(box_name)
+            layer_crests.alpha_composite(box_name, (415 - box_name.width // 2, requirement_y - box_name.height // 2))
 
     if attachment_data.get("commander"):
         box_character = render_character_box(asset_manager, faction)
         layer_crests.alpha_composite(apply_drop_shadow(box_character), (270, 212))
     elif attachment_data.get("character"):
         box_character = render_character_box(asset_manager, faction)
-        layer_crests.alpha_composite(apply_drop_shadow(box_character), (234, 266))
+        layer_crests.alpha_composite(apply_drop_shadow(box_character), (395 - box_character.width // 2, 266))
     rendered_cost = render_cost(asset_manager, attachment_data.get("cost", 0), get_faction_highlight_color(faction), attachment_data.get("commander"))
     layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (78 - rendered_cost.width // 2, 764))
     crest = asset_manager.get_crest(faction)
@@ -249,7 +283,6 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
         unit_type = asset_manager.get_unit_type(attachment_data.get("type"), faction)
         layer_crests.alpha_composite(apply_drop_shadow(unit_type), (78 - unit_type.width // 2, h - unit_type.size[1] - 20))
 
-    layer_text = Image.new("RGBA", (w, h))
     if attachment_data.get("commander"):
         renderer_name = TextRenderer(name.upper(), "Tuff", (572, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
                                      stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
@@ -288,7 +321,6 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
         rd_quote = renderer_quote.render()
         layer_text.alpha_composite(rd_quote, (178, 182))
 
-    # TODO: Restrictions/Loyalty
     # TODO: Commander tactics cards
 
     attachment_card.alpha_composite(apply_drop_shadow(bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
@@ -301,32 +333,62 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
 
 def main():
     from asset_manager import AssetManager
-    data_char = {
-        "faction": "greyjoy",
-        "cost": 1,
-        "type": "infantry",
-        "character": True,
-        "commander": False,
+    devan = {
+        "id": "20606",
+        "name": "Devan Seaworth",
+        "subname": "King's Squire",
+        "statistics": {
+            "version": "2021",
+            "faction": "baratheon",
+            "type": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Reckless Heroism",
+                "True Conviction (Baratheon)"
+            ],
+            "requirements": [
+                {
+                    "name": "Loyalty",
+                    "heading": "STANNIS BARATHEON",
+                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                }
+            ],
+            "character": True
+        },
+        "fluff": {
+            "quote": "\"You have a passing clever father, Devan\" -Stannis Baratheon"
+        }
     }
-    data_c = {
-        "faction": "greyjoy",
-        "cost": "C",
-        "type": "infantry",
-        "commander": True,
+    bryce = {
+        "id": "20632",
+        "name": "Bryce Caron",
+        "subname": "Bryce the Orange",
+        "statistics": {
+            "version": "2021-S03",
+            "faction": "baratheon",
+            "type": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Taunt"
+            ],
+            "requirements": [
+                {
+                    "name": "Loyalty",
+                    "heading": "RENLY BARATHEON",
+                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                },
+                {
+                    "text": "*May not be fielded in an army containing the Rainbow Guard unit.*"
+                }
+            ],
+            "character": True
+        },
+        "fluff": {
+            "quote": "\"Why are they not here in your company,\nthey who loved Renly best?\"\n-Cortnay Penrose"
+        }
     }
-    data = {
-        "faction": "greyjoy",
-        "cost": 1,
-        "type": "infantry",
-    }
-    fluff = {
-        "quote": "\"No fight is hopeless till it has been fought...\""
-    }
-    back = generate_attachment_back(AssetManager(), "20802", "Asha Greyjoy", "Captain of the Black Wind", data_char, fluff)
-    # back = generate_attachment_back(AssetManager(), "20801", "Asha Greyjoy", "Kraken's Daughter", data_c, fluff)
-    # back = generate_attachment_back(AssetManager(), "20806", "Warsworn", None, data, {})
-    # org = Image.open(r"").convert("RGBA")
-    # org = org.resize((750, 1050))
+    data = devan
+    back = generate_attachment_back(AssetManager(), data["id"], data["name"], data["subname"], data["statistics"], data["fluff"])
     editor = ImageEditor(back, back)
 
 

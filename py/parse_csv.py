@@ -6,9 +6,14 @@ from copy import deepcopy
 from const import *
 
 
+def title_case(string):
+    lower_words = ["a", "an", "the", "and", "but", "or", "for", "nor", "as", "at", "by", "for", "from", "in", "into", "near", "of", "on",
+                   "onto", "to", "with", "over"]
+    words = re.split(" ", string)
+    return " ".join([w.capitalize() if w not in lower_words or ix == 0 else w for ix, w in enumerate(words)])
+
+
 def split_name(string):
-    if string.startswith("Baelor Schwarzfluth"):
-        pass
     string = re.sub(r"\s", " ", string)
     string = re.sub(r"\s[-–]\s", ", ", string)
     return [s.strip() for s in string.split(", ", 1)]
@@ -21,6 +26,8 @@ def normalize(string):
 def keymap(key):
     key_map = {
         "Name2": "Translated Name",
+        "Requirement": "Requirement Text",
+        "Restrictions": "Requirement Text",
     }
     return key_map.get(key, key)
 
@@ -181,6 +188,61 @@ def parse_abilities():
     return parsed_abilities
 
 
+def parse_commander(parsed, tactics):
+    parsed["statistics"]["commander"] = True
+    cards = [c for c in tactics["en"].values() if c["statistics"].get("commander_id") == parsed.get("id")]
+    parsed["tactics"] = {"cards": [c["id"] for c in cards]}
+    if len(cards) == 10:
+        parsed["tactics"]["remove"] = ["ALL"]
+    elif len(cards) > 3:
+        parsed["tactics"]["remove"] = []
+        matches = [re.search(r'remove\s+the\s+"(.*?)"\s+Tactics', c["statistics"]["text"][-1].get("remove", "")) for c in cards]
+        for match in matches:
+            if match is None:
+                continue
+            parsed["tactics"]["remove"].append(match.group(1))
+
+
+def get_parsed_requirements(card_data):
+    requirement_raw = card_data.get("Requirement Text")
+    out = []
+    for req in requirement_raw.split(" /"):
+        req = req.strip()
+        match = re.search(r"(.*:)\s?(\*\*.*\*\*)?\s?(\*.*\*)", req)
+        if match is None:
+            req_text = req
+            req_name = req_heading = None
+        else:
+            req_name, req_heading, req_text = match.groups()
+        requirements = {}
+        if req_name:
+            requirements["name"] = req_name.strip(": \n")
+        if req_heading:
+            requirements["heading"] = req_heading.strip(": \n").strip("*")
+        requirements["text"] = req_text
+        out.append(requirements)
+
+    return out
+
+
+def is_front_ability(ability_name, is_loyalty_front=False):
+    normalized = ability_name.lower().strip()
+    if not is_loyalty_front and re.search(r"loyalty: .* baratheon", normalized) is not None:
+        return False
+    if normalized == "adaptive":
+        return False
+    if normalized.startswith("must be attached to"):
+        return False
+    if normalized.startswith("may only be fielded in an army including"):
+        return False
+    return True
+
+
+def get_ability_names(raw, is_loyalty_back=True):
+    normalized = [re.sub(r"\[(\w|Fire)]", "", a.strip()) for a in raw]
+    return [n for n in normalized if is_front_ability(n, is_loyalty_back)]
+
+
 def parse_units(tactics):
     data = csv_to_dict(f"{CSV_PATH}/units.csv")
     parsed_cards = {
@@ -212,7 +274,7 @@ def parse_units(tactics):
                 "defense": int(card_data.get("Def").strip("+")),
                 "morale": int(card_data.get("Moral").strip("+")),
                 "attacks": [],
-                "abilities": [a.strip() for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
+                "abilities": get_ability_names(re.split(r"\s/|/\s", card_data.get("Abilities"))),
             },
             "fluff": {
                 "lore": card_data.get("Lore")
@@ -292,6 +354,8 @@ def parse_ncus(tactics):
             del parsed["subname"]
         if "C" in card_data.get("Cost"):
             parse_commander(parsed, tactics)
+        if card_data.get("Requirement Text"):
+            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
         ability_names = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Names"))]
         ability_text = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Descriptions"))]
         for name, text in zip(ability_names, ability_text):
@@ -330,21 +394,6 @@ def parse_ncus(tactics):
     return parsed_cards
 
 
-def parse_commander(parsed, tactics):
-    parsed["statistics"]["commander"] = True
-    cards = [c for c in tactics["en"].values() if c["statistics"].get("commander_id") == parsed.get("id")]
-    parsed["tactics"] = {"cards": [c["id"] for c in cards]}
-    if len(cards) == 10:
-        parsed["tactics"]["remove"] = ["ALL"]
-    elif len(cards) > 3:
-        parsed["tactics"]["remove"] = []
-        matches = [re.search(r'remove\s+the\s+"(.*?)"\s+Tactics', c["statistics"]["text"][-1].get("remove", "")) for c in cards]
-        for match in matches:
-            if match is None:
-                continue
-            parsed["tactics"]["remove"].append(match.group(1))
-
-
 def parse_attachments(tactics):
     data = csv_to_dict(f"{CSV_PATH}/attachments.csv")
     data_specials = csv_to_dict(f"{CSV_PATH}/special.csv")
@@ -358,6 +407,8 @@ def parse_attachments(tactics):
         card_id = card_data.get("Id")
         name_parts = split_name(card_data.get("Name"))
 
+        is_commander = "C" in card_data.get("Cost")
+
         parsed = {
             "id": card_id,
             "name": name_parts[0],
@@ -367,18 +418,17 @@ def parse_attachments(tactics):
                 "faction": normalize(card_data.get("Faction")),
                 "type": normalize(card_data.get("Type")),
                 "cost": "C" if card_data.get("Cost") == "C" else int(re.sub(r"\D", "", card_data.get("Cost"))),
-                "abilities": [re.sub(r"\[(\w|Fire)]", "", a.strip()) for a in re.split(r"\s/|/\s", card_data.get("Abilities"))],
+                "abilities": get_ability_names(re.split(r"\s/|/\s", card_data.get("Abilities")), is_commander),
             },
         }
         if len(name_parts) > 1:
             parsed["subname"] = name_parts[1]
         else:
             del parsed["subname"]
-        if "C" in card_data.get("Cost"):
+        if is_commander:
             parse_commander(parsed, tactics)
-        elif parsed["statistics"]["faction"] == "baratheon":
-            abitities = parsed["statistics"]["abilities"]
-            parsed["statistics"]["abilities"] = [a for a in abitities if re.search(r"Loyalty: .* Baratheon", a) is None]
+        if card_data.get("Requirement Text"):
+            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
         if card_data.get("Character"):
             parsed["statistics"]["character"] = True
         if card_data.get("Quote"):

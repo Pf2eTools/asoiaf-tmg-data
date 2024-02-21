@@ -424,8 +424,7 @@
                         "name": "Politique Inébranlable",
                         "effect": [
                             "Une fois par partie, pendant la phase d’Entretien, vous pouvez maintenir Arys du Rouvre sur le Tableau Stratégique. Il ne s’activera pas au prochain round.",
-                            "Si Arys du Rouvre commence un round sur le Tableau Stratégique, ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**.",
-                            ""
+                            "Si Arys du Rouvre commence un round sur le Tableau Stratégique, ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
                         ]
                     }
                 ]
@@ -498,6 +497,11 @@
                     "Devoir Envers la Couronne"
                 ],
                 "commander": true,
+                "requirements": [
+                    {
+                        "text": "Areo Hotah, Captain of the Guard may only be fielded in an army that includes Doran Martell, Lord of Sunspear."
+                    }
+                ],
                 "character": true
             },
             "tactics": {
@@ -549,7 +553,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Ordre : Menacer"
+                    "Order: Threaten"
                 ]
             }
         },
@@ -727,6 +731,11 @@
                 "abilities": [
                     "Attaque de Flanc"
                 ],
+                "requirements": [
+                    {
+                        "text": "*Quentyn Martell ignores the usual Attachment limits.*"
+                    }
+                ],
                 "character": true
             },
             "fluff": {
@@ -762,8 +771,13 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Conviction Véritable",
+                    "True Conviction (Martell)",
                     "Audacieux"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Edric Dayne ignores the usual Attachment limits.*"
+                    }
                 ],
                 "character": true
             },

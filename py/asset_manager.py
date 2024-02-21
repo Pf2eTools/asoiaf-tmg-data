@@ -97,7 +97,8 @@ class AssetManager:
         return Image.open(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png")
 
     def get_character_box(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/box-character.png")
+        img = Image.open(f"{self.ASSETS_DIR}/{faction}/box-character.png")
+        return img.crop(img.getbbox())
 
     def get_cost_bg(self, border_color, commander):
         return Image.open(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png")

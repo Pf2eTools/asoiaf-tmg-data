@@ -262,14 +262,12 @@
             "melee"
         ]
     },
-    "DROGO'S BLUTREITER": {
+    "BLUTREITER": {
         "effect": [
-            "Diese Einheit kann nicht **Geschwächt** werden.",
-            "• Jede Figur dieser Einheit kann 3 **Wunden** erleiden.",
-            "• Zu Beginn ihrer Aktivierung darf diese Einheit 1 Manöveraktion durchführen."
+            "Diese Einheit kann nicht **Geschwächt** werden."
         ],
         "icons": [
-            "wounds3"
+            "wounds"
         ]
     },
     "WILDE AUSSTRAHLUNG": {
@@ -1205,6 +1203,9 @@
     "JOFFREYS GEFOLGE": {
         "effect": [
             "Diese Einheit besteht aus 8 Figuren *(einschließlich Joffrey)*, kann 8 **Wunden** erleiden und hat 2 Schlachtreihen."
+        ],
+        "icons": [
+            "wounds"
         ]
     },
     "JOJENS GRÜNSICHT": {
@@ -1471,6 +1472,9 @@
             "• Solange du [MONEY] kontrollierst, erhält diese Einheit **Spaltschlag**.",
             "• Solange du [LETTER] kontrollierst, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**.",
             "• Solange du [SWORDS] kontrollierst, darf diese Einheit beliebig viele Angriffswürfel neu werfen."
+        ],
+        "icons": [
+            "ranged"
         ]
     },
     "EINFLUSS DES HANDELSHERREN": {
@@ -1528,6 +1532,9 @@
     "KLINGE DES MUMMENSCHANZES": {
         "effect": [
             "Falls diese Einheit einen Feind angreift, der diese Runde noch nicht aktiviert worden ist, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Geschwächt**."
+        ],
+        "icons": [
+            "melee"
         ]
     },
     "NAMEN AUF DER LISTE": {
@@ -1629,12 +1636,12 @@
         ]
     },
     "BEFEHL: SEGEN DES ERTRUNKENEN GOTTES": {
+        "trigger": "Zu Beginn eines beliebigen Zuges:",
         "effect": [
-            "**Zu Beginn eines beliebigen Zuges:**",
-            "Bestimme 1 befreundete Infanterie-Einheit von Haus Graufreud innerhalb **Kurzer Reichweite** zum Ziel und wähle 1 der folgenden Effekte:",
-            "• Jene Einheit heilt 2 **Wunden**.",
-            "• Jene Einheit darf in diesem Zug beliebig viele Angriffswürfel neu werfen.",
-            "• Feinde, die in diesem Zug jene Einheit angreifen, werden **Verwundbar**."
+            "Bestimme 1 befreundete Infanterie-Einheit von Haus Graufreud innerhalb **Kurzer Reichweite** zum Ziel und wähle 1 der folgenden Effekte:\n• Jene Einheit heilt 2 **Wunden**.\n• Jene Einheit darf in diesem Zug beliebig viele Angriffswürfel neu werfen.\n• Feinde, die in diesem Zug jene Einheit angreifen, werden **Verwundbar**."
+        ],
+        "icons": [
+            "order"
         ]
     },
     "BEFEHL: GRÄSSLICHES VORBILD": {
@@ -2048,6 +2055,9 @@
         "effect": [
             "• **Präzision**",
             "• Falls auf dieser Einheit 2 Plündermarker liegen, verwendet sie immer ihren höchsten Angriffswürfelwert."
+        ],
+        "icons": [
+            "melee"
         ]
     },
     "NACH DEN REGELN SPIELEN": {
@@ -2275,6 +2285,9 @@
     "RENLYS GEFOLGE": {
         "effect": [
             "Diese Einheit besteht aus 8 Figuren *(einschließlich Renly)*, kann 8 **Wunden** erleiden und hat 2 Schlachtreihen."
+        ],
+        "icons": [
+            "wounds"
         ]
     },
     "WORTE NACHPLAPPERN": {
@@ -3066,15 +3079,6 @@
         ],
         "icons": [
             "faith"
-        ]
-    },
-    "ARAKH DER BLUTREITER": {
-        "effect": [
-            "• **Grausam**",
-            "• **Spaltschlag**"
-        ],
-        "icons": [
-            "melee"
         ]
     }
 }
