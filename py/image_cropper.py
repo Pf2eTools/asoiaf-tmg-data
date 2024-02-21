@@ -405,6 +405,18 @@ class Square(Rectangle):
             "a": int(self.w / self.scale_tk),
         }
 
+    def save(self, image_path, out_path):
+        print(f'Saving cropped image to "{out_path}"...', end=" ")
+        img = get_image(image_path)
+        x = int(self.x / self.scale_tk)
+        y = int(self.y / self.scale_tk)
+        h = int(self.h / self.scale_tk)
+        w = int(self.w / self.scale_tk)
+        cropped_img = img[y:y + h, x:x + w]
+        normalized = cv.resize(cropped_img, (273, 273), interpolation=cv.INTER_AREA)
+        cv.imwrite(out_path, normalized)
+        print("Done.", end="\n")
+
 
 def get_image(url):
     img_cv = cv.imread(url, -1)
@@ -545,7 +557,7 @@ MODE_ALL = "all"
 # if not data: ui
 # (default behavior)
 
-MODE = MODE_NEW
+MODE = MODE_REWRITE
 ############################################################################################################################################
 
 if __name__ == "__main__":
