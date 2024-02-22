@@ -231,8 +231,12 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
     elif requirements is not None:
         requirement_y = 985 - len(requirements) * 112
         # FIXME: Hack alert
+        # jaqen, reaver captain
         if attachment_id in ["20221", "20805"]:
             requirement_y -= 70
+        # scorpion mods
+        elif attachment_id in ["20521", "20517"]:
+            requirement_y -= 160
         text_bg = asset_manager.get_text_bg().crop((0, 0, portrait.width, 1000))
         attachment_card.paste(text_bg, (135, requirement_y))
         bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, requirement_y - sb_h // 2))
@@ -294,8 +298,9 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
         rd_name = renderer_name.render()
         layer_text.alpha_composite(rd_name, (158, 92))
     else:
-        renderer_name = TextRenderer(name.upper(), "Tuff", (520, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
-                                     stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
+        name_fs = 44 if attachment_id in ["20521", "20517"] else 54
+        renderer_name = TextRenderer(name.upper(), "Tuff", (520, 60), asset_manager, font_size=name_fs, bold=True, font_color="white",
+                                     leading=1, stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
         rd_name = renderer_name.render()
         layer_text.alpha_composite(rd_name, (158, 122))
 
