@@ -238,9 +238,9 @@ def is_front_ability(ability_name, is_loyalty_front=False):
     return True
 
 
-def get_ability_names(raw, is_loyalty_back=True):
+def get_ability_names(raw, is_loyalty_front=False):
     normalized = [re.sub(r"\[(\w|Fire)]", "", a.strip()) for a in raw]
-    return [n for n in normalized if is_front_ability(n, is_loyalty_back)]
+    return [n for n in normalized if is_front_ability(n, is_loyalty_front)]
 
 
 def parse_units(tactics):
@@ -286,10 +286,11 @@ def parse_units(tactics):
             del parsed["subname"]
         if "C" in card_data.get("Cost") or "Commander" in parsed["statistics"]["abilities"]:
             parse_commander(parsed, tactics)
-        parsed["statistics"]["abilities"] = [a for a in parsed["statistics"]["abilities"] if re.search(r"Loyalty: .* Baratheon", a) is None]
         parsed["statistics"]["attacks"].append(parse_attack(card_data.get("Attack 1"), card_data.get("7"), card_data.get("8")))
         if card_data.get("Attack 2") != "":
             parsed["statistics"]["attacks"].append(parse_attack(card_data.get("Attack 2"), card_data.get("10"), card_data.get("11")))
+        if card_data.get("Requirement Text"):
+            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
 
         fix_name_obj(parsed)
         parsed_cards["en"][card_id] = parsed
@@ -550,7 +551,20 @@ def main():
             elif MODE == MODE_PATCH:
                 pass
             else:
-                continue
+                data = {
+                    "units": [add_old_keys({"id": u["id"]}, "units") for u in units],
+                    "ncus": [add_old_keys({"id": n["id"]}, "ncus") for n in ncus],
+                    "attachments": [add_old_keys({"id": a["id"]}, "attachments") for a in attachments],
+                    "tactics": [add_old_keys({"id": t["id"]}, "tactics") for t in tactics],
+                }
+                if MODE == "units":
+                    data["units"] = [add_old_keys(u, "units") for u in units]
+                elif MODE == "ncus":
+                    data["units"] = [add_old_keys(n, "ncus") for n in ncus]
+                elif MODE == "attachments":
+                    data["units"] = [add_old_keys(a, "attachments") for a in attachments]
+                elif MODE == "tactics":
+                    data["units"] = [add_old_keys(t, "tactics") for t in tactics]
             dump(data, path_data)
 
 
@@ -561,7 +575,7 @@ MODE_NEW_RELEASE = "release"
 # Update all changed
 MODE_PATCH = "patch"
 
-MODE = MODE_REWRITE
+MODE = "units"
 
 if __name__ == "__main__":
     main()

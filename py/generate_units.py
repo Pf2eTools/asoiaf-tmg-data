@@ -184,7 +184,6 @@ def generate_unit_back(asset_manager, unit_id, name, subname, unit_data, unit_fl
     layer_crests = Image.new("RGBA", (w, h))
     unit_type = asset_manager.get_unit_type(unit_data.get("type"), faction)
     layer_crests.alpha_composite(unit_type, (846 - unit_type.size[0] // 2, h - unit_type.size[1]))
-    # TODO: Varamyr Commander
     rd_cost = render_cost(asset_manager, unit_data.get("cost", 0), get_faction_highlight_color(faction), unit_data.get("commander"))
     layer_crests.alpha_composite(rd_cost, (846 - rd_cost.size[0] // 2, 555))
     crest = asset_manager.get_crest(faction)
@@ -205,7 +204,23 @@ def generate_unit_back(asset_manager, unit_id, name, subname, unit_data, unit_fl
     rd_lore = renderer_lore.render()
     layer_text.alpha_composite(rd_lore, (915, 190))
 
-    # TODO: Restrictions/Loyalty
+    # TODO: Multiple Restrictions?
+    requirements = unit_data.get("requirements")
+    if requirements is not None:
+        box_text = asset_manager.get_text_box(faction)
+        box_x, box_y = (846 - (lb_h + sb_h) // 2) // 2, 660
+        unit_card.alpha_composite(apply_drop_shadow(box_text, shadow_size=10), (box_x - 20 - box_text.width // 2, box_y - 20))
+        requirements_to_render = get_requirement_data_for_renderer(requirements)
+        h_requirements = h - box_y - 40
+        renderer_requirements = TextRenderer(requirements_to_render, "Tuff", (box_text.width - 60, h_requirements), asset_manager,
+                                             font_size=30, font_color="#5d4d40", stroke_width=0.2, align_y=TextRenderer.CENTER_SECTION,
+                                             padding=(10, 10, 10, 10))
+        rd_requirements = renderer_requirements.render()
+        layer_text.alpha_composite(rd_requirements, (box_x - rd_requirements.width // 2, box_y + 40))
+        if requirements[0].get("name") is not None:
+            box_name = render_small_box(asset_manager, faction, requirements[0].get("name").upper(), "#5d4d40")
+            box_name = apply_drop_shadow(box_name)
+            layer_crests.alpha_composite(box_name, (box_x - box_name.width // 2, box_y - (box_name.height - sb_h) // 2))
 
     unit_card.alpha_composite(apply_drop_shadow(layer_bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
     unit_card.alpha_composite(apply_drop_shadow(layer_bars), (-20, -20))
@@ -217,18 +232,48 @@ def generate_unit_back(asset_manager, unit_id, name, subname, unit_data, unit_fl
 
 def main():
     from asset_manager import AssetManager
-    data = {
-        "faction": "greyjoy",
-        "cost": 7,
-        "type": "infantry"
+    mercs = {
+        "id": "10713",
+        "name": "Stormcrow Mercenaries",
+        "statistics": {
+            "version": "S04",
+            "faction": "targaryen",
+            "type": "infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Motivated by Coin (Stormcrow Mercenaries)"
+            ],
+            "requirements": [
+                {
+                    "name": "Adaptive",
+                    "text": "*Reduce the cost of 1 Attachment in this unit by 1.*"
+                }
+            ]
+        },
+        "fluff": {
+            "lore": "While one might question Stormcrow loyalty to their leaders, their employers, and even themselves, one can always count on their absolute devotion to coin. Once properly motivated, Stormcrow Mercenaries are capable medium infantry, adept at holding a flank or performing flanking maneuvers themselves. Their professionalism guarantees a good working relationship with whomever their employer might be, but only as long as the coin lasts."
+        }
     }
-    fluff = {
-        "lore": "Of the different warriors that House Greyjoy sends to assault shoreline settlements, the Blacktyde Chosen are the most feared. When these elite warriors hit the beach, they rapidly form their ranks and sweep a path clear through any defences or defenders that stand in their way. Clad in scale mail, armed with master-crafted axes, and wielding large round shields, the Chosen are among the heaviest troops under the Kraken banner."
-    }
-    back = generate_unit_back(AssetManager(), "10806", "Blacktyde Chosen", None, data, fluff)
-    org = Image.open(r"").convert("RGBA")
-    org = org.resize((1417, 827))
-    editor = ImageEditor(back, org)
+    data = mercs
+    back = generate_unit_back(AssetManager(), data["id"], data.get("name"), data.get("subname"), data["statistics"], data["fluff"])
+    # org = Image.open(r"").convert("RGBA")
+    # org = org.resize((1417, 827))
+    editor = ImageEditor(back, back)
 
 
 if __name__ == "__main__":

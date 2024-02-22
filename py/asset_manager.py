@@ -97,8 +97,10 @@ class AssetManager:
         return Image.open(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png")
 
     def get_character_box(self, faction):
-        img = Image.open(f"{self.ASSETS_DIR}/{faction}/box-character.png")
-        return img.crop(img.getbbox())
+        return Image.open(f"{self.ASSETS_DIR}/{faction}/box-character.png")
+
+    def get_text_box(self, faction):
+        return Image.open(f"{self.ASSETS_DIR}/{faction}/box-text.png")
 
     def get_cost_bg(self, border_color, commander):
         return Image.open(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png")
@@ -164,6 +166,7 @@ class AssetManager:
             convert(f"{source}/Units/Divider{warcouncil_faction}.webp", f"{base_path}/skill-divider.png")
             convert(f"{source}/NCUs/UnitTypeNCU{warcouncil_faction}.webp", f"{base_path}/unit-ncu.png")
             convert(f"{source}/NCUs/Character{warcouncil_faction}.webp", f"{base_path}/box-character.png")
+            convert(f"{source}/Attachments/TextBox{warcouncil_faction}.webp", f"{base_path}/box-text.png")
 
             types = ["Cavalry", "Infantry", "Monster", "SiegeEngine"]
             for unit_type in types:

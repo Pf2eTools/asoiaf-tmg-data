@@ -5,7 +5,7 @@ This repository aims to provide all data and images required to start your own a
 You can preview all images [here](https://pf2etools.github.io/asoiaf-tmg-data/).
 
 ## planned features
-- [ ] card backsides
+- [X] card backsides
 - [ ] ease of use improvements (for custom cards)
 - [ ] improved linebreak algorithm (maybe?)
 - [ ] tts importer (also maybe)
