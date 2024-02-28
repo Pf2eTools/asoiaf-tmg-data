@@ -25,7 +25,8 @@
                 ],
                 "abilities": [
                     "Ruthless Aggression"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "While simply armored and lightly armed, Bolton Cutthroats enjoy a reputation for brutality and cold efficiency that allows them to strike panic in enemies with far more expensive armaments. Their spiked maces can easily dispatch enemies, but are more effective for the fear their brutality creates. Bolton Cutthroats make sport of downed foes or, worse for the opponent, take them prisoner to suffer a much more agonizing fate."
@@ -73,7 +74,8 @@
                 "abilities": [
                     "Spiked Flail",
                     "Horrific Visage"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "The ruthlessness of House Bolton’s Blackguards is known by every enemy force they face. Their vicious spiked flails render heavy shields only moderately effective. Being the heaviest troops in House Bolton’s arsenal, the Blackguards can be relied upon to take and hold any position on the battlefield."
@@ -130,7 +132,8 @@
                 ],
                 "abilities": [
                     "Ruthless Volley"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "When it comes to the most horrific methods of war, designed to maximize terror as much as damage, one need look no further than House Bolton. Their Dreadfort archers will gleefully let loose savage volleys of arrows, aimed towards their enemies, without regard for their comrades mixed in the melee. Sure, a few allies may sustain injuries, but the disregard for life that House Bolton breeds isn’t only for their foes. "
@@ -189,7 +192,8 @@
                     "Order: Charging Volley",
                     "Tracker’s Bow",
                     "Blade and Fang"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Trained to corner and bring down even heavy infantry, the Bastard’s Girls are best utilized as flankers or in pursuit of fleeing foes. While they do not possess the armor to counter a determined assault, enemies suffering from their handlers’ wounding arrows make for easy prey. A fat bounty can be expected for handlers bringing down enemy commanders to await Ramsay Bolton’s ‘entertainments’ following battle."
@@ -237,7 +241,9 @@
                     "Cavalry",
                     "War Flail",
                     "Intimidating Presence"
-                ]
+                ],
+                "wounds": 3,
+                "tray": "cavalry"
             },
             "fluff": {
                 "lore": "The so-called Flayed Men rank among the heaviest cavalry employed by even the largest houses in the War of the Five Kings. With thick steel armor (blackened, of course), heavy shields, and even protective barding for the horses, the Flayed Men are capable of truly devastating charges and can endure in the line for a short time. Their signature war flails render most defenses only marginal at best, but their terriying visage remains their most vital weapon."
@@ -285,7 +291,8 @@
                 "abilities": [
                     "Order: Set For Charge",
                     "Impaling Spear"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "House Bolton’s Spearmen are indoctrinated in the combat ethic of causing fear and panic among the enemy ranks. Their helmets and shields are designed with extra spikes purely for terrifying effect. The spearmen are trained to strike at points on foes that will cause maximum pain but not kill their opponents, leaving plenty of prisoners for the sadists in House Bolton to do with as they will after battle."
@@ -398,7 +405,11 @@
                             "Roose begins the game with 3 Order tokens on him.\nWhen Roose Activates, you may remove 1 Order token from him. If you do, 1 enemy Combat Unit becomes **Panicked**.\nWhen Roose Claims a zone, you may replace that zone's effect with:\n*1 enemy Combat Unit suffers 1 Panic Test.*"
                         ]
                     }
-                ]
+                ],
+                "tokens": {
+                    "number": 3,
+                    "name": "order"
+                }
             },
             "fluff": {
                 "quote": "\"You had only to look at Bolton to know that he had more cruelty in his pinky toe than all the Freys combined.\""
@@ -472,7 +483,11 @@
                             "Tybald begins the game with 2 Order tokens on him.\nEach time an enemy NCU Activates, if Tybald is not on the Tactics Board, you may remove 1 Order token from Tybald. If you do, target 1 zone.\nIf that NCU Claims that zone, after resolving that zone's effect, 1 enemy Combat Unit becomes **Vulnerable**.\nIf that NCU does not Claim that zone this Turn, at the end of the Turn, Tybald Claims that zone."
                         ]
                     }
-                ]
+                ],
+                "tokens": {
+                    "number": 2,
+                    "name": "order"
+                }
             },
             "fluff": {
                 "quote": "\"Isn't it clever how the maesters go only by one name, even those who had two when they first arrived at the Citadel?\""

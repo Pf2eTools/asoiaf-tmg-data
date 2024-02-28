@@ -243,7 +243,39 @@ def get_ability_names(raw, is_loyalty_front=False):
     return [n for n in normalized if is_front_ability(n, is_loyalty_front)]
 
 
-def parse_units(tactics):
+PATTERNS_TOKEN = [
+    re.compile(r"(?:begins|starts) the game with (\d) ([a-z]+ )?tokens?", re.IGNORECASE),
+    re.compile(r"at the start of the game, place (\d) ([a-z]+ )?tokens?", re.IGNORECASE),
+    re.compile(r"place (\d) (\[WOUND]) tokens? on this card at the start of the game", re.IGNORECASE),
+]
+
+
+def get_first_match(patterns, text_list):
+    for text in text_list:
+        for pattern in patterns:
+            match = re.search(pattern, text)
+            if match is not None:
+                return match
+    return None
+
+
+def get_parsed_tokens(match_obj):
+    return {
+        "number": int(match_obj.group(1)),
+        "name": match_obj.group(2).strip("[] ").lower()
+    }
+
+
+def get_wounds_per_model(abilities):
+    for ability in abilities:
+        for icon in ability.get("icons", []):
+            match = re.match(r"wounds(\d)", icon)
+            if match:
+                return int(match.group(1))
+    return 1
+
+
+def parse_units(tactics, parsed_abilities):
     data = csv_to_dict(f"{CSV_PATH}/units.csv")
     parsed_cards = {
         "en": {}
@@ -291,6 +323,35 @@ def parse_units(tactics):
             parsed["statistics"]["attacks"].append(parse_attack(card_data.get("Attack 2"), card_data.get("10"), card_data.get("11")))
         if card_data.get("Requirement Text"):
             parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
+
+        abilities = [parsed_abilities["en"].get(name.upper(), {}) for name in parsed.get("statistics").get("abilities")]
+        effects = [" ".join(ability.get("effect", "")).replace("\n", " ") for ability in abilities]
+        match_token = get_first_match(PATTERNS_TOKEN, effects)
+        if match_token is not None:
+            parsed["statistics"]["tokens"] = get_parsed_tokens(match_token)
+        wounds_per_model = get_wounds_per_model(abilities)
+        if wounds_per_model != 1:
+            parsed["statistics"]["wounds"] = wounds_per_model
+        # FIXME: Total Hackjob. But it's the best possible?
+        if "Giant" in parsed["statistics"]["abilities"]:
+            parsed["statistics"]["tray"] = "solo"
+        # Freedmen
+        elif card_id == "10714":
+            parsed["statistics"]["tray"] = "solo"
+        # Bear Riders
+        elif card_id == "10315":
+            parsed["statistics"]["tray"] = "cavalry"
+        # War Mammoth
+        elif card_id == "10312":
+            parsed["statistics"]["tray"] = "warmachine"
+        elif wounds_per_model == 6:
+            parsed["statistics"]["tray"] = "warmachine"
+        elif wounds_per_model == 1:
+            parsed["statistics"]["tray"] = "infantry"
+        elif get_first_match([re.compile(r"each model in this unit has 3 wounds", re.IGNORECASE)], effects) is not None:
+            parsed["statistics"]["tray"] = "cavalry"
+        else:
+            parsed["statistics"]["tray"] = "solo"
 
         fix_name_obj(parsed)
         parsed_cards["en"][card_id] = parsed
@@ -365,6 +426,9 @@ def parse_ncus(tactics):
                 "effect": [t.strip() for t in text.split("\n\n") if t.strip()]
             }
             parsed["statistics"]["abilities"].append(ability)
+        match_token = get_first_match(PATTERNS_TOKEN, [t.strip().replace("\n", "") for t in ability_text])
+        if match_token is not None:
+            parsed["statistics"]["tokens"] = get_parsed_tokens(match_token)
         fix_name_obj(parsed)
         parsed_cards["en"][card_id] = parsed
 
@@ -395,7 +459,7 @@ def parse_ncus(tactics):
     return parsed_cards
 
 
-def parse_attachments(tactics):
+def parse_attachments(tactics, parsed_abilities):
     data = csv_to_dict(f"{CSV_PATH}/attachments.csv")
     data_specials = csv_to_dict(f"{CSV_PATH}/special.csv")
     parsed_cards = {
@@ -434,6 +498,12 @@ def parse_attachments(tactics):
             parsed["statistics"]["character"] = True
         if card_data.get("Quote"):
             parsed["fluff"] = {"quote": card_data.get("Quote")}
+
+        abilities = [parsed_abilities["en"].get(name.upper(), {}) for name in parsed.get("statistics").get("abilities")]
+        effects = [" ".join(ability.get("effect", "")).replace("\n", " ") for ability in abilities]
+        match_token = get_first_match(PATTERNS_TOKEN, effects)
+        if match_token is not None:
+            parsed["statistics"]["tokens"] = get_parsed_tokens(match_token)
 
         fix_name_obj(parsed)
         parsed_cards["en"][card_id] = parsed
@@ -505,9 +575,9 @@ def fix_name(name):
 def main():
     parsed_abilities = parse_abilities()
     parsed_tactics = parse_tactics()
-    parsed_units = parse_units(parsed_tactics)
+    parsed_units = parse_units(parsed_tactics, parsed_abilities)
     parsed_ncus = parse_ncus(parsed_tactics)
-    parsed_attachments = parse_attachments(parsed_tactics)
+    parsed_attachments = parse_attachments(parsed_tactics, parsed_abilities)
 
     for lang in LANGUAGES:
         ab = parsed_abilities.get(lang)
@@ -529,8 +599,8 @@ def main():
             attachments = [a for a in parsed_attachments.get(lang, {}).values() if normalize(a["statistics"]["faction"]) == faction]
             tactics = [t for t in parsed_tactics.get(lang, {}).values() if normalize(t["statistics"]["faction"]) == faction]
 
-            def add_old_keys(obj, key):
-                old = next((item for item in data.get(key, []) if item["id"] == obj["id"]), None)
+            def add_old_keys(obj, data_key):
+                old = next((item for item in data.get(data_key, []) if item["id"] == obj["id"]), None)
                 if old is None:
                     return obj
                 for k, v in old.items():
@@ -539,6 +609,18 @@ def main():
                     obj[k] = v
                 return obj
 
+            def add_new_if_not_exists(obj, data_key):
+                old = next((item for item in data.get(data_key, []) if item["id"] == obj["id"]), None)
+                if old is None:
+                    return obj
+                for key in ["statistics", "fluff"]:
+                    if old.get(key) is None and obj.get(key):
+                        old[key] = {}
+                    for k, v in obj.get(key, {}).items():
+                        if old.get(key).get(k) is None:
+                            old[key][k] = v
+                return old
+
             if MODE == MODE_REWRITE:
                 data = {
                     "units": [add_old_keys(u, "units") for u in units],
@@ -546,10 +628,13 @@ def main():
                     "attachments": [add_old_keys(a, "attachments") for a in attachments],
                     "tactics": [add_old_keys(t, "tactics") for t in tactics],
                 }
-            elif MODE == MODE_NEW_RELEASE:
-                pass
-            elif MODE == MODE_PATCH:
-                pass
+            elif MODE == MODE_NEW:
+                data = {
+                    "units": [add_new_if_not_exists(u, "units") for u in units],
+                    "ncus": [add_new_if_not_exists(n, "ncus") for n in ncus],
+                    "attachments": [add_new_if_not_exists(a, "attachments") for a in attachments],
+                    "tactics": [add_new_if_not_exists(t, "tactics") for t in tactics],
+                }
             else:
                 data = {
                     "units": [add_old_keys({"id": u["id"]}, "units") for u in units],
@@ -570,12 +655,13 @@ def main():
 
 # Just write everything from csv
 MODE_REWRITE = "rewrite"
-# Just add new releases
-MODE_NEW_RELEASE = "release"
-# Update all changed
-MODE_PATCH = "patch"
+# Add keys that are new
+MODE_NEW = "new"
 
-MODE = "units"
+MODE = MODE_NEW
+
+LANGUAGES = ["en"]
+
 
 if __name__ == "__main__":
     main()
