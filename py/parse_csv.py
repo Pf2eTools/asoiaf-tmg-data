@@ -325,7 +325,7 @@ def parse_units(tactics, parsed_abilities):
             parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
 
         abilities = [parsed_abilities["en"].get(name.upper(), {}) for name in parsed.get("statistics").get("abilities")]
-        effects = [" ".join(ability.get("effect", "")).replace("\n", " ") for ability in abilities]
+        effects = [" ".join(ability.get("effect", "")).replace("\n", " ").replace("*", "") for ability in abilities]
         match_token = get_first_match(PATTERNS_TOKEN, effects)
         if match_token is not None:
             parsed["statistics"]["tokens"] = get_parsed_tokens(match_token)
@@ -426,7 +426,7 @@ def parse_ncus(tactics):
                 "effect": [t.strip() for t in text.split("\n\n") if t.strip()]
             }
             parsed["statistics"]["abilities"].append(ability)
-        match_token = get_first_match(PATTERNS_TOKEN, [t.strip().replace("\n", "") for t in ability_text])
+        match_token = get_first_match(PATTERNS_TOKEN, [t.strip().replace("\n", "").replace("*", "") for t in ability_text])
         if match_token is not None:
             parsed["statistics"]["tokens"] = get_parsed_tokens(match_token)
         fix_name_obj(parsed)
@@ -500,7 +500,7 @@ def parse_attachments(tactics, parsed_abilities):
             parsed["fluff"] = {"quote": card_data.get("Quote")}
 
         abilities = [parsed_abilities["en"].get(name.upper(), {}) for name in parsed.get("statistics").get("abilities")]
-        effects = [" ".join(ability.get("effect", "")).replace("\n", " ") for ability in abilities]
+        effects = [" ".join(ability.get("effect", "")).replace("\n", " ").replace("*", "") for ability in abilities]
         match_token = get_first_match(PATTERNS_TOKEN, effects)
         if match_token is not None:
             parsed["statistics"]["tokens"] = get_parsed_tokens(match_token)
