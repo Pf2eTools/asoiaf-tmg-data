@@ -8,102 +8,104 @@ from const import FACTIONS
 class AssetManager:
     ASSETS_DIR = "./assets/warcouncil"
 
+    @staticmethod
+    def fallback(size):
+        return Image.new("RGBA", size)
+
+    def get(self, path, size=(100, 100)):
+        if not os.path.exists(path):
+            return self.fallback(size)
+        return Image.open(path)
+
     def get_bg(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/bg-small.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/bg-small.png")
 
     def get_text_bg(self):
-        return Image.open(f"{self.ASSETS_DIR}/common/bg-text.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-text.png")
 
     def get_bars(self, faction):
-        large_bar = Image.open(f"{self.ASSETS_DIR}/{faction}/bar-large.png")
-        small_bar = Image.open(f"{self.ASSETS_DIR}/{faction}/bar-small.png")
-        corner_bar = Image.open(f"{self.ASSETS_DIR}/{faction}/bar-corner.png")
+        large_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-large.png")
+        small_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-small.png")
+        corner_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-corner.png")
 
         return large_bar, small_bar, corner_bar
 
     def get_decor(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/bar-decor.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/bar-decor.png")
 
     def get_crest_shadow(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/crest-shadow.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/crest-shadow.png")
 
     def get_crest(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/crest.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/crest.png")
 
     def get_unit_bg(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/bg-large.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/bg-large.png")
 
     def get_unit_skills_bg(self):
-        return Image.open(f"{self.ASSETS_DIR}/common/bg-skills.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-skills.png")
 
     def get_unit_image(self, unit_id):
-        return Image.open(f"{self.ASSETS_DIR}/units/{unit_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}.png")
 
     def get_attachment_image(self, attachment_id):
-        return Image.open(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png")
 
     def get_unit_type(self, unit_type, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/unit-{unit_type.lower()}.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/unit-{unit_type.lower()}.png")
 
     def get_attachment_type(self, unit_type, faction):
-        path = f"{self.ASSETS_DIR}/{faction}/attach-{unit_type.lower()}.png"
-        if not os.path.exists(path):
-            return Image.new("RGBA", (100, 100))
-        return Image.open(path)
+        return self.get(f"{self.ASSETS_DIR}/{faction}/attach-{unit_type.lower()}.png")
 
     def get_stat_background(self):
-        return Image.open(f"{self.ASSETS_DIR}/common/bg-stat.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-stat.png")
 
     def get_stat_icon(self, name):
-        return Image.open(f"{self.ASSETS_DIR}/common/{name}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/{name}.png")
 
     def get_attack_bg(self, color):
-        return Image.open(f"{self.ASSETS_DIR}/common/bg-attack-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-attack-{color}.png")
 
     def get_attack_dice_bg(self):
-        return Image.open(f"{self.ASSETS_DIR}/common/bg-dice.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-dice.png")
 
     def get_attack_type_bg(self, color):
-        return Image.open(f"{self.ASSETS_DIR}/common/bg-attacktype-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-attacktype-{color}.png")
 
     def get_attack_type(self, attack_type, color):
         atk_type = "melee" if attack_type == "melee" else "ranged"
-        return Image.open(f"{self.ASSETS_DIR}/common/attacktype-{atk_type}-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/attacktype-{atk_type}-{color}.png")
 
     def get_attack_range_icon(self, attack_range, color):
-        return Image.open(f"{self.ASSETS_DIR}/common/{attack_range}-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/{attack_range}-{color}.png")
 
-    # FIXME: ?
     def get_skill_icon(self, skill_name, color):
         path = f"{self.ASSETS_DIR}/common/skill-{skill_name}-{color}.png"
-        if os.path.exists(path):
-            return Image.open(path)
-        else:
-            return Image.new("RGBA", (134, 134))
+        return self.get(path, (134, 134))
 
     def get_skill_divider(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/skill-divider.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/skill-divider.png")
 
     def get_skill_bottom(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/skill-bottom.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/skill-bottom.png")
 
     def get_tactics_commmander_img(self, commander_id):
-        return Image.open(f"{self.ASSETS_DIR}/tactics/{commander_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/tactics/{commander_id}.png")
 
     def get_ncu_img(self, ncu_id):
-        return Image.open(f"{self.ASSETS_DIR}/ncus/{ncu_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/ncus/{ncu_id}.png")
 
     def get_text_icon(self, icon):
-        return Image.open(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png")
 
     def get_character_box(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/box-character.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/box-character.png")
 
     def get_text_box(self, faction):
-        return Image.open(f"{self.ASSETS_DIR}/{faction}/box-text.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/box-text.png")
 
     def get_cost_bg(self, border_color, commander):
-        return Image.open(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png")
 
     @staticmethod
     def get_warcouncil_faction(faction):
