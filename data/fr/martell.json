@@ -26,7 +26,8 @@
                 "abilities": [
                     "Ordre : Recevoir la Charge",
                     "Ordre : Repositionnement Tactique"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Where some great houses in the War of the Five Kings depend on heavy armor, House Martell relies on a doctrine of mobility and mutual support. Martell Spearmen wear light armor over desert robes, the better to keep cool in their harsh native climate and still maintain high mobility. Their signature spears stop enemy charges cold, and their swift training regimes allow them to form the bulk of a Martell battle line."
@@ -68,7 +69,8 @@
                 "abilities": [
                     "Ordre : Tir Rapide",
                     "Ordre : Faille de L’Éclaireur"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "House Martell’s Sand Skirmishers turn their doctrine of high mobility into a deadly dance of blade and bow. Their light armor allows them superior speed, rivaling that of the fastest enemy units, and their training allows for deadly hit-and-fade attacks, all under a rain of incoming arrows. If locked down in a protracted melee, Skirmishers can hold their own as well as any light unit, but a wise commander will send relief as soon as possible."
@@ -101,7 +103,8 @@
                     "Ordre : Repli Éclair",
                     "Lames de Derviche",
                     "Évasion Insaisissable"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Sunspear Dervishes raise House Martell’s doctrine of high mobility to a fine art. Their training allows them to rapidly engage, strike hard, and just as rapidly disengage to either prep for another run or choose a more opportune target. Enemies so besieged are often so rattled by the spinning, whirling dance of blades that their own response is badly hampered. While Dervishes can hold in a melee for a time, they’re best kept on-the-move. "
@@ -133,7 +136,8 @@
                 "abilities": [
                     "Ordre : Entraînement Martial",
                     "Ordre : Mur de Boucliers"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "House Martell’s famous Sunspear Royal Guards are few in number but count among the best-trained units across all of Westeros. Their adaptive style lends itself well to both offensive and defensive initiatives, and while their armor is heavier than most Martell units, their physical conditioning allows them to keep pace. As a hard center to a Martell vanguard, the Royal Guards have no match in the Martell force."
@@ -166,7 +170,8 @@
                     "Lance et Filet",
                     "Riposte",
                     "Attaque en Bande"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "The lands of Dorne seems like an endless sea of dunes. It’s easy to get lost in the shifting sands. But the Dune Vipers call this land home and know each grain of sand’s place. Using their knowledge of the terrain, they excel in guerilla tactics, harassing enemies with their nets and spears, ensnaring foes before heading in for the final strike. Best when paired with allies, the Dune Vipers can stand on their own when needs must. "
@@ -198,7 +203,9 @@
                     "Cavalerie",
                     "Cimeterre",
                     "Cri de Ralliement"
-                ]
+                ],
+                "wounds": 3,
+                "tray": "cavalry"
             },
             "fluff": {
                 "lore": "House Dayne is the strongest vassal House in Dorne, with their ancestral home located in Starfall castle. They’re well known for the equestrian arts, fielding several cavalry units for House Martell. The Starfall Outriders are their light cavalry troops. They focus on hit-and-run tactics as well as providing aid to friendly units in the area. Their purple robes are a welcome sign in the desert sun for House Martell’s allies. "
@@ -229,10 +236,46 @@
                 "abilities": [
                     "Cavalerie",
                     "Lance des Météores"
-                ]
+                ],
+                "wounds": 3,
+                "tray": "cavalry"
             },
             "fluff": {
                 "lore": "Climate is an important factor when equipping and training an army. With the hot climate in Dorne, the Starfall Knights of House Dayne, vassals of House Martell, are more lightly armored than most heavy cavalry. However, what they lack in armor, they make up for in speed and maneuverability, letting them strike at opponents from unexpected quarters, applying their lances to devastating effect during charges."
+            }
+        },
+        {
+            "id": "10908",
+            "name": "Escorte de Sombre Astre",
+            "statistics": {
+                "version": "2021",
+                "faction": "martell",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 6,
+                "defense": 5,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Cimeterre",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Ordre : Débordement",
+                    "Soif de Massacre",
+                    "Cimeterre"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "The personal guard of Ser Gerold Dayne have no formal name but are simply known as Darkstar Retinue. And that’s enough to cause worry among enemy troops, for the Retinue is composed of soldiers that follow in the Darkstar’s footsteps in both manner and fighting style. They strike without warning, usually  on an unguarded flank, hit hard, then fade back to wait patiently  for another opening. That is, if they leave any."
             }
         }
     ],
@@ -250,9 +293,9 @@
                         "name": "Ordres de Mission",
                         "effect": [
                             "Chaque fois que Doran Martell s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*Choisissez 1 option :*",
-                            "• *L’unité d’Areo Hotah peut effectuer 1 Pivot puis 1 action de Marche.*",
-                            "• *L’unité d’Areo Hotah peut effectuer 1 action de Repli.*"
+                            "*Choisissez 1 option :",
+                            "• L’unité d’Areo Hotah peut effectuer 1 Pivot puis 1 action de Marche.",
+                            "• L’unité d’Areo Hotah peut effectuer 1 action de Repli.*"
                         ]
                     }
                 ],
@@ -288,7 +331,7 @@
                             "• Round 4 : s’empare de [CROWN] ou [SWORDS]",
                             "• Round 5 : s’empare de [MONEY] ou [OASIS]",
                             "• Round 6 : s’empare de [LETTER] ou [HORSE]",
-                            "À la fin de chaque round, s’il y a 4+ pions Ordre sur Doran Martell, gagnez 2 Points de Victoire."
+                            "À la fin de chaque round, s’il y a 4+ pions Ordre sur Doran Martell, gagnez 1 Points de Victoire."
                         ]
                     }
                 ]
@@ -310,7 +353,7 @@
                         "name": "Charmes Lyséens",
                         "effect": [
                             "Chaque fois qu'Ellaria s’empare d’une zone, ciblez 1 Unité Combattante alliée. Vous pouvez retirer 1 de ses pions État.",
-                            "Si vous contrôlez [SWORDS], ciblez 2 unités ennemies situées à Longue Portée ou moins de l’unité alliée ciblée. Placez 1 pion État sur chacun de ces ennemis."
+                            "Si vous contrôlez [SWORDS], ciblez 1 unité ennemie à Longue Portée ou moins de l’unité alliée ciblée. Elle gagne 1 pion État."
                         ]
                     }
                 ]
@@ -332,7 +375,7 @@
                         "name": "Tempérament Bouillant",
                         "effect": [
                             "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité alliée, quand un ennemi effectue une Attaque de Mêlée qui cible cette unité, avant de résoudre cette attaque, l’attaquant subit 2 Touches, +1 pour chaque rang restant du défenseur."
+                            "Tant que cette carte Influence une unité alliée, chaque fois qu'un un ennemi effectue une Attaque de Mêlée sur cette unité, après avoir résolue cette attaque, l’attaquant subit 1 Touche, +1 pour chaque rang restant du défenseur."
                         ]
                     }
                 ]
@@ -353,7 +396,9 @@
                     {
                         "name": "Mains Guérisseuses",
                         "effect": [
-                            "Au début du round 2, choisissez une zone Stratégique. La prochaine fois qu’une UNC ennemie s’empare de cette zone, attachez la carte Poison **L’Étrangleur** à cette UNC."
+                            "Chaque fois que Tyene s’empare d’une zone, vous pouvez cibler 1 Unité Combattante alliée. Elle soigne 1 de ses Blessures.",
+                            "Au début du round 2, choisissez une zone Stratégique. La prochaine fois qu’une UNC ennemie s’empare de cette zone, attachez la carte Poison **L’Étrangleur** à cette UNC.",
+                            "[SKILL : VENOM]"
                         ]
                     }
                 ]
@@ -553,7 +598,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Order: Threaten"
+                    "Ordre : Menacer"
                 ]
             }
         },
@@ -771,7 +816,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "True Conviction (Martell)",
+                    "Conviction Véritable (Martell)",
                     "Audacieux"
                 ],
                 "requirements": [
@@ -856,6 +901,20 @@
             "fluff": {
                 "quote": "\"I was weaned on venom\""
             }
+        },
+        {
+            "id": "20922",
+            "name": "Sentinelle de Haut Hermitage",
+            "statistics": {
+                "version": "2021",
+                "faction": "martell",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Embuscade",
+                    "Mobilité Améliorée"
+                ]
+            }
         }
     ],
     "tactics": [
@@ -921,7 +980,7 @@
                     {
                         "trigger": "Au début de n’importe quel round :",
                         "effect": [
-                            "Votre adversaire choisit 1 zone Stratégique, puis vous en choisissez une. La première fois qu’une UNC s’empare de 1 de ces zones ce round-ci, avant d'en résoudre l’effet, cette UNC perd toutes ses Capacités jusqu’à la fin du round et le joueur adverse peut cibler une Unité Combattante qui devient **Affaiblie**."
+                            "Votre adversaire choisit 1 zone Stratégique, puis vous en choisissez une. La première fois qu’une UNC s’empare de 1 de ces zones ce round-ci, avant d'en résoudre l’effet, l'adversaire de celui qui s'est emparé de la zone peut cibler jusqu'à 2 Unités Combattantes ennemies, Elles deviennenent **Vulnérables** et **Affaiblies**."
                         ]
                     }
                 ]
@@ -938,9 +997,9 @@
                         "trigger": "Quand une Unité Combattante ennemie est activée :",
                         "effect": [
                             "Attachez-lui cette carte jusqu’à ce qu’elle soit ciblée par [SWORDS].",
-                            "Tant que cette carte est attachée, cette unité subit les effets suivant en fonction du round de jeu *(cumulatif)*:",
-                            "**2+:** Ne peut pas être ciblée par des cartes Tactiques alliées.",
-                            "**3+:** Subit -1 pour Toucher. **4+:** Ne peut pas soigner ses Blessures."
+                            "Tant que cette carte est attachée, cette unité subit les effets suivant en fonction du round de jeu *(cumulatif)*:**",
+                            "2+:** Ne peut pas être ciblée par des cartes Tactiques alliées.**",
+                            "3+:** Subit -1 pour Toucher. **4+:** Ne peut pas soigner ses Blessures."
                         ]
                     }
                 ]
@@ -988,11 +1047,11 @@
                 "faction": "martell",
                 "text": [
                     {
-                        "trigger": "Quand un ennemi Vulnérable est activé :",
+                        "trigger": "Quand une Unité Combattante ennemie est activée :",
                         "effect": [
-                            "Attachez cette carte à cet ennemi jusqu’à ce que le pion **Vulnérable** soit retiré.",
-                            "Tant que cette carte est attachée, chaque fois que cette unité effectue une attaque, elle subit −1 pour Toucher.",
-                            "Tant que cette carte est attachée, chaque fois que cette unité effectue une attaque contre l’unité d’Oberyn Martell, avant de lancer les dés d’Attaque, elle devient **Affaiblie**."
+                            "Cet ennemi devient **Vulnérable**. Attachez-lui cette carte jusqu’à ce que le pion Vulnérable soit retiré.",
+                            "Tant que cette carte est attachée, chaque fois que cette unité attaque, elle subit -1 pour Toucher.",
+                            "Tant que cette carte est attachée, chaque fois que cette unité attaque l’unité d’Oberyn, avant de lancer les dés d’Attaque, elle devient **Affaiblie**."
                         ]
                     }
                 ],
@@ -1012,7 +1071,8 @@
                         "trigger": "Quand un adversaire cible une unité avec une zone Stratégique :",
                         "effect": [
                             "Lancez un dé. Sur un résultat de 3+, votre adversaire doit cibler une unité différente avec l’effet de cette zone *(si possible)*.",
-                            "Si vous contrôlez [CROWN], vous pouvez relancer ce dé."
+                            "Si vous contrôlez [CROWN], vous pouvez relancer ce dé.",
+                            "Si la nouvelle unité ciblée se trouve à Longue Portée ou moins de l’unité d'Oberyn, elle gagne 1 pion État."
                         ]
                     }
                 ],
@@ -1031,15 +1091,15 @@
                     {
                         "trigger": "Quand une Unité Combattante ennemie est activée :",
                         "effect": [
-                            "Cette unité subit -2[MOVEMENT] quand elle Charge l’unité d’Oberyn Martell ce tour-ci. Si elle rate une Charge ce tour-ci, elle devient **Vulnérable**."
+                            "Si cet ennemi est Longue Portée ou moins de l’unité d’Oberyn, il subit -2 [MOVEMENT] ce tour-ci.",
+                            "Si cet ennemi rate une Charge ce tour-ci, il devient **Vulnérable**."
                         ]
                     },
                     {
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
-                            "Choisissez 1 option :",
-                            "*• Piochez 1 carte Tactique.*",
-                            "*• Si l’unité d’Oberyn Martell est engagée, cherchez 1 carte Tactique de votre Général dans votre paquet ou défausse Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique.*"
+                            "Choisissez 1 option :*",
+                            "• Piochez 1 carte Tactique.** • Si l’unité d’Oberyn est engagée, cherchez 1 carte Tactique de votre Général dans votre paquet ou défausse Tactique et ajoutez-la à votre main.*"
                         ]
                     }
                 ],
@@ -1116,9 +1176,10 @@
                 "faction": "martell",
                 "text": [
                     {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’attaque :",
+                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée. Si le défenseur possède plus de rangs restants que l’attaquant, le défenseur devient **Vulnérable**."
+                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée.",
+                            "Si cette carte cible l’unité d'Obara, celle-ci peut relancer n’importe quels dés d’Attaque."
                         ]
                     }
                 ],
@@ -1201,11 +1262,11 @@
                     {
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)*:",
-                            "**3+:** Peut relancer n’importe quels Échecs",
-                            "**4+: Fracasser**",
-                            "**5+: Frappe Critique**",
-                            "**6+:** +2 dés d'Attaque"
+                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)*:**",
+                            "3+:** Peut relancer n’importe quels Échecs**",
+                            "4+: Fracasser****",
+                            "5+: Frappe Critique****",
+                            "6+:** +2 dés d'Attaque"
                         ]
                     }
                 ],
@@ -1304,8 +1365,7 @@
                     {
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
-                            "Ciblez l’unité de Gerold Dayne.",
-                            "Si aucune autre unité ne se trouve à Longue Portée ou moins, l’unité de Gerold peut effectuer une action de Manœuvre ou de Marche."
+                            "Ciblez l’unité de Gerold Dayne. Si aucune autre unité alliée ne se trouve à Longue Portée ou moins, l’unité de Gerold peut effectuer une action de Manœuvre ou de Marche."
                         ]
                     },
                     {

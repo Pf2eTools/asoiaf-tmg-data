@@ -26,7 +26,8 @@
                 "abilities": [
                     "Haches de Ravageurs",
                     "Charge Furieuse"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "The infamous Ironborn Reavers are known along coastlines across the Seven Kingdoms as raiders and pirates. Reavers crew their signature longships whose sails are a dread to all who spot them on the horizon. Although sailors to a man, the Ironborn wear light scale mail even aboard ship. They’re fast-attack troops, but not trained to stand under heavy assault. Commanders would do well to keep them off the front line."
@@ -66,9 +67,10 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Divide The Spoils",
+                    "Ordre : Partager le Butin",
                     "Flèches de Fer-Né"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Despite being a seaborne people, the Ironborn have little fear of drowning, and their light scale mail provides excellent protection without sacrificing mobility. Their Bowmen are often drawn from Reaver ranks, making them superior in a melee compared to most archers. That said, Bowmen are not melee troops, and should be protected from direct assaults."
@@ -100,8 +102,9 @@
                 "abilities": [
                     "Bardiche",
                     "Se Nourrir de la Peur",
-                    "Reaper's Fervor"
-                ]
+                    "Ferveur du Faucheur"
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Although the scythe is not generally a workable weapon in war, the infamous Reapers of House Harlaw have devised a form of long-bladed heavy bardiche reminiscent of their fearsome house sigil. The Reapers themselves are lightly armored troops renowned for their deadly ferocity. What good is armor when the morale of their foes has been utterly broken? When it comes to sowing terror across the battlefield, few compare to the Reapers."
@@ -132,8 +135,9 @@
                 ],
                 "abilities": [
                     "Grand Marteau",
-                    "Raided Armaments"
-                ]
+                    "Équipement de Pillard"
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "The heavily armored troops from House Ironmaker often serve as the hard center of Ironborn forces where a dedicated line is required. With their heavy scale armor overlaying a thick suit of boiled leather, the Ironmakers can withstand even more assaults than most of the troops of the Iron Islands. That said, as ‘heavy troops’ go, the Ironmakers are the general equivalent of standard medium infantry, that is, until the spoils of the raid are gained!"
@@ -163,9 +167,10 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Trapper's Tools",
+                    "Ordre : Outils de Trappeur",
                     "Déstabilisation"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Pillaging and raiding is the primary Ironborn motivation in the War of the Five Kings. Let the houses fight for the Iron Throne if they wish. The Ironborn have coasts to raid, treasure to seize, and people to enslave. As such the Ironborn Trappers excel at hindering enemy forces with their long, barbed pikes and entangling nets. While lightly armored and possessing only crude weapons, the trapper’s cunning and usage of devious tools more than makes up for this."
@@ -195,9 +200,10 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Divide The Spoils",
-                    "First Claim"
-                ]
+                    "Ordre : Partager le Butin",
+                    "Premiers Servis"
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Of the different warriors that House Greyjoy sends to assault shoreline settlements, the Blacktyde Chosen are the most feared. When these elite warriors hit the beach, they rapidly form their ranks and sweep a path clear through any defences or defenders that stand in their way. Clad in scale mail, armed with master-crafted axes, and wielding large round shields, the Chosen are among the heaviest troops under the Kraken banner."
@@ -227,10 +233,11 @@
                     }
                 ],
                 "abilities": [
-                    "Great Axe",
+                    "Grande Hache",
                     "Audacieux",
                     "Infamie du Silence"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Those under the Kraken banner have long learned that raiding and terror are close companions. Thus the crew of House Greyjoy’s warship Silence is composed entirely of mutes. War is not a quiet business, but the Silenced Men add an unnatural stillness to the battlefield. Even in death, they make no sound. Even disciplined troops find such men unnerving. Though wearing only light armor, their honed greataxes can sunder heavy plate with ease."
@@ -259,8 +266,10 @@
                 ],
                 "abilities": [
                     "Ordre : Bénédiction du Dieu Noyé",
-                    "Drowned God's Fanatics"
-                ]
+                    "Fanatiques du Dieu Noyé"
+                ],
+                "wounds": 3,
+                "tray": "solo"
             },
             "fluff": {
                 "lore": "Armored with only their faith, and armed only with deadwood cudgels and other detritus from the shore, the Drowned Men make surprisingly effective support for followers of the Kraken banner. Their presence in battle signifies the Drowned God’s blessing, bolstering men to fight past their wounds and strike all the harder against their foes. While few in number, the Drowned Men’s faith is such that they can survive even killing blows."
@@ -284,7 +293,11 @@
                             "Au début de n’importe quel tour, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, choisissez n’importe quel nombre de cartes Tactique dans votre main et mettez-les de côté. Ensuite, piochez ce même nombre de cartes +1. Enfin, mélangez les cartes mises de côté dans votre paquet Tactique."
                         ]
                     }
-                ]
+                ],
+                "tokens": {
+                    "number": 2,
+                    "name": "order"
+                }
             },
             "fluff": {
                 "quote": "\"I prefer my history dead. Dead history is writ in ink, the living sort in blood.\""
@@ -302,10 +315,9 @@
                     {
                         "name": "Se Relever, Plus Dur à la Peine et Plus Vigoureux",
                         "effect": [
-                            "**Areon ne peut influencer que des unités Greyjoy.**",
+                            "**Areon ne peut Influencer que des unités Greyjoy.**",
                             "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité, chaque fois que celle-ci effectue une action, elle se soigne de 1 Blessure avant de résoudre son action.",
-                            "Quand cette unité détruit un ennemi lors d’une Attaque de Mêlée, elle se soigne de 1 Blessure pour chacun de ses rangs détruits."
+                            "Tant que cette carte Influence une unité, chaque fois que celle-ci effectue une action, elle se soigne 1 de ses Blessures avant de résoudre son action. Chaque fois que cette unité détruit un ennemi lors d’une Attaque de Mêlée, elle se soigne 1 de ses Blessures."
                         ]
                     }
                 ]
@@ -326,8 +338,7 @@
                     {
                         "name": "Se Relever, la Lame à la Main",
                         "effect": [
-                            "Une fois par partie, quand Balon s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*Redéployez 1 Unité Combattante précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée ou entièrement à Courte Portée ou moins d’un Flanc de table. Elle se déploie activée, avec tous les pions Pillage qu’elle possédait.*"
+                            "Une fois par partie, quand Balon est activé, au lieu de le faire s’emparer d’une zone, redéployez 1 Unité Combattante précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée ou entièrement à Courte Portée ou moins d’un Flanc de table. Elle se déploie avec tous les pions Pillage qu’elle possédait. Si l’unité n’avait pas encore été activée ce round-ci, elle est déployée non activée. Dans le cas contraire, elle est déployée activée."
                         ]
                     }
                 ]
@@ -348,12 +359,11 @@
                     {
                         "name": "S'occuper des Corbeaux",
                         "effect": [
-                            "Wendamyr commence la partie avec 1 pion Ordre.",
+                            "Quand Wendamyr s’empare d’une zone, vous pouvez en remplacer l’effet par :",
+                            "*Placez 1 pion Ordre sur Wendamyr.*",
                             "Au début d’un tour allié, vous pouvez retirer 1 pion Ordre de Wendamyr. Si vous le faites, choisissez 1 option :",
                             "• Piochez 1 carte Tactique et soignez 2 Blessures de 1 Unité Combattante alliée.",
-                            "• 1 Unité Combattante alliée se décale de 3’’.",
-                            "Quand Wendamyr s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*Placez 1 pion Ordre sur Wendamyr.*"
+                            "• 1 Unité Combattante alliée se décale de 3’’."
                         ]
                     }
                 ]
@@ -376,10 +386,14 @@
                         "effect": [
                             "Au début de la partie, placez 2 pions Pillage sur Erik.",
                             "Quand une UNC ennemie s’empare de [MONEY], placez 1 pion Pillage sur Erik.",
-                            "Quand Erik s’empare d’une zone, vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité alliée disposant de la capacité Pillage."
+                            "Quand Erik s’empare d’une zone autre que [MONEY], vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité alliée disposant de la capacité Pillage."
                         ]
                     }
-                ]
+                ],
+                "tokens": {
+                    "number": 1,
+                    "name": "pillage"
+                }
             },
             "fluff": {
                 "quote": "\"If old is wise, no one is wiser than me. If big is strong, no one's stronger.\""
@@ -397,9 +411,8 @@
                     {
                         "name": "Diplomate Fer-Né",
                         "effect": [
-                            "Une fois par partie, au début d’un round, vous pouvez choisir une zone du Tableau Stratégique. Si vous le faites, aucune UNC ne peut s’emparer de cette zone durant ce Round.",
-                            "Une fois par partie, quand une UNC ennemie est activée, vous pouvez choisir 2 zones du Tableau Stratégique.",
-                            "Si cette UNC s’empare d’une de ces zones pendant son activation, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée** et **Vulnérable**."
+                            "Une fois par partie, quand une UNC ennemie est activée, vous pouvez choisir 2 Zones Stratégiques. Si cette UNC s’empare de l’une ou l’autre de ces zones au cours de cette activation, ciblez jusqu’à 2 Unités Combattantes alliées. Elles deviennent ** Paniquées ** et **Vulnérables**.",
+                            "Une fois par partie, quand une UNC ennemie est activée, si Tristifer ne se trouve pas sur le tableau Stratégique, vous pouvez choisir 1 zone. Si cette UNC s’empare de cette zone ce tour-ci, à la fin du tour, vous pouvez activer Tristifer."
                         ]
                     }
                 ]
@@ -420,8 +433,7 @@
                     {
                         "name": "La Magie de R'hllor",
                         "effect": [
-                            "Moqorro commence la partie avec 2 pions Ordre sur sa carte.",
-                            "Chaque fois que Moqorro s’empare d’une zone, vous pouvez dépenser 1 pion Ordre de sa carte. Si vous le faites, regardez la première carte de n’importe quel paquet Tactique. Vous pouvez ensuite mélanger ce paquet Tactique.",
+                            "Une fois par partie, au début d’un tour, vous pouvez utiliser cette capacité. Si vous le faites, jusqu’à la fin du tour, votre adversaire de peut pas utiliser d’Ordres ou de cartes Tactique.",
                             "Une fois par partie, quand Moqorro s’empare d’une zone, vous pouvez remplacer l’effet de cette zone par :",
                             "*Remettez en jeu 1 Attachement déjà détruit et attachez-le à une Unité Combattante alliée, en remplaçant normalement une figurine, mais en ignorant les restrictions d’Attachement.*"
                         ]
@@ -446,8 +458,9 @@
                         "effect": [
                             "**Beron ne peut Influencer que des unités Greyjoy.**",
                             "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du Round)* :",
-                            "Tant que cette carte Influence une unité alliée, celle-ci ne subit que 1 Blessure par tranche de 2 Touches non bloquées, peu importe l’attaque ou l’effet.",
-                            "Si cette unité échoue un Test de Panique, retirez l’Influence de Beron."
+                            "**Tant que cette carte Influence une unité, celle-ci peut relancer n’importe quels dés de Test de et gagne la capacité **Endurci** :",
+                            "**ENDURCI**",
+                            "*Chaque fois qu’un ennemi effectue une attaque sur cette unité, après avoir lancé les dés de Défense, cette unité bloque 1 Touche pour chacun de ses rangs détruits.*"
                         ]
                     }
                 ]
@@ -468,9 +481,9 @@
                     {
                         "name": "Promesses de Reine",
                         "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :*",
-                            "Tant que cette carte Influence une unité alliée, elle gagne +1 à ses lancers de Test de Moral pour chaque pion Pillage sur sa carte.",
-                            "Si cette unité possède 2 pions Pillage, elle subit −1 Blessure lorsqu’elle échoue un Test de Panique."
+                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
+                            "*Chaque fois qu’Asha Influence une unité, celle-ci retire 1 de ses pions État.",
+                            "Tant qu’Asha Influence une unité alliée, celle-ci gagne +1 à ses lancers de Test de Moral pour chacun de ses pions Pillage. Chaque fois que cette unité réussit un Test de Moral, ciblez 1 ennemi avec lequel elle est engagée. Cet ennemi subit 1 Blessure pour chaque pion Pillage sur cette unité."
                         ]
                     }
                 ]
@@ -754,7 +767,7 @@
                 "cost": "C",
                 "abilities": [
                     "Soif de Massacre",
-                    "The Kraken's Dues"
+                    "Le Tribut de la Seiche"
                 ],
                 "commander": true,
                 "character": true
@@ -799,8 +812,8 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Order: Divide The Spoils",
-                    "Gifts of Silver and Bronze"
+                    "Ordre : Partager le Butin",
+                    "Cadeaux d'Argent et de Bronze"
                 ],
                 "commander": true,
                 "character": true
@@ -845,7 +858,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars"
+                    "Cicatrices de Combat"
                 ],
                 "character": true
             },
@@ -905,7 +918,11 @@
                     "Endurci"
                 ],
                 "commander": true,
-                "character": true
+                "character": true,
+                "tokens": {
+                    "number": 2,
+                    "name": "wound"
+                }
             },
             "tactics": {
                 "cards": [
@@ -989,8 +1006,13 @@
                     {
                         "trigger": "Quand une unité alliée doit être détruite :",
                         "effect": [
-                            "Cette unité n’est pas détruite et reste en jeu avec D3 Blessures. Attachez cette carte à l’unité jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, quand cette unité effectue une action, elle subit D3 Blessures avant de résoudre cette dernière, à moins que vous contrôliez [SWORDS]."
+                            "Cette unité n’est pas détruite et reste en jeu avec 1 Blessure."
+                        ]
+                    },
+                    {
+                        "trigger": "Au début d’un tour allié :",
+                        "effect": [
+                            "Ciblez 1 Unité Combattante alliée. Cette unité soigne 1 de ses Blessures, +1 Blessure pour chacun de ses rangs détruits."
                         ]
                     }
                 ]
@@ -1025,10 +1047,9 @@
                     {
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
-                            "Ciblez une Unité Combattante alliée. Retirez n’importe quel nombre de pions Pillage de cette unité. Pour chaque pion ainsi retiré, choisissez 1 option :",
-                            "•Cette unité se soigne de 2 Blessures *(peut être choisi plusieurs fois)*.",
-                            "•Cette unité gagne +1[MOVEMENT] et peut relancer ses dés de Distance de Charge ce tour-ci.",
-                            "•Cette unité utilise sa plus haute valeur de dés d’Attaque ce tour-ci."
+                            "Ciblez une Unité Combattante alliée et choisissez 1 option :",
+                            "• Cette unité peut retirer 1 de ses pions État. Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle soigne 2 de ses Blessures.",
+                            "• Cette unité attaque en utilisant sa plus haute valeur de dés ce tour-ci. . Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle peut relancer ses dés d'Attaque ce tour-ci."
                         ]
                     }
                 ]
@@ -1045,7 +1066,10 @@
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
                             "Ciblez une Unité Combattante alliée. Attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, quand cette unité attaque un ennemi possédant autant de rangs ou moins, avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**. Quand un ennemi possédant autant de rangs ou plus attaque cette unité, avant de lancer les dés d’Attaque, cette unité devient **Vulnérable**."
+                            "Tant que cette carte est attachée, quand il effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, l'attaquant peut subir 2 Blessures. Pour chque Blessure subie, choisissez 1 option :",
+                            "• Le défenseur devient **Paniqué**.",
+                            "• Le défenseur devient **Vulnérable**.",
+                            "• Cette attaque peut relancer n'importe quels dés d'Attaque."
                         ]
                     }
                 ]
@@ -1061,8 +1085,8 @@
                     {
                         "trigger": "Quand une unité d’Infanterie Greyjoy alliée est activée :",
                         "effect": [
-                            "Retirez un maximum de 4 figurines et un maximum de 1 pion Pillage d’une autre unité d’Infanterie Greyjoy alliée située à Longue Portée ou moins. Cette unité se soigne d’autant de Blessures et, si elle a Pillage, elle gagne le pion Pillage retiré.",
-                            "Si un joueur quelconque contrôle [MONEY] ,1 unité alliée qui possède Pillage gagne 1 pion Pillage."
+                            "Retirez un maximum de 3 figurines et un maximum de 1 pion Pillage d’une autre unité d’Infanterie Greyjoy alliée située à Longue Portée ou moins. Cette unité se soigne d’autant de Blessures et gagne le pion Pillage retiré.",
+                            "Si un joueur quelconque contrôle [MONEY] ,1 unité d’Infanterie Greyjoy alliée gagne 1 pion Pillage."
                         ]
                     }
                 ]
@@ -1133,10 +1157,11 @@
                 "faction": "greyjoy",
                 "text": [
                     {
-                        "trigger": "Quand une unité alliée est activée :",
+                        "trigger": "Quand une Unité Combattante alliée est activée :",
                         "effect": [
                             "Cette unité effectue 1 Test de Moral.",
-                            "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** ou **Vulnérable**."
+                            "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** ou **Vulnérable**.",
+                            "Si cette carte cible l’unité d'Asha et qu’elle réussit, l’ennemi devient **Paniqué** et **Vulnérable**."
                         ]
                     }
                 ],
@@ -1196,8 +1221,8 @@
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa plus haute valeur de dés d’Attaque.",
-                            "Si cette carte cible l’unité de Victarion Greyjoy, elle peut également relancer n'importe quels dés d’Attaque."
+                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée.",
+                            "Si cette carte cible l’unité de Victarion Greyjoy, celle-ci peut relancer n’importe quels dés d’Attaque."
                         ]
                     }
                 ],
@@ -1252,10 +1277,11 @@
                 "faction": "greyjoy",
                 "text": [
                     {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, avant de lancer les dés de Distance de Charge :",
+                        "trigger": "Quand une unité alliée réussit une Charge :",
                         "effect": [
-                            "Les ennemis Chargés avec succès par cette unité ne peuvent pas être ciblés par des Ordres ou des cartes Tactique alliées ce tour-ci.",
-                            "Si cette carte cible l’unité de Theon Greyjoy, celle-ci peut relancer n’importe quels dés de Distance de Charge."
+                            "Choisissez 1 option. Si vous contrôlez [SWORDS], gagnez les 2 :",
+                            "• Les ennemis Chargés avec succès par cette unité ne peuvent pas être ciblés par des Ordres ou des cartes Tactique alliées ce tour-ci.",
+                            "• L’attaquant utilise sa plus haute valeur de dés d’Attaque."
                         ]
                     }
                 ],
@@ -1274,9 +1300,9 @@
                     {
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
-                            "Ciblez 1 Unité Combattante alliée autre que celle de Balon Greyjoy et attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, cette unité subit +1 Blessure quand elle échoue un Test de Panique. Toutes les autres unités alliées situées à Courte Portée ou moins gagnent +1 à leurs lancers de Tests de Panique.",
-                            "Quand cette unité est détruite, ciblez 1 unité alliée située à Longue Portée ou moins. Elle soigne 2 de ses Blessures et, si elle possède Pillage, elle gagne 1 pion Pillage."
+                            "Ciblez 1 Unité Combattante alliée autre que celle de Balon.",
+                            "Vous pouvez lui faire subir un maximum de 2 Blessures et la faire devenir **Paniquée**.",
+                            "Si vous le faites, ciblez 1 autre unité Greyjoy alliée située à Longue Portée ou moins. Elle gagne 1 pion Pillage pour chaque Blessure subie."
                         ]
                     }
                 ],
@@ -1295,7 +1321,8 @@
                     {
                         "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Tous les résultats des dés de cette attaque Touchent automatiquement. Pour chaque résultat qui aurait normalement dû être un Échec, l’attaquant subit 1 Blessure."
+                            "Tous les résultats des dés de cette attaque Touchent automatiquement.",
+                            "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
                         ]
                     }
                 ],
@@ -1314,13 +1341,15 @@
                     {
                         "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
                         "effect": [
-                            "Vous pouvez défausser 1 pion Pillage de cette unité. Si vous le faites, relancez n’importe quels dés de ce test."
+                            "Si cette unité possède 1 pion Pillage, elle peut relancer n’importe quels dés de ce Test.",
+                            "Si cette unité possède 2 pions Pillage, elle réussit le Test."
                         ]
                     },
                     {
                         "trigger": "Quand une unité alliée effectue une attaque, après avoir lancé les dés d’Attaque :",
                         "effect": [
-                            "Vous pouvez défausser 1 pion Pillage de cette unité. Si vous le faites, relancez n’importe quels dés d’Attaque."
+                            "Si cette unité possède 1 pion Pillage, le défenseur devient **Vulnérable**.",
+                            "Si cette unité possède 2 pions Pillage, elle peut également relancer n’importe quels dés d’Attaque."
                         ]
                     }
                 ],
@@ -1400,8 +1429,11 @@
                     {
                         "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après avoir lancé les dés de Défense :",
                         "effect": [
-                            "Vous pouvez retirer 1 pion Pillage du défenseur. Si vous le faites, bloquez +D3 Touches.",
-                            "*(Le pion retiré compte quand même pour tous les effets se produisant lors de l’attaque.)*"
+                            "Ciblez le défenseur. Il bloque +1 Touche.",
+                            "Si cette carte cible une unité Greyjoy, une fois cette attaque résolue, attachez-lui cette carte jusqu’à la fin de la partie.",
+                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)* : **",
+                            "• 1+ :** Chaque fois que cette unité est attaquée, une fois l’attaque résolue, 1 ennemi avec lequel elle est engagée devient **Affaibli**. **",
+                            "• 2 :** Chaque fois que cette unité réussit un Test de Moral, elle soigne 1 de ses Blessures."
                         ]
                     }
                 ],
@@ -1442,8 +1474,10 @@
                     {
                         "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
                         "effect": [
-                            "Vous pouvez défausser 1 pion Pillage de cette unité. Si vous le faites, elle réussit ce test.",
-                            "*(Le pion retiré compte quand même pour tous les effets se produisant lors de l’attaque.)*"
+                            "Elle peut relancer n’importe quels dés de ce Test. Si elle réussit, et si cette carte cible une unité Greyjoy, attachez-lui cette carte jusqu’à la fin de la partie.",
+                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)* : **",
+                            "• 1+ :** +1 aux lancers de Test de Moral.**",
+                            "• 2 :** Si cette unité doit gagner un pion Pillage, elle soigne 1 de ses Blessures à la place."
                         ]
                     }
                 ],
@@ -1564,7 +1598,7 @@
                     {
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
-                            "Vous pouvez dépenser 2 pions Pillage d’une unité alliée. Si vous le faites, choisissez 1 option :",
+                            "Vous pouvez défausser 1 pion Pillage d’une unité alliée. Si vous le faites, choisissez 1 option :",
                             "• Renvoyez 1 carte Tactique de votre défausse dans votre main.",
                             "• Regardez la main de cartes Tactique de votre adversaire et défaussez-y 1 carte."
                         ]

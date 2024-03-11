@@ -86,7 +86,9 @@ TYPES_FILTER = [
 ]
 
 LANG_FILTER = [
-    "en"
+    "en",
+    "fr",
+    "de"
 ]
 
 CARDSIDE_FILTER = [

@@ -604,7 +604,7 @@
                     }
                 ],
                 "wounds": 8,
-                "tray": "solo"
+                "tray": "warmachine"
             },
             "fluff": {
                 "lore": "On the battlefield the War Mammoth is a fearsome sight bearing down on an enemy position. Its incredible strength and thick hide make it difficult to neutralize. Giants have been known to ride Mammoths into battle, though not enough Mammoths still exist in the world to form a true cavalry corps. But, those that battle on behalf of their masters are well-trained. It’s a rare event, but a panicked Mammoth is no one’s ally on the battlefield."
@@ -1123,6 +1123,46 @@
                 "y": 30,
                 "w": 539,
                 "h": 769
+            }
+        },
+        {
+            "id": "10322",
+            "name": "Giant Spear Throwers",
+            "statistics": {
+                "version": "S04",
+                "faction": "freefolk",
+                "type": "monster",
+                "cost": 7,
+                "speed": 5,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Giant's Spear",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            3
+                        ]
+                    },
+                    {
+                        "name": "Giant's Spear",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Giant",
+                    "Giant's Spear"
+                ],
+                "wounds": 6,
+                "tray": "solo"
+            },
+            "fluff": {
+                "lore": "What’s worse than facing giants in the line-of-battle? Facing giants hurling spears the size of tree trunks from afar. The Free Folk’s alliance with the giants brought their Spear Throwers into the fray, giving them what amounts to artillery made of flesh. Their weapons are crude, but not much finesse is needed for a wooden haft as thick as a large man’s torso. That said, these giants have trouble dealing with foes up close, and must be guarded."
             }
         }
     ],

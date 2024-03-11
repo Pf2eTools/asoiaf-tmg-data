@@ -152,6 +152,7 @@ def parse_abilities():
         if ability_data.get("Icons") != "":
             parsed["icons"] = parsed.get("icons") or []
             for icon in ability_data.get("Icons").split(","):
+                icon = icon.strip()
                 parsed_icon = icons_to_long.get(icon)
                 if parsed_icon is None:
                     print(f'Uknown icon: "{icon}" in ability "{name}"')
@@ -658,9 +659,13 @@ MODE_REWRITE = "rewrite"
 # Add keys that are new
 MODE_NEW = "new"
 
-MODE = MODE_NEW
+MODE = MODE_REWRITE
 
-LANGUAGES = ["en"]
+LANGUAGES = [
+    "en",
+    "fr",
+    "de"
+]
 
 
 if __name__ == "__main__":
