@@ -10,12 +10,12 @@ def generate_ncu(asset_manager, ncu_id, name, subname, ncu_data):
     background = asset_manager.get_bg(faction)
     w, h = background.size
     ncu_card = Image.new("RGBA", (w, h))
-    ncu_card.paste(background.rotate(get_faction_bg_rotation(faction)))
+    ncu_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
     text_bg = asset_manager.get_text_bg()
     text_bg = text_bg.crop((10, 20, text_bg.size[0] - 10, text_bg.size[1] - 5))
-    ncu_card.paste(text_bg, (57, 356))
+    ncu_card.alpha_composite(text_bg, (57, 356))
     portrait = asset_manager.get_ncu_img(ncu_id)
-    ncu_card.paste(portrait, (52, 54))
+    ncu_card.alpha_composite(portrait, (52, 54))
 
     bars = Image.new("RGBA", (w, h))
     large_bar, small_bar, weird_bar = asset_manager.get_bars(faction)
@@ -137,10 +137,10 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
     background = asset_manager.get_bg(faction)
     w, h = background.size
     ncu_card = Image.new("RGBA", (w, h))
-    ncu_card.paste(background.rotate(get_faction_bg_rotation(faction)))
+    ncu_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
 
     portrait = asset_manager.get_ncu_img(ncu_id + "b")
-    ncu_card.paste(portrait, (135, 332))
+    ncu_card.alpha_composite(portrait, (135, 332))
 
     bars = Image.new("RGBA", (w, h))
     bars_lower = Image.new("RGBA", (w, h))
@@ -185,7 +185,7 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
     if requirements is not None:
         requirement_y = 812
         text_bg = asset_manager.get_text_bg().crop((0, 0, portrait.width, 180))
-        ncu_card.paste(text_bg, (135, requirement_y))
+        ncu_card.alpha_composite(text_bg, (135, requirement_y))
         bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, requirement_y - sb_h // 2))
         bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, requirement_y - decor.height // 2))
         bars.alpha_composite(decor, (674, requirement_y - decor.height // 2))

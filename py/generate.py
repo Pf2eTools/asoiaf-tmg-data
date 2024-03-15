@@ -8,6 +8,7 @@ from generate_attachments import generate_attachment, generate_attachment_back
 from const import *
 
 
+# FIXME/TODO: Relies on these garbage global vars
 def gen_all(all_data, key, basepath, asset_manager, abilities_data):
     if len(TYPES_FILTER) and key not in TYPES_FILTER:
         return
@@ -77,7 +78,7 @@ def main():
             gen_all(data, "ncus", cards_path, asset_manager, None)
 
 
-AMEND = False
+AMEND = True
 
 ID_FILTER = [
 ]

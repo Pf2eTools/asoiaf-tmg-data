@@ -8,30 +8,54 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 
 
+class ImageLoader:
+    def __init__(self, path):
+        self.path = path
+
+    def get_pil(self):
+        return Image.open(self.path).convert("RGBA")
+
+    def get_cv(self):
+        img_cv = cv.imread(self.path, -1)
+        _, _, channels = img_cv.shape
+        # creating an alpha channel
+        if channels != 4:
+            img_cv = cv.cvtColor(img_cv, cv.COLOR_RGB2RGBA)
+
+        return img_cv
+
+
+class ImageSaver:
+    def __init__(self, path):
+        self.path = path
+
+    def save(self, image):
+        cv.imwrite(self.path, image)
+
+
 class ImageCropper:
-    def __init__(self, image_path, out_path, shape, shape_coords):
-        self.image_path = image_path
-        self.out_path = out_path
-        self._did_write = False
+    def __init__(self, load_image, save_image, shape):
+        self.load_image = load_image
+        self.save_image = save_image
+        self.shape = shape
+        self.did_write = False
 
         self.root = None
         self.canvas = None
         self.canvas_image = None
         self.scale = 1
-        self.shape = Shape.from_string(shape, shape_coords)
         self.width, self.height = 0, 0
         self.image_tk = None
-        self.mode = None
 
     def create_ui(self):
         self.root = tk.Tk()
-        self.root.title(self.image_path)
+        self.root.title(self.load_image.path)
         self.root.focus_force()
-        image = Image.open(self.image_path)
+        image = self.load_image.get_pil()
         self.scale = min(2.5, (self.root.winfo_screenwidth() - 400) / image.width, (self.root.winfo_screenheight() - 400) / image.height)
         self.width = int(image.width * self.scale)
         self.height = int(image.height * self.scale)
-        self.image_tk = ImageTk.PhotoImage(image.resize((self.width, self.height)))
+        self.image_tk = ImageTk.PhotoImage(image.resize((self.width, self.height)), master=self.root)
 
         frame_settings = tk.Frame(self.root, height=self.height, width=200)
         frame_settings.pack(side="right")
@@ -45,26 +69,26 @@ class ImageCropper:
         ]
         tk.Label(frame_settings, text="\n".join(label_text)).pack()
 
-        self.mode = tk.StringVar()
-        tk.Radiobutton(frame_settings,
-                       anchor="e",
-                       variable=self.mode,
-                       value=Rectangle.name,
-                       text=Rectangle.name.capitalize(),
-                       command=self.on_radio).pack()
-        tk.Radiobutton(frame_settings,
-                       anchor="e",
-                       variable=self.mode,
-                       value=Circle.name,
-                       text=Circle.name.capitalize(),
-                       command=self.on_radio).pack()
-        tk.Radiobutton(frame_settings,
-                       anchor="e",
-                       variable=self.mode,
-                       value=Square.name,
-                       text=Square.name.capitalize(),
-                       command=self.on_radio).pack()
-        self.mode.set(self.shape.name)
+        # self.mode = tk.StringVar()
+        # tk.Radiobutton(frame_settings,
+        #                anchor="e",
+        #                variable=self.mode,
+        #                value=Rectangle.name,
+        #                text=Rectangle.name.capitalize(),
+        #                command=self.on_radio).pack()
+        # tk.Radiobutton(frame_settings,
+        #                anchor="e",
+        #                variable=self.mode,
+        #                value=Circle.name,
+        #                text=Circle.name.capitalize(),
+        #                command=self.on_radio).pack()
+        # tk.Radiobutton(frame_settings,
+        #                anchor="e",
+        #                variable=self.mode,
+        #                value=Square.name,
+        #                text=Square.name.capitalize(),
+        #                command=self.on_radio).pack()
+        # self.mode.set(self.shape.name)
 
         self.canvas = tk.Canvas(self.root, height=self.height, width=self.width)
         self.canvas.pack(fill="both")
@@ -77,12 +101,12 @@ class ImageCropper:
         self.canvas.bind("<B1-Motion>", self.on_drag)
         self.canvas.bind("<ButtonRelease-1>", self.on_release)
         self.root.bind("<Key>", self.on_key)
-        self.root.mainloop()
+        self.root.wait_window()
 
-    def on_radio(self):
-        self.shape.destroy()
-        self.shape = Shape.from_string(self.mode.get(), {})
-        self.shape.set_canvas(self.canvas)
+    # def on_radio(self):
+    #     self.shape.destroy()
+    #     self.shape = Shape.from_string(self.mode.get(), {})
+    #     self.shape.set_canvas(self.canvas)
 
     def on_click(self, evt):
         x = int(evt.x)
@@ -111,42 +135,22 @@ class ImageCropper:
             raise SystemExit
 
     def save(self):
-        self.shape.save(self.image_path, self.out_path)
-        self._did_write = True
+        cropped = self.shape.get_crop(self.load_image.get_cv())
+        self.did_write = True
+        self.save_image.save(cropped)
 
     def get_shape_coords(self):
-        if not self._did_write:
+        if not self.did_write:
             return None
         return self.shape.get_coords()
 
 
 class Shape(ABC):
-    def __init__(self, x=0, y=0):
-        self.x = x
-        self.y = y
+    def __init__(self):
         self.scale_tk = 1
         self.preview = None
         self.canvas = None
         self.released = False
-
-    @staticmethod
-    def from_string(name_string, opts):
-        opts = opts or {}
-        x = opts.get("x", 0)
-        y = opts.get("y", 0)
-        if name_string == Circle.name:
-            r = opts.get("r", 0)
-            return Circle(x, y, r)
-        elif name_string == Square.name:
-            a = opts.get("a", 0)
-            return Square(x, y, a)
-        elif name_string == Rectangle.name:
-            w = opts.get("w", 0)
-            h = opts.get("h", 0)
-            aspect = 0 if h == 0 else w / h
-            return Rectangle(x, y, w, h, aspect)
-        else:
-            raise NotImplementedError(f'Unknown shape: "{name_string}"')
 
     @abstractmethod
     def set_scale(self, scale):
@@ -161,8 +165,6 @@ class Shape(ABC):
             self.canvas.delete(self.preview)
             self.preview = None
         self.released = False
-        self.x = 0
-        self.y = 0
 
     @abstractmethod
     def draw(self, x, y):
@@ -187,7 +189,7 @@ class Shape(ABC):
         pass
 
     @abstractmethod
-    def save(self, image_path, out_path):
+    def get_crop(self, image):
         pass
 
     @abstractmethod
@@ -198,11 +200,13 @@ class Shape(ABC):
 class Circle(Shape):
     name = "circle"
 
-    def __init__(self, x=0, y=0, r=0):
-        super().__init__(x, y)
-        self.r = r
+    def __init__(self, coords):
+        super().__init__()
+        self.x = coords.get("x", 0)
+        self.y = coords.get("y", 0)
+        self.r = coords.get("r", 0)
         self.border_tk = None
-        self.token_path = "./assets/tokens/border.png"
+        self.token_loader = ImageLoader("./assets/tokens/border.png")
 
     def set_scale(self, scale):
         self.scale_tk = scale
@@ -240,31 +244,31 @@ class Circle(Shape):
         if self.preview is not None:
             self.canvas.delete(self.preview)
             self.preview = None
-        border = Image.open(self.token_path)
+        border = self.token_loader.get_pil()
         border = border.crop(border.getbbox()).resize((2 * self.r, 2 * self.r), resample=Image.LANCZOS)
         self.border_tk = ImageTk.PhotoImage(border)
         self.canvas.create_image(self.x, self.y, image=self.border_tk, anchor="c")
 
     def destroy(self):
         super().destroy()
+        self.x = 0
+        self.y = 0
         self.r = 0
         self.border_tk = None
 
-    def save(self, image_path, out_path):
-        print(f'Saving Token "{out_path}"...', end=" ")
-        img = get_image(image_path)
+    def get_crop(self, img):
         # cba doing this in cv
-        token_pil = Image.open(self.token_path).convert("RGBA")
+        token_pil = self.token_loader.get_pil()
         token_pil = token_pil.crop(token_pil.getbbox())
-        token = cv.cvtColor(np.array(token_pil), cv.COLOR_RGBA2BGRA)
+        token_cv = cv.cvtColor(np.array(token_pil), cv.COLOR_RGBA2BGRA)
         # we assume the token is a square image below, so pad it here
-        diff = np.abs(token.shape[0] - token.shape[1])
-        pad_top, pad_bot = (diff // 2 + diff % 2, diff // 2) if token.shape[0] < token.shape[1] else (0, 0)
-        pad_right, pad_left = (diff // 2 + diff % 2, diff // 2) if token.shape[0] > token.shape[1] else (0, 0)
-        token = cv.copyMakeBorder(token, pad_top, pad_bot, pad_left, pad_right, cv.BORDER_CONSTANT, value=(0, 0, 0, 0))
+        diff = np.abs(token_cv.shape[0] - token_cv.shape[1])
+        pad_top, pad_bot = (diff // 2 + diff % 2, diff // 2) if token_cv.shape[0] < token_cv.shape[1] else (0, 0)
+        pad_right, pad_left = (diff // 2 + diff % 2, diff // 2) if token_cv.shape[0] > token_cv.shape[1] else (0, 0)
+        token_cv = cv.copyMakeBorder(token_cv, pad_top, pad_bot, pad_left, pad_right, cv.BORDER_CONSTANT, value=(0, 0, 0, 0))
 
         # resize image
-        out_size = token.shape[0] - token.shape[0] % 2
+        out_size = token_cv.shape[0] - token_cv.shape[0] % 2
         r = out_size // 2
         img = cv.copyMakeBorder(img, r, r, r, r, cv.BORDER_CONSTANT, value=(0, 0, 0, 0))
         scale = out_size / ((self.r / self.scale_tk) * 2)
@@ -273,7 +277,7 @@ class Circle(Shape):
 
         # crop images to size
         cropped_img = resized[center[0] - r:center[0] + r, center[1] - r:center[1] + r]
-        cropped_token = token[out_size - 2 * r:out_size, out_size - 2 * r:out_size]
+        cropped_token = token_cv[out_size - 2 * r:out_size, out_size - 2 * r:out_size]
 
         # add the background
         bg = TOKEN_BG
@@ -294,9 +298,7 @@ class Circle(Shape):
 
         # add token border to image
         out = alpha_composite(cropped_token, masked, out_size)
-        cv.imwrite(out_path, out)
-
-        print("Done.", end="\n")
+        return out
 
     def get_coords(self):
         return {
@@ -321,11 +323,13 @@ def alpha_composite(foreground, background, size):
 class Rectangle(Shape):
     name = "rectangle"
 
-    def __init__(self, x=0, y=0, w=0, h=0, aspect_ratio=0):
-        super().__init__(x, y)
-        self.w = w
-        self.h = h
-        self.aspect_ratio = aspect_ratio
+    def __init__(self, coords):
+        super().__init__()
+        self.x = coords.get("x", 0)
+        self.y = coords.get("y", 0)
+        self.w = w = coords.get("w", 0)
+        self.h = h = coords.get("h", 0)
+        self.aspect_ratio = 0 if h == 0 else w / h
 
     def set_scale(self, scale):
         self.scale_tk = scale
@@ -369,19 +373,18 @@ class Rectangle(Shape):
 
     def destroy(self):
         super().destroy()
+        self.x = 0
+        self.y = 0
         self.w = 0
         self.h = 0
 
-    def save(self, image_path, out_path):
-        print(f'Saving cropped image to "{out_path}"...', end=" ")
-        img = get_image(image_path)
+    def get_crop(self, img):
         x = int(self.x / self.scale_tk)
         y = int(self.y / self.scale_tk)
         h = int(self.h / self.scale_tk)
         w = int(self.w / self.scale_tk)
         cropped_img = img[y:y + h, x:x + w]
-        cv.imwrite(out_path, cropped_img)
-        print("Done.", end="\n")
+        return cropped_img
 
     def get_coords(self):
         return {
@@ -395,8 +398,11 @@ class Rectangle(Shape):
 class Square(Rectangle):
     name = "square"
 
-    def __init__(self, x=0, y=0, a=0):
-        super().__init__(x, y, a, a, 1)
+    def __init__(self, coords):
+        x = coords.get("x", 0)
+        y = coords.get("y", 0)
+        a = coords.get("a", 0)
+        super().__init__({"x": x, "y":y, "w": a, "h": a, "aspect": 1})
 
     def get_coords(self):
         return {
@@ -405,29 +411,14 @@ class Square(Rectangle):
             "a": int(self.w / self.scale_tk),
         }
 
-    def save(self, image_path, out_path):
-        print(f'Saving cropped image to "{out_path}"...', end=" ")
-        img = get_image(image_path)
+    def get_crop(self, img):
         x = int(self.x / self.scale_tk)
         y = int(self.y / self.scale_tk)
         h = int(self.h / self.scale_tk)
         w = int(self.w / self.scale_tk)
         cropped_img = img[y:y + h, x:x + w]
         normalized = cv.resize(cropped_img, (273, 273), interpolation=cv.INTER_AREA)
-        cv.imwrite(out_path, normalized)
-        print("Done.", end="\n")
-
-
-def get_image(url):
-    img_cv = cv.imread(url, -1)
-    if img_cv is None:
-        print(f"failed: {url}")
-    imgHeight, imgWidth, channels = img_cv.shape
-    # creating an alpha channel
-    if channels != 4:
-        img_cv = cv.cvtColor(img_cv, cv.COLOR_RGB2RGBA)
-
-    return img_cv
+        return normalized
 
 
 def generate_portraits(data, faction):
@@ -453,9 +444,11 @@ def generate_portraits(data, faction):
                 continue
             default_coords = get_default_coords(key, data_object)
             unit_id = data_object["id"]
-            inpath = f"./assets/warcouncil/{key}/{unit_id}b.png"
             coords = data_object.get("portrait", default_coords)
-            cropper = ImageCropper(inpath, f"{outpath_portraits}/{unit_id}.png", Circle.name, coords)
+            loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
+            saver = ImageSaver(f"{outpath_portraits}/{unit_id}.png")
+            shape = Circle(coords)
+            cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
                 cropper.create_ui()
             elif MODE == MODE_REWRITE:
@@ -487,14 +480,16 @@ def generate_portraits_square(data, faction):
                 continue
             default_coords = get_default_coords(key, data_object)
             unit_id = data_object["id"]
-            inpath = f"./assets/warcouncil/{key}/{unit_id}b.png"
             coords = data_object.get("portrait_square")
             if coords is None:
                 coords = {k: v for k, v in data_object.get("portrait", default_coords).items()}
                 coords["a"] = coords["r"] * 2
                 coords["x"] = max(5, coords["x"] - coords["r"])
                 coords["y"] = max(5, coords["y"] - coords["r"])
-            cropper = ImageCropper(inpath, f"{outpath_portraits_square}/{unit_id}.jpg", Square.name, coords)
+            loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
+            saver = ImageSaver(f"{outpath_portraits_square}/{unit_id}.jpg")
+            shape = Square(coords)
+            cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
                 cropper.create_ui()
             elif MODE == MODE_REWRITE:
@@ -519,9 +514,11 @@ def generate_standees(data, faction):
             if MODE == MODE_NEW and coords_exist:
                 continue
             unit_id = data_object["id"]
-            inpath = f"./assets/warcouncil/{key}/{unit_id}b.png"
+            loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
+            saver = ImageSaver(f"{outpath}/{unit_id}.jpg")
             portrait_coords = data_object.get("standee", default_portrait)
-            cropper = ImageCropper(inpath, f"{outpath}/{unit_id}.jpg", Rectangle.name, portrait_coords)
+            shape = Rectangle(portrait_coords)
+            cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
                 cropper.create_ui()
             elif MODE == MODE_REWRITE:

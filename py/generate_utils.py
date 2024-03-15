@@ -209,15 +209,20 @@ def render_skill_icons(asset_manager, icons, highlight_color="Gold"):
     return all_icons
 
 
-def get_filtered_ability_data(ability_names, abilities_data):
+def get_filtered_ability_data(abilities, abilities_data):
     filtered_abilities_data = []
-    for ability_name in ability_names:
-        name_upper = ability_name.upper()
+    for ability in abilities:
+        if type(ability) == dict:
+            filtered_abilities_data.append(ability)
+            continue
+        elif type(ability) != str:
+            raise Exception(f"Bad Data! Explected ability name (str) or ability (dict), but got {type(ability)}.")
+        name_upper = ability.upper()
         ability_data = abilities_data.get(name_upper)
         if ability_data is None:
-            print(f"Couldn't find ability: {ability_name}")
+            print(f"Couldn't find ability: {ability}")
             continue
-        ability_data["name"] = re.sub(r"\(.+", "", ability_name)
+        ability_data["name"] = re.sub(r"\(.+", "", ability)
         filtered_abilities_data.append(ability_data)
 
     return filtered_abilities_data

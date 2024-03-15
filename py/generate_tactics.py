@@ -14,19 +14,19 @@ def generate_tactics(asset_manager, name,  tactics_data):
     w, h = tactics_bg.size
     tactics_bg2 = asset_manager.get_text_bg()
     tactics_card = Image.new("RGBA", (w, h))
-    tactics_card.paste(tactics_bg.rotate(get_faction_bg_rotation(faction)))
-    tactics_card.paste(tactics_bg2, (47, 336))
+    tactics_card.alpha_composite(tactics_bg.rotate(get_faction_bg_rotation(faction)))
+    tactics_card.alpha_composite(tactics_bg2, (47, 336))
 
     if commander_id is not None:
         cmdr_image = asset_manager.get_tactics_commmander_img(commander_id)
-        tactics_card.paste(cmdr_image, (-1, -2))
+        tactics_card.alpha_composite(cmdr_image, (-1, -2))
 
     bars = Image.new("RGBA", (w, h))
     large_bar, small_bar, weird_bar = asset_manager.get_bars(faction)
 
     bars.alpha_composite(large_bar.rotate(180), (-96, 252))
     if commander_id is not None:
-        bars.paste(Image.new("RGBA", (646, 82), (0, 0, 0, 0)), (55, 246))
+        bars.alpha_composite(Image.new("RGBA", (646, 82), (0, 0, 0, 0)), (55, 246))
 
     bars.alpha_composite(ImageOps.flip(weird_bar.rotate(270, expand=1)), (242 - weird_bar.size[1], 25))
     bars.alpha_composite(weird_bar.rotate(270, expand=1), (242 - weird_bar.size[1], -95))

@@ -3,19 +3,27 @@ import os
 import re
 from pathlib import Path
 from const import FACTIONS
+import tkinter as tk
+from tkinter.filedialog import askopenfilename
+from image_cropper import ImageLoader, ImageSaver, ImageCropper, Rectangle
 
 
+# TODO: Get all the sizes in
 class AssetManager:
     ASSETS_DIR = "./assets/warcouncil"
+    DEFAULT_ASSET_SIZE = (100, 100)
 
-    @staticmethod
-    def fallback(size):
+    def get_missing(self, path, size):
         return Image.new("RGBA", size)
 
-    def get(self, path, size=(100, 100)):
+    def get(self, path, size=DEFAULT_ASSET_SIZE):
         if not os.path.exists(path):
-            return self.fallback(size)
-        return Image.open(path)
+            return self.get_missing(path, size)
+        return self._get(path)
+
+    @staticmethod
+    def _get(path):
+        return Image.open(path).convert("RGBA")
 
     def get_bg(self, faction):
         return self.get(f"{self.ASSETS_DIR}/{faction}/bg-small.png")
@@ -46,10 +54,17 @@ class AssetManager:
         return self.get(f"{self.ASSETS_DIR}/common/bg-skills.png")
 
     def get_unit_image(self, unit_id):
-        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}.png", (460, 640))
+
+    def get_unit_back_image(self, unit_id):
+        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}b.png", (797, 827))
 
     def get_attachment_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png", (197, 248))
+
+    # FIXME/TODO: Named Chars/Commanders might be a different size
+    def get_attachment_back_image(self, attachment_id):
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}b.png", (566, 878))
 
     def get_unit_type(self, unit_type, faction):
         return self.get(f"{self.ASSETS_DIR}/{faction}/unit-{unit_type.lower()}.png")
@@ -212,6 +227,101 @@ class AssetManager:
             if not re.match(r"\d+b?\.jpg", file):
                 continue
             convert(f"{source}/Units/{file}", f"{path_units}/{file.replace('.jpg', '.png')}")
+
+
+# TODO: Might only look for .png image, even though .jpg exists
+# TODO: For custom factions, the assetmanager expects ALL files in the same directory
+# All in all, it's pretty disgusting
+class CustomAssetManager(AssetManager):
+    CUSTOM_ASSET_BASE_DIR = "./custom/assets"
+
+    def __init__(self, asset_path):
+        super().__init__()
+        self._asset_path = asset_path
+
+    @property
+    def asset_path(self):
+        return f"{self.CUSTOM_ASSET_BASE_DIR}/{self._asset_path}"
+
+    def get(self, path, size=AssetManager.DEFAULT_ASSET_SIZE):
+        custom_path = re.sub(r".+/", f"{self.asset_path}/", path)
+        if os.path.exists(path):
+            return self._get(path)
+        elif os.path.exists(custom_path):
+            return self.get_cropped_resized(custom_path, size)
+        else:
+            return self.get_missing(custom_path, size)
+
+    # FIXME: cropped image overwrites
+    def get_cropped_resized(self, path, size):
+        original = self._get(path)
+        w, h = size
+        img_w, img_h = original.size
+        # TODO: what's a good value for this?
+        tolerance = 10
+        if w - tolerance < img_w < w + tolerance and h - tolerance < img_h < h + tolerance:
+            return original
+        root = tk.Tk()
+        root.title("Warning")
+        frame = tk.Frame(root, padx=10, pady=10)
+        frame.pack(fill=tk.BOTH, expand=True)
+        tk.Label(frame, text=f"The image at {path} has bad dimensions.\n(expected {w}x{h}, got {img_w}x{img_h})"
+                             f"\nDo you wish to crop and resize?").pack()
+
+        out_path = path
+        cropped_path = path.replace(".", "-cropped.")
+
+        def click_yes():
+            loader = ImageLoader(path)
+            saver = ImageSaver(cropped_path)
+            shape = Rectangle({"w": size[0], "h": size[1]})
+            cropper = ImageCropper(loader, saver, shape)
+            cropper.create_ui()
+            if cropper.did_write:
+                nonlocal out_path
+                out_path = cropped_path
+            root.destroy()
+
+        tk.Button(frame, text="Crop", command=click_yes).pack(side=tk.LEFT, expand=True)
+        tk.Button(frame, text="Ignore", command=lambda: root.destroy()).pack(side=tk.RIGHT, expand=True)
+        if os.path.exists(cropped_path):
+            frame2 = tk.Frame(root, padx=10, pady=10)
+            frame2.pack(fill=tk.BOTH, expand=True)
+            tk.Label(frame2, text=f"Found cropped image at {cropped_path}. Use old crop?").pack()
+
+            def use_old():
+                nonlocal out_path
+                out_path = cropped_path
+                root.destroy()
+            tk.Button(frame2, text="Use Old Crop", command=use_old).pack(expand=True)
+        root.wait_window()
+
+        cropped = self._get(out_path)
+        resized = cropped.resize(size)
+        return resized
+
+    def get_missing(self, path, size):
+        root = tk.Tk()
+        root.title("Error")
+        frame = tk.Frame(root, padx=10, pady=10)
+        frame.pack(fill=tk.BOTH, expand=True)
+        tk.Label(frame, text=f"Encountered missing image at {path}.\nDo you wish to locate the missing file?").pack()
+
+        filename = None
+
+        def click_yes():
+            nonlocal filename
+            filename = askopenfilename(initialdir=os.path.abspath(self.asset_path), title=f"Choose a file",
+                                       filetypes=(("image files", "*.png;*.jpg"),))
+            root.destroy()
+
+        tk.Button(frame, text="Yes", command=click_yes).pack(side=tk.LEFT, expand=True)
+        tk.Button(frame, text="Ignore", command=lambda: root.destroy()).pack(side=tk.RIGHT, expand=True)
+        root.wait_window()
+        if filename is None:
+            return Image.new("RGBA", size)
+
+        return self.get_cropped_resized(filename, size)
 
 
 def main():

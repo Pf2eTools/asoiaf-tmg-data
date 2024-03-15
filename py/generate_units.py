@@ -11,14 +11,14 @@ def generate_unit(asset_manager, unit_id, name, subname, unit_data, abilities_da
     unit_bg = asset_manager.get_unit_bg(faction)
     w, h = unit_bg.size
     unit_card = Image.new("RGBA", (w, h))
-    unit_card.paste(unit_bg)
+    unit_card.alpha_composite(unit_bg)
 
     if len(abilities) > 0:
         skills_bg = asset_manager.get_unit_skills_bg()
-        unit_card.paste(skills_bg, (w - skills_bg.size[0], 0))
+        unit_card.alpha_composite(skills_bg, (w - skills_bg.size[0], 0))
 
     unit_image = asset_manager.get_unit_image(unit_id)
-    unit_card.paste(unit_image, (497 - unit_image.size[0] // 2, min(0, 642 - unit_image.size[1])))
+    unit_card.alpha_composite(unit_image, (497 - unit_image.size[0] // 2, min(0, 642 - unit_image.size[1])))
 
     bars = Image.new("RGBA", (w, h))
     large_bar, small_bar, weird_bar = asset_manager.get_bars(faction)
@@ -163,12 +163,12 @@ def generate_unit_back(asset_manager, unit_id, name, subname, unit_data, unit_fl
     unit_bg = asset_manager.get_unit_bg(faction)
     w, h = unit_bg.size
     unit_card = Image.new("RGBA", (w, h))
-    unit_card.paste(unit_bg)
-    img = asset_manager.get_unit_image(unit_id + "b")
-    unit_card.paste(img)
+    unit_card.alpha_composite(unit_bg)
+    img = asset_manager.get_unit_back_image(unit_id)
+    unit_card.alpha_composite(img)
     skills_bg = asset_manager.get_unit_skills_bg()
     # TODO: Units with subname/quotes
-    unit_card.paste(skills_bg, (893, 166))
+    unit_card.alpha_composite(skills_bg, (893, 166))
 
     layer_bars = Image.new("RGBA", (w, h))
     layer_bars_lower = Image.new("RGBA", (w, h))

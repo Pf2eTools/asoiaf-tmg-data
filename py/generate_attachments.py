@@ -11,22 +11,22 @@ def generate_attachment(asset_manager, attachment_id, name, subname, attachment_
     background = asset_manager.get_bg(faction)
     w, h = background.size
     attachment_card = Image.new("RGBA", (w, h))
-    attachment_card.paste(background.rotate(get_faction_bg_rotation(faction)))
+    attachment_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
     if is_commander:
         text_bg = asset_manager.get_unit_skills_bg()
-        attachment_card.paste(text_bg, (141, 338))
+        attachment_card.alpha_composite(text_bg, (141, 338))
     else:
         text_bg = asset_manager.get_unit_skills_bg()
         text_bg = text_bg.crop((0, 0, 555, text_bg.size[1]))
-        attachment_card.paste(text_bg, (141, 338))
+        attachment_card.alpha_composite(text_bg, (141, 338))
     portrait = asset_manager.get_attachment_image(attachment_id)
     # FIXME: HACK
     if attachment_id == "20521" or attachment_id == "20517":
         portrait = portrait.resize((portrait.width // 2, portrait.height // 2)).crop((0, 0, 197, 248))
     if is_commander:
-        attachment_card.paste(portrait)
+        attachment_card.alpha_composite(portrait)
     else:
-        attachment_card.paste(portrait, (50, 50))
+        attachment_card.alpha_composite(portrait, (50, 50))
 
     bars = Image.new("RGBA", (w, h))
     large_bar, small_bar, weird_bar = asset_manager.get_bars(faction)
@@ -170,15 +170,15 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
     background = asset_manager.get_bg(faction)
     w, h = background.size
     attachment_card = Image.new("RGBA", (w, h))
-    attachment_card.paste(background.rotate(get_faction_bg_rotation(faction)))
+    attachment_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
 
-    portrait = asset_manager.get_attachment_image(attachment_id + "b")
+    portrait = asset_manager.get_attachment_back_image(attachment_id)
     if attachment_data.get("commander"):
-        attachment_card.paste(portrait, (148, 292))
+        attachment_card.alpha_composite(portrait, (148, 292))
     elif attachment_data.get("character"):
-        attachment_card.paste(portrait, (135, 345))
+        attachment_card.alpha_composite(portrait, (135, 345))
     else:
-        attachment_card.paste(portrait, (135, 242))
+        attachment_card.alpha_composite(portrait, (135, 242))
 
     bars = Image.new("RGBA", (w, h))
     bars_lower = Image.new("RGBA", (w, h))
@@ -238,7 +238,7 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
         elif attachment_id in ["20521", "20517"]:
             requirement_y -= 160
         text_bg = asset_manager.get_text_bg().crop((0, 0, portrait.width, 1000))
-        attachment_card.paste(text_bg, (135, requirement_y))
+        attachment_card.alpha_composite(text_bg, (135, requirement_y))
         bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, requirement_y - sb_h // 2))
         bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, requirement_y - decor.height // 2))
         bars.alpha_composite(decor, (674, requirement_y - decor.height // 2))
