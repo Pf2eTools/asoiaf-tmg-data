@@ -30,6 +30,7 @@ class ImageSaver:
         self.path = path
 
     def save(self, image):
+        print(f"Writing image to {self.path}...")
         cv.imwrite(self.path, image)
 
 
@@ -329,7 +330,7 @@ class Rectangle(Shape):
         self.y = coords.get("y", 0)
         self.w = w = coords.get("w", 0)
         self.h = h = coords.get("h", 0)
-        self.aspect_ratio = 0 if h == 0 else w / h
+        self.aspect_ratio = coords.get("aspect", 0 if h == 0 else w / h)
 
     def set_scale(self, scale):
         self.scale_tk = scale
@@ -402,7 +403,7 @@ class Square(Rectangle):
         x = coords.get("x", 0)
         y = coords.get("y", 0)
         a = coords.get("a", 0)
-        super().__init__({"x": x, "y":y, "w": a, "h": a, "aspect": 1})
+        super().__init__({"x": x, "y": y, "w": a, "h": a, "aspect": 1})
 
     def get_coords(self):
         return {
@@ -421,9 +422,8 @@ class Square(Rectangle):
         return normalized
 
 
-def generate_portraits(data, faction):
-    outpath_portraits = f"./generated/en/{faction}/portraits"
-    Path(outpath_portraits).mkdir(parents=True, exist_ok=True)
+def generate_portraits(data, outpath=f"./portraits/round"):
+    Path(outpath).mkdir(parents=True, exist_ok=True)
 
     def get_default_coords(data_type, obj):
         if data_type == "units":
@@ -446,7 +446,7 @@ def generate_portraits(data, faction):
             unit_id = data_object["id"]
             coords = data_object.get("portrait", default_coords)
             loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
-            saver = ImageSaver(f"{outpath_portraits}/{unit_id}.png")
+            saver = ImageSaver(f"{outpath}/{unit_id}.png")
             shape = Circle(coords)
             cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
@@ -457,9 +457,8 @@ def generate_portraits(data, faction):
                 data_object["portrait"] = cropper.get_shape_coords()
 
 
-def generate_portraits_square(data, faction):
-    outpath_portraits_square = f"./generated/en/{faction}/portraits-square"
-    Path(outpath_portraits_square).mkdir(parents=True, exist_ok=True)
+def generate_portraits_square(data, outpath=f"./portraits/square"):
+    Path(outpath).mkdir(parents=True, exist_ok=True)
 
     def get_default_coords(data_type, obj):
         if data_type == "units":
@@ -487,7 +486,7 @@ def generate_portraits_square(data, faction):
                 coords["x"] = max(5, coords["x"] - coords["r"])
                 coords["y"] = max(5, coords["y"] - coords["r"])
             loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
-            saver = ImageSaver(f"{outpath_portraits_square}/{unit_id}.jpg")
+            saver = ImageSaver(f"{outpath}/{unit_id}.jpg")
             shape = Square(coords)
             cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
@@ -498,8 +497,7 @@ def generate_portraits_square(data, faction):
                 data_object["portrait_square"] = cropper.get_shape_coords()
 
 
-def generate_standees(data, faction):
-    outpath = f"./generated/en/{faction}/standees"
+def generate_standees(data, outpath=f"./portraits/standees"):
     Path(outpath).mkdir(parents=True, exist_ok=True)
     for key in ["units", "attachments", "ncus"]:
         if key == "units":
@@ -533,9 +531,9 @@ def main():
         with open(full_path, encoding="utf-8") as json_data:
             data = json.load(json_data)
 
-        generate_portraits(data, faction)
-        generate_portraits_square(data, faction)
-        generate_standees(data, faction)
+        generate_portraits(data)
+        generate_portraits_square(data)
+        generate_standees(data)
 
         with open(full_path, "w", encoding="utf-8") as json_file:
             json.dump(data, json_file, indent=4, ensure_ascii=False)
@@ -554,7 +552,7 @@ MODE_ALL = "all"
 # if not data: ui
 # (default behavior)
 
-MODE = MODE_NEW
+MODE = MODE_REWRITE
 ############################################################################################################################################
 
 if __name__ == "__main__":

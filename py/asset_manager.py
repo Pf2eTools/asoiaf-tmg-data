@@ -239,37 +239,61 @@ class CustomAssetManager(AssetManager):
         super().__init__()
         self._asset_path = asset_path
 
+    @staticmethod
+    def swap_filetype(string):
+        return string.replace(".jpg", ".$$$").replace(".png", ".jpg").replace(".$$$", ".png")
+
+    @staticmethod
+    def get_cropped_path(path):
+        return path.replace(".jpg", "-cropped.jpg").replace(".png", "-cropped.png")
+
     @property
     def asset_path(self):
         return f"{self.CUSTOM_ASSET_BASE_DIR}/{self._asset_path}"
 
     def get(self, path, size=AssetManager.DEFAULT_ASSET_SIZE):
-        custom_path = re.sub(r".+/", f"{self.asset_path}/", path)
         if os.path.exists(path):
             return self._get(path)
-        elif os.path.exists(custom_path):
-            return self.get_cropped_resized(custom_path, size)
-        else:
-            return self.get_missing(custom_path, size)
 
-    # FIXME: cropped image overwrites
-    def get_cropped_resized(self, path, size):
-        original = self._get(path)
+        custom_path = re.sub(r".+/", f"{self.asset_path}/", path)
+        custom_path2 = re.sub(AssetManager.ASSETS_DIR, f"{self.asset_path}/", path)
+        custom_paths = [custom_path, self.swap_filetype(custom_path), custom_path2, self.swap_filetype(custom_path2)]
+        for p in [self.get_cropped_path(cp) for cp in custom_paths]:
+            if os.path.exists(p):
+                return self.get_resized(p, size)
+
+        for p in custom_paths:
+            if os.path.exists(p):
+                return self.get_cropped(p, size, self.get_cropped_path(custom_path))
+
+        return self.get_missing(custom_path, size)
+
+    @staticmethod
+    def is_image_right_size(image, size):
         w, h = size
-        img_w, img_h = original.size
+        img_w, img_h = image.size
         # TODO: what's a good value for this?
         tolerance = 10
         if w - tolerance < img_w < w + tolerance and h - tolerance < img_h < h + tolerance:
+            return True
+        return False
+
+    # FIXME: cropped image overwrites
+    def get_cropped(self, path, size, cropped_path):
+        original = self._get(path)
+        if self.is_image_right_size(original, size):
             return original
+
         root = tk.Tk()
         root.title("Warning")
         frame = tk.Frame(root, padx=10, pady=10)
         frame.pack(fill=tk.BOTH, expand=True)
+        w, h = size
+        img_w, img_h = original.size
         tk.Label(frame, text=f"The image at {path} has bad dimensions.\n(expected {w}x{h}, got {img_w}x{img_h})"
                              f"\nDo you wish to crop and resize?").pack()
 
         out_path = path
-        cropped_path = path.replace(".", "-cropped.")
 
         def click_yes():
             loader = ImageLoader(path)
@@ -284,44 +308,46 @@ class CustomAssetManager(AssetManager):
 
         tk.Button(frame, text="Crop", command=click_yes).pack(side=tk.LEFT, expand=True)
         tk.Button(frame, text="Ignore", command=lambda: root.destroy()).pack(side=tk.RIGHT, expand=True)
-        if os.path.exists(cropped_path):
-            frame2 = tk.Frame(root, padx=10, pady=10)
-            frame2.pack(fill=tk.BOTH, expand=True)
-            tk.Label(frame2, text=f"Found cropped image at {cropped_path}. Use old crop?").pack()
-
-            def use_old():
-                nonlocal out_path
-                out_path = cropped_path
-                root.destroy()
-            tk.Button(frame2, text="Use Old Crop", command=use_old).pack(expand=True)
         root.wait_window()
 
-        cropped = self._get(out_path)
-        resized = cropped.resize(size)
-        return resized
+        return self.get_resized(out_path, size)
+
+    def get_resized(self, path, size):
+        image = self._get(path)
+        if self.is_image_right_size(image, size):
+            return image
+        return image.resize(size)
 
     def get_missing(self, path, size):
-        root = tk.Tk()
-        root.title("Error")
-        frame = tk.Frame(root, padx=10, pady=10)
-        frame.pack(fill=tk.BOTH, expand=True)
-        tk.Label(frame, text=f"Encountered missing image at {path}.\nDo you wish to locate the missing file?").pack()
-
-        filename = None
-
-        def click_yes():
-            nonlocal filename
-            filename = askopenfilename(initialdir=os.path.abspath(self.asset_path), title=f"Choose a file",
-                                       filetypes=(("image files", "*.png;*.jpg"),))
-            root.destroy()
-
-        tk.Button(frame, text="Yes", command=click_yes).pack(side=tk.LEFT, expand=True)
-        tk.Button(frame, text="Ignore", command=lambda: root.destroy()).pack(side=tk.RIGHT, expand=True)
-        root.wait_window()
-        if filename is None:
+        file_path = get_path_or_dialogue(path, initial_search_dir=self.asset_path)
+        if file_path is None:
             return Image.new("RGBA", size)
 
-        return self.get_cropped_resized(filename, size)
+        return self.get_cropped(file_path, size, self.get_cropped_path(path))
+
+
+def get_path_or_dialogue(path, initial_search_dir="./"):
+    if os.path.exists(path):
+        return path
+    root = tk.Tk()
+    root.title("Error")
+    frame = tk.Frame(root, padx=10, pady=10)
+    frame.pack(fill=tk.BOTH, expand=True)
+    tk.Label(frame, text=f"Encountered missing image at '{path}'.\nDo you wish to locate the missing file?").pack()
+
+    filename = None
+
+    def click_yes():
+        nonlocal filename
+        filename = askopenfilename(initialdir=os.path.abspath(initial_search_dir), title=f"Choose a file", filetypes=(("image files", "*.png;*.jpg"),))
+        if filename:
+            root.destroy()
+
+    tk.Button(frame, text="Yes", command=click_yes).pack(side=tk.LEFT, expand=True)
+    tk.Button(frame, text="Ignore", command=lambda: root.destroy()).pack(side=tk.RIGHT, expand=True)
+    root.wait_window()
+
+    return filename
 
 
 def main():
