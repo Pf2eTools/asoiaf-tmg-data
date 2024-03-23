@@ -26,7 +26,8 @@
                 "abilities": [
                     "Plünderäxte",
                     "Wütender Ansturm"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "The infamous Ironborn Reavers are known along coastlines across the Seven Kingdoms as raiders and pirates. Reavers crew their signature longships whose sails are a dread to all who spot them on the horizon. Although sailors to a man, the Ironborn wear light scale mail even aboard ship. They’re fast-attack troops, but not trained to stand under heavy assault. Commanders would do well to keep them off the front line."
@@ -68,7 +69,8 @@
                 "abilities": [
                     "Befehl: Die Beute aufteilen",
                     "Pfeile der Eisenmänner"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Despite being a seaborne people, the Ironborn have little fear of drowning, and their light scale mail provides excellent protection without sacrificing mobility. Their Bowmen are often drawn from Reaver ranks, making them superior in a melee compared to most archers. That said, Bowmen are not melee troops, and should be protected from direct assaults."
@@ -101,7 +103,8 @@
                     "Bartaxt",
                     "Angst ausnutzen",
                     "Reaper's Fervor"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Although the scythe is not generally a workable weapon in war, the infamous Reapers of House Harlaw have devised a form of long-bladed heavy bardiche reminiscent of their fearsome house sigil. The Reapers themselves are lightly armored troops renowned for their deadly ferocity. What good is armor when the morale of their foes has been utterly broken? When it comes to sowing terror across the battlefield, few compare to the Reapers."
@@ -133,7 +136,8 @@
                 "abilities": [
                     "Großhammer",
                     "Geraubte Rüstungen"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "The heavily armored troops from House Ironmaker often serve as the hard center of Ironborn forces where a dedicated line is required. With their heavy scale armor overlaying a thick suit of boiled leather, the Ironmakers can withstand even more assaults than most of the troops of the Iron Islands. That said, as ‘heavy troops’ go, the Ironmakers are the general equivalent of standard medium infantry, that is, until the spoils of the raid are gained!"
@@ -165,7 +169,8 @@
                 "abilities": [
                     "Order: Trapper's Tools",
                     "Unterbrechen"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Pillaging and raiding is the primary Ironborn motivation in the War of the Five Kings. Let the houses fight for the Iron Throne if they wish. The Ironborn have coasts to raid, treasure to seize, and people to enslave. As such the Ironborn Trappers excel at hindering enemy forces with their long, barbed pikes and entangling nets. While lightly armored and possessing only crude weapons, the trapper’s cunning and usage of devious tools more than makes up for this."
@@ -197,7 +202,8 @@
                 "abilities": [
                     "Befehl: Die Beute aufteilen",
                     "First Claim"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Of the different warriors that House Greyjoy sends to assault shoreline settlements, the Blacktyde Chosen are the most feared. When these elite warriors hit the beach, they rapidly form their ranks and sweep a path clear through any defences or defenders that stand in their way. Clad in scale mail, armed with master-crafted axes, and wielding large round shields, the Chosen are among the heaviest troops under the Kraken banner."
@@ -230,7 +236,8 @@
                     "Grossaxt",
                     "Verwegenheit",
                     "Die Ruchlosigkeit der Stummen"
-                ]
+                ],
+                "tray": "infantry"
             },
             "fluff": {
                 "lore": "Those under the Kraken banner have long learned that raiding and terror are close companions. Thus the crew of House Greyjoy’s warship Silence is composed entirely of mutes. War is not a quiet business, but the Silenced Men add an unnatural stillness to the battlefield. Even in death, they make no sound. Even disciplined troops find such men unnerving. Though wearing only light armor, their honed greataxes can sunder heavy plate with ease."
@@ -260,7 +267,9 @@
                 "abilities": [
                     "Befehl: Segen des Ertrunkenen Gottes",
                     "Drowned God's Fanatics"
-                ]
+                ],
+                "wounds": 3,
+                "tray": "solo"
             },
             "fluff": {
                 "lore": "Armored with only their faith, and armed only with deadwood cudgels and other detritus from the shore, the Drowned Men make surprisingly effective support for followers of the Kraken banner. Their presence in battle signifies the Drowned God’s blessing, bolstering men to fight past their wounds and strike all the harder against their foes. While few in number, the Drowned Men’s faith is such that they can survive even killing blows."
@@ -285,7 +294,11 @@
                             "Falls du das tust, lege eine beliebige Anzahl an Taktikkarten von deiner Hand beiseite und ziehe dann ebenso viele Karten +1. Mische danach die beiseite gelegten Karten in dein Taktikdeck."
                         ]
                     }
-                ]
+                ],
+                "tokens": {
+                    "number": 2,
+                    "name": "order"
+                }
             },
             "fluff": {
                 "quote": "\"I prefer my history dead. Dead history is writ in ink, the living sort in blood.\""
@@ -378,7 +391,11 @@
                             "Immer wenn Erik eine Zone außer der [MONEY]-Zone beansprucht, darfst du 1 Plündermarker von ihm entfernen und auf 1 befreundete Graufreud-Einheit legen."
                         ]
                     }
-                ]
+                ],
+                "tokens": {
+                    "number": 1,
+                    "name": "pillage"
+                }
             },
             "fluff": {
                 "quote": "\"If old is wise, no one is wiser than me. If big is strong, no one's stronger.\""
@@ -903,7 +920,11 @@
                     "Abgehärtet"
                 ],
                 "commander": true,
-                "character": true
+                "character": true,
+                "tokens": {
+                    "number": 2,
+                    "name": "wound"
+                }
             },
             "tactics": {
                 "cards": [

@@ -12,6 +12,15 @@
             "wounds"
         ]
     },
+    "ABUNDANT PROMISES": {
+        "effect": [
+            "• **Precision**",
+            "• After completing a Melee Attack, remove any number of Pillage tokens from this unit. For each token removed, this unit restores 2 Wounds."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
     "ACCUTE PRECISION": {
         "effect": [
             "This unit's Attacks gain **Precision**."
@@ -996,6 +1005,16 @@
             "If you Control [CROWN], when this unit is performing a Melee Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**."
         ]
     },
+    "IRON CREDIT": {
+        "effect": [
+            "Each time a friendly unit in Short Range gains a Pillage token, place  1 Order token on this card. Before this unit performs a Melee Attack, you may discard up to  2 Order tokens from this card to gain the following effects *(effects are cumulative)*:",
+            "• **1+:** You may remove 1 Condition token from this unit.",
+            "• **2:** This unit rolls its highest Attack Die Value."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
     "IRON RESOLVE": {
         "effect": [
             "This unit gains +1 to Panic Test rolls and suffers -1 Wounds from failing Panic Tests."
@@ -1574,6 +1593,15 @@
         "trigger": "When an enemy is performing an Attack on this unit, after rolling Attack Dice:",
         "effect": [
             "This unit only suffers 1 Wound for every 2 unblocked Hits."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "ORDER: SCAVENGE": {
+        "trigger": "After an enemy completes an Attack on this unit:",
+        "effect": [
+            "This unit gains 1 Pillage token."
         ],
         "icons": [
             "order"
