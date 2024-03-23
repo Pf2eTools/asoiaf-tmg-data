@@ -342,8 +342,8 @@ def parse_units(tactics, parsed_abilities):
         # Bear Riders
         elif card_id == "10315":
             parsed["statistics"]["tray"] = "cavalry"
-        # War Mammoth
-        elif card_id == "10312":
+        # War Mammoth and War Elephant
+        elif card_id == "10312" or card_id == "10413":
             parsed["statistics"]["tray"] = "warmachine"
         elif wounds_per_model == 6:
             parsed["statistics"]["tray"] = "warmachine"
