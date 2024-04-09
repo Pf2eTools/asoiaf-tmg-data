@@ -353,7 +353,7 @@
                         "name": "Zauber aus Lys",
                         "effect": [
                             "Immer wenn Ellaria eine Zone auf der Taktiktafel beansprucht, bestimme 1 befreundete Kampfeinheit zum Ziel. Du darfst 1 Zustandsmarker von ihr ablegen.",
-                            "Falls du [SWORDS] kontrollierst, bestimme 2 feindliche Einheiten innerhalb **Langer Reichweite** zu der zum Ziel bestimmten befreundeten Einheit. Lege 1 Zustandsmarker auf jede jener Feinde."
+                            "Falls du [SWORDS] kontrollierst, darfst du 1 feindliche Einheiten innerhalb Langer Reichweite zu der zum Ziel bestimmten befreundeten Einheit zum Ziel bestimmen. Sie erhält 1 Zustandsmarker."
                         ]
                     }
                 ]
@@ -980,7 +980,7 @@
                     {
                         "trigger": "Zu Beginn einer beliebigen Runde:",
                         "effect": [
-                            "Dein Gegner wählt 1 Taktikzone. Dann wählst du 1 Taktikzone. Sobald 1 jener Zonen zum ersten Mal in dieser Runde beansprucht wird, bevor der Effekt jener Zone abgehandelt wird, verliert die zivile Einheit, die jene Zone beansprucht hat, bis zum Ende der Runde alle Fähigkeiten und der Gegner jenes Spielers darf 1 Kampfeinheit zum Ziel bestimmen. Sie wird **Geschwächt**."
+                            "Dein Gegner wählt 1 Taktikzone. Dann wählst du 1 Taktikzone. Sobald 1 jener Zonen zum ersten Mal in dieser Runde beansprucht wird, nachdem der Effekt jener Zone abgehandelt worden ist, darf der Gegner des Spielers, der die Zone beansprucht hat, bis zu 2 feindliche Kampfeinheiten zum Ziel bestimmen. Sie werden **Verwundbar** und **Geschwächt**."
                         ]
                     }
                 ]
@@ -1048,9 +1048,10 @@
                 "faction": "martell",
                 "text": [
                     {
-                        "trigger": "Sobald ein Verwundbarer Feind aktiviert wird:",
+                        "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
                         "effect": [
-                            "Lege diese Karte an jenen Feind an, bis der **Verwundbar**-Marker abgelegt wird.",
+                            "Dieser Feind wird **Verwundbar**.",
+                            "Lege diese Karte an jenen Feind an, bis der Verwundbar-Marker abgelegt wird.",
                             "Solange diese Karte an dieser Einheit anliegt, immer wenn sie angreift, erleidet sie –1 auf den Trefferwurf.",
                             "Solange diese Karte an dieser Einheit anliegt, immer wenn sie Oberyn Martells Einheit angreift, bevor die Angriffswürfel geworden werden, wird sie **Geschwächt**."
                         ]
@@ -1092,7 +1093,7 @@
                     {
                         "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
                         "effect": [
-                            "Jener Feind erleidet –2 [MOVEMENT], sobald er in diesem Zug einen Ansturm auf Oberyn Martells Einheit durchführt.",
+                            "Falls jener Feind innerhalb Langer Reichweite zu Oberyn Martells Einheit ist, erleidet er –2 [MOVEMENT] für diesen Zug.",
                             "Falls jener Feind in diesem Zug an einem Ansturm scheitert, wird er **Verwundbar**."
                         ]
                     },
@@ -1100,8 +1101,8 @@
                         "trigger": "Zu Beginn eines beliebigen Zuges:",
                         "effect": [
                             "Wähle 1 der folgenden Effekte:",
-                            "*• Ziehe 1 Taktikkarte.*",
-                            "*• Falls Oberyn Martells Einheit im Nahkampf ist, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Heerführer-Taktikkarte und füge sie deiner Hand hinzu.*"
+                            "• Ziehe 1 Taktikkarte.",
+                            "• Falls Oberyn Martells Einheit im Nahkampf ist, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Heerführer-Taktikkarte und füge sie deiner Hand hinzu."
                         ]
                     }
                 ],

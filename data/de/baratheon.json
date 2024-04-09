@@ -228,7 +228,7 @@
                 "morale": 3,
                 "attacks": [
                     {
-                        "name": "Zorn des Adligen",
+                        "name": "Meisterhafter Kriegshammer",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -237,9 +237,9 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Noble's Bolster",
+                    "Befehl: Ermutigung des Adligen",
                     "Einzelreiter",
-                    "Mastercraft Warhammer"
+                    "Meisterhafter Kriegshammer"
                 ],
                 "requirements": [
                     {
@@ -280,7 +280,7 @@
                 ],
                 "abilities": [
                     "Bis zum letzten Mann!",
-                    "King's Blade"
+                    "Klinge des Königs"
                 ],
                 "requirements": [
                     {
@@ -325,7 +325,7 @@
                 "abilities": [
                     "Befehl: Linie halten!",
                     "Bis zum letzten Mann!",
-                    "Queen's Blade"
+                    "Klinge der Königin"
                 ],
                 "requirements": [
                     {
@@ -691,13 +691,13 @@
                         "name": "Glühende Überzeugung",
                         "effect": [
                             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Selyse & Sharin Einfluss auf eine Einheit ausüben, erhält sie +1 auf das Ergebnis von Moralproben. Immer wenn sie eine Moralprobe besteht, erleidet 1 Feind, der mit dieser Einheit im Nahkampf ist, 1 **Wunde**."
+                            "Solange Selyse & Sharin Einfluss auf eine Einheit ausüben, immer wenn sie eine Moralprobe besteht, erleidet 1 Feind, der mit dieser Einheit im Nahkampf ist, 1 Wunde."
                         ]
                     },
                     {
                         "name": "Nötige Opfer",
                         "effect": [
-                            "Ein Mal pro Partie, sobald eine befreundete Kampfeinheit vernichtet werden würde, wird jene Einheit nicht vernichtet, sondern verbleibt mit 1W3 geheilten **Wunden** im Spiel. Sie ist bis zum Ende der Partie eine R’hllor-Einheit."
+                            "Ein Mal pro Partie, sobald eine befreundete Kampfeinheit vernichtet werden würde, wird jene Einheit nicht vernichtet, sondern verbleibt mit 1W3 geheilten Wunden im Spiel. Sie ist bis zum Ende der Partie eine R’hllor-Einheit."
                         ]
                     }
                 ],
@@ -726,8 +726,8 @@
                         "name": "Im Namen R’hllors",
                         "effect": [
                             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Axell Einfluss auf eine feindliche Einheit ausübt, immer wenn sie an einer Panikprobe scheitert, wird sie **Geschwächt**.",
-                            "Solange Axell Einfluss auf eine feindliche Einheit ausübt, falls sie mit einer R’hllor-Einheit im Nahkampf ist, erleidet sie +1 **Wunde**, wenn sie an einer Panikprobe scheitert."
+                            "Immer wenn Axell Einfluss auf eine feindliche Einheit ausübt, wird jene Einheit **Panisch**.",
+                            "Solange Axell Einfluss auf eine befreundete Einheit ausübt, immer wenn diese Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**."
                         ]
                     }
                 ],
@@ -1467,7 +1467,7 @@
                 "cost": 2,
                 "abilities": [
                     "Befehl: Taktisches Umstellen",
-                    "Macht des Throns"
+                    "MACHT DES THRONS (Cortnay Fünfrosen)"
                 ],
                 "requirements": [
                     {
@@ -1493,7 +1493,7 @@
                 "cost": "C",
                 "abilities": [
                     "Buchführung",
-                    "Macht des Throns",
+                    "Macht des Throns (Cortnay Fünfrosen)",
                     "Loyalität: Renly Baratheon"
                 ],
                 "commander": true,
@@ -1735,7 +1735,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars"
+                    "Kampfnarben"
                 ],
                 "requirements": [
                     {
@@ -1876,8 +1876,8 @@
                     {
                         "trigger": "Nachdem ein Feind einen Angriff abgeschlossen hat:",
                         "effect": [
-                            "Der Angreifer wird **Panisch** oder **Verwundbar**.",
-                            "Falls du [CROWN] oder [LETTER] kontrollierst, wird der Angreifer stattdessen **Panisch** und **Verwundbar**."
+                            "Der Angreifer erhält 1 Zustandsmarker.",
+                            "Falls du [CROWN] oder [LETTER] kontrollierst, erhält der Angreifer +1 Zustandsmarker."
                         ]
                     }
                 ]
@@ -1927,8 +1927,7 @@
                     {
                         "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
                         "effect": [
-                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert.",
-                            "Falls der Verteidiger mehr verbleibende Schlachtreihen als der Angreifer hat, darf er beliebig viele Angriffswürfel neu werfen."
+                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen."
                         ]
                     }
                 ]
@@ -1979,10 +1978,8 @@
                     {
                         "trigger": "Zu Beginn eines beliebigen Zuges:",
                         "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 **Befehlsmarker** auf diese Karte.",
-                            "Solange auf dieser Karte ein **Befehlsmarker** liegt, erhält die angelegte Einheit:",
-                            "Diese Einheit erleidet –1 **Wunde**, wenn sie an einer Panikprobe scheitert.",
-                            "Solange du [CROWN] kontrollierst, immer wenn diese Einheit einen Nahkampfangriff durchführt, erhält der Verteidiger 1 Zustandsmarker."
+                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
+                            "Solange auf dieser Karte ein Befehlsmarker liegt, immer wenn diese Einheit einen Nahkampfangriff durchführt, erhält der Verteidiger, bevor die Angriffswürfel geworfen werden, 1 Zustandsmarker und solange du [CROWN] kontrollierst, darf jene Einheit beliebig viele Angriffswürfel neu werfen."
                         ]
                     }
                 ]
@@ -2520,7 +2517,7 @@
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Angriffsaktion durch.*",
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.",
                             "*Falls diese Karte Andru Estermonts Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
                         ]
                     }

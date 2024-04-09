@@ -240,8 +240,7 @@
                 ],
                 "abilities": [
                     "Junger Drache",
-                    "Schwarzes Feuer",
-                    "Cost Reduced by 1 once: 'Daenerys Targaryen, The Unburnt'"
+                    "Schwarzes Feuer"                   
                 ],
                 "requirements": [
                     {
@@ -279,8 +278,7 @@
                 ],
                 "abilities": [
                     "Junger Drache",
-                    "Goldenes Feuer",
-                    "Cost Reduced by 1 once: 'Daenerys Targaryen, The Unburnt'"
+                    "Goldenes Feuer"                    
                 ],
                 "requirements": [
                     {
@@ -318,8 +316,7 @@
                 ],
                 "abilities": [
                     "Junger Drache",
-                    "Jadegrünes Feuer",
-                    "Cost Reduced by 1 once: 'Daenerys Targaryen, The Unburnt'"
+                    "Jadegrünes Feuer"                  
                 ],
                 "requirements": [
                     {
@@ -533,7 +530,7 @@
                 "morale": 5,
                 "attacks": [
                     {
-                        "name": "Dothraki Arakh",
+                        "name": "Arakh der Blutreiter",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -544,8 +541,8 @@
                 ],
                 "abilities": [
                     "Befehl: Schlachtruf",
-                    "Drogo's Bloodriders",
-                    "Bloodriders' Arakh"
+                    "Drogo's Blutreiter",
+                    "Arakh der Blutreiter"
                 ],
                 "requirements": [
                     {
@@ -664,9 +661,9 @@
                     {
                         "name": "Illyrios Gunst",
                         "effect": [
-                            "Immer wenn Illyrio eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Bestimme 1 befreundete Kampfeinheit zum Ziel.*",
-                            "*Sie heilt 3 **Wunden**. 1 Feind, mit der sie im Nahkampf ist, wird **Geschwächt**.*"
+                            "Bei Spielbeginn werden 2 Befehlsmarker auf Illyrio gelegt.",
+                            "Immer wenn Illyrio eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, darfst du den Effekt jener Zone ersetzen durch:",
+                            "*Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie heilt 3 Wunden. 1 Feind, mit der sie im Nahkampf ist, wird **Geschwächt**.*"
                         ]
                     }
                 ],
@@ -736,12 +733,11 @@
                     {
                         "name": "Reichtum der Dreizehn",
                         "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Xaro Einfluss auf eine Einheit ausübt, erleidet/erhält jene Einheit den folgenden Effekt basierend auf der Zone, die du kontrollierst:",
-                            "[CROWN]: Falls es sich um eine feindliche Einheit handelt, erleidet sie +1 **Wunde**, wenn sie an einer Panikprobe scheitert.",
-                            "[MONEY]: Falls es sich um ein befreundete Einheit handelt, nachdem die Verteidigungswürfel geworfen worden sind, wehrt sie +1 Treffer ab.",
-                            "[LETTER]: Falls es sich um eine befreundete Einheit handelt, erhalten ihre Angriffe +1 Angriffswürfel.",
-                            "[UNDYING]: Falls es sich um eine feindliche Einheit handelt, erhalten ihre Angriffe –1 Angriffswürfel."
+                            "Bei Spielbeginn werden 2 Befehlsmarker auf Xaro gelegt.",
+                            "Immer wenn Xaro [MONEY] beansprucht, darfst du 1 Befehlsmarker auf ihn legen.",
+                            "Sobald eine Kampfeinheit einen Angriff durchführt, darfst du 1 Befehlsmarker von Xaro ablegen und diese Kampfeinheit zum Ziel bestimmen. Falls du das tust, wähle 1 der folgenden Effekte, den jene Einheit bis zum Ende des Angriffs erhält/erleidet.",                            
+                            "• Diese Einheit wird sie so behandelt, als hätte sie +1 Schlachtreihe für die Anzahl der Angriffswürfel.",
+                            "• Diese Einheit wird sie so behandelt, als hätte sie -1 Schlachtreihe für die Anzahl der Angriffswürfel."
                         ]
                     }
                 ],
@@ -795,7 +791,9 @@
                         "effect": [
                             "Immer wenn Mirri eine Zone auf der Taktiktafel beansprucht, heile 1 **Wunde** einer befreundeten Kampfeinheit.",
                             "Immer wenn Mirri eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 zuvor vernichtete befreundete Nicht-Heerführer-Verstärkung an jene Einheit an (ersetze wie gewohnt eine Figur, aber ignoriere die üblichen Verstärkungsbeschränkungen).*"
+                            "wähle 1 der folgenden Effekte:",
+                            "• *Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 zuvor vernichtete befreundete Nicht-Heerführer-Verstärkung an jene Einheit an (ersetze wie gewohnt eine Figur, aber ignoriere die üblichen Verstärkungsbeschränkungen).*",
+                            "• *Bestimme 1 feindliche Kampfeinheit zum Ziel. Diese Einheit wird **Panisch** und **Geschwächt**."
                         ]
                     }
                 ]
@@ -843,9 +841,9 @@
                     {
                         "name": "Einfluss des Handelsherren",
                         "effect": [
-                            "Immer wenn Hizdahr eine Zone auf der Taktiktafel beansprucht, erhält sie die folgenden zusätzlichen Effekte, es sei denn, der Effekt der Zone wurde ersetzt:",
+                            "Immer wenn eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht, erhält sie die folgenden zusätzlichen Effekte, es sei denn, der Effekt der Zone wurde ersetzt:",
                             "[CROWN]: Falls die Einheit an dieser Panikprobe scheitert, darf sie in dieser Runde nicht zum Ziel von befreundeten Befehlen bestimmt werden.",
-                            "[MONEY]: Alle anderen befreundeten Einheiten innerhalb **Kurzer Reichweite** heilen 1 **Wunde**.",
+                            "[MONEY]: 1 andere befreundete Einheiten innerhalb Kurzer Reichweite heilt 1 Wunde.",
                             "[LETTER]: Du darfst 1 Taktikkarte weniger ziehen, um +1 Zustandsmarker auf die feindliche Einheit zu legen.",
                             "[UNDYING]: Dein Gegner muss zusätzlich die oberste Karte seines Taktikdecks ablegen."
                         ]
@@ -1052,7 +1050,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars"
+                    "Kampfnarben"
                 ],
                 "character": true
             },
@@ -1364,7 +1362,7 @@
                 "cost": 2,
                 "abilities": [
                     "Blutreiter",
-                    "Battle Scars"
+                    "Kampfnarben"
                 ],
                 "requirements": [
                     {
@@ -1551,7 +1549,7 @@
                     {
                         "trigger": "Sobald eine befreundete Einheit nachsetzt:",
                         "effect": [
-                            "Statt nachzusetzen, führt diese Einheit 1 Ansturmaktion durch.",
+                            "Statt nachzusetzen, führt diese Einheit 1 Ansturm- oder Marschaktion durch.",
                             "Falls du [HORSE] kontrollierst, darf sie alle Würfel für die Bewegungsweite des Ansturms neu werfen."
                         ]
                     }
@@ -1568,7 +1566,8 @@
                     {
                         "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
                         "effect": [
-                            "Der Verteidiger führt 1 Rückzugsaktion durch."
+                            "Der Verteidiger führt 1 Rückzugsaktion durch.",
+                            "Falls diese Karte die Einheit deines Heerführers zum Ziel hat, darf sie alle Würfel für die Bewegungsweite des Rückzugs neu werfen."
                         ]
                     }
                 ]
@@ -1599,12 +1598,12 @@
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
+                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
                         "effect": [
                             "Wähle 1 der folgenden Effekte. Falls du [HORSE] kontrollierst, wähle stattdessen 2 Effekte:",
-                            "• Diese Einheit darf in diesem Zug alle Würfel für die Bewegungsweite des Ansturms neu werfen.",
-                            "• Falls diese Einheit einen erfolgreichen Ansturm durchführt, erhalten ihre Nahkampfangriffe in diesem Zug **Spaltschlag**.",
-                            "• Falls diese Einheit einen erfolgreichen Ansturm durchführt, erhalten ihre Nahkampfangriffe in diesem Zug **Grausam**."
+                            "• Dieser Angriff darf beliebig viele Fehlschläge neu werfen.",
+                            "• Dieser Angriff erhält **Spaltschlag**.",
+                            "• Dieser Angriff erhält **Grausam**."
                         ]
                     }
                 ]
@@ -1636,15 +1635,16 @@
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Sobald eine befreundete Einheit eine Marschaktion beendet:",
+                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
                         "effect": [
-                            "Bestimme alle Feinde innerhalb **Kurzer Reichweite** zum Ziel. Sie werden **Geschwächt**."
+                            "Diese Einheit darf alle Würfel für die Bewegungsweite des Ansturms neu werfen."
                         ]
                     },
                     {
                         "trigger": "Sobald eine befreundete Einheit nachsetzt:",
                         "effect": [
-                            "Jene Einheit erhält +3 [MOVEMENT], sobald sie während dieses Nachsetzens ein Manöver durchführt."
+                            "Jene Einheit erhält +3 [MOVEMENT], sobald sie während dieses Nachsetzens ein Manöver durchführt.",
+                            "Nachdem diese Bewegung abgeschlossen ist, bestimme alle Feinde innerhalb Kurzer Reichweite zum Ziel. Sie werden **Geschwächt**."
                         ]
                     }
                 ]
@@ -1722,8 +1722,7 @@
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt",
-                            "1 Angriffsaktion durch.*",
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.",
                             "*Falls diese Karte Khal Drogos Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
                         ]
                     },

@@ -431,7 +431,7 @@
         },
         {
             "id": "10113",
-            "name": "Stadtwache von Lennishort",
+            "name": "Stadtwache von Lennisport",
             "statistics": {
                 "version": "S04",
                 "faction": "lannister",
@@ -568,7 +568,8 @@
                     {
                         "name": "Manipulation und Täuschung",
                         "effect": [
-                            "Immer wenn Pycelle eine Zone auf der Taktiktafel beansprucht, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Geschwächt**."
+                           "Bei Spielbeginn werden 3 Befehlsmarker auf Pycelle gelegt.",
+                           "Immer wenn Pycelle aktiviert wird, darfst du ein Befehlsmarker von Pycelle ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Geschwächt**."
                         ]
                     }
                 ],
@@ -715,14 +716,9 @@
                     {
                         "name": "Kleine Tauben",
                         "effect": [
-                            "Bei Spielbeginn werden 4 Befehlsmarker auf Qyburn gelegt.",
-                            "Immer wenn eine feindliche zivile Einheit eine Zone auf der Taktiktafel beansprucht, bevor der Effekt jener Zone abgehandelt wird, darfst du 1 Befehlsmarker von Qyburn ablegen. Falls du das tust, erhältst du den folgenden Effekt basierend auf jener Zone:",
-                            "[CROWN]: 1 Feind wird **Panisch**.",
-                            "[MONEY]: 1 feindliche Kampfeinheit erleidet 1 **Wunde**.",
-                            "[SWORDS]: Der Angreifer zählt, als hätte er –1 Schlachtreihe für die Anzahl der Angriffswürfel.",
-                            "[LETTER]: Der Gegner zieht 1 Taktikkarte weniger.",
-                            "[HORSE]: Der Feind bewegt sich mit –1 [MOVEMENT]."
-                        ]
+                            "Bei Spielbeginn werden 3 Befehlsmarker auf Qyburn gelegt.",
+                            "Immer wenn eine feindliche zivile Einheit aktiviert wird, darfst du 1 Befehlsmarker von Qyburn ablegen. Falls du das tust, wähle 2 Zonen auf der Taktiktafel. Falls jene zivile Einheit in diesem Zug eine dieser Zonen beansprucht, nachdem der Effekt dieser Zone abgehandelt worden ist, bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Verwundbar**."
+                            ]
                     }
                 ],
                 "requirements": [
@@ -753,7 +749,7 @@
                         "effect": [
                             "Bei Spielbeginn werden 2 Befehlsmarker auf Tommen gelegt.",
                             "Immer wenn Tommen eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, führe Folgendes durch:",
-                            "Falls du [CROWN] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Loyal zur Krone** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.",
+                            "Falls du [CROWN] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Ränkespiele und Intrigen** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.",
                             "Falls du [MONEY] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Bestechung** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
                         ]
                     }
@@ -1356,7 +1352,7 @@
                 "cost": "C",
                 "abilities": [
                     "Befehl: Überlegenheit der Lennisters",
-                    "Macht des Throns"
+                    "Macht des Throns (Kevan Lennister)"
                 ],
                 "commander": true,
                 "character": true
@@ -1634,7 +1630,7 @@
                     {
                         "trigger": "Sobald eine befreundete Einheit nachsetzt:",
                         "effect": [
-                            "Statt nachzusetzen, führt diese Einheit 1 Ansturmaktion durch.",
+                            "Statt nachzusetzen, führt diese Einheit 1 Ansturm- oder Marschaktion durch.",
                             "Falls diese Karte eine Haus-Clegane-Einheit zum Ziel hat, darf sie alle Würfel für die Bewegungsweite des Ansturms neu werfen."
                         ]
                     }
@@ -1990,7 +1986,7 @@
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "Zu Beginn eines feindlichen Zuges:",
+                        "trigger": "Zu Beginn des ersten feindlichen Zuges in einer Runde:",
                         "effect": [
                             "Bestimme 1 feindliche Kampfeinheit und 1 feindliche zivile Einheit zum Ziel.",
                             "Falls eine der beiden Einheiten in diesem Zug eine Aktion durchführt, bevor sie jene Aktion abhandelt, führt 1 befreundete Kampfeinheit 1 Angriffs-, Manöver- oder Rückzugsaktion durch."

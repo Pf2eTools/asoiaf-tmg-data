@@ -342,8 +342,7 @@
                 ],
                 "abilities": [
                     "Gebundener Bär",
-                    "Wildes Zerfleischen",
-                    "Fielded by Skinchanger"
+                    "Wildes Zerfleischen"    
                 ],
                 "requirements": [
                     {
@@ -583,7 +582,7 @@
                 ],
                 "abilities": [
                     "Gebundener Eber",
-                    "Aufspießen und Fressen"
+                    "Aufspiessen und Fressen"
                 ],
                 "requirements": [
                     {
@@ -826,7 +825,7 @@
                         "name": "Geschickte Vorbereitungen",
                         "effect": [
                             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Manke Einfluss auf eine Einheit ausübt, immer wenn jene Einheit von einer Taktikzone zum Ziel bestimmt wird, bevor der Effekt jener Zone abgehandelt wird, darfst du 1 Taktikkarte ziehen."
+                            "Solange Manke Einfluss auf eine Einheit ausübt, immer wenn jene Einheit aktiviert wird oder von einer Taktikzone zum Ziel bestimmt wird, bevor der Effekt jener Zone abgehandelt wird, darfst du 1 Taktikkarte ziehen."
                         ]
                     }
                 ]
@@ -847,9 +846,9 @@
                     {
                         "name": "Zuflucht und Vorräte",
                         "effect": [
-                            "Du darfst ein Mal pro Partie zu Beginn eines beliebigen Zuges 2 **Wunden** von 1 befreundeten Einheit heilen.",
+                            "Du darfst ein Mal pro Partie zu Beginn eines beliebigen Zuges 2 **Wunden** von 1 befreundeten Infanterie-Einheit heilen.",
                             "Immer wenn Craster eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Ziehe 1 Taktikkarte und heile 2 **Wunden** von 1 befreundeten Kampfeinheit.*"
+                            "*Ziehe 1 Taktikkarte und heile 2 **Wunden** von 1 befreundeten Infanterie-Einheit.*"
                         ]
                     }
                 ]
@@ -968,7 +967,7 @@
                         "name": "Widerstandskraft des Nordens",
                         "effect": [
                             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                            "Solange Jon Einfluss auf eine Einheit ausübt, erhält sie +1 auf das Ergebnis von Moralproben."
+                            "Solange Jon Einfluss auf eine Einheit ausübt, erhält sie +1 auf das Ergebnis von Moralproben und erleidet –1 **Wunde**, wenn sie an einer Panikprobe scheitert."
                         ]
                     },
                     {
@@ -1122,8 +1121,7 @@
                 "cost": 0,
                 "abilities": [
                     "Gebundener Adler",
-                    "Erkundungsflug",
-                    "Fielded by Skinchanger"
+                    "Erkundungsflug"
                 ],
                 "requirements": [
                     {
@@ -1142,8 +1140,7 @@
                 "cost": 0,
                 "abilities": [
                     "Gebundener Wolf",
-                    "Jagdinstinkt",
-                    "Fielded by Skinchanger"
+                    "Jagdinstinkt"
                 ],
                 "requirements": [
                     {
@@ -1429,7 +1426,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Battle Scars"
+                    "Kampfnarben"
                 ],
                 "character": true
             },
@@ -1750,7 +1747,7 @@
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Zu Beginn eines feindlichen Zuges:",
+                        "trigger": "Zu Beginn des ersten feindlichen Zuges in einer Runde:",
                         "effect": [
                             "Bestimme 1 feindliche Kampfeinheit und 1 feindliche zivile Einheit zum Ziel.",
                             "Falls eine der beiden Einheiten in diesem Zug eine Aktion durchführt, bevor sie jene Aktion abhandelt, führt 1 befreundete Kampfeinheit 1 Angriffs-, Manöver oder Rückzugsaktion durch."
@@ -2197,7 +2194,7 @@
                     {
                         "trigger": "Sobald eine befreundete Kampfeinheit nachsetzt:",
                         "effect": [
-                            "Statt nachzusetzen, führt jene Einheit 1 Ansturm-Aktion durch."
+                            "Statt nachzusetzen, führt diese Einheit 1 Ansturm- oder Marschaktion durch."
                         ]
                     }
                 ],
