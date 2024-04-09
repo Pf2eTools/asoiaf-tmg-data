@@ -26,7 +26,7 @@ def generate_tactics(asset_manager, name,  tactics_data):
 
     bars.alpha_composite(large_bar.rotate(180), (-96, 252))
     if commander_id is not None:
-        bars.alpha_composite(Image.new("RGBA", (646, 82), (0, 0, 0, 0)), (55, 246))
+        bars.paste(Image.new("RGBA", (646, 82), (0, 0, 0, 0)), (55, 246))
 
     bars.alpha_composite(ImageOps.flip(weird_bar.rotate(270, expand=1)), (242 - weird_bar.size[1], 25))
     bars.alpha_composite(weird_bar.rotate(270, expand=1), (242 - weird_bar.size[1], -95))
