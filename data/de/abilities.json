@@ -3148,5 +3148,46 @@
             "Immer wenn eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, erhält 1 Auserkorene-von-Haus-Schwarzfluth-Einheit 1 Plündermarker.",
             "Falls auf dieser Einheit 2 Plündermarker liegen, erhalten alle befreundete Einheiten innerhalb kurzer Reichweite +1 auf das Ergebnis von Moralproben und erleiden -1 Wunde wenn sie an Panikproben scheitern."
         ]
+    },
+    "BEFEHL: PLÜNDERN": {
+        "trigger": "Nachdem ein Feind einen Angriff auf diese Einheit abgeschlossen hat:",
+        "effect": [
+            "Diese Einheit erhält 1 Plündermarker."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "ÜBERSCHWÄNGLICHE VERSPRECHUNGEN": {
+        "effect": [
+            "• **Präzision**",
+            "• Nachdem diese Einheit einen Nahkampfangriff abgeschlossen hat, lege eine beliebige Anzahl Plündermarker von ihr ab. Diese Einheit heilt 2 Wunden für jeden abgelegten Marker."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "EISERNE GUNST": {
+        "effect": [
+            "Immer wenn eine befreundete Einheit innerhalb Kurzer Reichweite einen Plündermarker erhält, lege 1 Befehlsmarker auf diese Karte. Befohr diese Einheit einen Nahkampfangriff durchführt, darfst du bis zu 2 Befehlsmarker von dieser Karte ablegen, um die folgenden Effekte zu erhalten *(die Effekte sind kumulativ):*",
+            "• **1+:** Du darfst 1 Zustandsmarker von dieser Einheit ablegen.",
+            "• **2:** Diese Einheit verwendet ihren höchsten Angriffswürfelwert."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "RIESENSPEER": {
+        "effect": [
+            "• **Grausam**",
+            "• **Spaltschlag**",
+            "• Falls der Verteidiger eine Kavallerie-, Monster- oder Kriegsmaschinen-Einheit ist, fügt dieser Angriff 2 Treffer für jeden Erfolg zu.",
+            "• **Fernkampf:** Verteidiger werfen keine Verteidigungswürfel. Diese Einheit darf –3 auf den Trefferwurf erleiden, um die Sichtlinie zu ignorieren und Unbegrenzte Reichweite zu erhalten."
+        ],
+        "icons": [
+            "wounds",
+            "ranged",
+            "melee"
+        ]
     }
 }

@@ -787,6 +787,46 @@
             "fluff": {
                 "lore": "The Walrus clan are adept at hunting in the far, northern wastes beyond the Wall. Now, they bring their expertise south with the Free Folk as they seek out warmer climes and greener pastures. Their weighted harpoons are perfect for skewering both vicious beast and enemy soldier. Their knowledge of keeping prey on their lines keeps them nimble, and under constant maneuver to attack from unexpected angles against enemy formations. "
             }
+        },
+        {
+            "id": "10322",
+            "name": "Speerwerfende Riese",
+            "statistics": {
+                "version": "S04",
+                "faction": "freefolk",
+                "type": "monster",
+                "cost": 7,
+                "speed": 5,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Riesenspeer",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            3
+                        ]
+                    },
+                    {
+                        "name": "Riesenspeer",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Riese",
+                    "Riesenspeer"
+                ],
+                "wounds": 6,
+                "tray": "solo"
+            },
+            "fluff": {
+                "lore": "What’s worse than facing giants in the line-of-battle? Facing giants hurling spears the size of tree trunks from afar. The Free Folk’s alliance with the giants brought their Spear Throwers into the fray, giving them what amounts to artillery made of flesh. Their weapons are crude, but not much finesse is needed for a wooden haft as thick as a large man’s torso. That said, these giants have trouble dealing with foes up close, and must be guarded."
+            }
         }
     ],
     "ncus": [
@@ -803,7 +843,7 @@
                         "name": "Lady der Wildnis",
                         "effect": [
                             "Immer wenn Lady Val eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Manöver- oder Rückzugsaktion durch. Falls sie eine Rückzugsaktion durchführt, wird 1 Feind, aus dessen Nahkampf sie sich löst, **Verwundbar**.*"
+                            "*1 befreundete Kampfeinheit führt 1 Manöver- oder Rückzugsaktion durch.*"
                         ]
                     }
                 ]
