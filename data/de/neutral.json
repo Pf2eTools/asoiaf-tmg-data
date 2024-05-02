@@ -201,7 +201,7 @@
                     }
                 ],
                 "abilities": [
-                    "Durch Geld motiviert"
+                    "Durch Geld motiviert (Stormcrow Mercenaries)"
                 ],
                 "requirements": [
                     {
@@ -318,7 +318,7 @@
                 "abilities": [
                     "Überfall",
                     "Schneller Hieb",
-                    "Durch Geld motiviert"
+                    "Durch Geld motiviert (Stormcrow Dervishes)"
                 ],
                 "tray": "infantry"
             },
@@ -553,7 +553,7 @@
                             "[CROWN]: 1 Feind muss 1 Panikprobe ablegen.",
                             "[MONEY]: Heile 2 Wunden von 1 befreundeten Einheit.",
                             "[LETTER]: Ziehe 1 Taktikkarte.",
-                            "[SWORDS]: 1 Feind erleidet 3 Treffer.",                            
+                            "[SWORDS]: 1 Feind erleidet 3 Treffer.",
                             "[HORSE]: 1 befreundete Einheit wird um 3 Zoll verschoben."
                         ]
                     }
@@ -832,7 +832,7 @@
                 "cost": 1,
                 "abilities": [
                     "Erkaufte Loyalität",
-                    "Durch Geld motiviert"
+                    "Durch Geld motiviert (Bronn)"
                 ],
                 "character": true
             },
@@ -913,7 +913,7 @@
                 "abilities": [
                     "Zugehörigkeit: Sturmkrähen",
                     "Verbesserte Bewaffnung",
-                    "Durch Geld motiviert"
+                    "Durch Geld motiviert (Daario Naharis)"
                 ],
                 "commander": true,
                 "character": true
@@ -1016,7 +1016,7 @@
                 "cost": 1,
                 "abilities": [
                     "Verwegenheit",
-                    "Durch Geld motiviert"
+                    "Durch Geld motiviert (Fortune Seeker)"
                 ]
             }
         },
@@ -1609,6 +1609,65 @@
                 "commander_id": "20411",
                 "commander_name": "Daario Naharis"
             }
+        },
+        {
+            "id": "40420",
+            "name": "Waffenbrüder",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
+                        "effect": [
+                            "Lege diese Karte an eine befreundete Sturmkrähen Kampfeinheit an, bis sie an einer Panikprobe scheitert.",
+                            "Solange diese Karte an einer Einheit anliegt, erhält sie +1 Angriffswürfel für jede andere befreundete Einheit innerhalb Kurzer Reichweite.",
+                            "Falls sie sich innerhalb Kurzer Reichweite zu Jokins Einheit befindet, erhält sie +1 zusätzlichen Angriffswürfel."
+                        ]
+                    }
+                ],
+                "commander_id": "20424",
+                "commander_name": "Jokin",
+                "commander_subname": "Hauptmann der Sturmkrähen"
+            }
+        },
+        {
+            "id": "40421",
+            "name": "Umgehungstaktik",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "text": [
+                    {
+                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                        "effect": [
+                            "Bestimme 1 andere befreundete Einheit innerhalb Langer Reichweite zum Verteidiger zum Ziel. Sie führt 1 Manöveraktion durch."
+                        ]
+                    }
+                ],
+                "commander_id": "20424",
+                "commander_name": "Jokin",
+                "commander_subname": "Hauptmann der Sturmkrähen"
+            }
+        },
+        {
+            "id": "40422",
+            "name": "Zäher Söldner",
+            "statistics": {
+                "version": "2021",
+                "faction": "neutral",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, bevor die Würfel geworfen werden:",
+                        "effect": [
+                            " Jene Einheit erhält +2 auf das Ergebnis. Falls sie sich innerhalb Kurzer Reichweite zu Jokin befindet, besteht sie diese Panikprobe automatisch."
+                        ]
+                    }
+                ],
+                "commander_id": "20424",
+                "commander_name": "Jokin",
+                "commander_subname": "Hauptmann der Sturmkrähen"
+          }
         }
     ]
 }

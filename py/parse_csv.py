@@ -118,6 +118,12 @@ def parse_tactics():
     return parsed_cards
 
 
+def get_translated_name(orig_name, name):
+    if "(" in orig_name and "(" not in name:
+        name += " " + re.search(r"\(.+", orig_name).group(0)
+    return name.upper()
+
+
 # TODO: Don't do this .upper() bullshit
 def parse_abilities():
     data = csv_to_dict(f"{CSV_PATH}/newskills.csv")
@@ -183,7 +189,7 @@ def parse_abilities():
                 parsing["effect"] = ["".join(parts[1:]).strip()]
             else:
                 parsing["effect"] = [ln.strip() for ln in description.split("\n") if ln.strip()]
-            name = translated_data.get("Translated Name").upper()
+            name = get_translated_name(orig_name, translated_data.get("Translated Name"))
             parsed_abilities[lang][name] = parsing
 
     return parsed_abilities
@@ -527,12 +533,14 @@ def parse_attachments(tactics, parsed_abilities):
                 del parsing["subname"]
             parsing["statistics"]["abilities"] = []
             for ability in original["statistics"]["abilities"]:
+                if ability == "Motivated by Coin (Nute)":
+                    print("kek")
                 translated = next((a for a in translated_skills if a["Original Name"].lower() == ability.lower()), None)
                 if translated is None:
                     print(f'Did not find tranlation ({lang}) for "{ability}" in attachment "{parsing["name"]}".')
                     parsing["statistics"]["abilities"].append(ability)
                 else:
-                    parsing["statistics"]["abilities"].append(translated.get("Translated Name"))
+                    parsing["statistics"]["abilities"].append(get_translated_name(ability, translated.get("Translated Name")))
             parsed_cards[lang][id] = parsing
 
     return parsed_cards
