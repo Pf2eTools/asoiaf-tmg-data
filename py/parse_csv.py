@@ -121,7 +121,7 @@ def parse_tactics():
 def get_translated_name(orig_name, name):
     if "(" in orig_name and "(" not in name:
         name += " " + re.search(r"\(.+", orig_name).group(0)
-    return name.upper()
+    return name
 
 
 # TODO: Don't do this .upper() bullshit
@@ -176,8 +176,8 @@ def parse_abilities():
         translated_abilities = csv_to_dict(f"{CSV_PATH}/newskills.{lang}.csv")
         parsed_abilities[lang] = {}
         for translated_data in translated_abilities:
-            orig_name = translated_data.get("Original Name").upper()
-            orig = parsed_abilities["en"].get(orig_name)
+            orig_name = translated_data.get("Original Name")
+            orig = parsed_abilities["en"].get(orig_name.upper())
             if orig is None:
                 parsing = {}
             else:
@@ -189,7 +189,7 @@ def parse_abilities():
                 parsing["effect"] = ["".join(parts[1:]).strip()]
             else:
                 parsing["effect"] = [ln.strip() for ln in description.split("\n") if ln.strip()]
-            name = get_translated_name(orig_name, translated_data.get("Translated Name"))
+            name = get_translated_name(orig_name, translated_data.get("Translated Name")).upper()
             parsed_abilities[lang][name] = parsing
 
     return parsed_abilities
@@ -533,8 +533,6 @@ def parse_attachments(tactics, parsed_abilities):
                 del parsing["subname"]
             parsing["statistics"]["abilities"] = []
             for ability in original["statistics"]["abilities"]:
-                if ability == "Motivated by Coin (Nute)":
-                    print("kek")
                 translated = next((a for a in translated_skills if a["Original Name"].lower() == ability.lower()), None)
                 if translated is None:
                     print(f'Did not find tranlation ({lang}) for "{ability}" in attachment "{parsing["name"]}".')
@@ -667,12 +665,12 @@ MODE_REWRITE = "rewrite"
 # Add keys that are new
 MODE_NEW = "new"
 
-MODE = MODE_NEW
+MODE = MODE_REWRITE
 
 LANGUAGES = [
     "en",
     "fr",
-    "de"
+    # "de"
 ]
 
 
