@@ -86,7 +86,8 @@ def generate_ncu(asset_manager, ncu_id, name, subname, ncu_data):
     section_padding = small_bar.size[1]
     align_y = TextRenderer.CENTER_SECTION if len(card_text_to_render) > 1 else TextRenderer.ALIGN_TOP
     renderer_card_text = TextRenderer(card_text_to_render, "Tuff", (620, 605), asset_manager, font_size=36, align_y=align_y,
-                                      section_padding=section_padding, font_color="#5d4d40", padding=(15, 15, 15, 15))
+                                      section_padding=section_padding, font_color="#5d4d40", padding=(15, 15, 15, 15),
+                                      linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
     rendered_card_text = renderer_card_text.render()
     all_text.alpha_composite(rendered_card_text, ((w - 620) // 2, 372))
     section_coords = renderer_card_text.rendered_section_coords

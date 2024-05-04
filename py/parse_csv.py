@@ -430,6 +430,7 @@ def parse_ncus(tactics):
         for name, text in zip(ability_names, ability_text):
             ability = {
                 "name": name,
+                # TODO: Split on single newlines?
                 "effect": [t.strip() for t in text.split("\n\n") if t.strip()]
             }
             parsed["statistics"]["abilities"].append(ability)

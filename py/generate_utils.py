@@ -329,6 +329,9 @@ class TextRenderer:
     OVERFLOW_AUTO = "auto"
     OVERFLOW_CLIP = "clip"
 
+    LINEBREAK_GREEDY = "greedy"
+    LINEBREAK_OPTIMAL = "optimal"
+
     ICONS = {
         "CROWN": "simple",
         "MONEY": "simple",
@@ -352,6 +355,7 @@ class TextRenderer:
         :param tuple bounding_box:
         :key str overflow_policy_x:
         :key str overflow_policy_y:
+        :key str linebreak_algorithm: Default: greedy
         :key str align_x:
         :key str align_y:
         :key int font_size: Target font size
@@ -371,95 +375,96 @@ class TextRenderer:
         :key float base_bias_extra_height: 0.7
         :return: None
         """
-        self._max_w, self._max_h = bounding_box
+        self.max_w, self.max_h = bounding_box
         self.overflow_policy_y = kwargs.get("overflow_policy_y", self.OVERFLOW_AUTO)
         self.overflow_policy_x = kwargs.get("overflow_policy_x", self.OVERFLOW_AUTO)
+        self.linebreak_algorithm = kwargs.get("linebreak_algorithm", self.LINEBREAK_GREEDY)
         self.scale_padding_x = kwargs.get("scale_padding_x", 0)
         self.font_family = font_family
         self._fonts = {}
-        self._font_size = kwargs.get("font_size", 20)
+        self.font_size = kwargs.get("font_size", 20)
         self.font_color = kwargs.get("font_color", "black")
         self.background_color = kwargs.get("background_color", (0, 0, 0, 0))
-        self._stroke_width = kwargs.get("stroke_width", 0.3)
+        self.stroke_width = kwargs.get("stroke_width", 0.3)
         self.bold = self._bold = kwargs.get("bold", False)
         self.italic = self._italic = kwargs.get("italic", False)
         self.align_x = kwargs.get("align_x", self.ALIGN_CENTER)
         self.align_y = kwargs.get("align_y", self.ALIGN_TOP)
         self._supersample = kwargs.get("supersample", 1)
         self.fix_kerning = kwargs.get("fix_kerning", True)
-        self._tracking = kwargs.get("tracking", 0)
-        self.tracking = self._tracking * self.font_size / 1000
+        self.tracking = kwargs.get("tracking", 0)
+        self._tracking = self.tracking * self._font_size / 1000
         self._word_spacing = kwargs.get("word_spacing", 200)
-        self._leading = kwargs.get("leading", 1.15)
-        self._padding = kwargs.get("padding", (10, 10, 10, 10))
-        self._paragraph_padding = kwargs.get("paragraph_padding", 0.7)
-        self._section_padding = kwargs.get("section_padding", 0)
+        self.leading = kwargs.get("leading", 1.15)
+        self.padding = kwargs.get("padding", (10, 10, 10, 10))
+        self.paragraph_padding = kwargs.get("paragraph_padding", 0.7)
+        self.section_padding = kwargs.get("section_padding", 0)
         self.base_bias_extra_height = kwargs.get("base_bias_extra_height", 0.7)
 
         self.asset_manager = asset_manager
         self.input = self.fix_input(data)
         self.cursor = Cursor()
-        self.image = Image.new("RGBA", (self.max_w, self.max_h), self.background_color)
+        self.image = Image.new("RGBA", (self._max_w, self._max_h), self.background_color)
         self.draw = ImageDraw.Draw(self.image)
         self.rendered_section_coords = []
 
     @property
     def supersample(self):
-        if int(self._stroke_width) == self._stroke_width:
+        if int(self.stroke_width) == self.stroke_width:
             return self._supersample
         else:
             # TODO: Make sure this is at least as big as self._supersample. Care with the stroke_width math
-            return 1 / (self._stroke_width % 1)
+            return 1 / (self.stroke_width % 1)
 
     @property
-    def stroke_width(self):
+    def _stroke_width(self):
         """
         The stroke_width property (see self.render below) would be really nice if it worked with smaller font sizes (or floats)
         As a workaround, we use a bigger fontsize, then downscale the image later
         """
-        if self._stroke_width == 0:
+        if self.stroke_width == 0:
             return 0
-        elif int(self._stroke_width) == self._stroke_width:
-            return self._stroke_width
+        elif int(self.stroke_width) == self.stroke_width:
+            return self.stroke_width
         else:
-            return int(self._stroke_width / (self._stroke_width % 1))
+            return int(self.stroke_width / (self.stroke_width % 1))
 
     @property
-    def max_w(self):
-        return int(self._max_w * self.supersample)
+    def _max_w(self):
+        return int(self.max_w * self.supersample)
 
     @property
-    def max_h(self):
-        return int(self._max_h * self.supersample)
+    def _max_h(self):
+        return int(self.max_h * self.supersample)
 
     @property
-    def font_size(self):
-        return self._font_size * self.supersample
+    def _font_size(self):
+        return self.font_size * self.supersample
 
     @property
-    def leading(self):
-        return self.font_size * self._leading
+    def _leading(self):
+        return self._font_size * self.leading
 
     def set_styles(self, styles):
-        self.tracking = styles.get("tracking", self._tracking) * self.font_size / 1000
+        self._tracking = styles.get("tracking", self.tracking) * self._font_size / 1000
         self.bold = styles.get("bold", self.bold)
         self.italic = styles.get("italic", self.italic)
 
     @property
     def word_spacing(self):
-        return self.font_size * self._word_spacing / 1000
+        return self._font_size * self._word_spacing / 1000
 
     @property
-    def padding(self):
-        return tuple(self.supersample * x for x in self._padding)
+    def _padding(self):
+        return tuple(self.supersample * x for x in self.padding)
 
     @property
-    def paragraph_padding(self):
-        return self.font_size * self._paragraph_padding
+    def _paragraph_padding(self):
+        return self._font_size * self.paragraph_padding
 
     @property
-    def section_padding(self):
-        return int(self.supersample * self._section_padding)
+    def _section_padding(self):
+        return int(self.supersample * self.section_padding)
 
     def get_font(self, bold=None, italic=None):
         bold = bold if bold is not None else self.bold
@@ -467,11 +472,11 @@ class TextRenderer:
         font_style_str = "Bold" if bold else ""
         font_style_str += "Italic" if italic else ""
         font_style_str = font_style_str or "Normal"
-        key = f"{self.font_family}-{font_style_str}-{self.font_size}"
+        key = f"{self.font_family}-{font_style_str}-{self._font_size}"
         font = self._fonts.get(key)
         if font is None:
             font_path = self.FONTS.get(f"{self.font_family}-{font_style_str}")
-            font = ImageFont.truetype(font_path, self.font_size)
+            font = ImageFont.truetype(font_path, self._font_size)
             self._fonts[key] = font
             return font
         else:
@@ -504,34 +509,45 @@ class TextRenderer:
             char_next = token[ix + 1] if ix + 1 < len(token) else " "
             yield char, char_next
 
-    def calculate_line_width(self, line):
-        width = self.padding[0] + self.padding[2]
-        bold = self.bold
-        italic = self.italic
-        for ix, token in enumerate(line):
-            if token == self.TOKEN_BOLD:
-                bold = not bold
-                continue
-            elif token == self.TOKEN_ITALIC:
-                italic = not italic
-                continue
-            font = self.get_font(bold=bold, italic=italic)
-            token_w = self.calculate_token_width(font, token)
-            width += token_w
-            if token_w != 0 and ix != len(line) - 1:
+    def calculate_line_width(self, line, token_widths=None):
+        width = self._padding[0] + self._padding[2]
+        if token_widths is None:
+            token_widths = self.get_token_widths(line)
+        for ix, width_token in enumerate(token_widths):
+            width += width_token
+            # FIXME: we need to check if the token is the last token with width 0
+            if width_token != 0 and ix != len(line) - 1:
                 width += self.word_spacing
 
         return width
+
+    def get_token_widths(self, tokens):
+        bold = self.bold
+        italic = self.italic
+        widths = []
+        for token in tokens:
+            if token == self.TOKEN_BOLD:
+                bold = not bold
+                widths.append(0)
+                continue
+            elif token == self.TOKEN_ITALIC:
+                italic = not italic
+                widths.append(0)
+                continue
+            font = self.get_font(bold=bold, italic=italic)
+            token_width = self.calculate_token_width(font, token)
+            widths.append(token_width)
+        return widths
 
     def calculate_token_width(self, font, token):
         if token == self.TOKEN_ITALIC or token == self.TOKEN_BOLD:
             return 0
         elif token == self.TOKEN_NEWLINE:
-            return self.max_w
+            return self._max_w
         elif token.startswith("[") and token.endswith("]"):
             token = token.strip("[]")
             if self.ICONS.get(token) is None:
-                return self.max_w
+                return self._max_w
             icon = self.get_icon(token)
             return self.get_icon_width(icon)
         w = 0
@@ -541,10 +557,10 @@ class TextRenderer:
 
     def calculate_char_width(self, font, char, char_next):
         offset_chars = font.getlength(char + char_next) - font.getlength(char_next)
-        return offset_chars + self.tracking + self.fix_kern(font, char, char_next)
+        return offset_chars + self._tracking + self.fix_kern(font, char, char_next)
 
     def get_icon_width(self, icon):
-        return icon.size[0] + 0.1 * self.font_size + self.tracking
+        return icon.size[0] + 0.1 * self._font_size + self._tracking
 
     @staticmethod
     def tokenize(string):
@@ -552,6 +568,13 @@ class TextRenderer:
         return tokens
 
     def split_text(self, input_string):
+        if self.linebreak_algorithm == self.LINEBREAK_GREEDY:
+            return self.split_text_greedy(input_string)
+        elif self.linebreak_algorithm == self.LINEBREAK_OPTIMAL:
+            return self.split_text_optimal(input_string)
+        raise Exception(f"Invalid linebreak algorithm: {self.linebreak_algorithm}")
+
+    def split_text_greedy(self, input_string):
         tokens = self.tokenize(input_string)
         lines = [[]]
         cur_len = 0
@@ -567,7 +590,7 @@ class TextRenderer:
             if token.startswith(CHAR_BULLET):
                 break_line = True
             # don't put single commas and periods in a new line. I guess numbers as well.
-            elif cur_len + token_len + self.word_spacing > self.max_w - self.padding[0] - self.padding[2] and len(token) > 1:
+            elif cur_len + token_len + self.word_spacing > self._max_w - self._padding[0] - self._padding[2] and len(token) > 1:
                 break_line = True
             else:
                 pass
@@ -587,6 +610,88 @@ class TextRenderer:
         lines[-1] += skipped
 
         return [ln for ln in lines if len(ln) > 0]
+
+    def split_text_optimal(self, input_string):
+        tokens = self.tokenize(input_string)
+        for ix, token in reversed(list(enumerate(tokens))):
+            if ix == 0 or not token.startswith(CHAR_BULLET):
+                continue
+            for i in range(ix - 1, 0, -1):
+                if tokens[i] in [self.TOKEN_BOLD, self.TOKEN_ITALIC]:
+                    continue
+                elif tokens[i] == self.TOKEN_NEWLINE:
+                    break
+                else:
+                    tokens.insert(i + 1, self.TOKEN_NEWLINE)
+                    break
+        tokens.insert(0, "")
+        token_widths = self.get_token_widths(tokens)
+
+        # Dijkstra might throw errors, because no shortest path exists. In this case we should relax the threshold
+        try:
+            threshold = 9 ** 2
+            breakpoints = self.find_optimal_breaks(tokens, token_widths, threshold)
+        except ValueError:
+            threshold = 18 ** 2
+            breakpoints = self.find_optimal_breaks(tokens, token_widths, threshold)
+
+        optimal_breaks = [[t for t in tokens[i + 1:j + 1] if t != self.TOKEN_NEWLINE] for i, j in zip([0] + breakpoints, breakpoints)]
+        return [ln for ln in optimal_breaks if ln]
+
+    def find_optimal_breaks(self, tokens, token_widths, threshold):
+        graph = Graph(len(tokens))
+        active_breaks = [0]
+        while active_breaks:
+            if active_breaks[0] == len(tokens) - 1:
+                break
+            for ix_token_end in range(active_breaks[0] + 1, len(tokens)):
+                potential_line = tokens[active_breaks[0] + 1:ix_token_end + 1]
+                widths = token_widths[active_breaks[0] + 1:ix_token_end + 1]
+                is_final_line = ix_token_end == len(tokens) - 1
+                penalty = self.calculate_line_penalty(potential_line, widths, is_final_line)
+                if penalty == float("inf"):
+                    break
+                if penalty > threshold and not is_final_line and tokens[ix_token_end] != self.TOKEN_NEWLINE:
+                    continue
+                graph.add_edge(active_breaks[0], ix_token_end, penalty)
+                if ix_token_end not in active_breaks:
+                    active_breaks.append(ix_token_end)
+            active_breaks.pop(0)
+
+        return graph.dijkstra()
+
+    def calculate_line_penalty(self, line, token_widths, is_final_line):
+        # Starting with a little penalty helps to minimize lines
+        penalty = 2
+        line_no_newline = [tk for ix, tk in enumerate(line) if ix < len(line) - 1 or tk != self.TOKEN_NEWLINE]
+        token_widths_no_newline = [token_widths[ix] for ix, tk in enumerate(line) if ix < len(line) - 1 or tk != self.TOKEN_NEWLINE]
+        tokens_nonzero_len = [tk for ix, tk in enumerate(line_no_newline) if token_widths_no_newline[ix]]
+        line_width = self.calculate_line_width(line_no_newline, token_widths_no_newline)
+        if len(line) == 1 and line_width > self._max_w:
+            pass
+        elif line_width > self._max_w:
+            return float("inf")
+        factor_line_length = 30 if is_final_line else 100
+        penalty += factor_line_length * ((self._max_w - line_width) / (self._max_w - self._padding[0] - self._padding[2])) ** 3
+        if tokens_nonzero_len:
+            # reward lines ending in punctuation
+            if re.search(r"[,.;:!?]$", tokens_nonzero_len[-1]):
+                penalty -= 3
+            # punish line that have punctuation after the first word
+            if re.search(r"[,.;:!?]$", tokens_nonzero_len[0]):
+                penalty += 1.5
+            elif len(tokens_nonzero_len) > 3 and re.search(r"[,.;:!?]$", tokens_nonzero_len[-2]):
+                penalty += 3
+            # punish lines starting icons
+            if tokens_nonzero_len[0].startswith("["):
+                penalty += 3
+            # punish lines ending with numbers
+            if re.search(r"\d$", tokens_nonzero_len[-1]):
+                penalty += 2
+        if line[-1] == self.TOKEN_NEWLINE:
+            penalty *= 0.2
+        # python doesn't have a sign function lol
+        return (penalty ** 2) * ((penalty > 0) - (penalty < 0))
 
     def split_data(self, data):
         self.bold = self._bold
@@ -628,7 +733,7 @@ class TextRenderer:
         height = 0
         # I have cancer
         for ix_section, section in enumerate(data):
-            height += self.padding[1]
+            height += self._padding[1]
             for ix_paragraph, paragraph in enumerate(section["content"]):
                 for lines in paragraph["content"]:
                     for line in lines["content"]:
@@ -638,20 +743,20 @@ class TextRenderer:
                             else:
                                 height += self.get_icon(line[0].strip("[]")).size[1] * self.supersample
                         else:
-                            height += self.leading
-                height -= self.leading - 0.82 * self.font_size
+                            height += self._leading
+                height -= self._leading - 0.82 * self._font_size
                 if ix_paragraph < len(section["content"]) - 1:
-                    height += self.paragraph_padding
-            height += self.padding[3]
+                    height += self._paragraph_padding
+            height += self._padding[3]
             if ix_section < len(data) - 1:
-                height += self.section_padding
+                height += self._section_padding
 
         return height
 
     def fix_kern(self, font, char1, char2):
         if not self.fix_kerning:
             return 0
-        mem = self.font_size / 1000
+        mem = self._font_size / 1000
         if self.font_family == "Tuff":
             match (char1, char2):
                 # uppercase T and small letters
@@ -675,37 +780,37 @@ class TextRenderer:
                     return -30 * mem
                 case ("L", "Y"):
                     return -30 * mem
-                case("L", "T"):
+                case ("L", "T"):
                     return -40 * mem
         return 0
 
     def adjust_vertical_spacing(self, data):
-        initial_leading = self._leading
-        for i in range(17):
+        initial_leading = self.leading
+        for i in range(19):
             height = self.calculate_height(data)
-            if height < self.max_h:
+            if height < self._max_h:
                 break
-            if i in [0, 2, 10, 13, 15] and self._leading >= 0.75:
-                self._leading -= 0.05
-            elif i in [1, 7, 16] and self._paragraph_padding > 0.3:
-                self._paragraph_padding -= 0.15
-            elif i in [3, 4, 5, 6, 9, 12, 14]:
-                self._font_size -= 1
+            if i in [0, 2, 10, 13, 15] and self.leading >= 0.75:
+                self.leading -= 0.05
+            elif i in [1, 7, 16] and self.paragraph_padding > 0.3:
+                self.paragraph_padding -= 0.15
+            elif i in [3, 4, 5, 6, 9, 12, 14, 17, 18]:
+                self.font_size -= 1
                 data = self.split_data(self.input)
             elif i == 8:
-                self._padding = (self._padding[0], self._padding[1] // 2, self._padding[2], self._padding[3] // 2)
+                self.padding = (self.padding[0], self.padding[1] // 2, self.padding[2], self.padding[3] // 2)
             elif i == 11:
-                self._tracking = max(-20, self._tracking - 20)
+                self.tracking = max(-20, self.tracking - 20)
                 self._word_spacing = max(150, self._word_spacing * 0.75)
                 data = self.split_data(self.input)
 
         height = self.calculate_height(data)
-        if height < self.max_h:
+        if height < self._max_h:
             count, _ = self.count_data(data)
             if count["line"] - count["paragraph"] > 0:
-                self._leading += (self.max_h - height) / (self.font_size * (count["line"] - count["paragraph"]))
-                self._leading = min(initial_leading, self._leading)
-        elif height > self.max_h + self.padding[1] + self.padding[3]:
+                self.leading += (self._max_h - height) / (self._font_size * (count["line"] - count["paragraph"]))
+                self.leading = min(initial_leading, self.leading)
+        elif height > self._max_h + self._padding[1] + self._padding[3]:
             print(f"Text exceeded maximum height, after adjusting spacing!")
 
         return data
@@ -722,25 +827,25 @@ class TextRenderer:
                             max_width = w
                             max_textlen = len(" ".join([tk for tk in line if tk.strip("*") and not tk.startswith("[")]))
                             max_textlen += 2 * len([tk for tk in line if tk.startswith("[")])
-        if max_width < self.max_w:
+        if max_width < self._max_w:
             return data
 
         # TODO: Do we need to calculate the linebreaks again?
-        self._font_size -= self._font_size * (self.font_size * max_textlen + 50 * (self.max_w - max_width)) / (
-                    self.font_size * max_textlen - 50 * max_width)
-        self._tracking = -20
+        self.font_size -= self.font_size * (self._font_size * max_textlen + 50 * (self._max_w - max_width)) / (
+                self._font_size * max_textlen - 50 * max_width)
+        self.tracking = -20
 
         return data
 
     def set_cursor_x(self, line):
         if self.align_x == self.ALIGN_LEFT:
-            self.cursor.x = self.padding[0]
+            self.cursor.x = self._padding[0]
         elif self.align_x == self.ALIGN_RIGHT:
             w = self.calculate_line_width(line)
-            self.cursor.x = self.max_w - w + self.padding[0]
+            self.cursor.x = self._max_w - w + self._padding[0]
         elif self.align_x == self.ALIGN_CENTER:
             w = self.calculate_line_width(line)
-            self.cursor.x = (self.max_w - w) // 2 + self.padding[0]
+            self.cursor.x = (self._max_w - w) // 2 + self._padding[0]
         else:
             raise Exception(f"Invalid horizontal align: {self.align_x}")
 
@@ -749,13 +854,13 @@ class TextRenderer:
         if self.align_y == self.ALIGN_TOP:
             self.cursor.y = 0
         elif self.align_y == self.ALIGN_BOTTOM:
-            self.cursor.y = self.max_h - height
+            self.cursor.y = self._max_h - height
         elif self.align_y == self.ALIGN_CENTER:
             # This isn't exactly the visual center some of the time. More noticeable if the text is only 1-2 lines. We'll fix it in post
-            self.cursor.y = (self.max_h - height) // 2
+            self.cursor.y = (self._max_h - height) // 2
         elif self.align_y == self.CENTER_SECTION:
             self.cursor.y = 0
-            extra_height = self.max_h - height
+            extra_height = self._max_h - height
             bias = self.base_bias_extra_height ** (num_sections - 1)
             weights_extra_height = [bias if i == 0 else (1 - bias) / (num_sections - 1) for i in range(num_sections)]
             return [w * extra_height * 0.5 for w in weights_extra_height]
@@ -768,8 +873,8 @@ class TextRenderer:
 
         if self.scale_padding_x:
             height = self.calculate_height(data)
-            scale = max(self.scale_padding_x, min(1, 2 - self.scale_padding_x - (1 - self.scale_padding_x) * 2 * height / self.max_h))
-            self._padding = (int(scale * self._padding[0]), self._padding[1], int(scale * self._padding[2]), self._padding[3])
+            scale = max(self.scale_padding_x, min(1, 2 - self.scale_padding_x - (1 - self.scale_padding_x) * 2 * height / self._max_h))
+            self.padding = (int(scale * self.padding[0]), self.padding[1], int(scale * self.padding[2]), self.padding[3])
         if self.overflow_policy_x == self.OVERFLOW_AUTO:
             self.adjust_horizontal_spacing(data)
         if self.overflow_policy_y == self.OVERFLOW_AUTO:
@@ -780,7 +885,7 @@ class TextRenderer:
         # TODO: Mr. President, a sixth layer of indentation has hit the render function. The codebase is under attack.
         for ix_section, section in enumerate(data):
             y_start_section = self.cursor.y / self.supersample
-            self.cursor.y += self.padding[1] + extra_padding[ix_section]
+            self.cursor.y += self._padding[1] + extra_padding[ix_section]
             for ix_paragraph, paragraph in enumerate(section["content"]):
                 for lines in paragraph["content"]:
                     self.bold = self._bold
@@ -789,14 +894,14 @@ class TextRenderer:
                     for line in lines["content"]:
                         self._render_line(line, styles)
                 # The last line in each paragraph should only be calculated as cap-height instead of full leading. 0.82 is a good estimate
-                self.cursor.y -= self.leading - 0.82 * self.font_size
+                self.cursor.y -= self._leading - 0.82 * self._font_size
                 if ix_paragraph < len(section["content"]) - 1:
-                    self.cursor.y += self.paragraph_padding
-            coords = (y_start_section, (self.cursor.y + self.padding[3] + extra_padding[ix_section]) / self.supersample)
+                    self.cursor.y += self._paragraph_padding
+            coords = (y_start_section, (self.cursor.y + self._padding[3] + extra_padding[ix_section]) / self.supersample)
             self.rendered_section_coords.append(coords)
-            self.cursor.y += self.padding[3] + extra_padding[ix_section] + self.section_padding
+            self.cursor.y += self._padding[3] + extra_padding[ix_section] + self._section_padding
 
-        self.image = self.image.resize((self._max_w, self._max_h), resample=Image.LANCZOS)
+        self.image = self.image.resize((self.max_w, self.max_h), resample=Image.LANCZOS)
         return self.image
 
     def _render_line(self, line, styles):
@@ -814,18 +919,18 @@ class TextRenderer:
             elif token.startswith("[") and token.endswith("]"):
                 self.render_icon(token, color)
                 if ix < len(line) - 1 and line[ix + 1].startswith(","):
-                    self.cursor.x -= self.tracking + 0.75 * self.word_spacing
+                    self.cursor.x -= self._tracking + 0.75 * self.word_spacing
                 continue
             # TODO: Whats going on here?
             if re.match(r"^[,.:?!]", token) is not None:
                 if ix != 0 and line[ix - 1] in [self.TOKEN_BOLD, self.TOKEN_ITALIC]:
-                    self.cursor.x -= self.tracking + self.word_spacing
+                    self.cursor.x -= self._tracking + self.word_spacing
             font = self.get_font()
             for char, char_next in self.iterate_chars(token):
-                self.draw.text((self.cursor.x, self.cursor.y), char, color, font=font, stroke_width=self.stroke_width)
+                self.draw.text((self.cursor.x, self.cursor.y), char, color, font=font, stroke_width=self._stroke_width)
                 self.cursor.x += self.calculate_char_width(font, char, char_next)
-            self.cursor.x += self.tracking + self.word_spacing
-        self.cursor.y += self.leading
+            self.cursor.x += self._tracking + self.word_spacing
+        self.cursor.y += self._leading
 
     def render_icon(self, token, color=None):
         color = color or self.font_color
@@ -847,23 +952,23 @@ class TextRenderer:
         else:
             icon = self.get_icon(token)
             if self.ICONS[token] == "simple":
-                self.image.paste(color, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * self.font_size)), mask=icon)
+                self.image.paste(color, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * self._font_size)), mask=icon)
             elif self.ICONS[token] == "image":
-                self.image.alpha_composite(icon, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * self.font_size)))
+                self.image.alpha_composite(icon, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * self._font_size)))
             self.cursor.x += self.get_icon_width(icon)
 
     def _do_render_full_width_icon(self, rendered):
         rendered = rendered.crop(rendered.getbbox())
         rendered = rendered.resize((int(self.supersample * rendered.size[0]), int(self.supersample * rendered.size[1])))
         # Icons should always be centered?
-        self.cursor.x = (self.max_w - self.padding[0] - self.padding[2] - rendered.size[0]) // 2 + self.padding[0]
-        self.image.alpha_composite(rendered, (int(self.cursor.x), int(self.cursor.y - 0.2 * self.leading)))
+        self.cursor.x = (self._max_w - self._padding[0] - self._padding[2] - rendered.size[0]) // 2 + self._padding[0]
+        self.image.alpha_composite(rendered, (int(self.cursor.x), int(self.cursor.y - 0.2 * self._leading)))
         # subtract the leading which gets added in self._render_line
-        self.cursor.y += rendered.size[1] - self.leading
+        self.cursor.y += rendered.size[1] - self._leading
 
     def get_icon(self, token):
         icon = self.asset_manager.get_text_icon(token)
-        icon = icon.resize((int(self.font_size * 1.15 * icon.size[0] / icon.size[1]), int(self.font_size * 1.15)), resample=Image.LANCZOS)
+        icon = icon.resize((int(self._font_size * 1.15 * icon.size[0] / icon.size[1]), int(self._font_size * 1.15)), resample=Image.LANCZOS)
         icon_bbox = icon.getbbox()
         icon = icon.crop((icon_bbox[0], 0, icon_bbox[2], icon_bbox[3]))
         return icon
@@ -872,35 +977,73 @@ class TextRenderer:
         name_string = f"**{name}** - {subname}".upper() if subname is not None else f"**{name}**".upper()
         tokenized = self.tokenize(name_string)
         width_line = self.calculate_line_width(tokenized)
-        height = 0.82 * self.font_size + self.padding[1] + self.padding[3]
+        height = 0.82 * self._font_size + self._padding[1] + self._padding[3]
         text_len = len(name_string) - 4
-        tracking = (self.max_w - width_line) * 1000 / (self.font_size * text_len)
-        if width_line < self.max_w:
+        tracking = (self._max_w - width_line) * 1000 / (self._font_size * text_len)
+        if width_line < self._max_w:
             tracking = 0
         elif tracking >= -20:
             # actually do nothing
             pass
         # Welcome to 3 am
-        elif tracking > -20 - width_line * (1 - (self._font_size - 3) / self._font_size) * 1000 / (self.font_size * text_len):
-            self._font_size -= 3
+        elif tracking > -20 - width_line * (1 - (self.font_size - 3) / self.font_size) * 1000 / (self._font_size * text_len):
+            self.font_size -= 3
             width_line = self.calculate_line_width(tokenized)
-            tracking = (self.max_w - width_line) * 1000 / (self.font_size * text_len)
+            tracking = (self._max_w - width_line) * 1000 / (self._font_size * text_len)
             tracking = min(0, tracking)
         else:
-            self._font_size -= 3
-            height += self.leading
+            self.font_size -= 3
+            height += self._leading
             self.set_cursor_y(height, 1)
-            self.cursor.y += self.padding[1]
+            self.cursor.y += self._padding[1]
             self._render_line(self.tokenize(f"**{name}**".upper()), {})
             self._render_line(self.tokenize(subname.upper()), {})
-            self.image = self.image.resize((self._max_w, self._max_h), resample=Image.LANCZOS)
+            self.image = self.image.resize((self.max_w, self.max_h), resample=Image.LANCZOS)
             return self.image
 
         self.set_cursor_y(height, 1)
-        self.cursor.y += self.padding[1]
+        self.cursor.y += self._padding[1]
         self._render_line(tokenized, {"tracking": tracking})
-        self.image = self.image.resize((self._max_w, self._max_h), resample=Image.LANCZOS)
+        self.image = self.image.resize((self.max_w, self.max_h), resample=Image.LANCZOS)
         return self.image
+
+
+class Graph:
+    def __init__(self, size):
+        self.size = size
+        self.adjacency = [[0] * size for _ in range(size)]
+
+    def add_edge(self, ix_node1, ix_node2, weight):
+        self.adjacency[ix_node1][ix_node2] = weight
+
+    # always searches from source ix 0 to target ix -1
+    def dijkstra(self):
+        dist = [float("inf")] * self.size
+        dist[0] = 0
+        prev = [None] * self.size
+        queue = [i for i in range(self.size)]
+
+        while queue:
+            # FIXME: this might be wrong if 2 vertices randomly have the same distance from the source
+            ix_current_vertex = dist.index(min([dist[ix] for ix in queue]))
+            if ix_current_vertex == self.size - 1:
+                break
+            queue.remove(ix_current_vertex)
+            for ix_neighbor, weight in enumerate(self.adjacency[ix_current_vertex]):
+                if weight == 0 or ix_neighbor not in queue:
+                    continue
+                new_path_dist = dist[ix_current_vertex] + weight
+                if new_path_dist < dist[ix_neighbor]:
+                    dist[ix_neighbor] = new_path_dist
+                    prev[ix_neighbor] = ix_current_vertex
+
+        out = []
+        step = prev[-1]
+        while step:
+            out.insert(0, step)
+            step = prev[step]
+        out.append(self.size)
+        return out
 
 
 if __name__ == "__main__":
