@@ -925,6 +925,45 @@
                 "w": 539,
                 "h": 769
             }
+        },
+        {
+            "id": "10220",
+            "name": "Winterfell Guard",
+            "statistics": {
+                "version": "2021",
+                "faction": "stark",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Longsword",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Winterfell Supplies",
+                    "Improved Defenses (Stark)"
+                ],
+                "requirements": [
+                    {
+                        "name": "Adaptive",
+                        "text": "*Reduce the cost of 1 Attachment in this unit by 1.*"
+                    }
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Having loyally served in the military for several decades, the Winterfell Guards are formed of veterans in their prime. They have served as protectors of Winterfell for a time but have chosen to continue their service from within the city’s walls in their advanced years. However, in these days of War, they have been called upon yet again, to march on to the frontlines once more."
+            }
         }
     ],
     "ncus": [
@@ -2333,6 +2372,19 @@
                 "y": 18,
                 "w": 519,
                 "h": 740
+            }
+        },
+        {
+            "id": "20230",
+            "name": "Winterfell Champion",
+            "statistics": {
+                "version": "2021",
+                "faction": "stark",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Winterfell's Wrath"
+                ]
             }
         },
         {

@@ -526,6 +526,46 @@
             "fluff": {
                 "lore": "King’s Landing is generally considered a safe place to live, given that the aptly named Gold Cloaks can be seen patrolling avenues and alleyways from afar. They’re always ready to ensure that justice is served. As to whose justice that might be, however, the Lannisters rule King’s Landing, and the Gold Cloaks bend their knees to the Iron Throne. Speak ill of the king at your peril."
             }
+        },
+        {
+            "id": "10116",
+            "name": "Felsenkrähen",
+            "statistics": {
+                "version": "2021",
+                "faction": "lannister",
+                "type": "infantry",
+                "cost": 5,
+                "speed": 5,
+                "defense": 4,
+                "morale": 7,
+                "attacks": [
+                    {
+                        "name": "Geplünderte Waffen",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            6,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Anspornen",
+                    "Chaotisch",
+					"Rekrutierung aus den Hügeln"
+                ],
+                "requirements": [
+                    {
+                        "name": "Character",
+                        "text": "*Can only be fielded in an army containing Tyrion Lannister. He may be attached to this unit at no cost.*"
+                    }
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "As mountain tribes and raiders go, Tyrion Lannister’s Stone Crows are quite ordinary, save their unexpected loyalty. While pledged more to Tyrion’s coin than his person, they proved true to their word, even when betrayal might have been a more lucrative option. As mercenaries, these troops are worth their coin, if properly employed as scouts and flankers. Their light arms and armor make them unsuited to the front line in  a protracted engagement."
+            }
         }
     ],
     "ncus": [

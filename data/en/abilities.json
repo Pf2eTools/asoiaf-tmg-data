@@ -1825,8 +1825,7 @@
     "ORDER: WAR CRY": {
         "trigger": "Start of a friendly Turn:",
         "effect": [
-            "This unit performs 1 Morale Test.",
-            "On a Success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**."
+            "This unit performs 1 Morale Test. On a Success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**."
         ],
         "icons": [
             "order"
@@ -2017,6 +2016,11 @@
         ],
         "icons": [
             "melee"
+        ]
+    },
+    "RECRUITING FROM THE HILLS": {
+        "effect": [
+            "Each time this unit Activates, it restores 1 Wound, +1 Wound for each of its destroyed ranks."
         ]
     },
     "REGROUP": {
@@ -2649,6 +2653,35 @@
         ],
         "icons": [
             "faith"
+        ]
+    },
+    "ORDER: PLANNED APPROACH": {
+        "trigger": "Start of any Turn:",
+        "effect": [
+            "Target 1 friendly unit in Long Range. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities. When selecting their Action for the Turn, that unit may only declare Charge Actions."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "IMPROVED DEFENSES (STARK)": {
+        "effect": [
+            "While you Control [HORSE], this unit gains +1 to Defense Dice Rolls."
+        ]
+    },
+    "WINTERFELL SUPPLIES": {
+        "effect": [
+            "• **Precision**",
+            "• While you Control [SWORDS], this unit's Melee Attacks roll their highest Attack Die Value."
+        ]
+    },
+    "WINTERFELL'S WRATH": {
+        "effect": [
+            "• **Critical Blow**",
+            "• Enemies Successfully Charged become **Weakened**."
+        ],
+        "icons": [
+            "melee"
         ]
     }
 }

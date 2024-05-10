@@ -1119,6 +1119,11 @@
             "Solange du [MONEY] kontrollierst, erhält diese Einheit +1 auf das Ergebnis ihrer Verteidigungswürfe."
         ]
     },
+    "VERBESSERTE VERTEIDIGUNG (STARK)": {
+        "effect": [
+            "Solange du [HORSE] kontrollierst, erhält diese Einheit +1 auf das Ergebnis ihrer Verteidigungswürfe."
+        ]
+    },
     "IM NAMEN R’HLLORS": {
         "effect": [
             "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
@@ -3246,6 +3251,50 @@
             "wounds",
             "ranged",
             "melee"
+        ]
+    },
+    "AXT DES HENKERS": {
+        "effect": [
+            "• **Spaltschlag**",
+            "• Falls diese Einheit weniger Schlachtreihen als der Verteidiger hat, erhält dieser Angriff **Grausam** und der Verteidiger wird **Panisch**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "ZORN VON WINTERFELL": {
+        "effect": [
+            "• **Kritischer Treffer**",
+            "• Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, werden **Geschwächt**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "VORRÄTE VON WINTERFELL": {
+        "effect": [
+            "• **Präzision**",
+            "• Solange du [SWORDS] kontrollierst, verwendet diese Einheit ihren höchsten Angriffswürfelwert."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "REKRUTIERUNG AUS DEN HÜGELN": {
+        "effect": [
+            "Immer wenn diese Einheit aktiviert wird, heilt sie 1 Wunde, +1 Wunde für jede ihrer vernichteten Schlachtreihen."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "BEFEHL: GEPLANTE VORGEHENSWEISE": {
+        "trigger": "Zu Beginn eines beliebigen Zuges:",
+        "effect": [
+            "Bestimme 1 freundliche Kampfeinheit in Langer Reichweite. Bis zum Ende des Zuges kann diese Einheit nicht das Ziel von freindlichen Effekten oder Fähigkeiten werden. Wenn diese Einheit ihre Aktion für den Zug auswählt, darf sie ausschließlich Ansturm Aktionen deklarieren."
+        ],
+        "icons": [
+            "order"
         ]
     }
 }

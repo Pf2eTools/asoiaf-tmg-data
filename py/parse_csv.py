@@ -666,7 +666,7 @@ MODE_REWRITE = "rewrite"
 # Add keys that are new
 MODE_NEW = "new"
 
-MODE = MODE_REWRITE
+MODE = MODE_NEW
 
 LANGUAGES = [
     "en",
