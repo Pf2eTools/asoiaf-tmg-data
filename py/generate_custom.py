@@ -8,7 +8,7 @@ from pathlib import Path
 from const import *
 
 
-def main(custom_data):
+def main(custom_data, skip_portrait=True):
     meta = custom_data.get("_meta")
     if meta is None or meta.get("id") is None:
         raise Exception("Invalid custom data!")
@@ -24,6 +24,9 @@ def main(custom_data):
     gen_all(custom_data, "attachments", out_path, asset_manager, abilities_data)
     gen_all(custom_data, "ncus", out_path, asset_manager, None)
     gen_all(custom_data, "tactics", out_path, asset_manager, None)
+
+    if skip_portrait:
+        return
 
     for key in ["units", "attachments", "ncus"]:
         for data_object in custom_data[key]:
@@ -62,6 +65,6 @@ def main(custom_data):
 
 
 if __name__ == "__main__":
-    with open("./custom/data/cmon-leaks.json", "r", encoding="utf-8") as cd:
+    with open("./custom/data/brew.json", "r", encoding="utf-8") as cd:
         leaks_data = json.load(cd)
     main(leaks_data)
