@@ -1,0 +1,27 @@
+{
+  "name": "asoiaf-tmg-data",
+  "version": "1.0.0",
+  "description": "All the card data for asoiaf:tmg.",
+  "main": "",
+  "scripts": {
+    "build:sw": "node node/build-sw.mjs",
+    "build:sw:prod": "node node/build-sw.mjs prod",
+    "build:css": "sass --style=compressed web/scss/main.scss:web/css/main.css web/scss/bootstrap.scss:web/css/bootstrap.css",
+    "build": "build:css && npm run build:sw:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pf2eTools/asoiaf-tmg-data.git"
+  },
+  "author": "Pf2eTools",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "sass": "^1.71.1",
+    "esbuild": "^0.21.5",
+    "workbox-build": "^7.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Pf2eTools/asoiaf-tmg-data/issues"
+  },
+  "homepage": "https://github.com/Pf2eTools/asoiaf-tmg-data#readme"
+}

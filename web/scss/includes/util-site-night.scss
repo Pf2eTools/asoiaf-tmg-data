@@ -1,0 +1,35 @@
+@use "vars";
+
+.night-mode {
+	.stripe- {
+		&even {
+			&:nth-child(even) {
+				background: vars.$rgb-stripe-grey--night;
+			}
+		}
+
+		&odd {
+			&:nth-child(odd) {
+				background: vars.$rgb-stripe-grey--night;
+			}
+		}
+
+		&child- {
+			&even-first {
+				&:nth-child(even) > :first-child {
+					background: vars.$rgb-stripe-grey--night;
+				}
+			}
+		}
+	}
+
+	.veapp {
+		&__ {
+			&ele-hoverable {
+				&:hover {
+					background: vars.$rgb-bg--alt-night;
+				}
+			}
+		}
+	}
+}

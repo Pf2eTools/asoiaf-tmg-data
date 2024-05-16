@@ -1,0 +1,49 @@
+name: Build and Deploy
+
+
+on:
+  push:
+
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+
+concurrency:
+  group: "release"
+  cancel-in-progress: true
+
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Clear caches
+        uses: easimon/wipe-cache@main
+
+      - name: Set Deployed Flag
+        run: |
+          bash ./.github/set-deployed-flag.sh
+
+      # Builds the data
+      - name: Build Site
+        run: |
+          sudo apt-get install -y hub
+          node --version
+          npm --version
+          npm i
+          npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@master
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@master

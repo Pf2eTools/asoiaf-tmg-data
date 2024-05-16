@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>aoiaf:tmg data</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="sw-injector.js"></script>
+
+  <script type="text/javascript" src="js/styleswitch.js"></script>
+</head>
+<style>
+    @media (width > 1400px) {
+      .container {
+        width: 1300px;
+      }
+    }
+    .page__disp-download-progress-text--wide {
+      inset: 0 calc(50% - 65px) 0 calc(50% - 65px);
+      width: 130px;
+    }
+
+    .bkmv__img {
+      height: 210px;
+      object-fit: cover;
+      max-width: 100%
+    }
+</style>
+
+<body>
+
+
+<div class="viewport-wrapper">
+
+  <header class="hidden-xs hidden-sm page__header">
+    <div class="container ve-flex-v-baseline">
+      <h1 class="page__title no-wrap my-0">asoiaf:tmg-data</h1>
+      <p class="page__subtitle no-wrap my-0" id="page__subtitle">This is not an army builder. Search by name on the left, click a name to display on the right.</p>
+    </div>
+  </header>
+
+  <div class="view-col-group--cancer h-100 mh-0">
+    <div class="container view-col-wrapper view-col-wrapper--cancer">
+      <div class="view-col ve-flex-7" id="listcontainer">
+        <div class="lst__form-top" id="filter-search-group">
+          <div class="w-100 relative">
+            <input type="search" id="lst__search" autocomplete="off" autocapitalize="off" spellcheck="false" class="search form-control lst__search lst__search--no-border-h">
+            <div id="lst__search-glass" class="lst__wrp-search-glass no-events ve-flex-vh-center"><span class="glyphicon glyphicon-search"></span></div>
+            <div class="lst__wrp-search-visible no-events ve-flex-vh-center"></div>
+          </div>
+          <button type="button" class="btn btn-default" id="reset">Reset</button>
+        </div>
+
+        <div id="filtertools" class="input-group input-group--bottom ve-flex no-shrink">
+          <button type="button" class="ve-col-6-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
+          <button type="button" class="ve-col-2-5 sort btn btn-default btn-xs" data-sort="faction">Faction</button>
+          <button type="button" class="ve-col-2 sort btn btn-default btn-xs" data-sort="type">Type</button>
+          <button type="button" class="sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
+        </div>
+
+        <div id="list" class="list list--stats"></div>
+      </div>
+
+      <div id="contentwrapper" class="view-col ve-flex-5">
+        <div id="sublistcontainer" class="sublist sublist--resizable no-print">
+          <div id="sublistsort" class="btn-group sublist__wrp-cols">
+            <button type="button" class="ve-col-6-2 sort btn btn-default btn-xs" data-sort="name">Name</button>
+            <button type="button" class="ve-col-2-2 sort btn btn-default btn-xs" data-sort="faction">Faction</button>
+            <button type="button" class="ve-col-2-2 sort btn btn-default btn-xs" data-sort="type">Type</button>
+            <button type="button" class="sort btn btn-default btn-xs ve-grow" data-sort="count">#</button>
+          </div>
+
+          <div id="sublist" class="list"></div>
+        </div>
+
+        <div class="wrp-stat-tab" id="stat-tabs">
+          <div id="tabs-right"></div>
+        </div>
+
+        <div id="wrp-pagecontent" class="wrp-stats-table">
+          <table id="pagecontent" class="w-100 stats">
+            <tr><th class="border" colspan="6"></th></tr>
+            <tr><td colspan="6" class="initial-message">Select an entry from the list to view it here</td></tr>
+            <tr><th class="border" colspan="6"></th></tr>
+          </table>
+        </div>
+
+        <div class="ve-text-center mt-2 no-print">
+          <button type="button" class="btn btn-default btn-xs" id="btn-book">Print View</button>
+<!--          <button type="button" class="btn btn-xs btn-info" id="manage-brew">Manage Homebrew</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="js/parser.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/utils-ui.js"></script>
+<script type="text/javascript" src="js/utils-list.js"></script>
+<script type="text/javascript" src="js/utils-tableview.js"></script>
+<script type="text/javascript" src="lib/localforage.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/utils-dataloader.js"></script>
+<script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
+<script type="text/javascript" src="js/listpage.js"></script>
+<script type="text/javascript" src="js/multisource.js"></script>
+<script type="text/javascript" src="js/filter-song.js"></script>
+<script type="text/javascript" src="js/song.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
+<script type="text/javascript" src="lib/elasticlunr.js"></script>
+<script type="text/javascript" src="lib/jspdf.umd.min.js"></script>
+
+</body>
+</html>
