@@ -78,7 +78,7 @@ def main():
             gen_all(data, "ncus", cards_path, asset_manager, None)
 
 
-AMEND = True
+AMEND = False
 
 ID_FILTER = [
 ]
