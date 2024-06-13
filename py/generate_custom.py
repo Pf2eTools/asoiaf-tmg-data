@@ -65,6 +65,6 @@ def main(custom_data, skip_portrait=True):
 
 
 if __name__ == "__main__":
-    with open("./custom/data/brew.json", "r", encoding="utf-8") as cd:
+    with open("./custom/data/cmon-leaks.json", "r", encoding="utf-8") as cd:
         leaks_data = json.load(cd)
-    main(leaks_data)
+    main(leaks_data, False)
