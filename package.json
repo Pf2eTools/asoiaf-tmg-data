@@ -7,7 +7,7 @@
     "build:sw": "node node/build-sw.mjs",
     "build:sw:prod": "node node/build-sw.mjs prod",
     "build:css": "sass --style=compressed web/scss/main.scss:web/css/main.css web/scss/bootstrap.scss:web/css/bootstrap.css",
-    "build": "build:css && npm run build:sw:prod"
+    "build": "npm run build:css && npm run build:sw:prod"
   },
   "repository": {
     "type": "git",
