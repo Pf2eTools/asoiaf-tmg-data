@@ -3,6 +3,10 @@ name: Build and Deploy
 
 on:
   push:
+    paths:
+      - "web/**"
+      - "data/**"
+      - "generated/**"
 
 
 permissions:
