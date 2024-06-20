@@ -15,8 +15,13 @@ def main(custom_data, skip_portrait=True):
     custom_data_id = meta.get("id")
     asset_manager = CustomAssetManager(custom_data_id)
 
-    with open(f"{DATA_PATH}/en/abilities.json", "r", encoding="utf-8") as file:
-        abilities_data = json.load(file)
+    abilities_data = {}
+
+    for abilities_data_path in [f"{DATA_PATH}/en/abilities.json", f"./custom/data/{custom_data_id}-abilities.json"]:
+        if os.path.exists(abilities_data_path):
+            with open(abilities_data_path, "r", encoding="utf-8") as file:
+                _abilities_data = json.load(file)
+                abilities_data.update(_abilities_data)
 
     out_path = f"./custom/generated/{custom_data_id}"
     Path(out_path).mkdir(parents=True, exist_ok=True)
@@ -68,3 +73,6 @@ if __name__ == "__main__":
     with open("./custom/data/cmon-leaks.json", "r", encoding="utf-8") as cd:
         leaks_data = json.load(cd)
     main(leaks_data, False)
+    with open("./custom/data/tully.json", "r", encoding="utf-8") as cd:
+        tully_data = json.load(cd)
+    main(tully_data, False)
