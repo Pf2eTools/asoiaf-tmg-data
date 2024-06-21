@@ -1,7 +1,9 @@
 # asoiaf-tmg-data
 This repository aims to provide all data and images required to start your own asoiaf:tmg projects. WIP
 
-### Are you looking to filter and print cards?
+
+
+## Are you looking to filter and print cards?
 Check out the deployed website [here](https://pf2etools.github.io/asoiaf-tmg-data/web/song.html).
 
 Narrow down the selection by using filters...
@@ -28,12 +30,19 @@ Click `Download PDF`, and your document will be prepared for you.
 
 ![pdf](download-pdf.jpeg)
 
-
 ### Where is my stuff?
 There's no account system. Everything is stored in cookies. If you wipe those, or close your incognito window, it's gone forever. You can download your data for safekeeping!
 
 ### Other neat things
 Almost everything has tooltips.
+
+
+
+## OBS Overlay
+Install `obs/obs-overlay-user.js` as a userscript, and add `obs/asoiaf-tmg-data-overlay.py` as a script in OBS. Start the websocket from the script menu in OBS, the userscript will inject buttons on the website. When pressed, OBS will create a new source with the image on the current scene.
+Very WIP (it's a techdemo really)
+
+
 
 ## Planned Features
 - [X] card backsides
