@@ -4,53 +4,2253 @@
       "id": "tully"
     },
     "units": [
+        {
+            "id": "tully-sworn-shield",
+            "name": "Tully Sworn Shield",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 4,
+                "defense": 3,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Longsword",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Order: Shield Wall",
+                    "Stubbron Tenacity"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "House Tully's Sworn Shields bring superior armor and defensive power to the battlefield under the greater banner of House Stark. With their ability to absorb nearly any determined assault, many battle turn on their impressive holding power. While not as fast as other offensive elements. Sworn Shield often define the line behind which assault units can safely retreat after a swift dash at the enemy."
+            }
+        },
       {
-              "id": "tully-knights-of-the-trident",
-              "name": "Knights of the Trident",
+              "id": "tully-cavaliers",
+              "name": "Tully Cavaliers",
               "statistics": {
-                  "version": "2024",
-                  "faction": "stark",
+                  "version": "v2",
+                  "faction": "tully",
                   "type": "cavalry",
-                  "cost": 7,
-                  "speed": 4,
+                  "cost": 8,
+                  "speed": 5,
                   "defense": 3,
-                  "morale": 6,
+                  "morale": 5,
                   "attacks": [
                       {
-                          "name": "Sword",
+                          "name": "Lance",
                           "type": "melee",
-                          "hit": 4,
+                          "hit": 3,
                           "dice": [
-                              7,
+                              6,
                               4
                           ]
                       }
                   ],
                   "abilities": [
-                      "Order: Riverlands Gallantry",
-                      "Embolden",
-                      "Cavalry"
+                      "Cavalry",
+                      "Lance",
+                      "Rally Banner"
                   ],
                   "tray": "cavalry"
               },
               "fluff": {
-                  "lore": "Big dudes with fish on horses.  No joke."
-              },
-	      "portrait": {                                                                                                                                                        "x": 491,                                                                                                                                                        "y": 276,
-                "r": 174
-              },
-              "portrait_square": {
-                  "x": 316,
-                  "y": 101,
-                  "a": 347
-              },
-              "standee": {
-                  "x": 199,
-                  "y": 29,                                                                                                                                                         "w": 539,                                                                                                                                                        "h": 769
+                  "lore": "Heavily armed, heavily armored, and with all the speed that cavalry commands, House Tully's Cavaliers are renowned for their devastating charges that can shatter even the hardest enemy line. The mere threat of an imminent charge forces enemy commanders to respond, allowing the Cavalier commander to project force against an enemy line without even engaging. A wise commander will have troops standing ready to exploit the chaos Cavaliers leave in their wake."
               }
-      }
+          },
+          {
+            "id": "riverrun-defenders",
+            "name": "Riverrun Defenders",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 4,
+                "defense": 3,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Pavise Crossbow",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            6,
+                            5,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Short Sword",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            6,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Order: Ready! Aim! Release!",
+                    "Pavise Crossbow"
+                ],
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "The ever-vigilant Riverrun Defenders are trained to rain down precise volleys from the arrow slits crowning the battlements of the ancient seat of House Tully. Should besiegers breach the inner courtyard, the Defenders will be eager to cross-blades with their foes. When strategy dictates that these soldiers must sally forth from the castle walls, they bring with them towering pavise shields upon which to brace their crossbows."
+            }
+        },
+        {
+            "id": "tully-yeomen",
+            "name": "Tully Yeomen",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 5,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Yeoman's Spear",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            5,
+                            5
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Yeoman's Spear",
+                    "Riverlands Defiance"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "The lush riparian hillocks that cover the Riverlands are tended by Tully Yeomen in times of peace, but when malicious armies violate their borders those same Yeomen take up spear and buckler to defend their homesteads. Enemies who clash against these standard foot soldiers may cut through some of the weaker levies with ease only to find that each company includes a few warriors of harder stock who can outlast even the heaviest assault."
+            }
+        },
+        {
+            "id": "blackfishs-riders",
+            "name": "Blackfish's Riders",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "cavalry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Handpicked Bow",
+                        "type": "short",
+                        "hit": 4,
+                        "dice": [
+                            6,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Handpicked Sword",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Cavalry",
+                    "Handpicked Hunters",
+                    "Order: Charging Volley"
+                ],
+                "requirements": [
+                    {
+                        "name": "Character",
+                        "text": "*May only be fielded in an army containing Brynden Tully, Knight of the Gate. He must be attached to this unit at no cost.*"
+                    }
+                ],
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "The lush riparian hillocks that cover the Riverlands are tended by Tully Yeomen in times of peace, but when malicious armies violate their borders those same Yeomen take up spear and buckler to defend their homesteads. Enemies who clash against these standard foot soldiers may cut through some of the weaker levies with ease only to find that each company includes a few warriors of harder stock who can outlast even the heaviest assault."
+            }
+        },
+        {
+            "id": "house-mallister-watchmen",
+            "name": "House Mallister Watchmen",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 5,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Pike",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            6,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Order: Set for Charge",
+                    "Counterstrike"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Beneath the Booming Tower of Seagard stand the fierce House Mallister Watchmen. Deterred by neither coastal storms nor Ironborn landing parties, these sleepless protectors never fail to ring the immense bronze bell that hangs high above their city in times of great threat. Its deafening tones are an unmistakable alarm that rallies every sharpened pike of these proud soldiers to rise and fight."
+            }
+        },
+            {
+                "id": "knights-of-the-trident",
+                "name": "Knights of the Trident",
+                "statistics": {
+                    "version": "v2",
+                    "faction": "tully",
+                    "type": "cavalry",
+                    "cost": 7,
+                    "speed": 4,
+                    "defense": 3,
+                    "morale": 6,
+                    "attacks": [
+                        {
+                            "name": "Sword",
+                            "type": "melee",
+                            "hit": 4,
+                            "dice": [
+                                7,
+                                4
+                            ]
+                        }
+                    ],
+                    "abilities": [
+                        "Cavalry",
+                        "Order: Riverlands Gallantry",
+                        "Embolden"
+                    ],
+                    "tray": "cavalry"
+                },
+                "fluff": {
+                    "lore": "When the Lords of the Riverlands call their banners, the Knights of the Trident don heavy plate armor and mount their sturdy destriers. While foreign steeds may move uncertainly in muddy terrain or shallow fords, these trained warhorses stand sure-footed to protect the infantry around them. Their experienced riders often direct the tides of battle from atop the impressive mounts."
+                }
+            },
+        {
+            "id": "tully-greatswords",
+            "name": "Tully Greatswords",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Tully Greatsword",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Tully Greatsword",
+                    "Stubborn Tenacity"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Not all of House Tully's infantry units are issued shields or deployed into defensive formations.  Select regiments of Tully Greatswords train and fight with oversized castle-forged blades designed for cutting into enemy lines. If their battle spirits are high under the leadership of a capable commander, these men-at-arms can inflict severe casualties on enemy forces."
+            }
+        },
+        {
+            "id": "house-mallister-marksmen",
+            "name": "House Mallister Marksmen",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 5,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Heated Shot",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            6,
+                            5,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Dagger",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Heated Shot",
+                    "Order: Overwatch"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "House Mallister Marksmen have seen more combat than most of their peers due to the ever-present threat of Ironborn raiders on the shores beneath Seagard. Such brigands rarely manage to sneak their boats between the few defensive ships of the Mallister fleet. But it if they do, is the job of these bowmen to make sure those vessels are set ablaze while more heavily armored troops meet them on the beaches."
+            }
+        },
+        {
+            "id": "house-blackwood-prowlers",
+            "name": "House Blackwood Prowlers",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 5,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Weirwood Bow",
+                        "type": "short",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Long Sword",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Weirwood Bow",
+                    "Order: Tactical Reposition"
+                ],
+                "requirements": [
+                {
+                    "name": "Rivalry",
+                    "text": "*If your army contains Jonos Bracken or any House Bracken unit, this unit's cost is increased by 1.*"
+                }
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "When invaders come to burn the lands of Blackwood Vale they cannot imagine what dangers could rise from the ashes. House Blackwood Prowlers carry weirwood bows as they stalk the lands around Raventree Hall. They make sure trespassers meet a dark fate at the tip of an arrowhead or edge of a longsword."
+            }
+        },
+        {
+            "id": "house-bracken-dragoons",
+            "name": "House Bracken Dragoons",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "cavalry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 5,
+                "morale": 7,
+                "attacks": [
+                    {
+                        "name": "Glaive",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            5
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Glaive",
+                    "Disrupt",
+                    "Cavalry"
+                ],
+                "requirements": [
+                    {
+                        "name": "Rivalry",
+                        "text": "*If your army contains Tytos Blackwood or any House Blackwood unit, this unit's cost is increased by 1.*"
+                    }
+                ],
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "The swift riders who make up the ranks of House Bracken Dragoons fight with an uncommon tenacity. Each soldier earns his stallion only after he has proven himself in service to Lord Jonos Bracken. Any foes who threaten the lands of Stone Hedge are soon to be run down beneath hoof and glaive when these forces arrive on the battlefield."
+            }
+        },
+        {
+            "id": "house-mallister-eagle-guardians",
+            "name": "House Mallister Eagle Guardians",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 8,
+                "speed": 5,
+                "defense": 3,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Mallister Ascendancy",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            5
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Order:Eagle's Deliverance",
+                    "Mallister Ascendancy"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "The elite household guard of Lord Jason Mallister are renowned throughout Westeros for their legendary outfitting and training. Although they rarely have orders to leave their post near the Booming Tower of Seagard, wherever they march they serve as the ultimate relief force for allies of the Riverlands."
+            }
+        }
     ],
-    "attachments": [],
-    "ncus": [],
-    "tactics": []
+    "attachments": [
+        {
+            "id": "edmure-tully",
+            "name": "Edmure Tully",
+            "subname": "Lord of Riverrun",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Order: Reckless Heroism",
+                    "Critical Blow"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "authority-of-the-lord-paramount",
+                    "assault-orders",
+                    "price-of-failure"
+                ]
+            },
+            "fluff": {
+                "quote": "\"Tell father I have gone to make him proud.\""
+            },
+            "portrait": {
+                "x": 299,
+                "y": 149,
+                "r": 139
+            },
+            "portrait_square": {
+                "x": 159,
+                "y": 9,
+                "a": 277
+            },
+            "standee": {
+                "x": 89,
+                "y": 14,
+                "w": 534,
+                "h": 761
+            }
+        },
+        {
+            "id": "brynden-tully",
+            "name": "Brynden Tully",
+            "subname": "Warden of the Southern Marches",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Boisterous Charisma",
+                    "Order: Taunt"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "handpicked-by-the-blackfish",
+                    "blackfishs-infamy",
+                    "never-give-the-enemy-his-wish"
+                ]
+            },
+            "fluff": {
+                "quote": "\"Resolve is one thing Brynden Blackfish never lacked for.\""
+            },
+            "portrait": {
+                "x": 299,
+                "y": 149,
+                "r": 139
+            },
+            "portrait_square": {
+                "x": 159,
+                "y": 9,
+                "a": 277
+            },
+            "standee": {
+                "x": 89,
+                "y": 14,
+                "w": 534,
+                "h": 761
+            }
+        },
+        {
+            "id": "jason-mallister",
+            "name": "Jason Mallister",
+            "subname": "Lord of Seagard",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Affiliation: House Mallister",
+                    "Embolden",
+                    "Renowned Commander"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "last-stand",
+                    "battle-endurance",
+                    "the-booming-tower-of-seagard"
+                ]
+            },
+            "fluff": {
+                "quote": "\"Above the Rest\""
+            },
+            "portrait": {
+                "x": 299,
+                "y": 149,
+                "r": 139
+            },
+            "portrait_square": {
+                "x": 159,
+                "y": 9,
+                "a": 277
+            },
+            "standee": {
+                "x": 89,
+                "y": 14,
+                "w": 534,
+                "h": 761
+            }
+        },
+        {
+            "id": "karyl-vance",
+            "name": "Karyl Vance",
+            "subname": "Heir of Wayfarer's Rest",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Dispatched by Riverrun",
+                    "Relentless"
+                ],
+                "commander": true,
+                "requirements": [
+                    {
+                        "text": "Karyl Vance, Heir of Wayfarer's Rest may only be fielded in an army that includes Hoster Tully, Lord Paramount of the Trident."
+                    }
+                ],
+                "character": true
+            },
+            "tactics": {
+                "cards": []
+            },
+            "fluff": {
+                "quote": "\"I was attending my lord father in the pass below the Golden Tooth...\""
+            },
+            "portrait": {
+                "x": 299,
+                "y": 149,
+                "r": 139
+            },
+            "portrait_square": {
+                "x": 159,
+                "y": 9,
+                "a": 277
+            },
+            "standee": {
+                "x": 56,
+                "y": 16,
+                "w": 506,
+                "h": 722
+            }
+        },
+        {
+            "id": "shella-whent",
+            "name": "Shella Whent",
+            "subname": "Lady of Harrenhal",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Rights to Harrenhal"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "haunted-fortifications",
+                    "curse-of-harrnehal",
+                    "black-back-heraldry"
+                ]
+            },
+            "fluff": {
+                "quote": "\"And is Lady Whent a true and honest friend to my father?\""
+            },
+            "portrait": {
+                "x": 299,
+                "y": 149,
+                "r": 139
+            },
+            "portrait_square": {
+                "x": 159,
+                "y": 9,
+                "a": 277
+            },
+            "standee": {
+                "x": 89,
+                "y": 14,
+                "w": 534,
+                "h": 761
+            }
+        },
+        {
+            "id": "tytos-blackwood",
+            "name": "Tytos Blackwood",
+            "subname": "The Onyx Raven",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "cavalry",
+                "cost": "C",
+                "abilities": [
+                    "Affiliation: House Blackwood",
+                    "Swift Strike",
+                    "Furious Charge"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "weirwood-insight",
+                    "sortie-tactics",
+                    "cunning-ploy"
+                ]
+            },
+            "fluff": {
+                "quote": "\"Tytos Blackwood will fight on for honor's sake.\""
+            },
+            "portrait": {
+                "x": 299,
+                "y": 149,
+                "r": 139
+            },
+            "portrait_square": {
+                "x": 159,
+                "y": 9,
+                "a": 277
+            },
+            "standee": {
+                "x": 89,
+                "y": 14,
+                "w": 534,
+                "h": 761
+            }
+        },
+        {
+            "id": "jonos-bracken",
+            "name": "Jonos Bracken",
+            "subname": "The Red Stallion",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Affiliation: House Bracken",
+                    "Order: Overrun",
+                    "Order: Threaten"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": [
+                    "bracken-spite",
+                    "lash-out",
+                    "need-for-vengeance"
+                ]
+            },
+            "fluff": {
+                "quote": "\"All these lands belonged to Stone Hedge once.\""
+            },
+            "portrait": {
+                "x": 299,
+                "y": 149,
+                "r": 139
+            },
+            "portrait_square": {
+                "x": 159,
+                "y": 9,
+                "a": 277
+            },
+            "standee": {
+                "x": 89,
+                "y": 14,
+                "w": 534,
+                "h": 761
+            }
+        },
+        {
+            "id": "brynden-tully-ca",
+            "name": "Brynden Tully",
+            "subname": "Knight of the Gate",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "cavalry",
+                "cost": 2,
+                "abilities": [
+                    "Order: Sentinel",
+                    "Pathfinder"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"We need men of your courage.\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "jason-mallister-a",
+            "name": "Jason Mallister",
+            "subname": "Guardian of the Sea",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Precision",
+                    "Eagle's Protection"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"The Mallisters had a bone deep mistrust of the ironborn...\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "patrek-mallister-a",
+            "name": "Patrek Mallister",
+            "subname": "Son of Seagard",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Order: Hawk Strike"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"They shared a taste for wenches, wine, and hawking.\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "tytos-blackwood-a",
+            "name": "Tytos Blackwood",
+            "subname": "Lord of Raventree Hall",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Rivalrous Conviction",
+                    "Furious Charge"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"When did Blackwood and Bracken agree about anything that was not certain...\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "jonos-bracken-a",
+            "name": "Jonos Bracken",
+            "subname": "Lord of Stone Hedge",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Rivalrous Conviction",
+                    "Order: Threaten"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"The red stallion was ever a welcome sight in Riverrun.\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "marq-piper-a",
+            "name": "Marq Piper",
+            "subname": "Heir of Pinkmaiden",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Reckless Strikes"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"If they come again, we'll use their blood to water the fields they burnt.\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "robin-ryger",
+            "name": "Robin Ryger",
+            "subname": "Captain of the Guard",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Hardened"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Come to take you back, Kingslayer.\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "desmond-grell",
+            "name": "Desmond Grell",
+            "subname": "Master-at-Arms",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Boldness and Courage",
+                    "Trained Shot"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"I'm too old and stout to make a hedge knight.\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "willis-wode",
+            "name": "Willis Wode",
+            "subname": "Knight of Harrenhal",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Order: War Cry",
+                    "Trained Shot"
+                ],
+                "requirements": [
+                    {
+                        "text": "*May only be fielded in an army that includes Shella Whent, Lady of Harrenhal and must be attached to his unit, ignoring the usual Attachment limits.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Harrenhal!\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "lucas-blackwood",
+            "name": "Lucas Blackwood",
+            "subname": "Envoy Escort",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Affiliation: House Blackwood",
+                    "Order: Swift Retreat"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"...it is to be battle at dawn.\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "harry-rivers",
+            "name": "Harry Rivers",
+            "subname": "The Bastard of Bracken",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Affiliation: House Bracken",
+                    "Order: Bastard's Retribution"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Bracken opposed, as ever...\""
+            },
+            "portrait": {
+                "x": 284,
+                "y": 187,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 104,
+                "y": 7,
+                "a": 357
+            },
+            "standee": {
+                "x": 16,
+                "y": 10,
+                "w": 526,
+                "h": 751
+            }
+        },
+        {
+            "id": "mallister-shield-bearer",
+            "name": "Mallister Shield Bearer",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Unyielding",
+                    "Resilience"
+                ]
+            },
+            "portrait": {
+                "x": 255,
+                "y": 223,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 75,
+                "y": 43,
+                "a": 356
+            },
+            "standee": {
+                "x": 27,
+                "y": 36,
+                "w": 522,
+                "h": 745
+            }
+        },
+        {
+            "id": "riverrun-sentry",
+            "name": "Riverrun Sentry",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Order: Mark Target"
+                ]
+            },
+            "portrait": {
+                "x": 255,
+                "y": 223,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 75,
+                "y": 43,
+                "a": 356
+            },
+            "standee": {
+                "x": 27,
+                "y": 36,
+                "w": 522,
+                "h": 745
+            }
+        },
+        {
+            "id": "harrenhal-headsman",
+            "name": "Harrenhal Headsman",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Order: Incite",
+                    "Cursed Reputation"
+                ]
+            },
+            "portrait": {
+                "x": 255,
+                "y": 223,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 75,
+                "y": 43,
+                "a": 356
+            },
+            "standee": {
+                "x": 27,
+                "y": 36,
+                "w": 522,
+                "h": 745
+            }
+        },
+        {
+            "id": "eagle-knight-captain",
+            "name": "Eagle Knight Captain",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Order: Adaptive Planning"
+                ]
+            },
+            "portrait": {
+                "x": 255,
+                "y": 223,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 75,
+                "y": 43,
+                "a": 356
+            },
+            "standee": {
+                "x": 27,
+                "y": 36,
+                "w": 522,
+                "h": 745
+            }
+        },
+        {
+            "id": "ravens talon",
+            "name": "Raven's Talon",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Agile"
+                ]
+            },
+            "portrait": {
+                "x": 255,
+                "y": 223,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 75,
+                "y": 43,
+                "a": 356
+            },
+            "standee": {
+                "x": 27,
+                "y": 36,
+                "w": 522,
+                "h": 745
+            }
+        },
+        {
+            "id": "stone-hedge-stallion",
+            "name": "Stone Hedge Stallion",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "type": "cavalry",
+                "cost": 1,
+                "abilities": [
+                    "Counterstrike"
+                ]
+            },
+            "portrait": {
+                "x": 255,
+                "y": 223,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 75,
+                "y": 43,
+                "a": 356
+            },
+            "standee": {
+                "x": 27,
+                "y": 36,
+                "w": 522,
+                "h": 745
+            }
+        }
+    ],
+    "ncus": [
+        {
+            "id": "hoster-tully",
+            "name": "Hoster Tully",
+            "subname": "Lord Paramount of the Trident",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "cost": 5,
+                "abilities": [
+                    {
+                        "name": "The Seat of Riverrun",
+                        "effect": [
+                            "Each time Hoster claims [LETTER] draw 1 additional Tactics card.",
+                            "Each time Hoster claims [HORSE] the unit targeted by this zone for a Meneuver or Retreat Action gains +1 [MOVEMENT] until the end of the turn."
+                        ]
+                    }
+                ],
+                "commander": true
+            },
+            "fluff": {
+                "quote": "\"He was ever a fighter. A sweet stubborn man.\""
+            },
+            "tactics": {
+                "cards": [
+                    "battlefield-provisions",
+                    "true-agenda",
+                    "rapid-construction"
+                ]
+            }
+        },
+        {
+        "id": "edmure-tully-n",
+        "name": "Edmure Tully",
+        "subname": "Heir of Riverrun",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 5,
+            "abilities": [
+                {
+                    "name": "Eager for Glory",
+                    "effect": [
+                        "Each time Edmure Claims [LETTER] you may replace that zone's effect with:",
+                        "*1 friendly unit performs 1 Melee Attack Action.*",
+                        "Each time Edmure Claims [HORSE] you may replace that zone's effect with:",
+                        "*1 friendly unit performs 1 Charge Action.*"
+                    ]
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"How can we talk of peace while the Lannisters spread like a pestilence over my father's domains...\""
+        },
+        "portrait": {
+            "x": 269,
+            "y": 147,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 134,
+            "y": 12,
+            "a": 267
+        },
+        "standee": {
+            "x": 81,
+            "y": 13,
+            "w": 415,
+            "h": 593
+        }
+    },
+    {
+        "id": "roslin-frey",
+        "name": "Roslin Frey",
+        "subname": "Surprising Bride",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Wedding Plans",
+                    "effect": [
+                        "Once per game at the start of any Round when you are not First Player, you may destroy 1 friendly NCU other than Roslin. If you do, you become First Player and Activate Roslin."
+                    ]
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"How can we talk of peace while the Lannisters spread like a pestilence over my father's domains...\""
+        },
+        "portrait": {
+            "x": 269,
+            "y": 147,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 134,
+            "y": 12,
+            "a": 267
+        },
+        "standee": {
+            "x": 81,
+            "y": 13,
+            "w": 415,
+            "h": 593
+        }
+    },
+    {
+        "id": "marq-piper-n",
+        "name": "Marq Piper",
+        "subname": "Petitioner to the Throne",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Bring Them to Justice",
+                    "effect": [
+                        "Marq beins the game with 3 Order tokens.",
+                        "Each time a friendly unit is targeted by [CROWN] you may remove 1 Order token. If you do, your opponent must select a different target for the Panic Test if possible.",
+                        "Each time Marq claims [CROWN] you may remove 1 Order token from him. The enemy unit targeted by [CROWN] suffers an additional -1 to Panic Test Dice and +1 Wound on failure."
+                    ]
+                }
+            ],
+            "tokens": {
+                "number": 3,
+                "name": "order"
+            }
+        },
+        "fluff": {
+            "quote": "\"Do we have your leave to take our vengeance...\""
+        },
+        "portrait": {
+            "x": 279,
+            "y": 139,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 144,
+            "y": 4,
+            "a": 267
+        },
+        "standee": {
+            "x": 66,
+            "y": 14,
+            "w": 447,
+            "h": 640
+        }
+    },
+    {
+        "id": "rymund-the-rhymer",
+        "name": "Rymund the Rhymer",
+        "subname": "Clever Harper",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Songs of Valor",
+                    "effect": [
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "Each time Rymund Influences a Tully Infantry Unit, that unit gains +1 to Hit when performing Melee Attacks and +1 to Morale Test rolls."
+                    ]
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"And the stars in the night were the eyes of his wolves, and the wind itself was their song.\""
+        },
+        "portrait": {
+            "x": 269,
+            "y": 147,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 134,
+            "y": 12,
+            "a": 267
+        },
+        "standee": {
+            "x": 81,
+            "y": 13,
+            "w": 415,
+            "h": 593
+        }
+    },
+    {
+        "id": "vyman",
+        "name": "Vyman",
+        "subname": "Maester of Riverrun",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Histories of the Riverlands",
+                    "effect": [
+                        "Each time Vyman claims a zone, you may replace that zone's effect with:",
+                        "*Search your Tactics deck and discard pile for 1 **Confluence of the Trident** or **The Ruby Ford** card and add it to your hand. Shuffle your Tactics deck. Remove 1 Condition token.*"
+                    ]
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"Rhaegar's rubies. This is where King Robert killed him and won the crown.\""
+        },
+        "portrait": {
+            "x": 269,
+            "y": 147,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 134,
+            "y": 12,
+            "a": 267
+        },
+        "standee": {
+            "x": 81,
+            "y": 13,
+            "w": 415,
+            "h": 593
+        }
+    },
+    {
+        "id": "utherydes-wayn",
+        "name": "Utherydes Wayn",
+        "subname": "Steward of Riverrun",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Funding the Garrison",
+                    "effect": [
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "Each time Utherydes Influences a unit, that unit restores 1 Wound. After reolving each Attack against this unit, if it was not destroyed, it restores 1 Wound."
+                    ]
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"When ad this good man grown so worn and gray?\""
+        },
+        "portrait": {
+            "x": 269,
+            "y": 147,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 134,
+            "y": 12,
+            "a": 267
+        },
+        "standee": {
+            "x": 81,
+            "y": 13,
+            "w": 415,
+            "h": 593
+        }
+    },
+    {
+        "id": "shella-whent-n",
+        "name": "Shell Whent",
+        "subname": "Widow of House Whent",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Last of Her Line",
+                    "effect": [
+                        "Your maximum Tactics Hand size is increased by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand.",
+                        "Once per game, when an enemy is performing a Panic Test, before rolling Panic Test Dice:",
+                        "That enemy becomes **Panicked** and suffers +1 Wound on failure."
+                    ]
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"Harrnehal has withered every hand to touch it.\""
+        },
+        "portrait": {
+            "x": 269,
+            "y": 147,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 134,
+            "y": 12,
+            "a": 267
+        },
+        "standee": {
+            "x": 81,
+            "y": 13,
+            "w": 415,
+            "h": 593
+        }
+    },
+    {
+        "id": "layman-darry",
+        "name": "Lyman Darry",
+        "subname": "Noble Youth",
+        "statistics": {
+            "version": "v2",
+            "faction": "tully",
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Darry's Last Stand",
+                    "effect": [
+                        "Lyman begins the game with 3 Order tokens.",
+                        "Each time a friendly unit is performing a Panic Test, after rolling dice, you may remove 1 Order token from Lyman. If you do, that unit automatically passes this test.",
+                        "At the end of each Round, if Lyman has no Order tokens, destroy Lyman."
+                    ]
+                }
+            ],
+            "tokens": {
+                "number": 3,
+                "name": "order"
+            }
+        },
+        "fluff": {
+            "quote": "\"The boy would have brought a find ransom.\""
+        },
+        "portrait": {
+            "x": 269,
+            "y": 147,
+            "r": 134
+        },
+        "portrait_square": {
+            "x": 134,
+            "y": 12,
+            "a": 267
+        },
+        "standee": {
+            "x": 81,
+            "y": 13,
+            "w": 415,
+            "h": 593
+        }
+    }
+    ],
+    "tactics": [
+        {
+            "id": "tumblestone-current",
+            "name": "Tumblestone Current",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
+                        "effect": [
+                            "Enemies Successfully Charged by this unit become **Vulnerable** and **Weakened**.",
+                            "If you Control [HORSE], the Defender cannot by targeted by friendly Tactics cards until the end of the Turn."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "the-ruby-ford",
+            "name": "The Ruby Ford",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit performs an Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "Target 1 friendly unit in Short Range of the Defender. It restores 1 Wound +1 Wound for each of the Defender's destroyed ranks.",
+                            "If you Control [LETTER], remove 1 Condition token from that unit."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "confluence-of-the-trident",
+            "name": "Confluence of the Trident",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit performs an Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "For each friendly unit engaging the Defender, choose 1:",
+                            "• This Attack my re-roll any Attack Dice.",
+                            "• This Attack rolls its highest Attack Die Value.",
+                            "• This Attack gains **Sundering**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "old-rivalries",
+            "name": "Old Rivalries",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of any Round:",
+                        "effect": [
+                            "Your opponent chooses 1 of your Attachments. You choose 1 of your opponent's Attachments and place 1 Condition token on that unit. Until the end of the Round both Attachments lose all Abilities. If either Attachment is killed during the Round, the ramaining Attachment regains its Abilities."
+                        ]
+                    },
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Draw 1 Tactics card."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "family-first",
+            "name": "Family First",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When an enemy unit Activates:",
+                        "effect": [
+                            "1 Tully unit may suffer up to 3 Wounds. Target 1 other Tully unit in Long Range. For each Wound suffered, choose 1 (effects may not be chosen more than once):",
+                            "• That unit restores 2 Wounds.",
+                            "• That unit may re-roll any Defense Dice until the end of the Turn.",
+                            "• That unit may re-roll any Panic Test Dice until the end of the Turn"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "duty-and-honor",
+            "name": "Duty and Honor",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of any turn:",
+                        "effect": [
+                            "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
+                            "While this card has a token, the attached unit blocks +1 Hit after rolling Defense Dice. If you Control [LETTER] the Attacker becomes **Vulnerable**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "riverruns-protection",
+            "name": "Riverrun's Protection",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is attacked, before rolling Defense Dice:",
+                        "effect": [
+                            "This unit gains +1 to Defense Dice rolls and +1 to their Panic Test roll.",
+                            "If you Control [LETTER] the Attacker becomes **Vulnerable**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "authority-of-the-lord-paramount",
+            "name": "Authority of the Lord Paramount",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "Choose 1. If you Control [HORSES], gain both:",
+                            "• This Attack rolls +2 Attack Dice.",
+                            "• The Defender becomes **Vulnerable**."
+                        ]
+                    }
+                ],
+                "commander_id": "edmure-tully",
+                "commander_name": "Edmure Tully",
+                "commander_subname": "Lord of Rivverun"
+            }
+        },
+        {
+            "id": "assault-orders",
+            "name": "Assault Orders",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly NCU claims a zone:",
+                        "effect": [
+                            "Replace that zone's effect with:",
+                            "*1 friendly unit performs 1 Attack Action.",
+                            "If this targets Edmure Tully's unit, it may perform 1 Charge Action instead."
+                        ]
+                    }
+                ],
+                "commander_id": "edmure-tully",
+                "commander_name": "Edmure Tully",
+                "commander_subname": "Lord of Rivverun"
+            }
+        },
+        {
+            "id": "price-of-failure",
+            "name": "Price of Failure",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "All Attack Dice rolls automatically Hit for this Attack.",
+                            "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Vulnerable**."
+                        ]
+                    }
+                ],
+                "commander_id": "edmure-tully",
+                "commander_name": "Edmure Tully",
+                "commander_subname": "Lord of Rivverun"
+            } 
+        },
+        {
+            "id": "handpicked-by-the-blackfish",
+            "name": "Handpicked by the Blackfish",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit passes a Morale Test:",
+                        "effect": [
+                            "Attach this card to that unit until Brynden Tully's unit is destroyed.",
+                            "While attached, this unit gains +1 to Morale Test rolls",
+                            "When this unit is charged by an Enemy from the Front or Flank, before resolving that Attack, the Attacker suffers D3 Hits +1 additional Hit for each of their remaining ranks."
+                        ]
+                    },
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Draw 1 Tactics card."
+                        ]
+                    }
+                ],
+                "commander_id": "brynden-tully",
+                "commander_name": "Brynden Tully",
+                "commander_subname": "Warden of the Southern Marches"
+            }       
+        },
+        {
+            "id": "blackfishs-infamy",
+            "name": "Blackfish's Infamy",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When an enemy in Long Range of Brynden Tully's unit Activates:",
+                        "effect": [
+                            "Attach this card to that unit until Brynden Tully's unit is destroyed.",
+                            "If that unit performs an Attack or Charge Action this turn, before rolling Attack Dice, they become **Vulnerable** and then suffer 3 Hits.",
+                            "If you Control [HORSES] that unit also becomes **Weakened**."
+                        ]
+                    },
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Draw 1 Tactics card."
+                        ]
+                    }
+                ],
+                "commander_id": "brynden-tully",
+                "commander_name": "Brynden Tully",
+                "commander_subname": "Warden of the Southern Marches"
+            }         
+        },
+        {
+            "id": "never-give-the-enemy-his-wish",
+            "name": "Never Give the Enemy His Wish",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When an enemy in Long Range of Brynden Tully's unit Activates:",
+                        "effect": [
+                            "Target 1 friendly unit engaged that with that enemy. It performs 1 Retreat Action.",
+                            "If you Control (Horses) that enemy may not pivot and becomes **Weakened**."
+                        ]
+                    },
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Draw 1 Tactics card."
+                        ]
+                    }
+                ],
+                "commander_id": "brynden-tully",
+                "commander_name": "Brynden Tully",
+                "commander_subname": "Warden of the Southern Marches"
+            }          
+        },
+        {
+            "id": "battle-endurance",
+            "name": "Battle Endurance",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of a friendly Turn:",
+                        "effect": [
+                            "Target 1 firendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonsuses, based on the Game Round *(effects are cumulative)*:",
+                            "**3+:** May re-roll any Misses",
+                            "**4+: Sundering**",
+                            "**5+: Critical Blow**",
+                            "**6+:** +2 Attack Dice"
+                        ]
+                    }
+                ],
+                "commander_id": "jason-mallister",
+                "commander_name": "Jason Mallister",
+                "commander_subname": "Lord of Seagard"
+            }           
+        },
+        {
+            "id": "last-stand",
+            "name": "Last Stand",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is destroyed:",
+                        "effect": [
+                            "Before removing that unit, it performs 1 Melee Attack Action using its highest Attack Die Value. If this targets a House Mallister unit, it may re-roll any Attack Dice."
+                        ]
+                    }
+                ],
+                "commander_id": "jason-mallister",
+                "commander_name": "Jason Mallister",
+                "commander_subname": "Lord of Seagard"
+            }           
+        },
+        {
+            "id": "the-booming-tower-of-seagard",
+            "name": "The Booming Tower of Seagard",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When an enemy Combat Unit activates:",
+                        "effect": [
+                            "All friendly units in Long Range of that unit restore 1 Wound. Friendly House Mallister units in Short Range of that unit restore an additional +1 Wound.",
+                            "If you control [LETTER] remove 1 Condition token from a friendly unit."
+                        ]
+                    }
+                ],
+                "commander_id": "jason-mallister",
+                "commander_name": "Jason Mallister",
+                "commander_subname": "Lord of Seagard"
+            }           
+        },
+        {
+            "id": "battlefield-provisions",
+            "name": "Battlefield Provisions",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly NCU Claims a zone:",
+                        "effect": [
+                            "Replace that zone's effect with:",
+                            "*Remove up to 3 Condition tokens from any number of friendly units.*"
+                        ]
+                    }
+                ],
+                "commander_id": "hoster-tully",
+                "commander_name": "Hoster Tully",
+                "commander_subname": "Lord Paramount of the Trident"
+            }           
+        },
+        {
+            "id": "true-agenda",
+            "name": "True Agenda",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly NCU Activates:",
+                        "effect": [
+                            "If that NCU claims a zone this Turn, after resolving that zone's effect, you may move that NCU to any unclaimed zone.",
+                            "If you removed that NCU from [HORSE], target 1 friendly Combat Unit. They may perform a 3\" Maneuver Action."
+                        ]
+                    }
+                ],
+                "commander_id": "hoster-tully",
+                "commander_name": "Hoster Tully",
+                "commander_subname": "Lord Paramount of the Trident"
+            }           
+        },
+        {
+            "id": "predictable-maneuvers",
+            "name": "Predictable Maneuvers",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of the first Enemy Turn in a Round:",
+                        "effect": [
+                            "Target 1 enemy Combat Unit and 1 enemy NCU.",
+                            "If either unit performs an Aciton this Turn, before they resolve that Action, 1 friendly Combat Unit performs 1 Attack, Maneuver, or Retreat Action."
+                        ]
+                    }
+                ],
+                "commander_id": "hoster-tully",
+                "commander_name": "Hoster Tully",
+                "commander_subname": "Lord Paramount of the Trident"
+            }           
+        },
+        {
+            "id": "haunted-fortifications",
+            "name": "Haunted Fortifications",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of any Round:",
+                        "effect": [
+                            "Place 1 Stakes with Dangerous and Destructible keywords within 2\" of a friendly unit. This terrain cannot overlap units or other terrain.",
+                            "1 enemy in Short Range of that unit becomes **Panicked**."
+                        ]
+                    }
+                ],
+                "commander_id": "shella-whent",
+                "commander_name": "Shella Whent",
+                "commander_subname": "Lady of Harrenhal"
+            }           
+        },
+        {
+            "id": "curse-of-harrenhal",
+            "name": "Curse of Harrenhal",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Attach this card to 1 Terrain piece until the end of the Round. It gains the following keyword:",
+                            "**• Grim Reminder**: Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range."
+                        ]
+                    }
+                ],
+                "commander_id": "shella-whent",
+                "commander_name": "Shella Whent",
+                "commander_subname": "Lady of Harrenhal"
+            }           
+        },        
+        {
+            "id": "black-bat-heraldry",
+            "name": "Black Bat Heraldry",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "This Attack gains **Vicious**.",
+                            "If the Defender fails their Panic Test they suffer +1 Wound."
+                        ]
+                    }
+                ],
+                "commander_id": "shella-whent",
+                "commander_name": "Shella Whent",
+                "commander_subname": "Lady of Harrenhal"
+            }           
+        },
+        {
+            "id": "weirwood-insight",
+            "name": "Weirwood Insight",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of a friendly Turn:",
+                        "effect": [
+                            "Target 1 enemy in Long Range of a friendly House Blackwood unit and choose 1:",
+                            "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
+                            "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
+                            "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
+                        ]
+                    }
+                ],
+                "commander_id": "tytos-blackwood",
+                "commander_name": "Tytos Blackwood",
+                "commander_subname": "The Onyx Raven"
+            }           
+        },
+        {
+            "id": "sortie-tactics",
+            "name": "Sortie Tactics",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "After an enemy completes a Melee Atack:",
+                        "effect": [
+                            "Target 1 friendly House Blackwood unit in Long Range of the Defender. It performs 1 Charge or Retreat Action:"
+                        ]
+                    }
+                ],
+                "commander_id": "tytos-blackwood",
+                "commander_name": "Tytos Blackwood",
+                "commander_subname": "The Onyx Raven"
+            }           
+        },
+        {
+            "id": "cunning-ploy",
+            "name": "Cunning Ploy",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "When a friendly Combat Unit Activates:",
+                        "effect": [
+                            "That unit cannot perform Actions this Turn. Instead, 1 other friendly Combat Unit performs 1 Maneuver, March, or Retreat Action.",
+                            "If this is Tytos Blackwood's unit, before they perform this Action, 1 enemy in Long Range becomes **Vulnerable**."
+                        ]
+                    }
+                ],
+                "commander_id": "tytos-blackwood",
+                "commander_name": "Tytos Blackwood",
+                "commander_subname": "The Onyx Raven"
+            }           
+        },
+        {
+            "id": "bracken-spite",
+            "name": "Bracken Spite",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Attach this card to a friendly House Bracken Unit. If this unit ever restores Wounds, remove this card.",
+                            "When this unit is performing an Attack, for each of its destroyed ranks, choose 1:",
+                            "• This Attack deals +1 Wound for each of this unit's destroyed ranks.",
+                            "• Before rolling Defense Dice the Defender gains 1 Condition Token for each of this unit's destroyed ranks."
+                        ]
+                    }
+                ],
+                "commander_id": "jonos-bracken",
+                "commander_name": "Jonos Bracken",
+                "commander_subname": "The Red Stallion"
+            }           
+        },
+        {
+            "id": "lash-out",
+            "name": "Lash Out",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "After an enemy completes a Melee Attack:",
+                        "effect": [
+                            "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks.",
+                            "If the Defender was Jonos Bracken's unit, the Attacker also becomes **Weakened**."
+                        ]
+                    }
+                ],
+                "commander_id": "jonos-bracken",
+                "commander_name": "Jonos Bracken",
+                "commander_subname": "The Red Stallion"
+            }           
+        },     
+        {
+            "id": "a-need-for-vengeance",
+            "name": "A need for vengeance",
+            "statistics": {
+                "version": "v2",
+                "faction": "tully",
+                "text": [
+                    {
+                        "trigger": "Start of any Round:",
+                        "effect": [
+                            "Target 1 friendly Combat Unit. That unit performs 1 Attack Action.",
+                            "If this targets a House Bracken unit, it gains +1 to Hit.",
+                            "After completing that Attack your opponent may Activate 1 NCU"
+                        ]
+                    }
+                ],
+                "commander_id": "jonos-bracken",
+                "commander_name": "Jonos Bracken",
+                "commander_subname": "The Red Stallion"
+            }           
+        }          
+    ]
   }
