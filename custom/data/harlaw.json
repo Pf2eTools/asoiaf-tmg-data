@@ -1,0 +1,746 @@
+{
+    "units": [
+        {
+            "id": "harlaw-reapers",
+            "name": "Harlaw Reapers",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 5,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Bardiche",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Bardiche",
+                    "Prey on Fear",
+                    "Reaper's Fervor"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Although the scythe is not generally a workable weapon in war, the infamous Reapers of House Harlaw have devised a form of long-bladed heavy bardiche reminiscent of their fearsome house sigil. The Reapers themselves are lightly armored troops renowned for their deadly ferocity. What good is armor when the morale of their foes has been utterly broken? When it comes to sowing terror across the battlefield, few compare to the Reapers."
+            },
+            "portrait": {
+                "x": 414,
+                "y": 201,
+                "r": 200
+            },
+            "portrait_square": {
+                "x": 213,
+                "y": 4,
+                "a": 399
+            },
+            "standee": {
+                "x": 140,
+                "y": 13,
+                "w": 539,
+                "h": 769
+            }
+        },
+        {
+            "id": "harras-harlaw",
+            "name": "Harras Harlaw",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "cavalry",
+                "cost": 4,
+                "speed": 6,
+                "defense": 3,
+                "morale": 4,
+                "attacks": [
+                    {
+                        "name": "Nightfall",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Solo Rider",
+                    "Heir of House Harlaw",
+                    "Nightfall"
+                ],
+                "requirements": [
+                    {
+                        "name": "Character",
+                        "text": "*May only be fielded in an anrmy that includes Rodrik Harlaw, Lord of Ten Towers.*"
+                    }
+                ],
+                "tray": "solo"
+            },
+            "fluff": {
+                "lore": ""
+            },
+            "portrait": {
+                "x": 328,
+                "y": 202,
+                "r": 174
+            },
+            "portrait_square": {
+                "x": 153,
+                "y": 27,
+                "a": 347
+            },
+            "standee": {
+                "x": 117,
+                "y": 21,
+                "w": 539,
+                "h": 769
+            }
+        },
+        {
+            "id": "harlaw-tideguard",
+            "name": "Harlaw Tideguard",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 3,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Salt Steel Blades",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Salt Steel Blades",
+                    "Order: Shield Wall"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": ""
+            },
+            "portrait": {
+                "x": 395,
+                "y": 202,
+                "r": 174
+            },
+            "portrait_square": {
+                "x": 219,
+                "y": 27,
+                "a": 347
+            },
+            "standee": {
+                "x": 119,
+                "y": 20,
+                "w": 539,
+                "h": 769
+            }
+        },
+        {
+            "id": "ten-towers-deadeyes",
+            "name": "Ten Towers Deadeyes",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": 5,
+                "speed": 5,
+                "defense": 5,
+                "morale": 7,
+                "attacks": [
+                    {
+                        "name": "Harlaw Bodkins",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            6,
+                            5,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Dagger",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Harlaw Bodkins"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": ""
+            },
+            "portrait": {
+                "x": 428,
+                "y": 189,
+                "r": 174
+            },
+            "portrait_square": {
+                "x": 252,
+                "y": 14,
+                "a": 347
+            },
+            "standee": {
+                "x": 131,
+                "y": 7,
+                "w": 539,
+                "h": 769
+            }
+        }
+    ],
+    "ncus": [
+        {
+            "id": "alannys-harlaw",
+            "name": "Alannys Harlaw",
+            "subname": "Queen of the Iron Islands",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Forgotten Losses",
+                        "effect": [
+                            "Each time Alannys claims a zone a friendly unit may suffer up to 2 Wounds.",
+                            "Restore 1+ that many Wounds to 1 other firendly unit in Long Range of that unit."
+                        ]
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": ""
+            },
+            "portrait": {
+                "x": 279,
+                "y": 139,
+                "r": 134
+            },
+            "portrait_square": {
+                "x": 144,
+                "y": 4,
+                "a": 267
+            },
+            "standee": {
+                "x": 66,
+                "y": 12,
+                "w": 454,
+                "h": 650
+            }
+        },
+        {
+            "id": "gwynesse-harlaw",
+            "name": "Gwynesse Harlaw",
+            "subname": "Widow of House Harlaw",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "The Widow's Tower",
+                        "effect": [
+                            "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
+                            "Once per Turn when this unit would restore Wounds from an effect, instead deal 1 Wound to an engaged enemy unit and do not restore any Wounds from that effect."
+                        ]
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": ""
+            },
+            "portrait": {
+                "x": 279,
+                "y": 139,
+                "r": 134
+            },
+            "portrait_square": {
+                "x": 144,
+                "y": 4,
+                "a": 267
+            },
+            "standee": {
+                "x": 92,
+                "y": 17,
+                "w": 418,
+                "h": 598
+            }
+        },
+        {
+            "id": "rodrik-harlaw",
+            "name": "Rodrik Harlaw",
+            "subname": "Lord of Ten Towers",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "The Reader's Stratagem",
+                        "effect": [
+                            "Rodrik begins the game with 2 Order Tokens:",
+                            "At the start of a friendly Turn you may remove 1 Order token from Rodrik. If you do, return 1 Commander Tactics Card from your discard pile to your hand."
+                        ]
+                    }
+                ],
+                "commander": true
+            },
+            "tactics": {
+                "cards": [
+                    "sea-song-admiralty",
+                    "three-tooths-ledger",
+                    "cousin-and-heir"
+                ]
+            },
+            "fluff": {
+                "quote": "Distinguished only by his love of written words..."
+            },
+            "portrait": {
+                "x": 279,
+                "y": 139,
+                "r": 134
+            },
+            "portrait_square": {
+                "x": 144,
+                "y": 4,
+                "a": 267
+            },
+            "standee": {
+                "x": 92,
+                "y": 17,
+                "w": 418,
+                "h": 598
+            }
+        }
+    ],
+    "attachments": [
+        {
+            "id": "hotho-harlaw",
+            "name": "Hotho Harlaw",
+            "subname": "Humpback",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": "1",
+                "abilities": [
+                    "Signs and Portents"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "...and Hotho has ambitions."
+            },
+            "portrait": {
+                "x": 299,
+                "y": 148,
+                "r": 138
+            },
+            "portrait_square": {
+                "x": 160,
+                "y": 8,
+                "a": 275
+            },
+            "standee": {
+                "x": 88,
+                "y": 14,
+                "w": 534,
+                "h": 762
+            }
+        },
+        {
+            "id": "boremund-harlaw",
+            "name": "Boremund Harlaw",
+            "subname": "The Blue",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": "1",
+                "abilities": [
+                    "Perseverance and Valor"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "Boremund placed his upon a pale blue field..."
+            },
+            "portrait": {
+                "x": 299,
+                "y": 148,
+                "r": 138
+            },
+            "portrait_square": {
+                "x": 160,
+                "y": 8,
+                "a": 275
+            },
+            "standee": {
+                "x": 88,
+                "y": 14,
+                "w": 534,
+                "h": 762
+            }
+        },
+        {
+            "id": "sigfryd-harlaw",
+            "name": "Sigfryd Harlaw",
+            "subname": "Silverhair",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": "1",
+                "abilities": [
+                    "Hardened"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "That one intends to live forever."
+            },
+            "portrait": {
+                "x": 299,
+                "y": 148,
+                "r": 138
+            },
+            "portrait_square": {
+                "x": 160,
+                "y": 8,
+                "a": 275
+            },
+            "standee": {
+                "x": 88,
+                "y": 14,
+                "w": 534,
+                "h": 762
+            }
+        },
+        {
+            "id": "gevin-harlaw",
+            "name": "Gevin Harlaw",
+            "subname": "Deckhand",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": "1",
+                "abilities": [
+                    "Order: Divide the Spoils"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "Paying the Iron Price. My Lord Father would approve."
+            },
+            "portrait": {
+                "x": 299,
+                "y": 148,
+                "r": 138
+            },
+            "portrait_square": {
+                "x": 160,
+                "y": 8,
+                "a": 275
+            },
+            "standee": {
+                "x": 88,
+                "y": 14,
+                "w": 534,
+                "h": 762
+            }
+        },
+        {
+            "id": "dykk-harlaw",
+            "name": "Dykk Harlaw",
+            "subname": "Deckhand",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": "1",
+                "abilities": [
+                    "Order: Swift Retreat"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "Hawked an spat."
+            },
+            "portrait": {
+                "x": 299,
+                "y": 148,
+                "r": 138
+            },
+            "portrait_square": {
+                "x": 160,
+                "y": 8,
+                "a": 275
+            },
+            "standee": {
+                "x": 88,
+                "y": 14,
+                "w": 534,
+                "h": 762
+            }
+        },
+        {
+            "id": "20806",
+            "name": "Warsworn",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "type": "infantry",
+                "cost": "1",
+                "abilities": [
+                    "Fueled by Slaughter"
+                ]
+            },
+            "fluff": {
+                "quote": "Paying the Iron Price. My Lord Father would approve."
+            },
+            "portrait": {
+                "x": 202,
+                "y": 204,
+                "r": 179
+            },
+            "portrait_square": {
+                "x": 22,
+                "y": 24,
+                "a": 356
+            },
+            "standee": {
+                "x": 16,
+                "y": 18,
+                "w": 534,
+                "h": 762
+            }
+        }
+    ],
+    "tactics": [
+        {
+            "id": "yet-another-house-of-harlaw",
+            "name": "Yet Another House of Harlaw",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "Start of any Round:",
+                        "effect": [
+                            "If this is the first **Yet Another House of Hawlaw** card to be played, Activate one of your units. That unit performs no Action for its Activation. Once this Tactics Card has been played, it does not go into your discard pile, but is instead put aside.",
+                            "If this is the second **Yet Another House of Harlaw** card to be played, immediately deploy 1 Harlaw Reapers unit with 1 Warsworn attached to it fully within Long Range of a friendly table edge, unactivated."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "conquest-is-our-harvest",
+            "name": "Conquest is Our Harvest",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "For each Attachment in this unit, choose 1:",
+                            "• This Attack gains **Critical Blow**.",
+                            "• The Defender becomes **Panicked**.",
+                            "• Target 1 enemy Attachment in the Defender's unit and roll a die. On a 6, destroy that Attachment."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "spoils-of-war",
+            "name": "Spoils of War",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "Start of a fiendly Turn:",
+                        "effect": [
+                            "Attach this card to 1 friendly Cavalry or Infantry unit until the end of the game.",
+                            "While attached, each time an enemy in Short Range is destroyed, place 1 Order token on this card. That unit's Melee Attacks gain the following based on the number of Order tokens *(effects are cumulative)*:",
+                            "**1+:** Rolls its Highest Attack Die Value and, before rolling Attack Dice, the Defender becomes **Vulnerable**.",
+                            "**2+:** +1 to Hit.**"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "we-do-not-sow",
+            "name": "We Do Not Sow",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "When a friendly NCU Claims a zone:",
+                        "effect": [
+                            "Replace that zone's effect with:",
+                            "*If an opponent Controls [MONEY], this unit restores 1 Wound, +1 Wound for each of its destroyed ranks.*"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "the-iron-price",
+            "name": "The Iron Price",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "Start of a friendly Turn:",
+                        "effect": [
+                            "Target 1 friendly Combat Unit and choose:",
+                            "• That unit may remove 1 Condition token. You may remove 1 Pillage token from that unit. If you do, it restores 2 Wounds, +1 Wound for each of its destroyed ranks.",
+                            "• That unit Attacks using its Highest Attack Die Value this Turn. You may remove 1 Pillage token from that unit. If you do, it may re-roll any Attack Dice this Turn."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "bless-with-stone-bless-with-steel",
+            "name": "Bless with Stone, Bless with Steel",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "When a friendly Combat Unit Activates:",
+                        "effect": [
+                            "Target 1 enemy engaged with that unit. For each of that enemy's destroyed ranks, this unit restores 2 Wounds.",
+                            "If you Control [MONEY] or [SWORDS] restore +1 Wound or remove +1 Condition token from that unit for each of those zones you Control."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "what-is-dead-may-never-die",
+            "name": "What is Dead May Never Die",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit would be destroyed:",
+                        "effect": [
+                            "That unit is not destroyed, but instead remains in play with 1 Wound."
+                        ]
+                    },
+                    {
+                        "trigger": "Start of a friendly Turn:",
+                        "effect": [
+                            "Target 1 friendly Combat Unit. That unit restores 1 Wound +1 Wound for each of its destroyed ranks."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sea-song-admiralty",
+            "name": "Sea Song Admiralty",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Switch any amount of Deckhand Attachments between any number of House Harlaw Units *(replacing 1 model as normal and keeping the usual Attachment restrictions)*.",
+                            "1 unit containing more than 1 Attachment gains 1 Pillage Token."
+                        ]
+                    }
+                ],
+                "commander_id": "rodrik-harlaw",
+                "commander_name": "Rodrik Harlaw",
+                "commander_subname": "Lord of Ten Towers"
+            }
+        },
+        {
+            "id": "three-tooths-ledger",
+            "name": "Three Tooth's Ledger",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "When a friendly Attachment is destroyed:",
+                        "effect": [
+                            "2 friendly units in Long Range each gain 1 Pillage token."
+                        ]
+                    },
+                    {
+                        "trigger": "When an enemy Attachment is destroyed:",
+                        "effect": [
+                            "1 friendly unit in Long Range gains 1 Pillage token."
+                        ]
+                    }
+                ],
+                "commander_id": "rodrik-harlaw",
+                "commander_name": "Rodrik Harlaw",
+                "commander_subname": "Lord of Ten Towers"
+            }
+        },
+        {
+            "id": "cousin-and-heir",
+            "name": "Cousin and Heir",
+            "statistics": {
+                "version": "",
+                "faction": "harlaw",
+                "text": [
+                    {
+                        "trigger": "When an enemy Commander's unit Activates:",
+                        "effect": [
+                            "Choose 1:",
+                            "• If that enemy is in Long Range of Harras Harlaw, that Commander loses all Abilities until the end of the Round.",
+                            "• Harras Harlaw performs 1 Charge or Retreat Action."
+                        ]
+                    },
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "If the enemy Commander has been destroyed, Harras Harlaw restores 2 Wounds."
+                        ]
+                    }
+                ],
+                "commander_id": "rodrik-harlaw",
+                "commander_name": "Rodrik Harlaw",
+                "commander_subname": "Lord of Ten Towers"
+            }
+        }
+    ]
+}
