@@ -13,10 +13,14 @@ def main(custom_data, skip_portrait=True):
     if meta is None or meta.get("id") is None:
         raise Exception("Invalid custom data!")
     custom_data_id = meta.get("id")
+    language = meta.get("language", "en")
     asset_manager = CustomAssetManager(custom_data_id)
 
-    with open(f"{DATA_PATH}/en/abilities.json", "r", encoding="utf-8") as file:
+    with open(f"{DATA_PATH}/{language}/abilities.json", "r", encoding="utf-8") as file:
         abilities_data = json.load(file)
+
+    for key, val in custom_data.get("abilities", {}).items():
+        abilities_data[key] = val
 
     out_path = f"./custom/generated/{custom_data_id}"
     Path(out_path).mkdir(parents=True, exist_ok=True)
@@ -33,7 +37,7 @@ def main(custom_data, skip_portrait=True):
             object_id = data_object.get("id")
             path = None
 
-            Path("./custom/portraits/round").mkdir(parents=True, exist_ok=True)
+            Path(f"./custom/portraits/{custom_data_id}/round").mkdir(parents=True, exist_ok=True)
             path_round = f"./custom/portraits/{custom_data_id}/round/{object_id}.png"
             if not os.path.exists(path_round):
                 path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{object_id}b.png", asset_manager.asset_path)
@@ -43,7 +47,7 @@ def main(custom_data, skip_portrait=True):
                 cropper_circle = ImageCropper(loader, saver_round, circle)
                 cropper_circle.create_ui()
 
-            Path("./custom/portraits/square").mkdir(parents=True, exist_ok=True)
+            Path(f"./custom/portraits/{custom_data_id}/square").mkdir(parents=True, exist_ok=True)
             path_square = f"./custom/portraits/{custom_data_id}/square/{object_id}.jpg"
             if not os.path.exists(path_square):
                 path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{object_id}b.png", asset_manager.asset_path)
@@ -53,7 +57,7 @@ def main(custom_data, skip_portrait=True):
                 cropper_square = ImageCropper(loader, saver_square, square)
                 cropper_square.create_ui()
 
-            Path("./custom/portraits/standees").mkdir(parents=True, exist_ok=True)
+            Path(f"./custom/portraits/{custom_data_id}/standees").mkdir(parents=True, exist_ok=True)
             path_standee = f"./custom/portraits/{custom_data_id}/standees/{object_id}.jpg"
             if not os.path.exists(path_standee):
                 path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{object_id}b.png", asset_manager.asset_path)
@@ -65,6 +69,6 @@ def main(custom_data, skip_portrait=True):
 
 
 if __name__ == "__main__":
-    with open("./custom/data/cmon-leaks.json", "r", encoding="utf-8") as cd:
+    with open("./custom/data/brew.json", "r", encoding="utf-8") as cd:
         leaks_data = json.load(cd)
-    main(leaks_data, False)
+    main(leaks_data, True)
