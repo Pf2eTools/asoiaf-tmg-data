@@ -284,11 +284,15 @@ def render_character_box(asset_manager, faction):
     return render_small_box(asset_manager, faction, "CHARACTER")
 
 
-def render_small_box(asset_manager, faction, text, font_color="#5d4d40"):
+def render_commander_box(asset_manager, faction):
+    return render_small_box(asset_manager, faction, "COMMANDER", font_color=get_faction_text_color(faction), tracking=0, font_size=36)
+
+
+def render_small_box(asset_manager, faction, text, font_color="#5d4d40", tracking=50, font_size=38):
     # TODO (MAYBE): Shrink (or crop out the center of) the box when the text is short?
     box = asset_manager.get_character_box(faction)
-    renderer_character = TextRenderer(text, "Tuff", (200, 35), asset_manager, bold=True, stroke_width=0.1, font_size=38,
-                                      font_color=font_color, tracking=50, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER,
+    renderer_character = TextRenderer(text, "Tuff", (200, 35), asset_manager, bold=True, stroke_width=0.1, font_size=font_size,
+                                      font_color=font_color, tracking=tracking, padding=(5, 5, 5, 5), align_y=TextRenderer.ALIGN_CENTER,
                                       overflow_policy_x=TextRenderer.OVERFLOW_CLIP)
     rendered_character_text = renderer_character.render()
     box.alpha_composite(rendered_character_text, (box.width // 2 - 100, 13))
@@ -332,6 +336,7 @@ class TextRenderer:
     LINEBREAK_GREEDY = "greedy"
     LINEBREAK_OPTIMAL = "optimal"
 
+    # FIXME/TODO: Custom data might require custom icons!
     ICONS = {
         "CROWN": "simple",
         "MONEY": "simple",
@@ -546,6 +551,7 @@ class TextRenderer:
             return self._max_w
         elif token.startswith("[") and token.endswith("]"):
             token = token.strip("[]")
+            # FIXME: Uh Oh! Stinky! This crashes the renderer if we encounter an inline symbol that doesn't exist
             if self.ICONS.get(token) is None:
                 return self._max_w
             icon = self.get_icon(token)

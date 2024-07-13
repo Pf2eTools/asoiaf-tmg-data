@@ -47,19 +47,22 @@ def generate_attachment(asset_manager, attachment_id, name, subname, attachment_
         bars.alpha_composite(ImageOps.mirror(large_bar), (-150, 249))
         bars.alpha_composite(small_bar_ds, (-20, 222))
         bars.alpha_composite(small_bar_ds, (-20, 307))
-        bars.alpha_composite(large_bar.rotate(90, expand=1).crop((0, large_bar.size[0] - 192, large_bar.size[1], large_bar.size[0])), (243, 50))
+        bars.alpha_composite(large_bar.rotate(90, expand=1).crop((0, large_bar.size[0] - 192, large_bar.size[1], large_bar.size[0])),
+                             (243, 50))
         bars.alpha_composite(small_bar_ds.rotate(90, expand=1), (215, 222 - small_bar.size[0]))
         bars.alpha_composite(small_bar_ds.rotate(90, expand=1), (298, 222 - small_bar.size[0]))
     else:
         bars.alpha_composite(weird_bar.rotate(90, expand=1).crop((0, 0, 370, weird_bar.size[0])), (327, 290 - weird_bar.size[0]))
-        weird_bar_cropped = ImageOps.mirror(weird_bar.rotate(90, expand=1)).crop((weird_bar.size[1] - portrait.size[0], 0, weird_bar.size[1], weird_bar.size[0]))
+        weird_bar_cropped = ImageOps.mirror(weird_bar.rotate(90, expand=1)).crop(
+            (weird_bar.size[1] - portrait.size[0], 0, weird_bar.size[1], weird_bar.size[0]))
         bars.alpha_composite(weird_bar_cropped, (245 - weird_bar_cropped.size[0], 290 - weird_bar_cropped.size[1]))
 
         bars.alpha_composite(large_horizontal_crop.rotate(180), (55, 292))
         bars.alpha_composite(large_bar.rotate(90, expand=1).crop((0, 106, large_bar.size[1], large_bar.size[0])), (54, 338))
         bars.alpha_composite(small_bar_ds.rotate(90, expand=1), (26, 30))
         bars.alpha_composite(small_bar_ds.rotate(90, expand=1), (111, 318))
-        bars.alpha_composite(large_bar.rotate(90, expand=1).crop((0, large_bar.size[0] - 192, large_bar.size[1], large_bar.size[0])), (243, 50))
+        bars.alpha_composite(large_bar.rotate(90, expand=1).crop((0, large_bar.size[0] - 192, large_bar.size[1], large_bar.size[0])),
+                             (243, 50))
         bars.alpha_composite(short_vertical, (215, 50))
         bars.alpha_composite(short_vertical, (298, 50))
         bars.alpha_composite(small_horizontal_crop, (35, 265))
@@ -165,7 +168,7 @@ def generate_attachment(asset_manager, attachment_id, name, subname, attachment_
     return attachment_card
 
 
-def generate_attachment_back(asset_manager, attachment_id, name, subname, attachment_data, attachment_fluff):
+def generate_attachment_back(asset_manager, attachment_id, name, subname, attachment_data, attachment_fluff, attachment_tactics):
     faction = attachment_data.get("faction")
     background = asset_manager.get_bg(faction)
     w, h = background.size
@@ -264,11 +267,12 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
 
     if attachment_data.get("commander"):
         box_character = render_character_box(asset_manager, faction)
-        layer_crests.alpha_composite(apply_drop_shadow(box_character), (270, 212))
+        layer_crests.alpha_composite(apply_drop_shadow(box_character), (429 - box_character.width // 2, 212))
     elif attachment_data.get("character"):
         box_character = render_character_box(asset_manager, faction)
         layer_crests.alpha_composite(apply_drop_shadow(box_character), (395 - box_character.width // 2, 266))
-    rendered_cost = render_cost(asset_manager, attachment_data.get("cost", 0), get_faction_highlight_color(faction), attachment_data.get("commander"))
+    rendered_cost = render_cost(asset_manager, attachment_data.get("cost", 0), get_faction_highlight_color(faction),
+                                attachment_data.get("commander"))
     layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (78 - rendered_cost.width // 2, 764))
     crest = asset_manager.get_crest(faction)
     crest = crest.crop(crest.getbbox())
@@ -291,7 +295,7 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
         renderer_name = TextRenderer(name.upper(), "Tuff", (572, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
                                      stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
         rd_name = renderer_name.render()
-        layer_text.alpha_composite(rd_name, (164, 48))
+        layer_text.alpha_composite(rd_name, (449 - rd_name.width // 2, 48))
     elif attachment_data.get("character"):
         renderer_name = TextRenderer(name.upper(), "Tuff", (520, 60), asset_manager, font_size=54, bold=True, font_color="white", leading=1,
                                      stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
@@ -299,16 +303,16 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
         layer_text.alpha_composite(rd_name, (158, 92))
     else:
         name_fs = 44 if attachment_id in ["20521", "20517"] else 54
-        renderer_name = TextRenderer(name.upper(), "Tuff", (520, 60), asset_manager, font_size=name_fs, bold=True, font_color="white",
+        renderer_name = TextRenderer(name.upper(), "Tuff", (520, 80), asset_manager, font_size=name_fs, bold=True, font_color="white",
                                      leading=1, stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
         rd_name = renderer_name.render()
-        layer_text.alpha_composite(rd_name, (158, 122))
+        layer_text.alpha_composite(rd_name, (158, 112))
 
     if attachment_data.get("commander") and subname is not None:
         renderer_subname = TextRenderer(subname.upper(), "Tuff", (572, 40), asset_manager, font_size=30, font_color="white", leading=1,
                                         stroke_width=0.1, padding=(5, 5, 5, 5))
         rd_subname = renderer_subname.render()
-        layer_text.alpha_composite(rd_subname, (164, 98))
+        layer_text.alpha_composite(rd_subname, (449 - rd_subname.width // 2, 98))
     elif attachment_data.get("character") and subname is not None:
         renderer_subname = TextRenderer(subname.upper(), "Tuff", (520, 40), asset_manager, font_size=30, font_color="white", leading=1,
                                         stroke_width=0.1, padding=(5, 5, 5, 5))
@@ -317,16 +321,37 @@ def generate_attachment_back(asset_manager, attachment_id, name, subname, attach
 
     if attachment_data.get("commander"):
         renderer_quote = TextRenderer(attachment_fluff.get("quote", ""), "Tuff", (532, 80), asset_manager, font_size=32, font_color="white",
-                                      italic=True, stroke_width=0.1, padding=(5, 5, 5, 5))
+                                      italic=True, stroke_width=0.1, padding=(5, 5, 5, 5),
+                                      linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
         rd_quote = renderer_quote.render()
-        layer_text.alpha_composite(rd_quote, (184, 143))
+        layer_text.alpha_composite(rd_quote, (449 - rd_quote.width // 2, 143))
     elif attachment_data.get("character"):
         renderer_quote = TextRenderer(attachment_fluff.get("quote", ""), "Tuff", (480, 90), asset_manager, font_size=32, font_color="white",
                                       italic=True, stroke_width=0.1, padding=(5, 5, 5, 5))
         rd_quote = renderer_quote.render()
         layer_text.alpha_composite(rd_quote, (178, 182))
 
-    # TODO: Commander tactics cards
+    if attachment_data.get("commander"):
+        box_text = asset_manager.get_text_box(faction)
+        box_commander = render_commander_box(asset_manager, faction)
+        layer_crests.alpha_composite(apply_drop_shadow(box_text), (429 - box_text.width // 2, 830))
+        layer_crests.alpha_composite(apply_drop_shadow(box_commander), (429 - box_commander.width // 2, 838 - box_commander.height // 2))
+        tactics_to_render = [{
+            "type": "section",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {"type": "text", "content": f"*{t}*"} for t in attachment_tactics["cards"].values()
+                    ]
+                }
+            ]
+        }]
+        renderer_tactics = TextRenderer(tactics_to_render, "Tuff", (box_text.width - 50, h - 900), asset_manager, font_size=36,
+                                        align_x=TextRenderer.ALIGN_CENTER, align_y=TextRenderer.ALIGN_TOP, font_color="#5d4d40",
+                                        padding=(15, 16, 25, 16), leading=1.1)
+        rd_tactics = renderer_tactics.render()
+        layer_text.alpha_composite(rd_tactics, (449 - rd_tactics.width // 2, 890))
 
     attachment_card.alpha_composite(apply_drop_shadow(bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
     attachment_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
@@ -392,8 +417,36 @@ def main():
             "quote": "\"Why are they not here in your company,\nthey who loved Renly best?\"\n-Cortnay Penrose"
         }
     }
-    data = devan
-    back = generate_attachment_back(AssetManager(), data["id"], data["name"], data["subname"], data["statistics"], data["fluff"])
+    king = {
+        "id": "20602",
+        "name": "Stannis Baratheon",
+        "subname": "The Rightful Heir",
+        "statistics": {
+            "version": "2021",
+            "faction": "baratheon",
+            "type": "infantry",
+            "cost": "C",
+            "abilities": [
+                "Order: Adaptive Planning",
+                "Order: Mark Target",
+                "Loyalty: Stannis Baratheon"
+            ],
+            "commander": True,
+            "character": True
+        },
+        "tactics": {
+            "cards": {
+                "40623": "Will of the One True King",
+                "40624": "Harsh Conditions",
+                "40625": "Tactical Approach"
+            }
+        },
+        "fluff": {
+            "quote": "\"Kings have no friends, only subjects and enemies.\""
+        }
+    }
+    data = king
+    back = generate_attachment_back(AssetManager(), data["id"], data["name"], data["subname"], data["statistics"], data["fluff"], data["tactics"])
     editor = ImageEditor(back, back)
 
 

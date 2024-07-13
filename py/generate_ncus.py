@@ -100,13 +100,13 @@ def generate_ncu(asset_manager, ncu_id, name, subname, ncu_data):
         bars.alpha_composite(decor, (673, center - decor.size[1] // 2))
 
     renderer_name = TextRenderer(name.upper(), "Tuff", (345, 100), asset_manager, font_size=50, bold=True, font_color="white", leading=0.9,
-                                 stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER)
+                                 stroke_width=0.1, align_y=TextRenderer.ALIGN_CENTER, background_color="red")
     rd_name = renderer_name.render()
     rd_name = rd_name.crop((0, 0, rd_name.size[0], int(renderer_name.rendered_section_coords[0][1])))
     name_x, name_y = 506, 135
     if subname is not None:
         renderer_subname = TextRenderer(subname.upper(), "Tuff", (280, 80), asset_manager, font_size=30, font_color="white", leading=1,
-                                        stroke_width=0.1, padding=(5, 5, 5, 5))
+                                        stroke_width=0.1, padding=(5, 5, 5, 5), background_color="orange")
         rd_subname = renderer_subname.render()
         rd_subname = rd_subname.crop((0, 0, rd_subname.size[0], int(renderer_subname.rendered_section_coords[0][1])))
         rd_names = Image.new("RGBA", (345, rd_name.size[1] + rd_subname.size[1] - 8))
@@ -126,8 +126,9 @@ def generate_ncu(asset_manager, ncu_id, name, subname, ncu_data):
     ncu_card.alpha_composite(apply_drop_shadow(bars, color="#00000055", shadow_size=5), (-20, -20))
     crest = asset_manager.get_crest(faction)
     crest = crest.rotate(-12, expand=1, resample=Image.BICUBIC)
-    crest = crest.resize((int(crest.size[0] * 172 / crest.size[1]), 172), resample=Image.LANCZOS)
-    ncu_card.alpha_composite(apply_drop_shadow(crest, color="#00000055", shadow_size=5), (523, 182))
+    crest = crest.crop(crest.getbbox())
+    crest = crest.resize((int(crest.size[0] * 162 / crest.size[1]), 162), resample=Image.LANCZOS)
+    ncu_card.alpha_composite(apply_drop_shadow(crest, color="#00000055", shadow_size=5), (674 - crest.width, 192))
     ncu_card.alpha_composite(all_text)
 
     return ncu_card
@@ -224,11 +225,9 @@ def generate_ncu_back(asset_manager, ncu_id, name, subname, ncu_data, fluff):
         rd_subname = renderer_subname.render()
         layer_text.alpha_composite(rd_subname, (158, 142))
     renderer_quote = TextRenderer(fluff["quote"], "Tuff", (480, 90), asset_manager, font_size=32, font_color="white", italic=True,
-                                  stroke_width=0.1, padding=(5, 5, 5, 5))
+                                  stroke_width=0.1, padding=(5, 5, 5, 5), linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
     rd_quote = renderer_quote.render()
     layer_text.alpha_composite(rd_quote, (178, 182))
-
-    # TODO: Restrictions/Loyalty
 
     ncu_card.alpha_composite(apply_drop_shadow(bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
     ncu_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
@@ -274,8 +273,38 @@ def main():
             "quote": "\"I had a maester on Dragonstone who was\nalmost a father to me.\"- Stannis Baratheon"
         },
     }
-    data = cressen
-    back = generate_ncu_back(AssetManager(), data["id"], data["name"], data["subname"], data["statistics"], data["fluff"])
+    olenna = {
+        "id": "30609",
+        "name": "Olenna Tyrell",
+        "subname": "Queen of more text and Thorns",
+        "statistics": {
+            "version": "2021",
+            "faction": "baratheon",
+            "cost": 5,
+            "abilities": [
+                {
+                    "name": "Pulling Weeds",
+                    "effect": [
+                        "Each time Olenna Claims a zone, target 1 enemy NCU and choose 1:",
+                        "• That NCU loses all Abilities until the end of the Round.",
+                        "• If that NCU Claims a zone this Round, before resolving that zone's effect, target 1 enemy Combat Unit. They suffer D3 Hits and becomes **Weakened**."
+                    ]
+                }
+            ],
+            "requirements": [
+                {
+                    "name": "Loyalty",
+                    "heading": "RENLY BARATHEON",
+                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                }
+            ]
+        },
+        "fluff": {
+            "quote": "\"All men are fools, if truth be told, but the ones in motley are more amusing than the ones in crowns.\""
+        }
+    }
+    data = olenna
+    back = generate_ncu(AssetManager(), data["id"], data["name"], data["subname"], data["statistics"])
     # org = Image.open(r"").convert("RGBA")
     editor = ImageEditor(back, back)
 

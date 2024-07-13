@@ -18,6 +18,7 @@ def gen_all(all_data, key, basepath, asset_manager, abilities_data):
         subname = data.get("subname")
         statistics = data.get("statistics")
         fluff = data.get("fluff", {})
+        tactics = data.get("tactics", {})
         if len(ID_FILTER) and data_id not in ID_FILTER:
             continue
         outpath = f'{basepath}/{data["id"]}.jpg'
@@ -39,7 +40,7 @@ def gen_all(all_data, key, basepath, asset_manager, abilities_data):
             if key == "units":
                 gen_back = generate_unit_back(asset_manager, data_id, name, subname, statistics, fluff).convert("RGB")
             elif key == "attachments":
-                gen_back = generate_attachment_back(asset_manager, data_id, name, subname, statistics, fluff).convert("RGB")
+                gen_back = generate_attachment_back(asset_manager, data_id, name, subname, statistics, fluff, tactics).convert("RGB")
             elif key == "ncus":
                 gen_back = generate_ncu_back(asset_manager, data_id, name, subname, statistics, fluff).convert("RGB")
             else:
@@ -78,7 +79,7 @@ def main():
             gen_all(data, "ncus", cards_path, asset_manager, None)
 
 
-AMEND = False
+AMEND = True
 
 ID_FILTER = [
 ]
