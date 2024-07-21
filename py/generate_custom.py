@@ -1,6 +1,11 @@
 import os.path
 
-from generate import gen_all
+from generate import Generator, load_json
+from generate_utils import TextRenderer
+from generate_tactics import ImageGeneratorTactics
+from generate_units import ImageGeneratorUnits
+from generate_ncus import ImageGeneratorNCUs
+from generate_attachments import ImageGeneratorAttachments
 from asset_manager import CustomAssetManager, get_path_or_dialogue
 from image_cropper import *
 import json
@@ -8,26 +13,39 @@ from pathlib import Path
 from const import *
 
 
-def main(custom_data, skip_portrait=True):
-    meta = custom_data.get("_meta")
+def main(path, skip_portrait=True):
+    json_data = load_json(path)
+
+    meta = json_data.get("_meta")
     if meta is None or meta.get("id") is None:
         raise Exception("Invalid custom data!")
     custom_data_id = meta.get("id")
     language = meta.get("language", "en")
     asset_manager = CustomAssetManager(custom_data_id)
+    text_renderer = TextRenderer(asset_manager)
+    ig_tactics = ImageGeneratorTactics(asset_manager, text_renderer)
+    ig_units = ImageGeneratorUnits(asset_manager, text_renderer)
+    ig_ncus = ImageGeneratorNCUs(asset_manager, text_renderer)
+    ig_attachments = ImageGeneratorAttachments(asset_manager, text_renderer)
+
+    generator = Generator(
+        ig_tactics,
+        ig_units,
+        ig_ncus,
+        ig_attachments,
+        overwrite=False,
+        get_path=None,
+        filter_data=None,
+    )
 
     with open(f"{DATA_PATH}/{language}/abilities.json", "r", encoding="utf-8") as file:
         abilities_data = json.load(file)
 
-    for key, val in custom_data.get("abilities", {}).items():
+    for key, val in json_data.get("abilities", {}).items():
         abilities_data[key] = val
 
     out_path = f"./custom/generated/{custom_data_id}"
     Path(out_path).mkdir(parents=True, exist_ok=True)
-    gen_all(custom_data, "units", out_path, asset_manager, abilities_data)
-    gen_all(custom_data, "attachments", out_path, asset_manager, abilities_data)
-    gen_all(custom_data, "ncus", out_path, asset_manager, None)
-    gen_all(custom_data, "tactics", out_path, asset_manager, None)
 
     if skip_portrait:
         return
