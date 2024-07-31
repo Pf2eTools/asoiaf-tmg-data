@@ -1,10 +1,10 @@
 {
-  "_meta": {
-    "author": "CMON",
-    "id": "cmon-prerelease"
-  },
-  "units": [
-    {
+    "_meta": {
+        "author": "CMON",
+        "id": "cmon-prerelease"
+    },
+    "units": [
+        {
             "id": "crownland-scouts",
             "name": "Crownland Scouts",
             "statistics": {
@@ -36,9 +36,108 @@
             "fluff": {
                 "lore": "No army serves its king by blundering blindly about the countryside. The more skilled their scouting forces, the better a commander can distribute their troops for an impending attack. Moderately armored, the Crownland Scouts act not only as vanguard for Baratheon forces but capable fighters in their own right. Whether spotting enemy weaknesses for their own use or repositioning their allies. the Crownland Scouts are a valued addition to any force."
             }
+        },
+        {
+            "id": "iron-victory-crew",
+            "name": "Iron Victory Crew",
+            "statistics": {
+                "version": "2021",
+                "faction": "greyjoy",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Boarding Axe",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    {
+                        "name": "Boarding Axe",
+                        "effect": [
+                            "• **Sundering**",
+                            "• If this unit has 2 Pillage tokens, when performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked**."
+                        ],
+                        "icons": [
+                            "melee"
+                        ]
+                    },
+                    {
+                        "name": "Captain's Men",
+                        "effect": [
+                            "If Victarion Greyjoy is attached to this unit, it deploys with 1 Pillage token."
+                        ]
+                    },
+                    "Domineering Pride"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": ""
+            }
+        },
+        {
+            "id": "skyreach-bowmen",
+            "name": "Skyreach Bowmen",
+            "statistics": {
+                "version": "2021",
+                "faction": "martell",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 6,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Desert Marksmen",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            5
+                        ]
+                    },
+                    {
+                        "name": "Daggers",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    {
+                        "name": "Desert Marksmen",
+                        "effect": [
+                            "When attacking enemies that have not Activated this Round, may reroll Attack Dice and the Defender becomes **Vulnerable**."
+                        ],
+                        "icons": [
+                            "melee"
+                        ]
+                    },
+                    "Outflank"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "In southern Westeros, in the region known as the Prince's Pass, there are no figures more dreaded than the shadowy forms of the Skyreach Bowmen, rising up from barren terrain. They're brilliant flankers, capable of maneuvering into position before enemies become aware of their presence. That said, they're fast-moving archers, and mobility is their only real defense. Wise commanders shoudl keep them well-protected until the critical moment."
+            }
         }
-  ],
-  "attachments": [],
-  "ncus": [],
-  "tactics": []
+    ],
+    "attachments": [],
+    "ncus": [],
+    "tactics": []
 }

@@ -7,9 +7,7 @@ from generate_ncus import ImageGeneratorNCUs
 from generate_attachments import ImageGeneratorAttachments
 from asset_manager import CustomAssetManager, get_path_or_dialogue
 from image_cropper import *
-import json
 from pathlib import Path
-from const import *
 
 
 class CustomGenerator(Generator):
@@ -101,5 +99,5 @@ def main(path, skip_portrait=True):
 
 
 if __name__ == "__main__":
-    main("./custom/data/cmon-prerelease.json", True)
-    main("./custom/data/brew.json", True)
+    main("./custom/data/cmon-prerelease.json", False)
+    # main("./custom/data/brew.json", True)
