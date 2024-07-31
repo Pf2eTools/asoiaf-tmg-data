@@ -42,9 +42,9 @@ class Generator:
         data_id = data_object.get("id")
         back_str = "b" if back else ""
         if data_object.get("type") == "tactics":
-            return f"./generated/{lang}/{faction}/tactics/{data_id}{back_str}.jpg"
+            return f"./generated/{lang}/{faction}/tactics/", f"{data_id}{back_str}.jpg"
         else:
-            return f"./generated/{lang}/{faction}/cards/{data_id}{back_str}.jpg"
+            return f"./generated/{lang}/{faction}/cards/", f"{data_id}{back_str}.jpg"
 
     @staticmethod
     def get_abilitiy_data(language):
@@ -83,7 +83,9 @@ class Generator:
             sides = self.filter_data(data_object)
 
             if "face" in sides:
-                outpath = self.get_path(data_object)
+                out_dir, filename = self.get_path(data_object)
+                Path(out_dir).mkdir(parents=True, exist_ok=True)
+                outpath = out_dir + filename
                 if self.overwrite or not Path(outpath).exists():
                     try:
                         self._do_generate(data_object, outpath, ability_data=ability_data)
@@ -93,7 +95,9 @@ class Generator:
                         traceback.print_exc()
                         self.errors[f"{data_id}_{language}"] = msg
             if "back" in sides and data_type != "tactics":
-                outpath_back = self.get_path(data_object, back=True)
+                out_dir_back, filename_back = self.get_path(data_object, back=True)
+                Path(out_dir_back).mkdir(parents=True, exist_ok=True)
+                outpath_back = out_dir_back + filename_back
                 if self.overwrite or not Path(outpath_back).exists():
                     try:
                         self._do_generate(data_object, outpath_back, back=True)

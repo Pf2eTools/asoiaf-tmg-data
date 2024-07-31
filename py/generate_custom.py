@@ -1,5 +1,4 @@
 import os.path
-
 from generate import Generator, load_json
 from generate_utils import TextRenderer
 from generate_tactics import ImageGeneratorTactics
@@ -13,6 +12,29 @@ from pathlib import Path
 from const import *
 
 
+class CustomGenerator(Generator):
+    def __init__(self, ig_tactics, ig_units, ig_ncus, ig_attachments, custom_data, overwrite=False, get_path=None, filter_data=None):
+        super().__init__(ig_tactics, ig_units, ig_ncus, ig_attachments, overwrite, get_path, filter_data)
+        self.custom_data = custom_data
+        self._meta = custom_data.get("_meta")
+
+    def _get_path(self, data_object, back=False):
+        custom_data_id = self._meta.get("id")
+        data_id = data_object.get("id")
+        back_str = "b" if back else ""
+        return f"./custom/generated/{custom_data_id}/", f"{data_id}{back_str}.jpg"
+
+    def get_abilitiy_data(self, language):
+        data = super().get_abilitiy_data(language)
+        data.update(self.custom_data.get("abilities", {}))
+        return data
+
+    def generate_all(self):
+        data = self.mutate_data(self.custom_data)
+        language = self._meta.get("language", "en")
+        self.generate(data, language)
+
+
 def main(path, skip_portrait=True):
     json_data = load_json(path)
 
@@ -20,7 +42,6 @@ def main(path, skip_portrait=True):
     if meta is None or meta.get("id") is None:
         raise Exception("Invalid custom data!")
     custom_data_id = meta.get("id")
-    language = meta.get("language", "en")
     asset_manager = CustomAssetManager(custom_data_id)
     text_renderer = TextRenderer(asset_manager)
     ig_tactics = ImageGeneratorTactics(asset_manager, text_renderer)
@@ -28,30 +49,23 @@ def main(path, skip_portrait=True):
     ig_ncus = ImageGeneratorNCUs(asset_manager, text_renderer)
     ig_attachments = ImageGeneratorAttachments(asset_manager, text_renderer)
 
-    generator = Generator(
+    generator = CustomGenerator(
         ig_tactics,
         ig_units,
         ig_ncus,
         ig_attachments,
-        overwrite=False,
+        json_data,
+        overwrite=True,
         get_path=None,
         filter_data=None,
     )
-
-    with open(f"{DATA_PATH}/{language}/abilities.json", "r", encoding="utf-8") as file:
-        abilities_data = json.load(file)
-
-    for key, val in json_data.get("abilities", {}).items():
-        abilities_data[key] = val
-
-    out_path = f"./custom/generated/{custom_data_id}"
-    Path(out_path).mkdir(parents=True, exist_ok=True)
+    generator.generate_all()
 
     if skip_portrait:
         return
 
     for key in ["units", "attachments", "ncus"]:
-        for data_object in custom_data[key]:
+        for data_object in json_data[key]:
             object_id = data_object.get("id")
             path = None
 
@@ -87,6 +101,5 @@ def main(path, skip_portrait=True):
 
 
 if __name__ == "__main__":
-    with open("./custom/data/brew.json", "r", encoding="utf-8") as cd:
-        leaks_data = json.load(cd)
-    main(leaks_data, True)
+    main("./custom/data/cmon-prerelease.json", True)
+    main("./custom/data/brew.json", True)
