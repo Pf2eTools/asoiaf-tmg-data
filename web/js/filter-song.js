@@ -109,6 +109,7 @@ class PageFilterSong extends PageFilter {
 		e._fTactics = [];
 		if (e.__prop === "tactics" && e.statistics.commander_id) {
 			e._fCommander = e.statistics.commander_subname ? `${e.statistics.commander_name}, ${e.statistics.commander_subname}` : e.statistics.commander_name;
+			e._fTactics.push("Commander Card");
 		}
 		else if (e.__prop === "tactics") e._fTactics.push("Basedeck");
 	}
