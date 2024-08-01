@@ -983,9 +983,11 @@ class TextRenderer:
                     height += entry.padding.top
                     for line in entry.split:
                         # TODO: yikes...
-                        if len(line) == 1 and line[0].startswith("[") and line[0].endswith("["):
+                        if len(line) == 1 and line[0].startswith("[") and line[0].endswith("]"):
                             if line[0].startswith("[ATTACK"):
                                 height += 165 * self.supersample
+                            elif line[0].startswith("[SKILL"):
+                                height += 134 * self.supersample
                             else:
                                 height += self.get_icon(entry, line[0].strip("[]")).size[1] * self.supersample
                         else:
@@ -1079,6 +1081,8 @@ class TextRenderer:
                 self.italic = entry.italic
                 for line in entry.split:
                     w = self.calculate_line_width(entry, line)
+                    if w == self._max_w:
+                        continue
                     if w > max_width:
                         max_width = w
             return max_width
