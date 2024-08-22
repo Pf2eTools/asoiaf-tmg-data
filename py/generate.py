@@ -215,8 +215,6 @@ def filter_data_generic(data_obj):
     ]
 
     languages = [
-        "de",
-        "en"
     ]
     ids = [
     ]
