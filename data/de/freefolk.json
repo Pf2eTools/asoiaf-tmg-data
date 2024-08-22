@@ -4,7 +4,7 @@
             "id": "10301",
             "name": "Wilder Riese",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 7,
@@ -15,9 +15,9 @@
                     {
                         "name": "Wütender Schwinger",
                         "type": "melee",
-                        "hit": 2,
+                        "hit": 3,
                         "dice": [
-                            1
+                            4
                         ]
                     }
                 ],
@@ -36,7 +36,7 @@
             "id": "10302",
             "name": "Fallensteller des Freien Volkes",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 4,
@@ -323,20 +323,20 @@
             "id": "10310",
             "name": "Bär",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 0,
-                "speed": 5,
-                "defense": 5,
-                "morale": 2,
+                "speed": 4,
+                "defense": 3,
+                "morale": 3,
                 "attacks": [
                     {
                         "name": "Wildes Zerfleischen",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            1
+                            3
                         ]
                     }
                 ],
@@ -832,7 +832,7 @@
             "id": "10323",
             "name": "Harmas Vorhut",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "cavalry",
                 "cost": 5,
@@ -1108,7 +1108,7 @@
             "name": "Manke Rayder",
             "subname": "König-Jenseits-der-Mauer",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
@@ -1174,13 +1174,12 @@
             "id": "20307",
             "name": "Leibwechsler",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Gebundener Leibwechsler",
-                    "Standhaft"
+                    "Gebundener Leibwechsler"
                 ]
             }
         },
@@ -1188,7 +1187,7 @@
             "id": "20308",
             "name": "Adler",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "none",
                 "cost": 0,
@@ -1207,7 +1206,7 @@
             "id": "20309",
             "name": "Wolf",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "none",
                 "cost": 0,
@@ -1253,7 +1252,7 @@
             },
             "tactics": {
                 "cards": {
-                    "40323": "Letzter Hieb",
+                    "40323": "Bitterer Untergang",
                     "40324": "Starrsinn der Thenn",
                     "40325": "Styrs Rache"
                 }
@@ -1462,7 +1461,7 @@
             "name": "Jarl",
             "subname": "Versierter Anführer von Überfällen",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
@@ -1471,6 +1470,11 @@
                 ],
                 "character": true
             },
+            "requirements": [
+                {
+                 "text": "*Jarl ignoriert die üblichen Einschränkungen für Verstärkungen.*"
+                }
+            ],
             "fluff": {
                 "quote": "„Die Mauer verteidigt sich selbst.“"
             }
@@ -1531,7 +1535,7 @@
             "name": "Borroq",
             "subname": "Eber-Leibwechsler",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 2,
@@ -1623,14 +1627,14 @@
             "id": "40301",
             "name": "Rückzug und Neuformierung",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "text": [
                     {
                         "trigger": "Zu Beginn eines befreundeten Zuges:",
                         "effect": [
                             "Bestimme 2 befreundete Infanterie-Einheiten innerhalb Langer Reichweite zueinander zum Ziel. Entferne bis zu 4 Figuren von 1 dieser Einheiten. Heile ebenso viele Wunden der anderen Einheit.",
-                            "Du darfst dann 1 Verstärkung von 1 dieser Einheiten zu der anderen bewegen *(ersetze wie gewohnt eine Figur in jener Einheit und achte auf die üblichen Verstärkungsbeschränkungen)* oder tausche 2 befreundete Verstärkungen jener Einheiten."
+                            "Du darfst dann 1 Verstärkung von 1 dieser Einheiten zu der anderen bewegen *(ersetze wie gewohnt 1 Figur in jener Einheit und achte auf die üblichen Verstärkungsbeschränkungen)* oder tausche 2 befreundete Verstärkungen jener Einheiten."
                         ]
                     }
                 ]
@@ -2036,16 +2040,16 @@
         },
         {
             "id": "40323",
-            "name": "Letzter Hieb",
+            "name": "Bitterer Untergang",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                        "trigger": "Nachdem eine befreundete Infanterie- oder Kavallerie- Einheit zerstört wurde:",
                         "effect": [
-                            "Für jede Wunde, die der Verteidiger erlitten hat, erleidet der Angreifer 1 Treffer.",
-                            "Falls du [CROWN] kontrollierst, erleidet der Angreifer gegen diese Treffer –1 auf das Ergebnis der Verteidigungswürfe."
+                            "Bevor die Einheit vom Schlachtfeld entfernt wird, diese Einheit führt 1 Nahkampfangriff mit ihrem höchsten Angriffswürfelwert aus.",
+                            "Wenn es Styr's Einheit ist, darf jene Einheit beliebig viele Angriffswürfel neu werfen "
                         ]
                     }
                 ],

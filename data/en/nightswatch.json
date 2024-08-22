@@ -2204,7 +2204,7 @@
             "name": "Benjen Stark",
             "subname": "Beyond The Wall",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": "C",
@@ -2335,13 +2335,14 @@
             "id": "40501",
             "name": "The Sword In The Darkness",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If the Defender has not Activated this Round, they become **Panicked** and **Vulnerable**."
+                            "The Defender become **Vulnerable**.",
+                            "If the Defender has not Activated this Round, they also become **Panicked**."
                         ]
                     },
                     {
@@ -2357,13 +2358,14 @@
             "id": "40502",
             "name": "The Fire That Burns Against The Cold",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
                         "effect": [
-                            "That unit may re-roll any dice for this test."
+                            "That unit may re-roll any dice for this test.",
+                            "If this targets your Commander's unit, they pass this test instead."
                         ]
                     },
                     {
@@ -2423,7 +2425,7 @@
             "id": "40505",
             "name": "The Light That Brings The Dawn",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -2435,7 +2437,8 @@
                     {
                         "trigger": "When a friendly Night's Watch Unit Activates:",
                         "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 to Morale Test results."
+                            "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 to Morale Test results.",
+                            "If this targets your Commander's unit, this unit also cannot become **Panicked**."
                         ]
                     }
                 ]

@@ -172,7 +172,7 @@
             "name": "Jorah Mormont",
             "subname": "The Wandering Knight",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": 4,
@@ -191,7 +191,7 @@
                 ],
                 "abilities": [
                     "Order: Scout Openings",
-                    "Solo Rider"
+                    "Westerosi Rider"
                 ],
                 "wounds": 3,
                 "tray": "solo"
@@ -221,7 +221,7 @@
             "id": "10705",
             "name": "Unsullied Swordmasters",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -241,7 +241,8 @@
                     }
                 ],
                 "abilities": [
-                    "Unsullied Prowess"
+                    "Unsullied Prowess",
+                    "Combat Mastery: Resolve"
                 ],
                 "tray": "infantry"
             },
@@ -269,7 +270,7 @@
             "id": "10706",
             "name": "Unsullied Pikemen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -290,7 +291,8 @@
                 ],
                 "abilities": [
                     "Order: Set For Charge",
-                    "Order: Shield Wall"
+                    "Order: Shield Wall",
+                    "Combat Mastery: Defense"
                 ],
                 "tray": "infantry"
             },
@@ -557,7 +559,7 @@
                 "abilities": [
                     "Ambush",
                     "Swift Strike",
-                    "Motivated by Coin (Stormcrow Dervishes)"
+                    "Motivated by Coin"
                 ],
                 "tray": "infantry"
             },
@@ -664,7 +666,7 @@
                     }
                 ],
                 "abilities": [
-                    "Motivated by Coin (Stormcrow Mercenaries)"
+                    "Motivated by Coin"
                 ],
                 "requirements": [
                     {
@@ -1829,11 +1831,12 @@
             "name": "Daenerys Targaryen",
             "subname": "Mother of Dragons",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+                    "Order: Threaten",
                     "Mother Of Dragons"
                 ],
                 "commander": true,
@@ -1847,7 +1850,7 @@
                     "40731": "Fire Made Flesh"
                 },
                 "remove": [
-                    "Overrun"
+                    "Field Control"
                 ]
             },
             "fluff": {
@@ -1957,14 +1960,14 @@
             "name": "Daario Naharis",
             "subname": "Stormcrow Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Affiliation: Stormcrows",
                     "Improved Armaments",
-                    "Motivated by Coin (Daario Naharis)"
+                    "Motivated by Coin"
                 ],
                 "commander": true,
                 "character": true
@@ -2443,13 +2446,13 @@
             "id": "40702",
             "name": "Sudden Retreat",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "After an enemy completes a Melee Attack:",
                         "effect": [
-                            "The Defender performs 1 Retreat Action.",
+                            "Target the Defender. They performs 1 Retreat Action.",
                             "If this targets your Commander's unit, it may re-roll any Retreat Distance Dice."
                         ]
                     }
@@ -2553,14 +2556,14 @@
             "id": "40708",
             "name": "Addrivat!",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When Khal Drogo's unit Activates:",
                         "effect": [
                             "Target 1 enemy in Long Range and attach this card to them until the end of the Round.",
-                            "While attached, Melee Attacks on this enemy gain **Critical Blow**. When that enemy is destroyed, gain 1 Victory Point. If this card is removed and that enemy has not been destroyed, your opponent gains 1 Victory Point."
+                            "While attached, Melee Attacks on this enemy gain **Critical Blow**."
                         ]
                     },
                     {
@@ -2669,14 +2672,15 @@
             "id": "40713",
             "name": "Betrayal",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*Gain 1 Victory Point, draw 1 Tactics card, and restore 3 Wounds to Jorah Mormont's unit. Your opponent may then attach the **Betrayal** card to 1 of your friendly Combat Units until the end of the game. While attached, each time that unit Activates, they suffer 1 Wound. When they are destroyed, your opponent gains 1 Victory Point.*"
+                            "*Draw 2 Tactic Card. Restore 3 Wounds to Jorah Mormont's unit. 1 enemy Combat Unit becomes **Vulnerable** and **Weakend**. Then attach this card to Jorah's unit until they destroy 1 enemy Combat Unit.*",
+                            "*While attached, each time that unit Activates, they suffer 1 Wound and become **Panicked**.*"
                         ]
                     }
                 ],
@@ -2796,15 +2800,15 @@
             "id": "40719",
             "name": "Count The Cuts",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "After an enemy completes a Melee Attack:",
                         "effect": [
-                            "Target the Defender. Attach this card to them until they destroy an enemy with an Attack. When this card is removed, gain 1 Victory Point.",
-                            "While attached, this unit cannot restore Wounds, but it gains +2 to Morale Test rolls and its Melee Attack always roll its highest Attack Die Value.",
-                            "Your opponent gains 1 Victory Point when it is destroyed."
+                            "Target the Defender. Attach this card to them until they destroy an enemy",
+                            "While attached, this unit rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this target's Belwas` unit, it also gain +1 to Moral Test results."
                         ]
                     }
                 ],
@@ -2866,13 +2870,13 @@
             "id": "40722",
             "name": "Legendary Boldness",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Start of the Round:",
+                        "trigger": "After a friendly unit within Long Range of Barristan rolls Defense dice:",
                         "effect": [
-                            "Target Barristan Selmy's unit and attach this card to them until the end of the Round. While attached, when this unit passes a Panic Test, all enemies in Short Range become **Panicked**. If this unit is destroyed, your opponent gains 1 Victory Point. When this card is removed, if this unit is engaged, gain 1 Victory Point."
+                            "That unit blocks +2 Hits and automatically passes the Panic Test from this attack."
                         ]
                     },
                     {
@@ -2983,14 +2987,15 @@
             "id": "40727",
             "name": "Retribution Of The Dragon",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is destroyed by an enemy Attack:",
+                        "trigger": "When a friendly unit is Attacked:",
                         "effect": [
-                            "Target that enemy and attach this card to them until the end of the game.",
-                            "While attached, when that enemy is destroyed, gain 1 Victory Point. When that enemy is Attacked, if Grey Worm's unit is in Short Range, that enemy becomes **Vulnerable**."
+                            "Target the Attacker. Attach this card to them until the end of the game.",
+                            "While attached, each time this unit is Attacked, the Attacker gains **Vicious**."
+                            "Each time this unit is Attacked, if the Attacker is Grey Worm's unit or an Unsullied unit, this unit also becomes **Vulnerable**."
                         ]
                     }
                 ],
@@ -3003,13 +3008,13 @@
             "id": "40728",
             "name": "Dracarys!",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When Daenerys' unit Activates:",
                         "effect": [
-                            "Instead of performing an Action, target 1 friendly Drogon, Rhaegal, or Viserion unit in Short Range. It performs 1 Melee Attack Action."
+                            "Instead of performing an Action, target 1 friendly Drogon, Rhaegal, or Viserion unit in Long Range. It performs 1 Melee Attack Action."
                         ]
                     },
                     {
@@ -3053,13 +3058,15 @@
             "id": "40730",
             "name": "Promise Of Fire",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When an enemy NCU Activates:",
                         "effect": [
-                            "If that NCU Claims a zone this Activation, attach this card to 1 enemy Combat Unit. They suffer 1 Panic Test. If they are destroyed by this test, or by a Drogon, Rhaegal, or Viserion unit while this card is attached, gain 1 Victory Point. If 1 of your Drogon, Rhaegal, or Viserion units is destroyed, remove this card and your opponent gains 1 Victory Point."
+                            "If that NCU Claims a zone this Activation, attach this card to 1 enemy Combat Unit.",
+                            "They suffer 1 Panic Test."
+                            "While attached, each time a Drogon, Rhaegal, or Viserion units performs an Attack against this unit, this unit suffers 3 Wounds instead of D3 Wounds."
                         ]
                     }
                 ],
@@ -3072,7 +3079,7 @@
             "id": "40731",
             "name": "Fire Made Flesh",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
@@ -3082,7 +3089,7 @@
                         ]
                     },
                     {
-                        "remove": "Before the game begins, remove the \"Overrun\" Tactics card from your Tactics Deck and replace it with this card."
+                        "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
                     }
                 ],
                 "remove": "40701",
@@ -3305,7 +3312,7 @@
             "id": "40742",
             "name": "War Cry",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
@@ -3313,7 +3320,7 @@
                         "effect": [
                             "That unit performs 1 Morale Test.",
                             "On a success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**.",
-                            "If this is Marselen's unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
+                            "If this is Marselen's unit or an Unsullied unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
                         ]
                     }
                 ],
@@ -3381,7 +3388,9 @@
                     {
                         "trigger": "After an enemy Combat Unit completes an Attack:",
                         "effect": [
-                            "Attach this card to that enemy until the end of the Round. While attached, during your friendly Turns, that enemy loses all Abilities and cannot be targeted by their friendly Tactics cards. When that enemy is destroyed, gain 1 Victory Point. If this card is removed and that enemy has not been destroyed, your opponent gains 1 Victory Point."
+                            "Attach this card to that enemy until the end of the Round.",
+                            "While attached, during your opponent Turns, this Unit loses all Abilities and cannot be targeted by their friendly Tactics cards.",
+                            "If Skahaz's unit, or a Brazen Beast unit, performes a Charge Action against this unit, they automatically counts as rolling a 6 on all Charge Distance dice."
                         ]
                     }
                 ],

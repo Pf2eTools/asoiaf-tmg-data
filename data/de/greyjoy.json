@@ -114,13 +114,13 @@
             "id": "10804",
             "name": "Eisenmacher",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 7,
                 "speed": 5,
                 "defense": 3,
-                "morale": 7,
+                "morale": 6,
                 "attacks": [
                     {
                         "name": "Großhammer",
@@ -129,7 +129,7 @@
                         "dice": [
                             7,
                             5,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -365,15 +365,14 @@
             "name": "Balon Graufreud",
             "subname": "König von Salz und Stein",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "cost": 5,
                 "abilities": [
                     {
                         "name": "Erhebt sich erneut mit der Klinge in der Hand",
                         "effect": [
-                            "Ein Mal pro Partie, sobald Balon eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Stelle 1 zuvor vernichtete Graufreud-Kampfeinheit innerhalb Langer Reichweite zum Rand einer befreundeten Aufstellungszone oder vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand wieder auf. Sie wird aktiviert aufgestellt und mit allen Plündermarkern, die sie vorher hatte.*"
+                            "Ein Mal pro Partie, sobald Balon aktiviert wird, darfst du statt eine Zone auf der Taktiktafel zu beanspruchen 1 zuvor vernichtete Graufreud-Kampfeinheit innerhalb Langer Reichweite zum Rand einer befreundeten Aufstellungszone oder vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand wieder auf. Sie verliert allen Plündermarkern, die sie zuvor hatte. Wurde sie diese Runde noch nicht aktiviert, wird sie unaktiviert aufgestellt, ansonsten wird sie aktiviert aufgestellt."
                         ]
                     }
                 ]
@@ -535,7 +534,7 @@
             "name": "Asha Graufreud",
             "subname": "Die Tochter des Kraken",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "C",
@@ -749,14 +748,14 @@
             "name": "Nut",
             "subname": "Der Barbier",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Victarions Vasall",
                     "Wütender Ansturm",
-                    "Durch Geld motiviert (Nute)"
+                    "Durch Geld motiviert"
                 ],
                 "character": true
             },
@@ -989,7 +988,7 @@
             "tactics": {
                 "cards": {
                     "40829": "Gier nach Ruhm",
-                    "40830": "Koordinationstaktik",
+                    "40830": "Eiserner Neid",
                     "40831": "Wissen mit Eisen bezahlen"
                 }
             },
@@ -1580,15 +1579,15 @@
             "id": "40829",
             "name": "Gier nach Ruhm",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "Zu Beginn eines beliebigen Zuges:",
                         "effect": [
-                            "Lege diese Karte bis zum Ende der Runde an eine befreundete Kampfeinheit an.",
-                            "Solange diese Karte an dieser Einheit anliegt, zählt sie, als hätte sie 2 Plündermarker und ihre Nahkampfangriffe erhalten +1 auf den Trefferwurf.",
-                            "Solange diese Karte an dieser Einheit anliegt, erleidet sie zudem –1 auf das Ergebnis von Verteidigungswürfen."
+                            "Wähle eine befreundete Graufreud Einheit als Ziel. Sie bekommt 1 Plündermarker. Lege diese Karte bis zum Ende der Runde an sie an." ,
+							"Solange diese Karte an dieser Einheit anliegt, erhalten ihre Nahkampfangriffe +1 auf den Trefferwurf.",
+                            "Ebenfalls solange diese Karte an dieser Einheit anliegt, erleidet sie zudem –1 auf das Ergebnis von Verteidigungswürfen."
                         ]
                     }
                 ],
@@ -1599,17 +1598,18 @@
         },
         {
             "id": "40830",
-            "name": "Koordinationstaktik",
+            "name": "Eiserner Neid",
             "statistics": {
                 "version": "2021-S02",
                 "faction": "greyjoy",
                 "text": [
                     {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "trigger": "Wenn eine befreundete Graufreud Einheit aktiviert wird:",
                         "effect": [
-                            "Bestimme 2 befreundete Infanterie-Einheiten innerhalb Kurzer Reichweite zueinander zum Ziel.",
-                            "Beide Einheiten erhalten bis zum Ende des Zuges alle nicht-angeborenen Fähigkeiten der anderen Einheit.",
-                            "Du darfst sofort 1 nicht verwendeten „Zu Beginn eines Zuges“-Befehl einer jener Einheiten auslösen."
+                            "Diese Einheit bekommt 1 Wunde und wird **Verwundbar**. Wähle 1 der folgenden Effekte, für jede andere befreundete Einheit innerhalb Kurzer Reichweite wähle +1:",
+                            "• Diese Einheit erhält bis zum Ende des Zuges **Spaltschlag**.",
+                            "• Diese Einheit erhält bis zum Ende des Zuges **Grausam**.",
+							"• Entferne 1 Plündermarker von 1 anderen freundlichen Graufreud Infanterie-Einheit innerhalb Kurzer Reichweite. Lege den eben entfernten Plündermarker an diese Einheit an."
                         ]
                     }
                 ],

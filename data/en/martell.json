@@ -311,7 +311,7 @@
             "id": "10907",
             "name": "Starfall Knights",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "type": "cavalry",
                 "cost": 8,
@@ -324,7 +324,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -461,21 +461,22 @@
             "name": "Doran Martell",
             "subname": "Prince of Dorne",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "martell",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Sunspear Secrets",
                         "effect": [
-                            "Each time Doran Martell Claims the zone indicated for the Round, place 1 Order token on him.",
-                            "• Round 1: Claim [MONEY] or [SWORDS]",
-                            "• Round 2: Claim [CROWN] or [OASIS]",
-                            "• Round 3: Claim [LETTER] or [HORSE]",
-                            "• Round 4: Claim [CROWN] or [SWORDS]",
-                            "• Round 5: Claim [MONEY] or [OASIS]",
-                            "• Round 6: Claim [LETTER] or [HORSE]",
-                            "At the End of each Round, if there are 4+ Order tokens on Doran Martell, gain 1 Victory Point."
+                            "Each time Doran Claims a zone, before resolving that zone's effect, place 1 Order token on him. If Doran Claims [OASIS], place +1 Order token on him.",
+                            "Each time Doran Claims [OASIS], you may replace that zone's effect with:",
+                            "*Remove up to 4 Order tokens from a friendly Doran, for each Order token removes, choose 1:*",
+                            "• *Restore up to 2 Wounds from 1 unit.*",
+                            "• *Remove 1 Condition token from 1 unit.*",
+                            "• *Draw 1 Tactics Card.*",
+                            "• *Place any 1 Condition token on an enemy unit.*",
+                            "• *1 friendly unit pivots, then shifts 2\".*",
+                            "• *1 enemy Combat Unit suffers 1 Wound.*"
                         ]
                     }
                 ]
@@ -620,7 +621,7 @@
             "name": "Nymeria Sand",
             "subname": "Lady Nym",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "cost": 4,
                 "abilities": [
@@ -631,7 +632,7 @@
                             "While Influencing a friendly Infantry unit:",
                             "• If you or your opponent Controls [CROWN], its Melee Attacks gain **Vicious**.",
                             "• If you or your opponent Controls [SWORDS], its Melee Attacks gain **Critical Blow**.",
-                            "• If you or your opponent Controls [OASIS], it gains +1[MOVEMENT]."
+                            "• If you or your opponent Controls [HORSE], it gains +1[MOVEMENT]."
                         ]
                     }
                 ]
@@ -1106,10 +1107,10 @@
             "name": "Elia Sand",
             "subname": "Sand Snake",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Precision",
                     "Boisterous Charisma"
@@ -1518,14 +1519,14 @@
             "id": "40901",
             "name": "Superior Positioning",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "text": [
                     {
                         "trigger": "When an enemy performs a Charge Action, before resolving that Action:",
                         "effect": [
-                            "If that enemy Charges a unit in the Front, they suffer a Disorderly Charge on Charge Distance rolls of 3 or less.",
-                            "If they suffer a Disorderly Charge, they become **Vulnerable**."
+                            "If that enemy Charges a unit in the Front, they suffer a Disorderly Charge on Charge Distance rolls of 3 or less. If they suffer a Disorderly Charge, they become **Vulnerable**.",
+                            "If the defender is your Commander's unit, they suffer a Disorderly Charge on Charge Distance rolls of 5 or less instead."
                         ]
                     }
                 ]

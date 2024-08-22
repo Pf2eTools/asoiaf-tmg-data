@@ -45,7 +45,8 @@
     },
     "AERIAL SCOUTING": {
         "effect": [
-            "Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, this model's Skinchanger unit may perform a 2\" shift."
+            "• Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, this model's Skinchanger unit may perform a 2\" shift.",
+            "• Each time an enemy performs a Melee Attack on this unit, the Attacker gains **Precision**."
         ]
     },
     "AFFILIATION: BLOODY MUMMERS": {
@@ -275,7 +276,7 @@
     },
     "BOISTEROUS CHARISMA": {
         "effect": [
-            "This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs."
+            "Each time this unit passes a Panic Test, target 1 enemy unit in Short Range. They become **Vulnerable** or **Weakened**."
         ],
         "icons": [
             "wounds"
@@ -305,12 +306,15 @@
     },
     "BONDED BEAR": {
         "effect": [
-            "• This unit has 1 Wound and cannot grant Victory Points.",
-            "• If this unit is destroyed, it cannot be selected by its Skinchanger again.",
-            "• If this unit was selected, when its Bonded Skinchanger Activates, Deploy it engaged in the Front or Flank of 1 enemy engaging its Skinchanger. It then performs 1 Melee Attack Action. Remove this unit at the end of the Round."
+            "• This unit has 3 Wounds.",
+            "• Cannot Control Objectives and cannot grant Victory Points.",
+            "• When this unit is selected, deploy it fully within Short Range of a friendly unit, and at least 1\" from an enemy unit.",
+            "• At the start of any Round, if this unit is not in Short Range of a friendly unit, it is destroyed.",
+            "• This unit does not Activate as normal. Instead, once per Turn, when this model's Skinchanger unit Activates, this unit Activates immediately after them.",
+            "• Enemies engaged with this unit suffer -1 to Defense Dice Rolls."
         ],
         "icons": [
-            "wounds1"
+            "wounds3"
         ]
     },
     "BONDED BOAR": {
@@ -326,17 +330,18 @@
     },
     "BONDED EAGLE": {
         "effect": [
-            "Each time this unit is selected, target 1 enemy. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
+            "At the start of each Round, target 1 enemy Combat Unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
         ]
     },
     "BONDED SKINCHANGER": {
         "effect": [
-            "At the start of each Round, select Bear, Eagle, or Wolf. See that unit's card for additional effects."
+            "• When this unit is deployed, select Bear, Eagle, or Wolf. See that unit's card for additional effects.",
+            "• When this unit is destroyed, remove it's bonded animal."
         ]
     },
     "BONDED WOLF": {
         "effect": [
-            "Each time this unit is selected, target 1 enemy in Long Range of its Skinchanger's unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
+            "At the start of each Round, target 1 enemy Combat Unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
         ]
     },
     "BOOKKEEPING (CORTNAY PENROSE)": {
@@ -731,7 +736,8 @@
     },
     "FIRST OF THE KING'S MEN": {
         "effect": [
-            "You count as Controlling the [CROWN] *and* [LETTER] zones for Tactics cards that target this unit."
+            "• You count as Controlling the [CROWN] *and* [LETTER] zones for Tactics cards that target this unit.",
+            "• While your opponent does not control [CROWN] or [LETTER], this unit may re-roll any Morale Test Dice."
         ]
     },
     "FLAIL": {
@@ -770,7 +776,9 @@
     "FURIOUS SWING": {
         "effect": [
             "• **Vicious**",
-            "• Hits from this Attack cannot be blocked. If this Attack generates any Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each Wound this unit has suffered."
+            "• Gains +1 Attack Die for each Wound this unit has suffered.",
+            "• Defenders do not roll Defense Dice.",
+            "• Enemies Successfully Charged by this unit become **Panicked**."
         ],
         "icons": [
             "melee",
@@ -947,7 +955,7 @@
     },
     "IMPALING SPEAR": {
         "effect": [
-            "After completing this Attack, if this destroyed an enemy rank, all enemies in Short Range of the Attacker become **Panicked**."
+            "After completing this Attack, if this destroyed an enemy rank, all enemies in Short Range of the Attacker become **Panicked**, if they were already **Panicked**, they instead become **Weakened**."
         ],
         "icons": [
             "melee"
@@ -1143,11 +1151,11 @@
     },
     "LANNISTER OPPRESSION": {
         "effect": [
+            "Each time this unit performs a Melee Attack, before rolling Attack Dice choose 1, for each Condition token on the Defender, choose +1:",
             "• **Vicious**",
-            "Before rolling Attack Dice, you may expend Condition Tokens on the Defender to gain the following:",
-            "• **Panicked**: Until the end of the Turn, Defender loses any Abilities and may not be the target of friendly Tactics cards.",
-            "• **Vulnerable**: Attack may re-roll any Attack Dice. After completing this Attack, restore 2 Wounds for each of the Defender's ranks destroyed by this Attack.",
-            "• **Weakened**: Attack rolls highest Attack Die Value and gains **Sundering**."
+            "• **Sundering**",
+            "• Until the end of the Turn, Defender loses all Abilities.",
+            "• This unit may re-roll any Attack Dice."
         ],
         "icons": [
             "melee"
@@ -1282,40 +1290,10 @@
             "wounds"
         ]
     },
-    "MOTIVATED BY COIN (BRONN)": {
+    "MOTIVATED BY COIN": {
         "effect": [
             "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Bronn's unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (DAARIO NAHARIS)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Daario Naharis' unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (FORTUNE SEEKER)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Fortune Seeker's unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (NUTE)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Nute's unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (STORMCROW DERVISHES)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*1 Stormcrow Dervishes unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (STORMCROW MERCENARIES)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*1 Stormcrow Mercenaries unit performs 1 Attack Action.*"
+            "*1 friendly unit with Motivated by Coin performs 1 Attack Action.*"
         ]
     },
     "MOTLEY ARMAMENTS": {
@@ -1437,7 +1415,7 @@
         "trigger": "When an unengaged enemy in Long Range performs any Action, before resolving that Action:",
         "effect": [
             "Choose 1:",
-            "• That enemy suffers 1 Hit, +1 Hit for each of its remaining ranks.",
+            "• That enemy suffers 1 Hit for each of its remaining ranks.",
             "• That Enemy suffers -1[MOVEMENT] until the end of the Turn."
         ],
         "icons": [
@@ -1911,7 +1889,9 @@
     },
     "PREDATOR'S INSTINCTS": {
         "effect": [
-            "Each time this unit Charges, it suffers a Disorderly Charge on rolls of 1 or 2. When this model's Skinchanger unit Charges this unit, they may re-roll any Charge Distance Dice."
+            "• Each time this unit Charges, it suffers a Disorderly Charge on rolls of 1 or 2.",
+            "• Each time an enemy performs a Melee Attack on this unit, their Attack gains **Vicious**.",
+            "• When this model's Skinchanger unit Charges this unit, they may re-roll any Charge Distance Dice."
         ]
     },
     "PREY ON FEAR": {
@@ -2092,7 +2072,7 @@
     "RUTHLESS VOLLEY": {
         "effect": [
             "• Ignores units and terrain when determining Line of Sight.",
-            "• When Attacking engaged enemies, gains Precision and may re-roll any Attack Dice. Your friendly units engaged with that enemy suffer 1 Wound."
+            "• When Attacking engaged enemies, gains **Precision** and may re-roll any Attack Dice."
         ],
         "icons": [
             "ranged"
@@ -2123,7 +2103,7 @@
     },
     "SAVAGE MAULING (BEAR)": {
         "effect": [
-            "Defenders do not roll Defense Dice."
+            "• **Sundering**"
         ],
         "icons": [
             "melee"
@@ -2159,6 +2139,16 @@
         "effect": [
             "• This unit has 3 Wounds.",
             "• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action."
+        ],
+        "icons": [
+            "wounds3"
+        ]
+    },
+    "WESTEROSI RIDER": {
+        "effect": [
+            "• This unit has 3 Wounds.",
+            "• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action.",
+            "• As long as Jorah is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand."
         ],
         "icons": [
             "wounds3"
@@ -2658,7 +2648,7 @@
     "ORDER: PLANNED APPROACH": {
         "trigger": "Start of any Turn:",
         "effect": [
-            "Target 1 friendly unit in Long Range. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities. When selecting their Action for the Turn, that unit may only declare Charge Actions."
+            "Target 1 friendly unit in Long Range. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities."
         ],
         "icons": [
             "order"
@@ -2675,10 +2665,29 @@
             "• While you Control [SWORDS], this unit's Melee Attacks roll their highest Attack Die Value."
         ]
     },
+     "COMBAT MASTERY: RESOLVE": {
+        "effect": [
+            "While your opponent does not Control [SWORDS], each time this unit passes a Moral Test, it restores 1 Wound."
+        ]
+    },
+     "COMBAT MASTERY: DEFENSE": {
+        "effect": [
+            "While your opponent does not Control [SWORDS], enemies engaged with this unit suffer -1 to Hit."
+        ]
+    },
     "WINTERFELL'S WRATH": {
         "effect": [
             "• **Critical Blow**",
             "• Enemies Successfully Charged become **Weakened**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "HIGHGARDEN LANCE": {
+        "effect": [
+            "• **Sundering**",
+            "• When Charging, gains +1 to Hit and rolls +2 Attack Dice for each remaining rank in this unit."
         ],
         "icons": [
             "melee"

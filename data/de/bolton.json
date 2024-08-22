@@ -74,7 +74,7 @@
                 "type": "infantry",
                 "cost": 6,
                 "speed": 5,
-                "defense": 6,
+                "defense": 5,
                 "morale": 7,
                 "attacks": [
                     {
@@ -354,12 +354,13 @@
             "name": "Ramsay Schnee",
             "subname": "Gehässiger Erbe",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Schrecklicher Anblick"
+                    "Schrecklicher Anblick",
+					"Angst Ausnutzen"
                 ],
                 "commander": true,
                 "character": true
@@ -609,11 +610,12 @@
             "name": "Stahlbein Walton",
             "subname": "Hauptmann der Wache",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+				    "Spaltschlag",
                     "Eiserne Entschlossenheit",
                     "Geteilte Angst"
                 ],
@@ -661,7 +663,7 @@
                     {
                         "trigger": "Zu Beginn eines beliebigen Zuges:",
                         "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sie wird **Panisch**.",
+                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an.",
                             "Solange diese Karte an jener Einheit anliegt, wird bei ihren Nahkampfangriffen immer der höchste Angriffswürfelwert verwendet und die Angriffe erhalten **Spaltschlag**. Immer wenn diese Einheit an einer Panikprobe scheitert, erleidet sie +1 Wunde."
                         ]
                     }
@@ -748,7 +750,8 @@
                     {
                         "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
                         "effect": [
-                            "Bestimme eine beliebige Anzahl befreundeter Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten."
+                            "Bestimme eine beliebige Anzahl befreundeter Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten.",
+							"War jener Feind in Kurzer Reichweiter zu deiner Heerführer-Einheit, heile +1 Wunde."
                         ]
                     }
                 ]

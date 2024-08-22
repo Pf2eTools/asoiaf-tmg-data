@@ -263,11 +263,11 @@
             "id": "10206",
             "name": "House Tully Sworn Shields",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -416,7 +416,7 @@
             "id": "10209",
             "name": "Crannogman Trackers",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 5,
@@ -584,7 +584,7 @@
             "id": "10213",
             "name": "House Tully Cavaliers",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "type": "cavalry",
                 "cost": 8,
@@ -597,7 +597,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -1926,7 +1926,7 @@
             "name": "Meera Reed",
             "subname": "Cunning Trapper",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -2606,13 +2606,14 @@
             "id": "40209",
             "name": "Superior Positioning",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "When an enemy performs a Charge Action, before resolving that Action:",
                         "effect": [
-                            "If that enemy Charges a unit in the Front, they suffer a Disorderly Charge on Charge Distance rolls of 3 or less. If they suffer a Disorderly Charge, they become **Vulnerable**."
+                            "If that enemy Charges a unit in the Front, they suffer a Disorderly Charge on Charge Distance rolls of 3 or less. If they suffer a Disorderly Charge, they become **Vulnerable**.",
+                            "If this targets Robb Stark's unit, they instead suffer a Disorderly Charge on Charge Distance rolls of 5 or less:"
                         ]
                     }
                 ],
@@ -2742,7 +2743,7 @@
             "id": "40216",
             "name": "War Cry",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
@@ -2750,7 +2751,7 @@
                         "effect": [
                             "That unit performs 1 Morale Test.",
                             "On a success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**.",
-                            "If this is Brynden's unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
+                            "If this is a House Tully unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
                         ]
                     }
                 ],
@@ -2901,14 +2902,14 @@
             "id": "40223",
             "name": "Crannog Traps",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
-                        "trigger": "When an enemy unit Activates:",
+                        "trigger": "When an enemy performs a Maneuver, March, or Retreat Action, before resolving that Action:",
                         "effect": [
-                            "If that enemy is in Long Range of a friendly Crannogman unit, it suffers -1[MOVEMENT] this Turn.",
-                            "If that enemy declares a Maneuver, March, or Retreat Action, it is treated as moving through Dangerous terrain."
+                            "It suffers -1[MOVEMENT] this Turn.",
+                            "If that enemy is in Long Range of a Crannogman unit, it is treated as moving through Dangerous terrain."
                         ]
                     }
                 ],

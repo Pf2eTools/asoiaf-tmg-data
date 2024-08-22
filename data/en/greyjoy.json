@@ -162,13 +162,13 @@
             "id": "10804",
             "name": "Ironmakers",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 7,
                 "speed": 5,
                 "defense": 3,
-                "morale": 7,
+                "morale": 6,
                 "attacks": [
                     {
                         "name": "Great Hammer",
@@ -177,7 +177,7 @@
                         "dice": [
                             7,
                             5,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -540,14 +540,14 @@
             "name": "Balon Greyjoy",
             "subname": "King of Salt and Rock",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "cost": 5,
                 "abilities": [
                     {
                         "name": "Rise Again, Blade in Hand",
                         "effect": [
-                            "Once per game, when Balon activates, instead of Claiming a Zone, redeploy 1 previously destroyed House Greyjoy Combat Unit fully within Long Range of a friendly Deployment Edge, or fully within Short Range of any Flank table edge. It deploys with any Pillage tokens it previously had. If the unit had not Activated this Round, it deploys Unactivated. Otherwise, it deploys Activated."
+                            "Once per game, when Balon activates, instead of Claiming a Zone, redeploy 1 previously destroyed House Greyjoy Combat Unit fully within Long Range of a friendly Deployment Edge, or fully within Short Range of any Flank table edge. It deploys without any Pillage tokens it previously had. If the unit had not Activated this Round, it deploys Unactivated. Otherwise, it deploys Activated."
                         ]
                     }
                 ]
@@ -821,7 +821,7 @@
             "name": "Asha Greyjoy",
             "subname": "The Kraken's Daughter",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "C",
@@ -1195,14 +1195,14 @@
             "name": "Nute",
             "subname": "The Barber",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Victarion's Vassal",
                     "Furious Charge",
-                    "Motivated by Coin (Nute)"
+                    "Motivated by Coin"
                 ],
                 "character": true
             },
@@ -1581,7 +1581,7 @@
             "name": "Dagmer Cleftjaw",
             "subname": "Master-at-Arms",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "C",
@@ -1595,7 +1595,7 @@
             "tactics": {
                 "cards": {
                     "40829": "Lust for Glory",
-                    "40830": "Coordination Tactics",
+                    "40830": "Iron Envy",
                     "40831": "Knowledge Paid in Iron"
                 }
             },
@@ -2253,14 +2253,14 @@
             "id": "40829",
             "name": "Lust for Glory",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
-                            "Attach this card to a friendly Combat Unit until the end of the Round.",
-                            "While attached, this unit counts as having 2 Pillage tokens and its Melee Attacks gain +1 to Hit.",
+                            "Target 1 friendly Greyjoy unit. They gain 1 Pillage token. Then, attach this card to that unit until the end of the Round.",
+                            "While attached, this unit's Melee Attacks gain +1 to Hit.",
                             "Also while attached, this unit suffers -1 to Defense Dice rolls."
                         ]
                     }
@@ -2272,17 +2272,18 @@
         },
         {
             "id": "40830",
-            "name": "Coordination Tactics",
+            "name": "Iron Envy",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "greyjoy",
                 "text": [
                     {
-                        "trigger": "Start of any Turn:",
+                        "trigger": "When a friendly Greyjoy Combat Unit Activates:",
                         "effect": [
-                            "Target 2 friendly Infantry units in Short Range of each other.",
-                            "Until the end of the Turn, both units gain any non-Innate Abilities on the other unit.",
-                            "You may immediately trigger 1 unused \"Start of Turn\" Order on either of those units."
+                            "This unit suffers 1 Wound and becomes **Vulnerable**. Choose 1, for each other friendly unit in Short Range with Pillage tokens, choose +1:",
+                            "• This unit's Attacks gain **Sundering** this Turn.",
+                            "• This unit's Attacks gain **Vicious** this Turn.",
+                            "• Remove 1 Pillage token from 1 other friendly Greyjoy Infantry unit in Short Range. Place the remove Pillage token on this unit."
                         ]
                     }
                 ],

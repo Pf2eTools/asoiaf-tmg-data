@@ -181,7 +181,7 @@
             "id": "10406",
             "name": "Söldner der Sturmkrähen",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
@@ -201,7 +201,7 @@
                     }
                 ],
                 "abilities": [
-                    "Durch Geld motiviert (Stormcrow Mercenaries)"
+                    "Durch Geld motiviert"
                 ],
                 "tray": "infantry",
                 "requirements": [
@@ -296,7 +296,7 @@
             "id": "10409",
             "name": "Derwische der Sturmkrähen",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
@@ -318,7 +318,7 @@
                 "abilities": [
                     "Überfall",
                     "Schneller Hieb",
-                    "Durch Geld motiviert (Stormcrow Dervishes)"
+                    "Durch Geld motiviert"
                 ],
                 "tray": "infantry"
             },
@@ -864,13 +864,13 @@
             "name": "Bronn",
             "subname": "Der Söldner",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Erkaufte Loyalität",
-                    "Durch Geld motiviert (Bronn)"
+                    "Durch Geld motiviert"
                 ],
                 "character": true
             },
@@ -944,14 +944,14 @@
             "name": "Daario Naharis",
             "subname": "Hauptmann der Sturmkrähen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Zugehörigkeit: Sturmkrähen",
                     "Verbesserte Bewaffnung",
-                    "Durch Geld motiviert (Daario Naharis)"
+                    "Durch Geld motiviert"
                 ],
                 "commander": true,
                 "character": true
@@ -1021,14 +1021,14 @@
             "name": "Roose Bolton",
             "subname": "Lord Egel",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Befehl: Angst verbreiten",
                     "Zugehörigkeit: Haus Bolton",
-                    "Bedrohliche Erscheinung"
+                    "Angst Ausnutzen"
                 ],
                 "commander": true,
                 "character": true
@@ -1054,7 +1054,7 @@
                 "cost": 1,
                 "abilities": [
                     "Verwegenheit",
-                    "Durch Geld motiviert (Fortune Seeker)"
+                    "Durch Geld motiviert"
                 ]
             }
         },
@@ -1076,7 +1076,7 @@
             "id": "20418",
             "name": "Offizier der Goldenen Kompanie",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
@@ -1166,10 +1166,10 @@
             "name": "Beisser",
             "subname": "Rorges irrer Hund",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": 1,
+                "cost": 0,
                 "abilities": [
                     "Zusammenrotten"
                 ],
@@ -1189,12 +1189,12 @@
             "name": "Jokin",
             "subname": "Hauptmann der Sturmkrähen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Befehl: Überwachen"
+                    "Hohe Präzision"
                 ],
                 "commander": true,
                 "character": true
@@ -1245,7 +1245,6 @@
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Beschützer des Witwers",
                     "Hohe Präzision"
                 ],
                 "character": true
@@ -1501,13 +1500,14 @@
             "id": "40412",
             "name": "Furcht hält einen Mann am Leben",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "text": [
                     {
                         "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
                         "effect": [
-                            "Bestimme eine beliebige Anzahl befreundeter Haus- Bolton-Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten."
+                            "Bestimme eine beliebige Anzahl befreundeter Haus- Bolton-Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten.",
+							"Wenn jener Feind sich in Kurzer Reichweite zu Roose Bolton's Einheit befindet, heile +1 Wunde."
                         ]
                     }
                 ],

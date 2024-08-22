@@ -261,7 +261,7 @@
             "id": "10406",
             "name": "Stormcrow Mercenaries",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
@@ -281,7 +281,7 @@
                     }
                 ],
                 "abilities": [
-                    "Motivated by Coin (Stormcrow Mercenaries)"
+                    "Motivated by Coin"
                 ],
                 "requirements": [
                     {
@@ -424,7 +424,7 @@
             "id": "10409",
             "name": "Stormcrow Dervishes",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
@@ -446,7 +446,7 @@
                 "abilities": [
                     "Ambush",
                     "Swift Strike",
-                    "Motivated by Coin (Stormcrow Dervishes)"
+                    "Motivated by Coin"
                 ],
                 "tray": "infantry"
             },
@@ -1312,13 +1312,13 @@
             "name": "Bronn",
             "subname": "The Sellsword",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Loyalty through Coin",
-                    "Motivated by Coin (Bronn)"
+                    "Motivated by Coin"
                 ],
                 "character": true
             },
@@ -1456,14 +1456,14 @@
             "name": "Daario Naharis",
             "subname": "Stormcrow Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Affiliation: Stormcrows",
                     "Improved Armaments",
-                    "Motivated by Coin (Daario Naharis)"
+                    "Motivated by Coin"
                 ],
                 "commander": true,
                 "character": true
@@ -1597,14 +1597,14 @@
             "name": "Roose Bolton",
             "subname": "The Leech Lord",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Order: Spread Fear",
                     "Affiliation: House Bolton",
-                    "Intimidating Presence"
+                    "Prey on Fear"
                 ],
                 "commander": true,
                 "character": true
@@ -1640,13 +1640,13 @@
             "id": "20416",
             "name": "Fortune Seeker",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 1,
                 "abilities": [
                     "Dauntless",
-                    "Motivated by Coin (Fortune Seeker)"
+                    "Motivated by Coin"
                 ]
             },
             "portrait": {
@@ -1700,7 +1700,7 @@
             "id": "20418",
             "name": "Golden Company Officer",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
@@ -1870,10 +1870,10 @@
             "name": "Biter",
             "subname": "Rorge's Mad Dog",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": 1,
+                "cost": 0,
                 "abilities": [
                     "Gang-Up"
                 ],
@@ -1914,7 +1914,7 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Order: Overwatch"
+                    "Accute Precision"
                 ],
                 "commander": true,
                 "character": true
@@ -1992,12 +1992,11 @@
             "name": "Jokin",
             "subname": "Archer Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Widower's Protector",
                     "Accute Precision"
                 ],
                 "character": true
@@ -2285,13 +2284,14 @@
             "id": "40412",
             "name": "Fear Keeps a Man Alive",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "text": [
                     {
                         "trigger": "When an enemy fails a Panic Test:",
                         "effect": [
-                            "Target any number of friendly House Bolton units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units."
+                            "Target any number of friendly House Bolton units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units.",
+                            "If that enemy is in Short Range of Roose's unit, restore +1 Wounds."
                         ]
                     }
                 ],

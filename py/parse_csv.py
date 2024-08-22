@@ -644,6 +644,12 @@ def main():
                 old = next((item for item in data.get(data_key, []) if item["id"] == obj["id"]), None)
                 if old is None:
                     return obj
+                if obj.get("statistics").get("version") == MODE_VERSION == MODE:
+                    for k, v in old.items():
+                        if obj.get(k) is not None:
+                            continue
+                        obj[k] = v
+                    return obj
                 for key in ["statistics", "fluff"]:
                     if old.get(key) is None and obj.get(key):
                         old[key] = {}
@@ -659,7 +665,7 @@ def main():
                     "attachments": [add_old_keys(a, "attachments") for a in attachments],
                     "tactics": [add_old_keys(t, "tactics") for t in tactics],
                 }
-            elif MODE == MODE_NEW:
+            elif MODE == MODE_NEW or MODE == MODE_VERSION:
                 # retired
                 all_units = units + [old for old in data["units"] if next((u for u in units if u["id"] == old["id"]), None) is None]
                 all_ncus = ncus + [old for old in data["ncus"] if next((n for n in ncus if n["id"] == old["id"]), None) is None]
@@ -693,8 +699,9 @@ def main():
 MODE_REWRITE = "rewrite"
 # Add keys that are new
 MODE_NEW = "new"
+MODE_VERSION = "S05"
 
-MODE = MODE_NEW
+MODE = MODE_VERSION
 
 LANGUAGES = [
     "en",

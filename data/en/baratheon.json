@@ -624,7 +624,7 @@
             "id": "10612",
             "name": "Riders of Highgarden",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "cavalry",
                 "cost": 6,
@@ -644,7 +644,7 @@
                 ],
                 "abilities": [
                     "Cavalry",
-                    "Lance"
+                    "Highgarden Lance"
                 ],
                 "requirements": [
                     {
@@ -1637,7 +1637,7 @@
             "name": "Davos Seaworth",
             "subname": "Hero of Blackwater",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -1645,6 +1645,11 @@
                     "Loyalty: Stannis Baratheon",
                     "Outflank",
                     "Pathfinder"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Davos ignores the usual Attachment Limits*"
+                    }
                 ],
                 "commander": true,
                 "character": true
@@ -1769,7 +1774,7 @@
             "name": "Andrew Estermont",
             "subname": "First of the King's Men",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -1813,7 +1818,7 @@
             "name": "Renly Baratheon",
             "subname": "Lord Paramount of the Stormlands",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -3032,15 +3037,22 @@
             "id": "40608",
             "name": "Inexplicable Return",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
-                        "trigger": "When a friendly NCU Claims a zone, replace that zone's effect with:",
+                        "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
-                            "Choose 1:",
+                            "Replace that zone's effect with:",
+                            "*Choose 1:*",
                             "*• Move 1 friendly Attachment from 1 unit to another friendly unit without an Attachment in Long Range.*",
                             "*• Attach 1 previously destroyed friendly Attachment to 1 friendly Combat Unit without an Attachment (replacing a model as usual).*"
+                        ]
+                    },
+                    {
+                        "trigger": "Start of a friendly Turn:",
+                        "effect": [
+                            "Draw 1 Tactics card."
                         ]
                     }
                 ],
@@ -3411,15 +3423,15 @@
             "id": "40625",
             "name": "Tactical Approach",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "Start of the Round:",
                         "effect": [
                             "Target 1 friendly Combat Unit. Attach this card to that unit until the end of the game.",
-                            "While attached, each time this unit is performing a Melee Attack, after rolling Attack Dice, you may expend 1 Condition Token from the Defender. If you do, this Attack deals +D3 Wounds.",
-                            "If this targets Stannis' unit, deal 3 Wounds instead of rolling."
+                            "While attached, each time this unit is performing a Melee Attack, after rolling Attack Dice, you may expend 1 Condition Token from the Defender. If you do, this Attack deals +1 Wound.",
+                            "If this targets Stannis' unit, it deals +2 Wounds instead."
                         ]
                     }
                 ],

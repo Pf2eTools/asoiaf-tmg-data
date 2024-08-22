@@ -145,7 +145,7 @@
             "id": "10105",
             "name": "Ritter von Casterlystein",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "lannister",
                 "type": "cavalry",
                 "cost": 8,
@@ -158,7 +158,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -1275,8 +1275,8 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Befehl: Anspornen",
-                    "Ermutigen"
+                    "Ermutigen",
+                    "Bedrohliche Erscheinung"
                 ],
                 "commander": true,
                 "character": true
@@ -1841,12 +1841,13 @@
             "id": "40120",
             "name": "Gnade der Mutter",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
                         "effect": [
+						    "Lege 1 Zustandsmarker von dieser Einheit ab.",
                             "Jene Einheit legt 1 Moralprobe ab.",
                             "Bei Bestehen heilt jene Einheit 2 Wunden, +1 Wunde für jede ihrer vernichteten Schlachtreihen.",
                             "Bei einem Fehlschlag heilt jene Einheit 1 Wunde."
@@ -1868,7 +1869,7 @@
                         "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
                         "effect": [
                             "Der Verteidiger legt 1 Moralprobe ab.",
-                            "Bei Bestehen darf er beliebig viele Verteidigungswürfel neu werfen.",
+                            "Bei Bestehen wehrt er +3 Treffer ab",
                             "Bei einem Fehlschlag wehrt er +1 Treffer ab."
                         ]
                     }

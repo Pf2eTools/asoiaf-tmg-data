@@ -182,11 +182,11 @@
             "id": "10206",
             "name": "Geschworene Schilde von Haus Tully",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -406,7 +406,7 @@
             "id": "10213",
             "name": "Ritter von Haus Tully",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "type": "cavalry",
                 "cost": 8,
@@ -419,7 +419,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -1671,13 +1671,14 @@
             "id": "40209",
             "name": "Überlegene Position",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "Sobald ein Feind eine Ansturmaktion durchführt, bevor jene Aktion abgehandelt wird:",
                         "effect": [
-                            "Falls jener Feind auf die Front einer Einheit einen Ansturm durchführt, erleidet er bei einem Wurf auf die Bewegungsweite des Ansturms von 3 oder weniger einen ungeordneten Ansturm. Falls er einen ungeordneten Ansturm erleidet, wird er **Verwundbar**."
+                            "Falls jener Feind auf die Front einer Einheit einen Ansturm durchführt, erleidet er bei einem Wurf auf die Bewegungsweite des Ansturms von 3 oder weniger einen ungeordneten Ansturm. Falls er einen ungeordneten Ansturm erleidet, wird er **Verwundbar**.",
+							"Wenn jener Ansturm Robb Stark's Einheit als Ziel hat, erleidet jener Feind bei einem Wurf auf die Bewegungsweite des Ansturms von 5 oder weniger einen ungeordneten Ansturm. "
                         ]
                     }
                 ],
@@ -1800,7 +1801,7 @@
             "id": "40216",
             "name": "Schlachtruf",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
@@ -1808,7 +1809,7 @@
                         "effect": [
                             "Jene Einheit legt 1 Moralprobe ab.",
                             "Bei Bestehen bestimme 1 Feind innerhalb Langer Reichweite zum Ziel. Er wird **Panisch** oder **Verwundbar**.",
-                            "Falls sie Brynden Tullys Einheit ist, wird er bei Bestehen stattdessen **Panisch** und **Verwundbar**."
+                            "Falls sie eine Haus Tully Einheit ist, wird er bei Bestehen stattdessen **Panisch** und **Verwundbar**."
                         ]
                     }
                 ],
@@ -1953,14 +1954,14 @@
             "id": "40223",
             "name": "Fallen der Pfahlbaumänner",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
-                        "trigger": "Sobald eine feindliche Einheit aktiviert wird:",
+                        "trigger": "Sobald eine feindliche Einheit ein Manöver-, Marsch-, oder Rückzugsaktion durchführt, bevor jene Aktion abgehandelt wird:",
                         "effect": [
-                            "Falls jener Feind innerhalb Langer Reichweite zu einer Pfahlbaumänner-Einheit ist, erleidet er –1 [MOVEMENT] in diesem Zug.",
-                            "Falls jener Feind eine Manöver-, Marsch- oder Rückzugsaktion deklariert, wird sie so behandelt, als würde er sich durch Gefährliches Gelände bewegen."
+                            "Jener Feind erleidet er –1 [MOVEMENT] in diesem Zug.",
+                            "Falls jener Feind sich in Langer Reichweite zu einer befreundeten Pfahlbaummänner Einheit befindet, wird er so behandelt, als würde er sich durch Gefährliches Gelände bewegen."
                         ]
                     }
                 ],

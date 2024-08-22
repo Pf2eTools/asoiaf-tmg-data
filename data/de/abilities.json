@@ -47,7 +47,8 @@
     },
     "ERKUNDUNGSFLUG": {
         "effect": [
-            "Ein Mal pro Zug, sobald diese Einheit eine Manöver- oder Marschaktion durchführt, bevor jene Aktion abgehandelt wird, darf die Leibwechsler-Einheit dieser Figur um 2 Zoll verschoben werden."
+            "• Ein Mal pro Zug, sobald diese Einheit eine Manöver- oder Marschaktion durchführt, bevor jene Aktion abgehandelt wird, darf die Leibwechsler-Einheit dieser Figur um 2 Zoll verschoben werden.",
+            "• Immer wenn eine feindliche Einheit einen Nahkampfangriff auf diese Einheit ausführt, bekommt der Angreifer **Präzision**."
         ]
     },
     "ZUGEHÖRIGKEIT: BLUTIGER MUMMENSCHANZ": {
@@ -285,7 +286,7 @@
     },
     "WILDE AUSSTRAHLUNG": {
         "effect": [
-            "Diese Einheit darf nie von feindlichen Befehlen oder Taktikkarten zum Ziel bestimmt werden und feindliche zivile Einheiten dürfen keinen Einfluss auf sie ausüben."
+            "Immer wenn diese Einheit eine Panikprobe besteht, wähle 1 feindliche Einheit innerhalb Kurzer Reichweiter zum Ziel. Jener Feind wird **Verwundbar** oder **Geschwächt**"
         ],
         "icons": [
             "wounds"
@@ -315,12 +316,15 @@
     },
     "GEBUNDENER BÄR": {
         "effect": [
-            "• Diese Einheit kann 1 Wunde erleiden und gewährt keine Siegpunkte.",
-            "• Falls diese Einheit vernichtet wird, kann sie nicht erneut von ihrem Leibwechsler ausgewählt werden.",
-            "• Falls diese Einheit ausgewählt worden ist, sobald ihr Leibwechsler aktiviert wird, stelle sie so auf, dass sie mit 1 Feind an der Front oder Flanke im Nahkampf ist, der mit ihrem Leibwechsler im Nahkampf ist. Dann führt sie 1 Nahkampfangriffsaktion durch. Entferne diese Einheit am Ende der Runde."
+            "• Diese Einheit kann 3 Wunde erleiden.",
+            "• Diese Einheit kann keine Objekte kontrollieren und gewährt keine Siegpunkte.",
+            "• Falls diese Einheit ausgewählt worden ist, stelle sie vollständig innerhalb Kurzer Reichweite zu einem befreundeten Aufstellungsrand oder beliebigen Seitenrand und mindestens 1 Zoll Abstand zu feindlichen Einheiten auf.",
+            "• Zu Beginn einer Runde, falls sich diese Einheit nicht in Kurzer Reichweiter zu einer befreundeten Einheit befindet, vernichte diese Einheit.",
+            "• Diese Einheit wird nicht wie üblich aktiviert. Stattdessen, einmal Pro Zug, falls sein gebundener Leibwechsler aktiviert, wird diese Einheit danach aktiviert.",
+            "• Gegnerische Einheiten die sich mit dieser Einheit im Nahkampf befinden erleiden -1 auf Verteidigungswürfe."
         ],
         "icons": [
-            "wounds1"
+            "wounds3"
         ]
     },
     "GEBUNDENER EBER": {
@@ -336,17 +340,18 @@
     },
     "GEBUNDENER ADLER": {
         "effect": [
-            "Immer wenn diese Einheit ausgewählt wird, bestimme 1 Feind zum Ziel. Lege diese Karte bis zum Ende der Runde an jenen Feind an. Platziere diese Figur in die Nähe des Bewegungstableaus, um es zu kennzeichnen. Diese Figur wird für alle anderen Belange ignoriert."
+            "Zu Beginn jeder Runde, bestimme 1 feindliche Kampfeinheit zum Ziel. Lege diese Karte bis zum Ende der Runde an jenen Feind an. Platziere diese Figur in die Nähe des Bewegungstableaus, um es zu kennzeichnen. Diese Figur wird für alle anderen Belange ignoriert."
         ]
     },
     "GEBUNDENER LEIBWECHSLER": {
         "effect": [
-            "Wähle zu Beginn jeder Runde den Bär, Adler oder Wolf aus. Auf den Karten jener Einheiten stehen ihre zusätzlichen Effekte."
+            "Wenn diese Einheit aufgestellt wird, wähle den Bär, Adler oder Wolf aus. Auf den Karten jener Einheiten stehen ihre zusätzlichen Effekte.",
+            "Wenn diese Einheit vernichtet wird, entferne sein gebundenes Tier."
         ]
     },
     "GEBUNDENER WOLF": {
         "effect": [
-            "Immer wenn diese Einheit ausgewählt wird, bestimme 1 Feind innerhalb Langer Reichweite zu ihrer Leichwechsler-Einheit zum Ziel. Lege diese Karte bis zum Ende der Runde an jenen Feind an. Platziere diese Figur in die Nähe des Bewegungstableaus, um es zu kennzeichnen. Diese Figur wird für alle anderen Belange ignoriert."
+            "Zum Beginn jeder Runde, bestimme 1 feindliche Kampfeinheit. Lege diese Karte bis zum Ende der Runde an jenen Feind an. Platziere diese Figur in die Nähe des Bewegungstableaus, um es zu kennzeichnen. Diese Figur wird für alle anderen Belange ignoriert."
         ]
     },
     "BUCHFÜHRUNG (SAMWELL TARLY)": {
@@ -818,7 +823,8 @@
     },
     "DER ERSTE DER MÄNNER DES KÖNIGS": {
         "effect": [
-            "Für Taktikkarten, die diese Einheit zum Ziel bestimmt haben, zählst du, als würdest du [CROWN] und [LETTER] kontrollieren."
+            "• Taktikkarten die diese Einheit als Ziel habe, zählen als würdest du [CROWN] und [LETTER] kontrollieren.",
+            "• Solange dein Gegner weder [CROWN] noch [LETTER] kontrolliert, darf diese Einheit jeden Würfel für Moralproben neu werfen."
         ]
     },
     "FLEGEL": {
@@ -865,7 +871,9 @@
     "WÜTENDER SCHWINGER": {
         "effect": [
             "• **Grausam**",
-            "• Treffer dieses Angriffs können nicht abgewehrt werden. Falls dieser Angriff Treffer erzeugt, erleidet der Verteidiger, statt Verteidigungswürfel zu werfen, 1W3 Wunden, +1 Wunde für jede Wunde, die diese Einheit erlitten hat."
+            "• Treffer dieses Angriffs können nicht abgewehrt werden.",
+            "• Wirft +1 Angriffswürfel für jede Wunde, die diese Einheit erlitten hat.",
+            "• Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, werden **Panisch**."
         ],
         "icons": [
             "melee",
@@ -1100,7 +1108,7 @@
     },
     "SPITZER SPEER": {
         "effect": [
-            "Nachdem dieser Angriff abgeschlossen worden ist, falls eine feindliche Schlachtreihe vernichtet worden ist, werden alle Feinde innerhalb Kurzer Reichweite zum Angreifer **Panisch**."
+            "Nachdem dieser Angriff abgeschlossen worden ist, falls eine feindliche Schlachtreihe vernichtet worden ist, werden alle Feinde innerhalb Kurzer Reichweite zum Angreifer **Panisch**, wenn jene Feinde bereits **Panisch** sind, werden sie **Geschwächt**."
         ],
         "icons": [
             "melee"
@@ -1314,6 +1322,15 @@
             "melee"
         ]
     },
+    "ROSENGARTEN LANZE": {
+        "effect": [
+            "• **Spaltschlag**",
+            "• Sobald diese Einheit einen Ansturm durchführt, erhält sie +1 auf ihren Trefferwurf und es werden +2 Angriffswürfel für jede ihrer verbleibenden Schlachtreihen geworfen."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
     "GERECHTIGKEIT DER LENNISTERS": {
         "effect": [
             "Solange du [CROWN] kontrollierst, immer wenn diese Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird, muss 1 Feind innerhalb Langer Reichweite 1 Panikprobe ablegen und erhält –1 auf das Ergebnis dieser Panikprobe für jede verbleibende Schlachtreihe in dieser Einheit."
@@ -1321,11 +1338,11 @@
     },
     "UNTERDRÜCKUNG DER LENNISTERS": {
         "effect": [
+            "Immer wenn diese Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen wurden, wähle 1, für jeden Zustandsmarker auf dem Verteidiger, wähle +1:",
             "• **Grausam**",
-            "Bevor die Angriffswürfel geworfen werden, darfst du Zustandsmarker des Verteidigers ausgeben, um die folgenden Effekte zu erhalten:",
-            "• **Panisch**: Bis zum Ende des Zuges verliert der Verteidiger alle Fähigkeiten und darf nicht zum Ziel von befreundeten Taktikkarten bestimmt werden.",
-            "• **Verwundbar**: Bei diesem Angriff dürfen beliebig viele Angriffswürfel neu geworfen werden. Nachdem dieser Angriff abgeschlossen worden ist, heilt diese Einheit 2 Wunden für jede durch diesen Angriff vernichtete Schlachtreihe des Verteidigers.",
-            "• **Geschwächt**: Dieser Angriff verwendet seinen höchsten Angriffswürfelwert und erhält **Spaltschlag**."
+            "• **Spaltschlag**",
+            "• Der Verteidiger verliert bis zum Ende des Angriffes alle seine Fähigkeiten",
+            "• Diese Einheit darf alle Angriffswürfel erneut werfen"
         ],
         "icons": [
             "melee"
@@ -1548,40 +1565,10 @@
             "wounds"
         ]
     },
-    "DURCH GELD MOTIVIERT (BRONN)": {
+    "DURCH GELD MOTIVIERT": {
         "effect": [
             "Sobald eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-            "*Bronns Einheit führt 1 Angriffsaktion durch.*"
-        ]
-    },
-    "DURCH GELD MOTIVIERT (DAARIO NAHARIS)": {
-        "effect": [
-            "Sobald eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-            "*Daario Naharis’ Einheit führt 1 Angriffsaktion durch.*"
-        ]
-    },
-    "DURCH GELD MOTIVIERT (FORTUNE SEEKER)": {
-        "effect": [
-            "Sobald eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-            "*Die Glückssucher-Einheit führt 1 Angriffsaktion durch.*"
-        ]
-    },
-    "DURCH GELD MOTIVIERT (NUTE)": {
-        "effect": [
-            "Sobald eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-            "*Nuts Einheit führt 1 Angriffsaktion durch.*"
-        ]
-    },
-    "DURCH GELD MOTIVIERT (STORMCROW DERVISHES)": {
-        "effect": [
-            "Sobald eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-            "*1 Derwische-der-Sturmkrähen-Einheit führt 1 Angriffsaktion durch.*"
-        ]
-    },
-    "DURCH GELD MOTIVIERT (STORMCROW MERCENARIES)": {
-        "effect": [
-            "Sobald eine befreundete zivile Einheit die [MONEY]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-            "*1 Söldner-der-Sturmkrähen-Einheit führt 1 Angriffsaktion durch.*"
+            "*1 befreundete Einheit mit Durch Geld motiviert führt 1 Angriffsaktion durch.*"
         ]
     },
     "BUNTE AUSRÜSTUNG": {
@@ -1721,7 +1708,9 @@
     "BEFEHL: VERBORGENE FALLEN": {
         "trigger": "Sobald ein Feind innerhalb Langer Reichweite, der nicht im Nahkampf ist, eine beliebige Aktion durchführt, bevor jene Aktion abgehandelt wird:",
         "effect": [
-            "Wähle 1 der folgenden Effekte:\n• Jener Feind erleidet 1 Treffer, +1 Treffer für jede seiner verbleibenden Schlachtreihen.\n• Jener Feind erleidet bis zum Ende der Runde -1 [MOVEMENT]."
+            "Wähle 1 der folgenden Effekte:",
+            "• Jener Feind erleidet 1 Trefferr für jede seiner verbleibenden Schlachtreihen.",
+            "• Jener Feind erleidet bis zum Ende der Runde -1 [MOVEMENT]."
         ],
         "icons": [
             "order"
@@ -2166,7 +2155,9 @@
     },
     "JAGDINSTINKT": {
         "effect": [
-            "Immer wenn diese Einheit einen Ansturm durchführt, erleidet sie bei einem Wurf von 1 oder 2 einen ungeordneten Ansturm. Sobald die Leibwechsler-Einheit dieser Figur einen Ansturm gegen diese Einheit durchführt, darf sie alle Würfel für die Bewegungsweite des Ansturms neu werfen."
+            "• Immer wenn diese Einheit einen Ansturm durchführt, erleidet sie bei einem Wurf von 1 oder 2 einen ungeordneten Ansturm.",
+            "• Immer wenn ein Feind einen Nahkampfangriff auf diese Einheit ausführt, der Angreifer erhält **Grausam**.",
+            "• Wenn diese Einheit von der gebundenen Leibwechsler Einheit angestürmt wird, das diese den Würfel für die Bewegungsreichweite des Ansturms neu werfen."
         ]
     },
     "ANGST AUSNUTZEN": {
@@ -2433,7 +2424,7 @@
     "GNADENLOSE SALVEN": {
         "effect": [
             "• Diese Einheit ignoriert Einheiten und Geländeteile, wenn sie die Sichtlinie bestimmt.",
-            "• Sobald diese Einheit Feinde, die im Nahkampf sind, angreift, erhält der Angriff **Präzision** und es dürfen beliebig viele Angriffswürfel neu geworfen werden. Befreundete Einheiten, die mit jenem Feind im Nahkampf sind, erleiden 1 Wunde."
+            "• Sobald diese Einheit Feinde, die im Nahkampf sind, angreift, erhält der Angriff **Präzision** und es dürfen beliebig viele Angriffswürfel neu geworfen werden."
         ],
         "icons": [
             "ranged"
@@ -2483,7 +2474,7 @@
     },
     "WILDES ZERFLEISCHEN": {
         "effect": [
-            "Verteidiger werfen keine Verteidigungswürfel."
+            "• **Spaltschlag**"
         ],
         "icons": [
             "melee"
@@ -2545,6 +2536,16 @@
         "effect": [
             "• Diese Einheit kann 3 Wunden erleiden.",
             "• Zu Beginn ihrer Aktivierung darf diese Einheit 1 Manöver- oder Rückzugsaktion durchführen."
+        ],
+        "icons": [
+            "wounds3"
+        ]
+    },
+    "WESTEROSI REITER": {
+        "effect": [
+            "• Diese Einheit kann 3 Wunden erleiden.",
+            "• Zu Beginn ihrer Aktivierung darf diese Einheit 1 Manöver- oder Rückzugsaktion durchführen.",
+            "• Solange sich Jorah auf dem Schlachtfeld befindet, erhöhe dein Handkartenlimit um +1. Du startest das Spiel mit 4 Karten und darfst bis zu 4 Karten nachziehen."
         ],
         "icons": [
             "wounds3"
@@ -3288,10 +3289,20 @@
             "melee"
         ]
     },
+    "KAMPFBEHERRSCHUNG: AUFLÖSEN": {
+        "effect": [
+            "Solange dein Gegner nicht die [SWORDS]-Zone kontrolliert, wenn diese Einheit eine Moralprobe besteht, sie heilt 1 Wunde."
+        ]
+    },
+    "KAMPFBEHERRSCHUNG: VERTEIDIGUNG": {
+        "effect": [
+            "Solange dein Gegner nicht die [SWORDS]-Zone kontrolliert, feindliche Kampfeinheiten die sich mit dieser Einheit im Nahkampf befindet erleiden –1 auf den Trefferwurf."
+        ]
+    },
     "BEFEHL: GEPLANTE VORGEHENSWEISE": {
         "trigger": "Zu Beginn eines beliebigen Zuges:",
         "effect": [
-            "Bestimme 1 freundliche Kampfeinheit in Langer Reichweite. Bis zum Ende des Zuges kann diese Einheit nicht das Ziel von freindlichen Effekten oder Fähigkeiten werden. Wenn diese Einheit ihre Aktion für den Zug auswählt, darf sie ausschließlich Ansturm Aktionen deklarieren."
+            "Bestimme 1 freundliche Kampfeinheit in Langer Reichweite. Bis zum Ende des Zuges kann diese Einheit nicht das Ziel von freindlichen Effekten oder Fähigkeiten werden."
         ],
         "icons": [
             "order"

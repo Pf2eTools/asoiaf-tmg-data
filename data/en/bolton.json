@@ -101,12 +101,12 @@
             "id": "11003",
             "name": "Dreadfort Archers",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": 6,
                 "speed": 5,
-                "defense": 6,
+                "defense": 5,
                 "morale": 7,
                 "attacks": [
                     {
@@ -269,7 +269,7 @@
             "id": "11006",
             "name": "Dreadfort Spearmen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": 5,
@@ -529,12 +529,13 @@
             "name": "Ramsay Snow",
             "subname": "Spiteful Heir",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Horrific Visage"
+                    "Horrific Visage",
+                    "Prey on Fear"
                 ],
                 "commander": true,
                 "character": true
@@ -976,11 +977,12 @@
             "name": "Steelshanks Walton",
             "subname": "Captain of the Guard",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+                    "Sundering",
                     "Iron Resolve",
                     "Shared Fear"
                 ],
@@ -1038,13 +1040,13 @@
             "id": "41002",
             "name": "Harsh Punishments",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "text": [
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
-                            "Target 1 friendly Combat Unit and attach this card to them until the end of the game. They become **Panicked**.",
+                            "Target 1 friendly Combat Unit and attach this card to them until the end of the game.",
                             "While this card is attached, this unit's Melee Attacks always roll their highest Attack Die Value and gains **Sundering**. Each time this unit fails a Panic Test, it suffers +1 Wound."
                         ]
                     }
@@ -1124,13 +1126,14 @@
             "id": "41007",
             "name": "Fear Keeps a Man Alive",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "text": [
                     {
                         "trigger": "When an enemy fails a Panic Test:",
                         "effect": [
-                            "Target any number of friendly units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units."
+                            "Target any number of friendly units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units.",
+                            "If that enemy is in Short Range of your Commander's unit, restore +1 Wounds."
                         ]
                     }
                 ]

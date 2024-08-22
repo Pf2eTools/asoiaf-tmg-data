@@ -1374,7 +1374,7 @@
             "name": "Benjen Stark",
             "subname": "Hinter der Mauer",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": "C",
@@ -1457,13 +1457,14 @@
             "id": "40501",
             "name": "Das Schwert in der Dunkelheit",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
                         "effect": [
-                            "Falls der Verteidiger in dieser Runde noch nicht aktiviert wurde, wird er **Panisch** und **Verwundbar**"
+						    "Der Verteidiger wird **Verwundbar**.",
+                            "Falls der Verteidiger in dieser Runde noch nicht aktiviert wurde, wird er zusätzlich **Panisch**"
                         ]
                     },
                     {
@@ -1479,13 +1480,14 @@
             "id": "40502",
             "name": "Das Feuer, das gegen die Kälte brennt",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
                         "effect": [
-                            "Jene Einheit darf beliebig viele Würfel dieser Moralprobe neu werfen."
+                            "Jene Einheit darf beliebig viele Würfel dieser Moralprobe neu werfen.",
+							"Wenn sie die Einheit deines Heerführers als Ziel hat, besteht sie die Moralprobe stattdessen."
                         ]
                     },
                     {
@@ -1545,7 +1547,7 @@
             "id": "40505",
             "name": "Das Licht, das den Morgen bringt",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
@@ -1557,7 +1559,8 @@
                     {
                         "trigger": "Sobald eine befreundete Nachtwache-Einheit aktiviert wird:",
                         "effect": [
-                            "Lege diese Karte an jene Einheit an, bis sie an einer Panikprobe scheitert. Solange diese Karte an dieser Einheit anliegt, erhält sie +1 auf das Ergebnis von Moralproben."
+                            "Lege diese Karte an jene Einheit an, bis sie an einer Panikprobe scheitert. Solange diese Karte an dieser Einheit anliegt, erhält sie +1 auf das Ergebnis von Moralproben.",
+							"Liegt diese Karte an der Einheit deines Heerführers an, kann diese Einheit nicht mehr **Panisch** werden."
                         ]
                     }
                 ]

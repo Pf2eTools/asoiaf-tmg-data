@@ -209,7 +209,7 @@
             "id": "10105",
             "name": "Knights of Casterly Rock",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "lannister",
                 "type": "cavalry",
                 "cost": 8,
@@ -222,7 +222,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -675,7 +675,7 @@
             "id": "10114",
             "name": "Casterly Rock Honor Guard",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 7,
@@ -2023,13 +2023,13 @@
             "name": "The High Sparrow",
             "subname": "His High Holiness",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Order: Incite",
-                    "Embolden"
+                    "Embolden",
+                    "Intimidating Presence"
                 ],
                 "commander": true,
                 "character": true
@@ -2752,13 +2752,13 @@
             "id": "40120",
             "name": "Mercy of The Mother",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "When a friendly Combat Unit Activates:",
                         "effect": [
-                            "That unit performs 1 Morale Test.",
+                            "Remove 1 Condition token form that unit. They performs 1 Morale Test.",
                             "On a success, restore 2 Wounds to that unit, +1 Wound for each of its destroyed ranks.",
                             "On a failure, restore 1 Wound to that unit."
                         ]
@@ -2773,13 +2773,13 @@
             "id": "40121",
             "name": "Protection of The Father",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "When an enemy is performing a Melee Attack, after rolling Defense Dice:",
                         "effect": [
-                            "The Defender performs 1 Morale Test. On a success, they may re-roll any Defense Dice. On a failure, they block +1 Hit."
+                            "The Defender performs 1 Morale Test. On a success, they block +3 Hits. On a failure, they block +1 Hit."
                         ]
                     }
                 ],

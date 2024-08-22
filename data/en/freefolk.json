@@ -4,7 +4,7 @@
             "id": "10301",
             "name": "Savage Giant",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 7,
@@ -15,9 +15,9 @@
                     {
                         "name": "Furious Swing",
                         "type": "melee",
-                        "hit": 2,
+                        "hit": 3,
                         "dice": [
-                            1
+                            4
                         ]
                     }
                 ],
@@ -52,7 +52,7 @@
             "id": "10302",
             "name": "Free Folk Trappers",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 4,
@@ -467,13 +467,13 @@
             "id": "10310",
             "name": "Bear",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 0,
-                "speed": 5,
-                "defense": 5,
-                "morale": 2,
+                "speed": 4,
+                "defense": 3,
+                "morale": 3,
                 "attacks": [
                     {
                         "name": "Savage Mauling",
@@ -1185,7 +1185,7 @@
             "id": "10323",
             "name": "Harma's Vanguard",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "cavalry",
                 "cost": 5,
@@ -1637,7 +1637,7 @@
             "name": "Mance Rayder",
             "subname": "King Beyond the Wall",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
@@ -1767,13 +1767,12 @@
             "id": "20307",
             "name": "Skinchanger",
             "statistics": {
-                "version": "S04",
+                "version": "S0s",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Bonded Skinchanger",
-                    "Stalwart"
+                    "Bonded Skinchanger"
                 ]
             },
             "portrait": {
@@ -1797,7 +1796,7 @@
             "id": "20308",
             "name": "Eagle",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "none",
                 "cost": 0,
@@ -1832,7 +1831,7 @@
             "id": "20309",
             "name": "Wolf",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "none",
                 "cost": 0,
@@ -1897,7 +1896,7 @@
             "name": "Styr",
             "subname": "Magnar of Thenn",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
@@ -1910,7 +1909,7 @@
             },
             "tactics": {
                 "cards": {
-                    "40323": "Final Strike",
+                    "40323": "Bitter Demise",
                     "40324": "Thenn Defiance",
                     "40325": "Styr's Vengeance"
                 }
@@ -2279,12 +2278,17 @@
             "name": "Jarl",
             "subname": "Advance Raid Leader",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Outflank"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Jarl ignores the usual Attachment limits.*"
+                    }
                 ],
                 "character": true
             },
@@ -2412,7 +2416,7 @@
             "name": "Borroq",
             "subname": "Boar Skinchanger",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 2,
@@ -2997,16 +3001,16 @@
         },
         {
             "id": "40323",
-            "name": "Final Strike",
+            "name": "Bitter Demise",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "After an enemy completes a Melee Attack:",
+                        "trigger": "When a friendly Infantry or Cavalry unit is destroyed:",
                         "effect": [
-                            "For each Wound the Defender suffered, the Attacker suffers 1 Hit.",
-                            "If the Defender was in Long Range of Styr's unit, that enemy suffers -1 to Defense Dice Rolls against these Hits."
+                            "Before removing that unit, it performs 1 Melee Attack Action using its highest Attack Die Value.",
+                            "If this targets Styr's unit, it may re-roll any Attack Dice."
                         ]
                     }
                 ],
@@ -3101,14 +3105,14 @@
             "id": "40328",
             "name": "Enrage",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "text": [
                     {
                         "trigger": "Start of a friendly Monster Unit's Activation:",
                         "effect": [
                             "That unit suffers 2 Wounds.",
-                            "Until the end of the Turn, that unit may re-roll any Attack Dice and Defenders become **Panicked**."
+                            "Until the end of the Turn, that unit may re-roll any Attack Dice and Defenders become **Panicked** and **Weakened**."
                         ]
                     }
                 ],

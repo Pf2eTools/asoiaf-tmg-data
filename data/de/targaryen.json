@@ -143,7 +143,7 @@
                 ],
                 "abilities": [
                     "Befehl: Schwachstellen entdecken",
-                    "Einzelreiter"
+                    "Westerosi Reiter"
                 ],
                 "wounds": 3,
                 "tray": "solo"
@@ -157,7 +157,7 @@
             "id": "10705",
             "name": "Schwertmeister der Unbefleckten",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -177,7 +177,8 @@
                     }
                 ],
                 "abilities": [
-                    "Talent der Unbefleckten"
+                    "Talent der Unbefleckten",
+					"Kampfbeherrschung: Auflösen"
                 ],
                 "tray": "infantry"
             },
@@ -189,7 +190,7 @@
             "id": "10706",
             "name": "Pikeniere der Unbefleckten",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -210,7 +211,8 @@
                 ],
                 "abilities": [
                     "Befehl: Speerwall",
-                    "Befehl: Schildwall"
+                    "Befehl: Schildwall",
+					"Kampfbeherrschung: Verteidigung"
                 ],
                 "tray": "infantry"
             },
@@ -372,7 +374,7 @@
             "id": "10711",
             "name": "Derwische der Sturmkrähen",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -394,7 +396,7 @@
                 "abilities": [
                     "Überfall",
                     "Schneller Hieb",
-                    "Durch Geld motiviert (Stormcrow Dervishes)"
+                    "Durch Geld motiviert"
                 ],
                 "tray": "infantry"
             },
@@ -449,7 +451,7 @@
             "id": "10713",
             "name": "Söldner der Sturmkrähen",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 5,
@@ -469,7 +471,7 @@
                     }
                 ],
                 "abilities": [
-                    "Durch Geld motiviert (Stormcrow Mercenaries)"
+                    "Durch Geld motiviert"
                 ],
                 "tray": "infantry",
                 "requirements": [
@@ -1184,11 +1186,12 @@
             "name": "Daenerys Targaryen",
             "subname": "Mutter der Drachen",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+				    "Befehl: Bedrohen",
                     "Mutter der Drachen"
                 ],
                 "commander": true,
@@ -1202,7 +1205,7 @@
                     "40731": "Fleisch gewordenes Feuer"
                 },
                 "remove": [
-                    "Overrun"
+                    "Field Control"
                 ]
             },
             "fluff": {
@@ -1264,14 +1267,14 @@
             "name": "Daario Naharis",
             "subname": "Hauptmann der Sturmkrähen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Zugehörigkeit: Sturmkrähen",
                     "Verbesserte Bewaffnung",
-                    "Durch Geld motiviert (Daario Naharis)"
+                    "Durch Geld motiviert"
                 ],
                 "commander": true,
                 "character": true
@@ -1558,13 +1561,13 @@
             "id": "40702",
             "name": "Plötzlicher Rückzug",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
                         "effect": [
-                            "Der Verteidiger führt 1 Rückzugsaktion durch.",
+                            "Bestimme den Verteidiger als Ziel. Dieser führt 1 Rückzugsaktion durch.",
                             "Falls diese Karte die Einheit deines Heerführers zum Ziel hat, darf sie alle Würfel für die Bewegungsweite des Rückzugs neu werfen."
                         ]
                     }
@@ -1669,14 +1672,14 @@
             "id": "40708",
             "name": "ADDRIVAT!",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Sobald Khal Drogos Einheit aktiviert wird:",
                         "effect": [
                             "Bestimme 1 Feind innerhalb Langer Reichweite zum Ziel und lege diese Karte bis zum Ende der Runde an ihn an.",
-                            "Solange diese Karte an diesem Feind anliegt, erhalten die Nahkampfangriffe auf diesen Feind **Kritischer Treffer**. Sobald jener Feind vernichtet wird, erhalte 1 Siegpunkt. Falls diese Karte entfernt wird und jener Feind nicht vernichtet worden ist, erhält dein Gegner 1 Siegpunkt."
+                            "Solange diese Karte an diesem Feind anliegt, erhalten die Nahkampfangriffe auf diesen Feind **Kritischer Treffer**."
                         ]
                     },
                     {
@@ -1780,14 +1783,14 @@
             "id": "40713",
             "name": "Verrat",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*Erhalte 1 Siegpunkt, ziehe 1 Taktikkarte und heile 3 Wunden von Jorah Mormonts Einheit. Dein Gegner darf dann die Karte **Verrat** bis zum Ende der Partie an 1 deiner befreundeten Kampfeinheiten anlegen. Solange diese Karte an jener Einheit anliegt, immer wenn sie aktiviert wird, erleidet sie 1 Wunde. Sobald sie vernichtet wird, erhält dein Gegner 1 Siegpunkt.*"
+                            "*Ziehe 2 Taktikkarte und heile 3 Wunden von Jorah Mormonts Einheit. 1 freindliche Kampfeinheit bekommt **Verwundbar** und **Geschwächt**. Lege diese Karte an Jorah Mormonts Einheit bis sie eine feindliche Kampfeinheit vernichtet an. Solange diese Karte an jener Einheit anliegt, immer wenn sie aktiviert wird, erleidet sie 1 Wunde und wird **Panisch**.*"
                         ]
                     }
                 ],
@@ -1901,15 +1904,15 @@
             "id": "40719",
             "name": "Zählt die Schnitte",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
                         "effect": [
-                            "Bestimme den Verteidiger zum Ziel. Lege diese Karte an ihn an, bis er einen Feind mit einem Angriff vernichtet. Sobald diese Karte entfernt wird, erhalte 1 Siegpunkt.",
-                            "Solange diese Karte an dieser Einheit anliegt, kann sie keine Wunden heilen, erhält aber +2 auf das Ergebnis von Moralproben und verwendet bei Nahkampfangriffen immer ihren höchsten Angriffswürfelwert.",
-                            "Dein Gegner erhält 1 Siegpunkt, sobald sie vernichtet wird."
+                            "Bestimme den Verteidiger zum Ziel. Lege diese Karte an ihn an, bis er einen Feind mit einem Angriff vernichtet.",
+                            "Solange diese Karte an dieser Einheit anliegt, verwendet bei Nahkampfangriffen immer ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
+                            "Falls der Verteidiger Belwas’ Einheit ist, erhählt sie +1 auf ihr Moralprobe Ergebnis ."
                         ]
                     }
                 ],
@@ -1968,13 +1971,13 @@
             "id": "40722",
             "name": "Legendäre Kühnheit",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Zu Beginn der Runde:",
+                        "trigger": "Nachdem eine befreundete Einheit innerhalb Langer Reichweite zu Barristan Verteidigungswürfel geworfen hat:",
                         "effect": [
-                            "Bestimme Barristan Selmys Einheit zum Ziel und lege diese Karte bis zum Ende der Runde an sie an. Solange diese Karte an dieser Einheit anliegt, sobald diese Einheit eine Panikprobe besteht, werden alle Feinde innerhalb Kurzer Reichweite **Panisch**. Falls diese Einheit vernichtet wird, erhält dein Gegner 1 Siegpunkt. Sobald diese Karte entfernt wird, falls diese Einheit im Nahkampf ist, erhalte 1 Siegpunkt."
+                            "Diese Einheit wehrt +2 Treffer ab und besteht den Panikprobe dieses Angriffs."
                         ]
                     },
                     {
@@ -2080,14 +2083,15 @@
             "id": "40727",
             "name": "Vergeltung des Drachen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Sobald eine befreundete Einheit von einem feindlichen Angriff vernichtet wird:",
+                        "trigger": "Sobald eine befreundete Einheit angegriffen wird:",
                         "effect": [
-                            "Bestimme jenen Feind zum Ziel und lege diese Karte bis zum Ende der Partie an ihn an.",
-                            "Solange diese Karte an diesem Feind anliegt, sobald jener Feind vernichtet wird, erhalte 1 Siegpunkt. Sobald jener Feind angegriffen wird, falls Grauer Wurms Einheit innerhalb Kurzer Reichweite zu ihm ist, wird jener Feind **Verwundbar**."
+                            "Bestimme den Angreifer zum Ziel und lege diese Karte bis zum Ende der Partie an ihn an.",
+                            "Solange diese Karte an diesem Feind anliegt, sobald jener Feind angegriffen wird, bekommt der Angreifer **Grausam**.",
+                            "Sobald jener Feind angegriffen wird und der Angreifer Grauer Wurms' Einheit oder eine Unbefleckten Einheit ist, wird jener Feind zusätzlich **Verwundbar**."
                         ]
                     }
                 ],
@@ -2099,13 +2103,13 @@
             "id": "40728",
             "name": "Dracarys!",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Sobald Daenerys’ Einheit aktiviert wird:",
                         "effect": [
-                            "Statt eine Aktion durchzuführen, bestimme 1 befreundete Drogon-, Rhaegal-, oder Viserion-Einheit innerhalb Kurzer Reichweite zum Ziel. Sie führt 1 Nahkampfangriffsaktion durch."
+                            "Statt eine Aktion durchzuführen, bestimme 1 befreundete Drogon-, Rhaegal-, oder Viserion-Einheit innerhalb Langer Reichweite zum Ziel. Sie führt 1 Nahkampfangriffsaktion durch."
                         ]
                     },
                     {
@@ -2149,15 +2153,14 @@
             "id": "40730",
             "name": "Versprechen des Feuers",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
                         "effect": [
                             "Falls jene zivile Einheit in dieser Aktivierung eine Zone auf der Taktiktafel beansprucht, lege diese Karte an 1 feindliche Kampfeinheit an. Sie muss 1 Panikprobe ablegen.",
-                            "Falls sie bei dieser Probe oder von einer Drogon-, Rhaegal- oder Viserion-Einheit vernichtet wird, solange diese Karte an dieser Einheit anliegt, erhalte 1 Siegpunkt.",
-                            "Falls 1 deiner Drogon-, Rhaegal- oder Viserion-Einheiten vernichtet wird, entferne diese Karte und dein Gegner erhält 1 Siegpunkt."
+                            "Solange diese Karte an diesem Feind anliegt, bei jedem Angriff einer Drogon-, Rhaegal- oder Viserion-Einheit erleidet jener Feind 3 Wunden statt D3 Wunden"
                         ]
                     }
                 ],
@@ -2170,7 +2173,7 @@
             "id": "40731",
             "name": "Fleisch gewordenes Feuer",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
@@ -2180,7 +2183,7 @@
                         ]
                     },
                     {
-                        "remove": "Entferne vor Spielbeginn die Taktikkarte „Überrennen“ aus deinem Taktikdeck und ersetze sie durch diese Karte."
+                        "remove": "Entferne vor Spielbeginn die Taktikkarte „Schlachtfeldkontrolle“ aus deinem Taktikdeck und ersetze sie durch diese Karte."
                     }
                 ],
                 "remove": "40701",
@@ -2398,7 +2401,7 @@
             "id": "40742",
             "name": "Schlachtruf",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
@@ -2406,7 +2409,7 @@
                         "effect": [
                             "Jene Einheit legt 1 Moralprobe ab.",
                             "Bei Bestehen bestimme 1 Feind innerhalb Langer Reichweite zum Ziel. Er wird **Panisch** oder **Verwundbar**.",
-                            "Falls sie Marselens Einheit ist, wird er bei Bestehen stattdessen **Panisch** und **Verwundbar**."
+                            "Falls sie Marselens Einheit oder eine Unbefleckten Einheit ist, wird er bei Bestehen stattdessen **Panisch** und **Verwundbar**."
                         ]
                     }
                 ],
@@ -2468,13 +2471,15 @@
             "id": "40745",
             "name": "Das Gesetz der Königin",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Lege diese Karte bis zum Ende der Runde an jenen Feind an:",
+                        "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
                         "effect": [
-                            "Solange diese Karte an jener Einheit anliegt, verliert jener Feind während deiner befreundeten Züge alle Fähigkeiten und kann nicht zum Ziel von seinen befreundeten Taktikkarten bestimmt werden. Sobald jener Feind vernichtet wird, erhalte 1 Siegpunkt. Falls diese Karte entfernt wird und jener Feind nicht vernichtet worden ist, erhält dein Gegner 1 Siegpunkt."
+                            "Lege diese Karte an jene feindliche Einheit bis zum Ende dieser Runde an.",
+                            "Solange diese Karte an jener Einheit anliegt, verliert jener Feind während der gegnerischen Züge, alle Fähigkeiten und kann nicht zum Ziel von seinen befreundeten Taktikkarten bestimmt werden.",
+							"Falls Skahaz's Einheit oder eine Messingtiere Einheit einen Ansturm gegen diese Einheit ausführt, zählt der Wurf für die Bewegungsweite des Ansturms automatisch als hättest du eine 6 gewürfelt."
                         ]
                     }
                 ],

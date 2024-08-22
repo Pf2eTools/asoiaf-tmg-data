@@ -448,7 +448,7 @@
             "id": "10612",
             "name": "Reiter von Rosengarten",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "cavalry",
                 "cost": 6,
@@ -461,14 +461,14 @@
                         "type": "melee",
                         "hit": 4,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
                 ],
                 "abilities": [
                     "Kavallerie",
-                    "Lanze"
+                    "Rosengarten Lanze"
                 ],
                 "wounds": 3,
                 "tray": "cavalry",
@@ -1109,7 +1109,7 @@
             "name": "Davos Seewert",
             "subname": "Der Held vom Schwarzwasser",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -1132,6 +1132,11 @@
                     "Final Strike"
                 ]
             },
+            "requirements": [
+                {
+                 "text": "*Davos ignoriert die üblichen Einschränkungen für Verstärkungen.*"
+                }
+            ],
             "fluff": {
                 "quote": "„Da kommt in mir der Wunsch auf, mehr Schmuggler in meinen Diensten zu haben. Und weniger Lords.“ – Stannis Baratheon"
             }
@@ -1193,7 +1198,7 @@
             "name": "Andru Estermont",
             "subname": "Der Erste der Männer des Königs",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -1221,7 +1226,7 @@
             "name": "Renly Baratheon",
             "subname": "Oberster Lehnsherr der Sturmlande",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -2024,15 +2029,22 @@
             "id": "40608",
             "name": "Unerklärliche Rückkehr",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
-                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht, ersetze den Effekt jener Zone durch:",
+                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
-                            "Wähle 1 der folgenden Effekte:",
-                            "*• Bewege 1 befreundete Verstärkung von 1 Einheit zu einer anderen befreundeten Einheit ohne Verstärkung innerhalb Langer Reichweite.*",
-                            "*• Lege 1 zuvor vernichtete befreundete Verstärkung an 1 befreundete Kampfeinheit ohne Verstärkung an (ersetze wie gewohnt eine Figur).*"
+                            "Ersetze den Effekt jener Zone durch:",
+							"*Wähle 1:*",
+                            "• *Bewege 1 befreundete Verstärkung von 1 Einheit zu einer anderen befreundeten Einheit ohne Verstärkung innerhalb Langer Reichweite.*",
+                            "• *Lege 1 zuvor vernichtete befreundete Verstärkung an 1 befreundete Kampfeinheit ohne Verstärkung an (ersetze wie gewohnt eine Figur).*"
+                        ]
+                    },
+					{
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
+                        "effect": [
+                            "Ziehe 1 Taktikkarte."
                         ]
                     }
                 ],
@@ -2384,15 +2396,15 @@
             "id": "40625",
             "name": "Taktisches Vorrücken",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "Zu Beginn der Runde:",
                         "effect": [
                             "Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege diese Karte bis zum Ende der Partie an jene Einheit an.",
-                            "Solange diese Karte an jener Einheit anliegt, immer wenn sie einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind, darfst du 1 Zustandsmarker vom Verteidiger ausgeben. Falls du das tust, fügt dieser Angriff +1W3 Wunden zu.",
-                            "Falls diese Karte Stannis’ Einheit zum Ziel hat, füge 3 Wunden zu, statt zu würfeln."
+                            "Solange diese Karte an jener Einheit anliegt, immer wenn sie einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind, darfst du 1 Zustandsmarker vom Verteidiger ausgeben. Falls du das tust, fügt dieser Angriff +1 Wunden zu.",
+                            "Falls diese Karte Stannis’ Einheit zum Ziel hat, füge +2 Wunden zu."
                         ]
                     }
                 ],
@@ -2720,7 +2732,7 @@
             "id": "40642",
             "name": "Rückzug und Neuformierung",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
