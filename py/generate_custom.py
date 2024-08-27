@@ -33,7 +33,7 @@ class CustomGenerator(Generator):
         self.generate(data, language)
 
 
-def main(path, skip_portrait=True):
+def main(path, skip_portrait=True, overwrite=True):
     json_data = load_json(path)
 
     meta = json_data.get("_meta")
@@ -53,7 +53,7 @@ def main(path, skip_portrait=True):
         ig_ncus,
         ig_attachments,
         json_data,
-        overwrite=True,
+        overwrite=overwrite,
         get_path=None,
         filter_data=None,
     )
@@ -99,5 +99,5 @@ def main(path, skip_portrait=True):
 
 
 if __name__ == "__main__":
-    main("./custom/data/cmon-prerelease.json", False)
-    # main("./custom/data/brew.json", True)
+    # main("./custom/data/cmon-prerelease.json", skip_portrait=False)
+    main("./custom/data/brew.json", overwrite=False)
