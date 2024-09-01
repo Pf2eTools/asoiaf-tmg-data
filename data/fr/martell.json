@@ -215,7 +215,7 @@
             "id": "10907",
             "name": "Chevaliers des Météores",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "type": "cavalry",
                 "cost": 8,
@@ -228,7 +228,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -324,14 +324,15 @@
                     {
                         "name": "Secrets de Lancehélion",
                         "effect": [
-                            "Chaque fois que Doran Martell s’empare de la zone correspondante pour le round, placez 1 pion Ordre sur cette carte.",
-                            "• Round 1 : s’empare de [MONEY] ou [SWORDS]",
-                            "• Round 2 : s’empare de [CROWN] ou [OASIS]",
-                            "• Round 3 : s’empare de [LETTER] ou [HORSE]",
-                            "• Round 4 : s’empare de [CROWN] ou [SWORDS]",
-                            "• Round 5 : s’empare de [MONEY] ou [OASIS]",
-                            "• Round 6 : s’empare de [LETTER] ou [HORSE]",
-                            "À la fin de chaque round, s’il y a 4+ pions Ordre sur Doran Martell, gagnez 1 Points de Victoire."
+                            "Chaque fois que Doran s’empare d'une zone, avant d'en résoudre l'effet placez 1 pion Ordre sur Doran, +1 s'il s'empare de [OASIS].",
+                            "Chaque fois que Doran s'empare de [OASIS], vous pouvez remplacer l'effet de cette zone par :",
+                            "*Retirez jusqu'à 4 pions Ordre de Doran, pour chaque pion retiré, choisissez 1 option :*",
+                            "*• Soignez jusqu'à 2 Blessures d'une unité.*",
+                            "*• Retirez 1 pion État d'une unité.*",
+                            "*• Piochez 1 Carte Tactique.*",
+                            "*• Placez 1 pion État sur une unité ennemie.*",
+                            "*• 1 unité alliée pivote et se décale de 2’’.*",
+                            "*• 1 unité Combatante ennemie subit 1 Blessure.*"
                         ]
                     }
                 ]
@@ -412,7 +413,7 @@
             "name": "Nymeria Sand",
             "subname": "Lady Nym",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "cost": 4,
                 "abilities": [
@@ -421,9 +422,9 @@
                         "effect": [
                             "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
                             "Tant que cette carte Influence une Unité d’Infanterie alliée :",
-                            "• Si votre adversaire ou vous contrôlez [CROWN], les Attaques de Mêlées de cette unité gagnent **Cruel**.",
-                            "• Si votre adversaire ou vous contrôlez [SWORDS], les Attaques de Mêlées de cette unité gagnent **Frappe Critique**.",
-                            "• Si votre adversaire ou vous contrôlez [OASIS], cette unité gagne +1 [MOVEMENT]."
+                            "• Si votre adversaire ou vous contrôlez [CROWN], les Attaques de Mêlée de cette unité gagnent **Cruel**.",
+                            "• Si votre adversaire ou vous contrôlez [SWORDS], les Attaques de Mêlée de cette unité gagnent **Frappe Critique**.",
+                            "• Si votre adversaire ou vous contrôlez [HORSE], cette unité gagne +1 [MOVEMENT]."
                         ]
                     }
                 ]
@@ -693,7 +694,7 @@
                 "version": "2021",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Précision",
                     "Charisme Fougueux"
@@ -932,8 +933,8 @@
                     {
                         "trigger": "Quand un ennemi effectue une action de Charge, avant de résoudre celle-ci :",
                         "effect": [
-                            "Si cet ennemi Charge une unité de Front, il subit une Charge Désordonnée sur des résultats de Distance de Charge de 3 ou moins.",
-                            "S’il subit une Charge Désordonnée, il devient **Vulnérable**."
+                            "Si cet ennemi Charge une unité de Front, il subit une Charge Désordonnée sur des résultats de Distance de Charge de 3 ou moins. S’il subit une Charge Désordonnée, il devient **Vulnérable**.",
+                            "Si le défenseur est l'unité de votre Général, l'ennemi subit une Charge Désordonnée sur des résultats de distance de Charge de 5 ou moins à la place."
                         ]
                     }
                 ]
@@ -984,7 +985,7 @@
                     {
                         "trigger": "Au début de n’importe quel round :",
                         "effect": [
-                            "Votre adversaire choisit 1 zone Stratégique, puis vous en choisissez une. La première fois qu’une UNC s’empare de 1 de ces zones ce round-ci, avant d'en résoudre l’effet, l'adversaire de celui qui s'est emparé de la zone peut cibler jusqu'à 2 Unités Combattantes ennemies, Elles deviennenent **Vulnérables** et **Affaiblies**."
+                            "Votre adversaire choisit 1 zone Stratégique, puis vous en choisissez une. La première fois qu’une UNC s’empare de 1 de ces zones ce round-ci, après en avoir résolu l’effet, l'adversaire de celui qui s'est emparé de la zone peut cibler jusqu'à 2 Unités Combattantes ennemies, Elles deviennenent **Vulnérables** et **Affaiblies**."
                         ]
                     }
                 ]
@@ -1001,9 +1002,10 @@
                         "trigger": "Quand une Unité Combattante ennemie est activée :",
                         "effect": [
                             "Attachez-lui cette carte jusqu’à ce qu’elle soit ciblée par [SWORDS].",
-                            "Tant que cette carte est attachée, cette unité subit les effets suivant en fonction du round de jeu *(cumulatif)*:**",
-                            "2+:** Ne peut pas être ciblée par des cartes Tactiques alliées.**",
-                            "3+:** Subit -1 pour Toucher. **4+:** Ne peut pas soigner ses Blessures."
+                            "Tant que cette carte est attachée, cette unité subit les effets suivant en fonction du round de jeu *(cumulatif)*:",
+                            "**2+:** Ne peut pas être ciblée par des cartes Tactiques alliées.",
+                            "**3+:** Subit -1 pour Toucher.",
+                            "**4+:** Ne peut pas soigner ses Blessures."
                         ]
                     }
                 ]
@@ -1019,7 +1021,7 @@
                     {
                         "trigger": "Quand une Unité Combattante alliée est activée :",
                         "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action soit de Manœuvre, soit de Marche, soit de Repli.",
+                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action de Manœuvre, de Marche ou de Repli.",
                             "Si vous contrôlez [SWORDS], avant que cette unité n’effectue son action, 1 ennemi situé à Longue Portée ou moins devient **Vulnérable**."
                         ]
                     }
@@ -1223,7 +1225,7 @@
                     {
                         "trigger": "Quand une unité ennemie a résolu une action :",
                         "effect": [
-                            "Si elle termine son action à Longue Portée ou moins de l’unité d’Obara Sand, cette unité ennemie devient **Paniquée** and **Affaiblie**."
+                            "Si elle termine son action à Longue Portée ou moins de l’unité d’Obara Sand, cette unité ennemie devient **Paniquée** et **Affaiblie**."
                         ]
                     },
                     {
@@ -1267,11 +1269,11 @@
                     {
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)*:**",
-                            "3+:** Peut relancer n’importe quels Échecs**",
-                            "4+: Fracasser****",
-                            "5+: Frappe Critique****",
-                            "6+:** +2 dés d'Attaque"
+                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée  cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)*:",
+                            "**3+:** Peut relancer n’importe quels Échecs",
+                            "**4+:** **Fracasser**",
+                            "**5+:** **Frappe Critique**",
+                            "**6+:** +2 dés d'Attaque"
                         ]
                     }
                 ],
@@ -1331,7 +1333,7 @@
                     {
                         "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
                         "effect": [
-                            "Ciblez 1 autre Unité Combattante alliée à Longue Portée ou moins de l’attaquant. Cette unité effectue une action de Manoeuvre ou de Repli."
+                            "Ciblez 1 autre Unité Combattante alliée à Longue Portée ou moins de l’attaquant. Cette unité effectue une action de Manœuvre ou de Repli."
                         ]
                     }
                 ],

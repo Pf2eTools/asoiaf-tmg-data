@@ -112,15 +112,15 @@
         },
         {
             "id": "10804",
-            "name": "Foregefers",
+            "name": "Forgefers",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 7,
                 "speed": 5,
                 "defense": 3,
-                "morale": 7,
+                "morale": 6,
                 "attacks": [
                     {
                         "name": "Grand Marteau",
@@ -129,7 +129,7 @@
                         "dice": [
                             7,
                             5,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -299,8 +299,8 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Scavenge",
-                    "Abundant Promises"
+                    "Ordre : Écumer",
+                    "Promesses d'Abondances"
                 ],
                 "tray": "infantry"
             },
@@ -322,7 +322,7 @@
                     {
                         "name": "Érudit au Sein des Pillards",
                         "effect": [
-                            "Rodrik Commence la partie avec 2 pions Ordre.",
+                            "Rodrik commence la partie avec 2 pions Ordre.",
                             "Au début de n’importe quel tour, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, choisissez n’importe quel nombre de cartes Tactique dans votre main et mettez-les de côté. Ensuite, piochez ce même nombre de cartes +1. Enfin, mélangez les cartes mises de côté dans votre paquet Tactique."
                         ]
                     }
@@ -350,7 +350,7 @@
                         "effect": [
                             "**Areon ne peut Influencer que des unités Greyjoy.**",
                             "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité, chaque fois que celle-ci effectue une action, elle se soigne 1 de ses Blessures avant de résoudre son action. Chaque fois que cette unité détruit un ennemi lors d’une Attaque de Mêlée, elle se soigne 1 de ses Blessures."
+                            "Tant que cette carte Influence une unité, chaque fois que celle-ci effectue une action, elle se soigne 1 de ses Blessures avant de résoudre son action. Chaque fois que cette unité détruit un rang ennemi lors d’une Attaque de Mêlée, elle soigne 1 de ses Blessures."
                         ]
                     }
                 ]
@@ -364,14 +364,14 @@
             "name": "Balon Greyjoy",
             "subname": "Roi du Sel et du Roc",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "cost": 5,
                 "abilities": [
                     {
                         "name": "Se Relever, la Lame à la Main",
                         "effect": [
-                            "Une fois par partie, quand Balon est activé, au lieu de le faire s’emparer d’une zone, redéployez 1 Unité Combattante précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée ou entièrement à Courte Portée ou moins d’un Flanc de table. Elle se déploie avec tous les pions Pillage qu’elle possédait. Si l’unité n’avait pas encore été activée ce round-ci, elle est déployée non activée. Dans le cas contraire, elle est déployée activée."
+                            "Une fois par partie, quand Balon est activé, au lieu de le faire s’emparer d’une zone, redéployez 1 Unité Combattante précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée ou entièrement à Courte Portée ou moins d’un Flanc de table. Elle se déploie sans les pions Pillage qu’elle possédait. Si l’unité n’avait pas encore été activée ce round-ci, elle est déployée non activée. Dans le cas contraire, elle est déployée activée."
                         ]
                     }
                 ]
@@ -417,9 +417,9 @@
                     {
                         "name": "Cadeaux de Fer, d'Or et d'Acier",
                         "effect": [
-                            "Au début de la partie, placez 2 pions Pillage sur Erik.",
-                            "Quand une UNC ennemie s’empare de [MONEY], placez 1 pion Pillage sur Erik.",
-                            "Quand Erik s’empare d’une zone autre que [MONEY], vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité alliée disposant de la capacité Pillage."
+                            "Au début de la partie, placez 1 pion Pillage sur Erik.",
+                            "Quand Erik ou une UNC ennemie s’empare de [MONEY], placez 1 pion Pillage sur Erik.",
+                            "Quand Erik s’empare d’une zone autre que [MONEY], vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité Greyjoy alliée."
                         ]
                     }
                 ],
@@ -466,7 +466,7 @@
                     {
                         "name": "La Magie de R'hllor",
                         "effect": [
-                            "Une fois par partie, au début d’un tour, vous pouvez utiliser cette capacité. Si vous le faites, jusqu’à la fin du tour, votre adversaire de peut pas utiliser d’Ordres ou de cartes Tactique.",
+                            "Une fois par partie, au début d’un tour, vous pouvez utiliser cette capacité. Si vous le faites, jusqu’à la fin du tour, votre adversaire ne peut pas utiliser d’Ordres ou de cartes Tactique.",
                             "Une fois par partie, quand Moqorro s’empare d’une zone, vous pouvez remplacer l’effet de cette zone par :",
                             "*Remettez en jeu 1 Attachement déjà détruit et attachez-le à une Unité Combattante alliée, en remplaçant normalement une figurine, mais en ignorant les restrictions d’Attachement.*"
                         ]
@@ -491,7 +491,7 @@
                         "effect": [
                             "**Beron ne peut Influencer que des unités Greyjoy.**",
                             "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du Round)* :",
-                            "**Tant que cette carte Influence une unité, celle-ci peut relancer n’importe quels dés de Test de et gagne la capacité **Endurci** :",
+                            "Tant que cette carte Influence une unité, celle-ci peut relancer n’importe quels dés des Tests de Moral et gagne la capacité **Endurci** :",
                             "**ENDURCI**",
                             "*Chaque fois qu’un ennemi effectue une attaque sur cette unité, après avoir lancé les dés de Défense, cette unité bloque 1 Touche pour chacun de ses rangs détruits.*"
                         ]
@@ -516,7 +516,7 @@
                         "effect": [
                             "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
                             "*Chaque fois qu’Asha Influence une unité, celle-ci retire 1 de ses pions État.",
-                            "Tant qu’Asha Influence une unité alliée, celle-ci gagne +1 à ses lancers de Test de Moral pour chacun de ses pions Pillage. Chaque fois que cette unité réussit un Test de Moral, ciblez 1 ennemi avec lequel elle est engagée. Cet ennemi subit 1 Blessure pour chaque pion Pillage sur cette unité."
+                            "Tant qu’Asha Influence une unité alliée, celle-ci gagne +1 à ses lancers de Test de Moral pour chacun de ses pions Pillage. Chaque fois que cette unité réussit un Test de Moral, ciblez 1 ennemi avec lequel elle est engagée. Cet ennemi subit 1 Touche pour chaque pion Pillage sur cette unité."
                         ]
                     }
                 ]
@@ -532,7 +532,7 @@
             "name": "Asha Greyjoy",
             "subname": "La Fille de la Seiche",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "C",
@@ -747,14 +747,14 @@
             "name": "Nutt",
             "subname": "Le Barbier",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Vassal de Victarion",
                     "Charge Furieuse",
-                    "Appât du Gain (Nute)"
+                    "Appât du Gain"
                 ],
                 "character": true
             },
@@ -867,7 +867,7 @@
             "name": "Asha Greyjoy",
             "subname": "« Lady Greyjoy »",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 2,
@@ -987,7 +987,7 @@
             "tactics": {
                 "cards": {
                     "40829": "Soif de gloire",
-                    "40830": "Tactique de coordination",
+                    "40830": "Jalousie du fer",
                     "40831": "Le savoir au prix du fer"
                 }
             },
@@ -1018,7 +1018,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Iron Credit"
+                    "Crédit de Fer"
                 ]
             }
         }
@@ -1035,7 +1035,7 @@
                         "trigger": "Quand une UNC alliée s’empare d’une zone :",
                         "effect": [
                             "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée.*",
+                            "*1 Unité Combattante Alliée effectue une action d’Attaque.*",
                             "*Si un adversaire contrôle [MONEY], cette unité se soigne de 1 Blessure, +1 pour chacun de ses rangs détruits.*"
                         ]
                     }
@@ -1094,7 +1094,7 @@
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
                             "Ciblez une Unité Combattante alliée et choisissez 1 option :",
-                            "• Cette unité peut retirer 1 de ses pions État. Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle soigne 2 de ses Blessures.",
+                            "• Cette unité peut retirer 1 de ses pions État. Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle soigne 2 de ses Blessures, +1 Blessure pour chacun de ses rangs détruits.",
                             "• Cette unité attaque en utilisant sa plus haute valeur de dés ce tour-ci. . Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle peut relancer ses dés d'Attaque ce tour-ci."
                         ]
                     }
@@ -1112,7 +1112,7 @@
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
                             "Ciblez une Unité Combattante alliée. Attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, quand il effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, l'attaquant peut subir 2 Blessures. Pour chque Blessure subie, choisissez 1 option :",
+                            "Tant que cette carte est attachée, quand il effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, l'attaquant peut subir jusqu'à 2 Blessures. Pour chaque Blessure subie, choisissez 1 option :",
                             "• Le défenseur devient **Paniqué**.",
                             "• Le défenseur devient **Vulnérable**.",
                             "• Cette attaque peut relancer n'importe quels dés d'Attaque."
@@ -1131,8 +1131,8 @@
                     {
                         "trigger": "Quand une unité d’Infanterie Greyjoy alliée est activée :",
                         "effect": [
-                            "Retirez un maximum de 3 figurines et un maximum de 1 pion Pillage d’une autre unité d’Infanterie Greyjoy alliée située à Longue Portée ou moins. Cette unité se soigne d’autant de Blessures et gagne le pion Pillage retiré.",
-                            "Si un joueur quelconque contrôle [MONEY] ,1 unité d’Infanterie Greyjoy alliée gagne 1 pion Pillage."
+                            "Retirez un maximum de 3 figurines et un maximum de 1 pion Pillage d’une autre unité d’Infanterie Greyjoy alliée située à Longue Portée ou moins. Cette unité se soigne d’autant de Blessures +1 et gagne le pion Pillage retiré.",
+                            "Si un joueur quelconque contrôle [MONEY], 1 unité d’Infanterie Greyjoy alliée gagne 1 pion Pillage."
                         ]
                     }
                 ]
@@ -1149,7 +1149,7 @@
                         "trigger": "Quand une Unité Combattante alliée est activée :",
                         "effect": [
                             "Ciblez 1 ennemi engagé avec cette unité. Pour chaque rang détruit de cet ennemi, cette unité se soigne de 2 Blessures.",
-                            "Si vous contrôlez [MONEY] or [SWORDS], pour chacune de ces zones que vous contrôlez, cette unité se soigne de +1 Blessure ou retire un pion État."
+                            "Si vous contrôlez [MONEY] ou [SWORDS], pour chacune de ces zones que vous contrôlez, cette unité se soigne de +1 Blessure ou retire un pion État."
                         ]
                     }
                 ]
@@ -1248,7 +1248,7 @@
                         "effect": [
                             "Remplacez l’effet de cette zone par :",
                             "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée.*",
-                            "*Si cette carte cible l’unité de Victarion Greyjoy, elle peut effectuer une action de Charge à la place.*"
+                            "*Si cette unité est l’unité de Victarion Greyjoy, elle peut effectuer une action de Charge à la place.*"
                         ]
                     }
                 ],
@@ -1285,7 +1285,7 @@
                 "faction": "greyjoy",
                 "text": [
                     {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                        "trigger": "Quand une unité alliée effectue une attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
                             "Si le défenseur n’a pas été activé ce round-ci, cette attaque peut relancer n’importe quels dés d’Attaque et gagne soit **Précision**, soit **Cruel**. Si l’attaquant est l’unité de Theon Greyjoy, il gagne les deux."
                         ]
@@ -1435,7 +1435,7 @@
                     {
                         "trigger": "Quand une Unité Combattante alliée est activée :",
                         "effect": [
-                            "Cette unité ne peut pas effectuer d’actions ce tour-ci. À la place, ciblez une autre unité alliée. Elle effectue 1 action soit de Manœuvre, soit de Marche, soit de Repli.",
+                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action de Manœuvre, de Marche ou de Repli.",
                             "S’il s’agit de l’unité d’Euron Greyjoy, avant d’effectuer cette action, 1 ennemi situé à Longue Portée ou moins devient **Vulnérable**."
                         ]
                     }
@@ -1477,9 +1477,9 @@
                         "effect": [
                             "Ciblez le défenseur. Il bloque +1 Touche.",
                             "Si cette carte cible une unité Greyjoy, une fois cette attaque résolue, attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)* : **",
-                            "• 1+ :** Chaque fois que cette unité est attaquée, une fois l’attaque résolue, 1 ennemi avec lequel elle est engagée devient **Affaibli**. **",
-                            "• 2 :** Chaque fois que cette unité réussit un Test de Moral, elle soigne 1 de ses Blessures."
+                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)*:",
+                            "• **1+ :** Chaque fois que cette unité est attaquée, une fois l’attaque résolue, 1 ennemi avec lequel elle est engagée devient **Affaibli**.",
+                            "• **2 :** Chaque fois que cette unité réussit un Test de Moral, elle soigne 1 de ses Blessures."
                         ]
                     }
                 ],
@@ -1523,9 +1523,9 @@
                         "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
                         "effect": [
                             "Elle peut relancer n’importe quels dés de ce Test. Si elle réussit, et si cette carte cible une unité Greyjoy, attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)* : **",
-                            "• 1+ :** +1 aux lancers de Test de Moral.**",
-                            "• 2 :** Si cette unité doit gagner un pion Pillage, elle soigne 1 de ses Blessures à la place."
+                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)* :",
+                            "• **1+ :** +1 aux lancers de Test de Moral.",
+                            "• **2 :** Si cette unité doit gagner un pion Pillage, elle soigne 1 de ses Blessures à la place."
                         ]
                     }
                 ],
@@ -1598,14 +1598,15 @@
             "id": "40829",
             "name": "Soif de gloire",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
-                            "Attachez cette carte à une Unité Combattante alliée jusqu’à la fin du round.",
-                            "Tant que cette carte est attachée, cette unité compte comme ayant 2 pions Pillage et ses Attaques de Mêlée gagnent +1 pour Toucher.",
+                            "Ciblez 1 Unité Greyjoy alliée, elle gagne 1 pion Pillage.",
+                            "Attachez-lui cette carte jusqu'à la fin du round.",
+                            "Tant que cette carte est attachée les Attaques de Mêlée de cette unité gagnent +1 pour Toucher.",
                             "De plus, tant que cette carte est attachée, cette unité subit −1 à ses lancers de dés de Défense."
                         ]
                     }
@@ -1617,17 +1618,19 @@
         },
         {
             "id": "40830",
-            "name": "Tactique de coordination",
+            "name": "Jalousie du fer",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "greyjoy",
                 "text": [
                     {
-                        "trigger": "Au début de n’importe quel tour :",
+                        "trigger": "Quand une Unité Combattante Greyjoy alliée est activée :",
                         "effect": [
-                            "Ciblez 2 unités d’Infanterie alliées, situées à Courte Portée ou moins l’une de l’autre.",
-                            "Jusqu’à la fin du tour, ces unités gagnent chacune les Capacités non innées de l’autre.",
-                            "Vous pouvez immédiatement déclencher un Ordre non utilisé « Début du Tour » de l’une ou l’autre De ces unités."
+                            "Cette unité subit 1 Blessure et devient **Vulnérable**",
+                            "Choisissez 1 option, +1 pour chaque unité alliée possédant des pions Pillage située à Courte Portée ou moins :",
+                            "• Cette unité gagne **Fracasser** ce tour.",
+                            "• Cette unité gagne **Cruel** ce tour.",
+                            "• Retirer 1 pion Pillage d'1 autre unité Infanterie Greyjoy alliée située à Courte Portée ou moins et placez-le sur cette unité."
                         ]
                     }
                 ],

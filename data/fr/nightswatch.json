@@ -432,7 +432,7 @@
                 ]
             },
             "fluff": {
-                "lore": "Allié un jour, ennemi le lendemain, l’être connu sous le nom de Mains-Froides est un spectre mystérieux aux motivations inconnues qui peut aussi bien soutenir les troupes que les harceler. Les nuées de corbeaux qu’il commande fondent sur ses adversaires, les noyant dans une mer d’ailes battantes et de griffes acérées. Au combat, il monte un gigantesque orignac et fait preuve d’une formidable prouesse martiale. Il porte l’armure et le manteau noir des frères de la Garde de Nuit, bien que nul ne puisse affirmer s’il s’agit des siens ou s’ils ont été pris sur la dépouille d’un ennemi. Lorsqu’il a été vaincu, Mains-Froides réapparaît peu après sur le champ de bataille."
+                "lore": "Allié un jour, ennemi le lendemain, l’être connu sous le nom de Mains-Froides est un spectre mystérieux aux motivations inconnues qui peut aussi bien soutenir les troupes que les harceler. Les nuées de corbeaux qu’il commande fondent sur ses adversaires, les noyant dans une mer d’ailes battantes et de griffes acérées. Au combat, il monte un gigantesque orignal et fait preuve d’une formidable prouesse martiale. Il porte l’armure et le manteau noir des frères de la Garde de Nuit, bien que nul ne puisse affirmer s’il s’agit des siens ou s’ils ont été pris sur la dépouille d’un ennemi. Lorsqu’il a été vaincu, Mains-Froides réapparaît peu après sur le champ de bataille."
             }
         },
         {
@@ -581,7 +581,7 @@
                     {
                         "name": "Sacrifice pour la Cause",
                         "effect": [
-                            "Au début de n’importe quel tour, si Qhorin n’est pas sur le Tableau Stratégique, vous pouvez le détruire. Si vous le faites, ciblez une unité ennemie. Cet ennemi devient **Vulnérable** et ne peut effectuer d’actions d'Attaque ou de Charge ce tour-ci."
+                            "Au début de n’importe quel tour, si Qhorin n’est pas sur le Tableau Stratégique, vous pouvez le détruire. Si vous le faites, ciblez une unité ennemie. Cet ennemi devient **Vulnérable** et ne peut effectuer d’actions d'Attaque ou de Charge ce round."
                         ]
                     },
                     {
@@ -746,7 +746,7 @@
                             "Chaque fois que Yoren s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par :",
                             "*Placez 1 pion Ordre sur Yoren.*",
                             "Au début d’un round, vous pouvez retirer 4 pions Ordre de Yoren.",
-                            "Si vous le faites, Si vous le faites, déployez 1 unité de Conscrits entièrement à Longue Portée ou moins d’un bord de table allié."
+                            "Si vous le faites, déployez 1 unité de Conscrits entièrement à Longue Portée ou moins d’un bord de table allié."
                         ]
                     }
                 ]
@@ -1370,7 +1370,7 @@
             "name": "Benjen Stark",
             "subname": "Au-Delà du Mur",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": "C",
@@ -1440,7 +1440,7 @@
                 "cards": {
                     "40532": "Méthodes réactives",
                     "40533": "Prouesse guerrière",
-                    "40534": "Temperé par  le devoir"
+                    "40534": "Tempéré par  le devoir"
                 }
             },
             "fluff": {
@@ -1453,13 +1453,14 @@
             "id": "40501",
             "name": "L'épée dans les ténèbres",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si le défenseur n’a pas été activé ce round-ci, il devient**Paniqué** et **Vulnérable**."
+                            "Le défenseur devient **Vulnérable**.",
+                            "Si le défenseur n’a pas été activé ce round-ci, il devient également **Paniqué**."
                         ]
                     },
                     {
@@ -1475,13 +1476,14 @@
             "id": "40502",
             "name": "Le feu qui flambe contre le froid",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
                         "effect": [
-                            "Cette unité peut relancer n’importe quels dés de ce test."
+                            "Cette unité peut relancer n’importe quels dés de ce test.",
+                            "Si cette carte cible l'unité de votre Général, elle réussit ce Test à la place."
                         ]
                     },
                     {
@@ -1503,7 +1505,7 @@
                     {
                         "trigger": "Quand un ennemi effectue une attaque,après avoir lancé les dés de Défense :",
                         "effect": [
-                            "Ciblez le Défenseur :Il peut relancer n’importe quels dés de Défense."
+                            "Ciblez le Défenseur. Il peut relancer n’importe quels dés de Défense."
                         ]
                     },
                     {
@@ -1523,9 +1525,9 @@
                 "faction": "nightswatch",
                 "text": [
                     {
-                        "trigger": "Après qu’une unité alliéea été attaquée :",
+                        "trigger": "Après qu’une unité alliée a été attaquée :",
                         "effect": [
-                            "Ciblez 1 Unité Combattante alliée autre que le défenseur. Cette unité pivote ;puis se décale de 2’’."
+                            "Ciblez 1 Unité Combattante alliée autre que le défenseur. Cette unité pivote puis se décale de 2’’."
                         ]
                     },
                     {
@@ -1541,19 +1543,20 @@
             "id": "40505",
             "name": "La lumière qui rallume l'aube",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Cette attaque peut relancern’importe quels Échecs."
+                            "Cette attaque peut relancer n’importe quels Échecs."
                         ]
                     },
                     {
                         "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
                         "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, cette unité gagne +1 au résultats des Tests de Moral,"
+                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, cette unité gagne +1 au résultat des Tests de Moral,",
+                            "Si cette unité est celle de votre Général, cette unité ne peut pas devenir **Paniquée**."
                         ]
                     }
                 ]
@@ -1585,7 +1588,7 @@
                     {
                         "trigger": "Quand une unité alliée est détruite par un Attaque de Mêlée :",
                         "effect": [
-                            "Ciblez l’Attaquant. Il devient **Vulnérable**. Ciblez ensuite une ou plusieurs unités alliées à Logue Portée ou moins. Elles soignent 2 de leurs Blessures."
+                            "Ciblez l’Attaquant. Il devient **Vulnérable**. Ciblez ensuite une ou plusieurs unités alliées à Longue Portée ou moins. Elles soignent 2 de leurs Blessures."
                         ]
                     },
                     {
@@ -1860,7 +1863,7 @@
                 ],
                 "commander_id": "20522",
                 "commander_name": "Othell Yarwyck",
-                "commander_subname": "First Builder"
+                "commander_subname": "Premier Constructeur"
             }
         },
         {
@@ -1879,7 +1882,7 @@
                 ],
                 "commander_id": "20522",
                 "commander_name": "Othell Yarwyck",
-                "commander_subname": "First Builder"
+                "commander_subname": "Premier Constructeur"
             }
         },
         {
@@ -1899,7 +1902,7 @@
                 ],
                 "commander_id": "20522",
                 "commander_name": "Othell Yarwyck",
-                "commander_subname": "First Builder"
+                "commander_subname": "Premier Constructeur"
             }
         },
         {
@@ -2037,7 +2040,7 @@
                         "effect": [
                             "Remplacez les effets de cette zone par :",
                             "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée.*",
-                            "*Si cette carte cible l’unité de Cotter Pyke, celle-ci peut effectuer 1 action de Charge à la place.*"
+                            "*Si cette unité est l’unité de Cotter Pyke, celle-ci peut effectuer 1 action de Charge à la place.*"
                         ]
                     }
                 ],
@@ -2135,7 +2138,7 @@
         },
         {
             "id": "40534",
-            "name": "Temperé par  le devoir",
+            "name": "Tempéré par  le devoir",
             "statistics": {
                 "version": "S04",
                 "faction": "nightswatch",
@@ -2143,7 +2146,7 @@
                     {
                         "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
                         "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité est activée, vous pouvez cibler 1 ennemi à Longue Portée ou moins et en Ligne de Vue. Il gagne 1 pion État."
+                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Quand cette carte est attachée et chaque fois que cette unité est activée, vous pouvez cibler 1 ennemi à Longue Portée ou moins et en Ligne de Vue. Il gagne 1 pion État."
                         ]
                     }
                 ],

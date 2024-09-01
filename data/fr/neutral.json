@@ -181,7 +181,7 @@
             "id": "10406",
             "name": "Mercenaires Corbeaux Tornade",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
@@ -201,7 +201,7 @@
                     }
                 ],
                 "abilities": [
-                    "Appât du Gain (Stormcrow Mercenaries)"
+                    "Appât du Gain"
                 ],
                 "tray": "infantry",
                 "requirements": [
@@ -296,7 +296,7 @@
             "id": "10409",
             "name": "Derviches Corbeaux Tornade",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
@@ -318,7 +318,7 @@
                 "abilities": [
                     "Embuscade",
                     "Frappe Éclair",
-                    "Appât du Gain (Stormcrow Dervishes)"
+                    "Appât du Gain"
                 ],
                 "tray": "infantry"
             },
@@ -373,7 +373,7 @@
                 "morale": 6,
                 "attacks": [
                     {
-                        "name": "Frappe Tactique",
+                        "name": "Épée Longue de Maître",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -583,7 +583,8 @@
                         "name": "Oisillons",
                         "effect": [
                             "Varys commence la partie avec 3 pions Ordre sur sa carte.",
-                            "Chaque fois qu’une UNC ennemie s’empare d’une zone, après en avoir résolu l’effet, vous pouvez retirer 1 pion Ordre de Varys. Si vous le faites, gagnez l’effet suivant en fonction de la zone : [CROWN] : 1 ennemi subit 1 Test de Panique.",
+                            "Chaque fois qu’une UNC ennemie s’empare d’une zone, après en avoir résolu l’effet, vous pouvez retirer 1 pion Ordre de Varys. Si vous le faites, gagnez l’effet suivant en fonction de la zone : ",
+                            "[CROWN] : 1 ennemi subit 1 Test de Panique.",
                             "[MONEY] : Soignez 2 Blessures de 1 unité alliée.",
                             "[LETTER] : Piochez 1 carte Tactique.",
                             "[SWORDS] : 1 ennemi subit 3 Touches.",
@@ -684,7 +685,7 @@
                         "effect": [
                             "Une fois par partie, quand Walder s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
                             "*Choisissez 2 options:*",
-                            "• *1 ennemi devient Affaibli, Vulnérable and Paniqué.*",
+                            "• *1 ennemi devient Affaibli, Vulnérable et Paniqué.*",
                             "• *1 unité alliée soigne 3 de ses Blessures.*",
                             "• *Au début du prochain round, vous devenez le Premier Joueur.*"
                         ]
@@ -707,7 +708,9 @@
                     {
                         "name": "Rumeurs Horribles",
                         "effect": [
-                            "Roose commence la partie avec 3 pions Ordre sur sa carte. Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**. Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                            "Roose commence la partie avec 3 pions Ordre sur sa carte.",
+                            "Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**.",
+                            "Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
                             "*1 Unité Combattante ennemie subit 1 Test de Panique.*"
                         ]
                     }
@@ -723,7 +726,8 @@
         },
         {
             "id": "30409",
-            "name": "Shae,Cachée à la Cour",
+            "name": "Shae",
+            "subname": "Cachée à la Cour",
             "statistics": {
                 "version": "2021",
                 "faction": "neutral",
@@ -736,7 +740,7 @@
                             "À la fin de chaque Round, si Shae ne détient plus aucun pion Ordre, détruisez-la.",
                             "Chaque fois que Shae s’empare d’une Zone, avant d’en résoudre l’effet, choisissez une option :",
                             "• Soignez 1 Blessure sur 1 unité alliée.",
-                            "• 1 unité ennemie devient Affaiblie.",
+                            "• 1 unité ennemie devient **Affaiblie**.",
                             "• Shae gagne 2 pions Ordre."
                         ]
                     }
@@ -815,7 +819,7 @@
         {
             "id": "20404",
             "name": "Theon Greyjoy",
-            "subname": "Shlingue",
+            "subname": "Schlingue",
             "statistics": {
                 "version": "2021-S01",
                 "faction": "neutral",
@@ -859,13 +863,13 @@
             "name": "Bronn",
             "subname": "Épée-Louée",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Loyauté Intéressée",
-                    "Appât du Gain (Bronn)"
+                    "Appât du Gain"
                 ],
                 "character": true
             },
@@ -888,7 +892,7 @@
         },
         {
             "id": "20409",
-            "name": "Vashé Hèvre",
+            "name": "Varshé Hèvre",
             "subname": "La Chèvre d'Harrenhal",
             "statistics": {
                 "version": "2021-S03",
@@ -916,7 +920,7 @@
         },
         {
             "id": "20410",
-            "name": "Vashé Hèvre",
+            "name": "Varshé Hèvre",
             "subname": "L'Estropieur",
             "statistics": {
                 "version": "2021",
@@ -939,14 +943,14 @@
             "name": "Daario Naharis",
             "subname": "Capitaine Corbeau Tornade",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Affiliation : Corbeaux Tornade",
                     "Armement Amélioré",
-                    "Appât du Gain (Daario Naharis)"
+                    "Appât du Gain"
                 ],
                 "commander": true,
                 "character": true
@@ -1014,7 +1018,7 @@
         {
             "id": "20415",
             "name": "Roose Bolton",
-            "subname": "Le Seigneur Sangsues",
+            "subname": "Le Seigneur Sangsue",
             "statistics": {
                 "version": "2021",
                 "faction": "neutral",
@@ -1023,7 +1027,7 @@
                 "abilities": [
                     "Ordre : Répandre la Peur",
                     "Affiliation : Maison Bolton",
-                    "Présence Intimidante"
+                    "Se nourrir de la peur"
                 ],
                 "commander": true,
                 "character": true
@@ -1043,13 +1047,13 @@
             "id": "20416",
             "name": "Quêteur de Fortune",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 1,
                 "abilities": [
                     "Audacieux",
-                    "Appât du Gain (Fortune Seeker)"
+                    "Appât du Gain"
                 ]
             }
         },
@@ -1071,7 +1075,7 @@
             "id": "20418",
             "name": "Officier de la Compagnie Dorée",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
@@ -1164,7 +1168,7 @@
                 "version": "2021",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": 1,
+                "cost": 0,
                 "abilities": [
                     "Attaque en Bande"
                 ],
@@ -1189,7 +1193,7 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Ordre : État d’Alerte"
+                    "Précision Aigüe"
                 ],
                 "commander": true,
                 "character": true
@@ -1240,7 +1244,6 @@
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Protecteur du Veuf",
                     "Précision Aigüe"
                 ],
                 "character": true
@@ -1277,7 +1280,7 @@
     "tactics": [
         {
             "id": "40401",
-            "name": "Panification et prévision",
+            "name": "Planification et prévision",
             "statistics": {
                 "version": "2021",
                 "faction": "neutral",
@@ -1403,9 +1406,9 @@
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
                             "Attachez cette carte à une unité de Cavalerie ou d’Infanterie alliée jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, chaque fois qu’un ennemi situé à Courte Portée ou moins est détruit, placez 1 pion Ordre sur cette carte. Les Attaques de Mêlée de cette unité gagnent les effets suivants en fonction du nombre de pions Ordre *(cumulatif)* : **",
-                            "1+ :** Lance sa valeur de dés d’Attaque la plus élevée et, avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**.",
-                            "**2 :** +1 pour Toucher."
+                            "Tant que cette carte est attachée, chaque fois qu’un ennemi situé à Courte Portée ou moins est détruit, placez 1 pion Ordre sur cette carte. Les Attaques de Mêlée de cette unité gagnent les effets suivants en fonction du nombre de pions Ordre *(cumulatif)* : ",
+                            "**1+ :** Lance sa valeur de dés d’Attaque la plus élevée et, avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**.",
+                            "**2+ :** +1 pour Toucher."
                         ]
                     }
                 ]
@@ -1490,27 +1493,27 @@
                 ],
                 "commander_id": "20415",
                 "commander_name": "Roose Bolton",
-                "commander_subname": "Le Seigneur Sangsues"
+                "commander_subname": "Le Seigneur Sangsue"
             }
         },
         {
             "id": "40412",
             "name": "La peur garde l'homme en vie",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "text": [
                     {
                         "trigger": "Quand un ennemi échoue un Test de Panique :",
                         "effect": [
-                            "Ciblez un nombre au choix d’unités de la Maison Bolton alliées situées à Longue Portée ou moins.",
-                            "Pour chaque Blessure infligée par ce Test de Panique, soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités."
+                            "Ciblez un nombre au choix d’unités de la Maison Bolton alliées situées à Longue Portée ou moins. Soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités.",
+                            "Si cet ennemi est situé à Courte Portée ou moins de l'unité de Roose, soignez +1 Blessure."
                         ]
                     }
                 ],
                 "commander_id": "20415",
                 "commander_name": "Roose Bolton",
-                "commander_subname": "Le Seigneur Sangsues"
+                "commander_subname": "Le Seigneur Sangsue"
             }
         },
         {
@@ -1529,7 +1532,7 @@
                 ],
                 "commander_id": "20415",
                 "commander_name": "Roose Bolton",
-                "commander_subname": "Le Seigneur Sangsues"
+                "commander_subname": "Le Seigneur Sangsue"
             }
         },
         {
@@ -1548,7 +1551,7 @@
                     }
                 ],
                 "commander_id": "20409",
-                "commander_name": "Varshé Hèvret",
+                "commander_name": "Varshé Hèvre",
                 "commander_subname": "La Chèvre d'Harrenhal"
             }
         },
@@ -1568,7 +1571,7 @@
                     }
                 ],
                 "commander_id": "20409",
-                "commander_name": "Varshé Hèvret",
+                "commander_name": "Varshé Hèvre",
                 "commander_subname": "La Chèvre d'Harrenhal"
             }
         },
@@ -1582,13 +1585,13 @@
                     {
                         "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Le défenseur devient **Paniqué**, **Vulnérable**.",
+                            "Le défenseur devient **Vulnérable**.",
                             "Si le défenseur est **Affaibli**, l’attaquant peut relancer n’importe quels dés d’Attaque."
                         ]
                     }
                 ],
                 "commander_id": "20409",
-                "commander_name": "Varshé Hèvret",
+                "commander_name": "Varshé Hèvre",
                 "commander_subname": "La Chèvre d'Harrenhal"
             }
         },
@@ -1662,7 +1665,7 @@
                     {
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
-                            "Attachez cette carte à une Unité Combattante alliée jusqu’à la fin de la partie ou qu’elle échoue un Test de Panique.",
+                            "Attachez cette carte à une Unité Combattante Corbeau Tornade alliée jusqu’à la fin de la partie ou qu’elle échoue un Test de Panique.",
                             "Tant que cette carte est attachée, chaque fois que cette unité attaque, elle lance +1 dé d’Attaque pour chaque autre unité alliée située à Courte Portée ou moins.",
                             "Si cette unité se trouve à Courte Portée ou moins de l’unité de Jokin, elle gagne +1 dé d’Attaque supplémentaire."
                         ]
@@ -1684,7 +1687,7 @@
                         "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
                         "effect": [
                             "Ciblez 1 autre unité alliée située à Longue Portée ou moins du défenseur.",
-                            "Elle effectue 1 action de Manoeuvre."
+                            "Elle effectue 1 action de Manœuvre."
                         ]
                     }
                 ],

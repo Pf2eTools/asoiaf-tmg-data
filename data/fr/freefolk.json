@@ -4,7 +4,7 @@
             "id": "10301",
             "name": "Géant Sauvage",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 7,
@@ -15,9 +15,9 @@
                     {
                         "name": "Balayage Enragé",
                         "type": "melee",
-                        "hit": 2,
+                        "hit": 3,
                         "dice": [
-                            1
+                            4
                         ]
                     }
                 ],
@@ -36,7 +36,7 @@
             "id": "10302",
             "name": "Trappeurs du Peuple Libre",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 4,
@@ -323,26 +323,26 @@
             "id": "10310",
             "name": "Ours",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 0,
-                "speed": 5,
-                "defense": 5,
-                "morale": 2,
+                "speed": 4,
+                "defense": 3,
+                "morale": 3,
                 "attacks": [
                     {
                         "name": "Mutilation Sauvage",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            1
+                            3
                         ]
                     }
                 ],
                 "abilities": [
                     "Ours Lié",
-                    "Mutilation Sauvage"
+                    "Mutilation Sauvage (Bear)"
                 ],
                 "tray": "infantry",
                 "requirements": [
@@ -826,6 +826,55 @@
             "fluff": {
                 "lore": "Qu’il y a-t-il de pire dans une bataille que de devoir affronter des géants ? Se retrouver face à des géants qui lancent des épieux de la taille d’un tronc d’arbre. Grâce à son alliance avec les géants, le Peuple Libre peut désormais aligner leurs Lanceurs d’Épieux, une véritable artillerie sur pattes. Leurs armes sont certes rudimentaires, mais une hampe de bois aussi épaisse que le torse d’un homme ne requiert guère de finesse. Toutefois, ces géants peuvent rapidement se retrouver débordés au corps à corps et doivent donc être protégés."
             }
+        },
+        {
+            "id": "10323",
+            "name": "Avant-garde d'Harma",
+            "statistics": {
+                "version": "S05",
+                "faction": "freefolk",
+                "type": "cavalry",
+                "cost": 5,
+                "speed": 5,
+                "defense": 6,
+                "morale": 7,
+                "attacks": [
+                    {
+                        "name": "Armes Rudimentaires",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Ordre : Approche planifiée",
+                    "Cavalerie"
+                ],
+                "wounds": 3,
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "North of the wall horses are a somewhat rare sighting, which makes Harma Dogshead’s Vanguard all the more inspiring for the Free Folk. While lightly armored and crudely armed compared to southern troops, these cavalry units serve as more than outriders, being both scouts and spearheads to the Free Folk armies. Their greatest weakness is in fact their lack of armor, but this gives rise to their greatest strength: pure speed."
+            },
+            "portrait": {
+                "x": 502,
+                "y": 215,
+                "r": 216
+            },
+            "portrait_square": {
+                "x": 285,
+                "y": 4,
+                "a": 431
+            },
+            "standee": {
+                "x": 199,
+                "y": 29,
+                "w": 539,
+                "h": 769
+            }
         }
     ],
     "ncus": [
@@ -842,7 +891,7 @@
                         "name": "La Dame des Forêts",
                         "effect": [
                             "Chaque fois que Lady Val s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*1 Unité Combattante alliée effectue 1 action de Manoeuvre ou de Repli.*"
+                            "*1 Unité Combattante alliée effectue 1 action de Manœuvre ou de Repli.*"
                         ]
                     }
                 ]
@@ -1006,7 +1055,7 @@
                         "name": "Résilience Nordienne",
                         "effect": [
                             "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
-                            "* Tant que qu’elle est influencée par cette carte, l’unité gagne +1 à ses lancers de Test de Moral et subit -1 Blessure quand ellle échoue un Test de Panique."
+                            "Tant qu’elle est influencée par cette carte, l’unité gagne +1 à ses lancers de Test de Moral et subit -1 Blessure quand ellle échoue un Test de Panique."
                         ]
                     },
                     {
@@ -1074,7 +1123,7 @@
             "name": "Mance Rayder",
             "subname": "Roi d'Au-Délà du Mur",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
@@ -1140,13 +1189,12 @@
             "id": "20307",
             "name": "Change-Peau",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Lien du Change-Peau",
-                    "Vaillance"
+                    "Lien du Change-Peau"
                 ]
             }
         },
@@ -1154,7 +1202,7 @@
             "id": "20308",
             "name": "Aigle",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "none",
                 "cost": 0,
@@ -1173,7 +1221,7 @@
             "id": "20309",
             "name": "Loup",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "none",
                 "cost": 0,
@@ -1206,7 +1254,7 @@
             "name": "Styr",
             "subname": "Magnar de Thenn",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
@@ -1219,7 +1267,7 @@
             },
             "tactics": {
                 "cards": {
-                    "40323": "Riposte finale",
+                    "40323": "Disparition Amère",
                     "40324": "Bravade des Thenn",
                     "40325": "Vengeance de Styr"
                 }
@@ -1427,14 +1475,19 @@
             "name": "Jarl",
             "subname": "Grand Chef de Raid",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Attaque de Flanc"
                 ],
-                "character": true
+                "character": true,
+                "requirements": [
+                    {
+                        "text": "*Jarl ignore les restrictions d’attachement normales.*"
+                    }
+                ]
             },
             "fluff": {
                 "quote": "« Le Mur se défend lui-même. »"
@@ -1577,7 +1630,7 @@
                 "character": true,
                 "requirements": [
                     {
-                        "text": "*Cette figurine n’est utilisée qu’avec laCapacité Maître Change-Peau de Varamyr.*"
+                        "text": "*Cette figurine n’est utilisée qu’avec la Capacité Maître Change-Peau de Varamyr.*"
                     }
                 ]
             }
@@ -1613,7 +1666,7 @@
                         "effect": [
                             "Ciblez 2 unités d’Infanterie alliées, situées à Courte Portée ou moins l’une de l’autre.",
                             "Jusqu’à la fin du tour, ces unités gagnent chacune les Capacités non innées de l’autre.",
-                            "Vous pouvez immédiatement déclencher un Ordre non utilisé « Début du Tour » de l’une ou l’autre De ces unités."
+                            "Vous pouvez immédiatement déclencher un Ordre non utilisé « Début du Tour » de l’une ou l’autre de ces unités."
                         ]
                     }
                 ]
@@ -1680,7 +1733,7 @@
                     {
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
-                            "Ciblez 1 unité ennemie. Pour chacune de vos unités alliées au-delà de la première situées à Courte Portée ou moins qui possède plus de rangs que cet ennemi, celui-ci gagne 1 pion État."
+                            "Ciblez 1 unité ennemie. Pour chacune de vos unités alliées au-delà de la première situées à Courte Portée ou moins, celui-ci gagne 1 pion État."
                         ]
                     }
                 ]
@@ -1902,7 +1955,7 @@
                     {
                         "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
                         "effect": [
-                            "Si cette effectue 1 action de Repli.",
+                            "Cette unité effectue 1 action de Repli.",
                             "Si cette carte cible l’unité d’Harma, chaque ennemi duquel elle se désengage devient **Affaibli**."
                         ]
                     }
@@ -1963,7 +2016,7 @@
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
                             "Ciblez 1 Unité Combattante ennemie. Vous pouvez dépenser 1 pion **Paniqué** de cette unité. Si vous le faites, choisissez 2 options :",
-                            "• 1unité d’Infanterie alliée située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*.",
+                            "• 1 unité d’Infanterie alliée située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*.",
                             "• Cet ennemi devient **Vulnérable**.",
                             "• Cet ennemi devient **Affaibli**."
                         ]
@@ -2018,16 +2071,16 @@
         },
         {
             "id": "40323",
-            "name": "Riposte finale",
+            "name": "Disparition Amère",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                        "trigger": "Quand une unité d'Infanterie ou de Cavalerie alliée est détruite :",
                         "effect": [
-                            "Pour chaque Blessure subie par le Défenseur, l'attaquant subit 1 Touche.",
-                            "Si le défenseur était à Longue Portée ou moins de l’unité de Styr, cet ennemi subit −1 à ses lancers de dés de Défense contre ces Touches."
+                            "Avant de retirer cette unité, elle effectue 1 Action d'Attaque de Mêlée utilisant la valeur de dés d'Attaque la plus élevée.",
+                            "Si cette carte cible l'unité de Styr, celle-ci peut relancer n'importe quels dés d'Attaque."
                         ]
                     }
                 ],
@@ -2122,14 +2175,14 @@
             "id": "40328",
             "name": "Enragé",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "text": [
                     {
                         "trigger": "Au début de l’activation d’une Unité Monstrueuse alliée :",
                         "effect": [
                             "Cette unité subit 2 Blessures.",
-                            "Jusqu’à la fin du tour, cette unité peut relancer les dés d’Attaque de son choix et les défenseurs deviennent **Paniqués**."
+                            "Jusqu’à la fin du tour, cette unité peut relancer les dés d’Attaque de son choix et les défenseurs deviennent **Paniqués** et **Affaiblis**."
                         ]
                     }
                 ],
@@ -2271,7 +2324,7 @@
                     {
                         "trigger": "Au début de l’activation d’une Unité Monstrueuse alliée :",
                         "effect": [
-                            "Cette unité devient **Vulnéerable**. Jusqu’à la fin du tour, cette unité gagne +2 [MOVEMENT] et peut relancer les dés de Distance de Charge de son choix."
+                            "Cette unité devient **Vulnérable**. Jusqu’à la fin du tour, cette unité gagne +2 [MOVEMENT] et peut relancer les dés de Distance de Charge de son choix."
                         ]
                     }
                 ],
@@ -2291,10 +2344,10 @@
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
                             "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)* :**",
-                            "3+:** Peut relancer n’importe quels Échecs.**",
-                            "4+:** **Fracasser****",
-                            "5+:** **Frappe Critique****",
-                            "6+:** +2 dés d’Attaque"
+                            "**3+:** Peut relancer n’importe quels Échecs.",
+                            "**4+:** **Fracasser**",
+                            "**5+:** **Frappe Critique**",
+                            "**6+:** +2 dés d’Attaque"
                         ]
                     }
                 ],
@@ -2353,7 +2406,7 @@
                     {
                         "trigger": "Au début d’un tour ennemi :",
                         "effect": [
-                            "Choisissez soit le Lynx-de- Fumée, soit la Meute de Loups. Si cette unité est sur le champ de bataille, vous pouvez la retirer.",
+                            "Choisissez soit le Lynx-de-Fumée, soit la Meute de Loups. Si cette unité est sur le champ de bataille, vous pouvez la retirer.",
                             "Ensuite, si cette unité n’est pas sur le champ de bataille *(grâce à cet effet ou après avoir été détruite)*, redéployez-la entièrement à Courte Portée ou moins de n’importe quel flanc de table. Si cette unité avait déjà été activée ce tour-ci, elle est redéployée activée."
                         ]
                     }
@@ -2373,7 +2426,7 @@
                     {
                         "trigger": "Après qu’un ennemi a résolu une attaque sur une unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée :",
                         "effect": [
-                            "Ciblez 1 autre unité Varamyr, Lynxde- Fumée, ou Meute de Loups alliée.",
+                            "Ciblez 1 autre unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée.",
                             "Elle effectue une action d’Attaque, de Charge ou de Manœuvre. Si elle attaque ou Charge, elle doit cibler l’attaquant."
                         ]
                     }
@@ -2385,7 +2438,7 @@
         },
         {
             "id": "40341",
-            "name": "Ordes liés",
+            "name": "Ordres liés",
             "statistics": {
                 "version": "2021",
                 "faction": "freefolk",
@@ -2393,7 +2446,7 @@
                     {
                         "trigger": "Quand une unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée est activée :",
                         "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité Varamyr, Lynx-de- Fumée, ou Meute de Loups alliée située à Longue Portée ou moins. Elle effectue 1 action."
+                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée située à Longue Portée ou moins. Elle effectue 1 action."
                         ]
                     }
                 ],

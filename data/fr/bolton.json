@@ -69,12 +69,12 @@
             "id": "11003",
             "name": "Archers de Fort Terreur",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": 6,
                 "speed": 5,
-                "defense": 6,
+                "defense": 5,
                 "morale": 7,
                 "attacks": [
                     {
@@ -189,7 +189,7 @@
             "id": "11006",
             "name": "Piquiers de Fort Terreur",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": 5,
@@ -232,10 +232,8 @@
                     {
                         "name": "L'Ambition de Frey",
                         "effect": [
-                            "Chaque fois que Walda s’empare de [CROWN], 1 unité Combattante",
-                            "ennemie devient **Affaiblie**.",
-                            "Chaque fois que Walda s’empare de [LETTER] , vous pouvez remplacer",
-                            "l’effet de cette zone par :",
+                            "Chaque fois que Walda s’empare de [CROWN], 1 unité Combattante ennemie devient **Affaiblie**.",
+                            "Chaque fois que Walda s’empare de [LETTER] , vous pouvez remplacer l’effet de cette zone par :",
                             "*Cherchez 1 carte Tactique de **Général** dans votre paquet Tactique ou votre défausse et ajoutez-la à votre main. Mélangez votre paquet Tactique.*",
                             "Chaque fois que Walda s’empare de [MONEY], vous pouvez soigner +1 Blessure au lieu de retirer un pion État."
                         ]
@@ -282,7 +280,9 @@
                     {
                         "name": "Rumeurs Horribles",
                         "effect": [
-                            "Roose commence la partie avec 3 pions Ordre sur sa carte. Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**. Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                            "Roose commence la partie avec 3 pions Ordre sur sa carte.",
+                            "Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**.",
+                            "Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
                             "*1 Unité Combattante ennemie subit 1 Test de Panique.*"
                         ]
                     }
@@ -354,12 +354,13 @@
             "name": "Ramsay Snow",
             "subname": "Héritier Fielleux",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Visage Horrifique"
+                    "Visage Horrifique",
+                    "Se nourrir de la peur"
                 ],
                 "commander": true,
                 "character": true
@@ -518,7 +519,7 @@
         },
         {
             "id": "21009",
-            "name": "Grogne",
+            "name": "L'Écorcheur",
             "subname": "Gars du Bâtard",
             "statistics": {
                 "version": "2021",
@@ -541,7 +542,7 @@
         },
         {
             "id": "21010",
-            "name": "L'Écorcheur",
+            "name": "Grogne",
             "subname": "Gars du Bâtard",
             "statistics": {
                 "version": "2021",
@@ -609,11 +610,12 @@
             "name": "Walton",
             "subname": "Jarret d'Acier, Capitaine de la Garde",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+                    "Fracasser",
                     "Volonté de Fer",
                     "Peur Partagée"
                 ],
@@ -662,7 +664,7 @@
                     {
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Elle devient **Paniquée**.",
+                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie.",
                             "Tant que cette carte est attachée, les Attaques de Mêlée de cette unité lancent toujours leur valeur de dés la plus élevée et gagnent **Fracasser**. Chaque fois que cette unité échoue un Test de Panique, elle subit +1 Blessure."
                         ]
                     }
@@ -679,8 +681,8 @@
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si le Défenseur est **Paniqué**, cette attaque gagne **Précision**.",
-                            "Si le Défenseur est **Paniqué**, et si l’Attaquant est une unité de la Maison Bolton, cette attaque peut également relancer n’importe quels dés d’attaque."
+                            "Cette attaque gagne **Précision**.",
+                            "Si le Défenseur est **Paniqué**, cette attaque peut également relancer n’importe quels dés d’attaque."
                         ]
                     }
                 ]
@@ -698,8 +700,7 @@
                         "effect": [
                             "Votre adversaire choisit 1 option *(vous ne désignez les cibles qu’une fois le choix effectué)* :",
                             "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées**.",
-                            "• Ciblez 1 ennemi engagé. Il subit 2 Touches, +1 par rang restant de",
-                            "toutes les unités de la Maison Bolton avec lesquelles il est engagé."
+                            "• Ciblez 1 ennemi engagé. Il subit 2 Touches, +1 par rang restant de toutes les unités alliées avec lesquelles il est engagé."
                         ]
                     }
                 ]
@@ -745,14 +746,14 @@
             "id": "41007",
             "name": "La peur garde l'homme en vie",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "bolton",
                 "text": [
                     {
                         "trigger": "Quand un ennemi échoue un Test de Panique :",
                         "effect": [
-                            "Ciblez un nombre au choix d’unités alliées situées à Longue Portée ou moins.",
-                            "Pour chaque Blessure infligée par ce Test de Panique, soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités."
+                            "Ciblez un nombre au choix d’unités alliées situées à Longue Portée ou moins. Soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités.",
+                            "Si cet ennemi est situé à Courte Portée ou moins de l'unité de votre Général, soignez +1 Blessure."
                         ]
                     }
                 ]
@@ -787,7 +788,7 @@
                 "faction": "bolton",
                 "text": [
                     {
-                        "trigger": "Quand une unité alliée effectue une Attaque, avant de lancer les dés d’Attaque :",
+                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
                             "Si le défenseur n’a pas été activé ce round-ci, cette attaque peut relancer n’importe quels dés d’Attaque et gagne **Précision** ou **Cruel**. Si l’attaquant est l’unité de Ramsay Snow, elle gagne les deux."
                         ]
@@ -827,8 +828,7 @@
                     {
                         "trigger": "Quand une UNC ennemie est activée :",
                         "effect": [
-                            "Si cette UNC s’empare d’une zone ce tour-ci, après en avoir résolu",
-                            "l’effet, ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
+                            "Si cette UNC s’empare d’une zone ce tour-ci, après en avoir résolu l’effet, ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
                             "Ciblez ensuite 1 Unité Combattante ennemie. Elle devient **Paniquée**."
                         ]
                     }
@@ -849,8 +849,7 @@
                         "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
                         "effect": [
                             "Cet ennemi devient **Vulnérable** et **Paniqué**.",
-                            "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité de Kevan Lannister attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas",
-                            "être ciblé par des cartes Tactique alliées."
+                            "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité de Roose attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
                         ]
                     }
                 ],

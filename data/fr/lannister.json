@@ -145,7 +145,7 @@
             "id": "10105",
             "name": "Chevaliers de Castral Roc",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "lannister",
                 "type": "cavalry",
                 "cost": 8,
@@ -158,7 +158,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -466,7 +466,7 @@
             "id": "10114",
             "name": "Garde d'Honneur de Castral Roc",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 7,
@@ -634,6 +634,7 @@
                     {
                         "name": "Allégeance aux Sept",
                         "effect": [
+                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
                             "Tant que cette carte Influence un ennemi, chaque fois que celui-ci subit des Blessures en ayant échoué un Test de Panique, ciblez 1 unité alliée située à Longue Portée ou moins. Elle se soigne du même nombre de Blessures, maximum 3."
                         ]
                     }
@@ -680,7 +681,7 @@
                             "Cersei commence la partie avec 2 pions Ordre.",
                             "Quand Cersei s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
                             "Si vous contrôlez [CROWN], cherchez 1 exemplaire de **Je Rugis !** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
-                            "Si vous contrôlez [MONEY], cherchez 1 exemplaire de **Soumission au Pouvoir** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
+                            "Si vous contrôlez [MONEY], cherchez 1 exemplaire d'**Assujettissement au Pouvoir** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
                         ]
                     }
                 ],
@@ -787,7 +788,7 @@
                         "effect": [
                             "Tommen commence la partie avec 2 pions Ordre sur sa carte.",
                             "Chaque fois que Tommen s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
-                            "Si vous contrôlez [CROWN], cherchez 1 exemplaire d’**Intrigue et Subterfuge** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
+                            "Si vous contrôlez [CROWN], cherchez 1 exemplaire d’**Intrigue et Faux-Semblants** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
                             "Si vous contrôlez [MONEY], cherchez 1 exemplaire de **Pot-De-Vin** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
                         ]
                     }
@@ -1045,7 +1046,7 @@
         },
         {
             "id": "20112",
-            "name": "Preston Verschamps",
+            "name": "Preston Verchamps",
             "subname": "Garde Royal",
             "statistics": {
                 "version": "2021",
@@ -1082,7 +1083,7 @@
         {
             "id": "20114",
             "name": "Gregor Clegane",
-            "subname": "Chien Enragé de Lord Tywin's",
+            "subname": "Chien Enragé de Lord Tywin",
             "statistics": {
                 "version": "2021",
                 "faction": "lannister",
@@ -1268,12 +1269,12 @@
             "name": "Le Grand Moineau",
             "subname": "Sa Sainteté Suprême",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Ordre : Incitation",
+                    "Présence Intimidante",
                     "Enhardir"
                 ],
                 "commander": true,
@@ -1466,7 +1467,7 @@
     "tactics": [
         {
             "id": "40101",
-            "name": "Intrigue et  faux-semblants",
+            "name": "Intrigue et Faux-Semblants",
             "statistics": {
                 "version": "2021",
                 "faction": "lannister",
@@ -1492,7 +1493,7 @@
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
                             "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité de Cavalerie ou d’Infanterie alliée est détruite, placez 1 pion Ordre sur cette carte.",
-                            "Tant que cette carte est pourvue d’un pion, les Attaques de Mêlée de l’unité attachée gagnent **Cruel** et, tant que contrôlez [CROWN], +1 pour Toucher."
+                            "Tant que cette carte est pourvue d’un pion, les Attaques de Mêlée de l’unité attachée gagnent **Cruel** et, tant que vous contrôlez [CROWN], +1 pour Toucher."
                         ]
                     }
                 ]
@@ -1534,7 +1535,7 @@
         },
         {
             "id": "40105",
-            "name": "Contre-complot",
+            "name": "Contre-Complot",
             "statistics": {
                 "version": "2021-S03",
                 "faction": "lannister",
@@ -1543,8 +1544,7 @@
                         "trigger": "Quand un adversaire joue une carte Tactique, avant de résoudre celle-ci :",
                         "effect": [
                             "Lancez 1 dé : Sur un résultat de 3+, annulez les effets de la carte Tactique.",
-                            "Si vous contrôlez [CROWN] ou [LETTER], vous annulez l’effet de la",
-                            "carte sur un 2+.",
+                            "Si vous contrôlez [CROWN] ou [MONEY], vous annulez l’effet de la carte sur un 2+.",
                             "Si vous contrôlez les deux, vous réussissez automatiquement."
                         ]
                     }
@@ -1563,7 +1563,6 @@
                         "effect": [
                             "Ciblez 1 unité alliée située à Longue Portée ou moins.",
                             "Pour chaque Blessure que cet ennemi a subie lors de ce Test, soignez 1 Blessure de l’unité alliée ciblée, maximum 3.",
-                            ".",
                             "Si vous contrôlez [CROWN], infligez +1 Blessure à l’unité ennemie et soignez 1 Blessure supplémentaire de l’unité alliée *(maximum 4)*."
                         ]
                     }
@@ -1572,7 +1571,7 @@
         },
         {
             "id": "40107",
-            "name": "Assujetissement au pouvoir",
+            "name": "Assujettissement au pouvoir",
             "statistics": {
                 "version": "2021-S03",
                 "faction": "lannister",
@@ -1580,7 +1579,7 @@
                     {
                         "trigger": "Quand une Unité Combattante ennemie est activée :",
                         "effect": [
-                            "Cet ennemi effectue un Test de Moral. Pour chaque zone que vous contrôlez entre [CROWN] et [SWORDS], il subit −1 à son lancer.",
+                            "Cet ennemi effectue un Test de Moral. Pour chaque zone que vous contrôlez entre [CROWN] et [MONEY], il subit −1 à son lancer.",
                             "S’il échoue, jusqu’à la fin du tour, il ne peut plus être ciblé par des cartes Tactique alliées et perd toutes ses Capacités."
                         ]
                     }
@@ -1674,7 +1673,7 @@
                     {
                         "trigger": "Quand une unité alliée effectue une Percée :",
                         "effect": [
-                            "Au lieu de faire une Percée, cetteunité effectue 1 action de Charge ou de Marche.",
+                            "Au lieu de faire une Percée, cette unité effectue 1 action de Charge ou de Marche.",
                             "Si cette carte cible une unité de la Maison Clegane, celle-ci peut relancer n’importe quels dés de Distance de Charge."
                         ]
                     }
@@ -1696,7 +1695,7 @@
                         "effect": [
                             "Remplacez les effets de cette zone par :",
                             "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée.*",
-                            "*Si cette carte cible une unité de la Maison Clegane, celle-ci peut effectuer 1 action de Charge à la place.*"
+                            "*Si cette unité est une unité de la Maison Clegane, celle-ci peut effectuer 1 action de Charge à la place.*"
                         ]
                     }
                 ],
@@ -1753,7 +1752,7 @@
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "Quand une Unité Combattante ennemie échoue un Test de Panique :",
+                        "trigger": "Quand une Unité Combattante ennemie échoue un Test de Moral :",
                         "effect": [
                             "Cet ennemi devient **Affaibli**.",
                             "Attachez-lui cette carte jusqu’à ce qu’il réussisse un Test de Moral.",
@@ -1821,7 +1820,7 @@
                     {
                         "trigger": "Quand une Unité Combattante alliée est activée :",
                         "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action soit de Manœuvre, soit de Marche, soit de Repli.",
+                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action de Manœuvre, de Marche ou de Repli.",
                             "S’il s’agit de l’unité de Tyrion, avant d’effectuer cette action, 1 ennemi situé à longue Portée ou moins de cette unité devient **Vulnérable**."
                         ]
                     }
@@ -1856,14 +1855,15 @@
             "id": "40120",
             "name": "Miséricorde de la Mère",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "Quand une Unité Combattante alliée est activée :",
                         "effect": [
+                            "Retirez 1 pion État de cette unité.",
                             "Cette unité effectue 1 Test de Moral.",
-                            "Si elle réussit, soignez 2 Blessures de cette unité, +1 par chacun de ses rangs détruits.",
+                            "Si elle réussit, soignez 2 Blessures de cette unité, +1 pour chacun de ses rangs détruits.",
                             "Si elle échoue, soignez 1 de ses Blessures."
                         ]
                     }
@@ -1875,15 +1875,17 @@
         },
         {
             "id": "40121",
-            "name": "Protection  du Père",
+            "name": "Protection du Père",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après avoir lancé les dés de Défense :",
                         "effect": [
-                            "Le défenseur effectue 1 Test de Moral. S’il réussit, il peut relancer n’importe quels dés de Défense. S’il échoue, il bloque +1 Touche."
+                            "Le défenseur effectue 1 Test de Moral.",
+                            "S'il réussit, il bloque +3 Touches.",
+                            "S'il échoue, il bloque +1 Touche."
                         ]
                     }
                 ],
@@ -1902,7 +1904,9 @@
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si elle réussit, cette attaque gagne +1 pour Toucher et **Fracasser**. Si elle échoue, cette attaque inflige +1 Touche."
+                            "Cette unité effectue un Test de Moral.",
+                            "Si elle réussit, cette attaque gagne +1 pour Toucher et **Fracasser**.",
+                            "Si elle échoue, cette attaque inflige +1 Touche."
                         ]
                     }
                 ],
@@ -1943,7 +1947,7 @@
                         "effect": [
                             "Ciblez 1 Unité Combattante ennemie et attachez-lui cette carte.",
                             "Tant que cette carte est attachée, les Attaques de Mêlée alliées effectuées sur cette unité gagnent **Cruel**.",
-                            "À la fin du round, si cet ennemi n’a pas été détruit, retirez-lui cette carte et chaque unité qui l’a attaqué ce round-ci devient **Paniquée** and **Vulnérable**."
+                            "À la fin du round, si cet ennemi n’a pas été détruit, retirez-lui cette carte et chaque unité qui l’a attaqué ce round-ci devient **Paniquée** et **Vulnérable**."
                         ]
                     }
                 ],
@@ -1962,7 +1966,8 @@
                     {
                         "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après le lancer des dés de Défense :",
                         "effect": [
-                            "Ciblez le défenseur. Il bloque +2 Touches. Après que cette attaque a été résolue, le défenseur devient **Paniqué** and **Affaibli**."
+                            "Ciblez le défenseur. Il bloque +2 Touches.",
+                            "Après que cette attaque a été résolue, le défenseur devient **Paniqué** et **Affaibli**."
                         ]
                     }
                 ],
@@ -2001,7 +2006,8 @@
                     {
                         "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
                         "effect": [
-                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est l’unité d’Addam Marpheux, l’attaquant devient également **Paniqué**."
+                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur.",
+                            "Si le défenseur est l’unité d’Addam Marpheux, l’attaquant devient également **Paniqué**."
                         ]
                     }
                 ],
@@ -2047,7 +2053,7 @@
                         "trigger": "Au début du premier tour ennemi d'un round :",
                         "effect": [
                             "Ciblez 1 Unité Combattante ennemie et 1 UNC ennemie.",
-                            "Si l’une ou l’autre de ces unités effectue une action ce tour-ci, avant de résoudre celle-ci, 1 Unité Combattante alliée effectue 1 action d’Attaque,de Manœuvre ou de Repli."
+                            "Si l’une ou l’autre de ces unités effectue une action ce tour-ci, avant de résoudre celle-ci, 1 Unité Combattante alliée effectue 1 action d’Attaque, de Manœuvre ou de Repli."
                         ]
                     }
                 ],

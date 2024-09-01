@@ -247,6 +247,11 @@
                     {
                         "name": "Loyauté ",
                         "text": "**STANNIS BARATHEON**"
+                    },
+                    {
+                        "name": "Loyauté ",
+                        "heading": "STANNIS BARATHEON",
+                        "text": "*Dans votre armée, vous ne pouvez recruter ni d’unité ni d’Attachement avec une loyauté différente.*"
                     }
                 ]
             },
@@ -447,7 +452,7 @@
             "id": "10612",
             "name": "Cavaliers de Hautjardin",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "cavalry",
                 "cost": 6,
@@ -456,18 +461,18 @@
                 "morale": 6,
                 "attacks": [
                     {
-                        "name": "Lance",
+                        "name": "Lance de Hautjardin",
                         "type": "melee",
                         "hit": 4,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
                 ],
                 "abilities": [
                     "Cavalerie",
-                    "Lance"
+                    "Lance de Hautjardin"
                 ],
                 "wounds": 3,
                 "tray": "cavalry",
@@ -647,7 +652,7 @@
         },
         {
             "id": "30603",
-            "name": "Melisandre",
+            "name": "Mélisandre",
             "subname": "La Femme Rouge",
             "statistics": {
                 "version": "2021-S03",
@@ -1108,7 +1113,7 @@
             "name": "Davos Mervault",
             "subname": "Héros de la Néra",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -1118,7 +1123,12 @@
                     "Éclaireur"
                 ],
                 "commander": true,
-                "character": true
+                "character": true,
+                "requirements": [
+                    {
+                        "text": "*Davos ignore les restrictions d’attachement normales.*"
+                    }
+                ]
             },
             "tactics": {
                 "cards": {
@@ -1133,7 +1143,12 @@
             },
             "fluff": {
                 "quote": "« À l’écouter, je me dis : que n’ai-je davantage de contrebandiers à mon service. Et moins de lords. » – Stannis Baratheon"
-            }
+            },
+            "requirements": [
+                {
+                    "text": "*Davos ignore les restrictions d’attachement normales.*"
+                }
+            ]
         },
         {
             "id": "20608",
@@ -1192,7 +1207,7 @@
             "name": "Andrew Estremont",
             "subname": "Premier des Hommes du Roi",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -1220,7 +1235,7 @@
             "name": "Renly Baratheon",
             "subname": "Seigneur Suzerain des Terres de l'Orage",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
@@ -1414,7 +1429,7 @@
         },
         {
             "id": "20620",
-            "name": "Dragonstone Noble",
+            "name": "Noble de Peyredragon",
             "statistics": {
                 "version": "2021",
                 "faction": "baratheon",
@@ -1428,6 +1443,10 @@
                         "name": "Loyauté ",
                         "heading": "STANNIS BARATHEON",
                         "text": "*Dans votre armée, vous ne pouvez recruter ni d’unité ni d’Attachement avec une loyauté différente.*"
+                    },
+                    {
+                        "name": "Limité ",
+                        "text": "*Votre armée ne peut pas contenir plus de 2 Nobles de Peyredragon.*"
                     }
                 ]
             }
@@ -1841,7 +1860,7 @@
         {
             "id": "20636",
             "name": "Robar Royce",
-            "subname": "Robar The Rouge",
+            "subname": "Robar le Rouge",
             "statistics": {
                 "version": "2021",
                 "faction": "baratheon",
@@ -1995,8 +2014,8 @@
                     {
                         "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
                         "effect": [
-                            "Pour chaque Blessure subie par le défenseur, l'attaquant subit 1 Touche,",
-                            "Si vous contrôlez [CROWN], l'attaquant subit −1 à ses lancers de dés de Défense contre ces Touches.."
+                            "Pour chaque Blessure subie par le défenseur, l'attaquant subit 1 Touche.",
+                            "Si vous contrôlez [CROWN], l'attaquant subit −1 à ses lancers de dés de Défense contre ces Touches."
                         ]
                     }
                 ]
@@ -2023,7 +2042,7 @@
             "id": "40608",
             "name": "Retour inexplicable",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
@@ -2032,6 +2051,12 @@
                             "Choisissez 1 option :",
                             "*• Déplacez 1 Attachement allié de 1 unité à une autre unité alliée sans Attachement située à Longue Portée ou moins.*",
                             "*• Attachez 1 Attachement allié précédemment détruit à 1 Unité Combattante alliée sans Attachement (en remplaçant normalement une figurine).*"
+                        ]
+                    },
+                    {
+                        "trigger": "Au début d’un tour allié :",
+                        "effect": [
+                            "Piochez 1 carte Tactique."
                         ]
                     }
                 ],
@@ -2209,10 +2234,10 @@
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
                             "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)* :**",
-                            "3+ :** Peut relancer n’importe quels Échecs.**",
-                            "4+:** **Fracasser****",
-                            "5+:** **Frappe Critique****",
-                            "6+:** +2 dés d'Attaque"
+                            "**3+:** Peut relancer n’importe quels Échecs.",
+                            "**4+:** **Fracasser**",
+                            "**5+:** **Frappe Critique**",
+                            "**6+:** +2 dés d’Attaque"
                         ]
                     }
                 ],
@@ -2277,8 +2302,7 @@
                         "trigger": "Quand un adversaire joue une carte Tactique, avant de résoudre celle-ci :",
                         "effect": [
                             "Lancez 1 dé : Sur un résultat de 3+, annulez les effets de la carte Tactique.",
-                            "Si vous contrôlez [CROWN] ou [LETTER], vous annulez l’effet de la",
-                            "carte sur un 2+.",
+                            "Si vous contrôlez [CROWN] ou [LETTER], vous annulez l’effet de la carte sur un 2+.",
                             "Si vous contrôlez les deux, vous réussissez automatiquement."
                         ]
                     }
@@ -2403,15 +2427,15 @@
             "id": "40625",
             "name": "Approche tactique",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "Au début du round :",
                         "effect": [
                             "Ciblez 1 Unité Combattante alliée. Attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, chaque fois que cette unité effectue une Attaque de Mêlée, après avoir lancé les dés d’attaque, vous pouvez dépenser 1 pion État du défenseur. Si vous le faites, cette attaque inflige +D3 Blessures.",
-                            "Si cette carte cible l’unité de Stannis, infligez 3 Blessures au lieu de lancer le dé."
+                            "Tant que cette carte est attachée, chaque fois que cette unité effectue une Attaque de Mêlée, après avoir lancé les dés d’attaque, vous pouvez dépenser 1 pion État du défenseur. Si vous le faites, cette attaque inflige +1 Blessure.",
+                            "Si cette carte cible l’unité de Stannis, infligez +2 Blessures à la place."
                         ]
                     }
                 ],
@@ -2539,7 +2563,6 @@
                         "effect": [
                             "Ciblez 1 unité alliée située à Longue Portée ou moins.",
                             "Pour chaque Blessure que cet ennemi a subie lors de ce Test, soignez 1 Blessure de l’unité alliée ciblée, maximum 3.",
-                            ".",
                             "Si vous contrôlez [CROWN], infligez +1 Blessure à l’unité ennemie et soignez 1 Blessure supplémentaire de l’unité alliée *(maximum 4)*."
                         ]
                     }
@@ -2581,7 +2604,7 @@
                         "effect": [
                             "Remplacez l’effet de cette zone par :",
                             "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée.*",
-                            "*Si cette carte cible l’unité d'Andrew Estremont, elle peut effectuer une action de Charge à la place.*"
+                            "*Si cette unité est l’unité d'Andrew Estremont, elle peut effectuer une action de Charge à la place.*"
                         ]
                     }
                 ],
@@ -2677,16 +2700,8 @@
                 "faction": "baratheon",
                 "text": [
                     {
-                        "trigger": "When a R'hllor unit Activates:",
+                        "trigger": "Quand une unité R’hllor est activée :",
                         "effect": [
-                            "This unit performs a Morale Test.",
-                            "On a success, 1 enemy engaged",
-                            "with this unit suffers 1 Panic Test",
-                            "with -1 for each remaining rank",
-                            "in this unit.",
-                            "On a failure, 1 enemy engaged",
-                            "with this unit becomes **Panicked**.**",
-                            "Quand une unité R’hllor est activée :**",
                             "Cette unité effectue un Test de Moral.",
                             "Si elle réussit, 1 ennemi avec lequel elle est engagée subit 1 Test de Panique, avec -1 pour chaque rang restant dans cette unité.",
                             "Si elle échoue, 1 ennemi avec lequel elle est engagée devient **Paniqué**."
@@ -2847,7 +2862,7 @@
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
                             "Ciblez 1 Unité Combattante alliée.",
-                            "Cette unité effectue un Test de Moral. Pour chaque zone que vous contrôlez entre [CROWN] and [LETTER], elle gagne +1 à son lancer.",
+                            "Cette unité effectue un Test de Moral. Pour chaque zone que vous contrôlez entre [CROWN] et [LETTER], elle gagne +1 à son lancer.",
                             "Si elle réussit, chaque ennemi avec lequel elle est engagé effectue un Test de Panique.",
                             "Si cette carte cible l’unité de Renly et qu’elle réussit, c’est chaque ennemi situé à Courte Portée ou moins qui subit un test de Panique."
                         ]

@@ -182,11 +182,11 @@
             "id": "10206",
             "name": "Boucliers Liges de la Maison Tully",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -286,7 +286,7 @@
             "id": "10209",
             "name": "Pisteurs Paludiers",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 5,
@@ -404,7 +404,7 @@
             "id": "10213",
             "name": "Cavaliers de la Maison Tully",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "type": "cavalry",
                 "cost": 8,
@@ -417,7 +417,7 @@
                         "type": "melee",
                         "hit": 3,
                         "dice": [
-                            6,
+                            5,
                             4
                         ]
                     }
@@ -748,7 +748,8 @@
                     {
                         "name": "Ne Jamais Faire le Geste Escompté",
                         "effect": [
-                            "Arya commence la partie avec 3 pions Ordre sur sa carte. Au début d’un tour ennemi, vous pouvez retirer 1 pion Ordre d'Arya.Si vous le faites, ciblez 1 unité d’Infanterie alliée. Elle effectue 1 action de Manoeuvre ou de Repli."
+                            "Arya commence la partie avec 2 pions Ordre sur sa carte.",
+                            "Au début d’un tour ennemi, vous pouvez retirer 1 pion Ordre d'Arya. Si vous le faites, ciblez 1 unité d’Infanterie alliée. Elle effectue 1 action de Manœuvre ou de Repli."
                         ]
                     }
                 ],
@@ -993,7 +994,7 @@
         },
         {
             "id": "20207",
-            "name": "Bran and Hodor",
+            "name": "Bran et Hodor",
             "subname": "Protecteur et Pupille",
             "statistics": {
                 "version": "2021-S01",
@@ -1195,7 +1196,7 @@
             "name": "Meera Reed",
             "subname": "Trappeuse Rusée",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -1622,13 +1623,14 @@
             "id": "40209",
             "name": "Position supérieure",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "Quand un ennemi effectue une action de Charge, avant de résoudre celle-ci :",
                         "effect": [
-                            "Si cet ennemi Charge une unité de Front, il subit une Charge Désordonnée sur des lancers de Distance de Charge de 3 ou moins. S’il subit une Charge Désordonnée, il devient **Vulnérable**."
+                            "Si cet ennemi Charge une unité de Front, il subit une Charge Désordonnée sur des lancers de Distance de Charge de 3 ou moins. S’il subit une Charge Désordonnée, il devient **Vulnérable**.",
+                            "Si cette carte cible l'unité de Robb Stark, l'ennemi subit une Charge Désordonnée sur des lancers de Distance de Charge de 5 ou moins à la place."
                         ]
                     }
                 ],
@@ -1687,7 +1689,7 @@
                     {
                         "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
                         "effect": [
-                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est une unité de la Maison Omble, l’attaquant devient Également **Paniqué**."
+                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est une unité de la Maison Omble, l’attaquant devient également **Paniqué**."
                         ]
                     }
                 ],
@@ -1758,7 +1760,7 @@
             "id": "40216",
             "name": "Cri de Guerre",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
@@ -1766,7 +1768,7 @@
                         "effect": [
                             "Cette unité effectue 1 Test de Moral.",
                             "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** ou **Vulnérable**.",
-                            "Si cette carte cible l’unité de Brynden et qu’elle réussit, l’ennemi devient **Paniqué** et **Vulnérable**."
+                            "Si cette carte cible une unité de la Maison Tully et qu’elle réussit, l’ennemi devient **Paniqué** et **Vulnérable**."
                         ]
                     }
                 ],
@@ -1917,14 +1919,14 @@
             "id": "40223",
             "name": "Piège des Paluds",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "stark",
                 "text": [
                     {
-                        "trigger": "Quand une unité ennemie est activée :",
+                        "trigger": "Quand une unité ennemie effectue une action de Marche, Manœuvre ou Repli, avant de résoudre cette Action :",
                         "effect": [
-                            "Si cet ennemi se trouve à Longue Portée ou moins d’une unité de Paludiers alliée, il subit −1 [MOVEMENT] ce tour-ci.",
-                            "Si cet ennemi déclare une action de Manœuvre, de Marche ou de Repli, il est considéré comme se déplaçant sur un terrain Dangereux."
+                            "Il subit −1 [MOVEMENT] ce tour-ci.",
+                            "Si cet ennemi se trouve à Longue Portée ou moins d’une unité de Paludiers alliée il est considéré comme se déplaçant sur un terrain Dangereux."
                         ]
                     }
                 ],
@@ -2101,7 +2103,7 @@
                     {
                         "trigger": "Au début de n’importe quel tour :",
                         "effect": [
-                            "Attachez cette carte à une unité alliée jusqu’à la fin du round.",
+                            "Attachez cette carte à une unité alliée jusqu’à la fin de la partie.",
                             "Tant que cette carte est attachée, quand cette unité devrait être détruite, vous pouvez défausser cette carte. Si vous le faites, cette unité n’est pas détruite et reste en jeu avec 1 Blessure."
                         ]
                     }
