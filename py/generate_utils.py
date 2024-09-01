@@ -138,7 +138,7 @@ def render_attack(asset_manager, text_renderer, attack_data, border_color="Gold"
     rd_atk_name = text_renderer.render(entry_name, bbox=(180, 60), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER)
     attack_bar.alpha_composite(rd_atk_name, (221 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
 
-    if atk_type != "melee":
+    if atk_type in ["short", "long"]:
         range_icon = asset_manager.get_attack_range_icon(atk_type, border_color)
         attack_bar.alpha_composite(apply_drop_shadow(range_icon), (60, -14))
 
@@ -1236,7 +1236,7 @@ class TextRenderer:
             hit, dice = atk_stats.split("+")
             atk_data = {
                 "name": atk_name,
-                "type": "long" if "Long" in atk_type else "short" if "Short" in atk_type else "melee",
+                "type": "long" if "Long" in atk_type else "short" if "Short" in atk_type else "ranged" if "Ranged" in atk_type else "melee",
                 "hit": int(hit),
                 "dice": [int(d) for d in dice.split(",")]
             }
@@ -1261,7 +1261,7 @@ class TextRenderer:
         rendered = rendered.crop(rendered.getbbox())
         rendered = rendered.resize((int(self.supersample * rendered.size[0]), int(self.supersample * rendered.size[1])))
         # Icons should always be centered?
-        self.cursor.x = (self._max_w - entry.padding.x - rendered.size[0]) // 2 + entry.padding.left
+        self.cursor.x = (self._max_w - entry.padding.x - rendered.size[0]) // 2 + entry.padding.left + self.margin.left * self.supersample
         self.image.alpha_composite(rendered, (int(self.cursor.x), int(self.cursor.y - 0.2 * entry.leading)))
         # subtract the leading which gets added in self._render_line
         self.cursor.y += rendered.size[1] - entry.leading
