@@ -66,6 +66,12 @@ class AssetManager:
     def get_attachment_back_image(self, attachment_id):
         return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}b.png", (566, 878))
 
+    def get_special_image(self, attachment_id):
+        return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}.png")
+
+    def get_special_back_image(self, attachment_id):
+        return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}b.png")
+
     def get_unit_type(self, unit_type, faction):
         return self.get(f"{self.ASSETS_DIR}/{faction}/unit-{unit_type.lower()}.png")
 
@@ -197,15 +203,23 @@ class AssetManager:
                     convert(attach_inpath, attach_outpath)
 
         path_attachments = f"{self.ASSETS_DIR}/attachments"
+        path_specials = f"{self.ASSETS_DIR}/specials"
         Path(path_attachments).mkdir(parents=True, exist_ok=True)
+        Path(path_specials).mkdir(parents=True, exist_ok=True)
         for file in os.listdir(f"{source}/Attachments"):
             if not re.match(r"\d+b?\.jpg", file):
                 continue
             convert(f"{source}/Attachments/{file}", f"{path_attachments}/{file.replace('.jpg', '.png')}")
         for file in os.listdir(f"{source}/Specials"):
-            if not re.match(r"\d+b?\.jpg", file):
+            match = re.match(r"(\d+)b?\.jpg", file)
+            if match is None:
                 continue
-            convert(f"{source}/Specials/{file}", f"{path_attachments}/{file.replace('.jpg', '.png')}")
+            elif match.group(1).startswith("5"):
+                convert(f"{source}/Specials/{file}", f"{path_specials}/{file.replace('.jpg', '.png')}")
+            elif match.group(1).startswith("2"):
+                convert(f"{source}/Specials/{file}", f"{path_attachments}/{file.replace('.jpg', '.png')}")
+            else:
+                print(f"WARN: Strange ID: {file}")
 
         path_ncus = f"{self.ASSETS_DIR}/ncus"
         Path(path_ncus).mkdir(parents=True, exist_ok=True)

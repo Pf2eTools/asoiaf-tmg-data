@@ -8,15 +8,17 @@ from generate_tactics import ImageGeneratorTactics
 from generate_units import ImageGeneratorUnits
 from generate_ncus import ImageGeneratorNCUs
 from generate_attachments import ImageGeneratorAttachments
+from generate_specials import ImageGeneratorSpecials
 from const import *
 
 
 class Generator:
-    def __init__(self, ig_tactics, ig_units, ig_ncus, ig_attachments, overwrite=False, get_path=None, filter_data=None):
+    def __init__(self, ig_tactics, ig_units, ig_ncus, ig_attachments, ig_specials, overwrite=False, get_path=None, filter_data=None):
         self.ig_tacics = ig_tactics
         self.ig_units = ig_units
         self.ig_ncus = ig_ncus
         self.ig_attachments = ig_attachments
+        self.ig_specials = ig_specials
 
         self.overwrite = overwrite
         if get_path is None:
@@ -114,6 +116,7 @@ class Generator:
             case "attachments": gen = self.ig_attachments
             case "units": gen = self.ig_units
             case "ncus": gen = self.ig_ncus
+            case "specials": gen = self.ig_specials
             case _: raise TypeError
 
         if back:
@@ -156,6 +159,7 @@ def main():
         ImageGeneratorUnits(am, renderer),
         ImageGeneratorNCUs(am, renderer),
         ImageGeneratorAttachments(am, renderer),
+        ImageGeneratorSpecials(am, renderer),
         overwrite=True,
         filter_data=filter_data_generic
     )
@@ -174,6 +178,7 @@ def worker(args):
         ImageGeneratorUnits(am, renderer),
         ImageGeneratorNCUs(am, renderer),
         ImageGeneratorAttachments(am, renderer),
+        ImageGeneratorSpecials(am, renderer),
         filter_data=filter_data_generic,
         overwrite=True
     )

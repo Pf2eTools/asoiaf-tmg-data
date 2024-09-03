@@ -835,6 +835,55 @@
                 "w": 539,
                 "h": 769
             }
+        },
+        {
+            "id": "10616",
+            "name": "Crownland Scouts",
+            "statistics": {
+                "version": "2021",
+                "faction": "baratheon",
+                "type": "cavalry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Longsword",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Order: Mark Target",
+                    "Order: Tactical Reposition",
+                    "Cavalry"
+                ],
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "No army serves its king by blundering blindly about the countryside. The more skilled their scouting forces, the better a commander can distribute their troops for an impending attack. Moderately armored, the Crownland Scouts act not only as vanguard for Baratheon forces but capable fighters in their own right. Whether spotting enemy weaknesses for their own use or repositioning their allies. the Crownland Scouts are a valued addition to any force."
+            },
+            "portrait": {
+                "x": 478,
+                "y": 315,
+                "r": 256
+            },
+            "portrait_square": {
+                "x": 343,
+                "y": 84,
+                "a": 350
+            },
+            "standee": {
+                "x": 135,
+                "y": 16,
+                "w": 648,
+                "h": 923
+            }
         }
     ],
     "ncus": [
@@ -3888,6 +3937,33 @@
                 "commander_id": "20630",
                 "commander_name": "Renly Baratheon",
                 "commander_subname": "King in The South"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Baratheon Banners",
+            "id": "50601",
+            "statistics": {
+                "faction": "baratheon",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.2,
+                    "crests": 2,
+                    "style": "banners",
+                    "text": [
+                        "The Kingsguard come with 4 Baratheon Banners. At the start of its Activation, it may remove Baratheon Banners to gain the following. Each may be selected only once per Activation:",
+                        "• This Turn, this unit's Attacks gain **Critical Blow** and **Sundering**.",
+                        "• This Turn, this unit's Attacks gain **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound.",
+                        "• This Turn, when this unit is performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**.",
+                        "• This unit restores 2 Wounds and may re-roll Charge and Retreat Distance Dice this Turn."
+                    ]
+                },
+                "back": {
+                    "ratio": 0.25,
+                    "crests": 2,
+                    "image": true
+                }
             }
         }
     ]

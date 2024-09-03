@@ -2017,5 +2017,109 @@
                 "commander_subname": "Darkstar"
             }
         }
+    ],
+    "specials": [
+        {
+            "id": "50900",
+            "name": "Water Gardens",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "style": "zone",
+                    "note": [
+                        "**There can only be 1 Water Gardens in the Game. While you Control this zone, opponents do not count as Controlling Tactics Zones for Abilities or Tactics cards.**"
+                    ],
+                    "effect": [
+                        "On your opponent's next Turn, they must Activate a Combat Unit if possible."
+                    ]
+                },
+                "back": {
+                    "style": "zone",
+                    "text": [
+                        "If your army includes Doran Martell, Prince of Dorne, before the game begins, place the Water Gardens Tactics zone card next to the Tactics Board. It acts as an additional Tactics Zone for all purposes."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "50901",
+            "name": "Lord of Sunspear",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "style": "sunspear",
+                    "text": [
+                        "You may choose **Doran Martell, Lord of Sunspear** as your Commander *(you must still pay his points cost)*. If you do, your army **must** include **Areo Hotah, Captain of the Guard**. He counts as your Commander on the Battlefield for all gameplay purposes."
+                    ]
+                },
+                "back": {
+                    "style": "sunspear"
+                }
+            }
+        },
+        {
+            "name": "Manticore Venom",
+            "id": "50902",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "style": "small-padding",
+                    "text": [
+                        "[SKILL:Venom]\nThis unit cannot restore Wounds.",
+                        "If this unit would become **Vulnerable** but is already **Vulnerable**, it instead suffers 1 Wound.",
+                        "Each time this unit Activates, it becomes **Vulnerable**."
+                    ]
+                },
+                "back": {
+                    "top": [
+                        "[SKILL:Venom]\n**POISON**"
+                    ],
+                    "quote": "\"No true man killed with poison. Poison was for cravens, women, and Dornishmen.\"\n-Victarion Greyjoy",
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**At the Start of the Game, place this card close to your Tactics Deck.**",
+                        "An Ability or effect will state when this card will be played."
+                    ]
+                }
+            }
+        },
+        {
+            "name": "The Strangler",
+            "id": "50903",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "style": "small-padding",
+                    "text": [
+                        "This unit suffers the following based on the Game Round *(effects are cumulative):*",
+                        "• **2+:** Loses all Abilities.",
+                        "• **3+:** Does not count as Controlling Tactics Zones for Abilities or effects.",
+                        "• **4+:** You may only Activate this unit if you have no other units that can Activate this Round.",
+                        "• **5+:** Destroy this unit at the start of the Round."
+                    ]
+                },
+                "back": {
+                    "top": [
+                        "[SKILL:Venom]\n**POISON**"
+                    ],
+                    "quote": "\"No true man killed with poison. Poison was for cravens, women, and Dornishmen.\"\n-Victarion Greyjoy",
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**At the Start of the Game, place this card close to your Tactics Deck.**",
+                        "An Ability or effect will state when this card will be played."
+                    ]
+                }
+            }
+        }
     ]
 }

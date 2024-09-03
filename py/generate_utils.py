@@ -113,7 +113,7 @@ def render_cost(asset_manager, text_renderer, cost, border="gold", is_commander=
     entry = TextEntry.from_string(str(cost), styles=RootStyle(font_family="Garamond", font_size=46, font_color="white", bold=True,
                                                               stroke_width=0))
     rd_stat = text_renderer.render(entry, bbox=background.size, supersample=4.0, align_y=TextRenderer.ALIGN_CENTER)
-    offset = (-1, -2) if is_commander else (0, 0)
+    offset = (-1, -2) if type(cost) == str else (0, 0)
     background.alpha_composite(rd_stat, offset)
     return background
 
@@ -372,6 +372,7 @@ class TextStyle:
         self.leading = kwargs.get("leading", 1.0)
         self.padding = kwargs.get("padding", Spacing(0))
 
+        self.icon_scale = kwargs.get("icon_scale", 1.0)
         # These should only be used by root elements
         self.paragraph_padding = kwargs.get("paragraph_padding", 0)
         self.section_padding = kwargs.get("section_padding", 0)
@@ -418,6 +419,7 @@ class TextStyle:
             leading=TextStyle.abs_or_rel(parent.leading, child.leading),
             padding=child.padding + parent.padding,
             supersample=parent.supersample,
+            icon_scale=child.icon_scale,
         )
 
     @staticmethod
@@ -438,6 +440,7 @@ class RootStyle(TextStyle):
             "paragraph_padding": 700,
             "section_padding": 0,
             "stroke_width": 0.3,
+            "icon_scale": 1.0,
         }
         defaults.update(kwargs)
         super().__init__(**defaults)
@@ -694,6 +697,7 @@ class TextRenderer:
         self.italic = None
         self.image = None
         self.draw = None
+        self.max_font_reduction = None
 
     def set(self, *, bbox, **kwargs):
         self.max_w, self.max_h = bbox
@@ -710,6 +714,7 @@ class TextRenderer:
 
         self.margin = kwargs.get("margin", Spacing(0, 0))
         self.base_bias_extra_height = kwargs.get("base_bias_extra_height", 0.7)
+        self.max_font_reduction = kwargs.get("max_font_reduction", 10)
 
         self.bold = False
         self.italic = False
@@ -985,9 +990,9 @@ class TextRenderer:
                         # TODO: yikes...
                         if len(line) == 1 and line[0].startswith("[") and line[0].endswith("]"):
                             if line[0].startswith("[ATTACK"):
-                                height += 165 * self.supersample
+                                height += 165 * self.supersample * entry.icon_scale
                             elif line[0].startswith("[SKILL"):
-                                height += 134 * self.supersample
+                                height += 134 * self.supersample * entry.icon_scale
                             else:
                                 height += self.get_icon(entry, line[0].strip("[]")).size[1] * self.supersample
                         else:
@@ -997,6 +1002,10 @@ class TextRenderer:
                         height -= entry.leading - self.FACTOR_CAP_HEIGHT * entry.font_size
                 height += paragraph.padding.bottom
                 if not is_last_paragraph:
+                    as_list = list(paragraph.lines)
+                    # there is one line, that one line has one token, and that token is an icon
+                    if len(as_list) == 1 and len(as_list[0]) == 1 and as_list[0][0].startswith("[") and as_list[0][0].endswith("]"):
+                        height -= (self.input.paragraph_padding * 0.4) // 1
                     height += self.input.paragraph_padding
             height += section.padding.bottom
             if not is_last_section:
@@ -1042,7 +1051,7 @@ class TextRenderer:
         return 0
 
     def adjust_vertical_spacing(self):
-        for i in range(19):
+        for i in range(10 + self.max_font_reduction):
             height = self.calculate_height()
             if height < self._max_h:
                 break
@@ -1051,15 +1060,15 @@ class TextRenderer:
                 self.input.adjust_style(leading=-50)
             elif i in [1, 7, 16] and self.input.paragraph_padding > 300:
                 self.input.adjust_style(paragraph_padding=-150)
-            elif i in [3, 4, 5, 6, 9, 12, 14, 17, 18]:
-                self.input.adjust_style(font_size=-1)
-                self.split_data()
             elif i == 8:
                 self.margin = self.margin * 0.5
             elif i == 11:
                 adjust_tracking = clamp(-20 - self.input.styles.tracking, -20, 0)
                 adjust_word_spacing = clamp(int(-self.input.styles.word_spacing * 0.25), 150 - self.input.styles.word_spacing, 0)
                 self.input.adjust_style(tracking=adjust_tracking, word_spacing=adjust_word_spacing)
+                self.split_data()
+            elif i not in [0, 1, 7, 8, 10, 11, 13, 15, 16]:
+                self.input.adjust_style(font_size=-1)
                 self.split_data()
 
         height = self.calculate_height()
@@ -1186,6 +1195,10 @@ class TextRenderer:
                     self.cursor.y += entry.padding.bottom
                 self.cursor.y += paragraph.padding.bottom
                 if not is_last_paragraph:
+                    as_list = list(paragraph.lines)
+                    # there is one line, that one line has one token, and that token is an icon
+                    if len(as_list) == 1 and len(as_list[0]) == 1 and as_list[0][0].startswith("[") and as_list[0][0].endswith("]"):
+                        self.cursor.y -= (self.input.paragraph_padding * 0.4) // 1
                     self.cursor.y += self.input.paragraph_padding
             # bar_pt = Image.new("RGBA", (w, int(section.padding.bottom)), "#ff00ffaa")
             # self.image.alpha_composite(bar_pt, (0, int(self.cursor.y)))
@@ -1259,12 +1272,13 @@ class TextRenderer:
 
     def _do_render_full_width_icon(self, entry, rendered):
         rendered = rendered.crop(rendered.getbbox())
-        rendered = rendered.resize((int(self.supersample * rendered.size[0]), int(self.supersample * rendered.size[1])))
+        rendered = rendered.resize((int(self.supersample * rendered.width * entry.icon_scale),
+                                    int(self.supersample * rendered.height * entry.icon_scale)))
         # Icons should always be centered?
-        self.cursor.x = (self._max_w - entry.padding.x - rendered.size[0]) // 2 + entry.padding.left + self.margin.left * self.supersample
+        self.cursor.x = (self._max_w - entry.padding.x - rendered.width) // 2 + entry.padding.left + self.margin.left * self.supersample
         self.image.alpha_composite(rendered, (int(self.cursor.x), int(self.cursor.y - 0.2 * entry.leading)))
         # subtract the leading which gets added in self._render_line
-        self.cursor.y += rendered.size[1] - entry.leading
+        self.cursor.y += rendered.height - entry.leading - self.input.paragraph_padding // 2
 
     def get_icon(self, entry, token):
         icon = self.asset_manager.get_text_icon(token)

@@ -3386,5 +3386,83 @@
                 "commander_subname": "Master Skinchanger"
             }
         }
+    ],
+    "specials": [
+        {
+            "name": "No Coin Beyond the Wall",
+            "id": "50399",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**Free Folk armies may never include Neutral Attachments or Units.**"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Chieftain of the Giants",
+            "id": "50301",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021-S02",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "text": [
+                        "**You may select Mag the Mighty as your Commander**",
+                        "If you do, his points cost becomes 5 *(Instead of the usual 9)*.",
+                        "When you include Mag the Mighty as your Commander, replace the Free Folk Tactics Deck with Mag's deck."
+                    ]
+                },
+                "back": {
+                    "style": "commander",
+                    "data": {
+                        "cost": 5,
+                        "name": "Mag the Mighty",
+                        "subname": "Mag Mar Tun Doh Weg",
+                        "quote": "\"You can kneel to him if you like, he won't mind.\"",
+                        "type": "monster",
+                        "tactics": [
+                            "Replace the Free Folk Tactics deck with Mag's Tactics deck"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Varamyr Sixskins",
+            "id": "50302",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021-S02",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "text": [
+                        "You may select Varamyr Sixskins as your Commander. If you do, reduce his cost to 2.",
+                        "When you include Varamyr as your Commander, your army **must** also include Shadowcat and Wolf Pack."
+                    ]
+                },
+                "back": {
+                    "style": "commander",
+                    "data": {
+                        "cost": 2,
+                        "name": "Varamyr Sixskins",
+                        "subname": "Master Skinchanger",
+                        "quote": "\"A vicious litte runt.\" -Tormund Giantsbane",
+                        "type": "monster",
+                        "tactics": [
+                            "Bonded Command",
+                            "Bonded Guardians",
+                            "Summon Companions"
+                        ]
+                    }
+                }
+            }
+        }
     ]
 }
