@@ -904,6 +904,8 @@ class TextRenderer:
         line_width = self.calculate_line_width(entry, line_no_newline, token_widths_no_newline)
         if len(line) == 1 and line_width > self._max_w:
             pass
+        elif line_width > self._max_w and len(tokens_nonzero_len[-1]) == 1 and re.search(r"[,.;:!?]$", tokens_nonzero_len[-1]):
+            penalty += 3
         elif line_width > self._max_w:
             return float("inf")
         factor_line_length = 30 if is_final_line else 100
@@ -923,6 +925,9 @@ class TextRenderer:
             # punish lines starting icons
             if tokens_nonzero_len[0].startswith("["):
                 penalty += 3
+            # heavily punish lines starting with punctuation
+            if re.search(r"^[,.;:!?]", tokens_nonzero_len[0]):
+                penalty += 7
             # punish lines ending with numbers
             if re.search(r"\d$", tokens_nonzero_len[-1]):
                 penalty += 2
@@ -1207,6 +1212,8 @@ class TextRenderer:
             # self.image.alpha_composite(bar_mb, (0, int(self.cursor.y)))
             self.cursor.y += self.margin.bottom * self.supersample
             section.computed[1] = self.cursor.y / self.supersample
+            # bar_sp = Image.new("RGBA", (w, int(self.input.section_padding)), "#ff0000aa")
+            # self.image.alpha_composite(bar_sp, (0, int(self.cursor.y)))
             self.cursor.y += self.input.section_padding
 
         # TODO: Instead of rendering icons/images immediately, hold off to avoid scaling them twice

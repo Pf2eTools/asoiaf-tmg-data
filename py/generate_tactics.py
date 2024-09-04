@@ -84,9 +84,8 @@ class ImageGeneratorTactics(ImageGenerator):
 
         section_padding = small_bar.height
         align_y = TextRenderer.CENTER_SECTION if len(card_text) > 1 else TextRenderer.ALIGN_TOP
-        entries = self.get_data_for_renderer(card_text, get_faction_text_color(faction))
-        rd_card_text = self.text_renderer.render(entries, bbox=(620, 635), align_y=align_y, section_padding=section_padding,
-                                                 margin=Spacing(15, 30), scale_margin=15/50,
+        entries = self.get_data_for_renderer(card_text, get_faction_text_color(faction), section_padding)
+        rd_card_text = self.text_renderer.render(entries, bbox=(620, 635), align_y=align_y, margin=Spacing(15, 30), scale_margin=15/50,
                                                  linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
 
         all_text.alpha_composite(rd_card_text, ((w - 620) // 2, 347))
@@ -123,7 +122,7 @@ class ImageGeneratorTactics(ImageGenerator):
         return tactics_card
 
     @staticmethod
-    def get_data_for_renderer(card_text, color):
+    def get_data_for_renderer(card_text, color, section_padding):
         sections = []
         for trigger_effect in card_text:
             paras = []
@@ -140,7 +139,7 @@ class ImageGeneratorTactics(ImageGenerator):
 
             sections.append(TextEntry(paras))
 
-        return TextEntry.from_array(sections, styles=RootStyle(font_size=36, font_color="#5d4d40"))
+        return TextEntry.from_array(sections, styles=RootStyle(font_size=39, font_color="#5d4d40", section_padding=section_padding))
 
 
 def main():
