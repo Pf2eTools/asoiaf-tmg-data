@@ -1614,6 +1614,10 @@ Renderer.song = class {
 			case "attachments":
 			case "tactics":
 			case "ncus": return {w: 64, h: 90}
+			case "specials": {
+				if (ent.statistics && ent.statistics.size) return ent.statistics.size;
+				return {w: 64, h: 90}
+			}
 		}
 	}
 };

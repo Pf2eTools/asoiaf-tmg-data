@@ -4380,6 +4380,7 @@ globalThis.DataUtil = {
 					ncus: await DataLoader.pCacheAndGetAllSite("ncus"),
 					attachments: await DataLoader.pCacheAndGetAllSite("attachments"),
 					tactics: await DataLoader.pCacheAndGetAllSite("tactics"),
+					specials: await DataLoader.pCacheAndGetAllSite("specials"),
 				};
 			})();
 		}
@@ -4393,6 +4394,7 @@ globalThis.DataUtil = {
 					ncus: allData.map(it => it.ncus || []).flat(),
 					attachments: allData.map(it => it.attachments || []).flat(),
 					tactics: allData.map(it => it.tactics || []).flat(),
+					specials: data.map(it => it.specials || []).flat(),
 				};
 			})();
 		}
@@ -4407,6 +4409,7 @@ globalThis.DataUtil = {
 				ncus: data.map(it => it.ncus || []).flat(),
 				attachments: data.map(it => it.attachments || []).flat(),
 				tactics: data.map(it => it.tactics || []).flat(),
+				specials: data.map(it => it.specials || []).flat(),
 			}
 		}
 

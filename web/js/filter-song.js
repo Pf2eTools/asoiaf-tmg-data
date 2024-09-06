@@ -14,7 +14,7 @@ class PageFilterSong extends PageFilter {
 
 		this._typeFilter = new Filter({
 			header: "Type",
-			items: ["attachments", "units", "ncus", "tactics"],
+			items: ["attachments", "units", "ncus", "tactics", "specials"],
 			itemSortFn: null,
 			displayFn: Parser.renderProp,
 		});

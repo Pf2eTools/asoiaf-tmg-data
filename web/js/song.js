@@ -295,7 +295,7 @@ class SongPageBookView extends ListPageBookView {
 
 	async _fillPage (items, paperSize, ptrProgress) {
 		if (items.length === 0) return;
-		 const imgSize = Renderer.song.getRealSize_mm(items[0].data.entity);
+		const imgSize = Renderer.song.getRealSize_mm(items[0].data.entity);
 		const {w, h} = imgSize;
 		const layout = this._fillPage_getLayout(imgSize, paperSize);
 		const itemsPerPage = layout.cols * layout.rows;
@@ -363,12 +363,18 @@ class SongPageBookView extends ListPageBookView {
 
 	async _preparePdf_FillPage (paperSize) {
 		const items = this._sublistManager.sublistItems.sort((a, b) => SortUtil.ascSortLower(a.ix, b.ix));
-		const units = items.filter(it => it.data.entity.__prop === "units");
-		const others = items.filter(it => it.data.entity.__prop !== "units");
+		const itemsBySize = {};
+		items.forEach(item => {
+			const size = Renderer.song.getRealSize_mm(item.data.entity);
+			const key = `${size.w}x${size.h}`;
+			itemsBySize[key] = itemsBySize[key] || [];
+			itemsBySize[key].push(item);
+		});
 
 		const ptrCompleted = {_: 0, max: items.length};
-		await this._fillPage(others, paperSize, ptrCompleted);
-		await this._fillPage(units, paperSize, ptrCompleted);
+		for (const sizeKey in itemsBySize) {
+			await this._fillPage(itemsBySize[sizeKey], paperSize, ptrCompleted);
+		}
 	}
 
 	async _preparePdf () {
@@ -413,7 +419,7 @@ class SongPage extends ListPageMultiSource {
 		super({
 			pageFilter: new PageFilterSong(),
 
-			dataProps: ["song", "units", "ncus", "attachments", "tactics"],
+			dataProps: ["song", "units", "ncus", "attachments", "tactics", "specials"],
 
 			bookViewOptions: {
 				ClsBookView: SongPageBookView,
