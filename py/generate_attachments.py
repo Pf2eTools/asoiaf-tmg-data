@@ -171,6 +171,7 @@ class ImageGeneratorAttachments(ImageGenerator):
 
     def generate_back(self, data):
         attachment_id = data.get("id")
+        language = data.get("language")
         name = data.get("name")
         subname = data.get("subname")
         statistics = data.get("statistics")
@@ -178,6 +179,8 @@ class ImageGeneratorAttachments(ImageGenerator):
         requirements = statistics.get("requirements")
         attachment_fluff = data.get("fluff", {})
         attachment_tactics = data.get("tactics")
+        is_commander = statistics.get("commander")
+        is_character = statistics.get("character")
 
         background = self.asset_manager.get_bg(faction)
         w, h = background.size
@@ -185,9 +188,9 @@ class ImageGeneratorAttachments(ImageGenerator):
         attachment_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
 
         portrait = self.asset_manager.get_attachment_back_image(attachment_id)
-        if statistics.get("commander"):
+        if is_commander:
             attachment_card.alpha_composite(portrait, (148, 292))
-        elif statistics.get("character"):
+        elif is_character:
             attachment_card.alpha_composite(portrait, (135, 345))
         else:
             attachment_card.alpha_composite(portrait, (135, 242))
@@ -198,14 +201,14 @@ class ImageGeneratorAttachments(ImageGenerator):
         decor = self.asset_manager.get_decor(faction)
         lb_w, lb_h = large_bar.size
         sb_w, sb_h = small_bar.size
-        if statistics.get("commander"):
+        if is_commander:
             bars_lower.alpha_composite(large_bar.crop((220, lb_h // 4, lb_w, 3 * lb_h // 4)), (140, 238))
             bars_lower.alpha_composite(large_bar.rotate(90, expand=1), (98 - lb_h // 2, 0))
             bars.alpha_composite(small_bar.crop((0, 0, sb_w, sb_h)), (140, 233))
             bars.alpha_composite(small_bar.crop((0, 0, sb_w, sb_h)), (140, 280))
             bars.alpha_composite(small_bar.rotate(90, expand=1), (98 - (lb_h + sb_h) // 2, 0))
             bars.alpha_composite(small_bar.rotate(90, expand=1), (98 + (lb_h - sb_h) // 2, 0))
-        elif statistics.get("character"):
+        elif is_character:
             bars_lower.alpha_composite(large_bar.crop((220, lb_h // 4, 780, 3 * lb_h // 4)), (140, 292))
             bars_lower.alpha_composite(large_bar.rotate(90, expand=1), (98 - lb_h // 2, 55))
             bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, 287))
@@ -237,10 +240,8 @@ class ImageGeneratorAttachments(ImageGenerator):
         layer_text = Image.new("RGBA", (w, h))
         layer_crests = Image.new("RGBA", (w, h))
 
-        if statistics.get("commander") and requirements is not None:
-            pass
-        elif requirements is not None:
-            requirement_y = 985 - len(requirements) * 112
+        if requirements is not None or is_commander:
+            requirement_y = 985 - len(requirements or []) * 112     # 873
             # FIXME: Hack alert
             # jaqen, reaver captain
             if attachment_id in ["20221", "20805"]:
@@ -248,47 +249,74 @@ class ImageGeneratorAttachments(ImageGenerator):
             # scorpion mods
             elif attachment_id in ["20521", "20517"]:
                 requirement_y -= 160
-            text_bg = self.asset_manager.get_text_bg().crop((0, 0, portrait.width, 1000))
-            attachment_card.alpha_composite(text_bg, (135, requirement_y))
-            bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, requirement_y - sb_h // 2))
-            bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, requirement_y - decor.height // 2))
-            bars.alpha_composite(decor, (674, requirement_y - decor.height // 2))
 
-            if requirements[0].get("name") is not None:
+            if is_commander:
+                requirement_y -= 127
+                box_text_org = self.asset_manager.get_text_box(faction)
+                box_text = Image.new("RGBA", (box_text_org.width, box_text_org.height * 2))
+                box_text.alpha_composite(box_text_org)
+                box_text.alpha_composite(ImageOps.flip(box_text_org), (0, box_text_org.height))
+                bars_lower.alpha_composite(box_text, (449 - box_text.width // 2, requirement_y - 8))
+
+                req_text_width = box_text.width - 50
+                requirement_x = 449 - req_text_width // 2
+                divider_w = box_text.width
+                divider_x = 449 - box_text.width // 2 + sb_h // 2
+                sect_tactics = [TextEntry(
+                    [TextEntry(TextEntry(t, styles=TextStyle(italic=True, leading=800))) for t in attachment_tactics["cards"].values()])]
+            else:
+                text_bg = self.asset_manager.get_text_bg().crop((0, 0, portrait.width, 1000))
+                attachment_card.alpha_composite(text_bg, (135, requirement_y))
+                bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, requirement_y - sb_h // 2))
+                bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, requirement_y - decor.height // 2))
+                bars.alpha_composite(decor, (674, requirement_y - decor.height // 2))
+
+                req_text_width = 540
+                requirement_x = 148
+                divider_w = 560
+                divider_x = 98 + lb_h // 2
+                sect_tactics = None
+
+            if is_commander:
+                box_commander = render_commander_box(self.asset_manager, self.text_renderer, faction, language)
+                box_commander = apply_drop_shadow(box_commander)
+                layer_crests.alpha_composite(box_commander, (449 - box_commander.width // 2, requirement_y - box_commander.height // 2))
+                requirement_y += box_commander.height // 2 - 20
+            elif requirements[0].get("name") is not None:
                 box_name = render_small_box(self.asset_manager, self.text_renderer, faction, requirements[0].get("name").upper(),
                                             get_faction_text_color(faction))
                 box_name = apply_drop_shadow(box_name)
                 layer_crests.alpha_composite(box_name, (415 - box_name.width // 2, requirement_y - box_name.height // 2))
                 requirement_y += box_name.height // 2 - 20
 
-            req_entries = get_requirement_data_for_renderer(requirements)
+            req_entries = get_requirement_data_for_renderer(requirements, sect_tactics, section_padding=sb_h)
             h_requirements = h - requirement_y - sb_h // 2
-            rd_requirements = self.text_renderer.render(req_entries, bbox=(540, h_requirements), align_y=TextRenderer.CENTER_SECTION,
-                                                        margin=Spacing(20))
-            layer_text.alpha_composite(rd_requirements, (148, requirement_y))
+            rd_requirements = self.text_renderer.render(req_entries, bbox=(req_text_width, h_requirements),
+                                                        align_y=TextRenderer.CENTER_SECTION, margin=Spacing(20))
+            layer_text.alpha_composite(rd_requirements, (requirement_x, requirement_y))
             for top, bot in self.text_renderer.get_computed_between():
                 center = int(top + (bot - top) / 2) + requirement_y
-                bars.alpha_composite(small_bar.crop((0, 0, 560, 100)), (140, center - sb_h // 2))
-                bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, center - decor.height // 2))
+                bars.alpha_composite(small_bar.crop((0, 0, divider_w, 100)), (divider_x, center - sb_h // 2))
+                bars.alpha_composite(decor, (divider_x - decor.width // 2, center - decor.height // 2))
                 bars.alpha_composite(decor, (674, center - decor.height // 2))
 
-        if statistics.get("commander"):
-            box_character = render_character_box(self.asset_manager, self.text_renderer, faction)
+        if is_commander:
+            box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
             layer_crests.alpha_composite(apply_drop_shadow(box_character), (429 - box_character.width // 2, 212))
-        elif statistics.get("character"):
-            box_character = render_character_box(self.asset_manager, self.text_renderer, faction)
+        elif is_character:
+            box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
             layer_crests.alpha_composite(apply_drop_shadow(box_character), (395 - box_character.width // 2, 266))
         rendered_cost = render_cost(self.asset_manager, self.text_renderer, statistics.get("cost", 0),
-                                    get_faction_highlight_color(faction), statistics.get("commander"))
+                                    get_faction_highlight_color(faction), is_commander)
         layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (78 - rendered_cost.width // 2, 764))
         crest = self.asset_manager.get_crest(faction)
         crest = crest.crop(crest.getbbox())
         crest = crest.rotate(14, expand=1, resample=Image.BICUBIC)
         crest_size = min(198, int(crest.size[0] * 228 / crest.size[1])), min(228, int(crest.size[1] * 198 / crest.size[0]))
         crest = crest.resize(crest_size)
-        if statistics.get("commander"):
+        if is_commander:
             crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 290 - crest.size[1] // 2
-        elif statistics.get("character"):
+        elif is_character:
             crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 340 - crest.size[1] // 2
         else:
             crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 290 - crest.size[1] // 2
@@ -299,10 +327,10 @@ class ImageGeneratorAttachments(ImageGenerator):
             layer_crests.alpha_composite(apply_drop_shadow(unit_type), (78 - unit_type.width // 2, h - unit_type.size[1] - 20))
 
         name_fs = 44 if attachment_id in ["20521", "20517"] else 54
-        if statistics.get("commander"):
+        if is_commander:
             bbox = (572, 180)
             names_x, names_y = 168, 28
-        elif statistics.get("character"):
+        elif is_character:
             bbox = (520, 180)
             names_x, names_y = 158, 92
         else:
@@ -322,19 +350,6 @@ class ImageGeneratorAttachments(ImageGenerator):
         rd_names = self.text_renderer.render(entries, bbox=bbox, margin=Spacing(10), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
         layer_text.alpha_composite(rd_names, (names_x, names_y))
-
-        if statistics.get("commander"):
-            box_text = self.asset_manager.get_text_box(faction)
-            box_commander = render_commander_box(self.asset_manager, self.text_renderer, faction)
-            layer_crests.alpha_composite(apply_drop_shadow(box_text), (429 - box_text.width // 2, 830))
-            layer_crests.alpha_composite(apply_drop_shadow(box_commander), (429 - box_commander.width // 2, 838 - box_commander.height // 2))
-
-            tactics_to_render = TextEntry.from_array([TextEntry(TextEntry(t)) for t in attachment_tactics["cards"].values()],
-                                                     styles=RootStyle(font_size=36, font_color="#5d4d40", italic=True, leading=800,
-                                                                      paragraph_padding=300))
-            rd_tactics = self.text_renderer.render(tactics_to_render, bbox=(box_text.width - 50, h - 895), align_y=TextRenderer.ALIGN_TOP,
-                                                   align_x=TextRenderer.ALIGN_CENTER, margin=Spacing(15, 25))
-            layer_text.alpha_composite(rd_tactics, (449 - rd_tactics.width // 2, 890))
 
         attachment_card.alpha_composite(apply_drop_shadow(bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
         attachment_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
@@ -446,11 +461,48 @@ def main():
             ]
         }
     }
-    data = knight
+    onion = {
+        "id": "20607",
+        "name": "Davos Seaworth",
+        "subname": "Hero of Blackwater",
+        "statistics": {
+            "version": "S05",
+            "faction": "baratheon",
+            "type": "infantry",
+            "cost": "C",
+            "abilities": [
+                "Loyalty: Stannis Baratheon",
+                "Outflank",
+                "Pathfinder"
+            ],
+            "requirements": [
+                {
+                    "text": "*Davos ignores the usual Attachment Limits*"
+                }
+            ],
+            "commander": True,
+            "character": True
+        },
+        "tactics": {
+            "cards": {
+                "40629": "Flea Bottom Tricks",
+                "40630": "\"Everything\"",
+                "40631": "Fealty To The Crown",
+                "40632": "Parlay"
+            },
+            "remove": [
+                "Final Strike"
+            ]
+        },
+        "fluff": {
+            "quote": "\"He makes me wish I had more smugglers in my service. And fewer lords.\" -Stannis Baratheon"
+        }
+    }
+    data = devan
     am = AssetManager()
     gen = ImageGeneratorAttachments(am, TextRenderer(am))
-    card = gen.generate(data, abilities)
-    # card = gen.generate_back(data)
+    # card = gen.generate(data, abilities)
+    card = gen.generate_back(data)
     org = Image.open(f"./generated/en/baratheon/cards/{data['id']}b.jpg").convert("RGBA")
     editor = ImageEditor(card, org)
 

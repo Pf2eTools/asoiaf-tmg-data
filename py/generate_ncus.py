@@ -114,6 +114,7 @@ class ImageGeneratorNCUs(ImageGenerator):
 
     def generate_back(self, data):
         ncu_id = data.get("id")
+        language = data.get("language")
         name = data.get("name")
         subname = data.get("subname")
         statistics = data.get("statistics")
@@ -188,7 +189,7 @@ class ImageGeneratorNCUs(ImageGenerator):
             else:
                 bbox = (520, 164)
             entries = get_requirement_data_for_renderer(requirements)
-            rd_requirements = self.text_renderer.render(entries, bbox=bbox, align_y=TextRenderer.CENTER_SECTION, margin=Spacing(10))
+            rd_requirements = self.text_renderer.render(entries, bbox=bbox, align_y=TextRenderer.CENTER_SECTION, margin=Spacing(20))
             layer_text.alpha_composite(rd_requirements, (155, back_text_y + sb_h // 2))
         elif tactics is not None:
             tactics_to_render = TextEntry.from_array([TextEntry(TextEntry(t)) for t in tactics["cards"].values()],
@@ -198,11 +199,11 @@ class ImageGeneratorNCUs(ImageGenerator):
                                                    align_x=TextRenderer.ALIGN_CENTER, margin=Spacing(20, 10, 10))
             layer_text.alpha_composite(rd_tactics, (146, 15 + back_text_y + sb_h // 2))
 
-            box_cmdr = render_commander_box(self.asset_manager, self.text_renderer, faction)
+            box_cmdr = render_commander_box(self.asset_manager, self.text_renderer, faction, language)
             box_cmdr = apply_drop_shadow(box_cmdr)
             layer_crests.alpha_composite(box_cmdr, (415 - box_cmdr.width // 2, back_text_y - box_cmdr.height // 2))
 
-        box_character = render_character_box(self.asset_manager, self.text_renderer, faction)
+        box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
         layer_crests.alpha_composite(apply_drop_shadow(box_character), (234, 266))
         rendered_cost = render_cost(self.asset_manager, self.text_renderer, statistics.get("cost", 0), get_faction_highlight_color(faction),
                                     statistics.get("commander"))

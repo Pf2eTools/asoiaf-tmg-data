@@ -248,6 +248,7 @@ class ImageGeneratorSpecials(ImageGenerator):
 
     def generate_commander(self, data, is_back):
         special_id = data.get("id")
+        language = data.get("language")
         name = data.get("name")
         statistics = data.get("statistics")
         faction = statistics.get("faction")
@@ -284,7 +285,7 @@ class ImageGeneratorSpecials(ImageGenerator):
         layer_text = Image.new("RGBA", (w, h))
         layer_crests = Image.new("RGBA", (w, h))
 
-        box_character = render_character_box(self.asset_manager, self.text_renderer, faction)
+        box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
         layer_crests.alpha_composite(apply_drop_shadow(box_character), (429 - box_character.width // 2, 212))
 
         rendered_cost = render_cost(self.asset_manager, self.text_renderer, cmdr_data.get("cost", 0),
@@ -315,7 +316,7 @@ class ImageGeneratorSpecials(ImageGenerator):
         layer_text.alpha_composite(rd_names, (168, 28))
 
         box_text = self.asset_manager.get_text_box(faction)
-        box_commander = render_commander_box(self.asset_manager, self.text_renderer, faction)
+        box_commander = render_commander_box(self.asset_manager, self.text_renderer, faction, language)
         layer_crests.alpha_composite(apply_drop_shadow(box_text), (429 - box_text.width // 2, 830))
         layer_crests.alpha_composite(apply_drop_shadow(box_commander),
                                      (429 - box_commander.width // 2, 838 - box_commander.height // 2))

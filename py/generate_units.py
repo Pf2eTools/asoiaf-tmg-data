@@ -222,7 +222,7 @@ class ImageGeneratorUnits(ImageGenerator):
             unit_card.alpha_composite(apply_drop_shadow(box_text, shadow_size=10), (box_x - 20 - box_text.width // 2, box_y - 20))
             req_entries = get_requirement_data_for_renderer(requirements)
             h_requirements = h - box_y - 40
-            rd_requirements = self.text_renderer.render(req_entries, bbox=(box_text.width - 60, h_requirements), margin=Spacing(10),
+            rd_requirements = self.text_renderer.render(req_entries, bbox=(box_text.width - 60, h_requirements), margin=Spacing(20),
                                                         align_y=TextRenderer.CENTER_SECTION)
             layer_text.alpha_composite(rd_requirements, (box_x - rd_requirements.width // 2, box_y + 40))
             if requirements[0].get("name") is not None:

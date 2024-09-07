@@ -974,7 +974,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Mut und Kühnheit",
                     "Ermutigen",
@@ -1002,7 +1002,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Befehl: Pläne anpassen",
                     "Befehl: Ziel markieren",
@@ -1057,7 +1057,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Zugehörigkeit: R’hllor",
                     "Verwegenheit",
@@ -1112,11 +1112,16 @@
                 "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Loyalität: Stannis Baratheon",
                     "Die Flanke umgehen",
                     "Wegbereiter"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Davos ignoriert die üblichen Einschränkungen für Verstärkungen.*"
+                    }
                 ],
                 "commander": true,
                 "character": true
@@ -1132,11 +1137,6 @@
                     "Final Strike"
                 ]
             },
-            "requirements": [
-                {
-                 "text": "*Davos ignoriert die üblichen Einschränkungen für Verstärkungen.*"
-                }
-            ],
             "fluff": {
                 "quote": "„Da kommt in mir der Wunsch auf, mehr Schmuggler in meinen Diensten zu haben. Und weniger Lords.“ – Stannis Baratheon"
             }
@@ -1201,7 +1201,7 @@
                 "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Feste Überzeugung (Baratheon)",
                     "Der Erste der Männer des Königs",
@@ -1229,7 +1229,7 @@
                 "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Wilde Ausstrahlung",
                     "Präzision",
@@ -1258,7 +1258,7 @@
                 "version": "2021-S02",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Meisterhafter Duellant",
                     "Verwegenheit",
@@ -1337,7 +1337,7 @@
                 "version": "2021-S02",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Befehl: Ziel markieren",
                     "Abgehärtet",
@@ -1473,7 +1473,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Zugehörigkeit: R’hllor",
                     "Bedrohliche Erscheinung",
@@ -1528,7 +1528,7 @@
                 "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Buchführung (Cortnay Penrose)",
                     "Macht des Throns (Cortnay Fünfrosen)",
@@ -1556,7 +1556,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "cavalry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Befehl: Anspornen",
                     "Beharrlich Bleiben",
@@ -1636,7 +1636,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Befehl: Taktisches Umstellen",
                     "Inspirerende Erscheinung",
@@ -1690,7 +1690,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Schneller Hieb",
                     "Ansprüche auf das Königreich",
@@ -2036,12 +2036,12 @@
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-							"*Wähle 1:*",
+                            "*Wähle 1:*",
                             "• *Bewege 1 befreundete Verstärkung von 1 Einheit zu einer anderen befreundeten Einheit ohne Verstärkung innerhalb Langer Reichweite.*",
                             "• *Lege 1 zuvor vernichtete befreundete Verstärkung an 1 befreundete Kampfeinheit ohne Verstärkung an (ersetze wie gewohnt eine Figur).*"
                         ]
                     },
-					{
+                    {
                         "trigger": "Zu Beginn eines befreundeten Zuges:",
                         "effect": [
                             "Ziehe 1 Taktikkarte."

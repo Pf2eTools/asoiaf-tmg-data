@@ -242,8 +242,9 @@ def get_ability_sections(abilities_data, color):
     return sections
 
 
-def get_requirement_data_for_renderer(requirements):
-    sections = []
+def get_requirement_data_for_renderer(requirements, sections=None, section_padding=0):
+    sections = sections or []
+    requirements = requirements or []
     for req in requirements:
         content = []
         if req.get("heading") is not None:
@@ -251,15 +252,30 @@ def get_requirement_data_for_renderer(requirements):
         content.append(TextEntry(req.get("text")))
         sect = TextEntry(TextEntry(content))
         sections.append(sect)
-    return TextEntry.from_array(sections, styles=RootStyle(font_size=32, font_color="#5d4d40", stroke_width=0.2))
+    return TextEntry.from_array(sections, styles=RootStyle(font_size=36, font_color="#5d4d40", stroke_width=0.2, paragraph_padding=300,
+                                                           section_padding=section_padding))
 
 
-def render_character_box(asset_manager, text_renderer, faction):
-    return render_small_box(asset_manager, text_renderer, faction, "CHARACTER")
+LANGUAGE_TO_CHARACTER = {
+    "en": "CHARACTER",
+    "de": "CHARAKTER",
+    "fr": "PERSONNAGE",
+}
+LANGUAGE_TO_COMMANDER = {
+    "en": "COMMANDER",
+    "de": "HEERFÜHRER",
+    "fr": "GÉNÉRAL",
+}
 
 
-def render_commander_box(asset_manager, text_renderer, faction):
-    return render_small_box(asset_manager, text_renderer, faction, "COMMANDER", font_color=get_faction_text_color(faction), tracking=0,
+def render_character_box(asset_manager, text_renderer, faction, language):
+    text = LANGUAGE_TO_CHARACTER.get(language) or LANGUAGE_TO_CHARACTER.get("en")
+    return render_small_box(asset_manager, text_renderer, faction, text)
+
+
+def render_commander_box(asset_manager, text_renderer, faction, language):
+    text = LANGUAGE_TO_COMMANDER.get(language) or LANGUAGE_TO_COMMANDER.get("en")
+    return render_small_box(asset_manager, text_renderer, faction, text, font_color=get_faction_text_color(faction), tracking=0,
                             font_size=36)
 
 
