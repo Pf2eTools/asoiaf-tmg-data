@@ -317,7 +317,7 @@
             "name": "Doran Martell",
             "subname": "Prince de Dorne",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "martell",
                 "cost": 4,
                 "abilities": [
@@ -489,7 +489,7 @@
                 "version": "2021-S03",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Venin de Manticore",
                     "Précision",
@@ -536,7 +536,7 @@
                 "version": "2021",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Assaut Coordonné",
                     "Charge Furieuse",
@@ -628,7 +628,7 @@
                 "version": "2021",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Héroïsme Téméraire",
                     "Soif de Massacre",
@@ -691,7 +691,7 @@
             "name": "Elia Sand",
             "subname": "Aspic des Sables",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
@@ -732,7 +732,7 @@
                 "version": "2021-S03",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Volonté de Fer",
                     "Renforts"
@@ -861,7 +861,7 @@
                 "version": "2021",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Intimidation de la Couronne",
                     "Cri de Ralliement"
@@ -888,7 +888,7 @@
                 "version": "2021",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Entraînement Martial",
                     "Audace et Bravoure"
@@ -927,7 +927,7 @@
             "id": "40901",
             "name": "Position supérieure",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "martell",
                 "text": [
                     {
@@ -1269,7 +1269,7 @@
                     {
                         "trigger": "Au début d’un tour allié :",
                         "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée  cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)*:",
+                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)*:",
                             "**3+:** Peut relancer n’importe quels Échecs",
                             "**4+:** **Fracasser**",
                             "**5+:** **Frappe Critique**",
@@ -1431,6 +1431,110 @@
                 "commander_id": "20921",
                 "commander_name": "Gerold Dayne",
                 "commander_subname": "Sombre Astre"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "id": "50900",
+            "name": "Jardins Aquatiques",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "style": "zone",
+                    "note": [
+                        "**Il ne peut y avoir qu'1 carte Jardins Aquatiques en jeu. Tant que vous contrôlez cette zone, vos adversaires sont considérés comme ne contrôlant aucune zone du Tableau Stratégique pour les Capacités et les cartes Tactique.**"
+                    ],
+                    "effect": [
+                        "Lors de son prochain tour, votre adversaire doit activer une Unité Combattante si possible."
+                    ]
+                },
+                "back": {
+                    "style": "zone",
+                    "text": [
+                        "Au début de la partie, si votre armée comprend Doran Martell, Prince de Dorne, placez la zone des Jardins Aquatiques à côté du Tableau Stratégique. Elle compte comme une nouvelle zone Stratégique."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "50901",
+            "name": "Sire de Lancehélion",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "style": "sunspear",
+                    "text": [
+                        "Vous pouvez choisir **Doran Martell, Sire de Lancehélion** comme Général de votre armée (*vous devez néanmoins vous acquitter de son coût en points*). Si vous le faites, votre armée **doit** inclure **Areo Hotah, Capitaine de la Garde**. Toutes les règles qui s'appliquent à votre Général sur le champ de bataille s'appliquent à Areo Hotah."
+                    ]
+                },
+                "back": {
+                    "style": "sunspear"
+                }
+            }
+        },
+        {
+            "name": "Venin de Manticore",
+            "id": "50902",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "style": "small-padding",
+                    "text": [
+                        "[SKILL:Venom]\nCette unité ne peut pas soigner ses Blessures.",
+                        "Si cette unité doit devenir **Vulnérable** alors qu'elle l'est déjà, elle subit 1 Blessure.",
+                        "Chaque fois que cette unité est Activée, elle devient **Vulnérable**."
+                    ]
+                },
+                "back": {
+                    "top": [
+                        "[SKILL:Venom]\n**POISON**"
+                    ],
+                    "quote": "« Un homme, un vrai, ne tuait pas par le poison. Le poison était bon pour les pleutres, les femmes et les Dorniens. »\n- Victarion Greyjoy",
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**Au début de la partie, placez cette carte à côté de votre Paquet Tactique.**",
+                        "Certaines Capacités ou effets indiquent quand jouer cette carte."
+                    ]
+                }
+            }
+        },
+        {
+            "name": "L'Étrangleur",
+            "id": "50903",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "style": "small-padding",
+                    "text": [
+                        "Cette unité subit les effets suivants en fonction du round de jeu (*cumulatif*) :",
+                        "• **2+ :** Perd toutes ses Capacités.",
+                        "• **3+ :** N'est pas considérée comme contrôlant les zones du Tableau Stratégique pour les Capacités ou les effets.",
+                        "• **4+ :** Vous ne pouvez Activer cette unité que si vous n'avez pas d'autre Unité à Activer.",
+                        "• **5+ :** Détruisez cette unité au début du Round."
+                    ]
+                },
+                "back": {
+                    "top": [
+                        "[SKILL:Venom]\n**POISON**"
+                    ],
+                    "quote": "« Un homme, un vrai, ne tuait pas par le poison. Le poison était bon pour les pleutres, les femmes et les Dorniens. »\n- Victarion Greyjoy",
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**Au début de la partie, placez cette carte à côté de votre Paquet Tactique.**",
+                        "Certaines Capacités ou effets indiquent quand jouer cette carte."
+                    ]
+                }
             }
         }
     ]

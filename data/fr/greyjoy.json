@@ -444,7 +444,7 @@
                     {
                         "name": "Diplomate Fer-Né",
                         "effect": [
-                            "Une fois par partie, quand une UNC ennemie est activée, vous pouvez choisir 2 Zones Stratégiques. Si cette UNC s’empare de l’une ou l’autre de ces zones au cours de cette activation, ciblez jusqu’à 2 Unités Combattantes alliées. Elles deviennent ** Paniquées ** et **Vulnérables**.",
+                            "Une fois par partie, quand une UNC ennemie est activée, vous pouvez choisir 2 Zones Stratégiques. Si cette UNC s’empare de l’une ou l’autre de ces zones au cours de cette activation, ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées** et **Vulnérables**.",
                             "Une fois par partie, quand une UNC ennemie est activée, si Tristifer ne se trouve pas sur le tableau Stratégique, vous pouvez choisir 1 zone. Si cette UNC s’empare de cette zone ce tour-ci, à la fin du tour, vous pouvez activer Tristifer."
                         ]
                     }
@@ -535,7 +535,7 @@
                 "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Charisme Fougueux",
                     "Volonté de Fer",
@@ -582,7 +582,7 @@
                 "version": "S04",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Débordement",
                     "Charge Furieuse",
@@ -680,7 +680,7 @@
                 "version": "2021-S03",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Sentinelle",
                     "Embuscade",
@@ -770,7 +770,7 @@
                 "version": "2021",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Semer la Discorde",
                     "Présence Intimidante"
@@ -797,7 +797,7 @@
                 "version": "2021-S03",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Soif de Massacre",
                     "Le Tribut de la Seiche"
@@ -843,7 +843,7 @@
                 "version": "2021-S03",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Partager le Butin",
                     "Cadeaux d'Argent et de Bronze"
@@ -867,7 +867,7 @@
             "name": "Asha Greyjoy",
             "subname": "« Lady Greyjoy »",
             "statistics": {
-                "version": "S05",
+                "version": "2021",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 2,
@@ -945,7 +945,7 @@
                 "version": "2021-S02",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Jusqu'au Dernier !",
                     "Endurci"
@@ -973,10 +973,10 @@
             "name": "Dagmer Gueule-en-Deux",
             "subname": "Maître d'Armes",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Entraînement Martial",
                     "Attaque en Bande"
@@ -1658,6 +1658,25 @@
                 "commander_id": "20821",
                 "commander_name": "Dagmer Gueule-en-Deux",
                 "commander_subname": "Maître d'Armes"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Piraes de Îles de Fer",
+            "id": "50801",
+            "statistics": {
+                "faction": "greyjoy",
+                "version": "2021-S03",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 2,
+                    "style": "small-margin",
+                    "text": [
+                        "[SKILL:Pillage]\nChaque fois qu'une unité Greyjoy détruit un rang ennemi avec une Attaque de Mêlée, elle gagne 1 pion Pillage une fois l'Attaque résolue. Une unité ne peut jamais avoir plus de 2 pions Pillage.",
+                        "L'unité gagne les effets suivants en fonction du nombre de pions Pillage (*cumulatif*):\n• **1+ :** +1 aux lancers des Tests de Moral.\n• **2 :** +1 dé d'Attaque."
+                    ]
+                }
             }
         }
     ]

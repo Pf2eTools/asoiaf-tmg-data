@@ -388,7 +388,8 @@
                     {
                         "text": "*Ne peut être recruté que dans une armée qui comprend Clinquefrac. Il doit être attaché à cette unité.*"
                     }
-                ]
+                ],
+                "character": true
             },
             "fluff": {
                 "lore": "Seuls les plus forts et les plus sauvages parmi les disciples des Os peuvent devenir un Élu du Seigneur des Os. Chaque Élu prend la place de son prédécesseur en le tuant au cours d’un combat rituel. L’armure du nouvel Élu est assemblée à partir des ossements du vaincu et complétée avec des os d’animaux afin d’offrir une meilleure protection. De prime abord, les Élus peuvent sembler n’être que de vulgaires sauvages, mais les vétérans de la Garde de Nuit enseignent aux frères novices de ne sous-estimer ni leur incroyable ruse, ni leurs extraordinaires talents martiaux."
@@ -588,7 +589,8 @@
                     {
                         "text": "*Ne peut être recruté que dans une armée qui comprend Borroq.*"
                     }
-                ]
+                ],
+                "character": true
             },
             "fluff": {
                 "lore": "Le fidèle sanglier de Borroq se tient toujours aux côtés de son maître. Cet animal porcin, aussi massif qu’un taureau adulte, est doté de défenses aussi longues que le bras d’un homme. Sa peau épaisse lui fournit une armure naturelle qui le protège des lames les plus tranchantes. Au combat, il empale ses adversaires et les envoie valdinguer d’un puissant coup de tête, pour ensuite se livrer à un macabre festin. Cependant, si Borroq quitte le champ de bataille, le sanglier fera de même."
@@ -1080,7 +1082,7 @@
                 "version": "S04",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Débordement",
                     "Fracasser"
@@ -1126,7 +1128,7 @@
                 "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Contre Stratégie",
                     "Charisme Fougueux",
@@ -1257,7 +1259,7 @@
                 "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Suprématie des Thenns",
                     "Volonté de Fer"
@@ -1297,7 +1299,7 @@
                 "version": "2021-S03",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Collecte de Trophées",
                     "Présence Intimidante"
@@ -1343,7 +1345,7 @@
                 "version": "2021",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Prise de Flanc Avancée",
                     "Mobilité Améliorée"
@@ -1413,7 +1415,7 @@
                 "version": "2021-S03",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Exemple Macabre",
                     "Cruel",
@@ -1549,7 +1551,7 @@
             "name": "Borroq",
             "subname": "Change-Peau Sanglier",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 2,
@@ -1571,7 +1573,7 @@
                 "version": "2021-S02",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Affiliation : Grève Glacée",
                     "Tomber au Combat",
@@ -1641,7 +1643,7 @@
             "id": "40301",
             "name": "Regroupement en formation",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "freefolk",
                 "text": [
                     {
@@ -2453,6 +2455,84 @@
                 "commander_id": "10318",
                 "commander_name": "Varamyr Sixpeaux",
                 "commander_subname": "Maître Change-Peau"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Pas d'argent au-delà du Mur",
+            "id": "50399",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**Les armées du Peuple Libre ne peuvent inclure ni unités ni attachements neutres.**"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Chef des Géants",
+            "id": "50301",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021-S02",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "text": [
+                        "**Vous pouvez choisir Mag le Puissant comme Général**",
+                        "Si vous le faites, son coût en points passe à 5 *(au lieu de 9)*.",
+                        "Si Mag le Puissant est votre Général, remplacez le paquet Tactique du Peuple Libre par celui de Mag."
+                    ]
+                },
+                "back": {
+                    "style": "commander",
+                    "data": {
+                        "cost": 5,
+                        "name": "Mag le Puissant",
+                        "subname": "Mag Mar Tun Doh Weg",
+                        "quote": "« Libre à toi d'y faire des génuflexions, si ça te chante, il en aura rien à foutre. »",
+                        "type": "monster",
+                        "tactics": [
+                            "Remplacez le paquet Tactique du Peuple Libre par celui de Mag"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Varamyr Sixpeaux",
+            "id": "50302",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021-S02",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "text": [
+                        "Vous pouvez choisir Varamyr Sixpeaux comme Général. Si vous le faites, son coût en points passe à 2.",
+                        "Quand vous l'incluez comme Général, vous **devez** également inclure le Lynx-de-Fumée et la Meute de Loups."
+                    ]
+                },
+                "back": {
+                    "style": "commander",
+                    "data": {
+                        "cost": 2,
+                        "name": "Varamyr Sixpeaux",
+                        "subname": "Maître Change-Peau",
+                        "quote": "« Un vicieux petit avorton. » -Tormund Fléau-d'Ogres",
+                        "type": "monster",
+                        "tactics": [
+                            "Ordres Liés",
+                            "Gardiens Liés",
+                            "Invocation de Compagnons"
+                        ]
+                    }
+                }
             }
         }
     ]

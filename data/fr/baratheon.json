@@ -228,7 +228,7 @@
                 "morale": 3,
                 "attacks": [
                     {
-                        "name": "Colère Noble",
+                        "name": "Marteau de Guerre de Maître",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -246,12 +246,12 @@
                 "requirements": [
                     {
                         "name": "Loyauté ",
-                        "text": "**STANNIS BARATHEON**"
-                    },
-                    {
-                        "name": "Loyauté ",
                         "heading": "STANNIS BARATHEON",
                         "text": "*Dans votre armée, vous ne pouvez recruter ni d’unité ni d’Attachement avec une loyauté différente.*"
+                    },
+                    {
+                        "name": "Limité ",
+                        "text": "*Votre armée ne peut pas contenir plus de 2 Nobles de Peyredragon.*"
                     }
                 ]
             },
@@ -560,7 +560,8 @@
                     {
                         "text": "*Ne peut être recrutée que dans une armée qui comprend Renly Baratheon, Roi du Sud. Renly doit être attaché à cette unité. Vous ne pouvez pas inclure Loras Tyrel. Vous ne pouvez pas inclure Brienne.*"
                     }
-                ]
+                ],
+                "character": true
             },
             "fluff": {
                 "lore": "La Garde Arc-en-Ciel du Roi Renly Baratheon réunit ses plus redoutables et fidèles lieutenants. Ces chevaliers sont au service du cadet des Baratheon et lui ont prêté allégeance. Lorsqu’ils se rassemblent sur le champ de bataille, ils constituent le noyau dur des forces de Renly, capables de tenir la ligne de front comme de prendre de flanc les ennemis à découvert. Mais le plus important est peut-être qu’ils incarnent l’espoir et la foi envers la cause du Roi Renly, ainsi que son ambition d’unifier tout Westeros sous sa bannière."
@@ -597,6 +598,55 @@
             },
             "fluff": {
                 "lore": "Quiconque affronte la Maison Baratheon se retrouve face à un dilemme. Elle dispose de troupes résolues dotées de solides armures, et le soutien des Hallebardiers compense la faiblesse inhérente de l’infanterie lourde face à la cavalerie. De plus, toute hésitation ou manque d’engagement de la part d’une unité de cavalerie (ou d’une force similaire) entraîne une confusion facilement exploitable. Tout commandant compétent de la Maison Baratheon saura trouver de multiples avantages à l’utilisation d’Hallebardiers dans ses rangs. "
+            }
+        },
+        {
+            "id": "10616",
+            "name": "Éclaireurs des Terres de la Couronne",
+            "statistics": {
+                "version": "2021",
+                "faction": "baratheon",
+                "type": "cavalry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Épée Longue",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Ordre : Marquer la Cible",
+                    "Ordre : Repositionnement Tactique",
+                    "Cavalerie"
+                ],
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "Aucune armée ne sert son roi en battant la compagnie à l'aveuglette. Avec l'appui d'éclaireurs compétents, un commandant sera plus à même de déployer ses troupes en vue d'une attaque imminente. Modérément protégés, les Éclaireurs des Terres de la Couronne servent non seulement d'avant-garde aux forces des Baratheon, mais font également office de combattants à part entière. Que ce soit pour repérer les faiblesses de l'ennemi avant de fondre sur lui ou pour repositionner leurs alliés, les Éclaireurs des Terres de la Couronne constituent un atout précieux pour toute armée digne de ce nom."
+            },
+            "portrait": {
+                "x": 478,
+                "y": 315,
+                "r": 256
+            },
+            "portrait_square": {
+                "x": 343,
+                "y": 84,
+                "a": 350
+            },
+            "standee": {
+                "x": 135,
+                "y": 16,
+                "w": 648,
+                "h": 923
             }
         }
     ],
@@ -978,7 +1028,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Audace et Bravoure",
                     "Enhardir",
@@ -1006,7 +1056,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Planification Réactive",
                     "Ordre : Marquer la Cible",
@@ -1061,7 +1111,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Affiliation : R'hllor",
                     "Audacieux",
@@ -1116,7 +1166,7 @@
                 "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Loyauté : Stannis Baratheon",
                     "Attaque de Flanc",
@@ -1210,7 +1260,7 @@
                 "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Conviction Véritable (Baratheon)",
                     "Premier des Hommes du Roi",
@@ -1238,7 +1288,7 @@
                 "version": "S05",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Charisme Fougueux",
                     "Précision",
@@ -1267,7 +1317,7 @@
                 "version": "2021-S02",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Duelliste Chevronné",
                     "Audacieux",
@@ -1346,7 +1396,7 @@
                 "version": "2021-S02",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Marquer la Cible",
                     "Endurci",
@@ -1486,7 +1536,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Affiliation : R'hllor",
                     "Présence Intimidante",
@@ -1541,7 +1591,7 @@
                 "version": "S04",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Comptabilité (Cortnay Penrose)",
                     "Puissance du Trône (Cortnay Penrose)",
@@ -1569,7 +1619,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "cavalry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Incitation",
                     "Ténacité Acharnée",
@@ -1649,7 +1699,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Repositionnement Tactique",
                     "Présence Motivante",
@@ -1703,7 +1753,7 @@
                 "version": "2021",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Frappe Éclair",
                     "Prétentions au Royaume",
@@ -2776,7 +2826,7 @@
             "id": "40642",
             "name": "Regroupement en formation",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "baratheon",
                 "text": [
                     {
@@ -2891,6 +2941,33 @@
                 "commander_id": "20630",
                 "commander_name": "Renly Baratheon",
                 "commander_subname": "Roi du Sud"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Bannières Baratheon",
+            "id": "50601",
+            "statistics": {
+                "faction": "baratheon",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.2,
+                    "crests": 2,
+                    "style": "banners",
+                    "text": [
+                        "La Garde Arc-en-ciel est déployée avec 4 Bannières Baratheon. Au début de son Activation, elle peut retirer des Bannières Baratheon pour gagner les effets suivants. Chaque effet ne peut être choisi qu'une seule fois par Activation :",
+                        "• Ce tour-ci, les Attaques de cette unité gagnent **Frappe Critique** et **Fracasser**.",
+                        "• Ce tour-ci, les Attaques de cette unité gagnent **Cruel** et, si le Défenseur échoue son Test de Panique, il subit +1 Blessure.",
+                        "• Ce tour-ci, quand cette unité effectue une Attaque, avant de lancer les dés d'Attaque, le Défenseur devient **Paniqué** et **Affaibli**.",
+                        "• Cette unité soigne 2 de ses Blessures et peut relancer ses dés de Distance de Charge et de Repli ce tour-ci."
+                    ]
+                },
+                "back": {
+                    "ratio": 0.25,
+                    "crests": 2,
+                    "image": true
+                }
             }
         }
     ]

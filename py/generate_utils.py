@@ -284,9 +284,9 @@ def render_small_box(asset_manager, text_renderer, faction, text, font_color="#5
     box = asset_manager.get_character_box(faction)
     entry = TextEntry.from_string(text, styles=RootStyle(font_size=font_size, font_color=font_color, tracking=tracking, bold=True,
                                                          stroke_width=0.1))
-    rd_text = text_renderer.render(entry, bbox=(200, 35), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER,
-                                   overflow_policy_x=TextRenderer.OVERFLOW_CLIP)
-    box.alpha_composite(rd_text, (box.width // 2 - 100, 13))
+    rd_text = text_renderer.render(entry, bbox=(204, 37), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER,
+                                   overflow_policy_x=TextRenderer.OVERFLOW_AUTO)
+    box.alpha_composite(rd_text, (box.width // 2 - 102, 12))
     return box
 
 
@@ -1449,3 +1449,8 @@ def clamp(x, minimum, maximum):
 
 if __name__ == "__main__":
     pass
+    # from asset_manager import AssetManager
+    # am = AssetManager()
+    # tr = TextRenderer(am)
+    # cb = render_character_box(am, tr, "baratheon", "fr")
+    # cb.show()

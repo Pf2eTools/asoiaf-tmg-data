@@ -357,7 +357,8 @@
                     {
                         "text": "*Ne peut être recrutée que dans une armée qui comprend 'Joffrey Baratheon, Premier du Nom'. Vous ne pouvez pas inclure Jaime Lannister. Joffrey doit être attaché à cette unité.*"
                     }
-                ]
+                ],
+                "character": true
             },
             "fluff": {
                 "lore": "De toutes les troupes qui participent à la Guerre de Cinq Rois, la Garde Royale est la mieux équipée et la plus expérimentée. Outre les faiblesses inhérentes à toutes les infanteries lourdes en cas d’encerclement, la Garde doit traîner son propre boulet : le Roi Joffrey Baratheon. Pourtant, même si elle n’est composée que de sept hommes, la Garde Royale est largement capable d’affronter des unités trois fois plus importantes, en attaque comme en défense."
@@ -561,7 +562,8 @@
                         "text": "*Ne peut être recruté que dans une armée qui comprend Tyrion Lannister. Celui-ci peut être attaché gratuitement à cette unité.*"
                     }
                 ],
-                "tray": "infantry"
+                "tray": "infantry",
+                "character": true
             },
             "fluff": {
                 "lore": "Si l’on excepte leur étonnante loyauté, les Freux de Tyrion Lannister ne sont guère différents des autres tribus montagnardes et des pillards ordinaires. Bien qu’ils soient plus attachés à la fortune de Tyrion qu’à sa propre personne, ils ont su rester fidèles, même lorsque la trahison aurait constitué une option plus lucrative. En tant que mercenaires, ces troupes se révèlent tout à fait rentables si elles sont employées en tant qu’éclaireurs ou pour harceler les flancs ennemis. Leur équipement léger ne leur permet pas de soutenir un engagement prolongé en première ligne."
@@ -858,7 +860,7 @@
                 "version": "2021-S03",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Suprématie des Lannister",
                     "Ordre : Menacer"
@@ -885,7 +887,7 @@
                 "version": "2021",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Contre Stratégie",
                     "Ordre : Repositionnement Tactique"
@@ -1107,7 +1109,7 @@
                 "version": "2021-S03",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Précision",
                     "Riposte",
@@ -1135,7 +1137,7 @@
                 "version": "S04",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Affiliation : Maison Clegane",
                     "Indomptable",
@@ -1220,7 +1222,7 @@
                 "version": "2021-S02",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordres de la Couronne (Joffrey Baratheon)"
                 ],
@@ -1272,7 +1274,7 @@
                 "version": "S05",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Présence Intimidante",
                     "Enhardir"
@@ -1361,7 +1363,7 @@
                 "version": "2021-S02",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Endurci",
                     "Volonté de Fer"
@@ -1388,7 +1390,7 @@
                 "version": "S04",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "G",
                 "abilities": [
                     "Ordre : Suprématie des Lannister",
                     "Puissance du Trône (Kevan Lannister)"
@@ -2102,6 +2104,33 @@
                 "commander_id": "20130",
                 "commander_name": "Kevan Lannister",
                 "commander_subname": "Protecteur du Royaume"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Bannières Baratheon",
+            "id": "50101",
+            "statistics": {
+                "faction": "lannister",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.2,
+                    "crests": 2,
+                    "style": "banners",
+                    "text": [
+                        "La Garde Royale est déployée avec 4 Bannières Baratheon. Au début de son Activation, elle peut retirer des Bannières Baratheon pour gagner les effets suivants. Chaque effet ne peut être choisi qu'une seule fois par Activation :",
+                        "• Ce tour-ci, les Attaques de cette unité gagnent **Frappe Critique** et **Fracasser**.",
+                        "• Ce tour-ci, les Attaques de cette unité gagnent **Cruel** et, si le Défenseur échoue son Test de Panique, il subit +1 Blessure.",
+                        "• Ce tour-ci, quand cette unité effectue une Attaque, avant de lancer les dés d'Attaque, le Défenseur devient **Paniqué** et **Affaibli**.",
+                        "• Cette unité soigne 2 de ses Blessures et peut relancer ses dés de Distance de Charge et de Repli ce tour-ci."
+                    ]
+                },
+                "back": {
+                    "ratio": 0.25,
+                    "crests": 2,
+                    "image": true
+                }
             }
         }
     ]
