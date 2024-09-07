@@ -1434,5 +1434,116 @@
                 "commander_subname": "Dunkelstern"
             }
         }
+    ],
+    "specials": [
+        {
+            "id": "50900",
+            "name": "Wassergärten",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "size": {
+                    "w": 70,
+                    "h": 120
+                },
+                "front": {
+                    "style": "zone",
+                    "note": [
+                        "**Wassergärten kann sich nur ein Mal im Spiel befinden. Solange du diese Zone kontrollierst, zählen Gegner für Fähigkeiten oder Taktikkarten, als würden sie keine Taktikzone kontrollieren.**"
+                    ],
+                    "effect": [
+                        "Im nächsten Zug deines Gegners muss er eine Kampfeinheit aktivieren, falls möglich."
+                    ]
+                },
+                "back": {
+                    "style": "zone",
+                    "text": [
+                        "Falls deine Armee Doran Martell, Fürst von Dorne, enthält, lege die Taktikzonenkarte Wassergärten zu Beginn der Partie neben die Taktiktafel. Sie zählt für alle Belange als zusätzliche Taktikzone."
+                    ]
+                }
+            }
+        },
+        {
+            "id": "50901",
+            "name": "Lord von Sonnspeer",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "style": "sunspear",
+                    "text": [
+                        "Du darfst **Doran Martell**, **Lord von Sonnspeer**, als deinen Heerführer wählen *(aber musst trotzdem seine Punkte bezahlen)*. Falls du das tust, muss deine Armee **Areo Hotah**, **Hauptmann der Wache** enthalten. Er zählt auf dem Schlachtfeld für alle Belange als dein Heerführer."
+                    ]
+                },
+                "back": {
+                    "style": "sunspear"
+                }
+            }
+        },
+        {
+            "name": "Mantikorgift",
+            "id": "50902",
+            "statistics": {
+                "faction": "martell",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "style": "small-padding",
+                    "text": [
+                        "[SKILL:Venom]",
+                        "Diese Einheit kann keine Wunden heilen.",
+                        "Falls diese Einheit **Verwundbar** werden würde, aber sie bereits **Verwundbar** ist, erleidet sie stattdessen 1 Wunde.",
+                        "Immer wenn diese Einheit aktiviert wird, wird sie **Verwundbar**."
+                    ]
+                },
+                "back": {
+                    "top": [
+                        "[SKILL:Venom]",
+                        "**GIFT**"
+                    ],
+                    "quote": "„Kein richtiger Mann tötete mit Gift. Gift war die Waffe von Feiglingen, Frauen und Dornischen.“\n-Victarion Graufreud",
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**Lege diese Karte zu Beginnder Partie in die Nähedeines Taktikdecks.**",
+                        "*Diese Karte kommt durch Fähigkeiten und Effekte ins Spiel.*"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Der Würger",
+            "id": "50903",
+            "statistics": {
+                "faction": "martell",
+                "version": "S05",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "style": "small-padding",
+                    "text": [
+                        "Diese Einheit erleidet folgende Effekte basierend auf der Spielrunde *(die Effekte sind kumulativ)*.",
+                        "• **2+:** Verliert alle Fähigkeiten.",
+                        "• **3+:** Zählt nicht als würde sie für Fähigkeiten oder Taktikkarten eine Taktikzone kontrollieren.",
+                        "• **4+:** Du darfst diese Einheit nur aktivieren, wenn du diese Runde keine anderen Einheiten aktivieren kannst.",
+                        "• **5+:** Zerstöre diese Einheit am Anfang der Runde."
+                    ]
+                },
+                "back": {
+                    "top": [
+                        "[SKILL:Venom]",
+                        "**GIFT**"
+                    ],
+                    "quote": "„Kein richtiger Mann tötete mit Gift. Gift war die Waffe von Feiglingen, Frauen und Dornischen.“\n-Victarion Graufreud",
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**Lege diese Karte zu Beginnder Partie in die Nähedeines Taktikdecks.**",
+                        "*Diese Karte kommt durch Fähigkeiten und Effekte ins Spiel.*"
+                    ]
+                }
+            }
+        }
     ]
 }

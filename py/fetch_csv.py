@@ -24,6 +24,8 @@ def main(filter_lang, filter_files):
                 continue
             if key.endswith("documents.csv"):
                 continue
+            if key.endswith("pdf"):
+                continue
             _, version, filename = key.split("/")
             filename_split = filename.split(".")
             if len(filename_split) == 2:
@@ -54,4 +56,4 @@ def main(filter_lang, filter_files):
 
 
 if __name__ == "__main__":
-    main(["de", "fr", "en"], ["units", "attachments", "tactics", "newskills", "ncus", "special"])
+    main(["de", "fr", "en"], ["units", "attachments", "tactics", "newskills", "ncus", "special", "rules"])

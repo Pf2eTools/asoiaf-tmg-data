@@ -2421,5 +2421,83 @@
                 "commander_subname": "Meisterhafter Leibwechsler"
             }
         }
+    ],
+    "specials": [
+        {
+            "name": "Keine Münzen jenseits der Mauer",
+            "id": "50399",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.5,
+                    "crests": 1,
+                    "text": [
+                        "**Eine Armee des Freien Volks kann keine Neutralen Einheiten und/oder Verstärkungen enthalten.**"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Häuptling der Riesen",
+            "id": "50301",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021-S02",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "text": [
+                        "**Du darfst Mag den Mächtigen als deinen Heerführer wählen.**",
+                        "Falls du das tust, senke seine Kosten auf 5 *(statt 9)*.",
+                        "Sobald du Mag den Mächtigen als deinen Heerführer hinzugefügst, ersetze das Freie-Volk-Taktikdeck mit Mags Taktikdeck."
+                    ]
+                },
+                "back": {
+                    "style": "commander",
+                    "data": {
+                        "cost": 5,
+                        "name": "Mag der Mächtige",
+                        "subname": "Mag Mar Tun Doh Weg",
+                        "quote": "„Du kannst vor ihm niederknien, wenn du willst, es wird ihn nicht stören.“ – Tormund Riesentod",
+                        "type": "monster",
+                        "tactics": [
+                            "Ersetze das Freie-Volk-Taktikdeck mit Mags Taktikdeck."
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Varamyr Sechsleib",
+            "id": "50302",
+            "statistics": {
+                "faction": "freefolk",
+                "version": "2021-S02",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 1,
+                    "text": [
+                        "Du darfst Varamyr Sechsleib als deinen Heerführer wählen. Falls du das tust, senke seine Kosten auf 2.",
+                        "Sobald du Varamyr als deinen Heerführer hinzufügst, musst du deiner Armee auch Schattenkatze und Wolfsrudel hinzufügen."
+                    ]
+                },
+                "back": {
+                    "style": "commander",
+                    "data": {
+                        "cost": 2,
+                        "name": "Varamyr Sechsleib",
+                        "subname": "Meisterhafter Leibwechsler",
+                        "quote": "„Ein bösartiger kleiner Zwerg.“ – Tormund Riesentod",
+                        "type": "monster",
+                        "tactics": [
+                            "Gebundene Befehle",
+                            "Gebundene Wächter",
+                            "Gefährten herbeirufen"
+                        ]
+                    }
+                }
+            }
+        }
     ]
 }

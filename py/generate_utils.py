@@ -876,11 +876,15 @@ class TextRenderer:
         else:
             threshold = 9 ** 2
         # Dijkstra might throw errors, because no shortest path exists. In this case we should relax the threshold
-        try:
-            breakpoints = self.find_optimal_breaks(entry, tokens, token_widths, threshold)
-        except ValueError:
-            threshold *= 4
-            breakpoints = self.find_optimal_breaks(entry, tokens, token_widths, threshold)
+        breakpoints = None
+        for i in range(4):
+            try:
+                breakpoints = self.find_optimal_breaks(entry, tokens, token_widths, threshold)
+                break
+            except ValueError:
+                threshold *= 4
+        if breakpoints is None:
+            raise Exception("No reasonable breakpoints were found!")
 
         optimal_breaks = [[t for t in tokens[i + 1:j + 1] if t != self.TOKEN_NEWLINE] for i, j in zip([0] + breakpoints, breakpoints)]
         return [ln for ln in optimal_breaks if ln]

@@ -92,7 +92,7 @@ class Generator:
                     try:
                         self._do_generate(data_object, outpath, ability_data=ability_data)
                     except Exception as e:
-                        msg = f"{e.__class__.__name__}: {str(e)}"
+                        msg = f"{data_id}_{language}: {e.__class__.__name__}: {str(e)}"
                         print(msg)
                         traceback.print_exc()
                         self.errors[f"{data_id}_{language}"] = msg
@@ -104,7 +104,7 @@ class Generator:
                     try:
                         self._do_generate(data_object, outpath_back, back=True)
                     except Exception as e:
-                        msg = f"{e.__class__.__name__}: {str(e)}"
+                        msg = f"{data_id}_{language}: {e.__class__.__name__}: {str(e)}"
                         print(msg)
                         traceback.print_exc()
                         self.errors[f"{data_id}b_{language}"] = msg
