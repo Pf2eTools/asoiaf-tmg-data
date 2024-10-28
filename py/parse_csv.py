@@ -90,7 +90,7 @@ def parse_tactics():
                 "text": [parse_tactics_text(p) for p in card_data.get("Text").replace("./", ". /").split(" /")],
             },
         }
-        if card_data.get("Remove") != "":
+        if card_data.get("Remove") != "" and "\n" not in card_data.get("Remove"):
             parsed["statistics"]["remove"] = card_data.get("Remove")
         if card_data.get("Unit") != "":
             parsed["statistics"]["commander_id"] = card_data.get("Unit")
@@ -623,7 +623,7 @@ def main():
             Path(base_path).mkdir(parents=True, exist_ok=True)
             path_data = f"{base_path}/{faction}.json"
             with open(path_data, "r", encoding="utf-8") as f:
-                data = json.load(f)
+                old_data = json.load(f)
 
             units = [u for u in parsed_units.get(lang, {}).values() if normalize(u["statistics"]["faction"]) == faction]
             ncus = [n for n in parsed_ncus.get(lang, {}).values() if normalize(n["statistics"]["faction"]) == faction]
@@ -631,7 +631,7 @@ def main():
             tactics = [t for t in parsed_tactics.get(lang, {}).values() if normalize(t["statistics"]["faction"]) == faction]
 
             def add_old_keys(obj, data_key):
-                old = next((item for item in data.get(data_key, []) if item["id"] == obj["id"]), None)
+                old = next((item for item in old_data.get(data_key, []) if item["id"] == obj["id"]), None)
                 if old is None:
                     return obj
                 for k, v in old.items():
@@ -641,7 +641,7 @@ def main():
                 return obj
 
             def add_new_if_not_exists(obj, data_key):
-                old = next((item for item in data.get(data_key, []) if item["id"] == obj["id"]), None)
+                old = next((item for item in old_data.get(data_key, []) if item["id"] == obj["id"]), None)
                 if old is None:
                     return obj
                 if obj.get("statistics").get("version") == MODE_VERSION == MODE:
@@ -667,10 +667,10 @@ def main():
                 }
             elif MODE == MODE_NEW or MODE == MODE_VERSION:
                 # retired
-                all_units = units + [old for old in data["units"] if next((u for u in units if u["id"] == old["id"]), None) is None]
-                all_ncus = ncus + [old for old in data["ncus"] if next((n for n in ncus if n["id"] == old["id"]), None) is None]
-                all_attachments = attachments + [old for old in data["attachments"] if next((a for a in attachments if a["id"] == old["id"]), None) is None]
-                all_tactics = tactics + [old for old in data["tactics"] if next((t for t in tactics if t["id"] == old["id"]), None) is None]
+                all_units = units + [old for old in old_data["units"] if next((u for u in units if u["id"] == old["id"]), None) is None]
+                all_ncus = ncus + [old for old in old_data["ncus"] if next((n for n in ncus if n["id"] == old["id"]), None) is None]
+                all_attachments = attachments + [old for old in old_data["attachments"] if next((a for a in attachments if a["id"] == old["id"]), None) is None]
+                all_tactics = tactics + [old for old in old_data["tactics"] if next((t for t in tactics if t["id"] == old["id"]), None) is None]
                 data = {
                     "units": [add_new_if_not_exists(u, "units") for u in all_units],
                     "ncus": [add_new_if_not_exists(n, "ncus") for n in all_ncus],
@@ -692,6 +692,8 @@ def main():
                     data["units"] = [add_old_keys(a, "attachments") for a in attachments]
                 elif MODE == "tactics":
                     data["units"] = [add_old_keys(t, "tactics") for t in tactics]
+            if old_data.get("specials"):
+                data["specials"] = old_data.get("specials")
             dump(data, path_data)
 
 
@@ -701,7 +703,7 @@ MODE_REWRITE = "rewrite"
 MODE_NEW = "new"
 MODE_VERSION = "S05"
 
-MODE = MODE_VERSION
+MODE = MODE_NEW
 
 LANGUAGES = [
     "en",

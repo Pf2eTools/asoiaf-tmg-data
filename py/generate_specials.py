@@ -169,9 +169,15 @@ class ImageGeneratorSpecials(ImageGenerator):
         side = (statistics.get("back") if is_back else None) or statistics.get("front")
 
         if is_back:
-            background = self.asset_manager.get_special_back_image(special_id)
+            if statistics.get("front", {}).get("icon"):
+                background = self.asset_manager.get_special_back_image("blankzone")
+            else:
+                background = self.asset_manager.get_special_back_image(special_id)
         else:
-            background = self.asset_manager.get_special_image(special_id)
+            if side.get("icon"):
+                background = self.asset_manager.get_special_image("blankzone")
+            else:
+                background = self.asset_manager.get_special_image(special_id)
         special_card = Image.new("RGBA", background.size)
         w, h = special_card.size
         special_card.alpha_composite(background)
@@ -196,6 +202,13 @@ class ImageGeneratorSpecials(ImageGenerator):
             rd_text = self.text_renderer.render(text_entries, bbox=(624, 320), margin=Spacing(20), align_x=TextRenderer.ALIGN_CENTER,
                                                 align_y=TextRenderer.ALIGN_CENTER, linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
             layer_text.alpha_composite(rd_text, ((w - rd_text.width) // 2, 770))
+
+        if side.get("icon") and not is_back:
+            icon_entry = TextEntry.from_string(side.get("icon"), styles=RootStyle(font_color="#5b4a43", font_size=88))
+            rd_icon = self.text_renderer.render(icon_entry, bbox=(180, 180), margin=Spacing(10), align_y=TextRenderer.ALIGN_CENTER)
+            icon_bbox = rd_icon.getbbox()
+            rd_icon = rd_icon.crop((icon_bbox[0], 0, icon_bbox[2], rd_icon.height))
+            layer_text.alpha_composite(rd_icon, ((w - rd_icon.width) // 2 - 4, 500))
 
         special_card.alpha_composite(layer_text)
 
@@ -452,7 +465,7 @@ def main():
             }
         }
     }
-    data = venom
+    data = garden
     am = AssetManager()
     gen = ImageGeneratorSpecials(am, TextRenderer(am))
     card = gen.generate(data)

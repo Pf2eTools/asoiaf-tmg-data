@@ -1019,7 +1019,9 @@ class TextRenderer:
                             elif line[0].startswith("[SKILL"):
                                 height += 134 * self.supersample * entry.icon_scale
                             else:
-                                height += self.get_icon(entry, line[0].strip("[]")).size[1] * self.supersample
+                                # TODO: This might be wrong!
+                                height += entry.leading
+                                # height += self.get_icon(entry, line[0].strip("[]")).size[1] * self.supersample
                         else:
                             height += entry.leading
                     height += entry.padding.bottom

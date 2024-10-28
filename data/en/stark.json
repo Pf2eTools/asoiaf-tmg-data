@@ -861,6 +861,9 @@
                 ],
                 "tray": "infantry"
             },
+            "rules": [
+                "50201"
+            ],
             "fluff": {
                 "lore": "The Crannogman Bog Devils are some of the most feared ambush soldiers in all of Westeros. Vassals of the Reed family, they are adept at blending in with swampy terrain. Their light armor keeps them from being bogged down in their chosen terrain, while their poisoned tridents deal an agonizing death to their foes. After an attack, the Bog Devils simply melt away back into the undergrowth, leaving nothing but the dead and dying."
             },
@@ -3147,8 +3150,9 @@
     ],
     "specials": [
         {
-            "name": "Crannog Poison",
             "id": "50201",
+            "name": "Crannog Poison",
+            "type": "poison",
             "statistics": {
                 "faction": "stark",
                 "version": "2021",

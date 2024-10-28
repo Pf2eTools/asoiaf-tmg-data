@@ -308,6 +308,7 @@ class CustomAssetManager(AssetManager):
                              f"\nDo you wish to crop and resize?").pack()
 
         out_path = path
+        is_ignore = False
 
         def click_yes():
             loader = ImageLoader(path)
@@ -320,9 +321,18 @@ class CustomAssetManager(AssetManager):
                 out_path = cropped_path
             root.destroy()
 
-        tk.Button(frame, text="Crop", command=click_yes).pack(side=tk.LEFT, expand=True)
-        tk.Button(frame, text="Ignore", command=lambda: root.destroy()).pack(side=tk.RIGHT, expand=True)
+        def click_ignore():
+            nonlocal is_ignore
+            is_ignore = True
+            root.destroy()
+
+        tk.Button(frame, text="Crop & Resize", command=click_yes).pack(side=tk.LEFT, expand=True)
+        tk.Button(frame, text="Ignore", command=click_ignore).pack(side=tk.RIGHT, expand=True)
+        tk.Button(frame, text="Resize", command=lambda: root.destroy()).pack(side=tk.RIGHT, expand=True)
         root.wait_window()
+
+        if is_ignore:
+            return self._get(out_path)
 
         return self.get_resized(out_path, size)
 

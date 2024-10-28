@@ -432,6 +432,9 @@
             "fluff": {
                 "quote": "\"I am not blind, nor deaf.\""
             },
+            "rules": [
+                "50901"
+            ],
             "tactics": {
                 "cards": {
                     "40911": "False Agenda",
@@ -474,6 +477,9 @@
                     }
                 ]
             },
+            "rules": [
+                "50900"
+            ],
             "fluff": {
                 "quote": "\"Who fears to walk upon the grass?\""
             },
@@ -589,6 +595,9 @@
                     }
                 ]
             },
+            "rules": [
+                "50903"
+            ],
             "fluff": {
                 "quote": "\"White suits my coloring. I look so ... pure.\""
             },
@@ -747,6 +756,9 @@
                 "commander": true,
                 "character": true
             },
+            "rules": [
+                "50902"
+            ],
             "tactics": {
                 "cards": {
                     "40908": "Unexpected Exhaustion",
@@ -2022,6 +2034,7 @@
         {
             "id": "50900",
             "name": "Water Gardens",
+            "type": "zone",
             "statistics": {
                 "faction": "martell",
                 "version": "2021",
@@ -2049,6 +2062,7 @@
         {
             "id": "50901",
             "name": "Lord of Sunspear",
+            "type": "commander",
             "statistics": {
                 "faction": "martell",
                 "version": "2021",
@@ -2064,8 +2078,9 @@
             }
         },
         {
-            "name": "Manticore Venom",
             "id": "50902",
+            "name": "Manticore Venom",
+            "type": "poison",
             "statistics": {
                 "faction": "martell",
                 "version": "2021",
@@ -2096,8 +2111,9 @@
             }
         },
         {
-            "name": "The Strangler",
             "id": "50903",
+            "name": "The Strangler",
+            "type": "poison",
             "statistics": {
                 "faction": "martell",
                 "version": "S05",

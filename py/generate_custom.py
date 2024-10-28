@@ -5,14 +5,15 @@ from generate_tactics import ImageGeneratorTactics
 from generate_units import ImageGeneratorUnits
 from generate_ncus import ImageGeneratorNCUs
 from generate_attachments import ImageGeneratorAttachments
+from generate_specials import ImageGeneratorSpecials
 from asset_manager import CustomAssetManager, get_path_or_dialogue
 from image_cropper import *
 from pathlib import Path
 
 
 class CustomGenerator(Generator):
-    def __init__(self, ig_tactics, ig_units, ig_ncus, ig_attachments, custom_data, overwrite=False, get_path=None, filter_data=None):
-        super().__init__(ig_tactics, ig_units, ig_ncus, ig_attachments, overwrite, get_path, filter_data)
+    def __init__(self, ig_tactics, ig_units, ig_ncus, ig_attachments, ig_specials, custom_data, overwrite=False, get_path=None, filter_data=None):
+        super().__init__(ig_tactics, ig_units, ig_ncus, ig_attachments, ig_specials, overwrite, get_path, filter_data)
         self.custom_data = custom_data
         self._meta = custom_data.get("_meta")
 
@@ -46,12 +47,14 @@ def main(path, skip_portrait=True, overwrite=True):
     ig_units = ImageGeneratorUnits(asset_manager, text_renderer)
     ig_ncus = ImageGeneratorNCUs(asset_manager, text_renderer)
     ig_attachments = ImageGeneratorAttachments(asset_manager, text_renderer)
+    ig_specials = ImageGeneratorSpecials(asset_manager, text_renderer)
 
     generator = CustomGenerator(
         ig_tactics,
         ig_units,
         ig_ncus,
         ig_attachments,
+        ig_specials,
         json_data,
         overwrite=overwrite,
         get_path=None,

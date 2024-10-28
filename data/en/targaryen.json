@@ -1008,6 +1008,9 @@
                     }
                 ]
             },
+            "rules": [
+                "50701"
+            ],
             "fluff": {
                 "quote": "\"Come with me to the House of the Undying, and you shall drink of truth and wisdom.\""
             },
@@ -3393,7 +3396,7 @@
                         "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
                             "Attach this card to that enemy until the end of the Round.",
-                            "While attached, during your opponent Turns, this Unit loses all Abilities and cannot be targeted by friendly Tactics cards.",
+                            "While attached, during your opponent's Turns, this Unit loses all Abilities and cannot be targeted by friendly Tactics cards.",
                             "If Skahaz's unit, or a Brazen Beast unit, performes a Charge Action against this unit, they automatically counts as rolling a 6 on all Charge Distance dice."
                         ]
                     }
@@ -3456,6 +3459,7 @@
         {
             "id": "50701",
             "name": "House of the Undying",
+            "type": "zone",
             "statistics": {
                 "faction": "targaryen",
                 "version": "2021-S03",
