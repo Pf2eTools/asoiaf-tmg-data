@@ -1117,6 +1117,10 @@ class TextRenderer:
                 self.italic = entry.italic
                 for line in entry.split:
                     w = self.calculate_line_width(entry, line)
+                    if len([tkn for tkn in line if tkn == self.TOKEN_ITALIC]) % 2:
+                        self.italic = not self.italic
+                    if len([tkn for tkn in line if tkn == self.TOKEN_BOLD]) % 2:
+                        self.bold = not self.bold
                     if w == self._max_w:
                         continue
                     if w > max_width:

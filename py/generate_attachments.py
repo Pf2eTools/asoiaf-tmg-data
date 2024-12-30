@@ -29,9 +29,9 @@ class ImageGeneratorAttachments(ImageGenerator):
         if attachment_id == "20521" or attachment_id == "20517":
             portrait = portrait.resize((portrait.width // 2, portrait.height // 2)).crop((0, 0, 197, 248))
         if is_commander:
-            attachment_card.alpha_composite(portrait)
+            attachment_card.alpha_composite(portrait.crop((0, 0, 243, 252)))
         else:
-            attachment_card.alpha_composite(portrait, (50, 50))
+            attachment_card.alpha_composite(portrait.crop((0, 0, 197, 248)), (50, 50))
 
         bars = Image.new("RGBA", (w, h))
         large_bar, small_bar, weird_bar = self.asset_manager.get_bars(faction)

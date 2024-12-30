@@ -2310,7 +2310,8 @@
                         "text": "*Before Deployment, attach Jaime to an enemy Infantry unit, ignoring the usual Attachment restrictions.*"
                     }
                 ],
-                "character": true
+                "character": true,
+                "enemy": true
             },
             "fluff": {
                 "quote": "\"What they did to him was unspeakably cruel.\""
@@ -2347,7 +2348,8 @@
                     {
                         "text": "*After Deployment, attach this model to an enemy Infantry unit, ignoring the usual Attachment restrictions.*"
                     }
-                ]
+                ],
+                "enemy": true
             },
             "portrait": {
                 "x": 255,
@@ -2396,7 +2398,7 @@
                         "trigger": "Start of any Turn:",
                         "effect": [
                             "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
-                            "While this card has a token, the attached unit's Melee Attacks gain Vicious and, while you Control [CROWN], +1 to Hit."
+                            "While this card has a token, the attached unit's Melee Attacks gain **Vicious** and, while you Control [CROWN], +1 to Hit."
                         ]
                     }
                 ]
@@ -2594,8 +2596,9 @@
                 "faction": "lannister",
                 "text": [
                     {
-                        "trigger": "When a friendly NCU Claims a zone: Replace that zone's effect with:",
+                        "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
+                            "Replace that zone's effect with:",
                             "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
                             "*If this targets a House Clegane unit, it may perform 1 Charge Action instead.*"
                         ]
