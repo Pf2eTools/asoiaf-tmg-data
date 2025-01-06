@@ -7,7 +7,8 @@
     "build:sw": "node node/build-sw.mjs",
     "build:sw:prod": "node node/build-sw.mjs prod",
     "build:css": "sass --style=compressed web/scss/main.scss:web/css/main.css web/scss/bootstrap.scss:web/css/bootstrap.css",
-    "build": "npm run build:css && npm run build:sw:prod"
+    "build": "npm run build:css && npm run build:sw:prod",
+    "serve:dev": "http-server -c-1 --port 8080"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   "author": "Pf2eTools",
   "license": "GPL-3.0",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "sass": "^1.71.1",
     "esbuild": "^0.21.5",
     "workbox-build": "^7.1.1"

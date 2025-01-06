@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>aoiaf:tmg data</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="sw-injector.js"></script>
+
+    <script type="text/javascript" src="js/styleswitch.js"></script>
+</head>
+<style>
+    .night-mode .card {
+        background: #222222;
+    }
+    .card {
+        background: #dddddd;
+        margin:4px;
+    }
+    .card-p {
+        width: 80%;
+        font-size: 20px;
+        margin: 0 1rem;
+    }
+    .unit-name {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        max-height: 1.2em;
+        line-height: 1.2em
+    }
+
+    .unit-sub-name {
+        font-style: italic;
+        font-size: 0.8em;
+    }
+
+    .unit-img {
+        width: 20%;
+        height: auto;
+        max-height: 60px;
+        max-width: 60px;
+        object-fit: contain;
+        border-radius: 4px
+    }
+</style>
+<body>
+
+
+<div class="viewport-wrapper">
+    <div class="ve-flex-v-center m-4" id="controls">
+        <button class="btn btn-default mr-5" id="btn-import">Import</button>
+<!--        <p class="my-0 mr-2">Socket Port</p>-->
+<!--        <input class="input form-control mr-2 w-100p" type="text" value="9999" id="ipt-sock-port">-->
+<!--        <div class="mr-2">Status: <span id="socket-status">Not Connected</span></div>-->
+<!--        <button class="btn btn-default mr-5" id="btn-sock-connect">Connect</button>-->
+        <button class="btn btn-default ml-auto" id="btn-day-night">Day/Night</button>
+    </div>
+    <div class="container view-col-wrapper h-100 w-90 mb-0 mt-5">
+        <div class="view-col ve-flex-6" id="col--left">
+            <div id="wrp-head--left">
+                <h2>No list selected</h2>
+            </div>
+            <div class="ve-flex">
+                <div class="ve-col-6">
+                    <div id="wrp-army--left">
+                        <p>No Units Selected</p>
+                    </div>
+                </div>
+                <div class="ve-col-6">
+                    <div id="wrp-tactics--left"></div>
+                </div>
+            </div>
+        </div>
+        <div class="view-col ve-flex-6" id="col--right">
+            <div id="wrp-head--right">
+                <h2>No list selected</h2>
+            </div>
+            <div class="ve-flex">
+                <div class="ve-col-6">
+                    <div id="wrp-army--right">
+                        <p>No Units Selected</p>
+                    </div>
+                </div>
+                <div class="ve-col-6">
+                    <div id="wrp-tactics--right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="js/parser.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/utils-ui.js"></script>
+<script type="text/javascript" src="js/utils-list.js"></script>
+<script type="text/javascript" src="js/utils-tableview.js"></script>
+<script type="text/javascript" src="lib/localforage.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/utils-dataloader.js"></script>
+<script type="text/javascript" src="js/utils-brew.js"></script>
+<script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
+<script type="text/javascript" src="js/obscontrol.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
+<script type="text/javascript" src="lib/elasticlunr.js"></script>
+
+</body>
+</html>
