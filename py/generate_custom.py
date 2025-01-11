@@ -34,6 +34,33 @@ class CustomGenerator(Generator):
         self.generate(data, language)
 
 
+def filter_data_custom(data_obj):
+    data_id = data_obj.get("id")
+    data_type = data_obj.get("type")
+    statistics = data_obj.get("statistics")
+    faction = statistics.get("faction")
+    sides = [
+        "face",
+        "back"
+    ]
+
+    ids = [
+    ]
+    types = [
+    ]
+    factions = [
+    ]
+
+    if ids and data_id not in ids:
+        return []
+    if types and data_type not in types:
+        return []
+    if factions and faction not in factions:
+        return []
+
+    return sides
+
+
 def main(path, skip_portrait=True, overwrite=True):
     json_data = load_json(path)
 
@@ -58,7 +85,7 @@ def main(path, skip_portrait=True, overwrite=True):
         json_data,
         overwrite=overwrite,
         get_path=None,
-        filter_data=None,
+        filter_data=filter_data_custom,
     )
     generator.generate_all()
 
