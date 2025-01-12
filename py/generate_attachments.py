@@ -503,7 +503,7 @@ def main():
     gen = ImageGeneratorAttachments(am, TextRenderer(am))
     # card = gen.generate(data, abilities)
     card = gen.generate_back(data)
-    org = Image.open(f"./generated/en/baratheon/cards/{data['id']}b.jpg").convert("RGBA")
+    org = Image.open(f"./generated/en/baratheon/{data['id']}b.jpg").convert("RGBA")
     editor = ImageEditor(card, org)
 
 

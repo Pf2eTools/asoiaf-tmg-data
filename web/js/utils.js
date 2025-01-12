@@ -4432,15 +4432,11 @@ globalThis.DataUtil = {
 				ent.statistics = ent.statistics || {};
 				ent.statistics.abilities = (ent.statistics.abilities || []).map(a => MiscUtil.merge({name: a}, abilityData[a.toUpperCase()] || {}));
 			}
-			const dir = ent.__prop === "tactics" ? "tactics" : "cards";
 			ent._img = {
-				face: `../generated/${ent.lang}/${ent.statistics.faction}/${dir}/${ent.id}.jpg`,
+				face: `../generated/${ent.lang}/${ent.statistics.faction}/${ent.id}.jpg`,
 			};
-			if (ent.__prop !== "tactics") ent._img.back = `../generated/${ent.lang}/${ent.statistics.faction}/${dir}/${ent.id}b.jpg`;
+			if (ent.__prop !== "tactics") ent._img.back = `../generated/${ent.lang}/${ent.statistics.faction}/${ent.id}b.jpg`;
 
-			delete ent.portrait;
-			delete ent.portrait_square;
-			delete ent.standee;
 			ent._isMutEntity = true;
 			return ent;
 		}

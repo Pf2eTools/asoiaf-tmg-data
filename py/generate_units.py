@@ -324,7 +324,7 @@ def main():
     faction = statistics.get("faction")
     card = gen.generate(data, abilities)
     # card = gen.generate_back(data)
-    org = Image.open(f"./generated/en/{faction}/cards/{data['id']}b.jpg").convert("RGBA")
+    org = Image.open(f"./generated/en/{faction}/{data['id']}b.jpg").convert("RGBA")
     editor = ImageEditor(card, org)
 
 

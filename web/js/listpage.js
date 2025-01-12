@@ -1342,7 +1342,7 @@ class ListPage {
 				title: `${this._lastRender.entity.name} \u2014 Source Data`,
 				isPermanent: true,
 				isBookContent: true,
-				width: Renderer.hover._getDefaultWidth(this._lastRender.entity)
+				width: 750
 			},
 		);
 	}

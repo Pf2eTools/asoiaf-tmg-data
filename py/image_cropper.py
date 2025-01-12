@@ -422,7 +422,7 @@ class Square(Rectangle):
         return normalized
 
 
-def generate_portraits(data, outpath=f"./portraits/round"):
+def generate_portraits(data, coords_data, outpath=f"./portraits/round"):
     Path(outpath).mkdir(parents=True, exist_ok=True)
 
     def get_default_coords(data_type, obj):
@@ -439,14 +439,14 @@ def generate_portraits(data, outpath=f"./portraits/round"):
 
     for key in ["units", "attachments", "ncus"]:
         for data_object in data[key]:
-            coords_exist = data_object.get("portrait") is not None
+            item_id = data_object["id"]
+            coords_exist = coords_data.get(item_id, {}).get("portrait") is not None
             if MODE == MODE_NEW and coords_exist:
                 continue
             default_coords = get_default_coords(key, data_object)
-            unit_id = data_object["id"]
-            coords = data_object.get("portrait", default_coords)
-            loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
-            saver = ImageSaver(f"{outpath}/{unit_id}.png")
+            coords = coords_data.get(item_id, {}).get("portrait", default_coords)
+            loader = ImageLoader(f"./assets/warcouncil/{key}/{item_id}b.png")
+            saver = ImageSaver(f"{outpath}/{item_id}.png")
             shape = Circle(coords)
             cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
@@ -454,10 +454,11 @@ def generate_portraits(data, outpath=f"./portraits/round"):
             elif MODE == MODE_REWRITE:
                 cropper.save()
             if cropper.get_shape_coords() is not None:
-                data_object["portrait"] = cropper.get_shape_coords()
+                coords_data[item_id] = coords_data.get(item_id, {})
+                coords_data[item_id]["portrait"] = cropper.get_shape_coords()
 
 
-def generate_portraits_square(data, outpath=f"./portraits/square"):
+def generate_portraits_square(data, coords_data, outpath=f"./portraits/square"):
     Path(outpath).mkdir(parents=True, exist_ok=True)
 
     def get_default_coords(data_type, obj):
@@ -474,19 +475,19 @@ def generate_portraits_square(data, outpath=f"./portraits/square"):
 
     for key in ["units", "attachments", "ncus"]:
         for data_object in data[key]:
-            coords_exist = data_object.get("portrait_square") is not None
+            item_id = data_object["id"]
+            coords = coords_data.get(item_id, {}).get("square")
+            coords_exist = coords is not None
             if MODE == MODE_NEW and coords_exist:
                 continue
             default_coords = get_default_coords(key, data_object)
-            unit_id = data_object["id"]
-            coords = data_object.get("portrait_square")
             if coords is None:
-                coords = {k: v for k, v in data_object.get("portrait", default_coords).items()}
+                coords = {k: v for k, v in coords_data.get(item_id, {}).get("portrait", default_coords).items()}
                 coords["a"] = coords["r"] * 2
                 coords["x"] = max(5, coords["x"] - coords["r"])
                 coords["y"] = max(5, coords["y"] - coords["r"])
-            loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
-            saver = ImageSaver(f"{outpath}/{unit_id}.jpg")
+            loader = ImageLoader(f"./assets/warcouncil/{key}/{item_id}b.png")
+            saver = ImageSaver(f"{outpath}/{item_id}.jpg")
             shape = Square(coords)
             cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
@@ -494,10 +495,11 @@ def generate_portraits_square(data, outpath=f"./portraits/square"):
             elif MODE == MODE_REWRITE:
                 cropper.save()
             if cropper.get_shape_coords() is not None:
-                data_object["portrait_square"] = cropper.get_shape_coords()
+                coords_data[item_id] = coords_data.get(item_id, {})
+                coords_data[item_id]["square"] = cropper.get_shape_coords()
 
 
-def generate_standees(data, outpath=f"./portraits/standees"):
+def generate_standees(data, coords_data, outpath=f"./portraits/standees"):
     Path(outpath).mkdir(parents=True, exist_ok=True)
     for key in ["units", "attachments", "ncus"]:
         if key == "units":
@@ -508,13 +510,13 @@ def generate_standees(data, outpath=f"./portraits/standees"):
             default_portrait = {"x": 139, "y": 10, "w": 317, "h": 454}
 
         for data_object in data[key]:
-            coords_exist = data_object.get("standee") is not None
+            item_id = data_object["id"]
+            coords_exist = coords_data.get(item_id, {}).get("standee") is not None
             if MODE == MODE_NEW and coords_exist:
                 continue
-            unit_id = data_object["id"]
-            loader = ImageLoader(f"./assets/warcouncil/{key}/{unit_id}b.png")
-            saver = ImageSaver(f"{outpath}/{unit_id}.jpg")
-            portrait_coords = data_object.get("standee", default_portrait)
+            loader = ImageLoader(f"./assets/warcouncil/{key}/{item_id}b.png")
+            saver = ImageSaver(f"{outpath}/{item_id}.jpg")
+            portrait_coords = coords_data.get(item_id, {}).get("standee", default_portrait)
             shape = Rectangle(portrait_coords)
             cropper = ImageCropper(loader, saver, shape)
             if MODE == MODE_ALL or not coords_exist:
@@ -522,21 +524,29 @@ def generate_standees(data, outpath=f"./portraits/standees"):
             elif MODE == MODE_REWRITE:
                 cropper.save()
             if cropper.get_shape_coords() is not None:
-                data_object["standee"] = cropper.get_shape_coords()
+                coords_data[item_id] = coords_data.get(item_id, {})
+                coords_data[item_id]["standee"] = cropper.get_shape_coords()
 
 
 def main():
+    portraits_path = f"./portraits/portraits.json"
+    with open(portraits_path, encoding="utf-8") as pd:
+        coords_data = json.load(pd)
+
     for faction in FACTIONS:
         full_path = f"{DATA_PATH}/en/{faction}.json"
         with open(full_path, encoding="utf-8") as json_data:
             data = json.load(json_data)
 
-        generate_portraits(data)
-        generate_portraits_square(data)
-        generate_standees(data)
+        generate_portraits(data, coords_data)
+        generate_portraits_square(data, coords_data)
+        generate_standees(data, coords_data)
 
         with open(full_path, "w", encoding="utf-8") as json_file:
             json.dump(data, json_file, indent=4, ensure_ascii=False)
+
+    with open(portraits_path, "w", encoding="utf-8") as pd:
+        json.dump(coords_data, pd, indent=4)
 
 
 # CONFIG ###################################################################################################################################

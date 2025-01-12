@@ -43,10 +43,7 @@ class Generator:
         faction = data_object.get("statistics").get("faction")
         data_id = data_object.get("id")
         back_str = "b" if back else ""
-        if data_object.get("type") == "tactics":
-            return f"./generated/{lang}/{faction}/tactics/", f"{data_id}{back_str}.jpg"
-        else:
-            return f"./generated/{lang}/{faction}/cards/", f"{data_id}{back_str}.jpg"
+        return f"./generated/{lang}/{faction}/", f"{data_id}{back_str}.jpg"
 
     @staticmethod
     def get_abilitiy_data(language):
