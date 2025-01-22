@@ -35,7 +35,7 @@ class SongSublistManager extends SublistManager {
 
 	pGetSublistItem (obj, hash, {count = 1} = {}) {
 		const faction = Parser.renderFaction(obj.statistics.faction);
-		const type = Parser.renderProp(obj.__prop);
+		const type = obj.statistics.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
 
 		const cellsText = [
 			obj.name,
@@ -442,7 +442,7 @@ class SongPage extends ListPageMultiSource {
 
 		const source = obj.source;
 		const faction = Parser.renderFaction(obj.statistics.faction);
-		const type = Parser.renderProp(obj.__prop);
+		const type = obj.statistics.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
 
 		const eleLi = e_({
 			tag: "div",
