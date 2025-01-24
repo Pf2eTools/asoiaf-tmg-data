@@ -618,8 +618,13 @@ def main():
             pass
             # dump(ab, f"{DATA_PATH}/{lang}/abilities.json")
 
+        base_path = f"{DATA_PATH}/{lang}"
+        path_abilities = f"{base_path}/abilities.json"
+        with open(path_abilities, "r", encoding="utf-8") as f:
+            old_ab_data = json.load(f)
+        ability_data = old_ab_data
+
         for faction in FACTIONS:
-            base_path = f"{DATA_PATH}/{lang}"
             Path(base_path).mkdir(parents=True, exist_ok=True)
             path_data = f"{base_path}/{faction}.json"
             with open(path_data, "r", encoding="utf-8") as f:
@@ -677,6 +682,9 @@ def main():
                     "attachments": [add_new_if_not_exists(a, "attachments") for a in all_attachments],
                     "tactics": [add_new_if_not_exists(t, "tactics") for t in all_tactics],
                 }
+                for key, ability in ab.items():
+                    if ability_data.get(key) is None:
+                        ability_data[key] = ability
             else:
                 data = {
                     "units": [add_old_keys({"id": u["id"]}, "units") for u in units],
@@ -695,6 +703,7 @@ def main():
             if old_data.get("specials"):
                 data["specials"] = old_data.get("specials")
             dump(data, path_data)
+        dump(ability_data, path_abilities)
 
 
 # Just write everything from csv
@@ -707,8 +716,8 @@ MODE = MODE_NEW
 
 LANGUAGES = [
     "en",
-    "fr",
-    "de"
+    # "fr",
+    # "de"
 ]
 
 

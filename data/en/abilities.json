@@ -2354,7 +2354,7 @@
     "TRAMPLE": {
         "effect": [
             "Each time this unit performs a March Action, it may replace that Action with a Trample Action:",
-            "Pivot it, then move it 12”, moving through units. If it ends over a unit, it instead stops 1” before it. Each non-Solo unit moved through, or that it would have ended on, suffers D3 Wounds."
+            "Pivot it, then move it 12\", moving through units. If it ends over a unit, it instead stops 1\" before it. Each non-Solo unit moved through, or that it would have ended on, suffers D3 Wounds."
         ],
         "icons": [
             "wounds"
@@ -2714,6 +2714,98 @@
         ],
         "icons": [
             "ranged"
+        ]
+    },
+    "ACUTE PRECISION": {
+        "effect": [
+            "This unit's Attacks gain **Precision**."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "BROTHERWOOD ARMAMENTS": {
+        "effect": [
+            "• **Critical Blow**",
+            "• If your opponent does not control [CROWN], this attack gains +1 to Hit and Sundering."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "ORDER: DECEITFUL REPOSITION": {
+        "trigger": "At the Start of an enemy Turn, if no enemies are within Short Range:",
+        "effect": [
+            "This unit performs a 3\" Maneuver Action."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "HIDDEN SHOT": {
+        "effect": [
+            "• Ignores units and terrain when determining Line of Sight.",
+            "• When Attacking enemies in the Flank or Rear, this attack gains **Precision** and **Vicious**."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "KNIGHTLY ARMAMENTS": {
+        "effect": [
+            "• **Sundering**",
+            "• If your opponent does not Control [CROWN], this Attack may re-roll any Attack Dice."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "RALLY THE SMALLFOLK": {
+        "effect": [
+            "After this unit completes a Melee Attack, if this Attack destroyed an enemy rank, target 1 friendly Infantry unit in Long Range. They restore 2 Wounds."
+        ]
+    },
+    "LIGHTBRINGER": {
+        "effect": [
+            "Beric begins the game with 1 Faith token. Each time his unit passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:",
+            "**• When this unit performs a Melee Attack, before resolving that Attack:**",
+            "This Attack gains +2 Attack Dice.",
+            "**• When this unit would be destroyed by a Melee Attack:**",
+            "Before being removed, this unit performs 1 Melee Attack using its lowest Attack Die Value. If this Attack destroys the Defender, this unit is not destroyed but remains in play with 1 Wound."
+        ],
+        "icons": [
+            "faith"
+        ]
+    },
+    "PRAYERS TO R'HLLOR": {
+        "effect": [
+            "This unit gains +2 to Morale Test rolls and begins the game with 1 Faith token. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:",
+            "**• When this unit performs a Melee Attack, before resolving that Attack:**",
+            "This Attack gains Sundering and Vicious.",
+            "**• When an enemy in Long Range fails a Panic Test:**",
+            "Target 1 friendly unit in Long Range of this unit. For each Wound the enemy suffered from this test, restore 1 Wound to that friendly unit, up to 3."
+        ],
+        "icons": [
+            "faith"
+        ]
+    },
+    "HOT PIES!": {
+        "effect": [
+            "Each time this unit Activates, it removes 1 Condition Token. If you Control [CROWN], this unit may restore 1 Wound."
+        ]
+    },
+    "BERIC'S VASSAL": {
+        "effect": [
+            "This model counts as Beric Dondarrion for all abilities and effects."
+        ],
+        "icons": [
+            "wounds"
+        ]
+    },
+    "IMPROVED DEFENSES (BWB)": {
+        "effect": [
+            "While you Control [CROWN], this unit gains +1 to Defense Dice rolls."
         ]
     }
 }

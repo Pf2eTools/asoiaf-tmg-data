@@ -1,0 +1,855 @@
+{
+    "units": [
+        {
+            "id": "11101",
+            "name": "Peasant Levy",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 4,
+                "speed": 5,
+                "defense": 6,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Spear",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            6,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Disrupt",
+                    "Gang-Up"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Every force needs fodder, an unfortunate truth in war. And yet, there’s fodder holding the line at knifepoint and fodder that steps up of its own accord. The Brotherhood’s Peasant Levy are mostly volunteers, which sets them above conscripts. They are most efficient in great numbers and fighting alongside experienced warriors, disrupting enemy lines. Enemy commanders would be unwise to dismiss them as mere rabble."
+            }
+        },
+        {
+            "id": "11102",
+            "name": "Men-At-Arms",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Brotherhood Armaments",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Ambush",
+                    "Brotherwood Armaments"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "The Brotherhood Without Banners is technically an outlaw band, acting in service to any  lord who fights for the realm’s justice, working towards bringing peace swiftly to the kingdoms.  As such, they’re seen as idealists (and fanatics), and their Men-At-Arms are staunch professionals willing to fight to the bitterest of ends in the name of justice. They serve  best in the line, grinding the enemy to dust."
+            }
+        },
+        {
+            "id": "11103",
+            "name": "Brotherhood Archers",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 6,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Hidden Shot",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Short Sword",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Order: Deceitful Reposition",
+                    "Hidden Shot"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Archers in more formal forces often wear brightly colored uniforms, stand in perfect rows, and fire volley after volley into enemy troops, bringing death on feathered shafts. The Brotherhood Without Banners, however, has other ideas. While their archers are quite capable of such deadly rain, they function best from ambush positions, trained to sow chaos  and confusion in enemy ranks to soften those lines for an easier assault from any angle."
+            }
+        },
+        {
+            "id": "11104",
+            "name": "Brotherhood Sworn Knights",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "cavalry",
+                "cost": 8,
+                "speed": 5,
+                "defense": 3,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Knightly Armaments",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Cavalry",
+                    "Knightly Armaments",
+                    "Rally The Smallfolk"
+                ],
+                "wounds": 3,
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "Former knights of renown both great and small, the Brotherhood’s Sworn Knights are among the most skilled in all of Westeros, lured away from their lords by a greater calling. As such, they’re nigh unbreakable, and often serve as the force around which many Brotherhood battles are designed. While terrain will usually dictate their employment, a Brotherhood commander who can set up for their deadly charge will see victory more often than not."
+            }
+        }
+    ],
+    "ncus": [
+        {
+            "id": "31101",
+            "name": "Ghost of High Heart",
+            "subname": "The Wood's Witch",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Prophecies and Portents",
+                        "effect": [
+                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                            "While Influencing a unit, that unit gains +1 to Morale Test rolls.",
+                            "Each time a rank in that unit is destroyed, 1 enemy they are engaged with becomes **Vulnerable** and **Weakened**."
+                        ]
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": "\"She has her own ways of knowing things, that one. The weirwoods whisper in her ear when she sleeps.\""
+            }
+        },
+        {
+            "id": "31102",
+            "name": "Ravella Smallwood",
+            "subname": "Lady of Acorn Hall",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Allies in the Realm",
+                        "effect": [
+                            "Ravella begins the game with 3 Order tokens on her.",
+                            "At the start of a friendly Turn, you may discard 1 Order token and 1 Tactics card.",
+                            "If you do, restore 2 Wounds to 1 friendly Combat Unit. If that unit has only 1 remaining rank, also remove 1 Condition token from them."
+                        ]
+                    }
+                ],
+                "tokens": {
+                    "number": 3,
+                    "name": "order"
+                }
+            },
+            "fluff": {
+                "quote": "\"With their help, we fight on as best we can, for Robert and the realm\""
+            }
+        },
+        {
+            "id": "31103",
+            "name": "Catelyn Stark",
+            "subname": "The Hangwoman",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Vengeance at Any Cost",
+                        "effect": [
+                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                            "While Influencing an enemy Combat Unit, each time this unit performs an Action, before resolving that Action, this unit suffers 1 Wound.",
+                            "Friendly Combat Units may re-roll any Attack Dice when performing Melee Attacks against this unit."
+                        ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army containing Beric Dondarrion.*"
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": "\" ...she rose. May the Lord of Light protect us. She rose.\" -Thoros of Myr"
+            }
+        },
+        {
+            "id": "31104",
+            "name": "Thoros Of Myr",
+            "subname": "The Ember",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Fresh Converts",
+                        "effect": [
+                            "Each time a rank in an enemy Combat Unit is destroyed, place 1 Order token on Thoros.",
+                            "Each time Thoros Claims a zone, you may replace that zone's effect with:",
+                            "*Restore up to 2 Wounds to 1 friendly Combat Unit. Then, you may remove up to 2 Order tokens from Thoros. If you do, for each token removed, restore 1 Wound to 1 friendly Combat Unit.*"
+                        ]
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": "\"That was unkind. True, but unkind.\""
+            }
+        }
+    ],
+    "attachments": [
+        {
+            "id": "21101",
+            "name": "Beric Dondarrion",
+            "subname": "Lightining Lord",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Order: Sentinel",
+                    "Duty To The Crown",
+                    "Pathfinder"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": {
+                    "41108": "Assault Orders",
+                    "41109": "Six Times Too Many",
+                    "41110": "Lightbringer"
+                }
+            },
+            "fluff": {
+                "quote": "\"You ride with the Dondarrion. The lightning lord.\""
+            }
+        },
+        {
+            "id": "21102",
+            "name": "Beric Dondarrion",
+            "subname": "Azor Ahai",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Lightbringer"
+                ],
+                "character": true,
+                "tokens": {
+                    "number": 1,
+                    "name": "faith"
+                }
+            },
+            "fluff": {
+                "quote": "\"Fire consumes.\""
+            }
+        },
+        {
+            "id": "21103",
+            "name": "Thoros of Myr",
+            "subname": "The Red Wizard",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Prayers to R'hllor"
+                ],
+                "commander": true,
+                "character": true,
+                "tokens": {
+                    "number": 1,
+                    "name": "faith"
+                }
+            },
+            "tactics": {
+                "cards": {
+                    "41111": "Fiery Charge",
+                    "41112": "Loved By The Smallfolk",
+                    "41113": "The Last Kiss"
+                }
+            },
+            "fluff": {
+                "quote": "\"The Lord of Light has woken in my heart.\""
+            }
+        },
+        {
+            "id": "21104",
+            "name": "Thoros of Myr",
+            "subname": "Faithful Believer",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Reinforcements",
+                    "Relentless"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"He isn't very priestly, is he?\" -Arya Stark"
+            }
+        },
+        {
+            "id": "21105",
+            "name": "Lem Lemoncloak",
+            "subname": "The Lemon",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Battle Scars"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"You join us, you'll end up with your neck in a noose...\""
+            }
+        },
+        {
+            "id": "21106",
+            "name": "Tom Sevenstringers",
+            "subname": "O'Sevens",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Order: Taunt"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Sometimes a man knows  more than he says.\""
+            }
+        },
+        {
+            "id": "21107",
+            "name": "Catelyn Stark",
+            "subname": "Lady Stoneheart",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Horrific Visage",
+                    "Intimidating Presence"
+                ],
+                "commander": true,
+                "requirements": [
+                    {
+                        "text": "*May not be fielded in an army containing Beric Dondarrion.*"
+                    }
+                ],
+                "character": true
+            },
+            "tactics": {
+                "cards": {
+                    "41114": "Lash Out",
+                    "41115": "Price Of Failure",
+                    "41116": "Vengeance In Blood"
+                }
+            },
+            "fluff": {
+                "quote": "\" She don't speak. You bloody bastards cut her throat too deep for that. But she remembers.\""
+            }
+        },
+        {
+            "id": "21108",
+            "name": "Anguy",
+            "subname": "The Archer",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Order: Swift Retreat",
+                    "Outflank"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Anguy here could put three shafts through you before you could hope to reach us.\""
+            }
+        },
+        {
+            "id": "21109",
+            "name": "Edric Dayne",
+            "subname": "Loyal Squire",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Beric's Vassal",
+                    "Regroup"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Edric Dayne may be included in a unit containing Thoros of Myr, ignoring the usual attachment restrictions.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"I'm only twelve.\""
+            }
+        },
+        {
+            "id": "21110",
+            "name": "Hot Pie",
+            "subname": "The Baker",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Hot Pies!"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Everyone was yelling stuff. Hot Pie yelled hot pie. He must have yelled it a hundred times.\" -Arya Stark"
+            }
+        },
+        {
+            "id": "21111",
+            "name": "Gendry",
+            "subname": "The Bull",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Order: Resilience",
+                    "Improved Defenses (BwB)"
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Lord? I'm just a smith.\""
+            }
+        }
+    ],
+    "tactics": [
+        {
+            "id": "41101",
+            "name": "Sudden Retreat",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "After an enemy completes a Melee Attack:",
+                        "effect": [
+                            "Target the Defender. They perform 1 Retreat Action.",
+                            "If this targets your Commander's unit, it may re-roll any Retreat Distance Dice."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41102",
+            "name": "Regroup and Reform",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Start of a friendly Turn:",
+                        "effect": [
+                            "Target 2 friendly Infantry units in Long Range of each other. Remove up to 4 models from 1 of these units. Restore that many Wounds to the other.",
+                            "You may then move 1 Attachment from 1 of these units to the other *(replacing 1 model as usual, and keeping usual Attachment restrictions)*, or switch 2 friendly Attachments in those units."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41103",
+            "name": "Knights of the Hollow Hill",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly Combat Unit is targeted by an enemy Ability or Tactics Card:",
+                        "effect": [
+                            "That unit performs 1 Morale Test.",
+                            "On a success, cancel the effect of that Ability or Tactics Card. Then, that unit may perform a 3\" Maneuver Action."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41104",
+            "name": "The Forgotten Fellowship",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Start of any Round:",
+                        "effect": [
+                            "Target 1 friendly Combat Unit.",
+                            "It performs 1 March or Retreat Action, then becomes **Weakened**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41105",
+            "name": "Take Up the Sword",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly Combat Unit Activates:",
+                        "effect": [
+                            "That unit performs 1 Morale Test.",
+                            "On a success, choose 1:",
+                            "• It restores 1 Wound, +1 additional Wound for each of its destroyed ranks.",
+                            "• Target 1 enemy Combat Unit in Long Range. It becomes **Panicked** and **Weakened**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41106",
+            "name": "Azor Ahai!",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Panic Test, after rolling dice:",
+                        "effect": [
+                            "That unit can only suffer a maximum of 1 Wound from failing this test.",
+                            "If this targets your Commander's unit, it passes this test instead, and all enemies engaged with it become **Weakened**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41107",
+            "name": "But the Realm Remains",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Target 1 friendly Combat Unit and attach this card to them until the end of the game. Each time a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
+                            "At the start of a friendly Turn, you may remove 1 Order token from this card, if you do, restore 3 Wounds to this unit.",
+                            "While this card has a Order token, the attached unit may not gain Condition tokens."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41108",
+            "name": "Assault Orders",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly NCU Claims a zone:",
+                        "effect": [
+                            "Replace that zone's effect with:",
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
+                            "*If this target's Beric's unit, it may perform 1 Charge Action instead.*"
+                        ]
+                    }
+                ],
+                "commander_id": "21101",
+                "commander_name": "Beric Dondarrion",
+                "commander_subname": "Lightning Lord"
+            }
+        },
+        {
+            "id": "41109",
+            "name": "Six Times Too Many",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly Infantry unit would be destroyed by a Melee Attack:",
+                        "effect": [
+                            "That unit is not destroyed, but instead remains in play with 1 Wound.",
+                            "Attach this card to that unit until the end of the game.",
+                            "While Attached, this unit cannot be targeted by friendly or enemy Orders or Tactics cards."
+                        ]
+                    }
+                ],
+                "commander_id": "21101",
+                "commander_name": "Beric Dondarrion",
+                "commander_subname": "Lightning Lord"
+            }
+        },
+        {
+            "id": "41110",
+            "name": "Lightbringer",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "After a friendly Combat Unit completes a Melee Attack:",
+                        "effect": [
+                            "Target 1 enemy unit in Short Range of the Attacker. It suffers 1 Panic Test with -1 to their roll for each of their destroyed ranks.",
+                            "If the Attacker is Beric's unit, the targeted unit also becomes **Panicked**."
+                        ]
+                    }
+                ],
+                "commander_id": "21101",
+                "commander_name": "Beric Dondarrion",
+                "commander_subname": "Lightning Lord"
+            }
+        },
+        {
+            "id": "41111",
+            "name": "Fiery Charge",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Charge Action, before resolving that Action:",
+                        "effect": [
+                            "This unit automatically counts as rolling a 6 on all Charge Distance Dice and enemies Successfully Charged become **Panicked**.",
+                            "After this Attack has been completed, unless the Attacker is Thoros' unit, the Attacker becomes **Vulnerable**."
+                        ]
+                    }
+                ],
+                "commander_id": "21103",
+                "commander_name": "Thoros of Myr",
+                "commander_subname": "The Red Wizard"
+            }
+        },
+        {
+            "id": "41112",
+            "name": "Loved By The Smallfolk",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When an enemy is performing a Melee Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "That enemy performs 1 Morale Test. On a failure, they become **Vulnerable** and **Weakened**.",
+                            "If they are in Short Range of Thoros' unit, they suffer -2 to their roll."
+                        ]
+                    }
+                ],
+                "commander_id": "21103",
+                "commander_name": "Thoros of Myr",
+                "commander_subname": "The Red Wizard"
+            }
+        },
+        {
+            "id": "41113",
+            "name": "The Last Kiss",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly Attachment would be destroyed:",
+                        "effect": [
+                            "Instead of being destroyed, place that attachment in a Combat Unit of the same type, ignoring the usual Attachment restrictions *(but replacing a model as normal)*."
+                        ]
+                    },
+                    {
+                        "trigger": "Start of any Turn:",
+                        "effect": [
+                            "Draw 1 Tactics card."
+                        ]
+                    }
+                ],
+                "commander_id": "21103",
+                "commander_name": "Thoros of Myr",
+                "commander_subname": "The Red Wizard"
+            }
+        },
+        {
+            "id": "41114",
+            "name": "Lash Out",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "After an enemy completes a Melee Attack:",
+                        "effect": [
+                            "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks.",
+                            "If the Defender is Catelyn's unit, the Attacker also becomes **Panicked**."
+                        ]
+                    }
+                ],
+                "commander_id": "21107",
+                "commander_name": "Catelyn Stark",
+                "commander_subname": "Lady Stoneheart"
+            }
+        },
+        {
+            "id": "41115",
+            "name": "Price Of Failure",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                        "effect": [
+                            "All Attack Dice rolls automatically Hit for this Attack.",
+                            "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Vulnerable**."
+                        ]
+                    }
+                ],
+                "commander_id": "21107",
+                "commander_name": "Catelyn Stark",
+                "commander_subname": "Lady Stoneheart"
+            }
+        },
+        {
+            "id": "41116",
+            "name": "Vengeance In Blood",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "After an enemy completes a Melee Attack, if it destroyed a friendly rank:",
+                        "effect": [
+                            "Target 1 friendly Combat Unit that was not the Defender. They may perform 1 Maneuver or March Action.",
+                            "If this targets Catelyn's unit, they may perform 1 Charge or Attack Action instead."
+                        ]
+                    }
+                ],
+                "commander_id": "21107",
+                "commander_name": "Catelyn Stark",
+                "commander_subname": "Lady Stoneheart"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Brotherhood Without Banners",
+            "id": "51101",
+            "type": "faction",
+            "statistics": {
+                "faction": "brotherhood",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.45,
+                    "crests": 1,
+                    "top": [
+                        "**BROTHERHOOD\nWITHOUT BANNERS**"
+                    ],
+                    "quote": "\"Robert is slain, but his realm remains.\nAnd we defend her.\"",
+                    "text": [
+                        "Reduce the cost of 1 attachment included in your army by 1.",
+                        "Your army may include 1 Combat Unit chosen from House Baratheon or House Stark as part of its non-Neutral points total."
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Unending Vengeance",
+            "id": "51102",
+            "type": "extra",
+            "statistics": {
+                "faction": "brotherhood",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.25,
+                    "text": [
+                        "If Catelyn Stark is included in your army, your army may not include the following Factions, Units, Attachments, or Characters:",
+                        "• **House Bolton** *(Faction and Neutral Units)*\n• **Dreadfort Captain**\n• **Bolton Flayer**\n• **Roose Bolton**\n• **Ramsay Snow**\n• **Walder Frey**",
+                        "Friendly Combat Units may re-roll any Charge Distance Dice when performing Charge Actions against the units listed above, units containing the above-listed Attachments, or House Lannister units."
+                    ]
+                },
+                "back": {
+                    "ratio": 0.25,
+                    "crests": 2,
+                    "image": true
+                }
+            }
+        }
+    ]
+}

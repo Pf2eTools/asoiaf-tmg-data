@@ -15,6 +15,7 @@ FACTIONS = [
     "martell",
     "bolton",
     "neutral",
+    "brotherhood",
 ]
 
 DATA_PATH = "./data"

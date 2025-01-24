@@ -35,6 +35,7 @@ def get_faction_text_color(faction):
         "freefolk": "#4b4138",
         "greyjoy": "#577b79",
         "lannister": "#9d1323",
+        "brotherhood": "#5c7d59",
     }
     faction = re.sub(r"[^a-z]", "", faction.lower())
     return faction_colors.get(faction) or "#7FDBFF"
@@ -52,6 +53,7 @@ def get_faction_highlight_color(faction):
         "greyjoy": "Gold",
         "martell": "Gold",
         "lannister": "Silver",
+        "brotherhood": "Gold",
     }
     faction = re.sub(r"[^a-z]", "", faction.lower())
     return faction_colors.get(faction) or "Gold"
@@ -69,6 +71,7 @@ def get_faction_bg_rotation(faction):
         "freefolk": 0,
         "greyjoy": 180,
         "lannister": 0,
+        "brotherhood": 0,
     }
     faction = re.sub(r"[^a-z]", "", faction.lower())
     return faction_bg_rotation.get(faction) or 0

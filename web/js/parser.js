@@ -578,6 +578,7 @@ Parser.FACTIONS = [
 	"neutral",
 	"stark",
 	"targaryen",
+	"brotherhood",
 ];
 
 Parser.renderFaction = function (faction) {
