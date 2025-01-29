@@ -12,13 +12,14 @@ from image_cropper import ImageLoader, ImageSaver, ImageCropper, Rectangle
 class AssetManager:
     ASSETS_DIR = "./assets/warcouncil"
     DEFAULT_ASSET_SIZE = (100, 100)
+    DEFAULT_SIZE_TOLERANCE = (10, 10)
 
-    def get_missing(self, path, size):
+    def get_missing(self, path, size, tolerance):
         return Image.new("RGBA", size)
 
-    def get(self, path, size=DEFAULT_ASSET_SIZE):
+    def get(self, path, size=DEFAULT_ASSET_SIZE, tolerance=DEFAULT_SIZE_TOLERANCE):
         if not os.path.exists(path):
-            return self.get_missing(path, size)
+            return self.get_missing(path, size, tolerance)
         return self._get(path)
 
     @staticmethod
@@ -26,107 +27,107 @@ class AssetManager:
         return Image.open(path).convert("RGBA")
 
     def get_bg(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/bg-small.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/bg-small.png", (750, 1050), (0, 0))
 
     def get_text_bg(self):
-        return self.get(f"{self.ASSETS_DIR}/common/bg-text.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-text.png", (656, 659), (0, 0))
 
     def get_bars(self, faction):
-        large_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-large.png")
-        small_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-small.png")
-        corner_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-corner.png")
+        large_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-large.png", (1010, 85), (60, 2))
+        small_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-small.png", (1064, 16), (1, 0))
+        corner_bar = self.get(f"{self.ASSETS_DIR}/{faction}/bar-corner.png", (229, 680), (3, 40))
 
         return large_bar, small_bar, corner_bar
 
     def get_decor(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/bar-decor.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/bar-decor.png", (42, 42), (0, 0))
 
     def get_crest_shadow(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/crest-shadow.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/crest-shadow.png", (282, 300), (40, 0))
 
     def get_crest(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/crest.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/crest.png", (200, 230), (20, 40))
 
     def get_unit_bg(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/bg-large.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/bg-large.png", (1417, 827), (0, 0))
 
     def get_unit_skills_bg(self):
-        return self.get(f"{self.ASSETS_DIR}/common/bg-skills.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-skills.png", (611, 827), (0, 0))
 
     def get_unit_image(self, unit_id):
-        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}.png", (460, 640))
+        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}.png", (460, 640), (10, 40))
 
     def get_unit_back_image(self, unit_id):
-        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}b.png", (797, 827))
+        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}b.png", (797, 827), (40, 40))
 
     def get_attachment_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png", (197, 248))
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png", (197, 248), (20, 20))
 
     # FIXME/TODO: Named Chars/Commanders might be a different size
     def get_attachment_back_image(self, attachment_id):
         return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}b.png", (566, 878))
 
-    def get_special_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}.png")
+    def get_special_image(self, attachment_id, img_size=None):
+        return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}.png", img_size)
 
-    def get_special_back_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}b.png")
+    def get_special_back_image(self, attachment_id, img_size=None):
+        return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}b.png", img_size)
 
     def get_unit_type(self, unit_type, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/unit-{unit_type.lower()}.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/unit-{unit_type.lower()}.png", (103, 175), (1, 20))
 
     def get_attachment_type(self, unit_type, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/attach-{unit_type.lower()}.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/attach-{unit_type.lower()}.png", (102, 160), (0, 20))
 
     def get_stat_background(self):
-        return self.get(f"{self.ASSETS_DIR}/common/bg-stat.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-stat.png", (78, 78), (0, 0))
 
     def get_stat_icon(self, name):
-        return self.get(f"{self.ASSETS_DIR}/common/{name}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/{name}.png", (116, 116), (2, 2))
 
     def get_attack_bg(self, color):
-        return self.get(f"{self.ASSETS_DIR}/common/bg-attack-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-attack-{color}.png", (293, 107), (0, 0))
 
     def get_attack_dice_bg(self):
-        return self.get(f"{self.ASSETS_DIR}/common/bg-dice.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-dice.png", (214, 54), (0, 0))
 
     def get_attack_type_bg(self, color):
-        return self.get(f"{self.ASSETS_DIR}/common/bg-attacktype-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-attacktype-{color}.png", (106, 106), (0, 0))
 
     def get_attack_type(self, attack_type, color):
         atk_type = "melee" if attack_type == "melee" else "ranged"
-        return self.get(f"{self.ASSETS_DIR}/common/attacktype-{atk_type}-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/attacktype-{atk_type}-{color}.png", (119, 119), (0, 0))
 
     def get_attack_range_icon(self, attack_range, color):
-        return self.get(f"{self.ASSETS_DIR}/common/{attack_range}-{color}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/{attack_range}-{color}.png", (44, 44), (0, 0))
 
     def get_skill_icon(self, skill_name, color):
         path = f"{self.ASSETS_DIR}/common/skill-{skill_name}-{color}.png"
-        return self.get(path, (134, 134))
+        return self.get(path, (106, 106), (0, 0))
 
     def get_skill_divider(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/skill-divider.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/skill-divider.png", (690, 50), (40, 0))
 
     def get_skill_bottom(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/skill-bottom.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/skill-bottom.png", (614, 640), (0, 100))
 
     def get_tactics_commmander_img(self, commander_id):
-        return self.get(f"{self.ASSETS_DIR}/tactics/{commander_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/tactics/{commander_id}.png", (243, 252), (10, 10))
 
     def get_ncu_img(self, ncu_id):
-        return self.get(f"{self.ASSETS_DIR}/ncus/{ncu_id}.png")
+        return self.get(f"{self.ASSETS_DIR}/ncus/{ncu_id}.png", (269, 309), (5, 5))
 
     def get_text_icon(self, icon):
-        return self.get(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png", (140, 140), (100, 100))
 
     def get_character_box(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/box-character.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/box-character.png", (345, 61), (20, 1))
 
     def get_text_box(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/box-text.png")
+        return self.get(f"{self.ASSETS_DIR}/{faction}/box-text.png", (503, 340), (0, 100))
 
     def get_cost_bg(self, border_color, commander):
-        return self.get(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png")
+        return self.get(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png", (78, 78), (0, 0))
 
     @staticmethod
     def get_warcouncil_faction(faction):
@@ -265,7 +266,7 @@ class CustomAssetManager(AssetManager):
     def asset_path(self):
         return f"{self.CUSTOM_ASSET_BASE_DIR}/{self._asset_path}"
 
-    def get(self, path, size=AssetManager.DEFAULT_ASSET_SIZE):
+    def get(self, path, size=AssetManager.DEFAULT_ASSET_SIZE, tolerance=AssetManager.DEFAULT_SIZE_TOLERANCE):
         if os.path.exists(path):
             return self._get(path)
 
@@ -274,28 +275,28 @@ class CustomAssetManager(AssetManager):
         custom_paths = [custom_path, self.swap_filetype(custom_path), custom_path2, self.swap_filetype(custom_path2)]
         for p in [self.get_cropped_path(cp) for cp in custom_paths]:
             if os.path.exists(p):
-                return self.get_resized(p, size)
+                return self.get_resized(p, size, tolerance)
 
         for p in custom_paths:
             if os.path.exists(p):
-                return self.get_cropped(p, size, self.get_cropped_path(custom_path))
+                return self.get_cropped(p, size, tolerance, self.get_cropped_path(custom_path))
 
-        return self.get_missing(custom_path, size)
+        return self.get_missing(custom_path, size, tolerance)
 
     @staticmethod
-    def is_image_right_size(image, size):
+    def is_image_right_size(image, size, tolerance):
         w, h = size
         img_w, img_h = image.size
-        # TODO: what's a good value for this?
-        tolerance = 10
-        if w - tolerance < img_w < w + tolerance and h - tolerance < img_h < h + tolerance:
+        tol_w, tol_h = tolerance
+
+        if w - tol_w <= img_w <= w + tol_w and h - tol_h <= img_h <= h + tol_h:
             return True
         return False
 
     # FIXME: cropped image overwrites
-    def get_cropped(self, path, size, cropped_path):
+    def get_cropped(self, path, size, tolerance, cropped_path):
         original = self._get(path)
-        if self.is_image_right_size(original, size):
+        if self.is_image_right_size(original, size, tolerance):
             return original
 
         root = tk.Tk()
@@ -334,20 +335,20 @@ class CustomAssetManager(AssetManager):
         if is_ignore:
             return self._get(out_path)
 
-        return self.get_resized(out_path, size)
+        return self.get_resized(out_path, size, tolerance)
 
-    def get_resized(self, path, size):
+    def get_resized(self, path, size, tolerance):
         image = self._get(path)
-        if self.is_image_right_size(image, size):
+        if self.is_image_right_size(image, size, tolerance):
             return image
         return image.resize(size)
 
-    def get_missing(self, path, size):
+    def get_missing(self, path, size, tolerance):
         file_path = get_path_or_dialogue(path, initial_search_dir=self.asset_path)
         if file_path is None:
             return Image.new("RGBA", size)
 
-        return self.get_cropped(file_path, size, self.get_cropped_path(path))
+        return self.get_cropped(file_path, size, tolerance, self.get_cropped_path(path))
 
 
 def get_path_or_dialogue(path, initial_search_dir="./"):

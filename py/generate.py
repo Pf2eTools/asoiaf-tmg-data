@@ -217,10 +217,12 @@ def filter_data_generic(data_obj):
     ]
 
     languages = [
+        "en"
     ]
     ids = [
     ]
     types = [
+        "attachments"
     ]
     factions = [
     ]

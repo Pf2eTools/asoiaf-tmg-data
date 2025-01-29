@@ -15,7 +15,7 @@ class ImageGeneratorNCUs(ImageGenerator):
         background = self.asset_manager.get_bg(faction)
         w, h = background.size
         ncu_card = Image.new("RGBA", (w, h))
-        ncu_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
+        ncu_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
         text_bg = self.asset_manager.get_text_bg()
         text_bg = text_bg.crop((10, 20, text_bg.size[0] - 10, text_bg.size[1] - 5))
         ncu_card.alpha_composite(text_bg, (57, 356))
@@ -63,7 +63,7 @@ class ImageGeneratorNCUs(ImageGenerator):
         sections = []
         for ability in abilities:
             section = TextEntry([
-                TextEntry(TextEntry(f"**{ability.get('name').upper()}**", styles=TextStyle(font_color=get_faction_text_color(faction)))),
+                TextEntry(TextEntry(f"**{ability.get('name').upper()}**", styles=TextStyle(font_color=self.faction_store.text_color(faction)))),
                 *[TextEntry(TextEntry(e)) for e in ability.get("effect", [])]
             ])
             sections.append(section)
@@ -124,7 +124,7 @@ class ImageGeneratorNCUs(ImageGenerator):
         background = self.asset_manager.get_bg(faction)
         w, h = background.size
         ncu_card = Image.new("RGBA", (w, h))
-        ncu_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
+        ncu_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
 
         portrait = self.asset_manager.get_ncu_img(ncu_id + "b")
         ncu_card.alpha_composite(portrait, (135, 332))
@@ -180,8 +180,7 @@ class ImageGeneratorNCUs(ImageGenerator):
 
         if requirements is not None:
             if requirements[0].get("name") is not None:
-                box_name = render_small_box(self.asset_manager, self.text_renderer, faction, requirements[0].get("name").upper(),
-                                            get_faction_text_color(faction))
+                box_name = self.render_small_box(faction, requirements[0].get("name").upper(), self.faction_store.text_color(faction))
                 box_name = apply_drop_shadow(box_name)
                 layer_crests.alpha_composite(box_name, (415 - box_name.width // 2, back_text_y - box_name.height // 2))
                 bbox = (520, 144)
@@ -199,14 +198,13 @@ class ImageGeneratorNCUs(ImageGenerator):
                                                    align_x=TextRenderer.ALIGN_CENTER, margin=Spacing(20, 10, 10))
             layer_text.alpha_composite(rd_tactics, (146, 15 + back_text_y + sb_h // 2))
 
-            box_cmdr = render_commander_box(self.asset_manager, self.text_renderer, faction, language)
+            box_cmdr = self.render_commander_box(faction, language)
             box_cmdr = apply_drop_shadow(box_cmdr)
             layer_crests.alpha_composite(box_cmdr, (415 - box_cmdr.width // 2, back_text_y - box_cmdr.height // 2))
 
-        box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
+        box_character = self.render_character_box(faction, language)
         layer_crests.alpha_composite(apply_drop_shadow(box_character), (234, 266))
-        rendered_cost = render_cost(self.asset_manager, self.text_renderer, statistics.get("cost", 0), get_faction_highlight_color(faction),
-                                    statistics.get("commander"))
+        rendered_cost = self.render_cost(statistics.get("cost", 0), self.faction_store.highlight_color(faction), statistics.get("commander"))
         layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (38, 194))
         crest = self.asset_manager.get_crest(faction)
         crest = crest.crop(crest.getbbox())

@@ -22,7 +22,7 @@ class ImageGeneratorSpecials(ImageGenerator):
         background = self.asset_manager.get_bg(faction)
         w, h = background.size
         special_card = Image.new("RGBA", (w, h))
-        special_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
+        special_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
 
         bars = Image.new("RGBA", (w, h))
         bars_lower = Image.new("RGBA", (w, h))
@@ -140,9 +140,9 @@ class ImageGeneratorSpecials(ImageGenerator):
             layer_text.alpha_composite(rd_text, (bbox_bot[0] + margin // 2, bbox_bot[1] + margin // 2))
         elif side.get("image"):
             if is_back:
-                image = self.asset_manager.get_special_back_image(special_id)
+                image = self.asset_manager.get_special_back_image(special_id, (inner_w, inner_h_bot))
             else:
-                image = self.asset_manager.get_special_image(special_id)
+                image = self.asset_manager.get_special_image(special_id, (inner_w, inner_h_bot))
             special_card.alpha_composite(image.crop((0, 0, inner_w, inner_h_bot)), (bbox_bot[0], bbox_bot[1]))
 
         entry_version = TextEntry.from_string(version, styles=RootStyle(font_size=20, italic=True, font_color="white", leading=1000,
@@ -274,7 +274,7 @@ class ImageGeneratorSpecials(ImageGenerator):
         background = self.asset_manager.get_bg(faction)
         w, h = background.size
         special_card = Image.new("RGBA", (w, h))
-        special_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
+        special_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
 
         if is_back:
             portrait = self.asset_manager.get_special_back_image(special_id)
@@ -298,11 +298,10 @@ class ImageGeneratorSpecials(ImageGenerator):
         layer_text = Image.new("RGBA", (w, h))
         layer_crests = Image.new("RGBA", (w, h))
 
-        box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
+        box_character = self.render_character_box(faction, language)
         layer_crests.alpha_composite(apply_drop_shadow(box_character), (429 - box_character.width // 2, 212))
 
-        rendered_cost = render_cost(self.asset_manager, self.text_renderer, cmdr_data.get("cost", 0),
-                                    get_faction_highlight_color(faction), True)
+        rendered_cost = self.render_cost(cmdr_data.get("cost", 0), self.faction_store.highlight_color(faction), True)
         layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (78 - rendered_cost.width // 2, 764))
         crest = self.asset_manager.get_crest(faction)
         crest = crest.crop(crest.getbbox())
@@ -329,7 +328,7 @@ class ImageGeneratorSpecials(ImageGenerator):
         layer_text.alpha_composite(rd_names, (168, 28))
 
         box_text = self.asset_manager.get_text_box(faction)
-        box_commander = render_commander_box(self.asset_manager, self.text_renderer, faction, language)
+        box_commander = self.render_commander_box(faction, language)
         layer_crests.alpha_composite(apply_drop_shadow(box_text), (429 - box_text.width // 2, 830))
         layer_crests.alpha_composite(apply_drop_shadow(box_commander),
                                      (429 - box_commander.width // 2, 838 - box_commander.height // 2))

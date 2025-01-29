@@ -76,15 +76,15 @@ class ImageGeneratorUnits(ImageGenerator):
 
         layer_statistics = Image.new("RGBA", (w, h))
         icon_speed = self.asset_manager.get_stat_icon("speed")
-        rd_speed = render_stat_value(self.asset_manager, self.text_renderer, statistics.get("speed"))
+        rd_speed = self.render_stat_value(statistics.get("speed"))
         layer_statistics.alpha_composite(rd_speed, (bar_vl_x - 3 - rd_speed.size[0] // 2, 104 - rd_speed.size[1] // 2))
         layer_statistics.alpha_composite(icon_speed, (bar_vl_x - 140, 104 - icon_speed.size[1] // 2))
         icon_defense = self.asset_manager.get_stat_icon("defense")
-        rd_defense = render_stat_value(self.asset_manager, self.text_renderer, f'{statistics.get("defense")}+')
+        rd_defense = self.render_stat_value(f'{statistics.get("defense")}+')
         layer_statistics.alpha_composite(rd_defense, (bar_vl_x - rd_defense.size[0] // 2, 638 - rd_defense.size[1] // 2))
         layer_statistics.alpha_composite(icon_defense, (bar_vl_x - 140, 638 - icon_defense.size[1] // 2))
         icon_morale = self.asset_manager.get_stat_icon("morale")
-        rd_morale = render_stat_value(self.asset_manager, self.text_renderer, f'{statistics.get("morale")}+')
+        rd_morale = self.render_stat_value(f'{statistics.get("morale")}+')
         layer_statistics.alpha_composite(rd_morale, (bar_vl_x + 192 - rd_morale.size[0] // 2, 638 - rd_morale.size[1] // 2))
         layer_statistics.alpha_composite(icon_morale, (bar_vl_x + 52, 638 - icon_morale.size[1] // 2))
 
@@ -92,7 +92,7 @@ class ImageGeneratorUnits(ImageGenerator):
             # TODO: ???
             if ix > 1:
                 continue
-            rd_attack = render_attack(self.asset_manager, self.text_renderer, attack_data, get_faction_highlight_color(faction))
+            rd_attack = self.render_attack(attack_data, self.faction_store.highlight_color(faction))
             layer_statistics.alpha_composite(rd_attack, (30, 198 + ix * 188))
 
         all_text = Image.new("RGBA", (w, h))
@@ -120,7 +120,7 @@ class ImageGeneratorUnits(ImageGenerator):
         skill_bottom = self.asset_manager.get_skill_bottom(faction)
         section_padding = skill_divider.height
         filtered_abilities_data = get_filtered_ability_data(abilities, abilities_data)
-        ability_sections = get_ability_sections(filtered_abilities_data, get_faction_text_color(faction))
+        ability_sections = get_ability_sections(filtered_abilities_data, self.faction_store.text_color(faction))
         entries_abilities = TextEntry.from_array(ability_sections, styles=RootStyle(font_size=36, font_color="#5d4d40",
                                                                                     section_padding=section_padding))
         rd_abilities = self.text_renderer.render(entries_abilities, bbox=(560, h - 100), align_x=TextRenderer.ALIGN_LEFT,
@@ -138,8 +138,8 @@ class ImageGeneratorUnits(ImageGenerator):
             icons = data.get("icons")
             if icons is None:
                 continue
-            highlight_color = get_faction_highlight_color(faction)
-            rd_icons = render_skill_icons(self.asset_manager, self.text_renderer, icons, highlight_color)
+            highlight_color = self.faction_store.highlight_color(faction)
+            rd_icons = self.render_skill_icons(icons, highlight_color)
             x, y = 694, 50 + coords[0] + (coords[1] - coords[0] - rd_icons.size[1]) // 2
             layer_abilities.alpha_composite(rd_icons, (x, int(y)))
 
@@ -183,8 +183,7 @@ class ImageGeneratorUnits(ImageGenerator):
         layer_crests = Image.new("RGBA", (w, h))
         unit_type = self.asset_manager.get_unit_type(statistics.get("type"), faction)
         layer_crests.alpha_composite(unit_type, (846 - unit_type.size[0] // 2, h - unit_type.size[1]))
-        rd_cost = render_cost(self.asset_manager, self.text_renderer, statistics.get("cost", 0), get_faction_highlight_color(faction),
-                              statistics.get("commander"))
+        rd_cost = self.render_cost(statistics.get("cost", 0), self.faction_store.highlight_color(faction), statistics.get("commander"))
         layer_crests.alpha_composite(rd_cost, (846 - rd_cost.size[0] // 2, 555))
         crest = self.asset_manager.get_crest(faction)
         crest = crest.crop(crest.getbbox())
@@ -226,8 +225,7 @@ class ImageGeneratorUnits(ImageGenerator):
                                                         align_y=TextRenderer.CENTER_SECTION)
             layer_text.alpha_composite(rd_requirements, (box_x - rd_requirements.width // 2, box_y + 40))
             if requirements[0].get("name") is not None:
-                box_name = render_small_box(self.asset_manager, self.text_renderer, faction, requirements[0].get("name").upper(),
-                                            font_color="#5d4d40")
+                box_name = self.render_small_box(faction, requirements[0].get("name").upper(), font_color="#5d4d40")
                 box_name = apply_drop_shadow(box_name)
                 layer_crests.alpha_composite(box_name, (box_x - box_name.width // 2, box_y - (box_name.height - sb_h) // 2))
 

@@ -1,22 +1,7 @@
-LANGUAGES = [
-    "en",
-    "de",
-    "fr",
-]
+from generate_utils import LanguageStore, FactionStore
 
-FACTIONS = [
-    "lannister",
-    "stark",
-    "baratheon",
-    "targaryen",
-    "freefolk",
-    "nightswatch",
-    "greyjoy",
-    "martell",
-    "bolton",
-    "neutral",
-    "brotherhood",
-]
+LANGUAGES = LanguageStore.BASE_LANGUAGES.keys()
+FACTIONS = FactionStore.BASE_FACTIONS.keys()
 
 DATA_PATH = "./data"
 CSV_PATH = "./data/warcouncil"

@@ -16,7 +16,7 @@ class ImageGeneratorAttachments(ImageGenerator):
         background = self.asset_manager.get_bg(faction)
         w, h = background.size
         attachment_card = Image.new("RGBA", (w, h))
-        attachment_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
+        attachment_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
         if is_commander:
             text_bg = self.asset_manager.get_unit_skills_bg()
             attachment_card.alpha_composite(text_bg, (141, 338))
@@ -103,7 +103,7 @@ class ImageGeneratorAttachments(ImageGenerator):
 
         section_padding = skill_divider.size[1]
         w_abilities = w - 150 if is_commander else 540
-        ability_sections = get_ability_sections(filtered_abilities_data, get_faction_text_color(faction))
+        ability_sections = get_ability_sections(filtered_abilities_data, self.faction_store.text_color(faction))
         entries_abilities = TextEntry(ability_sections, styles=RootStyle(font_size=36, font_color="#5d4d40", leading=1080,
                                                                          section_padding=section_padding))
         rd_abilities = self.text_renderer.render(entries_abilities, bbox=(w_abilities, h - 396), align_x=TextRenderer.ALIGN_LEFT,
@@ -119,8 +119,8 @@ class ImageGeneratorAttachments(ImageGenerator):
             icons = data.get("icons")
             if icons is None:
                 continue
-            highlight_color = get_faction_highlight_color(faction)
-            rd_icons = render_skill_icons(self.asset_manager, self.text_renderer, icons, highlight_color)
+            highlight_color = self.faction_store.highlight_color(faction)
+            rd_icons = self.render_skill_icons(icons, highlight_color)
             x, y = 28, 346 + coords[0] + (coords[1] - coords[0] - rd_icons.size[1]) // 2
             layer_abilities.alpha_composite(rd_icons, (x, int(y)))
         bars.alpha_composite(apply_drop_shadow(skill_bottom, shadow_size=7), (117, min(int(last_coords[1]), h - 396) + 326))
@@ -185,7 +185,7 @@ class ImageGeneratorAttachments(ImageGenerator):
         background = self.asset_manager.get_bg(faction)
         w, h = background.size
         attachment_card = Image.new("RGBA", (w, h))
-        attachment_card.alpha_composite(background.rotate(get_faction_bg_rotation(faction)))
+        attachment_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
 
         portrait = self.asset_manager.get_attachment_back_image(attachment_id)
         if is_commander:
@@ -278,13 +278,12 @@ class ImageGeneratorAttachments(ImageGenerator):
                 sect_tactics = None
 
             if is_commander:
-                box_commander = render_commander_box(self.asset_manager, self.text_renderer, faction, language)
+                box_commander = self.render_commander_box(faction, language)
                 box_commander = apply_drop_shadow(box_commander)
                 layer_crests.alpha_composite(box_commander, (449 - box_commander.width // 2, requirement_y - box_commander.height // 2))
                 requirement_y += box_commander.height // 2 - 20
             elif requirements[0].get("name") is not None:
-                box_name = render_small_box(self.asset_manager, self.text_renderer, faction, requirements[0].get("name").upper(),
-                                            get_faction_text_color(faction))
+                box_name = self.render_small_box(faction, requirements[0].get("name").upper(), self.faction_store.text_color(faction))
                 box_name = apply_drop_shadow(box_name)
                 layer_crests.alpha_composite(box_name, (415 - box_name.width // 2, requirement_y - box_name.height // 2))
                 requirement_y += box_name.height // 2 - 20
@@ -301,13 +300,12 @@ class ImageGeneratorAttachments(ImageGenerator):
                 bars.alpha_composite(decor, (674, center - decor.height // 2))
 
         if is_commander:
-            box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
+            box_character = self.render_character_box(faction, language)
             layer_crests.alpha_composite(apply_drop_shadow(box_character), (429 - box_character.width // 2, 212))
         elif is_character:
-            box_character = render_character_box(self.asset_manager, self.text_renderer, faction, language)
+            box_character = self.render_character_box(faction, language)
             layer_crests.alpha_composite(apply_drop_shadow(box_character), (395 - box_character.width // 2, 266))
-        rendered_cost = render_cost(self.asset_manager, self.text_renderer, statistics.get("cost", 0),
-                                    get_faction_highlight_color(faction), is_commander)
+        rendered_cost = self.render_cost(statistics.get("cost", 0), self.faction_store.highlight_color(faction), is_commander)
         layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (78 - rendered_cost.width // 2, 764))
         crest = self.asset_manager.get_crest(faction)
         crest = crest.crop(crest.getbbox())

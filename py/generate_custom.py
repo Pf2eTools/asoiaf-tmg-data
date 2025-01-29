@@ -1,6 +1,6 @@
 import os.path
 from generate import Generator, load_json
-from generate_utils import TextRenderer
+from generate_utils import TextRenderer, LanguageStore, FactionStore
 from generate_tactics import ImageGeneratorTactics
 from generate_units import ImageGeneratorUnits
 from generate_ncus import ImageGeneratorNCUs
@@ -24,9 +24,24 @@ class CustomGenerator(Generator):
         return f"./custom/generated/{custom_data_id}/", f"{data_id}{back_str}.jpg"
 
     def get_abilitiy_data(self, language):
-        data = super().get_abilitiy_data(language)
-        data.update(self.custom_data.get("abilities", {}))
-        return data
+        with open(f"{DATA_PATH}/en/abilities.json", "r", encoding="utf-8") as file:
+            abilities_data = json.load(file)
+
+        if language == "en":
+            pass
+        else:
+            if language in LanguageStore.BASE_LANGUAGES.keys():
+                lang_path = f"{DATA_PATH}/{language}/abilities.json"
+            else:
+                lang_path = f"./custom/data/{language}-abilities.json"
+            if os.path.exists(lang_path):
+                with open(lang_path, "r", encoding="utf-8") as file:
+                    translated_abilities_data = json.load(file)
+                abilities_data.update(translated_abilities_data)
+
+        abilities_data.update(self.custom_data.get("abilities", {}))
+
+        return abilities_data
 
     def generate_all(self):
         data = self.mutate_data(self.custom_data)
@@ -68,13 +83,29 @@ def main(path, skip_portrait=True, overwrite=True):
     if meta is None or meta.get("id") is None:
         raise Exception("Invalid custom data!")
     custom_data_id = meta.get("id")
+
+    language_store = LanguageStore()
+    custom_languages = json_data.get("languages")
+    if custom_languages is not None:
+        for lang_key, lang_data in custom_languages.items():
+            language_store.inject_language(lang_key, lang_data)
+    faction_store = FactionStore()
+    custom_factions = json_data.get("factions")
+    if custom_factions is not None:
+        for faction_name, faction_data in custom_factions.items():
+            faction_store.inject_faction(faction_name, faction_data)
+
     asset_manager = CustomAssetManager(custom_data_id)
     text_renderer = TextRenderer(asset_manager)
-    ig_tactics = ImageGeneratorTactics(asset_manager, text_renderer)
-    ig_units = ImageGeneratorUnits(asset_manager, text_renderer)
-    ig_ncus = ImageGeneratorNCUs(asset_manager, text_renderer)
-    ig_attachments = ImageGeneratorAttachments(asset_manager, text_renderer)
-    ig_specials = ImageGeneratorSpecials(asset_manager, text_renderer)
+    custom_icons = json_data.get("icons")
+    if custom_icons is not None:
+        text_renderer.inject_icons(custom_icons)
+
+    ig_tactics = ImageGeneratorTactics(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
+    ig_units = ImageGeneratorUnits(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
+    ig_ncus = ImageGeneratorNCUs(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
+    ig_attachments = ImageGeneratorAttachments(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
+    ig_specials = ImageGeneratorSpecials(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
 
     generator = CustomGenerator(
         ig_tactics,
@@ -92,8 +123,8 @@ def main(path, skip_portrait=True, overwrite=True):
     if skip_portrait:
         return
 
-    for key in ["units", "attachments", "ncus"]:
-        for data_object in json_data[key]:
+    for lang_key in ["units", "attachments", "ncus"]:
+        for data_object in json_data[lang_key]:
             object_id = data_object.get("id")
             path = None
 
@@ -130,4 +161,4 @@ def main(path, skip_portrait=True, overwrite=True):
 
 if __name__ == "__main__":
     # main("./custom/data/cmon-prerelease.json", skip_portrait=False)
-    main("./custom/data/brew.json", overwrite=False)
+    main("./custom/data/example.json", overwrite=False)

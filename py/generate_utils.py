@@ -4,77 +4,23 @@ import re
 from copy import copy
 
 
-def add_rounded_corners(im, rad, supersample=4):
-    circle = Image.new('L', (rad * 2 * supersample, rad * 2 * supersample), 0)
+def round_corners(image, radius, supersample=4):
+    circle = Image.new('L', (radius * 2 * supersample, radius * 2 * supersample), 0)
     draw = ImageDraw.Draw(circle)
-    draw.ellipse((0, 0, rad * 2 * supersample, rad * 2 * supersample), fill=255)
-    circle = circle.resize((rad * 2, rad * 2), resample=Image.LANCZOS)
-    alpha = Image.new('L', im.size, "white")
-    w, h = im.size
-    alpha.paste(circle.crop((0, 0, rad, rad)), (0, 0))
-    alpha.paste(circle.crop((rad, 0, 2 * rad, rad)), (w - rad, 0))
-    alpha.paste(circle.crop((0, rad, rad, 2 * rad)), (0, h - rad))
-    alpha.paste(circle.crop((rad, rad, 2 * rad, 2 * rad)), (w - rad, h - rad))
+    draw.ellipse((0, 0, radius * 2 * supersample, radius * 2 * supersample), fill=255)
+    circle = circle.resize((radius * 2, radius * 2), resample=Image.LANCZOS)
+    alpha = Image.new('L', image.size, "white")
+    w, h = image.size
+    alpha.paste(circle.crop((0, 0, radius, radius)), (0, 0))
+    alpha.paste(circle.crop((radius, 0, 2 * radius, radius)), (w - radius, 0))
+    alpha.paste(circle.crop((0, radius, radius, 2 * radius)), (0, h - radius))
+    alpha.paste(circle.crop((radius, radius, 2 * radius, 2 * radius)), (w - radius, h - radius))
 
-    im = im.convert("RGBA")
-    old_alpha = im.getchannel("A")
-    im.putalpha(ImageChops.darker(alpha, old_alpha))
+    image = image.convert("RGBA")
+    old_alpha = image.getchannel("A")
+    image.putalpha(ImageChops.darker(alpha, old_alpha))
 
-    return im
-
-
-def get_faction_text_color(faction):
-    faction_colors = {
-        "martell": "#a85b25",
-        "neutral": "#8a300e",
-        "nightswatch": "#302a28",
-        "stark": "#3b6680",
-        "targaryen": "#ac4c5d",
-        "baratheon": "#904523",
-        "bolton": "#7a312b",
-        "freefolk": "#4b4138",
-        "greyjoy": "#577b79",
-        "lannister": "#9d1323",
-        "brotherhood": "#5c7d59",
-    }
-    faction = re.sub(r"[^a-z]", "", faction.lower())
-    return faction_colors.get(faction) or "#7FDBFF"
-
-
-def get_faction_highlight_color(faction):
-    faction_colors = {
-        "neutral": "Silver",
-        "nightswatch": "Gold",
-        "stark": "Gold",
-        "targaryen": "Gold",
-        "baratheon": "Silver",
-        "bolton": "Gold",
-        "freefolk": "Gold",
-        "greyjoy": "Gold",
-        "martell": "Gold",
-        "lannister": "Silver",
-        "brotherhood": "Gold",
-    }
-    faction = re.sub(r"[^a-z]", "", faction.lower())
-    return faction_colors.get(faction) or "Gold"
-
-
-def get_faction_bg_rotation(faction):
-    faction_bg_rotation = {
-        "martell": 180,
-        "neutral": 0,
-        "nightswatch": 0,
-        "stark": 180,
-        "targaryen": 0,
-        "baratheon": 0,
-        "bolton": 0,
-        "freefolk": 0,
-        "greyjoy": 180,
-        "lannister": 0,
-        "brotherhood": 0,
-    }
-    faction = re.sub(r"[^a-z]", "", faction.lower())
-    return faction_bg_rotation.get(faction) or 0
+    return image
 
 
 def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
@@ -96,120 +42,6 @@ def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
         shadow = shadow.filter(ImageFilter.BLUR)
     shadow.alpha_composite(image, (border, border))
     return shadow
-
-
-def render_stat_value(asset_manager, text_renderer, stat):
-    background = asset_manager.get_stat_background()
-    stat = str(stat)
-    entry = TextEntry.from_string(stat, styles=RootStyle(font_family="Garamond", font_size=46, font_color="white", stroke_width=0,
-                                                         bold=True))
-
-    rd_stat = text_renderer.render(entry, bbox=background.size, supersample=4, align_y=TextRenderer.ALIGN_CENTER)
-    offset = (2, -2) if stat.endswith("+") else (0, -1)
-    background.alpha_composite(rd_stat, offset)
-    return background
-
-
-def render_cost(asset_manager, text_renderer, cost, border="gold", is_commander=False):
-    commander = "commander" if is_commander else "regular"
-    background = asset_manager.get_cost_bg(border, commander)
-    entry = TextEntry.from_string(str(cost), styles=RootStyle(font_family="Garamond", font_size=46, font_color="white", bold=True,
-                                                              stroke_width=0))
-    rd_stat = text_renderer.render(entry, bbox=background.size, supersample=4.0, align_y=TextRenderer.ALIGN_CENTER)
-    offset = (-1, -2) if type(cost) == str else (0, 0)
-    background.alpha_composite(rd_stat, offset)
-    return background
-
-
-def render_attack(asset_manager, text_renderer, attack_data, border_color="Gold"):
-    atk_type = attack_data.get("type")
-    atk_name = attack_data.get("name")
-    tohit = attack_data.get("hit")
-    atk_ranks = attack_data.get("dice")
-
-    attack_bg = asset_manager.get_attack_bg(border_color)
-    attack_dice_bg = asset_manager.get_attack_dice_bg()
-
-    attack_bar = Image.new("RGBA", (367, 166))
-    skill_icon = render_skill_icon(asset_manager, text_renderer, atk_type, border_color)
-    attack_bar.alpha_composite(attack_bg, (skill_icon.size[0] // 2, 14 + (attack_bg.size[1] - 106) // 2))
-    attack_bar.alpha_composite(skill_icon)
-
-    atk_name_color = "#0e2e45" if atk_type == "melee" else "#87282a"
-    entry_name = TextEntry.from_string(atk_name.upper(), styles=RootStyle(font_size=29, font_color=atk_name_color, stroke_width=0.7,
-                                                                          leading=900, italic=True))
-    rd_atk_name = text_renderer.render(entry_name, bbox=(180, 60), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER)
-    attack_bar.alpha_composite(rd_atk_name, (221 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
-
-    if atk_type in ["short", "long"]:
-        range_icon = asset_manager.get_attack_range_icon(atk_type, border_color)
-        attack_bar.alpha_composite(apply_drop_shadow(range_icon), (60, -14))
-
-    rd_statistics = Image.new("RGBA", attack_bar.size)
-    rd_statistics.alpha_composite(attack_dice_bg, (104, 88))
-    rd_to_hit = render_stat_value(asset_manager, text_renderer, f"{tohit}+")
-    rd_statistics.alpha_composite(apply_drop_shadow(rd_to_hit), (58, 56))
-    rank_colors = ["#648f4a", "#dd8e29", "#bd1a2b"]
-    for i in range(len(atk_ranks)):
-        rank_bg = Image.new("RGBA", (35, 35), rank_colors[i])
-        entry_num_dice = TextEntry.from_string(str(atk_ranks[i]), styles=RootStyle(font_size=37, font_color="#cdcecb", stroke_width=0.1,
-                                                                                   bold=True, font_family="Garamond"))
-        rd_num_dice = text_renderer.render(entry_num_dice, bbox=(44, 44))
-        # This was an interesting programming journey, but having a transparent font makes it pretty hard to read the text
-        # rd_num_dice = render_text_line(str(atk_ranks[i]), "black", 35, "Garamond-Bold", stroke_width=0)
-        rank_bg.alpha_composite(rd_num_dice, (-5, 1))
-        # mask = Image.new("RGBA", (35, 35))
-        # mask.alpha_composite(rd_num_dice, (16 - rd_num_dice.size[0] // 2, 5))
-        # r,g,b,_ = rank_bg.split()
-        # rank_bg = Image.merge("RGBA", (r,g,b,ImageChops.invert(mask.getchannel("A"))))
-        rd_statistics.alpha_composite(add_rounded_corners(rank_bg, 10), (164 + i * 43, 98))
-    attack_bar.alpha_composite(apply_drop_shadow(rd_statistics, color="#00000077"), (-20, -20))
-
-    return attack_bar
-
-
-def render_skill_icon(asset_manager, text_renderer, name, highlight_color="Gold"):
-    rendered = Image.new("RGBA", (134, 134))
-    name, number, _ = re.split(r"(\d+)|$", name, maxsplit=1)
-    if name in ["ranged", "melee", "long", "short"]:
-        attack_type_bg = asset_manager.get_attack_type_bg(highlight_color)
-        x, y = (134 - attack_type_bg.size[0]) // 2, (134 - attack_type_bg.size[1]) // 2
-        rendered.alpha_composite(attack_type_bg, (x, y))
-        attack_type = apply_drop_shadow(asset_manager.get_attack_type(name, highlight_color))
-        x, y = (136 - attack_type.size[0]) // 2, (136 - attack_type.size[1]) // 2
-        rendered.alpha_composite(attack_type, (x, y))
-    # Buff asha
-    elif name == "morale":
-        rendered = Image.new("RGBA", (134, 196))
-        icon_morale = asset_manager.get_stat_icon("morale")
-        rd_morale = render_stat_value(asset_manager, text_renderer, f"{number or 5}+")
-        x, y = (134 - rd_morale.size[0]) // 2, 196 - 9 - rd_morale.size[1]
-        rendered.alpha_composite(rd_morale, (x, y))
-        x, y = (134 - icon_morale.size[0]) // 2, 9
-        rendered.alpha_composite(icon_morale, (x, y))
-    else:
-        icon = asset_manager.get_skill_icon(name, highlight_color)
-        x, y = (134 - icon.size[0]) // 2, (134 - icon.size[1]) // 2
-        rendered.alpha_composite(icon, (x, y))
-        if number is not None:
-            entry = TextEntry.from_string(number, styles=RootStyle(font_family="Garamond", bold=True, font_color="white", font_size=36))
-            rd_number = text_renderer.render(entry, bbox=(134, 134), align_y=TextRenderer.ALIGN_CENTER)
-            rendered.alpha_composite(rd_number)
-    return rendered
-
-
-def render_skill_icons(asset_manager, text_renderer, icons, highlight_color="Gold"):
-    rd_icons = [render_skill_icon(asset_manager, text_renderer, icon, highlight_color) for icon in icons]
-    h = sum([i.size[1] - 20 for i in rd_icons]) + 20
-    w = 134
-
-    all_icons = Image.new("RGBA", (w, h))
-    y = 0
-    for ix, icon in enumerate(rd_icons):
-        all_icons.alpha_composite(apply_drop_shadow(icon, color="#00000055"), (-20, y - 20))
-        y += icon.size[1] - 20
-
-    return all_icons
 
 
 def get_filtered_ability_data(abilities, abilities_data):
@@ -259,44 +91,254 @@ def get_requirement_data_for_renderer(requirements, sections=None, section_paddi
                                                            section_padding=section_padding))
 
 
-LANGUAGE_TO_CHARACTER = {
-    "en": "CHARACTER",
-    "de": "CHARAKTER",
-    "fr": "PERSONNAGE",
-}
-LANGUAGE_TO_COMMANDER = {
-    "en": "COMMANDER",
-    "de": "HEERFÜHRER",
-    "fr": "GÉNÉRAL",
-}
+class FactionStore:
+    BASE_FACTIONS = {
+        "martell": {
+            "text_color": "#a85b25",
+            "highlight_color": "gold",
+            "bg_rotation": 180,
+        },
+        "brotherhood": {
+            "text_color": "#5c7d59",
+            "highlight_color": "gold",
+            "bg_rotation": 0,
+        },
+        "lannister": {
+            "text_color": "#9d1323",
+            "highlight_color": "silver",
+            "bg_rotation": 0,
+        },
+        "greyjoy": {
+            "text_color": "#577b79",
+            "highlight_color": "gold",
+            "bg_rotation": 180,
+        },
+        "freefolk": {
+            "text_color": "#4b4138",
+            "highlight_color": "gold",
+            "bg_rotation": 0,
+        },
+        "bolton": {
+            "text_color": "#7a312b",
+            "highlight_color": "gold",
+            "bg_rotation": 0,
+        },
+        "baratheon": {
+            "text_color": "#904523",
+            "highlight_color": "silver",
+            "bg_rotation": 0,
+        },
+        "targaryen": {
+            "text_color": "#ac4c5d",
+            "highlight_color": "gold",
+            "bg_rotation": 0,
+        },
+        "stark": {
+            "text_color": "#3b6680",
+            "highlight_color": "gold",
+            "bg_rotation": 180,
+        },
+        "nightswatch": {
+            "text_color": "#302a28",
+            "highlight_color": "gold",
+            "bg_rotation": 0,
+        },
+        "neutral": {
+            "text_color": "#8a300e",
+            "highlight_color": "silver",
+            "bg_rotation": 0,
+        },
+    }
+
+    def __init__(self):
+        self._factions = {fac: {k: v for k, v in self.BASE_FACTIONS.get(fac).items()} for fac in self.BASE_FACTIONS.keys()}
+
+    def inject_faction(self, key, faction):
+        self._factions[key] = {k: v for k, v in faction.items()}
+
+    def _get(self, faction_key, key, default):
+        faction = self._factions.get(faction_key)
+        if faction is None:
+            return default
+        return faction.get(key, default)
+
+    def text_color(self, faction):
+        return self._get(faction, "text_color", "#7FDBFF")
+
+    def highlight_color(self, faction):
+        return self._get(faction, "highlight_color", "gold")
+
+    def bg_rotation(self, faction):
+        return self._get(faction, "bg_rotation", 0)
 
 
-def render_character_box(asset_manager, text_renderer, faction, language):
-    text = LANGUAGE_TO_CHARACTER.get(language) or LANGUAGE_TO_CHARACTER.get("en")
-    return render_small_box(asset_manager, text_renderer, faction, text)
+class LanguageStore:
+    BASE_LANGUAGES = {
+        "en": {
+            "character": "CHARACTER",
+            "commander": "COMMANDER"
+        },
+        "de": {
+            "character": "CHARAKTER",
+            "commander": "HEERFÜHRER"
+        },
+        "fr": {
+            "character": "PERSONNAGE",
+            "commander": "GÉNÉRAL"
+        },
+    }
 
+    def __init__(self):
+        self._languages = {lang: {k: v for k, v in self.BASE_LANGUAGES.get(lang).items()} for lang in self.BASE_LANGUAGES.keys()}
 
-def render_commander_box(asset_manager, text_renderer, faction, language):
-    text = LANGUAGE_TO_COMMANDER.get(language) or LANGUAGE_TO_COMMANDER.get("en")
-    return render_small_box(asset_manager, text_renderer, faction, text, font_color=get_faction_text_color(faction), tracking=0,
-                            font_size=36)
+    def inject_language(self, key, language):
+        self._languages[key] = {k: v for k, v in language.items()}
 
+    def translate(self, phrase, lang_key):
+        language = self._languages.get(lang_key)
+        if language is None:
+            print(f"WARNING: Unknown language '{lang_key}'.")
+            language = self._languages.get("en")
+        translated = language.get(phrase, "")
+        if translated == "":
+            print(f"WARNING: Could not translate '{phrase}' to '{lang_key}'.")
 
-def render_small_box(asset_manager, text_renderer, faction, text, font_color="#5d4d40", tracking=50, font_size=38):
-    # TODO (MAYBE): Shrink (or crop out the center of) the box when the text is short?
-    box = asset_manager.get_character_box(faction)
-    entry = TextEntry.from_string(text, styles=RootStyle(font_size=font_size, font_color=font_color, tracking=tracking, bold=True,
-                                                         stroke_width=0.1))
-    rd_text = text_renderer.render(entry, bbox=(204, 37), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER,
-                                   overflow_policy_x=TextRenderer.OVERFLOW_AUTO)
-    box.alpha_composite(rd_text, (box.width // 2 - 102, 12))
-    return box
+        return translated
 
 
 class ImageGenerator:
-    def __init__(self, asset_manager, text_renderer):
+    def __init__(self, asset_manager, text_renderer, language_store=None, faction_store=None):
         self.asset_manager = asset_manager
         self.text_renderer: TextRenderer = text_renderer
+        self.language_store = language_store or LanguageStore()
+        self.faction_store = faction_store or FactionStore()
+
+    def render_character_box(self, faction, language):
+        text = self.language_store.translate("character", language)
+        return self.render_small_box(faction, text)
+
+    def render_commander_box(self, faction, language):
+        text = self.language_store.translate("commander", language)
+        return self.render_small_box(faction, text, font_color=self.faction_store.text_color(faction), tracking=0, font_size=36)
+
+    def render_small_box(self, faction, text, font_color="#5d4d40", tracking=50, font_size=38):
+        # TODO (MAYBE): Shrink (or crop out the center of) the box when the text is short?
+        box = self.asset_manager.get_character_box(faction)
+        entry = TextEntry.from_string(text, styles=RootStyle(font_size=font_size, font_color=font_color, tracking=tracking, bold=True,
+                                                             stroke_width=0.1))
+        rd_text = self.text_renderer.render(entry, bbox=(204, 37), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER,
+                                            overflow_policy_x=TextRenderer.OVERFLOW_AUTO)
+        box.alpha_composite(rd_text, (box.width // 2 - 102, 12))
+        return box
+
+    def render_stat_value(self, stat):
+        background = self.asset_manager.get_stat_background()
+        stat = str(stat)
+        entry = TextEntry.from_string(stat, styles=RootStyle(font_family="Garamond", font_size=46, font_color="white", stroke_width=0,
+                                                             bold=True))
+
+        rd_stat = self.text_renderer.render(entry, bbox=background.size, supersample=4, align_y=TextRenderer.ALIGN_CENTER)
+        offset = (2, -2) if stat.endswith("+") else (0, -1)
+        background.alpha_composite(rd_stat, offset)
+        return background
+
+    def render_cost(self, cost, border="gold", is_commander=False):
+        commander = "commander" if is_commander else "regular"
+        background = self.asset_manager.get_cost_bg(border, commander)
+        entry = TextEntry.from_string(str(cost), styles=RootStyle(font_family="Garamond", font_size=46, font_color="white", bold=True,
+                                                                  stroke_width=0))
+        rd_stat = self.text_renderer.render(entry, bbox=background.size, supersample=4.0, align_y=TextRenderer.ALIGN_CENTER)
+        offset = (-1, -2) if type(cost) == str else (0, 0)
+        background.alpha_composite(rd_stat, offset)
+        return background
+
+    def render_attack(self, attack_data, border_color="gold"):
+        atk_type = attack_data.get("type")
+        atk_name = attack_data.get("name")
+        tohit = attack_data.get("hit")
+        atk_ranks = attack_data.get("dice")
+
+        attack_bg = self.asset_manager.get_attack_bg(border_color)
+        attack_dice_bg = self.asset_manager.get_attack_dice_bg()
+
+        attack_bar = Image.new("RGBA", (367, 166))
+        skill_icon = self.render_skill_icon(atk_type, border_color)
+        attack_bar.alpha_composite(attack_bg, (skill_icon.size[0] // 2, 14 + (attack_bg.size[1] - 106) // 2))
+        attack_bar.alpha_composite(skill_icon)
+
+        atk_name_color = "#0e2e45" if atk_type == "melee" else "#87282a"
+        entry_name = TextEntry.from_string(atk_name.upper(), styles=RootStyle(font_size=29, font_color=atk_name_color, stroke_width=0.7,
+                                                                              leading=900, italic=True))
+        rd_atk_name = self.text_renderer.render(entry_name, bbox=(180, 60), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER)
+        attack_bar.alpha_composite(rd_atk_name, (221 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
+
+        if atk_type in ["short", "long"]:
+            range_icon = self.asset_manager.get_attack_range_icon(atk_type, border_color)
+            attack_bar.alpha_composite(apply_drop_shadow(range_icon), (60, -14))
+
+        rd_statistics = Image.new("RGBA", attack_bar.size)
+        rd_statistics.alpha_composite(attack_dice_bg, (104, 88))
+        rd_to_hit = self.render_stat_value(f"{tohit}+")
+        rd_statistics.alpha_composite(apply_drop_shadow(rd_to_hit), (58, 56))
+        rank_colors = ["#648f4a", "#dd8e29", "#bd1a2b"]
+        for i in range(len(atk_ranks)):
+            rank_bg = Image.new("RGBA", (35, 35), rank_colors[i])
+            entry_num_dice = TextEntry.from_string(str(atk_ranks[i]), styles=RootStyle(font_size=37, font_color="#cdcecb", stroke_width=0.1,
+                                                                                       bold=True, font_family="Garamond"))
+            rd_num_dice = self.text_renderer.render(entry_num_dice, bbox=(44, 44))
+            # This was an interesting programming journey, but having a transparent font makes it pretty hard to read the text
+            # rd_num_dice = render_text_line(str(atk_ranks[i]), "black", 35, "Garamond-Bold", stroke_width=0)
+            rank_bg.alpha_composite(rd_num_dice, (-5, 1))
+            # mask = Image.new("RGBA", (35, 35))
+            # mask.alpha_composite(rd_num_dice, (16 - rd_num_dice.size[0] // 2, 5))
+            # r,g,b,_ = rank_bg.split()
+            # rank_bg = Image.merge("RGBA", (r,g,b,ImageChops.invert(mask.getchannel("A"))))
+            rd_statistics.alpha_composite(round_corners(rank_bg, 10), (164 + i * 43, 98))
+        attack_bar.alpha_composite(apply_drop_shadow(rd_statistics, color="#00000077"), (-20, -20))
+
+        return attack_bar
+
+    def render_skill_icon(self, name, highlight_color="gold"):
+        rendered = Image.new("RGBA", (134, 134))
+        name, number, _ = re.split(r"(\d+)|$", name, maxsplit=1)
+        if name in ["ranged", "melee", "long", "short"]:
+            attack_type_bg = self.asset_manager.get_attack_type_bg(highlight_color)
+            x, y = (134 - attack_type_bg.size[0]) // 2, (134 - attack_type_bg.size[1]) // 2
+            rendered.alpha_composite(attack_type_bg, (x, y))
+            attack_type = apply_drop_shadow(self.asset_manager.get_attack_type(name, highlight_color))
+            x, y = (136 - attack_type.size[0]) // 2, (136 - attack_type.size[1]) // 2
+            rendered.alpha_composite(attack_type, (x, y))
+        # Buff asha
+        elif name == "morale":
+            rendered = Image.new("RGBA", (134, 196))
+            icon_morale = self.asset_manager.get_stat_icon("morale")
+            rd_morale = self.render_stat_value(f"{number or 5}+")
+            x, y = (134 - rd_morale.size[0]) // 2, 196 - 9 - rd_morale.size[1]
+            rendered.alpha_composite(rd_morale, (x, y))
+            x, y = (134 - icon_morale.size[0]) // 2, 9
+            rendered.alpha_composite(icon_morale, (x, y))
+        else:
+            icon = self.asset_manager.get_skill_icon(name, highlight_color)
+            x, y = (134 - icon.size[0]) // 2, (134 - icon.size[1]) // 2
+            rendered.alpha_composite(icon, (x, y))
+            if number is not None:
+                entry = TextEntry.from_string(number, styles=RootStyle(font_family="Garamond", bold=True, font_color="white", font_size=36))
+                rd_number = self.text_renderer.render(entry, bbox=(134, 134), align_y=TextRenderer.ALIGN_CENTER)
+                rendered.alpha_composite(rd_number)
+        return rendered
+
+    def render_skill_icons(self, icons, highlight_color="gold"):
+        rd_icons = [self.render_skill_icon(icon, highlight_color) for icon in icons]
+        h = sum([i.size[1] - 20 for i in rd_icons]) + 20
+        w = 134
+
+        all_icons = Image.new("RGBA", (w, h))
+        y = 0
+        for ix, icon in enumerate(rd_icons):
+            all_icons.alpha_composite(apply_drop_shadow(icon, color="#00000055"), (-20, y - 20))
+            y += icon.size[1] - 20
+
+        return all_icons
 
 
 class Cursor:
@@ -620,9 +662,6 @@ class TextEntry:
         return TextEntry(sections, styles=styles)
 
 
-CHAR_BULLET = "•"
-
-
 class TextRenderer:
     FONTS_BASEPATH = "./fonts"
     FONTS = {
@@ -638,6 +677,8 @@ class TextRenderer:
     TOKEN_ITALIC = "*"
     TOKEN_BOLD = "**"
     TOKEN_NEWLINE = "\n"
+
+    CHAR_BULLET = "•"
 
     ALIGN_TOP = "top"
     ALIGN_BOTTOM = "bottom"
@@ -697,6 +738,8 @@ class TextRenderer:
         self.asset_manager = asset_manager
         self._fonts = {}
 
+        self._icons = {k: v for k, v in self.ICONS.items()}
+
         self.overflow_policy_x = None
         self.overflow_policy_y = None
         self.max_w = None
@@ -717,6 +760,9 @@ class TextRenderer:
         self.image = None
         self.draw = None
         self.max_font_reduction = None
+
+    def inject_icons(self, new_icons):
+        self._icons.update(new_icons)
 
     def set(self, *, bbox, **kwargs):
         self.max_w, self.max_h = bbox
@@ -828,7 +874,7 @@ class TextRenderer:
         elif token.startswith("[") and token.endswith("]"):
             token = token.strip("[]")
             # FIXME: Uh Oh! Stinky! This crashes the renderer if we encounter an inline symbol that doesn't exist
-            if self.ICONS.get(token) is None:
+            if self._icons.get(token) is None:
                 return self._max_w
             icon = self.get_icon(entry, token)
             return self.get_icon_width(entry, icon)
@@ -854,7 +900,7 @@ class TextRenderer:
                 lines.append([])
                 ix_start_line = ix + 1
                 continue
-            if entry.tokens[ix].startswith(CHAR_BULLET):
+            if entry.tokens[ix].startswith(self.CHAR_BULLET):
                 width_prev = self.calculate_line_width(entry, lines[-1], token_widths=token_widths[ix_start_line:ix])
                 if width_prev > 0:
                     lines.append([])
@@ -1291,18 +1337,20 @@ class TextRenderer:
             }
             # This is dogshit. But if we pass self to render_attack, the settings will be wiped
             text_renderer = self.__class__(self.asset_manager)
-            rendered = render_attack(self.asset_manager, text_renderer, atk_data)
+            im_gen = ImageGenerator(self.asset_manager, text_renderer)
+            rendered = im_gen.render_attack(atk_data)
             self._do_render_full_width_icon(entry, rendered)
         elif token.startswith("SKILL"):
             text_renderer = self.__class__(self.asset_manager)
+            im_gen = ImageGenerator(self.asset_manager, text_renderer)
             icon = token.replace("SKILL:", "")
-            rendered = apply_drop_shadow(render_skill_icon(self.asset_manager, text_renderer, icon), color="black")
+            rendered = apply_drop_shadow(im_gen.render_skill_icon(icon), color="black")
             self._do_render_full_width_icon(entry, rendered)
         else:
             icon = self.get_icon(entry, token)
-            if self.ICONS[token] == "simple":
+            if self._icons.get(token) == "simple":
                 self.image.paste(entry.font_color, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * entry.font_size)), mask=icon)
-            elif self.ICONS[token] == "image":
+            elif self._icons.get(token) == "image":
                 self.image.alpha_composite(icon, (int(self.cursor.x) - 5, int(self.cursor.y - 0.15 * entry.font_size)))
             self.cursor.x += self.get_icon_width(entry, icon)
 

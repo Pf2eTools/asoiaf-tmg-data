@@ -17,7 +17,7 @@ class ImageGeneratorTactics(ImageGenerator):
         w, h = tactics_bg.size
         tactics_bg2 = self.asset_manager.get_text_bg()
         tactics_card = Image.new("RGBA", (w, h))
-        tactics_card.alpha_composite(tactics_bg.rotate(get_faction_bg_rotation(faction)))
+        tactics_card.alpha_composite(tactics_bg.rotate(self.faction_store.bg_rotation(faction)))
         tactics_card.alpha_composite(tactics_bg2, (47, 336))
 
         if commander_id is not None:
@@ -84,7 +84,7 @@ class ImageGeneratorTactics(ImageGenerator):
 
         section_padding = small_bar.height
         align_y = TextRenderer.CENTER_SECTION if len(card_text) > 1 else TextRenderer.ALIGN_TOP
-        entries = self.get_data_for_renderer(card_text, get_faction_text_color(faction), section_padding)
+        entries = self.get_data_for_renderer(card_text, self.faction_store.text_color(faction), section_padding)
         rd_card_text = self.text_renderer.render(entries, bbox=(620, 635), align_y=align_y, margin=Spacing(15, 30), scale_margin=15/50,
                                                  linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
 
