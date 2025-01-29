@@ -277,6 +277,49 @@
             "fluff": {
                 "lore": "La garde personnelle de Ser Gerold Dayne ne porte aucun nom officiel. Elle est simplement connue sous le nom d’Escorte de Sombre Astre, une appellation bien suffisante pour semer la terreur dans les rangs adverses. En effet, l’Escorte est composée de soldats qui marchent dans les pas de Sombre Astre, tant dans leur comportement que dans leur style de combat. Ils semblent surgir de nulle part, fondant généralement sur un flanc mal protégé, puis disparaissent jusqu’à ce qu’une nouvelle ouverture se présente. Pour autant qu’ils aient laissé des survivants, bien entendu."
             }
+        },
+        {
+            "id": "10909",
+            "name": "Archers de Touche-Au-Ciel",
+            "statistics": {
+                "version": "2021",
+                "faction": "martell",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 6,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Archers du désert",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            5
+                        ]
+                    },
+                    {
+                        "name": "Dagues",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Archers du désert",
+                    "Attaque de Flanc"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Dans le sud de Westeros, dans la région connue sous le nom de la Passe du Prince, nul n'est plus redouté que les silhouettes fugitives des Archers de Touche-au-Ciel qui règnent sur ces terres arides. Capables de se mettre en position avant même que l'ennemi ne détecte leur présence, ils excellent dans les prises de flanc. Ils restent toutefois des archers dont la seule défense est la mobilité. Un commandant avisé saura par conséquent les garder à l'abri jusqu'au moment opportun."
+            }
         }
     ],
     "ncus": [

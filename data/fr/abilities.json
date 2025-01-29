@@ -1112,7 +1112,7 @@
     },
     "HODOR !!!": {
         "effect": [
-            "Quand cette unité effectue une action de Repli, après avoir lancé les dés de Distance de Repli, vous pouvez choisir d’obtenir un résultat de 6 sur tous les dés et de rendre **Vulnérable** l’ennemi duquel cette unité se désengage. Si vous le faites, cet Attachement perd toutes ses capacités jusqu’à la fin de la partie."
+            "Quand cette unité effectue une action de Repli, après avoir lancé les dés de Distance de Repli, vous pouvez choisir d’obtenir un résultat de 6 sur tous les dés. Si vous le faites, cet Attachement perd toutes ses capacités jusqu’à la fin de la partie."
         ]
     },
     "RUMEURS HORRIBLES": {
@@ -1627,7 +1627,7 @@
     "APPÂT DU GAIN": {
         "effect": [
             "Chaque fois qu’une UNC alliée s’empare de [MONEY], vous pouvez remplacer l’effet de cette zone par :",
-            "*Une unité alliée avec la Cpacité **Appât du Gain** effectue 1 action d’Attaque.*"
+            "*Une unité alliée avec la Capacité **Appât du Gain** effectue 1 action d’Attaque.*"
         ]
     },
     "ARMEMENT DISPARATE": {
@@ -3318,5 +3318,96 @@
         "icons": [
             "melee"
         ]
-    }
+    },
+    "ARCHERS DU DÉSERT": {
+        "effect": [
+            "Quand cette attaque cible des ennemis qui n'ont pas été activés ce round-ci, elle peut relancer n'importe quels dés d'Attaque et le défenseur devient **Vulnérable**."
+        ],
+        "icons": [
+            "ranged"
+        ]    
+    },
+    "ARMEMENT DE LA FRATERNITÉ": {
+        "effect": [
+            "• **Frappe Critique**",
+            "• Si votre adversaire ne contrôle pas [CROWN], cette attaque gagne +1 pour Toucher et **Fracasser**."
+        ],
+        "icons": [
+            "melee"
+        ]    
+    },
+    "ORDRE : REPOSITIONNEMENT TROMPEUR": {
+        "effect": [
+            "**Au début d'un tour adverse, si aucun ennemi ne se trouve à Courte Portée ou moins :**",
+            "Cette unité effectue 1 action de Manœuvre de 3’’."
+        ],
+        "icons": [
+            "order"
+        ]    
+    },
+    "TIR CACHÉ": {
+        "effect": [
+            "• Ignore les unités et les Terrains quand elle détermine sa Ligne de Vue.",
+            "• Quand cette attaque cible des ennemis de Flanc ou de Dos, elle gagne **Précision** et **Cruel**."
+        ],
+        "icons": [
+            "ranged"
+        ]    
+    },
+    "ARMEMENT DE CHEVALIER": {
+        "effect": [
+            "• **Fracasser**",
+            "• Si votre adversaire ne contrôle pas [CROWN], cette attaque peut relancer n'importe quels dés d'Attaque."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "RALLIER LE PEUPLE": {
+        "effect": [
+            "Après que cette unité a résolu une Attaque de Mêlée, si cette attaque a détruit un rang ennemi, ciblez 1 Unité d'Infanterie alliée située à Longue Portée ou moins. Elle soigne 2 de ses Blessures."
+        ]
+    },
+    "ILLUMINATION": {
+        "effect": [
+            "Béric commence la partie avec 1 pion Foi. Chaque fois que son unité réussit un Test de Moral, elle gagne 1 pion Foi. Les pions Foi peuvent être dépensés comme suit :",
+            "**• Quand cette unité effectue une Attaque de Mêlée, avant de résoudre celle-ci :**",
+            "Cette attaque gagne +2 dés d'Attaque.",
+            "**• Quand cette unité devrait être détruite par une Attaque de Mêlée :**",
+            "Avant d'être retirée, cette unité effectue 1 Attaque de Mêlée en utilisant sa valeur de dés la plus basse. Si cette attaque détruit le défenseur, cette unité n'est pas détruite et demeure en jeu avec 1 Blessure restante."                 
+        ],
+        "icons": [
+            "faith"
+        ]
+    },
+    "PRIÈRES À R'HLLOR": {
+        "effect": [
+            "Cette unité gagne +2 à ses lancers de Test de Moral et commence la partie avec 1 pion Foi. Chaque fois qu'elle réussit un Test de Moral, elle gagne 1 pion Foi. Les pions Foi peuvent être dépensés comme suit :",
+            "**• Quand cette unité effectue une Attaque de Mêlée, avant de résoudre celle-ci :**",
+            "Cette attaque gagne **Fracasser** et **Cruel**.",
+            "**• Quand un ennemi situé à Longue Portée ou moins échoue à un Test de Panique :**",
+            "Ciblez 1 unité alliée située à Longue Portée ou moins de cette unité. Pour chaque Blessure subie par l'ennemi au cours de ce test,l'unité alliée ciblée soigne 1 de ses Blessures (maximum 3)."
+        ],
+        "icons": [
+            "faith"
+        ]
+    },
+    "TOURTES CHAUDES !": {
+        "effect": [
+            "Chaque fois que cette unité est activée, elle retire 1 pion État. Si vous contrôlez [CROWN], cette unité peut soigner 1 de ses Blessures."
+        ]
+    },
+    "VASSAL DE BÉRIC": {
+        "effect": [
+            "Cette figurine compte comme Béric Dondarrion pour tous les effets de jeu."
+        ],
+        "icons": [
+            "wounds"
+        ]
+    },
+    "DÉFENSES AMÉLIORÉES (BWB)": {
+        "effect": [
+            "Tant que vous contrôlez [CROWN], cette unité gagne +1 à ses lancers de dés de Défense."
+        ]
+    }          
 }
