@@ -161,4 +161,4 @@ def main(path, skip_portrait=True, overwrite=True):
 
 if __name__ == "__main__":
     # main("./custom/data/cmon-prerelease.json", skip_portrait=False)
-    main("./custom/data/example.json", overwrite=False)
+    main("./custom/data/brew.json", overwrite=False)
