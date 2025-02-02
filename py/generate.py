@@ -68,7 +68,7 @@ class Generator:
             if type(arr) != list:
                 continue
             for item in arr:
-                item["language"] = meta.get("language")
+                item["language"] = meta.get("language", "en")
                 item["type"] = key
                 data.append(item)
         return data

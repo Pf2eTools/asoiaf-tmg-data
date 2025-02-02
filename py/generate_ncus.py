@@ -126,7 +126,7 @@ class ImageGeneratorNCUs(ImageGenerator):
         ncu_card = Image.new("RGBA", (w, h))
         ncu_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
 
-        portrait = self.asset_manager.get_ncu_img(ncu_id + "b")
+        portrait = self.asset_manager.get_ncu_back_img(ncu_id)
         ncu_card.alpha_composite(portrait, (135, 332))
 
         bars = Image.new("RGBA", (w, h))

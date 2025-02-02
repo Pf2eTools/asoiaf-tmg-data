@@ -117,6 +117,9 @@ class AssetManager:
     def get_ncu_img(self, ncu_id):
         return self.get(f"{self.ASSETS_DIR}/ncus/{ncu_id}.png", (269, 309), (5, 5))
 
+    def get_ncu_back_img(self, ncu_id):
+        return self.get(f"{self.ASSETS_DIR}/ncus/{ncu_id}b.png", (560, 660), (10, 200))
+
     def get_text_icon(self, icon):
         return self.get(f"{self.ASSETS_DIR}/common/icon-{icon.lower()}.png", (140, 140), (100, 100))
 
@@ -339,6 +342,7 @@ class CustomAssetManager(AssetManager):
 
     def get_resized(self, path, size, tolerance):
         image = self._get(path)
+
         if self.is_image_right_size(image, size, tolerance):
             return image
         return image.resize(size)
