@@ -222,7 +222,6 @@ def filter_data_generic(data_obj):
     ids = [
     ]
     types = [
-        "attachments"
     ]
     factions = [
     ]

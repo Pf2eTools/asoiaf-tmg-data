@@ -157,7 +157,7 @@ class FactionStore:
         self._factions[key] = {k: v for k, v in faction.items()}
 
     def _get(self, faction_key, key, default):
-        faction = self._factions.get(faction_key)
+        faction = self._factions.get(faction_key.lower())
         if faction is None:
             return default
         return faction.get(key, default)
@@ -1132,18 +1132,18 @@ class TextRenderer:
             if height < self._max_h:
                 break
             # TODO: How do we handle absolutely set leading of child elements? Small relative values might even produce clipping
-            if i in [0, 2, 10, 13, 15] and self.input.styles.leading >= 750:
+            if i in [0, 1, 9, 11, 15] and self.input.styles.leading >= 750:
                 self.input.adjust_style(leading=-50)
-            elif i in [1, 7, 16] and self.input.paragraph_padding > 300:
-                self.input.adjust_style(paragraph_padding=-150)
-            elif i == 8:
+            elif i in [6, 8, 14] and self.input.styles.paragraph_padding >= 400:
+                self.input.adjust_style(paragraph_padding=-100)
+            elif i == 10:
                 self.margin = self.margin * 0.5
-            elif i == 11:
+            elif i == 12:
                 adjust_tracking = clamp(-20 - self.input.styles.tracking, -20, 0)
                 adjust_word_spacing = clamp(int(-self.input.styles.word_spacing * 0.25), 150 - self.input.styles.word_spacing, 0)
                 self.input.adjust_style(tracking=adjust_tracking, word_spacing=adjust_word_spacing)
                 self.split_data()
-            elif i not in [0, 1, 7, 8, 10, 11, 13, 15, 16]:
+            elif i not in [0, 1, 6, 8, 9, 10, 11, 12, 14, 15]:
                 self.input.adjust_style(font_size=-1)
                 self.split_data()
 
