@@ -162,12 +162,12 @@ def rotate_images(overwrite=False):
             faction = unit.get("statistics").get("faction")
             outpath = f"./draft/img/{uid}.jpg"
             if overwrite or not os.path.exists(outpath):
-                im = Image.open(f"./generated/en/{faction}/{uid}.jpg").rotate(270, expand=1)
+                im = Image.open(f"./generated/en/{faction}/{uid}.jpg").rotate(90, expand=1)
                 im.save(outpath)
                 print(f"Saving '{outpath}'...")
             outpath_b = f"./draft/img/{uid}b.jpg"
             if overwrite or not os.path.exists(outpath_b):
-                im = Image.open(f"./generated/en/{faction}/{uid}b.jpg").rotate(270, expand=1)
+                im = Image.open(f"./generated/en/{faction}/{uid}b.jpg").rotate(90, expand=1)
                 im.save(outpath_b)
                 print(f"Saving '{outpath_b}'...")
 
