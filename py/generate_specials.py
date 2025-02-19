@@ -348,6 +348,80 @@ class ImageGeneratorSpecials(ImageGenerator):
         return special_card
 
 
+    def generate_faction(self, faction):
+        background = self.asset_manager.get_bg(faction)
+        w, h = background.size
+        special_card = Image.new("RGBA", (w, h))
+        special_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
+
+        bars = Image.new("RGBA", (w, h))
+        bars_lower = Image.new("RGBA", (w, h))
+        large_bar, small_bar, weird_bar_original = self.asset_manager.get_bars(faction)
+        weird_bar = Image.new("RGBA", (weird_bar_original.height, weird_bar_original.height))
+        weird_bar.alpha_composite(weird_bar_original)
+        weird_bar.alpha_composite(weird_bar_original.rotate(270, expand=1), (weird_bar_original.width, 0))
+        decor = self.asset_manager.get_decor(faction)
+        small_bar_crop = small_bar.crop((0, 0, 650, 100))
+
+        h_divider = int((971 - 33) * 0.3) + 54
+        bbox_top = (54, 54, 695, h_divider - large_bar.height // 2)
+        bbox_bot = (54, h_divider + large_bar.height // 2, 695, 992)
+        inner_w = bbox_top[2] - bbox_top[0]
+        inner_h_top = bbox_top[3] - bbox_top[1]
+        inner_h_bot = bbox_bot[3] - bbox_bot[1]
+        text_bg_org = self.asset_manager.get_text_bg()
+        text_bg_org = text_bg_org.crop((0, 0, text_bg_org.width, text_bg_org.height - 5))
+        text_bg = Image.new("RGBA", (text_bg_org.width, text_bg_org.height * 2))
+        text_bg.alpha_composite(text_bg_org)
+        text_bg.alpha_composite(ImageOps.flip(text_bg_org), (0, text_bg_org.height))
+        special_card.paste(text_bg.crop((0, 0, bbox_bot[2] - bbox_bot[0], bbox_bot[3] - bbox_bot[1])), (bbox_bot[0], bbox_bot[1]))
+
+        bars_lower.alpha_composite(large_bar.rotate(180).crop((100, 0, 741, large_bar.height)), (54, h_divider - large_bar.height // 2))
+        bars.alpha_composite(small_bar_crop, (50, 46))
+        bars.alpha_composite(small_bar_crop, (50, 984))
+        bars.alpha_composite(small_bar_crop, (50, h_divider - large_bar.height // 2 - small_bar.height // 2))
+        bars.alpha_composite(small_bar_crop, (50, h_divider + large_bar.height // 2 - small_bar.height // 2))
+        bars.alpha_composite(small_bar.rotate(90, expand=1).crop((0, 0, 100, 940)), (46, 55))
+        bars.alpha_composite(small_bar.rotate(90, expand=1).crop((0, 0, 100, 940)), (687, 55))
+        bars.alpha_composite(decor, (33, 33))
+        bars.alpha_composite(decor, (33, bbox_top[1] + inner_h_top // 2 - decor.height // 2))
+        bars.alpha_composite(decor, (33, bbox_bot[1] + inner_h_bot // 2 - decor.height // 2))
+        bars.alpha_composite(decor, (bbox_top[0] + inner_w // 2 - decor.width // 2, 33))
+        bars.alpha_composite(decor, (33, 971))
+        bars.alpha_composite(decor, (bbox_top[0] + inner_w // 2 - decor.width // 2, 971))
+        bars.alpha_composite(decor, (674, 33))
+        bars.alpha_composite(decor, (674, bbox_top[1] + inner_h_top // 2 - decor.height // 2))
+        bars.alpha_composite(decor, (674, bbox_bot[1] + inner_h_bot // 2 - decor.height // 2))
+        bars.alpha_composite(decor, (674, 971))
+        bars.alpha_composite(decor, (33, h_divider - large_bar.height // 2 - decor.height // 2))
+        bars.alpha_composite(decor, (674, h_divider - large_bar.height // 2 - decor.height // 2))
+        bars.alpha_composite(decor, (33, h_divider + large_bar.height // 2 - decor.height // 2))
+        bars.alpha_composite(decor, (674, h_divider + large_bar.height // 2 - decor.height // 2))
+
+        layer_text = Image.new("RGBA", (w, h))
+        names = [TextEntry(TextEntry(self.faction_store.get_rendered(faction).upper(), styles=TextStyle(leading=1000, bold=True)))]
+        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color="white", font_size=54, stroke_width=0.1))
+        name_bbox = (bbox_top[2] - bbox_top[0] - 20, bbox_top[3] - bbox_top[1] - 20)
+        rd_names = self.text_renderer.render(name_entries, bbox=name_bbox, margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
+                                             linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
+        layer_text.alpha_composite(rd_names, ((w - rd_names.width) // 2, 64))
+
+        layer_crests = Image.new("RGBA", (w, h))
+        crest = self.asset_manager.get_crest(faction)
+        crest = crest.crop(crest.getbbox())
+        crest_size = min(252, int(crest.width * 298 / crest.height)), min(298, int(crest.height * 252 / crest.width))
+        crest = crest.resize(crest_size)
+        crest_x, crest_y = (w - crest.width) // 2, bbox_bot[1] - crest.height // 2 + inner_h_bot // 2
+        layer_crests.alpha_composite(crest, (crest_x, crest_y))
+
+        special_card.alpha_composite(apply_drop_shadow(bars_lower), (-20, -20))
+        special_card.alpha_composite(apply_drop_shadow(bars, color="#00000066"), (-20, -20))
+        special_card.alpha_composite(layer_text)
+        special_card.alpha_composite(apply_drop_shadow(layer_crests), (-20, -20))
+
+        return special_card
+
+
 def main():
     from asset_manager import AssetManager
     pillage = {
@@ -475,5 +549,17 @@ def main():
     editor = ImageEditor(card, org)
 
 
+def gen_faction_images():
+    from const import FACTIONS
+    from asset_manager import AssetManager
+    am = AssetManager()
+    gen = ImageGeneratorSpecials(am, TextRenderer(am))
+    for faction in FACTIONS:
+        print(f"Generating {faction}.png...")
+        card = gen.generate_faction(faction)
+        card.save(f"./generated/en/{faction}/{faction}.png")
+
+
 if __name__ == "__main__":
-    main()
+    # main()
+    gen_faction_images()

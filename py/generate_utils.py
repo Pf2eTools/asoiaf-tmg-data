@@ -102,6 +102,7 @@ class FactionStore:
             "text_color": "#5c7d59",
             "highlight_color": "gold",
             "bg_rotation": 0,
+            "long": "Brotherhood without Banners"
         },
         "lannister": {
             "text_color": "#9d1323",
@@ -117,6 +118,7 @@ class FactionStore:
             "text_color": "#4b4138",
             "highlight_color": "gold",
             "bg_rotation": 0,
+            "long": "Free Folk"
         },
         "bolton": {
             "text_color": "#7a312b",
@@ -142,6 +144,7 @@ class FactionStore:
             "text_color": "#302a28",
             "highlight_color": "gold",
             "bg_rotation": 0,
+            "long": "Night's Watch"
         },
         "neutral": {
             "text_color": "#8a300e",
@@ -171,6 +174,8 @@ class FactionStore:
     def bg_rotation(self, faction):
         return self._get(faction, "bg_rotation", 0)
 
+    def get_rendered(self, faction):
+        return self._get(faction, "long", faction.capitalize())
 
 class LanguageStore:
     BASE_LANGUAGES = {
