@@ -85,13 +85,14 @@ def get_unit(unt):
     if unt.get("prop") == "units":
         img_url = f"https://raw.githubusercontent.com/Pf2eTools/asoiaf-tmg-data/refs/heads/master/draft/img/{unt.get('id')}.jpg"
     full_name = get_full_name(unt)
+    layout = "split" if unt.get("prop") == "units" else ""
 
     return {
         "name": f"{full_name} ({unt.get('id')})",
         "mana_cost": f"{{{cost}}}",
         "image": img_url,
         "type": unit_type_front,
-        "layout": "split",
+        "layout": layout,
         "printed_names": {
             "en": unt.get("id"),
         },
@@ -99,7 +100,7 @@ def get_unit(unt):
             "name": f"{full_name} ({unt.get('id')})",
             "type": unit_type,
             "image": img_url.replace(".jpg", "b.jpg"),
-            "layout": "split"
+            "layout": layout
         }
     }
 
