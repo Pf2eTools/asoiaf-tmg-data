@@ -3,13 +3,12 @@ from const import *
 from PIL import Image
 import os
 
-
 DIST = {
-    "commander": 19, 
-    "unit": 78, 
-    "ncu": 48, 
-    "attachment": 37, 
-    "basedeck": 18, 
+    "commander": 21,
+    "unit": 77,
+    "ncu": 48,
+    "attachment": 36,
+    "basedeck": 18,
 }
 
 PROP_TO_MAGIC_TYPE = {
@@ -22,15 +21,16 @@ PROP_TO_MAGIC_TYPE = {
 }
 
 BANNED_IDS = [
-    "20330", # varamyrs eagle
-    "10310", # bear
-    "20308", # eagle 
-    "20309", # wolf
-    "10316", # borroq's boar
-    "30712", # alicent
-    "30713", # rhaenyra 
-    "30404", # seneschal 
+    "20330",  # varamyrs eagle
+    "10310",  # bear
+    "20308",  # eagle
+    "20309",  # wolf
+    "10316",  # borroq's boar
+    "30712",  # alicent
+    "30713",  # rhaenyra
+    "30404",  # seneschal
 ]
+
 
 def get_data():
     data = {
@@ -121,7 +121,7 @@ def get_settings():
                         "sheets": [
                             {"name": k, "weight": v} for k, v in DIST.items()
                         ]
-                    } for i in range(10)
+                    } for i in range(PACKSIZE)
                 ]
             }
         },
@@ -182,6 +182,8 @@ def main(prepare_cube=True, prepare_img=True):
     if prepare_img:
         rotate_images()
 
+
+PACKSIZE = 12
 
 if __name__ == "__main__":
     main()

@@ -581,8 +581,9 @@ Parser.FACTIONS = [
 	"brotherhood",
 ];
 
-Parser.renderFaction = function (faction) {
+Parser.renderFaction = function (faction, isLong = false) {
 	faction = faction || "";
+	if (faction === "brotherhood" && isLong) return "Brotherhood without Banners"
 	switch (faction) {
 		case "nightswatch": return "Night's Watch";
 		case "freefolk": return "Free Folk";

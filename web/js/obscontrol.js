@@ -7,8 +7,7 @@ class OBSControlPage {
         this._armies = {
             left: {
                 faction: "",
-                ids: [
-                ]
+                ids: []
             },
             right: {
                 faction: "",
@@ -29,10 +28,58 @@ class OBSControlPage {
         this._statsIDMap = await DataUtil._loadJson(`${DataUtil.song._BASEDIR}/warcouncil-to-asoiaf-stats.json`);
     }
 
+    getExportArmyString (side) {
+        const army = this._armies[side];
+        if (army.faction === "" && army.ids.length === 0) return "";
+        let out = "";
+
+        if (army.faction !== "") out += `Faction: ${Parser.renderFaction(army.faction, true)}\n`;
+        else out += "Faction: None\n";
+
+        const commanderId = army.ids.find(id => this._data[id].statistics.commander);
+        if (commanderId !== undefined) out += `Commander: ${this._data[commanderId]._fullName}\n`;
+        else out += "Commander: None\n";
+
+        let unitsPart = ""
+        for (const id of army.ids) {
+            const ent = this._data[id];
+            if (ent.__prop === "units") unitsPart += ` • ${ent._fullName} (${ent.statistics.cost})\n`;
+            else if (ent.__prop === "attachments" && !ent.statistics.enemy) unitsPart += `     ${ent._fullName} (${ent.statistics.cost})\n`;
+        }
+        if (unitsPart !== "") out += "\nCombat Units\n" + unitsPart
+        else out += "\nNo Combat Units Selected\n"
+
+        let ncuPart = ""
+        for (const id of army.ids) {
+            const ent = this._data[id];
+            if (ent.__prop === "ncus") ncuPart += ` • ${ent._fullName} (${ent.statistics.cost})\n`;
+        }
+        if (ncuPart !== "") out += "\nNCUs\n" + ncuPart
+        else out += "\nNo NCUs Selected\n"
+
+        let enemyPart = ""
+        for (const id of army.ids) {
+            const ent = this._data[id];
+            if (ent.__prop === "attachments" && ent.statistics.enemy) enemyPart += ` • ${ent._fullName} (${ent.statistics.cost})\n`;
+        }
+        if (enemyPart !== "") out += "\nEnemy Attachments\n" + enemyPart
+
+        out += `\nImport String\n${army.faction};${army.ids.join(",")}`
+
+        return out
+    }
+
     _onClickImport() {
         const {$modalInner} = UiUtil.getShowModal({
-            title: "Import Army"
+            title: "Import Army",
+            isUncappedHeight: true,
         });
+
+        const $getImportSideBtn = (side, handler) => {
+            return $(`<button class="btn btn-sm btn-info ml-2">Import ${side.uppercaseFirst()}</button>`).on("click", async () => {
+                await handler(side);
+            })
+        }
 
         const $iptStats = $(`<input class="form-control input-sm w-100" type="text">`)
         const importStats = async (side) => {
@@ -47,49 +94,85 @@ class OBSControlPage {
             if (statsJson == null || statsJson.faction == null || statsJson.idArray == null) return;
 
             this._armies[side].faction = statsJson.faction.name.toLowerCase().replaceAll(/\W/g, "");
+            if (this._armies[side].faction === "brotherhoodwithoutbanners") this._armies[side].faction = "brotherhood";
             this._armies[side].ids = statsJson.idArray.map(id => Parser._parse_bToA(this._statsIDMap, String(id)));
 
             this.renderArmy(side);
         }
-        const $btnImportStatsLeft = $(`<button class="btn btn-sm btn-info ml-2">Import Left</button>`).on("click", async () => {
-            await importStats("left");
-        });
-        const $btnImportStatsRight = $(`<button class="btn btn-sm btn-info ml-2">Import Right</button>`).on("click", async () => {
-            await importStats("right");
-        });
 
         const $iptString = $(`<input class="form-control input-sm w-100" type="text">`)
         const importString = async (side) => {
             const val = $iptString.val();
             if (typeof val != "string" || val === "") return;
 
-            const [faction, ids] = val.split(";");
+            const [faction, ids] = val.trim().split(";");
             this._armies[side].faction = faction.toLowerCase().replaceAll(/\W/g, "");
             this._armies[side].ids = ids.split(",");
 
             this.renderArmy(side);
         }
-        const $btnImportStringLeft = $(`<button class="btn btn-sm btn-info ml-2">Import Left</button>`).on("click", async () => {
-            await importString("left");
-        });
-        const $btnImportStringRight = $(`<button class="btn btn-sm btn-info ml-2">Import Right</button>`).on("click", async () => {
-            await importString("right");
-        });
+
+        const $iptDraftmancer = $(`<textarea class="form-control input-sm w-100" rows="1" style="resize: none">`)
+        const importDraftmancer = async (side) => {
+            this._armies[side].faction = "";
+            this._armies[side].ids = [];
+
+            const val = $iptDraftmancer.val();
+            if (typeof val != "string" || val === "") return;
+
+            const [listContent, sideBarContent] = val.trim().split("\n\n");
+            const listItems = listContent.split("\n").map(it => it.replace("1 ", ""));
+
+            for (const itemId of listItems) {
+                if (/Basedeck/.test(itemId)) {
+                    this._armies[side].faction = itemId.replace("Basedeck", "");
+                } else {
+                    this._armies[side].ids.push(itemId);
+                }
+            }
+
+            this.renderArmy(side);
+        }
+
+
+        const $getExportSideBtn = (side) => {
+            return $(`<button class="btn btn-sm btn-info ml-2">Export ${side.uppercaseFirst()}</button>`).on("click", async () => {
+                const armyString = this.getExportArmyString(side);
+                if (armyString === "") return;
+                await navigator.clipboard.writeText(armyString);
+            })
+        }
 
         $modalInner.append($$`
            <h4>ASOIAF-STATS</h4>
            <div class="ve-flex">
                 ${$iptStats}
-                ${$btnImportStatsLeft}
-                ${$btnImportStatsRight}
+                ${$getImportSideBtn("left", importStats)}
+                ${$getImportSideBtn("right", importStats)}
            </div>
            
            <h4 class="mt-3">CSV</h4>
            <p>Use this format: <span class="code">faction;id1,id2,id3,...</span></p>
            <div class="ve-flex">
                 ${$iptString}
-                ${$btnImportStringLeft}
-                ${$btnImportStringRight}
+                ${$getImportSideBtn("left", importString)}
+                ${$getImportSideBtn("right", importString)}
+           </div>
+
+           <h4 class="mt-3">DRAFTMANCER</h4>
+           <p class="m-0">Build your list in draftmancer. Make sure to add items in the correct order:</p>
+           <p class="m-0">First, your tactics deck. Then, add units and their attachments. Finally add NCUs.</p>
+           <p>When you are ready to import, click <span class="code">Export > Card Names</span> and paste here.</p>
+           <div class="ve-flex">
+                ${$iptDraftmancer}
+                ${$getImportSideBtn("left", importDraftmancer)}
+                ${$getImportSideBtn("right", importDraftmancer)}
+           </div>
+
+            <h4>Copy to Clipboard</h4>
+            <div class="ve-flex">
+                ${$getExportSideBtn("left")}
+                ${$getExportSideBtn("right")}
            </div>`);
     }
 
@@ -133,7 +216,7 @@ class OBSControlPage {
                 hover: {page: UrlUtil.PG_SONG, source: "en"}
             }
         });
-        const marginLeft = unit.__prop === "units" || unit.__prop === "ncus" ? "0px": "40px";
+        const marginLeft = unit.__prop === "units" || unit.__prop === "ncus" ? "0px" : "40px";
         return $$`<div ${hoverStr} class="ve-flex card" style="margin-left: ${marginLeft};">
 					<img src="../portraits/square/${uid}.jpg" alt="?" class="m-0 unit-img">
 					<p class="card-p">
