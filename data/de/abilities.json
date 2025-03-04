@@ -1127,6 +1127,11 @@
             "Solange du [MONEY] kontrollierst, erhält diese Einheit +1 auf das Ergebnis ihrer Verteidigungswürfe."
         ]
     },
+    "VERBESSERTE VERTEIDIGUNG (BwB)": {
+        "effect": [
+            "Solange du [CROWN] kontrollierst, erhält diese Einheit +1 auf das Ergebnis ihrer Verteidigungswürfe."
+        ]
+    },
     "VERBESSERTE VERTEIDIGUNG (STARK)": {
         "effect": [
             "Solange du [HORSE] kontrollierst, erhält diese Einheit +1 auf das Ergebnis ihrer Verteidigungswürfe."
@@ -3157,6 +3162,14 @@
             "Entferne Bens Einfluss, falls jene Einheit an einer Panikprobe scheitert."
         ]
     },
+    "BERICS VASALL": {
+        "effect": [
+            "Diese Figur zählt für alle Fähigkeiten und Effekte als Beric Dondarrion."
+        ],
+        "icons": [
+            "wounds"
+        ]
+    },
     "EIFRIGER FANATISMUS": {
         "effect": [
             "Die Nahkampfangriffe dieser Einheit erhalten **Grausam** und es wird immer der höchste Angriffswürfelwert verwendet. Diese Einheit erleidet 1 Wunde für jede gewürfelte 1 auf einem Angriffswürfel."
@@ -3297,7 +3310,70 @@
     },
     "KAMPFBEHERRSCHUNG: VERTEIDIGUNG": {
         "effect": [
-            "Solange dein Gegner nicht die [SWORDS]-Zone kontrolliert, feindliche Kampfeinheiten die sich mit dieser Einheit im Nahkampf befindet erleiden –1 auf den Trefferwurf."
+            "Solange dein Gegner nicht die [SWORDS]-Zone kontrolliert, erleiden feindliche Kampfeinheiten, die sich mit dieser Einheit im Nahkampf befinden, –1 auf den Trefferwurf."
+        ]
+    },
+	"WAFFEN DER BRUDERSCHAFT": {
+        "effect": [
+            "• **Kritischer Treffer**",
+            "• Falls dein Gegner nicht [CROWN] kontrolliert, erhält dieser Angriff +1 auf den Trefferwurf und **Spaltschlag**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+	"RITTERLICHE BEWAFFNUNG": {
+        "effect": [
+            "• **Spaltschlag**",
+            "• Falls dein Gegner nicht [CROWN] kontrolliert, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+	"HEISSE PASTETE!": {
+        "effect": [
+            "Immer wenn diese Einheit aktiviert wird, lege 1 Zustandsmarker von ihr ab. Falls du [CROWN] kontrollierst, darf diese Einheit 1 Wunde heilen."
+        ]
+    },
+	"SCHÜSSE AUS DEM VERBORGENEN": {
+        "effect": [
+            "• Diese Einheit ignoriert Einheiten und Geländeteile, wenn sie die Sichtlinie bestimmt.",
+			"• Falls diese Einheit Feinde in die Flanke oder den Rücken angreift, erhält dieser Angriff **Präzision** und **Grausam**."
+        ]
+    },
+	"VERSAMMELT DAS GEMEINE VOLK": {
+        "effect": [
+            "Nachdem diese Einheit einen Nahkampfangriff abgeschlossen hat, falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, bestimme 1 befreundete Infanterie-Einheit innerhalb **Langer Reichweite** zum Ziel. Sie heilt 2 Wunden."
+        ]
+    },
+	"BEFEHL: GERISSENE NEUFORMIERUNG": {
+        "trigger": "Zu Beginn eines feindlichen Zuges, falls keine Gegner innerhalb Kurzer Reichweite sind:",
+        "effect": [
+            "Diese Einheit führt eine Manöveraktion durch, bei der sie sich 3 Zoll bewegen darf."
+        ],
+        "icons": [
+            "order"
+        ]
+	},
+	"LICHTBRINGER": {
+        "effect": [
+            "Bei Spielbeginn wird 1 **Glaubensmarker** auf Beric Dondarrions Einheit gelegt.Immer wenn sie eine Moralprobe besteht, erhält sie 1 **Glaubensmarker**. **Glaubensmarker** können für die folgenden Effekte ausgegeben werden:",
+			"• **Sobald diese Einheit einen Nahkampfangriff durchführt, bevor der Angriff abgehandelt wird:** Diese Angriff erhält +2 Angriffswürfel.",
+			"• **Sobald diese Einheit durch einen Nahkampfangriff vernichtet werden würde:** Bevor sie entfernt wird, führt diese Einheit 1 Nahkampfangriff durch und verwendet dabei ihren niedrigsten Angriffswürfelwert. Falls der Verteidiger durch diesen Angriff vernichtet wird, wird diese Einheit nicht vernichtet, sondern verbleibt mit 1 geheilten Wunde im Spiel."
+        ],
+        "icons": [
+            "faith"
+        ]
+    },
+	"GEBETE AN R'HLLOR": {
+        "effect": [
+            "Diese Einheit erhält +2 auf das Ergebnis von Moralproben. Bei Spielbeginn wird 1 **Glaubensmarker** auf diese Einheit gelegt. Immer wenn sie eine Moralprobe besteht, erhält sie 1 **Glaubensmarker**. **Glaubensmarker** können für die folgenden Effekte ausgegeben werden:",
+			"• **Sobald diese Einheit einen Nahkampfangriff durchführt, bevor der Angriff abgehandelt wird:** Dieser Angriff erhält **Spaltschlag** und **Grausam**.",
+			"• **Sobald ein Feind innerhalb Langer Reichweite an einer Panikprobe scheitert:** Bestimme 1 befreundete Einheit innerhalb **Langer Reichweite** zu dieser Einheit zum Ziel. Heile 1 Wunde jener befreundeten Einheit für jede Wunde, die der Feind bei dieser Probe erlitten hat, aber maximal bis zu 3."
+        ],
+        "icons": [
+            "faith"
         ]
     },
     "BEFEHL: GEPLANTE VORGEHENSWEISE": {
