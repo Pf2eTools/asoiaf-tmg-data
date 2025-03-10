@@ -2,6 +2,8 @@
 
 class OBSControlPage {
     constructor() {
+        this._socketPort = 9999;
+        this._socket = null;
         this._data = {};
         this._statsIDMap = {};
         this._armies = {
@@ -14,21 +16,98 @@ class OBSControlPage {
                 ids: []
             },
         }
+        this._state = {
+            firstPlayer: "left",
+            round: 1,
+            name: {
+                left: "",
+                right: "",
+            },
+            vp: {
+                left: 0,
+                right: 0,
+            },
+            cards: ["", "", "", ""]
+        }
+        this._slot = 0;
+        this._$slotBtns = [null, null, null, null];
+        this._$trashBtns = [null, null, null, null];
+
+        this._syncStateDebounced = MiscUtil.debounce(this._syncState.bind(this), 200);
+    }
+
+    _connectSocket() {
+        if (this._socket) this._socket.close();
+        const port = isNaN(Number(this._socketPort)) ? 9999 : Number(this._socketPort);
+        this._socket = new WebSocket(`ws://localhost:${port}`);
+        this._socket.addEventListener("open", () => {
+            console.log("Websocket Connected!")
+            $("#socket-status").html("Connected").toggleClass("btn-danger", false);
+            $("#btn-sock-connect").html("Reconnect");
+        });
+
+        this._socket.addEventListener("close", () => {
+            console.log("Websocket Closed!")
+            $("#socket-status").html("Not Connected").toggleClass("btn-danger", true);
+            $("#btn-sock-connect").html("Connect");
+        });
+    }
+
+    _swapFirstPlayer() {
+        this._state.firstPlayer = this._state.firstPlayer === "left" ? "right" : "left"
+        const html = this._state.firstPlayer === "left"
+            ? `<span class="glyphicon glyphicon-arrow-left mx-1"></span>First Player`
+            : `First Player<span class="glyphicon glyphicon-arrow-right mx-1"></span>`
+        $(`#btn-first-player`).html(html);
+
+        this._syncStateDebounced();
     }
 
     async pOnLoad() {
         const rawData = await DataUtil.song.pLoadSingleSource("en");
         Object.values(rawData).forEach(items => items.forEach(it => this._data[it.id] = it));
         $(`#btn-import`).on("click", () => this._onClickImport());
-        $(`#btn-day-night`).on("click", () => $(`html`).toggleClass("night-mode"));
-        $(`body`).on("click", evt => {
-            if (evt.target.nodeName === "DIV" && evt.target.onclick == null) this._sendMessageToOBS("CLEAR;");
+        $(`#btn-day-night`).on("click", () => styleSwitcher.cycleDayNightMode());
+
+        const $iptPort = $(`#ipt-sock-port`).on("change", () => this._socketPort = Number($iptPort.val()));
+        $(`#btn-sock-connect`).on("click", () => this._connectSocket());
+
+        this._socketPort = Number($iptPort.val());
+        this._connectSocket();
+
+        $(".btn-group").children().each((ix, btn) => $(btn).on("click", () => this._setActiveSlot(ix)));
+        $(`.btn-lg.btn-danger`).on("click", () => {
+            [0, 1, 2, 3].forEach(n => this._clearSlot(n));
+            this._setActiveSlot(0);
+        });
+
+        $(`#btn-first-player`).on("click", () => this._swapFirstPlayer());
+        const $iptRound = $(`#ipt-round`).on("change", () => {
+            this._state.round = Number($iptRound.val());
+            this._swapFirstPlayer();
+        });
+
+        $("#ipt-name-left").on("change", (e) => {
+            this._state.name.left = e.target.value;
+            this._syncStateDebounced();
+        });
+        $("#ipt-name-right").on("change", (e) => {
+            this._state.name.right = e.target.value;
+            this._syncStateDebounced();
+        });
+        $("#ipt-vp-left").on("change", (e) => {
+            this._state.vp.left = Number(e.target.value);
+            this._syncStateDebounced();
+        });
+        $("#ipt-vp-right").on("change", (e) => {
+            this._state.vp.right = Number(e.target.value);
+            this._syncStateDebounced();
         });
 
         this._statsIDMap = await DataUtil._loadJson(`${DataUtil.song._BASEDIR}/warcouncil-to-asoiaf-stats.json`);
     }
 
-    getExportArmyString (side) {
+    getExportArmyString(side) {
         const army = this._armies[side];
         if (army.faction === "" && army.ids.length === 0) return "";
         let out = "";
@@ -176,6 +255,47 @@ class OBSControlPage {
            </div>`);
     }
 
+    _getRenderedSongEntity(uid) {
+        const entity = this._data[uid];
+        const hoverStr = Renderer.get()._renderLink_getHoverString({
+            href: {
+                type: "internal",
+                path: UrlUtil.PG_SONG,
+                hash: UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG](entity),
+                hashPreEncoded: true,
+                hover: {page: UrlUtil.PG_SONG, source: "en"}
+            }
+        });
+        const marginLeft = entity.__prop === "attachments" ? "40px" : "0px";
+
+        const $btnSlot = $(`<button class="btn btn-default ml-auto mr-1 hidden">1</button>`)
+        const $btnTrash = $(`<button class="btn btn-danger hidden"><span class="glyphicon glyphicon-trash"></span></button>`).on("click", evt => {
+            const slot = Number($btnSlot.html()) - 1;
+            this._clearSlot(slot);
+        });
+
+        const imgSrc = entity.__prop === "tactics"
+            ? entity.statistics.commander_id ? `../portraits/square/${entity.statistics.commander_id}.jpg` : `../assets/warcouncil/${entity.statistics.faction}/crest.png`
+            : `../portraits/square/${uid}.jpg`;
+
+        const $addArea = $(`<img ${hoverStr} src="${imgSrc}" alt="?" class="m-0 unit-img">
+                            <p class="card-p">
+                                <span class="unit-name">${entity.name}</span>
+                                <span class="unit-name unit-sub-name">${entity.subname || ""}</span>
+                            </p>`
+        ).on("click", evt => {
+            evt.stopPropagation();
+            evt.preventDefault();
+            this._addCardToSlot(entity, $btnSlot, $btnTrash);
+        });
+
+        return $$`<div class="ve-flex card" style="margin-left: ${marginLeft};">
+					${$addArea}
+					${$btnSlot}
+					${$btnTrash}
+				</div>`;
+    }
+
     renderArmy(side) {
         if (side !== "left" && side !== "right") return;
 
@@ -183,9 +303,9 @@ class OBSControlPage {
 
         const $wrpArmy = $(`#wrp-army--${side}`).empty();
         for (const uid of this._armies[side].ids) {
-            $wrpArmy.append(this._getRenderedUnit(uid))
+            $wrpArmy.append(this._getRenderedSongEntity(uid));
         }
-        const $wrpHead = $(`#wrp-head--${side}`).empty();
+        const $wrpHead = $(`#wrp-head--${side}`);
         const cmdrId = this._armies[side].ids.find(id => this._data[id].statistics.commander);
         $wrpHead.append($(`<h2>${Parser.renderFaction(faction)} - ${this._data[cmdrId].name}</h2>`))
 
@@ -201,59 +321,77 @@ class OBSControlPage {
             return true;
         });
         for (const card of [...Object.keys(this._data[cmdrId].tactics.cards).map(id => this._data[id]), ...baseDeck]) {
-            $wrpTactics.append(this._getRenderedTactics(card))
+            $wrpTactics.append(this._getRenderedSongEntity(card.id));
         }
     }
 
-    _getRenderedUnit(uid) {
-        const unit = this._data[uid];
-        const hoverStr = Renderer.get()._renderLink_getHoverString({
-            href: {
-                type: "internal",
-                path: UrlUtil.PG_SONG,
-                hash: UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG](unit),
-                hashPreEncoded: true,
-                hover: {page: UrlUtil.PG_SONG, source: "en"}
-            }
+    _setActiveSlot(slot) {
+        this._slot = slot;
+        $(".btn-group").children().each((ix, btn) => {
+            $(btn).toggleClass("active", this._slot === ix);
         });
-        const marginLeft = unit.__prop === "units" || unit.__prop === "ncus" ? "0px" : "40px";
-        return $$`<div ${hoverStr} class="ve-flex card" style="margin-left: ${marginLeft};">
-					<img src="../portraits/square/${uid}.jpg" alt="?" class="m-0 unit-img">
-					<p class="card-p">
-					    <span class="unit-name">${unit.name}</span>
-					    <span class="unit-name unit-sub-name">${unit.subname || ""}</span>
-					</p>
-				</div>`.click(() => this._sendMessageToOBS(`SHOW;${unit._img.face}`));
     }
 
-    _getRenderedTactics(card) {
-        const hoverStr = Renderer.get()._renderLink_getHoverString({
-            href: {
-                type: "internal",
-                path: UrlUtil.PG_SONG,
-                hash: UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG](card),
-                hashPreEncoded: true,
-                hover: {page: UrlUtil.PG_SONG, source: "en"}
-            }
-        });
+    _addCardToSlot (card, $btnSlot, $btnTrash) {
+        const slot = this._slot;
 
-        const imgSrc = card.statistics.commander_id ? `../portraits/square/${card.statistics.commander_id}.jpg` : `../assets/warcouncil/${card.statistics.faction}/crest.png`
+        if (this._state.cards[slot] !== "") this._clearSlot(slot);
+        const ixExisting = this._$slotBtns.findIndex(btn => btn === $btnSlot);
+        if (ixExisting !== -1) this._clearSlot(ixExisting);
 
-        return $$`<div ${hoverStr} class="ve-flex card">
-					<img src="${imgSrc}" alt="?" class="m-0 unit-img">
-					<p class="card-p">
-					    <span class="unit-name">${card.name}</span>
-					</p>
-				</div>`.click(() => this._sendMessageToOBS(`SHOW;${card._img.face}`));
+        $btnSlot.html(slot + 1);
+        $btnSlot.toggleClass("hidden", false);
+        $btnTrash.toggleClass("hidden", false);
+
+        this._$trashBtns[slot] = $btnTrash;
+        this._$slotBtns[slot] = $btnSlot;
+        this._state.cards[slot] = `${card.statistics.faction}/${card.id}`;
+
+        let nextSlot = this._state.cards.slice(slot).findIndex(it => it === "") + slot;
+        if (nextSlot < slot && this._state.cards.includes("")) nextSlot = this._state.cards.findIndex(it => it === "");
+        else if (nextSlot < slot) nextSlot = (slot + 1) % 4;
+        this._setActiveSlot(nextSlot);
+
+        this._syncStateDebounced();
+    }
+
+    _clearSlot(slot) {
+        if (!this._state.cards.includes("")) this._setActiveSlot(slot);
+
+        const $btnSlot = this._$slotBtns[slot];
+        const $btnTrash = this._$trashBtns[slot];
+        if ($btnSlot !== null) $btnSlot.toggleClass("hidden", true);
+        if ($btnTrash !== null) $btnTrash.toggleClass("hidden", true);
+        this._$trashBtns[slot] = null;
+        this._$slotBtns[slot] = null;
+        this._state.cards[slot] = "";
+
+        this._syncStateDebounced();
     }
 
     _sendMessageToOBS(message) {
-        const socket = new WebSocket(`ws://localhost:9999`);
-        socket.addEventListener("open", () => {
-            socket.send(message);
-            socket.close();
-        });
+        if (this._socket && this._socket.readyState === 1) {
+            console.log(`Senging Message to OBS:\n${message}`)
+            this._socket.send(message);
+        } else {
+            this._connectSocket();
+            this._socket.addEventListener("open", () => {
+                console.log(`Senging Message to OBS:\n${message}`)
+                this._socket.send(message);
+            });
+        }
     }
+
+    _syncState() {
+        const parts = ["SYNC"];
+        parts.push(this._state.firstPlayer === "left" ? "0" : "1");
+        parts.push(this._state.round);
+        parts.push(`${this._state.name.left},${this._state.name.right}`);
+        parts.push(`${this._state.vp.left},${this._state.vp.right}`);
+        parts.push(this._state.cards.join(","));
+        this._sendMessageToOBS(parts.join(";"));
+    }
+
 }
 
 const controlPage = new OBSControlPage();

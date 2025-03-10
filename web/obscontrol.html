@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="night-mode">
 
 <head>
     <meta charset="utf-8">
@@ -20,15 +20,18 @@
     .night-mode .card {
         background: #222222;
     }
+
     .card {
         background: #dddddd;
-        margin:4px;
+        margin: 4px;
     }
+
     .card-p {
         width: 80%;
         font-size: 20px;
         margin: 0 1rem;
     }
+
     .unit-name {
         display: block;
         overflow: hidden;
@@ -57,22 +60,56 @@
 
 <div class="viewport-wrapper">
     <div class="ve-flex-v-center m-4" id="controls">
-        <button class="btn btn-default mr-5" id="btn-import">Import</button>
-<!--        <p class="my-0 mr-2">Socket Port</p>-->
-<!--        <input class="input form-control mr-2 w-100p" type="text" value="9999" id="ipt-sock-port">-->
-<!--        <div class="mr-2">Status: <span id="socket-status">Not Connected</span></div>-->
-<!--        <button class="btn btn-default mr-5" id="btn-sock-connect">Connect</button>-->
-        <button class="btn btn-default ml-auto" id="btn-day-night">Day/Night</button>
+        <button class="btn btn-default mr-2" id="btn-day-night">Day/Night</button>
+        <button class="btn btn-default" id="btn-import">Import</button>
+
+        <p class="my-0 mr-2 ml-auto">Socket Port</p>
+        <label for="ipt-sock-port"><input class="input form-control mr-2 w-100p" type="number" value="9999"
+                                          id="ipt-sock-port"></label>
+        <div class="mr-2">Status: <span id="socket-status" class="btn-danger">Not Connected</span></div>
+        <button class="btn btn-default" id="btn-sock-connect">Connect</button>
     </div>
-    <div class="container view-col-wrapper h-100 w-90 mb-0 mt-5">
+    <div class="ve-flex-col w-90 mt-3 ml-auto mr-auto">
+        <div class="ve-flex-vh-center">
+            <span class="mr-2">Select Active Slot</span>
+            <div class="ve-flex-h-center my-4 btn-group mr-5">
+                <button class="btn btn-lg btn-default active">1</button>
+                <button class="btn btn-lg btn-default">2</button>
+                <button class="btn btn-lg btn-default">3</button>
+                <button class="btn btn-lg btn-default">4</button>
+            </div>
+            <button id="#btn-clear-all" class="btn btn-lg btn-danger mr-2"><span class="glyphicon glyphicon-trash"></span></button>
+            <span>Clear All</span>
+        </div>
+        <div class="ve-flex-v-center ml-auto mr-auto">
+            <button class="btn btn-default mr-2" id="btn-first-player">
+                <span class="glyphicon glyphicon-arrow-left mx-1"></span>
+                First Player
+            </button>
+            <label class="mr-2">
+                <input class="input form-control w-50p" value="1" type="number" id="ipt-round">
+            </label>
+            <span>Round</span>
+        </div>
+    </div>
+    <div class="container view-col-wrapper h-100 w-90 mb-0">
         <div class="view-col ve-flex-6" id="col--left">
             <div id="wrp-head--left">
-                <h2>No list selected</h2>
+                <div class="ve-flex-v-center w-70">
+                    <label class="mr-2 ve-flex-1">
+                        <input class="input form-control" placeholder="Name" type="text" id="ipt-name-left">
+                    </label>
+                    <label class="mr-2">
+                        <input class="input form-control w-70p" value="0" type="number" id="ipt-vp-left">
+                    </label>
+                    <span>VPs</span>
+                </div>
             </div>
             <div class="ve-flex">
                 <div class="ve-col-6">
                     <div id="wrp-army--left">
-                        <p>No Units Selected</p>
+                        <h2>No List Imported</h2>
+                        <p>No Units Imported</p>
                     </div>
                 </div>
                 <div class="ve-col-6">
@@ -82,12 +119,21 @@
         </div>
         <div class="view-col ve-flex-6" id="col--right">
             <div id="wrp-head--right">
-                <h2>No list selected</h2>
+                <div class="ve-flex-v-center w-70">
+                    <label class="mr-2 ve-flex-1">
+                        <input class="input form-control" placeholder="Name" type="text" id="ipt-name-right">
+                    </label>
+                    <label class="mr-2">
+                        <input class="input form-control w-70p" value="0" type="number" id="ipt-vp-right">
+                    </label>
+                    <span>VPs</span>
+                </div>
+                <h2>No List Imported</h2>
             </div>
             <div class="ve-flex">
                 <div class="ve-col-6">
                     <div id="wrp-army--right">
-                        <p>No Units Selected</p>
+                        <p>No Units Imported</p>
                     </div>
                 </div>
                 <div class="ve-col-6">
