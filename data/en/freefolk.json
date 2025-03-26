@@ -401,7 +401,7 @@
             "id": "10312",
             "name": "War Mammoth",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 6,
@@ -414,7 +414,7 @@
                         "type": "melee",
                         "hit": 4,
                         "dice": [
-                            6
+                            7
                         ]
                     }
                 ],
@@ -1235,11 +1235,12 @@
             "id": "20310",
             "name": "Chosen of Styr",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
+                    "Furious Charge",
                     "Go Down Fighting"
                 ]
             }
@@ -1289,12 +1290,13 @@
             "name": "Rattleshirt",
             "subname": "The Lord of Bones",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Order: Trophy Collecting",
+                    "Order: Trophy Hunter",
+                    "Trophy Collector",
                     "Intimidating Presence"
                 ],
                 "commander": true,
@@ -1316,12 +1318,12 @@
             "name": "Rattleshirt",
             "subname": "Ruthless Slaughterer",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Order: Spread Fear",
+                    "Fueled By Slaughter",
                     "Intimidating Presence"
                 ],
                 "character": true
@@ -1405,14 +1407,14 @@
             "name": "The Weeper",
             "subname": "Horrific Butcher",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Order: Grisly Example",
-                    "Vicious",
-                    "Weaken Resolve"
+                    "Weaken Resolve",
+                    "Vicious"
                 ],
                 "commander": true,
                 "character": true
@@ -1421,7 +1423,7 @@
                 "cards": {
                     "40320": "Cruel Methods",
                     "40321": "Price of Failure",
-                    "40322": "Remorseless Examples"
+                    "40322": "Bloody Beheadings"
                 }
             },
             "fluff": {
@@ -1433,7 +1435,7 @@
             "name": "The Weeper",
             "subname": "Cruel Tyrant",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
@@ -1493,12 +1495,12 @@
             "id": "20324",
             "name": "Walrus Clan Chieftain",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Order: Resilience",
+                    "Hardened",
                     "Iron Resolve"
                 ]
             }
@@ -1885,14 +1887,15 @@
             "id": "40314",
             "name": "Bloody Trophies",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "After a friendly unit completes a Melee Attack, if it destroyed an enemy rank:",
+                        "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
                         "effect": [
-                            "Attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker. All enemies they are engaged with become **Panicked**.",
-                            "When an enemy performs an Action while engaged with this unit, before resolving that Action, that enemy becomes **Panicked**."
+                            "All enemies engaged with the Attacker become **Panicked**. Then, attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
+                            "While attached, when an enemy performs an Action engaged with this unit, before resolving that Action, that enemy becomes **Panicked**.",
+                            "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
                         ]
                     }
                 ],
@@ -1905,14 +1908,15 @@
             "id": "40315",
             "name": "Weapon Trophies",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "After a friendly unit completes a Melee Attack, if it destroyed an enemy rank:",
+                        "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
                         "effect": [
                             "Attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
-                            "While attached, their Melee Attacks gain +1 to Hit."
+                            "While attached, their Melee Attacks gain +1 to Hit.",
+                            "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
                         ]
                     }
                 ],
@@ -1925,14 +1929,15 @@
             "id": "40316",
             "name": "Armor Trophies",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "After a friendly unit completes a Melee Attack, if it destroyed an enemy rank:",
+                        "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
                         "effect": [
                             "Attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
-                            "While attached, they gain +1 to Defense Dice rolls."
+                            "While attached, they gain +1 to Defense Dice rolls and opponents cannot expend **Vulnerable** tokens on this unit.",
+                            "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
                         ]
                     }
                 ],
@@ -2045,18 +2050,16 @@
         },
         {
             "id": "40322",
-            "name": "Remorseless Examples",
+            "name": "Bloody Beheadings",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
                         "trigger": "After a friendly unit completes a Melee Attack:",
                         "effect": [
-                            "If this Attack destroyed an enemy rank, target 1 other enemy in Long Range of that enemy. They become **Panicked**.",
-                            "If this Attack destroyed the enemy, also place 1 Corpse Pile with the following keywords anywhere fully in Short Range and not overlapping other Terrain:",
-                            "• **Hindering**",
-                            "• **Grim Reminder:** Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range."
+                            "If this Attack destroyed an enemy rank, each enemy in Long Range becomes **Panicked**. If they were already **Panicked**, they suffer 1 Panic Test.",
+                            "If this Attack destroyed the enemy instead, each enemy in Long Range becomes **Panicked** and they suffer 1 Panic Test."
                         ]
                     }
                 ],
@@ -2117,7 +2120,7 @@
                         "effect": [
                             "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly unit is destroyed, place 1 Order token on this card.",
                             "While this card has a token, the attached unit gains:",
-                            "When this unit Attacks, before Attack Dice are rolled, the Defender becomes Vulnerable."
+                            "When this unit Attacks, before Attack Dice are rolled, the Defender becomes **Vulnerable**."
                         ]
                     }
                 ],
@@ -2376,14 +2379,15 @@
             "id": "40338",
             "name": "Walrus' Strength",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                        "trigger": "Start of a friendly Turn:",
                         "effect": [
-                            "If this unit is a Frozen Shore unit, this Attack gains +1 to Hit.",
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value."
+                            "Target 1 friendly Infantry or Cavalry Unit. Attach this card to it until the end of the game.",
+                            "While attached, when this unit activates, it restores 1 Wound.",
+                            "If it is in Short Range of The Great Walrus, it may also remove 1 Condition token."
                         ]
                     }
                 ],

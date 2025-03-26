@@ -438,7 +438,7 @@
             "id": "10113",
             "name": "Lannisport City Watch",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 6,
@@ -588,8 +588,8 @@
                         "name": "The Rains of Castamere",
                         "effect": [
                             "Once per game, at the start of any Turn, target any number of enemy Combat Units:",
-                            "• 1 of those enemies becomes Panicked.",
-                            "• 1 of those enemies becomes Vulnerable.",
+                            "• 1 of those enemies becomes **Panicked**.",
+                            "• 1 of those enemies becomes **Vulnerable**.",
                             "• 1 of those enemies suffers 4 Hits.",
                             "• 1 of those enemies suffers 1 Panic Test.",
                             "• 1 of those enemies loses all Abilities until the end of the Round.",
@@ -940,7 +940,7 @@
             "name": "Jaime Lannister",
             "subname": "Kingsguard",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 2,
@@ -951,6 +951,9 @@
                 "requirements": [
                     {
                         "text": "*May not be fielded in an army that includes the Kingsguard unit.*"
+                    },
+                    {
+                        "text": "*If your army contains Cersei Lannister, reduce the cost of Jaime Lannister, Kingsguard by 1.*"
                     }
                 ],
                 "character": true
@@ -1010,7 +1013,7 @@
             "name": "Arys Oakheart",
             "subname": "Kingsguard",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
@@ -1078,12 +1081,21 @@
             "id": "20113",
             "name": "Champion of the Faith",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Order: War Cry"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limited",
+                        "text": "*Your army may only contain up to 2 Champion of the Faith.*"
+                    },
+                    {
+                        "text": "*The first Champion of the Faith attachment is free if your army contains The High Sparrow.*"
+                    }
                 ]
             }
         },
@@ -1167,10 +1179,10 @@
             "name": "Jaime Lannister",
             "subname": "The Young Lion",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Martial Training",
                     "Stalwart"
@@ -1186,13 +1198,14 @@
             "name": "Gregor Clegane",
             "subname": "Mounted Behemoth",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "cavalry",
                 "cost": 3,
                 "abilities": [
-                    "Unstoppable Wrath",
-                    "Uncontrolled Rage"
+                    "Indomitable",
+                    "Ferocious Assault",
+                    "Intimidating Presence"
                 ],
                 "character": true
             },
@@ -1303,7 +1316,7 @@
             "name": "Qyburn",
             "subname": "Forbidden Knowledge",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
@@ -1322,10 +1335,10 @@
             "name": "Addam Marbrand",
             "subname": "Trusted Bannerman",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Sentinel",
                     "Jaime's Vassal"
@@ -1341,10 +1354,10 @@
             "name": "Ser Robert Strong",
             "subname": "The Silent Giant",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": 3,
+                "cost": 2,
                 "abilities": [
                     "Order: Resilience",
                     "Unstoppable Wrath"
@@ -1392,13 +1405,13 @@
             "name": "Kevan Lannister",
             "subname": "Protector of the Realm",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Order: Lannister Supremacy",
-                    "Might of the Throne (Kevan Lannister)"
+                    "Might of the Throne"
                 ],
                 "commander": true,
                 "character": true
@@ -1418,7 +1431,7 @@
             "id": "20131",
             "name": "Gate Warden",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
@@ -1696,15 +1709,15 @@
             "id": "40112",
             "name": "Assault Orders",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If this targets a House Clegane unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If this targets a House Clegane unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     }
                 ],

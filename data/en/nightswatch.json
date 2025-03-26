@@ -443,7 +443,7 @@
             "id": "10512",
             "name": "Ranger Vanguards",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 7,
@@ -739,18 +739,14 @@
             "name": "Yoren",
             "subname": "Wandering Crow",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "nightswatch",
-                "cost": 6,
+                "cost": 5,
                 "abilities": [
                     {
                         "name": "Recruitment",
                         "effect": [
-                            "Each time Yoren Claims a zone, before resolving that zone's, place 1 Order token on him.",
-                            "Each time Yoren Claims [CROWN], you may replace that zone's effect with:",
-                            "*Place 1 Order token on Yoren.*",
-                            "At the start of any Round, you may remove 4 Order tokens from Yoren. ",
-                            "If you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge."
+                            "Each time Yoren Claims a zone, before resolving that zone's effect, place 1 Order token on him.\nEach time Yoren Claims [CROWN], you may replace that zone's effect with:\n*Place 1 Order token on Yoren.*\nAt the start of any Round, you may remove 4 Order tokens from Yoren. \nIf you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge."
                         ]
                     }
                 ]
@@ -1157,7 +1153,7 @@
             "name": "Benjen Stark",
             "subname": "Wolf of the Wall",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
@@ -1200,10 +1196,10 @@
             "name": "Samwell Tarly",
             "subname": "Sam The Slayer",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Battle Plan",
                     "Bookkeeping (Samwell Tarly)"
@@ -1356,7 +1352,7 @@
             "name": "Eddison Tollett",
             "subname": "Dolorous Edd",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
@@ -1429,7 +1425,7 @@
             "name": "Ser Denys Mallister",
             "subname": "Shadow Tower Commander",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": "C",
@@ -2036,15 +2032,15 @@
             "id": "40529",
             "name": "Assault Orders",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If this targets Cotter Pyke's unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If this targets Cotter Pyke's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     }
                 ],

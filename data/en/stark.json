@@ -4,7 +4,7 @@
             "id": "10201",
             "name": "Stark Sworn Swords",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 5,
@@ -24,7 +24,8 @@
                     }
                 ],
                 "abilities": [
-                    "Winter's Bite"
+                    "Winter's Bite",
+                    "Go Down Fighting"
                 ],
                 "tray": "infantry"
             },
@@ -36,7 +37,7 @@
             "id": "10202",
             "name": "Stark Outriders",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "stark",
                 "type": "cavalry",
                 "cost": 6,
@@ -142,7 +143,7 @@
             "id": "10205",
             "name": "Stark Bowmen",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
@@ -893,15 +894,20 @@
             "name": "Robb Stark",
             "subname": "King in the North",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Wolf's Cunning",
                         "effect": [
-                            "After deployment, you may target 1 friendly Combat Unit. Remove it from the battlefield, placing it off the table *(in reserve)*. Once per game, when Robb Claims [HORSE], you may replace that zone's effect with:",
-                            "*Deploy the unit Robb placed in Reserve fully within Short Range of any Flank table edge and attach this card to them until the end of the game. While attached, enemies that unit Sucessfully Charges in the Flank or Rear become **Panicked** and **Vulnerable**.*"
+                            "At the start of Deployment, you may target 1 friendly Combat Unit. Until the end of the game, that unit gains the **Outflank** Ability: \n**OUTFLANK**\n*You may hold this unit off the table (In Reserve) instead of Deploying it. At the start of any Round, if you are not the first player, you may place 1 unit from Reserve fully within Short Range of a Friendly or Flank table edge, unactivated.*"
+                        ]
+                    },
+                    {
+                        "name": "Wolf's Swiftness",
+                        "effect": [
+                            "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*): \nWhile influencing a friendly unit, that unit gains +1 [MOVEMENT]."
                         ]
                     }
                 ],
@@ -977,12 +983,13 @@
             "id": "20203",
             "name": "Umber Champion",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Order: Incite"
+                    "Order: Incite",
+                    "Furious Charge"
                 ]
             }
         },
@@ -1046,7 +1053,7 @@
             "name": "Bran and Hodor",
             "subname": "Protector and Ward",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -1057,7 +1064,7 @@
                 "character": true
             },
             "fluff": {
-                "quote": "\"Hodor. Hodor Hodor.\"\n\"You're right, it seems dangerous.\""
+                "quote": "\"Hodor. Hodor Hodor.\" \"You're right, it seems dangerous.\""
             }
         },
         {
@@ -1093,10 +1100,10 @@
             "name": "Brynden Tully",
             "subname": "Unyielding Knight",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Affiliation: House Tully",
                     "Dauntless",
@@ -1180,10 +1187,10 @@
             "name": "Maege Mormont",
             "subname": "The She-Bear",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Go Down Fighting",
                     "Unyielding"
@@ -1199,10 +1206,10 @@
             "name": "Brynden Tully",
             "subname": "Vanguard Infiltrator",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "stark",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Mark Target",
                     "Outflank"
@@ -1264,15 +1271,19 @@
             "name": "Jojen Reed",
             "subname": "Greensight",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Affiliation: Crannogman",
                     "Jojen's Greensight"
                 ],
-                "character": true
+                "character": true,
+                "tokens": {
+                    "number": 2,
+                    "name": "order"
+                }
             },
             "fluff": {
                 "quote": "\"To Winterfell we pledge the faith of Greywater. Hearth and heart and harvest we yield up to you.\""
@@ -1283,13 +1294,13 @@
             "name": "Syrio Forel",
             "subname": "First Blade of Braavos",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Precision",
-                    "Agile"
+                    "Water Dance"
                 ],
                 "requirements": [
                     {
@@ -1361,13 +1372,22 @@
             "id": "20223",
             "name": "Crannogman Survivalist",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Elusive Escape",
                     "Pathfinder"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limited",
+                        "text": "*Your army may only contain up to 2 Crannogman Survivalist.*"
+                    },
+                    {
+                        "text": "*The first Crannogman Survivalist attachment is free if your army contains Howland Reed, Lord of the Crannogs.\nCrannogman Survivalist ignores the usual Attachment restrictions.*"
+                    }
                 ]
             }
         },
@@ -1417,7 +1437,7 @@
             "id": "20226",
             "name": "Loyalist Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -1432,10 +1452,10 @@
             "name": "Rickard Karstark",
             "subname": "Vengeful Bannerman",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Stark Fury",
                     "Uncontrolled Rage"
@@ -1451,7 +1471,7 @@
             "name": "Rickard Karstark",
             "subname": "Lord of Karhold",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": "C",
@@ -1505,12 +1525,21 @@
             "id": "20230",
             "name": "Winterfell Champion",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Winterfell's Wrath"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limited",
+                        "text": "*Your army may only contain up to 2 Winterfell Champion.*"
+                    },
+                    {
+                        "text": "*The first Winterfell Champion attachment is free if your army contains Eddard Stark, Lord of Winterfell.*"
+                    }
                 ]
             }
         },
@@ -1648,15 +1677,15 @@
             "id": "40207",
             "name": "Assault Orders",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If that NCU Claimed [SWORDS], that Combat unit may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If that NCU Claimed [SWORDS], that Combat Unit may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     }
                 ]
@@ -1726,14 +1755,17 @@
             "id": "40211",
             "name": "Berserker Tactics",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is performing a Melee Attack, after rolling Attack Dice:",
+                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this targets a House Umber unit, the Defender becomes **Panicked**.",
-                            "This unit may suffer up to 3 Wounds. If it suffered any Wounds, this Attack deals 1+ that many additional Wounds."
+                            "Choose 1. This unit may suffer up to 3 wounds, for each wound suffered, choose +1:",
+                            "• **Critical Blow**",
+                            "• **Sundering **",
+                            "• This Attack rolls its highest Attack Die Value.",
+                            "• This Attack may re-roll any Attack Dice."
                         ]
                     }
                 ],
@@ -2204,14 +2236,14 @@
             "id": "40234",
             "name": "Sustained Assault",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
-                            "If this targets Maege's unit, it may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this targets a House Mormont unit, the Defender also becomes **Vulnerable**."
                         ]
                     }
                 ],

@@ -301,7 +301,7 @@
         },
         {
             "id": "10609",
-            "name": "R’hllor Queen’s Men",
+            "name": "R’hllor Queen's Men",
             "statistics": {
                 "version": "S04",
                 "faction": "baratheon",
@@ -1121,7 +1121,7 @@
             "name": "Devan Seaworth",
             "subname": "King's Squire",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1134,6 +1134,9 @@
                         "name": "Loyalty",
                         "heading": "STANNIS BARATHEON",
                         "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    },
+                    {
+                        "text": "*If your army contains Stannis Baratheon, reduce the cost of Devan Seaworth, King's Squire by 1.*"
                     }
                 ],
                 "character": true
@@ -1184,7 +1187,7 @@
             "name": "Davos Seaworth",
             "subname": "Onion Knight",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1210,7 +1213,7 @@
             "name": "Andrew Estermont",
             "subname": "True Loyalist",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1236,13 +1239,13 @@
             "name": "Andrew Estermont",
             "subname": "First of the King's Men",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "True Conviction (Baratheon)",
-                    "First of The King's Men",
+                    "First Of The King's Men",
                     "Loyalty: Stannis Baratheon"
                 ],
                 "commander": true,
@@ -1321,13 +1324,12 @@
             "name": "Loras Tyrell",
             "subname": "King's Squire",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Expert Duelist",
-                    "Precision"
+                    "Expert Duelist"
                 ],
                 "requirements": [
                     {
@@ -1399,7 +1401,7 @@
             "id": "20617",
             "name": "Red Priestess",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1419,12 +1421,13 @@
             "id": "20618",
             "name": "Pikemen Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Boldness and Courage"
+                    "Boldness And Courage",
+                    "Leadership Follower"
                 ],
                 "requirements": [
                     {
@@ -1439,12 +1442,13 @@
             "id": "20619",
             "name": "Thorn Watch Sentinel",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Dauntless",
+                    "Furious Charge",
                     "Pathfinder"
                 ],
                 "requirements": [
@@ -1481,10 +1485,10 @@
             "name": "Axell Florent",
             "subname": "Fanatical Devotee",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Affiliation: R'hllor",
                     "Zealous Fanaticism",
@@ -1537,19 +1541,22 @@
             "name": "Cortnay Penrose",
             "subname": "Loyal Tactician",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
                     "Order: Tactical Reposition",
-                    "Might Of The Throne (Cortnay Penrose)"
+                    "Might Of The Throne"
                 ],
                 "requirements": [
                     {
                         "name": "Loyalty",
                         "heading": "RENLY BARATHEON",
                         "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    },
+                    {
+                        "text": "*If your army contains Renly Baratheon, reduce the cost of Cortnay Penrose, Castellan of Storm's End by 1.*"
                     }
                 ],
                 "character": true
@@ -1563,13 +1570,13 @@
             "name": "Cortnay Penrose",
             "subname": "Castellan of Storm's End",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Bookkeeping (Cortnay Penrose)",
-                    "Might Of The Throne (Cortnay Penrose)",
+                    "Might Of The Throne",
                     "Loyalty: Renly Baratheon"
                 ],
                 "commander": true,
@@ -1619,7 +1626,7 @@
             "name": "Bryen Farring",
             "subname": "King's Squire",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1887,10 +1894,10 @@
             "name": "Robar Royce",
             "subname": "Robar The Red",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Furious Charge",
                     "Reckless Strikes"
@@ -1916,10 +1923,10 @@
             "name": "Guyard Morrigen",
             "subname": "Guyard The Green",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Counterstrike",
                     "Dauntless"
@@ -1999,13 +2006,14 @@
             "id": "40604",
             "name": "Sustained Assault",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this targets your Commander's unit, the Defender also becomes **Vulnerable**."
                         ]
                     }
                 ]
@@ -2622,15 +2630,15 @@
             "id": "40633",
             "name": "Assault Orders",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If this targets Andrew Estermont's unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If this targets Andrew Estermont's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     }
                 ],

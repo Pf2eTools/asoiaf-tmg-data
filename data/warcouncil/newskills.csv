@@ -23,9 +23,9 @@ Affiliation: R'hllor,This unit is a R'hllor unit.,W,
 Affiliation: Rangers,This unit is a Ranger unit.,W,
 Affiliation: Stormcrows,This unit is a Stormcrow unit.,W,
 Agile,Enemies suffer -1 to Hit when Attacking this unit.,,
-Ambush,Enemies this unit Successfully Charges in the Flank or Rear become **Panicked** and **Weakened**.,M,
-Arrow Volley,"• Ignores units and terrain when determining Line of Sight.
-• If the Defender rolls a 1 on any Defense Dice, after this attack is completed, they become **Weakened**.",R,2021-S03
+Ambush,"Enemies this unit Successfully Charges in the Flank or Rear become <b>Panicked, Vulnerable and Weakened</b>.",M,S06
+Arrow Volley,"• Ignores units and terrain when determining Line of Sight. 
+• If the Defender suffers any Wounds, they become <b>Weakened</b>.",R,S06
 Bardiche,• **Vicious**,M,2021-S03
 Battle Prayer,"This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:
 **• When an enemy is performing an Attack on this unit, after rolling Defense Dice:**
@@ -33,20 +33,23 @@ This unit blocks +1 Hit, +1 additional Hit for each of its destroyed ranks.
 **• When this unit is performing a Melee Attack, before rolling Attack Dice:**
 This Attack gains Sundering and may re-roll any Attack Dice.",F,
 Battle Scars,"Each time this unit performs a Melee Attack, before rolling Attack Dice, Choose 1. For each destroyed rank in this unit, choose +1:
-• **Vicious**
+• <b>Vicious</b>
 • This unit may re-roll any Attack Dice.
-• This unit rolls its highest Attack Die Value. ",M,S04
+• This unit rolls its highest Attack Die Value.",M,S04
 Bear Cavalry,"• Each model in this unit has 4 Wounds.
 • At the start of this unit’s Activation, it may perform 1 Maneuver Action.",W,
+Beric's Vassal,This model counts as Beric Dondarrion for all abilities and effects.,W,
 Berserker Axes,Gains +1 to Hit for each of this unit’s destroyed ranks.,M,
 Berserker's Fervor,"For each of this units destroyed ranks, it gains +1 to Defense Dice rolls and +1 to Morale Test rolls.",W,S04
 Black Fire,"• **Vicious**
 • Hits from this Attack cannot be blocked. If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each of its remaining ranks, and 1 enemy in Short Range of the Defender becomes **Panicked**.","W,M",2021-S01
 Blade and Fang,• **Vicious**,M,
-Bloodrider,This unit cannot become **Weakened**.,W,
+Bloodrider,This unit cannot become <b>Weakened</b>.,W,
 Bloodriders' Arakh,"• **Sundering**
 • **Vicious**",M,S04
-Boisterous Charisma,"Each time this unit passes a Panic Test, target 1 enemy unit in Short Range. They become **Vulnerable** or **Weakened**.",W,S05
+Boarding Axe,"• <b>Sundering</b>
+• If this unit has 2 Pillage tokens, when performing an Attack, before rolling Attack Dice, the Defender becomes <b>Panicked</b>.",M,
+Boisterous Charisma,"Each time this unit passes a Panic Test, target 1 enemy unit in Short Range. They become <b>Vulnerable</b> or <b>Weakened</b>.",W,S05
 Boldness and Courage,"Each time this unit Attacks, if it has full ranks, it gains +1 Attack Die. Otherwise, it is treated as having +1 rank for Attack Dice.","R,M",
 Bolt Thrower,"• **Vicious**
 • Measures Range and Line of Sight from any part of this unit's tray.
@@ -70,6 +73,8 @@ Bonded Wolf,"At the start of each Round, target 1 enemy Combat Unit. Attach this
 Bookkeeping (Cortnay Penrose),"As long as Cortnay Penrose is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",,
 Bookkeeping (Samwell Tarly),"As long as Samwell Tarly is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",,
 Bran’s Protector,"After Bran Stark’s unit is Attacked, this unit may perform 1 Attack or Charge Action on the Attacker.",,
+Brotherhood Armaments,"• <b>Critical Blow</b>
+• If your opponent does not control [CROWN], this attack gains +1 to Hit and <b>Sundering</b>.",M,
 Brutal Armaments,"• **Vicious**
 • Defender suffers +1 Wound from failing Panic Tests from this Attack for each of its destroyed ranks.",M,
 Brutal Sadism,"Before rolling Attack Dice, choose 1:
@@ -78,6 +83,7 @@ Brutal Sadism,"Before rolling Attack Dice, choose 1:
 • Defender becomes **Panicked**.
 After completing this Attack, if it did not destroy an enemy rank, the Attacker suffers 2 Wounds.","R,M",
 Bulwark Formation,"If this unit has not performed an Action this Round, it gains +2 to Defense Dice rolls.",,
+Captain’s Men,"If Victarion Greyjoy is attached to this unit, it deploys with 1 Pillage token.",,
 Cavalry,"• Each model in this unit has 3 Wounds.
 • At the start of this unit’s Activation, it may perform 1 Maneuver Action.",W,
 Champion’s Wrath,"• **Critical Blow**
@@ -105,15 +111,16 @@ Deadly Bloom,"Each time this unit restores Wounds, target 1 enemy it is engaged 
 Deadly Impact,"When Charging, gains **Sundering**, **Vicious**, and deals +1 Hit for each of the Defender’s remaining ranks.",M,
 Dervish Blades,"• **Precision**
 • When Attacking enemies that have not Activated this Round, this Attack gains **Critical Blow**.",M,
+Desert Marksmen,"When Attacking enemies that have not Activated this Round, may re-roll Attack Dice and the Defender becomes **Vulnerable**.",R,
 Direwolf,"• This unit has 4 Wounds.
 • At the start of this unit’s Activation, it may perform 1 Maneuver Action.",W,
 Disorganized,This unit suffers +1 Wound from failing Panic Tests.,,
 Disrupt,Enemies engaged with this unit suffer -1 to Hit.,,
 Distract,"During your Turn, enemies this unit is engaging in the Flank or Rear lose all Abilities and cannot be the target of friendly Tactics Cards.",,
 Divide The Spoils,"After completing an Attack, for each enemy rank that was destroyed, 1 friendly unit with Pillage in Long Range of that enemy gains 1 Pillage token.","R,M",
-Divine Sacrifices,"Each time this unit Attacks, before rolling Attack Dice, it may suffer up to 2 Wounds. If it does, for each Wound suffered, the Defender becomes **Panicked** or **Vulnerable**.","R,M",2021-S01
+Divine Sacrifices,"Each time this unit performs a Melee Attack, before rolling Attack Dice, it may suffer 1 Wound. If it does, this Attack gains +1 to Hit and the Defender becomes <b>Panicked</b> or <b>Vulnerable</b>.",M,S06
 Dominance Of The Crown,"If you Control [CROWN] when this unit is performing a Melee Attack, this Attack gains +1 to Hit and **Sundering**.",M,
-Domineering Pride,"While engaged by an enemy with fewer remaining ranks, this unit automatically passes all Panic Tests.",,
+Domineering Pride,"While engaged by an enemy with the same or fewer remaining ranks, this unit automatically passes all Panic Tests.",,S06
 Dornish Conviction,"While you Control [CROWN], this unit Attacks using its highest Attack Die Value.","R,M",
 Dornish Vengeance,"After this unit is Attacked with a Melee Attack, if you Control [SWORDS], the Attacker suffers 2 Wounds, +1 Wound for each of this unit's destroyed ranks.",,
 Double Hammers,• **Sundering**,M,
@@ -124,43 +131,45 @@ Drowned God's Fanatics,"• This unit has 3 Wounds.
 • This unit can only suffer a maximum of 1 Wound from failing Panic Tests.
 • This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.",W,S04
 Dual Weapons,• **Precision**,M,2021-S03
-Dutiful Commander,"If this is a Night's Watch unit, after Deployment, you may search your deck for 1 **Tempered by Duty** Tactics card and attach it to this unit. Shuffle your Tactics deck.",,
+Dutiful Commander,"If this is a Night's Watch unit, after Deployment, you may search your deck for 1 <b>Tempered by Duty</b> Tactics card and attach it to this unit. Shuffle your Tactics deck.",,
 Duty to The Crown,"Each time this unit passes a Morale Test, it restores 1 Wound. If you Control [CROWN], restore +1 Wound.",,
-Elusive Escape,This unit may re-roll any Retreat Distance Dice. Enemies this unit disengages from may not pivot and become **Weakened**.,,
+Elusive Escape,This unit may re-roll any Retreat Distance Dice. Enemies this unit disengages from may not pivot and become <b>Weakened</b>.,,
 Embolden,Friendly units in Short Range gain +1 to Morale Test rolls.,,
 Enhanced Mobility,This unit gains +1 [MOVEMENT] and may pivot before Marching.,,
-Executioner’s Axe,"• **Sundering**
-• If this unit has fewer remaining ranks than the Defender, this Attack gains **Vicious** and the Defender becomes **Panicked**.",M,
+Executioner’s Axe,"• <b>Sundering</b>
+• If this unit has fewer remaining ranks than the Defender, this Attack gains <b>Vicious</b> and the Defender becomes <b>Panicked</b>.",M,
 Executioner's Fury,"**• Vicious**
 • Only Defense Die rolls of 6 may block Hits from this attack.
 • If this unit has only 1 remaining rank, after this Attack is completed, the Defender become **Weakened**.",M,S04
-Experiment Enhancements,This unit's Melee Attacks gain +1 to Hit and **Vicious**. Opponents cannot expend Weakened tokens on this unit while it is Attacking.,"W,M",
+Experiment Enhancements,This unit's Melee Attacks gain +1 to Hit and <b>Vicious</b>. Opponents cannot expend Weakened tokens on this unit while it is Attacking.,"W,M",
 Expert Duelist,"Each time this unit performs a Melee Attack, before rolling Attack Dice, choose 1:
-• This Attack deals +1 Wound. 
+• This Attack deals +1 Wound.
 • Target 1 Infantry Attachment in the Defender's unit and roll a die. On a 5+, destroy that Attachment.",M,2021-S02
 Eye Of The Crow,"• This unit has 4 Wounds.
 • At the start of this unit's Activation, it may perform 1 Maneuver or Retreat Action.
 • The first time this unit is destroyed, at the start of the next Round, you may redeploy it fully within Short Range of any Flank table edge.",W,S04
 Fanatical Zeal,"This unit begins the game with 1 **Faith token**. Each time this unit passes a Morale Test, it gains 1 Faith token. Each time this unit is performing a Melee Attack, before rolling Attack Dice, it may expend 1 Faith token. If it does, this Attack gains **Precision** and may re-roll any Attack Dice.",F,
 Fearless Avarice,"While you Control [MONEY], this unit suffers -1 Wound from failed Panic Tests.",,
-Ferocious Assault,Enemies Successfully Charged by this unit become **Panicked**.,M,S04
+Ferocious Assault,Enemies Successfully Charged by this unit become <b>Panicked</b>.,M,S04
 Fighter's Armaments,• **Precision**,M,
 Fire Arrows,"• **Vicious**
 • If the Defender fails their Panic Test, target 1 other enemy in Short Range of that unit. They suffer 1 Panic Test with -2 to their roll.",R,
-First Claim,"Each time a friendly NCU Claims [MONEY], 1 Blacktyde Chosen unit gains 1 Pillage token. 
+First Claim,"Each time a friendly NCU Claims [MONEY], 1 Blacktyde Chosen unit gains 1 Pillage token.
 While this unit has 2 Pillage tokens, all friendly units in Short Range gain +1 to Morale Test rolls and suffer -1 Wound from failing Panic Tests.",,S04
 First of The King's Men,"• You count as Controlling the [CROWN] **and** [LETTER] zones for Tactics cards that target this unit.
-• While your opponent does not Control [CROWN] or [LETTER] , this unit may re-roll any Morale Test Dice.",,S05
+• While your opponent does not Control [CROWN] or [LETTER], this unit may re-roll any Morale Test Dice.",,S05
 Flail,• **Vicious**,M,S04
 Frenzied Swings,"• **Sundering**
 • Gains +1 to Hit for each of this unit’s destroyed ranks.",M,2021-S02
 Fueled By Slaughter,"After this unit completes a Melee Attack, if the Defender suffered any Wounds, this unit restores 1 Wound, +1 additional Wound for each of the Defender's destroyed ranks.",M,
-Furious Charge,Enemies Successfully Charged by this unit become **Vulnerable**.,M,
+Furious Charge,Enemies Successfully Charged by this unit become <b>Vulnerable</b>.,M,
 Furious Swing,"• **Vicious**
 • Gains +1 Attack Die for each Wound this unit has suffered.
 • Defenders do not roll Defense Dice. 
 • Enemies Successfully Charged by this unit become **Panicked**.","W,M",S05
-Gallows Humor,"While this unit has at least 1 destroyed rank, it may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs. While it has only 1 remaining rank, its Melee Attacks gain +1 to Hit.",W,
+Gallows Humor,"Each time this unit loses a rank, place 1 Order token on Eddison. This unit gains the following based on the number of tokens:
+<b>1+</b>: This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs.
+<b>2+</b>: This unit Melee Attacks gain +1 to Hit.",W,S06
 Gang-Up,All friendly unit's Melee Attacks gain +1 to Hit and +1 Attack Die on enemies that are engaged with this unit and at least 1 other friendly unit.,,
 Giant,"• This unit has 6 Wounds.
 • This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.
@@ -190,19 +199,23 @@ Heart of Fire,"This unit begins the game with 1 **Faith token**. Each time it pa
 **• After this unit completes a Melee Attack: **This unit restores 1 Wound, +1 Wound for each of the Defender’s destroyed ranks.
 **• When this unit performs a Charge Action, before resolving that action:** This unit may re-roll any Charge Distance Dice, and any enemies they successfully charge become **Panicked**.",Fire,S04
 Heir of House Targaryen,"When Daenerys is destroyed, your opponent gains 2 Victory Points.",W,
+Hidden Shot,"• Ignores units and terrain when determining Line of Sight.
+• When Attacking enemies in the Flank or Rear, this attack gains **Precision** and **Vicious**.",R,
 Highgarden Lance,"• **Sundering**
 • When Charging, gains +1 to Hit.
 • When Charging, rolls +2 Attack Dice for each remaining rank in this unit.",M,S05
 Hodor!,This unit's Melee Attacks deal +1 Wound.,M,
-Hodor!!!,"When this unit is performing a Retreat Action, after rolling Retreat Distance Dice, you may have all dice count as rolling a 6. If you do, this Attachment loses all Abilities until the end of the game.",,2021-S01
+Hodor!!!,"When this unit is performing a Retreat Action, after rolling Retreat Distance Dice, you may have all dice count as rolling a 6. If you do, this Attachment loses all Abilities until the end of the game. Enemies this unit disengages from may not pivot.",,S06
 Horrific Visage,"Each time an enemy performs a Melee Attack on this unit, before resolving that Attack, target the Attacker. They suffer 1 Panic Test with -1 to their roll for each remaining rank in this unit.",,
+Hot Pies!,"Each time this unit Activates, it removes 1 Condition Token. If you Control [CROWN], this unit may restore 1 Wound.",,
 Hrakkars & Tamers,"• This unit has 6 Wounds.
 • At the start of this unit’s Activation, it may perform 1 Maneuver Action.",W,
 Impaling Spear,"After completing this Attack, if this Attack destroyed an enemy rank, all enemies in Short Range of the Attacker become **Panicked**, if they were already **Panicked**, they instead become **Weakened**.",M,S05
-Improved Armaments,"While you Control [MONEY], this unit's Melee Attacks gain **Sundering** and roll their highest Attack Die Value.",M,
+Improved Armaments,"While you Control [MONEY], this unit's Melee Attacks gain <b>Sundering</b> and roll their highest Attack Die Value.",M,
 Improved Defenses,"While you Control [MONEY], this unit gains +1 to Defense Dice rolls.",,
+Improved Defenses (BwB),"While you Control [CROWN], this unit gains +1 to Defense Dice rolls.",,
 Improved Defenses (Stark),"While you Control [HORSE], this unit gains +1 to Defense Dice Rolls.",,
-Indomitable,This unit cannot become **Weakened**.,W,2021-S03
+Indomitable,This unit cannot become <b>Weakened</b>.,W,2021-S03
 Insignificant,This unit cannot grant Victory Points from **Victory Through Combat**.,,
 Inspiring Presence,This unit's Morale Stat becomes 5+.,Morale5,
 Interrogate,"Each time this unit destroys an enemy with a Melee Attack, you may look at your opponent's hand of Tactics cards and discard 1 card.",M,
@@ -219,9 +232,10 @@ Jagged Weapons,• **Vicious**,M,
 Jaime's Protector,"After Jaime Lannister's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",,
 Jaime's Vassal,This model counts as Jaime Lannister for all abilities and effects.,W,2021-S02
 Joffrey's Retinue,"This unit has 8 models *(including Joffrey)*, 8 Wounds, and 2 ranks.",W,
-Jojen's Greensight,"Each time this unit performs an Attack or Charge Action, before resolving that Action, it gains 1 of the following:
-• May re-roll any Attack Dice. 
-• May re-roll any Charge Distance Dice and ignores the Hindering and Rough keywords this Turn.",W,
+Jojen's Greensight,"Jojen begins the game with 2 Order tokens on him.
+Each time this unit attacks or is attacked, after rolling Attack Dice or Defense Dice, you may remove 1 Order token from Jojen. If you do, choose 1:
+• This unit may re-roll any Attack Dice.
+• This unit may re-roll any Defense Dice.",W,S06
 Jokin's Protector,"After Jokin's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",,
 Jokin's Vassal,This model count as Jokin for all abilities and effects.,W,
 Juvenile Dragon,"• This unit has 8 Wounds.
@@ -231,8 +245,10 @@ King's Blade,"**• Sundering**
 • While your opponent does not Control [CROWN], this Attack gains **Critical Blow** and may re-roll any Attack Dice.",M,S04
 Knight’s Blade,"• **Sundering**
 • If you Control [SWORDS], before rolling Attack Dice, the Defender becomes **Vulnerable**.",M,
+Knightly Armaments,"• **Sundering**
+• If your opponent does not Control [CROWN], this Attack may re-roll any Attack Dice.",M,
 Knightly Vow,"• After deployment target 1 enemy unit. When Charging that enemy, this unit may re-roll any Charge Distance dice.
-• While you Control [SWORDS], this unit's Melee Attacks gain +1 to Hit.",M,2021-S02
+• While your opponent does not Control [SWORDS], this unit's melee attacks gain +1 to Hit.",M,S06
 Lance,"• **Sundering**
 • When Charging, rolls +2 Attack Dice for each remaining rank in this unit.",M,2021-S01
 Lannister Justice,"While you Control [CROWN], each time this unit performs an Action, before resolving that Action, 1 enemy in Long Range suffers 1 Panic Test with -1 to their roll for each remaining rank in this unit.",,
@@ -241,6 +257,12 @@ Lannister Oppression,"Each time this unit performs a Melee Attack, before rollin
 • **Sundering**
 • Until the end of the Turn, Defender loses all Abilities.
 • This unit may re-roll any Attack Dice.",M,S05
+Leadership Follower,This unit gains +1 to Morale Test rolls while in Long Range of the Commander’s unit.,,S06
+Lightbringer,"Beric begins the game with 1 Faith token. Each time his unit passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:
+**•When this unit performs a Melee Attack, before resolving that Attack:**
+This Attack gains +2 Attack Dice.
+**•When this unit would be destroyed by a Melee Attack:**
+Before being removed, this unit performs 1 Melee Attack using its lowest Attack Die Value. If this Attack destroys the Defender, this unit is not destroyed but remains in play with 1 Wound.",F,
 Loyalty through Coin,"While you Control [MONEY], this unit gains +1 to Defense Dice rolls and +1 to Morale Test rolls.",,
 Loyalty: Renly Baratheon,Your army may never contain Units or Attachments with different Loyalties.,,
 Loyalty: Stannis Baratheon,Your army may never contain Units or Attachments with different Loyalties.,,
@@ -248,9 +270,9 @@ Mace & Spike,"Before rolling Attack Dice, choose 1. For each of this unit’s de
 • **Critical Blow**
 • **Precision**
 • Re-roll any Attack Dice.",M,
-Maegi's Healing,"Each time this unit Activates, roll a D3. On a 3, this unit suffers 1 Wound. On a 1, choose 1. On a 2, choose 2 *(the same effect may be chosen multiple times)*:
+Maegi's Healing,"Each time this unit Activates, roll a D3. On a 1, choose 1. On a 2, choose 2 *(the same effect may be chosen multiple times)*. On a 3, nothing happens:
 • Restore 1 Wound to this unit.
-• Remove 1 Condition token from this unit.",,
+• Remove 1 Condition token from this unit.",,S06
 Mammoth,"• This unit has 8 Wounds.
 • This unit cannot Control Objectives.
 • This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.
@@ -270,13 +292,9 @@ Mastercraft Warhammer,"• May always re-roll Attack Dice.
 Mercenary's Longbow,"• While you Control [MONEY], gains **Sundering**.
 • While you Control [LETTER], before rolling Attack Dice, the Defender becomes **Vulnerable**.
 • While you Control [SWORDS], may re-roll any Attack Dice.",R,
-Might of The Throne (Cortnay Penrose),"Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:
-*Cortnay Penrose's unit performs 1 Melee Attack or Charge Action*.",,S04
-Might of The Throne (Kevan Lannister),"Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:
-*Kevan Lannister's unit performs 1 Melee Attack or Charge Action*.",,S04
+Might Of The Throne,"While your opponent does not Control [CROWN], each time this unit Attacks, it gains +1 Attack Die to Melee Attacks and counts as rolling a 6 for all Charge Distance Dice.",M,S06
 Mother of Dragons,"Once per game, at the start of any Turn, you may search your Tactics Deck or discard pile for 1 of Daenerys' Commander cards and add it to your hand. Shuffle your Tactics Deck.",W,
-Motivated by Coin,"Each time a friendly NCU Claims [MONEY], you may replace that zone's effect with:
-*1 friendly unit with Motivated by Coin performs 1 Attack Action.*",,
+Motivated By Coin,"While your opponent does not Control [MONEY], when performing a Melee Attack, this unit may re-roll Melee Attack Dice and, when this unit activates, it may restore 1 Wound.",,S06
 Motley Armaments,"When Attacking, choose 1. If Attacking in the Flank or Rear, gain both:
 • +1 Attack Die and **Critical blow**.
 • Defender loses all Abilities this Turn.",M,2021-S03
@@ -290,23 +308,25 @@ Target 1 Combat Unit in Long Range. Replace 1 Condition token on that unit with 
 Order: Adaptive Style,"**When this unit Attacks or is Attacked, before rolling Attack Dice:**
 Choose 1:
 • This unit gains +1 to Defense Dice rolls and +2 to Panic Test rolls against this Attack.
-• This Attack gains **Critical Blow** and **Sundering**.",,S04
+• This Attack gains <b>Critical Blow</b> and <b>Sundering</b>.",,S04
 Order: Battle Plan,"**Start of any Turn:**
 Discard 2 Tactics cards to search your Tactics Deck for any 1 card and add it to your hand. Shuffle your Tactics Deck.",,
 Order: Charging Volley,"**After this unit completes a Ranged Attack:**
 This unit performs 1 Charge Action on the Defender.",,
 Order: Counterstrategy,"**When an enemy in Short Range uses an Order or is targeted by a Tactics card:**
 Roll a die. On a 3+, cancel the effect of that Order/Tactics card.",,
+Order: Deceitful Reposition,"**At the Start of an enemy Turn, if no enemies are within Short Range:**
+This unit performs a 3” Maneuver Action.",,
 Order: Divide The Spoils,"**Start of any Turn:**
-Target 1 friendly House Greyjoy unit in Short Range. 
-You may remove 1 Pillage token from that unit and then place 1 Pillage token on 1 other friendly House Greyjoy unit in Short Range of them.",,2021-S03
+Target 1 friendly House Greyjoy unit in Long Range.
+You may remove 1 Pillage token from that unit and then place 1 Pillage token on 1 other friendly House Greyjoy unit in Long Range of them.",,S06
 Order: Drowned God's Blessing,"**Start of any Turn:**
 Target 1 friendly Greyjoy Infantry unit in Short Range and choose 1:
 • That unit restores 2 Wounds.
 • That unit may re-roll any Attack Dice this Turn.
 • Enemies that Attack that unit this Turn become **Vulnerable**.",,
 Order: Grisly Example,"**Start of any Turn:**
-This unit suffers 1 Wound. Target all enemies in Short Range. They become **Panicked**.",,
+This unit suffers 1 Hit. Target all enemies in Short Range. They become <b>Panicked</b>.",,S06
 Order: Hidden Traps,"**When an unengaged enemy in Long Range performs any Action, before resolving that Action:**
 Choose 1:
 • That enemy suffers 1 Hit for each of its remaining ranks.
@@ -314,7 +334,7 @@ Choose 1:
 Order: Hold The Line!,"**When this unit Activates:**
 Target 1 enemy engaged with this unit. It suffers 2 Hits, +1 Hit for each of this unit’s remaining ranks.",,2021-S01
 Order: Incite,"**When this unit is performing a Melee Attack, before rolling Attack Dice:**
-This Attack gains **Vicious** and rolls its highest Attack Die Value.",,
+This Attack gains <b>Vicious</b> and rolls its highest Attack Die Value.",,
 Order: Just Shares,"**Start of any Turn:**
 Target 1 friendly Combat Unit in Long Range. Move 1 Pillage token from that unit to 1 other friendly unit with Pillage in Short Range of that unit.",,
 Order: King’s Blade,"**After this unit is Attacked:**
@@ -324,9 +344,9 @@ Target the Attacker. They suffer 1 Panic Test with -1 to their roll and +1 Wound
 Order: Laws of the Realm,"**When an enemy in Short Range Attacks, before rolling Attack Dice:**
 That enemy is treated as having -1 rank for Attack Dice. If it has only 1 remaining rank, it becomes **Vulnerable**.",,
 Order: Mark Target,"**Start of a friendly Turn:**
-Target 1 enemy in Line of Sight and Long Range. They become **Vulnerable**.",,
+Target 1 enemy in Line of Sight and Long Range. They become <b>Vulnerable</b>.",,
 Order: Martial Training,"**When this unit is performing a Melee Attack, before rolling Attack Dice:**
-This Attack may re-roll any Attack Dice and the Defender becomes **Vulnerable**.",,
+This Attack may re-roll any Attack Dice and the Defender becomes <b>Vulnerable</b>.",,
 Order: Noble's Bolster,"**When a friendly Combat Unit in Long Range would gain a Condition token:**
 It does not gain that token.",,S04
 Order: Overrun,"**When this unit Surges forth:**
@@ -334,7 +354,7 @@ Instead of Surging Forth, this unit performs 1 Charge or March Action.",,S04
 Order: Overwatch,"**After an enemy ends a March or Maneuver Action in Long Range and Line of Sight of this unit:**
 This unit performs 1 Ranged Attack Action on that enemy.",,
 Order: Pit Fighter Rage,"**When this unit is performing a Melee Attack, before rolling Attack Dice:**
-The Defender becomes **Vulnerable**, **Panicked** and **Weakened**. After this Attack has been completed, the Attacker suffers 2 Wounds.",,
+The Defender becomes <b>Vulnerable</b>, <b>Panicked</b> and <b>Weakened</b>. After this Attack has been completed, the Attacker suffers 2 Wounds.",,
 Order: Planned Approach,"**Start of any Turn:**
 Target 1 friendly unit in Long Range. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities.",,S05
 Order: Queen’s Blade,"**When a friendly R’hllor unit in Short Range is Attacked, before rolling Attack Dice:**
@@ -347,8 +367,8 @@ Order: Ready! Aim! Release!,"**When an enemy performs a Charge Action on this un
 If being Charged from the Front, this unit performs 1 Ranged Attack Action on that enemy using its lowest Attack Die Value.",,2021-S01
 Order: Reckless Heroism,"**When this unit performs a Charge Action, before resolving that Action:**
 This unit suffers D3 Wounds, but counts as rolling a 6 on all Charge Distance Dice.",,
-Order: Resilience,"**When an enemy is performing an Attack on this unit, after rolling Attack Dice:**
-This unit only suffers 1 Wound for every 2 unblocked Hits.",,S04
+Order: Resilience,"**When an enemy is performing an Attack on this unit, after Attack Dice are rolled:**
+This unit only suffers 1 Wound for every 2 unblocked Hits.",,S06
 Order: Scavenge,"**After an enemy completes an Attack on this unit:**
 This unit gains 1 Pillage token.",,
 Order: Scout Openings,"**Start of a friendly Turn:**
@@ -368,7 +388,7 @@ Target 1 enemy in Long Range. They suffer 1 Morale Test with -1 to their roll fo
 Order: Spread Fear,"**When an enemy engaged with this unit fails a Panic Test:**
 Target 1 other enemy in Long Range of this unit. It suffers 1 Panic Test with -1 to their roll for each remaining rank in this unit. On failure, it suffers +1 Wound.",,
 Order: Stark Fury,"**When this unit is performing a Melee Attack, before rolling Attack Dice:**
-This Attack gains **Critical Blow** and **Sundering**. After completing this Attack, this unit suffers 2 Wounds, -1 Wound for each of its destroyed ranks.",,
+This Attack gains <b>Critical Blow</b> and <b>Sundering</b>. After completing this Attack, this unit suffers 2 Wounds, -1 Wound for each of its destroyed ranks.",,
 Order: Stay At Your Posts!,"**When a friendly unit in Short Range passes a Morale Test:**
 That unit restores 1 Wound, +1 Wound for each of its destroyed ranks.",,2021-S03
 Order: Strange Relics,"**When this unit Activates:**
@@ -395,11 +415,12 @@ Order: Trapper's Tools,"**Start of any Turn:**
 Target 1 enemy within Short Range and Line of Sight of this unit. They become **Vulnerable** or **Weakened**. If this unit has 2 Pillage tokens, they become both instead.",,S04
 Order: Trophy Collecting,"**After a Rattleshirt's Commander Tactics card is attached to a friendly unit:**
 Search your Tactics Deck or discard pile for 1 of Rattleshirt's Commander Tactics cards and attach it to this unit. Shuffle your Tactics deck.",,2021-S03
+Order: Trophy Hunter,"**When a friendly Combat Unit Activates:**
+Search your Tactics Deck or discard pile for 1 Rattleshirt’s Commander Tactic card and add it to your hand.",,S06
 Order: Unsuspecting Charge,"**When a friendly unit in Long Range Activates:**
 That unit may not be the target of enemy Orders or Tactics cards this Turn. It must perform a Charge as its Action this Turn.",,
 Order: War Cry,"**Start of a friendly Turn:**
-This unit performs 1 Morale Test.
-On a Success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**.",,2021-S02
+This unit performs 1 Morale Test. On a Success, target 1 enemy in Long Range. It becomes <b>Panicked</b> or <b>Vulnerable</b>.",,S06
 Orders of the Crown (Cortnay Penrose),"Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:
 *Cortnay Penrose's unit performs 1 Maneuver or March Action.*",,
 Orders of the Crown (Joffrey Baratheon),"Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:
@@ -413,16 +434,22 @@ Perseverance and Valor,"Each time this unit performs a Melee Attack, before roll
 Pirate's Blades,"• **Critical Blow**
 • If this unit has 2 Pillage tokens, it rolls its highest Attack Die Value.
 • After completing a Melee Attack, this unit restores 1 Wound for each Pillage token it has.",M,S04
-Poisoned Gifts,"If this unit is a House Greyjoy unit, it deploys with 2 Pillage tokens. When it performs an Action, before resolving that Action, it suffers 1 Wound.",,2021-S03
+Poisoned Gifts,"If this unit is a House Greyjoy unit, it deploys with 2 Pillage tokens.
+At the Start of Round 3, they become <b>Panicked</b>, <b>Vulnerable</b> and <b>Weakened</b>.",,S06
 Poisoned Tridents,"Before rolling Attack Dice, choose 1:
 • The Defender becomes **Weakened**.
 • Attach 1 Crannog Poison card to the Defender.","M,V",
-Precision,This unit's Melee Attacks gain **Precision**.,M,
+Prayers to R'hllor,"This unit gains +2 to Morale Test rolls and begins the game with 1 Faith token. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:
+**•When this unit performs a Melee Attack, before resolving that Attack:**
+This Attack gains Sundering and Vicious.
+**•When an enemy in Long Range fails a Panic Test:**
+Target 1 friendly unit in Long Range of this unit. For each Wound the enemy suffered from this test, restore 1 Wound to that friendly unit, up to 3.",F,
+Precision,This unit's Melee Attacks gain <b>Precision</b>.,M,
 Predator's Instincts,"• Each time this unit Charges, it suffers a Disorderly Charge on rolls of 1 or 2.
 • Each time an enemy performs a Melee Attack on this unit, their Attack gains **Vicious**.
 • When this model's Skinchanger unit Charges this unit, they may re-roll any Charge Distance Dice.",,S05
 Prey On Fear,"Each time an enemy engaged with this unit fails a Panic Test, this unit restores 2 Wounds.",,
-Protection of the Crown,"While you Control [CROWN], each time this unit is Attacked, it may re-roll any Defense Dice.",,
+Protection Of The Crown,"While you Control [CROWN], each time this unit is Attacked, it may re-roll any Defense Dice and opponents cannot expend <b>Vulnerable</b> tokens on this unit.",,S06
 Pummeling Fists,"• **Critical Blow**
 • **Sundering**","M,W",
 Queen's Blade,"While your opponent does not Control [CROWN], opponents cannot expend **Vulnerable** and **Panic** tokens on this unit.",,S04
@@ -434,14 +461,16 @@ That unit gains the following based on the number of Pillage tokens *(effects ar
 Rally Banner,"Each time a friendly unit in Short Range passes a Morale Test, that unit restores 1 Wound.",,2021-S03
 Rally Cry,"Each time this unit is performing a Melee Attack, before rolling Attack Dice, target 1 other friendly unit in Long Range. It restores 2 Wounds.",M,
 Rally Point,Friendly units in Short Range may use this unit's Morale Stat for all Morale Tests.,,
-Rampage,"• **Critical Blow**
-• **Sundering**
-• Before rolling Attack Dice, the Defender becomes **Panicked**.","M,W",2021-S01
+Rally The Smallfolk,"After this unit completes a Melee Attack, if this Attack destroyed an enemy rank, target 1 friendly Infantry unit in Long Range. They restore 2 Wounds.",,
+Rampage,"• <b>Critical Blow</b>
+• <b>Sundering</b>
+• Before rolling Attack Dice, the Defender becomes <b>Panicked</b>.
+• When Charging, this unit may re-roll any Charge Distance Dice.","M,W",S06
 Ranging Specialist (Benjen),Benjen may only be Attached to Ranger units.,W,
 Reaper's Fervor,"Each time this unit performs a Melee Attack, before rolling Attack Dice, if this unit has 2 Pillage tokens, the Defender becomes **Panicked** and, if they fail the Panic Test from this Attack, suffer +1 Wound.",M,S04
 Reaver Axes,"• **Sundering**
 If this unit has 2 Pillage tokens, it may re-roll any Attack Dice.",M,2021-S03
-Reckless Strikes,"This unit's Melee Attack gain **Critical Blow** and **Precision**. For each Attack Die roll of 1, this unit suffers 1 Wound.",M,
+Reckless Strikes,"This unit's Melee Attack gain <b>Critical Blow</b> and <b>Precision</b>. For each Attack Die roll of 1, this unit suffers 1 Wound.",M,
 Recruiting From The Hills,"Each time this unit Activates, it restores 1 Wound, +1 Wound for each of its destroyed ranks.",,
 Regroup,"After completing a Retreat Action, this unit restores 2 Wounds, +1 Wound for each of its destroyed ranks.",,
 Reinforcements,"Each time this unit Activates, it restores 1 Wound. If you Control [CROWN], restore +1 Wound.",,
@@ -469,11 +498,11 @@ Sic 'Em,This unit may always re-roll Charge Distance Dice. Enemies this unit Suc
 Solo Rider,"• This unit has 3 Wounds.
 • At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action.",W,
 Southern Knowledge,"Once per game, at the Start of any Turn, target 1 enemy in Long Range and Line of Sight. Until the end of the Turn, they lose all Abilities and cannot be the target of friendly Tactics cards.",W,
-Spear & Net,"After completing this Attack, the Defender becomes **Weakened**.",M,
+Spear & Net,"After completing this Attack, the Defender becomes <b>Weakened</b>.",M,
 Spear and Maul,"• **Vicious**
 • **Sundering**
 • **Precision**",M,
-Spiked Flail,• **Vicious**,M,
+Spiked Flail,• <b>Vicious</b>,M,
 Spotter,"When Attacking enemies in Long Range of this unit, friendly War Machine units may re-roll any Attack Dice.",,
 Stag’s Fury,"This Attack gains the following based on the Game Round *(effects are cumulative)*:
 **• 2+:** **Critical Blow**
@@ -491,8 +520,8 @@ Stomp,"• **Vicious**
 • Defenders do not roll Defense Dice.
 • When Charging, gains +1 Attack Die for each of the Defender’s remaining ranks.","W,M",
 Stubborn Tenacity,"Each time this unit passes a Panic Test, 1 enemy they are engaged with suffers 1 Wound.",,
-Sundering,This unit's Melee Attacks gain **Sundering**.,M,
-Superior Numbers,This unit's Melee Attacks may re-roll any Attack Dice when Attacking enemies with fewer remaining ranks.,M,
+Sundering,This unit's Melee Attacks gain <b>Sundering</b>.,M,
+Superior Numbers,"When attacking enemies with the same or fewer remaining ranks, this unit’s Melee Attacks may re-roll any Attack Dice and opponents cannot expend <b>Weakened</b> tokens on this unit.",M,S06
 Swift Strike,"After this Attack is completed, this unit may perform 1 Retreat Action.",M,
 Tactical Strike,"• **Sundering**
 • While you control [LETTER], this attack rolls its highest Attack Die Value.",M,
@@ -511,11 +540,12 @@ Tooth & Claw,• **Sundering**,M,
 Tracker’s Bow,"After completing this Attack, the Defender becomes **Vulnerable**.",R,
 Trample,"Each time this unit performs a March Action, it may replace that Action with a Trample Action:
 Pivot it, then move it 12”, moving through units. If it ends over a unit, it instead stops 1” before it. Each non-Solo unit moved through, or that it would have ended on, suffers D3 Wounds.",W,
+Trophy Collector,This unit may treat any Rattleshirt’s Commander Tactics cards attached to friendly units within Short Range as also attached to them.,W,S06
 True Bond,"• Ghost may treat any friendly Tactics cards attached to Jon Snow's unit as also attached to him.
 • When Jon Snow's unit Activates, this unit may Activate after that unit.",W,
-True Conviction (Baratheon),"If this unit is a Baratheon unit, each time it Attacks an enemy with more remaining ranks, it may re-roll any Attack Dice.","R,M",
-True Conviction (Martell),"If this unit is a Martell unit, each time it Attacks an enemy with more remaining ranks, it may re-roll any Attack Dice.","R,M",
-Uncontrolled Rage,"Each time this unit Activates, if it can Charge an enemy, it performs 1 Morale Test. On a failure, it performs 1 Charge Action on the nearest valid enemy and counts as rolling a 6 for all Charge Distance Dice *(this is their Action for the Turn)*.",,
+True Conviction (Baratheon),"If this unit is a Baratheon unit, each time it Attacks an enemy with the same or more remaining ranks, it may re-roll any Attack Dice.","R,M",S06
+True Conviction (Martell),"If this unit is a Martell unit, each time it Attacks an enemy with the same or more remaining ranks, it may re-roll any Attack Dice.","R,M",S06
+Uncontrolled Rage,"Each time this unit Activates, if it can Charge an enemy, it performs 1 Morale Test. On a failure, it performs 1 Charge Action on the nearest valid enemy and counts as rolling a 6 for all Charge Distance Dice.",,S06
 Unfaltering Conviction,"Each time a friendly Combat Unit is destroyed, place 1 Order token on Marselen. This unit gains the following based on the number of tokens:
 • 2+: Unit's Attacks gain +1 to Hit.
 • 3+: Unit gains +1 to Defense Dice rolls.",W,2021-S03
@@ -541,24 +571,25 @@ Varamyr’s Wolf Pack,"• This unit has 3 Wounds.
 • At the start of this unit’s Activation, it may perform 1 Maneuver Action.",W,
 Vengeance Of The Crown,"After this unit is Attacked with a Melee Attack, if you Control [CROWN], the Attacker suffers 1 Wound, +1 Wound for each of this unit's destroyed ranks.",,2021-S01
 Vengeful Captive,"While your opponent Controls [CROWN], this unit suffers -1 to Hit.",W,
-Vicious,This unit's Melee Attacks gain **Vicious**.,M,
+Vicious,This unit's Melee Attacks gain <b>Vicious</b>.,M,
 Vicious Mauling,"• **Sundering**
 • **Vicious**
 • Gains +1 Attack Die for each Wound this unit has suffered.",M,2021-S03
 Victarion's Vassal,This model counts as Victarion Greyjoy for all abilities and effects.,W,2021-S02
-Violent Reactions,This unit suffers -1 to Defense Dice rolls.,W,
+Violent Reactions,"After completing an Attack, this unit becomes <b>Vulnerable</b>.",W,S06
 Viper's Fangs,"When Attacking enemies that have not Activated this Round, the Defender becomes **Vulnerable** and **Weakened**.",M,
 War Elephant,"• This unit has 8 Wounds and cannot Control Objectives.
 • This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.
 • Each time this unit would perform an Action, if there is no friendly Golden Company Infantry unit within Long Range, it must perform 1 Morale Test. On a failure, it does not perform that Action.",W,
-War Flail,"• **Vicious**
-• When Charging, gains **Critical Blow**.",M,
+War Flail,"• <b>Vicious</b>
+• When Charging, gains <b>Critical Blow</b>.",M,
 War Hammer,"If the Defender rolls a 1 on any Defense Dice, after this Attack is completed, they become **Weakened**.",M,
 War Machine,"• This unit has 6 Wounds.
 • This unit cannot Control Objectives.
 • This unit cannot gain Condition tokens, Charge, Retreat, or Shift.",W,
 Watcher's Crossbow,• **Sundering**,R,
-Weaken Resolve,"Each time an enemy engaged with this unit fails a Panic Test, that enemy becomes **Weakened**.",,
+Water Dance,"Each time a rank in this unit is destroyed, target the Attacker, they become <b>Vulnerable</b>.",,S06
+Weaken Resolve,"Each time an enemy engaged with this unit fails a Panic Test, that enemy becomes <b>Weakened</b>.",,
 Westerosi Rider,"• This unit has 3 Wounds.
 • At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action.
 • As long as Jorah is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",W,
@@ -566,38 +597,12 @@ Whatever May Come,"Each time an enemy performs a Melee Attack on this unit, befo
 Widower's Protector,"After The Widower's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",,
 Wildfire,"• **Vicious**
 • Defenders do not roll Defense Dice.","R,M",2021-S03
-Winter's Bite,"• **Critical Blow**
+Winter's Bite,"• <b>Critical Blow</b>
 • If this unit has 1 or more destroyed ranks, gains +1 to Hit.
 • If this unit has 2 destroyed ranks, may re-roll any Attack Dice.",M,2021-S01
-Winterfell Supplies,"• **Precision**
+Winterfell Supplies,"• <b>Precision</b>
 • While you Control [SWORDS], this unit's Melee Attacks roll their highest Attack Die Value.",,
-Winterfell's Wrath,"• **Critical Blow**
-• Enemies Successfully Charged become **Weakened**.",M,
-Zealous Fanaticism,This unit's Melee Attacks gain Vicious and always roll their highest Attack Die Value. This unit suffers 1 Wound for each Attack Die roll of 1.,"W,M",
+Winterfell's Wrath,"• <b>Critical Blow</b>
+• Enemies Successfully Charged become <b>Weakened</b>.",M,
+Zealous Fanaticism,This unit's Melee Attacks gain <b>Vicious</b> and always roll their highest Attack Die Value. This unit suffers 1 Wound for each Attack Die roll of 1.,"W,M",
 Zealous Resurgence,"Each time this unit Activates, it may expend 1 Faith token. If it does, it restores 2 Wounds.",F,2021-S01
-Boarding Axe,"• **Sundering**
-• If this unit has 2 Pillage tokens, when performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked**.",M,
-Captain’s Men,"If Victarion Greyjoy is attached to this unit, it deploys with 1 Pillage token.",,
-Desert Marksmen,"When Attacking enemies that have not Activated this Round, may re-roll Attack Dice and the Defender becomes **Vulnerable**.",R,
-Brotherwood Armaments,"• **Critical Blow**
-• If your opponent does not control , this attack gains +1 to Hit and Sundering.",M,
-Order: Deceitful Reposition,"**At the Start of an enemy Turn, if no enemies are within Short Range:**
-This unit performs a 3” Maneuver Action.",,
-Hidden Shot,"• Ignores units and terrain when determining Line of Sight.
-• When Attacking enemies in the Flank or Rear, this attack gains **Precision** and **Vicious**.",R,
-Knightly Armaments,"• **Sundering**
-• If your opponent does not Control [CROWN], this Attack may re-roll any Attack Dice.",M,
-Rally The Smallfolk,"After this unit completes a Melee Attack, if this Attack destroyed an enemy rank, target 1 friendly Infantry unit in Long Range. They restore 2 Wounds.",,
-Lightbringer,"Beric begins the game with 1 Faith token. Each time his unit passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:
-**•When this unit performs a Melee Attack, before resolving that Attack:**
-This Attack gains +2 Attack Dice.
-**•When this unit would be destroyed by a Melee Attack:**
-Before being removed, this unit performs 1 Melee Attack using its lowest Attack Die Value. If this Attack destroys the Defender, this unit is not destroyed but remains in play with 1 Wound.",F,
-Prayers to R'hllor,"This unit gains +2 to Morale Test rolls and begins the game with 1 Faith token. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:
-**•When this unit performs a Melee Attack, before resolving that Attack:**
-This Attack gains Sundering and Vicious.
-**•When an enemy in Long Range fails a Panic Test:**
-Target 1 friendly unit in Long Range of this unit. For each Wound the enemy suffered from this test, restore 1 Wound to that friendly unit, up to 3.",F,
-Hot Pies!,"Each time this unit Activates, it removes 1 Condition Token. If you Control [CROWN], this unit may restore 1 Wound.",,
-Beric's Vassal,This model counts as Beric Dondarrion for all abilities and effects.,W,
-Improved Defenses (BwB),"While you Control [CROWN], this unit gains +1 to Defense Dice rolls.",,

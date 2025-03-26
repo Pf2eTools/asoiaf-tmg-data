@@ -37,7 +37,7 @@
             "id": "10802",
             "name": "Ironborn Bowmen",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 4,
@@ -67,8 +67,8 @@
                     }
                 ],
                 "abilities": [
-                    "Order: Divide The Spoils",
-                    "Ironborn Arrows"
+                    "Ironborn Arrows",
+                    "Order: Divide The Spoils"
                 ],
                 "tray": "infantry"
             },
@@ -180,7 +180,7 @@
             "id": "10806",
             "name": "Blacktyde Chosen",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 6,
@@ -312,7 +312,7 @@
             "id": "10810",
             "name": "Iron Victory Crew",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 6,
@@ -333,13 +333,13 @@
                 ],
                 "abilities": [
                     "Boarding Axe",
-                    "Captain's Men",
+                    "Captain’s Men",
                     "Domineering Pride"
                 ],
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The sight of Kraken sails coming over the horizon fills any settlement with dread, but none moreso than those of the Iron Victory, Victarion's personal raiding ship. The Iron Victory's Crew are handpicked men, vicious by nature, skilled in warfare, and loyal to a fault. They are few in number but can serve well as a hard center to any assault force. Proper support is required to guard their flanks, of course."
+                "lore": "The sight of Kraken sails coming over the horizon fills any settlement with dread, but none moreso than those of the Iron Victory, Victarion’s personal raiding ship. The Iron Victory’s Crew are handpicked men, vicious by nature, skilled in warfare, and loyal to a fault. They are few in number but can serve well as a hard center to any assault force. Proper support is required to guard their flanks, of course."
             }
         }
     ],
@@ -398,9 +398,9 @@
             "name": "Balon Greyjoy",
             "subname": "King of Salt and Rock",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "greyjoy",
-                "cost": 5,
+                "cost": 6,
                 "abilities": [
                     {
                         "name": "Rise Again, Blade in Hand",
@@ -478,7 +478,7 @@
                     {
                         "name": "Ironborn Diplomat",
                         "effect": [
-                            "Once per game, when an enemy NCU Activates, you may select 2 Tactics Zones. If that NCU Claims either zone this Activation, target up to 2 enemy Combat Units. They become** Panicked **and **Vulnerable**.",
+                            "Once per game, when an enemy NCU Activates, you may select 2 Tactics Zones. If that NCU Claims either zone this Activation, target up to 2 enemy Combat Units. They become **Panicked **and **Vulnerable**.",
                             "Once per game, when an enemy NCU Activates, if Tristifer is not on the Tactics Board, you may select 1 Tactics Zone. If that NCU Claims that zone this Turn, at the end of the Turn, you may Activate Tristifer."
                         ]
                     }
@@ -710,14 +710,14 @@
             "name": "Theon Greyjoy",
             "subname": "\"Prince\" of Winterfell",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Order: Sentinel",
                     "Ambush",
-                    "Enhanced Mobility"
+                    "Enhanced Mobility",
+                    "Order: Sentinel"
                 ],
                 "commander": true,
                 "character": true
@@ -780,7 +780,7 @@
             "name": "Nute",
             "subname": "The Barber",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
@@ -854,7 +854,7 @@
             "name": "Euron Greyjoy",
             "subname": "Crow's Eye",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
@@ -873,7 +873,7 @@
             "name": "Erik Ironmaker",
             "subname": "Anvil-Breaker",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "C",
@@ -900,10 +900,10 @@
             "name": "Asha Greyjoy",
             "subname": "\"Lady Greyjoy\"",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Sentinel",
                     "Gang-Up"
@@ -956,13 +956,18 @@
             "name": "Moqorro",
             "subname": "Slave of R'hllor",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
                     "Order: Incite",
                     "Order: Supply Aid"
+                ],
+                "requirements": [
+                    {
+                        "text": "*If your army contains Victarion Greyjoy, Master of the Iron Victory, reduce the cost of Moqorro, Slave of R'hllor by 1.*"
+                    }
                 ],
                 "character": true
             },
@@ -1032,13 +1037,18 @@
             "id": "20822",
             "name": "Drowned Prophet",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Order: Resilience",
-                    "Go Down Fighting"
+                    "Order: Resilience"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limited",
+                        "text": "*Your army may only contain up to 2 Drowned Prophets.*"
+                    }
                 ]
             }
         },
@@ -1274,15 +1284,15 @@
             "id": "40812",
             "name": "Assault Orders",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If this targets Victarion Greyjoy's unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If this targets Victarion Greyjoy's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     }
                 ],
@@ -1295,14 +1305,14 @@
             "id": "40813",
             "name": "Sustained Assault",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
-                            "If this targets Victarion Greyjoy's unit, it may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this targets Victarion's unit, the Defender also becomes **Vulnerable**."
                         ]
                     }
                 ],
@@ -1469,7 +1479,7 @@
                         "trigger": "When a friendly Combat Unit Activates:",
                         "effect": [
                             "That unit cannot perform Actions this Turn. Instead, 1 other friendly Combat Unit performs 1 Maneuver, March, or Retreat Action.",
-                            "If this is Euron Greyjoy's unit, before they perform this Action, 1 enemy in Long Range becomes Vulnerable."
+                            "If this is Euron Greyjoy's unit, before they perform this Action, 1 enemy in Long Range becomes **Vulnerable**."
                         ]
                     }
                 ],

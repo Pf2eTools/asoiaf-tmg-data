@@ -11,13 +11,16 @@ Order: Tactical Reposition",,SIF209,20105,2021,,"""Those are brave men. Let's go
 Lannister,"Barristan Selmy, Lord Commander of The Kingsguard",Barristan Selmy,2,Infantry,"Duty To The Crown / 
 Stalwart",,SIF210,20106,2021,*May not be fielded in an army that includes the Kingsguard unit.*,"""Of these seven, only Ser Barristan Selmy is made of the true steel, and Selmy is old."" -Varys"
 Lannister,"Jaime Lannister, Kingsguard",Jaime Lannister,2,Infantry,"Expert Duelist /
-Counterstrike",,SIF210,20107,2021-S02,*May not be fielded in an army that includes the Kingsguard unit.*,"""...A Sworn Brother of the White Swords, and we all know what his oath is worth."" -Varys"
+Counterstrike",ReduceIfPresent: 'Cersei Lannister',SIF210,20107,S06,"*May not be fielded in an army that includes the Kingsguard unit.* /
+*If your army contains Cersei Lannister, reduce the cost of Jaime Lannister, Kingsguard by 1.*","""...A Sworn Brother of the White Swords, and we all know what his oath is worth."" -Varys"
 Lannister,"Mandon Moore, Kingsguard",Mandon Moore,1,Infantry,Dominance Of The Crown,,SIF210,20108,2021,*May not be fielded in an army that includes the Kingsguard unit.*,"""Death in snow-white silk."" -Tyrion Lannister"
 Lannister,"Meryn Trant, Kingsguard",Meryn Trant,1,Infantry,Intimidation Of The Crown,,SIF210,20109,2021,*May not be fielded in an army that includes the Kingsguard unit.*,"""Once they were a marvel, a shining lesson to the world..."" -Bran Stark"
-Lannister,"Arys Oakheart, Kingsguard",Arys Oakheart,1,Infantry,Protection Of The Crown,,SIF210,20110,2021,*May not be fielded in an army that includes the Kingsguard unit.*,"""There have always been men who found it easier to speak vows than to keep them."""
+Lannister,"Arys Oakheart, Kingsguard",Arys Oakheart,1,Infantry,Protection Of The Crown,,SIF210,20110,S06,*May not be fielded in an army that includes the Kingsguard unit.*,"""There have always been men who found it easier to speak vows than to keep them."""
 Lannister,"Boros Blount, Kingsguard",Boros Blount,1,Infantry,Vengeance Of The Crown,,SIF210,20111,2021-S01,*May not be fielded in an army that includes the Kingsguard unit.*,"""No man threatens His Grace in the presence of the Kingsguard!"""
 Lannister,"Preston Greenfield, Kingsguard",Preston Greenfield,1,Infantry,Orders Of The Crown (Preston Greenfield),,SIF210,20112,2021,*May not be fielded in an army that includes the Kingsguard unit.*,"""Who listens to everything yet hears nothing? A Knight of the Kingsguard."""
-Lannister,Champion of the Faith,,1,Infantry,Order: War Cry,,SIF207/SIFKS019/SIF216/SIF216,20113,2021-S02,,
+Lannister,Champion of the Faith,,1,Infantry,Order: War Cry,"Limited: 2
+ReduceIfPresent: 'The High Sparrow'",SIF207/SIFKS019/SIF216/SIF216,20113,S06,"Limited: *Your army may only contain up to 2 Champion of the Faith.* /
+*The first Champion of the Faith attachment is free if your army contains The High Sparrow.*",
 Lannister,"Gregor Clegane, Lord Tywin's Mad Dog",Gregor Clegane,2,Infantry,"Unstoppable Wrath /
 Uncontrolled Rage",,SIF001/SIF001B,20114,2021,,"""No one could ever withstand Gregor."""
 Lannister,"Jaime Lannister, The Kingslayer",Jaime Lannister,C,Infantry,"Precision /
@@ -26,10 +29,11 @@ Disrupt",,SIF001/SIF001B,20115,2021-S03,,"""They called him the Lion of Lanniste
 Lannister,"Gregor Clegane, The Mountain",Gregor Clegane,C,Infantry,"Affiliation: House Clegane /
 Indomitable /
 The Mountain's Strength",,SIF001/SIF001B,20116,S04,,"""No other knight in the realm inspires such terror in our enemies."""
-Lannister,"Jaime Lannister, The Young Lion",Jaime Lannister,2,Infantry,"Order: Martial Training /
-Stalwart",,SIF001/SIF001B,20117,2021,,"""There are no men like me. There's only me."""
-Lannister,"Gregor Clegane, Mounted Behemoth",Gregor Clegane,3,Cavalry,"Unstoppable Wrath /
-Uncontrolled Rage",,SIFKS001/SIF215,20118,2021,,"""That beast's head would make a noble gift for all the people of the realm, I vow.""
+Lannister,"Jaime Lannister, The Young Lion",Jaime Lannister,1,Infantry,"Order: Martial Training /
+Stalwart",,SIF001/SIF001B,20117,S06,,"""There are no men like me. There's only me."""
+Lannister,"Gregor Clegane, Mounted Behemoth",Gregor Clegane,3,Cavalry,"Indomitable /
+Ferocious Assault /
+Intimidating Presence",,SIFKS001/SIF215,20118,S06,,"""That beast's head would make a noble gift for all the people of the realm, I vow.""
 -Brynden Tully"
 Lannister,"Tyrion Lannister, The Giant of Lannister",Tyrion Lannister,1,Infantry,"Order: Battle Plan/
 Order: Counterstrategy",ReduceIfAttachedTo:10116,SIF209,20120,2021-S03,,"""I think he is a giant come among us, here at the end of the world."" -Maester Aemon"
@@ -39,78 +43,85 @@ Lannister,Clegane Butcher,,1,Cavalry,Fueled by Slaughter,,SIF216,20124,2021-S02,
 Lannister,"The High Sparrow, His High Holiness",The High Sparrow,C,Infantry,"Embolden /
 Intimidating Presence",,SIF209,20125,S05,,"""What have we become, when kings and high lords must dance to the twittering of Sparrows."""
 Lannister,"Qyburn, Forbidden Knowledge",Qyburn,1,Infantry,"Experiment Enhancements /
-Violent Reactions",,SIF215,20126,2021,,"""The Citadel took my chain, but they could not take my knowledge."""
-Lannister,"Addam Marbrand, Trusted Bannerman",Addam Marbrand,2,Infantry,"Order: Sentinel /
-Jaime's Vassal",,SIF215,20127,S04,,"""I should welcome the chance to try my own steel against this Stark boy."""
-Lannister,"Ser Robert Strong, The Silent Giant",Ser Robert Strong,3,Infantry,"Order: Resilience /
+Violent Reactions",,SIF215,20126,S06,,"""The Citadel took my chain, but they could not take my knowledge."""
+Lannister,"Addam Marbrand, Trusted Bannerman",Addam Marbrand,1,Infantry,"Order: Sentinel /
+Jaime's Vassal",,SIF215,20127,S06,,"""I should welcome the chance to try my own steel against this Stark boy."""
+Lannister,"Ser Robert Strong, The Silent Giant",Ser Robert Strong,2,Infantry,"Order: Resilience /
 Unstoppable Wrath","Requires: 'Qyburn', 'Tommen Baratheon, Next in Succession'
-Not: 'Gregor Clegane'",SIF215,20128,2021,"*May not be fielded in an army that includes Gregor Clegane. May only be fielded in an army that includes Qyburn or Tommen Baratheon, Next in Succession.*","""We do not even know if he's alive."" -Kevan Lannister"
+Not: 'Gregor Clegane'",SIF215,20128,S06,"*May not be fielded in an army that includes Gregor Clegane. May only be fielded in an army that includes Qyburn or Tommen Baratheon, Next in Succession.*","""We do not even know if he's alive."" -Kevan Lannister"
 Lannister,"Addam Marbrand, Commander of the City Watch","Addam Marbrand,",C,Infantry,"Hardened /
 Iron Resolve",,SIF215,20129,2021-S02,,"""Like Jaime, he was the sort of man other men liked to follow."" -Tyrion Lannister"
 Lannister,"Kevan Lannister, Protector of the Realm",Kevan Lannister,C,Infantry,"Order: Lannister Supremacy /
-Might of the Throne (Kevan Lannister)",,SIF215,20130,S04,,"""There are many like you, good men in service to bad causes ..."" -Varys"
+Might of the Throne",,SIF215,20130,S06,,"""There are many like you, good men in service to bad causes ..."" -Varys"
 Lannister,Gate Warden,,1,Infantry,"Superior Numbers /
-Reinforcements",,SIF217,20131,2021,,
+Reinforcements",,SIF217,20131,S06,,
 Stark,"Robb Stark, The Wolf Lord",Robb Stark,C,Infantry,"Order: Tactical Reposition /
 Enhanced Mobility /
 Regroup",,SIF001/SIF001A,20201,2021-S03,,"""All men should keep their word, kings most of all."""
 Stark,"Greatjon Umber, Lord of Last Hearth",Greatjon Umber,C,Infantry,"Order: Overrun /
 Order: Reckless Heroism /
 Affiliation: House Umber",,SIF001/SIF001A,20202,S04,,"""Grey Wind ate two of his fingers, and he laughed about it."""
-Stark,Umber Champion,,1,Infantry,Order: Incite,,SIF001/SIF001A/SIF103/SIF116/SIF116,20203,2021,,
+Stark,Umber Champion,,1,Infantry,"Order: Incite /
+Furious Charge",,SIF001/SIF001A/SIF103/SIF116/SIF116,20203,S06,,
 Stark,Sworn Sword Captain,,1,Infantry,Order: Martial Training,,SIF001/SIF001/SIF001A/SIF001A/SIF101/SIFKS001/SIF116/SIF116,20204,2021,,
 Stark,"Greatjon Umber, Fierce Bannerman",Greatjon Umber,2,Infantry,"To The Last! /
 Furious Charge",,SIF001/SIF001A,20205,2021-S01,,"""Your father once told me that the Greatjon was as fearless as any man he had ever known."""
 Stark,"Robb Stark, The Young Wolf",Robb Stark,2,Infantry,"Order: Swift Retreat /
 Enhanced Mobility",,SIF001/SIF001A,20206,2021,,"""No sword is strong until it’s been tempered."""
 Stark,"Bran and Hodor, Protector and Ward","Bran Stark, Hodor",1,Infantry,"Hodor! /
-Hodor!!!",,SIF109,20207,2021-S01,,"""Hodor. Hodor Hodor.""
+Hodor!!!",,SIF109,20207,S06,,"""Hodor. Hodor Hodor.""
 ""You're right, it seems dangerous."""
 Stark,"Brynden Tully, The Blackfish",Brynden Tully,C,Infantry,"Affiliation: House Tully /
 Stalwart /
 Stand Your Ground!",,SIF109,20208,2021,,"""My first rule of war, Cat, is never give the enemy his wish."""
-Stark,"Brynden Tully, Unyielding Knight",Brynden Tully,2,Infantry,"Affiliation: House Tully /
+Stark,"Brynden Tully, Unyielding Knight",Brynden Tully,1,Infantry,"Affiliation: House Tully /
 Dauntless /
-Iron Resolve",,SIF109,20209,2021,,"""Lift your eyes, and you will see the direwolf still flies above our walls!"""
+Iron Resolve",,SIF109,20209,S06,,"""Lift your eyes, and you will see the direwolf still flies above our walls!"""
 Stark,"Eddard Stark, Lord of Winterfell",Eddard Stark,C,Infantry,"Rally Cry /
 Iron Resolve",,SIF109,20210,2021,,"""Know the men who follow you and let them know you. Don't ask your men to die for a stranger."""
 Stark,"Rodrik Cassel, Master-at-Arms",Rodrik Cassel,C,Infantry,"Order: Mark Target /
 Boldness and Courage",,SIF109,20211,2021,,"""When we speak of the morrow nothing is ever certain."""
 Stark,Crannogman Warden,,1,Infantry,Order: Overwatch,,SIF107/SIFKS001/SIF116/SIF116,20212,2021,,
-Stark,"Maege Mormont, The She-Bear",Maege Mormont,2,Infantry,"Go Down Fighting /
-Unyielding",,SIFKS001/SIF115,20213,2021,,"""Maege is a hoary old snark, stubborn, short-tempered, and willful."""
-Stark,"Brynden Tully, Vanguard Infiltrator",Brynden Tully,2,Cavalry,"Order: Mark Target /
-Outflank",,SIFKS001/SIF115,20214,2021-S02,,"""No one knows the lands of the North quite as well as Brynden."""
+Stark,"Maege Mormont, The She-Bear",Maege Mormont,1,Infantry,"Go Down Fighting /
+Unyielding",,SIFKS001/SIF115,20213,S06,,"""Maege is a hoary old snark, stubborn, short-tempered, and willful."""
+Stark,"Brynden Tully, Vanguard Infiltrator",Brynden Tully,1,Cavalry,"Order: Mark Target /
+Outflank",,SIFKS001/SIF115,20214,S06,,"""No one knows the lands of the North quite as well as Brynden."""
 Stark,"Brynden Tully, Outrider Commander",Brynden Tully,C,Cavalry,"Order: Sentinel /
 Elusive Escape",,SIFKS001/SIF115,20215,2021,,"""It is no good hammering your sword into a plowshare if you must forge it again on the morrow."""
 Stark,"Meera Reed, Cunning Trapper",Meera Reed,1,Infantry,"Order: Hidden Traps /
 Affiliation: Crannogman",,SIF110,20216,S05,,"""Mudmen are sneaks, they won't fight like decent folks."" -Little Walder Frey"
-Stark,"Jojen Reed, Greensight",Jojen Reed,2,Infantry,"Affiliation: Crannogman /
-Jojen's Greensight",,SIF110,20217,2021,,"""To Winterfell we pledge the faith of Greywater. Hearth and heart and harvest we yield up to you."""
-Stark,"Syrio Forel, First Blade of Braavos",Syrio Forel,2,Infantry,"Precision /
-Agile","Requires: 'Eddard Stark', 'Arya Stark, The Wolf Girl'",SIF110,20218,2021,"*May only be fielded in an army including Eddard Stark or Arya Stark, The Wolf Girl.*","""My words lied. My eyes and my arm shouted out the truth, but you were not seeing."""
+Stark,"Jojen Reed, Greensight",Jojen Reed,1,Infantry,"Affiliation: Crannogman /
+Jojen's Greensight",,SIF110,20217,S06,,"""To Winterfell we pledge the faith of Greywater. Hearth and heart and harvest we yield up to you."""
+Stark,"Syrio Forel, First Blade of Braavos",Syrio Forel,1,Infantry,"Precision /
+Water Dance","Requires: 'Eddard Stark', 'Arya Stark, The Wolf Girl'",SIF110,20218,S06,"*May only be fielded in an army including Eddard Stark or Arya Stark, The Wolf Girl.*","""My words lied. My eyes and my arm shouted out the truth, but you were not seeing."""
 Stark,"Rickon Stark, Prince of Winterfell",Rickon Stark,1,Infantry,Valuable Captive (Rickon Stark),,SIF110,20219,2021,,"""Are we going where Shaggydog is?"""
 Stark,"Osha, Spearwife Guardian",Osha,0,Infantry,"Counterstrike /
 Stubborn Tenacity /
 Must be attached to 'Rickon Stark'",,SIF110,20220,2021,"*May only be fielded in an army that includes Rickon Stark, and must be attached to his unit, ignoring the usual Attachment limits.*","""The giants I’ve seen, the children I’ve heard tell of, and the white walkers ..."""
 Stark,Mormont Veteran,,1,Infantry,Hardened,,SIF116/SIF116/SIF111,20222,2021-S02,,
 Stark,Crannogman Survivalist,,1,Infantry,"Elusive Escape /
-Pathfinder",,SIF116/SIF116,20223,2021,,
+Pathfinder","Limited: 2
+Ignores Limit
+ReduceIfPresent: 'Howland Reed, Lord of the Crannogs'",SIF116/SIF116,20223,S06,"Limited: *Your army may only contain up to 2 Crannogman Survivalist.* /
+*The first Crannogman Survivalist attachment is free if your army contains Howland Reed, Lord of the Crannogs.
+Crannogman Survivalist ignores the usual Attachment restrictions.*",
 Stark,Winterfell Guardian,,1,Cavalry,"Dauntless /
 Stubborn Tenacity",,SIF116,20224,2021,,
 Stark,"Howland Reed, Lord of the Crannogs",Howland Reed,C,Infantry,"Order: Superior Flanking /
 Affiliation: Crannogman /
 Disrupt",,SIF109,20225,2021,,"""You never see them, but they see you. Those who go into the bogs after them get lost and never come out."""
 Stark,Loyalist Captain,,1,Infantry,"Furious Charge /
-Superior Numbers",,SIF113,20226,2021,,
-Stark,"Rickard Karstark, Vengeful Bannerman",Rickard Karstark,2,Infantry,"Order: Stark Fury /
-Uncontrolled Rage",,SIF115,20227,2021,,"""Make no mistake, Robb—these are your bannermen, not your friends."" -Catelyn Stark"
+Superior Numbers",,SIF113,20226,S06,,
+Stark,"Rickard Karstark, Vengeful Bannerman",Rickard Karstark,1,Infantry,"Order: Stark Fury /
+Uncontrolled Rage",,SIF115,20227,S06,,"""Make no mistake, Robb—these are your bannermen, not your friends."" -Catelyn Stark"
 Stark,"Rickard Karstark, Lord of Karhold",Rickard Karstark,C,Infantry,"Affiliation: House Karstark /
 Superior Numbers /
-Fueled by Slaughter",,SIF115,20228,2021,,"""In war you kill your enemies. Didn't your father teach you that, boy?"""
+Fueled by Slaughter",,SIF115,20228,S06,,"""In war you kill your enemies. Didn't your father teach you that, boy?"""
 Stark,"Maege Mormont, Lady of Bear Island",Maege Mormont,C,Infantry,"Affiliation: House Mormont /
 Battle Scars",,SIF115,20229,S04,,"""Like as not, my sister is marching in your brother’s host, her and those daughters of hers, dressed in men’s mail"" -Jeor Mormont to Jon Snow"
-Stark,Winterfell Champion,,1,Infantry,Winterfell's Wrath,,SIF119,20230,2021,,
+Stark,Winterfell Champion,,1,Infantry,Winterfell's Wrath,"Limited: 2
+ReduceIfPresent: 'Eddard Stark, Lord of Winterfell'",SIF119,20230,S06,"Limited: *Your army may only contain up to 2 Winterfell Champion.* /
+*The first Winterfell Champion attachment is free if your army contains Eddard Stark, Lord of Winterfell.*",
 Free Folk,"Tormund Giantsbane, Thunderfist",Tormund Giantsbane,C,Infantry,"Order: Overrun /
 Sundering",,SIF003,20301,S04,,"""He seemed to me the sort of man who would make a good friend and a bad enemy."""
 Free Folk,"Tormund Giantsbane, Tall-Talker, Horn-Blower, Breaker of Ice",Tormund Giantsbane,2,Infantry,"Order: War Cry /
@@ -126,14 +137,16 @@ Free Folk,Eagle,,0,None,"Bonded Eagle /
 Aerial Scouting",Fielded by Skinchanger,SIF402/SIF402,20308,S05,*This model is only utilized by the Bonded Skinchanger Ability.*,
 Free Folk,Wolf,,0,None,"Bonded Wolf /
 Predator's Instincts",Fielded by Skinchanger,SIF402/SIF402,20309,S05,*This model is only utilized by the Bonded Skinchanger Ability.*,
-Free Folk,Chosen of Styr,,1,Infantry,Go Down Fighting,,SIF404/SIF416/SIF416,20310,2021-S01,,
+Free Folk,Chosen of Styr,,1,Infantry,"Furious Charge /
+Go Down Fighting",,SIF404/SIF416/SIF416,20310,S06,,
 Free Folk,"Styr, Magnar of Thenn",Styr,C,Infantry,"Order: Thenn Supremacy /
 Iron Resolve",,SIF409,20313,2021,,"""To the Thenns, the Magnar is more a living god than a man."""
 Free Folk,Champion of Bone,,1,Infantry,Intimidating Presence,,SIF407/SIF416/SIF416,20314,2021,,
-Free Folk,"Rattleshirt, The Lord of Bones",Rattleshirt,C,Infantry,"Order: Trophy Collecting /
-Intimidating Presence",,SIF409,20315,2021-S03,,"""Rattleshirt could wash his hands a hundred times a day and he'd still have blood beneath his nails."""
-Free Folk,"Rattleshirt, Ruthless Slaughterer",Rattleshirt,2,Infantry,"Order: Spread Fear /
-Intimidating Presence",,SIF409,20316,2021,,"""A small, malicious, treacherous man, as stupid as he is cruel."""
+Free Folk,"Rattleshirt, The Lord of Bones",Rattleshirt,C,Infantry,"Order: Trophy Hunter /
+Trophy Collector /
+Intimidating Presence",,SIF409,20315,S06,,"""Rattleshirt could wash his hands a hundred times a day and he'd still have blood beneath his nails."""
+Free Folk,"Rattleshirt, Ruthless Slaughterer",Rattleshirt,2,Infantry,"Fueled By Slaughter /
+Intimidating Presence",,SIF409,20316,S06,,"""A small, malicious, treacherous man, as stupid as he is cruel."""
 Free Folk,"Harma, Vanguard Commander",Harma,C,Infantry,"Order: Superior Flanking /
 Enhanced Mobility",,SIF409,20317,2021,,"""I'll keep his head for my standard. A turncloak's worse than a dog."""
 Free Folk,"Harma, The Dogshead",Harma,2,Infantry,"Order: Sentinel /
@@ -143,15 +156,15 @@ Regroup /
 Order: Tactical Reposition","Requires: 'Harma'
 Ignores Limit",SIF409,20319,2021-S03,*May only be fielded in an army containing Harma. This model ignores the usual Attachment limit.*,"""She hates dogs almost as much as she hates crows."""
 Free Folk,"The Weeper, Horrific Butcher",The Weeper,C,Infantry,"Order: Grisly Example /
-Vicious/
-Weaken Resolve",,SIF409,20320,2021-S03,,"""Cutting out the eyes, that's the Weeper's work. The best crow's a blind crow, he likes to say."""
+Weaken Resolve /
+Vicious",,SIF409,20320,S06,,"""Cutting out the eyes, that's the Weeper's work. The best crow's a blind crow, he likes to say."""
 Free Folk,"The Weeper, Cruel Tyrant",The Weeper,1,Infantry,"Order: Grisly Example /
-Vicious",,SIF409,20321,2021-S01,,"""The Weeper will not say the words. He will not wear the cloak. Even other raiders do not trust him."""
+Vicious",,SIF409,20321,S06,,"""The Weeper will not say the words. He will not wear the cloak. Even other raiders do not trust him."""
 Free Folk,"Ygritte, Spearwife Archer",Ygritte,2,Infantry,"Order: Mark Target /
 Disrupt",,SIF409,20322,2021,,"""Men can’t own the land no more’n they can own the sea or the sky."""
 Free Folk,"Jarl, Advance Raid Leader",Jarl,1,Infantry,Outflank,Ignores Limit,SIF409,20323,S05,*Jarl ignores the usual Attachment limits.*,"""The Wall defends itself."""
-Free Folk,Walrus Clan Chieftain,,2,Infantry,"Order: Resilience /
-Iron Resolve",,SIF416/SIF416/SIF413,20324,2021-S01,,
+Free Folk,Walrus Clan Chieftain,,1,Infantry,"Hardened /
+Iron Resolve",,SIF416/SIF416/SIF413,20324,S06,,
 Free Folk,"The Great Walrus, Steeled Through Ice and Snow",The Great Walrus,1,Infantry,Battle Scars,,SIF415,20325,S04,,"""Hrmph."""
 Free Folk,"Jon Snow, The Crow-Come-Over",Jon Snow,2,Infantry,"Order: Reckless Heroism /
 Southern Knowledge",,SIF415,20326,2021,,"""Men are men and women women, no matter which side of the Wall we were born on.""
@@ -169,10 +182,10 @@ Fueled By Slaughter /
 Intimidating Presence",,SIF505/SIF005,20403,2021,,"""A naked man has few secrets, but a flayed man's got none."""
 Neutral,"Theon Greyjoy, Reek",Theon Greyjoy,0,Infantry,"Order: Set An Example / 
 Must be attached to 'Ramsay Snow'",,SIF505/SIF005,20404,2021-S01,"*May only be fielded in an army that includes Ramsay Snow, and must be attached to his unit, ignoring usual Attachment limits.*","""I'm not him, I'm not the turncloak, he died at Winterfell. My name is Reek!"""
-Neutral,"Brienne, Maiden of Tarth",Brienne of Tarth,2,Infantry,"Knightly Vow /
-Stalwart",,SIFKS001/SIF510,20406,2021-S02,,"""A true knight is sworn to protect those who are weaker than himself, or die in the attempt."""
+Neutral,"Brienne, Maiden of Tarth",Brienne,2,Infantry,"Knightly Vow /
+Stalwart",,SIFKS001/SIF510,20406,S06,,"""A true knight is sworn to protect those who are weaker than himself, or die in the attempt."""
 Neutral,"Bronn, The Sellsword",Bronn,1,Infantry,"Loyalty through Coin /
-Motivated by Coin",,SIFKS001/SIF510,20407,2021,,"""I sell my sword, I don’t give it away."""
+Motivated by Coin",,SIFKS001/SIF510,20407,S06,,"""I sell my sword, I don’t give it away."""
 Neutral,Bolton Flayer,,1,Infantry,Order: Spread Fear,,SIF504/SIF005,20408,2021,,
 Neutral,"Vargo Hoat, The Goat of Harrenhal",Vargo Hoat,C,Infantry,"Order: Threaten /
 Affiliation: Bloody Mummers /
@@ -182,22 +195,22 @@ Vicious /
 Weaken Resolve",,SIF510,20410,2021,,"""How many monsters does Lord Tywin have?"""
 Neutral,"Daario Naharis, Stormcrow Captain",Daario Naharis,C,Infantry,"Affiliation: Stormcrows /
 Improved Armaments /
-Motivated By Coin",,SIF510,20411,S05,,"""He has a sellsword's conscience, That is to say, none at all."""
-Neutral,"Daario Naharis, Reckless Mercenary",Daario Naharis,1,Infantry,Reckless Strikes,,SIF510,20412,2021,,"""I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal."""
+Motivated By Coin",,SIF510,20411,S06,,"""He has a sellsword's conscience, That is to say, none at all."""
+Neutral,"Daario Naharis, Reckless Mercenary",Daario Naharis,1,Infantry,"Reckless Strikes /
+Dauntless",,SIF510,20412,S06,,"""I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal."""
 Neutral,"Jaqen H'ghar, Unnamed",Jaqen H'ghar,1,Infantry,Order: Taking a New Name,,SIF510,20413,2021,,"""Valar Morghulis."""
 Neutral,Stormcrow Lieutenant,,1,Infantry,Improved Armaments,,SIF511,20414,2021,,
 Neutral,"Roose Bolton, The Leech Lord",Roose Bolton,C,Infantry,"Order: Spread Fear /
 Affiliation: House Bolton /
 Prey On Fear",,SIF505/SIF005,20415,S05,,"""Fear is what keeps a man alive in this world of treachery and deceit."""
 Neutral,Fortune Seeker,,1,Cavalry,"Dauntless /
-Motivated by Coin",,SIF507/SIF507,20416,2021,,
+Motivated by Coin",,SIF507/SIF507,20416,S06,,
 Neutral,Glory Seeker,,1,Cavalry,"Iron Resolve /
 Stubborn Tenacity",,SIF507/SIF507,20417,2021-S02,,
-Neutral,Golden Company Officer,,2,Infantry,"Affiliation: Golden Company /
-Boisterous Charisma /
-Dauntless",,SIF516,20418,S05,,
+Neutral,Golden Company Officer,,1,Infantry,"Affiliation: Golden Company /
+Boisterous Charisma",,SIF516,20418,S06,,
 Neutral,Lysene Bosun,,1,Infantry,"Interrogate /
-Domineering Pride",,SIF519,20419,2021,,
+Domineering Pride",,SIF519,20419,S06,,
 Neutral,"Arya Stark, Fugitive Princess",Arya Stark,1,Infantry,Names On The List,"Requires: 'Sandor Clegane, Fugitive Bodyguard'",SIF515,20420,2021,"*May only be fielded in an army containing Sandor Clegane, Fugitive Bodyguard*","""And that night, there was one less name to hate."""
 Neutral,"Sandor Clegane, Fugitive Bodyguard",Sandor Clegane,1,Infantry,Order: Threaten,,SIF515,20421,2021,,"""When a dog goes bad, the fault lies with his master"" -Kevan Lannister"
 Neutral,"Rorge, The Mad Dog of Saltpans",Rorge,2,Infantry,"Order: Incite /
@@ -251,11 +264,11 @@ Night's Watch,"Othell Yarwyck, First Builder",Othell Yarwyck,C,Infantry,"Affilia
 Hardened /
 Spotter",,SIF309,20522,2021-S02,,"""Few men possess the knowledge or skills of the First Builder."""
 Night's Watch,"Benjen Stark, Wolf of the Wall",Benjen Stark,1,Infantry,"Order: Sentinel /
-Ambush",,SIF310,20523,2021,,"""The Night's Watch is a sworn brotherhood. We have no families."""
+Ambush",,SIF310,20523,S06,,"""The Night's Watch is a sworn brotherhood. We have no families."""
 Night's Watch,"Coldhands, Enigmatic Guide","Coldhands, Benjen Stark",1,Infantry,"Outflank /
 Pathfinder",,SIF310,20524,2021-S02,*May not be fielded in an army that includes Benjen Stark.*,"""They killed him long ago."""
-Night's Watch,"Samwell Tarly, Sam The Slayer",Samwell Tarly,2,Infantry,"Order: Battle Plan /
-Bookkeeping (Samwell Tarly)",,SIF310,20525,2021,,"""I went beyond the Wall and fought in battles. They call me Sam the Slayer."""
+Night's Watch,"Samwell Tarly, Sam The Slayer",Samwell Tarly,1,Infantry,"Order: Battle Plan /
+Bookkeeping (Samwell Tarly)",,SIF310,20525,S06,,"""I went beyond the Wall and fought in battles. They call me Sam the Slayer."""
 Night's Watch,"Coldhands, Former Crow","Coldhands, Benjen Stark",1,Cavalry,"Order: Sentinel /
 Intimidating Presence",,SIF310,20526,2021,*May not be fielded in an army that includes Benjen Stark.*,"""Dead meat, dry blood, a faint whiff of rot. And cold. Cold over all."""
 Night's Watch,"Benjen Stark, First Ranger",Benjen Stark,C,Infantry,"Order: Stark Fury/
@@ -268,14 +281,14 @@ Intimidating Presence /
 Reinforcements",,SIF315,20529,2021,,"""I got thirty this time, men and boys all bound for the Wall..."""
 Night's Watch,"Satin, Commander's Steward",Satin,1,Infantry,Commander's Vassal,Ignores Limit,SIF315,20530,2021-S02,*Satin ignores the usual Attachment limits.*,"""Whatever Satin may have done in Oldtown, he is our brother now..."" -Jon Snow"
 Night's Watch,"Satin, Brave Recruit",Satin,1,Infantry,Dauntless,Ignores Limit,SIF315,20531,2021,*Satin ignores the usual Attachment limits.*,"""Half a year at Castle Black had toughened up his hands... Whether he had the courage to face what was coming, though..."""
-Night's Watch,"Eddison Tollett, Dolorous Edd",Eddison Tollett,1,Infantry,Gallows Humor,,SIF315,20532,2021-S03,,"""Once they figure a way to work a dead horse, we'll be next. Likely I'll be the first too."""
+Night's Watch,"Eddison Tollett, Dolorous Edd",Eddison Tollett,1,Infantry,Gallows Humor,,SIF315,20532,S06,,"""Once they figure a way to work a dead horse, we'll be next. Likely I'll be the first too."""
 Night's Watch,"Benjen Stark, Beyond The Wall",Benjen Stark,C,Cavalry,"Order: Hidden Traps /
 Ranging Specialist (Benjen) /
 Disrupt",Attached to class: 'Ranger',SIF315,20533,S05,,"""I've not seen Benjen Stark for three years. And if truth be told, I never once missed him."" -Craster"
 Night's Watch,"Cotter Pyke, Eastwatch Commander",Cotter Pyke,C,Infantry,"Order: Reckless Heroism /
 Fueled by Slaughter",,SIF315,20534,2021,,"""Cotter Pyke always had more guts than sense."" -Mance Rayder"
 Night's Watch,"Ser Denys Mallister, Shadow Tower Commander",Ser Denys Mallister,C,Infantry,"Knightly Vow /
-Dutiful Commander",,SIF315,20535,2021-S02,,"""Do not make me die regretful."""
+Dutiful Commander",,SIF315,20535,S06,,"""Do not make me die regretful."""
 Baratheon,"Renly Baratheon, The Charismatic Heir",Renly Baratheon,C,Infantry,"Boldness and Courage / 
 Embolden / 
 Loyalty: Renly Baratheon",,SIF008,20601,2021,,"""As in so much else, Renly was like his brother Robert, and utterly unlike Stannis."""
@@ -291,22 +304,23 @@ Iron Resolve /
 Loyalty: Stannis Baratheon",,SIF809,20605,2021,,"""His claim is the true one... and he is utterly without mercy."" -Varys"
 Baratheon,"Devan Seaworth, King's Squire",Devan Seaworth,1,Infantry,"Order: Reckless Heroism / 
 True Conviction (Baratheon) / 
-Loyalty: Stannis Baratheon",,SIF809,20606,2021,"Loyalty: **STANNIS BARATHEON**
-*Your army may never contain Units or Attachments with different Loyalties.*","""You have a passing clever father, Devan"" -Stannis Baratheon"
+Loyalty: Stannis Baratheon",ReduceIfPresent: 'Stannis Baratheon',SIF809,20606,S06,"Loyalty: **STANNIS BARATHEON**
+*Your army may never contain Units or Attachments with different Loyalties.* / 
+*If your army contains Stannis Baratheon, reduce the cost of Devan Seaworth, King's Squire by 1.*","""You have a passing clever father, Devan"" -Stannis Baratheon"
 Baratheon,"Davos Seaworth, Hero of Blackwater",Davos Seaworth,C,Infantry,"Loyalty: Stannis Baratheon /
 Outflank /
 Pathfinder",Ignores Limit,SIF809,20607,S05,*Davos ignores the usual Attachment limits.*,"""He makes me wish I had more smugglers in my service. And fewer lords."" -Stannis Baratheon"
 Baratheon,"Davos Seaworth, Onion Knight",Davos Seaworth,1,Infantry,"Order: Supply Aid /
 True Conviction (Baratheon) / 
-Loyalty: Stannis Baratheon",,SIF809,20608,2021,"Loyalty: **STANNIS BARATHEON**
+Loyalty: Stannis Baratheon",,SIF809,20608,S06,"Loyalty: **STANNIS BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*","""A smuggler must be a fair judge of men."" -Stannis Baratheon"
 Baratheon,"Andrew Estermont, True Loyalist",Andrew Estermont,1,Infantry,"Order: Incite /
 True Conviction (Baratheon) / 
-Loyalty: Stannis Baratheon",,SIF809,20609,2021,"Loyalty: **STANNIS BARATHEON**
+Loyalty: Stannis Baratheon",,SIF809,20609,S06,"Loyalty: **STANNIS BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*","""Even after Blackwater, he remained fully devoted to the One True King."""
 Baratheon,"Andrew Estermont, First of the King's Men",Andrew Estermont,C,Infantry,"True Conviction (Baratheon)/
 First Of The King's Men /
-Loyalty: Stannis Baratheon",,SIF809,20610,S05,,"""The Estermont's loyalty to Stannis is without question."""
+Loyalty: Stannis Baratheon",,SIF809,20610,S06,,"""The Estermont's loyalty to Stannis is without question."""
 Baratheon,"Renly Baratheon, Lord Paramount of the Stormlands",Renly Baratheon,C,Infantry,"Boisterous Charisma /
 Loyalty: Renly Baratheon /
 Stalwart /
@@ -314,9 +328,8 @@ Precision",,SIF810,20611,S05,,"""As in so much else, Renly was like his brother 
 Baratheon,"Loras Tyrell, The Knight of Flowers",Loras Tyrell,C,Infantry,"Expert Duelist /
 Dauntless /
 Loyalty: Renly Baratheon",,SIF810,20612,2021-S02,,"""I will never betray Renly, by word or deed."""
-Baratheon,"Loras Tyrell, King's Squire",Loras Tyrell,2,Infantry,"Expert Duelist / 
-Precision /
-Loyalty: Renly Baratheon",,SIF810,20613,2021-S02,"Loyalty: **RENLY BARATHEON**
+Baratheon,"Loras Tyrell, King's Squire",Loras Tyrell,1,Infantry,"Expert Duelist / 
+Loyalty: Renly Baratheon",,SIF810,20613,S06,"Loyalty: **RENLY BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*","""Ser Loras is so Tyrell he pisses rosewater"" -Cersei Lannister"
 Baratheon,"Brienne, The Blue",Brienne,1,Infantry,"Renly's Protector / 
 Loyalty: Renly Baratheon",,SIF810,20614,2021,"Loyalty: **RENLY BARATHEON**
@@ -325,41 +338,44 @@ Baratheon,"Eldon Estermont, Lord of Greenstone",Eldon Estermont,C,Infantry,"Orde
 Hardened /
 Loyalty: Renly Baratheon",,SIF810,20615,2021-S02,,"""It takes a certain cunning to reach his age"""
 Baratheon,Red Priestess,,1,Infantry,"Divine Sacrifices / 
-Loyalty: Stannis Baratheon",,SIF808/SIF816/SIF816,20617,2021-S01,"Loyalty: **STANNIS BARATHEON**
+Loyalty: Stannis Baratheon",,SIF808/SIF816/SIF816,20617,S06,"Loyalty: **STANNIS BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*",
-Baratheon,Pikeman Captain,,1,Infantry,"Boldness and Courage / 
-Loyalty: Renly Baratheon",,SIF816/SIF816/SIF814,20618,2021,"Loyalty: **RENLY BARATHEON**
+Baratheon,Pikeman Captain,,1,Infantry,"Boldness And Courage /
+Leadership Follower",,SIF816/SIF816/SIF814,20618,S06,"Loyalty: **RENLY BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*",
 Baratheon,Thorn Watch Sentinel,,1,Infantry,"Dauntless /
+Furious Charge /
 Pathfinder /
-Loyalty: Renly Baratheon",,SIF816/SIF816/SIF812,20619,2021,"Loyalty: **RENLY BARATHEON**
+Loyalty: Renly Baratheon",,SIF816/SIF816/SIF812,20619,S06,"Loyalty: **RENLY BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*",
 Baratheon,Dragonstone Noble,,1,Cavalry,"Order: Sentinel / 
 Loyalty: Stannis Baratheon",Limited:2,SIF816,20620,2021,"Loyalty: **STANNIS BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*
 *Your army may only include up to 2 Dragonstone Nobles.*",
-Baratheon,"Axell Florent, Fanatical Devotee",Axell Florent,2,Infantry,"Affiliation: R'hllor /
+Baratheon,"Axell Florent, Fanatical Devotee",Axell Florent,1,Infantry,"Affiliation: R'hllor /
 Zealous Fanaticism /
 Intimidating Presence /
-Loyalty: Stannis Baratheon",,SIF809,20621,2021,"Loyalty: **STANNIS BARATHEON**
+Loyalty: Stannis Baratheon",,SIF809,20621,S06,"Loyalty: **STANNIS BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*","""One land, one god, one king!"""
 Baratheon,"Axell Florent, First of the Queen's Men",Axell Florent,C,Infantry,"Affiliation: R'hllor /
 Intimidating Presence /
 Stalwart /
 Loyalty: Stannis Baratheon",,SIF809,20622,2021,,"""Stannis Baratheon will sit the Iron Throne. I have seen it. And I know what must be done."""
 Baratheon,"Cortnay Penrose, Loyal Tactician",Cortnay Penrose,2,Infantry,"Order: Tactical Reposition /
-Might Of The Throne (Cortnay Penrose)/ 
-Loyalty: Renly Baratheon",,SIF810,20623,S04,"Loyalty: **RENLY BARATHEON**
-*Your army may never contain Units or Attachments with different Loyalties.*","""May the Others bugger your Lord of Light!"""
+Might Of The Throne / 
+Loyalty: Renly Baratheon",ReduceIfPresent: 'Renly Baratheon',SIF810,20623,S06,"Loyalty: **RENLY BARATHEON**
+*Your army may never contain Units or Attachments with different Loyalties.* /
+*If your army contains Renly Baratheon, reduce the cost of Cortnay Penrose, Castellan of Storm's End by 1.*
+","""May the Others bugger your Lord of Light!"""
 Baratheon,"Cortnay Penrose, Castellan of Storm's End",Cortnay Penrose,C,Infantry,"Bookkeeping (Cortnay Penrose)/
-Might Of The Throne (Cortnay Penrose)/
-Loyalty: Renly Baratheon",,SIF810,20624,S04,,"""A stubborn man"" -Davos Seaworth"
+Might Of The Throne /
+Loyalty: Renly Baratheon",,SIF810,20624,S06,,"""A stubborn man"" -Davos Seaworth"
 Baratheon,"Stannis Baratheon, King at the Wall",Stannis Baratheon,C,Cavalry,"Order: Incite /
 Stubborn Tenacity /
 Loyalty: Stannis Baratheon",,SIF815,20625,2021,,"""Gold is cold and heavy on the head,
 but so long as I am the king, I have a duty..."""
 Baratheon,"Bryen Farring, King's Squire",Bryen Farring,1,Infantry,"True Conviction (Baratheon) /
-Protection of the Crown",,SIF815,20626,2021,"Loyalty: **STANNIS BARATHEON**
+Protection of the Crown",,SIF815,20626,S06,"Loyalty: **STANNIS BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.*","""Squires carry capes, swords,
 and secrets."""
 Baratheon,"Justin Massey, Cunning Follower",Justin Massey,2,Infantry,"Order: Battle Plan /
@@ -405,22 +421,22 @@ Baratheon,"Emmon Cuy, Emmon The Yellow",Emmon Cuy,1,Infantry,"Vengeance of The C
 Loyalty: Renly Baratheon",,SIF820,20635,2021,"Loyalty: **RENLY BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.* /
 *May not be fielded in an army that includes the Rainbow Guard unit.*","""Away from him, you vile creature!"""
-Baratheon,"Robar Royce, Robar The Red",Robar Royce,2,Infantry,"Furious Charge /
+Baratheon,"Robar Royce, Robar The Red",Robar Royce,1,Infantry,"Furious Charge /
 Reckless Strikes /
-Loyalty: Renly Baratheon",,SIF820,20636,2021,"Loyalty: **RENLY BARATHEON**
+Loyalty: Renly Baratheon",,SIF820,20636,S06,"Loyalty: **RENLY BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.* /
 *May not be fielded in an army that includes the Rainbow Guard unit.*","""A second son must find glory where he can.
 A man grows weary of tourneys."""
-Baratheon,"Guyard Morrigen, Guyard The Green",Guyard Morrigen,2,Infantry,"Counterstrike /
+Baratheon,"Guyard Morrigen, Guyard The Green",Guyard Morrigen,1,Infantry,"Counterstrike /
 Dauntless /
-Loyalty: Renly Baratheon",,SIF820,20637,2021,"Loyalty: **RENLY BARATHEON**
+Loyalty: Renly Baratheon",,SIF820,20637,S06,"Loyalty: **RENLY BARATHEON**
 *Your army may never contain Units or Attachments with different Loyalties.* /
 *May not be fielded in an army that includes the Rainbow Guard unit.*","""His only wish was to command
 the vanguard."""
 Targaryen,"Khal Drogo, The Great Khal",Khal Drogo,C,Cavalry,"Expert Duelist /
 Iron Resolve",,SIF006,20701,2021-S02,,"""The Dothraki follow only the strong."""
 Targaryen,"Jorah Mormont, Westerosi Tactician",Jorah Mormont,C,Cavalry,"Ambush /
-Stubborn Tenacity",,SIF006,20702,2021,,"""I vow to serve you, to obey you, to die for you if need be. Whatever may come."""
+Stubborn Tenacity",,SIF006,20702,S06,,"""I vow to serve you, to obey you, to die for you if need be. Whatever may come."""
 Targaryen,"Jorah Mormont, The Exiled Knight",Jorah Mormont,1,Cavalry,"Order: Tactical Reposition /
 Stubborn Tenacity",,SIF006,20703,2021-S03,,"""I did things it shames me to speak of... In the end it cost me all."""
 Targaryen,Screamer Ko,,1,Cavalry,Order: Martial Training,Faction: Targaryen,SIF006/SIF006/SIF602/SIF602,20704,2021,*May only be Attached to Targaryen units.*,
@@ -428,7 +444,7 @@ Targaryen,Outrider Ko,,1,Cavalry,Disrupt,Faction: Targaryen,SIF006/SIF006/SIF602
 Targaryen,Unsullied Officer,,2,Infantry,"Go Down Fighting/
 Relentless",,SIF607,20706,2021-S02,,
 Targaryen,"Barristan Selmy, The Bold",Barristan Selmy,C,Infantry,"Knightly Vow /
-Embolden",,SIF609,20707,2021-S02,,"""I am a knight. I shall die a knight."""
+Embolden",,SIF609,20707,S06,,"""I am a knight. I shall die a knight."""
 Targaryen,"Belwas, Veteran Pit-Fighter",Belwas,1,Infantry,Battle Scars,,SIF609,20708,S04,,"""Bad fighting, good dying. Strong Belwas hates it when they scream."""
 Targaryen,"Jorah Mormont, Penitent Betrayer",Jorah Mormont,0,Infantry,"Whatever May Come /
 Must be attached to 'Daenerys Targaryen'",,SIF609,20709,2021-S03,*Jorah may only be attached to a unit containing Daenerys Targaryen. He ignores the usual attachment limits.*,"""He lied to me, informed on me, but he loved me too, and he always gave good counsel."""
@@ -445,27 +461,29 @@ Mother Of Dragons",,SIF608,20714,S05,,"""I am the blood of the dragon. If they a
 Targaryen,"Daenerys Targaryen, Queen of Meereen",Daenerys Targaryen,C,Infantry,"Order: Threaten/
 Intimidating Presence /
 The Rightful Queen",,SIF608,20715,2021-S03,,"""Why do the gods make kings and queens, if not to protect the ones who can't protect themselves?"""
-Targaryen,"Daario Naharis, Reckless Mercenary",Daario Naharis,1,Infantry,Reckless Strikes,,SIF510,20716,2021,,"""I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal."""
+Targaryen,"Daario Naharis, Reckless Mercenary",Daario Naharis,1,Infantry,"Reckless Strikes /
+Dauntless",,SIF510,20716,S06,,"""I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal."""
 Targaryen,"Daario Naharis, Stormcrow Captain",Daario Naharis,C,Infantry,"Affiliation: Stormcrows /
 Improved Armaments /
-Motivated by Coin",,SIF510,20717,2021,,"""He has a sellsword's conscience, That is to say, none at all."""
+Motivated by Coin",,SIF510,20717,S06,,"""He has a sellsword's conscience, That is to say, none at all."""
 Targaryen,Stormcrow Lieutenant,,1,Infantry,Improved Armaments,,SIF511,20718,2021,,
-Targaryen,"Rakharo, Bloodrider",Rakharo,2,Cavalry,"Bloodrider/
+Targaryen,"Rakharo, Bloodrider",Rakharo,1,Cavalry,"Bloodrider/
 Order: Sentinel/
-Elusive Escape",,SIF610,20719,2021,,"""As you say, I do, blood of my blood."""
-Targaryen,"Qotho, Bloodrider",Qotho,2,Cavalry,"Bloodrider/
+Elusive Escape",,SIF610,20719,S06,,"""As you say, I do, blood of my blood."""
+Targaryen,"Qotho, Bloodrider",Qotho,1,Cavalry,"Bloodrider/
 Intimidating Presence/
-Prey On Fear",,SIF610,20720,2021,"*May not be fielded in an army that includes the ""Drogo's Bloodriders"" unit.*","""The Dothraki say a man and
+Prey On Fear",,SIF610,20720,S06,"*May not be fielded in an army that includes the ""Drogo's Bloodriders"" unit.*","""The Dothraki say a man and
 his bloodriders share one life..."""
-Targaryen,"Cohollo, Bloodrider",Cohollo,2,Cavalry,"Bloodrider/
-Battle Scars",,SIF610,20721,S04,"*May not be fielded in an army that includes the ""Drogo's Bloodriders"" unit.*","""They were the khal's brothers,
+Targaryen,"Cohollo, Bloodrider",Cohollo,1,Cavalry,"Bloodrider/
+Battle Scars",,SIF610,20721,S06,"*May not be fielded in an army that includes the ""Drogo's Bloodriders"" unit.*","""They were the khal's brothers,
 his shadows, his fiercest friends."""
-Targaryen,"Haggo, Bloodrider",Haggo,2,Cavalry,"Bloodrider/
-Fueled By Slaughter",,SIF610,20722,2021-S01,"*May not be fielded in an army that includes the ""Drogo's Bloodriders"" unit.*","""'Blood of my blood', Drogo called them,
+Targaryen,"Haggo, Bloodrider",Haggo,1,Cavalry,"Bloodrider/
+Fueled By Slaughter",,SIF610,20722,S06,"*May not be fielded in an army that includes the ""Drogo's Bloodriders"" unit.*","""'Blood of my blood', Drogo called them,
 and so it was; they shared a single life."""
-Targaryen,"Mirri Maz Duur, Resentful Healer",Mirri Maz Duur,1,Infantry,Maegi's Healing,Ignores Limit,SIF615,20723,2021,*Mirri ignores the usual Attachment limits.*,"""You knew the price."""
-Targaryen,"Marselen, Unsullied Captain",Marselen,2,Infantry,"Dauntless /
-Embolden",,SIF615,20724,2021,,"""It's their discipline that makes them
+Targaryen,"Mirri Maz Duur, Resentful Healer",Mirri Maz Duur,1,Infantry,"Maegi's Healing /
+Stubborn Tenacity",Ignores Limit,SIF615,20723,S06,*Mirri ignores the usual Attachment limits.*,"""You knew the price."""
+Targaryen,"Marselen, Unsullied Captain",Marselen,1,Infantry,"Dauntless /
+Embolden",,SIF615,20724,S06,,"""It's their discipline that makes them
 dangerous"" -Tyrion Lannister"
 Targaryen,"Skahaz Mo Kandaq, Merciless Ghiscari",Skahaz Mo Kandaq,2,Infantry,"Order: Incite /
 Fueled By Slaughter",,SIF615,20725,2021,,"""The Shavepate would feed them
@@ -476,9 +494,8 @@ game is done."" -Skahaz to Barristan Selmy"
 Targaryen,"Marselen, Mother's Men Commander",Marselen,C,Infantry,"Unfaltering Conviction/
 Dauntless",,SIF615,20727,2021-S03,,"""The Unsullied have something better
 than strength... They have discipline."""
-Targaryen,Brazen Beasts Captain,,2,Infantry,"Order: Incite /
-Furious Charge /
-Iron Resolve",,SIF611,20728,2021,,
+Targaryen,Brazen Beasts Captain,,1,Infantry,"Order: Incite /
+Furious Charge",,SIF611,20728,S06,,
 Greyjoy,"Asha Greyjoy, The Kraken's Daughter",Asha Greyjoy,C,Infantry,"Boisterous Charisma /
 Iron Resolve /
 Stubborn Tenacity",,SIF009,20801,S05,,"""I am the heir of Balon's body."""
@@ -495,36 +512,35 @@ This Attachment may only be Attached to Greyjoy Units, but ignores the usual Att
 Greyjoy,Warsworn,,1,Infantry,Fueled By Slaughter,,SIF009/SIF905,20806,2021,,
 Greyjoy,"Theon Greyjoy, Kinslayer",Theon Greyjoy,1,Infantry,"Order: Reckless Heroism / 
 Swift Strike",,SIF909,20807,2021-S03,,"""The cloak my father swaddled me in bore a kraken, not a direwolf."""
-Greyjoy,"Theon Greyjoy, ""Prince"" of Winterfell",Theon Greyjoy,C,Infantry,"Order: Sentinel/
-Ambush/
-Enhanced Mobility",,SIF909,20808,2021-S03,,"""Your lord father did what he could to gentle Theon, but I fear it was too little and too late..."""
+Greyjoy,"Theon Greyjoy, ""Prince"" of Winterfell",Theon Greyjoy,C,Infantry,"Ambush /
+Enhanced Mobility /
+Order: Sentinel",,SIF909,20808,S06,,"""Your lord father did what he could to gentle Theon, but I fear it was too little and too late..."""
 Greyjoy,"Qarl, Asha's Champion",Qarl,1,Infantry,Expert Duelist,Ignores Limit: 'Asha Greyjoy',SIF909,20809,2021-S02,*This Attachment ignores the usual Attachment limits when added to a unit containing Asha Greyjoy.*,"“If you liked the Shadow so well, go back there,” -Qarl to Euron Greyjoy"
 Greyjoy,"Qarl, The Maid",Qarl,2,Infantry,"Expert Duelist / 
 Stalwart",,SIF909,20810,2021-S02,,"""... to distinguish him from Qarl Shepherd, Qarl Quickaxe, and Qarl the Thrall, but more for his smooth cheeks."""
 Greyjoy,"Nute, The Barber",Nute,1,Infantry,"Victarion's Vassal/ 
 Furious Charge / 
-Motivated by Coin",,SIF909,20811,S04,,"""Glory is good, but gold is better."""
+Motivated by Coin",,SIF909,20811,S06,,"""Glory is good, but gold is better."""
 Greyjoy,"Euron Greyjoy, Lord Reaper of Pyke",Euron Greyjoy,C,Infantry,"Order: Sow Discord / 
 Intimidating Presence",,SIF909,20812,2021,,"""Balon was mad, Aeron is madder, and Euron is the maddest of them all."""
 Greyjoy,"Balon Greyjoy, The Kraken King",Balon Greyjoy,C,Infantry,"Fueled By Slaughter / 
 The Kraken's Dues",,SIF909,20813,2021-S03,,"""I pay the iron price. I will take my crown, as Urron Redhand did five thousand years ago."""
 Greyjoy,"Euron Greyjoy, Crow's Eye",Euron Greyjoy,1,Infantry,"Order: Strange Relics / 
-Poisoned Gifts",,SIF909,20814,2021-S03,,"""I am the storm, my lord. The first storm, and the last."""
+Poisoned Gifts",,SIF909,20814,S06,,"""I am the storm, my lord. The first storm, and the last."""
 Greyjoy,"Erik Ironmaker, Anvil-Breaker",Erik Ironmaker,C,Infantry,"Order: Divide The Spoils / 
-Gifts of Silver and Bronze",,SIF909,20815,2021-S03,,"""King Erik, aye, I like the sound o' that. Come, say it with me. ERIK! ERIK ANVIL-BREAKER! ERIK KING!"""
-Greyjoy,"Asha Greyjoy, ""Lady Greyjoy""",Asha Greyjoy,2,Infantry,"Order: Sentinel /
-Gang-Up",,SIF910,20816,2021,,"""I am Asha of House Greyjoy, aye. Opinions differ on whether I'm a lady."""
+Gifts of Silver and Bronze",,SIF909,20815,S06,,"""King Erik, aye, I like the sound o' that. Come, say it with me. ERIK! ERIK ANVIL-BREAKER! ERIK KING!"""
+Greyjoy,"Asha Greyjoy, ""Lady Greyjoy""",Asha Greyjoy,1,Infantry,"Order: Sentinel /
+Gang-Up",,SIF910,20816,S06,,"""I am Asha of House Greyjoy, aye. Opinions differ on whether I'm a lady."""
 Greyjoy,"Dagmer Cleftjaw, Captain of the Foamdrinker",Dagmer Cleftjaw,1,Infantry,Battle Scars,,SIF910,20817,S04,,"""His hair is white and his teeth are rotten, but he still has a taste for glory."""
 Greyjoy,"Baelor Blacktyde, Captain of the Nightflyer",Baelor Blacktyde,1,Infantry,"Boldness and Courage /
 Unyielding",,SIF910,20818,2021-S03,,"""Balon the Widowmaker, I call him. I will gladly trade his freedom for a father. Have you one to give?"""
 Greyjoy,"Moqorro, Slave of R'hllor",Moqorro,2,Infantry,"Order: Incite /
-Order: Supply Aid",,SIF910,20819,2021,,"""The Lord of Light has shown me your worth, lord Captain. Every night in my fires I glimpse the glory that awaits you."""
+Order: Supply Aid",ReduceIfPresent: 'Victarion Greyjoy',SIF910,20819,S06,"*If your army contains Victarion Greyjoy, Master of the Iron Victory, reduce the cost of Moqorro, Slave of R'hllor by 1.*","""The Lord of Light has shown me your worth, lord Captain. Every night in my fires I glimpse the glory that awaits you."""
 Greyjoy,"Baelor Blacktyde, Lord of Blacktyde",Baelor Blacktyde,C,Infantry,"To The Last! /
 Hardened",,SIF910,20820,2021-S02,,"""Lord Blacktyde says this kingsmoot is a dangerous folly... "" -Rodrik Harlaw"
 Greyjoy,"Dagmer Cleftjaw, Master-at-Arms",Dagmer Cleftjaw,C,Infantry,"Order: Martial Training /
 Gang-Up",,SIF910,20821,2021,,"""The living should smile, for the dead cannot."""
-Greyjoy,Drowned Prophet,,2,Infantry,"Order: Resilience/
-Go Down Fighting",,SIF907/SIF907,20822,2021-S03,,
+Greyjoy,Drowned Prophet,,1,Infantry,Order: Resilience,Limited: 2,SIF907/SIF907,20822,S06,Limited: *Your army may only contain up to 2 Drowned Prophets.*,
 Greyjoy,Sunset Sea Brave,,1,Infantry,Iron Credit,,SIF911,20823,2021,,
 Martell,"Oberyn Martell, Prince of Dorne",Oberyn Martell,C,Infantry,"Manticore Venom/
 Precision/
@@ -536,8 +552,8 @@ Furious Charge /
 Duty to The Crown","FakeCommander
 Controlled: 30901
 Rules: 50901",SIF007,20903,2021,"Areo Hotah, Captain of the Guard may only be fielded in an army that includes Doran Martell, Lord of Sunspear.","""It is for my prince to command, for Hotah to obey."""
-Martell,"Areo Hotah, Dutiful Juggernaut",Areo Hotah,2,Infantry,"Order: Battle Plan / 
-Order: Mark Target",,SIF007,20905,2021,,"""Serve. Obey. Protect. Simple vows for a simple man."""
+Martell,"Areo Hotah, Dutiful Juggernaut",Areo Hotah,1,Infantry,"Order: Battle Plan / 
+Order: Mark Target","Requires: 'Doran Martell, Prince of Dorne'",SIF007,20905,S06,"*Areo Hotah, Dutiful Juggernaut may only be fielded in an army containing Doran Martell, Prince of Dorne.*","""Serve. Obey. Protect. Simple vows for a simple man."""
 Martell,Dervish Captain,,2,Infantry,"Order: Sow Discord /
 Disrupt",,SIF007/SIF703,20906,2021,,
 Martell,Spearmen Captain,,1,Infantry,Order: Threaten,,SIF007/SIF007,20907,2021-S03,,
@@ -545,10 +561,11 @@ Martell,Spearlord,,1,Infantry,Boldness and Courage,,SIF704,20908,2021,,
 Martell,"Obara Sand, Eldest Sister",Obara Sand,C,Infantry,"Order: Reckless Heroism /
 Fueled by Slaughter /
 Sundering",,SIF709,20909,2021,,"""Give me back my spear, Uncle."""
-Martell,"Obara Sand, Sand Snake",Obara Sand,1,Infantry,"Sundering /
-Uncontrolled Rage",,SIF709,20910,2021,,"""She is chasing after something she can never catch"" -Areo Hotah"
-Martell,"Nymeria Sand, Sand Snake",Nymeria Sand,2,Infantry,"Advantage Strike /
-Dornish Vengeance",,SIF709,20911,2021,,"""It ends in blood, as it began."""
+Martell,"Obara Sand, Sand Snake",Obara Sand,1,Infantry,"Furious Charge /
+Sundering /
+Uncontrolled Rage",,SIF709,20910,S06,,"""She is chasing after something she can never catch"" -Areo Hotah"
+Martell,"Nymeria Sand, Sand Snake",Nymeria Sand,1,Infantry,"Advantage Strike /
+Dornish Vengeance",,SIF709,20911,S06,,"""It ends in blood, as it began."""
 Martell,"Elia Sand, Sand Snake",Elia Sand,1,Infantry,"Boisterous Charisma /
 Precision",,SIF709,20912,S05,,"""And ladies do not joust."" ""I do. I'm Lady Lance."" -Garibald to Elia Sand."
 Martell,"Harmen Uller, Dornish Envoy",Harmen Uller,1,Infantry,"Dornish Conviction /
@@ -556,13 +573,13 @@ Reinforcements",,SIF709,20913,2021,,"""Dorne is sand and scorpions, and bleak re
 -Reznak mo Reznak"
 Martell,"Harmen Uller, Lord of Hellholt",Harmen Uller,C,Infantry,"Iron Resolve/
 Reinforcements",,SIF709,20914,2021-S03,,"""I will crown Myrcella at the Hellholt and raise my banners there."" -Arianne Martell"
-Martell,"Arys Oakheart, The White Knight",Arys Oakheart,1,Infantry,Protection of the Crown,,SIF710,20915,2021,,"""Arys, my sweet knight, why did you do it?""
+Martell,"Arys Oakheart, The White Knight",Arys Oakheart,1,Infantry,Protection of the Crown,,SIF710,20915,S06,,"""Arys, my sweet knight, why did you do it?""
 -Arianne Martell"
 Martell,"Quentyn Martell, Prince Of Dorne",Quentyn Martell,1,Infantry,Outflank,Ignores Limit,SIF710,20916,2021-S02,*Quentyn Martell ignores the usual Attachment limits.*,"""This will be my grand adventure."""
 Martell,"Gerold Dayne, Knight Of High Hermitage",Gerold Dayne,1,Infantry,"Order: Incite /
 Furious Charge",,SIF710,20917,2021,,"""I am of the night."""
 Martell,"Edric Dayne, Lord Of Starfall",Edric Dayne,1,Infantry,"True Conviction (Martell) /
-Dauntless",Ignores Limit,SIF710,20918,2021,*Edric Dayne ignores the usual Attachment limits.*,A polite young lad.
+Dauntless",Ignores Limit,SIF710,20918,S06,*Edric Dayne ignores the usual Attachment limits.*,A polite young lad.
 Martell,"Daemon Sand, Bastard Of Godsgrace",Daemon Sand,1,Infantry,Order: Unsuspecting Charge,,SIF710,20919,2021,,"""The man was smug as he was comely""
 -Arianne Martell"
 Martell,"Daemon Sand, Vengeful Knight",Daemon Sand,C,Infantry,"Intimidation of the Crown /
@@ -570,7 +587,7 @@ Rally Cry",,SIF710,20920,2021,,"""Of all the knights in Dorne, why did my father
 Martell,"Gerold Dayne, Darkstar",Gerold Dayne,C,Infantry,"Order: Martial Training /
 Boldness and Courage",,SIF710,20921,2021,,"""I was weaned on venom"""
 Martell,High Hermitage Sentinel,,1,Infantry,"Ambush /
-Enhanced Mobility",,SIF708,20922,2021,,
+Enhanced Mobility",,SIF708,20922,S06,,
 Bolton,"Ramsay Snow, Spiteful Heir",Ramsay Snow,C,Infantry,"Horrific Visage /
 Prey On Fear",,SIF005,21001,S05,,"""Snow, my wife called me before she ate her fingers, but I say Bolton."""
 Bolton,"Roose Bolton, Lord of the Dreadfort",Roose Bolton,C,Infantry,"Order: Spread Fear /
@@ -616,7 +633,7 @@ Not: 'Walder Frey'",SIF015,21107,2021,*May not be fielded in an army containing 
 Brotherhood,"Anguy, The Archer",Anguy,2,Infantry,"Order: Swift Retreat /
 Outflank",,SIF015,21108,2021,,"""Anguy here could put three shafts through you before you could hope to reach us."""
 Brotherhood,"Edric Dayne, Loyal Squire",Edric Dayne,1,Infantry,"Beric's Vassal /
-Regroup",,SIF015,21109,2021,"*Edric Dayne may be included in a unit containing Thoros of Myr, ignoring the usual attachment restrictions.*","""I'm only twelve."""
+Regroup",Ignores Limit: 'Thoros of Myr',SIF015,21109,2021,"*Edric Dayne may be included in a unit containing Thoros of Myr, ignoring the usual attachment restrictions.*","""I'm only twelve."""
 Brotherhood,"Hot Pie, The Baker",Hot Pie,1,Infantry,Hot Pies!,,SIF015,21110,2021,,"""Everyone was yelling stuff. Hot Pie yelled hot pie. He must have yelled it a hundred times."" -Arya Stark"
 Brotherhood,"Gendry, The Bull",Gendry,2,Infantry,"Order: Resilience /
 Improved Defenses (BwB)",,SIF015,21111,2021,,"""Lord? I'm just a smith."""

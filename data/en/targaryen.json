@@ -380,7 +380,7 @@
             "id": "10711",
             "name": "Stormcrow Dervishes",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -457,7 +457,7 @@
             "id": "10713",
             "name": "Stormcrow Mercenaries",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 5,
@@ -601,16 +601,16 @@
             "id": "10717",
             "name": "Pit Fighters",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 6,
+                "cost": 5,
                 "speed": 6,
                 "defense": 5,
                 "morale": 6,
                 "attacks": [
                     {
-                        "name": "Fighter's Armaments",
+                        "name": "Fighter's Armament's",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -661,16 +661,14 @@
             "name": "Illyrio Mopatis",
             "subname": "Magister of Pentos",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Illyrio's Boon",
                         "effect": [
-                            "Illyrio begins the game with 2 Order tokens. ",
-                            "Each time Illyrio Claims a Zone, you may remove 1 Order token from him. If you do, replace that zone's effect with:",
-                            "*Target 1 friendly Combat Unit. They restore 3 Wounds. 1 enemy they are engaged with becomes ****Weakened****.*"
+                            "Illyrio begins the game with 2 Order tokens. \nEach time Illyrio Claims a zone, you may remove 1 Order token from him. If you do, replace that zone's effect with: \n*Target 1 friendly Combat Unit. They restore up to 3 Wounds. Place 1 Condition token on 1 enemy they are engaged with.*"
                         ]
                     }
                 ],
@@ -805,7 +803,7 @@
                             "Each time Mirri Claims a zone, you may replace that zone's effect with:",
                             "*Choose 1:*",
                             "• *Target 1 friendly Combat Unit. Attach 1 previously destroyed, friendly, non-Commander Attachment to that unit, replacing a model as usual, but ignoring the usual Attachment limits.*",
-                            "• *Target 1 enemy Combat Unit. They become Panicked and Weakened.*"
+                            "• *Target 1 enemy Combat Unit. They become **Panicked** and **Weakened**.*"
                         ]
                     }
                 ]
@@ -986,7 +984,7 @@
             "name": "Jorah Mormont",
             "subname": "Westerosi Tactician",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": "C",
@@ -1086,7 +1084,7 @@
             "name": "Barristan Selmy",
             "subname": "The Bold",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
@@ -1321,12 +1319,13 @@
             "name": "Daario Naharis",
             "subname": "Reckless Mercenary",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Reckless Strikes"
+                    "Reckless Strikes",
+                    "Dauntless"
                 ],
                 "character": true
             },
@@ -1339,7 +1338,7 @@
             "name": "Daario Naharis",
             "subname": "Stormcrow Captain",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
@@ -1384,10 +1383,10 @@
             "name": "Rakharo",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Order: Sentinel",
@@ -1404,10 +1403,10 @@
             "name": "Qotho",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Intimidating Presence",
@@ -1429,10 +1428,10 @@
             "name": "Cohollo",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Battle Scars"
@@ -1453,10 +1452,10 @@
             "name": "Haggo",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Fueled By Slaughter"
@@ -1477,12 +1476,13 @@
             "name": "Mirri Maz Duur",
             "subname": "Resentful Healer",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Maegi's Healing"
+                    "Maegi's Healing",
+                    "Stubborn Tenacity"
                 ],
                 "requirements": [
                     {
@@ -1500,10 +1500,10 @@
             "name": "Marselen",
             "subname": "Unsullied Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Dauntless",
                     "Embolden"
@@ -1599,14 +1599,13 @@
             "id": "20728",
             "name": "Brazen Beasts Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Incite",
-                    "Furious Charge",
-                    "Iron Resolve"
+                    "Furious Charge"
                 ]
             }
         }
@@ -1789,15 +1788,15 @@
             "id": "40710",
             "name": "Assault Orders",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If this targets Khal Drogo's unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If this targets Khal Drogo's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     },
                     {
@@ -1886,7 +1885,7 @@
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or Vicious. If the Attacker is Jorah Mormont's unit, gain both instead."
+                            "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or **Vicious**. If the Attacker is Jorah Mormont's unit, gain both instead."
                         ]
                     }
                 ],
@@ -2008,14 +2007,14 @@
             "id": "40720",
             "name": "Sustained Assault",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
-                            "If this targets Barristan's unit, it may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this targets Barristan's unit, the Defender also becomes **Vulnerable**."
                         ]
                     },
                     {

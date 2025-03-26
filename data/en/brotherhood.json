@@ -37,7 +37,7 @@
             "id": "11102",
             "name": "Men-At-Arms",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "brotherhood",
                 "type": "infantry",
                 "cost": 6,
@@ -58,12 +58,12 @@
                 ],
                 "abilities": [
                     "Ambush",
-                    "Brotherwood Armaments"
+                    "Brotherhood Armaments"
                 ],
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The Brotherhood Without Banners is technically an outlaw band, acting in service to any  lord who fights for the realm’s justice, working towards bringing peace swiftly to the kingdoms.  As such, they’re seen as idealists (and fanatics), and their Men-At-Arms are staunch professionals willing to fight to the bitterest of ends in the name of justice. They serve  best in the line, grinding the enemy to dust."
+                "lore": "The Brotherhood Without Banners is technically an outlaw band, acting in service to any lord who fights for the realm’s justice, working towards bringing peace swiftly to the kingdoms. As such, they’re seen as idealists (and fanatics), and their Men-At-Arms are staunch professionals willing to fight to the bitterest of ends in the name of justice. They serve  best in the line, grinding the enemy to dust."
             }
         },
         {
@@ -623,15 +623,15 @@
             "id": "41108",
             "name": "Assault Orders",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "brotherhood",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If this target's Beric's unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If this targets Beric's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     }
                 ],

@@ -80,7 +80,7 @@
             "id": "10403",
             "name": "House Bolton Flayed Men",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 8,
@@ -94,7 +94,7 @@
                         "hit": 3,
                         "dice": [
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -114,11 +114,11 @@
             "id": "10404",
             "name": "House Bolton Blackguards",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -181,7 +181,7 @@
             "id": "10406",
             "name": "Stormcrow Mercenaries",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
@@ -296,7 +296,7 @@
             "id": "10409",
             "name": "Stormcrow Dervishes",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
@@ -685,7 +685,7 @@
                         "effect": [
                             "Once per game, when Walder Claims a zone, you may replace that zone's effect with:",
                             "*Choose 2:*",
-                            "• *1 enemy becomes Weakened, Vulnerable and Panicked.*",
+                            "• *1 enemy becomes **Weakened**, **Vulnerable** and **Panicked**.*",
                             "• *1 friendly unit restores 3 Wounds.*",
                             "• *At the start of the next Round, you become the First Player.*"
                         ]
@@ -845,7 +845,7 @@
             "name": "Brienne",
             "subname": "Maiden of Tarth",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
@@ -864,7 +864,7 @@
             "name": "Bronn",
             "subname": "The Sellsword",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
@@ -944,14 +944,14 @@
             "name": "Daario Naharis",
             "subname": "Stormcrow Captain",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Affiliation: Stormcrows",
                     "Improved Armaments",
-                    "Motivated by Coin"
+                    "Motivated By Coin"
                 ],
                 "commander": true,
                 "character": true
@@ -972,12 +972,13 @@
             "name": "Daario Naharis",
             "subname": "Reckless Mercenary",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Reckless Strikes"
+                    "Reckless Strikes",
+                    "Dauntless"
                 ],
                 "character": true
             },
@@ -1048,7 +1049,7 @@
             "id": "20416",
             "name": "Fortune Seeker",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 1,
@@ -1076,14 +1077,13 @@
             "id": "20418",
             "name": "Golden Company Officer",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Affiliation: Golden Company",
-                    "Boisterous Charisma",
-                    "Dauntless"
+                    "Boisterous Charisma"
                 ]
             }
         },
@@ -1091,7 +1091,7 @@
             "id": "20419",
             "name": "Lysene Bosun",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
@@ -1460,15 +1460,15 @@
             "id": "40410",
             "name": "Sadistic Games",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "text": [
                     {
                         "trigger": "Start of an enemy Turn:",
                         "effect": [
-                            "Your opponent chooses 1 *(you select targets only after they choose):*",
+                            "Your opponent chooses 1 (you select targets only after they choose):",
                             "• Target up to 2 enemy Combat Units. They become **Panicked**.",
-                            "• Target 1 engaged enemy. It suffers 2 Hits, +1 Hit for each remaining rank in all House Bolton units it is engaged with."
+                            "• Target up to 2 enemy Combat Units. They become **Weakened**."
                         ]
                     }
                 ],

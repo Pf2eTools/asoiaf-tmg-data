@@ -36,11 +36,11 @@
             "id": "11002",
             "name": "Blackguards",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -155,7 +155,7 @@
             "id": "11005",
             "name": "Flayed Men",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "bolton",
                 "type": "cavalry",
                 "cost": 8,
@@ -169,7 +169,7 @@
                         "hit": 3,
                         "dice": [
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -636,17 +636,16 @@
     "tactics": [
         {
             "id": "41001",
-            "name": "Remorseless Examples",
+            "name": "Bloody Beheadings",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "text": [
                     {
                         "trigger": "After a friendly unit completes a Melee Attack:",
                         "effect": [
-                            "If this Attack destroyed an enemy rank, target 1 other enemy in Long Range of that enemy. They become **Panicked**. If this Attack destroyed the enemy, also place 1 Corpse Pile with the following keywords anywhere fully in Short Range and not overlapping other Terrain:",
-                            "• **Hindering**",
-                            "• **Grim Reminder:** Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range."
+                            "If this Attack destroyed an enemy rank, each enemy in Long Range becomes **Panicked**. If they were already **Panicked**, they suffer 1 Panic Test.",
+                            "If this Attack destroyed the enemy instead, each enemy in Long Range becomes **Panicked** and they suffer 1 Panic Test."
                         ]
                     }
                 ]
@@ -689,15 +688,15 @@
             "id": "41004",
             "name": "Sadistic Games",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "text": [
                     {
                         "trigger": "Start of an enemy Turn:",
                         "effect": [
-                            "Your opponent chooses 1 *(you select targets only after they choose):*",
+                            "Your opponent chooses 1 *(you select targets only after they choose)*:",
                             "• Target up to 2 enemy Combat Units. They become **Panicked**.",
-                            "• Target 1 engaged enemy. It suffers 2 Hits, +1 Hit for each remaining rank in all friendly units it is engaged with."
+                            "• Target up to 2 enemy Combat Units. They become **Weakened**."
                         ]
                     }
                 ]

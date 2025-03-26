@@ -147,10 +147,10 @@
             "id": "10905",
             "name": "Dune Vipers",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 6,
+                "cost": 5,
                 "speed": 6,
                 "defense": 4,
                 "morale": 6,
@@ -168,7 +168,6 @@
                 ],
                 "abilities": [
                     "Spear & Net",
-                    "Counterstrike",
                     "Gang-Up"
                 ],
                 "tray": "infantry"
@@ -614,13 +613,18 @@
             "name": "Areo Hotah",
             "subname": "Dutiful Juggernaut",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Battle Plan",
                     "Order: Mark Target"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Areo Hotah, Dutiful Juggernaut may only be fielded in an army containing Doran Martell, Prince of Dorne.*"
+                    }
                 ],
                 "character": true
             },
@@ -701,11 +705,12 @@
             "name": "Obara Sand",
             "subname": "Sand Snake",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
+                    "Furious Charge",
                     "Sundering",
                     "Uncontrolled Rage"
                 ],
@@ -720,10 +725,10 @@
             "name": "Nymeria Sand",
             "subname": "Sand Snake",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Advantage Strike",
                     "Dornish Vengeance"
@@ -804,7 +809,7 @@
             "name": "Arys Oakheart",
             "subname": "The White Knight",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
@@ -864,7 +869,7 @@
             "name": "Edric Dayne",
             "subname": "Lord Of Starfall",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
@@ -959,7 +964,7 @@
             "id": "20922",
             "name": "High Hermitage Sentinel",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
@@ -1103,7 +1108,7 @@
                     {
                         "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
-                            "That enemy becomes **Vulnerable**. Attach this card to that enemy until the Vulnerable token is removed.",
+                            "That enemy becomes **Vulnerable**. Attach this card to that enemy until the **Vulnerable** token is removed.",
                             "While this card is attached, each time this unit Attacks, it suffers -1 to Hit.",
                             "While this card is attached, each time this unit Attacks Oberyn's unit, before rolling Attack dice, it becomes **Weakened**."
                         ]
@@ -1227,14 +1232,14 @@
             "id": "40914",
             "name": "Sustained Assault",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "martell",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
-                            "If this targets Obara's unit, it may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this targets Obara's unit, the Defender also becomes **Vulnerable**."
                         ]
                     }
                 ],

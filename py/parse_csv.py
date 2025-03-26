@@ -198,7 +198,7 @@ def parse_abilities():
 def parse_commander(parsed, tactics):
     parsed["statistics"]["commander"] = True
     cards = [c for c in tactics["en"].values() if c["statistics"].get("commander_id") == parsed.get("id")]
-    parsed["tactics"] = {"cards": [c["id"] for c in cards]}
+    parsed["tactics"] = {"cards": {c["id"]: c["name"] for c in cards}}
     if len(cards) == 10:
         parsed["tactics"]["remove"] = ["ALL"]
     elif len(cards) > 3:
@@ -579,6 +579,10 @@ def dump(data, path):
         as_string = as_string.replace("[LONG RANGE]", "[LONGRANGE]")
         as_string = as_string.replace("Tarley", "Tarly")
         as_string = as_string.replace("TARLEY", "TARLY")
+        as_string = as_string.replace("<i>", "*")
+        as_string = as_string.replace("</i>", "*")
+        as_string = as_string.replace("<b>", "**")
+        as_string = as_string.replace("</b>", "**")
         f.write(as_string.encode("utf-8"))
 
 
@@ -683,8 +687,8 @@ def main():
                     "tactics": [add_new_if_not_exists(t, "tactics") for t in all_tactics],
                 }
                 for key, ability in ab.items():
-                    if ability_data.get(key) is None:
-                        ability_data[key] = ability
+                    # if ability_data.get(key) is None:
+                    ability_data[key] = ability
             else:
                 data = {
                     "units": [add_old_keys({"id": u["id"]}, "units") for u in units],
@@ -710,9 +714,9 @@ def main():
 MODE_REWRITE = "rewrite"
 # Add keys that are new
 MODE_NEW = "new"
-MODE_VERSION = "S05"
+MODE_VERSION = "S06"
 
-MODE = MODE_NEW
+MODE = MODE_VERSION
 
 LANGUAGES = [
     "en",

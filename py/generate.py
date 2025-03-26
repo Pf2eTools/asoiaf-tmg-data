@@ -211,6 +211,7 @@ def filter_data_generic(data_obj):
     data_type = data_obj.get("type")
     statistics = data_obj.get("statistics")
     faction = statistics.get("faction")
+    version = statistics.get("version")
     sides = [
         "face",
         "back"
@@ -225,6 +226,8 @@ def filter_data_generic(data_obj):
     ]
     factions = [
     ]
+    versions = [
+    ]
 
     if languages and language not in languages:
         return []
@@ -233,6 +236,8 @@ def filter_data_generic(data_obj):
     if types and data_type not in types:
         return []
     if factions and faction not in factions:
+        return []
+    if versions and version not in versions:
         return []
 
     return sides
