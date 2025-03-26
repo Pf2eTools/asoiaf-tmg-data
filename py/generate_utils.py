@@ -4,6 +4,25 @@ import re
 from copy import copy
 
 
+def get_gradient_color(val, colors):
+    val = clamp(val, 0, len(colors) - 1)
+
+    ix1, ix2 = int(val), min(int(val) + 1, len(colors) - 1)
+    (r1, g1, b1), (r2, g2, b2) = colors[ix1], colors[ix2]
+
+    return int(lerp(r1, r2, val % 1)), int(lerp(g1, g2, val % 1)), int(lerp(b1, b2, val % 1))
+
+
+def get_vertical_gradient(size, colors):
+    gradient = Image.new("RGBA", size)
+    draw = ImageDraw.Draw(gradient)
+    for y in range(0, size[1] + 1):
+        val = y / size[1] * (len(colors) - 1)
+        color = get_gradient_color(val, colors)
+        draw.line([(0, y), (size[0], y)], fill=color)
+    return gradient
+
+
 def round_corners(image, radius, supersample=4):
     circle = Image.new('L', (radius * 2 * supersample, radius * 2 * supersample), 0)
     draw = ImageDraw.Draw(circle)
@@ -23,8 +42,7 @@ def round_corners(image, radius, supersample=4):
     return image
 
 
-def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
-    border = 20
+def get_drop_shadow(image, color="#00000088", passes=5, shadow_size=3, border=20, offset=(0, 0)):
     shadow = Image.new("RGBA", (image.size[0] + border * 2, image.size[1] + border * 2))
     image_alpha_channel = image.split()[-1]
     pixels = image_alpha_channel.load()
@@ -40,6 +58,15 @@ def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3):
     shadow.paste(color, (border, border), mask=mask)
     for i in range(passes):
         shadow = shadow.filter(ImageFilter.BLUR)
+
+    with_offset = Image.new("RGBA", (image.size[0] + border * 2, image.size[1] + border * 2))
+    with_offset.paste(shadow, offset)
+
+    return with_offset
+
+
+def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3, border=20, offset=(0, 0)):
+    shadow = get_drop_shadow(image, color, passes, shadow_size, border, offset)
     shadow.alpha_composite(image, (border, border))
     return shadow
 
@@ -176,6 +203,7 @@ class FactionStore:
 
     def get_rendered(self, faction):
         return self._get(faction, "long", faction.capitalize())
+
 
 class LanguageStore:
     BASE_LANGUAGES = {
@@ -443,6 +471,8 @@ class TextStyle:
         self.paragraph_padding = kwargs.get("paragraph_padding", 0)
         self.section_padding = kwargs.get("section_padding", 0)
 
+        self.font_y_offset = kwargs.get("font_y_offset", 0.0)
+
         self.adjustments = {}
         self.supersample = kwargs.get("supersample", 1.0)
 
@@ -475,6 +505,7 @@ class TextStyle:
     def combine(parent, child):
         return TextStyle(
             font_family=parent.font_family if child.font_family is None else child.font_family,
+            font_y_offset=parent.font_y_offset if child.font_family is None else child.font_y_offset,
             font_color=child.font_color or parent.font_color or "black",
             font_size=TextStyle.abs_or_rel(parent.font_size, child.font_size),
             stroke_width=parent.stroke_width if child.stroke_width is None else child.stroke_width,
@@ -507,6 +538,7 @@ class RootStyle(TextStyle):
             "section_padding": 0,
             "stroke_width": 0.3,
             "icon_scale": 1.0,
+            "font_y_offset": 0.0,
         }
         defaults.update(kwargs)
         super().__init__(**defaults)
@@ -765,6 +797,7 @@ class TextRenderer:
         self.image = None
         self.draw = None
         self.max_font_reduction = None
+        self.font_reduction_stepsize = None
 
     def inject_icons(self, new_icons):
         self._icons.update(new_icons)
@@ -785,6 +818,7 @@ class TextRenderer:
         self.margin = kwargs.get("margin", Spacing(0, 0))
         self.base_bias_extra_height = kwargs.get("base_bias_extra_height", 0.7)
         self.max_font_reduction = kwargs.get("max_font_reduction", 10)
+        self.font_reduction_stepsize = kwargs.get("font_reduction_stepsize", 1)
 
         self.bold = False
         self.italic = False
@@ -1149,7 +1183,7 @@ class TextRenderer:
                 self.input.adjust_style(tracking=adjust_tracking, word_spacing=adjust_word_spacing)
                 self.split_data()
             elif i not in [0, 1, 6, 8, 9, 10, 11, 12, 14, 15]:
-                self.input.adjust_style(font_size=-1)
+                self.input.adjust_style(font_size=-1 * self.font_reduction_stepsize)
                 self.split_data()
 
         height = self.calculate_height()
@@ -1188,7 +1222,7 @@ class TextRenderer:
             if ix in [0, 1, 2, 4, 5, 7, 8, 11, 12, 15] and self.input.styles.tracking >= -20:
                 self.input.adjust_style(tracking=-2)
             else:
-                self.input.adjust_style(font_size=-2)
+                self.input.adjust_style(font_size=-2 * self.font_reduction_stepsize)
 
     def set_cursor_x(self, entry, line):
         if self.align_x == self.ALIGN_LEFT:
@@ -1273,10 +1307,14 @@ class TextRenderer:
                     self.italic = entry.italic
                     for line in entry.split:
                         # This also increments cursor.y as required
+                        # bar_topline = Image.new("RGBA", (w, 1), "black")
+                        # self.image.alpha_composite(bar_topline, (0, int(self.cursor.y)))
                         self._render_line(entry, line)
                     if is_last_entry:
                         # The last line in each paragraph should only be calculated as cap-height instead of full leading
                         self.cursor.y -= entry.leading - self.FACTOR_CAP_HEIGHT * entry.font_size
+                        # bar_baseline = Image.new("RGBA", (w, 1), "black")
+                        # self.image.alpha_composite(bar_baseline, (0, int(self.cursor.y)))
                     self.cursor.y += entry.padding.bottom
                 self.cursor.y += paragraph.padding.bottom
                 if not is_last_paragraph:
@@ -1320,9 +1358,10 @@ class TextRenderer:
                 if ix != 0 and line[ix - 1] in [self.TOKEN_BOLD, self.TOKEN_ITALIC]:
                     self.cursor.x -= entry.tracking + entry.word_spacing
             font = self.get_font(entry)
+            y_offset_font = entry.font_y_offset * entry.font_size
             for char, char_next in self.iterate_chars(token):
                 stroke_width = round(entry.stroke_width * self.supersample)
-                self.draw.text((self.cursor.x, self.cursor.y), char, entry.font_color, font=font, stroke_width=stroke_width)
+                self.draw.text((self.cursor.x, self.cursor.y + y_offset_font), char, entry.font_color, font=font, stroke_width=stroke_width)
                 # self.image.alpha_composite(Image.new("RGBA", (2, int(entry.leading)), "black"), (int(self.cursor.x), int(self.cursor.y)))
                 self.cursor.x += self.calculate_char_width(entry, font, char, char_next)
                 # self.image.alpha_composite(Image.new("RGBA", (2, int(entry.leading)), "black"), (int(self.cursor.x), int(self.cursor.y)))
@@ -1509,10 +1548,10 @@ def clamp(x, minimum, maximum):
     return max(minimum, min(x, maximum))
 
 
+def lerp(v0, v1, t):
+    return v0 + t * (v1 - v0)
+
+
 if __name__ == "__main__":
     pass
-    # from asset_manager import AssetManager
-    # am = AssetManager()
-    # tr = TextRenderer(am)
-    # cb = render_character_box(am, tr, "baratheon", "fr")
-    # cb.show()
+
