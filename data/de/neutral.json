@@ -80,7 +80,7 @@
             "id": "10403",
             "name": "Gehäutete von Haus Bolton",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 8,
@@ -94,7 +94,7 @@
                         "hit": 3,
                         "dice": [
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -114,11 +114,11 @@
             "id": "10404",
             "name": "Rohlinge von Haus Bolton",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -181,7 +181,7 @@
             "id": "10406",
             "name": "Söldner der Sturmkrähen",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
@@ -296,7 +296,7 @@
             "id": "10409",
             "name": "Derwische der Sturmkrähen",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
@@ -845,7 +845,7 @@
             "name": "Brienne",
             "subname": "Jungfrau von Tarth",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
@@ -864,7 +864,7 @@
             "name": "Bronn",
             "subname": "Der Söldner",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
@@ -944,7 +944,7 @@
             "name": "Daario Naharis",
             "subname": "Hauptmann der Sturmkrähen",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": "H",
@@ -972,12 +972,13 @@
             "name": "Daario Naharis",
             "subname": "Rücksichtsloser Söldner",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Rücksichtslose Schläge"
+                    "Rücksichtslose Schläge",
+					"Verwegenheit"
                 ],
                 "character": true
             },
@@ -1048,7 +1049,7 @@
             "id": "20416",
             "name": "Glückssucher",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 1,
@@ -1076,14 +1077,13 @@
             "id": "20418",
             "name": "Offizier der Goldenen Kompanie",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Zugehörigkeit: Goldene Kompanie",
-                    "Wilde Ausstrahlung",
-                    "Verwegenheit"
+                    "Wilde Ausstrahlung"
                 ]
             }
         },
@@ -1091,7 +1091,7 @@
             "id": "20419",
             "name": "Lysenischer Bootsmann",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
@@ -1460,7 +1460,7 @@
             "id": "40410",
             "name": "Sadistische Spiele",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "text": [
                     {
@@ -1468,7 +1468,7 @@
                         "effect": [
                             "Dein Gegner wählt 1 der folgenden Effekte *(du bestimmst die Ziele erst, nachdem er den Effekt gewählt hat)*:",
                             "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Panisch**.",
-                            "• Bestimme 1 Feind, der im Nahkampf ist, zum Ziel. Er erleidet 2 Treffer, +1 Treffer für jede verbleibende Schlachtreihe in allen Haus-Bolton-Einheiten, mit denen er im Nahkampf ist."
+                            "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Geschwächt**."
                         ]
                     }
                 ],

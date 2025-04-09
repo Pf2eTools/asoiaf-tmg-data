@@ -434,7 +434,7 @@
             "id": "10113",
             "name": "Guet de Port-Lannis",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 6,
@@ -935,7 +935,7 @@
             "name": "Jaime Lannister",
             "subname": "Garde Royal",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 2,
@@ -947,6 +947,9 @@
                 "requirements": [
                     {
                         "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                    },
+                    {
+                        "text": "*Si votre armée comprend Cersei Lannister, réduisez le coût de Jaime Lannister d'1 point.*"
                     }
                 ]
             },
@@ -1005,7 +1008,7 @@
             "name": "Arys du Rouvre",
             "subname": "Garde Royal",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
@@ -1073,12 +1076,21 @@
             "id": "20113",
             "name": "Champion de la Foi",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Ordre : Cri de Guerre"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limité ",
+                        "text": "*Votre armée peut inclure un maximum de 2 Champions de la Foi.*"
+                    },
+                    {
+                        "text": "*Le premier Champion de la Foi de votre armée est gratuit si votre armée comprend Le Grand Moineau.*"
+                    }
                 ]
             }
         },
@@ -1162,10 +1174,10 @@
             "name": "Jaime Lannister",
             "subname": "Le Jeune Lion",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Ordre : Entraînement Martial",
                     "Vaillance"
@@ -1181,13 +1193,14 @@
             "name": "Gregor Clegane",
             "subname": "Mastodonte Monté",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "cavalry",
                 "cost": 3,
                 "abilities": [
-                    "Fureur Incoercible",
-                    "Rage Incontrôlable"
+                    "Indomptable",
+                    "Assaut Féroce",
+                    "Présence Intimidante"
                 ],
                 "character": true
             },
@@ -1298,7 +1311,7 @@
             "name": "Qyburn",
             "subname": "Connaissances Interdites",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
@@ -1317,10 +1330,10 @@
             "name": "Addam Marpheux",
             "subname": "Banneret de Confiance",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Ordre : Sentinelle",
                     "Vassal de Jaime"
@@ -1336,10 +1349,10 @@
             "name": "Ser Robert Fort",
             "subname": "Le Géant Silencieux",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
-                "cost": 3,
+                "cost": 2,
                 "abilities": [
                     "Ordre : Résilience",
                     "Fureur Incoercible"
@@ -1387,13 +1400,13 @@
             "name": "Kevan Lannister",
             "subname": "Protecteur du Royaume",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": "G",
                 "abilities": [
                     "Ordre : Suprématie des Lannister",
-                    "Puissance du Trône (Kevan Lannister)"
+                    "Puissance du Trône"
                 ],
                 "commander": true,
                 "character": true
@@ -1413,7 +1426,7 @@
             "id": "20131",
             "name": "Gardien des Portes",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "type": "infantry",
                 "cost": 1,
@@ -1689,15 +1702,15 @@
             "id": "40112",
             "name": "Ordres d'assaut",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "lannister",
                 "text": [
                     {
                         "trigger": "Quand une UNC alliée s’empare d’une zone :",
                         "effect": [
                             "Remplacez les effets de cette zone par :",
-                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée.*",
-                            "*Si cette unité est une unité de la Maison Clegane, celle-ci peut effectuer 1 action de Charge à la place.*"
+                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
+                            "*Si cette unité est une unité de la Maison Clegane, celle-ci peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
                         ]
                     }
                 ],

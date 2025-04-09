@@ -440,7 +440,7 @@
             "id": "10512",
             "name": "Vorhut der Grenzer",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 7,
@@ -739,9 +739,9 @@
             "name": "Yoren",
             "subname": "Wanderkrähe",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "nightswatch",
-                "cost": 6,
+                "cost": 5,
                 "abilities": [
                     {
                         "name": "Rekrutierung",
@@ -1157,7 +1157,7 @@
             "name": "Benjen Stark",
             "subname": "Wolf der Mauer",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
@@ -1200,10 +1200,10 @@
             "name": "Samwell Tarly",
             "subname": "Sam der Töter",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Befehl: Schlachtplan",
                     "Buchführung (Samwell Tarly)"
@@ -1356,7 +1356,7 @@
             "name": "Eddison Tollett",
             "subname": "Schwermütiger Edd",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
@@ -1429,7 +1429,7 @@
             "name": "Ser Denys Mallister",
             "subname": "Kommandant vom Schattenturm",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": "H",
@@ -2019,15 +2019,15 @@
             "id": "40529",
             "name": "Angriffsbefehle",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
-                            "*Falls diese Karte Cotter Peiks Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
+                            "*Falls diese Karte Cotter Peiks Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"
                         ]
                     }
                 ],

@@ -37,7 +37,7 @@
             "id": "10802",
             "name": "Bogenschützen der Eisenmänner",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 4,
@@ -180,7 +180,7 @@
             "id": "10806",
             "name": "Auserkorene von Haus Schwarzfluth",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 6,
@@ -307,6 +307,40 @@
             "fluff": {
                 "lore": "Wenn das Banner des Kraken am Horizont erscheint, bedeutet das oft Ärger für die Bewohner der Steinigen Küste, nicht zuletzt dank der Plünderer, die in Booten die Küste erreichen. Diese Männer sind flink, rauben alles, das nicht niet- und nagelfest ist, töten jeden, der sich ihnen in den Weg stellt. Ihre tödliche Wucht hält sie länger im Kampf als viele andere Truppen mit ähnlicher Ausrüstung, aber sie müssen gegen Feinde mit schwereren Waffen unterstützt werden."
             }
+        },
+		{
+            "id": "10810",
+            "name": "Mannschaft der Eiserner Sieg",
+            "statistics": {
+                "version": "S06",
+                "faction": "greyjoy",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Enterbeil",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Enterbeil",
+                    "Männer des Kapitäns",
+                    "Tyrannischer Stolz"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Der Anblick des Segels mit dem Kraken, das sich langsam über dem Horizont erhebt, versetzt jede Küstensiedlung in Angst und Schrecken. Doch die Eiserner Sieg ist der Inbegriff von Victarions Grausamkeit. Die Mannschaft der Eiserner Sieg besteht aus säuberlich auserwählten Männer, die überaus bösartig, kriegserfahren und loyal sind. Die Mannschaft ist zwar klein, aber fast unzerstörbar, solange sie vor Angriffen in die Flanke von anderen Einheiten geschützt wird."
+            }
         }
     ],
     "ncus": [
@@ -365,9 +399,9 @@
             "name": "Balon Graufreud",
             "subname": "König von Salz und Stein",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "greyjoy",
-                "cost": 5,
+                "cost": 6,
                 "abilities": [
                     {
                         "name": "Erhebt sich erneut mit der Klinge in der Hand",
@@ -678,14 +712,15 @@
             "name": "Theon Graufreud",
             "subname": "„Prinz“ von Winterfell",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "H",
                 "abilities": [
                     "Befehl: Bewachen",
-                    "Überfall",
+					"Überfall",
                     "Verbesserte Mobilität"
+                    
                 ],
                 "commander": true,
                 "character": true
@@ -748,7 +783,7 @@
             "name": "Nut",
             "subname": "Der Barbier",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
@@ -822,7 +857,7 @@
             "name": "Euron Graufreud",
             "subname": "Krähenauge",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
@@ -841,7 +876,7 @@
             "name": "Erik Eisenmacher",
             "subname": "Ambossbrecher",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "H",
@@ -868,10 +903,10 @@
             "name": "Asha Graufreud",
             "subname": "„Lady Graufreud“",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Befehl: Bewachen",
                     "Zusammenrotten"
@@ -924,7 +959,7 @@
             "name": "Moqorro",
             "subname": "Sklave von R’hllor",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 2,
@@ -932,7 +967,12 @@
                     "Befehl: Anspornen",
                     "Befehl: Hilfslieferung"
                 ],
-                "character": true
+                "character": true,
+				"requirements": [
+                    {
+                        "text": "*Wenn deine Armee Victarion Graufreud, Kapitän der Eiserner Sieg enthält, reduziere die Kosten von Moquorro, Sklave von R’hllorum 1.*"
+                    }
+                ]
             },
             "fluff": {
                 "quote": "„Der Herr des Lichts hat mir Euren Wert gezeigt, Lord Kapitän. Jede Nacht kann ich in meinen Feuern den Ruhm sehen, der Euch erwartet.“"
@@ -1000,13 +1040,12 @@
             "id": "20822",
             "name": "Prophet der Ertrunkenen",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Befehl: Widerstandskraft",
-                    "Kämpfend untergehen"
+                    "Befehl: Widerstandskraft"
                 ]
             }
         },
@@ -1237,15 +1276,15 @@
             "id": "40812",
             "name": "Angriffsbefehle",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
-                            "*Falls diese Karte Victarion Graufreuds Einheit zum Ziel hat, darf sie stattdessen 1 Ansturm-Aktion durchführen.*"
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.*",
+                            "*Falls diese Karte Victarion Graufreuds Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"
                         ]
                     }
                 ],
@@ -1257,14 +1296,14 @@
             "id": "40813",
             "name": "Ausdauernder Angriff",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
                         "effect": [
-                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert.",
-                            "Falls diese Karte Victarion Graufreuds Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel neu werfen."
+                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
+                            "Falls diese Karte Victarion Graufreuds Einheit zum Ziel hat, wird der Verteidiger **Verwundbar**."
                         ]
                     }
                 ],

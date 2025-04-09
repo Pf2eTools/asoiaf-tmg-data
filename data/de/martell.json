@@ -147,10 +147,10 @@
             "id": "10905",
             "name": "Dünenvipern",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 6,
+                "cost": 5,
                 "speed": 6,
                 "defense": 4,
                 "morale": 6,
@@ -276,6 +276,49 @@
             },
             "fluff": {
                 "lore": "Die Leibgarde von Ser Gerold Dayn hat keinen offiziellen Namen; man nennt sie einfach Dunkelsterns Gefolgschaft. Und dieser Spitzname reicht aus, um feindliche Truppen in Angst und Schrecken zu versetzen. Seine Gefolgschaft tritt Dunkelsterns Erbe an, indem sie seinen Kampfstil bis zur Perfektion imitiert. Sie greift ohne Vorwarnung an, meist in eine ungeschützte Flanke, schlägt hart zu und zieht sich dann zurück, um geduldig auf die nächste Angriffs- gelegenheit zu warten … falls sie überhaupt noch einmal angreifen muss."
+            }
+        },
+        {
+            "id": "10909",
+            "name": "Bogenschützen von Himmelshöh",
+            "statistics": {
+                "version": "2021",
+                "faction": "martell",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 6,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Scharfschütze der Wüste",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            5
+                        ]
+                    },
+                    {
+                        "name": "Dolche",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Scharfschütze der Wüste",
+                    "Die Flanke umgehen"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Im Süden von Westeros, in einer Region, die als Fürstenpass bekannt ist, gibt es keinen erschreckenderen Anblick, als wenn die Bogenschützen von Jimmelshöh im kargen Gelände erscheinen. Sie sind brillante Flankenschützen, die sich in Position bringen, bevor ihre Feinde sie überhauptregistrieren. Allerdings geht die Mobilität dieser flinken Bogenschützen Hand in Hand mit einer schwachen Rüstung. Kluge Heerführer sollten sie daher bis zum entscheidenden Moment zu schützen wissen."
             }
         }
     ],
@@ -566,10 +609,10 @@
             "name": "Areo Hotah",
             "subname": "Pflichtbewusster Riese",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Befehl: Schlachtplan",
                     "Befehl: Ziel markieren"
@@ -653,11 +696,12 @@
             "name": "Obara Sand",
             "subname": "Sandschlange",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
+				    "Wütender Ansturm",
                     "Spaltschlag",
                     "Unbändige Wut"
                 ],
@@ -672,10 +716,10 @@
             "name": "Nymeria Sand",
             "subname": "Sandschlange",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Überlegener Schlag",
                     "Dornische Vergeltung"
@@ -756,7 +800,7 @@
             "name": "Arys Eichenherz",
             "subname": "Der weisse Ritter",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
@@ -816,7 +860,7 @@
             "name": "Edric Dayn",
             "subname": "Lord von Sternfall",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
@@ -911,7 +955,7 @@
             "id": "20922",
             "name": "Wache von Hochklause",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "martell",
                 "type": "infantry",
                 "cost": 1,
@@ -1181,14 +1225,14 @@
             "id": "40914",
             "name": "Ausdauernder Angriff",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "martell",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
                         "effect": [
-                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert.",
-                            "Falls diese Karte Obara Sands Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel neu werfen."
+                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
+                            "Falls diese Karte Obara Sands Einheit zum Ziel hat, wird der Verteidiger **Verwundbar**."
                         ]
                     }
                 ],

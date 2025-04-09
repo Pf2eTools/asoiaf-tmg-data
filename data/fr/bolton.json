@@ -36,11 +36,11 @@
             "id": "11002",
             "name": "Gardes Noirs",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -155,7 +155,7 @@
             "id": "11005",
             "name": "Écorchés",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "bolton",
                 "type": "cavalry",
                 "cost": 8,
@@ -169,7 +169,7 @@
                         "hit": 3,
                         "dice": [
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -309,7 +309,7 @@
                         "name": "Boucherie Sadique",
                         "effect": [
                             "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round).*",
-                            "Tant que cette carte influence une unité alliée, les Attaques de Mêlée de cette unité gagnent **Soif de Massacre** :",
+                            "Tant que cette carte influence une unité Bolton alliée, les Attaques de Mêlée de cette unité gagnent **Soif de Massacre** :",
                             "*Après que cette unité a résolu une Attaque de Mêlée, si le défenseur a subi des Blessures, cette unité soigne 1 de ses Blessures, +1 supplémentaire pour chaque rang détruit du défenseur.*"
                         ]
                     }
@@ -637,18 +637,16 @@
     "tactics": [
         {
             "id": "41001",
-            "name": "Exemples sans pitié",
+            "name": "Décapitations sanglantes",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "text": [
                     {
                         "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
                         "effect": [
-                            "Si cette attaque a détruit un rang ennemi, ciblez 1 autre unité ennemie à Longue Portée ou moins de cet ennemi. Elle devient **Paniquée**.",
-                            "Si cette attaque a détruit l’ennemi, placez 1 Tas de Cadavre avec les mots-clefs suivants, de façon à ce qu’il soit entièrement à Courte Portée ou moins de l’unité détruite sans chevaucher un autre Élément de Terrain :",
-                            "• **Entravant**",
-                            "• **Rappel Sinistre** : les ennemis qui se trouvent à Courte Portée ou moins de ce Tas de Cadavre subissent −1 à leurs lancers de Test de Moral et +1 Blessure lorsqu’ils échouent un Test de Panique."
+                            "Si cette attaque a détruit un rang ennemi, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué**. S'ils étaient déjà **Paniqués**, ils subissent 1 Test de Panique.",
+                            "Si cette attaque a détruit l'unité ennemie, à la place, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué** et subit 1 Test de Panique."
                         ]
                     }
                 ]
@@ -692,7 +690,7 @@
             "id": "41004",
             "name": "Jeux sadiques",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "text": [
                     {
@@ -700,7 +698,7 @@
                         "effect": [
                             "Votre adversaire choisit 1 option *(vous ne désignez les cibles qu’une fois le choix effectué)* :",
                             "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées**.",
-                            "• Ciblez 1 ennemi engagé. Il subit 2 Touches, +1 par rang restant de toutes les unités alliées avec lesquelles il est engagé."
+                            "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Affaiblis**."
                         ]
                     }
                 ]
@@ -936,6 +934,25 @@
                 "commander_id": "21013",
                 "commander_name": "Walton Jarret d'Acier",
                 "commander_subname": "Capitaine de la Garde"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Prisonniers de Fort-Terreur",
+            "id": "51002",
+            "type": "faction",
+            "statistics": {
+                "faction": "bolton",
+                "version": "S06",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 2,
+                    "text": [
+                        "Cette carte commence la partie avec 3 pions Ordre sur elle. Chaque fois qu'un rang ennemi est détruit, placez 1 pion Ordre sur cette carte (pour un maximum de 3).",
+                        "Au début de n'importe quel tour, vous pouvez dépenser 3 pions Ordre de cette carte et cibler une Unité Combattante ennemie. Si vous le faites, elle devient **Paniquée**."
+                    ]
+                }
             }
         }
     ]

@@ -377,7 +377,7 @@
             "id": "10711",
             "name": "Derviches Corbeaux Tornade",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -454,7 +454,7 @@
             "id": "10713",
             "name": "Mercenaires Corbeaux Tornade",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 5,
@@ -597,10 +597,10 @@
             "id": "10717",
             "name": "Gladiateurs",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 6,
+                "cost": 5,
                 "speed": 6,
                 "defense": 5,
                 "morale": 6,
@@ -657,7 +657,7 @@
             "name": "Illyrio Mopatis",
             "subname": "Magistrat de Pentos",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "cost": 4,
                 "abilities": [
@@ -666,7 +666,7 @@
                         "effect": [
                             "Illyrio commence la partie avec 2 pions Ordre sur sa carte :",
                             "Chaque fois qu’Illyrio s’empare d’une zone, vous pouvez retirer 1 pion Ordre de sa carte. Si vous le faites, vous pouvez remplacer l’effet de cette zone par :",
-                            "*Ciblez 1 Unité Combattante alliée. Elle soigne 3 de ses Blessures. 1 ennemi avec lequel elle est engagée devient **Affaibli**.*"
+                            "*Ciblez 1 Unité Combattante alliée. Elle soigne jusqu'à 3 de ses Blessures. Placez 1 pion État sur une unité avec laquelle elle est engagée.*"
                         ]
                     }
                 ],
@@ -919,7 +919,7 @@
             "name": "Jorah Mormont",
             "subname": "Tacticien de Westeros",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": "G",
@@ -1019,7 +1019,7 @@
             "name": "Barristan Selmy",
             "subname": "Le Hardi",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "G",
@@ -1254,12 +1254,13 @@
             "name": "Daario Naharis",
             "subname": "Mercenaire Audacieux",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Frappes Téméraires"
+                    "Frappes Téméraires",
+                    "Audacieux"
                 ],
                 "character": true
             },
@@ -1272,7 +1273,7 @@
             "name": "Daario Naharis",
             "subname": "Capitaine Corbeau Tornade",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "G",
@@ -1317,10 +1318,10 @@
             "name": "Rakharo",
             "subname": "Sang-Coureur",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Sang Coureur",
                     "Ordre : Sentinelle",
@@ -1337,10 +1338,10 @@
             "name": "Qotho",
             "subname": "Sang-Coureur",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Sang Coureur",
                     "Présence Intimidante",
@@ -1362,10 +1363,10 @@
             "name": "Cohollo",
             "subname": "Sang-Coureur",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Sang Coureur",
                     "Cicatrices de Combat"
@@ -1386,10 +1387,10 @@
             "name": "Haggo",
             "subname": "Sang-Coureur",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Sang Coureur",
                     "Soif de Massacre"
@@ -1410,12 +1411,13 @@
             "name": "Mirri Maz Duur",
             "subname": "Guérisseuse Réticente",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Guérison de la Maegi"
+                    "Guérison de la Maegi",
+                    "Ténacité Acharnée"
                 ],
                 "character": true,
                 "requirements": [
@@ -1433,10 +1435,10 @@
             "name": "Marselen",
             "subname": "Capitaine Immaculé",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Audacieux",
                     "Enhardir"
@@ -1532,14 +1534,13 @@
             "id": "20728",
             "name": "Capitaine des Bêtes d'Arain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Ordre : Incitation",
-                    "Charge Furieuse",
-                    "Volonté de Fer"
+                    "Charge Furieuse"
                 ]
             }
         }
@@ -1723,15 +1724,15 @@
             "id": "40710",
             "name": "Ordres d'assaut",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Quand une UNC alliée s’empare d’une zone :",
                         "effect": [
                             "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée.*",
-                            "*Si cette unité est l’unité de Khal Drogo, elle peut effectuer une action de Charge à la place.**"
+                            "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée en utilisant sa valeur de dés d'Attaque la plus basse.*",
+                            "*Si cette unité est l’unité de Khal Drogo, elle peut effectuer une action de Charge en utilisant sa valeur de dés d'Attaque la plus basse à la place.**"
                         ]
                     },
                     {
@@ -1941,14 +1942,14 @@
             "id": "40720",
             "name": "Assaut soutenu",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée.",
-                            "Si cette carte cible l’unité de Barristan, celle-ci peut relancer n’importe quels dés d’Attaque."
+                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée et elle peut relancer n'importe quels dés d'Attaque.",
+                            "Si cette carte cible l’unité de Barristan, le défenseur devient également **Vulnérable**."
                         ]
                     },
                     {

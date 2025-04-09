@@ -1083,7 +1083,7 @@
             "name": "Devan Seewert",
             "subname": "Knappe des Königs",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1097,6 +1097,9 @@
                         "name": "Loyalität",
                         "heading": "STANNIS BARATHEON",
                         "text": "*Deine Armee darf nie Einheiten oder Verstärkungen mit anderen Loyalitäten enthalten.*"
+                    },
+                    {
+                        "text": "*Wenn deine Armee Stannis Baratheon enthält, reduziere die Kosten von Devan Seewert, Knappe des Königs um 1.*"
                     }
                 ]
             },
@@ -1146,7 +1149,7 @@
             "name": "Davos Seewert",
             "subname": "Zwiebelritter",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1172,7 +1175,7 @@
             "name": "Andru Estermont",
             "subname": "Wahrer Loyalist",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1198,7 +1201,7 @@
             "name": "Andru Estermont",
             "subname": "Der Erste der Männer des Königs",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "H",
@@ -1283,13 +1286,12 @@
             "name": "Loras Tyrell",
             "subname": "Knappe des Königs",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Meisterhafter Duellant",
-                    "Präzision"
+                    "Meisterhafter Duellant"
                 ],
                 "character": true,
                 "requirements": [
@@ -1361,7 +1363,7 @@
             "id": "20617",
             "name": "Rote Priesterin",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1381,12 +1383,13 @@
             "id": "20618",
             "name": "Hauptmann der Pikeniere",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Mut und Kühnheit"
+                    "Mut und Kühnheit",
+                    "Gefolgsmann des Herrführers"
                 ],
                 "requirements": [
                     {
@@ -1401,12 +1404,13 @@
             "id": "20619",
             "name": "Wache der Dornen-Garde",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Verwegenheit",
+                    "Wütender Ansturm",
                     "Wegbereiter"
                 ],
                 "requirements": [
@@ -1443,10 +1447,10 @@
             "name": "Axell Florent",
             "subname": "Fanatischer Anhänger",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Zugehörigkeit: R’hllor",
                     "Eifriger Fanatismus",
@@ -1499,7 +1503,7 @@
             "name": "Cortnay Fünfrosen",
             "subname": "Loyaler Taktiker",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 2,
@@ -1525,7 +1529,7 @@
             "name": "Cortnay Fünfrosen",
             "subname": "Kastellan von Sturmkap",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": "H",
@@ -1581,7 +1585,7 @@
             "name": "Bryn Farring",
             "subname": "Knappe des Königs",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
                 "cost": 1,
@@ -1849,10 +1853,10 @@
             "name": "Robar Rois",
             "subname": "Robar der Rote",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Wütender Ansturm",
                     "Rücksichtslose Schläge"
@@ -1878,10 +1882,10 @@
             "name": "Guyard Morrigen",
             "subname": "Guyard der Grüne",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "baratheon",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Gegenschlag",
                     "Verwegenheit"
@@ -1961,13 +1965,14 @@
             "id": "40604",
             "name": "Ausdauernder Angriff",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
                         "effect": [
-                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen."
+                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
+                            "Falls diese Karte deine Herrführer-Einheit zum Ziel hat, wird der Verteidiger **Verwundbar**."
                         ]
                     }
                 ]
@@ -2557,15 +2562,15 @@
             "id": "40633",
             "name": "Angriffsbefehle",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "baratheon",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.",
-                            "*Falls diese Karte Andru Estermonts Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen.*"
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
+                            "*Falls diese Karte Andru Estermonts Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"
                         ]
                     }
                 ],

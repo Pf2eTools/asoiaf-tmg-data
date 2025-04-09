@@ -400,7 +400,7 @@
             "id": "10312",
             "name": "Kriegsmammut",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 6,
@@ -413,7 +413,7 @@
                         "type": "melee",
                         "hit": 4,
                         "dice": [
-                            6
+                            7
                         ]
                     }
                 ],
@@ -1226,11 +1226,12 @@
             "id": "20310",
             "name": "Auserkorener von Styr",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
+				    "Wütender Ansturm",
                     "Kämpfend untergehen"
                 ]
             }
@@ -1280,12 +1281,13 @@
             "name": "Rasselhemd",
             "subname": "Der Herr der Knochen",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "H",
                 "abilities": [
                     "Befehl: Trophäen sammeln",
+					"Trophäen Sammler",
                     "Bedrohliche Erscheinung"
                 ],
                 "commander": true,
@@ -1307,12 +1309,12 @@
             "name": "Rasselhemd",
             "subname": "Gnadenloser Schlächter",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Befehl: Angst verbreiten",
+                    "Durch das Gemetzel befeuert",
                     "Bedrohliche Erscheinung"
                 ],
                 "character": true
@@ -1396,14 +1398,14 @@
             "name": "Der Weiner",
             "subname": "Schrecklicher Fleischer",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "H",
                 "abilities": [
-                    "Befehl: Grässliches Vorbild",
-                    "Grausam",
-                    "Entschlossenheit schwächen"
+                    "Befehl: Grässliches Vorbild",                    
+                    "Entschlossenheit schwächen",
+					"Grausam"
                 ],
                 "commander": true,
                 "character": true
@@ -1412,7 +1414,7 @@
                 "cards": {
                     "40320": "Grausame Methoden",
                     "40321": "Der Preis des Versagens",
-                    "40322": "Unbarmherzige Beispiele"
+                    "40322": "Blutige Enthauptungen"
                 }
             },
             "fluff": {
@@ -1424,7 +1426,7 @@
             "name": "Der Weiner",
             "subname": "Grausamer Tyrann",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
@@ -1484,12 +1486,12 @@
             "id": "20324",
             "name": "Häuptling des Walrossclans",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Befehl: Widerstandskraft",
+                    "Abgehärtet",
                     "Eiserne Entschlossenheit"
                 ]
             }
@@ -1870,14 +1872,15 @@
             "id": "40314",
             "name": "Blutige Trophäen",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls sie eine feindliche Schlachtreihe vernichtet hat:",
+                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
                         "effect": [
-                            "Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie-Einheit innerhalb Kurzer Reichweite zum Angreifer an. Alle Feinde, die mit ihr im Nahkampf sind, werden **Panisch**.",
-                            "Sobald ein Feind eine Aktion durchführt, solange er mit dieser Einheit im Nahkampf ist, bevor jene Aktion abgehandelt wird, wird jener Feind **Panisch**."
+                            "Alle feindlichen Einheiten die sich mit dem Angreifer im Nahkampf befinden werden **Panisch**. Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit in Kurzer Reichweite zu dem Angreifer an.",
+                            "Solange diese Karte anliegt, wenn eine feindliche Einheit, die sich mit dieser Einheit im Nahkampf befindet, aktiviert wird, bevor sie ihre Aktion ausführt, wird die **Panisch**.",
+							"Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
                         ]
                     }
                 ],
@@ -1889,14 +1892,15 @@
             "id": "40315",
             "name": "Waffentrophäen",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls sie eine feindliche Schlachtreihe vernichtet hat:",
+                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
                         "effect": [
                             "Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit innerhalb Kurzer Reichweite zum Angreifer an.",
-                            "Solange diese Karte an dieser Einheit anliegt, erhalten ihre Nahkampfangriffe +1 auf den Trefferwurf."
+                            "Solange diese Karte an dieser Einheit anliegt, erhalten ihre Nahkampfangriffe +1 auf den Trefferwurf.",
+							"Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
                         ]
                     }
                 ],
@@ -1908,14 +1912,15 @@
             "id": "40316",
             "name": "Rüstungstrophäen",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls sie eine feindliche Schlachtreihe vernichtet hat:",
+                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
                         "effect": [
                             "Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit innerhalb Kurzer Reichweite zum Angreifer an.",
-                            "Solange diese Karte an dieser Einheit anliegt, erhält sie +1 auf das Ergebnis von Verteidigungswürfen."
+                            "Solange diese Karte an dieser Einheit anliegt, erhält sie +1 auf das Ergebnis von Verteidigungswürfen und der Gegner kann keine **Verwundbar** -Marker von dieser Einheit ausgeben.",
+							"Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
                         ]
                     }
                 ],
@@ -2021,18 +2026,17 @@
         },
         {
             "id": "40322",
-            "name": "Unbarmherzige Beispiele",
+            "name": "Blutige Enthauptungen",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
                         "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
                         "effect": [
-                            "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, bestimme 1 anderen Feind innerhalb Langer Reichweite zu jenem Feind zum Ziel. Er wird **Panisch**. Falls dieser Angriff den Feind vernichtet hat, platziere zudem 1 Leichenhaufen mit den folgenden Schlüsselwörtern vollständig innerhalb Kurzer Reichweite und nicht auf anderen Geländeteilen:",
-                            "• **Einschränkend**",
-                            "• **Zur Erinnerung:** Feinde erleiden –1 auf das Ergebnis von Moralproben und +1 Wunde, wenn sie an einer Panikprobe scheitern, solange sie innerhalb Kurzer Reichweite sind."
-                        ]
+                            "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch**. Falls einer dieser Feinde bereits **Panisch** ist, muss er stattdessen 1 Panikprobe ablegen:",
+                            "Falls dieser Angriff eine feindliche Kampfeinheit vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch** und muss eine Panikprobe ablegen."
+						]
                     }
                 ],
                 "commander_id": "20320",
@@ -2346,14 +2350,15 @@
             "id": "40338",
             "name": "Stärke des Walrosses",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
                         "effect": [
-                            "Falls diese Einheit eine Eisige-Küste-Einheit ist, erhält dieser Angriff +1 auf den Trefferwurf.",
-                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert."
+                            "Bestimme 1 freundliche Infanterie- oder Kavallerie-Einheit zum Ziel. Lege diese Karte bis zum Ende des Spieles an sie an.",
+                            "Solange diese Karte an der Einheit anliegt, wenn sie aktiviert, heilt sie 1 Wunde.",
+							"Wenn sie sich in Kurzer Reichweite zum grossen Walross befindet, darf sie zusätzlich 1 Zustandsmarker ablegen."
                         ]
                     }
                 ],
@@ -2444,13 +2449,13 @@
             "id": "50301",
             "statistics": {
                 "faction": "freefolk",
-                "version": "2021-S02",
+                "version": "S06",
                 "front": {
                     "ratio": 0.3,
                     "crests": 1,
                     "text": [
                         "**Du darfst Mag den Mächtigen als deinen Heerführer wählen.**",
-                        "Falls du das tust, senke seine Kosten auf 5 *(statt 9)*.",
+                        "Falls du das tust, senke seine Kosten auf 5 *(statt 9)* und, für jeden nicht ausgegeben extra Verstärkungpunkt, reduziere Mag´s Kosten um 1.",
                         "Sobald du Mag den Mächtigen als deinen Heerführer hinzugefügst, ersetze das Freie-Volk-Taktikdeck mit Mags Taktikdeck."
                     ]
                 },

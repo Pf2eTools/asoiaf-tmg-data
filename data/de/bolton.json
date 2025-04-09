@@ -36,11 +36,11 @@
             "id": "11002",
             "name": "Rohlinge von Haus Bolton",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -155,7 +155,7 @@
             "id": "11005",
             "name": "Gehäutete von Haus Bolton",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "bolton",
                 "type": "cavalry",
                 "cost": 8,
@@ -169,7 +169,7 @@
                         "hit": 3,
                         "dice": [
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -637,17 +637,16 @@
     "tactics": [
         {
             "id": "41001",
-            "name": "Unbarmherzige Beispiele",
+            "name": "Blutige Enthauptungen",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "text": [
                     {
                         "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
                         "effect": [
-                            "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, bestimme 1 anderen Feind innerhalb Langer Reichweite zu jenem Feind zum Ziel. Er wird **Panisch**. Falls dieser Angriff den Feind vernichtet hat, platziere zudem 1 Leichenhaufen mit den folgenden Schlüsselwörtern vollständig innerhalb Kurzer Reichweite und nicht auf anderen Geländeteilen:",
-                            "• **Einschränkend**",
-                            "• **Zur Erinnerung:** Feinde erleiden –1 auf das Ergebnis von Moralproben und +1 Wunde, wenn sie an einer Panikprobe scheitern, solange sie innerhalb Kurzer Reichweite sind."
+                            "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch**. Falls einer dieser Feinde bereits **Panisch** ist, muss er stattdessen 1 Panikprobe ablegen:",
+                            "Falls dieser Angriff eine feindliche Kampfeinheit vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch** und muss eine Panikprobe ablegen."
                         ]
                     }
                 ]
@@ -691,7 +690,7 @@
             "id": "41004",
             "name": "Sadistische Spiele",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "bolton",
                 "text": [
                     {
@@ -699,7 +698,7 @@
                         "effect": [
                             "Dein Gegner wählt 1 der folgenden Effekte *(du bestimmst die Ziele erst, nachdem er den Effekt gewählt hat)*:",
                             "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Panisch**.",
-                            "• Bestimme 1 Feind, der im Nahkampf ist, zum Ziel. Er erleidet 2 Treffer, +1 Treffer für jede verbleibende Schlachtreihe in allen befreundeten Einheiten, mit denen er im Nahkampf ist."
+                            "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Geschwächt**."
                         ]
                     }
                 ]
@@ -933,6 +932,25 @@
                 "commander_name": "Stahlbein Walton",
                 "commander_subname": "Hauptmann der Wache"
             }
+        }
+    ],  
+	"specials": [
+        {
+            "name": "Gefangener von Grauenstein",
+            "id": "51002",
+            "statistics": {
+                "faction": "bolton",
+                "version": "S06",
+                "front": {
+                    "ratio": 0.3,
+                    "crests": 2,
+                    "text": [
+                        "Zu Beginn des Spiels lege 3 Befehlsmarker auf diese Karte. Immer wenn eine gegnerische Schlachtreihe zerstört wird, lege 1 Befehlsmarker auf diese Karte. Es dürfen bis zu 3 Befehlsmarker auf dieser Karte liegen.",
+                        "Zu Beginn eines beliebigen Zuges, darfst du 3 Befehlsmarker von dieser Karte entfernen, falls du das tust, wähle eine gegnerische Kampfeinheit zum Ziel, sie wird **Panisch**."
+                    ]
+                }
+            },
+            "type": "faction"
         }
     ]
 }

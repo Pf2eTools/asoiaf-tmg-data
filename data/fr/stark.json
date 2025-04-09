@@ -4,7 +4,7 @@
             "id": "10201",
             "name": "Épées Liges Stark",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 5,
@@ -24,7 +24,8 @@
                     }
                 ],
                 "abilities": [
-                    "Morsure de l’Hiver"
+                    "Morsure de l’Hiver",
+                    "Tomber au Combat"
                 ],
                 "tray": "infantry"
             },
@@ -36,7 +37,7 @@
             "id": "10202",
             "name": "Cavaliers Stark",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "stark",
                 "type": "cavalry",
                 "cost": 6,
@@ -141,7 +142,7 @@
             "id": "10205",
             "name": "Archers Stark",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
@@ -637,6 +638,45 @@
             "fluff": {
                 "lore": "La Maison Omble n’est pas réputée pour sa cavalerie, pourtant ses cavaliers sont aussi redoutables que les autres unités montées de Westeros. S’ils ne sont pas aussi lourdement protégés que la plupart des troupes de cavalerie, les Ravageurs attaquent avec une fureur impitoyable. Tout ennemi qui commet l’erreur de se laisser charger de flanc ou de dos est voué à une mort certaine et expéditive. Ils sont rapides, efficaces et résistants : des troupes parfaites pour le Nord, un lieu où la survie dépend de la capacité à frapper vite et fort."
             }
+        },
+        {
+            "id": "10220",
+            "name": "Garde de Winterfell",
+            "statistics": {
+                "version": "2021",
+                "faction": "stark",
+                "type": "infantry",
+                "cost": 7,
+                "speed": 5,
+                "defense": 4,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Épée Longue",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Ravitaillement de Winterfell",
+                    "Défenses Améliorées (Stark)"
+                ],
+                "requirements": [
+                    {
+                        "name": "Réactivité ",
+                        "text": "*Réduisez le coût d'un Attachement de cette unité de 1.*"
+                    }
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "La Garde de Winterfell est composée de vétérans qui ont servi loyalement dans l'armée pendant plusieurs décennies. Après avoir rempli leur rôle de protecteurs de Winterfell des années durant, ils ont choisi de poursuivre leur service à l'intérieur des murs de la ville plutôt que de se retirer. Cependant, en ces temps de guerre, ils ont été rappelés au front."
+            }
         }
     ],
     "ncus": [
@@ -848,15 +888,23 @@
             "name": "Robb Stark",
             "subname": "Roi du Nord",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "La Ruse du Loup",
                         "effect": [
-                            "Après le déploiement, vous pouvez cibler une Unité Combattante alliée. Retirez-la du champ de bataille pour la placer hors de la table *(en réserve)*. Une fois par partie, quand Robb s’empare de [HORSE], vous pouvez remplacer l’effet de cette zone par :",
-                            "*Déployez l’unité que Robb a placé en Réserve entièrement à Courte Portée ou moins d’un flanc de table et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les ennemis Chargés avec succès de Flanc ou de Dos par cette unité deviennent **Paniqués** et **Vulnérables**.*"
+                            "Au début du déploiement, vous pouvez cibler une 1 Unité Combattante alliée. Jusqu'à la fin de la partie, cette unité gagne la capacité **Attaque de Flanc** :",
+                            "**ATTAQUE DE FLANC**",
+                            "Vous pouvez laisser cette unité hors de la table *(en Réserve)* au lieu de la déployer. Au début de n’importe quel round, si vous n’êtes pas le premier joueur, vous pouvez déployer 1 unité en Réserve, non activée, entièrement à Courte Portée ou moins d’un bord de table allié ou d’un flanc de table."
+                        ]
+                    },
+                    {
+                        "name": "Rapidité du Loup",
+                        "effect": [
+                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                            "Quand Robb influence une unité alliée, cette unité gagne +1 [MOVEMENT]."
                         ]
                     }
                 ],
@@ -932,11 +980,12 @@
             "id": "20203",
             "name": "Champion Omble",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
+                    "Charge Furieuse",
                     "Ordre : Incitation"
                 ]
             }
@@ -1001,7 +1050,7 @@
             "name": "Bran et Hodor",
             "subname": "Protecteur et Pupille",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -1048,10 +1097,10 @@
             "name": "Brynden Tully",
             "subname": "Irréductible Chevalier",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Affiliation : Maison Tully",
                     "Audacieux",
@@ -1135,10 +1184,10 @@
             "name": "Maege Mormont",
             "subname": "L'Ourse",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Tomber au Combat",
                     "Inflexible"
@@ -1154,10 +1203,10 @@
             "name": "Brynden Tully",
             "subname": "Infiltrateur de l'Avant-Garde",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "stark",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Ordre : Marquer la Cible",
                     "Attaque de Flanc"
@@ -1219,10 +1268,10 @@
             "name": "Jojen Reed",
             "subname": "Vervoyant",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Affiliation : Paludiers",
                     "Vervue de Jojen"
@@ -1238,13 +1287,13 @@
             "name": "Syrio Forel",
             "subname": "Première Lame de Braavos",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Précision",
-                    "Agile"
+                    "Danse de l'eau"
                 ],
                 "character": true,
                 "requirements": [
@@ -1316,13 +1365,22 @@
             "id": "20223",
             "name": "Survivaliste Paludier",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Évasion Insaisissable",
                     "Éclaireur"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limité ",
+                        "text": "*Votre armée peut inclure un maximum de 2 Survivalistes Paludiers.*"
+                    },
+                    {
+                        "text": "*Le premier Survivaliste Paludier de votre armée est gratuit si votre armée comprend Howland Reed, Seigneur des Paluds.\nLe Survivaliste Paludier ignore les restrictions habituelles d'attachements.*"
+                    }
                 ]
             }
         },
@@ -1372,7 +1430,7 @@
             "id": "20226",
             "name": "Capitaine Loyaliste",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -1387,10 +1445,10 @@
             "name": "Rickard Karstark",
             "subname": "Banneret Vengeur",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Ordre : Fureur des Stark",
                     "Rage Incontrôlable"
@@ -1406,7 +1464,7 @@
             "name": "Rickard Karstark",
             "subname": "Seigneur de Karhold",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": "G",
@@ -1454,6 +1512,28 @@
             },
             "fluff": {
                 "quote": "« Selon toute probabilité, ma soeur fait partie de l’armée de ton frère, ma soeur et les espèces de filles qu’elle a, vêtues de maille comme des hommes. » – Jeor Mormont à Jon Snow."
+            }
+        },
+        {
+            "id": "20230",
+            "name": "Champion de Winterfell",
+            "statistics": {
+                "version": "S06",
+                "faction": "stark",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Colère de Winterfell"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limité ",
+                        "text": "*Votre armée peut inclure un maximum de 2 Champions de Winterfell.*"
+                    },
+                    {
+                        "text": "*Le premier Champion de Winterfell de votre armée est gratuit si votre armée comprend Eddard Stark, Seigneur de Winterfell.*"
+                    }
+                ]
             }
         },
         {
@@ -1589,15 +1669,15 @@
             "id": "40207",
             "name": "Ordres d'assaut",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "Quand une UNC alliée s’empare d’une zone :",
                         "effect": [
                             "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée.*",
-                            "*Si cette UNC s’est emparée de [SWORDS], cette Unité Combattante peut effectuer 1 action de Charge à la place.*"
+                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d'Attaque la plus basse.*",
+                            "*Si cette UNC s’est emparée de [SWORDS], cette Unité Combattante peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
                         ]
                     }
                 ]
@@ -1667,14 +1747,18 @@
             "id": "40211",
             "name": "Tactiques de Berserker",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, après avoir lancé les dés d’Attaque :",
+                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si cette carte cible une unité de la Maison Omble, le défenseur devient **Paniqué**.",
-                            "Cette unité peut subir jusqu'à 3 Blessures. Si elle en subit, cette attaque inflige un nombre de Blessures égal à 1+ la valeur subie."
+                            "Choisissez 1 option. Cette unité peut subir jusqu'à 3 Blessures. Pour chaque Blessure subie, choisissez 1 option supplémentaire :",
+                            "• **Frappe Critique**",
+                            "• **Fracasser**",
+                            "• Cette Attaque lance sa valeur de dés la plus élevée.",
+                            "• Cette Attaque peut relancer n'importe quels dés d'Attaque."
+
                         ]
                     }
                 ],
@@ -2142,14 +2226,14 @@
             "id": "40234",
             "name": "Assaut soutenu",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée.",
-                            "Si cette carte cible l’unité de Maege, celle-ci peut relancer n’importe quels dés d’Attaque."
+                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée et elle peut relancer n'importe quels dés d'Attaque.",
+                            "Si cette carte cible l’unité de Maege, le défenseur devient également **Vulnérable**."
                         ]
                     }
                 ],

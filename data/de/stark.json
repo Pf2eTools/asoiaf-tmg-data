@@ -4,7 +4,7 @@
             "id": "10201",
             "name": "Geschworene Schwerter von Haus Stark",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 5,
@@ -24,7 +24,8 @@
                     }
                 ],
                 "abilities": [
-                    "Schärfe des Winters"
+                    "Schärfe des Winters",
+					"Kämpfend untergehen"
                 ],
                 "tray": "infantry"
             },
@@ -36,7 +37,7 @@
             "id": "10202",
             "name": "Vorreiter von Haus Stark",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "stark",
                 "type": "cavalry",
                 "cost": 6,
@@ -140,7 +141,7 @@
             "id": "10205",
             "name": "Bogenschützen von Haus Stark",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 6,
@@ -878,7 +879,7 @@
             "name": "Robb Stark",
             "subname": "König des Nordens",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "cost": 4,
                 "abilities": [
@@ -887,6 +888,13 @@
                         "effect": [
                             "Bestimme nach der Aufstellung 1 befreundete Kampfeinheit zum Ziel. Entferne sie vom Schlachtfeld und platziere sie neben der Spielfläche *(in deiner Reserve)*. Ein Mal pro Partie, sobald Robb die [HORSE]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
                             "*Stelle die Einheit, die durch Robb in deiner Reserve platziert wurde, vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand auf und lege diese Karte bis zum Ende der Partie an sie an. Solange diese Karte an dieser Einheit anliegt, werden Feinde, gegen die diese Einheit einen erfolgreichen Ansturm in die Flanke oder den Rücken durchführt, **Panisch** und **Verwundbar**.*"
+                        ]
+                    },
+					{
+                        "name": "Schnelligkeit des Wolfes",
+                        "effect": [
+                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                            "Solange Robb Einfluss auf eine befreundete Einheit ausübt, erhält sie +1 [MOVEMENT]."
                         ]
                     }
                 ],
@@ -962,12 +970,13 @@
             "id": "20203",
             "name": "Streiter von Haus Umber",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Befehl: Anspornen"
+                    "Befehl: Anspornen",
+					"Wütender Ansturm"
                 ]
             }
         },
@@ -1031,7 +1040,7 @@
             "name": "Bran und Hodor",
             "subname": "Schützling und Beschützer",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -1078,10 +1087,10 @@
             "name": "Brynden Tully",
             "subname": "Unbeugsamer Ritter",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Zugehörigkeit: Haus Tully",
                     "Verwegenheit",
@@ -1165,10 +1174,10 @@
             "name": "Maegen Mormont",
             "subname": "Die Bärin",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Kämpfend untergehen",
                     "Unbeugsam"
@@ -1184,10 +1193,10 @@
             "name": "Brynden Tully",
             "subname": "Invasor der Vorreiter",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "stark",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Befehl: Ziel markieren",
                     "Die Flanke umgehen"
@@ -1249,10 +1258,10 @@
             "name": "Jojen Reet",
             "subname": "Grünseher",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Zugehörigkeit: Pfahlbaumänner",
                     "Jojens Grünsicht"
@@ -1268,13 +1277,13 @@
             "name": "Syrio Forel",
             "subname": "Der erste Krieger von Braavos",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Präzision",
-                    "Agil"
+                    "Wassertanz"
                 ],
                 "character": true,
                 "requirements": [
@@ -1346,13 +1355,22 @@
             "id": "20223",
             "name": "Überlebenskünstler der Pfahlbaumänner",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Trügerische Flucht",
                     "Wegbereiter"
+                ],
+				"requirements": [
+                    {   
+					    "name": "Begrenzt",
+                        "text": "*Deine Armee darf bis zu 2 Überlebenskünstler der Pfahlbaumänner enthalten.*"
+                    },
+                    {
+                        "text": "*Wenn deine Armee Holand Reet, Lord der Pfahlbaumänner enthält, ignoriere die üblichen Verstärkungsbeschränkungen für Überlebenskünstler der Pfahlbaumänner.*"
+                    }
                 ]
             }
         },
@@ -1402,7 +1420,7 @@
             "id": "20226",
             "name": "Hauptmann der Loyalisten",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
@@ -1417,10 +1435,10 @@
             "name": "Rickard Karstark",
             "subname": "Rachsüchtiger Bannerträger",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Befehl: Zorn der Starks",
                     "Unbändige Wut"
@@ -1436,7 +1454,7 @@
             "name": "Rickard Karstark",
             "subname": "Lord von Karholt",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": "H",
@@ -1513,12 +1531,21 @@
             "id": "20230",
             "name": "Champion von Winterfell",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Zorn von Winterfell"
+                ],
+				"requirements": [
+                    {   
+					    "name": "Begrenzt",
+                        "text": "*Deine Armee darf bis zu 2 Champion von Winterfell enthalten.*"
+                    },
+                    {
+                        "text": "*Wenn deine Armee Eddard Stark enthält, ist der ersten Champion von Winterfell kostenlos.*"
+                    }
                 ]
             }
         }
@@ -1633,15 +1660,15 @@
             "id": "40207",
             "name": "Angriffsbefehle",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
                         "effect": [
                             "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch.*",
-                            "*Falls jene zivile Einheit die [SWORDS]-Zone beansprucht hat, darf jene Kampfeinheit stattdessen 1 Ansturmaktion durchführen.*"
+                             "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
+                             "*Falls jene zivile Einheit die [SWORDS]-Zone beansprucht hat, darf jene Kampfeinheit stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"                        
                         ]
                     }
                 ]
@@ -1709,14 +1736,17 @@
             "id": "40211",
             "name": "Berserkertaktik",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind:",
                         "effect": [
-                            "Falls diese Karte eine Haus-Umber-Einheit zum Ziel hat, wird der Verteidiger **Panisch**.",
-                            "Diese Einheit darf bis zu 3 Wunden erleiden. Falls sie mindestens 1 Wunde erlitten hat, fügt dieser Angriff 1 Wunde zu, +1 zusätzliche Wunde für jede erlittene Wunde zu."
+                            "Wähle 1. Diese Einheit erleidet bis zu 3 Wunden, für jede auf diese Weise erleidete Wunden, wähle +1:",
+							"**• Kritische Treffer**",
+							"**• Spaltschlag**",
+							"Dieser Angriff verwendet den höchsten Angriffswürfelwert",
+                            "Dieser Angriff darf beliebig viele Angriffswürfel neu werfen."
                         ]
                     }
                 ],
@@ -2170,14 +2200,14 @@
             "id": "40234",
             "name": "Ausdauernder Angriff",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "stark",
                 "text": [
                     {
                         "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
                         "effect": [
-                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert.",
-                            "Falls diese Karte Maegen Mormonts Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel neu werfen."
+                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
+                            "Falls diese Karte Maegen Mormonts Einheit zum Ziel hat, wird der Verteidiger **Verwundbar**."
                         ]
                     }
                 ],

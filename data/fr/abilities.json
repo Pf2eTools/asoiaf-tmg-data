@@ -170,7 +170,7 @@
     },
     "EMBUSCADE": {
         "effect": [
-            "Les ennemis Chargés avec succès de Flanc ou de Dos par cette unité deviennent **Paniqués** et **Affaiblis**."
+            "Les ennemis Chargés avec succès de Flanc ou de Dos par cette unité deviennent **Paniqués**, **Vulnérables** et **Affaiblis**."
         ],
         "icons": [
             "melee"
@@ -179,7 +179,7 @@
     "VOLÉE DE FLÈCHES": {
         "effect": [
             "• Ignore les unités et les Terrains quand elle détermine sa Ligne de Vue.",
-            "• Si le défenseur obtient un 1 sur l’un de ses dés de Défense, il devient **Affaibli** une fois cette attaque résolue."
+            "• Si le défenseur subit au moins 1 Blessure, il devient **Affaibli**."
         ],
         "icons": [
             "ranged"
@@ -617,10 +617,9 @@
     },
     "SACRIFICES DIVINS": {
         "effect": [
-            "Chaque fois que cette unité attaque, avant de lancer les dés d’Attaque, elle peut subir jusqu'à 2 Blessures. Si elle le fait, pour chaque Blessure subie, le défenseur devient **Paniqué** ou **Vulnérable**."
+            "Chaque fois que cette unité effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, elle peut subir 1 Blessure. Si elle le fait, cette Attaque gagne +1 pour Toucher et le défenseur devient **Paniqué** ou **Vulnérable**."
         ],
         "icons": [
-            "ranged",
             "melee"
         ]
     },
@@ -634,7 +633,7 @@
     },
     "FIERTÉ DOMINATRICE": {
         "effect": [
-            "Tant que cette unité est engagée avec un ennemi qui possède moins de rangs restants, cette unité réussit automatiquement tous ses Tests de Panique."
+            "Tant que cette unité est engagée avec un ennemi qui possède autant ou moins de rangs restants, cette unité réussit automatiquement tous ses Tests de Panique."
         ]
     },
     "CONVICTION DORNIENNE": {
@@ -926,7 +925,9 @@
     },
     "PINCE-SANS-RIRE": {
         "effect": [
-            "Tant que cette unité a perdu au moins 1 rang, elle ne peut jamais être ciblée par des cartes Tactiques et des Ordres ennemis, ou influencée par UNC ennemie. Tant qu’elle possède seulement 1 rang restant, ses Attaques de Mêlée gagnent +1 pour Toucher."
+            "Chaque fois que cette unité perd un rang, placez 1 pion Ordre sur Eddison. Cette unité gagne les effets suivants selon le nombre de pions Ordre :",
+            "**1+** : Cette unité ne peut jamais être ciblée par des Ordres ennemis ou des Cartes Tactique ennemies ni être influencée par des UNC ennemie.",
+            "**2+** : Les Attaques de Mêlée de cette unité gagnent +1 pour Toucher."
         ],
         "icons": [
             "wounds"
@@ -1112,7 +1113,7 @@
     },
     "HODOR !!!": {
         "effect": [
-            "Quand cette unité effectue une action de Repli, après avoir lancé les dés de Distance de Repli, vous pouvez choisir d’obtenir un résultat de 6 sur tous les dés. Si vous le faites, cet Attachement perd toutes ses capacités jusqu’à la fin de la partie."
+            "Quand cette unité effectue une action de Repli, après avoir lancé les dés de Distance de Repli, vous pouvez choisir d’obtenir un résultat de 6 sur tous les dés. Si vous le faites, cet Attachement perd toutes ses capacités jusqu’à la fin de la partie. Les ennemis dont cette unité se désengage ne peuvent pas pivoter."
         ]
     },
     "RUMEURS HORRIBLES": {
@@ -1298,9 +1299,10 @@
     },
     "VERVUE DE JOJEN": {
         "effect": [
-            "Chaque fois que cette unité effectue une action d’Attaque ou de Charge, avant de résoudre celle-ci, elle gagne 1 des options suivantes :",
+            "Jojen commence la partie avec 2 pions Ordre sur sa carte.\n",
+            "Chaque fois que cette unité attaque ou est attaquée, après avoir lancé les dés d'Attaque ou de Défense, vous pouvez retirer 1 pion Ordre de Jojen. Si vous le faites, choisissez 1 option :",
             "• Peut relancer n’importe quels dés d’Attaque.",
-            "• Peut relancer n’importe quels dés de Distance de Charge et ignore les mots-clés Entravant et Difficile ce tour-ci."
+            "• Peut relancer n’importe quels dés de Défense."
         ],
         "icons": [
             "wounds"
@@ -1350,7 +1352,7 @@
     "SERMENT DE CHEVALIER": {
         "effect": [
             "• Après le déploiement, ciblez 1 unité ennemie. Quand elle Charge l'ennemi ciblé, cette unité peut relancer n’importe quels dés de Distance de Charge.",
-            "• Tant que vous contrôlez [SWORDS], les Attaques de Mêlée de cette unité gagnent +1 pour Toucher."
+            "• Tant que votre adversaire ne contrôle pas [SWORDS], les Attaques de Mêlée de cette unité gagnent +1 pour Toucher."
         ],
         "icons": [
             "melee"
@@ -1468,7 +1470,7 @@
     },
     "GUÉRISON DE LA MAEGI": {
         "effect": [
-            "Chaque fois que cette unité est activée, lancez un D3. Sur un résultat de 3, cette unité subit 1 Blessure. Sur un résultat de 1, choisissez 1 option. Sur un résultat de 2, choisissez-en 2 *(le même effet peut être choisi plusieurs fois)* :",
+            "Chaque fois que cette unité est activée, lancez un D3. Sur un résultat de 1, choisissez 1 option. Sur un résultat de 2, choisissez-en 2 *(le même effet peut être choisi plusieurs fois)*. Sur un 3, rien ne se passe.",
             "• Cette unité soigne 1 de ses Blessures.",
             "• Retirez 1 pion État de cette unité."
         ]
@@ -1599,14 +1601,12 @@
             "Tant que cette carte Influence un ennemi, celui-ci subit +1 Blessure lorsqu’il échoue un Test de Panique."
         ]
     },
-    "PUISSANCE DU TRÔNE (CORTNAY PENROSE)": {
+    "PUISSANCE DU TRÔNE": {
         "effect": [
-            "Chaque fois qu’une UNC alliée s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par : *L’unité de Cortnay Penrose effectue une action d’Attaque de Mêlée ou de Charge.*"
-        ]
-    },
-    "PUISSANCE DU TRÔNE (KEVAN LANNISTER)": {
-        "effect": [
-            "Chaque fois qu’une UNC alliée s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par : *L’unité de Kevan Lannister effectue une action d’Attaque de Mêlée ou de Charge.*"
+            "Tant que votre adversaire ne contrôle pas [CROWN], chaque fois que cette unité effectue une Attaque de Mêlée, elle gagne +1 dé d'Attaque et elle compte comme ayant obtenu 6 sur tous ses dés de Distance de Charge lorsqu'elle charge."
+        ],
+        "icons": [
+            "melee"
         ]
     },
     "PRÉSAGES INCOMPRIS": {
@@ -1626,8 +1626,7 @@
     },
     "APPÂT DU GAIN": {
         "effect": [
-            "Chaque fois qu’une UNC alliée s’empare de [MONEY], vous pouvez remplacer l’effet de cette zone par :",
-            "*Une unité alliée avec la Capacité **Appât du Gain** effectue 1 action d’Attaque.*"
+            "Tant que votre adversaire ne contrôle pas [MONEY], quand cette unité effectue une Attaque de Mêlée, elle peut relancer n'importe quels dés d'Attaque et, quand cette unité est Activée, elle peut soigner 1 de ses Blessures."
         ]
     },
     "ARMEMENT DISPARATE": {
@@ -1740,7 +1739,7 @@
     "ORDRE : PARTAGER LE BUTIN": {
         "trigger": "Au début de n’importe quel tour :",
         "effect": [
-            "Ciblez 1 unité Greyjoy alliée à Courte Portée ou moins. \nVous pouvez retirer 1 pion Pillage de cette unité, puis placer 1 pion Pillage sur 1 unité Greyjoy alliée à Courte Portée ou moins d’elle."
+            "Ciblez 1 unité Greyjoy alliée à Longue Portée ou moins. \nVous pouvez retirer 1 pion Pillage de cette unité, puis placer 1 pion Pillage sur 1 unité Greyjoy alliée à Longue Portée ou moins d’elle."
         ],
         "icons": [
             "order"
@@ -1758,7 +1757,7 @@
     "ORDRE : EXEMPLE MACABRE": {
         "trigger": "Au début de n’importe quel tour :",
         "effect": [
-            "Cette unité subit 1 Blessure. Ciblez tous les ennemis situés à Courte Portée ou moins. Ils deviennent **Paniqués**."
+            "Cette unité subit 1 Touche. Ciblez tous les ennemis situés à Courte Portée ou moins. Ils deviennent **Paniqués**."
         ],
         "icons": [
             "order"
@@ -2115,10 +2114,10 @@
             "order"
         ]
     },
-    "ORDRE : COLLECTE DE TROPHÉES": {
-        "trigger": "Après qu’une carte Tactique de Général Clinquefrac a été attachée à une unité alliée :",
+    "ORDRE : CHASSEUR DE TROPHÉES": {
+        "trigger": "Quand une Unité Combattante alliée est Activée :",
         "effect": [
-            "Dans votre paquet ou défausse Tactique, cherchez une carte Tactique de Général Clinquefrac et attachez-la à cette unité. Mélangez votre paquet Tactique."
+            "Cherchez une carte Tactique de Général Clinquefrac dans votre paquet ou défausse Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
         ],
         "icons": [
             "order"
@@ -2208,7 +2207,7 @@
     "CADEAUX EMPOISONNÉS": {
         "effect": [
             "Si cette unité est une unité Greyjoy, elle est déployée avec 2 pions Pillage.",
-            "Quand elle effectue une action, avant de résoudre celle-ci, elle subit 1 Blessure."
+            "Au début du round 3, cette unité devient **Paniquée**, **Vulnérable** et **Affaiblie**."
         ]
     },
     "TRIDENTS EMPOISONNÉS": {
@@ -2249,7 +2248,7 @@
     },
     "PROTECTION DE LA COURONNE": {
         "effect": [
-            "Tant que vous contrôlez [CROWN], chaque fois que cette unité est attaquée, elle peut relancer n’importe quels dés de Défense."
+            "Tant que vous contrôlez [CROWN], chaque fois que cette unité est attaquée, elle peut relancer n’importe quels dés de Défense et les adversaires ne peuvent pas dépenser de pions **Vulnérable** sur cette unité."
         ]
     },
     "ORDRES DE MISSION": {
@@ -2343,7 +2342,8 @@
         "effect": [
             "• **Frappe Critique**",
             "• **Fracasser**",
-            "• Avant de lancer les dés d’Attaque, le défenseur devient **Paniqué**."
+            "• Avant de lancer les dés d’Attaque, le défenseur devient **Paniqué**.",
+            "• Quand cette unité charge, elle peut relancer n'importe quels dés de Distance de Charge."
         ],
         "icons": [
             "melee",
@@ -2781,7 +2781,7 @@
     },
     "SUPÉRIORITÉ NUMÉRIQUE": {
         "effect": [
-            "Cette unité peut relancer ses dés d’Attaque de Mêlée quand elle attaque un ennemi qui possède moins de rangs restants."
+            "Quand elle attaque un ennemi qui possède autant ou moins de rangs restants, cette unité peut relancer ses dés d’Attaque de Mêlée et les adversaires ne peuvent pas dépenser de pions **Affaibli** sur cette unité."
         ],
         "icons": [
             "melee"
@@ -2931,7 +2931,7 @@
     },
     "CONVICTION VÉRITABLE (BARATHEON)": {
         "effect": [
-            "Si cette unité est une unité Baratheon, chaque fois qu’elle attaque un ennemi qui possède plus de rangs restants, elle peut relancer n’importe quels dés d’Attaque."
+            "Si cette unité est une unité Baratheon, chaque fois qu’elle attaque un ennemi qui possède autant ou plus de rangs restants, elle peut relancer n’importe quels dés d’Attaque."
         ],
         "icons": [
             "ranged",
@@ -2940,7 +2940,7 @@
     },
     "CONVICTION VÉRITABLE (MARTELL)": {
         "effect": [
-            "Si cette unité est une unité Martell, chaque fois qu’elle attaque un ennemi qui possède plus de rangs restants, elle peut relancer n’importe quels dés d’Attaque."
+            "Si cette unité est une unité Martell, chaque fois qu’elle attaque un ennemi qui possède autant ou plus de rangs restants, elle peut relancer n’importe quels dés d’Attaque."
         ],
         "icons": [
             "ranged",
@@ -3099,7 +3099,7 @@
     },
     "RÉACTIONS VIOLENTES": {
         "effect": [
-            "Cette unité subit −1 à ses lancers de dés de Défense."
+            "Après avoir résolu une attque, cette unité devient **Vulnérable**."
         ],
         "icons": [
             "wounds"
@@ -3409,5 +3409,52 @@
         "effect": [
             "Tant que vous contrôlez [CROWN], cette unité gagne +1 à ses lancers de dés de Défense."
         ]
-    }          
+    },
+    "DANSE DE L'EAU":{
+        "effect": [
+            "Chaque fois qu'un rang de cette unité est détruit par une Attaque, ciblez l'Attaquant, il devient **Vulnérable**."
+        ]
+    }, 
+    "COLLECTIONNEUR DE TROPHÉES":{
+        "effect": [
+            "Cette unité peut considérer toutes les cartes de Général de Clinquefrac attachées à des unités situées à Courte Portée ou moins comme étant également attachées à cette unité."
+        ],
+        "icons":[
+            "wounds"
+        ]
+    },
+    "HACHE D'ABORDAGE":{
+        "effect": [
+            "• **Fracasser**",
+            "• Si cette unité possède 2 pions Pillage, quand elle effectue une attaque, avant de lancer les dés d'Attaque, le défenseur devient **Paniqué**."
+        ]
+    },
+    "HOMMES DU CAPITAINE":{
+        "effect": [
+            "Si Victarion Greyjoy est attaché à cette unité, elle est déployée avec 1 pion Pillage."
+        ]
+    },
+    "PARTISAN DU COMMANDEMENT":{
+        "effect": [
+            "Cette unité gagne +1 à ses lancers de Tests de Moral tant qu'elle est située à Longue Portée ou moins de l'unité du Général."
+        ]
+    },
+    "COLÈRE DE WINTERFELL":{
+        "effect": [
+            "• **Frappe Critique**",
+            "• Les ennemis Chargés avec Succès par cette unité deviennent **Affaiblis**."
+        ]
+    },
+    "RAVITAILLEMENT DE WINTERFELL":{
+        "effect":[
+            "• **Précision**",
+            "• Tant que vous contrôlez [SWORDS], les Attaques de Mêlée de cette unité lancent leur valeur de dés la plus élevée."
+        ]
+    },
+    
+    "DÉFENSES AMÉLIORÉES (STARK)":{
+        "effect":[
+            "Tant que vous contrôlez [HORSE], cette unité gagne +1 à ses lancers de dés de Défense."
+        ]
+    }
 }

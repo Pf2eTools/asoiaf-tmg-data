@@ -399,7 +399,7 @@
             "id": "10312",
             "name": "Mammouth de Guerre",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "monster",
                 "cost": 6,
@@ -412,7 +412,7 @@
                         "type": "melee",
                         "hit": 4,
                         "dice": [
-                            6
+                            7
                         ]
                     }
                 ],
@@ -457,6 +457,12 @@
                 "abilities": [
                     "Géant",
                     "Fureur du Chef"
+                ],
+                "restrictions":[
+                    {
+                        "name": "Général",
+                        "text": "*Quand vous choisissez Mag le Puissant en tant que Général, remplacez le paquet Tactique du Peuple Libre par celui de Mag.*"
+                    }             
                 ],
                 "commander": true,
                 "wounds": 6,
@@ -1242,11 +1248,12 @@
             "id": "20310",
             "name": "Élu de Styr",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
+                    "Charge Furieuse",
                     "Tomber au Combat"
                 ]
             }
@@ -1296,12 +1303,13 @@
             "name": "Clinquefrac",
             "subname": "Le Seigneur des Os",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "G",
                 "abilities": [
-                    "Ordre : Collecte de Trophées",
+                    "Ordre : Chasseur de Trophées",
+                    "Collectionneur de Trophées",
                     "Présence Intimidante"
                 ],
                 "commander": true,
@@ -1323,12 +1331,12 @@
             "name": "Clinquefrac",
             "subname": "Massacreur Impitoyable",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Ordre : Répandre la Peur",
+                    "Soif de Massacre",
                     "Présence Intimidante"
                 ],
                 "character": true
@@ -1412,7 +1420,7 @@
             "name": "Le Chassieux",
             "subname": "Horrible Boucher",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": "G",
@@ -1428,7 +1436,7 @@
                 "cards": {
                     "40320": "Méthodes cruelles",
                     "40321": "Le prix de l'échec",
-                    "40322": "Exemples sans merci"
+                    "40322": "Décapitations Sanglantes"
                 }
             },
             "fluff": {
@@ -1439,7 +1447,7 @@
             "id": "20321",
             "name": "Le Chassieux Tyran Cruel",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
                 "cost": 1,
@@ -1499,12 +1507,12 @@
             "id": "20324",
             "name": "Chef du Clan du Morse",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "freefolk",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Ordre : Résilience",
+                    "Endurci",
                     "Volonté de Fer"
                 ]
             }
@@ -1895,10 +1903,11 @@
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si elle a détruit un rang ennemi :",
+                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
                         "effect": [
                             "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant. Tous les ennemis avec lesquels elle est engagée deviennent **Paniqués**.",
-                            "Quand un ennemi effectue une action en étant engagé avec cette unité, avant de résoudre celle-ci, cet ennemi devient **Paniqué**."
+                            "Quand un ennemi effectue une action en étant engagé avec cette unité, avant de résoudre celle-ci, cet ennemi devient **Paniqué**.",
+                            "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
                         ]
                     }
                 ],
@@ -1915,10 +1924,11 @@
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si elle a détruit un rang ennemi :",
+                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
                         "effect": [
                             "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant.",
-                            "Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent +1 pour Toucher."
+                            "Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent +1 pour Toucher.",
+                            "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
                         ]
                     }
                 ],
@@ -1935,10 +1945,11 @@
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si elle a détruit un rang ennemi :",
+                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
                         "effect": [
                             "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant.",
-                            "Tant que cette carte est attachée, cette unité gagne +1 à ses lancers de dés de Défense."
+                            "Tant que cette carte est attachée, cette unité gagne +1 à ses lancers de dés de Défense et les adversaires ne peuvent pas dépenser de pions **Vulnérable** sur cette unité.",
+                            "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
                         ]
                     }
                 ],
@@ -2051,18 +2062,16 @@
         },
         {
             "id": "40322",
-            "name": "Exemples sans merci",
+            "name": "Décapitations Sanglantes",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
                         "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
                         "effect": [
-                            "Si cette attaque a détruit un rang ennemi, ciblez 1 autre ennemi situé à Longue Portée ou moins du premier. Cet autre ennemi devient **Paniqué**.",
-                            "Si cette attaque a détruit l’ennemi, placez aussi, entièrement à Courte Portée et sans chevaucher d’autres Terrains, 1 Tas de Cadavres doté des mots-clés suivants :",
-                            "• **Entravant**",
-                            "• **Funeste Rappel :** Tant qu’ils se trouvent à Courte Portée ou moins, les ennemis subissent −1 à leurs Tests de Moral et +1 Blessure quand ils échouent leurs Tests de Panique."
+                            "Si cette attaque a détruit un rang ennemi, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué**. S'ils étaient déjà **Paniqués**, ils subissent 1 Test de Panique.",
+                            "Si cette attaque a détruit l'unité ennemie, à la place, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué** et subit 1 Test de Panique."
                         ]
                     }
                 ],
@@ -2381,14 +2390,15 @@
             "id": "40338",
             "name": "La force du Morse",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "freefolk",
                 "text": [
                     {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                        "trigger": "Au début d'un tour allié :",
                         "effect": [
-                            "Si cette unité est une unité de la Grève Glacée, cette attaque gagne +1 pour Toucher.",
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa plus haute valeur de dés d’Attaque."
+                            "Ciblez 1 unité d'Infanterie ou de Cavalerie alliée. Attachez-lui cette carte jusqu'à la fin de la partie.",
+                            "Tant que cette carte est attachée, quand cette unité est Activée elle soigne 1 de ses Blessures. Si elle est située à Courte Portée ou moins de l'unité du Grand Morse, elle peut également retirer 1 pion État."
+
                         ]
                     }
                 ],
@@ -2485,8 +2495,7 @@
                     "crests": 1,
                     "text": [
                         "**Vous pouvez choisir Mag le Puissant comme Général**",
-                        "Si vous le faites, son coût en points passe à 5 *(au lieu de 9)*.",
-                        "Si Mag le Puissant est votre Général, remplacez le paquet Tactique du Peuple Libre par celui de Mag."
+                        "Si vous le faites, son coût en points passe à 5 *(au lieu de 9)*, et pour chaque point supplémentaire d'attachement non dépensé, réduisez le coût de Mag de 1 point."
                     ]
                 },
                 "back": {
@@ -2498,7 +2507,7 @@
                         "quote": "« Libre à toi d'y faire des génuflexions, si ça te chante, il en aura rien à foutre. »",
                         "type": "monster",
                         "tactics": [
-                            "Remplacez le paquet Tactique du Peuple Libre par celui de Mag"
+                            "*Remplacez le paquet Tactique du Peuple Libre par celui de Mag.*"
                         ]
                     }
                 }

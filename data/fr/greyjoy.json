@@ -37,7 +37,7 @@
             "id": "10802",
             "name": "Archers Fer-nés",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 4,
@@ -180,7 +180,7 @@
             "id": "10806",
             "name": "Élus des Noirmarées",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 6,
@@ -307,6 +307,40 @@
             "fluff": {
                 "lore": "L’apparition du pavillon de la Seiche à l’horizon est généralement synonyme d’ennuis pour les habitants des Roches, en grande partie à cause des Pillards embarqués à bord de ces navires. Ces soudards sont capables de se mouvoir avec rapidité et de s’emparer de tout ce qui passe à leur portée en massacrant ou mettant en déroute quiconque se dresse sur leur chemin. Cet élan meurtrier leur permet de soutenir des combats plus longtemps que la plupart des troupes dotées d’un équipement équivalent, mais à face à un adversaire plus coriace, ils auront besoin de soutien. "
             }
+        },
+        {
+            "id": "10810",
+            "name": "Équipage du Fer Vainqueur",
+            "statistics": {
+                "version": "S06",
+                "faction": "greyjoy",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Boarding Axe",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Hache d'abordage",
+                    "Hommes du Capitaine",
+                    "Fierté Dominatrice"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "La simple apparition du pavillon de la Seiche à l'horizon suffit à remplir d'effroi n'importe quelle communauté, mais aucune vision n'est plus terrible que celle du Fer Vainqueur, le navire de pillage de Victarion Greyjoy lui-même. Les hommes qui composent l'équipage ont été triés sur le volet. Ils sont vicieux par nature, aguerris au combat et d'une loyauté sans faille. Même s'ils sont peu nombreux, ils peuvent constituer le noyau dur de toute force d'assaut. Il est toutefois judicieux de prévoir un soutien adéquat pour couvrir leurs flancs."
+            }
         }
     ],
     "ncus": [
@@ -364,9 +398,9 @@
             "name": "Balon Greyjoy",
             "subname": "Roi du Sel et du Roc",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "greyjoy",
-                "cost": 5,
+                "cost": 6,
                 "abilities": [
                     {
                         "name": "Se Relever, la Lame à la Main",
@@ -677,7 +711,7 @@
             "name": "Theon Greyjoy",
             "subname": "« Prince » de Winterfell",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "G",
@@ -747,7 +781,7 @@
             "name": "Nutt",
             "subname": "Le Barbier",
             "statistics": {
-                "version": "S05",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
@@ -821,7 +855,7 @@
             "name": "Euron Greyjoy",
             "subname": "Œil-de-Choucas",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 1,
@@ -840,7 +874,7 @@
             "name": "Erik Forgefer",
             "subname": "Brise-Enclumes",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": "G",
@@ -867,10 +901,10 @@
             "name": "Asha Greyjoy",
             "subname": "« Lady Greyjoy »",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Ordre : Sentinelle",
                     "Attaque en Bande"
@@ -921,9 +955,9 @@
         {
             "id": "20819",
             "name": "Moqorro",
-            "subname": "Esclave of R'hllor",
+            "subname": "Esclave de R'hllor",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
                 "cost": 2,
@@ -931,7 +965,12 @@
                     "Ordre : Incitation",
                     "Ordre : Assistance"
                 ],
-                "character": true
+                "character": true,
+                "requirements": [
+                    {
+                        "text": "*Si votre armée contient Victarion Greyjoy, Maître du Fer Vainqueur, réduisez le coût de Moqorro, Esclave de R'hllor d'1 point.*"
+                    }
+                ]
             },
             "fluff": {
                 "quote": "« Le Maître de la Lumière m’a montré ta valeur, Lord Capitaine. Chaque nuit dans mes flammes j’entrevois la gloire qui t’attend. »"
@@ -999,13 +1038,18 @@
             "id": "20822",
             "name": "Prophète Noyé",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
-                    "Ordre : Résilience",
-                    "Tomber au Combat"
+                    "Ordre : Résilience"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limité ",
+                        "text": "*Votre armée peut inclure un maximum de 2 Prophètes Noyés.*"
+                    }
                 ]
             }
         },
@@ -1247,8 +1291,8 @@
                         "trigger": "Quand une UNC alliée s’empare d’une zone :",
                         "effect": [
                             "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée.*",
-                            "*Si cette unité est l’unité de Victarion Greyjoy, elle peut effectuer une action de Charge à la place.*"
+                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d'Attaque la plus basse.*",
+                            "*Si cette Unité est l'unité de Victarion, elle peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
                         ]
                     }
                 ],
@@ -1261,14 +1305,14 @@
             "id": "40813",
             "name": "Assaut soutenu",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "greyjoy",
                 "text": [
                     {
                         "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
                         "effect": [
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée.",
-                            "Si cette carte cible l’unité de Victarion Greyjoy, celle-ci peut relancer n’importe quels dés d’Attaque."
+                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée et elle peut relancer n'importe quels dés d'Attaque.",
+                            "Si cette carte cible l’unité de Victarion, le défenseur devient également **Vulnérable**."
                         ]
                     }
                 ],

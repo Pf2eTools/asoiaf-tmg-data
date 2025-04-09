@@ -441,7 +441,7 @@
             "id": "10512",
             "name": "Éclaireurs Patrouilleurs",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "cavalry",
                 "cost": 7,
@@ -737,9 +737,9 @@
             "name": "Yoren",
             "subname": "Corbeau Intinérant",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "nightswatch",
-                "cost": 6,
+                "cost": 5,
                 "abilities": [
                     {
                         "name": "Recrutement",
@@ -1155,7 +1155,7 @@
             "name": "Benjen Stark",
             "subname": "Le Loup sur le Mur",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
@@ -1198,10 +1198,10 @@
             "name": "Samwell Tarly",
             "subname": "L'Égorgeur",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Ordre : Plan de Bataille",
                     "Comptabilité (Samwell Tarly)"
@@ -1354,7 +1354,7 @@
             "name": "Eddison Tallett",
             "subname": "Edd-la-Douleur",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": 1,
@@ -1427,7 +1427,7 @@
             "name": "Ser Denys Mallister",
             "subname": "Commandant de Tour-Ombreuse",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "nightswatch",
                 "type": "infantry",
                 "cost": "G",
@@ -2034,15 +2034,15 @@
             "id": "40529",
             "name": "Ordres d'assaut",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "nightswatch",
                 "text": [
                     {
                         "trigger": "Quand une UNC alliée s’empare d’une zone :",
                         "effect": [
                             "Remplacez les effets de cette zone par :",
-                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée.*",
-                            "*Si cette unité est l’unité de Cotter Pyke, celle-ci peut effectuer 1 action de Charge à la place.*"
+                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
+                            "*Si cette unité est l’unité de Cotter Pyke, celle-ci peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
                         ]
                     }
                 ],
