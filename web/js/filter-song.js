@@ -14,9 +14,14 @@ class PageFilterSong extends PageFilter {
 
 		this._typeFilter = new Filter({
 			header: "Type",
-			items: ["attachments", "units", "ncus", "tactics"],
+			items: ["attachments", "units", "ncus", "tactics", "specials"],
 			itemSortFn: null,
 			displayFn: Parser.renderProp,
+		});
+
+		this._characterFilter = new Filter({
+			header: "Character/Commander",
+			items: ["Is a Character", "Is a Commander"]
 		});
 
 		this._versionFilter = new Filter({
@@ -78,11 +83,6 @@ class PageFilterSong extends PageFilter {
 			filters: [this._attackTypeFilter, this._attackDiceFilter, this._toHitFilter]
 		})
 
-		this._characterFilter = new Filter({
-			header: "Character/Commander",
-			items: ["Is a Character", "Is a Commander"]
-		});
-
 		this._tacticsFilter = new Filter({
 			header: "Card Type",
 			items: ["Basedeck", "Commander Card"]
@@ -109,6 +109,7 @@ class PageFilterSong extends PageFilter {
 		e._fTactics = [];
 		if (e.__prop === "tactics" && e.statistics.commander_id) {
 			e._fCommander = e.statistics.commander_subname ? `${e.statistics.commander_name}, ${e.statistics.commander_subname}` : e.statistics.commander_name;
+			e._fTactics.push("Commander Card");
 		}
 		else if (e.__prop === "tactics") e._fTactics.push("Basedeck");
 	}
@@ -136,6 +137,7 @@ class PageFilterSong extends PageFilter {
 			this._sourceFilter,
 			this._versionFilter,
 			this._typeFilter,
+			this._characterFilter,
 			this._trayFilter,
 			this._factionFilter,
 			this._costFilter,
@@ -144,7 +146,6 @@ class PageFilterSong extends PageFilter {
 			this._moraleFilter,
 			this._attackFilter,
 			this._abilitiesFilter,
-			this._characterFilter,
 			this._tacticsMultiFilter,
 		];
 	}
@@ -155,6 +156,7 @@ class PageFilterSong extends PageFilter {
 			e.source,
 			e.statistics.version,
 			e.__prop,
+			e._fCharacter,
 			e._fTray,
 			e.statistics.faction,
 			e.statistics.cost,
@@ -167,7 +169,6 @@ class PageFilterSong extends PageFilter {
 				e._fToHit,
 			],
 			e._fAbilities,
-			e._fCharacter,
 			[
 				e._fTactics,
 				e._fCommander,

@@ -29,7 +29,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "While simply armored and lightly armed, Bolton Cutthroats enjoy a reputation for brutality and cold efficiency that allows them to strike panic in enemies with far more expensive armaments. Their spiked maces can easily dispatch enemies, but are more effective for the fear their brutality creates. Bolton Cutthroats make sport of downed foes or, worse for the opponent, take them prisoner to suffer a much more agonizing fate."
+                "lore": "Sie sind einfach gerüstet und leicht bewaffnet, doch ihr Ruf als eiskalte und grausame Kämpfer eilt den Halsabschneidern von Haus Bolton voraus und lässt selbst gut ausgerüstete Soldaten vor Angst erstarren. Ihre Stachelkeulen machen kurzen Prozess und versetzen durch ihre enorme Brutalität den Feind in Panik. Die Halsabschneider von Haus Bolton lieben es, am Boden liegende Gegner niederzumetzeln oder gefangen zu nehmen, um sie später noch ausgiebiger foltern zu können."
             }
         },
         {
@@ -73,14 +73,14 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "Trained to corner and bring down even heavy infantry, the Bastard’s Girls are best utilized as flankers or in pursuit of fleeing foes. While they do not possess the armor to counter a determined assault, enemies suffering from their handlers’ wounding arrows make for easy prey. A fat bounty can be expected for handlers bringing down enemy commanders to await Ramsay Bolton’s ‘entertainments’ following battle."
+                "lore": "Die Mädchen des Bastards können selbst schwer gerüstete Fußsoldaten in die Enge treiben und zur Strecke bringen. Ihre wahre Stärke liegt jedoch im Flankieren von Feinden und im Verfolgen von Flüchtenden. Ihr Fell bietet kaum Schutz vor Schwerthieben, dafür stürzen sie sich gerne auf Feinde, in denen bereits die schmerzhaften Pfeilspitzen ihrer Hundeführer stecken. Ein saftiges Kopfgeld wartet auf den Hundeführer, der einen feindlichen Heerführer gefangen nimmt und ihn an Ramsay Bolton zu dessen „Vergnügen“ ausliefert."
             }
         },
         {
             "id": "10403",
             "name": "Gehäutete von Haus Bolton",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 8,
@@ -94,7 +94,7 @@
                         "hit": 3,
                         "dice": [
                             6,
-                            4
+                            5
                         ]
                     }
                 ],
@@ -107,18 +107,18 @@
                 "tray": "cavalry"
             },
             "fluff": {
-                "lore": "The so-called Flayed Men rank among the heaviest cavalry employed by even the largest houses in the War of the Five Kings. With thick steel armor (blackened, of course), heavy shields, and even protective barding for the horses, the Flayed Men are capable of truly devastating charges and can endure in the line for a short time. Their signature war flails render most defenses only marginal at best, but their terriying visage remains their most vital weapon."
+                "lore": "Die sogenannten Gehäuteten gehören zu den mächtigsten Reitern im Krieg der Fünf Könige, selbst unter den Großen Häusern. Mit harten Stahlrüstungen (natürlich geschwärzt), schweren Schilden und Pferdeharnischen können die Gehäuteten nicht nur vernichtende Sturmangriffe vollführen, sondern auch kurzzeitig an der Front ausharren. Ihre unverkennbaren Streitflegel durchdringen fast jede Verteidigung, wenngleich ihre tödlichste Waffe ihr furchterregender Anblick ist."
             }
         },
         {
             "id": "10404",
             "name": "Rohlinge von Haus Bolton",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 6,
-                "speed": 4,
+                "speed": 5,
                 "defense": 3,
                 "morale": 6,
                 "attacks": [
@@ -140,7 +140,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The ruthlessness of House Bolton’s Blackguards is known by every enemy force they face. Their vicious spiked flails render heavy shields only moderately effective. Being the heaviest troops in House Bolton’s arsenal, the Blackguards can be relied upon to take and hold any position on the battlefield."
+                "lore": "Die Rücksichtslosigkeit der Rohlinge von Haus Bolton ist unter ihren Feinden wohlbekannt. Selbst schwere Schilde können kaum Schutz gegen ihre grausamen Morgensterne bieten. Die bestgepanzerte Truppe im Arsenal von Haus Bolton ist dafür bekannt, zuverlässig jedwede Stellung auf dem Schlachtfeld einnehmen und auch halten zu können."
             }
         },
         {
@@ -174,14 +174,14 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "Despite their outrageous appearance, the Bloody Mummers remain a deadly band of mercenaries, noted for their cruelty, itself excessive for even low-brow mercenaries. They’re loyal to coin alone, but meet their price and their ranks will fill whatever role an army requires. The Skirmishers are lightly armed and armored, granting them the mobility needed for rapid flanking, though they should be protected from direct charges."
+                "lore": "Trotz ihrer bunten Erscheinung bleibt der Blutige Mummenschanz eine tödliche Gruppe Söldner, die bekannt für Grausamkeiten sind, zu denen sich sonst nicht einmal niedere Söldner hinreißen lassen. Ihre Loyalität gilt allein der Münze, aber gegen eine anständige Bezahlung werden sie jede gewünschte Position in der Armee zufriedenstellend erfüllen. Die Plänkler sind nur leicht bewaffnet und gerüstet, was ihnen die nötige Mobilität für ein rasches Flankieren verleiht. Trotzdem sollten sie vor direkten Angriffen geschützt werden."
             }
         },
         {
             "id": "10406",
             "name": "Söldner der Sturmkrähen",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 5,
@@ -201,18 +201,18 @@
                     }
                 ],
                 "abilities": [
-                    "Durch Geld motiviert (Stormcrow Mercenaries)"
+                    "Durch Geld motiviert"
                 ],
+                "tray": "infantry",
                 "requirements": [
                     {
-                        "name": "Adaptive",
-                        "text": "*Reduce the cost of 1 Attachment in this unit by 1.*"
+                        "name": "Anpassungsfähig",
+                        "text": "*Senke die Kosten von 1 Verstärkung dieser Einheit um 1.*"
                     }
-                ],
-                "tray": "infantry"
+                ]
             },
             "fluff": {
-                "lore": "While one might question Stormcrow loyalty to their leaders, their employers, and even themselves, one can always count on their absolute devotion to coin. Once properly motivated, Stormcrow Mercenaries are capable medium infantry, adept at holding a flank or performing flanking maneuvers themselves. Their professionalism guarantees a good working relationship with whomever their employer might be, but only as long as the coin lasts."
+                "lore": "Während man die Loyalität der Sturmkrähen ihren Anführern, Arbeitgebern und sogar sich selbst gegenüber in Zweifel ziehen kann, so kann man sichergehen, dass sie dem Geld absolut treu ergeben sind. Wurden die Söldner der Sturmkrähen richtig motiviert, ist diese durchschnittlich gerüstete Infanterieeinheit in der Lage, eine Flanke zu halten oder dem Feind selbst in die Seite zu fallen. Ihre Professionalität garantiert ein gutes Arbeitsverhältnis mit ihrem Arbeitgeber, solange das Geld weiter in ihre Taschen fließt."
             }
         },
         {
@@ -255,7 +255,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "A Stormcrow is a Stormcrow, whether wielding blade, bow, or both. Money remains the prime motivator in the Stormcrow mind, and extra coin can prod added effort from these mercenaries. Stormcrow Archers are adept in long-range combat, with recurved longbows and arrows made for distant flight. They’re not meant for melee, though their shortswords can fend off weakened attackers. Still, a wise commander will keep them far from flankers or cavalry."
+                "lore": "Eine Sturmkrähe bleibt eine Sturmkrähe, egal ob sie mit einer Klinge, einem Bogen oder mit beidem ausgerüstet ist. Geld ist die Hauptmotivation für eine Sturmkrähe. Noch mehr Geld kann diese Söldner zu Höchstleistungen anstacheln. Die Bogenschützen der Sturmkrähen sind mit ihren Reflexbögen und weitreichenden Pfeilen Experten im Fernkampf. Fürs Handgemenge sind sie nicht geeignet, obwohl sie sich schwächerer Gegner mit ihren Kurzschwertern erwehren können. Ein kluger Feldherr wird sie aber so gut wie möglich von Flankeneinheiten und Kavallerie fernhalten wollen."
             }
         },
         {
@@ -289,14 +289,14 @@
                 "tray": "cavalry"
             },
             "fluff": {
-                "lore": "Never lacking for outrageous flair, Bloody Mummer cavalry ride Zorses into battle. These unusual beasts originate from Essos, where striped animals and horses were interbred to create the species. Zorses can survive on little food and water for extended periods, but remain as swift as their western counterparts. Zorse Riders fill a classic light cavalry role in the Mummer ranks, flanking and charging pinned units and exposed archers."
+                "lore": "Die Kavallerie des Blutigen Mummenschanzes legt stets Wert auf außergewöhnliche Auftritte und reitet daher auf Zorses in die Schlacht. Diese außergewöhnlichen Bestien stammen aus Essos, wo gestreifte Tiere mit Pferden gekreuzt wurden. Zorses können für längere Zeit mit wenig Futter und Wasser auskommen, stehen aber in ihrer Flinkheit ihren westlichen Gegenstücken in nichts nach. Die Zorsereiter besetzen in den Reihen des Mummenschanzes die klassische Funktion der Kavallerie: Sie flankieren und greifen bewegungsunfähige Einheiten sowie ungeschützte Bogenschützen an."
             }
         },
         {
             "id": "10409",
             "name": "Derwische der Sturmkrähen",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 7,
@@ -318,12 +318,12 @@
                 "abilities": [
                     "Überfall",
                     "Schneller Hieb",
-                    "Durch Geld motiviert (Stormcrow Dervishes)"
+                    "Durch Geld motiviert"
                 ],
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "A Stormcrow Dervish paid up to the end of the week will buy you a hardened veteran skirmisher, adept at swift movement in medium armor to strike exposed enemy positions—to the end of the week. The infamous Stormcrow loyalty to coin extends even to their best-trained soldiers. Yet employers seeing Dervishes in action rarely have cause to complain as these heavy-hitters shred enemy flanks and fade away safely beyond any possible counterattack."
+                "lore": "Wenn man einen Derwisch der Sturmkrähen bis zum Ende der Woche bezahlt, erkauft man sich einen abgehärteten, erfahrenen Söldner, der in mittelschwerer Rüstung flink und geschickt die äußeren feindlichen Reihen angreift – allerdings nur bis zum Ende der Woche. Die berüchtigte Loyalität der Sturmkrähen gegenüber Münzen gilt auch für ihre besten Soldaten. Trotzdem haben Auftraggeber, die einen Derwisch in Aktion erleben, keinen Grund zur Klage, denn diese Krieger zerfetzen die Flanken des Gegners und ziehen sich zurück, bevor der Feind zum Gegenangriff ausholen kann."
             }
         },
         {
@@ -357,7 +357,7 @@
                 "tray": "cavalry"
             },
             "fluff": {
-                "lore": "So-called Hedge Knights travel the world in search of employment. Owning little but their arms, armor, and their horse, these landless nobles are shunned and disdained—except in times of war. With their blades for hire, and supplying their own equipment, nobles from all sides of the War of Five Kings can find a use for a half dozen or so trained knights on the battlefield. That said, their equipment rarely matches that of true knights."
+                "lore": "Die sogenannten Heckenritter reisen auf der Suche nach Anstellung durch die Welt. Die landlosen Adligen, die bis auf Waffe, Rüstung und Pferd wenig besitzen, werden gemieden und verachtet – außer zu Kriegszeiten. Da man sie anheuern kann und sie ihre eigene Ausrüstung mitbringen, finden Adlige jeder Gesinnung im Krieg der Fünf Könige immer eine Verwendung für ein halbes Dutzend ausgebildeter Heckenritter auf dem Schlachtfeld. Allerdings reicht ihre Ausrüstung selten an die echter Ritter heran."
             }
         },
         {
@@ -390,7 +390,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The Golden Company is well known for their motto, “Our word is good as gold.” When hired on to fight, they make sure to give every penny’s worth on the battlefield. Their Swordsmen have trained relentlessly, letting them find any weak spot in an enemy’s defenses, exploiting it. Meanwhile, they almost never flee the field, even when faced with seemingly insurmountable odds, making them a sound investment for anyone with the coffers to afford them."
+                "lore": "Die Goldene Kompanie ist für ihrMotto „Unser Wort ist so viel wertwie Gold“ bekannt. Wenn sie fürden Kampf angeheuert wird, wirdsie jeder Münze ihrer Entlohnunggerecht. Ihre Schwertkämpfer habenunermüdlich trainiert, um jedenSchwachpunkt in der Verteidigungihrer Feinde ausfindig zu machenund auszunutzen. Unterdessenfliehen sie fast nie vom Schlachtfeld,auch wenn die Schlacht schonverloren scheint. Das macht sie zueiner soliden Investition für alle, diesich die Bezahlung leisten können."
             }
         },
         {
@@ -434,7 +434,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The Golden Company, the Free Cities’ most reliable mercenary group, offers several types of troops for hire. One being their Crossbowmen. These sharp-eyed fighters never waste a shot, resolutely waiting until enemies have closed to within perfect range before unleashing their bolts. These bolts punch through enemy armor with ease, especially at closer ranges. Anyone looking to bolster their forces can get a bargain by hiring them."
+                "lore": "Die Goldene Kompanie, diezuverlässigste Söldnergruppe derFreien Städte, bietet verschiedeneTruppenarten, die angeheuert werdenkönnen. Eine davon sind die Armbrustschützen.Diese scharfsichtigenKämpfer verschwenden nie auch nureinen Schuss. Sie warten entschlossen,bis ihre Feinde in perfekter Reichweitesind, bevor sie ihre Bolzen lösen. DieseBolzen durchdringen jede gegnerischeRüstung mit Leichtigkeit, besondersaus kurzer Entfernung. Jeder, der seineStreitkräfte verstärken möchte, machtmit ihnen ein gutes Geschäft."
             }
         },
         {
@@ -462,16 +462,16 @@
                     "Kriegselefant",
                     "Stampfen"
                 ],
+                "wounds": 8,
+                "tray": "solo",
                 "requirements": [
                     {
-                        "text": "*Your army may only contain 1 War Elephant for each Golden Company Infantry unit.*"
+                        "text": "*Deine Armee darf nur 1 Kriegselefanten pro Infanterie-Einheit der Goldenen Kompanie enthalten.*"
                     }
-                ],
-                "wounds": 8,
-                "tray": "solo"
+                ]
             },
             "fluff": {
-                "lore": "Even the best-trained soldier will likely have no idea what to do when a massive elephant bears down on their battle line. The brutish War Elephants of the Golden Company stomp their way into enemy lines, seemingly impervious to attack, while they use their massive feet and tusks to demolish foes. However, they are simple creatures and without a handler nearby, it’s possible they’ll stop acting entirely, unsure about what action they should be taking."
+                "lore": "Selbst der am besten ausgebildeteSoldat wird wahrscheinlich nichtwissen, was er tun soll, wenn er aufdem Schlachtfeld einem riesigenElefanten gegenübersteht. Diebestialischen Kriegselefanten derGoldenen Kompanie stampfendurch die gegnerischen Reihen,scheinbar immun gegen alle Angriffe,während sie ihre mächtigen Füße undStoßzähne nutzen, um Feinde zu vernichten.Allerdings sind es einfacheWesen, die ohne einen Lenker in denmeisten Fällen stehen bleiben undnicht wissen, was sie tun sollen."
             }
         },
         {
@@ -504,7 +504,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The island fortresses of Lys have high, thick walls and plenty of Sellswords patrolling their coast to make them an unappealing target for attack. However, these Sellswords are just that, offering their services to anyone with coffers deep enough to hire them abroad. Not interested in individual glory, they’re only focused on grabbing plunder and the payment waiting for them when they head back to their home port."
+                "lore": "Die Inselstadt Lys gleicht mitihren hohen, dicken Mauerneiner Festung und beherbergt eineVielzahl an Söldnern, die an derKüste patrouillieren, um Feindeabzuschrecken. Doch Söldner sindund bleiben Söldner: Sie bietenihre Dienste jedem an, der genugGeld hat, um sie anzuheuern.Ruhm und Ehre interessiert sienicht, sondern nur Beute und einegute Bezahlung, die auf sie wartet,wenn sie mit dem Schiff nachHause zurückkehren."
             }
         },
         {
@@ -533,12 +533,12 @@
                 "abilities": [
                     "Befehl: Anspornen",
                     "Chaotisch",
-					"Rekrutierung aus den Hügeln"
+                    "Rekrutierung aus den Hügeln"
                 ],
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "As mountain tribes and raiders go, Tyrion Lannister’s Stone Crows are quite ordinary, save their unexpected loyalty. While pledged more to Tyrion’s coin than his person, they proved true to their word, even when betrayal might have been a more lucrative option. As mercenaries, these troops are worth their coin, if properly employed as scouts and flankers. Their light arms and armor make them unsuited to the front line in  a protracted engagement."
+                "lore": "Als Bergstamm und Plündervolk sind Tyrion Lennisters Felsenkrähen eine eher primitive Truppe, die sich aber durch ihre unerwartet hohe Loyalität auszeichnet. Obwohl sie mehr seinem Geldbeutel als Tyrion persönlich verpflichtet sind, haben sie stets ihr Wort gehalten, selbst wenn Verrat eine lukrativere Option gewesen wäre. Als Söldner sind diese Truppen ihr Geld wert, vor allem wenn sie als Späher oder in der Flanke eingesetzt werden. Aufgrund ihrer leichten Bewaffnung und Panzerung eignen sie sich nicht für den Einsatz an vorderster Front in einem langwierigen Gefecht."
             }
         }
     ],
@@ -567,7 +567,7 @@
                 }
             },
             "fluff": {
-                "quote": "\"In King's Landing, there are two sorts of people. The players and the pieces.\""
+                "quote": "„In Königsmund gibt es nur zwei Arten von Leuten. Die Spieler und die Spielsteine.“"
             }
         },
         {
@@ -598,7 +598,7 @@
                 }
             },
             "fluff": {
-                "quote": "\"Varys has ways of learning things that no man could know.\""
+                "quote": "„Nur besitzt Varys wie kein anderer Möglichkeiten, Dinge in Erfahrung zu bringen.“ – Catelyn Stark"
             }
         },
         {
@@ -619,7 +619,7 @@
                 ]
             },
             "fluff": {
-                "quote": "\"He is the keeper of this world's history.\""
+                "quote": "„Er ist der Hüter der Geheimnisse dieser Welt.“"
             }
         },
         {
@@ -647,7 +647,7 @@
                 ]
             },
             "fluff": {
-                "quote": "\"The Red God has his due, sweet girl, and only death may pay for life.\""
+                "quote": "„Der Rote Gott will seinen Anteil, süßes Mädchen, und nur mit dem Tod kann man für das Leben zahlen.“"
             }
         },
         {
@@ -668,7 +668,7 @@
                 ]
             },
             "fluff": {
-                "quote": "\"We who serve the Iron Bank face death full as often as you who serve the Iron Throne.\""
+                "quote": "„Wir, die wir der Eisernen Bank dienen, sehen dem Tod so oft ins Gesicht wie Ihr, die Ihr dem Eisernen Thron dient.“"
             }
         },
         {
@@ -693,7 +693,7 @@
                 ]
             },
             "fluff": {
-                "quote": "\"He has an old man's caution and a young man's ambition, and has never lacked for cunning.\""
+                "quote": "„Er ist vorsichtig wie ein alter Mann und ehrgeizig wie ein junger, und nie hat es ihm an List gemangelt.“ – Catelyn Stark"
             }
         },
         {
@@ -721,7 +721,7 @@
                 }
             },
             "fluff": {
-                "quote": "\"You had only to look at Bolton to know that he had more cruelty in his pinky toe than all the Freys combined.\""
+                "quote": "Man brauchte Bolton nur anzusehen, um zu wissen, dass in seinem kleinen Zeh mehr Grausamkeit steckte, als in allen Freys zusammen."
             }
         },
         {
@@ -752,7 +752,7 @@
                 }
             },
             "fluff": {
-                "quote": "\"My mother named me Shae.\nMen call me ... often.\""
+                "quote": "„Meine Mutter hat mich Shae genannt. Mann ruft mich … oft.“"
             }
         }
     ],
@@ -778,7 +778,7 @@
                 "version": "2021",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Zugehörigkeit: Haus Bolton",
                     "Schrecklicher Anblick"
@@ -787,14 +787,14 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40408",
-                    "40409",
-                    "40410"
-                ]
+                "cards": {
+                    "40408": "Unsere Klingen sind scharf",
+                    "40409": "Grausame Methoden",
+                    "40410": "Sadistische Spiele"
+                }
             },
             "fluff": {
-                "quote": "\"Snow, my wife called me before she ate her fingers, but I say Bolton.\""
+                "quote": "„Schnee hat mich mein Weib genannt, bevor sie ihre eigenen Finger gefressen hat, aber ich sage Bolton.“"
             }
         },
         {
@@ -814,7 +814,7 @@
                 "character": true
             },
             "fluff": {
-                "quote": "\"A naked man has few secrets, but a flayed man's got none.\""
+                "quote": "„... ein nackter Mann hat wenig Geheimnisse, aber ein gehäuteter Mann hat gar keine mehr.“"
             }
         },
         {
@@ -829,15 +829,15 @@
                 "abilities": [
                     "Befehl: Ein Exempel statuieren"
                 ],
+                "character": true,
                 "requirements": [
                     {
-                        "text": "*May only be fielded in an army that includes Ramsay Snow, and must be attached to his unit, ignoring usual Attachment limits.*"
+                        "text": "*Darf nur in einer Armee aufgestellt werden, die Ramsay Schnee enthält, und muss seine Einheit verstärken. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
                     }
-                ],
-                "character": true
+                ]
             },
             "fluff": {
-                "quote": "\"I'm not him, I'm not the turncloak, he died at Winterfell. My name is Reek!\""
+                "quote": "„Ich bin nicht er, bin nicht der Abtrünnige, er ist in Winterfell gestorben. Mein Name ist Stinker.“"
             }
         },
         {
@@ -845,7 +845,7 @@
             "name": "Brienne",
             "subname": "Jungfrau von Tarth",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
@@ -856,7 +856,7 @@
                 "character": true
             },
             "fluff": {
-                "quote": "\"A true knight is sworn to protect those who are weaker than himself, or die in the attempt.\""
+                "quote": "„Ein wahrer Ritter hat geschworen, die Schwachen zu beschützen oder sein Leben bei dem Versuch zu geben.“"
             }
         },
         {
@@ -864,18 +864,18 @@
             "name": "Bronn",
             "subname": "Der Söldner",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
                     "Erkaufte Loyalität",
-                    "Durch Geld motiviert (Bronn)"
+                    "Durch Geld motiviert"
                 ],
                 "character": true
             },
             "fluff": {
-                "quote": "\"I sell my sword, I don’t give it away.\""
+                "quote": "„Ich verkaufe mein Schwert, ich verschenke es nicht.“"
             }
         },
         {
@@ -899,7 +899,7 @@
                 "version": "2021-S03",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Befehl: Bedrohen",
                     "Zugehörigkeit: Blutiger Mummenschanz",
@@ -909,14 +909,14 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40414",
-                    "40415",
-                    "40416"
-                ]
+                "cards": {
+                    "40414": "Die Ruchlosigkeit des Krüppelmachers",
+                    "40415": "Leichtsinniger Angriff",
+                    "40416": "Schwäche ausnutzen"
+                }
             },
             "fluff": {
-                "quote": "\"The goat is Lord of Harrenhal, and the Lord of Harrenhal does not haggle.\""
+                "quote": "„Die Ziege ist der Lord von Harrenhal, und der Lord von Harrenhal feilscht nicht.“ – Qyburn"
             }
         },
         {
@@ -936,7 +936,7 @@
                 "character": true
             },
             "fluff": {
-                "quote": "\"How many monsters does Lord Tywin have?\""
+                "quote": "„Wie viele Ungeheuer hat Lord Tywin denn noch?“ – Arya Stark"
             }
         },
         {
@@ -944,27 +944,27 @@
             "name": "Daario Naharis",
             "subname": "Hauptmann der Sturmkrähen",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Zugehörigkeit: Sturmkrähen",
                     "Verbesserte Bewaffnung",
-                    "Durch Geld motiviert (Daario Naharis)"
+                    "Durch Geld motiviert"
                 ],
                 "commander": true,
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40417",
-                    "40418",
-                    "40419"
-                ]
+                "cards": {
+                    "40417": "Verhandlungen des Söldners",
+                    "40418": "Wagemut des Söldners",
+                    "40419": "Rücksichtslose Schläge"
+                }
             },
             "fluff": {
-                "quote": "\"He has a sellsword's conscience, That is to say, none at all.\""
+                "quote": "„Er hat das Gewissen eines Söldners, also gar keins.“ – Daenerys Targaryen"
             }
         },
         {
@@ -972,17 +972,18 @@
             "name": "Daario Naharis",
             "subname": "Rücksichtsloser Söldner",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Rücksichtslose Schläge"
+                    "Rücksichtslose Schläge",
+					"Verwegenheit"
                 ],
                 "character": true
             },
             "fluff": {
-                "quote": "\"I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal.\""
+                "quote": "„Für mich gilt ein Tag nicht als richtig gelebt, wenn ich nicht eine Frau geliebt, einen Feind getötet und ein gutes Mahl genossen habe.“"
             }
         },
         {
@@ -1000,7 +1001,7 @@
                 "character": true
             },
             "fluff": {
-                "quote": "\"Valar Morghulis.\""
+                "quote": "„Valar Morghulis.“"
             }
         },
         {
@@ -1021,40 +1022,40 @@
             "name": "Roose Bolton",
             "subname": "Lord Egel",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
                     "Befehl: Angst verbreiten",
                     "Zugehörigkeit: Haus Bolton",
-                    "Bedrohliche Erscheinung"
+                    "Angst Ausnutzen"
                 ],
                 "commander": true,
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40411",
-                    "40412",
-                    "40413"
-                ]
+                "cards": {
+                    "40411": "Ein gehäuteter Mann hat keine Geheimnisse",
+                    "40412": "Furcht hält einen Mann am Leben",
+                    "40413": "Geflüsterte Drohungen"
+                }
             },
             "fluff": {
-                "quote": "\"Fear is what keeps a man alive in this world of treachery and deceit.\""
+                "quote": "„Furcht ist es, was einen Mann in dieser Welt des Verrats und des Betrugs am Leben erhält.“"
             }
         },
         {
             "id": "20416",
             "name": "Glückssucher",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "cavalry",
                 "cost": 1,
                 "abilities": [
                     "Verwegenheit",
-                    "Durch Geld motiviert (Fortune Seeker)"
+                    "Durch Geld motiviert"
                 ]
             }
         },
@@ -1076,14 +1077,13 @@
             "id": "20418",
             "name": "Offizier der Goldenen Kompanie",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Zugehörigkeit: Goldene Kompanie",
-                    "Wilde Ausstrahlung",
-                    "Verwegenheit"
+                    "Wilde Ausstrahlung"
                 ]
             }
         },
@@ -1091,7 +1091,7 @@
             "id": "20419",
             "name": "Lysenischer Bootsmann",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 1,
@@ -1113,15 +1113,15 @@
                 "abilities": [
                     "Namen auf der Liste"
                 ],
+                "character": true,
                 "requirements": [
                     {
-                        "text": "*May only be fielded in an army containing Sandor Clegane, Fugitive Bodyguard*"
+                        "text": "*Darf nur in einer Armee aufgestellt\nwerden, die Sandor Clegane, Leibwächter auf der Flucht, enthält.*"
                     }
-                ],
-                "character": true
+                ]
             },
             "fluff": {
-                "quote": "\"And that night, there was one less name to hate.\""
+                "quote": "Und an diesem Abend gab es einen\nNamen weniger zu hassen."
             }
         },
         {
@@ -1139,7 +1139,7 @@
                 "character": true
             },
             "fluff": {
-                "quote": "\"When a dog goes bad, the fault lies with his master\" -Kevan Lannister"
+                "quote": "„Wenn ein Hund bösartig wird, liegt die Schuld bei seinem Herrn.“ – Ser Kevan Lennister"
             }
         },
         {
@@ -1158,7 +1158,7 @@
                 "character": true
             },
             "fluff": {
-                "quote": "\"You want a nose like mine?  Fight me, and you'll get one.\""
+                "quote": "„Willst du eine Nase wie meine?\nWehr dich, und du bekommst eine!“"
             }
         },
         {
@@ -1166,22 +1166,22 @@
             "name": "Beisser",
             "subname": "Rorges irrer Hund",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": 1,
+                "cost": 0,
                 "abilities": [
                     "Zusammenrotten"
                 ],
+                "character": true,
                 "requirements": [
                     {
-                        "text": "*May only be fielded in an army containing Rorge.*"
+                        "text": "*Darf nur in einer Armee aufgestellt\nwerden, die Rorge enthält.*"
                     }
-                ],
-                "character": true
+                ]
             },
             "fluff": {
-                "quote": "\"His tongue had been cut and  he does not speak, except to hiss.\""
+                "quote": "„Beißer kann nicht sprechen, und Beißer kann nicht schreiben, doch seine Zähne sind sehr scharf.“ – Jaqen H’ghar"
             }
         },
         {
@@ -1189,25 +1189,25 @@
             "name": "Jokin",
             "subname": "Hauptmann der Sturmkrähen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
-                "cost": "C",
+                "cost": "H",
                 "abilities": [
-                    "Befehl: Überwachen"
+                    "Hohe Präzision"
                 ],
                 "commander": true,
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40420",
-                    "40421",
-                    "40422"
-                ]
+                "cards": {
+                    "40420": "Waffenbrüder",
+                    "40421": "Umgehungstaktik",
+                    "40422": "Zäher Söldner"
+                }
             },
             "fluff": {
-                "quote": "\"The Stormcrows do not stand alone.\" \n-Prendahl"
+                "quote": "„Die Sturmkrähen stehen nicht allein da.“ – Prendahl"
             }
         },
         {
@@ -1224,15 +1224,15 @@
                     "Befehl: Linie halten!",
                     "Spaltschlag"
                 ],
+                "character": true,
                 "requirements": [
                     {
-                        "text": "*May only be fielded in an army containing Jokin, Stormcrow Captain.*"
+                        "text": "*Darf nur in einer Armee aufgestellt werden, die Jokin, Hauptmann der Sturmkrähen, enthält.*"
                     }
-                ],
-                "character": true
+                ]
             },
             "fluff": {
-                "quote": "\"Stormcrows do not stand at all.\"\n-Daenerys Targaryen"
+                "quote": "„Sturmkrähen stehen überhaupt\nnicht.“ – Daenerys Targaryen"
             }
         },
         {
@@ -1240,18 +1240,17 @@
             "name": "Jokin",
             "subname": "Kommandant der Bogenschützen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "type": "infantry",
                 "cost": 2,
                 "abilities": [
-                    "Beschützer des Witwers",
                     "Hohe Präzision"
                 ],
                 "character": true
             },
             "fluff": {
-                "quote": "\"Five hundred sellswords of uncertain loyalty.\" \n-Jorah Mormont"
+                "quote": "„Fünfhundert Söldner, auf deren Treue man sich nicht verlassen kann.“ – Jorah Mormont"
             }
         },
         {
@@ -1267,15 +1266,15 @@
                     "Jokins Beschützer",
                     "Spaltschlag"
                 ],
+                "character": true,
                 "requirements": [
                     {
-                        "text": "*May only be fielded in an army containing Jokin, Archer Captain.*"
+                        "text": "*Darf nur in einer Armee aufgestellt werden, die Jokin, Kommandant der Bogenschützen, enthält.*"
                     }
-                ],
-                "character": true
+                ]
             },
             "fluff": {
-                "quote": "\"I trust all my men. Just as far as I can spit.\" \n-Daario Naharis"
+                "quote": "„Ich vertraue allen meinen Männern. Genau so weit, wie ich spucken kann.“ – Daario Naharis"
             }
         }
     ],
@@ -1461,7 +1460,7 @@
             "id": "40410",
             "name": "Sadistische Spiele",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "neutral",
                 "text": [
                     {
@@ -1469,7 +1468,7 @@
                         "effect": [
                             "Dein Gegner wählt 1 der folgenden Effekte *(du bestimmst die Ziele erst, nachdem er den Effekt gewählt hat)*:",
                             "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Panisch**.",
-                            "• Bestimme 1 Feind, der im Nahkampf ist, zum Ziel. Er erleidet 2 Treffer, +1 Treffer für jede verbleibende Schlachtreihe in allen Haus-Bolton-Einheiten, mit denen er im Nahkampf ist."
+                            "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Geschwächt**."
                         ]
                     }
                 ],
@@ -1501,13 +1500,14 @@
             "id": "40412",
             "name": "Furcht hält einen Mann am Leben",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "neutral",
                 "text": [
                     {
                         "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
                         "effect": [
-                            "Bestimme eine beliebige Anzahl befreundeter Haus- Bolton-Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten."
+                            "Bestimme eine beliebige Anzahl befreundeter Haus- Bolton-Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten.",
+                            "Wenn jener Feind sich in Kurzer Reichweite zu Roose Bolton's Einheit befindet, heile +1 Wunde."
                         ]
                     }
                 ],
@@ -1705,7 +1705,7 @@
                 "commander_id": "20424",
                 "commander_name": "Jokin",
                 "commander_subname": "Hauptmann der Sturmkrähen"
-          }
+            }
         }
     ]
 }

@@ -56,7 +56,7 @@ def parse_tactics_text(text_trigger_effect):
             out["trigger"] = single_split[0].strip("*")
             out["effect"] = single_split[1:]
         else:
-            raise Exception("Problem?")
+            raise Exception(f"Unmatched trigger/effect?: {text_trigger_effect}")
     else:
         if single_split[0].endswith("**"):
             out["trigger"] = single_split[0].strip("*")
@@ -90,7 +90,7 @@ def parse_tactics():
                 "text": [parse_tactics_text(p) for p in card_data.get("Text").replace("./", ". /").split(" /")],
             },
         }
-        if card_data.get("Remove") != "":
+        if card_data.get("Remove") != "" and "\n" not in card_data.get("Remove"):
             parsed["statistics"]["remove"] = card_data.get("Remove")
         if card_data.get("Unit") != "":
             parsed["statistics"]["commander_id"] = card_data.get("Unit")
@@ -198,7 +198,7 @@ def parse_abilities():
 def parse_commander(parsed, tactics):
     parsed["statistics"]["commander"] = True
     cards = [c for c in tactics["en"].values() if c["statistics"].get("commander_id") == parsed.get("id")]
-    parsed["tactics"] = {"cards": [c["id"] for c in cards]}
+    parsed["tactics"] = {"cards": {c["id"]: c["name"] for c in cards}}
     if len(cards) == 10:
         parsed["tactics"]["remove"] = ["ALL"]
     elif len(cards) > 3:
@@ -210,8 +210,7 @@ def parse_commander(parsed, tactics):
             parsed["tactics"]["remove"].append(match.group(1))
 
 
-def get_parsed_requirements(card_data):
-    requirement_raw = card_data.get("Requirement Text")
+def get_parsed_requirements(requirement_raw):
     out = []
     for req in requirement_raw.split(" /"):
         req = req.strip()
@@ -316,7 +315,7 @@ def parse_units(tactics, parsed_abilities):
                 "abilities": get_ability_names(re.split(r"\s/|/\s", card_data.get("Abilities"))),
             },
             "fluff": {
-                "lore": card_data.get("Lore")
+                "lore": card_data.get("Lore").replace("\n", " ")
             },
         }
         if len(name_parts) == 2:
@@ -329,7 +328,10 @@ def parse_units(tactics, parsed_abilities):
         if card_data.get("Attack 2") != "":
             parsed["statistics"]["attacks"].append(parse_attack(card_data.get("Attack 2"), card_data.get("10"), card_data.get("11")))
         if card_data.get("Requirement Text"):
-            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
+            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data.get("Requirement Text"))
+
+        if card_data.get("Quote"):
+            parsed["fluff"]["quote"] = card_data.get("Quote").replace("\n", " ")
 
         abilities = [parsed_abilities["en"].get(name.upper(), {}) for name in parsed.get("statistics").get("abilities")]
         effects = [" ".join(ability.get("effect", "")).replace("\n", " ").replace("*", "") for ability in abilities]
@@ -389,6 +391,14 @@ def parse_units(tactics, parsed_abilities):
                     parsing["statistics"]["abilities"].append(ability)
                 else:
                     parsing["statistics"]["abilities"].append(translated.get("Translated Name"))
+            if card_data.get("Requirement Text"):
+                parsing["statistics"]["requirements"] = get_parsed_requirements(card_data.get("Requirement Text"))
+
+            if card_data.get("Lore"):
+                parsing["fluff"]["lore"] = card_data.get("Lore").replace("\n", " ")
+            if card_data.get("Quote"):
+                parsing["fluff"]["quote"] = card_data.get("Quote").replace("\n", " ")
+
             parsed_cards[lang][id] = parsing
 
     return parsed_cards
@@ -414,7 +424,7 @@ def parse_ncus(tactics):
                 "abilities": [],
             },
             "fluff": {
-                "quote": card_data.get("Quote")
+                "quote": card_data.get("Quote").replace("\n", " ")
             },
         }
         if len(name_parts) > 1:
@@ -424,7 +434,7 @@ def parse_ncus(tactics):
         if "C" in card_data.get("Cost"):
             parse_commander(parsed, tactics)
         if card_data.get("Requirement Text"):
-            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
+            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data.get("Requirement Text"))
         ability_names = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Names"))]
         ability_text = [n.strip() for n in re.split(r"\s/|/\s", card_data.get("Descriptions"))]
         for name, text in zip(ability_names, ability_text):
@@ -462,6 +472,12 @@ def parse_ncus(tactics):
                     continue
                 ability["name"] = translated["Translated Name"].strip()
                 ability["effect"] = [x.strip() for x in translated["Translated Description"].split("\n")]
+
+            if card_data.get("Requirement Text"):
+                parsing["statistics"]["requirements"] = get_parsed_requirements(card_data.get("Requirement Text"))
+
+            if card_data.get("Quote"):
+                parsing["fluff"]["quote"] = card_data.get("Quote").replace("\n", " ")
             parsed_cards[lang][id] = parsing
 
     return parsed_cards
@@ -501,11 +517,11 @@ def parse_attachments(tactics, parsed_abilities):
         if is_commander:
             parse_commander(parsed, tactics)
         if card_data.get("Requirement Text"):
-            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data)
+            parsed["statistics"]["requirements"] = get_parsed_requirements(card_data.get("Requirement Text"))
         if card_data.get("Character"):
             parsed["statistics"]["character"] = True
         if card_data.get("Quote"):
-            parsed["fluff"] = {"quote": card_data.get("Quote")}
+            parsed["fluff"] = {"quote": card_data.get("Quote").replace("\n", " ")}
 
         abilities = [parsed_abilities["en"].get(name.upper(), {}) for name in parsed.get("statistics").get("abilities")]
         effects = [" ".join(ability.get("effect", "")).replace("\n", " ").replace("*", "") for ability in abilities]
@@ -540,6 +556,12 @@ def parse_attachments(tactics, parsed_abilities):
                     parsing["statistics"]["abilities"].append(ability)
                 else:
                     parsing["statistics"]["abilities"].append(get_translated_name(ability, translated.get("Translated Name")))
+
+            if card_data.get("Requirement Text"):
+                parsing["statistics"]["requirements"] = get_parsed_requirements(card_data.get("Requirement Text"))
+
+            if card_data.get("Quote"):
+                parsing["fluff"]["quote"] = card_data.get("Quote").replace("\n", " ")
             parsed_cards[lang][id] = parsing
 
     return parsed_cards
@@ -557,6 +579,10 @@ def dump(data, path):
         as_string = as_string.replace("[LONG RANGE]", "[LONGRANGE]")
         as_string = as_string.replace("Tarley", "Tarly")
         as_string = as_string.replace("TARLEY", "TARLY")
+        as_string = as_string.replace("<i>", "*")
+        as_string = as_string.replace("</i>", "*")
+        as_string = as_string.replace("<b>", "**")
+        as_string = as_string.replace("</b>", "**")
         f.write(as_string.encode("utf-8"))
 
 
@@ -593,14 +619,20 @@ def main():
             pass
             # raise Exception("")
         else:
-            dump(ab, f"{DATA_PATH}/{lang}/abilities.json")
+            pass
+            # dump(ab, f"{DATA_PATH}/{lang}/abilities.json")
+
+        base_path = f"{DATA_PATH}/{lang}"
+        path_abilities = f"{base_path}/abilities.json"
+        with open(path_abilities, "r", encoding="utf-8") as f:
+            old_ab_data = json.load(f)
+        ability_data = old_ab_data
 
         for faction in FACTIONS:
-            base_path = f"{DATA_PATH}/{lang}"
             Path(base_path).mkdir(parents=True, exist_ok=True)
             path_data = f"{base_path}/{faction}.json"
             with open(path_data, "r", encoding="utf-8") as f:
-                data = json.load(f)
+                old_data = json.load(f)
 
             units = [u for u in parsed_units.get(lang, {}).values() if normalize(u["statistics"]["faction"]) == faction]
             ncus = [n for n in parsed_ncus.get(lang, {}).values() if normalize(n["statistics"]["faction"]) == faction]
@@ -608,7 +640,7 @@ def main():
             tactics = [t for t in parsed_tactics.get(lang, {}).values() if normalize(t["statistics"]["faction"]) == faction]
 
             def add_old_keys(obj, data_key):
-                old = next((item for item in data.get(data_key, []) if item["id"] == obj["id"]), None)
+                old = next((item for item in old_data.get(data_key, []) if item["id"] == obj["id"]), None)
                 if old is None:
                     return obj
                 for k, v in old.items():
@@ -618,8 +650,14 @@ def main():
                 return obj
 
             def add_new_if_not_exists(obj, data_key):
-                old = next((item for item in data.get(data_key, []) if item["id"] == obj["id"]), None)
+                old = next((item for item in old_data.get(data_key, []) if item["id"] == obj["id"]), None)
                 if old is None:
+                    return obj
+                if obj.get("statistics").get("version") == MODE_VERSION == MODE:
+                    for k, v in old.items():
+                        if obj.get(k) is not None:
+                            continue
+                        obj[k] = v
                     return obj
                 for key in ["statistics", "fluff"]:
                     if old.get(key) is None and obj.get(key):
@@ -636,13 +674,21 @@ def main():
                     "attachments": [add_old_keys(a, "attachments") for a in attachments],
                     "tactics": [add_old_keys(t, "tactics") for t in tactics],
                 }
-            elif MODE == MODE_NEW:
+            elif MODE == MODE_NEW or MODE == MODE_VERSION:
+                # retired
+                all_units = units + [old for old in old_data["units"] if next((u for u in units if u["id"] == old["id"]), None) is None]
+                all_ncus = ncus + [old for old in old_data["ncus"] if next((n for n in ncus if n["id"] == old["id"]), None) is None]
+                all_attachments = attachments + [old for old in old_data["attachments"] if next((a for a in attachments if a["id"] == old["id"]), None) is None]
+                all_tactics = tactics + [old for old in old_data["tactics"] if next((t for t in tactics if t["id"] == old["id"]), None) is None]
                 data = {
-                    "units": [add_new_if_not_exists(u, "units") for u in units],
-                    "ncus": [add_new_if_not_exists(n, "ncus") for n in ncus],
-                    "attachments": [add_new_if_not_exists(a, "attachments") for a in attachments],
-                    "tactics": [add_new_if_not_exists(t, "tactics") for t in tactics],
+                    "units": [add_new_if_not_exists(u, "units") for u in all_units],
+                    "ncus": [add_new_if_not_exists(n, "ncus") for n in all_ncus],
+                    "attachments": [add_new_if_not_exists(a, "attachments") for a in all_attachments],
+                    "tactics": [add_new_if_not_exists(t, "tactics") for t in all_tactics],
                 }
+                for key, ability in ab.items():
+                    # if ability_data.get(key) is None:
+                    ability_data[key] = ability
             else:
                 data = {
                     "units": [add_old_keys({"id": u["id"]}, "units") for u in units],
@@ -658,19 +704,23 @@ def main():
                     data["units"] = [add_old_keys(a, "attachments") for a in attachments]
                 elif MODE == "tactics":
                     data["units"] = [add_old_keys(t, "tactics") for t in tactics]
+            if old_data.get("specials"):
+                data["specials"] = old_data.get("specials")
             dump(data, path_data)
+        dump(ability_data, path_abilities)
 
 
 # Just write everything from csv
 MODE_REWRITE = "rewrite"
 # Add keys that are new
 MODE_NEW = "new"
+MODE_VERSION = "S06"
 
-MODE = MODE_NEW
+MODE = MODE_VERSION
 
 LANGUAGES = [
     "en",
-    "fr",
+    # "fr",
     # "de"
 ]
 

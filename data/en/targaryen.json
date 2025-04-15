@@ -32,22 +32,6 @@
             },
             "fluff": {
                 "lore": "While it would be easy to categorize the Dothraki as a mindless horde of screaming barbarians, their method of attack looks precisely as such to the untrained eye. A Dothraki khalasar can have many thousand horsemen, even the least of which has spent more of his life in the saddle than otherwise. Although lightly armored, Dothraki horsemanship is honed to such a degree that it’s difficult to land a blade on them, even when engaged in close melee."
-            },
-            "portrait": {
-                "x": 536,
-                "y": 181,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 361,
-                "y": 6,
-                "a": 347
-            },
-            "standee": {
-                "x": 171,
-                "y": 21,
-                "w": 539,
-                "h": 769
             }
         },
         {
@@ -90,22 +74,6 @@
             },
             "fluff": {
                 "lore": "As scouts, the Dothraki Outriders have few equals on their home terrain, but once battle is engaged, the true threat emerges: ranged combat power delivered from horseback. While typical archers plague any foot-bound force, the ability to strike from a distance, then whisk away on horseback gives the Dothraki a powerful capability that can only be countered by swift cavalry or archers. That said, Outriders should take care to remain mobile."
-            },
-            "portrait": {
-                "x": 343,
-                "y": 243,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 168,
-                "y": 68,
-                "a": 347
-            },
-            "standee": {
-                "x": 138,
-                "y": 5,
-                "w": 574,
-                "h": 818
             }
         },
         {
@@ -149,22 +117,6 @@
             },
             "fluff": {
                 "lore": "Superior Dothraki horsemanship finds its pinnacle in the Dothraki Veterans. Adept with both blade and bow, Veterans soften up their chosen prey with deadly arrows before a brutal charge, slashing left and right with their razor-sharp arakhs. As adept as Dothraki horsemanship can be, the Veterans take this skill to unimaginable heights, with man and mount moving in perfect precision even in the midst of the fiercest melee."
-            },
-            "portrait": {
-                "x": 415,
-                "y": 225,
-                "r": 223
-            },
-            "portrait_square": {
-                "x": 169,
-                "y": 34,
-                "a": 504
-            },
-            "standee": {
-                "x": 189,
-                "y": 13,
-                "w": 539,
-                "h": 769
             }
         },
         {
@@ -172,7 +124,7 @@
             "name": "Jorah Mormont",
             "subname": "The Wandering Knight",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": 4,
@@ -191,36 +143,21 @@
                 ],
                 "abilities": [
                     "Order: Scout Openings",
-                    "Solo Rider"
+                    "Westerosi Rider"
                 ],
                 "wounds": 3,
                 "tray": "solo"
             },
             "fluff": {
-                "lore": "Whatever one thinks of Ser Jorah Mormont’s personal dealings and checkered past, his skill-at-arms earned him respect among the Dothraki, no simple feat. As a veteran of multiple wars and later a sellsword, his expert eye can pick out vulnerabilities in the enemy ranks for nearby troops to exploit. Ser Jorah prefers to remain mounted in combat, and his horsemanship exceeds many of his Western counterparts."
-            },
-            "portrait": {
-                "x": 359,
-                "y": 174,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 184,
-                "y": 4,
-                "a": 347
-            },
-            "standee": {
-                "x": 199,
-                "y": 29,
-                "w": 539,
-                "h": 769
+                "lore": "Whatever one thinks of Ser Jorah Mormont’s personal dealings and checkered past, his skill-at-arms earned him respect among the Dothraki, no simple feat. As a veteran of multiple wars and later a sellsword, his expert eye can pick out vulnerabilities in the enemy ranks for nearby troops to exploit. Ser Jorah prefers to remain mounted in combat, and his horsemanship exceeds many of his Western counterparts.",
+                "quote": "“There are ghosts everywhere. We carry them with us wherever we go.”"
             }
         },
         {
             "id": "10705",
             "name": "Unsullied Swordmasters",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -240,35 +177,20 @@
                     }
                 ],
                 "abilities": [
-                    "Unsullied Prowess"
+                    "Unsullied Prowess",
+                    "Combat Mastery: Resolve"
                 ],
                 "tray": "infantry"
             },
             "fluff": {
                 "lore": "Only one in three prospects for the famed Unsullied survive the brutal training process. These fearsome eunuch legions are renowned for their individual skill and unshakable discipline. While individually not quite a physical match for western soldiers, the Unsullied feel no pain and are adept at striking foes where least expected. Underestimating the Unsullied for their slight stature and strange ways is a quick route to the grave."
-            },
-            "portrait": {
-                "x": 490,
-                "y": 167,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 315,
-                "y": 4,
-                "a": 347
-            },
-            "standee": {
-                "x": 196,
-                "y": 16,
-                "w": 539,
-                "h": 769
             }
         },
         {
             "id": "10706",
             "name": "Unsullied Pikemen",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -289,28 +211,13 @@
                 ],
                 "abilities": [
                     "Order: Set For Charge",
-                    "Order: Shield Wall"
+                    "Order: Shield Wall",
+                    "Combat Mastery: Defense"
                 ],
                 "tray": "infantry"
             },
             "fluff": {
                 "lore": "Although considered to be in light armor by western standards, Unsullied Pikemen fight in lockstep formations according to doctrines laid down by the Old Empire of Ghis. An Unsullied phalanx with shields locked is nigh unbreakable to cavalry charge, and even more nimble foot troops would have a difficult time getting past the wall of spears. While taking this unit by surprise is difficult, a commander should beware their becoming encircled."
-            },
-            "portrait": {
-                "x": 395,
-                "y": 218,
-                "r": 211
-            },
-            "portrait_square": {
-                "x": 147,
-                "y": 10,
-                "a": 421
-            },
-            "standee": {
-                "x": 124,
-                "y": 15,
-                "w": 539,
-                "h": 769
             }
         },
         {
@@ -336,8 +243,7 @@
                 ],
                 "abilities": [
                     "Juvenile Dragon",
-                    "Black Fire",
-                    "Cost Reduced by 1 once: 'Daenerys Targaryen, The Unburnt'"
+                    "Black Fire"
                 ],
                 "requirements": [
                     {
@@ -346,26 +252,11 @@
                     }
                 ],
                 "wounds": 8,
-                "tray": "solo"
+                "tray": "solo",
+                "character": true
             },
             "fluff": {
                 "lore": "Drogon is named for Daenerys Targaryen’s deceased husband Khal Drogo. His scales are solid black, with blood red horns and crest. His eyes are described as ‘smoldering red pits’. While nowhere near fully grown, Drogon’s current size (and especially his temperament) makes him one of the deadliest creatures in the world. With unparalleled movement capabilities and breathing fire, Drogon can be anywhere on the field and kill anything he wishes."
-            },
-            "portrait": {
-                "x": 546,
-                "y": 138,
-                "r": 108
-            },
-            "portrait_square": {
-                "x": 437,
-                "y": 29,
-                "a": 215
-            },
-            "standee": {
-                "x": 245,
-                "y": 35,
-                "w": 454,
-                "h": 646
             }
         },
         {
@@ -391,8 +282,7 @@
                 ],
                 "abilities": [
                     "Juvenile Dragon",
-                    "Golden Fire",
-                    "Cost Reduced by 1 once: 'Daenerys Targaryen, The Unburnt'"
+                    "Golden Fire"
                 ],
                 "requirements": [
                     {
@@ -401,26 +291,11 @@
                     }
                 ],
                 "wounds": 8,
-                "tray": "solo"
+                "tray": "solo",
+                "character": true
             },
             "fluff": {
                 "lore": "Viserion is named for Daenerys Targaryen’s brother Viserys. He’s often called the white dragon, yet is cream colored with golden horns and crest. His claws and teeth are shining black, and his eyes are ‘pools of molten gold’. While nowhere near fully grown, Viserion is one of the deadliest creatures in the world. With unparalleled movement capabilities and breathing fire, Viserion can be anywhere on the field and kill anything he wishes."
-            },
-            "portrait": {
-                "x": 671,
-                "y": 541,
-                "r": 127
-            },
-            "portrait_square": {
-                "x": 536,
-                "y": 401,
-                "a": 252
-            },
-            "standee": {
-                "x": 257,
-                "y": 28,
-                "w": 528,
-                "h": 753
             }
         },
         {
@@ -446,8 +321,7 @@
                 ],
                 "abilities": [
                     "Juvenile Dragon",
-                    "Jade Fire",
-                    "Cost Reduced by 1 once: 'Daenerys Targaryen, The Unburnt'"
+                    "Jade Fire"
                 ],
                 "requirements": [
                     {
@@ -456,26 +330,11 @@
                     }
                 ],
                 "wounds": 8,
-                "tray": "solo"
+                "tray": "solo",
+                "character": true
             },
             "fluff": {
                 "lore": "Rhaegal is named for Daenerys Targaryen’s brother Rhaegar. He is a majestic green and bronze, with jet black fangs and claws, and eyes that ‘burn with their own heat, brighter than polished shields’. While nowhere near fully grown, Rhaegal’s current size still makes him one of the most dangerous creatures in the world. With unparalleled movement capabilities and breathing fire, Rhaegal can be anywhere on the field and kill anything he wishes."
-            },
-            "portrait": {
-                "x": 556,
-                "y": 208,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 381,
-                "y": 32,
-                "a": 347
-            },
-            "standee": {
-                "x": 218,
-                "y": 36,
-                "w": 539,
-                "h": 769
             }
         },
         {
@@ -515,29 +374,13 @@
             },
             "fluff": {
                 "lore": "Taming one of the great white lions of the Dothraki Sea is a feat accomplished by only the mightiest khalasars. These powerful beasts match even the famed Stark Direwolves in terms of conferred status, and a Hrakkar in war is just as fearsome a sight on the field. Fast, deadly, and above all stealthy, troops facing the Dothraki should beware of sudden attacks from unsuspected quarters by lurking Hrakkars."
-            },
-            "portrait": {
-                "x": 476,
-                "y": 115,
-                "r": 108
-            },
-            "portrait_square": {
-                "x": 367,
-                "y": 6,
-                "a": 215
-            },
-            "standee": {
-                "x": 136,
-                "y": 18,
-                "w": 539,
-                "h": 769
             }
         },
         {
             "id": "10711",
             "name": "Stormcrow Dervishes",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 7,
@@ -559,28 +402,12 @@
                 "abilities": [
                     "Ambush",
                     "Swift Strike",
-                    "Motivated by Coin (Stormcrow Dervishes)"
+                    "Motivated by Coin"
                 ],
                 "tray": "infantry"
             },
             "fluff": {
                 "lore": "A Stormcrow Dervish paid up to the end of the week will buy you a hardened veteran skirmisher, adept at swift movement in medium armor to strike exposed enemy positions—to the end of the week. The infamous Stormcrow loyalty to coin extends even to their best-trained soldiers. Yet employers seeing Dervishes in action rarely have cause to complain as these heavy-hitters shred enemy flanks and fade away safely beyond any possible counterattack."
-            },
-            "portrait": {
-                "x": 335,
-                "y": 192,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 160,
-                "y": 17,
-                "a": 347
-            },
-            "standee": {
-                "x": 98,
-                "y": 36,
-                "w": 539,
-                "h": 769
             }
         },
         {
@@ -624,29 +451,13 @@
             },
             "fluff": {
                 "lore": "A Stormcrow is a Stormcrow, whether wielding blade, bow, or both. Money remains the prime motivator in the Stormcrow mind, and extra coin can prod added effort from these mercenaries. Stormcrow Archers are adept in long-range combat, with recurved longbows and arrows made for distant flight. They’re not meant for melee, though their shortswords can fend off weakened attackers. Still, a wise commander will keep them far from flankers or cavalry."
-            },
-            "portrait": {
-                "x": 329,
-                "y": 185,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 153,
-                "y": 10,
-                "a": 347
-            },
-            "standee": {
-                "x": 127,
-                "y": 20,
-                "w": 539,
-                "h": 769
             }
         },
         {
             "id": "10713",
             "name": "Stormcrow Mercenaries",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 5,
@@ -666,7 +477,7 @@
                     }
                 ],
                 "abilities": [
-                    "Motivated by Coin (Stormcrow Mercenaries)"
+                    "Motivated by Coin"
                 ],
                 "requirements": [
                     {
@@ -678,22 +489,6 @@
             },
             "fluff": {
                 "lore": "While one might question Stormcrow loyalty to their leaders, their employers, and even themselves, one can always count on their absolute devotion to coin. Once properly motivated, Stormcrow Mercenaries are capable medium infantry, adept at holding a flank or performing flanking maneuvers themselves. Their professionalism guarantees a good working relationship with whomever their employer might be, but only as long as the coin lasts."
-            },
-            "portrait": {
-                "x": 414,
-                "y": 182,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 239,
-                "y": 7,
-                "a": 347
-            },
-            "standee": {
-                "x": 171,
-                "y": 37,
-                "w": 511,
-                "h": 728
             }
         },
         {
@@ -726,22 +521,6 @@
             },
             "fluff": {
                 "lore": "When Daenerys Targaryen swept across Essos, she freed slaves by the tens of thousands. While she may not have been specifically looking for a fighting force, now her ranks do not lack for numbers, as Freedmen and women gather up spare blades, picks, scythes, or simple clubs in her service. The Freedmen are numerous, but lacking in training or discipline. They can fill out a force, but should not be relied on to hold the line."
-            },
-            "portrait": {
-                "x": 435,
-                "y": 180,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 260,
-                "y": 5,
-                "a": 347
-            },
-            "standee": {
-                "x": 146,
-                "y": 19,
-                "w": 539,
-                "h": 769
             }
         },
         {
@@ -778,26 +557,11 @@
                     }
                 ],
                 "wounds": 3,
-                "tray": "cavalry"
+                "tray": "cavalry",
+                "character": true
             },
             "fluff": {
                 "lore": "Bloodriders of the Dothraki in Essos pledge their blood and lives to their khal as constant companions, bodyguards, and lieutenants. A Bloodrider’s oath is unbreakable, and they obey their lord even unto death. Serving Khal Drogo as individual leaders or riding with their khal on the field are Cohollo, Haggo, and Qotho, each a skilled and deadly warrior easily besting ten times their number."
-            },
-            "portrait": {
-                "x": 317,
-                "y": 188,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 142,
-                "y": 13,
-                "a": 347
-            },
-            "standee": {
-                "x": 155,
-                "y": 20,
-                "w": 539,
-                "h": 769
             }
         },
         {
@@ -831,38 +595,22 @@
             },
             "fluff": {
                 "lore": "The Brazen Beasts, established by Daenerys Targaryen, patrol the streets of Meereen, one of the great Slaver Cities. Their name comes from the bronze masks they wear, molded to have the visage of giant cats, raptors, and bears. Their creation helped lessen the burden on the Unsullied, who were often targets of assassination as they patrolled. The Beasts lack fear, charging at their enemies in the narrow streets, cutting them down in close combat."
-            },
-            "portrait": {
-                "x": 348,
-                "y": 195,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 173,
-                "y": 20,
-                "a": 347
-            },
-            "standee": {
-                "x": 103,
-                "y": 32,
-                "w": 539,
-                "h": 769
             }
         },
         {
             "id": "10717",
             "name": "Pit Fighters",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 6,
+                "cost": 5,
                 "speed": 6,
                 "defense": 5,
                 "morale": 6,
                 "attacks": [
                     {
-                        "name": "Fighter's Armaments",
+                        "name": "Fighter's Armament's",
                         "type": "melee",
                         "hit": 3,
                         "dice": [
@@ -881,22 +629,6 @@
             },
             "fluff": {
                 "lore": "Gladiatorial combat is one of the most popular (and most dangerous) forms of entertainment. Since these enslaved fighters must compete in all forms of combat, they must be prepared for anything, despite their lack of formal training and hodge-podge of gear. After being freed by Daenerys, they’ve pledged their allegiance to her. And despite their lack of experience in open-field battle, enemy commanders would do well to not underestimate these unconventional fighters."
-            },
-            "portrait": {
-                "x": 400,
-                "y": 186,
-                "r": 174
-            },
-            "portrait_square": {
-                "x": 225,
-                "y": 10,
-                "a": 347
-            },
-            "standee": {
-                "x": 155,
-                "y": 28,
-                "w": 539,
-                "h": 769
             }
         }
     ],
@@ -922,22 +654,6 @@
             },
             "fluff": {
                 "quote": "\"My sun-and-stars made a queen of me, but if he had been a different man, it might have been much otherwise.\""
-            },
-            "portrait": {
-                "x": 279,
-                "y": 139,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 144,
-                "y": 4,
-                "a": 267
-            },
-            "standee": {
-                "x": 70,
-                "y": 18,
-                "w": 417,
-                "h": 597
             }
         },
         {
@@ -945,16 +661,14 @@
             "name": "Illyrio Mopatis",
             "subname": "Magister of Pentos",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "cost": 4,
                 "abilities": [
                     {
                         "name": "Illyrio's Boon",
                         "effect": [
-                            "Illyrio begins the game with 2 Order tokens. ",
-                            "Each time Illyrio Claims a Zone, you may remove 1 Order token from him. If you do, replace that zone's effect with:",
-                            "*Target 1 friendly Combat Unit. They restore 3 Wounds. 1 enemy they are engaged with becomes ****Weakened****.*"
+                            "Illyrio begins the game with 2 Order tokens. \nEach time Illyrio Claims a zone, you may remove 1 Order token from him. If you do, replace that zone's effect with: \n*Target 1 friendly Combat Unit. They restore up to 3 Wounds. Place 1 Condition token on 1 enemy they are engaged with.*"
                         ]
                     }
                 ],
@@ -965,22 +679,6 @@
             },
             "fluff": {
                 "quote": "\"You Westerosi are all the same. You sew some beast upon a scrap of silk, and suddenly you are all lions or dragons or eagles.\""
-            },
-            "portrait": {
-                "x": 279,
-                "y": 139,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 144,
-                "y": 4,
-                "a": 267
-            },
-            "standee": {
-                "x": 85,
-                "y": 34,
-                "w": 434,
-                "h": 621
             }
         },
         {
@@ -1004,24 +702,11 @@
                     }
                 ]
             },
+            "rules": [
+                "50701"
+            ],
             "fluff": {
                 "quote": "\"Come with me to the House of the Undying, and you shall drink of truth and wisdom.\""
-            },
-            "portrait": {
-                "x": 279,
-                "y": 139,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 144,
-                "y": 4,
-                "a": 267
-            },
-            "standee": {
-                "x": 55,
-                "y": 31,
-                "w": 433,
-                "h": 619
             }
         },
         {
@@ -1044,22 +729,6 @@
             },
             "fluff": {
                 "quote": "\"Men can always ﬁght, Your Grace. Ask rather if we can win.\""
-            },
-            "portrait": {
-                "x": 292,
-                "y": 171,
-                "r": 168
-            },
-            "portrait_square": {
-                "x": 145,
-                "y": 11,
-                "a": 298
-            },
-            "standee": {
-                "x": 73,
-                "y": 26,
-                "w": 437,
-                "h": 627
             }
         },
         {
@@ -1089,22 +758,6 @@
             },
             "fluff": {
                 "quote": "\"I no longer lust for dragons. I saw their work at Astapor.\""
-            },
-            "portrait": {
-                "x": 263,
-                "y": 142,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 128,
-                "y": 7,
-                "a": 267
-            },
-            "standee": {
-                "x": 54,
-                "y": 16,
-                "w": 451,
-                "h": 645
             }
         },
         {
@@ -1132,22 +785,6 @@
             },
             "fluff": {
                 "quote": "\"I am blood of the dragon. I am Daenerys Stormborn, Princess of Dragonstone, of the blood and seed of Aegon the Conqueror.\""
-            },
-            "portrait": {
-                "x": 279,
-                "y": 139,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 144,
-                "y": 4,
-                "a": 267
-            },
-            "standee": {
-                "x": 120,
-                "y": 7,
-                "w": 316,
-                "h": 453
             }
         },
         {
@@ -1164,34 +801,15 @@
                         "effect": [
                             "Each time Mirri Claims a zone, restore 1 Wound to 1 friendly Combat Unit.",
                             "Each time Mirri Claims a zone, you may replace that zone's effect with:",
-                            "*Choose 1:",
-                            "• Target 1 friendly Combat Unit.",
-                            "Attach 1 previously destroyed, friendly,",
-                            "non-Commander Attachment to that unit, replacing a model as usual, but ignoring the usual Attachment limits.",
-                            "• Target 1 enemy Combat Unit.",
-                            "They become Panicked and Weakened.*"
+                            "*Choose 1:*",
+                            "• *Target 1 friendly Combat Unit. Attach 1 previously destroyed, friendly, non-Commander Attachment to that unit, replacing a model as usual, but ignoring the usual Attachment limits.*",
+                            "• *Target 1 enemy Combat Unit. They become **Panicked** and **Weakened**.*"
                         ]
                     }
                 ]
             },
             "fluff": {
                 "quote": "\"Look to your khal and see what life is worth, when all the rest is gone.\""
-            },
-            "portrait": {
-                "x": 280,
-                "y": 140,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 145,
-                "y": 5,
-                "a": 267
-            },
-            "standee": {
-                "x": 138,
-                "y": 9,
-                "w": 316,
-                "h": 453
             }
         },
         {
@@ -1219,22 +837,6 @@
             },
             "fluff": {
                 "quote": "\"What do you want of me, Quaithe?\"\n\"To show you the way.\" -Daenerys and Quaithe"
-            },
-            "portrait": {
-                "x": 280,
-                "y": 140,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 148,
-                "y": 4,
-                "a": 267
-            },
-            "standee": {
-                "x": 65,
-                "y": 14,
-                "w": 408,
-                "h": 584
             }
         },
         {
@@ -1260,22 +862,6 @@
             },
             "fluff": {
                 "quote": "\"One day all men must die, but it serves no good to dwell on death.\""
-            },
-            "portrait": {
-                "x": 257,
-                "y": 143,
-                "r": 134
-            },
-            "portrait_square": {
-                "x": 122,
-                "y": 8,
-                "a": 267
-            },
-            "standee": {
-                "x": 72,
-                "y": 18,
-                "w": 416,
-                "h": 595
             }
         },
         {
@@ -1298,22 +884,66 @@
             },
             "fluff": {
                 "quote": "\"Eleven years of age, yet Missandei is as clever as half the men at this table and wiser than all of them.\""
+            }
+        },
+        {
+            "id": "30712",
+            "name": "Alicent Hightower",
+            "subname": "Dowager Queen",
+            "statistics": {
+                "version": "2021",
+                "faction": "targaryen",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Ways Of The Court",
+                        "effect": [
+                            "Each time Alicent Claims a zone, you may replace that zone's effect with:\nFor each Controlled zone on the Tactics Board *(by friendly and enemy NCUs)*, place 1 Condition Token on 1 enemy Combat Unit."
+                        ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "GREENS",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
+                ]
             },
-            "portrait": {
-                "x": 238,
-                "y": 171,
-                "r": 167
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "30713",
+            "name": "Rhaenyra Targaryen",
+            "subname": "Dragon Queen",
+            "statistics": {
+                "version": "2021",
+                "faction": "targaryen",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Syrax's Presence",
+                        "effect": [
+                            "Rhaenyra begins the game with 2 Order tokens.\nEach time an enemy Combat Unit Activates you may expend 1 Order token from Rhaenyra.\nIf you do, that enemy Combat Unit becomes **Vulnerable** and **Weakened**."
+                        ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "name": "Loyalty",
+                        "heading": "BLACKS",
+                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
+                    }
+                ],
+                "tokens": {
+                    "number": 2,
+                    "name": "order"
+                }
             },
-            "portrait_square": {
-                "x": 70,
-                "y": 4,
-                "a": 333
-            },
-            "standee": {
-                "x": 77,
-                "y": 19,
-                "w": 423,
-                "h": 605
+            "fluff": {
+                "quote": ""
             }
         }
     ],
@@ -1335,34 +965,18 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40708",
-                    "40709",
-                    "40710",
-                    "40711"
-                ],
+                "cards": {
+                    "40708": "Addrivat!",
+                    "40709": "Ride-by Attack",
+                    "40710": "Assault Orders",
+                    "40711": "Lead by Example"
+                },
                 "remove": [
                     "Sudden Retreat"
                 ]
             },
             "fluff": {
                 "quote": "\"The Dothraki follow only the strong.\""
-            },
-            "portrait": {
-                "x": 323,
-                "y": 170,
-                "r": 175
-            },
-            "portrait_square": {
-                "x": 147,
-                "y": 4,
-                "a": 349
-            },
-            "standee": {
-                "x": 95,
-                "y": 13,
-                "w": 571,
-                "h": 814
             }
         },
         {
@@ -1370,7 +984,7 @@
             "name": "Jorah Mormont",
             "subname": "Westerosi Tactician",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
                 "cost": "C",
@@ -1382,34 +996,18 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40712",
-                    "40713",
-                    "40714",
-                    "40715"
-                ],
+                "cards": {
+                    "40712": "Marshal",
+                    "40713": "Betrayal",
+                    "40714": "Opportunist",
+                    "40715": "Feinting Maneuver"
+                },
                 "remove": [
                     "Overrun"
                 ]
             },
             "fluff": {
                 "quote": "\"I vow to serve you, to obey you, to die for you if need be. Whatever may come.\""
-            },
-            "portrait": {
-                "x": 339,
-                "y": 156,
-                "r": 139
-            },
-            "portrait_square": {
-                "x": 199,
-                "y": 16,
-                "a": 277
-            },
-            "standee": {
-                "x": 89,
-                "y": 14,
-                "w": 534,
-                "h": 761
             }
         },
         {
@@ -1429,22 +1027,6 @@
             },
             "fluff": {
                 "quote": "\"I did things it shames me to speak of... In the end it cost me all.\""
-            },
-            "portrait": {
-                "x": 302,
-                "y": 194,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 122,
-                "y": 14,
-                "a": 357
-            },
-            "standee": {
-                "x": 18,
-                "y": 9,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1463,22 +1045,6 @@
                         "text": "*May only be Attached to Targaryen units.*"
                     }
                 ]
-            },
-            "portrait": {
-                "x": 239,
-                "y": 199,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 59,
-                "y": 19,
-                "a": 356
-            },
-            "standee": {
-                "x": 25,
-                "y": 18,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1497,22 +1063,6 @@
                         "text": "*May only be Attached to Targaryen units.*"
                     }
                 ]
-            },
-            "portrait": {
-                "x": 239,
-                "y": 199,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 59,
-                "y": 19,
-                "a": 356
-            },
-            "standee": {
-                "x": 13,
-                "y": 20,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1527,22 +1077,6 @@
                     "Go Down Fighting",
                     "Relentless"
                 ]
-            },
-            "portrait": {
-                "x": 239,
-                "y": 199,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 59,
-                "y": 19,
-                "a": 356
-            },
-            "standee": {
-                "x": 11,
-                "y": 15,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1550,7 +1084,7 @@
             "name": "Barristan Selmy",
             "subname": "The Bold",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
@@ -1562,34 +1096,18 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40720",
-                    "40721",
-                    "40722",
-                    "40723"
-                ],
+                "cards": {
+                    "40720": "Sustained Assault",
+                    "40721": "Combat Prowess",
+                    "40722": "Legendary Boldness",
+                    "40723": "Victory Comes Hard"
+                },
                 "remove": [
                     "Sudden Retreat"
                 ]
             },
             "fluff": {
                 "quote": "\"I am a knight. I shall die a knight.\""
-            },
-            "portrait": {
-                "x": 352,
-                "y": 176,
-                "r": 169
-            },
-            "portrait_square": {
-                "x": 205,
-                "y": 10,
-                "a": 293
-            },
-            "standee": {
-                "x": 89,
-                "y": 14,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1608,22 +1126,6 @@
             },
             "fluff": {
                 "quote": "\"Bad fighting, good dying. Strong Belwas hates it when they scream.\""
-            },
-            "portrait": {
-                "x": 280,
-                "y": 138,
-                "r": 137
-            },
-            "portrait_square": {
-                "x": 142,
-                "y": 4,
-                "a": 273
-            },
-            "standee": {
-                "x": 10,
-                "y": 10,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1647,22 +1149,6 @@
             },
             "fluff": {
                 "quote": "\"He lied to me, informed on me, but he loved me too, and he always gave good counsel.\""
-            },
-            "portrait": {
-                "x": 309,
-                "y": 125,
-                "r": 113
-            },
-            "portrait_square": {
-                "x": 195,
-                "y": 11,
-                "a": 225
-            },
-            "standee": {
-                "x": 117,
-                "y": 21,
-                "w": 371,
-                "h": 529
             }
         },
         {
@@ -1682,22 +1168,6 @@
             },
             "fluff": {
                 "quote": "\"There is a savage beast in every man, and when you hand that man a sword or spear and send him forth to war, the beast stirs.\""
-            },
-            "portrait": {
-                "x": 351,
-                "y": 123,
-                "r": 121
-            },
-            "portrait_square": {
-                "x": 229,
-                "y": 4,
-                "a": 241
-            },
-            "standee": {
-                "x": 71,
-                "y": 29,
-                "w": 471,
-                "h": 671
             }
         },
         {
@@ -1717,34 +1187,18 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40716",
-                    "40717",
-                    "40718",
-                    "40719"
-                ],
+                "cards": {
+                    "40716": "Pathetic Attempt",
+                    "40717": "Expert Parry",
+                    "40718": "Good Dying",
+                    "40719": "Count The Cuts"
+                },
                 "remove": [
                     "Field Control"
                 ]
             },
             "fluff": {
                 "quote": "\"I let each man cut me once, before I kill him. Count the cuts and you will know how many Strong Belwas has slain.\""
-            },
-            "portrait": {
-                "x": 299,
-                "y": 149,
-                "r": 139
-            },
-            "portrait_square": {
-                "x": 159,
-                "y": 9,
-                "a": 276
-            },
-            "standee": {
-                "x": 67,
-                "y": 21,
-                "w": 533,
-                "h": 762
             }
         },
         {
@@ -1764,34 +1218,18 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40724",
-                    "40725",
-                    "40726",
-                    "40727"
-                ],
+                "cards": {
+                    "40724": "Issue Commands",
+                    "40725": "Lash Out",
+                    "40726": "Battle Endurance",
+                    "40727": "Retribution Of The Dragon"
+                },
                 "remove": [
                     "Blood of the Dragon"
                 ]
             },
             "fluff": {
                 "quote": "\"I don't make peace with the queen's enemies. I kill the queen's enemies.\""
-            },
-            "portrait": {
-                "x": 339,
-                "y": 159,
-                "r": 158
-            },
-            "portrait_square": {
-                "x": 180,
-                "y": 4,
-                "a": 315
-            },
-            "standee": {
-                "x": 71,
-                "y": 49,
-                "w": 514,
-                "h": 733
             }
         },
         {
@@ -1811,22 +1249,6 @@
             },
             "fluff": {
                 "quote": "\"Grey Worm is the name this one drew the day Daenerys Stormborn set him free.\""
-            },
-            "portrait": {
-                "x": 323,
-                "y": 131,
-                "r": 131
-            },
-            "portrait_square": {
-                "x": 191,
-                "y": 4,
-                "a": 261
-            },
-            "standee": {
-                "x": 29,
-                "y": 18,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1834,45 +1256,30 @@
             "name": "Daenerys Targaryen",
             "subname": "Mother of Dragons",
             "statistics": {
-                "version": "2021-S02",
+                "version": "S05",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
+                    "Order: Threaten",
                     "Mother Of Dragons"
                 ],
                 "commander": true,
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40728",
-                    "40729",
-                    "40730",
-                    "40731"
-                ],
+                "cards": {
+                    "40728": "Dracarys!",
+                    "40729": "Dragon's Flight",
+                    "40730": "Promise Of Fire",
+                    "40731": "Fire Made Flesh"
+                },
                 "remove": [
-                    "Overrun"
+                    "Field Control"
                 ]
             },
             "fluff": {
                 "quote": "\"I am the blood of the dragon. If they are monsters, so am I.\""
-            },
-            "portrait": {
-                "x": 299,
-                "y": 149,
-                "r": 139
-            },
-            "portrait_square": {
-                "x": 159,
-                "y": 9,
-                "a": 277
-            },
-            "standee": {
-                "x": 54,
-                "y": 39,
-                "w": 534,
-                "h": 761
             }
         },
         {
@@ -1893,34 +1300,18 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40732",
-                    "40733",
-                    "40734",
-                    "40735"
-                ],
+                "cards": {
+                    "40732": "Targaryen Supremacy",
+                    "40733": "Counterplot",
+                    "40734": "Subjugation Of Power",
+                    "40735": "Remorseless Examples"
+                },
                 "remove": [
                     "Swift Reposition"
                 ]
             },
             "fluff": {
                 "quote": "\"Why do the gods make kings and queens, if not to protect the ones who can't protect themselves?\""
-            },
-            "portrait": {
-                "x": 299,
-                "y": 149,
-                "r": 139
-            },
-            "portrait_square": {
-                "x": 159,
-                "y": 9,
-                "a": 277
-            },
-            "standee": {
-                "x": 64,
-                "y": 28,
-                "w": 534,
-                "h": 761
             }
         },
         {
@@ -1928,33 +1319,18 @@
             "name": "Daario Naharis",
             "subname": "Reckless Mercenary",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Reckless Strikes"
+                    "Reckless Strikes",
+                    "Dauntless"
                 ],
                 "character": true
             },
             "fluff": {
                 "quote": "\"I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal.\""
-            },
-            "portrait": {
-                "x": 285,
-                "y": 188,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 105,
-                "y": 8,
-                "a": 357
-            },
-            "standee": {
-                "x": 18,
-                "y": 7,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -1962,47 +1338,31 @@
             "name": "Daario Naharis",
             "subname": "Stormcrow Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
                     "Affiliation: Stormcrows",
                     "Improved Armaments",
-                    "Motivated by Coin (Daario Naharis)"
+                    "Motivated by Coin"
                 ],
                 "commander": true,
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40736",
-                    "40737",
-                    "40738",
-                    "40739"
-                ],
+                "cards": {
+                    "40736": "Sellsword Negotiations",
+                    "40737": "Sellsword Bravado",
+                    "40738": "Reckless Strikes",
+                    "40739": "Hasty Offense"
+                },
                 "remove": [
                     "Fire and Blood"
                 ]
             },
             "fluff": {
                 "quote": "\"He has a sellsword's conscience, That is to say, none at all.\""
-            },
-            "portrait": {
-                "x": 299,
-                "y": 149,
-                "r": 139
-            },
-            "portrait_square": {
-                "x": 158,
-                "y": 9,
-                "a": 277
-            },
-            "standee": {
-                "x": 20,
-                "y": 14,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -2016,22 +1376,6 @@
                 "abilities": [
                     "Improved Armaments"
                 ]
-            },
-            "portrait": {
-                "x": 366,
-                "y": 195,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 186,
-                "y": 15,
-                "a": 356
-            },
-            "standee": {
-                "x": 19,
-                "y": 32,
-                "w": 534,
-                "h": 762
             }
         },
         {
@@ -2039,10 +1383,10 @@
             "name": "Rakharo",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Order: Sentinel",
@@ -2052,22 +1396,6 @@
             },
             "fluff": {
                 "quote": "\"As you say, I do, blood of my blood.\""
-            },
-            "portrait": {
-                "x": 234,
-                "y": 181,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 54,
-                "y": 4,
-                "a": 357
-            },
-            "standee": {
-                "x": 17,
-                "y": 4,
-                "w": 492,
-                "h": 700
             }
         },
         {
@@ -2075,10 +1403,10 @@
             "name": "Qotho",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Intimidating Presence",
@@ -2093,22 +1421,6 @@
             },
             "fluff": {
                 "quote": "\"The Dothraki say a man and his bloodriders share one life...\""
-            },
-            "portrait": {
-                "x": 241,
-                "y": 150,
-                "r": 146
-            },
-            "portrait_square": {
-                "x": 94,
-                "y": 4,
-                "a": 291
-            },
-            "standee": {
-                "x": 94,
-                "y": 21,
-                "w": 373,
-                "h": 532
             }
         },
         {
@@ -2116,10 +1428,10 @@
             "name": "Cohollo",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Battle Scars"
@@ -2133,22 +1445,6 @@
             },
             "fluff": {
                 "quote": "\"They were the khal's brothers, his shadows, his fiercest friends.\""
-            },
-            "portrait": {
-                "x": 268,
-                "y": 161,
-                "r": 154
-            },
-            "portrait_square": {
-                "x": 113,
-                "y": 6,
-                "a": 307
-            },
-            "standee": {
-                "x": 91,
-                "y": 19,
-                "w": 374,
-                "h": 533
             }
         },
         {
@@ -2156,10 +1452,10 @@
             "name": "Haggo",
             "subname": "Bloodrider",
             "statistics": {
-                "version": "2021-S01",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "cavalry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Bloodrider",
                     "Fueled By Slaughter"
@@ -2173,22 +1469,6 @@
             },
             "fluff": {
                 "quote": "\"'Blood of my blood', Drogo called them, and so it was; they shared a single life.\""
-            },
-            "portrait": {
-                "x": 299,
-                "y": 148,
-                "r": 144
-            },
-            "portrait_square": {
-                "x": 154,
-                "y": 4,
-                "a": 287
-            },
-            "standee": {
-                "x": 140,
-                "y": 26,
-                "w": 367,
-                "h": 523
             }
         },
         {
@@ -2196,12 +1476,13 @@
             "name": "Mirri Maz Duur",
             "subname": "Resentful Healer",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
-                    "Maegi's Healing"
+                    "Maegi's Healing",
+                    "Stubborn Tenacity"
                 ],
                 "requirements": [
                     {
@@ -2212,22 +1493,6 @@
             },
             "fluff": {
                 "quote": "\"You knew the price.\""
-            },
-            "portrait": {
-                "x": 271,
-                "y": 177,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 156,
-                "y": 7,
-                "a": 264
-            },
-            "standee": {
-                "x": 51,
-                "y": 15,
-                "w": 478,
-                "h": 681
             }
         },
         {
@@ -2235,10 +1500,10 @@
             "name": "Marselen",
             "subname": "Unsullied Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Dauntless",
                     "Embolden"
@@ -2247,22 +1512,6 @@
             },
             "fluff": {
                 "quote": "\"It's their discipline that makes them dangerous\" -Tyrion Lannister"
-            },
-            "portrait": {
-                "x": 272,
-                "y": 177,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 148,
-                "y": 7,
-                "a": 261
-            },
-            "standee": {
-                "x": 36,
-                "y": 11,
-                "w": 489,
-                "h": 696
             }
         },
         {
@@ -2282,22 +1531,6 @@
             },
             "fluff": {
                 "quote": "\"The Shavepate would feed them to your dragons, it is said.\""
-            },
-            "portrait": {
-                "x": 265,
-                "y": 190,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 133,
-                "y": 11,
-                "a": 244
-            },
-            "standee": {
-                "x": 14,
-                "y": 16,
-                "w": 480,
-                "h": 684
             }
         },
         {
@@ -2317,34 +1550,18 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40744",
-                    "40745",
-                    "40746",
-                    "40747"
-                ],
+                "cards": {
+                    "40744": "Keeping The Peace",
+                    "40745": "The Queen's Law",
+                    "40746": "Eyes of The Watch",
+                    "40747": "Ghiscari Justice"
+                },
                 "remove": [
                     "Unstoppable Advance"
                 ]
             },
             "fluff": {
                 "quote": "\"We will rue your old man’s honor before this game is done.\" -Skahaz to Barristan Selmy"
-            },
-            "portrait": {
-                "x": 299,
-                "y": 149,
-                "r": 139
-            },
-            "portrait_square": {
-                "x": 163,
-                "y": 8,
-                "a": 257
-            },
-            "standee": {
-                "x": 32,
-                "y": 19,
-                "w": 515,
-                "h": 734
             }
         },
         {
@@ -2364,65 +1581,32 @@
                 "character": true
             },
             "tactics": {
-                "cards": [
-                    "40740",
-                    "40741",
-                    "40742",
-                    "40743"
-                ],
+                "cards": {
+                    "40740": "Devotees of The Dragon",
+                    "40741": "Devastating Impact",
+                    "40742": "War Cry",
+                    "40743": "Supply Aid"
+                },
                 "remove": [
                     "Field Control"
                 ]
             },
             "fluff": {
                 "quote": "\"The Unsullied have something better than strength... They have discipline.\""
-            },
-            "portrait": {
-                "x": 310,
-                "y": 146,
-                "r": 139
-            },
-            "portrait_square": {
-                "x": 170,
-                "y": 6,
-                "a": 277
-            },
-            "standee": {
-                "x": 70,
-                "y": 7,
-                "w": 522,
-                "h": 744
             }
         },
         {
             "id": "20728",
             "name": "Brazen Beasts Captain",
             "statistics": {
-                "version": "2021",
+                "version": "S06",
                 "faction": "targaryen",
                 "type": "infantry",
-                "cost": 2,
+                "cost": 1,
                 "abilities": [
                     "Order: Incite",
-                    "Furious Charge",
-                    "Iron Resolve"
+                    "Furious Charge"
                 ]
-            },
-            "portrait": {
-                "x": 264,
-                "y": 190,
-                "r": 179
-            },
-            "portrait_square": {
-                "x": 84,
-                "y": 10,
-                "a": 357
-            },
-            "standee": {
-                "x": 11,
-                "y": 21,
-                "w": 534,
-                "h": 762
             }
         }
     ],
@@ -2448,13 +1632,13 @@
             "id": "40702",
             "name": "Sudden Retreat",
             "statistics": {
-                "version": "S04",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "After an enemy completes a Melee Attack:",
                         "effect": [
-                            "The Defender performs 1 Retreat Action.",
+                            "Target the Defender. They performs 1 Retreat Action.",
                             "If this targets your Commander's unit, it may re-roll any Retreat Distance Dice."
                         ]
                     }
@@ -2490,8 +1674,8 @@
                         "effect": [
                             "Choose 1. If you Control [HORSE], choose 2 instead:",
                             "• This Attack may re-roll any Misses.",
-                            "• This Attack gains Sundering.",
-                            "• This Attack gains Vicious."
+                            "• This Attack gains **Sundering**.",
+                            "• This Attack gains **Vicious**."
                         ]
                     }
                 ]
@@ -2558,14 +1742,14 @@
             "id": "40708",
             "name": "Addrivat!",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When Khal Drogo's unit Activates:",
                         "effect": [
                             "Target 1 enemy in Long Range and attach this card to them until the end of the Round.",
-                            "While attached, Melee Attacks on this enemy gain **Critical Blow**. When that enemy is destroyed, gain 1 Victory Point. If this card is removed and that enemy has not been destroyed, your opponent gains 1 Victory Point."
+                            "While attached, Melee Attacks on this enemy gain **Critical Blow**."
                         ]
                     },
                     {
@@ -2604,15 +1788,15 @@
             "id": "40710",
             "name": "Assault Orders",
             "statistics": {
-                "version": "S04",
+                "version": "S06",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action.*",
-                            "*If this targets Khal Drogo's unit, it may perform 1 Charge Action instead.*"
+                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                            "*If this targets Khal Drogo's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
                         ]
                     },
                     {
@@ -2674,14 +1858,15 @@
             "id": "40713",
             "name": "Betrayal",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly NCU Claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*Gain 1 Victory Point, draw 1 Tactics card, and restore 3 Wounds to Jorah Mormont's unit. Your opponent may then attach the **Betrayal** card to 1 of your friendly Combat Units until the end of the game. While attached, each time that unit Activates, they suffer 1 Wound. When they are destroyed, your opponent gains 1 Victory Point.*"
+                            "*Draw 2 Tactic Card. Restore 3 Wounds to Jorah Mormont's unit. 1 enemy Combat Unit becomes **Vulnerable** and **Weakend**. Then attach this card to Jorah's unit until they destroy 1 enemy Combat Unit.*",
+                            "*While attached, each time that unit Activates, they suffer 1 Wound and become **Panicked**.*"
                         ]
                     }
                 ],
@@ -2700,7 +1885,7 @@
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or Vicious. If the Attacker is Jorah Mormont's unit, gain both instead."
+                            "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or **Vicious**. If the Attacker is Jorah Mormont's unit, gain both instead."
                         ]
                     }
                 ],
@@ -2801,15 +1986,15 @@
             "id": "40719",
             "name": "Count The Cuts",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "After an enemy completes a Melee Attack:",
                         "effect": [
-                            "Target the Defender. Attach this card to them until they destroy an enemy with an Attack. When this card is removed, gain 1 Victory Point.",
-                            "While attached, this unit cannot restore Wounds, but it gains +2 to Morale Test rolls and its Melee Attack always roll its highest Attack Die Value.",
-                            "Your opponent gains 1 Victory Point when it is destroyed."
+                            "Target the Defender. Attach this card to them until they destroy an enemy.",
+                            "While attached, this unit rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this targets Belwas' unit, it also gains +1 to Morale Test results."
                         ]
                     }
                 ],
@@ -2822,14 +2007,14 @@
             "id": "40720",
             "name": "Sustained Assault",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S06",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                         "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value.",
-                            "If this targets Barristan's unit, it may re-roll any Attack Dice."
+                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                            "If this targets Barristan's unit, the Defender also becomes **Vulnerable**."
                         ]
                     },
                     {
@@ -2871,13 +2056,13 @@
             "id": "40722",
             "name": "Legendary Boldness",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "Start of the Round:",
+                        "trigger": "After a friendly unit within Long Range of Barristan rolls Defense Dice:",
                         "effect": [
-                            "Target Barristan Selmy's unit and attach this card to them until the end of the Round. While attached, when this unit passes a Panic Test, all enemies in Short Range become **Panicked**. If this unit is destroyed, your opponent gains 1 Victory Point. When this card is removed, if this unit is engaged, gain 1 Victory Point."
+                            "That unit blocks +2 Hits and automatically passes the Panic Test from this Attack."
                         ]
                     },
                     {
@@ -2988,14 +2173,15 @@
             "id": "40727",
             "name": "Retribution Of The Dragon",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "When a friendly unit is destroyed by an enemy Attack:",
+                        "trigger": "When a friendly unit is Attacked:",
                         "effect": [
-                            "Target that enemy and attach this card to them until the end of the game.",
-                            "While attached, when that enemy is destroyed, gain 1 Victory Point. When that enemy is Attacked, if Grey Worm's unit is in Short Range, that enemy becomes **Vulnerable**."
+                            "Target the Attacker. Attach this card to them until the end of the game.",
+                            "While attached, each time this unit is Attacked, the Attacker gains **Vicious**.",
+                            "Each time this unit is Attacked, if the Attacker is Grey Worm's unit or an Unsullied unit, this unit also becomes **Vulnerable**."
                         ]
                     }
                 ],
@@ -3008,13 +2194,13 @@
             "id": "40728",
             "name": "Dracarys!",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When Daenerys' unit Activates:",
                         "effect": [
-                            "Instead of performing an Action, target 1 friendly Drogon, Rhaegal, or Viserion unit in Short Range. It performs 1 Melee Attack Action."
+                            "Instead of performing an Action, target 1 friendly Drogon, Rhaegal, or Viserion unit in Long Range. It performs 1 Melee Attack Action."
                         ]
                     },
                     {
@@ -3058,13 +2244,15 @@
             "id": "40730",
             "name": "Promise Of Fire",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
                         "trigger": "When an enemy NCU Activates:",
                         "effect": [
-                            "If that NCU Claims a zone this Activation, attach this card to 1 enemy Combat Unit. They suffer 1 Panic Test. If they are destroyed by this test, or by a Drogon, Rhaegal, or Viserion unit while this card is attached, gain 1 Victory Point. If 1 of your Drogon, Rhaegal, or Viserion units is destroyed, remove this card and your opponent gains 1 Victory Point."
+                            "If that NCU Claims a zone this Activation, attach this card to 1 enemy Combat Unit.",
+                            "They suffer 1 Panic Test.",
+                            "While attached, each time a Drogon, Rhaegal, or Viserion units performs an Attack against this unit, this unit suffers 3 Wounds instead of D3 Wounds."
                         ]
                     }
                 ],
@@ -3077,7 +2265,7 @@
             "id": "40731",
             "name": "Fire Made Flesh",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
@@ -3087,7 +2275,7 @@
                         ]
                     },
                     {
-                        "remove": "Before the game begins, remove the \"Overrun\" Tactics card from your Tactics Deck and replace it with this card."
+                        "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
                     }
                 ],
                 "remove": "40701",
@@ -3310,7 +2498,7 @@
             "id": "40742",
             "name": "War Cry",
             "statistics": {
-                "version": "2021-S03",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
@@ -3318,7 +2506,7 @@
                         "effect": [
                             "That unit performs 1 Morale Test.",
                             "On a success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**.",
-                            "If this is Marselen's unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
+                            "If this is Marselen's unit or an Unsullied unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
                         ]
                     }
                 ],
@@ -3380,13 +2568,15 @@
             "id": "40745",
             "name": "The Queen's Law",
             "statistics": {
-                "version": "2021",
+                "version": "S05",
                 "faction": "targaryen",
                 "text": [
                     {
-                        "trigger": "After an enemy Combat Unit completes an Attack:",
+                        "trigger": "When an enemy Combat Unit Activates:",
                         "effect": [
-                            "Attach this card to that enemy until the end of the Round. While attached, during your friendly Turns, that enemy loses all Abilities and cannot be targeted by their friendly Tactics cards. When that enemy is destroyed, gain 1 Victory Point. If this card is removed and that enemy has not been destroyed, your opponent gains 1 Victory Point."
+                            "Attach this card to that enemy until the end of the Round.",
+                            "While attached, during your opponent's Turns, this Unit loses all Abilities and cannot be targeted by friendly Tactics cards.",
+                            "If Skahaz's unit, or a Brazen Beast unit, performes a Charge Action against this unit, they automatically counts as rolling a 6 on all Charge Distance dice."
                         ]
                     }
                 ],
@@ -3441,6 +2631,36 @@
                 "commander_id": "20726",
                 "commander_name": "Skahaz Mo Kandaq",
                 "commander_subname": "The Shavepate"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "id": "50701",
+            "name": "House of the Undying",
+            "type": "zone",
+            "statistics": {
+                "faction": "targaryen",
+                "version": "2021-S03",
+                "size": {
+                    "w": 70,
+                    "h": 120
+                },
+                "front": {
+                    "style": "zone",
+                    "note": [
+                        "**There can only be 1 House of the Undying in the Game.**"
+                    ],
+                    "effect": [
+                        "Your opponent must discard 1 Tactics card at random from their hand."
+                    ]
+                },
+                "back": {
+                    "style": "zone",
+                    "text": [
+                        "If your army includes Pyat Pree, Warlock of Qarth, before the game begins, place the House of the Undying Tactics zone card next to the Tactics Board. It acts as an additional Tactics Zone for all purposes."
+                    ]
+                }
             }
         }
     ]

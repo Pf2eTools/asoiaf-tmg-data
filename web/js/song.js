@@ -35,7 +35,7 @@ class SongSublistManager extends SublistManager {
 
 	pGetSublistItem (obj, hash, {count = 1} = {}) {
 		const faction = Parser.renderFaction(obj.statistics.faction);
-		const type = Parser.renderProp(obj.__prop);
+		const type = obj.statistics.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
 
 		const cellsText = [
 			obj.name,
@@ -77,6 +77,7 @@ class SongPageBookView extends ListPageBookView {
 	static _PDF_MARGIN_K = "pdfMargin";
 	static _PDF_PADDING_K = "pdfPadding";
 	static _PDF_CUTTING_GUIDE = "cuttingGuide";
+	static _PRINT_BACKSIDE = "printBackside";
 	constructor (opts) {
 		super({
 			pageTitle: "Print View",
@@ -111,11 +112,13 @@ class SongPageBookView extends ListPageBookView {
 		this._pdfMargin = StorageUtil.syncGetForPage(SongPageBookView._PDF_MARGIN_K);
 		this._pdfPadding = StorageUtil.syncGetForPage(SongPageBookView._PDF_PADDING_K);
 		this._pdfCuttingGuide = StorageUtil.syncGetForPage(SongPageBookView._PDF_CUTTING_GUIDE);
+		this._printBackside = StorageUtil.syncGetForPage(SongPageBookView._PRINT_BACKSIDE);
 		if (this._printMode != null) this._printMode = `${this._printMode}`;
 
 		const $selMode = $(`<select class="form-control input-sm">
 			<option value="0">A4 Page</option>
-			<option value="1">Singletons</option>
+			<option value="1">US Letter</option>
+			<option value="2">Singletons</option>
 		</select>`)
 			.change(() => {
 				if (!this._bookViewToShow.length && Hist.lastLoadedId != null) return;
@@ -160,11 +163,28 @@ class SongPageBookView extends ListPageBookView {
 		if (this._pdfCuttingGuide != null) $selCuttingGuide.val(this._pdfCuttingGuide);
 		else this._pdfCuttingGuide = $selCuttingGuide.val();
 
+		const $selPrintBackside = $(`<select class="form-control input-sm">
+			<option value="0">Don't Print</option>
+			<option value="1">Print Next to Card Front</option>
+			<option value="2">Print on Separate Page</option>
+		</select>`)
+			.change(() => {
+				if (!this._bookViewToShow.length && Hist.lastLoadedId != null) return;
+
+				const val = $selPrintBackside.val();
+				this._printBackside = val;
+				StorageUtil.syncSetForPage(SongPageBookView._PRINT_BACKSIDE, val);
+				this._renderEntities();
+			});
+		if (this._printBackside != null) $selPrintBackside.val(this._printBackside);
+		else this._printBackside = $selPrintBackside.val();
+
 		$$`<div class="ve-flex-vh-center ml-3">
 			<div class="mr-2 no-wrap">Mode:</div>${$selMode}
 			<div class="mr-2 ml-4 no-wrap"><span class="help" title='Space around each page'>Margin</span> (<span class="help" title='1mm = 0.04"'>mm</span>):</div>${$iptMargin}
 			<div class="mr-2 ml-4 no-wrap">Cutting Guides</div>${$selCuttingGuide}
 			<div class="mr-2 ml-4 no-wrap"><span class="help" title='Spacing between cards'>Padding</span> (<span class="help" title='1mm = 0.04"'>mm</span>):</div>${$iptPadding}
+			<div class="mr-2 ml-4 no-wrap">Card Backsides</div>${$selPrintBackside}
 		</div>`.appendTo($wrpPrint);
 
 		return {$wrp, $wrpPrint};
@@ -224,30 +244,34 @@ class SongPageBookView extends ListPageBookView {
 		const items = this._sublistManager.sublistItems.sort((a, b) => SortUtil.ascSortLower(a.ix, b.ix));
 		let completed = 0;
 
+		const addImagePage = async (src, w, h) => {
+			this._pdfFile.addPage([w + 2 * margin, h + 2 * margin], w > h ? "l" : "p");
+			if (this._pdfCuttingGuide === "1" && margin) {
+				this._pdfFile.addImage(src, 0, 0, w + 2 * margin, h + 2 * margin);
+				const flipHorizontal = this._pdfFile.Matrix(-1, 0, 0, 1, 0, 0);
+				const flipVertical = this._pdfFile.Matrix(1, 0, 0, -1, 0, 0);
+				this._pdfFile.setCurrentTransformationMatrix(flipVertical);
+				this._pdfFile.addImage(src, margin, 2 * h + 3 * margin, w, h);
+				this._pdfFile.addImage(src, margin, 3 * margin, w, h);
+				this._pdfFile.setCurrentTransformationMatrix(flipVertical);
+				this._pdfFile.setCurrentTransformationMatrix(flipHorizontal);
+				this._pdfFile.addImage(src, -2 * w - margin, margin, w, h);
+				this._pdfFile.addImage(src, -margin, margin, w, h);
+				this._pdfFile.setCurrentTransformationMatrix(flipHorizontal);
+			}
+			this._pdfFile.addImage(src, margin, margin, w, h);
+			// Wait a bit, otherwise the pdf library causes issues
+			await MiscUtil.pDelay(5);
+		}
+
 		for (const item of items) {
 			const ent = item.data.entity;
 			const count = item.data.count;
-			const src = ent._img.face;
 			const {w, h} = Renderer.song.getRealSize_mm(ent);
 			for (let i = 0; i < count; i++) {
-				this._pdfFile.addPage([w + 2 * margin, h + 2 * margin], w > h ? "l" : "p");
-				if (this._pdfCuttingGuide === "1" && margin) {
-					this._pdfFile.addImage(src, 0, 0, w + 2 * margin, h + 2 * margin);
-					const flipHorizontal = this._pdfFile.Matrix(-1, 0, 0, 1, 0, 0);
-					const flipVertical = this._pdfFile.Matrix(1, 0, 0, -1, 0, 0);
-					this._pdfFile.setCurrentTransformationMatrix(flipVertical);
-					this._pdfFile.addImage(src, margin, 2 * h + 3 * margin, w, h);
-					this._pdfFile.addImage(src, margin, 3 * margin, w, h);
-					this._pdfFile.setCurrentTransformationMatrix(flipVertical);
-					this._pdfFile.setCurrentTransformationMatrix(flipHorizontal);
-					this._pdfFile.addImage(src, -2 * w - margin, margin, w, h);
-					this._pdfFile.addImage(src, -margin, margin, w, h);
-					this._pdfFile.setCurrentTransformationMatrix(flipHorizontal);
-				}
-				this._pdfFile.addImage(src, margin, margin, w, h);
+				await addImagePage(ent._img.face, w, h);
+				if (this._printBackside !== "0" && ent._img.back) await addImagePage(ent._img.back, w, h);
 			}
-			// Wait a bit, otherwise the pdf library causes issues
-			await MiscUtil.pDelay(5);
 			completed += 1;
 			const percentage = Math.ceil(100 * completed / items.length);
 			this._updateProgressBar(percentage)
@@ -255,78 +279,101 @@ class SongPageBookView extends ListPageBookView {
 	}
 
 	// TODO: page might overflow if margin/padding too large
-	async _preparePdf_FillPageA4 () {
+	_fillPage_getLayout(imageSize, paperSize) {
 		const margin = Number(this._pdfMargin);
 		const padding = Number(this._pdfPadding);
-		const items = this._sublistManager.sublistItems.sort((a, b) => SortUtil.ascSortLower(a.ix, b.ix));
-		const units = items.filter(it => it.data.entity.__prop === "units").map(it => new Array(it.data.count).fill(it)).flat();
-		const others = items.filter(it => it.data.entity.__prop !== "units").map(it => new Array(it.data.count).fill(it)).flat();
+		const landscapeColumns = Math.floor((paperSize.h - 2 * margin + padding) / (imageSize.w + padding));
+		const landscapeRows = Math.floor((paperSize.w - 2 * margin + padding) / (imageSize.h + padding));
 
-		let completed = 0;
-		for (const other of others) {
-			const ent = other.data.entity;
-			const src = ent._img.face;
-			const {w, h} = Renderer.song.getRealSize_mm(ent);
-			let ixOnPage = completed % 8
-			if (ixOnPage === 0) this._pdfFile.addPage("a4", "l");
+		const portraitColumns = Math.floor((paperSize.w - 2 * margin + padding) / (imageSize.w + padding));
+		const portraitRows = Math.floor((paperSize.h - 2 * margin + padding) / (imageSize.h + padding));
+
+		if (portraitRows * portraitColumns > landscapeRows * landscapeColumns) {
+			return {orientation: "p", cols: portraitColumns, rows: portraitRows}
+		} else return {orientation: "l", cols: Math.max(1, landscapeColumns), rows: Math.max(1, landscapeRows)}
+	}
+
+	async _fillPage (items, paperSize, ptrProgress) {
+		if (items.length === 0) return;
+		const imgSize = Renderer.song.getRealSize_mm(items[0].data.entity);
+		const {w, h} = imgSize;
+		const layout = this._fillPage_getLayout(imgSize, paperSize);
+		const itemsPerPage = layout.cols * layout.rows;
+		const margin = Number(this._pdfMargin);
+		const padding = Number(this._pdfPadding);
+
+		let ixOnPage = 0;
+		const addImageToPage = async (url, leftToRight=true) => {
+			if (ixOnPage === 0) this._pdfFile.addPage(paperSize.name, layout.orientation);
+			const paperH = layout.orientation === "p" ? paperSize.h : paperSize.w;
+			const paperW = layout.orientation === "p" ? paperSize.w : paperSize.h;
 			if (ixOnPage === 0 && this._pdfCuttingGuide === "1") {
-				for (let i = 0; i < 4; i++) {
-					const x_left = margin + i * (w + padding);
-					const x_right = margin + i * padding + (i + 1) * w;
-					const h_bottom = margin + 2 * h + padding + 0.5;
+				for (let ixCol = 0; ixCol < layout.cols; ixCol++) {
+					const x_left = leftToRight ? margin + ixCol * (w + padding) : paperW - margin - (ixCol + 1) * w - ixCol * padding;
+					const x_right = leftToRight ? margin + ixCol * padding + (ixCol + 1) * w : paperW - margin - ixCol * (w + padding);
+					const h_bottom = margin + layout.rows * h + padding + 0.5;
 					this._pdfFile.line(x_left, 0, x_left, margin - 0.5, "S");
-					if (padding > 0 || i === 3) this._pdfFile.line(x_right, 0, x_right, margin - 0.5, "S");
-					this._pdfFile.line(x_left, h_bottom, x_left, 210, "S");
-					if (padding > 0 || i === 3) this._pdfFile.line(x_right, h_bottom, x_right, 210, "S");
+					if (padding > 0 || ixCol === layout.cols - 1) this._pdfFile.line(x_right, 0, x_right, margin - 0.5, "S");
+					this._pdfFile.line(x_left, h_bottom, x_left, paperH, "S");
+					if (padding > 0 || ixCol === layout.cols - 1) this._pdfFile.line(x_right, h_bottom, x_right, paperH, "S");
 				}
-				for (let i = 0; i < 2; i++) {
-					const v_right = margin + 4 * w + 3 * padding + 0.5;
-					const y_top = margin + i * (h + padding);
-					const y_bottom = margin + i * padding + (i + 1) * h;
-					this._pdfFile.line(0, y_top, margin - 0.5, y_top, "S");
-					if (padding > 0 || i === 1) this._pdfFile.line(0, y_bottom, margin - 0.5, y_bottom, "S");
-					this._pdfFile.line(v_right, y_top, 297, y_top, "S");
-					if (padding > 0 || i === 1) this._pdfFile.line(v_right, y_bottom, 297, y_bottom, "S");
+				for (let ixRow = 0; ixRow < layout.rows; ixRow++) {
+					const v_right = leftToRight ? margin + layout.cols * w + (layout.cols - 1) * padding + 0.5 : paperW - margin + 0.5;
+					const v_left = leftToRight ? margin - 0.5 : paperW - margin - layout.cols * w - (layout.cols - 1) * padding - 0.5;
+					const y_top = margin + ixRow * (h + padding);
+					const y_bottom = margin + ixRow * padding + (ixRow + 1) * h;
+					this._pdfFile.line(0, y_top, v_left, y_top, "S");
+					if (padding > 0 || ixRow === layout.rows - 1) this._pdfFile.line(0, y_bottom, v_left, y_bottom, "S");
+					this._pdfFile.line(v_right, y_top, paperW, y_top, "S");
+					if (padding > 0 || ixRow === layout.rows - 1) this._pdfFile.line(v_right, y_bottom, paperW, y_bottom, "S");
 				}
 			}
-			this._pdfFile.addImage(src, margin + (ixOnPage % 4) * (w + padding), margin + Math.floor(ixOnPage / 4) * (h + padding), w, h);
+			const col = ixOnPage % layout.cols;
+			const row = Math.floor(ixOnPage / layout.cols);
+			if (leftToRight) this._pdfFile.addImage(url, margin + col * (w + padding), margin + row * (h + padding), w, h);
+			else this._pdfFile.addImage(url, paperW - margin - (col + 1) * w - col * padding, margin + row * (h + padding), w, h);
 			await MiscUtil.pDelay(5);
-			completed += 1;
-			const percentage = Math.ceil(100 * completed / items.length);
-			this._updateProgressBar(percentage)
+			ixOnPage = (ixOnPage + 1) % itemsPerPage;
 		}
-		const offset = 8 - (completed % 8);
 
-		for (const unit of units) {
-			const ent = unit.data.entity;
-			const src = ent._img.face;
-			const {w, h} = Renderer.song.getRealSize_mm(ent);
-			let ixOnPage = (completed + offset) % 4
-			if (ixOnPage === 0) this._pdfFile.addPage("a4", "l");
-			if (ixOnPage === 0 && this._pdfCuttingGuide === "1") {
-				for (let i = 0; i < 2; i++) {
-					const x_left = margin + i * (w + padding);
-					const x_right = margin + i * padding + (i + 1) * w;
-					const h_bottom = margin + 2 * h + padding + 0.5;
-					this._pdfFile.line(x_left, 0, x_left, margin - 0.5, "S");
-					this._pdfFile.line(x_right, 0, x_right, margin - 0.5, "S");
-					this._pdfFile.line(x_left, h_bottom, x_left, 210, "S");
-					this._pdfFile.line(x_right, h_bottom, x_right, 210, "S");
-
-					const v_right = margin + 2 * w + padding + 0.5;
-					const y_top = margin + i * (h + padding);
-					const y_bottom = margin + i * padding + (i + 1) * h;
-					this._pdfFile.line(0, y_top, margin - 0.5, y_top, "S");
-					this._pdfFile.line(0, y_bottom, margin - 0.5, y_bottom, "S");
-					this._pdfFile.line(v_right, y_top, 297, y_top, "S");
-					this._pdfFile.line(v_right, y_bottom, 297, y_bottom, "S");
-				}
+		for (const item of items) {
+			const ent = item.data.entity;
+			for (let i = 0; i < item.data.count; i++) {
+				await addImageToPage(ent._img.face);
+				if (this._printBackside === "1" && ent._img.back) await addImageToPage(ent._img.back);
 			}
-			this._pdfFile.addImage(src, margin + (ixOnPage % 2) * (w + padding), margin + Math.floor(ixOnPage / 2) * (h + padding), w, h);
-			await MiscUtil.pDelay(5);
-			completed += 1;
-			const percentage = Math.ceil(100 * completed / items.length);
+			const addProgress = this._printBackside !== "2" ? 1 : 0.5
+			ptrProgress._ += addProgress;
+			const percentage = Math.ceil(100 * ptrProgress._ / ptrProgress.max);
 			this._updateProgressBar(percentage);
+		}
+		if (this._printBackside === "2") {
+			ixOnPage = 0;
+			for (const item of items) {
+				const ent = item.data.entity;
+				for (let i = 0; i < item.data.count; i++) {
+					if (ent._img.back) await addImageToPage(ent._img.back, false);
+				}
+				ptrProgress._ += 0.5;
+				const percentage = Math.ceil(100 * ptrProgress._ / ptrProgress.max);
+				this._updateProgressBar(percentage);
+			}
+		}
+	}
+
+	async _preparePdf_FillPage (paperSize) {
+		const items = this._sublistManager.sublistItems.sort((a, b) => SortUtil.ascSortLower(a.ix, b.ix));
+		const itemsBySize = {};
+		items.forEach(item => {
+			const size = Renderer.song.getRealSize_mm(item.data.entity);
+			const key = `${size.w}x${size.h}`;
+			itemsBySize[key] = itemsBySize[key] || [];
+			itemsBySize[key].push(item);
+		});
+
+		const ptrCompleted = {_: 0, max: items.length};
+		for (const sizeKey in itemsBySize) {
+			await this._fillPage(itemsBySize[sizeKey], paperSize, ptrCompleted);
 		}
 	}
 
@@ -336,8 +383,9 @@ class SongPageBookView extends ListPageBookView {
 		this._updateProgressBar(0);
 		this._pdfFile = new jspdf.jsPDF();
 		this._pdfFile.deletePage(1);
-		if (this._printMode === "0") await this._preparePdf_FillPageA4();
-		else if (this._printMode === "1") await this._preparePdf_Singletons();
+		if (this._printMode === "0") await this._preparePdf_FillPage({name: "a4", w: 210, h: 297});
+		else if (this._printMode === "1") await this._preparePdf_FillPage({name: "letter", w: 215.9, h: 279.4});
+		else if (this._printMode === "2") await this._preparePdf_Singletons();
 		const blob = this._pdfFile.output("blob");
 		const filename = `${this._sublistManager._saveManager._getActiveSave().entity.name || "asoiaf-tmg-data"}.pdf`;
 		DataUtil.userDownloadBlob(filename, blob);
@@ -371,7 +419,7 @@ class SongPage extends ListPageMultiSource {
 		super({
 			pageFilter: new PageFilterSong(),
 
-			dataProps: ["song", "units", "ncus", "attachments", "tactics"],
+			dataProps: ["song", "units", "ncus", "attachments", "tactics", "specials"],
 
 			bookViewOptions: {
 				ClsBookView: SongPageBookView,
@@ -394,7 +442,7 @@ class SongPage extends ListPageMultiSource {
 
 		const source = obj.source;
 		const faction = Parser.renderFaction(obj.statistics.faction);
-		const type = Parser.renderProp(obj.__prop);
+		const type = obj.statistics.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
 
 		const eleLi = e_({
 			tag: "div",

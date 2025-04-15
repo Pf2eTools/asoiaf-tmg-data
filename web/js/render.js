@@ -1594,9 +1594,18 @@ Renderer.song = class {
 
 	static getRenderedString (ent, {isBack = false} = {}) {
 		const src = isBack ? ent._img.back : ent._img.face;
-		return `<div class="ve-flex-h-center">
+		const renderer = Renderer.get();
+		const stack = [`<div class="ve-flex-h-center">
 				<img style="max-height: 400px; max-width: 100%" src="${src}" alt="?">
-			</div>`;
+			</div>`];
+		if (!isBack && ent.statistics.commander && ent.tactics.cards) {
+			const tacticsNote = renderer.render(`{@note Tactics cards: ${Object.entries(ent.tactics.cards).map(([id, name]) => `{@tactics ${id}|${ent.lang}|${name}}`).join(", ")}}`);
+			stack.push(`<div class="m-2">${tacticsNote}</div>`);
+		} else if (ent.__prop === "tactics" && ent.statistics.commander_id) {
+			const cmdrNote = renderer.render(`{@note Commander: {@attachments ${ent.statistics.commander_id}|${ent.lang}|${ent.statistics.commander_name}}}`)
+			stack.push(`<div class="m-2">${cmdrNote}</div>`);
+		}
+		return stack.join("");
 	}
 
 	static getRealSize_mm (ent) {
@@ -1605,6 +1614,10 @@ Renderer.song = class {
 			case "attachments":
 			case "tactics":
 			case "ncus": return {w: 64, h: 90}
+			case "specials": {
+				if (ent.statistics && ent.statistics.size) return ent.statistics.size;
+				return {w: 64, h: 90}
+			}
 		}
 	}
 };

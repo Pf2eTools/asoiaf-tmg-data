@@ -1,0 +1,889 @@
+{
+    "units": [
+        {
+            "id": "11101",
+            "name": "Bauernheer der Bruderschaft",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 4,
+                "speed": 5,
+                "defense": 6,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Speer",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            6,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Unterbrechen",
+                    "Zusammenrotten"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Jede Truppe braucht Kanonenfutter, das ist eine leidige Wahrheit des Krieges. Und doch gibt es Kanonenfutter, das nur mit vorgehaltenem Messer in die Schlacht zieht, und Kanonenfutter, das ganz ohne weiteres Zutun an die Front schreitet. Das Bauernheer der Bruderschaft besteht größtenteils aus Freiwilligen, was sie in ihrer Moral über die unfreiwilligen Rekruten erhebt. In großer Zahl und an der Seite erfahrener Kämpfer durchbrechen sie effizient feindliche Schlachtreihen. Die feindlichen Heerführer sollten sie nicht vorschnell als Bauerntölpel abstempel.."
+            }
+        },
+        {
+            "id": "11102",
+            "name": "Soldaten der Bruderschaft",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 5,
+                "defense": 4,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Waffen der Bruderschaft",
+                        "type": "melee",
+                        "hit": 4,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Überfall",
+                    "Waffen der Bruderschaft"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "Die Bruderschaft ohne Banner ist eine Gruppe Ausgestoßener, die sich in den Dienst eines jeden Lords stellen, der für die Gerechtigkeit des Reiches kämpft und sich für Frieden in den Königreichen einsetzt. Daher ist die Bruderschaft als idealistisch (und fanatisch) verschrien und ihre Soldaten gelten als die idealistischsten (un fanatischten). Sie kämpfen bis zum bitteren Ende für Gerechtigkeit und Frieden. Am besten setzt man sie an der Front ein, wo sie Feinde zu Staub zermahlen."
+            }
+        },
+        {
+            "id": "11103",
+            "name": "Bogenschützen der Bruderschaft",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 6,
+                "speed": 6,
+                "defense": 6,
+                "morale": 6,
+                "attacks": [
+                    {
+                        "name": "Schüsse aus dem Verborgenen",
+                        "type": "long",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            6,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Kurzschwert",
+                        "type": "melee",
+                        "hit": 5,
+                        "dice": [
+                            5,
+                            4,
+                            3
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Befehl: Gerissene Neuformierung",
+                    "Schüsse aus dem Verborgenen"
+                ],
+                "tray": "infantry"
+            },
+            "fluff": {
+                "lore": "In professionelleren Streitkräften tragen die Bogenschützen oft farbenfrohe Uniformen, stehen in Formation und feuern eine Salve nach der anderen als tödlichen Gruß aus der Luft auf die feindlichen Truppen ab. Die Bruderschaft ohne Banner stellt sich das ganz anders vor. Ihre Bogenschützen sind zwar durchaus in der Lage, einen tödlichen Pfeilhagel abzufeuern, aber ihrer Stärle liegt im Angriff aus dem Hinterhalt. So stiften sie Chaos und Verwirrung in den feindlichen Reihen, weichen ihre Linie auf und machen sie angreifbar für Angriffe von jeder Seite."
+            }
+        },
+        {
+            "id": "11104",
+            "name": "Geschworene Ritter der Bruderschaft ohne Banner",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "cavalry",
+                "cost": 8,
+                "speed": 5,
+                "defense": 3,
+                "morale": 5,
+                "attacks": [
+                    {
+                        "name": "Ritterliche Bewaffnung",
+                        "type": "melee",
+                        "hit": 3,
+                        "dice": [
+                            7,
+                            5
+                        ]
+                    }
+                ],
+                "abilities": [
+                    "Kavallerie",
+                    "Ritterliche Bewaffnung",
+                    "Versammelt das gemeine Volk"
+                ],
+                "wounds": 3,
+                "tray": "cavalry"
+            },
+            "fluff": {
+                "lore": "Die Ritter der Bruderschaft ohne Banner gehören zu den fähigsten in ganz Westeros. Sie bestehen aus ehemaligen Rittern bedeutender und unbedeutender Lords, die sich zu etwas Höherem berufen fühlen und sich deshalb der Bruderschaft anschlossen. Sie sind nahezu unverwüstlich und dienen auf dem Schlachtfeld oft als Zentrum der Armee der Bruderschaft. Obwohl normalerweise das Gelände ihren Einsatz vorherbestimmt, wird ein Heerführer der Bruderschaft, der sich gut auf einen tödlichen Angriff vorbereitet, in den meisten Fällen den Sieg davontragen."
+            }
+        }
+    ],
+    "ncus": [
+        {
+            "id": "31101",
+            "name": "Geist von Hochherz",
+            "subname": "Waldhexe",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Prophezeiungen und Omen",
+                        "effect": [
+                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                            "Solange der Geist von Hochherz Einfluss auf eine Einheit ausübt, erhält jene Einheit +1 auf das Ergebnis von Moralproben.",
+                            "Immer wenn eine Schlachtreihe jener Einheit vernichtet wird, wird 1 Feind, der mit ihr im Nahkampf ist, **Verwundbar** und **Geschwächt**."
+                        ]
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": "\"Dieses Weib erfährt solche Dinge auf ganz eigene Weise. Die Wehrholzbäume flüstern ihr ins Ohr, wenn sie schläft.\" - Thoros von Myr"
+            }
+        },
+        {
+            "id": "31102",
+            "name": "Ravella Kleinwald",
+            "subname": "Lady von Eichelhall",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Verbündete im Reich",
+                        "effect": [
+                            "Bei Spielbeginn werden 3 Befehlsmarker auf Ravella gelegt.",
+                            "Zu Beginn eines befreundeten Zuges darfst du 1 Befehlsmarker von Ravella und 1 Taktikkarte ablegen.",
+                            "Falls du das tust. heile 2 Wunden von 1 befreundeten Kampfeinheit. Falls jene Einheit nur noch 1 verbleibende Schlachtreihe hat, lege zudem 1 Zustandmarker von ihr ab."
+                        ]
+                    }
+                ],
+                "tokens": {
+                    "number": 3,
+                    "name": "order"
+                }
+            },
+            "fluff": {
+                "quote": "\"Mit ihrer Hilfe kämpfen wir weiter,\nso gut wir können, für Robert und\ndas Reich.\" - Beric Dondarrion"
+            }
+        },
+        {
+            "id": "31103",
+            "name": "Catelyn Stark",
+            "subname": "Die Henkerin",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Rache um jeden Preis",
+                        "effect": [
+                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                            "Solange Catelyn Stark Einfluss auf eine feindliche Kampfeinheit ausübt, immer wenn jene Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird, erleidet jene Einheit 1 Wunde.",
+                            "Befreundete Kampfeinheiten dürfen beliebig viele Angriffswürfel neu werfen, sobald sie einen Nahkampfangriff gegen jene Einheit durchführen."
+                        ]
+                    }
+                ],
+                "requirements": [
+                    {
+                        "text": "*Darf nicht in einer Armee aufgestellt werden, die Beric Dondarrion enthält.*"
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": "\"... sie erhob sich. Möge der Herr des Lichts uns beschützen. Sie erhob sich.\" -Thoros von Myr"
+            }
+        },
+        {
+            "id": "31104",
+            "name": "Thoros von Myr",
+            "subname": "Die Glut",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "cost": 4,
+                "abilities": [
+                    {
+                        "name": "Neue Bekehrte",
+                        "effect": [
+                            "Immer wenn eine Schlachtreihe in einer feindlichen Kampfeinheit vernichtet wird, lege 1 Befehlsmarker auf Thoros.",
+                            "Immer wenn Thoros eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                            "*Heile bis zu 2 Wunden von 1 befreundeten Kampfeinheit. Dann darfst du bis zu 2 Befehlsmarker von Thoros ablegen. Falls du das tust, heile für jeden Befehlsmarker, den du ablegst, 1 Wunde von 1 befreundeten Kampfeinheit.*"
+                        ]
+                    }
+                ]
+            },
+            "fluff": {
+                "quote": "\"Das war aber nicht freundlich. Wahr vielleicht, aber keineswegs freundlich.\""
+            }
+        }
+    ],
+    "attachments": [
+        {
+            "id": "21101",
+            "name": "Beric Dondarrion",
+            "subname": "Blitzlord",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Befehl: Bewachen",
+                    "Der Krone Verpflichtet",
+                    "Wegbereiter"
+                ],
+                "commander": true,
+                "character": true
+            },
+            "tactics": {
+                "cards": {
+                    "41108": "Angriffsbefehle",
+                    "41109": "Sechsmal ist zu oft",
+                    "41110": "Lichtbringer"
+                }
+            },
+            "fluff": {
+                "quote": "\"Ihr reitet mit Dondarrion.\nDem Blitzlord.\" -Brienne"
+            }
+        },
+        {
+            "id": "21102",
+            "name": "Beric Dondarrion",
+            "subname": "Azor Ahai",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Lichtbringer"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Reduziere die Kosten für die erste Verstärkung in deiner Armee um 1.*"
+                    }
+                ],
+                "character": true,
+                "tokens": {
+                    "number": 1,
+                    "name": "faith"
+                }
+            },
+            "fluff": {
+                "quote": "\"Feuer verzehrt.\""
+            }
+        },
+        {
+            "id": "21103",
+            "name": "Thoros von Myr",
+            "subname": "Der rote Zauberer",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Gebete an R'hllor"
+                ],
+                "commander": true,
+                "character": true,
+                "tokens": {
+                    "number": 1,
+                    "name": "faith"
+                }
+            },
+            "tactics": {
+                "cards": {
+                    "41111": "Feuriger Ansturm",
+                    "41112": "Von den kleinen Leuten geliebt",
+                    "41113": "Der letzte Kuss"
+                }
+            },
+            "fluff": {
+                "quote": "\"Der Herr des Lichts ist in meinem Herzen erwacht.\""
+            }
+        },
+        {
+            "id": "21104",
+            "name": "Thoros von Myr",
+            "subname": "Ergebener Gläubiger",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Verstärkungen",
+                    "Unermüdlich"
+                ],
+				"requirements": [
+                    {
+                        "text": "*Reduziere die Kosten für die erste Verstärkung in deiner Armee um 1.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Er ist nicht gerade sehr priesterlich, oder?\" -Arya Stark"
+            }
+        },
+        {
+            "id": "21105",
+            "name": "Zit Zitronenmantel",
+            "subname": "Die Zitrone",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Kampfnarben"
+                ],
+				"requirements": [
+                    {
+                        "text": "*Reduziere die Kosten für die erste Verstärkung in deiner Armee um 1.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Wenn du dich uns anschließt, endest du mit dem Hals in der Schlinge ...\""
+            }
+        },
+        {
+            "id": "21106",
+            "name": "Tom Siebenseiten",
+            "subname": "Sieben",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Befehl: Spott"
+                ],
+				"requirements": [
+                    {
+                        "text": "*Reduziere die Kosten für die erste Verstärkung in deiner Armee um 1.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Manchmal weiß ein Mann mehr, als er sagt.\""
+            }
+        },
+        {
+            "id": "21107",
+            "name": "Catelyn Stark",
+            "subname": "Lady Steinherz",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": "C",
+                "abilities": [
+                    "Schrecklicher Anblick",
+                    "Bedrohliche Erscheinung"
+                ],
+                "commander": true,
+                "requirements": [
+                    {
+                        "text": "*Darf nicht in einer Armee aufgestellt werdem, die Beric Dondarrion enthält.*"
+                    }
+                ],
+                "character": true
+            },
+            "tactics": {
+                "cards": {
+                    "41114": "Peitschenhieb",
+                    "41115": "Der Preis des Versagens",
+                    "41116": "Blutige Rache"
+                }
+            },
+            "fluff": {
+                "quote": "\"Sie spricht nicht. Ihr verfluchten Bastarde habt ihr die Kehle zu tief zerschnitten. Aber sie kann sich noch erinnern.\" - Zit"
+            }
+        },
+        {
+            "id": "21108",
+            "name": "Anguy",
+            "subname": "Der Schütze",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Befehl: Rascher Rückzug",
+                    "Die Flanke Umgehen"
+                ],
+				"requirements": [
+                    {
+                        "text": "*Reduziere die Kosten für die erste Verstärkung in deiner Armee um 1.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Anguy könnte dich mit drei Pfeilen durchbohren, ehe du auch nur hoffen darfst, uns zu erreichen.\" - Tom aus Siebenbächen" 
+            }
+        },
+        {
+            "id": "21109",
+            "name": "Edric Dayne",
+            "subname": "Loyaler Knappe",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Berics Vasall",
+                    "Rückzug"
+                ],
+                "requirements": [
+                    {
+                        "text": "*Edric Dayne darf einer Einheit hinzugefügt werden, die Thoros von Myr enthält. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Ich bin doch erst zwölf.\""
+            }
+        },
+        {
+            "id": "21110",
+            "name": "Heisse Pastete",
+            "subname": "Der Bäckersjunge",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 1,
+                "abilities": [
+                    "Heisse Pastete!"
+                ],
+				"requirements": [
+                    {
+                        "text": "*Reduziere die Kosten für die erste Verstärkung in deiner Armee um 1.*"
+                    }
+                ],
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Alle haben irgendetwas gerufen. Heiße Pastete hat Heiße Pastete geschrien. Und zwar mindestens hundert Mal.\" -Arya Stark"
+            }
+        },
+        {
+            "id": "21111",
+            "name": "Gendry",
+            "subname": "Der Bulle",
+            "statistics": {
+                "version": "S06",
+                "faction": "brotherhood",
+                "type": "infantry",
+                "cost": 2,
+                "abilities": [
+                    "Befehl: Widerstandskraft",
+                    "Verbesserte Verteidigung (BwB)"
+                ],
+				"requirements": [
+                    {
+                        "text": "*Reduziere die Kosten für die erste Verstärkung in deiner Armee um 1.*"
+                    }
+                ],				
+                "character": true
+            },
+            "fluff": {
+                "quote": "\"Lord? Ich bin bloß ein Schmied.\""
+            }
+        }
+    ],
+    "tactics": [
+        {
+            "id": "41101",
+            "name": "Plötzlicher Rückzug",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                        "effect": [
+                            "Bestimme den Verteidiger zum Ziel. Er führt 1 Rückzugsaktion durch.",
+                            "Falls diese Karte die Einheit deines Heerführers zum Ziel hat, darf sie alle Würfel für die Bewegungsweite des Rückzugs neu werfen."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41102",
+            "name": "Rückzug und Neuformierung",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines befreundeten Zuges:",
+                        "effect": [
+                            "Bestimme 2 befreundete Infanterie-Einheiten innerhalb **Langer Reichweite** zueinander zum Ziel. Entferne bis zu 4 Figuren von 1 dieser Einheiten. Heile ebenso viele Wunden der anderen Einheit.",
+                            "Du darfst dann 1 Verstärkung von 1 dieser Einheiten zu der anderen bewegen (ersetze wie gewohnt eine Figur in jener Einheit und achte auf die üblichen Verstärkungsbeschränkungen) oder 2 befreundete Verstärkungen jener Einheit tauschen."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41103",
+            "name": "Die Ritter des hohlen Berges",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Kampfeinheit zum Ziel einer feindlichen Fähigkeit oder Taktikkarte bestimmt wird:",
+                        "effect": [
+                            "Jene Einheit legt 1 Moralprobe ab.",
+                            "Bei Bestehen hebe den Effekt jener Fähigkeit oder Taktikkarte auf. Dann darf jene Einheit eine Manöveraktion durchführen, bei der sie sich 3 Zoll bewegen darf."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41104",
+            "name": "Die vergessene Gemeinschaft",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn einer beliebigen Runde:",
+                        "effect": [
+                            "Bestimme 1 befreundete Kampfeinheit zum Ziel.",
+                            "Sie führt 1 Marsch- oder Rückzugsaktion durch. Dann wird sie **Geschwächt**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41105",
+            "name": "Ergreift die Schwerter",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                        "effect": [
+                            "Jene Einheit legt 1 Moralprobe ab.",
+                            "Bei Bestehen wähle 1 der folgenden Effekte:",
+                            "• Sie heilt 1 Wunde, +1 Wunde für jede ihrer vernichteten Schlachtreihen.",
+                            "• Bestimme 1 feindliche Kmapfeinheit innerhalb **Langer Reichweite** zum Ziel. Sie wird **Panisch** und **Geschwächt**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41106",
+            "name": "Azor Ahai!",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen wuorden sind:",
+                        "effect": [
+                            "Jene Einheit kann maximal 1 Wunde erleiden, wenn sie an dieser Panikprobe scheitert.",
+                            "Falls diese Karte die Einheit deines Heerführers zum Ziel hat, besteht sie stattdessen die Probe und alle Feinde, mit denen sie im Nahkampf ist, werden **Geschwächt**."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41107",
+            "name": "Doch das Reich bleibt bestehen",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Immer wenn eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte,",
+                            "Zu Beginn eines befreundeten Zuges darfst du 1 Befehlsmarker von dieser Einheit ablegen. Falls du das tust, heile 3 Wunden von dieser Einheit.",
+                            "Solange auf dieser Karte ein Befehlsmarker liegt, kann die angelegte Einheit keinen Zustandsmarker erhalten."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "41108",
+            "name": "Angriffsbefehle",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                        "effect": [
+                            "Ersetze den Effekt jener Zone durch:",
+                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
+                            "*Falls diese Karte Berics Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"
+                        ]
+                    }
+                ],
+                "commander_id": "21101",
+                "commander_name": "Beric Dondarrion",
+                "commander_subname": "Blitzlord"
+            }
+        },
+        {
+            "id": "41109",
+            "name": "Sechmal ist zu oft",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Infanterie-Einheit von einem Nahkampfangriff vernichtet werden würde:",
+                        "effect": [
+                            "Jene Einheit wird nicht vernichtet, sondern verbleibt mit 1 geheilten Wunde im Spiel.",
+                            "Lege diese Karte bis zum Ende der Partie an jene Einheit an.",
+                            "Solange diese Karte an dieser Einheit anliegt, kann sie nicht zum Ziel von befreundeten oder feindlichen Befehlen oder Taktikkarten bestimmt werden."
+                        ]
+                    }
+                ],
+                "commander_id": "21101",
+                "commander_name": "Beric Dondarrion",
+                "commander_subname": "Blitzlord"
+            }
+        },
+        {
+            "id": "41110",
+            "name": "Lichtbringer",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Nachdem eine befreundete Kampfeinheit einen Nahkampfangriff abgeschlossen hat:",
+                        "effect": [
+                            "Bestimme 1 feindliche Einheit innerhalb **Kurzer Reichweite** zum Angreifer zum Ziel. Sie muss 1 Panikprobe ablegen und erhält -1 auf das Ergebnis der Probe für jede ihrer vernichteten Schlachtreihen.",
+                            "Falls der Angreifer Berics Einheit ist, wird die zum Ziel bestimmte Einheit zudem **Panisch**."
+                        ]
+                    }
+                ],
+                "commander_id": "21101",
+                "commander_name": "Beric Dondarrion",
+                "commander_subname": "Blitzlord"
+            }
+        },
+        {
+            "id": "41111",
+            "name": "Feuriger Ansturm",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor jene Aktion abgehandelt wird:",
+                        "effect": [
+                            "Jene Einheit zählt automatisch, als hätte sie bei allen Würfen für die Bewegungsweite des Ansturms eine 6 gewürfelt, und Feinde, gegen die sie einen erfolgreichen ANsturm durchführt, werden **Panisch**.",
+                            "Nachdem dieser Angriff abgeschlossen worden ist, wird der Angreifer **Verwundbar**, es sei denn, der Angreifer ist Thoros' Einheit."
+                        ]
+                    }
+                ],
+                "commander_id": "21103",
+                "commander_name": "Thoros von Myr",
+                "commander_subname": "Der rote Zauberer"
+            }
+        },
+        {
+            "id": "41112",
+            "name": "Von den kleinen Leuten geliebt",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Jener Feind legt 1 Moralprobe ab. Bei einem Fehlschlag wird er **Verwundbar** und **Geschwächt**.",
+                            "Falls er innerhalb **Kurzer Reichweite** zu Thoros' Einheit ist, erleidet er -2 auf das Ergebnis der Moralprobe."
+                        ]
+                    }
+                ],
+                "commander_id": "21103",
+                "commander_name": "Thoros von Myr",
+                "commander_subname": "Der rote Zauberer"
+            }
+        },
+        {
+            "id": "41113",
+            "name": "Der letzte Kuss",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Verstärkung vernichtet werden würde:",
+                        "effect": [
+                            "Lege diese Verstärkung statt sie zu vernichtetn an eine Kampfeinheit derselben Art an *(ersetze wie gewohnt eine Figur, aber ignoriere die üblichen Verstärkungsbeschränkungen)*."
+                        ]
+                    },
+                    {
+                        "trigger": "Zu Beginn eines beliebigen Zuges:",
+                        "effect": [
+                            "Ziehe 1 Taktikkarte."
+                        ]
+                    }
+                ],
+                "commander_id": "21103",
+                "commander_name": "Thoros von Myr",
+                "commander_subname": "Der rote Zauberer"
+            }
+        },
+        {
+            "id": "41114",
+            "name": "Peitschenhieb",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                        "effect": [
+                            "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 Wunden für jede vernichtete Schlachtreihe des Verteidigers.",
+                            "Falls der Verteidiger Catelyn Starks Einheit ist, wird der Angreifer zudem **Panisch**."
+                        ]
+                    }
+                ],
+                "commander_id": "21107",
+                "commander_name": "Catelyn Stark",
+                "commander_subname": "Lady Steinherz"
+            }
+        },
+        {
+            "id": "41115",
+            "name": "Der Preis des Versagens",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                        "effect": [
+                            "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer.",
+                            "Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
+                        ]
+                    }
+                ],
+                "commander_id": "21107",
+                "commander_name": "Catelyn Stark",
+                "commander_subname": "Lady Steinherz"
+            }
+        },
+        {
+            "id": "41116",
+            "name": "Blutige Rache",
+            "statistics": {
+                "version": "2021",
+                "faction": "brotherhood",
+                "text": [
+                    {
+                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat, falls er eine befreundete Schlachtreihe vernichtet hat:",
+                        "effect": [
+                            "Bestimme 1 befreundete Kampfeinheit, die nicht der Verteidiger war, zum Ziel. Sie darf 1 Manöver- oder Marschaktion durchführen.",
+                            "Falls diese Karte Catelyn Starks Einheit zum Ziel hat, darf sie stattdessen 1 Ansturm- oder Angriffsaktion durchführen."
+                        ]
+                    }
+                ],
+                "commander_id": "21107",
+                "commander_name": "Catelyn Stark",
+                "commander_subname": "Lady Steinherz"
+            }
+        }
+    ],
+    "specials": [
+        {
+            "name": "Bruderschaft ohne Banner",
+            "id": "51101",
+            "type": "faction",
+            "statistics": {
+                "faction": "brotherhood",
+                "version": "S06",
+                "front": {
+                    "ratio": 0.45,
+                    "crests": 1,
+                    "top": [
+                        "**BRUDERSCHAFT\nOHNE BANNER**"
+                    ],
+                    "quote": "\"Robert wurde getötet, doch sein\nReich bleibt bestehen. Und wir\nverteidigen es.\" -Beric Dondarrion",
+                    "text": [                        
+                        "Deine Armee darf 1 Kampfeinheit von Haus Baratheon oder Haus Stark enthalten. Diese Einheit wird von den Punkten für nicht- neutrale Einheiten bezahlt."
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Niemals Endende Rache",
+            "id": "51102",
+            "type": "extra",
+            "statistics": {
+                "faction": "brotherhood",
+                "version": "2021",
+                "front": {
+                    "ratio": 0.25,
+                    "text": [
+                        "Falls deine Armee Catelyn Stark enthält, darfst du die folgenden Fraktionen, Einheiten, Verstärkungen und Charaktere nicht aufstellen:",
+                        "• **Haus Bolton** *(Fraktion und neutrale Einheiten)*\n• **Hauptmann von Graustein**\n• **Schinder von Haus Bolton**\n• **Roose Bolton**\n• **Ramsay Schnee**\n• **Walder Frey**",
+                        "Befreundete Kampfeinheiten dürfen alle Würfel für die Bewegungsreichweite des Ansturms neu werfen, sobald sie Ansturmsaktionen gegen Haus-Lennister-Einheiten, oben aufgeführte EInheiten oder Einheiten, die die oben aufgeführten Verstärkungen enthalten, durchführt."
+                    ]
+                },
+                "back": {
+                    "ratio": 0.25,
+                    "crests": 2,
+                    "image": true
+                }
+            }
+        }
+    ]
+}

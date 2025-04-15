@@ -45,7 +45,8 @@
     },
     "AERIAL SCOUTING": {
         "effect": [
-            "Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, this model's Skinchanger unit may perform a 2\" shift."
+            "• Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, this model's Skinchanger unit may perform a 2\" shift.",
+            "• Each time an enemy performs a Melee Attack on this unit, the Attacker gains **Precision**."
         ]
     },
     "AFFILIATION: BLOODY MUMMERS": {
@@ -167,7 +168,7 @@
     },
     "AMBUSH": {
         "effect": [
-            "Enemies this unit Successfully Charges in the Flank or Rear become **Panicked** and **Weakened**."
+            "Enemies this unit Successfully Charges in the Flank or Rear become **Panicked**, **Vulnerable** and **Weakened**."
         ],
         "icons": [
             "melee"
@@ -176,7 +177,7 @@
     "ARROW VOLLEY": {
         "effect": [
             "• Ignores units and terrain when determining Line of Sight.",
-            "• If the Defender rolls a 1 on any Defense Dice, after this attack is completed, they become **Weakened**."
+            "• If the Defender suffers any Wounds, they become **Weakened**."
         ],
         "icons": [
             "ranged"
@@ -196,7 +197,7 @@
             "**• When an enemy is performing an Attack on this unit, after rolling Defense Dice:**",
             "This unit blocks +1 Hit, +1 additional Hit for each of its destroyed ranks.",
             "**• When this unit is performing a Melee Attack, before rolling Attack Dice:**",
-            "This Attack gains Sundering and may re-roll any Attack Dice."
+            "This Attack gains **Sundering** and may re-roll any Attack Dice."
         ],
         "icons": [
             "faith"
@@ -275,7 +276,7 @@
     },
     "BOISTEROUS CHARISMA": {
         "effect": [
-            "This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs."
+            "Each time this unit passes a Panic Test, target 1 enemy unit in Short Range. They become **Vulnerable** or **Weakened**."
         ],
         "icons": [
             "wounds"
@@ -305,12 +306,15 @@
     },
     "BONDED BEAR": {
         "effect": [
-            "• This unit has 1 Wound and cannot grant Victory Points.",
-            "• If this unit is destroyed, it cannot be selected by its Skinchanger again.",
-            "• If this unit was selected, when its Bonded Skinchanger Activates, Deploy it engaged in the Front or Flank of 1 enemy engaging its Skinchanger. It then performs 1 Melee Attack Action. Remove this unit at the end of the Round."
+            "• This unit has 3 Wounds.",
+            "• Cannot Control Objectives and cannot grant Victory Points.",
+            "• When this unit is selected, deploy it fully within Short Range of other friendly Free Folk units, and at least 1” from any enemy unit.",
+            "• At the start of any Round, if this unit is not in Short Range of other friendly Free Folk unit, it is destroyed.",
+            "• This unit does not Activate as normal. Instead, once per Turn, when this model’s Skinchanger unit Activates, this unit Activates immediately after them.",
+            "• Enemies engaged with this unit suffer -1 to Defense Dice Rolls."
         ],
         "icons": [
-            "wounds"
+            "wounds3"
         ]
     },
     "BONDED BOAR": {
@@ -326,17 +330,18 @@
     },
     "BONDED EAGLE": {
         "effect": [
-            "Each time this unit is selected, target 1 enemy. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
+            "At the start of each Round, target 1 enemy Combat Unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
         ]
     },
     "BONDED SKINCHANGER": {
         "effect": [
-            "At the start of each Round, select Bear, Eagle, or Wolf. See that unit's card for additional effects."
+            "• When this unit is deployed, select Bear, Eagle, or Wolf. See that unit's card for additional effects.",
+            "• When this unit is destroyed, remove it's bonded animal."
         ]
     },
     "BONDED WOLF": {
         "effect": [
-            "Each time this unit is selected, target 1 enemy in Long Range of its Skinchanger's unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
+            "At the start of each Round, target 1 enemy Combat Unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes."
         ]
     },
     "BOOKKEEPING (CORTNAY PENROSE)": {
@@ -542,10 +547,9 @@
     },
     "DIVINE SACRIFICES": {
         "effect": [
-            "Each time this unit Attacks, before rolling Attack Dice, it may suffer up to 2 Wounds. If it does, for each Wound suffered, the Defender becomes **Panicked** or **Vulnerable**."
+            "Each time this unit performs a Melee Attack, before rolling Attack Dice, it may suffer 1 Wound. If it does, this Attack gains +1 to Hit and the Defender becomes **Panicked** or **Vulnerable**."
         ],
         "icons": [
-            "ranged",
             "melee"
         ]
     },
@@ -559,7 +563,7 @@
     },
     "DOMINEERING PRIDE": {
         "effect": [
-            "While engaged by an enemy with fewer remaining ranks, this unit automatically passes all Panic Tests."
+            "While engaged by an enemy with the same or fewer remaining ranks, this unit automatically passes all Panic Tests."
         ]
     },
     "DORNISH CONVICTION": {
@@ -658,7 +662,7 @@
     },
     "EXPERIMENT ENHANCEMENTS": {
         "effect": [
-            "This unit's Melee Attacks gain +1 to Hit and **Vicious**. Opponents cannot expend Weakened tokens on this unit while it is Attacking."
+            "This unit's Melee Attacks gain +1 to Hit and **Vicious**. Opponents cannot expend **Weakened** tokens on this unit while it is Attacking."
         ],
         "icons": [
             "wounds",
@@ -731,7 +735,8 @@
     },
     "FIRST OF THE KING'S MEN": {
         "effect": [
-            "You count as Controlling the [CROWN] *and* [LETTER] zones for Tactics cards that target this unit."
+            "• You count as Controlling the [CROWN] *and* [LETTER] zones for Tactics cards that target this unit.",
+            "• While your opponent does not Control [CROWN] or [LETTER], this unit may re-roll any Morale Test Dice."
         ]
     },
     "FLAIL": {
@@ -770,16 +775,20 @@
     "FURIOUS SWING": {
         "effect": [
             "• **Vicious**",
-            "• Hits from this Attack cannot be blocked. If this Attack generates any Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each Wound this unit has suffered."
+            "• Gains +1 Attack Die for each Wound this unit has suffered.",
+            "• Defenders do not roll Defense Dice.",
+            "• Enemies Successfully Charged by this unit become **Panicked**."
         ],
         "icons": [
-            "melee",
-            "wounds"
+            "wounds",
+            "melee"
         ]
     },
     "GALLOWS HUMOR": {
         "effect": [
-            "While this unit has at least 1 destroyed rank, it may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs. While it has only 1 remaining rank, its Melee Attacks gain +1 to Hit."
+            "Each time this unit loses a rank, place 1 Order token on Eddison. This unit gains the following based on the number of tokens:",
+            "**1+**: This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs.",
+            "**2+**: This unit Melee Attacks gain +1 to Hit."
         ],
         "icons": [
             "wounds"
@@ -802,9 +811,9 @@
     },
     "GIANT'S SPEAR": {
         "effect": [
-            "**• Vicious",
-            "• Sundering",
-            "• **If the Defender is Cavalry, Monster or War Machine, this Attack deals 2 Hits for each success.",
+            "• **Vicious**",
+            "• **Sundering**",
+            "• If the Defender is Cavalry, Monster or War Machine, this Attack deals 2 Hits for each success.",
             "**• Ranged Only:** Defenders do not roll Defense Dice. May also suffer -3 to Hit to ignore Line of Sight and gain **Unlimited Range.**"
         ],
         "icons": [
@@ -928,7 +937,7 @@
     },
     "HODOR!!!": {
         "effect": [
-            "When this unit is performing a Retreat Action, after rolling Retreat Distance Dice, you may have all dice count as rolling a 6. If you do, this Attachment loses all Abilities until the end of the game."
+            "When this unit is performing a Retreat Action, after rolling Retreat Distance Dice, you may have all dice count as rolling a 6. If you do, this Attachment loses all Abilities until the end of the game. Enemies this unit disengages from may not pivot."
         ]
     },
     "HORRIFIC VISAGE": {
@@ -947,7 +956,7 @@
     },
     "IMPALING SPEAR": {
         "effect": [
-            "After completing this Attack, if this destroyed an enemy rank, all enemies in Short Range of the Attacker become **Panicked**."
+            "After completing this Attack, if this Attack destroyed an enemy rank, all enemies in Short Range of the Attacker become **Panicked**, if they were already **Panicked**, they instead become **Weakened**."
         ],
         "icons": [
             "melee"
@@ -1069,9 +1078,10 @@
     },
     "JOJEN'S GREENSIGHT": {
         "effect": [
-            "Each time this unit performs an Attack or Charge Action, before resolving that Action, it gains 1 of the following:",
-            "• May re-roll any Attack Dice.",
-            "• May re-roll any Charge Distance Dice and ignores the Hindering and Rough keywords this Turn."
+            "Jojen begins the game with 2 Order tokens on him.",
+            "Each time this unit attacks or is attacked, after rolling Attack Dice or Defense Dice, you may remove 1 Order token from Jojen. If you do, choose 1:",
+            "• This unit may re-roll any Attack Dice.",
+            "• This unit may re-roll any Defense Dice."
         ],
         "icons": [
             "wounds"
@@ -1121,7 +1131,7 @@
     "KNIGHTLY VOW": {
         "effect": [
             "• After deployment target 1 enemy unit. When Charging that enemy, this unit may re-roll any Charge Distance dice.",
-            "• While you Control [SWORDS], this unit's Melee Attacks gain +1 to Hit."
+            "• While your opponent does not Control [SWORDS], this unit's melee attacks gain +1 to Hit."
         ],
         "icons": [
             "melee"
@@ -1143,11 +1153,11 @@
     },
     "LANNISTER OPPRESSION": {
         "effect": [
+            "Each time this unit performs a Melee Attack, before rolling Attack Dice choose 1, for each Condition token on the Defender, choose +1:",
             "• **Vicious**",
-            "Before rolling Attack Dice, you may expend Condition Tokens on the Defender to gain the following:",
-            "• **Panicked**: Until the end of the Turn, Defender loses any Abilities and may not be the target of friendly Tactics cards.",
-            "• **Vulnerable**: Attack may re-roll any Attack Dice. After completing this Attack, restore 2 Wounds for each of the Defender's ranks destroyed by this Attack.",
-            "• **Weakened**: Attack rolls highest Attack Die Value and gains **Sundering**."
+            "• **Sundering**",
+            "• Until the end of the Turn, Defender loses all Abilities.",
+            "• This unit may re-roll any Attack Dice."
         ],
         "icons": [
             "melee"
@@ -1181,7 +1191,7 @@
     },
     "MAEGI'S HEALING": {
         "effect": [
-            "Each time this unit Activates, roll a D3. On a 3, this unit suffers 1 Wound. On a 1, choose 1. On a 2, choose 2 *(the same effect may be chosen multiple times)*:",
+            "Each time this unit Activates, roll a D3. On a 1, choose 1. On a 2, choose 2 *(the same effect may be chosen multiple times)*. On a 3, nothing happens:",
             "• Restore 1 Wound to this unit.",
             "• Remove 1 Condition token from this unit."
         ]
@@ -1282,40 +1292,9 @@
             "wounds"
         ]
     },
-    "MOTIVATED BY COIN (BRONN)": {
+    "MOTIVATED BY COIN": {
         "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Bronn's unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (DAARIO NAHARIS)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Daario Naharis' unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (FORTUNE SEEKER)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Fortune Seeker's unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (NUTE)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*Nute's unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (STORMCROW DERVISHES)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*1 Stormcrow Dervishes unit performs 1 Attack Action.*"
-        ]
-    },
-    "MOTIVATED BY COIN (STORMCROW MERCENARIES)": {
-        "effect": [
-            "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
-            "*1 Stormcrow Mercenaries unit performs 1 Attack Action.*"
+            "While your opponent does not Control [MONEY], when performing a Melee Attack, this unit may re-roll Melee Attack Dice and, when this unit activates, it may restore 1 Wound."
         ]
     },
     "MOTLEY ARMAMENTS": {
@@ -1367,9 +1346,7 @@
     "ORDER: ADAPTIVE STYLE": {
         "trigger": "When this unit Attacks or is Attacked, before rolling Attack Dice:",
         "effect": [
-            "Choose 1:",
-            "• This unit gains +1 to Defense Dice rolls and +2 to Panic Test rolls against this Attack.",
-            "• This Attack gains **Critical Blow** and **Sundering**."
+            "Choose 1:\n• This unit gains +1 to Defense Dice rolls and +2 to Panic Test rolls against this Attack.\n• This Attack gains **Critical Blow** and **Sundering**."
         ],
         "icons": [
             "order"
@@ -1405,8 +1382,7 @@
     "ORDER: DIVIDE THE SPOILS": {
         "trigger": "Start of any Turn:",
         "effect": [
-            "Target 1 friendly House Greyjoy unit in Short Range. ",
-            "You may remove 1 Pillage token from that unit and then place 1 Pillage token on 1 other friendly House Greyjoy unit in Short Range of them."
+            "Target 1 friendly House Greyjoy unit in Long Range.\nYou may remove 1 Pillage token from that unit and then place 1 Pillage token on 1 other friendly House Greyjoy unit in Long Range of them."
         ],
         "icons": [
             "order"
@@ -1415,10 +1391,7 @@
     "ORDER: DROWNED GOD'S BLESSING": {
         "trigger": "Start of any Turn:",
         "effect": [
-            "Target 1 friendly Greyjoy Infantry unit in Short Range and choose 1:",
-            "• That unit restores 2 Wounds.",
-            "• That unit may re-roll any Attack Dice this Turn.",
-            "• Enemies that Attack that unit this Turn become **Vulnerable**."
+            "Target 1 friendly Greyjoy Infantry unit in Short Range and choose 1:\n• That unit restores 2 Wounds.\n• That unit may re-roll any Attack Dice this Turn.\n• Enemies that Attack that unit this Turn become **Vulnerable**."
         ],
         "icons": [
             "order"
@@ -1427,7 +1400,7 @@
     "ORDER: GRISLY EXAMPLE": {
         "trigger": "Start of any Turn:",
         "effect": [
-            "This unit suffers 1 Wound. Target all enemies in Short Range. They become **Panicked**."
+            "This unit suffers 1 Hit. Target all enemies in Short Range. They become **Panicked**."
         ],
         "icons": [
             "order"
@@ -1436,9 +1409,7 @@
     "ORDER: HIDDEN TRAPS": {
         "trigger": "When an unengaged enemy in Long Range performs any Action, before resolving that Action:",
         "effect": [
-            "Choose 1:",
-            "• That enemy suffers 1 Hit, +1 Hit for each of its remaining ranks.",
-            "• That Enemy suffers -1[MOVEMENT] until the end of the Turn."
+            "Choose 1:\n• That enemy suffers 1 Hit for each of its remaining ranks.\n• That enemy suffers -1[MOVEMENT] until the end of the Turn."
         ],
         "icons": [
             "order"
@@ -1598,7 +1569,7 @@
         ]
     },
     "ORDER: RESILIENCE": {
-        "trigger": "When an enemy is performing an Attack on this unit, after rolling Attack Dice:",
+        "trigger": "When an enemy is performing an Attack on this unit, after Attack Dice are rolled:",
         "effect": [
             "This unit only suffers 1 Wound for every 2 unblocked Hits."
         ],
@@ -1636,7 +1607,7 @@
     "ORDER: SET AN EXAMPLE": {
         "trigger": "Start of any Turn:",
         "effect": [
-            "Target all enemies in Short Range. They become Panicked. Roll a die, on a 6, destroy Theon."
+            "Target all enemies in Short Range. They become **Panicked**. Roll a die, on a 6, destroy Theon."
         ],
         "icons": [
             "order"
@@ -1887,7 +1858,8 @@
     },
     "POISONED GIFTS": {
         "effect": [
-            "If this unit is a House Greyjoy unit, it deploys with 2 Pillage tokens. When it performs an Action, before resolving that Action, it suffers 1 Wound."
+            "If this unit is a House Greyjoy unit, it deploys with 2 Pillage tokens.",
+            "At the Start of Round 3, they become **Panicked**, **Vulnerable** and **Weakened**."
         ]
     },
     "POISONED TRIDENTS": {
@@ -1911,7 +1883,9 @@
     },
     "PREDATOR'S INSTINCTS": {
         "effect": [
-            "Each time this unit Charges, it suffers a Disorderly Charge on rolls of 1 or 2. When this model's Skinchanger unit Charges this unit, they may re-roll any Charge Distance Dice."
+            "• Each time this unit Charges, it suffers a Disorderly Charge on rolls of 1 or 2.",
+            "• Each time an enemy performs a Melee Attack on this unit, their Attack gains **Vicious**.",
+            "• When this model's Skinchanger unit Charges this unit, they may re-roll any Charge Distance Dice."
         ]
     },
     "PREY ON FEAR": {
@@ -1921,7 +1895,7 @@
     },
     "PROTECTION OF THE CROWN": {
         "effect": [
-            "While you Control [CROWN], each time this unit is Attacked, it may re-roll any Defense Dice."
+            "While you Control [CROWN], each time this unit is Attacked, it may re-roll any Defense Dice and opponents cannot expend **Vulnerable** tokens on this unit."
         ]
     },
     "PUMMELING FISTS": {
@@ -1936,7 +1910,7 @@
     },
     "QUEEN'S BLADE": {
         "effect": [
-            "While your opponent does not Control [CROWN], opponents cannot expend **Vulnerable** and **Panic** tokens on this unit."
+            "While your opponent does not Control [CROWN], opponents cannot expend **Vulnerable** and **Panicked** tokens on this unit."
         ]
     },
     "RAIDED ARMAMENTS": {
@@ -1946,8 +1920,8 @@
     },
     "RAIDERS OF THE FREE CITIES": {
         "effect": [
-            "Each time this unit destroys an enemy rank with a Melee Attack, it gain 1 Pillage token. It may have up to 2 Pillage tokens at any time.",
-            "This unit gains the following based on the number of Pillage tokens *(effects are cumulative)*:",
+            "Each time this unit destroys an enemy rank with a Melee Attack, after that Attack is completed, it gains 1 Pillage token. A unit may have up to 2 Pillage tokens at any time.",
+            "That unit gains the following based on the number of Pillage tokens *(effects are cumulative)*:",
             "• **1+**: +1 to Morale Test rolls.",
             "• **2**: +1 Attack Die."
         ],
@@ -1978,7 +1952,8 @@
         "effect": [
             "• **Critical Blow**",
             "• **Sundering**",
-            "• Before rolling Attack Dice, the Defender becomes **Panicked**."
+            "• Before rolling Attack Dice, the Defender becomes **Panicked**.",
+            "• When Charging, this unit may re-roll any Charge Distance Dice."
         ],
         "icons": [
             "melee",
@@ -2092,7 +2067,7 @@
     "RUTHLESS VOLLEY": {
         "effect": [
             "• Ignores units and terrain when determining Line of Sight.",
-            "• When Attacking engaged enemies, gains Precision and may re-roll any Attack Dice. Your friendly units engaged with that enemy suffer 1 Wound."
+            "• When Attacking engaged enemies, gains **Precision** and may re-roll any Attack Dice."
         ],
         "icons": [
             "ranged"
@@ -2105,7 +2080,7 @@
     },
     "SADISTIC MUTILATION": {
         "effect": [
-            "After this unit completes a Melee Attack, you may expend 1 Weakened token from the Defender. If you do, destroy 1 Infantry Attachment in that unit."
+            "After this unit completes a Melee Attack, you may expend 1 **Weakened** token from the Defender. If you do, destroy 1 Infantry Attachment in that unit."
         ],
         "icons": [
             "melee"
@@ -2113,9 +2088,7 @@
     },
     "SAVAGE MAULING": {
         "effect": [
-            "• **Sundering**",
-            "• **Vicious**",
-            "• Gains +1 Attack Die for each Wound this unit has suffered."
+            "• **Sundering**"
         ],
         "icons": [
             "melee"
@@ -2123,7 +2096,7 @@
     },
     "SAVAGE MAULING (BEAR)": {
         "effect": [
-            "Defenders do not roll Defense Dice."
+            "• **Sundering**"
         ],
         "icons": [
             "melee"
@@ -2152,13 +2125,23 @@
     },
     "SIC 'EM": {
         "effect": [
-            "This unit may always re-roll Charge Distance Dice. Enemies this unit Successfully Charge become Panicked."
+            "This unit may always re-roll Charge Distance Dice. Enemies this unit Successfully Charge become **Panicked**."
         ]
     },
     "SOLO RIDER": {
         "effect": [
             "• This unit has 3 Wounds.",
             "• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action."
+        ],
+        "icons": [
+            "wounds3"
+        ]
+    },
+    "WESTEROSI RIDER": {
+        "effect": [
+            "• This unit has 3 Wounds.",
+            "• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action.",
+            "• As long as Jorah is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand."
         ],
         "icons": [
             "wounds3"
@@ -2238,7 +2221,7 @@
     "STARFALL LANCE": {
         "effect": [
             "• **Sundering**",
-            "• When Charging, rolls +2 Attack Dice for each remaining rank in this unit.",
+            "• When Charging, rolls +2 Attack Dice for each remaining ranks in this unit.",
             "• If Attacking an enemy in the Flank or Rear, before rolling Attack Dice, that enemy becomes **Panicked** and **Weakened**."
         ],
         "icons": [
@@ -2271,7 +2254,7 @@
     },
     "SUPERIOR NUMBERS": {
         "effect": [
-            "This unit's Melee Attacks may re-roll any Attack Dice when Attacking enemies with fewer remaining ranks."
+            "When attacking enemies with the same or fewer remaining ranks, this unit’s Melee Attacks may re-roll any Attack Dice and opponents cannot expend **Weakened** tokens on this unit."
         ],
         "icons": [
             "melee"
@@ -2381,7 +2364,7 @@
     },
     "TRUE CONVICTION (BARATHEON)": {
         "effect": [
-            "If this unit is a Baratheon unit, each time it Attacks an enemy with more remaining ranks, it may re-roll any Attack Dice."
+            "If this unit is a Baratheon unit, each time it Attacks an enemy with the same or more remaining ranks, it may re-roll any Attack Dice."
         ],
         "icons": [
             "ranged",
@@ -2390,7 +2373,7 @@
     },
     "TRUE CONVICTION (MARTELL)": {
         "effect": [
-            "If this unit is a Martell unit, each time it Attacks an enemy with more remaining ranks, it may re-roll any Attack Dice."
+            "If this unit is a Martell unit, each time it Attacks an enemy with the same or more remaining ranks, it may re-roll any Attack Dice."
         ],
         "icons": [
             "ranged",
@@ -2432,7 +2415,7 @@
         "effect": [
             "• **Precision**",
             "• May always re-roll Attack Dice.",
-            "• Opponents cannot expend Weakened tokens on this unit while it is Attacking."
+            "• Opponents cannot expend **Weakened** tokens on this unit while it is Attacking."
         ],
         "icons": [
             "melee"
@@ -2541,7 +2524,7 @@
     },
     "VIOLENT REACTIONS": {
         "effect": [
-            "This unit suffers -1 to Defense Dice rolls."
+            "After completing an Attack, this unit becomes **Vulnerable**."
         ],
         "icons": [
             "wounds"
@@ -2640,7 +2623,7 @@
     },
     "ZEALOUS FANATICISM": {
         "effect": [
-            "This unit's Melee Attacks gain Vicious and always roll their highest Attack Die Value. This unit suffers 1 Wound for each Attack Die roll of 1."
+            "This unit's Melee Attacks gain **Vicious** and always roll their highest Attack Die Value. This unit suffers 1 Wound for each Attack Die roll of 1."
         ],
         "icons": [
             "wounds",
@@ -2658,7 +2641,7 @@
     "ORDER: PLANNED APPROACH": {
         "trigger": "Start of any Turn:",
         "effect": [
-            "Target 1 friendly unit in Long Range. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities. When selecting their Action for the Turn, that unit may only declare Charge Actions."
+            "Target 1 friendly unit in Long Range. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities."
         ],
         "icons": [
             "order"
@@ -2675,6 +2658,16 @@
             "• While you Control [SWORDS], this unit's Melee Attacks roll their highest Attack Die Value."
         ]
     },
+    "COMBAT MASTERY: RESOLVE": {
+        "effect": [
+            "While your opponent does not Control [SWORDS], each time this unit passes a Morale Test, it restores 1 Wound."
+        ]
+    },
+    "COMBAT MASTERY: DEFENSE": {
+        "effect": [
+            "While your opponent does not Control [SWORDS], enemies engaged with this unit suffer -1 to Hit."
+        ]
+    },
     "WINTERFELL'S WRATH": {
         "effect": [
             "• **Critical Blow**",
@@ -2682,6 +2675,179 @@
         ],
         "icons": [
             "melee"
+        ]
+    },
+    "HIGHGARDEN LANCE": {
+        "effect": [
+            "• **Sundering**",
+            "• When Charging, gains +1 to Hit.",
+            "• When Charging, rolls +2 Attack Dice for each remaining rank in this unit."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "BOARDING AXE": {
+        "effect": [
+            "• **Sundering**",
+            "• If this unit has 2 Pillage tokens, when performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "CAPTAIN'S MEN": {
+        "effect": [
+            "If Victarion Greyjoy is attached to this unit, it deploys with 1 Pillage token."
+        ]
+    },
+    "DESERT MARKSMEN": {
+        "effect": [
+            "When Attacking enemies that have not Activated this Round, may re-roll Attack Dice and the Defender becomes **Vulnerable**."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "ACUTE PRECISION": {
+        "effect": [
+            "This unit's Attacks gain **Precision**."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "BROTHERWOOD ARMAMENTS": {
+        "effect": [
+            "• **Critical Blow**",
+            "• If your opponent does not control [CROWN], this attack gains +1 to Hit and **Sundering**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "ORDER: DECEITFUL REPOSITION": {
+        "trigger": "At the Start of an enemy Turn, if no enemies are within Short Range:",
+        "effect": [
+            "This unit performs a 3” Maneuver Action."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "HIDDEN SHOT": {
+        "effect": [
+            "• Ignores units and terrain when determining Line of Sight.",
+            "• When Attacking enemies in the Flank or Rear, this attack gains **Precision** and **Vicious**."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "KNIGHTLY ARMAMENTS": {
+        "effect": [
+            "• **Sundering**",
+            "• If your opponent does not Control [CROWN], this Attack may re-roll any Attack Dice."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "RALLY THE SMALLFOLK": {
+        "effect": [
+            "After this unit completes a Melee Attack, if this Attack destroyed an enemy rank, target 1 friendly Infantry unit in Long Range. They restore 2 Wounds."
+        ]
+    },
+    "LIGHTBRINGER": {
+        "effect": [
+            "Beric begins the game with 1 Faith token. Each time his unit passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:",
+            "**•When this unit performs a Melee Attack, before resolving that Attack:**",
+            "This Attack gains +2 Attack Dice.",
+            "**•When this unit would be destroyed by a Melee Attack:**",
+            "Before being removed, this unit performs 1 Melee Attack using its lowest Attack Die Value. If this Attack destroys the Defender, this unit is not destroyed but remains in play with 1 Wound."
+        ],
+        "icons": [
+            "faith"
+        ]
+    },
+    "PRAYERS TO R'HLLOR": {
+        "effect": [
+            "This unit gains +2 to Morale Test rolls and begins the game with 1 Faith token. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:",
+            "**•When this unit performs a Melee Attack, before resolving that Attack:**",
+            "This Attack gains **Sundering** and **Vicious**.",
+            "**•When an enemy in Long Range fails a Panic Test:**",
+            "Target 1 friendly unit in Long Range of this unit. For each Wound the enemy suffered from this test, restore 1 Wound to that friendly unit, up to 3."
+        ],
+        "icons": [
+            "faith"
+        ]
+    },
+    "HOT PIES!": {
+        "effect": [
+            "Each time this unit Activates, it removes 1 Condition Token. If you Control [CROWN], this unit may restore 1 Wound."
+        ]
+    },
+    "BERIC'S VASSAL": {
+        "effect": [
+            "This model counts as Beric Dondarrion for all abilities and effects."
+        ],
+        "icons": [
+            "wounds"
+        ]
+    },
+    "IMPROVED DEFENSES (BWB)": {
+        "effect": [
+            "While you Control [CROWN], this unit gains +1 to Defense Dice rolls."
+        ]
+    },
+    "BROTHERHOOD ARMAMENTS": {
+        "effect": [
+            "• **Critical Blow**",
+            "• If your opponent does not control [CROWN], this attack gains +1 to Hit and **Sundering**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "CAPTAIN’S MEN": {
+        "effect": [
+            "If Victarion Greyjoy is attached to this unit, it deploys with 1 Pillage token."
+        ]
+    },
+    "LEADERSHIP FOLLOWER": {
+        "effect": [
+            "This unit gains +1 to Morale Test rolls while in Long Range of the Commander’s unit."
+        ]
+    },
+    "MIGHT OF THE THRONE": {
+        "effect": [
+            "While your opponent does not Control [CROWN], each time this unit Attacks, it gains +1 Attack Die to Melee Attacks and counts as rolling a 6 for all Charge Distance Dice."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "ORDER: TROPHY HUNTER": {
+        "trigger": "When a friendly Combat Unit Activates:",
+        "effect": [
+            "Search your Tactics Deck or discard pile for 1 Rattleshirt’s Commander Tactic card and add it to your hand."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "TROPHY COLLECTOR": {
+        "effect": [
+            "This unit may treat any Rattleshirt’s Commander Tactics cards attached to friendly units within Short Range as also attached to them."
+        ],
+        "icons": [
+            "wounds"
+        ]
+    },
+    "WATER DANCE": {
+        "effect": [
+            "Each time a rank in this unit is destroyed, target the Attacker, they become **Vulnerable**."
         ]
     }
 }
