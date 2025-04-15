@@ -31,6 +31,11 @@
             "melee"
         ]
     },
+    "CURSED REPUTATION": {
+        "effect": [
+            "If you Control [LETTER], enemies engaged with this unit suffer -1 to Panic Test Rolls."
+        ]
+    },
     "DISPATCHED BY RIVERRUN": {
         "effect": [
             "If this is a House Tully unit, after Deployment, you may search your deck for 1 **Battle Endurance** Tactics card and attach it to this unit. Shuffle your Tactics deck."
@@ -83,7 +88,16 @@
             "melee"
         ]
     },
-    "ORDER EAGLE'S DELIVERANCE": {
+    "ORDER: BASTARD'S RETRIBUTION": {
+        "trigger": "When this unit Activates:",
+        "effect": [
+            "Target 1 enemy in Short Range. They become **Weakened** and **Vulnerable**. Roll a die, on a 6, destroy Harry."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "ORDER: EAGLE'S DELIVERANCE": {
         "trigger": "Start of a friendly Turn:",
         "effect": [
             "Target 1 friendly unit in Long Range, Move 1 Condition token from that unit to this unit."
@@ -157,6 +171,14 @@
         ],
         "icons": [
             "melee"
+        ]
+    },
+    "TRAINED SHOT": {
+        "effect": [
+            "This unit ignores units and terrain when determining Line of Sight."
+        ],
+        "icons": [
+            "ranged"
         ]
     },
     "WEIRWOOD BOW": {
