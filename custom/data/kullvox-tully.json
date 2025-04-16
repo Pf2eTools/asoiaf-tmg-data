@@ -463,7 +463,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The elite household guard of Lord Jason, the House Mallister Eagle Guardians are renowned throughout Westeros for their legendary outfitting and training. Although they rarely have orders to leave their post near the Booming Tower of Seagard, wherever they march they serve as the ultimate relief force for allies of the Riverlands. Even under the harshest conditions these masters of way find a way to outlast their enemies."
+                "lore": "The elite household guard of Lord Jason, the House Mallister Eagle Guardians are renowned throughout Westeros for their legendary outfitting and training. Although they rarely have orders to leave their post near the Booming Tower of Seagard, wherever they march they serve as the ultimate relief force for allies of the Riverlands. Even under the harshest conditions these masters of war find a way to outlast their enemies."
             }
         }
     ],
@@ -1870,7 +1870,7 @@
                         "effect": [
                             "Replace that zone's effect with:",
                             "*1 friendly unit performs 1 Attack Action using its lowest Attack Die Value.",
-                            "If this targets Edmure Tully's unit, it may perform 1 Charge Action instead."
+                            "If this targets Edmure Tully's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead."
                         ]
                     }
                 ],
@@ -2435,7 +2435,7 @@
         },
         "RIVALROUS CONVICTION": {
             "effect": [
-                "If this unit is a Tully unit, each time it Attacks an enemy with fewer remaining ranks, it may re-roll any Attack Dice."
+                "If this unit is a Tully unit, each time it Attacks an enemy with the same or fewer destroyed ranks, it may re-roll any Attack Dice."
             ],
             "icons": [
                 "ranged",
@@ -2447,10 +2447,6 @@
                 "• If this unit has 1 or more destroyed ranks it gains +1 to Defense Dice Rolls.",
                 "• If this unit has 2 destroyed ranks it may re-roll any Defense Dice"
             ],
-            "icons": [
-                "ranged",
-                "melee"
-            ]
         },
         "TULLY GREATSWORD": {
             "effect": [
