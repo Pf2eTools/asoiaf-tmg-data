@@ -200,7 +200,7 @@
                 "tray": "cavalry"
             },
             "fluff": {
-                "lore": "The lush riparian hillocks that cover the Riverlands are tended by Tully Yeomen in times of peace, but when malicious armies violate their borders those same Yeomen take up spear and buckler to defend their homesteads. Enemies who clash against these standard foot soldiers may cut through some of the weaker levies with ease only to find that each company includes a few warriors of harder stock who can outlast even the heaviest assault."
+                "lore": "A veteran of many conflicts, Brynden \"Blackfish\" Tully is well aware of common military doctrine when it comes to outriders. Whereas other houses utilize such units for scouting and harassment, Blackfish's Riders have all been carefully selected by the knight himself to target those very cavalry units his enemy would choose to deploy against him.  Armed with sword and bow, the handpicked men of Brynden's company seldom fail to cut down every rider they face."
             }
         },
         {
@@ -299,7 +299,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "Not all of House Tully's infantry units are issued shields or deployed into defensive formations.  Select regiments of Tully Greatswords train and fight with oversized castle-forged blades designed for cutting into enemy lines. If their battle spirits are high under the leadership of a capable commander, these men-at-arms can inflict severe casualties on enemy forces."
+                "lore": "Not all of House Tully's infantry units are issued shields or deployed into defensive formations. Select regiments of Tully Greatswords train and fight with oversized castle-forged blades designed for cutting into enemy lines. If their battle spirits are high under the leadership of a capable commander, these men-at-arms can inflict severe casualties on enemy forces. These chivalrous soliders are known to fight fearlessly in the face of overwhleming odds."
             }
         },
         {
@@ -342,7 +342,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "House Mallister Marksmen have seen more combat than most of their peers due to the ever-present threat of Ironborn raiders on the shores beneath Seagard. Such brigands rarely manage to sneak their boats between the few defensive ships of the Mallister fleet. But it if they do, is the job of these bowmen to make sure those vessels are set ablaze while more heavily armored troops meet them on the beaches."
+                "lore": "House Mallister Marksmen have seen more combat than most of their peers due to the ever-present threat of Ironborn raiders on the shores beneath Seagard. Such brigands rarely manage to sneak their boats between the defensive ships of the Mallister fleet. But it if they do, it is the job of these bowmen to make sure those vessels are set ablaze while more heavily armored troops meet them on the beaches."
             }
         },
         {
@@ -391,7 +391,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "When invaders come to burn the lands of Blackwood Vale they cannot imagine what dangers could rise from the ashes. House Blackwood Prowlers carry weirwood bows as they stalk the lands around Raventree Hall. They make sure trespassers meet a dark fate at the tip of an arrowhead or edge of a longsword."
+                "lore": "When invaders come to burn the lands of Blackwood Vale they cannot imagine what dangers could rise from the ashes. House Blackwood Prowlers carry weirwood bows as they stalk the lands around Raventree Hall. These warriors never forget their ancient rivalry against House Bracken and will not easily join an army alongside them. They make sure trespassers meet a dark fate at the tip of an arrowhead or edge of a longsword."
             }
         },
         {
@@ -430,7 +430,7 @@
                 "tray": "cavalry"
             },
             "fluff": {
-                "lore": "The swift riders who make up the ranks of House Bracken Dragoons fight with an uncommon tenacity. Each soldier earns his stallion only after he has proven himself in service to Lord Jonos Bracken. Any foes who threaten the lands of Stone Hedge are soon to be run down beneath hoof and glaive when these forces arrive on the battlefield."
+                "lore": "The swift riders who make up the ranks of House Bracken Dragoons fight with an uncommon tenacity. Each soldier earns his stallion only after he has proven himself in service to Lord Jonos Bracken. Any foes who threaten the lands of Stone Hedge are soon to be run down beneath hoof and glaive when these forces arrive on the battlefield. These riders hold their lord's grudge against House Blackwood and will not easily join forces alongside them."
             }
         },
         {
@@ -463,7 +463,7 @@
                 "tray": "infantry"
             },
             "fluff": {
-                "lore": "The elite household guard of Lord Jason Mallister are renowned throughout Westeros for their legendary outfitting and training. Although they rarely have orders to leave their post near the Booming Tower of Seagard, wherever they march they serve as the ultimate relief force for allies of the Riverlands."
+                "lore": "The elite household guard of Lord Jason, the House Mallister Eagle Guardians are renowned throughout Westeros for their legendary outfitting and training. Although they rarely have orders to leave their post near the Booming Tower of Seagard, wherever they march they serve as the ultimate relief force for allies of the Riverlands. Even under the harshest conditions these masters of way find a way to outlast their enemies."
             }
         }
     ],
@@ -614,17 +614,11 @@
                 "commander": true,
                 "requirements": [
                     {
-                        "text": "Karyl Vance, Heir of Wayfarer's Rest may only be fielded in an army that includes Hoster Tully, Lord Paramount of the Trident."
+                        "name": "Commander",
+                        "text": "*Karyl Vance, Heir of Wayfarer's Rest may only be fielded in an army that includes Hoster Tully, Lord Paramount of the Trident.*"
                     }
                 ],
                 "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "battlefield-provisions": "Battlefield Provisions",
-                    "true-agenda": "True Agenda",
-                    "rapid-construction": "Rapid Construction"
-                }
             },
             "fluff": {
                 "quote": "\"I was attending my lord father in the pass below the Golden Tooth...\""
@@ -856,6 +850,7 @@
                 "type": "infantry",
                 "cost": 1,
                 "abilities": [
+                    "Affiliation: House Mallister",
                     "Order: Hawk Strike"
                 ],
                 "character": true
@@ -1064,11 +1059,11 @@
                 "cost": 1,
                 "abilities": [
                     "Order: War Cry",
-                    "Trained Shot"
+                    "Vicious"
                 ],
                 "requirements": [
                     {
-                        "text": "*May only be fielded in an army that includes Shella Whent, Lady of Harrenhal and must be attached to his unit, ignoring the usual Attachment limits.*"
+                        "text": "*May only be fielded in an army that includes Shella Whent, Lady of Harrenhal and must be attached to her unit, ignoring the usual Attachment limits.*"
                     }
                 ],
                 "character": true
@@ -1291,6 +1286,15 @@
                 "cost": 1,
                 "abilities": [
                     "Agile"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limited",
+                        "text": "*Your army may only contain up to 2 Raven's Talon.*"
+                    },
+                    {
+                        "text": "*The first Raven's Talon attachment is free if your army contains Tytos Blackwood, the Onyx Raven.*"
+                    }
                 ]
             },
             "portrait": {
@@ -1320,6 +1324,15 @@
                 "cost": 1,
                 "abilities": [
                     "Counterstrike"
+                ],
+                "requirements": [
+                    {
+                        "name": "Limited",
+                        "text": "*Your army may only contain up to 2 Stone Hedge Stallion.*"
+                    },
+                    {
+                        "text": "*The first Stone Hedge Stallion attachment is free if your army contains Jonos Bracken, the Red Stallion.*"
+                    }
                 ]
             },
             "portrait": {
@@ -1354,7 +1367,7 @@
                         "name": "The Seat of Riverrun",
                         "effect": [
                             "Each time Hoster claims [LETTER] draw 1 additional Tactics card.",
-                            "Each time Hoster claims [HORSE] the unit targeted by this zone for a Meneuver or Retreat Action gains +1 [MOVEMENT] until the end of the turn."
+                            "Each time Hoster claims [HORSE] the unit targeted by this zone for a Meneuver or Retreat Action gains +1 [MOVEMENT] until the end of the Turn."
                         ]
                     }
                 ],
@@ -1429,7 +1442,7 @@
             ]
         },
         "fluff": {
-            "quote": "\"How can we talk of peace while the Lannisters spread like a pestilence over my father's domains...\""
+            "quote": "\"Lord Edmure, I hope I am not a disappointment to you.\""
         },
         "portrait": {
             "x": 269,
@@ -1580,13 +1593,13 @@
                     "name": "Funding the Garrison",
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
-                        "Each time Utherydes Influences a unit, that unit restores 1 Wound. After reolving each Attack against this unit, if it was not destroyed, it restores 1 Wound."
+                        "Each time Utherydes Influences a unit, that unit restores 1 Wound. Each time this unit is Attacked, after resolving the Attack if it was not destroyed, it restores 1 Wound."
                     ]
                 }
             ]
         },
         "fluff": {
-            "quote": "\"When ad this good man grown so worn and gray?\""
+            "quote": "\"When had this good man grown so worn and gray?\""
         },
         "portrait": {
             "x": 269,
@@ -1668,7 +1681,7 @@
             }
         },
         "fluff": {
-            "quote": "\"The boy would have brought a find ransom.\""
+            "quote": "\"The boy would have brought a fine ransom.\""
         },
         "portrait": {
             "x": 269,
@@ -1777,7 +1790,7 @@
                             "1 Tully unit may suffer up to 3 Wounds. Target 1 other Tully unit in Long Range. For each Wound suffered, choose 1 (effects may not be chosen more than once):",
                             "• That unit restores 2 Wounds.",
                             "• That unit may re-roll any Defense Dice until the end of the Turn.",
-                            "• That unit may re-roll any Panic Test Dice until the end of the Turn"
+                            "• That unit may re-roll any Panic Test Dice until the end of the Turn."
                         ]
                     }
                 ]
@@ -1835,7 +1848,7 @@
                 ],
                 "commander_id": "edmure-tully-c",
                 "commander_name": "Edmure Tully",
-                "commander_subname": "Lord of Rivverun"
+                "commander_subname": "Lord of Riverrun"
             }
         },
         {
@@ -1849,14 +1862,14 @@
                         "trigger": "When a friendly NCU claims a zone:",
                         "effect": [
                             "Replace that zone's effect with:",
-                            "*1 friendly unit performs 1 Attack Action.",
+                            "*1 friendly unit performs 1 Attack Action using its lowest Attack Die Value.",
                             "If this targets Edmure Tully's unit, it may perform 1 Charge Action instead."
                         ]
                     }
                 ],
                 "commander_id": "edmure-tully-c",
                 "commander_name": "Edmure Tully",
-                "commander_subname": "Lord of Rivverun"
+                "commander_subname": "Lord of Riverrun"
             }
         },
         {
@@ -1876,7 +1889,7 @@
                 ],
                 "commander_id": "edmure-tully-c",
                 "commander_name": "Edmure Tully",
-                "commander_subname": "Lord of Rivverun"
+                "commander_subname": "Lord of Riverrun"
             } 
         },
         {
@@ -2111,7 +2124,7 @@
                     {
                         "trigger": "Start of any Turn:",
                         "effect": [
-                            "Attach this card to 1 Terrain piece until the end of the Round. It gains the following keyword:",
+                            "Attach this card to 1 terrain piece until the end of the Round. It gains the following keyword:",
                             "**• Grim Reminder**: Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range."
                         ]
                     }
@@ -2215,7 +2228,7 @@
                             "Attach this card to a friendly House Bracken Unit. If this unit ever restores Wounds, remove this card.",
                             "When this unit is performing an Attack, for each of its destroyed ranks, choose 1:",
                             "• This Attack deals +1 Wound for each of this unit's destroyed ranks.",
-                            "• Before rolling Defense Dice the Defender gains 1 Condition Token for each of this unit's destroyed ranks."
+                            "• Before rolling Defense Dice the Defender gains 1 Condition token for each of this unit's destroyed ranks."
                         ]
                     }
                 ],
@@ -2306,7 +2319,7 @@
         },
         "DISPATCHED BY RIVERRUN": {
             "effect": [
-                "If this is a House Tully unit, after Deployment, you may search your deck for 1 **Battle Endurance** Tactics card and attach it to this unit. Shuffle your Tactics deck."
+                "When Hoster Tully, Lord Paramount of the Trident Activates, this unit may Activate after that unit."
             ],
             "icons": [
                 "wounds"
