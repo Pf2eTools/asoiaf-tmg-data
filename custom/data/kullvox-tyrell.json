@@ -542,7 +542,11 @@
                 "character": true
             },
             "tactics": {
-                "cards": {}
+                "cards": [
+                    "surprise-strategy",
+                    "intercept-orders",
+                    "mad-maids-spellbook"
+                ]
             },
             "fluff": {
                 "quote": "\"Wealthy, handsome, and a knight of splendid repute.\""
@@ -2132,6 +2136,10 @@
         "AFFILIATION: HOUSE TARLY": {
             "effect": ["This unit is a House Tarly unit."],
             "icons": ["wounds"]
+        },
+        "BATTLE PROWESS": {
+            "effect": ["Before rolling Attack Dice, you may search your Tactics Deck or discard pile for 1 **Finesse and Focus** card and play it, or add it to your hand. Shuffle your Tactics Deck."],
+            "icons": ["melee", "ranged"]
         },
         "CRITICAL ASSAULT": {
             "effect": ["This unit's Attacks gain **Critical Blow**."],
