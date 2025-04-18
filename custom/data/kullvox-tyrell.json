@@ -6,7 +6,7 @@
     },
     "factions": {
         "tyrell": {
-            "text_color": "#30436d",
+            "text_color": "#41A35A",
             "highlight_color": "gold",
             "bg_rotation": 0,
             "long": "Tyrell"
@@ -675,7 +675,7 @@
             "tactics": {
                 "cards": {
                     "comrades-at-sea": "Comrades At Sea",
-                    "ship-mounted-ballista": "Ship Mounted Ballista",
+                    "ship-mounted-ballista": "Ship-Mounted Ballista",
                     "boarding-tactics": "Boarding Tactics"
                 }
             },
@@ -1420,7 +1420,7 @@
                     {
                         "name": "A Rotund Distraction",
                         "effect": [
-                            "Once per game, at the start of any Round, you may immediately Activate Butterbumps. He may only Claim [MONEY] and [LETTER]. Do not resolve that zone's effect.",
+                            "Once per game, at the start of any Round, you may immediately Activate Butterbumps. He may only Claim [MONEY] or [LETTER]. Do not resolve that zone's effect.",
                             "Once per game, at the start of any Turn, if Butterbumps is on the Tactics Board, you may move him to any unclaimed zone."
                         ]
                     }
@@ -1803,7 +1803,7 @@
                         "trigger": "When a friendly Cavalry unit performs an Attack, before rolling Attack Dice:",
                         "effect": [
                             "Instead of performing a Melee Attack, this unit immediately performs a Retreat Action",
-                            "If this unit started the Turn engaged, before performing a Retreat Action, one engaged enemy suffers 2 Hits for each of this unit's remaining ranks."
+                            "If this unit started the Turn engaged, before performing a Retreat Action, 1 engaged enemy suffers 2 Hits for each of this unit's remaining ranks."
                         ]
                     }
                 ],
@@ -1823,7 +1823,7 @@
                         "trigger": "When a friendly Cavalry Unit performs an Attack, before rolling Attack Dice:",
                         "effect": [
                             "This Attack gains one of the following. If this targets Loras' unit, gain both:",
-                            "• *Precision*",
+                            "• **Precision**",
                             "• +1 to Hit",
                             "After completing this Attack, if the Defender was not destroyed, your opponent may place 1 Condition Token on this unit."
                         ]
@@ -1848,7 +1848,7 @@
                     {
                         "trigger": "When a friendly unit Activates",
                         "effect": [
-                            "Attach this card to that unit. While attached, when this unit performs a Melee Attack, gain the following for each enemy unit in Short Range *(effects are cumulative)*.",
+                            "Attach this card to that unit until they fail a Panic Test. While attached, when this unit performs a Melee Attack, gain the following for each enemy unit in Short Range *(effects are cumulative)*.",
                             "**1+:** This unit rolls +1 Attack Die",
                             "**2+:** This unit gains **Sundering**",
                             "**3+:** This unit may reroll any Attack Dice"
@@ -1996,7 +1996,8 @@
                         "trigger": "After an enemy completes an Action:",
                         "effect": [
                             "That unit gains 1 Condition Token for each House Tarly unit in Long Range.",
-                            "If Randyll Tarly's unit is in Long Range, you may remove 1 Condition Token from it."
+                            "If you Control [LETTER], 1 of those Tarly units may make a 2\" shift.",
+                            "If Randyll Tarly's unit is in Long Range, you may remove 1 Condition Token from his unit."
                         ]
                     },
                     {
@@ -2062,7 +2063,7 @@
                         "effect": [
                             "Roll a die. On a 3+, your opponent must target a different unit with that zone's effect *(if able)*.",
                             "If you Control [LETTER] you may reroll this die.",
-                            "If the newly targeted unit is in Short Range of Hightower unit, it gains a Condition token."
+                            "If the newly targeted unit is in Short Range of a Hightower unit, it gains a Condition token."
                         ]
                     }
                 ],
@@ -2201,7 +2202,9 @@
         "INEXPERIENCED": {
             "effect": [
                 "When Charging, this unit does not gain Charge Bonus on rolls of 3 or less."
-            ]
+            ],
+            "icons": ["wounds"]
+
         },
         "JOUSTING CHAMPION": {
             "effect": [
@@ -2224,9 +2227,9 @@
         "MIGHT OF THE OLD GODS": {
             "effect": [
                 "This unit begins the game with 1 Faith token. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens make be expended to gain the following:",
-                "• *When this unit it performing a Melee Attack, before rolling Attack Dice:*",
+                "• **When this unit it performing a Melee Attack, before rolling Attack Dice:**",
                 "This unit gains Critical Blow and may reroll any Attack Dice.",
-                "• **When this unit Activates:*",
+                "• **When this unit Activates:**",
                 "One unit in Short Range restores 2 Wounds"
             ],
             "icons": ["faith"]
