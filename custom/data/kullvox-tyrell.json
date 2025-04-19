@@ -142,7 +142,10 @@
                         "dice": [6, 5, 4]
                     }
                 ],
-                "abilities": ["Inexperienced", "Order: Reach Reinforcements"],
+                "abilities": [
+                    "Order: Reach Reinforcements",
+                    "Inexperienced"
+                ],
                 "tray": "infantry"
             },
             "fluff": {
@@ -209,7 +212,10 @@
                         "dice": [5, 4, 3]
                     }
                 ],
-                "abilities": ["Huntsmen Bow", "Order: Tactical Reposition"],
+                "abilities": [
+                    "Order: Tactical Reposition",
+                    "Huntsmen Bow"
+                ],
                 "tray": "infantry"
             },
             "fluff": {
@@ -235,7 +241,10 @@
                         "dice": [7, 5]
                     }
                 ],
-                "abilities": ["Cavalry", "Might of the Old Gods"],
+                "abilities": [
+                    "Cavalry", 
+                    "Might of the Old Gods"
+                ],
                 "requirements": [
                     {
                         "name": "Limited",
@@ -277,7 +286,10 @@
                         "dice": [7, 5, 4]
                     }
                 ],
-                "abilities": ["Naval Training", "Order: Marine's Signal"],
+                "abilities": [
+                    "Order: Marine's Signal",      
+                    "Naval Training"
+                ],
                 "tray": "infantry"
             },
             "fluff": {
@@ -303,7 +315,11 @@
                         "dice": [3]
                     }
                 ],
-                "abilities": ["Solo Rider", "Embolden", "Rally Cry"],
+                "abilities": [
+                    "Solo Rider", 
+                    "Rally Cry", 
+                    "Embolden"
+                ],
                 "wounds": 3,
                 "tray": "solo"
             },
@@ -330,7 +346,10 @@
                         "dice": [7, 6, 5]
                     }
                 ],
-                "abilities": ["Oldtown Armaments", "Protection of the Citadel"],
+                "abilities": [
+                    "Oldtown Armaments", 
+                    "Protection of the Citadel"
+                ],
                 "tray": "infantry"
             },
             "fluff": {
@@ -356,7 +375,10 @@
                         "dice": [7, 5, 4]
                     }
                 ],
-                "abilities": ["Order: Laws of the Realm", "Enforcer's Spear"],
+                "abilities": [
+                    "Order: Laws of the Realm", 
+                    "Enforcer's Spear"
+                ],
                 "tray": "infantry"
             },
             "fluff": {
@@ -383,7 +405,10 @@
                         "dice": [3]
                     }
                 ],
-                "abilities": ["Ser Loras Tyrell", "Jousting Champion"],
+                "abilities": [
+                    "Ser Loras Tyrell", 
+                    "Jousting Champion"
+                ],
                 "wounds": 4,
                 "tray": "solo"
             },
@@ -533,8 +558,8 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Affiliation: House Hightower",
                     "Order: Battle Plan",
+                    "Affiliation: House Hightower",
                     "Inspiring Presence"
                 ],
                 "commander": true,
@@ -625,9 +650,9 @@
                 "type": "infantry",
                 "cost": "C",
                 "abilities": [
-                    "Affiliation: House Tarly",
                     "Order: Flogging Stragglers",
-                    "Order: Threaten"
+                    "Order: Threaten",
+                    "Affiliation: House Tarly"
                 ],
                 "commander": true,
                 "character": true
@@ -708,7 +733,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 2,
-                "abilities": ["Order: Reckless Heroism", "Furious Charge"],
+                "abilities": ["Order: Reckless Heroism", "Deadly Bloom"],
                 "character": true
             },
             "fluff": {
@@ -741,7 +766,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 1,
-                "abilities": ["Order: Martial Training"],
+                "abilities": ["Order: Supply Aid", "Go Down Fighting"],
                 "character": true
             },
             "fluff": {
@@ -773,13 +798,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 1,
-                "abilities": ["Affiliation: House Tarly", "Stalwart"],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*Dickon Tarly ignores the usual Attachment restrictions when added to an army containing Randyll Tarly.*"
-                    }
-                ],
+                "abilities": ["Order: Martial Training", "Affiliation: House Tarly"],
                 "character": true
             },
             "fluff": {
@@ -887,7 +906,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 2,
-                "abilities": ["Order: Sentinel", "Boisterous Charisma"],
+                "abilities": ["Boisterous Charisma", "Stalwart"],
                 "character": true
             },
             "fluff": {
@@ -919,7 +938,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 1,
-                "abilities": ["Duty to the Crown"],
+                "abilities": ["Order: Sentinel", "Perseverance and Valor"],
                 "character": true
             },
             "fluff": {
@@ -951,7 +970,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 1,
-                "abilities": ["Reckless Strikes"],
+                "abilities": ["Reckless Strikes", "Unyielding"],
                 "character": true
             },
             "fluff": {
@@ -983,7 +1002,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 1,
-                "abilities": ["Counterstrike", "Order: Resilience"],
+                "abilities": ["Order: Resiliencee", "Counterstrike"],
                 "character": true
             },
             "fluff": {
@@ -1014,7 +1033,7 @@
                 "faction": "tyrell",
                 "type": "infantry",
                 "cost": 1,
-                "abilities": ["Stand Your Ground!", "Iron Resolve"]
+                "abilities": ["Iron Resolve", "Stand Your Ground!"]
             },
             "portrait": {
                 "x": 255,
@@ -1070,7 +1089,7 @@
                 "cost": 1,
                 "abilities": [
                     "Order: Swift Retreat",
-                    "Enhanced Mobility"
+                    "Elusive Escape"
                 ]
             },
             "portrait": {
@@ -2170,17 +2189,17 @@
         },
         "BATTLE PROWESS": {
             "effect": ["Before rolling Attack Dice, you may search your Tactics Deck or discard pile for 1 **Finesse and Focus** card and play it, or add it to your hand. Shuffle your Tactics Deck."],
-            "icons": ["melee", "ranged"]
+            "icons": ["melee"]
         },
         "CRITICAL ASSAULT": {
             "effect": ["If this unit began the Turn unengaged, its Attacks gain **Critical Blow**."],
-            "icons": ["melee", "ranged"]
+            "icons": ["ranged", "melee"]
         },
         "EATING, DRINKING, SINGING": {
             "effect": [
                 "Each time Mace's unit performs an Attack, 1 other unit in Long Range restores 1 Wound."
             ],
-            "icons": ["melee", "ranged"]
+            "icons": ["ranged", "melee"]
         },
         "ENFORCER'S SPEAR": {
             "effect": [
