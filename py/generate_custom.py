@@ -9,6 +9,7 @@ from generate_specials import ImageGeneratorSpecials
 from asset_manager import CustomAssetManager, get_path_or_dialogue
 from image_cropper import *
 from pathlib import Path
+import argparse
 
 
 class CustomGenerator(Generator):
@@ -160,5 +161,13 @@ def main(path, skip_portrait=True, overwrite=True):
 
 
 if __name__ == "__main__":
-    # main("./custom/data/cmon-prerelease.json", skip_portrait=False)
-    main("./custom/data/brew.json", overwrite=False)
+    parser = argparse.ArgumentParser(description="Generate custom data.")
+    parser.add_argument("filenames", nargs="*", default=["brew.json"], help="List of filenames relative to ./custom/data/ path.")
+    parser.add_argument("--skip-portraits", action="store_true", help="Skip generating portraits.")
+    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files.")
+    
+    args = parser.parse_args()
+
+    for filename in args.filenames:
+        filepath = f"./custom/data/{filename}"
+        main(filepath, skip_portrait=args.skip_portraits, overwrite=args.overwrite)

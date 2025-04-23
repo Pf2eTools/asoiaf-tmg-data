@@ -61,11 +61,11 @@ class AssetManager:
         return self.get(f"{self.ASSETS_DIR}/units/{unit_id}b.png", (797, 827), (40, 40))
 
     def get_attachment_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png", (197, 248), (20, 20))
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png", (197, 248), (60, 60))
 
     # FIXME/TODO: Named Chars/Commanders might be a different size
     def get_attachment_back_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}b.png", (566, 878))
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}b.png", (566, 878), (200, 200))
 
     def get_special_image(self, attachment_id, img_size=None):
         return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}.png", img_size)
@@ -270,12 +270,10 @@ class CustomAssetManager(AssetManager):
         return f"{self.CUSTOM_ASSET_BASE_DIR}/{self._asset_path}"
 
     def get(self, path, size=AssetManager.DEFAULT_ASSET_SIZE, tolerance=AssetManager.DEFAULT_SIZE_TOLERANCE):
-        if os.path.exists(path):
-            return self._get(path)
 
         custom_path = re.sub(r".+/", f"{self.asset_path}/", path)
         custom_path2 = re.sub(AssetManager.ASSETS_DIR, f"{self.asset_path}/", path)
-        custom_paths = [custom_path, self.swap_filetype(custom_path), custom_path2, self.swap_filetype(custom_path2)]
+        custom_paths = [custom_path, self.swap_filetype(custom_path), custom_path2, self.swap_filetype(custom_path2), path]
         for p in [self.get_cropped_path(cp) for cp in custom_paths]:
             if os.path.exists(p):
                 return self.get_resized(p, size, tolerance)
