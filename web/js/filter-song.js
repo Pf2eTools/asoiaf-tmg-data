@@ -14,7 +14,7 @@ class PageFilterSong extends PageFilter {
 
 		this._typeFilter = new Filter({
 			header: "Type",
-			items: ["attachments", "units", "ncus", "tactics", "specials"],
+			items: ["attachment", "unit", "ncu", "tactics", "special"],
 			itemSortFn: null,
 			displayFn: Parser.renderProp,
 		});
@@ -97,18 +97,17 @@ class PageFilterSong extends PageFilter {
 	}
 
 	static mutateForFilters (e) {
-		e._fTray = e.__prop === "attachments" ? e.statistics.type === "siegeengine" ? "warmachine" : e.statistics.type : e.statistics.tray;
-		e._fToHit = (e.statistics.attacks || []).map(a => a.hit + "+");
-		e._fAttackDice = (e.statistics.attacks || []).map(a => a.dice.join("/"));
-		e._fAttackTypes = (e.statistics.attacks || []).map(a => a.type === "melee" ? "Melee" : a.type.uppercaseFirst() + " Range");
-		e._fAbilities = (e.statistics.abilities || []).map(a => typeof a === "string" ? a : a.name).filter(Boolean).map(s => s.toTitleCase());
+		e._fToHit = (e.attacks || []).map(a => a.hit + "+");
+		e._fAttackDice = (e.attacks || []).map(a => a.dice.join("/"));
+		e._fAttackTypes = (e.attacks || []).map(a => a.type === "melee" ? "Melee" : a.type.uppercaseFirst() + " Range");
+		e._fAbilities = (e.abilities || []).map(a => typeof a === "string" ? a : a.name).filter(Boolean).map(s => s.toTitleCase());
 		e._fCharacter = [];
-		if (e.statistics.commander) e._fCharacter.push("Is a Commander", "Is a Character");
-		else if (e.__prop === "ncus" || e.statistics.character || (e.__prop === "units" && e.subname)) e._fCharacter.push("Is a Character");
+		if (e.commander === true) e._fCharacter.push("Is a Commander", "Is a Character");
+		else if (e.character || (e.__prop === "unit" && e.title)) e._fCharacter.push("Is a Character");
 
 		e._fTactics = [];
-		if (e.__prop === "tactics" && e.statistics.commander_id) {
-			e._fCommander = e.statistics.commander_subname ? `${e.statistics.commander_name}, ${e.statistics.commander_subname}` : e.statistics.commander_name;
+		if (e.__prop === "tactics" && e.commander) {
+			e._fCommander = e.commander.title ? `${e.commander.name}, ${e.commander.title}` : e.commander.name;
 			e._fTactics.push("Commander Card");
 		}
 		else if (e.__prop === "tactics") e._fTactics.push("Basedeck");
@@ -116,13 +115,13 @@ class PageFilterSong extends PageFilter {
 
 	addToFilters (e, isExcluded) {
 		this._sourceFilter.addItem(e.lang);
-		this._factionFilter.addItem(e.statistics.faction);
-		this._versionFilter.addItem(e.statistics.version);
-		this._trayFilter.addItem(e._fTray);
-		if (e.statistics.cost !== undefined) this._costFilter.addItem(String(e.statistics.cost));
-		if (e.statistics.speed !== undefined) this._speedFilter.addItem(String(e.statistics.speed));
-		if (e.statistics.defense !== undefined) this._defenseFilter.addItem(String(e.statistics.defense));
-		if (e.statistics.morale !== undefined) this._moraleFilter.addItem(String(e.statistics.morale));
+		this._factionFilter.addItem(e.faction);
+		this._versionFilter.addItem(e.version);
+		this._trayFilter.addItem(e.tray);
+		if (e.cost !== undefined) this._costFilter.addItem(String(e.cost));
+		if (e.speed !== undefined) this._speedFilter.addItem(String(e.speed));
+		if (e.defense !== undefined) this._defenseFilter.addItem(String(e.defense));
+		if (e.morale !== undefined) this._moraleFilter.addItem(String(e.morale));
 		this._attackTypeFilter.addItem(e._fAttackTypes);
 		this._toHitFilter.addItem(e._fToHit);
 		this._attackDiceFilter.addItem(e._fAttackDice);
@@ -154,15 +153,15 @@ class PageFilterSong extends PageFilter {
 		return this._filterBox.toDisplay(
 			values,
 			e.source,
-			e.statistics.version,
+			e.version,
 			e.__prop,
 			e._fCharacter,
-			e._fTray,
-			e.statistics.faction,
-			e.statistics.cost,
-			e.statistics.speed,
-			e.statistics.defense,
-			e.statistics.morale,
+			e.tray,
+			e.faction,
+			e.cost,
+			e.speed,
+			e.defense,
+			e.morale,
 			[
 				e._fAttackTypes,
 				e._fAttackDice,
@@ -202,9 +201,9 @@ class ListSyntaxSong extends ListUiUtil.ListSyntax {
 	_getSearchCacheTrigger(entity) {
 		let out = "";
 		if (entity.__prop === "tactics") {
-			out = entity.statistics.text.map(e => e.trigger).filter(Boolean).join(" -- ");
-		} else if (["attachments", "units"].includes(entity.__prop)) {
-			out = entity.statistics.abilities.map(a => a.trigger).filter(Boolean).join(" -- ");
+			out = entity.text.map(e => e.trigger).filter(Boolean).join(" -- ");
+		} else if (["attachment", "unit"].includes(entity.__prop)) {
+			out = entity.abilities.map(a => a.trigger).filter(Boolean).join(" -- ");
 		}
 		return out.replace(/[•*]/g, "").toLowerCase();
 	}
@@ -212,9 +211,9 @@ class ListSyntaxSong extends ListUiUtil.ListSyntax {
 	_getSearchCacheText(entity) {
 		let out = "";
 		if (entity.__prop === "tactics") {
-			out = entity.statistics.text.map(e => (e.effect || []).join(" ")).join(" -- ");
-		} else if (["ncus", "attachments", "units"].includes(entity.__prop)) {
-			out = entity.statistics.abilities.map(a => (a.effect || []).join(" ")).join(" -- ");
+			out = entity.text.map(e => (e.effect || []).join(" ")).join(" -- ");
+		} else if (["ncu", "attachment", "unit"].includes(entity.__prop)) {
+			out = entity.abilities.map(a => (a.effect || []).join(" ")).join(" -- ");
 		}
 		return out.replace(/[•*]/g, "").toLowerCase();
 	}

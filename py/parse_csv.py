@@ -3,8 +3,9 @@ import json
 from pathlib import Path
 import re
 from copy import deepcopy
-from const import *
+from py.song_data import LANGUAGES, FACTIONS
 
+CSV_PATH = "./data/warcouncil"
 
 def title_case(string):
     lower_words = ["a", "an", "the", "and", "but", "or", "for", "nor", "as", "at", "by", "for", "from", "in", "into", "near", "of", "on",
@@ -124,7 +125,6 @@ def get_translated_name(orig_name, name):
     return name
 
 
-# TODO: Don't do this .upper() bullshit
 def parse_abilities():
     data = csv_to_dict(f"{CSV_PATH}/newskills.csv")
     parsed_abilities = {
@@ -622,7 +622,7 @@ def main():
             pass
             # dump(ab, f"{DATA_PATH}/{lang}/abilities.json")
 
-        base_path = f"{DATA_PATH}/{lang}"
+        base_path = f"./data/{lang}"
         path_abilities = f"{base_path}/abilities.json"
         with open(path_abilities, "r", encoding="utf-8") as f:
             old_ab_data = json.load(f)

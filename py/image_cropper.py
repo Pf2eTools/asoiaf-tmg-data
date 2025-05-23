@@ -3,9 +3,10 @@ import numpy as np
 import tkinter as tk
 from PIL import ImageTk, Image
 import json
-from const import *
 from abc import ABC, abstractmethod
 from pathlib import Path
+
+from py.song_data import FACTIONS
 
 
 class ImageLoader:
@@ -534,7 +535,7 @@ def main():
         coords_data = json.load(pd)
 
     for faction in FACTIONS:
-        full_path = f"{DATA_PATH}/en/{faction}.json"
+        full_path = f"./data/en/{faction}.json"
         with open(full_path, encoding="utf-8") as json_data:
             data = json.load(json_data)
 

@@ -1,528 +1,520 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "nightswatch",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "10501",
             "name": "Vétérans de la Garde",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Armes Doubles",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Armes Doubles",
-                    "Riposte",
-                    "Déstabilisation"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Armes Doubles",
+                "Riposte",
+                "Déstabilisation"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes Doubles",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Bien que l’on puisse compter sur les Frères Jurés pour tenir une position, les Vétérans possèdent l’armement et l’expertise nécessaires pour faire progresser le front. Ce sont des combattants aguerris, quasiment impossibles à mettre en déroute et dotés du meilleur équipement que les Constructeurs peuvent forger. Même les soldats les plus chevronnés des Sept Royaumes auraient du mal à les arrêter, et encore plus à les vaincre."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10502",
             "name": "Frères Jurés",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Espadon",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Entraînement Martial",
-                    "Espadon"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Entraînement Martial",
+                "Espadon"
+            ],
+            "attacks": [
+                {
+                    "name": "Espadon",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Frères Jurés sont les piliers de la Garde de Nuit, affrontant les Sauvageons et les horreurs Nordiennes avec une maîtrise et un stoïcisme résultant d’un long entraînement. Solidement armés grâce à leurs propres forges, les Frères Jurés disposent d’un meilleur équipement que la plupart des soldats des autres grandes Maisons (à l’exception de ceux de la Maison Lannister, bien évidemment). Lorsqu’il s’agit de tenir une position, même si la situation semble désespérée, vous pouvez compter sur les Frères Jurés."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10503",
             "name": "Patrouilleurs Pisteurs",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Arc Courbe",
-                        "type": "short",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Marquer la Cible",
-                    "Cavalerie",
-                    "Éclaireur"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Marquer la Cible",
+                "Cavalerie",
+                "Éclaireur"
+            ],
+            "attacks": [
+                {
+                    "name": "Arc Courbe",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Les Patrouilleurs de la Garde de Nuit comportent de nombreuses unités aux compétences différentes, mais ce sont les Pisteurs qui personnifient le mieux leur capacité de perception. Cavaliers éclaireurs au dévouement sans faille, les Pisteurs sont chargés de fournir des renseignements sur l’ennemi en évaluant sa force, son nombre et sa position. Sur le champ de bataille, leur rôle consiste également à débusquer les adversaires les plus vulnérables. Un général avisé saura tenir compte de leurs conseils afin d’exploiter au mieux les faiblesses de l’adversaire."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10504",
             "name": "Fantôme",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Griffes et Crocs",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Loup-Garou",
-                    "Lien Spirituel",
-                    "Griffes et Crocs"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Jon Snow.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Loup-Garou",
+                "Lien Spirituel",
+                "Griffes et Crocs"
+            ],
+            "attacks": [
+                {
+                    "name": "Griffes et Crocs",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Jon Snow.*"
+                }
+            ],
             "fluff": {
                 "lore": "Tapi dans le sillage de Jon Snow telle une ombre menaçante, le loup-garou albinos appelé Fantôme n’aurait pu être plus justement nommé. Sur le champ de bataille, Fantôme évolue plus ou moins librement, grâce à sa compréhension instinctive de la volonté de son maître. Pouvant atteindre des pointes de vitesse ahurissantes, Fantôme est aussi capable de déchirer une armure de ses puissantes mâchoires. Il se révèle particulièrement utile pour les attaques de flanc ou pour poursuivre les troupes en déroute. En effet, se faire charger par un loup-garou a de quoi glacer le sang de bien des hommes."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10505",
             "name": "Patrouilleurs Chasseurs",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Arc de Chasseur",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Frappe Éclair",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Tir Rapide",
-                    "Frappe Éclair"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Tir Rapide",
+                "Frappe Éclair"
+            ],
+            "attacks": [
+                {
+                    "name": "Arc de Chasseur",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Frappe Éclair",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Œuvrant souvent de concert avec les Pisteurs, les Patrouilleurs Chasseurs sont passés maîtres dans l’élimination de cibles-clés. Si la furtivité est rarement de mise lors d’une bataille ouverte, ils peuvent cependant frapper rapidement et éliminer les adversaires affaiblis ou vulnérables sans leur laisser une chance de répliquer. Un bon général prendra soin d’éviter qu’ils soient coincés au corps à corps, une situation délicate pour la plupart des unités d’infanterie légère."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10506",
             "name": "Scorpion et Équipe de Constructeurs",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 5,
-                "speed": 4,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Baliste",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    },
-                    {
-                        "name": "Armes de l'Équipage",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Machine de Guerre",
-                    "Baliste"
-                ],
-                "wounds": 6,
-                "tray": "warmachine",
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée ne peut pas contenir plus de 2 Scorpions et Équipage de Constructeurs.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Machine de Guerre",
+                "Baliste"
+            ],
+            "attacks": [
+                {
+                    "name": "Baliste",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                },
+                {
+                    "name": "Armes de l'Équipage",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 4,
+            "cost": 5,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Votre armée ne peut pas contenir plus de 2 Scorpions et Équipage de Constructeurs.*",
+                    "name": "Limité "
+                }
+            ],
             "fluff": {
                 "lore": "Les Constructeurs de la Garde de Nuit sont réputés pour leur ingéniosité et le Scorpion en est la parfaite illustration. Les Constructeurs sont capables d’assembler cet engin mobile à l’aide de quelques pièces mécaniques et du bois à leur disposition. Le Scorpion tire d’immenses carreaux à longue portée tout en conservant une grande précision. Un seul projectile peut balayer des rangs entiers. Toutefois, le Scorpion est peu maniable et le mettre en position requiert du temps."
-            }
+            },
+            "icon": "siegeengine",
+            "wounds": 6
         },
         {
             "id": "10507",
             "name": "Mangonneau des Constructeurs",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 8,
-                "speed": 1,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Tir de Rocher",
-                        "type": "long",
-                        "hit": 4,
-                        "dice": [
-                            2
-                        ]
-                    },
-                    {
-                        "name": "Armes de l'Équipage",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Machine de Guerre",
-                    "Tir de Rocher"
-                ],
-                "wounds": 6,
-                "tray": "warmachine",
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée ne peut pas contenir plus de 2 Mangonneaux des Constructeurs.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Machine de Guerre",
+                "Tir de Rocher"
+            ],
+            "attacks": [
+                {
+                    "name": "Tir de Rocher",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        2
+                    ]
+                },
+                {
+                    "name": "Armes de l'Équipage",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 1,
+            "cost": 8,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Votre armée ne peut pas contenir plus de 2 Mangonneaux des Constructeurs.*",
+                    "name": "Limité "
+                }
+            ],
             "fluff": {
                 "lore": "Les équipages de Constructeurs sont versés dans l’art de fabriquer des Mangonneaux mobiles et de les utiliser sur le champ de bataille. Ils insistent sur le fait que ces engins ne sont pas des catapultes, bien que les principes de base des deux engins soient similaires. Les catapultes sont déployées lors de conflits plus importants et nécessitent généralement des munitions spéciales. La précision mortelle des Mangonneaux permet à un équipage compétent de faire pleuvoir sur les formations ennemies des projectiles contre lesquels même l’infanterie la plus lourde est sans défense."
-            }
+            },
+            "icon": "siegeengine",
+            "wounds": 6
         },
         {
             "id": "10508",
             "name": "Arbalétriers Constructeurs",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Arbalète",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Prêt ! Visez ! Tirez !",
-                    "Arbalète"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Prêt ! Visez ! Tirez !",
+                "Arbalète"
+            ],
+            "attacks": [
+                {
+                    "name": "Arbalète",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Même si la tâche principale des Constructeurs demeure la maintenance du Mur et de ses fortifications, ils sont également responsables de l’équipement de toute la Garde de Nuit. Ils ne sont donc généralement pas placés en première ligne sur le champ de bataille. Mais face à certains ennemis, il est bon que chaque homme ait une arme sous la main. L’entretien des arbalètes étant plus délicat que celui de la plupart des armes, il était logique d’en équiper les Constructeurs et d’utiliser ces derniers en tant qu’appui au feu de deuxième ligne."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10509",
             "name": "Recrues",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armes Simples",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Assistance",
-                    "Désorganisé"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Assistance",
+                "Désorganisé"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes Simples",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Généralement dépenaillées et souvent indisciplinées, les Recrues de la Garde de Nuit sont la lie de tout Westeros. Bien que la Garde ait pour habitude d’entraîner ses recrues avant de les envoyer au front, il peut arriver que chaque homme valide soit appelé à défendre le Mur. Contre un adversaire de taille, un général avisé saura ne pas trop se reposer sur les Recrues, susceptibles d’être mises en déroute au premier signe de résistance."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10510",
             "name": "Maréchal de la Garde",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 4,
-                "speed": 6,
-                "defense": 4,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Repositionnement Tactique",
-                    "Maréchal"
-                ],
-                "wounds": 3,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée ne peut pas contenir plus de 2 Maréchaux de la Garde.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Repositionnement Tactique",
+                "Maréchal"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 3,
+            "speed": 6,
+            "cost": 4,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Votre armée ne peut pas contenir plus de 2 Maréchaux de la Garde.*",
+                    "name": "Limité "
+                }
+            ],
             "fluff": {
                 "lore": "Pour accéder au grade de Maréchal de la Garde, il faut plus que de simples talents de cavalier et de meneur d’hommes. Le Frère Juré doit avoir servi en première ligne et avoir participé à de longues patrouilles au-delà du Mur pendant suffisamment longtemps pour connaître tous les ennemis potentiels de la Garde et savoir comment les affronter avec efficacité et détermination. Les Maréchaux de la Garde savent tirer le meilleur parti de leurs troupes, en exploitant au mieux leur potentiel offensif et leur mobilité."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10511",
             "name": "Mains-Froides",
-            "subname": "Allié Mystérieux",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 3,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Nuée de Corbeaux",
-                    "Œil de la Corneille"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui contient Benjen Stark.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "title": "Allié Mystérieux",
+            "abilities": [
+                "Ordre : Nuée de Corbeaux",
+                "Œil de la Corneille"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 3,
+            "speed": 5,
+            "cost": 5,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui contient Benjen Stark.*"
+                }
+            ],
             "fluff": {
                 "lore": "Allié un jour, ennemi le lendemain, l’être connu sous le nom de Mains-Froides est un spectre mystérieux aux motivations inconnues qui peut aussi bien soutenir les troupes que les harceler. Les nuées de corbeaux qu’il commande fondent sur ses adversaires, les noyant dans une mer d’ailes battantes et de griffes acérées. Au combat, il monte un gigantesque orignal et fait preuve d’une formidable prouesse martiale. Il porte l’armure et le manteau noir des frères de la Garde de Nuit, bien que nul ne puisse affirmer s’il s’agit des siens ou s’ils ont été pris sur la dépouille d’un ennemi. Lorsqu’il a été vaincu, Mains-Froides réapparaît peu après sur le champ de bataille."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 4
         },
         {
             "id": "10512",
             "name": "Éclaireurs Patrouilleurs",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Embuscade",
-                    "Attaque de Flanc"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Embuscade",
+                "Attaque de Flanc"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Les Patrouilleurs de la Garde de Nuit sont réputés pour leur capacité à se fondre dans la nature afin de tendre des embuscades à leurs ennemis. De tels assauts sont encore plus dévastateurs lorsqu’ils menés par des cavaliers. Dissimuler des chevaux se révèle délicat dans la plupart des environnements, mais les Éclaireurs Patrouilleurs connaissent la forêt qui s’étend au nord du Mur mieux que quiconque. Les épais taillis, les ravines cachées et même les petites cuvettes offrent de nombreuses cachettes depuis lesquelles ils peuvent surprendre leurs adversaires."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10513",
             "name": "Lanciers de Tour Ombreuse",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 3,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Lance",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Recevoir la Charge",
-                    "Inflexible"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Recevoir la Charge",
+                "Inflexible"
+            ],
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Le château de Tour Ombreuse se dresse à l’extrémité occidentale du Mur. Du haut de ses remparts, les Frères Noirs veillent. À l’instar de tous les membres de la Garde de Nuit, les Lanciers de Tour Ombreuse sont vêtus d’acier noirci, ainsi que de cuir noir adapté aux grands froids légendaires du Nord. Les Lanciers font d’excellents flanc-gardiens, capables de recevoir des charges ennemies, qu’elles soient de cavalerie ou d’infanterie, en leur infligeant des coups de lance avant même de se trouver à portée de leur adversaire."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30501",
             "name": "Bowen Marsh",
-            "subname": "Premier Intendant",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Compter et Mesurer",
-                        "effect": [
-                            "Chaque fois que Bowen s’empare d’une zone, vous pouvez regarder les 2 premières cartes de votre paquet Tactique. Prenez 1 de ces cartes en main et placez l’autre au bas de votre paquet Tactique."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Premier Intendant",
+            "abilities": [
+                {
+                    "name": "Compter et Mesurer",
+                    "effect": [
+                        "Chaque fois que Bowen s’empare d’une zone, vous pouvez regarder les 2 premières cartes de votre paquet Tactique. Prenez 1 de ces cartes en main et placez l’autre au bas de votre paquet Tactique."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Pour la Garde. »"
             }
@@ -530,20 +522,20 @@
         {
             "id": "30502",
             "name": "Aemon",
-            "subname": "Mestre de Château Noir",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Soins de Mestre",
-                        "effect": [
-                            "Chaque fois que Aemon s’empare d’une zone, vous pouvez cibler 1 unité alliée. Cette unité se soigne de 1 Blessure, + 1 pour chacun de ses rangs détruits."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Mestre de Château Noir",
+            "abilities": [
+                {
+                    "name": "Soins de Mestre",
+                    "effect": [
+                        "Chaque fois que Aemon s’empare d’une zone, vous pouvez cibler 1 unité alliée. Cette unité se soigne de 1 Blessure, + 1 pour chacun de ses rangs détruits."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« La connaissance est une arme, Jon. Arme-toi soigneusement avant de foncer dans la mêlée. »"
             }
@@ -551,22 +543,22 @@
         {
             "id": "30503",
             "name": "Jeor Mormont",
-            "subname": "Le Vieil Ours",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Devoir Envers les Royaumes Humains",
-                        "effect": [
-                            "Chaque fois que Jeor s’empare d’une zone, vous pouvez cibler 2 unités de la Garde de Nuit . Déplacez 1 carte Tactique alliée attachée de l’une de ces unités à l’autre.",
-                            "Une fois par partie, quand Jeor s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*Dans votre défausse Tactique, cherchez 1 carte pouvant être attachée à une unité et attachez-la à une unité de la Garde de Nuit alliée.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Le Vieil Ours",
+            "abilities": [
+                {
+                    "name": "Devoir Envers les Royaumes Humains",
+                    "effect": [
+                        "Chaque fois que Jeor s’empare d’une zone, vous pouvez cibler 2 unités de la Garde de Nuit . Déplacez 1 carte Tactique alliée attachée de l’une de ces unités à l’autre.",
+                        "Une fois par partie, quand Jeor s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                        "*Dans votre défausse Tactique, cherchez 1 carte pouvant être attachée à une unité et attachez-la à une unité de la Garde de Nuit alliée.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Le Mur a été bâti pour protéger les royaumes humains... et pas contre d’autres hommes. »"
             }
@@ -574,27 +566,27 @@
         {
             "id": "30506",
             "name": "Qhorin Mimain",
-            "subname": "Patrouilleur Inflexible",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Sacrifice pour la Cause",
-                        "effect": [
-                            "Au début de n’importe quel tour, si Qhorin n’est pas sur le Tableau Stratégique, vous pouvez le détruire. Si vous le faites, ciblez une unité ennemie. Cet ennemi devient **Vulnérable** et ne peut effectuer d’actions d'Attaque ou de Charge ce round."
-                        ]
-                    },
-                    {
-                        "name": "Conseils de Mimain",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité de Cavalerie ou d’Infanterie alliée, celle-ci gagne +1 dé d’Attaque."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Patrouilleur Inflexible",
+            "abilities": [
+                {
+                    "name": "Sacrifice pour la Cause",
+                    "effect": [
+                        "Au début de n’importe quel tour, si Qhorin n’est pas sur le Tableau Stratégique, vous pouvez le détruire. Si vous le faites, ciblez une unité ennemie. Cet ennemi devient **Vulnérable** et ne peut effectuer d’actions d'Attaque ou de Charge ce round."
+                    ]
+                },
+                {
+                    "name": "Conseils de Mimain",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité de Cavalerie ou d’Infanterie alliée, celle-ci gagne +1 dé d’Attaque."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Notre honneur est aussi dépourvu de valeur que nos jours, quand il s’agit de sauvegarder le royaume. »"
             }
@@ -602,51 +594,51 @@
         {
             "id": "30507",
             "name": "Donal Noye",
-            "subname": "Forgeron Chevronné",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Maintenance Experte",
-                        "effect": [
-                            "Donal commence la partie avec 2 pions Ordre sur sa carte.",
-                            "Chaque fois qu’une unité effectue une attaque, après avoir lancé les dés d’Attaque, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, choisissez 1 option :",
-                            "• L’attaquant peut relancer n’importe quels dés d’Attaque et les adversaires ne peuvent pas dépenser ses pions **Affaibli**.",
-                            "• Le défenseur gagne +1 à ses lancers de dés de Défense et les adversaires ne peuvent pas dépenser ses pions **Vulnérable**."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "ncu",
+            "title": "Forgeron Chevronné",
+            "abilities": [
+                {
+                    "name": "Maintenance Experte",
+                    "effect": [
+                        "Donal commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Chaque fois qu’une unité effectue une attaque, après avoir lancé les dés d’Attaque, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, choisissez 1 option :",
+                        "• L’attaquant peut relancer n’importe quels dés d’Attaque et les adversaires ne peuvent pas dépenser ses pions **Affaibli**.",
+                        "• Le défenseur gagne +1 à ses lancers de dés de Défense et les adversaires ne peuvent pas dépenser ses pions **Vulnérable**."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« La Garde n’est plus ce qu’elle fut. Trop peu d’honnêtes gens pour faire marcher droit la canaille. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30508",
             "name": "Othell Yarwyck",
-            "subname": "Spécialiste en Machines de Guerre",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Machines sur le Mur",
-                        "effect": [
-                            "Chaque fois qu’Othell s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par  :",
-                            "* Effectuez l’Attaque à Distance suivante sur une Unité Combattante ennemie :*",
-                            "[ATTACK: Ranged:Ranged Volley:3+3]",
-                            "* Gagne +1 dé d’Attaque pour chaque restant du défenseur.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Spécialiste en Machines de Guerre",
+            "abilities": [
+                {
+                    "name": "Machines sur le Mur",
+                    "effect": [
+                        "Chaque fois qu’Othell s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par  :",
+                        "* Effectuez l’Attaque à Distance suivante sur une Unité Combattante ennemie :*",
+                        "[ATTACK: Ranged:Ranged Volley:3+3]",
+                        "* Gagne +1 dé d’Attaque pour chaque restant du défenseur.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« On va leur montrer comment on traite ceux de leur espèce. »"
             }
@@ -654,20 +646,20 @@
         {
             "id": "30509",
             "name": "Samwell Tarly",
-            "subname": "Érudit Poltron",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Le Savoir, C'est le Pouvoir",
-                        "effect": [
-                            "Augmentez votre limite de cartes Tactique de +1. Vous commencez la partie avec 4 cartes et vous repiochez jusqu’à 4 cartes quand vous refaites votre main."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Érudit Poltron",
+            "abilities": [
+                {
+                    "name": "Le Savoir, C'est le Pouvoir",
+                    "effect": [
+                        "Augmentez votre limite de cartes Tactique de +1. Vous commencez la partie avec 4 cartes et vous repiochez jusqu’à 4 cartes quand vous refaites votre main."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Il n’est pas en mon pouvoir de te commander d’être brave, mais te commander de cacher tes peurs, ce pouvoir, je l’ai. » – Jon Snow"
             }
@@ -675,59 +667,59 @@
         {
             "id": "30510",
             "name": "Vère",
-            "subname": "Fille Sauvageonne",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 1,
-                "abilities": [
-                    {
-                        "name": "Perspicacité de Gilly",
-                        "effect": [
-                            "Au début de la partie, après avoir pioché votre main Tactique, vous pouvez piocher 1 carte Tactique, puis mélanger 1 carte de votre main dans votre paquet Tactique."
-                        ]
-                    },
-                    {
-                        "name": "Influence de Samwell",
-                        "effect": [
-                            "Gilly commence la partie avec 1 pion Ordre sur sa carte. Chaque fois que Gilly s’empare d’une zone, après avoir résolu l’effet de celle-ci, retirez 1 pion Ordre de Gilly.",
-                            "À la fin de chaque round, si Gilly n’a pas de pion Ordre, détruisez-la."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 1,
-                    "name": "order"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Fille Sauvageonne",
+            "abilities": [
+                {
+                    "name": "Perspicacité de Gilly",
+                    "effect": [
+                        "Au début de la partie, après avoir pioché votre main Tactique, vous pouvez piocher 1 carte Tactique, puis mélanger 1 carte de votre main dans votre paquet Tactique."
+                    ]
                 },
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recrutée quedans une armée qui contient **Samwell Tarly, Érudit Poltron**.*"
-                    }
-                ]
-            },
+                {
+                    "name": "Influence de Samwell",
+                    "effect": [
+                        "Gilly commence la partie avec 1 pion Ordre sur sa carte. Chaque fois que Gilly s’empare d’une zone, après avoir résolu l’effet de celle-ci, retirez 1 pion Ordre de Gilly.",
+                        "À la fin de chaque round, si Gilly n’a pas de pion Ordre, détruisez-la."
+                    ]
+                }
+            ],
+            "cost": 1,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recrutée quedans une armée qui contient **Samwell Tarly, Érudit Poltron**.*"
+                }
+            ],
             "fluff": {
                 "quote": "« Eh bien, je pense que tu es très courageuse. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 1
             }
         },
         {
             "id": "30511",
             "name": "Craster",
-            "subname": "Allié de la Garde",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Le Gîte et le Couvert",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
-                            "Chaque fois que Craster Influence une unité, retirez 1 pion État de celle-ci.",
-                            "Tant qu’elle est influencée, l’unité ignore les mots-clés Difficile et Entravant."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Allié de la Garde",
+            "abilities": [
+                {
+                    "name": "Le Gîte et le Couvert",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
+                        "Chaque fois que Craster Influence une unité, retirez 1 pion État de celle-ci.",
+                        "Tant qu’elle est influencée, l’unité ignore les mots-clés Difficile et Entravant."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Qu’il soit à demi dément, je ne le nie pas, mais si vous passiez toute votre vie dans ces bois maudits, vous le seriez aussi. »"
             }
@@ -735,24 +727,24 @@
         {
             "id": "30512",
             "name": "Yoren",
-            "subname": "Corbeau Intinérant",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Recrutement",
-                        "effect": [
-                            "Chaque fois que Yoren s’empare d’une zone, avant de résoudre l’effet de celle-ci, placez 1 pion Ordre sur sa carte.",
-                            "Chaque fois que Yoren s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par :",
-                            "*Placez 1 pion Ordre sur Yoren.*",
-                            "Au début d’un round, vous pouvez retirer 4 pions Ordre de Yoren.",
-                            "Si vous le faites, déployez 1 unité de Conscrits entièrement à Longue Portée ou moins d’un bord de table allié."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "ncu",
+            "title": "Corbeau Intinérant",
+            "abilities": [
+                {
+                    "name": "Recrutement",
+                    "effect": [
+                        "Chaque fois que Yoren s’empare d’une zone, avant de résoudre l’effet de celle-ci, placez 1 pion Ordre sur sa carte.",
+                        "Chaque fois que Yoren s’empare de [CROWN], vous pouvez remplacer l’effet de cette zone par :",
+                        "*Placez 1 pion Ordre sur Yoren.*",
+                        "Au début d’un round, vous pouvez retirer 4 pions Ordre de Yoren.",
+                        "Si vous le faites, déployez 1 unité de Conscrits entièrement à Longue Portée ou moins d’un bord de table allié."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« J’suis v’nu chercher des hommes pour le Mur… »."
             }
@@ -760,53 +752,50 @@
         {
             "id": "30513",
             "name": "Ser Denys Mallister",
-            "subname": "Frère d'Honneur",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Le Moment Peut Encore Venir",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité alliée, chaque fois que celle-ci effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, choisissez 1 option. Pour chacun de ses rangs détruits, choisissez-en 1 de plus :",
-                            "• Les Attaques de Mêlée de cette unité peuvent relancer n’importe quels dés d’Attaque.",
-                            "• Cette unité lance sa valeur de dés d’Attaque la plus élevée.",
-                            "• 1 ennemi engagé avec cette unité gagne 1 pion État."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Frère d'Honneur",
+            "abilities": [
+                {
+                    "name": "Le Moment Peut Encore Venir",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité alliée, chaque fois que celle-ci effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, choisissez 1 option. Pour chacun de ses rangs détruits, choisissez-en 1 de plus :",
+                        "• Les Attaques de Mêlée de cette unité peuvent relancer n’importe quels dés d’Attaque.",
+                        "• Cette unité lance sa valeur de dés d’Attaque la plus élevée.",
+                        "• 1 ennemi engagé avec cette unité gagne 1 pion État."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Les hommes de la Garde de Nuit s’habillaient en noir, me rappela d’un ton sévère, et comme si je l’avais oublié, ser Denys Mallister. » - Mance Rayder"
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20501",
             "name": "Jeor Mormont",
-            "subname": "997ᴱ Lord Commandant",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Restez à vos Postes !",
-                    "Tenez la Position !"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40508": "Voici que débute ma  garde",
-                    "40509": "Je vivrai et  je mourrai à  mon poste",
-                    "40510": "La nuit se regroupe"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "997ᴱ Lord Commandant",
+            "abilities": [
+                "Ordre : Restez à vos Postes !",
+                "Tenez la Position !"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40508",
+                "40509",
+                "40510"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Quand les morts se mettent à chasser, la nuit, le titulaire du Trône de Fer, ça te paraît vital ? »"
             }
@@ -814,26 +803,23 @@
         {
             "id": "20502",
             "name": "Jon Snow",
-            "subname": "998ᴱ Lord Commandant",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Audace et Bravoure",
-                    "Charge Furieuse"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40511": "Jusqu'à ma  mort,  je monterai  la garde !",
-                    "40512": "Tous unis,  mes frères !",
-                    "40513": "Pour la  Garde !"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "998ᴱ Lord Commandant",
+            "abilities": [
+                "Audace et Bravoure",
+                "Charge Furieuse"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40511",
+                "40512",
+                "40513"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« La peur n’a rien de honteux, me disait mon père, seule compte la manière de l’affronter. »"
             }
@@ -841,18 +827,18 @@
         {
             "id": "20503",
             "name": "Jon Snow",
-            "subname": "« Lord Snow »",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Héroïsme Téméraire",
-                    "Ordre : Cri de Guerre"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "« Lord Snow »",
+            "abilities": [
+                "Ordre : Héroïsme Téméraire",
+                "Ordre : Cri de Guerre"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Les seuls dieux qu’il vénérait réellement étaient l’honneur et le devoir. »"
             }
@@ -860,55 +846,52 @@
         {
             "id": "20504",
             "name": "Capitaine de la Garde de Nuit",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Audace et Bravoure",
-                    "Acharné"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Audace et Bravoure",
+                "Acharné"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20505",
             "name": "Recruteur de la Garde",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Incitation",
-                    "Renforts"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Incitation",
+                "Renforts"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20509",
             "name": "Alliser Thorne",
-            "subname": "Maître d'Armes",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Menacer",
-                    "Cruel",
-                    "Se Nourrir de la Peur"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40514": "Tentative  pathétique",
-                    "40515": "Trouver  la faille",
-                    "40516": "Le prix de l'échec"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Maître d'Armes",
+            "abilities": [
+                "Ordre : Menacer",
+                "Cruel",
+                "Se Nourrir de la Peur"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40514",
+                "40515",
+                "40516"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Vous crèverez comme des mouches, l’hiver venu. »"
             }
@@ -916,18 +899,18 @@
         {
             "id": "20510",
             "name": "Alliser Thorne",
-            "subname": "Intendant Vindicatif",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Volonté de Fer",
-                    "Ténacité Acharnée"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Intendant Vindicatif",
+            "abilities": [
+                "Volonté de Fer",
+                "Ténacité Acharnée"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« J’ai vu des cadavres plus spirituels que votre ser Alliser. »"
             }
@@ -935,26 +918,23 @@
         {
             "id": "20511",
             "name": "Donal Noye",
-            "subname": "Défenseur de Châteaunoir",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Mur de Boucliers",
-                    "Armement Amélioré"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40517": "Formation défensive",
-                    "40518": "Refuser de se soumettre",
-                    "40519": "Retour de  bâton"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Défenseur de Châteaunoir",
+            "abilities": [
+                "Ordre : Mur de Boucliers",
+                "Armement Amélioré"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40517",
+                "40518",
+                "40519"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Un forgeron manchot qu’a zigouillé Mag le Puissant ? Har ! Dû valoir le coup d’oeil, le combat. »"
             }
@@ -962,17 +942,17 @@
         {
             "id": "20512",
             "name": "Grenn",
-            "subname": "Auroch",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Provocation"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Auroch",
+            "abilities": [
+                "Ordre : Provocation"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Grenn l’affreux. » – Pypar"
             }
@@ -980,22 +960,22 @@
         {
             "id": "20513",
             "name": "Pypar",
-            "subname": "Singe",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Repli Éclair"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Pypar peut être ajouté à une unité qui comprend Grenn en ignorant les limites d’Attachement normales.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Singe",
+            "abilities": [
+                "Ordre : Repli Éclair"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Pypar peut être ajouté à une unité qui comprend Grenn en ignorant les limites d’Attachement normales.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Moins affreux que toi ! Avec tes oreilles de pipistrelle... » – Grenn"
             }
@@ -1003,18 +983,18 @@
         {
             "id": "20514",
             "name": "Qhorin Mimain",
-            "subname": "Patrouilleur Vétéran",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Cicatrices de Combat",
-                    "Tomber au Combat"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Patrouilleur Vétéran",
+            "abilities": [
+                "Cicatrices de Combat",
+                "Tomber au Combat"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« N’est-ce pas pour la défense du royaume que nous avons endossé nos manteaux noirs ? »"
             }
@@ -1022,18 +1002,18 @@
         {
             "id": "20516",
             "name": "Othell Yarwyck",
-            "subname": "Guetteur",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Défenses Améliorées",
-                    "Guetteur"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Guetteur",
+            "abilities": [
+                "Défenses Améliorées",
+                "Guetteur"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Enfin, prenez qui vous voulez, puisqu’y a que c’est pas moi. »"
             }
@@ -1041,111 +1021,108 @@
         {
             "id": "20517",
             "name": "Modifications du Scorpion (Othell Yarwyck)",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 1,
-                "abilities": [
-                    "Pieux Défensifs"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Cette carte ne peut être recrutée que dans une armée qui comprend Othell Yarwyck. Attachez-la à une unité de Scorpion et Équipe de Constructeurs alliée. Vous pouvez ignorer l’effet Limité du Scorpion et Équipe de Constructeurs.*"
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Pieux Défensifs"
+            ],
+            "cost": 1,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Cette carte ne peut être recrutée que dans une armée qui comprend Othell Yarwyck. Attachez-la à une unité de Scorpion et Équipe de Constructeurs alliée. Vous pouvez ignorer l’effet Limité du Scorpion et Équipe de Constructeurs.*"
+                }
+            ],
+            "icon": "siegeengine"
         },
         {
             "id": "20518",
             "name": "Constructeur Chevronné",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Défenses Améliorées",
-                    "Pose de Pieux"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Défenses Améliorées",
+                "Pose de Pieux"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20519",
             "name": "Patrouilleur Endurci",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Charge Furieuse",
-                    "Évasion Insaisissable"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Charge Furieuse",
+                "Évasion Insaisissable"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20520",
             "name": "Maréchal de la Garde",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Planification Réactive",
-                    "Ordre : Repli Éclair"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée ne peut pas contenir plus de 2 Maréchaux de la Garde.*"
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Planification Réactive",
+                "Ordre : Repli Éclair"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*Votre armée ne peut pas contenir plus de 2 Maréchaux de la Garde.*",
+                    "name": "Limité "
+                }
+            ],
+            "icon": "cavalry"
         },
         {
             "id": "20521",
             "name": "Modifications du Scorpion (Constructeur)",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : État d’Alerte"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Cette carte ne peut être recrutée que dans une armée qui comprend au moins 1 Constructeur Chevronné. Attachez-la à une unité de Scorpion et Équipe de Constructeurs alliée.*"
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : État d’Alerte"
+            ],
+            "cost": 1,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Cette carte ne peut être recrutée que dans une armée qui comprend au moins 1 Constructeur Chevronné. Attachez-la à une unité de Scorpion et Équipe de Constructeurs alliée.*"
+                }
+            ],
+            "icon": "siegeengine"
         },
         {
             "id": "20522",
             "name": "Othell Yarwyck",
-            "subname": "Premier Constructeur",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Constructeurs",
-                    "Endurci",
-                    "Guetteur"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40520": "Amélioration de finition",
-                    "40521": "Construction rapide",
-                    "40522": "Amélioration dentelée"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Premier Constructeur",
+            "abilities": [
+                "Affiliation : Constructeurs",
+                "Endurci",
+                "Guetteur"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40520",
+                "40521",
+                "40522"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Peu d’hommes possèdent le savoir du Premier Constructeur. »"
             }
@@ -1153,18 +1130,18 @@
         {
             "id": "20523",
             "name": "Benjen Stark",
-            "subname": "Le Loup sur le Mur",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Embuscade"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Le Loup sur le Mur",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Embuscade"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« La Garde de Nuit se compose de frères assermentés. Nous n’avons pas de famille. »"
             }
@@ -1172,23 +1149,23 @@
         {
             "id": "20524",
             "name": "Mains-Froides",
-            "subname": "Guide Énigmatique",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Attaque de Flanc",
-                    "Éclaireur"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui contient Benjen Stark.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Guide Énigmatique",
+            "abilities": [
+                "Attaque de Flanc",
+                "Éclaireur"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui contient Benjen Stark.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ils l’ont tué il y a longtemps. »"
             }
@@ -1196,18 +1173,18 @@
         {
             "id": "20525",
             "name": "Samwell Tarly",
-            "subname": "L'Égorgeur",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Plan de Bataille",
-                    "Comptabilité (Samwell Tarly)"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "L'Égorgeur",
+            "abilities": [
+                "Ordre : Plan de Bataille",
+                "Comptabilité (Samwell Tarly)"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je suis allé au-delà du Mur et j’y ai livré des batailles. On me surnomme Sam l’Égorgeur. »"
             }
@@ -1215,23 +1192,23 @@
         {
             "id": "20526",
             "name": "Mains-Froides",
-            "subname": "Ancien Corbeau",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Présence Intimidante"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui contient Benjen Stark.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Ancien Corbeau",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Présence Intimidante"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui contient Benjen Stark.*"
+                }
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "« Viande morte, sang séché, un vague relent de pourri. Et le froid. Par-dessus tout, le froid. »"
             }
@@ -1239,27 +1216,24 @@
         {
             "id": "20527",
             "name": "Benjen Stark",
-            "subname": "Premier Patrouilleur",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Fureur des Stark",
-                    "Affiliation : Patrouilleurs",
-                    "Mobilité Améliorée"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40523": "Harcèlement",
-                    "40524": "À l'affut",
-                    "40525": "Perspicacité du Patrouilleur"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Premier Patrouilleur",
+            "abilities": [
+                "Ordre : Fureur des Stark",
+                "Affiliation : Patrouilleurs",
+                "Mobilité Améliorée"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40523",
+                "40524",
+                "40525"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Y a personne, au Mur, qui connaît mieux que Benjen Stark la forêt hantée. »"
             }
@@ -1267,18 +1241,18 @@
         {
             "id": "20528",
             "name": "Cotter Pyke",
-            "subname": "Frère Fer-Né",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Héroïsme Téméraire",
-                    "Charge Furieuse"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Frère Fer-Né",
+            "abilities": [
+                "Ordre : Héroïsme Téméraire",
+                "Charge Furieuse"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Tu nous salopes le boulot, lord Snow, et moi, je t’arrache le foie et je me le bouffe tout cru avec des oignons. »"
             }
@@ -1286,19 +1260,19 @@
         {
             "id": "20529",
             "name": "Yoren",
-            "subname": "Recruteur Sévère",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Incitation",
-                    "Présence Intimidante",
-                    "Renforts"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Recruteur Sévère",
+            "abilities": [
+                "Ordre : Incitation",
+                "Présence Intimidante",
+                "Renforts"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« J’en ramène trente, c’coup-ci, des mioches et des adultes. Tout ça pou’l’Mur. »"
             }
@@ -1306,22 +1280,22 @@
         {
             "id": "20530",
             "name": "Satin",
-            "subname": "Aide-de-Camp du Lord Commandant",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Vassal du Général"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Satin ignore toutes les restrictions normales d’Attachement.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Aide-de-Camp du Lord Commandant",
+            "abilities": [
+                "Vassal du Général"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Satin ignore toutes les restrictions normales d’Attachement.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Quoi que Satin ait pu faire à Villevieille, il est désormais notre frère... » – Jon Snow"
             }
@@ -1329,22 +1303,22 @@
         {
             "id": "20531",
             "name": "Satin",
-            "subname": "Brave Recrue",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Audacieux"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Satin ignore toutes les restrictions normales d’Attachement.*"
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Brave Recrue",
+            "abilities": [
+                "Audacieux"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Satin ignore toutes les restrictions normales d’Attachement.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Une demi-année de Châteaunoir lui avait durci néanmoins les menottes... Mais quant à savoir de quel coeur il affronterait ce qui leur venait dessus, ça… »"
             }
@@ -1352,17 +1326,17 @@
         {
             "id": "20532",
             "name": "Eddison Tallett",
-            "subname": "Edd-la-Douleur",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Pince-sans-Rire"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Edd-la-Douleur",
+            "abilities": [
+                "Pince-sans-Rire"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Une fois qu’on aura trouvé le moyen d’utiliser les chevaux morts, ça sera notre tour après. Moi le premier, je vois ça d’ici. »"
             }
@@ -1370,27 +1344,24 @@
         {
             "id": "20533",
             "name": "Benjen Stark",
-            "subname": "Au-Delà du Mur",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Pièges Cachés",
-                    "Patrouilleur Expert (Benjen)",
-                    "Déstabilisation"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40526": "Perspicacité du Patrouilleur",
-                    "40527": "Rassemblement",
-                    "40528": "Attaque montée"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Au-Delà du Mur",
+            "abilities": [
+                "Ordre : Pièges Cachés",
+                "Patrouilleur Expert (Benjen)",
+                "Déstabilisation"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40526",
+                "40527",
+                "40528"
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "Ça fait trois ans que je n’ai pas vu Benjen Stark, et, pour parler franc, sans l’ombre d’un regret. » – Craster"
             }
@@ -1398,26 +1369,23 @@
         {
             "id": "20534",
             "name": "Cotter Pyke",
-            "subname": "Commandant de Fort-Levant",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Héroïsme Téméraire",
-                    "Soif de Massacre"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40529": "Ordres d'assaut",
-                    "40530": "Agressivité de Pyke",
-                    "40531": "Frappes téméraires"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Commandant de Fort-Levant",
+            "abilities": [
+                "Ordre : Héroïsme Téméraire",
+                "Soif de Massacre"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40529",
+                "40530",
+                "40531"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Cotter Pyke a toujours eu plus de tripes que de sens commun. » – Mance Rayder"
             }
@@ -1425,26 +1393,23 @@
         {
             "id": "20535",
             "name": "Ser Denys Mallister",
-            "subname": "Commandant de Tour-Ombreuse",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Serment de Chevalier",
-                    "Commandant Dévoué"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40532": "Méthodes réactives",
-                    "40533": "Prouesse guerrière",
-                    "40534": "Tempéré par  le devoir"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Commandant de Tour-Ombreuse",
+            "abilities": [
+                "Serment de Chevalier",
+                "Commandant Dévoué"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40532",
+                "40533",
+                "40534"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ne me faites pas mourir le coeur lourd de regrets. »"
             }
@@ -1454,708 +1419,675 @@
         {
             "id": "40501",
             "name": "L'épée dans les ténèbres",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Le défenseur devient **Vulnérable**.",
-                            "Si le défenseur n’a pas été activé ce round-ci, il devient également **Paniqué**."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, les Attaques de Mêlée de cette unité sont considérées comme ayant +1 rang pour les dés d’Attaque."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Le défenseur devient **Vulnérable**.",
+                        "Si le défenseur n’a pas été activé ce round-ci, il devient également **Paniqué**."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, les Attaques de Mêlée de cette unité sont considérées comme ayant +1 rang pour les dés d’Attaque."
+                    ]
+                }
+            ]
         },
         {
             "id": "40502",
             "name": "Le feu qui flambe contre le froid",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
-                        "effect": [
-                            "Cette unité peut relancer n’importe quels dés de ce test.",
-                            "Si cette carte cible l'unité de votre Général, elle réussit ce Test à la place."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité gagne un pion État, l’unité peut subir 1 Blessure pour retirer ce pion."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
+                    "effect": [
+                        "Cette unité peut relancer n’importe quels dés de ce test.",
+                        "Si cette carte cible l'unité de votre Général, elle réussit ce Test à la place."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité gagne un pion État, l’unité peut subir 1 Blessure pour retirer ce pion."
+                    ]
+                }
+            ]
         },
         {
             "id": "40503",
             "name": "Le bouclier protecteur des royaumes humains",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une attaque,après avoir lancé les dés de Défense :",
-                        "effect": [
-                            "Ciblez le Défenseur. Il peut relancer n’importe quels dés de Défense."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité est attaquée, après avoir lancé les dés de Défense, elle bloque +1 Touche."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une attaque,après avoir lancé les dés de Défense :",
+                    "effect": [
+                        "Ciblez le Défenseur. Il peut relancer n’importe quels dés de Défense."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité est attaquée, après avoir lancé les dés de Défense, elle bloque +1 Touche."
+                    ]
+                }
+            ]
         },
         {
             "id": "40504",
             "name": "Le veilleur au rempart",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a été attaquée :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée autre que le défenseur. Cette unité pivote puis se décale de 2’’."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, cette unité gagne +1 [MOVEMENT] et peut relancer n’importe quels dés de Distance de Charge."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a été attaquée :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée autre que le défenseur. Cette unité pivote puis se décale de 2’’."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, cette unité gagne +1 [MOVEMENT] et peut relancer n’importe quels dés de Distance de Charge."
+                    ]
+                }
+            ]
         },
         {
             "id": "40505",
             "name": "La lumière qui rallume l'aube",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque peut relancer n’importe quels Échecs."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, cette unité gagne +1 au résultat des Tests de Moral,",
-                            "Si cette unité est celle de votre Général, cette unité ne peut pas devenir **Paniquée**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque peut relancer n’importe quels Échecs."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, cette unité gagne +1 au résultat des Tests de Moral,",
+                        "Si cette unité est celle de votre Général, cette unité ne peut pas devenir **Paniquée**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40506",
             "name": "Prendre le Noir",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si le défenseur a subi des Blessures, l’attaquant se soigne de 1 Blessure, +1 par rang qu’elle a détruit lors de cette attaque. Si un Attachement d’Infanterie a été détruit, vous pouvez également le prendre et l’attacher à l’attaquant en remplaçant normalement une figurine, mais en ignorant les limites habituelles d’Attachements."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si le défenseur a subi des Blessures, l’attaquant se soigne de 1 Blessure, +1 par rang qu’elle a détruit lors de cette attaque. Si un Attachement d’Infanterie a été détruit, vous pouvez également le prendre et l’attacher à l’attaquant en remplaçant normalement une figurine, mais en ignorant les limites habituelles d’Attachements."
+                    ]
+                }
+            ]
         },
         {
             "id": "40507",
             "name": "Voici que se termine sa garde",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée est détruite par un Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez l’Attaquant. Il devient **Vulnérable**. Ciblez ensuite une ou plusieurs unités alliées à Longue Portée ou moins. Elles soignent 2 de leurs Blessures."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité réussit un Test de Moral, elle peut soigner 1 de ses Blessures."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée est détruite par un Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez l’Attaquant. Il devient **Vulnérable**. Ciblez ensuite une ou plusieurs unités alliées à Longue Portée ou moins. Elles soignent 2 de leurs Blessures."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité réussit un Test de Moral, elle peut soigner 1 de ses Blessures."
+                    ]
+                }
+            ]
         },
         {
             "id": "40508",
             "name": "Voici que débute ma  garde",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Cette unité effectue 1 Test de Moral. Si elle réussit, choisissez 1 option :",
-                            "• Dans votre paquet Tactique, cherchez 1 carte de votre choix et ajoutez-la à votre main. Défaussez ensuite 1 carte. Mélangez votre paquet Tactique.",
-                            "• Dans votre paquet ou défausse Tactique, cherchez 1 carte qui peut être attachée à cette unité. Attachez-la à cette unité. Mélangez votre paquet Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20501",
-                "commander_name": "Jeor Mormont",
-                "commander_subname": "997ᴱ Lord Commandant"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral. Si elle réussit, choisissez 1 option :",
+                        "• Dans votre paquet Tactique, cherchez 1 carte de votre choix et ajoutez-la à votre main. Défaussez ensuite 1 carte. Mélangez votre paquet Tactique.",
+                        "• Dans votre paquet ou défausse Tactique, cherchez 1 carte qui peut être attachée à cette unité. Attachez-la à cette unité. Mélangez votre paquet Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20501"
             }
         },
         {
             "id": "40509",
             "name": "Je vivrai et  je mourrai à  mon poste",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée réussit un Test de Moral :",
-                        "effect": [
-                            "Tous les ennemis engagés avec cette unité deviennent **Vulnérables**.",
-                            "Si cette carte cible une unité de la Garde de Nuit, attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, cette unité ne peut pas perdre sa dernière Blessure en échouant un Test de Panique *(elle ne peut être que réduite à 1 Blessure restante)*."
-                        ]
-                    }
-                ],
-                "commander_id": "20501",
-                "commander_name": "Jeor Mormont",
-                "commander_subname": "997ᴱ Lord Commandant"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée réussit un Test de Moral :",
+                    "effect": [
+                        "Tous les ennemis engagés avec cette unité deviennent **Vulnérables**.",
+                        "Si cette carte cible une unité de la Garde de Nuit, attachez-lui cette carte jusqu’à la fin de la partie.",
+                        "Tant que cette carte est attachée, cette unité ne peut pas perdre sa dernière Blessure en échouant un Test de Panique *(elle ne peut être que réduite à 1 Blessure restante)*."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20501"
             }
         },
         {
             "id": "40510",
             "name": "La nuit se regroupe",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois qu’un ennemi effectue une Attaque de Mêlée sur cette unité, avant de lancer les dés d’Attaque, l’Attaquant subit 1 Touche, +1 par rang restant dans cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20501",
-                "commander_name": "Jeor Mormont",
-                "commander_subname": "997ᴱ Lord Commandant"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois qu’un ennemi effectue une Attaque de Mêlée sur cette unité, avant de lancer les dés d’Attaque, l’Attaquant subit 1 Touche, +1 par rang restant dans cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20501"
             }
         },
         {
             "id": "40511",
             "name": "Jusqu'à ma  mort,  je monterai  la garde !",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée devrait être détruite par une attaque de Mêlée :",
-                        "effect": [
-                            "Avant d’être retirée, cette unité effectue 1 Attaque de Mêlée sur l’attaquant en utilisant sa valeur de dés d’Attaque la plus basse. Si cette carte cible l’unité de Jon Snow, elle gagne +2 dés d’Attaque.",
-                            "Si cette attaque détruit le défenseur, votre unité alliée n’est pas détruite et reste en jeu avec 1 Blessure."
-                        ]
-                    }
-                ],
-                "commander_id": "20502",
-                "commander_name": "Jon Snow",
-                "commander_subname": "998ᴱ Lord Commandant"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée devrait être détruite par une attaque de Mêlée :",
+                    "effect": [
+                        "Avant d’être retirée, cette unité effectue 1 Attaque de Mêlée sur l’attaquant en utilisant sa valeur de dés d’Attaque la plus basse. Si cette carte cible l’unité de Jon Snow, elle gagne +2 dés d’Attaque.",
+                        "Si cette attaque détruit le défenseur, votre unité alliée n’est pas détruite et reste en jeu avec 1 Blessure."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20502"
             }
         },
         {
             "id": "40512",
             "name": "Tous unis,  mes frères !",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée. Retirez un maximum de 4 figurines *(au total)* d’autres Unités Combattantes alliées situées à Longue Portée ou moins. Soignez cette unité du même nombre de Blessures.",
-                            "Si cette carte cible l’unité de Jon Snow, elle peut se soigner de +2 Blessures *(sans retirer de figurines)*."
-                        ]
-                    }
-                ],
-                "commander_id": "20502",
-                "commander_name": "Jon Snow",
-                "commander_subname": "998ᴱ Lord Commandant"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée. Retirez un maximum de 4 figurines *(au total)* d’autres Unités Combattantes alliées situées à Longue Portée ou moins. Soignez cette unité du même nombre de Blessures.",
+                        "Si cette carte cible l’unité de Jon Snow, elle peut se soigner de +2 Blessures *(sans retirer de figurines)*."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20502"
             }
         },
         {
             "id": "40513",
             "name": "Pour la  Garde !",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, après avoir lancé les dés de Distance de Charge :",
-                        "effect": [
-                            "Cette unité peut relancer ses dés de Distance de Charge."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité est ciblée par la zone [HORSE], vous pouvez remplacer l’effet de cette zone par :",
-                            "*Cette unité effectue 1 action de Charge.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20502",
-                "commander_name": "Jon Snow",
-                "commander_subname": "998ᴱ Lord Commandant"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une action de Charge, après avoir lancé les dés de Distance de Charge :",
+                    "effect": [
+                        "Cette unité peut relancer ses dés de Distance de Charge."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Tant que cette carte est attachée, chaque fois que cette unité est ciblée par la zone [HORSE], vous pouvez remplacer l’effet de cette zone par :",
+                        "*Cette unité effectue 1 action de Charge.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20502"
             }
         },
         {
             "id": "40514",
             "name": "Tentative  pathétique",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée réussit un Test de Panique en étant attaquée en Mêlée :",
-                        "effect": [
-                            "Ciblez l’attaquant. Il subit 2 Touches pour chaque rang restant dans cette unité.",
-                            "Si le défenseur est l’unité d’Alliser, l’attaquant devient également **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20509",
-                "commander_name": "Alliser Thorne",
-                "commander_subname": "Maître d'Armes"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée réussit un Test de Panique en étant attaquée en Mêlée :",
+                    "effect": [
+                        "Ciblez l’attaquant. Il subit 2 Touches pour chaque rang restant dans cette unité.",
+                        "Si le défenseur est l’unité d’Alliser, l’attaquant devient également **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20509"
             }
         },
         {
             "id": "40515",
             "name": "Trouver  la faille",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
-                        "effect": [
-                            "Cet ennemi devient **Vulnérable** et **Paniqué**.",
-                            "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité d’Alliser Thorne attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
-                        ]
-                    }
-                ],
-                "commander_id": "20509",
-                "commander_name": "Alliser Thorne",
-                "commander_subname": "Maître d'Armes"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
+                    "effect": [
+                        "Cet ennemi devient **Vulnérable** et **Paniqué**.",
+                        "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité d’Alliser Thorne attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20509"
             }
         },
         {
             "id": "40516",
             "name": "Le prix de l'échec",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Tous les résultats des dés de cette attaque Touchent automatiquement.",
-                            "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20509",
-                "commander_name": "Alliser Thorne",
-                "commander_subname": "Maître d'Armes"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Tous les résultats des dés de cette attaque Touchent automatiquement.",
+                        "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20509"
             }
         },
         {
             "id": "40517",
             "name": "Formation défensive",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Attachez cette carte à 1 Unité Combattante alliée jusqu’au début de sa prochaine activation.",
-                            "Tant que cette carte est attachée, cette unité ne peut pas effectuer d’actions d’Attaque ou de Charge, mais gagne +1 à ses résultats de dés de Défense et les attaquants ne gagnent pas de bonus de Charge, de Dos ou de Flanc contre elle."
-                        ]
-                    }
-                ],
-                "commander_id": "20511",
-                "commander_name": "Donal Noye",
-                "commander_subname": "Défenseur de Château Noir"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Attachez cette carte à 1 Unité Combattante alliée jusqu’au début de sa prochaine activation.",
+                        "Tant que cette carte est attachée, cette unité ne peut pas effectuer d’actions d’Attaque ou de Charge, mais gagne +1 à ses résultats de dés de Défense et les attaquants ne gagnent pas de bonus de Charge, de Dos ou de Flanc contre elle."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20511"
             }
         },
         {
             "id": "40518",
             "name": "Refuser de se soumettre",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée réussit un Test de Panique :",
-                        "effect": [
-                            "Tous les ennemis engagés avec cette unité deviennent **Vulnérables**. Attachez cette carte à cette unité jusqu’à ce qu’elle échoue un Test de Panique.",
-                            "Tant que cette carte est attachée, chaque fois que cette unité réussit un Test de Panique, tous les ennemis engagés avec elle deviennent **Vulnérables**. Si cette carte est attachée à l’unité de Donal Noye, cette dernière gagne +1 à ses lancers de Test de Panique."
-                        ]
-                    }
-                ],
-                "commander_id": "20511",
-                "commander_name": "Donal Noye",
-                "commander_subname": "Défenseur de Château Noir"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée réussit un Test de Panique :",
+                    "effect": [
+                        "Tous les ennemis engagés avec cette unité deviennent **Vulnérables**. Attachez cette carte à cette unité jusqu’à ce qu’elle échoue un Test de Panique.",
+                        "Tant que cette carte est attachée, chaque fois que cette unité réussit un Test de Panique, tous les ennemis engagés avec elle deviennent **Vulnérables**. Si cette carte est attachée à l’unité de Donal Noye, cette dernière gagne +1 à ses lancers de Test de Panique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20511"
             }
         },
         {
             "id": "40519",
             "name": "Retour de  bâton",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est l’unité de Donal Noye, l’attaquant devient également **Paniqué**."
-                        ]
-                    }
-                ],
-                "commander_id": "20511",
-                "commander_name": "Donal Noye",
-                "commander_subname": "Défenseur de Château Noir"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est l’unité de Donal Noye, l’attaquant devient également **Paniqué**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20511"
             }
         },
         {
             "id": "40520",
             "name": "Amélioration de finition",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d'Attaque :",
-                        "effect": [
-                            "Cette attaque gagne +1 pour Toucher.",
-                            "Si cette carte cible une unité de Constructeurs, cette attaque lance +1 dé d'Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20522",
-                "commander_name": "Othell Yarwyck",
-                "commander_subname": "Premier Constructeur"
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d'Attaque :",
+                    "effect": [
+                        "Cette attaque gagne +1 pour Toucher.",
+                        "Si cette carte cible une unité de Constructeurs, cette attaque lance +1 dé d'Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20522"
             }
         },
         {
             "id": "40521",
             "name": "Construction rapide",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Au début du round :",
-                        "effect": [
-                            "Placez un Terrain Muret doté des mots-clés Destructible, Entravant et Fortifié à 1’’ou moins d’une unité alliée. Cet élément ne peut pas chevaucher d'unités ou d’autres terrains."
-                        ]
-                    }
-                ],
-                "commander_id": "20522",
-                "commander_name": "Othell Yarwyck",
-                "commander_subname": "Premier Constructeur"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début du round :",
+                    "effect": [
+                        "Placez un Terrain Muret doté des mots-clés Destructible, Entravant et Fortifié à 1’’ou moins d’une unité alliée. Cet élément ne peut pas chevaucher d'unités ou d’autres terrains."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20522"
             }
         },
         {
             "id": "40522",
             "name": "Amélioration dentelée",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d'Attaque:",
-                        "effect": [
-                            "Cette attaque gagne **Cruel**.",
-                            "Si l'attaquant est une unité de Constructeurs, les ennemis qui échouent le Test de Panique de cette attaque deviennent **Affaiblis**"
-                        ]
-                    }
-                ],
-                "commander_id": "20522",
-                "commander_name": "Othell Yarwyck",
-                "commander_subname": "Premier Constructeur"
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d'Attaque:",
+                    "effect": [
+                        "Cette attaque gagne **Cruel**.",
+                        "Si l'attaquant est une unité de Constructeurs, les ennemis qui échouent le Test de Panique de cette attaque deviennent **Affaiblis**"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20522"
             }
         },
         {
             "id": "40523",
             "name": "Harcèlement",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Cette unité effectue une action de Repli. Si cette carte cible une unité de Patrouilleurs, tous les ennemis desquels elle se désengage deviennent **Affaiblis**."
-                        ]
-                    }
-                ],
-                "commander_id": "20527",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Premier Patrouilleur"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Cette unité effectue une action de Repli. Si cette carte cible une unité de Patrouilleurs, tous les ennemis desquels elle se désengage deviennent **Affaiblis**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20527"
             }
         },
         {
             "id": "40524",
             "name": "À l'affut",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante ennemie est activée :",
-                        "effect": [
-                            "Ciblez une unité alliée, non activée, située à Longue Portée ou moins de cet ennemi et disposant d’une Ligne de Vue sur ce dernier.",
-                            "Cette unité effectue une action d'Attaque à Distance sur cet ennemi.",
-                            "Si cette carte cible une unité de Patrouilleurs, celle-ci peut relancer n’importe quels échecs."
-                        ]
-                    }
-                ],
-                "commander_id": "20527",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Premier Patrouilleur"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante ennemie est activée :",
+                    "effect": [
+                        "Ciblez une unité alliée, non activée, située à Longue Portée ou moins de cet ennemi et disposant d’une Ligne de Vue sur ce dernier.",
+                        "Cette unité effectue une action d'Attaque à Distance sur cet ennemi.",
+                        "Si cette carte cible une unité de Patrouilleurs, celle-ci peut relancer n’importe quels échecs."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20527"
             }
         },
         {
             "id": "40525",
             "name": "Perspicacité du Patrouilleur",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 ennemi situé à Longue Portée ou moins d’une unité de Patrouilleurs alliée et choisissez 1 option :",
-                            "• 1 unité alliée située à Longue Portée ou moins de cet ennemi se décale de 3’’.",
-                            "• Ce tour-ci, les unités alliées peuvent relancer n'importe quels dés d’Attaque et de Distance de Charge lorsqu’elles ciblent cet ennemi.",
-                            "• Ce tour-ci, cet ennemi ne peut pas utiliser d’Ordres ou être ciblé par des cartes Tactique alliées."
-                        ]
-                    }
-                ],
-                "commander_id": "20527",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Premier Patrouilleur"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 ennemi situé à Longue Portée ou moins d’une unité de Patrouilleurs alliée et choisissez 1 option :",
+                        "• 1 unité alliée située à Longue Portée ou moins de cet ennemi se décale de 3’’.",
+                        "• Ce tour-ci, les unités alliées peuvent relancer n'importe quels dés d’Attaque et de Distance de Charge lorsqu’elles ciblent cet ennemi.",
+                        "• Ce tour-ci, cet ennemi ne peut pas utiliser d’Ordres ou être ciblé par des cartes Tactique alliées."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20527"
             }
         },
         {
             "id": "40526",
             "name": "Perspicacité du Patrouilleur",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 ennemi situé à Longue Portée ou moins d’une unité de Patrouilleurs alliée et choisissez 1 option :",
-                            "• 1 unité alliée située à Longue Portée ou moins de cet ennemi se décale de 3’’.",
-                            "• Ce tour-ci, les unités alliées peuvent relancer n'importe quels dés d’Attaque et de Distance de Charge lorsqu’elles ciblent cet ennemi.",
-                            "• Ce tour-ci, cet ennemi ne peut pas utiliser d’Ordres ou être ciblé par des cartes Tactique alliées."
-                        ]
-                    }
-                ],
-                "commander_id": "20533",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Au-Delà du Mur"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 ennemi situé à Longue Portée ou moins d’une unité de Patrouilleurs alliée et choisissez 1 option :",
+                        "• 1 unité alliée située à Longue Portée ou moins de cet ennemi se décale de 3’’.",
+                        "• Ce tour-ci, les unités alliées peuvent relancer n'importe quels dés d’Attaque et de Distance de Charge lorsqu’elles ciblent cet ennemi.",
+                        "• Ce tour-ci, cet ennemi ne peut pas utiliser d’Ordres ou être ciblé par des cartes Tactique alliées."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20533"
             }
         },
         {
             "id": "40527",
             "name": "Rassemblement",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité de Cavalerie alliée non engagée est activée :",
-                        "effect": [
-                            "Une fois ce tour-ci, si cette unité doit effectuer une action de Manœuvre, elle peut soigner 3 de ses Blessures et retirer 1 pion État au lieu d’effectuer cette action."
-                        ]
-                    }
-                ],
-                "commander_id": "20533",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Au-Delà du Mur"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité de Cavalerie alliée non engagée est activée :",
+                    "effect": [
+                        "Une fois ce tour-ci, si cette unité doit effectuer une action de Manœuvre, elle peut soigner 3 de ses Blessures et retirer 1 pion État au lieu d’effectuer cette action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20533"
             }
         },
         {
             "id": "40528",
             "name": "Attaque montée",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité de Cavalerie alliée choisit son action lors de son activation, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Pour son action, cette unité peut effectuer un pivot, puis une action de Marche, même si elle est engagée. Elle peut traverser les ennemis au cours de cette Marche. Les ennemis desquels elle se désengage ne peuvent pas pivoter.",
-                            "Une fois cette Marche résolue, 1 ennemi traversé subit 1 Blessure, +1 par rang restant dans cette unité ennemie."
-                        ]
-                    }
-                ],
-                "commander_id": "20533",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Au-Delà du Mur"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité de Cavalerie alliée choisit son action lors de son activation, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Pour son action, cette unité peut effectuer un pivot, puis une action de Marche, même si elle est engagée. Elle peut traverser les ennemis au cours de cette Marche. Les ennemis desquels elle se désengage ne peuvent pas pivoter.",
+                        "Une fois cette Marche résolue, 1 ennemi traversé subit 1 Blessure, +1 par rang restant dans cette unité ennemie."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20533"
             }
         },
         {
             "id": "40529",
             "name": "Ordres d'assaut",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez les effets de cette zone par :",
-                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
-                            "*Si cette unité est l’unité de Cotter Pyke, celle-ci peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20534",
-                "commander_name": "Cotter Pyke",
-                "commander_subname": "Commandant de Fort-Levant"
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez les effets de cette zone par :",
+                        "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
+                        "*Si cette unité est l’unité de Cotter Pyke, celle-ci peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20534"
             }
         },
         {
             "id": "40530",
             "name": "Agressivité de Pyke",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Cette unité effectue 1 Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse. Cette attaque ne déclenche pas de Test de Panique.",
-                            "Après avoir résolu cette attaque, l’attaquant subit 1 Touche pour chacune des Touches générées par cette attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20534",
-                "commander_name": "Cotter Pyke",
-                "commander_subname": "Commandant de Fort-Levant"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Cette unité effectue 1 Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse. Cette attaque ne déclenche pas de Test de Panique.",
+                        "Après avoir résolu cette attaque, l’attaquant subit 1 Touche pour chacune des Touches générées par cette attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20534"
             }
         },
         {
             "id": "40531",
             "name": "Frappes téméraires",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque gagne **Frappe Critique** et **Précision**. L’Attaquant subit 1 Blessure pour chaque résultat de 1 sur les dés d’Attaque.",
-                            "Si cette carte cible l’unité de Cotter Pyke, cette attaque lance sa valeur de dés la plus élevée."
-                        ]
-                    }
-                ],
-                "commander_id": "20534",
-                "commander_name": "Cotter Pyke",
-                "commander_subname": "Commandant de Fort-Levant"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque gagne **Frappe Critique** et **Précision**. L’Attaquant subit 1 Blessure pour chaque résultat de 1 sur les dés d’Attaque.",
+                        "Si cette carte cible l’unité de Cotter Pyke, cette attaque lance sa valeur de dés la plus élevée."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20534"
             }
         },
         {
             "id": "40532",
             "name": "Méthodes réactives",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 unité Combattante ennemie.",
-                            "Elle gagne 1 pion État.",
-                            "Ensuite, vous pouvez remplacer 1 pion État de n’importe quelle unité par 1 autre pion État de votre choix.",
-                            "Enfin, si vous contrôlez [LETTER], vous pouvez déplacer 1 pion État d’une unité vers n’importe quelle autre unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20535",
-                "commander_name": "Ser Denys Mallister",
-                "commander_subname": "Commandant de Tour Ombreuse"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 unité Combattante ennemie.",
+                        "Elle gagne 1 pion État.",
+                        "Ensuite, vous pouvez remplacer 1 pion État de n’importe quelle unité par 1 autre pion État de votre choix.",
+                        "Enfin, si vous contrôlez [LETTER], vous pouvez déplacer 1 pion État d’une unité vers n’importe quelle autre unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20535"
             }
         },
         {
             "id": "40533",
             "name": "Prouesse guerrière",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi est ciblé par une Capacité ou une carte Tactique :",
-                        "effect": [
-                            "Vous pouvez dépenser 1 pion État de cet ennemi. Si vous le faites, annulez les effets de cette Capacité ou carte Tactique."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée engagée. Retirez 1 pion État de cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20535",
-                "commander_name": "Ser Denys Mallister",
-                "commander_subname": "Commandant de Tour Ombreuse"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi est ciblé par une Capacité ou une carte Tactique :",
+                    "effect": [
+                        "Vous pouvez dépenser 1 pion État de cet ennemi. Si vous le faites, annulez les effets de cette Capacité ou carte Tactique."
+                    ]
+                },
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée engagée. Retirez 1 pion État de cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20535"
             }
         },
         {
             "id": "40534",
             "name": "Tempéré par  le devoir",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
-                        "effect": [
-                            "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Quand cette carte est attachée et chaque fois que cette unité est activée, vous pouvez cibler 1 ennemi à Longue Portée ou moins et en Ligne de Vue. Il gagne 1 pion État."
-                        ]
-                    }
-                ],
-                "commander_id": "20535",
-                "commander_name": "Ser Denys Mallister",
-                "commander_subname": "Commandant de Tour Ombreuse"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité de la Garde de Nuit alliée est activée :",
+                    "effect": [
+                        "Attachez-lui cette carte jusqu’à ce qu’elle échoue un Test de Panique. Quand cette carte est attachée et chaque fois que cette unité est activée, vous pouvez cibler 1 ennemi à Longue Portée ou moins et en Ligne de Vue. Il gagne 1 pion État."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20535"
             }
         }
-    ]
+    ],
+    "special": []
 }

@@ -2653,9 +2653,10 @@ UrlUtil.URL_TO_HASH_BUILDER = {};
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG] = (it) => UrlUtil.encodeArrayForHash(it.id, it.source);
 // region Fake pages (props)
 UrlUtil.URL_TO_HASH_BUILDER["song"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
-UrlUtil.URL_TO_HASH_BUILDER["units"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
-UrlUtil.URL_TO_HASH_BUILDER["ncus"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
-UrlUtil.URL_TO_HASH_BUILDER["attachments"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
+UrlUtil.URL_TO_HASH_BUILDER["unit"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
+UrlUtil.URL_TO_HASH_BUILDER["ncu"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
+UrlUtil.URL_TO_HASH_BUILDER["attachment"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
+UrlUtil.URL_TO_HASH_BUILDER["special"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
 UrlUtil.URL_TO_HASH_BUILDER["tactics"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SONG];
 // Add lowercase aliases
 Object.keys(UrlUtil.URL_TO_HASH_BUILDER)
@@ -2679,7 +2680,7 @@ Object.keys(UrlUtil.URL_TO_HASH_BUILDER)
 UrlUtil.PG_TO_NAME = {};
 
 UrlUtil.PAGE_TO_PROPS = {};
-UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_SONG] = ["song", "units", "ncus", "attachments", "tactics"];
+UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_SONG] = ["song", "unit", "ncu", "attachment", "tactics"];
 
 // SORTING =============================================================================================================
 globalThis.SortUtil = {
@@ -4373,28 +4374,16 @@ globalThis.DataUtil = {
 		static _pLoadJson = null;
 		static _pLoadRawJson = null;
 
-		static loadJSON () {
-			return DataUtil.song._pLoadJson = DataUtil.song._pLoadJson || (async () => {
-				return {
-					units: await DataLoader.pCacheAndGetAllSite("units"),
-					ncus: await DataLoader.pCacheAndGetAllSite("ncus"),
-					attachments: await DataLoader.pCacheAndGetAllSite("attachments"),
-					tactics: await DataLoader.pCacheAndGetAllSite("tactics"),
-					specials: await DataLoader.pCacheAndGetAllSite("specials"),
-				};
-			})();
-		}
-
 		static loadRawJSON () {
 			return DataUtil.song._pLoadRawJson = DataUtil.song._pLoadRawJson || (async () => {
 				const allData = await ["en", "de", "fr"].pMap(async source => this.pLoadSingleSource(source));
 
 				return {
-					units: allData.map(it => it.units || []).flat(),
-					ncus: allData.map(it => it.ncus || []).flat(),
-					attachments: allData.map(it => it.attachments || []).flat(),
+					unit: allData.map(it => it.unit || []).flat(),
+					ncu: allData.map(it => it.ncu || []).flat(),
+					attachment: allData.map(it => it.attachment || []).flat(),
 					tactics: allData.map(it => it.tactics || []).flat(),
-					specials: data.map(it => it.specials || []).flat(),
+					special: data.map(it => it.special || []).flat(),
 				};
 			})();
 		}
@@ -4405,37 +4394,48 @@ globalThis.DataUtil = {
 				 this._pLoadFile({file: `${this._BASEDIR}/${source}/${f}.json`, source, abilityData})
 			)
 			return {
-				units: data.map(it => it.units || []).flat(),
-				ncus: data.map(it => it.ncus || []).flat(),
-				attachments: data.map(it => it.attachments || []).flat(),
+				unit: data.map(it => it.unit || []).flat(),
+				ncu: data.map(it => it.ncu || []).flat(),
+				attachment: data.map(it => it.attachment || []).flat(),
 				tactics: data.map(it => it.tactics || []).flat(),
-				specials: data.map(it => it.specials || []).flat(),
+				special: data.map(it => it.special || []).flat(),
 			}
 		}
 
 		static async _pLoadFile ({file, source, abilityData}) {
 			const data = await DataUtil.loadJSON(file)
 			Object.entries(data).forEach(([prop, items]) => {
-				data[prop] = items.map(ent => this._mutateEntity({ent, prop, source, abilityData}));
+				if (prop.startsWith("_")) return;
+				data[prop] = items.map(ent => this._mutateEntity({ent, prop, source, abilityData, data}));
 			});
 
 			return data;
 		}
 
-		static _mutateEntity ({ent, prop, source, abilityData}) {
+		static _mutateEntity ({ent, prop, source, abilityData, data}) {
 			if (ent._isMutEntity) return ent;
 
 			ent.source = source;
 			ent.lang = source;
-			ent._fullName = ent.subname ? `${ent.name.toTitleCase()} - ${ent.subname.toTitleCase()}` : ent.name.toTitleCase();
-			if (prop === "units" || prop === "attachments") {
-				ent.statistics = ent.statistics || {};
-				ent.statistics.abilities = (ent.statistics.abilities || []).map(a => MiscUtil.merge({name: a}, abilityData[a.toUpperCase()] || {}));
+			ent._fullName = ent.title ? `${ent.name.toTitleCase()} - ${ent.title.toTitleCase()}` : ent.name.toTitleCase();
+			if (prop === "unit" || prop === "attachment") {
+				ent.abilities = (ent.abilities || []).map(a => MiscUtil.merge({name: a}, abilityData[a.toUpperCase()] || {}));
 			}
 			ent._img = {
-				face: `../generated/${ent.lang}/${ent.statistics.faction}/${ent.id}.jpg`,
+				face: `../generated/${ent.lang}/${ent.faction}/${ent.id}.jpg`,
 			};
-			if (ent.__prop !== "tactics") ent._img.back = `../generated/${ent.lang}/${ent.statistics.faction}/${ent.id}b.jpg`;
+			if (ent.__prop !== "tactics") ent._img.back = `../generated/${ent.lang}/${ent.faction}/${ent.id}b.jpg`;
+
+			if (ent.__prop === "tactics" && ent.commander) {
+				const cmdr = data.attachment.find(it => it.id === ent.commander.id);
+				if (cmdr) {
+					ent.commander.name = ent.commander.name || cmdr.name;
+					ent.commander.title = ent.commander.title || cmdr.title;
+				}
+			}
+			if (ent.tactics) {
+				ent.tactics = ent.tactics.map(tid => data.tactics.find(it => it.id === tid)).filter(Boolean);
+			}
 
 			ent._isMutEntity = true;
 			return ent;

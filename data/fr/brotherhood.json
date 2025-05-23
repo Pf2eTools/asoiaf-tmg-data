@@ -1,169 +1,170 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "brotherhood",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "11101",
             "name": "Conscrits Contadins",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 6,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Lance",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            6,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Déstabilisation",
-                    "Attaque en bande"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Déstabilisation",
+                "Attaque en bande"
+            ],
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        6,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "En temps de guerre, toute armée a besoin de chair à canon. C'est une triste vérité. Dans ces troupes sacrifiables, on distingue celles qu'il faut pousser sur la ligne de front à la pointe de la lance, et celles qui se positionnent de leur propre chef. Les Contadins de la Fraternité sont plus que de simples conscrits d'office : la plupart sont des volontaires. Ils trouvent leur force dans le nombre et c'est en soutien de soldats expérimentés qu'ils se montrent les plus efficaces, grâce à leur capacité à perturber les rangs ennemis. Les généraux adverses seraient bien mal avisés de les considérer comme de la simple piétaille."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11102",
             "name": "Hommes d'Armes",
-            "statistics": {
-                "version": "S06",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Armement de la Fraternité",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Embuscade",
-                    "Armement de la fraternité"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "brotherhood",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Embuscade",
+                "Armement de la fraternité"
+            ],
+            "attacks": [
+                {
+                    "name": "Armement de la Fraternité",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Techniquement, la Fraternité Sans Bannières n'est rien de plus qu'une bande de hors-la-loi, si ce n'est qu'elle se met au service de tout seigneur prêt à se battre pour la justice du royaume. La Fraternité œuvre à ramener la paix dans les meilleurs délais, ce qui vaut à ses membres d'être souvent considérés comme des idéalistes (voire des fanatiques). Quant à ses Hommes d'Armes, ce sont des professionnels endurcis prêts à combattre jusqu'au dernier au nom de la justice. C'est en première ligne, là où ils peuvent réduire leurs ennemis en purée, qu'ils donnent le meilleur d'eux-mêmes."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11103",
             "name": "Archers de la Fraternité",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 6,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Tir caché",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Repositionnement trompeur",
-                    "Tir caché"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Repositionnement trompeur",
+                "Tir caché"
+            ],
+            "attacks": [
+                {
+                    "name": "Tir caché",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Le plus souvent, les archers des forces plus conventionnelles portent des uniformes aux couleurs vives, se tiennent en rangs parfaits et font pleuvoir sur l'ennemi des volées régulières de mort emplumée. La Fraternité Sans Bannières, cependant, emploie d'autres méthodes. Bien que ses archers soient tout à fait capables de tirer de telles pluies de fleches, c'est depuis des positions d'embuscade qu'ils sont le mieux employés. Ils excellent dans l'art de semer le chaos et la confusion dans les rangs ennemis, affaiblissant les lignes adverses afin de les rendre vulnérables aux charges des troupes alliées."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11104",
             "name": "Chevaliers Jurés de la Fraternité",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Armement de Chevalier",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Armement de chevalier",
-                    "Rallier le peuple"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Armement de chevalier",
+                "Rallier le peuple"
+            ],
+            "attacks": [
+                {
+                    "name": "Armement de Chevalier",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Anciens chevaliers de renommée variable ayant abandonné leurs précédentes allégeances pour se vouer à une cause plus noble, les Chevaliers Jurés de la Fraternité comptent parmi les plus chevronnés de tout Westeros. Grâce à leur expérience qui les a rendus pratiquement inébranlables, ils constituent souvent le pivot autour duquel s'articulent les forces de la Fraternité. Si leur emploi reste dicté par la configuration du champ de bataille, le commandant avisé qui saura mettre à profit leur capacité à effectuer des charges dévastatrices fera pencher la balance en sa faveur."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "31101",
             "name": "Fantôme de Noblecœur",
-            "subname": "La sorcière des bois",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Prophéties et Présages",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s'empare d'une zone, attachez cette carte à une Unité Combattante jusqu'à la fin du round)*:",
-                            "Tant que cette carte influence une unité, celle-ci gagne +1 à ses lancers de Tests de Moral.",
-                            "Chaque fois qu'un rang de cette unité est détruit, 1 ennemi avec lequel elle est engagée devient **Vulnérable** et **Affaibli**."
-                        ]
-                    }
-                ]
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "ncu",
+            "title": "La sorcière des bois",
+            "abilities": [
+                {
+                    "name": "Prophéties et Présages",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s'empare d'une zone, attachez cette carte à une Unité Combattante jusqu'à la fin du round)*:",
+                        "Tant que cette carte influence une unité, celle-ci gagne +1 à ses lancers de Tests de Moral.",
+                        "Chaque fois qu'un rang de cette unité est détruit, 1 ennemi avec lequel elle est engagée devient **Vulnérable** et **Affaibli**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Elle a des moyens à elle pour savoir des choses, celle-là. Les barrals lui chuchotent à l'oreille, durant son sommeil.\""
             }
@@ -171,54 +172,54 @@
         {
             "id": "31102",
             "name": "Ravella Petibois",
-            "subname": "Lady de la Glandée",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Alliés du Royaume",
-                        "effect": [
-                            "Ravella commence la partie avec 3 pions Ordre sur sa carte.",
-                            "Au début d'un tour allié, vous pouvez défausser 1 pion Ordre de Ravella et une carte Tactique.",
-                            "Si vous le faites, une Unité Combattante alliée soigne 2 de ses Blessures. Si cette unité ne possède plus qu'un seul rang restant, elle retire également 1 de ses pions État."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Lady de la Glandée",
+            "abilities": [
+                {
+                    "name": "Alliés du Royaume",
+                    "effect": [
+                        "Ravella commence la partie avec 3 pions Ordre sur sa carte.",
+                        "Au début d'un tour allié, vous pouvez défausser 1 pion Ordre de Ravella et une carte Tactique.",
+                        "Si vous le faites, une Unité Combattante alliée soigne 2 de ses Blessures. Si cette unité ne possède plus qu'un seul rang restant, elle retire également 1 de ses pions État."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Avec leur aide, nous poursuivons la lutte au mieux de nos capacités pour Robert et pour le royaume.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "31103",
             "name": "Catelyn Stark",
-            "subname": "La Pendeuse",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "La vengeance à tout prix",
-                        "effect": [
-                           "**Influence** *(Quand cette unité s'empare d'une zone, attachez cette carte à une Unité Combattante jusqu'à la fin du round)*:",
-                            "Tant que cette carte influence une Unité Combattante ennemie, chaque fois que celle-ci effectue une action, avant de résoudre cette dernière, cette unité subit 1 Blessure.",
-                            "Les Unités Combattantes alliées peuvent relancer n'importe quels dés d'Attaque quand elles effectuent des Attaques de Mêlée sur cette unité."
-                        ]
-                    }
-                ],
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recrutée dans une armée qui contient Béric Dondarrion.*"
-                    }
-                ]
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "ncu",
+            "title": "La Pendeuse",
+            "abilities": [
+                {
+                    "name": "La vengeance à tout prix",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s'empare d'une zone, attachez cette carte à une Unité Combattante jusqu'à la fin du round)*:",
+                        "Tant que cette carte influence une Unité Combattante ennemie, chaque fois que celle-ci effectue une action, avant de résoudre cette dernière, cette unité subit 1 Blessure.",
+                        "Les Unités Combattantes alliées peuvent relancer n'importe quels dés d'Attaque quand elles effectuent des Attaques de Mêlée sur cette unité."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recrutée dans une armée qui contient Béric Dondarrion.*"
+                }
+            ],
             "fluff": {
                 "quote": "\" Et... et elle s'est finalement levée. Puisse le Maître de la Lumière nous protéger. Elle s'est levée.\" -Thoros de Myr"
             }
@@ -226,52 +227,49 @@
         {
             "id": "31104",
             "name": "Thoros de Myr",
-            "subname": "La braise",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Nouveaux Convertis",
-                        "effect": [
-                            "Chaque fois qu'un rang d'une Unité Combattante ennemie est détruit, placez 1 pion Ordre sur Thoros.",
-                            "Chaque fois que Thoros s'empare d'une zone, vous pouvez remplacer l'effet de celle-ci par :",
-                            "*Soignez jusqu'à 2 Blessures d'une Unité Combattante alliée. Vous pouvez ensuite retirer un maximum de 2 pions Ordre de Thoros. Si vous le faites, pour chaque pion retiré, soignez 1 Blessure d'une Unité Combattante alliée.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "ncu",
+            "title": "La braise",
+            "abilities": [
+                {
+                    "name": "Nouveaux Convertis",
+                    "effect": [
+                        "Chaque fois qu'un rang d'une Unité Combattante ennemie est détruit, placez 1 pion Ordre sur Thoros.",
+                        "Chaque fois que Thoros s'empare d'une zone, vous pouvez remplacer l'effet de celle-ci par :",
+                        "*Soignez jusqu'à 2 Blessures d'une Unité Combattante alliée. Vous pouvez ensuite retirer un maximum de 2 pions Ordre de Thoros. Si vous le faites, pour chaque pion retiré, soignez 1 Blessure d'une Unité Combattante alliée.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Ce n'était pas gentil.\nC'était vrai, mais pas gentil.\""
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "21101",
             "name": "Béric Dondarrion",
-            "subname": "Seigneur de la Foudre",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Devoir envers la couronne",
-                    "Éclaireur"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41108": "Ordres d'Assaut",
-                    "41109": "Six Fois Trop",
-                    "41110": "Illumination"
-                }
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Seigneur de la Foudre",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Devoir envers la couronne",
+                "Éclaireur"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41108",
+                "41109",
+                "41110"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Vous chevauchez avec Dondarrion. Le Seigneur de la Foudre.\""
             }
@@ -279,70 +277,67 @@
         {
             "id": "21102",
             "name": "Béric Dondarrion",
-            "subname": "Azor Ahai",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Illumination"
-                ],
-                "character": true,
-                "tokens": {
-                    "number": 1,
-                    "name": "faith"
-                }
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Azor Ahai",
+            "abilities": [
+                "Illumination"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Le feu consume.\""
+            },
+            "tokens": {
+                "name": "faith",
+                "number": 1
             }
         },
         {
             "id": "21103",
             "name": "Thoros de Myr",
-            "subname": "Le Magicien Rouge",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Prières à R'hllor"
-                ],
-                "commander": true,
-                "character": true,
-                "tokens": {
-                    "number": 1,
-                    "name": "faith"
-                }
-            },
-            "tactics": {
-                "cards": {
-                    "41111": "Charge Ardente",
-                    "41112": "Aimé du Peuple",
-                    "41113": "Le Dernier Baiser"
-                }
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Magicien Rouge",
+            "abilities": [
+                "Prières à R'hllor"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41111",
+                "41112",
+                "41113"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Le Maître de la Lumière s'est réveillé dans mon cœur.\""
+            },
+            "tokens": {
+                "name": "faith",
+                "number": 1
             }
         },
         {
             "id": "21104",
             "name": "Thoros de Myr",
-            "subname": "Fidèle Croyant",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Renforts",
-                    "Acharné"
-                ],
-                "character": true
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Fidèle Croyant",
+            "abilities": [
+                "Renforts",
+                "Acharné"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Il n'est pas très prêtre, hein ?\" -Arya Stark"
             }
@@ -350,17 +345,17 @@
         {
             "id": "21105",
             "name": "Lim Limonbure",
-            "subname": "Le Limon",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Cicatrices de Combat"
-                ],
-                "character": true
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Limon",
+            "abilities": [
+                "Cicatrices de Combat"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Rejoins-nous, et c'est le cou dans un nœud coulant que tu finiras...\""
             }
@@ -368,17 +363,17 @@
         {
             "id": "21106",
             "name": "Tom Sept Cordes",
-            "subname": "Tom des Sept",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Provocation"
-                ],
-                "character": true
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Tom des Sept",
+            "abilities": [
+                "Ordre : Provocation"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Il arrive parfois qu'on en sache plus qu'on n'en dit.\""
             }
@@ -386,31 +381,28 @@
         {
             "id": "21107",
             "name": "Catelyn Stark",
-            "subname": "Lady Cœurdepierre",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Visage horrifique",
-                    "Présence intimidante"
-                ],
-                "commander": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recrutée dans une armée qui contient Béric Dondarrion.*"
-                    }
-                ],
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41114": "Retour de Bâton",
-                    "41115": "Le Prix de l'Échec",
-                    "41116": "Vengeance par le Sang"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lady Cœurdepierre",
+            "abilities": [
+                "Visage horrifique",
+                "Présence intimidante"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41114",
+                "41115",
+                "41116"
+            ],
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recrutée dans une armée qui contient Béric Dondarrion.*"
                 }
-            },
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Elle peut pas parler. Vous y avez tranché la gorge trop profond pour ça, vous autres, putain de salauds. Mais elle se souvient.\""
             }
@@ -418,18 +410,18 @@
         {
             "id": "21108",
             "name": "Anguy",
-            "subname": "L'Archer",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Repli Éclair",
-                    "Attaque de Flanc"
-                ],
-                "character": true
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "L'Archer",
+            "abilities": [
+                "Ordre : Repli Éclair",
+                "Attaque de Flanc"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Anguy que voici te percerait de trois flèches avant que tu ne puisses te flatter de nous atteindre.\""
             }
@@ -437,23 +429,23 @@
         {
             "id": "21109",
             "name": "Edric Dayne",
-            "subname": "Fidèle Écuyer",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Vassal de Béric",
-                    "Regroupement"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Edric Dayne peut être ajouté à une unité qui contient Thoros de Myr en ignorant les restrictions normales d'Attachement.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Fidèle Écuyer",
+            "abilities": [
+                "Vassal de Béric",
+                "Regroupement"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Edric Dayne peut être ajouté à une unité qui contient Thoros de Myr en ignorant les restrictions normales d'Attachement.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Je n'ai que douze ans.\""
             }
@@ -461,17 +453,17 @@
         {
             "id": "21110",
             "name": "Tourte Chaude",
-            "subname": "Le Boulanger",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Tourtes Chaudes !"
-                ],
-                "character": true
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Boulanger",
+            "abilities": [
+                "Tourtes Chaudes !"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Tout le monde gueulait des trucs. Tourte a gueulé tourte - et plutôt cent fois qu'une !.\" -Arya Stark"
             }
@@ -479,18 +471,18 @@
         {
             "id": "21111",
             "name": "Gendry",
-            "subname": "Le Taureau",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Résilience",
-                    "Défenses Améliorées (BwB)"
-                ],
-                "character": true
-            },
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Taureau",
+            "abilities": [
+                "Ordre : Résilience",
+                "Défenses Améliorées (BwB)"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Seigneur ? Je ne suis qu'un forgeron.\""
             }
@@ -500,356 +492,338 @@
         {
             "id": "41101",
             "name": "Retraite soudaine",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                       "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez le défenseur. Il effectue 1 action de Repli.",
-                            "Si cette carte cible l’unité de votre Général, celle-ci peut relancer n’importe quels dés de Distance de Repli."
-                        ]
-                    }
-                ]
-            }
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez le défenseur. Il effectue 1 action de Repli.",
+                        "Si cette carte cible l’unité de votre Général, celle-ci peut relancer n’importe quels dés de Distance de Repli."
+                    ]
+                }
+            ]
         },
         {
             "id": "41102",
             "name": "Regroupement en Formation",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 2 unités d’Infanterie alliées, situées à Longue Portée ou moins l’une de l’autre. Retirez jusqu’à 4 figurines de l’une de ces unités. Soignez l’autre d’autant de Blessures.",
-                            "Vous pouvez ensuite soit déplacer 1 Attachement de l’une de ces unités à l’autre *(en remplaçant normalement une figurine et en conservant les restrictions d’Attachements)*, soit échanger 2 Attachements alliés entre ces unités."
-                        ]
-                    }
-                ]
-            }
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 2 unités d’Infanterie alliées, situées à Longue Portée ou moins l’une de l’autre. Retirez jusqu’à 4 figurines de l’une de ces unités. Soignez l’autre d’autant de Blessures.",
+                        "Vous pouvez ensuite soit déplacer 1 Attachement de l’une de ces unités à l’autre *(en remplaçant normalement une figurine et en conservant les restrictions d’Attachements)*, soit échanger 2 Attachements alliés entre ces unités."
+                    ]
+                }
+            ]
         },
         {
             "id": "41103",
             "name": "Chevaliers de la Coline Creuse",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée est ciblée par une Capacité ou carte Tactique ennemie :",
-                        "effect": [
-                            "Cette unité effectue 1 Test de Moral.",
-                            "Si elle réusit, annulez l'effet de cette Capacité ou carte Tactique.",
-                            "Ensuite, cette unité peut effectuer une action de Manœuvre de 3\"."
-                        ]
-                    }
-                ]
-            }
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est ciblée par une Capacité ou carte Tactique ennemie :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral.",
+                        "Si elle réusit, annulez l'effet de cette Capacité ou carte Tactique.",
+                        "Ensuite, cette unité peut effectuer une action de Manœuvre de 3\"."
+                    ]
+                }
+            ]
         },
         {
             "id": "41104",
             "name": "La Compagnie Oubliée",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Au début de n'importe quel round :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée.",
-                            "Elle effectue 1 action de Marche ou de Repli puis devient **Affaiblie**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n'importe quel round :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée.",
+                        "Elle effectue 1 action de Marche ou de Repli puis devient **Affaiblie**."
+                    ]
+                }
+            ]
         },
         {
             "id": "41105",
             "name": "Prendre l'Épée",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante est activée :",
-                        "effect": [
-                            "Cette unité effectue 1 Test de Moral.",
-                            "Si elle réussit, choisissez 1 option :",
-                            "• Elle soigne 1 de ses Blessures +1 pour chacun de ses rangs détruits.",
-                            "• Ciblez 1 Unité Combattante ennemie située à Longue Portée ou moins. Elle devient **Paniquée** et **Affaiblie**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante est activée :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral.",
+                        "Si elle réussit, choisissez 1 option :",
+                        "• Elle soigne 1 de ses Blessures +1 pour chacun de ses rangs détruits.",
+                        "• Ciblez 1 Unité Combattante ennemie située à Longue Portée ou moins. Elle devient **Paniquée** et **Affaiblie**."
+                    ]
+                }
+            ]
         },
         {
             "id": "41106",
             "name": "Azor Ahai !",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                       "trigger": "Quand une unité alliée effectue un Test de Panique, après avoir lancé les dés :",
-                        "effect": [
-                            "Cette unité ne peut subir que 1 Blessure maximum si elle échoue ce test.",
-                            "Si cette carte cible l'unité de votre commandant, elle réussit ce test à la place, et tous les ennemis engagés avec elle deviennent **Affaiblis**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Panique, après avoir lancé les dés :",
+                    "effect": [
+                        "Cette unité ne peut subir que 1 Blessure maximum si elle échoue ce test.",
+                        "Si cette carte cible l'unité de votre commandant, elle réussit ce test à la place, et tous les ennemis engagés avec elle deviennent **Affaiblis**."
+                    ]
+                }
+            ]
         },
         {
             "id": "41107",
             "name": "Perdure le Royaume",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Au début de n'importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu'à la fin de la partie. Chaque fois qu'une unité d'Infanterie ou de Cavalerie alliée est détruite, placez 1 pion Ordre sur cette carte.",
-                            "Au début d'un tour allié, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, cette unité soigne 3 de ses Blessures.",
-                            "Tant que cette carte est pourvue d'un pion Ordre, l'unité à laquelle elle est attachée ne peut pas recevoir de pions État."
-                        ]
-                    }
-                ]
-            }
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n'importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu'à la fin de la partie. Chaque fois qu'une unité d'Infanterie ou de Cavalerie alliée est détruite, placez 1 pion Ordre sur cette carte.",
+                        "Au début d'un tour allié, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, cette unité soigne 3 de ses Blessures.",
+                        "Tant que cette carte est pourvue d'un pion Ordre, l'unité à laquelle elle est attachée ne peut pas recevoir de pions État."
+                    ]
+                }
+            ]
         },
         {
             "id": "41108",
             "name": "Ordres d'Assaut",
-            "statistics": {
-                "version": "S06",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
-                            "*Si cette unité est l’unité de Béric, elle peut effectuer une action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
-                        ]
-                    }
-                ],
-                "commander_id": "21101",
-                "commander_name": "Béric Dondarrion",
-                "commander_subname": "Seigneur de la Foudre"
+            "faction": "brotherhood",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez l’effet de cette zone par :",
+                        "*1 Unité Combattante Alliée effectue une action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
+                        "*Si cette unité est l’unité de Béric, elle peut effectuer une action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21101"
             }
         },
         {
             "id": "41109",
             "name": "Six Fois Trop",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand une unité d'Infanterie alliée doit être détruite par une Attaque de Mêlée :",
-                        "effect": [
-                            "Cette unité n'est pas détruite et demeure en jeu avec 1 Blessure restante.",
-                            "Attachez cette carte à l'unité jusqu'à la fin de la partie.",
-                            "Tant que cette carte est attachée, cette unité ne peut pas être ciblée par des Ordres ou des cartes Tactiques, alliées comme ennemies."
-                        ]
-                    }
-                ],
-                "commander_id": "21101",
-                "commander_name": "Béric Dondarrion",
-                "commander_subname": "Seigneur de la Foudre"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité d'Infanterie alliée doit être détruite par une Attaque de Mêlée :",
+                    "effect": [
+                        "Cette unité n'est pas détruite et demeure en jeu avec 1 Blessure restante.",
+                        "Attachez cette carte à l'unité jusqu'à la fin de la partie.",
+                        "Tant que cette carte est attachée, cette unité ne peut pas être ciblée par des Ordres ou des cartes Tactiques, alliées comme ennemies."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21101"
             }
         },
         {
             "id": "41110",
             "name": "Illumination",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Après qu'une Unité Combattante alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez 1 unité ennemie située à Courte Portée ou moins de l'attaquant. Elle subit 1 Test de Panique avec -1 au lancer pour chacun de ses rangs détruits.",
-                            "Si l'attaquant est l'unité de Béric, l'unité ciblée devient également **Paniquée**."
-                        ]
-                    }
-                ],
-                "commander_id": "21101",
-                "commander_name": "Béric Dondarrion",
-                "commander_subname": "Seigneur de la Foudre"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu'une Unité Combattante alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez 1 unité ennemie située à Courte Portée ou moins de l'attaquant. Elle subit 1 Test de Panique avec -1 au lancer pour chacun de ses rangs détruits.",
+                        "Si l'attaquant est l'unité de Béric, l'unité ciblée devient également **Paniquée**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21101"
             }
         },
         {
             "id": "41111",
             "name": "Charge Ardente",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Cette unité compte comme obtenant 6 sur tous ses dés de Distance de Charge et les ennemis Chargés avec succès deviennent **Paniqués**.",
-                            "Une fois cette attaque résolue, l'attaquant devient **Vulnérable**, à moins qu'il ne s'agisse de l'unité de Thoros."
-                        ]
-                    }
-                ],
-                "commander_id": "21103",
-                "commander_name": "Thoros de Myr",
-                "commander_subname": "Le Magicien Rouge"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une action de Charge, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Cette unité compte comme obtenant 6 sur tous ses dés de Distance de Charge et les ennemis Chargés avec succès deviennent **Paniqués**.",
+                        "Une fois cette attaque résolue, l'attaquant devient **Vulnérable**, à moins qu'il ne s'agisse de l'unité de Thoros."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21103"
             }
         },
         {
             "id": "41112",
             "name": "Aimé du Peuple",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cet ennemi effectue un Test de Moral. S’il échoue, il devient **Vulnérable** et **Affaibli**.",
-                            "S’il est situé à Courte Portée ou moins de l’unité de Thoros, il subit −2 au lancer."
-                        ]
-                    }
-                ],
-                "commander_id": "21103",
-                "commander_name": "Thoros de Myr",
-                "commander_subname": "Le Magicien Rouge"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cet ennemi effectue un Test de Moral. S’il échoue, il devient **Vulnérable** et **Affaibli**.",
+                        "S’il est situé à Courte Portée ou moins de l’unité de Thoros, il subit −2 au lancer."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21103"
             }
         },
         {
             "id": "41113",
             "name": "Le Dernier Baiser",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand un Attachement allié doit être détruit :",
-                        "effect": [
-                            "Au lieu d'être détruit, placez cet Attachement dans une Unité Combattante du même type, en ignorant les restrictions habituelles d'Attachement et en remplaçant la figurine normalement."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n'importe quel tour :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "21103",
-                "commander_name": "Thoros de Myr",
-                "commander_subname": "Le Magicien Rouge"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un Attachement allié doit être détruit :",
+                    "effect": [
+                        "Au lieu d'être détruit, placez cet Attachement dans une Unité Combattante du même type, en ignorant les restrictions habituelles d'Attachement et en remplaçant la figurine normalement."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n'importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21103"
             }
         },
         {
             "id": "41114",
             "name": "Retour de Bâton",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur.",
-                            "Si le défenseur est l'unité de Catelyn, l’attaquant devient également **Paniqué**."
-                        ]
-                    }
-                ],
-                "commander_id": "21107",
-                "commander_name": "Catelyn Stark",
-                "commander_subname": "Lady Cœurdepierre"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur.",
+                        "Si le défenseur est l'unité de Catelyn, l’attaquant devient également **Paniqué**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21107"
             }
         },
         {
             "id": "41115",
             "name": "Le Prix de l'Échec",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Tous les résultats des dés de cette attaque Touchent automatiquement.",
-                            "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "21107",
-                "commander_name": "Catelyn Stark",
-                "commander_subname": "Lady Cœurdepierre"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Tous les résultats des dés de cette attaque Touchent automatiquement.",
+                        "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21107"
             }
         },
         {
             "id": "41116",
             "name": "Vengeance par le Sang",
-            "statistics": {
-                "version": "2021",
-                "faction": "brotherhood",
-                "text": [
-                    {
-                        "trigger": "Après qu'un ennemi a résolu une Attaque de Mêlée, si celle-ci a détruit un rang allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée autre que le défenseur. Elle peut effectuer une action de Manœuvre ou de Marche.",
-                            "Si cette carte cible l'unité de Catelyn, celle-ci peut effectuer 1 action de Charge ou d'Attaque à la place."
-                        ]
-                    }
-                ],
-                "commander_id": "21107",
-                "commander_name": "Catelyn Stark",
-                "commander_subname": "Lady Cœurdepierre"
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu'un ennemi a résolu une Attaque de Mêlée, si celle-ci a détruit un rang allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée autre que le défenseur. Elle peut effectuer une action de Manœuvre ou de Marche.",
+                        "Si cette carte cible l'unité de Catelyn, celle-ci peut effectuer 1 action de Charge ou d'Attaque à la place."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21107"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Fraternité sans Bannières",
             "id": "51101",
-            "type": "faction",
-            "statistics": {
-                "faction": "brotherhood",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.45,
-                    "crests": 1,
-                    "top": [
-                        "**FRATERNITÉ\nSANS BANNIÈRES**"
-                    ],
-                    "quote": "Robert n'est plus, mais ce qu'il eut\npour royaume est toujours.",
-                    "text": [
-                        "Réduisez de 1 le coût d'un Attachement inclus dans votre armée.",
-                        "Dans le cadre de son total de points non Neutres, votre armée peut comprendre 1 Unité Combattante appartenant soit à la Maison Baratheon, soit à la Maison Stark."
-                    ]
-                }
+            "name": "Fraternité sans Bannières",
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.45,
+                "crests": 1,
+                "top": [
+                    "**FRATERNITÉ\nSANS BANNIÈRES**"
+                ],
+                "quote": "Robert n'est plus, mais ce qu'il eut\npour royaume est toujours.",
+                "text": [
+                    "Réduisez de 1 le coût d'un Attachement inclus dans votre armée.",
+                    "Dans le cadre de son total de points non Neutres, votre armée peut comprendre 1 Unité Combattante appartenant soit à la Maison Baratheon, soit à la Maison Stark."
+                ]
             }
         },
         {
-            "name": "Vengeance Éternelle",
             "id": "51102",
-            "type": "extra",
-            "statistics": {
-                "faction": "brotherhood",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.25,
-                    "text": [
-                        "Si elle comprend Catelyn Stark, votre armée ne peut pas inclure les Factions, Unités, Attachements et Personnages suivants :",
-                        "• **Maison Bolton**\n*(Faction et Unités Neutres)*\n• **Capitaine de Fort-Terreur**\n• **Écorcheur Bolton**\n• **Roose Bolton**\n• **Ramsay Snow**\n• **Walder Frey**",
-                        "Les Unités Combattantes alliées peuvent relancer n'importe quels dés de Distance de Charge quand elles effectuent des actions contre les unités ci-dessus ou contenant les Attachements indiqués, ainsi que contre des Unités de la Maison Lannister."
-                    ]
-                },
-                "back": {
-                    "ratio": 0.25,
-                    "crests": 2,
-                    "image": true
-                }
+            "name": "Vengeance Éternelle",
+            "faction": "brotherhood",
+            "version": "2021",
+            "role": "special",
+            "category": "extra",
+            "front": {
+                "ratio": 0.25,
+                "text": [
+                    "Si elle comprend Catelyn Stark, votre armée ne peut pas inclure les Factions, Unités, Attachements et Personnages suivants :",
+                    "• **Maison Bolton**\n*(Faction et Unités Neutres)*\n• **Capitaine de Fort-Terreur**\n• **Écorcheur Bolton**\n• **Roose Bolton**\n• **Ramsay Snow**\n• **Walder Frey**",
+                    "Les Unités Combattantes alliées peuvent relancer n'importe quels dés de Distance de Charge quand elles effectuent des actions contre les unités ci-dessus ou contenant les Attachements indiqués, ainsi que contre des Unités de la Maison Lannister."
+                ]
+            },
+            "back": {
+                "ratio": 0.25,
+                "crests": 2,
+                "image": true
             }
         }
     ]

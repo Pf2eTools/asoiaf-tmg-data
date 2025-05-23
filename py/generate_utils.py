@@ -1,7 +1,9 @@
-from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageChops
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops, ImageOps
 import math
 import re
 from copy import copy
+from song_data import UnitAbility
+from py.song_data import BackText, Attack, AttackType, FactionStore, LanguageStore
 
 
 def get_gradient_color(val, colors):
@@ -71,35 +73,17 @@ def apply_drop_shadow(image, color="#00000088", passes=5, shadow_size=3, border=
     return shadow
 
 
-def get_filtered_ability_data(abilities, abilities_data):
-    filtered_abilities_data = []
-    for ability in abilities:
-        if type(ability) == dict:
-            filtered_abilities_data.append(ability)
-            continue
-        elif type(ability) != str:
-            raise Exception(f"Bad Data! Explected ability name (str) or ability (dict), but got {type(ability)}.")
-        name_upper = ability.upper()
-        ability_data = abilities_data.get(name_upper)
-        if ability_data is None:
-            print(f"Couldn't find ability: {ability}")
-            continue
-        ability_data["name"] = re.sub(r"\(.+", "", ability)
-        filtered_abilities_data.append(ability_data)
-
-    return filtered_abilities_data
-
-
 def get_ability_sections(abilities_data, color):
     sections = []
+    ability: UnitAbility
     for ability in abilities_data:
+        name = re.sub(r" \(.+", "", ability.name)
         content = [
-            TextEntry(ability.get("name").upper(), styles=TextStyle(bold=True, tracking=24, font_color=color))
+            TextEntry(name, styles=TextStyle(bold=True, tracking=24, font_color=color))
         ]
-        trigger = ability.get("trigger")
-        if trigger:
-            content.append(TextEntry(trigger, styles=TextStyle(bold=True)))
-        content.append(TextEntry("\n".join(ability.get("effect"))))
+        if ability.trigger:
+            content.append(TextEntry(ability.trigger, styles=TextStyle(bold=True)))
+        content.append(TextEntry("\n".join(ability.effect)))
         sections.append(TextEntry(TextEntry(content)))
     return sections
 
@@ -107,136 +91,16 @@ def get_ability_sections(abilities_data, color):
 def get_requirement_data_for_renderer(requirements, sections=None, section_padding=0):
     sections = sections or []
     requirements = requirements or []
+    req: BackText
     for req in requirements:
         content = []
-        if req.get("heading") is not None:
-            content.append(TextEntry(req.get("heading"), styles=TextStyle(bold=True, tracking=40)))
-        content.append(TextEntry(req.get("text")))
+        if req.heading is not None:
+            content.append(TextEntry(req.heading, styles=TextStyle(bold=True, tracking=40)))
+        content.append(TextEntry(req.text))
         sect = TextEntry(TextEntry(content))
         sections.append(sect)
     return TextEntry.from_array(sections, styles=RootStyle(font_size=36, font_color="#5d4d40", stroke_width=0.2, paragraph_padding=300,
                                                            section_padding=section_padding))
-
-
-class FactionStore:
-    BASE_FACTIONS = {
-        "martell": {
-            "text_color": "#a85b25",
-            "highlight_color": "gold",
-            "bg_rotation": 180,
-        },
-        "brotherhood": {
-            "text_color": "#5c7d59",
-            "highlight_color": "gold",
-            "bg_rotation": 0,
-            "long": "Brotherhood without Banners"
-        },
-        "lannister": {
-            "text_color": "#9d1323",
-            "highlight_color": "silver",
-            "bg_rotation": 0,
-        },
-        "greyjoy": {
-            "text_color": "#577b79",
-            "highlight_color": "gold",
-            "bg_rotation": 180,
-        },
-        "freefolk": {
-            "text_color": "#4b4138",
-            "highlight_color": "gold",
-            "bg_rotation": 0,
-            "long": "Free Folk"
-        },
-        "bolton": {
-            "text_color": "#7a312b",
-            "highlight_color": "gold",
-            "bg_rotation": 0,
-        },
-        "baratheon": {
-            "text_color": "#904523",
-            "highlight_color": "silver",
-            "bg_rotation": 0,
-        },
-        "targaryen": {
-            "text_color": "#ac4c5d",
-            "highlight_color": "gold",
-            "bg_rotation": 0,
-        },
-        "stark": {
-            "text_color": "#3b6680",
-            "highlight_color": "gold",
-            "bg_rotation": 180,
-        },
-        "nightswatch": {
-            "text_color": "#302a28",
-            "highlight_color": "gold",
-            "bg_rotation": 0,
-            "long": "Night's Watch"
-        },
-        "neutral": {
-            "text_color": "#8a300e",
-            "highlight_color": "silver",
-            "bg_rotation": 0,
-        },
-    }
-
-    def __init__(self):
-        self._factions = {fac: {k: v for k, v in self.BASE_FACTIONS.get(fac).items()} for fac in self.BASE_FACTIONS.keys()}
-
-    def inject_faction(self, key, faction):
-        self._factions[key] = {k: v for k, v in faction.items()}
-
-    def _get(self, faction_key, key, default):
-        faction = self._factions.get(faction_key.lower())
-        if faction is None:
-            return default
-        return faction.get(key, default)
-
-    def text_color(self, faction):
-        return self._get(faction, "text_color", "#7FDBFF")
-
-    def highlight_color(self, faction):
-        return self._get(faction, "highlight_color", "gold")
-
-    def bg_rotation(self, faction):
-        return self._get(faction, "bg_rotation", 0)
-
-    def get_rendered(self, faction):
-        return self._get(faction, "long", faction.capitalize())
-
-
-class LanguageStore:
-    BASE_LANGUAGES = {
-        "en": {
-            "character": "CHARACTER",
-            "commander": "COMMANDER"
-        },
-        "de": {
-            "character": "CHARAKTER",
-            "commander": "HEERFÜHRER"
-        },
-        "fr": {
-            "character": "PERSONNAGE",
-            "commander": "GÉNÉRAL"
-        },
-    }
-
-    def __init__(self):
-        self._languages = {lang: {k: v for k, v in self.BASE_LANGUAGES.get(lang).items()} for lang in self.BASE_LANGUAGES.keys()}
-
-    def inject_language(self, key, language):
-        self._languages[key] = {k: v for k, v in language.items()}
-
-    def translate(self, phrase, lang_key):
-        language = self._languages.get(lang_key)
-        if language is None:
-            print(f"WARNING: Unknown language '{lang_key}'.")
-            language = self._languages.get("en")
-        translated = language.get(phrase, "")
-        if translated == "":
-            print(f"WARNING: Could not translate '{phrase}' to '{lang_key}'.")
-
-        return translated
 
 
 class ImageGenerator:
@@ -285,11 +149,11 @@ class ImageGenerator:
         background.alpha_composite(rd_stat, offset)
         return background
 
-    def render_attack(self, attack_data, border_color="gold"):
-        atk_type = attack_data.get("type")
-        atk_name = attack_data.get("name")
-        tohit = attack_data.get("hit")
-        atk_ranks = attack_data.get("dice")
+    def render_attack(self, attack_data: Attack, border_color="gold"):
+        atk_type = attack_data.type if type(attack_data.type) == str else attack_data.type.value
+        atk_name = attack_data.name
+        tohit = attack_data.hit
+        atk_ranks = attack_data.dice
 
         attack_bg = self.asset_manager.get_attack_bg(border_color)
         attack_dice_bg = self.asset_manager.get_attack_dice_bg()
@@ -299,13 +163,13 @@ class ImageGenerator:
         attack_bar.alpha_composite(attack_bg, (skill_icon.size[0] // 2, 14 + (attack_bg.size[1] - 106) // 2))
         attack_bar.alpha_composite(skill_icon)
 
-        atk_name_color = "#0e2e45" if atk_type == "melee" else "#87282a"
+        atk_name_color = "#0e2e45" if atk_type == AttackType.melee.value else "#87282a"
         entry_name = TextEntry.from_string(atk_name.upper(), styles=RootStyle(font_size=29, font_color=atk_name_color, stroke_width=0.7,
                                                                               leading=900, italic=True))
         rd_atk_name = self.text_renderer.render(entry_name, bbox=(180, 60), margin=Spacing(5), align_y=TextRenderer.ALIGN_CENTER)
         attack_bar.alpha_composite(rd_atk_name, (221 - rd_atk_name.size[0] // 2, 56 - rd_atk_name.size[1] // 2))
 
-        if atk_type in ["short", "long"]:
+        if atk_type in [AttackType.ranged_short.value, AttackType.ranged_long.value]:
             range_icon = self.asset_manager.get_attack_range_icon(atk_type, border_color)
             attack_bar.alpha_composite(apply_drop_shadow(range_icon), (60, -14))
 
@@ -1335,7 +1199,7 @@ class TextRenderer:
             self.cursor.y += self.input.section_padding
 
         # TODO: Instead of rendering icons/images immediately, hold off to avoid scaling them twice
-        self.image = self.image.resize((self.max_w, self.max_h), resample=Image.LANCZOS)
+        self.image = self.image.resize((self.max_w, self.max_h), resample=Image.Resampling.LANCZOS)
         return self.image
 
     def _render_line(self, entry, line):
@@ -1372,13 +1236,14 @@ class TextRenderer:
         token = token.strip("[]")
         if token.startswith("ATTACK"):
             _, atk_type, atk_name, atk_stats = token.split(":")
+            typ = "long" if "Long" in atk_type else "short" if "Short" in atk_type else "ranged" if "Ranged" in atk_type else "melee"
             hit, dice = atk_stats.split("+")
-            atk_data = {
-                "name": atk_name,
-                "type": "long" if "Long" in atk_type else "short" if "Short" in atk_type else "ranged" if "Ranged" in atk_type else "melee",
-                "hit": int(hit),
-                "dice": [int(d) for d in dice.split(",")]
-            }
+            atk_data = Attack(
+                name=atk_name,
+                type=AttackType(typ),
+                hit=int(hit),
+                dice=[int(d) for d in dice.split(",")]
+            )
             # This is dogshit. But if we pass self to render_attack, the settings will be wiped
             text_renderer = self.__class__(self.asset_manager)
             im_gen = ImageGenerator(self.asset_manager, text_renderer)
@@ -1554,4 +1419,3 @@ def lerp(v0, v1, t):
 
 if __name__ == "__main__":
     pass
-

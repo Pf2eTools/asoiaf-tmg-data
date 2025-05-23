@@ -1,623 +1,612 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "neutral",
+        "language": "de"
+    },
+    "unit": [
         {
             "id": "10401",
             "name": "Halsabschneider von Haus Bolton",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Rücksichtsloser Angriff",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Rücksichtsloser Angriff"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Rücksichtsloser Angriff"
+            ],
+            "attacks": [
+                {
+                    "name": "Rücksichtsloser Angriff",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Sie sind einfach gerüstet und leicht bewaffnet, doch ihr Ruf als eiskalte und grausame Kämpfer eilt den Halsabschneidern von Haus Bolton voraus und lässt selbst gut ausgerüstete Soldaten vor Angst erstarren. Ihre Stachelkeulen machen kurzen Prozess und versetzen durch ihre enorme Brutalität den Feind in Panik. Die Halsabschneider von Haus Bolton lieben es, am Boden liegende Gegner niederzumetzeln oder gefangen zu nehmen, um sie später noch ausgiebiger foltern zu können."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10402",
             "name": "Mädchen des Bastards von Haus Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Fährtenleserbogen",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Zähne und Klinge",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Stürmende Salve",
-                    "Fährtenleser-Bogen",
-                    "Zähne und Klinge"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Stürmende Salve",
+                "Fährtenleser-Bogen",
+                "Zähne und Klinge"
+            ],
+            "attacks": [
+                {
+                    "name": "Fährtenleserbogen",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Zähne und Klinge",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Mädchen des Bastards können selbst schwer gerüstete Fußsoldaten in die Enge treiben und zur Strecke bringen. Ihre wahre Stärke liegt jedoch im Flankieren von Feinden und im Verfolgen von Flüchtenden. Ihr Fell bietet kaum Schutz vor Schwerthieben, dafür stürzen sie sich gerne auf Feinde, in denen bereits die schmerzhaften Pfeilspitzen ihrer Hundeführer stecken. Ein saftiges Kopfgeld wartet auf den Hundeführer, der einen feindlichen Heerführer gefangen nimmt und ihn an Ramsay Bolton zu dessen „Vergnügen“ ausliefert."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10403",
             "name": "Gehäutete von Haus Bolton",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Streitflegel",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kavallerie",
-                    "Streitflegel",
-                    "Bedrohliche Erscheinung"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Streitflegel",
+                "Bedrohliche Erscheinung"
+            ],
+            "attacks": [
+                {
+                    "name": "Streitflegel",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Die sogenannten Gehäuteten gehören zu den mächtigsten Reitern im Krieg der Fünf Könige, selbst unter den Großen Häusern. Mit harten Stahlrüstungen (natürlich geschwärzt), schweren Schilden und Pferdeharnischen können die Gehäuteten nicht nur vernichtende Sturmangriffe vollführen, sondern auch kurzzeitig an der Front ausharren. Ihre unverkennbaren Streitflegel durchdringen fast jede Verteidigung, wenngleich ihre tödlichste Waffe ihr furchterregender Anblick ist."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10404",
             "name": "Rohlinge von Haus Bolton",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Morgenstern",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Morgenstern",
-                    "Schrecklicher Anblick"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Morgenstern",
+                "Schrecklicher Anblick"
+            ],
+            "attacks": [
+                {
+                    "name": "Morgenstern",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Rücksichtslosigkeit der Rohlinge von Haus Bolton ist unter ihren Feinden wohlbekannt. Selbst schwere Schilde können kaum Schutz gegen ihre grausamen Morgensterne bieten. Die bestgepanzerte Truppe im Arsenal von Haus Bolton ist dafür bekannt, zuverlässig jedwede Stellung auf dem Schlachtfeld einnehmen und auch halten zu können."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10405",
             "name": "Plänkler des Blutigen Mummenschanzes",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Klinge des Mummenschanzes",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Klinge des Mummenschanzes",
-                    "Gegenschlag",
-                    "Unterbrechen"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Klinge des Mummenschanzes",
+                "Gegenschlag",
+                "Unterbrechen"
+            ],
+            "attacks": [
+                {
+                    "name": "Klinge des Mummenschanzes",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Trotz ihrer bunten Erscheinung bleibt der Blutige Mummenschanz eine tödliche Gruppe Söldner, die bekannt für Grausamkeiten sind, zu denen sich sonst nicht einmal niedere Söldner hinreißen lassen. Ihre Loyalität gilt allein der Münze, aber gegen eine anständige Bezahlung werden sie jede gewünschte Position in der Armee zufriedenstellend erfüllen. Die Plänkler sind nur leicht bewaffnet und gerüstet, was ihnen die nötige Mobilität für ein rasches Flankieren verleiht. Trotzdem sollten sie vor direkten Angriffen geschützt werden."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10406",
             "name": "Söldner der Sturmkrähen",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Langschwert",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Durch Geld motiviert"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "name": "Anpassungsfähig",
-                        "text": "*Senke die Kosten von 1 Verstärkung dieser Einheit um 1.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Durch Geld motiviert"
+            ],
+            "attacks": [
+                {
+                    "name": "Langschwert",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Senke die Kosten von 1 Verstärkung dieser Einheit um 1.*",
+                    "name": "Anpassungsfähig"
+                }
+            ],
             "fluff": {
                 "lore": "Während man die Loyalität der Sturmkrähen ihren Anführern, Arbeitgebern und sogar sich selbst gegenüber in Zweifel ziehen kann, so kann man sichergehen, dass sie dem Geld absolut treu ergeben sind. Wurden die Söldner der Sturmkrähen richtig motiviert, ist diese durchschnittlich gerüstete Infanterieeinheit in der Lage, eine Flanke zu halten oder dem Feind selbst in die Seite zu fallen. Ihre Professionalität garantiert ein gutes Arbeitsverhältnis mit ihrem Arbeitgeber, solange das Geld weiter in ihre Taschen fließt."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10407",
             "name": "Bogenschützen der Sturmkrähen",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Langbogen des Söldners",
-                        "type": "long",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Kurzschwert",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Langbogen des Söldners",
-                    "Erkaufte Loyalität"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Langbogen des Söldners",
+                "Erkaufte Loyalität"
+            ],
+            "attacks": [
+                {
+                    "name": "Langbogen des Söldners",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Kurzschwert",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Eine Sturmkrähe bleibt eine Sturmkrähe, egal ob sie mit einer Klinge, einem Bogen oder mit beidem ausgerüstet ist. Geld ist die Hauptmotivation für eine Sturmkrähe. Noch mehr Geld kann diese Söldner zu Höchstleistungen anstacheln. Die Bogenschützen der Sturmkrähen sind mit ihren Reflexbögen und weitreichenden Pfeilen Experten im Fernkampf. Fürs Handgemenge sind sie nicht geeignet, obwohl sie sich schwächerer Gegner mit ihren Kurzschwertern erwehren können. Ein kluger Feldherr wird sie aber so gut wie möglich von Flankeneinheiten und Kavallerie fernhalten wollen."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10408",
             "name": "Zorsereiter des Blutigen Mummenschanzes",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Bunte Ausrüstung",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kavallerie",
-                    "Bunte Ausrüstung",
-                    "Trügerische Flucht"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Bunte Ausrüstung",
+                "Trügerische Flucht"
+            ],
+            "attacks": [
+                {
+                    "name": "Bunte Ausrüstung",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Die Kavallerie des Blutigen Mummenschanzes legt stets Wert auf außergewöhnliche Auftritte und reitet daher auf Zorses in die Schlacht. Diese außergewöhnlichen Bestien stammen aus Essos, wo gestreifte Tiere mit Pferden gekreuzt wurden. Zorses können für längere Zeit mit wenig Futter und Wasser auskommen, stehen aber in ihrer Flinkheit ihren westlichen Gegenstücken in nichts nach. Die Zorsereiter besetzen in den Reihen des Mummenschanzes die klassische Funktion der Kavallerie: Sie flankieren und greifen bewegungsunfähige Einheiten sowie ungeschützte Bogenschützen an."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10409",
             "name": "Derwische der Sturmkrähen",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Schneller Hieb",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Überfall",
-                    "Schneller Hieb",
-                    "Durch Geld motiviert"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Überfall",
+                "Schneller Hieb",
+                "Durch Geld motiviert"
+            ],
+            "attacks": [
+                {
+                    "name": "Schneller Hieb",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Wenn man einen Derwisch der Sturmkrähen bis zum Ende der Woche bezahlt, erkauft man sich einen abgehärteten, erfahrenen Söldner, der in mittelschwerer Rüstung flink und geschickt die äußeren feindlichen Reihen angreift – allerdings nur bis zum Ende der Woche. Die berüchtigte Loyalität der Sturmkrähen gegenüber Münzen gilt auch für ihre besten Soldaten. Trotzdem haben Auftraggeber, die einen Derwisch in Aktion erleben, keinen Grund zur Klage, denn diese Krieger zerfetzen die Flanken des Gegners und ziehen sich zurück, bevor der Feind zum Gegenangriff ausholen kann."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10410",
             "name": "Heckenritter",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Klinge des Ritters",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kavallerie",
-                    "Klinge des Ritters",
-                    "Erkaufte Loyalität"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Klinge des Ritters",
+                "Erkaufte Loyalität"
+            ],
+            "attacks": [
+                {
+                    "name": "Klinge des Ritters",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 7,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Die sogenannten Heckenritter reisen auf der Suche nach Anstellung durch die Welt. Die landlosen Adligen, die bis auf Waffe, Rüstung und Pferd wenig besitzen, werden gemieden und verachtet – außer zu Kriegszeiten. Da man sie anheuern kann und sie ihre eigene Ausrüstung mitbringen, finden Adlige jeder Gesinnung im Krieg der Fünf Könige immer eine Verwendung für ein halbes Dutzend ausgebildeter Heckenritter auf dem Schlachtfeld. Allerdings reicht ihre Ausrüstung selten an die echter Ritter heran."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10411",
             "name": "Schwertkämpfer der Goldenen Kompanie",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Meister-Langschwert",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Stil anpassen",
-                    "Meister-Langschwert"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Stil anpassen",
+                "Meister-Langschwert"
+            ],
+            "attacks": [
+                {
+                    "name": "Meister-Langschwert",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Goldene Kompanie ist für ihrMotto „Unser Wort ist so viel wertwie Gold“ bekannt. Wenn sie fürden Kampf angeheuert wird, wirdsie jeder Münze ihrer Entlohnunggerecht. Ihre Schwertkämpfer habenunermüdlich trainiert, um jedenSchwachpunkt in der Verteidigungihrer Feinde ausfindig zu machenund auszunutzen. Unterdessenfliehen sie fast nie vom Schlachtfeld,auch wenn die Schlacht schonverloren scheint. Das macht sie zueiner soliden Investition für alle, diesich die Bezahlung leisten können."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10412",
             "name": "Armbrustschützen der Goldenen Kompanie",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Armbrust",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Kurzschwert",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Bewachen",
-                    "Armbrust",
-                    "Eiserne Entschlossenheit"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Bewachen",
+                "Armbrust",
+                "Eiserne Entschlossenheit"
+            ],
+            "attacks": [
+                {
+                    "name": "Armbrust",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Kurzschwert",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Goldene Kompanie, diezuverlässigste Söldnergruppe derFreien Städte, bietet verschiedeneTruppenarten, die angeheuert werdenkönnen. Eine davon sind die Armbrustschützen.Diese scharfsichtigenKämpfer verschwenden nie auch nureinen Schuss. Sie warten entschlossen,bis ihre Feinde in perfekter Reichweitesind, bevor sie ihre Bolzen lösen. DieseBolzen durchdringen jede gegnerischeRüstung mit Leichtigkeit, besondersaus kurzer Entfernung. Jeder, der seineStreitkräfte verstärken möchte, machtmit ihnen ein gutes Geschäft."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10413",
             "name": "Kriegselefant der Goldenen Kompanie",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "monster",
-                "cost": 6,
-                "speed": 6,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Stampfen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kriegselefant",
-                    "Stampfen"
-                ],
-                "wounds": 8,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Deine Armee darf nur 1 Kriegselefanten pro Infanterie-Einheit der Goldenen Kompanie enthalten.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Kriegselefant",
+                "Stampfen"
+            ],
+            "attacks": [
+                {
+                    "name": "Stampfen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Deine Armee darf nur 1 Kriegselefanten pro Infanterie-Einheit der Goldenen Kompanie enthalten.*"
+                }
+            ],
             "fluff": {
                 "lore": "Selbst der am besten ausgebildeteSoldat wird wahrscheinlich nichtwissen, was er tun soll, wenn er aufdem Schlachtfeld einem riesigenElefanten gegenübersteht. Diebestialischen Kriegselefanten derGoldenen Kompanie stampfendurch die gegnerischen Reihen,scheinbar immun gegen alle Angriffe,während sie ihre mächtigen Füße undStoßzähne nutzen, um Feinde zu vernichten.Allerdings sind es einfacheWesen, die ohne einen Lenker in denmeisten Fällen stehen bleiben undnicht wissen, was sie tun sollen."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10414",
             "name": "Lysenische Söldner",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Piratensäbel",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Räuber der Freien Städte",
-                    "Piratensäbel"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Räuber der Freien Städte",
+                "Piratensäbel"
+            ],
+            "attacks": [
+                {
+                    "name": "Piratensäbel",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Inselstadt Lys gleicht mitihren hohen, dicken Mauerneiner Festung und beherbergt eineVielzahl an Söldnern, die an derKüste patrouillieren, um Feindeabzuschrecken. Doch Söldner sindund bleiben Söldner: Sie bietenihre Dienste jedem an, der genugGeld hat, um sie anzuheuern.Ruhm und Ehre interessiert sienicht, sondern nur Beute und einegute Bezahlung, die auf sie wartet,wenn sie mit dem Schiff nachHause zurückkehren."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10415",
             "name": "Felsenkrähen",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Geplünderte Waffen",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Anspornen",
-                    "Chaotisch",
-                    "Rekrutierung aus den Hügeln"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Anspornen",
+                "Chaotisch",
+                "Rekrutierung aus den Hügeln"
+            ],
+            "attacks": [
+                {
+                    "name": "Geplünderte Waffen",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Als Bergstamm und Plündervolk sind Tyrion Lennisters Felsenkrähen eine eher primitive Truppe, die sich aber durch ihre unerwartet hohe Loyalität auszeichnet. Obwohl sie mehr seinem Geldbeutel als Tyrion persönlich verpflichtet sind, haben sie stets ihr Wort gehalten, selbst wenn Verrat eine lukrativere Option gewesen wäre. Als Söldner sind diese Truppen ihr Geld wert, vor allem wenn sie als Späher oder in der Flanke eingesetzt werden. Aufgrund ihrer leichten Bewaffnung und Panzerung eignen sie sich nicht für den Einsatz an vorderster Front in einem langwierigen Gefecht."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30402",
             "name": "Petyr Baelish",
-            "subname": "Kleinfinger",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Meister des Spiels",
-                        "effect": [
-                            "Bei Spielbeginn werden 2 Befehlsmarker auf Petyr Baelish gelegt.",
-                            "Immer wenn Petyr eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen, um den Effekt jener Zone durch den Effekt einer beliebigen unbeanspruchten Zone zu ersetzen.",
-                            "Ein Mal pro Partie zu Beginn eines beliebigen Zuges darfst du 1 Zone auf der Taktiktafel auswählen. Bis zum Ende der Runde zählst du, als würdest du jene Zone kontrollieren."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Kleinfinger",
+            "abilities": [
+                {
+                    "name": "Meister des Spiels",
+                    "effect": [
+                        "Bei Spielbeginn werden 2 Befehlsmarker auf Petyr Baelish gelegt.",
+                        "Immer wenn Petyr eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen, um den Effekt jener Zone durch den Effekt einer beliebigen unbeanspruchten Zone zu ersetzen.",
+                        "Ein Mal pro Partie zu Beginn eines beliebigen Zuges darfst du 1 Zone auf der Taktiktafel auswählen. Bis zum Ende der Runde zählst du, als würdest du jene Zone kontrollieren."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„In Königsmund gibt es nur zwei Arten von Leuten. Die Spieler und die Spielsteine.“"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30403",
             "name": "Lord Varys",
-            "subname": "Die Spinne",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Kleine Vögel",
-                        "effect": [
-                            "Bei Spielbeginn werden 3 Befehlsmarker auf Varys gelegt.",
-                            "Immer wenn eine feindliche zivile Einheit eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, darfst du 1 Befehlsmarker von Varys ablegen. Falls du das tust, erhältst du den folgenden Effekt basierend auf jener Zone:",
-                            "[CROWN]: 1 Feind muss 1 Panikprobe ablegen.",
-                            "[MONEY]: Heile 2 Wunden von 1 befreundeten Einheit.",
-                            "[LETTER]: Ziehe 1 Taktikkarte.",
-                            "[SWORDS]: 1 Feind erleidet 3 Treffer.",
-                            "[HORSE]: 1 befreundete Einheit wird um 3 Zoll verschoben."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Die Spinne",
+            "abilities": [
+                {
+                    "name": "Kleine Vögel",
+                    "effect": [
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Varys gelegt.",
+                        "Immer wenn eine feindliche zivile Einheit eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, darfst du 1 Befehlsmarker von Varys ablegen. Falls du das tust, erhältst du den folgenden Effekt basierend auf jener Zone:",
+                        "[CROWN]: 1 Feind muss 1 Panikprobe ablegen.",
+                        "[MONEY]: Heile 2 Wunden von 1 befreundeten Einheit.",
+                        "[LETTER]: Ziehe 1 Taktikkarte.",
+                        "[SWORDS]: 1 Feind erleidet 3 Treffer.",
+                        "[HORSE]: 1 befreundete Einheit wird um 3 Zoll verschoben."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Nur besitzt Varys wie kein anderer Möglichkeiten, Dinge in Erfahrung zu bringen.“ – Catelyn Stark"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30404",
             "name": "Der Hohe Seneschall",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 0,
-                "abilities": [
-                    {
-                        "name": "Geschichte wird von den Siegern geschrieben",
-                        "effect": [
-                            "**Der hohe Seneschall kann nicht aktiviert werden und er kann in keiner Weise zum Ziel bestimmt werden. Er ist lediglich der Beobachter des Spiels.**",
-                            "Sobald der Sieger bestimmt wurde, kann dieser Spieler alle Aktionen und Ereignisse definieren, die sich während der Partie ergeben haben. Kein Gegner darf die Nacherzählung dieser Ereignisse widerlegen oder dementieren *(ganz egal wie unwahrscheinlich oder übertrieben sie sind)* bis ein neuer Sieger in einer neuen Partie bestimmt worden ist."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "abilities": [
+                {
+                    "name": "Geschichte wird von den Siegern geschrieben",
+                    "effect": [
+                        "**Der hohe Seneschall kann nicht aktiviert werden und er kann in keiner Weise zum Ziel bestimmt werden. Er ist lediglich der Beobachter des Spiels.**",
+                        "Sobald der Sieger bestimmt wurde, kann dieser Spieler alle Aktionen und Ereignisse definieren, die sich während der Partie ergeben haben. Kein Gegner darf die Nacherzählung dieser Ereignisse widerlegen oder dementieren *(ganz egal wie unwahrscheinlich oder übertrieben sie sind)* bis ein neuer Sieger in einer neuen Partie bestimmt worden ist."
+                    ]
+                }
+            ],
+            "character": true,
             "fluff": {
                 "quote": "„Er ist der Hüter der Geheimnisse dieser Welt.“"
             }
@@ -625,27 +614,27 @@
         {
             "id": "30405",
             "name": "Jaqen H’Ghar",
-            "subname": "Anhänger des Roten Gottes",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Einen Namen wählen",
-                        "effect": [
-                            "Immer wenn Jaqen H’Ghar aktiviert wird, darfst du seine Einfluss-Fähigkeit bis zum Ende der Runde durch die Einfluss-Fähigkeit einer beliebigen befreundeten oder feindlichen zivilen Einheit ersetzen."
-                        ]
-                    },
-                    {
-                        "name": "Ein gegebener Name",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Jaqen Einfluss auf eine befreundete Infanterie-Einheit ausübt, erhalten ihre Nahkampfangriffe **Präzision**."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Anhänger des Roten Gottes",
+            "abilities": [
+                {
+                    "name": "Einen Namen wählen",
+                    "effect": [
+                        "Immer wenn Jaqen H’Ghar aktiviert wird, darfst du seine Einfluss-Fähigkeit bis zum Ende der Runde durch die Einfluss-Fähigkeit einer beliebigen befreundeten oder feindlichen zivilen Einheit ersetzen."
+                    ]
+                },
+                {
+                    "name": "Ein gegebener Name",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Jaqen Einfluss auf eine befreundete Infanterie-Einheit ausübt, erhalten ihre Nahkampfangriffe **Präzision**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Der Rote Gott will seinen Anteil, süßes Mädchen, und nur mit dem Tod kann man für das Leben zahlen.“"
             }
@@ -653,20 +642,20 @@
         {
             "id": "30406",
             "name": "Tycho Nestoris",
-            "subname": "Von der Eisernen Bank",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Unterstützung durch die Eiserne Bank",
-                        "effect": [
-                            "Ein Mal pro Partie zu Beginn eines beliebigen Zuges darfst du 5 Wunden *(insgesamt)* von einer beliebigen Anzahl befreundeter Kampfeinheiten heilen."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Von der Eisernen Bank",
+            "abilities": [
+                {
+                    "name": "Unterstützung durch die Eiserne Bank",
+                    "effect": [
+                        "Ein Mal pro Partie zu Beginn eines beliebigen Zuges darfst du 5 Wunden *(insgesamt)* von einer beliebigen Anzahl befreundeter Kampfeinheiten heilen."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Wir, die wir der Eisernen Bank dienen, sehen dem Tod so oft ins Gesicht wie Ihr, die Ihr dem Eisernen Thron dient.“"
             }
@@ -674,24 +663,24 @@
         {
             "id": "30407",
             "name": "Walder Frey",
-            "subname": "Lord vom Kreuzweg",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Strategische Allianz",
-                        "effect": [
-                            "Einmal pro Partie, wenn Walder eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Wähle 2 der folgenden Effekte:*",
-                            "*• 1 Feind wird **Geschwächt**, **Verwundbar** und **Panisch**.*",
-                            "*• 1 befreundete Einheit heilt 3 Wunden.*",
-                            "*• Zu Beginn der nächsten Runde wirst du Startspieler.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Lord vom Kreuzweg",
+            "abilities": [
+                {
+                    "name": "Strategische Allianz",
+                    "effect": [
+                        "Einmal pro Partie, wenn Walder eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Wähle 2 der folgenden Effekte:*",
+                        "*• 1 Feind wird **Geschwächt**, **Verwundbar** und **Panisch**.*",
+                        "*• 1 befreundete Einheit heilt 3 Wunden.*",
+                        "*• Zu Beginn der nächsten Runde wirst du Startspieler.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Er ist vorsichtig wie ein alter Mann und ehrgeizig wie ein junger, und nie hat es ihm an List gemangelt.“ – Catelyn Stark"
             }
@@ -699,100 +688,97 @@
         {
             "id": "30408",
             "name": "Roose Bolton",
-            "subname": "Kalkulierend und Grausam",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Schreckliche Gerüchte",
-                        "effect": [
-                            "Bei Spielbeginn werden 3 Befehlsmarker auf Roose gelegt.",
-                            "Immer wenn Roose aktiviert wird, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**.",
-                            "Immer wenn Roose eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*1 feindliche Kampfeinheit muss 1 Panikprobe ablegen.*"
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Kalkulierend und Grausam",
+            "abilities": [
+                {
+                    "name": "Schreckliche Gerüchte",
+                    "effect": [
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Roose gelegt.",
+                        "Immer wenn Roose aktiviert wird, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**.",
+                        "Immer wenn Roose eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*1 feindliche Kampfeinheit muss 1 Panikprobe ablegen.*"
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "Man brauchte Bolton nur anzusehen, um zu wissen, dass in seinem kleinen Zeh mehr Grausamkeit steckte, als in allen Freys zusammen."
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30409",
             "name": "Shae",
-            "subname": "Heimlich am Hofe",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Den besten Freier ausfindig machen",
-                        "effect": [
-                            "Bei Spielbeginn werden 3 Befehlsmarker auf Shae gelegt.",
-                            "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, lege 1 Befehlsmarker von Shae ab.",
-                            "Falls am Ende der Runde keine Befehlsmarker auf Shae liegen, vernichte Shae.",
-                            "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, bevor der Effekt jener Zone abgehandelt wird, wähle 1 der folgenden Effekte:",
-                            "• Heile 1 Wunde einer befreundeten Kampfeinheit.",
-                            "• 1 feindliche Kampfeinheit wird **Geschwächt**.",
-                            "• Shae erhält 2 Befehlsmarker."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Heimlich am Hofe",
+            "abilities": [
+                {
+                    "name": "Den besten Freier ausfindig machen",
+                    "effect": [
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Shae gelegt.",
+                        "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, lege 1 Befehlsmarker von Shae ab.",
+                        "Falls am Ende der Runde keine Befehlsmarker auf Shae liegen, vernichte Shae.",
+                        "Immer wenn Shae eine Zone auf der Taktiktafel beansprucht, bevor der Effekt jener Zone abgehandelt wird, wähle 1 der folgenden Effekte:",
+                        "• Heile 1 Wunde einer befreundeten Kampfeinheit.",
+                        "• 1 feindliche Kampfeinheit wird **Geschwächt**.",
+                        "• Shae erhält 2 Befehlsmarker."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Meine Mutter hat mich Shae genannt. Mann ruft mich … oft.“"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20401",
             "name": "Hauptmann von Grauenstein",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Angst ausnutzen"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Angst ausnutzen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20402",
             "name": "Ramsay Schnee",
-            "subname": "Der Bastard von Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Zugehörigkeit: Haus Bolton",
-                    "Schrecklicher Anblick"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40408": "Unsere Klingen sind scharf",
-                    "40409": "Grausame Methoden",
-                    "40410": "Sadistische Spiele"
-                }
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Der Bastard von Bolton",
+            "abilities": [
+                "Zugehörigkeit: Haus Bolton",
+                "Schrecklicher Anblick"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40408",
+                "40409",
+                "40410"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Schnee hat mich mein Weib genannt, bevor sie ihre eigenen Finger gefressen hat, aber ich sage Bolton.“"
             }
@@ -800,19 +786,19 @@
         {
             "id": "20403",
             "name": "Ramsay Schnee",
-            "subname": "Sadist",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Zugehörigkeit: Haus Bolton",
-                    "Durch das Gemetzel befeuert",
-                    "Bedrohliche Erscheinung"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Sadist",
+            "abilities": [
+                "Zugehörigkeit: Haus Bolton",
+                "Durch das Gemetzel befeuert",
+                "Bedrohliche Erscheinung"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„... ein nackter Mann hat wenig Geheimnisse, aber ein gehäuteter Mann hat gar keine mehr.“"
             }
@@ -820,22 +806,21 @@
         {
             "id": "20404",
             "name": "Theon Graufreud",
-            "subname": "Stinker",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Befehl: Ein Exempel statuieren"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Ramsay Schnee enthält, und muss seine Einheit verstärken. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Stinker",
+            "abilities": [
+                "Befehl: Ein Exempel statuieren"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Ramsay Schnee enthält, und muss seine Einheit verstärken. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich bin nicht er, bin nicht der Abtrünnige, er ist in Winterfell gestorben. Mein Name ist Stinker.“"
             }
@@ -843,18 +828,18 @@
         {
             "id": "20406",
             "name": "Brienne",
-            "subname": "Jungfrau von Tarth",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ritterlicher Eid",
-                    "Standhaft"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Jungfrau von Tarth",
+            "abilities": [
+                "Ritterlicher Eid",
+                "Standhaft"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ein wahrer Ritter hat geschworen, die Schwachen zu beschützen oder sein Leben bei dem Versuch zu geben.“"
             }
@@ -862,18 +847,18 @@
         {
             "id": "20407",
             "name": "Bronn",
-            "subname": "Der Söldner",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Erkaufte Loyalität",
-                    "Durch Geld motiviert"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Der Söldner",
+            "abilities": [
+                "Erkaufte Loyalität",
+                "Durch Geld motiviert"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich verkaufe mein Schwert, ich verschenke es nicht.“"
             }
@@ -881,40 +866,37 @@
         {
             "id": "20408",
             "name": "Schinder von Haus Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Angst verbreiten"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Angst verbreiten"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20409",
             "name": "Vargo Hoat",
-            "subname": "Die Ziege von Harrenhal",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Bedrohen",
-                    "Zugehörigkeit: Blutiger Mummenschanz",
-                    "Sadistische Verstümmelung"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40414": "Die Ruchlosigkeit des Krüppelmachers",
-                    "40415": "Leichtsinniger Angriff",
-                    "40416": "Schwäche ausnutzen"
-                }
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Die Ziege von Harrenhal",
+            "abilities": [
+                "Befehl: Bedrohen",
+                "Zugehörigkeit: Blutiger Mummenschanz",
+                "Sadistische Verstümmelung"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40414",
+                "40415",
+                "40416"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Die Ziege ist der Lord von Harrenhal, und der Lord von Harrenhal feilscht nicht.“ – Qyburn"
             }
@@ -922,19 +904,19 @@
         {
             "id": "20410",
             "name": "Vargo Hoat",
-            "subname": "Der Krüppelmacher",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Sadistische Verstümmelung",
-                    "Grausam",
-                    "Entschlossenheit schwächen"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Der Krüppelmacher",
+            "abilities": [
+                "Sadistische Verstümmelung",
+                "Grausam",
+                "Entschlossenheit schwächen"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Wie viele Ungeheuer hat Lord Tywin denn noch?“ – Arya Stark"
             }
@@ -942,27 +924,24 @@
         {
             "id": "20411",
             "name": "Daario Naharis",
-            "subname": "Hauptmann der Sturmkrähen",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Zugehörigkeit: Sturmkrähen",
-                    "Verbesserte Bewaffnung",
-                    "Durch Geld motiviert"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40417": "Verhandlungen des Söldners",
-                    "40418": "Wagemut des Söldners",
-                    "40419": "Rücksichtslose Schläge"
-                }
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Hauptmann der Sturmkrähen",
+            "abilities": [
+                "Zugehörigkeit: Sturmkrähen",
+                "Verbesserte Bewaffnung",
+                "Durch Geld motiviert"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40417",
+                "40418",
+                "40419"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Er hat das Gewissen eines Söldners, also gar keins.“ – Daenerys Targaryen"
             }
@@ -970,18 +949,18 @@
         {
             "id": "20412",
             "name": "Daario Naharis",
-            "subname": "Rücksichtsloser Söldner",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Rücksichtslose Schläge",
-					"Verwegenheit"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Rücksichtsloser Söldner",
+            "abilities": [
+                "Rücksichtslose Schläge",
+                "Verwegenheit"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Für mich gilt ein Tag nicht als richtig gelebt, wenn ich nicht eine Frau geliebt, einen Feind getötet und ein gutes Mahl genossen habe.“"
             }
@@ -989,17 +968,17 @@
         {
             "id": "20413",
             "name": "Jaqen H’ghar",
-            "subname": "Unbenannt",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Einen neuen Namen annehmen"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Unbenannt",
+            "abilities": [
+                "Befehl: Einen neuen Namen annehmen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Valar Morghulis.“"
             }
@@ -1007,40 +986,37 @@
         {
             "id": "20414",
             "name": "Leutnant der Sturmkrähen",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Verbesserte Bewaffnung"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Verbesserte Bewaffnung"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20415",
             "name": "Roose Bolton",
-            "subname": "Lord Egel",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Angst verbreiten",
-                    "Zugehörigkeit: Haus Bolton",
-                    "Angst Ausnutzen"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40411": "Ein gehäuteter Mann hat keine Geheimnisse",
-                    "40412": "Furcht hält einen Mann am Leben",
-                    "40413": "Geflüsterte Drohungen"
-                }
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Lord Egel",
+            "abilities": [
+                "Befehl: Angst verbreiten",
+                "Zugehörigkeit: Haus Bolton",
+                "Angst Ausnutzen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40411",
+                "40412",
+                "40413"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Furcht ist es, was einen Mann in dieser Welt des Verrats und des Betrugs am Leben erhält.“"
             }
@@ -1048,78 +1024,78 @@
         {
             "id": "20416",
             "name": "Glückssucher",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Verwegenheit",
-                    "Durch Geld motiviert"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Verwegenheit",
+                "Durch Geld motiviert"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20417",
             "name": "Ruhmsucher",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Eiserne Entschlossenheit",
-                    "Beharrlich Bleiben"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Eiserne Entschlossenheit",
+                "Beharrlich Bleiben"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20418",
             "name": "Offizier der Goldenen Kompanie",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Zugehörigkeit: Goldene Kompanie",
-                    "Wilde Ausstrahlung"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Zugehörigkeit: Goldene Kompanie",
+                "Wilde Ausstrahlung"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20419",
             "name": "Lysenischer Bootsmann",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Verhören",
-                    "Tyrannischer Stolz"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Verhören",
+                "Tyrannischer Stolz"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20420",
             "name": "Arya Stark",
-            "subname": "Prinzessin auf der Flucht",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Namen auf der Liste"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt\nwerden, die Sandor Clegane, Leibwächter auf der Flucht, enthält.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Prinzessin auf der Flucht",
+            "abilities": [
+                "Namen auf der Liste"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt\nwerden, die Sandor Clegane, Leibwächter auf der Flucht, enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Und an diesem Abend gab es einen\nNamen weniger zu hassen."
             }
@@ -1127,17 +1103,17 @@
         {
             "id": "20421",
             "name": "Sandor Clegane",
-            "subname": "Leibwächter auf der Flucht",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Bedrohen"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Leibwächter auf der Flucht",
+            "abilities": [
+                "Befehl: Bedrohen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Wenn ein Hund bösartig wird, liegt die Schuld bei seinem Herrn.“ – Ser Kevan Lennister"
             }
@@ -1145,18 +1121,18 @@
         {
             "id": "20422",
             "name": "Rorge",
-            "subname": "Der irre Hund von Salzpfann",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Anspornen",
-                    "Trügerische Flucht"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Der irre Hund von Salzpfann",
+            "abilities": [
+                "Befehl: Anspornen",
+                "Trügerische Flucht"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Willst du eine Nase wie meine?\nWehr dich, und du bekommst eine!“"
             }
@@ -1164,22 +1140,21 @@
         {
             "id": "20423",
             "name": "Beisser",
-            "subname": "Rorges irrer Hund",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Zusammenrotten"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt\nwerden, die Rorge enthält.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Rorges irrer Hund",
+            "abilities": [
+                "Zusammenrotten"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt\nwerden, die Rorge enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Beißer kann nicht sprechen, und Beißer kann nicht schreiben, doch seine Zähne sind sehr scharf.“ – Jaqen H’ghar"
             }
@@ -1187,25 +1162,22 @@
         {
             "id": "20424",
             "name": "Jokin",
-            "subname": "Hauptmann der Sturmkrähen",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Hohe Präzision"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40420": "Waffenbrüder",
-                    "40421": "Umgehungstaktik",
-                    "40422": "Zäher Söldner"
-                }
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Hauptmann der Sturmkrähen",
+            "abilities": [
+                "Hohe Präzision"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40420",
+                "40421",
+                "40422"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Die Sturmkrähen stehen nicht allein da.“ – Prendahl"
             }
@@ -1213,24 +1185,23 @@
         {
             "id": "20425",
             "name": "Der Witwer",
-            "subname": "Hauptmann der Sturmkrähen",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Jokins Vasall",
-                    "Befehl: Linie halten!",
-                    "Spaltschlag"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Jokin, Hauptmann der Sturmkrähen, enthält.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Hauptmann der Sturmkrähen",
+            "abilities": [
+                "Jokins Vasall",
+                "Befehl: Linie halten!",
+                "Spaltschlag"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Jokin, Hauptmann der Sturmkrähen, enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Sturmkrähen stehen überhaupt\nnicht.“ – Daenerys Targaryen"
             }
@@ -1238,17 +1209,17 @@
         {
             "id": "20426",
             "name": "Jokin",
-            "subname": "Kommandant der Bogenschützen",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Hohe Präzision"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Kommandant der Bogenschützen",
+            "abilities": [
+                "Hohe Präzision"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Fünfhundert Söldner, auf deren Treue man sich nicht verlassen kann.“ – Jorah Mormont"
             }
@@ -1256,23 +1227,22 @@
         {
             "id": "20427",
             "name": "Der Witwer",
-            "subname": "Zweiter Kommandant",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Jokins Beschützer",
-                    "Spaltschlag"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Jokin, Kommandant der Bogenschützen, enthält.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Zweiter Kommandant",
+            "abilities": [
+                "Jokins Beschützer",
+                "Spaltschlag"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Jokin, Kommandant der Bogenschützen, enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich vertraue allen meinen Männern. Genau so weit, wie ich spucken kann.“ – Daario Naharis"
             }
@@ -1282,430 +1252,415 @@
         {
             "id": "40401",
             "name": "Planung und Erkenntnis",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Wähle 1 der folgenden Effekte:",
-                            "• Dieser Angriff fügt +1 Treffer zu.",
-                            "• Nachdem die Verteidigungswürfel geworfen worden sind, wehrt der Verteidiger +1 Treffer ab.",
-                            "Falls du [LETTER] kontrollierst oder falls die Einheit deines Heerführers der Angreifer/Verteidiger ist, füge/wehre +1 Treffer zu/ab."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Wähle 1 der folgenden Effekte:",
+                        "• Dieser Angriff fügt +1 Treffer zu.",
+                        "• Nachdem die Verteidigungswürfel geworfen worden sind, wehrt der Verteidiger +1 Treffer ab.",
+                        "Falls du [LETTER] kontrollierst oder falls die Einheit deines Heerführers der Angreifer/Verteidiger ist, füge/wehre +1 Treffer zu/ab."
+                    ]
+                }
+            ]
         },
         {
             "id": "40402",
             "name": "Flexible Methoden",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker.",
-                            "Dann darfst du 1 Zustandsmarker auf 1 beliebigen Einheit durch einen beliebigen anderen Zustandsmarker ersetzen.",
-                            "Falls du [LETTER] kontrollierst, darfst du dann 1 Zustandsmarker von 1 Einheit auf eine beliebige andere Einheit bewegen."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker.",
+                        "Dann darfst du 1 Zustandsmarker auf 1 beliebigen Einheit durch einen beliebigen anderen Zustandsmarker ersetzen.",
+                        "Falls du [LETTER] kontrollierst, darfst du dann 1 Zustandsmarker von 1 Einheit auf eine beliebige andere Einheit bewegen."
+                    ]
+                }
+            ]
         },
         {
             "id": "40403",
             "name": "Befehle erteilen",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald die Einheit deines Heerführers aktiviert wird:",
-                        "effect": [
-                            "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere befreundete Einheit innerhalb Langer Reichweite zum Ziel. Sie führt eine Angriffs- oder Ansturmaktion durch."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 Befehlsmarker von jener Einheit ab. Sie darf jenen Befehl in dieser Runde erneut verwenden."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald die Einheit deines Heerführers aktiviert wird:",
+                    "effect": [
+                        "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere befreundete Einheit innerhalb Langer Reichweite zum Ziel. Sie führt eine Angriffs- oder Ansturmaktion durch."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 Befehlsmarker von jener Einheit ab. Sie darf jenen Befehl in dieser Runde erneut verwenden."
+                    ]
+                }
+            ]
         },
         {
             "id": "40404",
             "name": "Das Risiko wert",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
-                        "effect": [
-                            "Jene Einheit darf beliebig viele Würfel für diese Probe neu werfen.",
-                            "Falls jene Einheit innerhalb Kurzer Reichweite zu deinem Heerführer ist, besteht sie diese Probe stattdessen.",
-                            "Bei Bestehen heilt sie 2 Wunden."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Jene Einheit darf beliebig viele Würfel für diese Probe neu werfen.",
+                        "Falls jene Einheit innerhalb Kurzer Reichweite zu deinem Heerführer ist, besteht sie diese Probe stattdessen.",
+                        "Bei Bestehen heilt sie 2 Wunden."
+                    ]
+                }
+            ]
         },
         {
             "id": "40405",
             "name": "Sorgfältige Planung",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Am Ende der Runde:",
-                        "effect": [
-                            "Durchsuche dein Taktikdeck nach 1 Heerführer-Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges, falls du [LETTER] kontrollierst:",
-                        "effect": [
-                            "Durchsuche dein Taktikdeck nach 1 **Heerführer**-Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Am Ende der Runde:",
+                    "effect": [
+                        "Durchsuche dein Taktikdeck nach 1 Heerführer-Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges, falls du [LETTER] kontrollierst:",
+                    "effect": [
+                        "Durchsuche dein Taktikdeck nach 1 **Heerführer**-Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
+                    ]
+                }
+            ]
         },
         {
             "id": "40406",
             "name": "Überraschende Strategie",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Lege diese Karte und 1 andere Karte ab, um 1 Karte aus deinem Ablagestapel auf deine Hand zurückzuschicken.",
-                            "Falls du [LETTER] kontrollierst, musst du nur diese Karte ablegen."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Lege diese Karte und 1 andere Karte ab, um 1 Karte aus deinem Ablagestapel auf deine Hand zurückzuschicken.",
+                        "Falls du [LETTER] kontrollierst, musst du nur diese Karte ablegen."
+                    ]
+                }
+            ]
         },
         {
             "id": "40407",
             "name": "Kriegsbeute",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Lege diese Karte bis zum Ende der Partie an eine befreundete Kavallerie- oder Infanterie-Einheit an.",
-                            "Solange diese Karte an dieser Einheit anliegt, immer wenn ein Feind innerhalb Kurzer Reichweite vernichtet wird, lege 1 Befehlsmarker auf diese Karte. Die Nahkampfangriffe dieser Einheit erhalten die folgenden Effekte basierend auf der Anzahl der Befehlsmarker *(die Effekte sind kumulativ)*:",
-                            "**1+:** Sie verwendet ihren höchsten Angriffswürfelwert und, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**.",
-                            "**2:** +1 auf den Trefferwurf"
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Lege diese Karte bis zum Ende der Partie an eine befreundete Kavallerie- oder Infanterie-Einheit an.",
+                        "Solange diese Karte an dieser Einheit anliegt, immer wenn ein Feind innerhalb Kurzer Reichweite vernichtet wird, lege 1 Befehlsmarker auf diese Karte. Die Nahkampfangriffe dieser Einheit erhalten die folgenden Effekte basierend auf der Anzahl der Befehlsmarker *(die Effekte sind kumulativ)*:",
+                        "**1+:** Sie verwendet ihren höchsten Angriffswürfelwert und, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**.",
+                        "**2:** +1 auf den Trefferwurf"
+                    ]
+                }
+            ]
         },
         {
             "id": "40408",
             "name": "Unsere Klingen sind scharf",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Falls der Verteidiger **Panisch** ist, erhält dieser Angriff **Präzision**.",
-                            "Falls der Verteidiger **Panisch** ist und der Angreifer eine Haus-Bolton- Einheit ist, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Schnee",
-                "commander_subname": "Der Bastard von Bolton"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls der Verteidiger **Panisch** ist, erhält dieser Angriff **Präzision**.",
+                        "Falls der Verteidiger **Panisch** ist und der Angreifer eine Haus-Bolton- Einheit ist, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40409",
             "name": "Grausame Methoden",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit zum Ziel. Du darfst 1 **Panisch**-Marker von jener Einheit ausgeben. Falls du das tust, wähle 2 der folgenden Effekte:",
-                            "• 1 Haus-Bolton-Einheit innerhalb Langer Reichweite heilt 2 Wunden. *(Dieser Effekt darf mehrfach gewählt werden.)*",
-                            "• Jener Feind wird **Verwundbar**.",
-                            "• Jener Feind wird **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Schnee",
-                "commander_subname": "Der Bastard von Bolton"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit zum Ziel. Du darfst 1 **Panisch**-Marker von jener Einheit ausgeben. Falls du das tust, wähle 2 der folgenden Effekte:",
+                        "• 1 Haus-Bolton-Einheit innerhalb Langer Reichweite heilt 2 Wunden. *(Dieser Effekt darf mehrfach gewählt werden.)*",
+                        "• Jener Feind wird **Verwundbar**.",
+                        "• Jener Feind wird **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40410",
             "name": "Sadistische Spiele",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines feindlichen Zuges:",
-                        "effect": [
-                            "Dein Gegner wählt 1 der folgenden Effekte *(du bestimmst die Ziele erst, nachdem er den Effekt gewählt hat)*:",
-                            "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Panisch**.",
-                            "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Schnee",
-                "commander_subname": "Der Bastard von Bolton"
+            "faction": "neutral",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines feindlichen Zuges:",
+                    "effect": [
+                        "Dein Gegner wählt 1 der folgenden Effekte *(du bestimmst die Ziele erst, nachdem er den Effekt gewählt hat)*:",
+                        "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Panisch**.",
+                        "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40411",
             "name": "Ein gehäuteter Mann hat keine Geheimnisse",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine Einheit zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
-                        "effect": [
-                            "Du darfst 1 Zustandsmarker von einem Feind innerhalb Langer Reichweite zu jener Einheit ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Lord Egel"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine Einheit zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
+                    "effect": [
+                        "Du darfst 1 Zustandsmarker von einem Feind innerhalb Langer Reichweite zu jener Einheit ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40412",
             "name": "Furcht hält einen Mann am Leben",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
-                        "effect": [
-                            "Bestimme eine beliebige Anzahl befreundeter Haus- Bolton-Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten.",
-                            "Wenn jener Feind sich in Kurzer Reichweite zu Roose Bolton's Einheit befindet, heile +1 Wunde."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Lord Egel"
+            "faction": "neutral",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
+                    "effect": [
+                        "Bestimme eine beliebige Anzahl befreundeter Haus- Bolton-Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten.",
+                        "Wenn jener Feind sich in Kurzer Reichweite zu Roose Bolton's Einheit befindet, heile +1 Wunde."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40413",
             "name": "Geflüsterte Drohungen",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
-                        "effect": [
-                            "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**. Bestimme dann 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Lord Egel"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
+                    "effect": [
+                        "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**. Bestimme dann 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40414",
             "name": "Die Ruchlosigkeit des Krüppelmachers",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind eine Panikprobe ablegt, bevor die Würfel geworfen werden:",
-                        "effect": [
-                            "Falls jener Feind an dieser Panikprobe scheitert, darfst du 1 **Geschwächt**-Marker von ihm ausgeben. Falls du das tust, erleidet er +2 Wunden.",
-                            "Falls jener Feind mit einer Blutiger- Mummenschanz-Einheit im Nahkampf ist, erleidet er –2 auf das Ergebnis seiner Panikprobe."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Vargo Hoat"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind eine Panikprobe ablegt, bevor die Würfel geworfen werden:",
+                    "effect": [
+                        "Falls jener Feind an dieser Panikprobe scheitert, darfst du 1 **Geschwächt**-Marker von ihm ausgeben. Falls du das tust, erleidet er +2 Wunden.",
+                        "Falls jener Feind mit einer Blutiger- Mummenschanz-Einheit im Nahkampf ist, erleidet er –2 auf das Ergebnis seiner Panikprobe."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40415",
             "name": "Leichtsinniger Angriff",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn einer beliebigen Runde:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit führt 1 Angriffsaktion durch.",
-                            "Nachdem jener Angriff abgeschlossen worden ist, darf dein Gegner 1 zivile Einheit aktivieren."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Vargo Hoat"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn einer beliebigen Runde:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit führt 1 Angriffsaktion durch.",
+                        "Nachdem jener Angriff abgeschlossen worden ist, darf dein Gegner 1 zivile Einheit aktivieren."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40416",
             "name": "Schwäche ausnutzen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Der Verteidiger wird **Verwundbar**. Falls der Verteidiger **Geschwächt** ist, darf der Angreifer beliebig viele Angriffswürfel neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Vargo Hoat"
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Der Verteidiger wird **Verwundbar**. Falls der Verteidiger **Geschwächt** ist, darf der Angreifer beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40417",
             "name": "Verhandlungen des Söldners",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
-                        "effect": [
-                            "Ersetze den Effekt jener Zone durch:",
-                            "*Bis zum Ende der Runde zählst du, als würdest du [MONEY] kontrollieren. Heile 2 Wunden von 1 befreundeten Kampfeinheit. Falls das eine Sturmkrähen-Einheit ist, heile +1 Wunde für jede vernichtete Schlachtreihe jener Einheit.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                    "effect": [
+                        "Ersetze den Effekt jener Zone durch:",
+                        "*Bis zum Ende der Runde zählst du, als würdest du [MONEY] kontrollieren. Heile 2 Wunden von 1 befreundeten Kampfeinheit. Falls das eine Sturmkrähen-Einheit ist, heile +1 Wunde für jede vernichtete Schlachtreihe jener Einheit.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40418",
             "name": "Wagemut des Söldners",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit legt 1 Moralprobe ab. Falls das eine Sturmkrähen- Einheit ist, erhält sie +2 auf das Ergebnis der Moralprobe.",
-                            "Bei Bestehen bestimme 1 Feind innerhalb Langer Reichweite. Er wird **Panisch** und **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit legt 1 Moralprobe ab. Falls das eine Sturmkrähen- Einheit ist, erhält sie +2 auf das Ergebnis der Moralprobe.",
+                        "Bei Bestehen bestimme 1 Feind innerhalb Langer Reichweite. Er wird **Panisch** und **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40419",
             "name": "Rücksichtslose Schläge",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Dieser Angriff erhält **Kritischer Treffer** und **Präzision**. Der Angreifer erleidet 1 Wunde für jede gewürfelte 1 auf einem Angriffswürfel.",
-                            "Falls diese Karte eine Sturmkrähen- Einheit zum Ziel hat, verwendet dieser Angriff seinen höchsten Angriffswürfelwert."
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff erhält **Kritischer Treffer** und **Präzision**. Der Angreifer erleidet 1 Wunde für jede gewürfelte 1 auf einem Angriffswürfel.",
+                        "Falls diese Karte eine Sturmkrähen- Einheit zum Ziel hat, verwendet dieser Angriff seinen höchsten Angriffswürfelwert."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40420",
             "name": "Waffenbrüder",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Lege diese Karte an eine befreundete Sturmkrähen Kampfeinheit an, bis sie an einer Panikprobe scheitert.",
-                            "Solange diese Karte an einer Einheit anliegt, erhält sie +1 Angriffswürfel für jede andere befreundete Einheit innerhalb Kurzer Reichweite.",
-                            "Falls sie sich innerhalb Kurzer Reichweite zu Jokins Einheit befindet, erhält sie +1 zusätzlichen Angriffswürfel."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Hauptmann der Sturmkrähen"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Lege diese Karte an eine befreundete Sturmkrähen Kampfeinheit an, bis sie an einer Panikprobe scheitert.",
+                        "Solange diese Karte an einer Einheit anliegt, erhält sie +1 Angriffswürfel für jede andere befreundete Einheit innerhalb Kurzer Reichweite.",
+                        "Falls sie sich innerhalb Kurzer Reichweite zu Jokins Einheit befindet, erhält sie +1 zusätzlichen Angriffswürfel."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         },
         {
             "id": "40421",
             "name": "Umgehungstaktik",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Bestimme 1 andere befreundete Einheit innerhalb Langer Reichweite zum Verteidiger zum Ziel. Sie führt 1 Manöveraktion durch."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Hauptmann der Sturmkrähen"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Bestimme 1 andere befreundete Einheit innerhalb Langer Reichweite zum Verteidiger zum Ziel. Sie führt 1 Manöveraktion durch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         },
         {
             "id": "40422",
             "name": "Zäher Söldner",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, bevor die Würfel geworfen werden:",
-                        "effect": [
-                            " Jene Einheit erhält +2 auf das Ergebnis. Falls sie sich innerhalb Kurzer Reichweite zu Jokin befindet, besteht sie diese Panikprobe automatisch."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Hauptmann der Sturmkrähen"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, bevor die Würfel geworfen werden:",
+                    "effect": [
+                        " Jene Einheit erhält +2 auf das Ergebnis. Falls sie sich innerhalb Kurzer Reichweite zu Jokin befindet, besteht sie diese Panikprobe automatisch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         }
-    ]
+    ],
+    "special": []
 }

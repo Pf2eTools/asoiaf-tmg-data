@@ -1,887 +1,860 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "freefolk",
+        "language": "de"
+    },
+    "unit": [
         {
             "id": "10301",
             "name": "Wilder Riese",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Wütender Schwinger",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Riese",
-                    "Wütender Schwinger"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Riese",
+                "Wütender Schwinger"
+            ],
+            "attacks": [
+                {
+                    "name": "Wütender Schwinger",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
             "fluff": {
                 "lore": "Für die meisten Lords aus dem südlichen Westeros sind die Wilden Riesen nichts weiter als ein Mythos. Jenseits der Mauer sind sie jedoch sehr real, wie die Nachtwache bestätigen wird. Diese riesigen Kreaturen tragen keine Rüstungen. Ihre Waffen sind nichts anderes als grob bearbeitete Mammutknochen oder Baumstämme. Mehr brauchen sie aber auch gar nicht. Ein einziger Riese kann die schwerste Infanterie in Grund und Boden stampfen und bleibt von einer Schlachtreihe anstürmender Ritter völlig unbeeindruckt. Nur mit schierer Masse oder mächtigen Belagerungswaffen kann ein Riese zu Fall gebracht werden."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10302",
             "name": "Fallensteller des Freien Volkes",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 6,
-                "defense": 6,
-                "morale": 8,
-                "attacks": [
-                    {
-                        "name": "Wildlingsbogen",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Primitive Waffen",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Verborgene Fallen"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Verborgene Fallen"
+            ],
+            "attacks": [
+                {
+                    "name": "Wildlingsbogen",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Primitive Waffen",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 8,
+            "speed": 6,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Was dem Freien Volk an Ausrüstung fehlt, macht es mit seiner Gerissenheit wett. Die Fallensteller des Freien Volkes versehen das Schlachtfeld vorab mit behindernden Schlingfallen und geschickt getarnten Fallgruben. Solche Taktiken halten den Gegner aber eher auf, als ihn zu töten. Feindliche Kavallerie muss auf ihre Reittiere Acht geben und Infanterie-Einheiten kommen nur langsam voran. In der Zwischenzeit lassen die Fallensteller Pfeile auf die durch ihre Fallen angeschlagenen Formationen regnen."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10303",
             "name": "Räuber des Freien Volkes",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Primitive Waffen",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Chaotisch"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "name": "Anpassungsfähig",
-                        "text": "*Senke die Kosten von 1 Verstärkung dieser Einheit um 1.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Chaotisch"
+            ],
+            "attacks": [
+                {
+                    "name": "Primitive Waffen",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Senke die Kosten von 1 Verstärkung dieser Einheit um 1.*",
+                    "name": "Anpassungsfähig"
+                }
+            ],
             "fluff": {
                 "lore": "Mit nur wenig Kampfausbildung und einfachen Waffen aus Knochen oder geplündertem Eisen und Stahl haben die Räuber des Freien Volkes nur Eines, was sie den fortschrittlichen Waffen und Rüstungen der Westerosi entgegensetzen können: ihre schiere Masse. Einzelne Begegnungen mit plündernden Kriegstrupps südlich der Mauer lassen die meisten Heerführer aus Westeros über ihre tatsächliche Anzahl im Norden ratlos zurück. In kleinen Gruppen sind sie nicht mehr als ein Haufen bewaffneter Bauern, sammeln sie sich aber unter dem Banner des Freien Volkes, sind sie eine Armee."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10304",
             "name": "Speerfrauen",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Speerwurf",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Speer",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Stürmende Salve",
-                    "Wütender Ansturm"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Stürmende Salve",
+                "Wütender Ansturm"
+            ],
+            "attacks": [
+                {
+                    "name": "Speerwurf",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Speer",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Im Süden ist die Kriegsführung gewöhnlich Männersache. Die Frauen des Freien Volkes dagegen sind in der Lage, Seite an Seite mit den Männern in die Schlacht zu ziehen. Für die Vorhut eher ungeeignet sind die Speerfrauen aber hervorragende Flankenkämpfer, die sowohl im Angriff als auch in der Verteidigung gegen anstürmende Feinde eingesetzt werden können. Ihre Waffen mögen primitiv sein, sind jedoch zahlreich, und sie werden von den Speerfrauen mit tödlicher Präzision geworfen. Versierte Heerführer schaffen es, ihr ganzes Potenzial auszuschöpfen."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10305",
             "name": "Wilde Höhlenbewohner",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 6,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Rasender Schwinger",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            7,
-                            8
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Rasender Schwinger"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Rasender Schwinger"
+            ],
+            "attacks": [
+                {
+                    "name": "Rasender Schwinger",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        7,
+                        8
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 4,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Obwohl sie kaum mehr als Felle, Lendenschürze und primitive Waffen tragen, hat es schon manch eine unachtsame Patrouille mit ihrem Leben bezahlt, den schieren Blutdurst der wilden Höhlenbewohner zu unterschätzen. Die Höhlenbewohner überleben zwar nicht lange als Vorhut, doch sie übertreffen jeden, wenn es darum geht, Lücken in die gegnerische Schlachtreihe zu schlagen oder als Flankenkämpfer ungeschützte Bogenschützen zu vernichten. Sobald das Blut erst einmal fließt, sucht ihre gnadenlose Brutalität ihresgleichen."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10306",
             "name": "Wun Wun",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Trommelnde Fäuste",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Schlachtruf",
-                    "Trommelnde Fäuste",
-                    "Riese"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Schlachtruf",
+                "Trommelnde Fäuste",
+                "Riese"
+            ],
+            "attacks": [
+                {
+                    "name": "Trommelnde Fäuste",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 5,
+            "cost": 8,
+            "tray": "solo",
             "fluff": {
                 "lore": "Wun Wun ist sogar noch größer als sein Häuptling Mag der Mächtige. Die gewaltige Stärke und die dicht behaarte Haut hat er mit den anderen Riesen gemein. Zusätzlich ist er nahezu unverwundbar und trägt einen ungewöhnlichen Kämpfergeist in sich. Wun Wun kann die stärkste Feindeslinie mit Leichtigkeit brechen, obwohl die Heerführer des freien Volks darauf achten sollten, seine zerschmetternden Vormärsche zu unterstützen. Ansonsten könnte er umrundet und mit tausenden Schnitten getötet werden."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10307",
             "name": "Knochenmänner",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Gezackte Waffen",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Gezackte Waffen",
-                    "Schrecklicher Anblick"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Gezackte Waffen",
+                "Schrecklicher Anblick"
+            ],
+            "attacks": [
+                {
+                    "name": "Gezackte Waffen",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Obwohl sie nicht zu einer bestimmten Fraktion des Freien Volkes gehören, unterstützen die Knochenmänner den Herrn der Knochen in seinen kriegerischen Bestrebungen. Man würde glauben, dass Waffen und Rüstungen aus Knochen in der Schlacht ineffektiv gegen Stahl sind, doch der Kiefer eines Auerochsen an einem schweren Holzschaft kann selbst Plattenrüstungen enormen Schaden zufügen. Das Unbehagen, das diese Wilden unter feindlichen Truppen auslösen, ist von großem Wert für jeden gerissenen Heerführer."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10308",
             "name": "Thenn-Krieger",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Bronzewaffen",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Linie halten!",
-                    "Befehl: Spott"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Linie halten!",
+                "Befehl: Spott"
+            ],
+            "attacks": [
+                {
+                    "name": "Bronzewaffen",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Thenn-Krieger sind die schwersten gängigen Truppen, die für das Freie Volk in die Schlacht ziehen. Ihre bronzene Ausrüstung wurde von ihnen selbst geschmiedet und nicht von der Nachtwache gestohlen oder auf dem Schlachtfeld geplündert. Die recht fortschrittlichen Waffen der Krieger aus dem Norden können nicht lange gegen den gehärteten Stahl aus dem Süden bestehen, was die Heerführer des Freien Volkes immer im Blick behalten müssen. Allerdings stechen die Thenn-Krieger als Flankenkämpfer und Nachhut hervor."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10309",
             "name": "Streitwagen der Eisigen Küste",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "siegeengine",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Tödlicher Zusammenstoß",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Rascher Rückzug",
-                    "Streitwagen",
-                    "Tödlicher Zusammenstoß"
-                ],
-                "wounds": 6,
-                "tray": "warmachine"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Rascher Rückzug",
+                "Streitwagen",
+                "Tödlicher Zusammenstoß"
+            ],
+            "attacks": [
+                {
+                    "name": "Tödlicher Zusammenstoß",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 5,
+            "tray": "warmachine",
             "fluff": {
                 "lore": "Normalerweise verbindet man die Wildlinge nicht mit Kriegsmaschinen, doch die Streitwagen der Eisigen Küste sind erstaunlich effektiv. Sie sind aus Holz und Knochen gefertigt und werden von riesigen Wolfshund-Mischlingen gezogen, die für ihre Stärke und Grausamkeit gezüchtet werden. Ein Streitwagen ist für zwei Männer und eine Auswahl an Waffen gemacht und gelangt nicht nur schnell beim Feind an, sondern bricht oft mitten durch die Schlachtreihen. Er sollte mit Bedacht verwendet werden, denn die größte Schwachstelle eines Streitwagens liegt darin, steckenzubleiben."
-            }
+            },
+            "icon": "siegeengine",
+            "wounds": 6
         },
         {
             "id": "10310",
             "name": "Bär",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 0,
-                "speed": 4,
-                "defense": 3,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Wildes Zerfleischen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Gebundener Bär",
-                    "Wildes Zerfleischen"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "text": "*Diese Figur kann nur durch die Fähigkeit „Gebundener Leibwechsler“ einer Armee hinzugefügt werden.*"
-                    }
-                ],
-                "wounds": 3
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Gebundener Bär",
+                "Wildes Zerfleischen"
+            ],
+            "attacks": [
+                {
+                    "name": "Wildes Zerfleischen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 3,
+            "speed": 4,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Diese Figur kann nur durch die Fähigkeit „Gebundener Leibwechsler“ einer Armee hinzugefügt werden.*"
+                }
+            ],
             "fluff": {
                 "lore": "Leibwechsler sind Männer und Frauen, die in den Geist von Tieren eindringen können und so ihr Handeln unterschwellig oder auch unverhohlen manipulieren. Im Krieg nimmt man den Leibwechsler nicht durch seine menschliche Gestalt wahr, sondern durch das Tier, das er kontrolliert. Dazu gehören riesige Bären aus dem Norden, Schattenwölfe, Schattenkatzen, Eulen und Adler. Während ihre Tiere getötet werden können, kann der Mensch dahinter kaum besiegt werden, da im Norden kein Mangel an wilden und starken Kreaturen herrscht."
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10311",
             "name": "Auserkorene des Herrn der Knochen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Gezackte Waffen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Gezackte Waffen",
-                    "Schrecklicher Anblick",
-                    "Angst ausnutzen"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "name": "Charakter",
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Rasselhemd enthält. Rasselhemd muss diese Einheit verstärken.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Gezackte Waffen",
+                "Schrecklicher Anblick",
+                "Angst ausnutzen"
+            ],
+            "attacks": [
+                {
+                    "name": "Gezackte Waffen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Rasselhemd enthält. Rasselhemd muss diese Einheit verstärken.*",
+                    "name": "Charakter"
+                }
+            ],
             "fluff": {
                 "lore": "Die Auserkorenen des Herrn der Knochen sind die stärksten und wildesten seiner Anhänger. Jeder Auserkorene muss seinen Vorgänger in einem rituellen Kampf töten. Die Rüstung des neuen Auserkorenen verwendet die Knochen seines Vorgängers, zusammen mit Tierknochen, um sie stärker zu machen. Die Auserkorenen wirken zwar wie bloße Wilde, doch die Veteranen der Nachtwache warnen ihre Brüder vor ihrer außerordentlichen Gerissenheit und ihrem Kampfgeschick."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10312",
             "name": "Kriegsmammut",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 6,
-                "speed": 6,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Wüten",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Mammut",
-                    "Wüten"
-                ],
-                "wounds": 8,
-                "tray": "warmachine",
-                "requirements": [
-                    {
-                        "name": "Begrenzt",
-                        "text": "*Deine Armee darf maximal 2 Kriegsmammuts enthalten.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Mammut",
+                "Wüten"
+            ],
+            "attacks": [
+                {
+                    "name": "Wüten",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Deine Armee darf maximal 2 Kriegsmammuts enthalten.*",
+                    "name": "Begrenzt"
+                }
+            ],
             "fluff": {
                 "lore": "Auf dem Schlachtfeld ist das Kriegsmammut eine furchterregende Erscheinung, die dem Feind zu Leibe rückt. Seine unglaubliche Stärke und seine dicke Haut erschweren das Töten ungemein. Früher sind Riesen auf Mammuts in den Krieg gezogen, heute gibt es auf der ganzen Welt nicht mehr genügend Mammuts für ein komplettes Kavalleriekorps. Aber jedes Mammut, das für seinen Reiter in die Schlacht zieht, ist gut ausgebildet. Es passiert zwar nur selten, aber ein Panisches Mammut auf dem Schlachtfeld wird allen zum Verhängnis."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10313",
             "name": "Mag der Mächtige",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Zorn des Häuptlings",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Riese",
-                    "Zorn des Häuptlings"
-                ],
-                "commander": true,
-                "wounds": 6,
-                "tray": "solo"
-            },
-            "tactics": {
-                "cards": {
-                    "40326": "Gelassen bleiben",
-                    "40327": "Trampeln",
-                    "40328": "Erzürnen",
-                    "40329": "Befehle des Häuptlings",
-                    "40330": "Monster aus dem Norden",
-                    "40331": "Die letzten ihrer Art",
-                    "40332": "Herausforderndes Gebrüll",
-                    "40333": "Felsbrocken schleudern",
-                    "40334": "Überrennen",
-                    "40335": "Überraschungsangriff"
-                },
-                "remove": [
-                    "ALL"
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Riese",
+                "Zorn des Häuptlings"
+            ],
+            "attacks": [
+                {
+                    "name": "Zorn des Häuptlings",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 5,
+            "tray": "solo",
+            "commander": true,
+            "tactics": [
+                "40326",
+                "40327",
+                "40328",
+                "40329",
+                "40330",
+                "40331",
+                "40332",
+                "40333",
+                "40334",
+                "40335"
+            ],
             "fluff": {
                 "lore": "Der Titel „der Mächtige“ ist eine gewaltige Untertreibung für Mag, den Häuptling der Riesen. Mit seiner furchterregenden Stärke hat er sein Volk wieder und wieder zum Sieg geführt. Selbst die am schwersten gepanzerten Truppen sind seiner gewaltigen Kraft in keinster Weise gewachsen. Seine erfahrene Führung (wie sie Riesen eben besitzen) ist in der Hitze des Gefechts eine Inspiration für sein Gefolge. Mag kann zwar mühelos in die Schlacht eingreifen, sollte sich dabei aber auch in Acht nehmen. Es ist schwierig, einen Riesen zu erlegen, aber Stahl ist ihre große Schwäche."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10314",
             "name": "Mag der Mächtige",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 9,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Zorn des Häuptlings",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Riese",
-                    "Zorn des Häuptlings"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Riese",
+                "Zorn des Häuptlings"
+            ],
+            "attacks": [
+                {
+                    "name": "Zorn des Häuptlings",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 9,
+            "tray": "solo",
             "fluff": {
                 "lore": "Der Titel „der Mächtige“ ist eine gewaltige Untertreibung für Mag, den Häuptling der Riesen. Mit seiner furchterregenden Stärke hat er sein Volk wieder und wieder zum Sieg geführt. Selbst die am schwersten gepanzerten Truppen sind seiner gewaltigen Kraft in keinster Weise gewachsen. Seine erfahrene Führung (wie sie Riesen eben besitzen) ist in der Hitze des Gefechts eine Inspiration für sein Gefolge. Mag kann zwar mühelos in die Schlacht eingreifen, sollte sich dabei aber auch in Acht nehmen. Es ist schwierig, einen Riesen zu erlegen, aber Stahl ist ihre große Schwäche."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10315",
             "name": "Bärenreiter der Eisigen Küste",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 4,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Speerwurf",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Durchbohren und Zerfleischen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Stürmende Salve",
-                    "Bärenkavallerie",
-                    "Durchbohren und Zerfleischen"
-                ],
-                "wounds": 4,
-                "tray": "cavalry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Stürmende Salve",
+                "Bärenkavallerie",
+                "Durchbohren und Zerfleischen"
+            ],
+            "attacks": [
+                {
+                    "name": "Speerwurf",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Durchbohren und Zerfleischen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 4,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Die weißen Bären aus dem Land jenseits der Mauer sind selbst für Bären massig, oft so groß wie zwei Mann und problemlos in der Lage, Fels und Stahl zu zerfetzen. Nur die Wildlinge würden auf die Idee kommen, solche Biester zu zähmen und damit in die Schlacht zu reiten. Als „Kavallerie“ sind die Bärenreiter der Eisigen Küste zwar langsam und schwerfällig, aber wo ein gewöhnliches Pferd einen Feind nur zertrampeln kann, können Schneebären beißen, zerfetzen und zerfleischen. Selbst ein Mann in voller Plattenrüstung ist einem Bären nicht gewachsen."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 4
         },
         {
             "id": "10316",
             "name": "Borroqs Eber",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 0,
-                "speed": 5,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Aufspiessen und Fressen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Gebundener Eber",
-                    "Aufspiessen und Fressen"
-                ],
-                "wounds": 3,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestelltwerden, die Borroq enthält.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Gebundener Eber",
+                "Aufspiessen und Fressen"
+            ],
+            "attacks": [
+                {
+                    "name": "Aufspiessen und Fressen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 5,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestelltwerden, die Borroq enthält.*"
+                }
+            ],
             "fluff": {
                 "lore": "Wohin Borroq auch geht, sein Begleiter,der Eber, bleibt an seiner Seite. DiesesMonster in Schweinsgestalt hat wahrhaftiggewaltige Proportionen. Er istso groß wie ein ausgewachsener Bulleund hat Stoßzähne, die so lang sindwie der Arm eines Mannes. Sein dickesFell dient als Verteidigung gegen dieschärfsten Klingen. Im Kampf schütteltder Eber seinen massiven Kopf wild hinund her und spießt seine Feinde auf,bevor er sich sein blutiges Festmahlschmecken lässt. Sollte Borroq dasSchlachtfeld allerdings verlassen, folgtihm sein Eber auf Schritt und Tritt."
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10317",
             "name": "Varamyr Sechsleib",
-            "subname": "Meisterhafter Leibwechsler",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 3,
-                "speed": 4,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Grausames Zerfleischen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Meisterhafter Leibwechsler",
-                    "Grausames Zerfleischen"
-                ],
-                "wounds": 4,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "title": "Meisterhafter Leibwechsler",
+            "abilities": [
+                "Meisterhafter Leibwechsler",
+                "Grausames Zerfleischen"
+            ],
+            "attacks": [
+                {
+                    "name": "Grausames Zerfleischen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 4,
+            "cost": 3,
+            "tray": "solo",
             "fluff": {
                 "lore": "Varamyr Sechsleib gehört zu denmächtigsten Leibwechslern hinter derMauer. Er kontrolliert sowohl eine riesigeSchneebärin, drei Wölfe, eineSchattenkatze als auch einen Adler.Auf seiner Schneebärin reitendkommandiert er seine Bestien über dasSchlachtfeld. Nichts entzieht sich demBlick seines Adlers und niemand entgehtseiner lautlosen Schattenkatze, die sichgeduldig an ihre Opfer heranpirscht.Diese Vorgehensweise garantiert einenbrutalen Kampf. Seine einzelnenKreaturen können besiegt werden,aber Varamyr wird weitere finden.",
                 "quote": "„Und ich kann hoch über der Mauer schweben und mit Adleraugen sehen.“"
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10318",
             "name": "Varamyr Sechsleib",
-            "subname": "Meisterhafter Leibwechsler",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 2,
-                "speed": 4,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Grausames Zerfleischen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Meisterhafter Leibwechsler",
-                    "Grausames Zerfleischen"
-                ],
-                "commander": true,
-                "wounds": 4,
-                "tray": "solo"
-            },
-            "tactics": {
-                "cards": {
-                    "40339": "Gefährten herbeirufen",
-                    "40340": "Gebundene Wächter",
-                    "40341": "Gebundener Befehl"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "title": "Meisterhafter Leibwechsler",
+            "abilities": [
+                "Meisterhafter Leibwechsler",
+                "Grausames Zerfleischen"
+            ],
+            "attacks": [
+                {
+                    "name": "Grausames Zerfleischen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
                 }
-            },
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 4,
+            "cost": 2,
+            "tray": "solo",
+            "commander": true,
+            "tactics": [
+                "40339",
+                "40340",
+                "40341"
+            ],
             "fluff": {
                 "lore": "Varamyr Sechsleib gehört zu denmächtigsten Leibwechslern hinter derMauer. Er kontrolliert sowohl eine riesigeSchneebärin, drei Wölfe, eineSchattenkatze als auch einen Adler.Auf seiner Schneebärin reitendkommandiert er seine Bestien über dasSchlachtfeld. Nichts entzieht sich demBlick seines Adlers und niemand entgehtseiner lautlosen Schattenkatze, die sichgeduldig an ihre Opfer heranpirscht.Diese Vorgehensweise garantiert einenbrutalen Kampf. Seine einzelnenKreaturen können besiegt werden,aber Varamyr wird weitere finden.",
                 "quote": "„Und ich kann hoch über der Mauer schweben und mit Adleraugen sehen.“"
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10319",
             "name": "Schattenkatze",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 2,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Prankenhieb",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            2
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Varamyrs Schattenkatze",
-                    "Unterbrechen"
-                ],
-                "wounds": 2,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Varamyr Sechsleib enthält.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Varamyrs Schattenkatze",
+                "Unterbrechen"
+            ],
+            "attacks": [
+                {
+                    "name": "Prankenhieb",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        2
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 2,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Varamyr Sechsleib enthält.*"
+                }
+            ],
             "fluff": {
                 "lore": "Während eine gewöhnlicheSchattenkatze keine große Gefahrfür eine gepanzerte Einheit ist,trägt diese Schattenkatze die Listvon Varamyr Sechsleib in sich.Zusammen mit Varamyrs anderenBestien und mit Unterstützung derStreitkräfte des Freien Volks dient sieals mächtige und flinke Bedrohung.Auch ohne Sechsleibs Kontrolle überihren Geist ist sie ein anmutigesRaubtier, das einen Mann umLängen überragt. Doch mit Sechsleibwird die Schattenkatze zu einertödlichen Waffe."
-            }
+            },
+            "icon": "monster",
+            "wounds": 2
         },
         {
             "id": "10320",
             "name": "Wolfsrudel",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Rudeltaktik",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Varamyrs Wolfsrudel",
-                    "Ablenkung"
-                ],
-                "wounds": 3,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Varamyr Sechsleib enthält.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Varamyrs Wolfsrudel",
+                "Ablenkung"
+            ],
+            "attacks": [
+                {
+                    "name": "Rudeltaktik",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Varamyr Sechsleib enthält.*"
+                }
+            ],
             "fluff": {
                 "lore": "Obwohl die von Varamyr Sechsleibkontrollierten Wölfe nicht geeignetsind, um geordnet in der Schlachtliniezu stehen, können sie in der Flankeeingesetzt werden und sind ein wahrerAlbtraum für Bogenschützen und dieArtillerie hinter der Schlachtlinie. DieKreaturen sind einfache Wölfe, aberwenn ein menschliches Bewusstsein insie eindringt, agieren und funktionierensie als Einheit und sind dazu fähig,auf die restliche Armee abgestimmteRudeltaktiken anzuwenden. Ist es danoch verwunderlich, dass Leibwechslerso gefürchtet werden?"
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10321",
             "name": "Jäger der Eisigen Küste",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Harpune",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Harpune",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Ziel markieren",
-                    "Harpune"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Ziel markieren",
+                "Harpune"
+            ],
+            "attacks": [
+                {
+                    "name": "Harpune",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Harpune",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Der Walrossclan jagt häufig in den nördlichen Weiten jenseits der Mauer. Jetzt bringt er seine Jagderfahrung mit dem Freien Volk in den Süden, wo er nach wärmeren Gefilden und grüneren Weiden sucht. Die austarierten Harpunen der Jäger sind perfekt, um sowohl gefährliche Tiere als auch feindliche Soldaten aufzuspießen. Da sie wissen, wie sie ihre Beute in Schach halten können, sind sie flink und ständig in Bewegung. So greifen sie ihre Feinde aus unerwarteten Richtungen an."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10322",
             "name": "Speerwerfende Riese",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Riesenspeer",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    },
-                    {
-                        "name": "Riesenspeer",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Riese",
-                    "Riesenspeer"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Riese",
+                "Riesenspeer"
+            ],
+            "attacks": [
+                {
+                    "name": "Riesenspeer",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                },
+                {
+                    "name": "Riesenspeer",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
             "fluff": {
                 "lore": "Was ist schlimmer als ein Riese auf dem Schlachtfeld? Ein speerwerfender Riese, der aus der Ferne Speere so dick wie Baumstämme regnen lässt. Die Allianz des Freien Volkes mit den Riesen bringt diesen Speerwerfer auf das Schlachtfeld, eine Art lebendige Artillerie. Seine Waffe ist grob, aber wenn der Griff so dick ist wie der Rumpf eines großen Mannes, ist nicht viel Finesse erforderlich. Seine einzige Schwäche ist der Nahkampf. Daher muss er gut geschützt werden."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10323",
             "name": "Harmas Vorhut",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "cavalry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 6,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Grobe Waffen",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Geplante Vorgehensweise",
-                    "Kavallerie"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Geplante Vorgehensweise",
+                "Kavallerie"
+            ],
+            "attacks": [
+                {
+                    "name": "Grobe Waffen",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "cavalry",
             "fluff": {
                 "lore": ""
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30301",
             "name": "Lady Val",
-            "subname": "Die Wildlingsprinzessin",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Lady der Wildnis",
-                        "effect": [
-                            "Immer wenn Lady Val eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Manöver- oder Rückzugsaktion durch.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Die Wildlingsprinzessin",
+            "abilities": [
+                {
+                    "name": "Lady der Wildnis",
+                    "effect": [
+                        "Immer wenn Lady Val eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*1 befreundete Kampfeinheit führt 1 Manöver- oder Rückzugsaktion durch.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Deshalb kenne ich den Wald besser als all Eure Grenzer in ihren schwarzen Mänteln. Für mich gibt es dort keine Geister.“"
             }
@@ -889,21 +862,21 @@
         {
             "id": "30302",
             "name": "Manke Rayder",
-            "subname": "Geschickter Taktiker",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Geschickte Vorbereitungen",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Manke Einfluss auf eine Einheit ausübt, immer wenn jene Einheit aktiviert wird oder von einer Taktikzone zum Ziel bestimmt wird, bevor der Effekt jener Zone abgehandelt wird, darfst du 1 Taktikkarte ziehen."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Geschickter Taktiker",
+            "abilities": [
+                {
+                    "name": "Geschickte Vorbereitungen",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Manke Einfluss auf eine Einheit ausübt, immer wenn jene Einheit aktiviert wird oder von einer Taktikzone zum Ziel bestimmt wird, bevor der Effekt jener Zone abgehandelt wird, darfst du 1 Taktikkarte ziehen."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Manke Rayder ist schlau. Er wurde als Krähe aufgezogen, und die Krähe ist ein listiger Vogel.“ – Tormund Riesentod"
             }
@@ -911,22 +884,22 @@
         {
             "id": "30303",
             "name": "Craster",
-            "subname": "Verbündeter zum eigenen Vorteil",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Zuflucht und Vorräte",
-                        "effect": [
-                            "Du darfst ein Mal pro Partie zu Beginn eines beliebigen Zuges 2 Wunden von 1 befreundeten Infanterie-Einheit heilen.",
-                            "Immer wenn Craster eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Ziehe 1 Taktikkarte und heile 2 Wunden von 1 befreundeten Infanterie-Einheit.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Verbündeter zum eigenen Vorteil",
+            "abilities": [
+                {
+                    "name": "Zuflucht und Vorräte",
+                    "effect": [
+                        "Du darfst ein Mal pro Partie zu Beginn eines beliebigen Zuges 2 Wunden von 1 befreundeten Infanterie-Einheit heilen.",
+                        "Immer wenn Craster eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Ziehe 1 Taktikkarte und heile 2 Wunden von 1 befreundeten Infanterie-Einheit.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Trotzdem hat er noch keinen Grenzer von seinem Herd gewiesen, und Manke Rayder mag er auch nicht.“ – Thoren Kleinwald"
             }
@@ -934,21 +907,21 @@
         {
             "id": "30304",
             "name": "Styr",
-            "subname": "Tyrann mit eiserner Faust",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Zorn der Thenns",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Styr Einfluss auf eine befreundete Einheit ausübt, wird sie so behandelt, als hätte sie +1 Schlachtreihe für die Anzahl der Angriffswürfel, und die Nahkampfangriffe jener Einheit erhalten **Spaltschlag**."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Tyrann mit eiserner Faust",
+            "abilities": [
+                {
+                    "name": "Zorn der Thenns",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Styr Einfluss auf eine befreundete Einheit ausübt, wird sie so behandelt, als hätte sie +1 Schlachtreihe für die Anzahl der Angriffswürfel, und die Nahkampfangriffe jener Einheit erhalten **Spaltschlag**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Das sind Wildlinge … mehr Tier als Mensch.“ – Bowen Marsch"
             }
@@ -956,22 +929,22 @@
         {
             "id": "30305",
             "name": "Ygritte",
-            "subname": "Vom Feuer geküsst",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Listenreiche Speerfrau",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Ygritte Einfluss auf eine befreundete Einheit ausübt, erhält jene Einheit +1 [MOVEMENT] und ignoriert die Schlüsselwörter **Einschränkend** und **Unwegsam**.",
-                            "Solange Ygritte Einfluss auf eine feindliche Einheit ausübt, erleidet jener Feind –1 [MOVEMENT] und löst bei Würfen für die Bewegungsweite des Ansturms von 1 oder 2 einen ungeordneten Ansturm aus."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Vom Feuer geküsst",
+            "abilities": [
+                {
+                    "name": "Listenreiche Speerfrau",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Ygritte Einfluss auf eine befreundete Einheit ausübt, erhält jene Einheit +1 [MOVEMENT] und ignoriert die Schlüsselwörter **Einschränkend** und **Unwegsam**.",
+                        "Solange Ygritte Einfluss auf eine feindliche Einheit ausübt, erleidet jener Feind –1 [MOVEMENT] und löst bei Würfen für die Bewegungsweite des Ansturms von 1 oder 2 einen ungeordneten Ansturm aus."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Eins weiß ich sehr wohl. Ich weiß, dass du bis ins Mark ein Wildling bist.“ – Jon Schnee"
             }
@@ -979,23 +952,23 @@
         {
             "id": "30306",
             "name": "Lady Dalla",
-            "subname": "Ehefrau und Beraterin",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Rat einer Speerfrau",
-                        "effect": [
-                            "Immer wenn Dalla eine Zone auf der Taktiktafel beansprucht, führe Folgendes durch, basierend auf der Zone, die sie beansprucht hat:",
-                            "[CROWN]: 1 Feind wird **Geschwächt**.",
-                            "[MONEY]: Anstatt einen Zustandsmarker abzulegen, bestimme 1 Feind, der mit jener Einheit im Nahkampf ist, zum Ziel. Er erleidet 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe dieser Einheit.",
-                            "[LETTER]: Anstatt Karten zu ziehen, schau dir die obersten 2 Karten des Taktikdecks deines Gegners an. Du darfst eine der Karten ablegen. Lege die übrigen Karten zurück auf das Taktikdeck."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Ehefrau und Beraterin",
+            "abilities": [
+                {
+                    "name": "Rat einer Speerfrau",
+                    "effect": [
+                        "Immer wenn Dalla eine Zone auf der Taktiktafel beansprucht, führe Folgendes durch, basierend auf der Zone, die sie beansprucht hat:",
+                        "[CROWN]: 1 Feind wird **Geschwächt**.",
+                        "[MONEY]: Anstatt einen Zustandsmarker abzulegen, bestimme 1 Feind, der mit jener Einheit im Nahkampf ist, zum Ziel. Er erleidet 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe dieser Einheit.",
+                        "[LETTER]: Anstatt Karten zu ziehen, schau dir die obersten 2 Karten des Taktikdecks deines Gegners an. Du darfst eine der Karten ablegen. Lege die übrigen Karten zurück auf das Taktikdeck."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Wir vom freien Volk wissen Dinge, die ihr Knienden längst vergessen habt. Manchmal ist der kürzeste Weg nicht der sicherste, Jon Schnee.“"
             }
@@ -1003,27 +976,27 @@
         {
             "id": "30307",
             "name": "Manke Rayder",
-            "subname": "Betrügerischer Barde",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Ränkespiele und Intrigen",
-                        "effect": [
-                            "Ein Mal pro Partie, sobald eine feindliche zivile Einheit aktiviert wird, verliert jene zivile Einheit bis zum Ende der Runde alle Fähigkeiten."
-                        ]
-                    },
-                    {
-                        "name": "Gestörte Kommunikation",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Manke Einluss auf eine feindliche Einheit ausübt, darf dein Gegner jene Einheit nicht zum Ziel von Effekten der Taktikzonen oder Einfluss-Fähigkeiten bestimmen."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Betrügerischer Barde",
+            "abilities": [
+                {
+                    "name": "Ränkespiele und Intrigen",
+                    "effect": [
+                        "Ein Mal pro Partie, sobald eine feindliche zivile Einheit aktiviert wird, verliert jene zivile Einheit bis zum Ende der Runde alle Fähigkeiten."
+                    ]
+                },
+                {
+                    "name": "Gestörte Kommunikation",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Manke Einluss auf eine feindliche Einheit ausübt, darf dein Gegner jene Einheit nicht zum Ziel von Effekten der Taktikzonen oder Einfluss-Fähigkeiten bestimmen."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Die Mauer kann ein Heer aufhalten, aber nicht einen einzelnen Mann.“"
             }
@@ -1031,56 +1004,53 @@
         {
             "id": "30308",
             "name": "Jon Schnee",
-            "subname": "Verräter-Krähe",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Widerstandskraft des Nordens",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                            "Solange Jon Einfluss auf eine Einheit ausübt, erhält sie +1 auf das Ergebnis von Moralproben und erleidet –1 Wunde, wenn sie an einer Panikprobe scheitert."
-                        ]
-                    },
-                    {
-                        "name": "Disziplin des Südens",
-                        "effect": [
-                            "Du darfst ein Mal pro Partie zu Beginn einer beliebigen Runde dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Koordinationstaktik** oder **Rückzug und Neuformierung** durchsuchen und sie deiner Hand hinzufügen. Mische danach dein Taktikdeck."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Verräter-Krähe",
+            "abilities": [
+                {
+                    "name": "Widerstandskraft des Nordens",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Jon Einfluss auf eine Einheit ausübt, erhält sie +1 auf das Ergebnis von Moralproben und erleidet –1 Wunde, wenn sie an einer Panikprobe scheitert."
+                    ]
+                },
+                {
+                    "name": "Disziplin des Südens",
+                    "effect": [
+                        "Du darfst ein Mal pro Partie zu Beginn einer beliebigen Runde dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Koordinationstaktik** oder **Rückzug und Neuformierung** durchsuchen und sie deiner Hand hinzufügen. Mische danach dein Taktikdeck."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Manke Rayder hat ebenfalls einen Eid abgelegt.“ – Bowen Marsch"
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20301",
             "name": "Tormund Riesentod",
-            "subname": "Donnerfaust",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Überrennen",
-                    "Spaltschlag"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40308": "Angriffsrausch",
-                    "40309": "Gegenschlag",
-                    "40310": "Vernichtender Zusammenstoß"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Donnerfaust",
+            "abilities": [
+                "Befehl: Überrennen",
+                "Spaltschlag"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40308",
+                "40309",
+                "40310"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Tormund Riesentod schien mir die Art Mann zu sein, die man gern zum Freund und höchst ungern zum Feind hat.“ – Jon Schnee"
             }
@@ -1088,18 +1058,18 @@
         {
             "id": "20302",
             "name": "Tormund Riesentod",
-            "subname": "Großsprecher, Hornbläser, Brecher des Eises",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Schlachtruf",
-                    "Standhaft"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Großsprecher, Hornbläser, Brecher des Eises",
+            "abilities": [
+                "Befehl: Schlachtruf",
+                "Standhaft"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Und jetzt lass den Met kommen!“"
             }
@@ -1107,27 +1077,24 @@
         {
             "id": "20303",
             "name": "Manke Rayder",
-            "subname": "König-Jenseits-der-Mauer",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Gegenstrategie",
-                    "Wilde Ausstrahlung",
-                    "Inspirerende Erscheinung"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40311": "Wildlingsdiplomatie",
-                    "40312": "Vorhersehbare Manöver",
-                    "40313": "Langfristiger Plan"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "König-Jenseits-der-Mauer",
+            "abilities": [
+                "Befehl: Gegenstrategie",
+                "Wilde Ausstrahlung",
+                "Inspirerende Erscheinung"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40311",
+                "40312",
+                "40313"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich bin mein eigener Recke, mein eigener Narr und mein eigener Harfner.“"
             }
@@ -1135,130 +1102,125 @@
         {
             "id": "20304",
             "name": "Anführer des Raubzugs",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Zusammenrotten"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Zusammenrotten"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20305",
             "name": "Alpha der Höhlenbewohner",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Anspornen"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Anspornen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20306",
             "name": "Matriarchin der Speerfrauen",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Rascher Rückzug"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Rascher Rückzug"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20307",
             "name": "Leibwechsler",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Gebundener Leibwechsler"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Gebundener Leibwechsler"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20308",
             "name": "Adler",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Gebundener Adler",
-                    "Erkundungsflug"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Diese Figur kann nur durch die Fähigkeit „Gebundener Leibwechsler“ einer Armee hinzugefügt werden.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Gebundener Adler",
+                "Erkundungsflug"
+            ],
+            "tray": "none",
+            "back_text": [
+                {
+                    "text": "*Diese Figur kann nur durch die Fähigkeit „Gebundener Leibwechsler“ einer Armee hinzugefügt werden.*"
+                }
+            ],
+            "icon": "none"
         },
         {
             "id": "20309",
             "name": "Wolf",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Gebundener Wolf",
-                    "Jagdinstinkt"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Diese Figur kann nur durch die Fähigkeit „Gebundener Leibwechsler“ einer Armee hinzugefügt werden.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Gebundener Wolf",
+                "Jagdinstinkt"
+            ],
+            "tray": "none",
+            "back_text": [
+                {
+                    "text": "*Diese Figur kann nur durch die Fähigkeit „Gebundener Leibwechsler“ einer Armee hinzugefügt werden.*"
+                }
+            ],
+            "icon": "none"
         },
         {
             "id": "20310",
             "name": "Auserkorener von Styr",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-				    "Wütender Ansturm",
-                    "Kämpfend untergehen"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Wütender Ansturm",
+                "Kämpfend untergehen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20313",
             "name": "Styr",
-            "subname": "Magnar von Thenn",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Vormacht der Thenn",
-                    "Eiserne Entschlossenheit"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40323": "Bitterer Untergang",
-                    "40324": "Starrsinn der Thenn",
-                    "40325": "Styrs Rache"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Magnar von Thenn",
+            "abilities": [
+                "Befehl: Vormacht der Thenn",
+                "Eiserne Entschlossenheit"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40323",
+                "40324",
+                "40325"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Seine Leute verehrten ihn eher wie einen Gott, statt ihn als ihren Herrn zu achten.“"
             }
@@ -1266,40 +1228,37 @@
         {
             "id": "20314",
             "name": "Knochenstreiter",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Bedrohliche Erscheinung"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Bedrohliche Erscheinung"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20315",
             "name": "Rasselhemd",
-            "subname": "Der Herr der Knochen",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Trophäen sammeln",
-					"Trophäen Sammler",
-                    "Bedrohliche Erscheinung"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40314": "Blutige Trophäen",
-                    "40315": "Waffentrophäen",
-                    "40316": "Rüstungstrophäen"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Der Herr der Knochen",
+            "abilities": [
+                "Befehl: Trophäen sammeln",
+                "Trophäen Sammler",
+                "Bedrohliche Erscheinung"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40314",
+                "40315",
+                "40316"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Rasselhemd könnte seine Hände hundertmal waschen und hätte immer noch Blut unter den Nägeln.“ – Jon Schnee"
             }
@@ -1307,18 +1266,18 @@
         {
             "id": "20316",
             "name": "Rasselhemd",
-            "subname": "Gnadenloser Schlächter",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Durch das Gemetzel befeuert",
-                    "Bedrohliche Erscheinung"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Gnadenloser Schlächter",
+            "abilities": [
+                "Durch das Gemetzel befeuert",
+                "Bedrohliche Erscheinung"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ein kleiner, boshafter und verräterischer Mann, so dumm wie Grausam.“ – Jon Schnee"
             }
@@ -1326,26 +1285,23 @@
         {
             "id": "20317",
             "name": "Harma",
-            "subname": "Herrführerin der Vorhut",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Überlegenes Flankieren",
-                    "Verbesserte Mobilität"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40317": "Überfalltaktik",
-                    "40318": "Täuschungsmanöver",
-                    "40319": "Rasche Neuaufstellung"
-                }
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Herrführerin der Vorhut",
+            "abilities": [
+                "Befehl: Überlegenes Flankieren",
+                "Verbesserte Mobilität"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40317",
+                "40318",
+                "40319"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich behalte seinen Kopf als Banner. Ein Abtrünniger ist schlimmer als ein Hund.“"
             }
@@ -1353,18 +1309,18 @@
         {
             "id": "20318",
             "name": "Harma",
-            "subname": "Der Hundekopf",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Bewachen",
-                    "Verbesserte Mobilität"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Der Hundekopf",
+            "abilities": [
+                "Befehl: Bewachen",
+                "Verbesserte Mobilität"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Alle zwei Wochen ein neuer Hund, ein neuer Banner.“"
             }
@@ -1372,23 +1328,23 @@
         {
             "id": "20319",
             "name": "Harmas Bannerträger",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Harmas Vasall",
-                    "Rückzug",
-                    "Befehl: Taktisches Umstellen"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Harma enthält. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "attachment",
+            "abilities": [
+                "Harmas Vasall",
+                "Rückzug",
+                "Befehl: Taktisches Umstellen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Harma enthält. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Sie hasst Hunde ebenso sehr wie sie Krähen hasst."
             }
@@ -1396,27 +1352,24 @@
         {
             "id": "20320",
             "name": "Der Weiner",
-            "subname": "Schrecklicher Fleischer",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Grässliches Vorbild",                    
-                    "Entschlossenheit schwächen",
-					"Grausam"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40320": "Grausame Methoden",
-                    "40321": "Der Preis des Versagens",
-                    "40322": "Blutige Enthauptungen"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Schrecklicher Fleischer",
+            "abilities": [
+                "Befehl: Grässliches Vorbild",
+                "Entschlossenheit schwächen",
+                "Grausam"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40320",
+                "40321",
+                "40322"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Die Augen herauszuschneiden ist das Werk des Weiners. Die besten Krähen sind blinde Krähen, hat er immer gesagt.“"
             }
@@ -1424,18 +1377,18 @@
         {
             "id": "20321",
             "name": "Der Weiner",
-            "subname": "Grausamer Tyrann",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Grässliches Vorbild",
-                    "Grausam"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Grausamer Tyrann",
+            "abilities": [
+                "Befehl: Grässliches Vorbild",
+                "Grausam"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Der Weiner wird die Worte nicht sprechen. Er wird den Mantel nicht tragen. Selbst die anderen Räuber vertrauen ihm nicht.“ – Othell Yarwyck"
             }
@@ -1443,18 +1396,18 @@
         {
             "id": "20322",
             "name": "Ygritte",
-            "subname": "Bogenschützin der Speerfrauen",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Ziel markieren",
-                    "Unterbrechen"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bogenschützin der Speerfrauen",
+            "abilities": [
+                "Befehl: Ziel markieren",
+                "Unterbrechen"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Männer können kein Land besitzen, genauso wenig wie das Meer oder den Himmel.“"
             }
@@ -1462,22 +1415,22 @@
         {
             "id": "20323",
             "name": "Jarl",
-            "subname": "Versierter Anführer von Überfällen",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Die Flanke umgehen"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Jarl ignoriert die üblichen Einschränkungen für Verstärkungen.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Versierter Anführer von Überfällen",
+            "abilities": [
+                "Die Flanke umgehen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Jarl ignoriert die üblichen Einschränkungen für Verstärkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Die Mauer verteidigt sich selbst.“"
             }
@@ -1485,31 +1438,31 @@
         {
             "id": "20324",
             "name": "Häuptling des Walrossclans",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Abgehärtet",
-                    "Eiserne Entschlossenheit"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Abgehärtet",
+                "Eiserne Entschlossenheit"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20325",
             "name": "Das grosse Walross",
-            "subname": "Durch Eis und Schnee gestählt",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Kampfnarben"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Durch Eis und Schnee gestählt",
+            "abilities": [
+                "Kampfnarben"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Hrmph.“"
             }
@@ -1517,18 +1470,18 @@
         {
             "id": "20326",
             "name": "Jon Schnee",
-            "subname": "Die übergelaufene Krähe",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Waghalsiger Heldenmut",
-                    "Wissen des Südens"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Die übergelaufene Krähe",
+            "abilities": [
+                "Befehl: Waghalsiger Heldenmut",
+                "Wissen des Südens"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Männer sind Männer, und Frauen sindFrauen, gleichgültig, auf welcher Seite derMauer wir geboren wurden.“ – Lady Val"
             }
@@ -1536,18 +1489,18 @@
         {
             "id": "20328",
             "name": "Borroq",
-            "subname": "Eber-Leibwechsler",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Verborgene Fallen",
-                    "Standhaft"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Eber-Leibwechsler",
+            "abilities": [
+                "Befehl: Verborgene Fallen",
+                "Standhaft"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Und was machst du, Krähe? Verkriechstdu dich mit deinem weißen Hund hierin der Schwarzen Festung?“"
             }
@@ -1555,27 +1508,24 @@
         {
             "id": "20329",
             "name": "Das grosse Walross",
-            "subname": "Lord der Eisigen Küste",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Zugehörigkeit: Eisige Küste",
-                    "Kämpfend untergehen",
-                    "Abgehärtet"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40336": "Durchhaltevermögen",
-                    "40337": "Widerstand der Eisigen Küste",
-                    "40338": "Stärke des Walrosses"
-                }
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Lord der Eisigen Küste",
+            "abilities": [
+                "Zugehörigkeit: Eisige Küste",
+                "Kämpfend untergehen",
+                "Abgehärtet"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40336",
+                "40337",
+                "40338"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ein wildes Volk. Die Männer sind schlimm, dieFrauen noch schlimmer.“ – Tormund Riesentod"
             }
@@ -1583,23 +1533,23 @@
         {
             "id": "20327",
             "name": "Manke Rayder",
-            "subname": "Abel der Barde",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Fanatische Zuhörerschaft",
-                    "Sabotieren und Unterwandern"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Verstärke vor der Aufstellung eine feindlicheInfanterie-Einheit mit Manke. Ignoriere dieüblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Abel der Barde",
+            "abilities": [
+                "Fanatische Zuhörerschaft",
+                "Sabotieren und Unterwandern"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Verstärke vor der Aufstellung eine feindlicheInfanterie-Einheit mit Manke. Ignoriere dieüblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich kenne alle schmutzigen Lieder,die je gesungen wurden, ob südlichoder nördlich der Mauer.“"
             }
@@ -1607,905 +1557,878 @@
         {
             "id": "20330",
             "name": "Varamyrs Adler",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Varamyrs Adler",
-                    "Varamyrs Kundschafter"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Diese Figur kann nur durch die Fähigkeit „Meisterhafter Leibwechsler“ einer Armee hinzugefügt werden.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Varamyrs Adler",
+                "Varamyrs Kundschafter"
+            ],
+            "tray": "none",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Diese Figur kann nur durch die Fähigkeit „Meisterhafter Leibwechsler“ einer Armee hinzugefügt werden.*"
+                }
+            ],
+            "icon": "none"
         }
     ],
     "tactics": [
         {
             "id": "40301",
             "name": "Rückzug und Neuformierung",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Bestimme 2 befreundete Infanterie-Einheiten innerhalb Langer Reichweite zueinander zum Ziel. Entferne bis zu 4 Figuren von 1 dieser Einheiten. Heile ebenso viele Wunden der anderen Einheit.",
-                            "Du darfst dann 1 Verstärkung von 1 dieser Einheiten zu der anderen bewegen *(ersetze wie gewohnt 1 Figur in jener Einheit und achte auf die üblichen Verstärkungsbeschränkungen)* oder tausche 2 befreundete Verstärkungen jener Einheiten."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 2 befreundete Infanterie-Einheiten innerhalb Langer Reichweite zueinander zum Ziel. Entferne bis zu 4 Figuren von 1 dieser Einheiten. Heile ebenso viele Wunden der anderen Einheit.",
+                        "Du darfst dann 1 Verstärkung von 1 dieser Einheiten zu der anderen bewegen *(ersetze wie gewohnt 1 Figur in jener Einheit und achte auf die üblichen Verstärkungsbeschränkungen)* oder tausche 2 befreundete Verstärkungen jener Einheiten."
+                    ]
+                }
+            ]
         },
         {
             "id": "40302",
             "name": "Koordinationstaktik",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 2 befreundete Infanterie-Einheiten innerhalb Kurzer Reichweite zueinander zum Ziel.",
-                            "Beide Einheiten erhalten bis zum Ende des Zuges alle nicht-angeborenen Fähigkeiten der anderen Einheit.",
-                            "Du darfst sofort 1 nicht verwendeten „Zu Beginn eines Zuges“-Befehl einer jener Einheiten auslösen."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 2 befreundete Infanterie-Einheiten innerhalb Kurzer Reichweite zueinander zum Ziel.",
+                        "Beide Einheiten erhalten bis zum Ende des Zuges alle nicht-angeborenen Fähigkeiten der anderen Einheit.",
+                        "Du darfst sofort 1 nicht verwendeten „Zu Beginn eines Zuges“-Befehl einer jener Einheiten auslösen."
+                    ]
+                }
+            ]
         },
         {
             "id": "40303",
             "name": "Es sind zu viele!",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind eine Panikprobe ablegt, bevor die Würfel geworfen werden:",
-                        "effect": [
-                            "Jener Feind erleidet –1 auf das Ergebnis der Panikprobe für jede deiner befreundeten Einheiten innerhalb Kurzer Reichweite, aber maximal bis zu 3."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind eine Panikprobe ablegt, bevor die Würfel geworfen werden:",
+                    "effect": [
+                        "Jener Feind erleidet –1 auf das Ergebnis der Panikprobe für jede deiner befreundeten Einheiten innerhalb Kurzer Reichweite, aber maximal bis zu 3."
+                    ]
+                }
+            ]
         },
         {
             "id": "40304",
             "name": "Umgehungstaktik",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Bestimme 1 andere befreundete Einheit innerhalb Langer Reichweite zum Verteidiger zum Ziel. Sie führt 1 Manöveraktion durch."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Bestimme 1 andere befreundete Einheit innerhalb Langer Reichweite zum Verteidiger zum Ziel. Sie führt 1 Manöveraktion durch."
+                    ]
+                }
+            ]
         },
         {
             "id": "40305",
             "name": "Übermächtiger Angriff",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Für jede befreundete Einheit, die mit dem Verteidiger im Nahkampf ist, wähle 1 der folgenden Effekte:",
-                            "• Bei diesem Angriff dürfen beliebig viele Angriffswürfel neu geworfen werden.",
-                            "• Dieser Angriff erhält **Kritischer Treffer**.",
-                            "• Dieser Angriff erhält **Spaltschlag**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Für jede befreundete Einheit, die mit dem Verteidiger im Nahkampf ist, wähle 1 der folgenden Effekte:",
+                        "• Bei diesem Angriff dürfen beliebig viele Angriffswürfel neu geworfen werden.",
+                        "• Dieser Angriff erhält **Kritischer Treffer**.",
+                        "• Dieser Angriff erhält **Spaltschlag**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40306",
             "name": "Umzingelt und ungeschützt",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 feindliche Einheit zum Ziel. Für jede deiner befreundeten Einheiten innerhalb Kurzer Reichweite zu jenem Feind außer der vordersten erhält jener Feind 1 Zustandsmarker."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Einheit zum Ziel. Für jede deiner befreundeten Einheiten innerhalb Kurzer Reichweite zu jenem Feind außer der vordersten erhält jener Feind 1 Zustandsmarker."
+                    ]
+                }
+            ]
         },
         {
             "id": "40307",
             "name": "Die Endlose Horde",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Infanterie- Einheit zum Ziel und lege diese Karte bis zum Ende der Partie an jene Einheit an. Sobald diese Einheit vernichtet wird, stelle 1 „Räuber des Freien Volkes“-Einheit mit 1 Verstärkung „Anführer des Raubzugs“ vollständig und nicht aktiviert innerhalb Langer Reichweite zu einem befreundeten Aufstellungsrand auf."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Infanterie- Einheit zum Ziel und lege diese Karte bis zum Ende der Partie an jene Einheit an. Sobald diese Einheit vernichtet wird, stelle 1 „Räuber des Freien Volkes“-Einheit mit 1 Verstärkung „Anführer des Raubzugs“ vollständig und nicht aktiviert innerhalb Langer Reichweite zu einem befreundeten Aufstellungsrand auf."
+                    ]
+                }
+            ]
         },
         {
             "id": "40308",
             "name": "Angriffsrausch",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
-                        "effect": [
-                            "Die Würfe für die Bewegungsweite des Ansturms dieser Einheit zählen automatisch, als hättest du eine 6 gewürfelt, und ihre Nahkampfangriffe erhalten **Kritischer Treffer**.",
-                            "Nachdem dieser Angriff abgeschlossen worden ist, wird der Angreifer **Verwundbar**, es sei denn, der Angreifer ist Tormunds Einheit."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Riesentod"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
+                    "effect": [
+                        "Die Würfe für die Bewegungsweite des Ansturms dieser Einheit zählen automatisch, als hättest du eine 6 gewürfelt, und ihre Nahkampfangriffe erhalten **Kritischer Treffer**.",
+                        "Nachdem dieser Angriff abgeschlossen worden ist, wird der Angreifer **Verwundbar**, es sei denn, der Angreifer ist Tormunds Einheit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40309",
             "name": "Gegenschlag",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit außer den Verteidiger zum Ziel. Sie führt 1 Angriffs- oder Ansturmaktion auf den Angreifer durch.",
-                            "Falls diese Karte Tormunds Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel und alle Würfel für die Bewegungsweite des Ansturms für diese Aktion neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Riesentod"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit außer den Verteidiger zum Ziel. Sie führt 1 Angriffs- oder Ansturmaktion auf den Angreifer durch.",
+                        "Falls diese Karte Tormunds Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel und alle Würfel für die Bewegungsweite des Ansturms für diese Aktion neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40310",
             "name": "Vernichtender Zusammenstoß",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
-                        "effect": [
-                            "Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, werden **Panisch** und **Verwundbar**.",
-                            "Falls diese Karte Tormund Riesentods Einheit zum Ziel hat, darf diese Einheit alle Würfel für die Bewegungsweite des Ansturms neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Riesentod"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
+                    "effect": [
+                        "Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, werden **Panisch** und **Verwundbar**.",
+                        "Falls diese Karte Tormund Riesentods Einheit zum Ziel hat, darf diese Einheit alle Würfel für die Bewegungsweite des Ansturms neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40311",
             "name": "Wildlingsdiplomatie",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
-                        "effect": [
-                            "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, bevor oder nachdem der Effekt jener Zone abgehandelt wird, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker. Bestimme dann 1 feindliche Kampfeinheit zum Ziel. Sie erleidet 1W3+1 Wunden."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Manke Rayder"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
+                    "effect": [
+                        "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, bevor oder nachdem der Effekt jener Zone abgehandelt wird, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker. Bestimme dann 1 feindliche Kampfeinheit zum Ziel. Sie erleidet 1W3+1 Wunden."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40312",
             "name": "Vorhersehbare Manöver",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn des ersten feindlichen Zuges in einer Runde:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit und 1 feindliche zivile Einheit zum Ziel.",
-                            "Falls eine der beiden Einheiten in diesem Zug eine Aktion durchführt, bevor sie jene Aktion abhandelt, führt 1 befreundete Kampfeinheit 1 Angriffs-, Manöver oder Rückzugsaktion durch."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Manke Rayder"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn des ersten feindlichen Zuges in einer Runde:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit und 1 feindliche zivile Einheit zum Ziel.",
+                        "Falls eine der beiden Einheiten in diesem Zug eine Aktion durchführt, bevor sie jene Aktion abhandelt, führt 1 befreundete Kampfeinheit 1 Angriffs-, Manöver oder Rückzugsaktion durch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40313",
             "name": "Langfristiger Plan",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Am Ende eines beliebigen Zuges, falls ein Gegner [LETTER] kontrolliert:",
-                        "effect": [
-                            "Durchsuche dein Taktikdeck nach 1 beliebigen Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
-                        ]
-                    },
-                    {
-                        "trigger": "Am Ende der Runde:",
-                        "effect": [
-                            "Durchsuche dein Taktikdeck nach 1 beliebigen Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
-                        ]
-                    },
-                    {
-                        "trigger": "Am Ende eines beliebigen Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Manke Rayder"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Am Ende eines beliebigen Zuges, falls ein Gegner [LETTER] kontrolliert:",
+                    "effect": [
+                        "Durchsuche dein Taktikdeck nach 1 beliebigen Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
+                    ]
+                },
+                {
+                    "trigger": "Am Ende der Runde:",
+                    "effect": [
+                        "Durchsuche dein Taktikdeck nach 1 beliebigen Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
+                    ]
+                },
+                {
+                    "trigger": "Am Ende eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40314",
             "name": "Blutige Trophäen",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
-                        "effect": [
-                            "Alle feindlichen Einheiten die sich mit dem Angreifer im Nahkampf befinden werden **Panisch**. Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit in Kurzer Reichweite zu dem Angreifer an.",
-                            "Solange diese Karte anliegt, wenn eine feindliche Einheit, die sich mit dieser Einheit im Nahkampf befindet, aktiviert wird, bevor sie ihre Aktion ausführt, wird die **Panisch**.",
-							"Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Rasselhemd"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
+                    "effect": [
+                        "Alle feindlichen Einheiten die sich mit dem Angreifer im Nahkampf befinden werden **Panisch**. Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit in Kurzer Reichweite zu dem Angreifer an.",
+                        "Solange diese Karte anliegt, wenn eine feindliche Einheit, die sich mit dieser Einheit im Nahkampf befindet, aktiviert wird, bevor sie ihre Aktion ausführt, wird die **Panisch**.",
+                        "Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40315",
             "name": "Waffentrophäen",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
-                        "effect": [
-                            "Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit innerhalb Kurzer Reichweite zum Angreifer an.",
-                            "Solange diese Karte an dieser Einheit anliegt, erhalten ihre Nahkampfangriffe +1 auf den Trefferwurf.",
-							"Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Rasselhemd"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
+                    "effect": [
+                        "Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit innerhalb Kurzer Reichweite zum Angreifer an.",
+                        "Solange diese Karte an dieser Einheit anliegt, erhalten ihre Nahkampfangriffe +1 auf den Trefferwurf.",
+                        "Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40316",
             "name": "Rüstungstrophäen",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
-                        "effect": [
-                            "Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit innerhalb Kurzer Reichweite zum Angreifer an.",
-                            "Solange diese Karte an dieser Einheit anliegt, erhält sie +1 auf das Ergebnis von Verteidigungswürfen und der Gegner kann keine **Verwundbar** -Marker von dieser Einheit ausgeben.",
-							"Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Rasselhemd"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat:",
+                    "effect": [
+                        "Lege diese Karte an 1 befreundete Infanterie- oder Kavallerie- Einheit innerhalb Kurzer Reichweite zum Angreifer an.",
+                        "Solange diese Karte an dieser Einheit anliegt, erhält sie +1 auf das Ergebnis von Verteidigungswürfen und der Gegner kann keine **Verwundbar** -Marker von dieser Einheit ausgeben.",
+                        "Einmal pro Zug, nachdem du eine Rasselhemd Taktikkarte angelegt hast, darfst du 1 Rasselhemd Taktikkarte von deiner Hand spielen, ignoriere den üblichen Auslöser."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40317",
             "name": "Überfalltaktik",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Diese Einheit führt 1 Rückzugsaktion durch.",
-                            "Falls diese Karte Harmas Einheit zum Ziel hat, wird jeder Feind, aus dessen Nahkampf sie sich löst, **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Diese Einheit führt 1 Rückzugsaktion durch.",
+                        "Falls diese Karte Harmas Einheit zum Ziel hat, wird jeder Feind, aus dessen Nahkampf sie sich löst, **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40318",
             "name": "Täuschungsmanöver",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen erfolgreichen Ansturm durchführt:",
-                        "effect": [
-                            "Falls sie die Front des Feindes berührt, lege das Bewegungstableau dieser Einheit stattdessen an eine beliebige Flanke jenes Feindes an.",
-                            "Falls sie eine Flanke des Feindes berührt, lege das Bewegungstableau dieser Einheit stattdessen an den Rücken jenes Feindes an."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen erfolgreichen Ansturm durchführt:",
+                    "effect": [
+                        "Falls sie die Front des Feindes berührt, lege das Bewegungstableau dieser Einheit stattdessen an eine beliebige Flanke jenes Feindes an.",
+                        "Falls sie eine Flanke des Feindes berührt, lege das Bewegungstableau dieser Einheit stattdessen an den Rücken jenes Feindes an."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40319",
             "name": "Rasche Neuaufstellung",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie wird um 2 Zoll verschoben.",
-                            "Falls diese Karte Harmas Einheit zum Ziel hat, führt jene Einheit stattdessen eine Manöveraktion durch, bei der sie sich 3 Zoll bewegen darf."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie wird um 2 Zoll verschoben.",
+                        "Falls diese Karte Harmas Einheit zum Ziel hat, führt jene Einheit stattdessen eine Manöveraktion durch, bei der sie sich 3 Zoll bewegen darf."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40320",
             "name": "Grausame Methoden",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit zum Ziel. Du darfst 1 **Panisch**-Marker von jener Einheit ausgeben. Falls du das tust, wähle 2 der folgenden Effekte:",
-                            "• 1 befreundete Infanterie-Einheit innerhalb Langer Reichweite heilt 2 Wunden. *(Dieser Effekt darf mehrfach gewählt werden.)*",
-                            "• Jener Feind wird **Verwundbar**.",
-                            "• Jener Feind wird **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "Der Weiner"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit zum Ziel. Du darfst 1 **Panisch**-Marker von jener Einheit ausgeben. Falls du das tust, wähle 2 der folgenden Effekte:",
+                        "• 1 befreundete Infanterie-Einheit innerhalb Langer Reichweite heilt 2 Wunden. *(Dieser Effekt darf mehrfach gewählt werden.)*",
+                        "• Jener Feind wird **Verwundbar**.",
+                        "• Jener Feind wird **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40321",
             "name": "Der Preis des Versagens",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer. Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "Der Weiner"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer. Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40322",
             "name": "Blutige Enthauptungen",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch**. Falls einer dieser Feinde bereits **Panisch** ist, muss er stattdessen 1 Panikprobe ablegen:",
-                            "Falls dieser Angriff eine feindliche Kampfeinheit vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch** und muss eine Panikprobe ablegen."
-						]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "Der Weiner"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch**. Falls einer dieser Feinde bereits **Panisch** ist, muss er stattdessen 1 Panikprobe ablegen:",
+                        "Falls dieser Angriff eine feindliche Kampfeinheit vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch** und muss eine Panikprobe ablegen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40323",
             "name": "Bitterer Untergang",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Infanterie- oder Kavallerie- Einheit zerstört wurde:",
-                        "effect": [
-                            "Bevor die Einheit vom Schlachtfeld entfernt wird, diese Einheit führt 1 Nahkampfangriff mit ihrem höchsten Angriffswürfelwert aus.",
-                            "Wenn es Styr's Einheit ist, darf jene Einheit beliebig viele Angriffswürfel neu werfen "
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr"
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Infanterie- oder Kavallerie- Einheit zerstört wurde:",
+                    "effect": [
+                        "Bevor die Einheit vom Schlachtfeld entfernt wird, diese Einheit führt 1 Nahkampfangriff mit ihrem höchsten Angriffswürfelwert aus.",
+                        "Wenn es Styr's Einheit ist, darf jene Einheit beliebig viele Angriffswürfel neu werfen "
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40324",
             "name": "Starrsinn der Thenn",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind:",
-                        "effect": [
-                            "Jene Einheit darf beliebig viele Würfel für diese Probe neu werfen. Falls sie innerhalb Kurzer Reichweite zu Styr ist, besteht sie diese Probe stattdessen.",
-                            "Falls diese Karte Styrs Einheit zum Ziel hat, bestimme 1 Feind zum Ziel, der mit ihr im Nahkampf ist. Er erleidet 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe dieser Einheit."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Jene Einheit darf beliebig viele Würfel für diese Probe neu werfen. Falls sie innerhalb Kurzer Reichweite zu Styr ist, besteht sie diese Probe stattdessen.",
+                        "Falls diese Karte Styrs Einheit zum Ziel hat, bestimme 1 Feind zum Ziel, der mit ihr im Nahkampf ist. Er erleidet 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe dieser Einheit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40325",
             "name": "Styrs Rache",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
-                            "Solange auf dieser Karte ein Befehlsmarker liegt, erhält die angelegte Einheit:",
-                            "Sobald diese Einheit angreift, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
+                        "Solange auf dieser Karte ein Befehlsmarker liegt, erhält die angelegte Einheit:",
+                        "Sobald diese Einheit angreift, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40326",
             "name": "Gelassen bleiben",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Monster-Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird:",
-                        "effect": [
-                            "Jene Einheit darf jene Aktion ersetzen durch:",
-                            "*Diese Einheit heilt bis zu 3 Wunden.*"
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Monster-Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird:",
+                    "effect": [
+                        "Jene Einheit darf jene Aktion ersetzen durch:",
+                        "*Diese Einheit heilt bis zu 3 Wunden.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40327",
             "name": "Trampeln",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Riesen-Einheit eine Ansturm- Aktion durchführt, bevor jene Aktion abgehandelt wird:",
-                        "effect": [
-                            "Jene Einheit ersetzt jene Ansturm-Aktion durch:",
-                            "*Drehe diese Einheit, bewege sie dann 10 Zoll durch andere Einheiten hindurch. Falls ihre Bewegung auf einer Einheit enden würde, endet sie stattdessen 1 Zoll von ihr entfernt. Jede Nicht-Einzeleinheit, durch die sich die Einheit bewegt hat oder auf der sie enden würde, erleidet 1W3 Wunden.*"
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Riesen-Einheit eine Ansturm- Aktion durchführt, bevor jene Aktion abgehandelt wird:",
+                    "effect": [
+                        "Jene Einheit ersetzt jene Ansturm-Aktion durch:",
+                        "*Drehe diese Einheit, bewege sie dann 10 Zoll durch andere Einheiten hindurch. Falls ihre Bewegung auf einer Einheit enden würde, endet sie stattdessen 1 Zoll von ihr entfernt. Jede Nicht-Einzeleinheit, durch die sich die Einheit bewegt hat oder auf der sie enden würde, erleidet 1W3 Wunden.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40328",
             "name": "Erzürnen",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn der Aktivierung einer befreundeten Monster-Einheit:",
-                        "effect": [
-                            "Jene Einheit erleidet 2 Wunden.",
-                            "Bis zum Ende des Zuges darf jene Einheit beliebig viele Angriffswürfel neu werfen und Verteidiger werden **Panisch** und **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn der Aktivierung einer befreundeten Monster-Einheit:",
+                    "effect": [
+                        "Jene Einheit erleidet 2 Wunden.",
+                        "Bis zum Ende des Zuges darf jene Einheit beliebig viele Angriffswürfel neu werfen und Verteidiger werden **Panisch** und **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40329",
             "name": "Befehle des Häuptlings",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn der Aktivierung von Mag der Mächtige:",
-                        "effect": [
-                            "Mag darf seine Aktion ersetzen durch:",
-                            "*1 befreundete Riesen-Einheit innerhalb Langer Reichweite führt 1 Aktion durch.*"
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn der Aktivierung von Mag der Mächtige:",
+                    "effect": [
+                        "Mag darf seine Aktion ersetzen durch:",
+                        "*1 befreundete Riesen-Einheit innerhalb Langer Reichweite führt 1 Aktion durch.*"
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40330",
             "name": "Monster aus dem Norden",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind innerhalb Kurzer Reichweite zu einer befreundeten Monster-Einheit aktiviert wird:",
-                        "effect": [
-                            "Jener Feind muss 1 Panikprobe ablegen und erhält für jede befreundete Monster-Einheit innerhalb Kurzer Reichweite –1 auf das Ergebnis dieser Panikprobe, bis zu –3. Falls er scheitert, erleidet er für jede befreundete Monster-Einheit innerhalb Kurzer Reichweite +1 Wunde, bis zu +3."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind innerhalb Kurzer Reichweite zu einer befreundeten Monster-Einheit aktiviert wird:",
+                    "effect": [
+                        "Jener Feind muss 1 Panikprobe ablegen und erhält für jede befreundete Monster-Einheit innerhalb Kurzer Reichweite –1 auf das Ergebnis dieser Panikprobe, bis zu –3. Falls er scheitert, erleidet er für jede befreundete Monster-Einheit innerhalb Kurzer Reichweite +1 Wunde, bis zu +3."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40331",
             "name": "Die letzten ihrer Art",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Riesen-Einheit vernichtet wird:",
-                        "effect": [
-                            "1 andere befreundete Riesen-Einheit führt 1 Angriff oder 1 Ansturm-Aktion durch."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Riesen-Einheit vernichtet wird:",
+                    "effect": [
+                        "1 andere befreundete Riesen-Einheit führt 1 Angriff oder 1 Ansturm-Aktion durch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40332",
             "name": "Herausforderndes Gebrüll",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Monster-Einheit eine Moralprobe besteht:",
-                        "effect": [
-                            "Bestimme alle Feinde, die mit dieser Einheit im Nahkampf sind, zum Ziel. Sie werden **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Monster-Einheit eine Moralprobe besteht:",
+                    "effect": [
+                        "Bestimme alle Feinde, die mit dieser Einheit im Nahkampf sind, zum Ziel. Sie werden **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40333",
             "name": "Felsbrocken schleudern",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Riesen-Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird:",
-                        "effect": [
-                            "Jene Einheit ersetzt jene Aktion dadurch, dass sie den folgenden Fernkampfangriff durchführt:",
-                            "[ATTACK:LongRanged:Felsbrocken schleudern:3+1]",
-                            "Falls dieser Angriff beliebig viele Treffer erzeugt, wirft der Verteidiger keine Verteidigungswürfel. Stattdessen erleidet er 1W3 Wunden und erhält für jede verbleibende Schlachtreihe in jener Einheit +1 Wunde."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Riesen-Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird:",
+                    "effect": [
+                        "Jene Einheit ersetzt jene Aktion dadurch, dass sie den folgenden Fernkampfangriff durchführt:",
+                        "[ATTACK:LongRanged:Felsbrocken schleudern:3+1]",
+                        "Falls dieser Angriff beliebig viele Treffer erzeugt, wirft der Verteidiger keine Verteidigungswürfel. Stattdessen erleidet er 1W3 Wunden und erhält für jede verbleibende Schlachtreihe in jener Einheit +1 Wunde."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40334",
             "name": "Überrennen",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Kampfeinheit nachsetzt:",
-                        "effect": [
-                            "Statt nachzusetzen, führt diese Einheit 1 Ansturm- oder Marschaktion durch."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit nachsetzt:",
+                    "effect": [
+                        "Statt nachzusetzen, führt diese Einheit 1 Ansturm- oder Marschaktion durch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40335",
             "name": "Überraschungsangriff",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn der Aktivierung einer befreundeten Monster-Einheit:",
-                        "effect": [
-                            "Jene Einheit wird **Verwundbar**. Jene Einheit erhält bis zum Ende des Zuges +2 [MOVEMENT] und darf beliebig viele Würfel für die Bewegungsweite eines Ansturms neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag der Mächtige",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn der Aktivierung einer befreundeten Monster-Einheit:",
+                    "effect": [
+                        "Jene Einheit wird **Verwundbar**. Jene Einheit erhält bis zum Ende des Zuges +2 [MOVEMENT] und darf beliebig viele Würfel für die Bewegungsweite eines Ansturms neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40336",
             "name": "Durchhaltevermögen",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Solange diese Karte an dieser Einheit anliegt, erhalten die Angriffe/Nahkampfangriffe dieser Einheit die folgenden Effekte basierend auf der Spielrunde *(die Effekte sind kumulativ)*:",
-                            "**3+**: Die Einheit darf beliebig viele Fehlschläge neu werfen.",
-                            "**4+**: **Spaltschlag**",
-                            "**5+**: **Kritischer Treffer**",
-                            "**6+**: +2 Angriffswürfel"
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "Das grosse Walross",
-                "commander_subname": "Lord der Eisigen Küste"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Solange diese Karte an dieser Einheit anliegt, erhalten die Angriffe/Nahkampfangriffe dieser Einheit die folgenden Effekte basierend auf der Spielrunde *(die Effekte sind kumulativ)*:",
+                        "**3+**: Die Einheit darf beliebig viele Fehlschläge neu werfen.",
+                        "**4+**: **Spaltschlag**",
+                        "**5+**: **Kritischer Treffer**",
+                        "**6+**: +2 Angriffswürfel"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40337",
             "name": "Widerstand der Eisigen Küste",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind einen Angriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
-                        "effect": [
-                            "Bestimme den Verteidiger zum Ziel. Er darf beliebig viele Verteidigungswürfel neu werfen.",
-                            "Falls der Verteidiger eine Eisige-Küste-Einheit ist, darf er zudem beliebig viele Würfel der Panikprobe dieses Angriffs neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "Das grosse Walross",
-                "commander_subname": "Lord der Eisigen Küste"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind einen Angriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
+                    "effect": [
+                        "Bestimme den Verteidiger zum Ziel. Er darf beliebig viele Verteidigungswürfel neu werfen.",
+                        "Falls der Verteidiger eine Eisige-Küste-Einheit ist, darf er zudem beliebig viele Würfel der Panikprobe dieses Angriffs neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40338",
             "name": "Stärke des Walrosses",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Bestimme 1 freundliche Infanterie- oder Kavallerie-Einheit zum Ziel. Lege diese Karte bis zum Ende des Spieles an sie an.",
-                            "Solange diese Karte an der Einheit anliegt, wenn sie aktiviert, heilt sie 1 Wunde.",
-							"Wenn sie sich in Kurzer Reichweite zum grossen Walross befindet, darf sie zusätzlich 1 Zustandsmarker ablegen."
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "Das grosse Walross",
-                "commander_subname": "Lord der Eisigen Küste"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 freundliche Infanterie- oder Kavallerie-Einheit zum Ziel. Lege diese Karte bis zum Ende des Spieles an sie an.",
+                        "Solange diese Karte an der Einheit anliegt, wenn sie aktiviert, heilt sie 1 Wunde.",
+                        "Wenn sie sich in Kurzer Reichweite zum grossen Walross befindet, darf sie zusätzlich 1 Zustandsmarker ablegen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40339",
             "name": "Gefährten herbeirufen",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines feindlichen Zuges:",
-                        "effect": [
-                            "Wähle entweder Schattenkatze oder Wolfsrudel. Falls jene Einheit auf dem Schlachtfeld ist, darfst du sie vom Schachtfeld entfernen.",
-                            "Danach, falls jene Einheit nicht auf dem Schlachtfeld ist (entweder durch diesen Effekt oder weil sie vernichtet worden ist), stelle sie vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand wieder auf. Falls jene Einheit in dieser Runde bereits aktiviert worden ist, wird sie aktiviert wieder aufgestellt."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sechsleib",
-                "commander_subname": "Meisterhafter Leibwechsler"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines feindlichen Zuges:",
+                    "effect": [
+                        "Wähle entweder Schattenkatze oder Wolfsrudel. Falls jene Einheit auf dem Schlachtfeld ist, darfst du sie vom Schachtfeld entfernen.",
+                        "Danach, falls jene Einheit nicht auf dem Schlachtfeld ist (entweder durch diesen Effekt oder weil sie vernichtet worden ist), stelle sie vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand wieder auf. Falls jene Einheit in dieser Runde bereits aktiviert worden ist, wird sie aktiviert wieder aufgestellt."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         },
         {
             "id": "40340",
             "name": "Gebundene Wächter",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit angegriffen worden ist:",
-                        "effect": [
-                            "Bestimme 1 andere befreundete Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit zum Ziel.",
-                            "Sie führt 1 Angriffs-, Ansturm- oder Manöveraktion durch. Falls sie angreift oder einen Ansturm durchführt, muss sie den Angreifer zum Ziel bestimmen."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sechsleib",
-                "commander_subname": "Meisterhafter Leibwechsler"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit angegriffen worden ist:",
+                    "effect": [
+                        "Bestimme 1 andere befreundete Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit zum Ziel.",
+                        "Sie führt 1 Angriffs-, Ansturm- oder Manöveraktion durch. Falls sie angreift oder einen Ansturm durchführt, muss sie den Angreifer zum Ziel bestimmen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         },
         {
             "id": "40341",
             "name": "Gebundener Befehl",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit aktiviert wird:",
-                        "effect": [
-                            "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit innerhalb Langer Reichweite zum Ziel. Sie führt 1 Aktion durch."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sechsleib",
-                "commander_subname": "Meisterhafter Leibwechsler"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit aktiviert wird:",
+                    "effect": [
+                        "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere Varamyr-, Schattenkatze- oder Wolfsrudel-Einheit innerhalb Langer Reichweite zum Ziel. Sie führt 1 Aktion durch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Keine Münzen jenseits der Mauer",
             "id": "50399",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.5,
-                    "crests": 1,
-                    "text": [
-                        "**Eine Armee des Freien Volks kann keine Neutralen Einheiten und/oder Verstärkungen enthalten.**"
-                    ]
-                }
-            },
-            "type": "faction"
+            "name": "Keine Münzen jenseits der Mauer",
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**Eine Armee des Freien Volks kann keine Neutralen Einheiten und/oder Verstärkungen enthalten.**"
+                ]
+            }
         },
         {
-            "name": "Häuptling der Riesen",
             "id": "50301",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "S06",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "**Du darfst Mag den Mächtigen als deinen Heerführer wählen.**",
-                        "Falls du das tust, senke seine Kosten auf 5 *(statt 9)* und, für jeden nicht ausgegeben extra Verstärkungpunkt, reduziere Mag´s Kosten um 1.",
-                        "Sobald du Mag den Mächtigen als deinen Heerführer hinzugefügst, ersetze das Freie-Volk-Taktikdeck mit Mags Taktikdeck."
-                    ]
-                },
-                "back": {
-                    "style": "commander",
-                    "data": {
-                        "cost": 5,
-                        "name": "Mag der Mächtige",
-                        "subname": "Mag Mar Tun Doh Weg",
-                        "quote": "„Du kannst vor ihm niederknien, wenn du willst, es wird ihn nicht stören.“ – Tormund Riesentod",
-                        "type": "monster",
-                        "tactics": [
-                            "Ersetze das Freie-Volk-Taktikdeck mit Mags Taktikdeck."
-                        ]
-                    }
-                }
+            "name": "Häuptling der Riesen",
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "special",
+            "category": "commander",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "**Du darfst Mag den Mächtigen als deinen Heerführer wählen.**",
+                    "Falls du das tust, senke seine Kosten auf 5 *(statt 9)* und, für jeden nicht ausgegeben extra Verstärkungpunkt, reduziere Mag´s Kosten um 1.",
+                    "Sobald du Mag den Mächtigen als deinen Heerführer hinzugefügst, ersetze das Freie-Volk-Taktikdeck mit Mags Taktikdeck."
+                ]
             },
-            "type": "commander"
+            "back": {
+                "style": "commander",
+                "data": {
+                    "cost": 5,
+                    "name": "Mag der Mächtige",
+                    "title": "Mag Mar Tun Doh Weg",
+                    "quote": "„Du kannst vor ihm niederknien, wenn du willst, es wird ihn nicht stören.“ – Tormund Riesentod",
+                    "type": "monster",
+                    "tactics": [
+                        "Ersetze das Freie-Volk-Taktikdeck mit Mags Taktikdeck."
+                    ]
+                }
+            }
         },
         {
-            "name": "Varamyr Sechsleib",
             "id": "50302",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021-S02",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "Du darfst Varamyr Sechsleib als deinen Heerführer wählen. Falls du das tust, senke seine Kosten auf 2.",
-                        "Sobald du Varamyr als deinen Heerführer hinzufügst, musst du deiner Armee auch Schattenkatze und Wolfsrudel hinzufügen."
-                    ]
-                },
-                "back": {
-                    "style": "commander",
-                    "data": {
-                        "cost": 2,
-                        "name": "Varamyr Sechsleib",
-                        "subname": "Meisterhafter Leibwechsler",
-                        "quote": "„Ein bösartiger kleiner Zwerg.“ – Tormund Riesentod",
-                        "type": "monster",
-                        "tactics": [
-                            "Gebundene Befehle",
-                            "Gebundene Wächter",
-                            "Gefährten herbeirufen"
-                        ]
-                    }
-                }
+            "name": "Varamyr Sechsleib",
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "special",
+            "category": "commander",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "Du darfst Varamyr Sechsleib als deinen Heerführer wählen. Falls du das tust, senke seine Kosten auf 2.",
+                    "Sobald du Varamyr als deinen Heerführer hinzufügst, musst du deiner Armee auch Schattenkatze und Wolfsrudel hinzufügen."
+                ]
             },
-            "type": "commander"
+            "back": {
+                "style": "commander",
+                "data": {
+                    "cost": 2,
+                    "name": "Varamyr Sechsleib",
+                    "title": "Meisterhafter Leibwechsler",
+                    "quote": "„Ein bösartiger kleiner Zwerg.“ – Tormund Riesentod",
+                    "type": "monster",
+                    "tactics": [
+                        "Gebundene Befehle",
+                        "Gebundene Wächter",
+                        "Gefährten herbeirufen"
+                    ]
+                }
+            }
         }
     ]
 }

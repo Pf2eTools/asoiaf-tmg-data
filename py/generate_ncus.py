@@ -1,31 +1,26 @@
+from PIL.Image import Resampling
 from generate_utils import *
-from image_editor import ImageEditor
+from song_data import *
 
 
 class ImageGeneratorNCUs(ImageGenerator):
-    def generate(self, data):
-        ncu_id = data.get("id")
-        name = data.get("name")
-        subname = data.get("subname")
-        statistics = data.get("statistics")
-        faction = statistics.get("faction")
-        version = statistics.get("version")
-        abilities = statistics.get("abilities")
+    def generate(self, context):
+        data: SongDataNCU = context["data"]
 
-        background = self.asset_manager.get_bg(faction)
+        background = self.asset_manager.get_bg(data.faction)
         w, h = background.size
         ncu_card = Image.new("RGBA", (w, h))
-        ncu_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
+        ncu_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(data.faction)))
         text_bg = self.asset_manager.get_text_bg()
         text_bg = text_bg.crop((10, 20, text_bg.size[0] - 10, text_bg.size[1] - 5))
         ncu_card.alpha_composite(text_bg, (57, 356))
-        portrait = self.asset_manager.get_ncu_img(ncu_id)
+        portrait = self.asset_manager.get_ncu_img(data.id)
         ncu_card.alpha_composite(portrait, (52, 54))
 
         bars = Image.new("RGBA", (w, h))
-        large_bar, small_bar, weird_bar = self.asset_manager.get_bars(faction)
-        unit_type = self.asset_manager.get_unit_type("NCU", faction)
-        decor = self.asset_manager.get_decor(faction)
+        large_bar, small_bar, weird_bar = self.asset_manager.get_bars(data.faction)
+        unit_type = self.asset_manager.get_unit_type("NCU", data.faction)
+        decor = self.asset_manager.get_decor(data.faction)
 
         wb_w, wb_h = weird_bar.size
         bars.alpha_composite(weird_bar.crop((0, 0, 130, 150)), (52, 52))
@@ -61,10 +56,10 @@ class ImageGeneratorNCUs(ImageGenerator):
 
         # region cardtext
         sections = []
-        for ability in abilities:
+        for ability in data.abilities:
             section = TextEntry([
-                TextEntry(TextEntry(f"**{ability.get('name').upper()}**", styles=TextStyle(font_color=self.faction_store.text_color(faction)))),
-                *[TextEntry(TextEntry(e)) for e in ability.get("effect", [])]
+                TextEntry(TextEntry(f"**{ability.name.upper()}**", styles=TextStyle(font_color=self.faction_store.text_color(data.faction)))),
+                *[TextEntry(TextEntry(e)) for e in ability.effect]
             ])
             sections.append(section)
 
@@ -85,10 +80,10 @@ class ImageGeneratorNCUs(ImageGenerator):
 
         # region name
         names = [
-            TextEntry(TextEntry(name.upper(), styles=TextStyle(leading=850, bold=True)))
+            TextEntry(TextEntry(data.name.upper(), styles=TextStyle(leading=850, bold=True)))
         ]
-        if subname is not None:
-            names.append(TextEntry(TextEntry(subname.upper(), styles=TextStyle(font_size=0.6, leading=950, padding=Spacing(0, 40)))))
+        if data.title is not None:
+            names.append(TextEntry(TextEntry(data.title.upper(), styles=TextStyle(font_size=0.6, leading=950, padding=Spacing(0, 40)))))
         name_entries = TextEntry.from_array(names, styles=RootStyle(font_color="white", font_size=50, stroke_width=0.1,
                                                                     paragraph_padding=80))
         rd_names = self.text_renderer.render(name_entries, bbox=(362, 160), margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
@@ -96,45 +91,41 @@ class ImageGeneratorNCUs(ImageGenerator):
         all_text.alpha_composite(rd_names, (326, 62))
         # endregion name
 
-        entry_version = TextEntry.from_string(version, styles=RootStyle(font_size=20, italic=True, font_color="white", leading=1000,
+        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, font_color="white", leading=1000,
                                                                         tracking=-10, stroke_width=0))
         rd_version = self.text_renderer.render(entry_version, bbox=(100, 25), align_y=TextRenderer.ALIGN_BOTTOM,
                                                align_x=TextRenderer.ALIGN_LEFT, supersample=1.0, margin=Spacing(0, 5))
         all_text.alpha_composite(rd_version.rotate(90, expand=1), (19, h - 170))
 
         ncu_card.alpha_composite(apply_drop_shadow(bars, color="#00000055", shadow_size=5), (-20, -20))
-        crest = self.asset_manager.get_crest(faction)
-        crest = crest.rotate(-12, expand=1, resample=Image.BICUBIC)
+        crest = self.asset_manager.get_crest(data.faction)
+        crest = crest.rotate(-12, expand=1, resample=Resampling.BICUBIC)
         crest = crest.crop(crest.getbbox())
-        crest = crest.resize((int(crest.size[0] * 162 / crest.size[1]), 162), resample=Image.LANCZOS)
+        crest = crest.resize((int(crest.size[0] * 162 / crest.size[1]), 162), resample=Resampling.LANCZOS)
         ncu_card.alpha_composite(apply_drop_shadow(crest, color="#00000055", shadow_size=5), (674 - crest.width, 192))
         ncu_card.alpha_composite(all_text)
 
         return ncu_card
 
-    def generate_back(self, data):
-        ncu_id = data.get("id")
-        language = data.get("language")
-        name = data.get("name")
-        subname = data.get("subname")
-        statistics = data.get("statistics")
-        faction = statistics.get("faction")
-        fluff = data.get("fluff")
+    def generate_back(self, context):
+        data: SongDataNCU = context["data"]
+        language = context["meta"].language
+        tactics = context["tactics"]
 
-        background = self.asset_manager.get_bg(faction)
+        background = self.asset_manager.get_bg(data.faction)
         w, h = background.size
         ncu_card = Image.new("RGBA", (w, h))
-        ncu_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(faction)))
+        ncu_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(data.faction)))
 
-        portrait = self.asset_manager.get_ncu_back_img(ncu_id)
+        portrait = self.asset_manager.get_ncu_back_img(data.id)
         ncu_card.alpha_composite(portrait, (135, 332))
 
         bars = Image.new("RGBA", (w, h))
         bars_lower = Image.new("RGBA", (w, h))
         bars_upper = Image.new("RGBA", (w, h))
-        large_bar, small_bar, corner_bar = self.asset_manager.get_bars(faction)
-        unit_type = self.asset_manager.get_unit_type("NCU", faction)
-        decor = self.asset_manager.get_decor(faction)
+        large_bar, small_bar, corner_bar = self.asset_manager.get_bars(data.faction)
+        unit_type = self.asset_manager.get_unit_type("NCU", data.faction)
+        decor = self.asset_manager.get_decor(data.faction)
         wb_w, wb_h = corner_bar.size
         lb_w, lb_h = large_bar.size
         sb_w, sb_h = small_bar.size
@@ -168,60 +159,58 @@ class ImageGeneratorNCUs(ImageGenerator):
         layer_text = Image.new("RGBA", (w, h))
 
         # TODO: not implemented: more than 1 requirement (as of now there are no ncus with more than 1)
-        requirements = statistics.get("requirements")
-        tactics = data.get("tactics")
         back_text_y = 812
-        if requirements is not None or tactics is not None:
+        if data.back_text or tactics:
             text_bg = self.asset_manager.get_text_bg().crop((0, 0, portrait.width, 180))
             ncu_card.alpha_composite(text_bg, (135, back_text_y))
             bars.alpha_composite(small_bar.crop((0, 0, 560, small_bar.size[1])), (140, back_text_y - sb_h // 2))
             bars.alpha_composite(decor, (98 + (lb_h - decor.width) // 2, back_text_y - decor.height // 2))
             bars.alpha_composite(decor, (674, back_text_y - decor.height // 2))
 
-        if requirements is not None:
-            if requirements[0].get("name") is not None:
-                box_name = self.render_small_box(faction, requirements[0].get("name").upper(), self.faction_store.text_color(faction))
+        if data.back_text:
+            if data.back_text[0].name:
+                box_name = self.render_small_box(data.faction, data.back_text[0].name.upper(), self.faction_store.text_color(data.faction))
                 box_name = apply_drop_shadow(box_name)
                 layer_crests.alpha_composite(box_name, (415 - box_name.width // 2, back_text_y - box_name.height // 2))
                 bbox = (520, 144)
                 back_text_y += 20
             else:
                 bbox = (520, 164)
-            entries = get_requirement_data_for_renderer(requirements)
+            entries = get_requirement_data_for_renderer(data.back_text)
             rd_requirements = self.text_renderer.render(entries, bbox=bbox, align_y=TextRenderer.CENTER_SECTION, margin=Spacing(20))
             layer_text.alpha_composite(rd_requirements, (155, back_text_y + sb_h // 2))
-        elif tactics is not None:
-            tactics_to_render = TextEntry.from_array([TextEntry(TextEntry(t)) for t in tactics["cards"].values()],
+        elif tactics:
+            tactics_to_render = TextEntry.from_array([TextEntry(TextEntry(t.name)) for t in tactics],
                                                      styles=RootStyle(font_size=36, font_color="#5d4d40", italic=True, leading=800,
                                                                       paragraph_padding=300))
             rd_tactics = self.text_renderer.render(tactics_to_render, bbox=(portrait.width - 15, 150), align_y=TextRenderer.ALIGN_TOP,
                                                    align_x=TextRenderer.ALIGN_CENTER, margin=Spacing(20, 10, 10))
             layer_text.alpha_composite(rd_tactics, (146, 15 + back_text_y + sb_h // 2))
 
-            box_cmdr = self.render_commander_box(faction, language)
+            box_cmdr = self.render_commander_box(data.faction, language)
             box_cmdr = apply_drop_shadow(box_cmdr)
             layer_crests.alpha_composite(box_cmdr, (415 - box_cmdr.width // 2, back_text_y - box_cmdr.height // 2))
 
-        box_character = self.render_character_box(faction, language)
+        box_character = self.render_character_box(data.faction, language)
         layer_crests.alpha_composite(apply_drop_shadow(box_character), (234, 266))
-        rendered_cost = self.render_cost(statistics.get("cost", 0), self.faction_store.highlight_color(faction), statistics.get("commander"))
+        rendered_cost = self.render_cost(data.cost, self.faction_store.highlight_color(data.faction), data.commander)
         layer_crests.alpha_composite(apply_drop_shadow(rendered_cost), (38, 194))
-        crest = self.asset_manager.get_crest(faction)
+        crest = self.asset_manager.get_crest(data.faction)
         crest = crest.crop(crest.getbbox())
-        crest = crest.rotate(14, expand=1, resample=Image.BICUBIC)
+        crest = crest.rotate(14, expand=1, resample=Resampling.BICUBIC)
         crest_size = min(198, int(crest.size[0] * 228 / crest.size[1])), min(228, int(crest.size[1] * 198 / crest.size[0]))
         crest = crest.resize(crest_size)
         crest_resize_x, crest_resize_y = 121 - crest.size[0] // 2, 390 - crest.size[1] // 2
         layer_crests.alpha_composite(apply_drop_shadow(crest), (crest_resize_x, crest_resize_y))
 
         names = [
-            TextEntry(name.upper(), styles=TextStyle(bold=True))
+            TextEntry(data.name.upper(), styles=TextStyle(bold=True))
         ]
-        if subname is not None:
-            names.append(TextEntry(subname.upper(), styles=TextStyle(font_size=0.55, padding=Spacing(0, 40))))
+        if data.title is not None:
+            names.append(TextEntry(data.title.upper(), styles=TextStyle(font_size=0.55, padding=Spacing(0, 40))))
         paras = [TextEntry(names)]
-        if fluff.get("quote") is not None:
-            paras.append(TextEntry(TextEntry(fluff.get("quote"), styles=TextStyle(font_size=0.6, italic=True))))
+        if data.fluff and data.fluff.quote:
+            paras.append(TextEntry(TextEntry(data.fluff.quote, styles=TextStyle(font_size=0.6, italic=True))))
         entries = TextEntry.from_array(paras, styles=RootStyle(font_color="white", font_size=54, stroke_width=0.1, leading=1000,
                                                                paragraph_padding=300))
         rd_names = self.text_renderer.render(entries, bbox=(540, 224), margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
@@ -234,115 +223,3 @@ class ImageGeneratorNCUs(ImageGenerator):
         ncu_card.alpha_composite(layer_crests)
         ncu_card.alpha_composite(layer_text)
         return ncu_card
-
-
-def main():
-    from asset_manager import AssetManager
-    cressen = {
-        "id": "30613",
-        "name": "Cressen",
-        "subname": "Maester at Dragonstone",
-        "statistics": {
-            "version": "2021",
-            "faction": "baratheon",
-            "cost": 5,
-            "abilities": [
-                {
-                    "name": "Sacrifice for the King",
-                    "effect": [
-                        "At the start of any Round, you may Activate Cressen. If you do, destroy Cressen at the end of the Round."
-                    ]
-                },
-                {
-                    "name": "Loving Counsel",
-                    "effect": [
-                        "Each time Cressen Claims [CROWN], you may replace that zone's effect with:\n*Draw 2 Tactics cards and place any 1 Condition Token on an enemy Combat Unit.*"
-                    ]
-                }
-            ],
-            "requirements": [
-                {
-                    "name": "Loyalty",
-                    "heading": "STANNIS BARATHEON",
-                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
-                }
-            ]
-        },
-        "fluff": {
-            "quote": "\"I had a maester on Dragonstone who was almost a father to me.\"- Stannis Baratheon"
-        },
-    }
-    olenna = {
-        "id": "30609",
-        "name": "Olenna Tyrell",
-        "subname": "Queen of Thorns",
-        "statistics": {
-            "version": "2021",
-            "faction": "baratheon",
-            "cost": 5,
-            "abilities": [
-                {
-                    "name": "Pulling Weeds",
-                    "effect": [
-                        "Each time Olenna Claims a zone, target 1 enemy NCU and choose 1:",
-                        "• That NCU loses all Abilities until the end of the Round.",
-                        "• If that NCU Claims a zone this Round, before resolving that zone's effect, target 1 enemy Combat Unit. They suffer D3 Hits and becomes **Weakened**."
-                    ]
-                }
-            ],
-            "requirements": [
-                {
-                    "name": "Loyalty",
-                    "heading": "RENLY BARATHEON",
-                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
-                }
-            ]
-        },
-        "fluff": {
-            "quote": "\"All men are fools, if truth be told, but the ones in motley are more amusing than the ones in crowns.\""
-        }
-    }
-    doran = {
-        "id": "30901",
-        "name": "Doran Martell",
-        "subname": "Lord of Sunspear",
-        "statistics": {
-            "version": "S04",
-            "faction": "martell",
-            "cost": 4,
-            "abilities": [
-                {
-                    "name": "Proxy Orders",
-                    "effect": [
-                        "Each time Doran Martell Claims a zone, you may replace that zone's effect with:",
-                        "*Choose 1:",
-                        "• Areo Hotah's unit may Pivot then perform 1 March Action.",
-                        "• Areo Hotah's unit may perform 1 Retreat Action.*"
-                    ]
-                }
-            ],
-            "commander": True
-        },
-        "fluff": {
-            "quote": "\"I am not blind, nor deaf.\""
-        },
-        "tactics": {
-            "cards": {
-                "40911": "False Agenda",
-                "40912": "Parlay",
-                "40913": "Ripe to Act"
-            }
-        }
-    }
-    data = olenna
-    am = AssetManager()
-    gen = ImageGeneratorNCUs(am, TextRenderer(am))
-    # card = gen.generate(data)
-    card = gen.generate_back(data)
-    faction = data.get("statistics").get("faction")
-    org = Image.open(f"./generated/en/{faction}/{data['id']}b.jpg").convert("RGBA")
-    editor = ImageEditor(card, org)
-
-
-if __name__ == "__main__":
-    main()

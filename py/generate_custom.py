@@ -1,158 +1,129 @@
 import os.path
-from generate import Generator, load_json
-from generate_utils import TextRenderer, LanguageStore, FactionStore
-from generate_tactics import ImageGeneratorTactics
-from generate_units import ImageGeneratorUnits
-from generate_ncus import ImageGeneratorNCUs
-from generate_attachments import ImageGeneratorAttachments
-from generate_specials import ImageGeneratorSpecials
+
+from generate import *
 from asset_manager import CustomAssetManager, get_path_or_dialogue
 from image_cropper import *
-from pathlib import Path
+from song_data import *
 import argparse
 
 
 class CustomGenerator(Generator):
-    def __init__(self, ig_tactics, ig_units, ig_ncus, ig_attachments, ig_specials, custom_data, overwrite=False, get_path=None, filter_data=None):
-        super().__init__(ig_tactics, ig_units, ig_ncus, ig_attachments, ig_specials, overwrite, get_path, filter_data)
-        self.custom_data = custom_data
-        self._meta = custom_data.get("_meta")
+    def __init__(self, custom_id, custom_languages, custom_factions, custom_icons):
+        self.custom_id = custom_id
+        self.custom_languages = custom_languages
+        self.custom_factions = custom_factions
+        self.custom_icons = custom_icons
 
-    def _get_path(self, data_object, back=False):
-        custom_data_id = self._meta.get("id")
-        data_id = data_object.get("id")
-        back_str = "b" if back else ""
-        return f"./custom/generated/{custom_data_id}/", f"{data_id}{back_str}.jpg"
+    def generator_factory(self, entity: SongEntity):
+        am = CustomAssetManager(self.custom_id)
+        tr = TextRenderer(am)
 
-    def get_abilitiy_data(self, language):
-        with open(f"{DATA_PATH}/en/abilities.json", "r", encoding="utf-8") as file:
-            abilities_data = json.load(file)
+        if self.custom_icons is not None:
+            tr.inject_icons(self.custom_icons)
 
-        if language == "en":
-            pass
-        else:
-            if language in LanguageStore.BASE_LANGUAGES.keys():
-                lang_path = f"{DATA_PATH}/{language}/abilities.json"
-            else:
-                lang_path = f"./custom/data/{language}-abilities.json"
-            if os.path.exists(lang_path):
-                with open(lang_path, "r", encoding="utf-8") as file:
-                    translated_abilities_data = json.load(file)
-                abilities_data.update(translated_abilities_data)
+        ls = self.get_language_store()
+        fs = self.get_faction_store()
 
-        abilities_data.update(self.custom_data.get("abilities", {}))
+        if isinstance(entity, SongDataTactics):
+            return ImageGeneratorTactics(am, tr, language_store=ls, faction_store=fs)
+        elif isinstance(entity, SongDataSpecials):
+            return ImageGeneratorSpecials(am, tr)
+        elif isinstance(entity, SongDataNCU):
+            return ImageGeneratorNCUs(am, tr)
+        elif isinstance(entity, SongDataUnit):
+            return ImageGeneratorUnits(am, tr)
+        elif isinstance(entity, SongDataAttachment):
+            return ImageGeneratorAttachments(am, tr)
 
-        return abilities_data
+        return None
 
-    def generate_all(self):
-        data = self.mutate_data(self.custom_data)
-        language = self._meta.get("language", "en")
-        self.generate(data, language)
+    def get_language_store(self):
+        language_store = LanguageStore()
+        if self.custom_languages is not None:
+            for lang_key, lang_data in self.custom_languages.items():
+                language_store.inject_language(lang_key, lang_data)
+        return language_store
 
+    def get_faction_store(self):
+        faction_store = FactionStore()
+        if self.custom_factions is not None:
+            for faction_name, faction_data in self.custom_factions.items():
+                faction_store.inject_faction(faction_name, faction_data)
+        return faction_store
 
-def filter_data_custom(data_obj):
-    data_id = data_obj.get("id")
-    data_type = data_obj.get("type")
-    statistics = data_obj.get("statistics")
-    faction = statistics.get("faction")
-    sides = [
-        "face",
-        "back"
-    ]
+    @staticmethod
+    def _default_saves(context, sides):
+        entity: SongEntity = context["data"]
+        meta = context["meta"]
+        out = {"front": [], "back": []}
+        for side in sides:
+            back_str = "b" if side == "back" else ""
+            out[side].append({
+                "fp": f"./custom/generated/{meta.id}/{entity.id}{back_str}.jpg"
+            })
 
-    ids = [
-    ]
-    types = [
-    ]
-    factions = [
-    ]
+        return out
 
-    if ids and data_id not in ids:
-        return []
-    if types and data_type not in types:
-        return []
-    if factions and faction not in factions:
-        return []
-
-    return sides
-
+    @staticmethod
+    def _default_filter(context):
+        filter_func = get_filter(
+            languages=[
+            ],
+            ids=[
+            ],
+            roles=[
+            ],
+            factions=[
+            ],
+            versions=[
+            ],
+        )
+        return filter_func(context)
 
 def main(path, skip_portrait=True, overwrite=True):
-    json_data = load_json(path)
+    data = DataLoader.load_structured(path)
+    meta = data.meta
 
-    meta = json_data.get("_meta")
-    if meta is None or meta.get("id") is None:
-        raise Exception("Invalid custom data!")
-    custom_data_id = meta.get("id")
-
-    language_store = LanguageStore()
-    custom_languages = json_data.get("languages")
-    if custom_languages is not None:
-        for lang_key, lang_data in custom_languages.items():
-            language_store.inject_language(lang_key, lang_data)
-    faction_store = FactionStore()
-    custom_factions = json_data.get("factions")
-    if custom_factions is not None:
-        for faction_name, faction_data in custom_factions.items():
-            faction_store.inject_faction(faction_name, faction_data)
-
-    asset_manager = CustomAssetManager(custom_data_id)
-    text_renderer = TextRenderer(asset_manager)
-    custom_icons = json_data.get("icons")
-    if custom_icons is not None:
-        text_renderer.inject_icons(custom_icons)
-
-    ig_tactics = ImageGeneratorTactics(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
-    ig_units = ImageGeneratorUnits(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
-    ig_ncus = ImageGeneratorNCUs(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
-    ig_attachments = ImageGeneratorAttachments(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
-    ig_specials = ImageGeneratorSpecials(asset_manager, text_renderer, language_store=language_store, faction_store=faction_store)
-
-    generator = CustomGenerator(
-        ig_tactics,
-        ig_units,
-        ig_ncus,
-        ig_attachments,
-        ig_specials,
-        json_data,
-        overwrite=overwrite,
-        get_path=None,
-        filter_data=filter_data_custom,
+    custom_gen = CustomGenerator(
+        meta.id,
+        data.languages,
+        data.factions,
+        data.icons,
     )
-    generator.generate_all()
+    custom_gen.generate(data, overwrite=overwrite, multiproc=False)
 
     if skip_portrait:
         return
 
-    for lang_key in ["units", "attachments", "ncus"]:
-        for data_object in json_data[lang_key]:
-            object_id = data_object.get("id")
+    asset_manager = CustomAssetManager(meta.id)
+    for key in ["unit", "attachment", "ncu"]:
+        for entity in getattr(data, key):
             path = None
 
-            Path(f"./custom/portraits/{custom_data_id}/round").mkdir(parents=True, exist_ok=True)
-            path_round = f"./custom/portraits/{custom_data_id}/round/{object_id}.png"
+            Path(f"./custom/portraits/{meta.id}/round").mkdir(parents=True, exist_ok=True)
+            path_round = f"./custom/portraits/{meta.id}/round/{entity.id}.png"
             if not os.path.exists(path_round):
-                path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{object_id}b.png", asset_manager.asset_path)
+                path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{entity.id}b.png", asset_manager.asset_path)
                 loader = ImageLoader(path)
                 saver_round = ImageSaver(path_round)
                 circle = Circle({})
                 cropper_circle = ImageCropper(loader, saver_round, circle)
                 cropper_circle.create_ui()
 
-            Path(f"./custom/portraits/{custom_data_id}/square").mkdir(parents=True, exist_ok=True)
-            path_square = f"./custom/portraits/{custom_data_id}/square/{object_id}.jpg"
+            Path(f"./custom/portraits/{meta.id}/square").mkdir(parents=True, exist_ok=True)
+            path_square = f"./custom/portraits/{meta.id}/square/{entity.id}.jpg"
             if not os.path.exists(path_square):
-                path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{object_id}b.png", asset_manager.asset_path)
+                path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{entity.id}b.png", asset_manager.asset_path)
                 loader = ImageLoader(path)
                 saver_square = ImageSaver(path_square)
                 square = Square({})
                 cropper_square = ImageCropper(loader, saver_square, square)
                 cropper_square.create_ui()
 
-            Path(f"./custom/portraits/{custom_data_id}/standees").mkdir(parents=True, exist_ok=True)
-            path_standee = f"./custom/portraits/{custom_data_id}/standees/{object_id}.jpg"
+            Path(f"./custom/portraits/{meta.id}/standees").mkdir(parents=True, exist_ok=True)
+            path_standee = f"./custom/portraits/{meta.id}/standees/{entity.id}.jpg"
             if not os.path.exists(path_standee):
-                path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{object_id}b.png", asset_manager.asset_path)
+                path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{entity.id}b.png", asset_manager.asset_path)
                 loader = ImageLoader(path)
                 saver_standee = ImageSaver(path_standee)
                 rectangle = Rectangle({"aspect": 0.7})
@@ -165,9 +136,8 @@ if __name__ == "__main__":
     parser.add_argument("filenames", nargs="*", default=["brew.json"], help="List of filenames relative to ./custom/data/ path.")
     parser.add_argument("--skip-portraits", action="store_true", help="Skip generating portraits.")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files.")
-    
-    args = parser.parse_args()
 
+    args = parser.parse_args()
     for filename in args.filenames:
         filepath = f"./custom/data/{filename}"
         main(filepath, skip_portrait=args.skip_portraits, overwrite=args.overwrite)

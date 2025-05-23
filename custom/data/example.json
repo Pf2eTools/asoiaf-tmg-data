@@ -4,17 +4,17 @@
         "id": "example",
         "language": "waffle"
     },
+    "languages": {
+        "waffle": {
+            "commander": "CMDR",
+            "character": "CHAR"
+        }
+    },
     "factions": {
         "pink-faction": {
             "text_color": "#f603a3",
             "highlight_color": "silver",
             "bg_rotation": 0
-        }
-    },
-    "languages": {
-        "waffle": {
-            "commander": "CMDR",
-            "character": "CHAR"
         }
     },
     "icons": {
@@ -48,91 +48,84 @@
             "icons": [
                 "blank"
             ]
+        },
+        "ANOTHER ABILITY": {
+            "effect": [
+                "You need to have all abilities in an abilities.json file or inside the abilities object of a custom data file."
+            ]
         }
     },
-    "units": [
+    "unit": [
         {
             "id": "pink",
             "name": "Example",
-            "statistics": {
-                "version": "1.0",
-                "faction": "pink-faction",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Ranged Weapon",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Melee Weapon",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Example Custom Icons",
-                    "Example Custom Faction"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "pink-faction",
+            "version": "1.0",
+            "role": "unit",
+            "abilities": [
+                "Example Custom Icons",
+                "Example Custom Faction"
+            ],
+            "attacks": [
+                {
+                    "name": "Ranged Weapon",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Melee Weapon",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Lore text."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "attachments": [
+    "ncu": [],
+    "attachment": [
         {
             "id": "20803",
             "name": "Victarion Greyjoy",
-            "subname": "The Iron Captain",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Example Custom Language",
-                    {
-                        "name": "Another Ability",
-                        "effect": [
-                            "Normally, it is preferred to have all abilities in an abilities.json file or inside the abilities object of a custom data file. However, having ability objects directly inside the data is supported too."
-                        ]
-                    }
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40811": "Rush of Aggression",
-                    "40812": "Assault Orders",
-                    "40813": "Sustained Assault"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "attachment",
+            "title": "The Iron Captain",
+            "abilities": [
+                "Example Custom Language",
+                "Another Ability"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40811",
+                "40812",
+                "40813"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I could sail the Iron Fleet to hell if need be.\""
             }
         }
     ],
-    "ncus": [
-    ],
-    "tactics": [
-    ],
-    "specials": [
-    ]
+    "tactics": [],
+    "special": []
 }

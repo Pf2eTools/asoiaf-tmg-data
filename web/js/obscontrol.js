@@ -115,15 +115,15 @@ class OBSControlPage {
         if (army.faction !== "") out += `Faction: ${Parser.renderFaction(army.faction, true)}\n`;
         else out += "Faction: None\n";
 
-        const commanderId = army.ids.find(id => this._data[id].statistics.commander);
+        const commanderId = army.ids.find(id => this._data[id].commander === true);
         if (commanderId !== undefined) out += `Commander: ${this._data[commanderId]._fullName}\n`;
         else out += "Commander: None\n";
 
         let unitsPart = ""
         for (const id of army.ids) {
             const ent = this._data[id];
-            if (ent.__prop === "units") unitsPart += ` • ${ent._fullName} (${ent.statistics.cost})\n`;
-            else if (ent.__prop === "attachments" && !ent.statistics.enemy) unitsPart += `     ${ent._fullName} (${ent.statistics.cost})\n`;
+            if (ent.__prop === "unit") unitsPart += ` • ${ent._fullName} (${ent.cost})\n`;
+            else if (ent.__prop === "attachment" && !ent.enemy) unitsPart += `     ${ent._fullName} (${ent.cost})\n`;
         }
         if (unitsPart !== "") out += "\nCombat Units\n" + unitsPart
         else out += "\nNo Combat Units Selected\n"
@@ -131,7 +131,7 @@ class OBSControlPage {
         let ncuPart = ""
         for (const id of army.ids) {
             const ent = this._data[id];
-            if (ent.__prop === "ncus") ncuPart += ` • ${ent._fullName} (${ent.statistics.cost})\n`;
+            if (ent.__prop === "ncus") ncuPart += ` • ${ent._fullName} (${ent.cost})\n`;
         }
         if (ncuPart !== "") out += "\nNCUs\n" + ncuPart
         else out += "\nNo NCUs Selected\n"
@@ -139,7 +139,7 @@ class OBSControlPage {
         let enemyPart = ""
         for (const id of army.ids) {
             const ent = this._data[id];
-            if (ent.__prop === "attachments" && ent.statistics.enemy) enemyPart += ` • ${ent._fullName} (${ent.statistics.cost})\n`;
+            if (ent.__prop === "attachment" && ent.enemy) enemyPart += ` • ${ent._fullName} (${ent.cost})\n`;
         }
         if (enemyPart !== "") out += "\nEnemy Attachments\n" + enemyPart
 
@@ -266,7 +266,7 @@ class OBSControlPage {
                 hover: {page: UrlUtil.PG_SONG, source: "en"}
             }
         });
-        const marginLeft = entity.__prop === "attachments" ? "40px" : "0px";
+        const marginLeft = entity.__prop === "attachment" ? "40px" : "0px";
 
         const $btnSlot = $(`<button class="btn btn-default ml-auto mr-1 hidden">1</button>`)
         const $btnTrash = $(`<button class="btn btn-danger hidden"><span class="glyphicon glyphicon-trash"></span></button>`).on("click", evt => {
@@ -275,7 +275,7 @@ class OBSControlPage {
         });
 
         const imgSrc = entity.__prop === "tactics"
-            ? entity.statistics.commander_id ? `../portraits/square/${entity.statistics.commander_id}.jpg` : `../assets/warcouncil/${entity.statistics.faction}/crest.png`
+            ? entity.commander ? `../portraits/square/${entity.commander.id}.jpg` : `../assets/warcouncil/${entity.faction}/crest.png`
             : `../portraits/square/${uid}.jpg`;
 
         const $addArea = $(`<img ${hoverStr} src="${imgSrc}" alt="?" class="m-0 unit-img">
@@ -306,15 +306,15 @@ class OBSControlPage {
             $wrpArmy.append(this._getRenderedSongEntity(uid));
         }
         const $wrpHead = $(`#wrp-head--${side}`);
-        const cmdrId = this._armies[side].ids.find(id => this._data[id].statistics.commander);
+        const cmdrId = this._armies[side].ids.find(id => this._data[id].commander === true);
         $wrpHead.append($(`<h2>${Parser.renderFaction(faction)} - ${this._data[cmdrId].name}</h2>`))
 
         const $wrpTactics = $(`#wrp-tactics--${side}`).empty();
         const baseDeck = Object.values(this._data).filter(it => {
             const remove = (this._data[cmdrId].tactics.remove || []).map(n => n.toUpperCase());
             if (it.__prop !== "tactics") return false;
-            if (it.statistics.faction !== faction) return false;
-            if (it.statistics.commander_id != null) return false;
+            if (it.faction !== faction) return false;
+            if (it.commander !== undefined) return false;
             if (remove.includes("ALL")) return false;
             if (remove.includes(it.name.toUpperCase())) return false;
             //
@@ -345,7 +345,7 @@ class OBSControlPage {
 
         this._$trashBtns[slot] = $btnTrash;
         this._$slotBtns[slot] = $btnSlot;
-        this._state.cards[slot] = `${card.statistics.faction}/${card.id}`;
+        this._state.cards[slot] = `${card.faction}/${card.id}`;
 
         let nextSlot = this._state.cards.slice(slot).findIndex(it => it === "") + slot;
         if (nextSlot < slot && this._state.cards.includes("")) nextSlot = this._state.cards.findIndex(it => it === "");

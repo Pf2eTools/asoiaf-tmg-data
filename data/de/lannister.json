@@ -1,597 +1,586 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "lannister",
+        "language": "de"
+    },
+    "unit": [
         {
             "id": "10101",
             "name": "Gardisten von Haus Lennister",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 4,
-                "defense": 3,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Langschwert",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Überlegenheit der Lennisters"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Überlegenheit der Lennisters"
+            ],
+            "attacks": [
+                {
+                    "name": "Langschwert",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 7,
+            "speed": 4,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Der Reichtum der Lennisters ist weltberühmt, wovon selbst die einfachsten Fußsoldaten des Hauses profitieren. Haus Lennister stattet seine Truppen mit starken Harnischen und schweren Stahlschilden aus, um das Schlachtfeld zu dominieren und ihnen ein Gefühl von Unverwundbarkeit zu vermitteln. Tatsächlich gelingt es den meisten Feinden der Lennisters nicht, eine Bresche in diesen stählernen Wall zu schlagen."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10102",
             "name": "Hellebardiere von Haus Lennister",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Hellebarde",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Speerwall",
-                    "Hellebarde"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Speerwall",
+                "Hellebarde"
+            ],
+            "attacks": [
+                {
+                    "name": "Hellebarde",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Obwohl sie auch zu Angriffsschlägen in der Lage sind, liegt die wahre Stärke der Hellebardiere von Haus Lennister in ihren Verteidigungsformationen. Heranstürmende Feinde sollten sich gut überlegen, ob sie es mit einer geschlossenen Phalanx von Hellebardieren aufnehmen wollen. Vorsicht ist geboten bei feindlichen Flankenmanövern und Pfeilhageln, doch in der richtigen Position gibt es nichts, was an den tödlichen Klingen der Hellebardiere vorbeikäme."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10103",
             "name": "Gefolgsmänner des Berges von Haus Clegane",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Klinge des Marodeurs",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Klinge des Marodeurs",
-                    "Angst ausnutzen"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Klinge des Marodeurs",
+                "Angst ausnutzen"
+            ],
+            "attacks": [
+                {
+                    "name": "Klinge des Marodeurs",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Blutrünstig, brutal und gnadenlos setzen die Gefolgsmänner des Berges neue Maßstäbe, was die Gräuel des Krieges betrifft. Sie kennen keine Gnade. Wer flieht, wird niedergemacht. Wer kapituliert, wird erschlagen. Die Gefolgsmänner des Berges lieben es, bedrängte Feinde auszumerzen und ihren Kampfgeist zu brechen. Vorsicht ist geboten, damit diese skrupellosen Männer nicht völlig außer Rand und Band geraten."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10104",
             "name": "Pyromantiker",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Seefeuer",
-                        "type": "short",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Seefeuer",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Seefeuer",
-                    "Schrecklicher Anblick"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Seefeuer",
+                "Schrecklicher Anblick"
+            ],
+            "attacks": [
+                {
+                    "name": "Seefeuer",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Seefeuer",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Pyromantiker aus der Gilde der Alchemisten beschäftigen sich mit der fürchterlichsten und verheerendsten Waffe, die dem Haus Lennister zur Verfügung steht: Seefeuer. Bekannt als „die Substanz“ ist Seefeuer eine grünliche Flüssigkeit mit bemerkenswert zerstörerischem Potenzial. Ihre Flüchtigkeit macht den Transport und die Handhabung der Substanz an sich schon Gefährlich. Einen Angriff mit Seefeuer kann kein normaler Sterblicher überstehen. Selbst die dickste Rüstung ist gegen ihre anhaftenden, verderblichen Flammen nutzlos."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10105",
             "name": "Ritter von Casterlystein",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Lanze",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Überlegenheit der Lennisters",
-                    "Kavallerie",
-                    "Lanze"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "lannister",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Überlegenheit der Lennisters",
+                "Kavallerie",
+                "Lanze"
+            ],
+            "attacks": [
+                {
+                    "name": "Lanze",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Mit ihren teuren Waffen, hochwertigen Rüstungen und ihrer vorzüglichen Ausbildung stellen die Ritter von Casterlystein eine schnelle und tödliche Macht unter dem Löwenbanner dar. Kaum ein Feind vermag einem Ansturm dieser gepanzerten Kolosse standzuhalten und noch wenigere können sich mit der Schnelligkeit ihrer Schlachtrösser messen. Entschlossene Fußtruppen sind in der Lage, sie in ein Handgemenge zu verwickeln, doch in der Regel lassen Feldherren nicht zu, dass ihre Ritter sich lange mit Fußvolk abgeben."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10106",
             "name": "Armbrustschützen von Haus Lennister",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armbrust",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Kurzschwert",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Armbrust"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Armbrust"
+            ],
+            "attacks": [
+                {
+                    "name": "Armbrust",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Kurzschwert",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Ausbildung eines Armbrustschützen erfolgt in deutlich kürzerer Zeit als die seines altmodisch bewaffneten Gegenparts. Dafür ist die Armbrust teurer, was Herstellung und Instandhaltung betrifft, vor allem auf dem Schlachtfeld. Selbst mit minimaler Ausbildung gelingt es einem Armbrustschützen, zielsicher zu treffen und dicke Panzerplatten zu durchdringen, sogar wenn er durch einen direkten Ansturm bedroht ist. Trotzdem wird kein Feldherr der Lennisters seine Armbrustschützen in den Nahkampf schicken, wenn es sich irgendwie vermeiden lässt."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10107",
             "name": "Gregor Clegane",
-            "subname": "Der reitende Berg",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 4,
-                "speed": 4,
-                "defense": 2,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Spalthiebe",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Der reitende Berg",
-                    "Spalthiebe",
-                    "Bedrohliche Erscheinung"
-                ],
-                "wounds": 4,
-                "tray": "solo"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "title": "Der reitende Berg",
+            "abilities": [
+                "Der reitende Berg",
+                "Spalthiebe",
+                "Bedrohliche Erscheinung"
+            ],
+            "attacks": [
+                {
+                    "name": "Spalthiebe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 2,
+            "morale": 4,
+            "speed": 4,
+            "cost": 4,
+            "tray": "solo",
             "fluff": {
                 "lore": "Ser Gregor Clegane überragt gewöhnliche Männer um ein vielfaches. Ein solch massiver Mann benötigt ein Reittier ähnlichen Ausmaßes, obwohl selbst die größten Rösser unter dem reitenden Berg wie Ponys erscheinen. Einheiten, die unter dem Kommando des Bergs stehen, rollen wie Lawinen übers Schlachtfeld und hinterlassen eine Schneise der Zerstörung. Der Berg ist ein gnadenloser Gegner, eine Waffe aus Stahl und Muskeln.",
                 "quote": "„Wer würde schon damit rechnen, gegen so ein Monster kämpfen zu müssen?“"
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 4
         },
         {
             "id": "10108",
             "name": "Die Söhne des Kriegers",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Geweihte Klinge",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kampfgebet"
-                ],
-                "tokens": {
-                    "number": 1,
-                    "name": "faith"
-                },
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Kampfgebet"
+            ],
+            "attacks": [
+                {
+                    "name": "Geweihte Klinge",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die geadelten oder aus adligem Hause stammenden Söhne des Kriegers sind mit ritterlicher Kampfkunst vertraut und haben ihr Können in den Dienst der Sieben gestellt. Mit glänzenden Schwertern, schweren Plattenpanzern und ihrem unbeugsamen Glauben ausgerüstet können die Söhne des Kriegers zuverlässig jedem Ansturm standhalten und jede Stellung einnehmen. Am effektivsten sind die Söhne in hoffnungslosen Situationen, wenn die Aussicht auf Erfolg am geringsten erscheint."
+            },
+            "icon": "infantry",
+            "tokens": {
+                "name": "faith",
+                "number": 1
             }
         },
         {
             "id": "10109",
             "name": "Arme Gefährten",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 6,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Knüppel",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Fanatischer Eifer",
-                    "Wiederaufflammender Eifer"
-                ],
-                "tokens": {
-                    "number": 1,
-                    "name": "faith"
-                },
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Fanatischer Eifer",
+                "Wiederaufflammender Eifer"
+            ],
+            "attacks": [
+                {
+                    "name": "Knüppel",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Obwohl sie ungepanzert und nur mit improvisierten Waffen ausgerüstet sind, würde nur ein törichter Heerführer die Armen Gefährten in seinen Schlachtplänen unberücksichtigt lassen. Ihre große Anzahl und ihr unerschütterlicher Glaube an die Sieben lässt die Armen Gefährten auch dort noch weiterkämpfen, wo Einheiten mit schwächerem Glauben schon lange geflohen wären. Ihr Vertrauen in die Götter wird den Armen Gefährten beim Halten einer Stellung oder beim Durchbrechen einer undurchdringlichen Verteidigung helfen!"
+            },
+            "icon": "infantry",
+            "tokens": {
+                "name": "faith",
+                "number": 1
             }
         },
         {
             "id": "10110",
             "name": "Königsgarde",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Meisterhafte Klinge",
-                        "type": "melee",
-                        "hit": 2,
-                        "dice": [
-                            7,
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Widerstandskraft",
-                    "Joffreys Gefolge",
-                    "Gegenschlag"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "text": "*Kann nur in einer Armee aufgestellt werden, die Joffrey Baratheon, Erster seines Namens, enthält. Deine Armee darf nicht Jaime Lennister enthalten. Joffrey muss diese Einheit verstärken.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Widerstandskraft",
+                "Joffreys Gefolge",
+                "Gegenschlag"
+            ],
+            "attacks": [
+                {
+                    "name": "Meisterhafte Klinge",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        7,
+                        7
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Kann nur in einer Armee aufgestellt werden, die Joffrey Baratheon, Erster seines Namens, enthält. Deine Armee darf nicht Jaime Lennister enthalten. Joffrey muss diese Einheit verstärken.*"
+                }
+            ],
             "fluff": {
                 "lore": "Als Einheit betrachtet ist die Königsgarde die erfahrenste und am besten gerüstete und bewaffnete Truppe im Krieg der Fünf Könige. Wie jede schwere Infanterieeinheit auch sollte sie es vermeiden, von Feinden umzingelt zu werden. Zusätzlich wird sie von einem weiteren Ärgernis behindert: von König Joffrey Baratheon selbst. Obwohl sie nur aus sieben Mann besteht, kann sich die Königsgarde im Angriff und bei der Verteidigung erfolgreich gegen eine dreifache Übermacht behaupten."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10111",
             "name": "Rotröcke",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Langschwert",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Skrupellose Gier",
-                    "Gerechtigkeit der Lennisters"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Skrupellose Gier",
+                "Gerechtigkeit der Lennisters"
+            ],
+            "attacks": [
+                {
+                    "name": "Langschwert",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Rotröcke der Lennisters sind Elitewachen und dienen als ausführender Arm des Hauses Lennisters in Königsmund und auf Casterlystein. Ihre Aufgabe ist es, die Bevölkerung durch Einschüchterung, Angst und mit scharfen Klingen im Zaum zu halten. Sie sind nicht nur bekannt für ihre karmesinroten Mäntel, sondern auch für ihre Halbharnische, die so stabil sind, wie für massengefertigte Rüstungen nur möglich. Sie sind eine zuverlässige mittlere Infanterie und gehören zu den bestbezahlten Truppen auf der Gehaltsliste der Lennisters."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10112",
             "name": "Briganten von Haus Clegane",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Brutale Bewaffnung",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kavallerie",
-                    "Brutale Bewaffnung"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Brutale Bewaffnung"
+            ],
+            "attacks": [
+                {
+                    "name": "Brutale Bewaffnung",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Die meisten Kavallerieangriffe sind schon grausam genug, aber Gregor Cleganes Meute von berittenen Briganten stellt mit ihrer Brutalität alles andere in den Schatten. Briganten geben sich nicht damit zufrieden, die feindlichen Reihen von den Flanken oder von hinten zu zerfetzen. Für die Art Mann, die man in Cleganes Reihen findet, ist eine Waffe, die einen Feind verkrüppelt und zerschmettert zurücklässt, genauso gut wie eine, die schnell und effizient tötet. Briganten sind sich ihres furchteinflößenden Rufs gewahr. Es dürstet sie nicht nach fairen Kämpfen."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10113",
             "name": "Stadtwache von Lennisport",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Speer",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Stil anpassen",
-                    "Tyrannischer Stolz"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Stil anpassen",
+                "Tyrannischer Stolz"
+            ],
+            "attacks": [
+                {
+                    "name": "Speer",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Stadtwache von Lennishort ist als Beschützer des Machtzentrums der Lennisters genauso gut bewaffnet und gepanzert (wenn nicht sogar besser) wie viele Fronttruppen im Krieg der Fünf Könige. Dennoch sind sie keine regulären Soldaten und man sollte sich nicht darauf verlassen, dass sie die Vorhut halten oder einem wütenden Kavallerieangriff standhalten. Dennoch sind sie in großer Zahl und mit dem richtigen Beistand effektiv und gefährlich, und somit eine wirklich ausgezeichnete Unterstützungseinheit."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10114",
             "name": "Ehrengarde von Casterlystein",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 3,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Unterdrückung der Lennisters",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Unterdrückung der Lennisters"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Unterdrückung der Lennisters"
+            ],
+            "attacks": [
+                {
+                    "name": "Unterdrückung der Lennisters",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die gewaltige Festung von Casterlystein dient sowohl als Symbolder Überlegenheit der Lennisters alsauch als uneinnehmbare Burg mitBlick auf Lennishort. Als ihre Wächterdient die Ehrengarde von Casterlysteinauch als Symbol der unverwüstlichenMacht der Lennisters. Sie sind mit denfeinsten Plattenrüstungenausgestattet, die man für Geld kaufenkann, und als schwere Eingreiftruppeausgebildet, um örtliche Bedrohungenzu eliminieren. Die Ehrengarde hält dieFrontlinie und nutzt jede gegnerischeVerwundbarkeit sofort aus."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10115",
             "name": "Goldröcke",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Knüppel",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Gesetze des Reiches",
-                    "Gewaltsamer Frieden"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Gesetze des Reiches",
+                "Gewaltsamer Frieden"
+            ],
+            "attacks": [
+                {
+                    "name": "Knüppel",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Königsmund gilt im Allgemeinen als sicherer Wohnort, denn die Truppen mit dem sehr treffenden Namen Goldröcke patrouillieren durch die Straßen und Gassen. Sie sorgen stets und überall für Gerechtigkeit, wer auch immer gerade Gerechtigkeit definiert. Aber in Königsmund herrschen die Lennisters und die Goldröcke unterstehen dem Eisernen Thron. Man sollte sich also lieber zwei Mal überlegen, in ihrer Nähe schlecht über den König zu reden."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10116",
             "name": "Felsenkrähen",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Geplünderte Waffen",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Anspornen",
-                    "Chaotisch",
-                    "Rekrutierung aus den Hügeln"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "name": "Charakter",
-                        "text": "*Kann nur in einer Armee aufgestellt werden, die Tyrion Lennister enthält. Er darf diese Einheit kostenlos verstärken.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Anspornen",
+                "Chaotisch",
+                "Rekrutierung aus den Hügeln"
+            ],
+            "attacks": [
+                {
+                    "name": "Geplünderte Waffen",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Kann nur in einer Armee aufgestellt werden, die Tyrion Lennister enthält. Er darf diese Einheit kostenlos verstärken.*",
+                    "name": "Charakter"
+                }
+            ],
             "fluff": {
                 "lore": "Als Bergstamm und Plündervolk sind Tyrion Lennisters Felsenkrähen eine eher primitive Truppe, die sich aber durch ihre unerwartet hohe Loyalität auszeichnet. Obwohl sie mehr seinem Geldbeutel als Tyrion persönlich verpflichtet sind, haben sie stets ihr Wort gehalten, selbst wenn Verrat eine lukrativere Option gewesen wäre. Als Söldner sind diese Truppen ihr Geld wert, vor allem wenn sie als Späher oder in der Flanke eingesetzt werden. Aufgrund ihrer leichten Bewaffnung und Panzerung eignen sie sich nicht für den Einsatz an vorderster Front in einem langwierigen Gefecht."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30101",
             "name": "Tywin Lennister",
-            "subname": "Der große Löwe",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 6,
-                "abilities": [
-                    {
-                        "name": "Der Regen von Castamaer",
-                        "effect": [
-                            "Bestimme ein Mal pro Partie zu Beginn eines beliebigen Zuges beliebig viele feindliche Kampfeinheiten zum Ziel:",
-                            "• 1 dieser Feinde wird **Panisch**.",
-                            "• 1 dieser Feinde wird **Verwundbar**.",
-                            "• 1 dieser Feinde erleidet 4 Treffer.",
-                            "• 1 dieser Feinde muss 1 Panikprobe ablegen.",
-                            "• 1 dieser Feinde verliert bis zum Ende der Runde alle Fähigkeiten.",
-                            "*(Dieselbe Kampfeinheit darf für mehrere Effekte zum Ziel bestimmt werden.)*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Der große Löwe",
+            "abilities": [
+                {
+                    "name": "Der Regen von Castamaer",
+                    "effect": [
+                        "Bestimme ein Mal pro Partie zu Beginn eines beliebigen Zuges beliebig viele feindliche Kampfeinheiten zum Ziel:",
+                        "• 1 dieser Feinde wird **Panisch**.",
+                        "• 1 dieser Feinde wird **Verwundbar**.",
+                        "• 1 dieser Feinde erleidet 4 Treffer.",
+                        "• 1 dieser Feinde muss 1 Panikprobe ablegen.",
+                        "• 1 dieser Feinde verliert bis zum Ende der Runde alle Fähigkeiten.",
+                        "*(Dieselbe Kampfeinheit darf für mehrere Effekte zum Ziel bestimmt werden.)*"
+                    ]
+                }
+            ],
+            "cost": 6,
+            "character": true,
             "fluff": {
                 "quote": "„Manche Schlachten werden mit Schwertern und Speeren gewonnen, andere mit Federn und Raben.“"
             }
@@ -599,47 +588,47 @@
         {
             "id": "30102",
             "name": "Pycelle",
-            "subname": "Großmaester",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Manipulation und Täuschung",
-                        "effect": [
-                            "Bei Spielbeginn werden 3 Befehlsmarker auf Pycelle gelegt.",
-                            "Immer wenn Pycelle aktiviert wird, darfst du ein Befehlsmarker von Pycelle ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Geschwächt**."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Großmaester",
+            "abilities": [
+                {
+                    "name": "Manipulation und Täuschung",
+                    "effect": [
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Pycelle gelegt.",
+                        "Immer wenn Pycelle aktiviert wird, darfst du ein Befehlsmarker von Pycelle ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Geschwächt**."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Pycelle ist eine Kröte. Aber besser eine Lennisterkröte als eine Tyrellkröte, nicht wahr?“ – Tyrion Lennister"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30103",
             "name": "Der Hohe Spatz",
-            "subname": "Vater der Gäubigen",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Loyal zu den Sieben",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Der Hohe Spatz Einfluss auf einen Feind ausübt, immer wenn jener Feind Wunden erleidet, wenn er an einer Panikprobe scheitert, bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel. Sie heilt ebenso viele Wunden, aber maximal bis zu 3."
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Vater der Gäubigen",
+            "abilities": [
+                {
+                    "name": "Loyal zu den Sieben",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Der Hohe Spatz Einfluss auf einen Feind ausübt, immer wenn jener Feind Wunden erleidet, wenn er an einer Panikprobe scheitert, bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel. Sie heilt ebenso viele Wunden, aber maximal bis zu 3."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Selten fühle ich mich Gott so nahe wie in dem Moment, wenn ich für meine eigene Verderbtheit ausgepeitscht werde …“"
             }
@@ -647,21 +636,21 @@
         {
             "id": "30104",
             "name": "Tyrion Lennister",
-            "subname": "Der Gnom",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Genialer Taktiker",
-                        "effect": [
-                            "Du hältst +1 Taktikkarte auf der Hand. Du beginnst die Partie mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst.",
-                            "Du darfst ein Mal pro Partie, sobald ein Gegner eine Taktikkarte spielt, bevor jene Karte abgehandelt wird, dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Gegenkomplott** durchsuchen und sie spielen. Mische danach dein Taktikdeck."
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Der Gnom",
+            "abilities": [
+                {
+                    "name": "Genialer Taktiker",
+                    "effect": [
+                        "Du hältst +1 Taktikkarte auf der Hand. Du beginnst die Partie mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst.",
+                        "Du darfst ein Mal pro Partie, sobald ein Gegner eine Taktikkarte spielt, bevor jene Karte abgehandelt wird, dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Gegenkomplott** durchsuchen und sie spielen. Mische danach dein Taktikdeck."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Er ist ein größerer Mann, als es auf den ersten Blick den Anschein hat, denke ich.“ – Ser Garlan"
             }
@@ -669,51 +658,51 @@
         {
             "id": "30105",
             "name": "Cersei Lennister",
-            "subname": "Königin Regentin",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Nach den Regeln spielen",
-                        "effect": [
-                            "Bei Spielbeginn werden 2 Befehlsmarker auf Cersei gelegt.",
-                            "Immer wenn Cersei eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihr ablegen.",
-                            "Falls du das tust, führe Folgendes durch:",
-                            "Falls du [CROWN] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Hört mich brüllen!** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.",
-                            "Falls du [MONEY] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Machtunterwerfung** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Königin Regentin",
+            "abilities": [
+                {
+                    "name": "Nach den Regeln spielen",
+                    "effect": [
+                        "Bei Spielbeginn werden 2 Befehlsmarker auf Cersei gelegt.",
+                        "Immer wenn Cersei eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihr ablegen.",
+                        "Falls du das tust, führe Folgendes durch:",
+                        "Falls du [CROWN] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Hört mich brüllen!** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.",
+                        "Falls du [MONEY] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Machtunterwerfung** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Wenn man das Spiel um Throne spielt, gewinnt man, oder man stirbt. Dazwischen gibt es nichts.“"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30106",
             "name": "Joffrey Baratheon",
-            "subname": "Lord der Sieben Königslande",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Die Macht des Eisernen Throns",
-                        "effect": [
-                            "Solange Joffrey auf der Taktiktafel ist, zählst du, als würdest du [CROWN] kontrollieren.",
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                            "Solange Joffrey Einfluss auf einen Feind ausübt, erleidet jener Feind +1 Wunde, wenn er an einer Panikprobe scheitert."
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Lord der Sieben Königslande",
+            "abilities": [
+                {
+                    "name": "Die Macht des Eisernen Throns",
+                    "effect": [
+                        "Solange Joffrey auf der Taktiktafel ist, zählst du, als würdest du [CROWN] kontrollieren.",
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Joffrey Einfluss auf einen Feind ausübt, erleidet jener Feind +1 Wunde, wenn er an einer Panikprobe scheitert."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Seine Gnaden hat eine unnachahmliche Art, die Herzen seiner Untertanen zu gewinnen.“ – Tyrion Lennister"
             }
@@ -721,25 +710,25 @@
         {
             "id": "30107",
             "name": "Kevan Lennister",
-            "subname": "Meister des Rechts",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Unbefangenes Recht",
-                        "effect": [
-                            "Bestimme ein Mal pro Partie zu Beginn eines beliebigen Zuges eine beliebige Anzahl an befreundeten Kampfeinheiten zum Ziel:",
-                            "• 1 dieser Einheiten heilt 2 Wunden.",
-                            "• 1 dieser Einheiten legt alle Zustandsmarker ab.",
-                            "• 1 dieser Einheiten wird um 2 Zoll verschoben.",
-                            "• 1 dieser Einheiten verwendet bis zum Ende der Runde ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
-                            "*(Dieselbe Kampfeinheit darf für mehrere Effekte zum Ziel bestimmt werden.)*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Meister des Rechts",
+            "abilities": [
+                {
+                    "name": "Unbefangenes Recht",
+                    "effect": [
+                        "Bestimme ein Mal pro Partie zu Beginn eines beliebigen Zuges eine beliebige Anzahl an befreundeten Kampfeinheiten zum Ziel:",
+                        "• 1 dieser Einheiten heilt 2 Wunden.",
+                        "• 1 dieser Einheiten legt alle Zustandsmarker ab.",
+                        "• 1 dieser Einheiten wird um 2 Zoll verschoben.",
+                        "• 1 dieser Einheiten verwendet bis zum Ende der Runde ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
+                        "*(Dieselbe Kampfeinheit darf für mehrere Effekte zum Ziel bestimmt werden.)*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Die Götter haben einen Mitläufer aus ihmgemacht, keinen Anführer.“ – Tyrion Lennister"
             }
@@ -747,106 +736,106 @@
         {
             "id": "30108",
             "name": "Qyburn",
-            "subname": "Meister der Flüsterer",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Kleine Tauben",
-                        "effect": [
-                            "Bei Spielbeginn werden 3 Befehlsmarker auf Qyburn gelegt.",
-                            "Immer wenn eine feindliche zivile Einheit aktiviert wird, darfst du 1 Befehlsmarker von Qyburn ablegen. Falls du das tust, wähle 2 Zonen auf der Taktiktafel. Falls jene zivile Einheit in diesem Zug eine dieser Zonen beansprucht, nachdem der Effekt dieser Zone abgehandelt worden ist, bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Verwundbar**."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
-                },
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestelltwerden, die Varys enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Meister der Flüsterer",
+            "abilities": [
+                {
+                    "name": "Kleine Tauben",
+                    "effect": [
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Qyburn gelegt.",
+                        "Immer wenn eine feindliche zivile Einheit aktiviert wird, darfst du 1 Befehlsmarker von Qyburn ablegen. Falls du das tust, wähle 2 Zonen auf der Taktiktafel. Falls jene zivile Einheit in diesem Zug eine dieser Zonen beansprucht, nachdem der Effekt dieser Zone abgehandelt worden ist, bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Verwundbar**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestelltwerden, die Varys enthält.*"
+                }
+            ],
             "fluff": {
                 "quote": "„Eure Geheimnisse sind bei mir bestens aufgehoben.“"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30109",
             "name": "Tommen Baratheon",
-            "subname": "Nächster in der Thronfolge",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Einfluss der Königin",
-                        "effect": [
-                            "Bei Spielbeginn werden 2 Befehlsmarker auf Tommen gelegt.",
-                            "Immer wenn Tommen eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, führe Folgendes durch:",
-                            "Falls du [CROWN] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Ränkespiele und Intrigen** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.",
-                            "Falls du [MONEY] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Bestechung** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Nächster in der Thronfolge",
+            "abilities": [
+                {
+                    "name": "Einfluss der Königin",
+                    "effect": [
+                        "Bei Spielbeginn werden 2 Befehlsmarker auf Tommen gelegt.",
+                        "Immer wenn Tommen eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, führe Folgendes durch:",
+                        "Falls du [CROWN] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Ränkespiele und Intrigen** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.",
+                        "Falls du [MONEY] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Bestechung** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Wenn ich groß bin und als Königregiere, verbiete ich Rote Bete.“"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20101",
             "name": "Kampferprobter Veteran",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Bedrohliche Erscheinung"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Bedrohliche Erscheinung"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20102",
             "name": "Hauptmann der Garde",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Linie halten!"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Linie halten!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20103",
             "name": "Sandor Clegane",
-            "subname": "Der Bluthund",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Zugehörigkeit: Haus Clegane",
-                    "Durch das Gemetzel befeuert",
-                    "Wütender Ansturm"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Der Bluthund",
+            "abilities": [
+                "Zugehörigkeit: Haus Clegane",
+                "Durch das Gemetzel befeuert",
+                "Wütender Ansturm"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Töten ist das Süßeste der Welt.“"
             }
@@ -854,26 +843,23 @@
         {
             "id": "20104",
             "name": "Tywin Lennister",
-            "subname": "Lord von Casterlystein",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Überlegenheit der Lennisters",
-                    "Befehl: Bedrohen"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40114": "Schwäche ausnutzen",
-                    "40115": "Entschlossenheit brechen",
-                    "40116": "Befehle erteilen"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Lord von Casterlystein",
+            "abilities": [
+                "Befehl: Überlegenheit der Lennisters",
+                "Befehl: Bedrohen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40114",
+                "40115",
+                "40116"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Für jede Arbeit gibt es das richtige Werkzeug, und für jedes Werkzeug die richtige Aufgabe.“"
             }
@@ -881,26 +867,23 @@
         {
             "id": "20105",
             "name": "Tyrion Lennister",
-            "subname": "Halbmann",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Gegenstrategie",
-                    "Befehl: Taktisches Umstellen"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40117": "Trügerische Absichten",
-                    "40118": "Raffinierte List",
-                    "40119": "Abgefangene Befehle"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Halbmann",
+            "abilities": [
+                "Befehl: Gegenstrategie",
+                "Befehl: Taktisches Umstellen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40117",
+                "40118",
+                "40119"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Das sind tapfere Kerle. Gehen wir und töten wir sie.“"
             }
@@ -908,23 +891,23 @@
         {
             "id": "20106",
             "name": "Barristan Selmy",
-            "subname": "Lord Kommandant der Königsgarde",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Der Krone verpflichtet",
-                    "Standhaft"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lord Kommandant der Königsgarde",
+            "abilities": [
+                "Der Krone verpflichtet",
+                "Standhaft"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Nur noch Ser Barristan Selmy ist aus echtem Stahl gemacht, und Selmy ist alt.“ – Varys"
             }
@@ -932,26 +915,26 @@
         {
             "id": "20107",
             "name": "Jaime Lennister",
-            "subname": "Königsgarde",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Meisterhafter Duellant",
-                    "Gegenschlag"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
-                    },
-					{
-                        "text": "*Wenn deine Armee Cersei Lennister enthält, reduzieren sich die Kosten für Jaime Lennister, Königsgarde um 1*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Königsgarde",
+            "abilities": [
+                "Meisterhafter Duellant",
+                "Gegenschlag"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
+                },
+                {
+                    "text": "*Wenn deine Armee Cersei Lennister enthält, reduzieren sich die Kosten für Jaime Lennister, Königsgarde um 1*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„… ein Waffenbruder der Weißen Schwerter, und wir wissen alle, was sein Eid wert ist.“ – Varys"
             }
@@ -959,22 +942,22 @@
         {
             "id": "20108",
             "name": "Mandon Moor",
-            "subname": "Königsgarde",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Vorherrschaft der Krone"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Königsgarde",
+            "abilities": [
+                "Vorherrschaft der Krone"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Der Tod in schneeweißer Seide.“– Tyrion Lennister"
             }
@@ -982,22 +965,22 @@
         {
             "id": "20109",
             "name": "Meryn Trant",
-            "subname": "Königsgarde",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Schutz durch die Krone"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Königsgarde",
+            "abilities": [
+                "Schutz durch die Krone"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Einst waren sie der Welt ein leuchtendes, bewundernswertes Vorbild.“ – Bran Stark"
             }
@@ -1005,22 +988,22 @@
         {
             "id": "20110",
             "name": "Arys Eichenherz",
-            "subname": "Königsgarde",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Schutz durch die Krone"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Königsgarde",
+            "abilities": [
+                "Schutz durch die Krone"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Es gab stets Männer, denen es leichter gefallen ist, ein Gelübde abzulegen, als es einzuhalten.“"
             }
@@ -1028,22 +1011,22 @@
         {
             "id": "20111",
             "name": "Boros Blount",
-            "subname": "Königsgarde",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Vergeltung der Krone"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Königsgarde",
+            "abilities": [
+                "Vergeltung der Krone"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Niemand bedroht Seine Gnaden in Gegenwart der Königsgarde!“"
             }
@@ -1051,22 +1034,22 @@
         {
             "id": "20112",
             "name": "Preston Grünfeld",
-            "subname": "Königsgarde",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehle der Krone (Preston Greenfield)"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Königsgarde",
+            "abilities": [
+                "Befehle der Krone (Preston Greenfield)"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, die die Einheit Königsgarde enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Wer hört allem zu und hört doch nichts?“ „Ein Ritter der Königsgarde.“"
             }
@@ -1074,40 +1057,40 @@
         {
             "id": "20113",
             "name": "Streiter des Glaubens",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Schlachtruf"
-                ],
-				"requirements": [
-                    {   
-					    "name": "Begrenzt",
-                        "text": "*Deine Armee darf bis zu 2 Streiter des Glaubens enthalten.*"
-                    },
-                    {
-                        "text": "*Wenn deine Armee den Hohen Spatz enthält, ist der ersten Streiter des Glaubens kostenlos.*"
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Schlachtruf"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Deine Armee darf bis zu 2 Streiter des Glaubens enthalten.*",
+                    "name": "Begrenzt"
+                },
+                {
+                    "text": "*Wenn deine Armee den Hohen Spatz enthält, ist der ersten Streiter des Glaubens kostenlos.*"
+                }
+            ],
+            "icon": "infantry"
         },
         {
             "id": "20114",
             "name": "Gregor Clegane",
-            "subname": "Lord Tywins wilder Hund",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Unaufhaltsame Wut",
-                    "Unbändige Wut"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lord Tywins wilder Hund",
+            "abilities": [
+                "Unaufhaltsame Wut",
+                "Unbändige Wut"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Niemand war Gregor je gewachsen.“– Sandor Clegane"
             }
@@ -1115,27 +1098,24 @@
         {
             "id": "20115",
             "name": "Jaime Lennister",
-            "subname": "Der Königsmörder",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Präzision",
-                    "Gegenschlag",
-                    "Unterbrechen"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40108": "Ruf des Königsmörders",
-                    "40109": "Geschick des Königsmörders",
-                    "40110": "Ruchlosigkeit des Königsmörders"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Der Königsmörder",
+            "abilities": [
+                "Präzision",
+                "Gegenschlag",
+                "Unterbrechen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40108",
+                "40109",
+                "40110"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Offiziell nannte man ihn den „Löwen von Lennister“, hinter seinem Rücken flüsterte man vom „Königsmörder“."
             }
@@ -1143,27 +1123,24 @@
         {
             "id": "20116",
             "name": "Gregor Clegane",
-            "subname": "Der Berg",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Zugehörigkeit: Haus Clegane",
-                    "Unbezwingbar",
-                    "Die Stärke des Berges"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40111": "Überrennen",
-                    "40112": "Angriffsbefehle",
-                    "40113": "Der Preis des Versagens"
-                }
-            },
+            "faction": "lannister",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Der Berg",
+            "abilities": [
+                "Zugehörigkeit: Haus Clegane",
+                "Unbezwingbar",
+                "Die Stärke des Berges"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40111",
+                "40112",
+                "40113"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Kein anderer Ritter des Reiches erfüllt unsere Feinde mit solchem Schrecken.“ – Tywin Lennister"
             }
@@ -1171,18 +1148,18 @@
         {
             "id": "20117",
             "name": "Jaime Lennister",
-            "subname": "Der junge Löwe",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Kampfausbildung",
-                    "Standhaft"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Der junge Löwe",
+            "abilities": [
+                "Befehl: Kampfausbildung",
+                "Standhaft"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Es gibt keine Menschen wie mich. Es gibt nur mich.“"
             }
@@ -1190,19 +1167,19 @@
         {
             "id": "20118",
             "name": "Gregor Clegane",
-            "subname": "Koloss zu Pferde",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 3,
-                "abilities": [
-				    "Unbezwingbar",
-                    "Unnachgiebiger Angriff",
-                    "Bedrohliche Erscheinung"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Koloss zu Pferde",
+            "abilities": [
+                "Unbezwingbar",
+                "Unnachgiebiger Angriff",
+                "Bedrohliche Erscheinung"
+            ],
+            "cost": 3,
+            "tray": "cavalry",
+            "character": true,
+            "icon": "cavalry",
             "fluff": {
                 "quote": "„Der Kopf dieser Bestie wäre ein edles Geschenk für alle Menschen des Reiches, das schwöre ich.“ – Brynden Tully"
             }
@@ -1210,18 +1187,18 @@
         {
             "id": "20120",
             "name": "Tyrion Lennister",
-            "subname": "Der Riese von Lennister",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Schlachtplan",
-                    "Befehl: Gegenstrategie"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Der Riese von Lennister",
+            "abilities": [
+                "Befehl: Schlachtplan",
+                "Befehl: Gegenstrategie"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich denke, er ist ein Riese unter uns, hier am Ende der Welt.“ – Maester Aemon"
             }
@@ -1229,25 +1206,22 @@
         {
             "id": "20121",
             "name": "Joffrey Baratheon",
-            "subname": "Erster seines Namens",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehle der Krone (Joffrey Baratheon)"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40123": "Ihr werdet mir gehorchen!",
-                    "40124": "Verräter! Ich werde sie enthaupten lassen!",
-                    "40125": "Ich bin der König!"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Erster seines Namens",
+            "abilities": [
+                "Befehle der Krone (Joffrey Baratheon)"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40123",
+                "40124",
+                "40125"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Mein Sohn. Wie konnte ich einen solchen Sohn in die Welt setzen, Ned?“ – Robert Baratheon"
             }
@@ -1255,52 +1229,49 @@
         {
             "id": "20123",
             "name": "Vollstrecker der Schildwache",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Spott"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Spott"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20124",
             "name": "Schlächter von Haus Clegane",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Durch das Gemetzel befeuert"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Durch das Gemetzel befeuert"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20125",
             "name": "Der Hohe Spatz",
-            "subname": "Seine Hohe Heiligkeit",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Ermutigen",
-                    "Bedrohliche Erscheinung"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40120": "Gnade der Mutter",
-                    "40121": "Schutz des Vaters",
-                    "40122": "Zorn des Kriegers"
-                }
-            },
+            "faction": "lannister",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Seine Hohe Heiligkeit",
+            "abilities": [
+                "Ermutigen",
+                "Bedrohliche Erscheinung"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40120",
+                "40121",
+                "40122"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Wozu sind wir eigentlich verkommen, wenn Könige und Hohe Lords jetzt schon nach der Pfeife eines Spatzen tanzen müssen.“ – Randyll Tarly"
             }
@@ -1308,18 +1279,18 @@
         {
             "id": "20126",
             "name": "Qyburn",
-            "subname": "Verbotenes Wissen",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Experimentelle Verstärkung",
-                    "Starke Nebenwirkungen"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Verbotenes Wissen",
+            "abilities": [
+                "Experimentelle Verstärkung",
+                "Starke Nebenwirkungen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Die Citadel hat mir die Kette genommen,aber mein Wissen mussten sie mir lassen.“"
             }
@@ -1327,18 +1298,18 @@
         {
             "id": "20127",
             "name": "Addam Marbrand",
-            "subname": "Getreuer Bannerträger",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Bewachen",
-                    "Jaimes Vasall"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Getreuer Bannerträger",
+            "abilities": [
+                "Befehl: Bewachen",
+                "Jaimes Vasall"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Gern würde ich die Gelegenheitnutzen, meinen eigenen Stahl gegendiesen jungen Stark zu führen.“"
             }
@@ -1346,23 +1317,23 @@
         {
             "id": "20128",
             "name": "Ser Robert Kraft",
-            "subname": "Der schweigende Riese",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Widerstandskraft",
-                    "Unaufhaltsame Wut"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nicht in einer Armee aufgestellt werden, dieGregor Clegane enthält. Darf nur in einer Armeeaufgestellt werden, die Qyburn oder TommenBaratheon, Nächster in der Thronfolge, enthält.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Der schweigende Riese",
+            "abilities": [
+                "Befehl: Widerstandskraft",
+                "Unaufhaltsame Wut"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nicht in einer Armee aufgestellt werden, dieGregor Clegane enthält. Darf nur in einer Armeeaufgestellt werden, die Qyburn oder TommenBaratheon, Nächster in der Thronfolge, enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Wir wissen nicht einmal, ob er lebt.“– Kevan Lennister"
             }
@@ -1370,26 +1341,23 @@
         {
             "id": "20129",
             "name": "Addam Marbrand",
-            "subname": "Kommandant der Stadtwache",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Abgehärtet",
-                    "Eiserne Entschlossenheit"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40126": "Charismatische Führung",
-                    "40127": "Peitschenhieb",
-                    "40128": "Heroisches Vorbild"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Kommandant der Stadtwache",
+            "abilities": [
+                "Abgehärtet",
+                "Eiserne Entschlossenheit"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40126",
+                "40127",
+                "40128"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Wie Jaime gehörte er zu jener Sorte Männer,denen andere gern folgten.“ – Tyrion Lennister"
             }
@@ -1397,26 +1365,23 @@
         {
             "id": "20130",
             "name": "Kevan Lennister",
-            "subname": "Beschützer des Reiches",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Überlegenheit der Lennisters",
-                    "Macht des Throns (Kevan Lennister)"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40129": "Vorhersehbare Manöver",
-                    "40130": "Schwächen erkennen",
-                    "40131": "Wohlstand des Steins"
-                }
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Beschützer des Reiches",
+            "abilities": [
+                "Befehl: Überlegenheit der Lennisters",
+                "Macht des Throns (Kevan Lennister)"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40129",
+                "40130",
+                "40131"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Es gibt viele wie Euch, gute Männer, die füreine schlechte Sache eintreten …“ – Varys"
             }
@@ -1424,37 +1389,37 @@
         {
             "id": "20131",
             "name": "Stadttorwache",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "In der Überzahl",
-                    "Verstärkungen"
-                ]
-            }
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "In der Überzahl",
+                "Verstärkungen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20119",
             "name": "Jaime Lennister",
-            "subname": "Verstümmelte Geisel",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Wertvoller Gefangener (Jaime Lennister)",
-                    "Rachsüchtiger Gefangener"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Verstärke vor der Aufstellung eine feindliche Infanterie-Einheit mit Jaime. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Verstümmelte Geisel",
+            "abilities": [
+                "Wertvoller Gefangener (Jaime Lennister)",
+                "Rachsüchtiger Gefangener"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Verstärke vor der Aufstellung eine feindliche Infanterie-Einheit mit Jaime. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Was sie ihm antaten, war unsagbar grausam."
             }
@@ -1462,665 +1427,651 @@
         {
             "id": "20122",
             "name": "Verräter",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Sabotieren und Unterwandern"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Verstärke nach der Aufstellung eine feindliche Infanterie-Einheit mit dieser Figur. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Sabotieren und Unterwandern"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Verstärke nach der Aufstellung eine feindliche Infanterie-Einheit mit dieser Figur. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry"
         }
     ],
     "tactics": [
         {
             "id": "40101",
             "name": "Ränkespiele und Intrigen",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
-                        "effect": [
-                            "Jene zivile Einheit verliert bis zum Ende der Runde alle Fähigkeiten.",
-                            "Falls du [MONEY] kontrollierst, bestimme 1 feindliche Kampfeinheit zum Ziel. Jener Feind wird **Geschwächt**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
+                    "effect": [
+                        "Jene zivile Einheit verliert bis zum Ende der Runde alle Fähigkeiten.",
+                        "Falls du [MONEY] kontrollierst, bestimme 1 feindliche Kampfeinheit zum Ziel. Jener Feind wird **Geschwächt**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40102",
             "name": "Ein Lennister zahlt stets seine Schulden",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
-                            "Solange auf dieser Karte ein Befehlsmarker liegt, erhalten die Nahkampfangriffe der angelegten Einheit **Grausam** und, solange du [CROWN] kontrollierst, +1 auf den Trefferwurf."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
+                        "Solange auf dieser Karte ein Befehlsmarker liegt, erhalten die Nahkampfangriffe der angelegten Einheit **Grausam** und, solange du [CROWN] kontrollierst, +1 auf den Trefferwurf."
+                    ]
+                }
+            ]
         },
         {
             "id": "40103",
             "name": "Hört mich brüllen!",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind eine Moralprobe ablegt, bevor die Würfel geworfen werden:",
-                        "effect": [
-                            "Jener Feind erleidet –1 auf das Ergebnis der Moralprobe und zusätzlich –1 für jede ihrer vernichteten Schlachtreihen.",
-                            "Bei einem Fehlschlag erleidet er 1 Wunde *(oder +1 Wunde, wenn er an einer Panikprobe scheitert)*."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind eine Moralprobe ablegt, bevor die Würfel geworfen werden:",
+                    "effect": [
+                        "Jener Feind erleidet –1 auf das Ergebnis der Moralprobe und zusätzlich –1 für jede ihrer vernichteten Schlachtreihen.",
+                        "Bei einem Fehlschlag erleidet er 1 Wunde *(oder +1 Wunde, wenn er an einer Panikprobe scheitert)*."
+                    ]
+                }
+            ]
         },
         {
             "id": "40104",
             "name": "Bestechung",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
-                        "effect": [
-                            "Ersetze den Effekt jener Zone durch:",
-                            "*Bestimme 1 feindliche Kampfeinheit zum Ziel und lege diese Karte an sie an, bis sie eine Moralprobe besteht oder zum Ziel von [MONEY] bestimmt wird.*",
-                            "Solange diese Karte an jener Einheit anliegt, verwendet sie ihren niedrigsten Angriffswürfelwert und erleidet –1 auf das Ergebnis von Moralproben."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                    "effect": [
+                        "Ersetze den Effekt jener Zone durch:",
+                        "*Bestimme 1 feindliche Kampfeinheit zum Ziel und lege diese Karte an sie an, bis sie eine Moralprobe besteht oder zum Ziel von [MONEY] bestimmt wird.*",
+                        "Solange diese Karte an jener Einheit anliegt, verwendet sie ihren niedrigsten Angriffswürfelwert und erleidet –1 auf das Ergebnis von Moralproben."
+                    ]
+                }
+            ]
         },
         {
             "id": "40105",
             "name": "Gegenkomplott",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Gegner eine Taktikkarte spielt, bevor jene Karte abgehandelt wird:",
-                        "effect": [
-                            "Wirf einen Würfel. Bei 3+ hebst du die Effekte jener Taktikkarte auf.",
-                            "Falls du [CROWN] oder [MONEY] kontrollierst, hebst du die Effekte jener Taktikkarte bei 2+ auf.",
-                            "Falls du beide Zonen kontrollierst, ist der Wurf automatisch erfolgreich."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Gegner eine Taktikkarte spielt, bevor jene Karte abgehandelt wird:",
+                    "effect": [
+                        "Wirf einen Würfel. Bei 3+ hebst du die Effekte jener Taktikkarte auf.",
+                        "Falls du [CROWN] oder [MONEY] kontrollierst, hebst du die Effekte jener Taktikkarte bei 2+ auf.",
+                        "Falls du beide Zonen kontrollierst, ist der Wurf automatisch erfolgreich."
+                    ]
+                }
+            ]
         },
         {
             "id": "40106",
             "name": "Loyal zur Krone",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
-                        "effect": [
-                            "Bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel. Heile 1 Wunde jener befreundeten Einheit für jede Wunde, die jener Feind bei dieser Probe erlitten hat, aber maximal bis zu 3.",
-                            "Falls du [CROWN] kontrollierst, füge der feindlichen Einheit +1 Wunde zu und heile +1 Wunde der befreundeten Einheit *(aber maximal bis zu 4)*."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
+                    "effect": [
+                        "Bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel. Heile 1 Wunde jener befreundeten Einheit für jede Wunde, die jener Feind bei dieser Probe erlitten hat, aber maximal bis zu 3.",
+                        "Falls du [CROWN] kontrollierst, füge der feindlichen Einheit +1 Wunde zu und heile +1 Wunde der befreundeten Einheit *(aber maximal bis zu 4)*."
+                    ]
+                }
+            ]
         },
         {
             "id": "40107",
             "name": "Machtunterwerfung",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
-                        "effect": [
-                            "Jener Feind muss eine Panikprobe ablegen. Für jede Zone, die du zwischen [CROWN] und [MONEY] kontrollierst, erleidet er –1 auf das Ergebnis der Panikprobe.",
-                            "Bei einem Fehlschlag kann er bis zum Ende des Zuges nicht zum Ziel von befreundeten Taktikkarten bestimmt werden und verliert alle Fähigkeiten."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Jener Feind muss eine Panikprobe ablegen. Für jede Zone, die du zwischen [CROWN] und [MONEY] kontrollierst, erleidet er –1 auf das Ergebnis der Panikprobe.",
+                        "Bei einem Fehlschlag kann er bis zum Ende des Zuges nicht zum Ziel von befreundeten Taktikkarten bestimmt werden und verliert alle Fähigkeiten."
+                    ]
+                }
+            ]
         },
         {
             "id": "40108",
             "name": "Ruf des Königsmörders",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit innerhalb Langer Reichweite zu Jaime Lennisters Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
-                        "effect": [
-                            "Diese Einheit besteht diese Moralprobe. Falls sie Jaime Lennisters Einheit ist, heilt sie zudem 2 Wunden."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "20115",
-                "commander_name": "Jaime Lennister"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit innerhalb Langer Reichweite zu Jaime Lennisters Einheit eine Moralprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Diese Einheit besteht diese Moralprobe. Falls sie Jaime Lennisters Einheit ist, heilt sie zudem 2 Wunden."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20115"
             }
         },
         {
             "id": "40109",
             "name": "Geschick des Königsmörders",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald Jaime Lennisters Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Dieser Angriff verwendet seinen höchsten Angriffswürfelwert, alle Fehlschläge dürfen neu geworfen werden und der Verteidiger wird **Verwundbar**."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "20115",
-                "commander_name": "Jaime Lennister"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald Jaime Lennisters Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff verwendet seinen höchsten Angriffswürfelwert, alle Fehlschläge dürfen neu geworfen werden und der Verteidiger wird **Verwundbar**."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20115"
             }
         },
         {
             "id": "40110",
             "name": "Ruchlosigkeit des Königsmörders",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind innerhalb Langer Reichweite zu Jaime Lennisters Einheit aktiviert wird:",
-                        "effect": [
-                            "Jener Feind wird **Panisch** und muss dann 1 Panikprobe ablegen.",
-                            "Bei einem Fehlschlag wird jener Feind zudem **Geschwächt**."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "20115",
-                "commander_name": "Jaime Lennister"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind innerhalb Langer Reichweite zu Jaime Lennisters Einheit aktiviert wird:",
+                    "effect": [
+                        "Jener Feind wird **Panisch** und muss dann 1 Panikprobe ablegen.",
+                        "Bei einem Fehlschlag wird jener Feind zudem **Geschwächt**."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20115"
             }
         },
         {
             "id": "40111",
             "name": "Überrennen",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit nachsetzt:",
-                        "effect": [
-                            "Statt nachzusetzen, führt diese Einheit 1 Ansturm- oder Marschaktion durch.",
-                            "Falls diese Karte eine Haus-Clegane-Einheit zum Ziel hat, darf sie alle Würfel für die Bewegungsweite des Ansturms neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20116",
-                "commander_name": "Gregor Clegane"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit nachsetzt:",
+                    "effect": [
+                        "Statt nachzusetzen, führt diese Einheit 1 Ansturm- oder Marschaktion durch.",
+                        "Falls diese Karte eine Haus-Clegane-Einheit zum Ziel hat, darf sie alle Würfel für die Bewegungsweite des Ansturms neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20116"
             }
         },
         {
             "id": "40112",
             "name": "Angriffsbefehle",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
-                        "effect": [
-                            "Ersetze den Effekt jener Zone durch:",
-                            "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
-                            "*Falls diese Karte eine Haus- Clegane-Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"
-                                                   ]
-                    }
-                ],
-                "commander_id": "20116",
-                "commander_name": "Gregor Clegane"
+            "faction": "lannister",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                    "effect": [
+                        "Ersetze den Effekt jener Zone durch:",
+                        "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
+                        "*Falls diese Karte eine Haus- Clegane-Einheit zum Ziel hat, darf sie stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20116"
             }
         },
         {
             "id": "40113",
             "name": "Der Preis des Versagens",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer. Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20116",
-                "commander_name": "Gregor Clegane"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Alle Ergebnisse des Angriffswurfs dieses Angriffs sind automatische Treffer. Nachdem dieser Angriff abgeschlossen worden ist, falls der Verteidiger nicht vernichtet wurde, wird der Angreifer **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20116"
             }
         },
         {
             "id": "40114",
             "name": "Schwäche ausnutzen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Der Verteidiger wird **Verwundbar**. Falls der Verteidiger **Geschwächt** ist, darf der Angreifer beliebig viele Angriffswürfel neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20104",
-                "commander_name": "Tywin Lennister"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Der Verteidiger wird **Verwundbar**. Falls der Verteidiger **Geschwächt** ist, darf der Angreifer beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20104"
             }
         },
         {
             "id": "40115",
             "name": "Entschlossenheit brechen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Kampfeinheit an einer Moralprobe scheitert:",
-                        "effect": [
-                            "Jener Feind wird **Geschwächt**.",
-                            "Lege diese Karte an jenen Feind an, bis er eine Moralprobe besteht.",
-                            "Solange diese Karte an jenem Feind anliegt, immer wenn diese Einheit aktiviert wird, wird er **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20104",
-                "commander_name": "Tywin Lennister"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Kampfeinheit an einer Moralprobe scheitert:",
+                    "effect": [
+                        "Jener Feind wird **Geschwächt**.",
+                        "Lege diese Karte an jenen Feind an, bis er eine Moralprobe besteht.",
+                        "Solange diese Karte an jenem Feind anliegt, immer wenn diese Einheit aktiviert wird, wird er **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20104"
             }
         },
         {
             "id": "40116",
             "name": "Befehle erteilen",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald die Einheit deines Heerführers aktiviert wird:",
-                        "effect": [
-                            "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere befreundete Einheit innerhalb Langer Reichweite zum Ziel. Sie führt eine Angriffs- oder Ansturmaktion durch."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 Befehlsmarker von jener Einheit ab. Sie darf jenen Befehl in dieser Runde erneut verwenden."
-                        ]
-                    }
-                ],
-                "commander_id": "20104",
-                "commander_name": "Tywin Lennister"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald die Einheit deines Heerführers aktiviert wird:",
+                    "effect": [
+                        "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere befreundete Einheit innerhalb Langer Reichweite zum Ziel. Sie führt eine Angriffs- oder Ansturmaktion durch."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 Befehlsmarker von jener Einheit ab. Sie darf jenen Befehl in dieser Runde erneut verwenden."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20104"
             }
         },
         {
             "id": "40117",
             "name": "Trügerische Absichten",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
-                        "effect": [
-                            "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, darfst du jene zivile Einheit auf eine beliebige unbeanspruchte Zone bewegen.",
-                            "Falls du jene zivile Einheit von der [LETTER]-Zone entfernt hast, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker."
-                        ]
-                    }
-                ],
-                "commander_id": "20105",
-                "commander_name": "Tyrion Lennister"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
+                    "effect": [
+                        "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, darfst du jene zivile Einheit auf eine beliebige unbeanspruchte Zone bewegen.",
+                        "Falls du jene zivile Einheit von der [LETTER]-Zone entfernt hast, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie erhält 1 Zustandsmarker."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20105"
             }
         },
         {
             "id": "40118",
             "name": "Raffinierte List",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
-                        "effect": [
-                            "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere befreundete Kampfeinheit zum Ziel. Sie führt 1 Manöver-, Marsch- oder Rückzugsaktion durch.",
-                            "Falls eine der beiden Einheiten Tyrions Einheit ist, bevor diese Aktion durchgeführt wird, wird ein Feind innerhalb Langer Reichweite zu Tyrions Einheit **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20105",
-                "commander_name": "Tyrion Lennister"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Diese Einheit kann in diesem Zug keine Aktionen durchführen. Bestimme stattdessen 1 andere befreundete Kampfeinheit zum Ziel. Sie führt 1 Manöver-, Marsch- oder Rückzugsaktion durch.",
+                        "Falls eine der beiden Einheiten Tyrions Einheit ist, bevor diese Aktion durchgeführt wird, wird ein Feind innerhalb Langer Reichweite zu Tyrions Einheit **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20105"
             }
         },
         {
             "id": "40119",
             "name": "Abgefangene Befehle",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Gegner eine Einheit zum Ziel einer Taktikzone bestimmt:",
-                        "effect": [
-                            "Wirf einen Würfel: Bei 3+ muss dein Gegner eine andere Einheit zum Ziel des Effekts jener Taktikzone bestimmen *(falls möglich)*.",
-                            "Falls du [LETTER] kontrollierst, darfst du diesen Würfel neu werfen.",
-                            "Falls die neu zum Ziel bestimmte Einheit innerhalb Langer Reichweite zu Tyrions Einheit ist, erhält sie einen Zustandsmarker."
-                        ]
-                    }
-                ],
-                "commander_id": "20105",
-                "commander_name": "Tyrion Lennister"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Gegner eine Einheit zum Ziel einer Taktikzone bestimmt:",
+                    "effect": [
+                        "Wirf einen Würfel: Bei 3+ muss dein Gegner eine andere Einheit zum Ziel des Effekts jener Taktikzone bestimmen *(falls möglich)*.",
+                        "Falls du [LETTER] kontrollierst, darfst du diesen Würfel neu werfen.",
+                        "Falls die neu zum Ziel bestimmte Einheit innerhalb Langer Reichweite zu Tyrions Einheit ist, erhält sie einen Zustandsmarker."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20105"
             }
         },
         {
             "id": "40120",
             "name": "Gnade der Mutter",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
-                        "effect": [
-                            "Lege 1 Zustandsmarker von dieser Einheit ab.",
-                            "Jene Einheit legt 1 Moralprobe ab.",
-                            "Bei Bestehen heilt jene Einheit 2 Wunden, +1 Wunde für jede ihrer vernichteten Schlachtreihen.",
-                            "Bei einem Fehlschlag heilt jene Einheit 1 Wunde."
-                        ]
-                    }
-                ],
-                "commander_id": "20125",
-                "commander_name": "Der Hohe Spatz"
+            "faction": "lannister",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Lege 1 Zustandsmarker von dieser Einheit ab.",
+                        "Jene Einheit legt 1 Moralprobe ab.",
+                        "Bei Bestehen heilt jene Einheit 2 Wunden, +1 Wunde für jede ihrer vernichteten Schlachtreihen.",
+                        "Bei einem Fehlschlag heilt jene Einheit 1 Wunde."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20125"
             }
         },
         {
             "id": "40121",
             "name": "Schutz des Vaters",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
-                        "effect": [
-                            "Der Verteidiger legt 1 Moralprobe ab.",
-                            "Bei Bestehen wehrt er +3 Treffer ab",
-                            "Bei einem Fehlschlag wehrt er +1 Treffer ab."
-                        ]
-                    }
-                ],
-                "commander_id": "20125",
-                "commander_name": "Der Hohe Spatz"
+            "faction": "lannister",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
+                    "effect": [
+                        "Der Verteidiger legt 1 Moralprobe ab.",
+                        "Bei Bestehen wehrt er +3 Treffer ab",
+                        "Bei einem Fehlschlag wehrt er +1 Treffer ab."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20125"
             }
         },
         {
             "id": "40122",
             "name": "Zorn des Kriegers",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Jene Einheit legt 1 Moralprobe ab.",
-                            "Bei Bestehen erhält dieser Angriff +1 auf den Trefferwurf und **Spaltschlag**.",
-                            "Bei einem Fehlschlag fügt dieser Angriff +1 Treffer zu."
-                        ]
-                    }
-                ],
-                "commander_id": "20125",
-                "commander_name": "Der Hohe Spatz"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Jene Einheit legt 1 Moralprobe ab.",
+                        "Bei Bestehen erhält dieser Angriff +1 auf den Trefferwurf und **Spaltschlag**.",
+                        "Bei einem Fehlschlag fügt dieser Angriff +1 Treffer zu."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20125"
             }
         },
         {
             "id": "40123",
             "name": "Ihr werdet mir gehorchen!",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Dieser Angriff erhält +2 Angriffswürfel und **Spaltschlag**.",
-                            "Falls durch diesen Angriff nicht mindestens 1 Schlachtreihe des Verteidigers vernichtet wird, wird der Angreifer **Panisch** und **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20121",
-                "commander_name": "Joffrey Baratheon"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff erhält +2 Angriffswürfel und **Spaltschlag**.",
+                        "Falls durch diesen Angriff nicht mindestens 1 Schlachtreihe des Verteidigers vernichtet wird, wird der Angreifer **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20121"
             }
         },
         {
             "id": "40124",
             "name": "Verräter! Ich werde sie enthaupten lassen!",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit zum Ziel und lege diese Karte an sie an.",
-                            "Solange diese Karte an dieser Einheit anliegt, erhalten Nahkampfangriffe gegen diese Einheit **Grausam**.",
-                            "Falls diese Einheit nicht vernichtet worden ist, wird diese Karte am Ende der Runde abgelegt und jede Einheit, die diese Einheit in dieser Runde angegriffen hat, wird **Panisch** und **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20121",
-                "commander_name": "Joffrey Baratheon"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit zum Ziel und lege diese Karte an sie an.",
+                        "Solange diese Karte an dieser Einheit anliegt, erhalten Nahkampfangriffe gegen diese Einheit **Grausam**.",
+                        "Falls diese Einheit nicht vernichtet worden ist, wird diese Karte am Ende der Runde abgelegt und jede Einheit, die diese Einheit in dieser Runde angegriffen hat, wird **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20121"
             }
         },
         {
             "id": "40125",
             "name": "Ich bin der König!",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
-                        "effect": [
-                            "Bestimme den Verteidiger zum Ziel. Er wehrt +2 Treffer ab. Nachdem dieser Angriff abgeschlossen worden ist, wird der Verteidiger **Panisch** und **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20121",
-                "commander_name": "Joffrey Baratheon"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, nachdem die Verteidigungswürfel geworfen worden sind:",
+                    "effect": [
+                        "Bestimme den Verteidiger zum Ziel. Er wehrt +2 Treffer ab. Nachdem dieser Angriff abgeschlossen worden ist, wird der Verteidiger **Panisch** und **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20121"
             }
         },
         {
             "id": "40126",
             "name": "Charismatische Führung",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit zum Ziel eines feindlichen Befehls, einer feindlichen zivilen Einheit oder Taktikzone bestimmt wird, bevor jener Effekt abgehandelt wird:",
-                        "effect": [
-                            "Jene Einheit legt 1 Moralprobe ab. Bei Bestehen hebe den Effekt jenes feindlichen Befehls, jener feindlichen zivilen Einheit oder Taktikzone auf.",
-                            "Falls sie innerhalb Kurzer Reichweite zu Addam Marbrands Einheit ist, erhält diese Einheit +2 auf das Ergebnis von Moralproben."
-                        ]
-                    }
-                ],
-                "commander_id": "20129",
-                "commander_name": "Addam Marbrand",
-                "commander_subname": "Kommandant der Stadtwache"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit zum Ziel eines feindlichen Befehls, einer feindlichen zivilen Einheit oder Taktikzone bestimmt wird, bevor jener Effekt abgehandelt wird:",
+                    "effect": [
+                        "Jene Einheit legt 1 Moralprobe ab. Bei Bestehen hebe den Effekt jenes feindlichen Befehls, jener feindlichen zivilen Einheit oder Taktikzone auf.",
+                        "Falls sie innerhalb Kurzer Reichweite zu Addam Marbrands Einheit ist, erhält diese Einheit +2 auf das Ergebnis von Moralproben."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20129"
             }
         },
         {
             "id": "40127",
             "name": "Peitschenhieb",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 Wunden für jede vernichtete Schlachtreihe des Verteidigers. Falls der Verteidiger Addam Marbrands Einheit ist, wird der Angreifer zudem **Panisch**."
-                        ]
-                    }
-                ],
-                "commander_id": "20129",
-                "commander_name": "Addam Marbrand",
-                "commander_subname": "Kommandant der Stadtwache"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 Wunden für jede vernichtete Schlachtreihe des Verteidigers. Falls der Verteidiger Addam Marbrands Einheit ist, wird der Angreifer zudem **Panisch**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20129"
             }
         },
         {
             "id": "40128",
             "name": "Heroisches Vorbild",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Nachdem Addam Marbrands Einheit eine Moralprobe bestanden hat:",
-                        "effect": [
-                            "Alle anderen befreundeten Einheiten innerhalb Langer Reichweite heilen 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe in Addams Einheit. Dann heilt Addams Einheit 2 Wunden."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "20129",
-                "commander_name": "Addam Marbrand",
-                "commander_subname": "Kommandant der Stadtwache"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem Addam Marbrands Einheit eine Moralprobe bestanden hat:",
+                    "effect": [
+                        "Alle anderen befreundeten Einheiten innerhalb Langer Reichweite heilen 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe in Addams Einheit. Dann heilt Addams Einheit 2 Wunden."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20129"
             }
         },
         {
             "id": "40129",
             "name": "Vorhersehbare Manöver",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn des ersten feindlichen Zuges in einer Runde:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit und 1 feindliche zivile Einheit zum Ziel.",
-                            "Falls eine der beiden Einheiten in diesem Zug eine Aktion durchführt, bevor sie jene Aktion abhandelt, führt 1 befreundete Kampfeinheit 1 Angriffs-, Manöver- oder Rückzugsaktion durch."
-                        ]
-                    }
-                ],
-                "commander_id": "20130",
-                "commander_name": "Kevan Lennister",
-                "commander_subname": "Beschützer des Reiches"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn des ersten feindlichen Zuges in einer Runde:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit und 1 feindliche zivile Einheit zum Ziel.",
+                        "Falls eine der beiden Einheiten in diesem Zug eine Aktion durchführt, bevor sie jene Aktion abhandelt, führt 1 befreundete Kampfeinheit 1 Angriffs-, Manöver- oder Rückzugsaktion durch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20130"
             }
         },
         {
             "id": "40130",
             "name": "Schwächen erkennen",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine feindliche Kampfeinheit eine Aktion abgeschlossen hat:",
-                        "effect": [
-                            "Jener Feind wird **Verwundbar** und **Panisch**.",
-                            "Lege diese Karte bis zum Ende der Runde an jenen Feind an. Solange diese Karte an diesem Feind anliegt, solange Kevan Lennisters Einheit ihn angreift, verliert er alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
-                        ]
-                    }
-                ],
-                "commander_id": "20130",
-                "commander_name": "Kevan Lennister",
-                "commander_subname": "Beschützer des Reiches"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine feindliche Kampfeinheit eine Aktion abgeschlossen hat:",
+                    "effect": [
+                        "Jener Feind wird **Verwundbar** und **Panisch**.",
+                        "Lege diese Karte bis zum Ende der Runde an jenen Feind an. Solange diese Karte an diesem Feind anliegt, solange Kevan Lennisters Einheit ihn angreift, verliert er alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20130"
             }
         },
         {
             "id": "40131",
             "name": "Wohlstand des Steins",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind einen Angriff durchführt, nachdem die Angriffswürfel geworfen worden sind:",
-                        "effect": [
-                            "Bestimme den Verteidiger zum Ziel.",
-                            "Falls du [CROWN] kontrollierst, erhält der Verteidiger +2 auf das Ergebnis seiner Panikprobe.",
-                            "Falls du [MONEY] kontrollierst, erhält der Verteidiger +1 auf das Ergebnis von Verteidigungswürfen.",
-                            "Falls diese Karte Kevan Lennisters Einheit zum Ziel hat, zählst du, als würdest du beide Zonen kontrollieren."
-                        ]
-                    }
-                ],
-                "commander_id": "20130",
-                "commander_name": "Kevan Lennister",
-                "commander_subname": "Beschützer des Reiches"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind einen Angriff durchführt, nachdem die Angriffswürfel geworfen worden sind:",
+                    "effect": [
+                        "Bestimme den Verteidiger zum Ziel.",
+                        "Falls du [CROWN] kontrollierst, erhält der Verteidiger +2 auf das Ergebnis seiner Panikprobe.",
+                        "Falls du [MONEY] kontrollierst, erhält der Verteidiger +1 auf das Ergebnis von Verteidigungswürfen.",
+                        "Falls diese Karte Kevan Lennisters Einheit zum Ziel hat, zählst du, als würdest du beide Zonen kontrollieren."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20130"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Banner der Baratheons",
             "id": "50101",
-            "statistics": {
-                "faction": "lannister",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.2,
-                    "crests": 2,
-                    "style": "banners",
-                    "text": [
-                        "Auf der Königsgarde befinden sich 4 Banner der Baratheons. Zu Beginn ihrer Aktivierung darf sie Banner der Baratheons ablegen, um folgende Effekte zu erhalten. Jeder Effekt darf nur ein Mal pro Aktivierung gewählt werden:",
-                        "• In diesem Zug erhalten die Angriffe dieser Einheit **Kritischer Treffer** und **Spaltschlag**.",
-                        "• In diesem Zug erhalten die Angriffe dieser Einheit **Grausam** und, falls der Verteidiger an seiner Panikprobe scheitert, erleidet er +1 Wunde.",
-                        "• Sobald diese Einheit in diesem Zug einen Angriff durchführt, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Panisch** und **Geschwächt**.",
-                        "• Diese Einheit heilt 2 Wunden und darf in diesem Zug alle Würfel für die Bewegungsweite des Ansturms oder Rückzugs neu werfen."
-                    ]
-                },
-                "back": {
-                    "ratio": 0.25,
-                    "crests": 2,
-                    "image": true
-                }
+            "name": "Banner der Baratheons",
+            "faction": "lannister",
+            "version": "2021",
+            "role": "special",
+            "category": "banners",
+            "front": {
+                "ratio": 0.2,
+                "crests": 2,
+                "style": "banners",
+                "text": [
+                    "Auf der Königsgarde befinden sich 4 Banner der Baratheons. Zu Beginn ihrer Aktivierung darf sie Banner der Baratheons ablegen, um folgende Effekte zu erhalten. Jeder Effekt darf nur ein Mal pro Aktivierung gewählt werden:",
+                    "• In diesem Zug erhalten die Angriffe dieser Einheit **Kritischer Treffer** und **Spaltschlag**.",
+                    "• In diesem Zug erhalten die Angriffe dieser Einheit **Grausam** und, falls der Verteidiger an seiner Panikprobe scheitert, erleidet er +1 Wunde.",
+                    "• Sobald diese Einheit in diesem Zug einen Angriff durchführt, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Panisch** und **Geschwächt**.",
+                    "• Diese Einheit heilt 2 Wunden und darf in diesem Zug alle Würfel für die Bewegungsweite des Ansturms oder Rückzugs neu werfen."
+                ]
             },
-            "type": "banners"
+            "back": {
+                "ratio": 0.25,
+                "crests": 2,
+                "image": true
+            }
         }
     ]
 }

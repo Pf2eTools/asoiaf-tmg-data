@@ -1,394 +1,389 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "greyjoy",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "10801",
             "name": "Ravageurs Fer-nés",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Haches de Ravageur",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Haches de Ravageurs",
-                    "Charge Furieuse"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Haches de Ravageurs",
+                "Charge Furieuse"
+            ],
+            "attacks": [
+                {
+                    "name": "Haches de Ravageur",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Le long de la côte, les actes de piraterie et de pillage perpétrés par les Ravageurs Fer-nés leur ont conféré une sinistre réputation. Dès qu’ils apparaissent à l’horizon, leurs drakkars répandent la terreur parmi la population. Bien qu’ils soient tous des marins chevronnés, les Fer-nés portent néanmoins une cotte d’écailles légère, même lorsqu’ils sont à bord. Redoutables en tant que troupes d’attaque rapide, ils ne sont toutefois pas entraînés à soutenir un assaut prolongé. Un général avisé saura les tenir éloignés de la ligne de front."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10802",
             "name": "Archers Fer-nés",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 6,
-                "morale": 8,
-                "attacks": [
-                    {
-                        "name": "Flèches de Fer-Nés",
-                        "type": "long",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Partager le Butin",
-                    "Flèches de Fer-Né"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Partager le Butin",
+                "Flèches de Fer-Né"
+            ],
+            "attacks": [
+                {
+                    "name": "Flèches de Fer-Nés",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 8,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Issus d’un peuple marin, les Fer-nés ne craignent pas la noyade et leurs cottes d’écailles légères leur confèrent une excellente protection sans pour autant entraver leurs mouvements. Leurs Archers, souvent venus des rangs des Ravageurs, sont de meilleurs combattants au corps à corps que la plupart des unités de tir. Les Archers ne sont toutefois pas des troupes de contact et ils doivent être protégés contre les assauts directs."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10803",
             "name": "Faucheurs de la Maison Harloi",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Ferveur du Faucheur",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Bardiche",
-                    "Se Nourrir de la Peur",
-                    "Ferveur du Faucheur"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Bardiche",
+                "Se Nourrir de la Peur",
+                "Ferveur du Faucheur"
+            ],
+            "attacks": [
+                {
+                    "name": "Ferveur du Faucheur",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "La faux est généralement considérée comme peu efficace en tant qu’arme de guerre, mais les redoutables Faucheurs de la Maison Harloi utilisent un modèle de bardiche à lame longue qui évoque le symbole de leur famille. Les Faucheurs sont des troupes légères réputées pour leur extrême férocité. À quoi bon porter une armure lorsque l’ennemi est paralysé de terreur ? Lorsqu’il s’agit de répandre la peur dans les rangs ennemis, peu d’unités sont capables de rivaliser avec les Faucheurs."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10804",
             "name": "Forgefers",
-            "statistics": {
-                "version": "S05",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Grand Marteau",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Grand Marteau",
-                    "Équipement de Pillard"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Grand Marteau",
+                "Équipement de Pillard"
+            ],
+            "attacks": [
+                {
+                    "name": "Grand Marteau",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les troupes lourdement cuirassées de la Maison Forgefer sont souvent placées au centre des forces Fer-nées, notamment lorsqu’une ligne de défense est nécessaire. Grâce à leur armure d’écailles recouvrant d’épais vêtements de cuir bouilli, les Forgefers sont bien plus aptes à résister aux assauts que la plupart des troupes des Îles de Fer. Toutefois, comparés à d’autres « unités lourdes », les Forgefers font plutôt office d’infanterie moyenne, tout au moins tant qu’ils n’ont pas mis la main sur leur part du butin !"
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10805",
             "name": "Trappeurs Fer-nés",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 6,
-                "defense": 6,
-                "morale": 8,
-                "attacks": [
-                    {
-                        "name": "Piques Barbelées",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Outils de Trappeur",
-                    "Déstabilisation"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Outils de Trappeur",
+                "Déstabilisation"
+            ],
+            "attacks": [
+                {
+                    "name": "Piques Barbelées",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 8,
+            "speed": 6,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Dans la Guerre des Cinq Rois, le pillage et les raids constituent la principale motivation des Fers-nés.   Que les grandes Maisons s’affrontent pour le Trône de Fer si elles le souhaitent. Les Fer-nés, eux, ont des côtes à piller, du butin à récolter et des gens à asservir. À ce titre, les Trappeurs Fer-nés n’ont pas leur pareil pour entraver leurs ennemis à l’aide de leurs longues piques barbelées et de leurs filets. Grâce à leur ruse et à l’utilisation ingénieuse d’outils déloyaux, les trappeurs parviennent à compenser leur manque de protection et leurs armes rudimentaires."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10806",
             "name": "Élus des Noirmarées",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Hache de Maître",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Partager le Butin",
-                    "Premiers Servis"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Partager le Butin",
+                "Premiers Servis"
+            ],
+            "attacks": [
+                {
+                    "name": "Hache de Maître",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "De toutes les troupes que la Maison Greyjoy envoie harceler les villages côtiers, nulle n’inspire plus de terreur que les Élus des Noirmarées. Dès qu’ils débarquent, ces guerriers chevronnés se mettent rapidement en formation et annihilent toute fortification et tout défenseur qui se dressent sur leur chemin. Vêtus de pied en cap de lourdes cottes de mailles et armés de haches forgées par les meilleurs maîtres-artisans, les Élus font partie des troupes les plus solides qui combattent sous la bannière de la Seiche."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10807",
             "name": "Hommes du Silence",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Grande Hache",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Grande Hache",
-                    "Audacieux",
-                    "Infamie du Silence"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Grande Hache",
+                "Audacieux",
+                "Infamie du Silence"
+            ],
+            "attacks": [
+                {
+                    "name": "Grande Hache",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Ceux qui naviguent sous la bannière de la Seiche ont compris depuis longtemps que le pillage et la terreur vont de pair.  C’est pour cette raison que l’équipage du Silence, le navire amiral de la Maison Greyjoy, est composé entièrement de muets. La guerre est généralement une affaire bruyante, cependant les Hommes du Silence font planer un mutisme surnaturel sur le champ de bataille. Même dans la mort, ils ne profèrent jamais le moindre son, ce qui a pour effet de déstabiliser les troupes les plus endurcies.  Bien qu’ils ne soient équipés que d’armures légères, leurs grandes haches acérées sont capables d’enfoncer la plus solide des armures."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10808",
             "name": "Les Noyés",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Gourdin",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Bénédiction du Dieu Noyé",
-                    "Fanatiques du Dieu Noyé"
-                ],
-                "wounds": 3,
-                "tray": "solo"
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Bénédiction du Dieu Noyé",
+                "Fanatiques du Dieu Noyé"
+            ],
+            "attacks": [
+                {
+                    "name": "Gourdin",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 5,
+            "cost": 4,
+            "tray": "solo",
             "fluff": {
                 "lore": "Uniquement protégés par leur foi, et armés de gourdins en bois flotté ou d’autres détritus glanés sur le rivage, les Noyés apportent un soutien étonnamment efficace à ceux qui combattent sous la bannière de la Seiche. Leur présence sur le champ de bataille est le signe de la bénédiction du Dieu Noyé, encourageant les hommes à faire fi de leurs blessures et à combattre avec un acharnement renouvelé. Bien qu’ils soient peu nombreux, les Noyés puisent une telle force dans leur foi qu’ils sont capables de résister à des coups mortels."
-            }
+            },
+            "icon": "infantry",
+            "wounds": 3
         },
         {
             "id": "10809",
             "name": "Pillards des Roches",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Harpon",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Écumer",
-                    "Promesses d'Abondances"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Écumer",
+                "Promesses d'Abondances"
+            ],
+            "attacks": [
+                {
+                    "name": "Harpon",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "L’apparition du pavillon de la Seiche à l’horizon est généralement synonyme d’ennuis pour les habitants des Roches, en grande partie à cause des Pillards embarqués à bord de ces navires. Ces soudards sont capables de se mouvoir avec rapidité et de s’emparer de tout ce qui passe à leur portée en massacrant ou mettant en déroute quiconque se dresse sur leur chemin. Cet élan meurtrier leur permet de soutenir des combats plus longtemps que la plupart des troupes dotées d’un équipement équivalent, mais à face à un adversaire plus coriace, ils auront besoin de soutien. "
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10810",
             "name": "Équipage du Fer Vainqueur",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Boarding Axe",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Hache d'abordage",
-                    "Hommes du Capitaine",
-                    "Fierté Dominatrice"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Hache d'abordage",
+                "Hommes du Capitaine",
+                "Fierté Dominatrice"
+            ],
+            "attacks": [
+                {
+                    "name": "Boarding Axe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "La simple apparition du pavillon de la Seiche à l'horizon suffit à remplir d'effroi n'importe quelle communauté, mais aucune vision n'est plus terrible que celle du Fer Vainqueur, le navire de pillage de Victarion Greyjoy lui-même. Les hommes qui composent l'équipage ont été triés sur le volet. Ils sont vicieux par nature, aguerris au combat et d'une loyauté sans faille. Même s'ils sont peu nombreux, ils peuvent constituer le noyau dur de toute force d'assaut. Il est toutefois judicieux de prévoir un soutien adéquat pour couvrir leurs flancs."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30801",
             "name": "Rodrik Harloi",
-            "subname": "Le Bouquineur",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Érudit au Sein des Pillards",
-                        "effect": [
-                            "Rodrik commence la partie avec 2 pions Ordre.",
-                            "Au début de n’importe quel tour, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, choisissez n’importe quel nombre de cartes Tactique dans votre main et mettez-les de côté. Ensuite, piochez ce même nombre de cartes +1. Enfin, mélangez les cartes mises de côté dans votre paquet Tactique."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Le Bouquineur",
+            "abilities": [
+                {
+                    "name": "Érudit au Sein des Pillards",
+                    "effect": [
+                        "Rodrik commence la partie avec 2 pions Ordre.",
+                        "Au début de n’importe quel tour, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, choisissez n’importe quel nombre de cartes Tactique dans votre main et mettez-les de côté. Ensuite, piochez ce même nombre de cartes +1. Enfin, mélangez les cartes mises de côté dans votre paquet Tactique."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Je préfère mon histoire morte. L’histoire morte est écrite à l’encre, la variété vive s’écrit dans le sang. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30802",
             "name": "Aeron Greyjoy",
-            "subname": "Tif-Tempes",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Se Relever, Plus Dur à la Peine et Plus Vigoureux",
-                        "effect": [
-                            "**Areon ne peut Influencer que des unités Greyjoy.**",
-                            "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité, chaque fois que celle-ci effectue une action, elle se soigne 1 de ses Blessures avant de résoudre son action. Chaque fois que cette unité détruit un rang ennemi lors d’une Attaque de Mêlée, elle soigne 1 de ses Blessures."
-                        ]
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Tif-Tempes",
+            "abilities": [
+                {
+                    "name": "Se Relever, Plus Dur à la Peine et Plus Vigoureux",
+                    "effect": [
+                        "**Areon ne peut Influencer que des unités Greyjoy.**",
+                        "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité, chaque fois que celle-ci effectue une action, elle se soigne 1 de ses Blessures avant de résoudre son action. Chaque fois que cette unité détruit un rang ennemi lors d’une Attaque de Mêlée, elle soigne 1 de ses Blessures."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "Ce qui est mort ne saurait mourir mais se lève à nouveau, plus dur à la peine et plus vigoureux."
             }
@@ -396,20 +391,20 @@
         {
             "id": "30803",
             "name": "Balon Greyjoy",
-            "subname": "Roi du Sel et du Roc",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "cost": 6,
-                "abilities": [
-                    {
-                        "name": "Se Relever, la Lame à la Main",
-                        "effect": [
-                            "Une fois par partie, quand Balon est activé, au lieu de le faire s’emparer d’une zone, redéployez 1 Unité Combattante précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée ou entièrement à Courte Portée ou moins d’un Flanc de table. Elle se déploie sans les pions Pillage qu’elle possédait. Si l’unité n’avait pas encore été activée ce round-ci, elle est déployée non activée. Dans le cas contraire, elle est déployée activée."
-                        ]
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "ncu",
+            "title": "Roi du Sel et du Roc",
+            "abilities": [
+                {
+                    "name": "Se Relever, la Lame à la Main",
+                    "effect": [
+                        "Une fois par partie, quand Balon est activé, au lieu de le faire s’emparer d’une zone, redéployez 1 Unité Combattante précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée ou entièrement à Courte Portée ou moins d’un Flanc de table. Elle se déploie sans les pions Pillage qu’elle possédait. Si l’unité n’avait pas encore été activée ce round-ci, elle est déployée non activée. Dans le cas contraire, elle est déployée activée."
+                    ]
+                }
+            ],
+            "cost": 6,
+            "character": true,
             "fluff": {
                 "quote": "« Nul n’est jamais mort d’avoir ployé le genou. Celui qui s’agenouille peut se relever, la lame à la main. »"
             }
@@ -417,24 +412,24 @@
         {
             "id": "30804",
             "name": "Wendamyr",
-            "subname": "Mestre de la Maison Greyjoy",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "S'occuper des Corbeaux",
-                        "effect": [
-                            "Quand Wendamyr s’empare d’une zone, vous pouvez en remplacer l’effet par :",
-                            "*Placez 1 pion Ordre sur Wendamyr.*",
-                            "Au début d’un tour allié, vous pouvez retirer 1 pion Ordre de Wendamyr. Si vous le faites, choisissez 1 option :",
-                            "• Piochez 1 carte Tactique et soignez 2 Blessures de 1 Unité Combattante alliée.",
-                            "• 1 Unité Combattante alliée se décale de 3’’."
-                        ]
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Mestre de la Maison Greyjoy",
+            "abilities": [
+                {
+                    "name": "S'occuper des Corbeaux",
+                    "effect": [
+                        "Quand Wendamyr s’empare d’une zone, vous pouvez en remplacer l’effet par :",
+                        "*Placez 1 pion Ordre sur Wendamyr.*",
+                        "Au début d’un tour allié, vous pouvez retirer 1 pion Ordre de Wendamyr. Si vous le faites, choisissez 1 option :",
+                        "• Piochez 1 carte Tactique et soignez 2 Blessures de 1 Unité Combattante alliée.",
+                        "• 1 Unité Combattante alliée se décale de 3’’."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Si vous n’avez pas de mestre, on en tire la conclusion que vous avez peu d’importance. »"
             }
@@ -442,48 +437,48 @@
         {
             "id": "30805",
             "name": "Erik Forgefer",
-            "subname": "Le Juste",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Cadeaux de Fer, d'Or et d'Acier",
-                        "effect": [
-                            "Au début de la partie, placez 1 pion Pillage sur Erik.",
-                            "Quand Erik ou une UNC ennemie s’empare de [MONEY], placez 1 pion Pillage sur Erik.",
-                            "Quand Erik s’empare d’une zone autre que [MONEY], vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité Greyjoy alliée."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 1,
-                    "name": "pillage"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Le Juste",
+            "abilities": [
+                {
+                    "name": "Cadeaux de Fer, d'Or et d'Acier",
+                    "effect": [
+                        "Au début de la partie, placez 1 pion Pillage sur Erik.",
+                        "Quand Erik ou une UNC ennemie s’empare de [MONEY], placez 1 pion Pillage sur Erik.",
+                        "Quand Erik s’empare d’une zone autre que [MONEY], vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité Greyjoy alliée."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Si vieux, ça veut dire sage, alors, ça, y a pas d’quinqu’un p’us sage qu’mézigue. Si mahous, ça veut dire balèze, alors y a pas d’quinqu’un p’us balèze qu’mézigue. »"
+            },
+            "tokens": {
+                "name": "pillage",
+                "number": 1
             }
         },
         {
             "id": "30806",
             "name": "Tristifer Botley",
-            "subname": "Seigneur de Lordsport",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Diplomate Fer-Né",
-                        "effect": [
-                            "Une fois par partie, quand une UNC ennemie est activée, vous pouvez choisir 2 Zones Stratégiques. Si cette UNC s’empare de l’une ou l’autre de ces zones au cours de cette activation, ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées** et **Vulnérables**.",
-                            "Une fois par partie, quand une UNC ennemie est activée, si Tristifer ne se trouve pas sur le tableau Stratégique, vous pouvez choisir 1 zone. Si cette UNC s’empare de cette zone ce tour-ci, à la fin du tour, vous pouvez activer Tristifer."
-                        ]
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Seigneur de Lordsport",
+            "abilities": [
+                {
+                    "name": "Diplomate Fer-Né",
+                    "effect": [
+                        "Une fois par partie, quand une UNC ennemie est activée, vous pouvez choisir 2 Zones Stratégiques. Si cette UNC s’empare de l’une ou l’autre de ces zones au cours de cette activation, ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées** et **Vulnérables**.",
+                        "Une fois par partie, quand une UNC ennemie est activée, si Tristifer ne se trouve pas sur le tableau Stratégique, vous pouvez choisir 1 zone. Si cette UNC s’empare de cette zone ce tour-ci, à la fin du tour, vous pouvez activer Tristifer."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Des yeux bien tendres, à la vérité. Là se trouvait précisément le hic, avec ce pauvre Tristifer : il était trop tendre pour les îles de Fer. » – Asha Greyjoy."
             }
@@ -491,22 +486,22 @@
         {
             "id": "30807",
             "name": "Moqorro",
-            "subname": "La Flamme Noire",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "La Magie de R'hllor",
-                        "effect": [
-                            "Une fois par partie, au début d’un tour, vous pouvez utiliser cette capacité. Si vous le faites, jusqu’à la fin du tour, votre adversaire ne peut pas utiliser d’Ordres ou de cartes Tactique.",
-                            "Une fois par partie, quand Moqorro s’empare d’une zone, vous pouvez remplacer l’effet de cette zone par :",
-                            "*Remettez en jeu 1 Attachement déjà détruit et attachez-le à une Unité Combattante alliée, en remplaçant normalement une figurine, mais en ignorant les restrictions d’Attachement.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "La Flamme Noire",
+            "abilities": [
+                {
+                    "name": "La Magie de R'hllor",
+                    "effect": [
+                        "Une fois par partie, au début d’un tour, vous pouvez utiliser cette capacité. Si vous le faites, jusqu’à la fin du tour, votre adversaire ne peut pas utiliser d’Ordres ou de cartes Tactique.",
+                        "Une fois par partie, quand Moqorro s’empare d’une zone, vous pouvez remplacer l’effet de cette zone par :",
+                        "*Remettez en jeu 1 Attachement déjà détruit et attachez-le à une Unité Combattante alliée, en remplaçant normalement une figurine, mais en ignorant les restrictions d’Attachement.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Qu’est-ce qui te fait raconter que cet homme est un conjurateur ? Je ne vois qu’un prêtre rouge en loques » – Victartion Greyjoy à Rodrick Sparr"
             }
@@ -514,24 +509,24 @@
         {
             "id": "30808",
             "name": "Beron Noirmarées",
-            "subname": "Beron l'Aveugle",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Zèle du Dieu Noyé",
-                        "effect": [
-                            "**Beron ne peut Influencer que des unités Greyjoy.**",
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du Round)* :",
-                            "Tant que cette carte Influence une unité, celle-ci peut relancer n’importe quels dés des Tests de Moral et gagne la capacité **Endurci** :",
-                            "**ENDURCI**",
-                            "*Chaque fois qu’un ennemi effectue une attaque sur cette unité, après avoir lancé les dés de Défense, cette unité bloque 1 Touche pour chacun de ses rangs détruits.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Beron l'Aveugle",
+            "abilities": [
+                {
+                    "name": "Zèle du Dieu Noyé",
+                    "effect": [
+                        "**Beron ne peut Influencer que des unités Greyjoy.**",
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du Round)* :",
+                        "Tant que cette carte Influence une unité, celle-ci peut relancer n’importe quels dés des Tests de Moral et gagne la capacité **Endurci** :",
+                        "**ENDURCI**",
+                        "*Chaque fois qu’un ennemi effectue une attaque sur cette unité, après avoir lancé les dés de Défense, cette unité bloque 1 Touche pour chacun de ses rangs détruits.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« ASHA ! ASHA REINE ! » – Beron l’Aveugle, soutenant Asha Greyjoy lors des états généraux de la royauté"
             }
@@ -539,52 +534,49 @@
         {
             "id": "30809",
             "name": "Asha Greyjoy",
-            "subname": "Future Reine",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Promesses de Reine",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
-                            "*Chaque fois qu’Asha Influence une unité, celle-ci retire 1 de ses pions État.",
-                            "Tant qu’Asha Influence une unité alliée, celle-ci gagne +1 à ses lancers de Test de Moral pour chacun de ses pions Pillage. Chaque fois que cette unité réussit un Test de Moral, ciblez 1 ennemi avec lequel elle est engagée. Cet ennemi subit 1 Touche pour chaque pion Pillage sur cette unité."
-                        ]
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Future Reine",
+            "abilities": [
+                {
+                    "name": "Promesses de Reine",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
+                        "*Chaque fois qu’Asha Influence une unité, celle-ci retire 1 de ses pions État.",
+                        "Tant qu’Asha Influence une unité alliée, celle-ci gagne +1 à ses lancers de Test de Moral pour chacun de ses pions Pillage. Chaque fois que cette unité réussit un Test de Moral, ciblez 1 ennemi avec lequel elle est engagée. Cet ennemi subit 1 Touche pour chaque pion Pillage sur cette unité."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Votre choix est simple. Couronnez-moi, pour la paix et la victoire. Ou couronnez mon oncle, pour davantage de guerres et bien plus de défaites encore. »"
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20801",
             "name": "Asha Greyjoy",
-            "subname": "La Fille de la Seiche",
-            "statistics": {
-                "version": "S05",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Charisme Fougueux",
-                    "Volonté de Fer",
-                    "Ténacité Acharnée"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40808": "Opiniâtreté des Fer-Nés",
-                    "40809": "Ardeur des pillards",
-                    "40810": "Cri de Guerre"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "S05",
+            "role": "attachment",
+            "title": "La Fille de la Seiche",
+            "abilities": [
+                "Charisme Fougueux",
+                "Volonté de Fer",
+                "Ténacité Acharnée"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40808",
+                "40809",
+                "40810"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je suis l’héritière du corps de Balon. »"
             }
@@ -592,18 +584,18 @@
         {
             "id": "20802",
             "name": "Asha Greyjoy",
-            "subname": "Capitaine du Vent Noir",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Cri de Guerre",
-                    "Volonté de Fer"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Capitaine du Vent Noir",
+            "abilities": [
+                "Ordre : Cri de Guerre",
+                "Volonté de Fer"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il n’est pas de bataille désespérée tant qu’on ne l’a pas livrée. »"
             }
@@ -611,27 +603,24 @@
         {
             "id": "20803",
             "name": "Victarion Greyjoy",
-            "subname": "Le Capitaine de Fer",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Débordement",
-                    "Charge Furieuse",
-                    "Cruel"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40811": "Poussée aggressive",
-                    "40812": "Ordres d'assaut",
-                    "40813": "Assaut soutenu"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Le Capitaine de Fer",
+            "abilities": [
+                "Ordre : Débordement",
+                "Charge Furieuse",
+                "Cruel"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40811",
+                "40812",
+                "40813"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je pourrais mener la flotte de Fer jusqu’en enfer, si besoin était. »"
             }
@@ -639,18 +628,18 @@
         {
             "id": "20804",
             "name": "Victarion Greyjoy",
-            "subname": "Maître du Fer Vainqueur",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Charge Furieuse",
-                    "Acharné"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Maître du Fer Vainqueur",
+            "abilities": [
+                "Charge Furieuse",
+                "Acharné"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Les magiciens, c’est bien joli, mais les batailles, ça se gagne avec du sang et de l’acier. »"
             }
@@ -658,50 +647,50 @@
         {
             "id": "20805",
             "name": "Capitaine Ravageur",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Attaque de Flanc"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée peut inclure un maximum de 2 Capitaines Ravageurs. Cet Attachement ne peut aller que dans une unité Greyjoy, mais il ignore les limitations normales des Attachements.*"
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Attaque de Flanc"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Votre armée peut inclure un maximum de 2 Capitaines Ravageurs. Cet Attachement ne peut aller que dans une unité Greyjoy, mais il ignore les limitations normales des Attachements.*",
+                    "name": "Limité "
+                }
+            ],
+            "icon": "infantry"
         },
         {
             "id": "20806",
             "name": "Guerrier juré",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Soif de Massacre"
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Soif de Massacre"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20807",
             "name": "Theon Greyjoy",
-            "subname": "Tueur des Siens",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Héroïsme Téméraire",
-                    "Frappe Éclair"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Tueur des Siens",
+            "abilities": [
+                "Ordre : Héroïsme Téméraire",
+                "Frappe Éclair"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« La casaque où m’emmaillota mon père était frappée d’une seiche, pas d’un loup-garou. »"
             }
@@ -709,27 +698,24 @@
         {
             "id": "20808",
             "name": "Theon Greyjoy",
-            "subname": "« Prince » de Winterfell",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Embuscade",
-                    "Mobilité Améliorée"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40814": "Opportuniste",
-                    "40815": "Tactique de diversion",
-                    "40816": "Exposition des Stark"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "attachment",
+            "title": "« Prince » de Winterfell",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Embuscade",
+                "Mobilité Améliorée"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40814",
+                "40815",
+                "40816"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Le seigneur ton père avait fait de son mieux pour policer Theon, mais trop peu et trop tard, je crains. »"
             }
@@ -737,22 +723,22 @@
         {
             "id": "20809",
             "name": "Qarl",
-            "subname": "Champion d'Asha",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Duelliste Chevronné"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Cet Attachement ignore les limites normales d’Attachement lorsqu’il est ajouté à une unité qui contient Asha Greyjoy.*"
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Champion d'Asha",
+            "abilities": [
+                "Duelliste Chevronné"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Cet Attachement ignore les limites normales d’Attachement lorsqu’il est ajouté à une unité qui contient Asha Greyjoy.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Si l’Ombre vous a tellement plu que ça, retournez-y donc ! » – Qarl à Euron Greyjoy"
             }
@@ -760,18 +746,18 @@
         {
             "id": "20810",
             "name": "Qarl",
-            "subname": "Pucelle",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Duelliste Chevronné",
-                    "Vaillance"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Pucelle",
+            "abilities": [
+                "Duelliste Chevronné",
+                "Vaillance"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« … pour le distinguer de Qarl Berger, de Qarl Prompte-Hache et de Qarl le Serf, mais surtout pour ses joues lisses. »"
             }
@@ -779,19 +765,19 @@
         {
             "id": "20811",
             "name": "Nutt",
-            "subname": "Le Barbier",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Vassal de Victarion",
-                    "Charge Furieuse",
-                    "Appât du Gain"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Le Barbier",
+            "abilities": [
+                "Vassal de Victarion",
+                "Charge Furieuse",
+                "Appât du Gain"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« C’est bien bon, la gloire, mais l’or, c’est meilleur. »"
             }
@@ -799,26 +785,23 @@
         {
             "id": "20812",
             "name": "Euron Greyjoy",
-            "subname": "Seigneur Faucheur de Pyk",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Semer la Discorde",
-                    "Présence Intimidante"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40820": "Méthodes fourbes",
-                    "40821": "Habile  stratagème",
-                    "40822": "Jeux d'esprit"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Seigneur Faucheur de Pyk",
+            "abilities": [
+                "Ordre : Semer la Discorde",
+                "Présence Intimidante"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40820",
+                "40821",
+                "40822"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Balon était fou, Aeron est encore plus fou, et Euron est le plus fou de tous. »"
             }
@@ -826,26 +809,23 @@
         {
             "id": "20813",
             "name": "Balon Greyjoy",
-            "subname": "Le Roi Seiche",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Soif de Massacre",
-                    "Le Tribut de la Seiche"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40817": "Sacrifices acceptables",
-                    "40818": "Le prix de l'échec",
-                    "40819": "L'antique voie"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Le Roi Seiche",
+            "abilities": [
+                "Soif de Massacre",
+                "Le Tribut de la Seiche"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40817",
+                "40818",
+                "40819"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je paie le fer-prix. Ma couronne, je la prendrai, comme le fit Urron Mainrouge voilà cinq mille ans. »"
             }
@@ -853,18 +833,18 @@
         {
             "id": "20814",
             "name": "Euron Greyjoy",
-            "subname": "Œil-de-Choucas",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Reliques Étranges",
-                    "Cadeaux Empoisonnés"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Œil-de-Choucas",
+            "abilities": [
+                "Ordre : Reliques Étranges",
+                "Cadeaux Empoisonnés"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« La tornade, c’est moi, messire. La première venue comme la dernière. »"
             }
@@ -872,26 +852,23 @@
         {
             "id": "20815",
             "name": "Erik Forgefer",
-            "subname": "Brise-Enclumes",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Partager le Butin",
-                    "Cadeaux d'Argent et de Bronze"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40823": "Endurance du fer",
-                    "40824": "Puissance de l'acier",
-                    "40825": "Attrait de l'or"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Brise-Enclumes",
+            "abilities": [
+                "Ordre : Partager le Butin",
+                "Cadeaux d'Argent et de Bronze"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40823",
+                "40824",
+                "40825"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Roi Erik, ouais, j’aim’ben l’son qu’ç’a, ça, moi. Allez, disez-l’vec moi : ERIK ! ERIK BRISE-ENCLUME ! ERIK ROI ! »"
             }
@@ -899,18 +876,18 @@
         {
             "id": "20816",
             "name": "Asha Greyjoy",
-            "subname": "« Lady Greyjoy »",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Attaque en Bande"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "attachment",
+            "title": "« Lady Greyjoy »",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Attaque en Bande"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je suis Asha de la Maison Greyjoy, ouais. Les opinions divergent sur le fait que je sois une Lady. »"
             }
@@ -918,17 +895,17 @@
         {
             "id": "20817",
             "name": "Dagmer Gueule-en-Deux",
-            "subname": "Capitaine de l'Écumeur",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Cicatrices de Combat"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Capitaine de l'Écumeur",
+            "abilities": [
+                "Cicatrices de Combat"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ses cheveux sont blancs et ses dents sont pourries, mais il a toujours de l’appétence pour la gloire. »"
             }
@@ -936,18 +913,18 @@
         {
             "id": "20818",
             "name": "Baelor Noirmarées",
-            "subname": "Capitaine de l'Oiseau de Nuit",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Audace et Bravoure",
-                    "Inflexible"
-                ],
-                "character": true
-            },
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Capitaine de l'Oiseau de Nuit",
+            "abilities": [
+                "Audace et Bravoure",
+                "Inflexible"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Balon le Faiseur de Veuves, c’est ainsi que je l’appelle. J’échangerai volontiers sa liberté pour un père. En as-tu un à donner ? »"
             }
@@ -955,23 +932,23 @@
         {
             "id": "20819",
             "name": "Moqorro",
-            "subname": "Esclave de R'hllor",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Incitation",
-                    "Ordre : Assistance"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Si votre armée contient Victarion Greyjoy, Maître du Fer Vainqueur, réduisez le coût de Moqorro, Esclave de R'hllor d'1 point.*"
-                    }
-                ]
-            },
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Esclave de R'hllor",
+            "abilities": [
+                "Ordre : Incitation",
+                "Ordre : Assistance"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Si votre armée contient Victarion Greyjoy, Maître du Fer Vainqueur, réduisez le coût de Moqorro, Esclave de R'hllor d'1 point.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Le Maître de la Lumière m’a montré ta valeur, Lord Capitaine. Chaque nuit dans mes flammes j’entrevois la gloire qui t’attend. »"
             }
@@ -979,57 +956,51 @@
         {
             "id": "20820",
             "name": "Baelor Noirmarées",
-            "subname": "Seigneur de Noirmarées",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Jusqu'au Dernier !",
-                    "Endurci"
-                ],
-                "commander": true,
-                "character": true,
-                "tokens": {
-                    "number": 2,
-                    "name": "wound"
-                }
-            },
-            "tactics": {
-                "cards": {
-                    "40826": "Retour de bâton",
-                    "40827": "Rancœur des Noirmarées",
-                    "40828": "Conviction des Noirmarées"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Seigneur de Noirmarées",
+            "abilities": [
+                "Jusqu'au Dernier !",
+                "Endurci"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40826",
+                "40827",
+                "40828"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Lord Noirmarées prétend que ces états généraux de la royauté sont une dangereuse folie… » – Rodrick Harloi"
+            },
+            "tokens": {
+                "name": "wound",
+                "number": 2
             }
         },
         {
             "id": "20821",
             "name": "Dagmer Gueule-en-Deux",
-            "subname": "Maître d'Armes",
-            "statistics": {
-                "version": "S05",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Entraînement Martial",
-                    "Attaque en Bande"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40829": "Soif de gloire",
-                    "40830": "Jalousie du fer",
-                    "40831": "Le savoir au prix du fer"
-                }
-            },
+            "faction": "greyjoy",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Maître d'Armes",
+            "abilities": [
+                "Ordre : Entraînement Martial",
+                "Attaque en Bande"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40829",
+                "40830",
+                "40831"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Les vivants devraient sourire, car les morts ne le peuvent pas. »"
             }
@@ -1037,692 +1008,660 @@
         {
             "id": "20822",
             "name": "Prophète Noyé",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Résilience"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée peut inclure un maximum de 2 Prophètes Noyés.*"
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Résilience"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Votre armée peut inclure un maximum de 2 Prophètes Noyés.*",
+                    "name": "Limité "
+                }
+            ],
+            "icon": "infantry"
         },
         {
             "id": "20823",
             "name": "Brave de la Mer d'Été",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Crédit de Fer"
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Crédit de Fer"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         }
     ],
     "tactics": [
         {
             "id": "40801",
             "name": "Nous ne semons pas",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante Alliée effectue une action d’Attaque.*",
-                            "*Si un adversaire contrôle [MONEY], cette unité se soigne de 1 Blessure, +1 pour chacun de ses rangs détruits.*"
-                        ]
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez l’effet de cette zone par :",
+                        "*1 Unité Combattante Alliée effectue une action d’Attaque.*",
+                        "*Si un adversaire contrôle [MONEY], cette unité se soigne de 1 Blessure, +1 pour chacun de ses rangs détruits.*"
+                    ]
+                }
+            ]
         },
         {
             "id": "40802",
             "name": "Ce qui est mort ne saurait mourir",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée doit être détruite :",
-                        "effect": [
-                            "Cette unité n’est pas détruite et reste en jeu avec 1 Blessure."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée. Cette unité soigne 1 de ses Blessures, +1 Blessure pour chacun de ses rangs détruits."
-                        ]
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée doit être détruite :",
+                    "effect": [
+                        "Cette unité n’est pas détruite et reste en jeu avec 1 Blessure."
+                    ]
+                },
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée. Cette unité soigne 1 de ses Blessures, +1 Blessure pour chacun de ses rangs détruits."
+                    ]
+                }
+            ]
         },
         {
             "id": "40803",
             "name": "La colère du Kraken",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Si vous contrôlez [SWORDS], cette Attaque gagne **Précision**.",
-                            "Si un adversaire contrôle [SWORDS], cette Attaque gagne **Précision** et peut relancer n'importe quels dés d’Attaque.",
-                            "Si vous contrôlez [MONEY],le défenseur devient **Paniqué**.",
-                            "Si un adversaire contrôle [MONEY], le défenseur devient **Vulnérable**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si vous contrôlez [SWORDS], cette Attaque gagne **Précision**.",
+                        "Si un adversaire contrôle [SWORDS], cette Attaque gagne **Précision** et peut relancer n'importe quels dés d’Attaque.",
+                        "Si vous contrôlez [MONEY],le défenseur devient **Paniqué**.",
+                        "Si un adversaire contrôle [MONEY], le défenseur devient **Vulnérable**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40804",
             "name": "Le prix du fer",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez une Unité Combattante alliée et choisissez 1 option :",
-                            "• Cette unité peut retirer 1 de ses pions État. Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle soigne 2 de ses Blessures, +1 Blessure pour chacun de ses rangs détruits.",
-                            "• Cette unité attaque en utilisant sa plus haute valeur de dés ce tour-ci. . Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle peut relancer ses dés d'Attaque ce tour-ci."
-                        ]
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez une Unité Combattante alliée et choisissez 1 option :",
+                        "• Cette unité peut retirer 1 de ses pions État. Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle soigne 2 de ses Blessures, +1 Blessure pour chacun de ses rangs détruits.",
+                        "• Cette unité attaque en utilisant sa plus haute valeur de dés ce tour-ci. . Vous pouvez retirer 1 pion Pillage de cette unité. Si vous le faites, elle peut relancer ses dés d'Attaque ce tour-ci."
+                    ]
+                }
+            ]
         },
         {
             "id": "40805",
             "name": "Danse du doigt",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez une Unité Combattante alliée. Attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, quand il effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, l'attaquant peut subir jusqu'à 2 Blessures. Pour chaque Blessure subie, choisissez 1 option :",
-                            "• Le défenseur devient **Paniqué**.",
-                            "• Le défenseur devient **Vulnérable**.",
-                            "• Cette attaque peut relancer n'importe quels dés d'Attaque."
-                        ]
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez une Unité Combattante alliée. Attachez-lui cette carte jusqu’à la fin de la partie.",
+                        "Tant que cette carte est attachée, quand il effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque, l'attaquant peut subir jusqu'à 2 Blessures. Pour chaque Blessure subie, choisissez 1 option :",
+                        "• Le défenseur devient **Paniqué**.",
+                        "• Le défenseur devient **Vulnérable**.",
+                        "• Cette attaque peut relancer n'importe quels dés d'Attaque."
+                    ]
+                }
+            ]
         },
         {
             "id": "40806",
             "name": "Appel au raid",
-            "statistics": {
-                "version": "S04",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité d’Infanterie Greyjoy alliée est activée :",
-                        "effect": [
-                            "Retirez un maximum de 3 figurines et un maximum de 1 pion Pillage d’une autre unité d’Infanterie Greyjoy alliée située à Longue Portée ou moins. Cette unité se soigne d’autant de Blessures +1 et gagne le pion Pillage retiré.",
-                            "Si un joueur quelconque contrôle [MONEY], 1 unité d’Infanterie Greyjoy alliée gagne 1 pion Pillage."
-                        ]
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité d’Infanterie Greyjoy alliée est activée :",
+                    "effect": [
+                        "Retirez un maximum de 3 figurines et un maximum de 1 pion Pillage d’une autre unité d’Infanterie Greyjoy alliée située à Longue Portée ou moins. Cette unité se soigne d’autant de Blessures +1 et gagne le pion Pillage retiré.",
+                        "Si un joueur quelconque contrôle [MONEY], 1 unité d’Infanterie Greyjoy alliée gagne 1 pion Pillage."
+                    ]
+                }
+            ]
         },
         {
             "id": "40807",
             "name": "La bénédiction  de la pierre, la bénédiction  de l'acier",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée est activée :",
-                        "effect": [
-                            "Ciblez 1 ennemi engagé avec cette unité. Pour chaque rang détruit de cet ennemi, cette unité se soigne de 2 Blessures.",
-                            "Si vous contrôlez [MONEY] ou [SWORDS], pour chacune de ces zones que vous contrôlez, cette unité se soigne de +1 Blessure ou retire un pion État."
-                        ]
-                    }
-                ]
-            }
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Ciblez 1 ennemi engagé avec cette unité. Pour chaque rang détruit de cet ennemi, cette unité se soigne de 2 Blessures.",
+                        "Si vous contrôlez [MONEY] ou [SWORDS], pour chacune de ces zones que vous contrôlez, cette unité se soigne de +1 Blessure ou retire un pion État."
+                    ]
+                }
+            ]
         },
         {
             "id": "40808",
             "name": "Opiniâtreté des Fer-Nés",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée réussit un Test de Moral :",
-                        "effect": [
-                            "Cette unité se soigne de 2 Blessures.",
-                            "Si cette unité est située à Courte Portée ou moins de l’unité d’Asha Greyjoy, elle se soigne de +1 Blessure pour chacun de ses rangs détruits."
-                        ]
-                    }
-                ],
-                "commander_id": "20801",
-                "commander_name": "Asha Greyjoy",
-                "commander_subname": "La Fille de la Seiche"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée réussit un Test de Moral :",
+                    "effect": [
+                        "Cette unité se soigne de 2 Blessures.",
+                        "Si cette unité est située à Courte Portée ou moins de l’unité d’Asha Greyjoy, elle se soigne de +1 Blessure pour chacun de ses rangs détruits."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20801"
             }
         },
         {
             "id": "40809",
             "name": "Ardeur des pillards",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée réussit un Test de Moral :",
-                        "effect": [
-                            "Attachez cette carte à cette unité jusqu’à ce qu’elle échoue un test de Moral.",
-                            "Tant que cette carte est attachée, quand cette unité attaque, si elle possède tous ses rangs, elle gagne +1 dé d’Attaque. Sinon, elle est considérée comme ayant +1 rang pour calculer ses dés d’Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20801",
-                "commander_name": "Asha Greyjoy",
-                "commander_subname": "La Fille de la Seiche"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée réussit un Test de Moral :",
+                    "effect": [
+                        "Attachez cette carte à cette unité jusqu’à ce qu’elle échoue un test de Moral.",
+                        "Tant que cette carte est attachée, quand cette unité attaque, si elle possède tous ses rangs, elle gagne +1 dé d’Attaque. Sinon, elle est considérée comme ayant +1 rang pour calculer ses dés d’Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20801"
             }
         },
         {
             "id": "40810",
             "name": "Cri de Guerre",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée est activée :",
-                        "effect": [
-                            "Cette unité effectue 1 Test de Moral.",
-                            "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** ou **Vulnérable**.",
-                            "Si cette carte cible l’unité d'Asha et qu’elle réussit, l’ennemi devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20801",
-                "commander_name": "Asha Greyjoy",
-                "commander_subname": "La Fille de la Seiche"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral.",
+                        "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** ou **Vulnérable**.",
+                        "Si cette carte cible l’unité d'Asha et qu’elle réussit, l’ennemi devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20801"
             }
         },
         {
             "id": "40811",
             "name": "Poussée aggressive",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, avant de lancer les dés de Distance de Charge :",
-                        "effect": [
-                            "Cette unité est considérée comme ayant obtenu 6 sur tous ses dés de Distance de Charge et ses Attaques de Mêlée gagnent **Frappe Critique**.",
-                            "Une fois cette attaque résolue, l’attaquant devient **Vulnérable**, à moins d’être l’unité de Victarion Greyjoy."
-                        ]
-                    }
-                ],
-                "commander_id": "20803",
-                "commander_name": "Victarion Greyjoy",
-                "commander_subname": "Le Capitaine de Fer"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une action de Charge, avant de lancer les dés de Distance de Charge :",
+                    "effect": [
+                        "Cette unité est considérée comme ayant obtenu 6 sur tous ses dés de Distance de Charge et ses Attaques de Mêlée gagnent **Frappe Critique**.",
+                        "Une fois cette attaque résolue, l’attaquant devient **Vulnérable**, à moins d’être l’unité de Victarion Greyjoy."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20803"
             }
         },
         {
             "id": "40812",
             "name": "Ordres d'assaut",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d'Attaque la plus basse.*",
-                            "*Si cette Unité est l'unité de Victarion, elle peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20803",
-                "commander_name": "Victarion Greyjoy",
-                "commander_subname": "Le Capitaine de Fer"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez l’effet de cette zone par :",
+                        "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d'Attaque la plus basse.*",
+                        "*Si cette Unité est l'unité de Victarion, elle peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20803"
             }
         },
         {
             "id": "40813",
             "name": "Assaut soutenu",
-            "statistics": {
-                "version": "S06",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée et elle peut relancer n'importe quels dés d'Attaque.",
-                            "Si cette carte cible l’unité de Victarion, le défenseur devient également **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20803",
-                "commander_name": "Victarion Greyjoy",
-                "commander_subname": "Le Capitaine de Fer"
+            "faction": "greyjoy",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée et elle peut relancer n'importe quels dés d'Attaque.",
+                        "Si cette carte cible l’unité de Victarion, le défenseur devient également **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20803"
             }
         },
         {
             "id": "40814",
             "name": "Opportuniste",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Si le défenseur n’a pas été activé ce round-ci, cette attaque peut relancer n’importe quels dés d’Attaque et gagne soit **Précision**, soit **Cruel**. Si l’attaquant est l’unité de Theon Greyjoy, il gagne les deux."
-                        ]
-                    }
-                ],
-                "commander_id": "20808",
-                "commander_name": "Theon Greyjoy",
-                "commander_subname": "« Prince » de Winterfell"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si le défenseur n’a pas été activé ce round-ci, cette attaque peut relancer n’importe quels dés d’Attaque et gagne soit **Précision**, soit **Cruel**. Si l’attaquant est l’unité de Theon Greyjoy, il gagne les deux."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20808"
             }
         },
         {
             "id": "40815",
             "name": "Tactique de diversion",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez 1 autre unité alliée située à Longue Portée ou moins du défenseur. Elle effectue 1 action de Manœuvre."
-                        ]
-                    }
-                ],
-                "commander_id": "20808",
-                "commander_name": "Theon Greyjoy",
-                "commander_subname": "« Prince » de Winterfell"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez 1 autre unité alliée située à Longue Portée ou moins du défenseur. Elle effectue 1 action de Manœuvre."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20808"
             }
         },
         {
             "id": "40816",
             "name": "Exposition des Stark",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée réussit une Charge :",
-                        "effect": [
-                            "Choisissez 1 option. Si vous contrôlez [SWORDS], gagnez les 2 :",
-                            "• Les ennemis Chargés avec succès par cette unité ne peuvent pas être ciblés par des Ordres ou des cartes Tactique alliées ce tour-ci.",
-                            "• L’attaquant utilise sa plus haute valeur de dés d’Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20808",
-                "commander_name": "Theon Greyjoy",
-                "commander_subname": "« Prince » de Winterfell"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée réussit une Charge :",
+                    "effect": [
+                        "Choisissez 1 option. Si vous contrôlez [SWORDS], gagnez les 2 :",
+                        "• Les ennemis Chargés avec succès par cette unité ne peuvent pas être ciblés par des Ordres ou des cartes Tactique alliées ce tour-ci.",
+                        "• L’attaquant utilise sa plus haute valeur de dés d’Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20808"
             }
         },
         {
             "id": "40817",
             "name": "Sacrifices acceptables",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée autre que celle de Balon.",
-                            "Vous pouvez lui faire subir un maximum de 2 Blessures et la faire devenir **Paniquée**.",
-                            "Si vous le faites, ciblez 1 autre unité Greyjoy alliée située à Longue Portée ou moins. Elle gagne 1 pion Pillage pour chaque Blessure subie."
-                        ]
-                    }
-                ],
-                "commander_id": "20813",
-                "commander_name": "Balon Greyjoy",
-                "commander_subname": "Le Roi Seiche"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée autre que celle de Balon.",
+                        "Vous pouvez lui faire subir un maximum de 2 Blessures et la faire devenir **Paniquée**.",
+                        "Si vous le faites, ciblez 1 autre unité Greyjoy alliée située à Longue Portée ou moins. Elle gagne 1 pion Pillage pour chaque Blessure subie."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20813"
             }
         },
         {
             "id": "40818",
             "name": "Le prix de l'échec",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Tous les résultats des dés de cette attaque Touchent automatiquement.",
-                            "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20813",
-                "commander_name": "Balon Greyjoy",
-                "commander_subname": "Le Roi Seiche"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Tous les résultats des dés de cette attaque Touchent automatiquement.",
+                        "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20813"
             }
         },
         {
             "id": "40819",
             "name": "L'antique voie",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
-                        "effect": [
-                            "Si cette unité possède 1 pion Pillage, elle peut relancer n’importe quels dés de ce Test.",
-                            "Si cette unité possède 2 pions Pillage, elle réussit le Test."
-                        ]
-                    },
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, après avoir lancé les dés d’Attaque :",
-                        "effect": [
-                            "Si cette unité possède 1 pion Pillage, le défenseur devient **Vulnérable**.",
-                            "Si cette unité possède 2 pions Pillage, elle peut également relancer n’importe quels dés d’Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20813",
-                "commander_name": "Balon Greyjoy",
-                "commander_subname": "Le Roi Seiche"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
+                    "effect": [
+                        "Si cette unité possède 1 pion Pillage, elle peut relancer n’importe quels dés de ce Test.",
+                        "Si cette unité possède 2 pions Pillage, elle réussit le Test."
+                    ]
+                },
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, après avoir lancé les dés d’Attaque :",
+                    "effect": [
+                        "Si cette unité possède 1 pion Pillage, le défenseur devient **Vulnérable**.",
+                        "Si cette unité possède 2 pions Pillage, elle peut également relancer n’importe quels dés d’Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20813"
             }
         },
         {
             "id": "40820",
             "name": "Méthodes fourbes",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Défaussez 1 autre carte Tactique. Si vous le faites, prenez 1 carte dans la défausse de votre adversaire et ajoutez-la à votre main.",
-                            "Quand cette carte quitte votre main, remettez-la dans la défausse de votre adversaire.",
-                            "Remplacez tout nom de Général sur cette carte par Euron Greyjoy."
-                        ]
-                    }
-                ],
-                "commander_id": "20812",
-                "commander_name": "Euron Greyjoy",
-                "commander_subname": "Seigneur Faucheur de Pyke"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Défaussez 1 autre carte Tactique. Si vous le faites, prenez 1 carte dans la défausse de votre adversaire et ajoutez-la à votre main.",
+                        "Quand cette carte quitte votre main, remettez-la dans la défausse de votre adversaire.",
+                        "Remplacez tout nom de Général sur cette carte par Euron Greyjoy."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20812"
             }
         },
         {
             "id": "40821",
             "name": "Habile  stratagème",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée est activée :",
-                        "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action de Manœuvre, de Marche ou de Repli.",
-                            "S’il s’agit de l’unité d’Euron Greyjoy, avant d’effectuer cette action, 1 ennemi situé à Longue Portée ou moins devient **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20812",
-                "commander_name": "Euron Greyjoy",
-                "commander_subname": "Seigneur Faucheur de Pyke"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action de Manœuvre, de Marche ou de Repli.",
+                        "S’il s’agit de l’unité d’Euron Greyjoy, avant d’effectuer cette action, 1 ennemi situé à Longue Portée ou moins devient **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20812"
             }
         },
         {
             "id": "40822",
             "name": "Jeux d'esprit",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 zone Stratégique.",
-                            "La prochaine fois que quelqu’un s’empare de cette zone ce round-ci, une fois l’effet de celle-ci résolu, le joueur qui ne s’est pas emparé de cette zone peut immédiatement en activer l’effet."
-                        ]
-                    }
-                ],
-                "commander_id": "20812",
-                "commander_name": "Euron Greyjoy",
-                "commander_subname": "Seigneur Faucheur de Pyke"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 zone Stratégique.",
+                        "La prochaine fois que quelqu’un s’empare de cette zone ce round-ci, une fois l’effet de celle-ci résolu, le joueur qui ne s’est pas emparé de cette zone peut immédiatement en activer l’effet."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20812"
             }
         },
         {
             "id": "40823",
             "name": "Endurance du fer",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après avoir lancé les dés de Défense :",
-                        "effect": [
-                            "Ciblez le défenseur. Il bloque +1 Touche.",
-                            "Si cette carte cible une unité Greyjoy, une fois cette attaque résolue, attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)*:",
-                            "• **1+ :** Chaque fois que cette unité est attaquée, une fois l’attaque résolue, 1 ennemi avec lequel elle est engagée devient **Affaibli**.",
-                            "• **2 :** Chaque fois que cette unité réussit un Test de Moral, elle soigne 1 de ses Blessures."
-                        ]
-                    }
-                ],
-                "commander_id": "20815",
-                "commander_name": "Erik Forgefer",
-                "commander_subname": "Brise-Enclumes"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après avoir lancé les dés de Défense :",
+                    "effect": [
+                        "Ciblez le défenseur. Il bloque +1 Touche.",
+                        "Si cette carte cible une unité Greyjoy, une fois cette attaque résolue, attachez-lui cette carte jusqu’à la fin de la partie.",
+                        "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)*:",
+                        "• **1+ :** Chaque fois que cette unité est attaquée, une fois l’attaque résolue, 1 ennemi avec lequel elle est engagée devient **Affaibli**.",
+                        "• **2 :** Chaque fois que cette unité réussit un Test de Moral, elle soigne 1 de ses Blessures."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20815"
             }
         },
         {
             "id": "40824",
             "name": "Puissance de l'acier",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Retirez n'importe quel nombre de pions Pillage de l’attaquant.",
-                            "Pour chaque pion retiré, choisissez une option :",
-                            "• L’attaque peut relancer n’importe quels dés d’Attaque.",
-                            "• Cette attaque gagne **Précision**.",
-                            "• Cette attaque gagne **Cruel**.",
-                            "*(Les pions retirés comptent quand même pour tous les effets se produisant lors de l’attaque.)*"
-                        ]
-                    }
-                ],
-                "commander_id": "20815",
-                "commander_name": "Erik Forgefer",
-                "commander_subname": "Brise-Enclumes"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Retirez n'importe quel nombre de pions Pillage de l’attaquant.",
+                        "Pour chaque pion retiré, choisissez une option :",
+                        "• L’attaque peut relancer n’importe quels dés d’Attaque.",
+                        "• Cette attaque gagne **Précision**.",
+                        "• Cette attaque gagne **Cruel**.",
+                        "*(Les pions retirés comptent quand même pour tous les effets se produisant lors de l’attaque.)*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20815"
             }
         },
         {
             "id": "40825",
             "name": "Attrait de l'or",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
-                        "effect": [
-                            "Elle peut relancer n’importe quels dés de ce Test. Si elle réussit, et si cette carte cible une unité Greyjoy, attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)* :",
-                            "• **1+ :** +1 aux lancers de Test de Moral.",
-                            "• **2 :** Si cette unité doit gagner un pion Pillage, elle soigne 1 de ses Blessures à la place."
-                        ]
-                    }
-                ],
-                "commander_id": "20815",
-                "commander_name": "Erik Forgefer",
-                "commander_subname": "Brise-Enclumes"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
+                    "effect": [
+                        "Elle peut relancer n’importe quels dés de ce Test. Si elle réussit, et si cette carte cible une unité Greyjoy, attachez-lui cette carte jusqu’à la fin de la partie.",
+                        "Tant que cette carte est attachée, gagnez les bonus suivants en fonction du nombre de pions Pillage *(cumulatif)* :",
+                        "• **1+ :** +1 aux lancers de Test de Moral.",
+                        "• **2 :** Si cette unité doit gagner un pion Pillage, elle soigne 1 de ses Blessures à la place."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20815"
             }
         },
         {
             "id": "40826",
             "name": "Retour de bâton",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est l’unité de Baelor Noirmarées, l’attaquant devient également **Paniqué**."
-                        ]
-                    }
-                ],
-                "commander_id": "20820",
-                "commander_name": "Baelor Noirmarées",
-                "commander_subname": "Seigneur de Noirmarées"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est l’unité de Baelor Noirmarées, l’attaquant devient également **Paniqué**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20820"
             }
         },
         {
             "id": "40827",
             "name": "Rancœur des Noirmarées",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Attachez cette carte à une Unité Combattante alliée. Si cette unité soigne de ses Blessures, retirez-lui cette carte.",
-                            "Quand cette unité effectue une Attaque de Mêlée, pour chacun de ses rangs détruits, choisissez 1 option :",
-                            "• Cette attaque gagne +1 pour Toucher et +1 dé d’Attaque pour chacun de ses rangs détruits.",
-                            "• Cette attaque gagne **Cruel** et, si le défenseur échoue son Test de Panique, il subit +1 Blessure pour chaque rang détruit de cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20820",
-                "commander_name": "Baelor Noirmarées",
-                "commander_subname": "Seigneur de Noirmarées"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Attachez cette carte à une Unité Combattante alliée. Si cette unité soigne de ses Blessures, retirez-lui cette carte.",
+                        "Quand cette unité effectue une Attaque de Mêlée, pour chacun de ses rangs détruits, choisissez 1 option :",
+                        "• Cette attaque gagne +1 pour Toucher et +1 dé d’Attaque pour chacun de ses rangs détruits.",
+                        "• Cette attaque gagne **Cruel** et, si le défenseur échoue son Test de Panique, il subit +1 Blessure pour chaque rang détruit de cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20820"
             }
         },
         {
             "id": "40828",
             "name": "Conviction des Noirmarées",
-            "statistics": {
-                "version": "2021",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
-                        "effect": [
-                            "Cette unité gagne +1 à son lancer pour chacun de ses rangs détruits, et +1 supplémentaire pour chaque rang détruit parmi tous les ennemis avec lesquels elle est engagée."
-                        ]
-                    }
-                ],
-                "commander_id": "20820",
-                "commander_name": "Baelor Noirmarées",
-                "commander_subname": "Seigneur de Noirmarées"
+            "faction": "greyjoy",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
+                    "effect": [
+                        "Cette unité gagne +1 à son lancer pour chacun de ses rangs détruits, et +1 supplémentaire pour chaque rang détruit parmi tous les ennemis avec lesquels elle est engagée."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20820"
             }
         },
         {
             "id": "40829",
             "name": "Soif de gloire",
-            "statistics": {
-                "version": "S05",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Greyjoy alliée, elle gagne 1 pion Pillage.",
-                            "Attachez-lui cette carte jusqu'à la fin du round.",
-                            "Tant que cette carte est attachée les Attaques de Mêlée de cette unité gagnent +1 pour Toucher.",
-                            "De plus, tant que cette carte est attachée, cette unité subit −1 à ses lancers de dés de Défense."
-                        ]
-                    }
-                ],
-                "commander_id": "20821",
-                "commander_name": "Dagmer Gueule-en-Deux",
-                "commander_subname": "Maître d'Armes"
+            "faction": "greyjoy",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Greyjoy alliée, elle gagne 1 pion Pillage.",
+                        "Attachez-lui cette carte jusqu'à la fin du round.",
+                        "Tant que cette carte est attachée les Attaques de Mêlée de cette unité gagnent +1 pour Toucher.",
+                        "De plus, tant que cette carte est attachée, cette unité subit −1 à ses lancers de dés de Défense."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20821"
             }
         },
         {
             "id": "40830",
             "name": "Jalousie du fer",
-            "statistics": {
-                "version": "S05",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante Greyjoy alliée est activée :",
-                        "effect": [
-                            "Cette unité subit 1 Blessure et devient **Vulnérable**",
-                            "Choisissez 1 option, +1 pour chaque unité alliée possédant des pions Pillage située à Courte Portée ou moins :",
-                            "• Cette unité gagne **Fracasser** ce tour.",
-                            "• Cette unité gagne **Cruel** ce tour.",
-                            "• Retirer 1 pion Pillage d'1 autre unité Infanterie Greyjoy alliée située à Courte Portée ou moins et placez-le sur cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20821",
-                "commander_name": "Dagmer Gueule-en-Deux",
-                "commander_subname": "Maître d'Armes"
+            "faction": "greyjoy",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante Greyjoy alliée est activée :",
+                    "effect": [
+                        "Cette unité subit 1 Blessure et devient **Vulnérable**",
+                        "Choisissez 1 option, +1 pour chaque unité alliée possédant des pions Pillage située à Courte Portée ou moins :",
+                        "• Cette unité gagne **Fracasser** ce tour.",
+                        "• Cette unité gagne **Cruel** ce tour.",
+                        "• Retirer 1 pion Pillage d'1 autre unité Infanterie Greyjoy alliée située à Courte Portée ou moins et placez-le sur cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20821"
             }
         },
         {
             "id": "40831",
             "name": "Le savoir au prix du fer",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "greyjoy",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Vous pouvez défausser 1 pion Pillage d’une unité alliée. Si vous le faites, choisissez 1 option :",
-                            "• Renvoyez 1 carte Tactique de votre défausse dans votre main.",
-                            "• Regardez la main de cartes Tactique de votre adversaire et défaussez-y 1 carte."
-                        ]
-                    }
-                ],
-                "commander_id": "20821",
-                "commander_name": "Dagmer Gueule-en-Deux",
-                "commander_subname": "Maître d'Armes"
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Vous pouvez défausser 1 pion Pillage d’une unité alliée. Si vous le faites, choisissez 1 option :",
+                        "• Renvoyez 1 carte Tactique de votre défausse dans votre main.",
+                        "• Regardez la main de cartes Tactique de votre adversaire et défaussez-y 1 carte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20821"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Pirates des Îles de Fer",
             "id": "50801",
-            "statistics": {
-                "faction": "greyjoy",
-                "version": "2021-S03",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 2,
-                    "style": "small-margin",
-                    "text": [
-                        "[SKILL:Pillage]\nChaque fois qu'une unité Greyjoy détruit un rang ennemi avec une Attaque de Mêlée, elle gagne 1 pion Pillage une fois l'Attaque résolue. Une unité ne peut jamais avoir plus de 2 pions Pillage.",
-                        "L'unité gagne les effets suivants en fonction du nombre de pions Pillage (*cumulatif*):\n• **1+ :** +1 aux lancers des Tests de Moral.\n• **2 :** +1 dé d'Attaque."
-                    ]
-                }
-            },
-            "type": "faction"
+            "name": "Pirates des Îles de Fer",
+            "faction": "greyjoy",
+            "version": "2021-S03",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "style": "small-margin",
+                "text": [
+                    "[SKILL:Pillage]\nChaque fois qu'une unité Greyjoy détruit un rang ennemi avec une Attaque de Mêlée, elle gagne 1 pion Pillage une fois l'Attaque résolue. Une unité ne peut jamais avoir plus de 2 pions Pillage.",
+                    "L'unité gagne les effets suivants en fonction du nombre de pions Pillage (*cumulatif*):\n• **1+ :** +1 aux lancers des Tests de Moral.\n• **2 :** +1 dé d'Attaque."
+                ]
+            }
         }
     ]
 }

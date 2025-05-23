@@ -1,7 +1,8 @@
 import json
-from const import *
 from PIL import Image
 import os
+
+from py.song_data import FACTIONS
 
 DIST = {
     "commander": 21,

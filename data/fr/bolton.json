@@ -1,245 +1,244 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "bolton",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "11001",
             "name": "Coupe-Jarrets",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Agression Impitoyable",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Agression Impitoyable"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Agression Impitoyable"
+            ],
+            "attacks": [
+                {
+                    "name": "Agression Impitoyable",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Malgré leur équipement léger, les Coupe-Jarrets de la Maison Bolton jouissent d’une réputation de brutalité et d’efficacité impitoyable qui leur permet de répandre la peur dans les rangs de troupes ennemies bien mieux équipées. Leurs masses à pointes peuvent broyer leurs ennemis, mais c’est en tant qu’instruments de terreur qu’elles se révèlent les plus utiles. Les Coupe-Jarrets de la Maison Bolton se plaisent à humilier leurs ennemis vaincus ou, pire encore, à les capturer pour leur faire subir un sort plus terrible encore"
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11002",
             "name": "Gardes Noirs",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Fléau à Pointes",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Fléau à Pointes",
-                    "Visage Horrifique"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Fléau à Pointes",
+                "Visage Horrifique"
+            ],
+            "attacks": [
+                {
+                    "name": "Fléau à Pointes",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Tous les adversaires des Gardes Noirs de la Maison Bolton ont eu vent de leur cruauté. Leurs terribles fléaux à pointes peuvent défoncer les boucliers les plus solides. Les Gardes Noirs constituent les troupes les plus lourdes des forces de la Maison Bolton et sont donc capables de prendre et de tenir n’importe quelle position sur le champ de bataille."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11003",
             "name": "Archers de Fort Terreur",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Volée Impitoyable",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Volée Impitoyable"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Volée Impitoyable"
+            ],
+            "attacks": [
+                {
+                    "name": "Volée Impitoyable",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Lorsqu’on parle des pires horreurs de guerre, autant destinées à répandre la terreur qu’à causer des pertes, impossible de ne pas évoquer la Maison Bolton. Les Archers de Fort Terreur font pleuvoir sans retenue de cruelles volées de flèches sur leurs adversaires, sans la moindre considération pour leurs camarades engagés dans la mêlée. Les troupes alliées auront sans doute à déplorer quelques pertes, mais le mépris de toute vie qu’affiche la Maison Bolton ne s’applique pas qu’à leurs ennemis."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11004",
             "name": "Filles du Bâtard",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Arc de Pisteur",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Lames et Crocs",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Volée d'Assaut",
-                    "Arc de Pisteur",
-                    "Lames et Crocs"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Volée d'Assaut",
+                "Arc de Pisteur",
+                "Lames et Crocs"
+            ],
+            "attacks": [
+                {
+                    "name": "Arc de Pisteur",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Lames et Crocs",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Dressées à acculer et à abattre la plus lourde des infanteries, les Filles du Bâtard excellent dans les attaques de flanc et dans la traque d’adversaires en fuite. Bien qu’elles ne soient pas assez protégées pour soutenir un assaut prolongé, elles se complaisent à fondre sur les ennemis blessés par les flèches de leurs maîtres. Une forte récompense attend le dresseur qui aura su capturer un officier ennemi afin que Ramsay Bolton puisse « se divertir » après la bataille."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11005",
             "name": "Écorchés",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Fléau de Guerre",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Fléau de Guerre",
-                    "Présence Intimidante"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "bolton",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Fléau de Guerre",
+                "Présence Intimidante"
+            ],
+            "attacks": [
+                {
+                    "name": "Fléau de Guerre",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Dans la Guerre des Cinq Rois, ceux que l’on nomme les Écorchés forment les rangs d’une cavalerie plus lourde que la plupart de celles combattant sous des bannières pourtant plus prestigieuses. Équipés de robustes armures d’acier (noirci, bien évidemment), de grands boucliers et de lourdes bardes pour leurs chevaux, les Écorchés peuvent effectuer des charges dévastatrices et tenir le front pour un temps limité. Le fléau de guerre, leur arme de prédilection, est capable d’anéantir les meilleures défenses, mais c’est encore leur apparence terrifiante qui constitue leur meilleur atout."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "11006",
             "name": "Piquiers de Fort Terreur",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Pique d'Empalement",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Recevoir la Charge",
-                    "Pique d'Empalement"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Recevoir la Charge",
+                "Pique d'Empalement"
+            ],
+            "attacks": [
+                {
+                    "name": "Pique d'Empalement",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Entraînés à semer la peur et la panique dans les rangs ennemis, les Piquiers de la Maison Bolton sont dénués de tout sens moral. Leurs heaumes et leurs boucliers sont garnis de pointes afin de renforcer leur aspect terrifiant. Ils sont passés maîtres dans l’art d’infliger des blessures douloureuses, mais non fatales, à leurs adversaires, afin qu’une fois la bataille achevée, les nombreux prisonniers puissent permettre aux bourreaux de la Maison Bolton de s’adonner à leurs plaisirs sadiques."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "31001",
             "name": "Walda Frey",
-            "subname": "Walda la Grosse",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "L'Ambition de Frey",
-                        "effect": [
-                            "Chaque fois que Walda s’empare de [CROWN], 1 unité Combattante ennemie devient **Affaiblie**.",
-                            "Chaque fois que Walda s’empare de [LETTER] , vous pouvez remplacer l’effet de cette zone par :",
-                            "*Cherchez 1 carte Tactique de **Général** dans votre paquet Tactique ou votre défausse et ajoutez-la à votre main. Mélangez votre paquet Tactique.*",
-                            "Chaque fois que Walda s’empare de [MONEY], vous pouvez soigner +1 Blessure au lieu de retirer un pion État."
-                        ]
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Walda la Grosse",
+            "abilities": [
+                {
+                    "name": "L'Ambition de Frey",
+                    "effect": [
+                        "Chaque fois que Walda s’empare de [CROWN], 1 unité Combattante ennemie devient **Affaiblie**.",
+                        "Chaque fois que Walda s’empare de [LETTER] , vous pouvez remplacer l’effet de cette zone par :",
+                        "*Cherchez 1 carte Tactique de **Général** dans votre paquet Tactique ou votre défausse et ajoutez-la à votre main. Mélangez votre paquet Tactique.*",
+                        "Chaque fois que Walda s’empare de [MONEY], vous pouvez soigner +1 Blessure au lieu de retirer un pion État."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Je suis devenu étrangement attaché de ma grosse petite femme. »"
             }
@@ -247,23 +246,23 @@
         {
             "id": "31002",
             "name": "Jeyne Poole",
-            "subname": "Arya Stark, l'Épousée de Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Imposteur Fidèle",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round).*",
-                            "Tant que cette carte influence une unité, celle-ci gagne +2 aux lancers de Test de Moral.",
-                            "Une fois par partie, au début de n’importe quel round, vous pouvez donner le",
-                            "contrôle de Jeyne à votre adversaire jusqu’à la fin du round. Si vous le faites, vous devenez le Premier Joueur. Jeyne ne peut pas influencer d’unité ce round-ci."
-                        ]
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Arya Stark, l'Épousée de Bolton",
+            "abilities": [
+                {
+                    "name": "Imposteur Fidèle",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round).*",
+                        "Tant que cette carte influence une unité, celle-ci gagne +2 aux lancers de Test de Moral.",
+                        "Une fois par partie, au début de n’importe quel round, vous pouvez donner le",
+                        "contrôle de Jeyne à votre adversaire jusqu’à la fin du round. Si vous le faites, vous devenez le Premier Joueur. Jeyne ne peut pas influencer d’unité ce round-ci."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Je prie d’être pour vous une bonne épouse et de vous donner des fils robustes pour prendre votre succession. »"
             }
@@ -271,50 +270,50 @@
         {
             "id": "31003",
             "name": "Roose Bolton",
-            "subname": "Cruel et Calculateur",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Rumeurs Horribles",
-                        "effect": [
-                            "Roose commence la partie avec 3 pions Ordre sur sa carte.",
-                            "Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**.",
-                            "Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*1 Unité Combattante ennemie subit 1 Test de Panique.*"
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Cruel et Calculateur",
+            "abilities": [
+                {
+                    "name": "Rumeurs Horribles",
+                    "effect": [
+                        "Roose commence la partie avec 3 pions Ordre sur sa carte.",
+                        "Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**.",
+                        "Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                        "*1 Unité Combattante ennemie subit 1 Test de Panique.*"
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Il suffisait de regarder Bolton pour comprendre qu’il avait plus de cruauté dans son petit orteil que tous les Frey combinés. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "31004",
             "name": "Ramsay Snow",
-            "subname": "Casque Rouge",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Boucherie Sadique",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round).*",
-                            "Tant que cette carte influence une unité Bolton alliée, les Attaques de Mêlée de cette unité gagnent **Soif de Massacre** :",
-                            "*Après que cette unité a résolu une Attaque de Mêlée, si le défenseur a subi des Blessures, cette unité soigne 1 de ses Blessures, +1 supplémentaire pour chaque rang détruit du défenseur.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Casque Rouge",
+            "abilities": [
+                {
+                    "name": "Boucherie Sadique",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round).*",
+                        "Tant que cette carte influence une unité Bolton alliée, les Attaques de Mêlée de cette unité gagnent **Soif de Massacre** :",
+                        "*Après que cette unité a résolu une Attaque de Mêlée, si le défenseur a subi des Blessures, cette unité soigne 1 de ses Blessures, +1 supplémentaire pour chaque rang détruit du défenseur.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Le pouvoir a meilleure saveur quand la courtoisie lui sert de sucre. Tu devrais retenir la leçon si tu comptes régner un jour. »"
             }
@@ -322,56 +321,53 @@
         {
             "id": "31005",
             "name": "Tybald",
-            "subname": "Mestre de Fort Terreur",
-            "statistics": {
-                "version": "S04",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Emissaire Trompeur",
-                        "effect": [
-                            "Tybald commence la partie avec 2 pions Ordre sur sa carte.",
-                            "Chaque fois qu’une UNC ennemie est activée, si Tybald n'est pas sur le plateau stratégique, vous pouvez retirer 1 pion Ordre de Tybald. Si vous le faites, ciblez 1 zone.",
-                            "Si cette UNC s’empare de cette zone, après en avoir résolu l’effet, 1 Unité Combattante ennemie devient **Vulnérable**.",
-                            "Si cette UNC ne s’empare pas de cette zone ce tour-ci, à la fin du tour, Tybald s’empare de cette zone."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "bolton",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Mestre de Fort Terreur",
+            "abilities": [
+                {
+                    "name": "Emissaire Trompeur",
+                    "effect": [
+                        "Tybald commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Chaque fois qu’une UNC ennemie est activée, si Tybald n'est pas sur le plateau stratégique, vous pouvez retirer 1 pion Ordre de Tybald. Si vous le faites, ciblez 1 zone.",
+                        "Si cette UNC s’empare de cette zone, après en avoir résolu l’effet, 1 Unité Combattante ennemie devient **Vulnérable**.",
+                        "Si cette UNC ne s’empare pas de cette zone ce tour-ci, à la fin du tour, Tybald s’empare de cette zone."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Et n’est-ce point ingénieux, cette façon qu’ont les mestres de n’aller que sous un seul nom, même ceux qui en possédaient deux en arrivant à la Citadelle ? »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "21001",
             "name": "Ramsay Snow",
-            "subname": "Héritier Fielleux",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Visage Horrifique",
-                    "Se nourrir de la peur"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41008": "Collection de peaux",
-                    "41009": "Opportuniste",
-                    "41010": "La Chair pour butin"
-                }
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Héritier Fielleux",
+            "abilities": [
+                "Visage Horrifique",
+                "Se nourrir de la peur"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41008",
+                "41009",
+                "41010"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Snow, m’appelait ma femme avant de se ronger les doigts, mais je dis Bolton. »"
             }
@@ -379,26 +375,23 @@
         {
             "id": "21002",
             "name": "Roose Bolton",
-            "subname": "Seigneur de Fort Terreur",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Répandre la Peur",
-                    "Présence Intimidante"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41011": "Menaces voilées",
-                    "41012": "Trouver la faille",
-                    "41013": "Les secrets de Fort Terreur"
-                }
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Seigneur de Fort Terreur",
+            "abilities": [
+                "Ordre : Répandre la Peur",
+                "Présence Intimidante"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41011",
+                "41012",
+                "41013"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« C’est la peur qui garde l’homme en vie dans ce monde de traîtrise et de cautèle. »"
             }
@@ -406,18 +399,18 @@
         {
             "id": "21003",
             "name": "Ramsay Snow",
-            "subname": "Le Sadique",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Soif de Massacre",
-                    "Présence Intimidante"
-                ],
-                "character": true
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Sadique",
+            "abilities": [
+                "Soif de Massacre",
+                "Présence Intimidante"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Lord Bolton, y disait qu’un type à poil ç’a peu d’ secrets, mais qu’sans peau c’en a pus du tout. »"
             }
@@ -425,22 +418,21 @@
         {
             "id": "21004",
             "name": "Theon Greyjoy",
-            "subname": "Schlingue",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Ordre : Pour l’Exemple"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Ramsay Snow et doit être rattaché à l’unité de ce dernier, en ignorant toutes les restrictions normales d’Attachement.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Schlingue",
+            "abilities": [
+                "Ordre : Pour l’Exemple"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Ramsay Snow et doit être rattaché à l’unité de ce dernier, en ignorant toutes les restrictions normales d’Attachement.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je ne suis pas lui, je ne suis pas le tourne-casaque, il a péri à Winterfell. Mon nom est Schlingue. »"
             }
@@ -448,48 +440,48 @@
         {
             "id": "21005",
             "name": "Capitaine de Fort Terreur",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Se Nourrir de la Peur"
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Se Nourrir de la Peur"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "21006",
             "name": "Écorcheur Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Répandre la Peur"
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Répandre la Peur"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "21007",
             "name": "Ben-Les-Os",
-            "subname": "Maître Piqueux",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Niaq'Les"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Réduisez le coût de cet Attachement de 1 s’il est attaché à une unité de Filles du Bâtard.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Maître Piqueux",
+            "abilities": [
+                "Niaq'Les"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Réduisez le coût de cet Attachement de 1 s’il est attaché à une unité de Filles du Bâtard.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Si leur traque lui procure du plaisir, il pourrait gratifier de leurs noms sa prochaine portée de chiennes. »"
             }
@@ -497,22 +489,22 @@
         {
             "id": "21008",
             "name": "Damon Danse-Pour-Moi",
-            "subname": "Gars du Bâtard",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Audace et Bravoure"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Gars du Bâtard",
+            "abilities": [
+                "Audace et Bravoure"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Lord Ramsay a l’intention de te découper les lèvres, quand tout ceci sera fini. »"
             }
@@ -520,22 +512,22 @@
         {
             "id": "21009",
             "name": "L'Écorcheur",
-            "subname": "Gars du Bâtard",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Affaiblir la Volonté"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Gars du Bâtard",
+            "abilities": [
+                "Affaiblir la Volonté"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Aucune douleur qu’avait jamais ressentie Theon n’approchait de celle que l’Écorcheur savait conjurer avec un petit couteau à dépecer »"
             }
@@ -543,22 +535,22 @@
         {
             "id": "21010",
             "name": "Grogne",
-            "subname": "Gars du Bâtard",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Résilience"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Gars du Bâtard",
+            "abilities": [
+                "Ordre : Résilience"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Grogne n’avait pas de langue et Alyn le Rogue pas de tête, aimait à répéter Lord Ramsay. »"
             }
@@ -566,22 +558,22 @@
         {
             "id": "21011",
             "name": "Alyn le Rogue",
-            "subname": "Gars du Bâtard",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Sadisme Brutal"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Gars du Bâtard",
+            "abilities": [
+                "Sadisme Brutal"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Le premier Attachement Gars du Bâtard recruté dans votre armée est gratuit.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Grogne n’avait pas de langue et Alyn le Rogue pas de tête, aimait à répéter Lord Ramsay. »"
             }
@@ -589,18 +581,18 @@
         {
             "id": "21012",
             "name": "Walton",
-            "subname": "Jarret d'Acier, Soldat Impitoyable",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Vassal de Roose"
-                ],
-                "character": true
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Jarret d'Acier, Soldat Impitoyable",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Vassal de Roose"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Abrupt, brusque et brutal, simple soldat jusqu’au trognon. »"
             }
@@ -608,27 +600,24 @@
         {
             "id": "21013",
             "name": "Walton",
-            "subname": "Jarret d'Acier, Capitaine de la Garde",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Fracasser",
-                    "Volonté de Fer",
-                    "Peur Partagée"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41014": "Le prix de la peur",
-                    "41015": "Poussée aggressive",
-                    "41016": "Provocation"
-                }
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Jarret d'Acier, Capitaine de la Garde",
+            "abilities": [
+                "Fracasser",
+                "Volonté de Fer",
+                "Peur Partagée"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41014",
+                "41015",
+                "41016"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Alias Jarret d’Acier. Un soldat d’une loyauté à toute épreuve. »"
             }
@@ -638,321 +627,304 @@
         {
             "id": "41001",
             "name": "Décapitations sanglantes",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si cette attaque a détruit un rang ennemi, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué**. S'ils étaient déjà **Paniqués**, ils subissent 1 Test de Panique.",
-                            "Si cette attaque a détruit l'unité ennemie, à la place, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué** et subit 1 Test de Panique."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si cette attaque a détruit un rang ennemi, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué**. S'ils étaient déjà **Paniqués**, ils subissent 1 Test de Panique.",
+                        "Si cette attaque a détruit l'unité ennemie, à la place, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué** et subit 1 Test de Panique."
+                    ]
+                }
+            ]
         },
         {
             "id": "41002",
             "name": "Châtiment Sévère",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, les Attaques de Mêlée de cette unité lancent toujours leur valeur de dés la plus élevée et gagnent **Fracasser**. Chaque fois que cette unité échoue un Test de Panique, elle subit +1 Blessure."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie.",
+                        "Tant que cette carte est attachée, les Attaques de Mêlée de cette unité lancent toujours leur valeur de dés la plus élevée et gagnent **Fracasser**. Chaque fois que cette unité échoue un Test de Panique, elle subit +1 Blessure."
+                    ]
+                }
+            ]
         },
         {
             "id": "41003",
             "name": "Nos lames sont acérées",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque gagne **Précision**.",
-                            "Si le Défenseur est **Paniqué**, cette attaque peut également relancer n’importe quels dés d’attaque."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque gagne **Précision**.",
+                        "Si le Défenseur est **Paniqué**, cette attaque peut également relancer n’importe quels dés d’attaque."
+                    ]
+                }
+            ]
         },
         {
             "id": "41004",
             "name": "Jeux sadiques",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour ennemi :",
-                        "effect": [
-                            "Votre adversaire choisit 1 option *(vous ne désignez les cibles qu’une fois le choix effectué)* :",
-                            "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées**.",
-                            "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Affaiblis**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour ennemi :",
+                    "effect": [
+                        "Votre adversaire choisit 1 option *(vous ne désignez les cibles qu’une fois le choix effectué)* :",
+                        "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées**.",
+                        "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Affaiblis**."
+                    ]
+                }
+            ]
         },
         {
             "id": "41005",
             "name": "Méthodes cruelles",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante ennemie. Vous pouvez dépenser 1 pion **Paniqué** de cette unité. Si vous le faites, choisissez 2 options :",
-                            "• Cet ennemi devient **Vulnérable**.",
-                            "• Cet ennemi devient **Affaibli**.",
-                            "• 1 unité d’Infanterie alliée située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie. Vous pouvez dépenser 1 pion **Paniqué** de cette unité. Si vous le faites, choisissez 2 options :",
+                        "• Cet ennemi devient **Vulnérable**.",
+                        "• Cet ennemi devient **Affaibli**.",
+                        "• 1 unité d’Infanterie alliée située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*."
+                    ]
+                }
+            ]
         },
         {
             "id": "41006",
             "name": "Un écorché n'a pas de secrets",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand une unité est ciblée par une Capacité ou une carte Tactique :",
-                        "effect": [
-                            "Vous pouvez dépenser 1 pion État d’une unité ennemie située à Longue Portée ou moins de cette unité.",
-                            "Si vous le faites, annulez l’effet de cette Capacité ou carte Tactique."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité est ciblée par une Capacité ou une carte Tactique :",
+                    "effect": [
+                        "Vous pouvez dépenser 1 pion État d’une unité ennemie située à Longue Portée ou moins de cette unité.",
+                        "Si vous le faites, annulez l’effet de cette Capacité ou carte Tactique."
+                    ]
+                }
+            ]
         },
         {
             "id": "41007",
             "name": "La peur garde l'homme en vie",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi échoue un Test de Panique :",
-                        "effect": [
-                            "Ciblez un nombre au choix d’unités alliées situées à Longue Portée ou moins. Soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités.",
-                            "Si cet ennemi est situé à Courte Portée ou moins de l'unité de votre Général, soignez +1 Blessure."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi échoue un Test de Panique :",
+                    "effect": [
+                        "Ciblez un nombre au choix d’unités alliées situées à Longue Portée ou moins. Soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités.",
+                        "Si cet ennemi est situé à Courte Portée ou moins de l'unité de votre Général, soignez +1 Blessure."
+                    ]
+                }
+            ]
         },
         {
             "id": "41008",
             "name": "Collection de peaux",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Attachez cette carte à 1 Unité d’Infanterie alliée jusqu’à la fin de la partie.",
-                            "Chaque fois que cette unité détruit un rang ennemi, placez 1 pion Ordre sur cette carte.",
-                            "Les ennemis engagés avec cette unité subissent −1 à leurs lancers de Test de Panique pour chaque pion Ordre sur cette carte, jusqu’à −2."
-                        ]
-                    }
-                ],
-                "commander_id": "21001",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "Héritier Fielleux"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Attachez cette carte à 1 Unité d’Infanterie alliée jusqu’à la fin de la partie.",
+                        "Chaque fois que cette unité détruit un rang ennemi, placez 1 pion Ordre sur cette carte.",
+                        "Les ennemis engagés avec cette unité subissent −1 à leurs lancers de Test de Panique pour chaque pion Ordre sur cette carte, jusqu’à −2."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
             }
         },
         {
             "id": "41009",
             "name": "Opportuniste",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Si le défenseur n’a pas été activé ce round-ci, cette attaque peut relancer n’importe quels dés d’Attaque et gagne **Précision** ou **Cruel**. Si l’attaquant est l’unité de Ramsay Snow, elle gagne les deux."
-                        ]
-                    }
-                ],
-                "commander_id": "21001",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "Héritier Fielleux"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si le défenseur n’a pas été activé ce round-ci, cette attaque peut relancer n’importe quels dés d’Attaque et gagne **Précision** ou **Cruel**. Si l’attaquant est l’unité de Ramsay Snow, elle gagne les deux."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
             }
         },
         {
             "id": "41010",
             "name": "La Chair pour butin",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolue une Attaque de Mêlée :",
-                        "effect": [
-                            "Si cette attaque a détruit un rang ennemi, 1 unité alliée située à Courte Portée ou moins de l’attaquant soigne 1 de ses Blessures, +1 Blessure pour chaque rang détruit du défenseur."
-                        ]
-                    }
-                ],
-                "commander_id": "21001",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "Héritier Fielleux"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolue une Attaque de Mêlée :",
+                    "effect": [
+                        "Si cette attaque a détruit un rang ennemi, 1 unité alliée située à Courte Portée ou moins de l’attaquant soigne 1 de ses Blessures, +1 Blessure pour chaque rang détruit du défenseur."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
             }
         },
         {
             "id": "41011",
             "name": "Menaces voilées",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC ennemie est activée :",
-                        "effect": [
-                            "Si cette UNC s’empare d’une zone ce tour-ci, après en avoir résolu l’effet, ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
-                            "Ciblez ensuite 1 Unité Combattante ennemie. Elle devient **Paniquée**."
-                        ]
-                    }
-                ],
-                "commander_id": "21002",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Seigneur de Fort Terreur"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC ennemie est activée :",
+                    "effect": [
+                        "Si cette UNC s’empare d’une zone ce tour-ci, après en avoir résolu l’effet, ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
+                        "Ciblez ensuite 1 Unité Combattante ennemie. Elle devient **Paniquée**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
             }
         },
         {
             "id": "41012",
             "name": "Trouver la faille",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
-                        "effect": [
-                            "Cet ennemi devient **Vulnérable** et **Paniqué**.",
-                            "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité de Roose attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
-                        ]
-                    }
-                ],
-                "commander_id": "21002",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Seigneur de Fort Terreur"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
+                    "effect": [
+                        "Cet ennemi devient **Vulnérable** et **Paniqué**.",
+                        "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité de Roose attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
             }
         },
         {
             "id": "41013",
             "name": "Les secrets de Fort Terreur",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si elle a détruit un rang ennemi :",
-                        "effect": [
-                            "Attachez cette carte à 1 Unité d’Infanterie alliée située à Courte Portée ou moins de l’attaquant.",
-                            "Tous les ennemis engagés avec cette unité deviennent **Paniqués**.",
-                            "Tant que cette carte est attachée, chaque fois qu’une unité ennemie est activée à Courte Portée ou moins, elle devient **Paniquée**."
-                        ]
-                    }
-                ],
-                "commander_id": "21002",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Seigneur de Fort Terreur"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si elle a détruit un rang ennemi :",
+                    "effect": [
+                        "Attachez cette carte à 1 Unité d’Infanterie alliée située à Courte Portée ou moins de l’attaquant.",
+                        "Tous les ennemis engagés avec cette unité deviennent **Paniqués**.",
+                        "Tant que cette carte est attachée, chaque fois qu’une unité ennemie est activée à Courte Portée ou moins, elle devient **Paniquée**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
             }
         },
         {
             "id": "41014",
             "name": "Le prix de la peur",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand une unité ennemie échoue un Test de Panique :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée à Longue Portée ou moins de cet ennemi. Elle peut effectuer 1 action de Manœuvre."
-                        ]
-                    }
-                ],
-                "commander_id": "21013",
-                "commander_name": "Walton Jarret d'Acier",
-                "commander_subname": "Capitaine de la Garde"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité ennemie échoue un Test de Panique :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée à Longue Portée ou moins de cet ennemi. Elle peut effectuer 1 action de Manœuvre."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
             }
         },
         {
             "id": "41015",
             "name": "Poussée aggressive",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, avant de lancer les dés de Distance de Charge :",
-                        "effect": [
-                            "Cette unité est considérée comme ayant obtenu des 6 sur tous ses dés de Distance de Charge et ses Attaques de Mêlée gagnent **Frappe Critique**.",
-                            "Une fois cette attaque résolue, l’attaquant devient **Vulnérable**, sauf s’il s’agit de l’unité de Walton Jarret d'Acier."
-                        ]
-                    }
-                ],
-                "commander_id": "21013",
-                "commander_name": "Walton Jarret d'Acier",
-                "commander_subname": "Capitaine de la Garde"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une action de Charge, avant de lancer les dés de Distance de Charge :",
+                    "effect": [
+                        "Cette unité est considérée comme ayant obtenu des 6 sur tous ses dés de Distance de Charge et ses Attaques de Mêlée gagnent **Frappe Critique**.",
+                        "Une fois cette attaque résolue, l’attaquant devient **Vulnérable**, sauf s’il s’agit de l’unité de Walton Jarret d'Acier."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
             }
         },
         {
             "id": "41016",
             "name": "Provocation",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante ennemie est activée :",
-                        "effect": [
-                            "Ciblez 1 unité alliée située à Longue Portée ou moins.",
-                            "Si cet ennemi peut Attaquer ou Charger l’unité ciblée, et qu’il déclare une autre action qu’Attaque ou Charge sur l’unité ciblée ce tour-ci, avant d’effectuer son action, il devient **Vulnérable** et **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "21013",
-                "commander_name": "Walton Jarret d'Acier",
-                "commander_subname": "Capitaine de la Garde"
+            "faction": "bolton",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante ennemie est activée :",
+                    "effect": [
+                        "Ciblez 1 unité alliée située à Longue Portée ou moins.",
+                        "Si cet ennemi peut Attaquer ou Charger l’unité ciblée, et qu’il déclare une autre action qu’Attaque ou Charge sur l’unité ciblée ce tour-ci, avant d’effectuer son action, il devient **Vulnérable** et **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Prisonniers de Fort-Terreur",
             "id": "51002",
-            "type": "faction",
-            "statistics": {
-                "faction": "bolton",
-                "version": "S06",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 2,
-                    "text": [
-                        "Cette carte commence la partie avec 3 pions Ordre sur elle. Chaque fois qu'un rang ennemi est détruit, placez 1 pion Ordre sur cette carte (pour un maximum de 3).",
-                        "Au début de n'importe quel tour, vous pouvez dépenser 3 pions Ordre de cette carte et cibler une Unité Combattante ennemie. Si vous le faites, elle devient **Paniquée**."
-                    ]
-                }
+            "name": "Prisonniers de Fort-Terreur",
+            "faction": "bolton",
+            "version": "S06",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "Cette carte commence la partie avec 3 pions Ordre sur elle. Chaque fois qu'un rang ennemi est détruit, placez 1 pion Ordre sur cette carte (pour un maximum de 3).",
+                    "Au début de n'importe quel tour, vous pouvez dépenser 3 pions Ordre de cette carte et cibler une Unité Combattante ennemie. Si vous le faites, elle devient **Paniquée**."
+                ]
             }
         }
     ]

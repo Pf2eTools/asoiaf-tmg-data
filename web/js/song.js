@@ -34,8 +34,8 @@ class SongSublistManager extends SublistManager {
 	}
 
 	pGetSublistItem (obj, hash, {count = 1} = {}) {
-		const faction = Parser.renderFaction(obj.statistics.faction);
-		const type = obj.statistics.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
+		const faction = Parser.renderFaction(obj.faction);
+		const type = obj.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
 
 		const cellsText = [
 			obj.name,
@@ -419,7 +419,7 @@ class SongPage extends ListPageMultiSource {
 		super({
 			pageFilter: new PageFilterSong(),
 
-			dataProps: ["song", "units", "ncus", "attachments", "tactics", "specials"],
+			dataProps: ["song", "unit", "ncu", "attachment", "tactics", "special"],
 
 			bookViewOptions: {
 				ClsBookView: SongPageBookView,
@@ -441,8 +441,8 @@ class SongPage extends ListPageMultiSource {
 		this._pageFilter.mutateAndAddToFilters(obj);
 
 		const source = obj.source;
-		const faction = Parser.renderFaction(obj.statistics.faction);
-		const type = obj.statistics.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
+		const faction = Parser.renderFaction(obj.faction);
+		const type = obj.commander ? `${Parser.renderProp(obj.__prop)} (Cmdr.)` : Parser.renderProp(obj.__prop);
 
 		const eleLi = e_({
 			tag: "div",
@@ -457,7 +457,7 @@ class SongPage extends ListPageMultiSource {
 					children: [
 						e_({tag: "span", clazz: `ve-col-6-5 pl-0`, children: [
 							e_({tag: "span", clazz: "bold", text: obj._fullName}),
-							obj.__prop === "tactics" ? e_({tag: "span", clazz: "ve-muted", text: ` (${obj.statistics.commander_name || faction})`}) : undefined,
+							obj.__prop === "tactics" ? e_({tag: "span", clazz: "ve-muted", text: ` (${obj.commander?.name || faction})`}) : undefined,
 						].filter(Boolean)}),
 						e_({tag: "span", clazz: `ve-col-2-5 text-center`, text: faction}),
 						e_({tag: "span", clazz: `ve-col-2 text-center`, text: type}),

@@ -1,704 +1,690 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "stark",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "10201",
             "name": "Épées Liges Stark",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Morsure de l'Hiver",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Morsure de l’Hiver",
-                    "Tomber au Combat"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Morsure de l’Hiver",
+                "Tomber au Combat"
+            ],
+            "attacks": [
+                {
+                    "name": "Morsure de l'Hiver",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Épées Liges forment les fondations sur lesquelles les généraux de la Maison Stark bâtissent leur stratégie. Courageux, compétents et d’une loyauté sans faille envers la bannière du Loup-Garou, les Épées Liges préfèrent périr jusqu’au dernier plutôt que d’abandonner leurs frères au combat. Leurs armes et leurs armures ne rivalisent peut-être pas avec celles des Maisons plus fortunées, mais ces hommes savent qu’un guerrier ne se juge pas qu’à la qualité de son équipement."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10202",
             "name": "Cavaliers Stark",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Lame de Cavalerie",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Repositionnement Tactique",
-                    "Cavalerie",
-                    "Embuscade"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Repositionnement Tactique",
+                "Cavalerie",
+                "Embuscade"
+            ],
+            "attacks": [
+                {
+                    "name": "Lame de Cavalerie",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Bien qu’ils ne soient pas équipés pour de longs corps à corps, les Cavaliers de la Maison Stark se retrouvent rarement en mauvaise position. Ils se caractérisent par une mobilité sans pareille, grâce à leurs armures légères et leurs chevaux non bardés, entraînés à conserver leur calme et à galoper. À l’instar de la plupart des troupes légères, les Cavaliers sont vulnérables aux flèches, ce qui fait des archers leur proie naturelle. Ils peuvent fondre sur eux et balayer leurs rangs en un éclair."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10203",
             "name": "Berserkers de la Maison Omble",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Haches de Berserkers",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            8,
-                            9
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ferveur du Berserker"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ferveur du Berserker"
+            ],
+            "attacks": [
+                {
+                    "name": "Haches de Berserkers",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        8,
+                        9
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Berserkers sont spécialisés dans les manœuvres de flanc, les charges dévastatrices et la poursuite des ennemis en déroute. Un général avisé saura ne pas trop leur lâcher la bride afin qu’ils ne se retrouvent pas submergés. Les Berserkers sont cependant des guerriers chevronnés qui s’abandonnent rarement à leur soif de sang. Que l’ennemi craigne l’acier froid 6 et la fureur des hommes du Nord !"
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10204",
             "name": "Vent Gris",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Griffes et Crocs",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Loup-Garou",
-                    "Griffes et Crocs",
-                    "Déstabilisation"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Robb Stark.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Loup-Garou",
+                "Griffes et Crocs",
+                "Déstabilisation"
+            ],
+            "attacks": [
+                {
+                    "name": "Griffes et Crocs",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Robb Stark.*"
+                }
+            ],
             "fluff": {
                 "lore": "Là où les loups ordinaires peuvent être effrayants, le Loup-Garou connu sous le nom de Vent Gris est absolument terrifiant ! Plus rapide qu’un fantassin et presque autant qu’une monture, Vent Gris utilise son instinct pour se rendre là où on a besoin de lui sur le champ de bataille. Bien qu’il soit redoutable au combat, c’est le vent de panique qu’il répand dans son sillage qui procure un indéniable avantage tactique."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10205",
             "name": "Archers Stark",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 6,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Volée de Flèches",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            5
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Volée de Flèches"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Volée de Flèches"
+            ],
+            "attacks": [
+                {
+                    "name": "Volée de Flèches",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        5
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les chasseurs, bûcherons et hommes des bois des rudes terres du Nord servent souvent sous la bannière de leurs seigneurs, mais quand le Loup-Garou est en marche, il est soutenu par de nombreux archers d’une dextérité incomparable. D’une efficacité réduite à courte portée et extrêmement vulnérables en corps à corps ou face à une charge de cavalerie, les archers de la Maison Stark peuvent immobiliser, voire complètement éradiquer les forces ennemies situées à longue portée."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10206",
             "name": "Boucliers Liges de la Maison Tully",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Mur de Boucliers",
-                    "Ténacité Acharnée"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Mur de Boucliers",
+                "Ténacité Acharnée"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Lourdement protégés, les Boucliers Liges de la Maison Tully apportent leur puissance défensive à la grande Maison Stark. Ils sont capables d’encaisser l’assaut le plus virulent et nombre de batailles ont été gagnées grâce à leur incroyable ténacité. Ils ne sont certes pas aussi rapides que la plupart des unités offensives, mais ils représentent souvent la ligne derrière laquelle les troupes d’assaut peuvent se replier en toute sécurité après une charge rapide sur l’ennemi."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10207",
             "name": "Été",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Griffes et Crocs",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Loup-Garou",
-                    "Griffes et Crocs",
-                    "Protecteur de Bran"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Bran Stark.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Loup-Garou",
+                "Griffes et Crocs",
+                "Protecteur de Bran"
+            ],
+            "attacks": [
+                {
+                    "name": "Griffes et Crocs",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Bran Stark.*"
+                }
+            ],
             "fluff": {
                 "lore": "Tout commença quand Bran se retrouva paralysé après sa chute de l’une des tours de Winterfell. Pendant sa convalescence, Été le sauva d’une tentative d’assassinat, prouvant ainsi le lien qui existait entre les enfants Stark et leurs loups-garous. Hodor, un géant à l’intelligence limitée, servit de jambes à Bran lorsque le jeune Stark fut à même quitter son lit. D’une certaine façon, le trio fonctionne comme un seul et même individu, un être de loyauté, d’honneur et d’intelligence."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10208",
             "name": "Grandes Haches de la Maison Omble",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Fureur du Bourreau",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Fureur du Bourreau",
-                    "Assaut Féroce"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Fureur du Bourreau",
+                "Assaut Féroce"
+            ],
+            "attacks": [
+                {
+                    "name": "Fureur du Bourreau",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Alliant mobilité, défense et force de frappe, les Grandes Haches de la Maison Omble s’adaptent rapidement à toutes les situations. Ces guerriers peuvent poursuivre des ennemis plus lourds, mais aussi soutenir une charge ou lancer des assauts dévastateurs à l’aide de leurs armes de prédilection. Comme ils ne sont pas restreints à un type unique de combat, un commandant avisé pourra les déployer selon ses besoins, afin de combler une éventuelle faiblesse dans sa défense ou d’exploiter les erreurs de jugement de l’ennemi."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10209",
             "name": "Pisteurs Paludiers",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 6,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Arc des Paluds",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Lame du Pisteur",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Pièges Cachés",
-                    "Ordre : Marquer la Cible"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Pièges Cachés",
+                "Ordre : Marquer la Cible"
+            ],
+            "attacks": [
+                {
+                    "name": "Arc des Paluds",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Lame du Pisteur",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 7,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Pisteurs Paludiers sont tout sauf une unité de première ligne. Légèrement équipés et peu armés, ils n’ont aucune chance lors d’un affrontement direct. Les pisteurs compensent leur manque de force de frappe par leur vitesse et par leur capacité à semer la confusion dans les rangs adverses. Ils combinent rapidité et mobilité avec des tactiques de harcèlement particulièrement efficaces afin d’éviter les confrontations directes."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10210",
             "name": "Broussaille",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Mutilation Sauvage",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Loup-Garou",
-                    "Mutilation Sauvage"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Rickon Stark.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Loup-Garou",
+                "Mutilation Sauvage"
+            ],
+            "attacks": [
+                {
+                    "name": "Mutilation Sauvage",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Rickon Stark.*"
+                }
+            ],
             "fluff": {
                 "lore": "De tous les loups-garous des Stark, Broussaille s’est révélé être le plus sauvage, prompt à sauter à la gorge de quiconque menaçant son maître, le jeune Rickon Stark. Broussaille a hérité du tempérament capricieux et colérique de Rickon, ce qui le rend particulièrement imprévisible. Même jeunes, les loups-garous sont dangereux. Sur le champ de bataille, par contre, Broussaille peut laisser libre cours à sa sauvagerie et à son instinct protecteur. Personne ne peut menacer Rickon sans avoir à affronter sa fureur bestiale."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10212",
             "name": "Garde d'Honneur d'Eddard",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Morsure de l'Hiver",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Morsure de l’Hiver",
-                    "Tomber au Combat"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Eddard Stark, Seigneur de Winterfell. Eddard doit être attaché à cette unité.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Morsure de l’Hiver",
+                "Tomber au Combat"
+            ],
+            "attacks": [
+                {
+                    "name": "Morsure de l'Hiver",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Eddard Stark, Seigneur de Winterfell. Eddard doit être attaché à cette unité.*"
+                }
+            ],
             "fluff": {
                 "lore": "Triés sur le volet dans les rangs des troupes de la Maison Stark, les hommes de la Garde d’Honneur de Lord Eddard ont maintes fois prouvé leur valeur et leur intégrité. Sur le champ de bataille, ils se révèlent capables de tenir leur position face à un adversaire supérieur en nombre et savent rendre coup pour coup. Chacun de ses hommes est prêt à sacrifier sa vie pour Lord Eddard, d’autant plus que ce dernier n’hésiterait pas à faire de même pour eux. Ces troupes d’élite constituent l’avant-garde idéale de toute armée Stark."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10213",
             "name": "Cavaliers de la Maison Tully",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Lance",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Lance",
-                    "Bannière de Ralliement"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Lance",
+                "Bannière de Ralliement"
+            ],
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Lourdement armés et harnachés, mais bénéficiant malgré tout de la mobilité propre à la cavalerie, les Cavaliers de la Maison Tully sont réputés pour leurs charges dévastatrices, capables de briser les lignes ennemies les plus solides. La simple menace d’une charge imminente oblige les généraux ennemis à réagir, permettant ainsi au commandant des Cavaliers de mettre la pression sur l’adversaire sans avoir à engager d’unité. Un général avisé positionnera des troupes dans le sillage de ces Cavaliers, prêtes à exploiter le chaos qu’ils laissent derrière eux."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10214",
             "name": "Ourses de la Maison Mormont",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Frappe Résolue",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Cri de Guerre",
-                    "Frappe Résolue"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Cri de Guerre",
+                "Frappe Résolue"
+            ],
+            "attacks": [
+                {
+                    "name": "Frappe Résolue",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Ourses de la Maison Mormont basent leurs tactiques et leur équipement sur ceux de Lady Alysane Mormont. Ces femmes redoutables, réputées pour leur force, portent des armures de cuir épais et de plates. Elles manient des masses à deux mains capables de broyer un casque lourd ou de défoncer un plastron en un seul coup. Farouchement dévouées à la cause des Mormont, les Ourses font preuve d’une détermination sans faille qui, associée à leur lourde armure, leur permet de résister là où d’autres unités tomberaient."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10215",
             "name": "Lanciers de la Maison Karstark",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Lance",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Tenez Bon !",
-                    "Tenez la Position !"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Tenez Bon !",
+                "Tenez la Position !"
+            ],
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Rien n’est plus terrifiant pour une cavalerie qui charge que de se retrouver face à une ligne de lanciers protégés derrière un mur de boucliers ne laissant dépasser que leurs lances. C’est particulièrement vrai pour les formations qui marchent sous la bannière du soleil blanc. Les Lanciers de la Maison Karstark forment une couverture parfaite pour protéger les flancs vulnérables d’une ligne de bataille, où la cavalerie est la plus dévastatrice. Équipés de mailles et de cuir, ils peuvent encaisser des coups, mais ne sont pas adaptés pour être lancés seuls en avant-garde."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10216",
             "name": "Cogneurs de la Maison Mormont",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Masse & Pointe",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Masse & Pointe",
-                    "Déstabilisation"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Masse & Pointe",
+                "Déstabilisation"
+            ],
+            "attacks": [
+                {
+                    "name": "Masse & Pointe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Arborant dignement le blason du grand ours, les hommes communément connus sous le nom de Cogneurs de la Maison Mormont frappent fort et combattent jusqu’au dernier. Leur armure légère se compose essentiellement de cuir rembourré et de maille légère, ce qui leur confère une bonne mobilité. Pour l’adversaire, subir un assaut de flanc de ces troupes constitue un véritable cauchemar. Lorsqu’ils subissent des pertes, les Cogneurs deviennent encore plus dangereux, rendant coup pour coup, et entraînant s’il le faut leurs ennemis avec eux dans la mort."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10217",
             "name": "Loyalistes de la Maison Karstark",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Fléau",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Assaut Féroce",
-                    "Fléau",
-                    "Férocité Sans Limite"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Assaut Féroce",
+                "Fléau",
+                "Férocité Sans Limite"
+            ],
+            "attacks": [
+                {
+                    "name": "Fléau",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Parmi toutes les Maisons vassales des Stark, la Maison Karstark de Karhold est l’une des plus fidèles. Lorsque la Maison Stark fait appel aux bannerets du Nord, les Loyalistes sont rapidement rassemblés et envoyés sur le champ de bataille. Armés de fléaux et de boucliers, leur véritable force réside dans la foi inébranlable qu’ils ont dans leur cause. Des blessures qui d’ordinaire mettraient un homme à terre les font à peine vaciller. Ils sont capables de tenir une position sans faillir, notamment face à un ennemi inférieur en nombre."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10218",
             "name": "Paludiers Démons des Marais",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Tridents Empoisonnés",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Faille de L’Éclaireur",
-                    "Ordre : Repli Éclair",
-                    "Tridents Empoisonnés"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Faille de L’Éclaireur",
+                "Ordre : Repli Éclair",
+                "Tridents Empoisonnés"
+            ],
+            "attacks": [
+                {
+                    "name": "Tridents Empoisonnés",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Paludiers Démons des Marais font partie des unités d’embuscade les plus redoutées de tout Westeros. Ces vassaux de la famille Reed n’ont pas leur pareil pour se fondre dans les terrains marécageux. Leurs armures sont suffisamment légères pour ne pas s’y enliser et leurs tridents empoisonnés infligent une mort atroce à leurs adversaires. Après leur attaque, les Démons des Marais disparaissent dans le sous-bois, ne laissant derrière eux que des cadavres ou des mourants."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10219",
             "name": "Ravageurs de la Maison Omble",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Hache de Bourreau",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            8
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Hache de Bourreau"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Hache de Bourreau"
+            ],
+            "attacks": [
+                {
+                    "name": "Hache de Bourreau",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        8
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "La Maison Omble n’est pas réputée pour sa cavalerie, pourtant ses cavaliers sont aussi redoutables que les autres unités montées de Westeros. S’ils ne sont pas aussi lourdement protégés que la plupart des troupes de cavalerie, les Ravageurs attaquent avec une fureur impitoyable. Tout ennemi qui commet l’erreur de se laisser charger de flanc ou de dos est voué à une mort certaine et expéditive. Ils sont rapides, efficaces et résistants : des troupes parfaites pour le Nord, un lieu où la survie dépend de la capacité à frapper vite et fort."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10220",
             "name": "Garde de Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ravitaillement de Winterfell",
-                    "Défenses Améliorées (Stark)"
-                ],
-                "requirements": [
-                    {
-                        "name": "Réactivité ",
-                        "text": "*Réduisez le coût d'un Attachement de cette unité de 1.*"
-                    }
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ravitaillement de Winterfell",
+                "Défenses Améliorées (Stark)"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Réduisez le coût d'un Attachement de cette unité de 1.*",
+                    "name": "Réactivité "
+                }
+            ],
             "fluff": {
                 "lore": "La Garde de Winterfell est composée de vétérans qui ont servi loyalement dans l'armée pendant plusieurs décennies. Après avoir rempli leur rôle de protecteurs de Winterfell des années durant, ils ont choisi de poursuivre leur service à l'intérieur des murs de la ville plutôt que de se retirer. Cependant, en ces temps de guerre, ils ont été rappelés au front."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30201",
             "name": "Catelyn Stark",
-            "subname": "Dame de Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Famille, Devoir, Honneur",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Chaque fois que Catelyn Influence une unité, cette dernière retire 1 de ses pions États.",
-                            "Tant qu'elle est Influencée par cette carte, l'unité attaque toujours en utilisant sa valeur de dés la plus élevée."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Dame de Winterfell",
+            "abilities": [
+                {
+                    "name": "Famille, Devoir, Honneur",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Chaque fois que Catelyn Influence une unité, cette dernière retire 1 de ses pions États.",
+                        "Tant qu'elle est Influencée par cette carte, l'unité attaque toujours en utilisant sa valeur de dés la plus élevée."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Montre-moi le sentier que je dois suivre, et ne permets pas que je trébuche dans les ténèbres où vont m’aventurer mes pas. »"
             }
@@ -706,22 +692,22 @@
         {
             "id": "30202",
             "name": "Sansa Stark",
-            "subname": "Petit Oiseau",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Répétant les Mots",
-                        "effect": [
-                            "Une fois par partie, quand Sansa est activée, vous pouvez renvoyer 1 carte Tactique de votre défausse dans votre main.",
-                            "Chaque fois que Sansa s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*Renvoyez 1 carte Tactique de votre défausse dans votre main.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Petit Oiseau",
+            "abilities": [
+                {
+                    "name": "Répétant les Mots",
+                    "effect": [
+                        "Une fois par partie, quand Sansa est activée, vous pouvez renvoyer 1 carte Tactique de votre défausse dans votre main.",
+                        "Chaque fois que Sansa s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                        "*Renvoyez 1 carte Tactique de votre défausse dans votre main.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Le Limier disait vrai, je ne suis qu’un petit oiseau répétant les mots qu’on m’a serinés. »"
             }
@@ -729,102 +715,102 @@
         {
             "id": "30204",
             "name": "Eddard Stark",
-            "subname": "Gouverneur du Nord",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "cost": 6,
-                "abilities": [
-                    {
-                        "name": "Courage Face à la Mort",
-                        "effect": [
-                            "Eddard commence la partie avec 4 pions Ordre sur sa carte.",
-                            "Chaque fois qu’une unité alliée effectue un Test de Panique, après avoir lancé les dés, vous pouvez retirer 1 pion Ordre d’Eddard. Si vous le faites, cette unité peut relancer n’importe quels dés de ce test.",
-                            "Chaque fois qu’une unité alliée réussit un Test de Panique, vous pouvez retirer 1 pion Ordre d’Eddard. Si vous le faites, cette unité soigne de ses 2 Blessures, +1 pour chacun de ses rangs détruits."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 4,
-                    "name": "order"
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Gouverneur du Nord",
+            "abilities": [
+                {
+                    "name": "Courage Face à la Mort",
+                    "effect": [
+                        "Eddard commence la partie avec 4 pions Ordre sur sa carte.",
+                        "Chaque fois qu’une unité alliée effectue un Test de Panique, après avoir lancé les dés, vous pouvez retirer 1 pion Ordre d’Eddard. Si vous le faites, cette unité peut relancer n’importe quels dés de ce test.",
+                        "Chaque fois qu’une unité alliée réussit un Test de Panique, vous pouvez retirer 1 pion Ordre d’Eddard. Si vous le faites, cette unité soigne de ses 2 Blessures, +1 pour chacun de ses rangs détruits."
+                    ]
                 }
-            },
+            ],
+            "cost": 6,
+            "character": true,
             "fluff": {
                 "quote": "« Vous portez votre honneur comme on porte une armure, Stark. » – Petyr Baelish"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 4
             }
         },
         {
             "id": "30205",
             "name": "Rodrik Cassel",
-            "subname": "Véteran Chevronné",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Expertise Martiale",
-                        "effect": [
-                            "Chaque fois que Rodrik s’empare de [SWORDS], ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
-                            "Rodrik commence la partie avec 2 pions Ordre sur sa carte.",
-                            "Chaque fois qu’une unité alliée effectue une Attaque de Mêlée, après avoir lancé les dés d’Attaque, vous pouvez retirer 1 pion Ordre de Rodrik. Si vous le faites, l’attaquant peut relancer n’importe quels dés d’Attaque."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "stark",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Véteran Chevronné",
+            "abilities": [
+                {
+                    "name": "Expertise Martiale",
+                    "effect": [
+                        "Chaque fois que Rodrik s’empare de [SWORDS], ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
+                        "Rodrik commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Chaque fois qu’une unité alliée effectue une Attaque de Mêlée, après avoir lancé les dés d’Attaque, vous pouvez retirer 1 pion Ordre de Rodrik. Si vous le faites, l’attaquant peut relancer n’importe quels dés d’Attaque."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Il n’est de meilleur instructeur que Ser Rodrik. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30206",
             "name": "Arya Stark",
-            "subname": "La Petite Louve",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Ne Jamais Faire le Geste Escompté",
-                        "effect": [
-                            "Arya commence la partie avec 2 pions Ordre sur sa carte.",
-                            "Au début d’un tour ennemi, vous pouvez retirer 1 pion Ordre d'Arya. Si vous le faites, ciblez 1 unité d’Infanterie alliée. Elle effectue 1 action de Manœuvre ou de Repli."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "La Petite Louve",
+            "abilities": [
+                {
+                    "name": "Ne Jamais Faire le Geste Escompté",
+                    "effect": [
+                        "Arya commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Au début d’un tour ennemi, vous pouvez retirer 1 pion Ordre d'Arya. Si vous le faites, ciblez 1 unité d’Infanterie alliée. Elle effectue 1 action de Manœuvre ou de Repli."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Garçon, fille... tu es une épée, voilà tout. » – Syrio Forel"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30207",
             "name": "Howland Reed",
-            "subname": "Protecteur du Neck",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Ruse du Chasseur",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité ennemie, celle-ci considère tous les Terrains comme étant dotés des mots-clés Entravant.",
-                            "Tant que cette carte Influence une unité ennemie, quand celle-ci effectue une Attaque de Mêlée, avant de résoudre cette dernière, vous pouvez retirer cette carte de l'unité. Si vous le faites, cette Attaque subit -1 pour Toucher."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Protecteur du Neck",
+            "abilities": [
+                {
+                    "name": "Ruse du Chasseur",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité ennemie, celle-ci considère tous les Terrains comme étant dotés des mots-clés Entravant.",
+                        "Tant que cette carte Influence une unité ennemie, quand celle-ci effectue une Attaque de Mêlée, avant de résoudre cette dernière, vous pouvez retirer cette carte de l'unité. Si vous le faites, cette Attaque subit -1 pour Toucher."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Il savait parler aux arbres et ourdir les formules qui font apparaître et disparaître des châteaux. »"
             }
@@ -832,27 +818,27 @@
         {
             "id": "30208",
             "name": "Eddard Stark",
-            "subname": "Main du Roi",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Le Prix de l'Honneur",
-                        "effect": [
-                            "Au début de n’importe quel tour, vous pouvez détruire Eddard. Si vous le faites, ciblez 1 UNC ennemie. Cette UNC ne peut pas être activée et perd toutes ses Capacités jusqu’à la fin du round."
-                        ]
-                    },
-                    {
-                        "name": "Les Ordres de la Main",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité, chaque fois que celle-ci est ciblée par une Capacité d’UNC ou de zone Stratégique, vous pouvez annuler l’effet de cette UNC ou zone."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Main du Roi",
+            "abilities": [
+                {
+                    "name": "Le Prix de l'Honneur",
+                    "effect": [
+                        "Au début de n’importe quel tour, vous pouvez détruire Eddard. Si vous le faites, ciblez 1 UNC ennemie. Cette UNC ne peut pas être activée et perd toutes ses Capacités jusqu’à la fin du round."
+                    ]
+                },
+                {
+                    "name": "Les Ordres de la Main",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité, chaque fois que celle-ci est ciblée par une Capacité d’UNC ou de zone Stratégique, vous pouvez annuler l’effet de cette UNC ou zone."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Vous êtes un honnête homme et un homme d’honneur, lord Eddard. J’en ai croisé si peu. Je comprends pourquoi quand je vois ce que vous ont valu l’honneur et l’honnêteté. » – Varys"
             }
@@ -860,25 +846,25 @@
         {
             "id": "30209",
             "name": "Lyanna Mormont",
-            "subname": "Ourse Cadette",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Venger le Nord",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant qu’elle est Influencée par cette carte, l’unité gagne les effets suivant en fonction du nombre d’unités alliées détruites *(cumulatif)* :",
-                            "**0+ :** Cette unité gagne +1 à ses Tests de Moral.",
-                            "**1+ :** Ses Attaques de Mêlée gagnent **Frappe Critique**.",
-                            "**2+ :** Cette unité réussit automatiquement ses Tests de Panique.",
-                            "**3+ :** Cette unité peut relancer n’importe quels dés d’Attaque."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Ourse Cadette",
+            "abilities": [
+                {
+                    "name": "Venger le Nord",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant qu’elle est Influencée par cette carte, l’unité gagne les effets suivant en fonction du nombre d’unités alliées détruites *(cumulatif)* :",
+                        "**0+ :** Cette unité gagne +1 à ses Tests de Moral.",
+                        "**1+ :** Ses Attaques de Mêlée gagnent **Frappe Critique**.",
+                        "**2+ :** Cette unité réussit automatiquement ses Tests de Panique.",
+                        "**3+ :** Cette unité peut relancer n’importe quels dés d’Attaque."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« L’île-aux-Ours ne se reconnait d’autre roi que le roi du Nord, qui a pour nom STARK.»"
             }
@@ -886,64 +872,61 @@
         {
             "id": "30210",
             "name": "Robb Stark",
-            "subname": "Roi du Nord",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "La Ruse du Loup",
-                        "effect": [
-                            "Au début du déploiement, vous pouvez cibler une 1 Unité Combattante alliée. Jusqu'à la fin de la partie, cette unité gagne la capacité **Attaque de Flanc** :",
-                            "**ATTAQUE DE FLANC**",
-                            "Vous pouvez laisser cette unité hors de la table *(en Réserve)* au lieu de la déployer. Au début de n’importe quel round, si vous n’êtes pas le premier joueur, vous pouvez déployer 1 unité en Réserve, non activée, entièrement à Courte Portée ou moins d’un bord de table allié ou d’un flanc de table."
-                        ]
-                    },
-                    {
-                        "name": "Rapidité du Loup",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Quand Robb influence une unité alliée, cette unité gagne +1 [MOVEMENT]."
-                        ]
-                    }
-                ],
-                "requirements": [
-                    {
-                        "text": "*Votre armée ne peut pas inclure Eddard Stark.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "ncu",
+            "title": "Roi du Nord",
+            "abilities": [
+                {
+                    "name": "La Ruse du Loup",
+                    "effect": [
+                        "Au début du déploiement, vous pouvez cibler une 1 Unité Combattante alliée. Jusqu'à la fin de la partie, cette unité gagne la capacité **Attaque de Flanc** :",
+                        "**ATTAQUE DE FLANC**",
+                        "Vous pouvez laisser cette unité hors de la table *(en Réserve)* au lieu de la déployer. Au début de n’importe quel round, si vous n’êtes pas le premier joueur, vous pouvez déployer 1 unité en Réserve, non activée, entièrement à Courte Portée ou moins d’un bord de table allié ou d’un flanc de table."
+                    ]
+                },
+                {
+                    "name": "Rapidité du Loup",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Quand Robb influence une unité alliée, cette unité gagne +1 [MOVEMENT]."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Votre armée ne peut pas inclure Eddard Stark.*"
+                }
+            ],
             "fluff": {
                 "quote": "« J’ai pensé que les batailles seraient ce qu’il y a de plus difficile... »"
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20201",
             "name": "Robb Stark",
-            "subname": "Le Seigneur Loup",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Repositionnement Tactique",
-                    "Mobilité Améliorée",
-                    "Regroupement"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40208": "Retraite soudaine",
-                    "40209": "Position supérieure",
-                    "40210": "Harcèlement"
-                }
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Le Seigneur Loup",
+            "abilities": [
+                "Ordre : Repositionnement Tactique",
+                "Mobilité Améliorée",
+                "Regroupement"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40208",
+                "40209",
+                "40210"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Tout homme se devrait de tenir sa parole, et les rois plus que quiconque. »"
             }
@@ -951,27 +934,24 @@
         {
             "id": "20202",
             "name": "Lard-Jon Omble",
-            "subname": "Seigneur d'Âtre-Lès-Confins",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Débordement",
-                    "Ordre : Héroïsme Téméraire",
-                    "Affiliation : Maison Omble"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40211": "Tactiques de Berserker",
-                    "40212": "Retour de bâton",
-                    "40213": "Pas sans combattre"
-                }
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Seigneur d'Âtre-Lès-Confins",
+            "abilities": [
+                "Ordre : Débordement",
+                "Ordre : Héroïsme Téméraire",
+                "Affiliation : Maison Omble"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40211",
+                "40212",
+                "40213"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Vent Gris lui a dévoré deux doigts, et ça l’a fait rire ! »"
             }
@@ -979,68 +959,68 @@
         {
             "id": "20203",
             "name": "Champion Omble",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Charge Furieuse",
-                    "Ordre : Incitation"
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Charge Furieuse",
+                "Ordre : Incitation"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20204",
             "name": "Capitaine Épée Lige",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Entraînement Martial"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Entraînement Martial"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20205",
             "name": "Lard-Jon Omble",
-            "subname": "Banneret Intrépide",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Jusqu'au Dernier !",
-                    "Charge Furieuse"
-                ],
-                "character": true,
-                "tokens": {
-                    "number": 2,
-                    "name": "wound"
-                }
-            },
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Banneret Intrépide",
+            "abilities": [
+                "Jusqu'au Dernier !",
+                "Charge Furieuse"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ton père m’a dit un jour n’avoir jamais connu d’homme plus intrépide. »"
+            },
+            "tokens": {
+                "name": "wound",
+                "number": 2
             }
         },
         {
             "id": "20206",
             "name": "Robb Stark",
-            "subname": "Le Jeune Loup",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Repli Éclair",
-                    "Mobilité Améliorée"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Jeune Loup",
+            "abilities": [
+                "Ordre : Repli Éclair",
+                "Mobilité Améliorée"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Avant la trempe, il n’est pas d’épée redoutable. »"
             }
@@ -1048,18 +1028,18 @@
         {
             "id": "20207",
             "name": "Bran et Hodor",
-            "subname": "Protecteur et Pupille",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Hodor !",
-                    "Hodor !!!"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Protecteur et Pupille",
+            "abilities": [
+                "Hodor !",
+                "Hodor !!!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Hodor. Hodor Hodor. »\n« Tu as raison. Ça a l’air dangereux. »"
             }
@@ -1067,27 +1047,24 @@
         {
             "id": "20208",
             "name": "Brynden Tully",
-            "subname": "Le Silure",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Maison Tully",
-                    "Vaillance",
-                    "Tenez la Position !"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40214": "Recevoir la charge",
-                    "40215": "Refuser de se soumettre",
-                    "40216": "Cri de Guerre"
-                }
-            },
+            "faction": "stark",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Le Silure",
+            "abilities": [
+                "Affiliation : Maison Tully",
+                "Vaillance",
+                "Tenez la Position !"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40214",
+                "40215",
+                "40216"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Mon premier principe de guerre, Cat – ne jamais exaucer les voeux de l’ennemi. »"
             }
@@ -1095,19 +1072,19 @@
         {
             "id": "20209",
             "name": "Brynden Tully",
-            "subname": "Irréductible Chevalier",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Affiliation : Maison Tully",
-                    "Audacieux",
-                    "Volonté de Fer"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Irréductible Chevalier",
+            "abilities": [
+                "Affiliation : Maison Tully",
+                "Audacieux",
+                "Volonté de Fer"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Levez les yeux, et vous verrez que le loup-garou continue de flotter au-dessus de nos murs ! »"
             }
@@ -1115,26 +1092,23 @@
         {
             "id": "20210",
             "name": "Eddard Stark",
-            "subname": "Seigneur de Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Cri de Ralliement",
-                    "Volonté de Fer"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40217": "Bravade Nordienne",
-                    "40218": "Mener par l'exemple",
-                    "40219": "Pour ceux qui sont tombés"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Seigneur de Winterfell",
+            "abilities": [
+                "Cri de Ralliement",
+                "Volonté de Fer"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40217",
+                "40218",
+                "40219"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Connais ceux qui te suivent et fais-toi connaître d’eux. Ne leur demande pas de mourir pour un étranger. »"
             }
@@ -1142,26 +1116,23 @@
         {
             "id": "20211",
             "name": "Rodrik Cassel",
-            "subname": "Maître d'Armes",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Marquer la Cible",
-                    "Audace et Bravoure"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40220": "Prouesse guerrière",
-                    "40221": "Supériorité martiale",
-                    "40222": "Prendre l'avantage"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Maître d'Armes",
+            "abilities": [
+                "Ordre : Marquer la Cible",
+                "Audace et Bravoure"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40220",
+                "40221",
+                "40222"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il ne faut jamais jurer de demain. »"
             }
@@ -1169,31 +1140,31 @@
         {
             "id": "20212",
             "name": "Gardien Paludier",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : État d’Alerte"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : État d’Alerte"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20213",
             "name": "Maege Mormont",
-            "subname": "L'Ourse",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Tomber au Combat",
-                    "Inflexible"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "L'Ourse",
+            "abilities": [
+                "Tomber au Combat",
+                "Inflexible"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Maege est un vieux snark rance, tenace, emporté, buté. »"
             }
@@ -1201,18 +1172,18 @@
         {
             "id": "20214",
             "name": "Brynden Tully",
-            "subname": "Infiltrateur de l'Avant-Garde",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Marquer la Cible",
-                    "Attaque de Flanc"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Infiltrateur de l'Avant-Garde",
+            "abilities": [
+                "Ordre : Marquer la Cible",
+                "Attaque de Flanc"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "icon": "cavalry",
             "fluff": {
                 "quote": "« Personne ne connaît mieux les terres du Nord que Brynden. »"
             }
@@ -1220,26 +1191,23 @@
         {
             "id": "20215",
             "name": "Brynden Tully",
-            "subname": "Commandant de la Cavalerie",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Évasion Insaisissable"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40226": "Attaque montée",
-                    "40227": "Piétinez-les !",
-                    "40228": "Rassemblement"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Commandant de la Cavalerie",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Évasion Insaisissable"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40226",
+                "40227",
+                "40228"
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "« Il est bien joli de faire fondre en soc son épée, mais s’il faut la reforger dès le lendemain... »"
             }
@@ -1247,18 +1215,18 @@
         {
             "id": "20216",
             "name": "Meera Reed",
-            "subname": "Trappeuse Rusée",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Pièges Cachés",
-                    "Affiliation : Paludiers"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Trappeuse Rusée",
+            "abilities": [
+                "Ordre : Pièges Cachés",
+                "Affiliation : Paludiers"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Des pleutres, ces bourbeux, qui n’acceptent pas de se battre comme les gens honnêtes. » – Petit Walder Frey"
             }
@@ -1266,18 +1234,18 @@
         {
             "id": "20217",
             "name": "Jojen Reed",
-            "subname": "Vervoyant",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Affiliation : Paludiers",
-                    "Vervue de Jojen"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Vervoyant",
+            "abilities": [
+                "Affiliation : Paludiers",
+                "Vervue de Jojen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« À Winterfell, nous engageons la foi de Griseaux. Foyers, récoltes et coeurs, nous vous remettons tout. »"
             }
@@ -1285,23 +1253,23 @@
         {
             "id": "20218",
             "name": "Syrio Forel",
-            "subname": "Première Lame de Braavos",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Précision",
-                    "Danse de l'eau"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Eddard Stark ou Arya Stark, La Petite Louve.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Première Lame de Braavos",
+            "abilities": [
+                "Précision",
+                "Danse de l'eau"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Eddard Stark ou Arya Stark, La Petite Louve.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ma langue a menti. Mais mon bras, mes yeux criaient la vérité. Seulement, tu n’y voyais goutte. »"
             }
@@ -1309,17 +1277,17 @@
         {
             "id": "20219",
             "name": "Rickon Stark",
-            "subname": "Prince de Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Otage Précieux (Rickon Stark)"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Prince de Winterfell",
+            "abilities": [
+                "Otage Précieux (Rickon Stark)"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« On va où il est, Broussaille ? »"
             }
@@ -1327,23 +1295,22 @@
         {
             "id": "20220",
             "name": "Osha",
-            "subname": "Gardienne Piqueuse",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Riposte",
-                    "Ténacité Acharnée"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recrutée que dans une armée qui comprend Rickon Stark et doit être attachée à son unité (en ignorant les restrictions d’Attachement normales).*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Gardienne Piqueuse",
+            "abilities": [
+                "Riposte",
+                "Ténacité Acharnée"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recrutée que dans une armée qui comprend Rickon Stark et doit être attachée à son unité (en ignorant les restrictions d’Attachement normales).*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Les géants, je les ai vus, les enfants, j’en ai entendu parler, quant aux marcheurs blancs... »"
             }
@@ -1351,77 +1318,74 @@
         {
             "id": "20222",
             "name": "Vétérane Mormont",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Endurci"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Endurci"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20223",
             "name": "Survivaliste Paludier",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Évasion Insaisissable",
-                    "Éclaireur"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée peut inclure un maximum de 2 Survivalistes Paludiers.*"
-                    },
-                    {
-                        "text": "*Le premier Survivaliste Paludier de votre armée est gratuit si votre armée comprend Howland Reed, Seigneur des Paluds.\nLe Survivaliste Paludier ignore les restrictions habituelles d'attachements.*"
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Évasion Insaisissable",
+                "Éclaireur"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Votre armée peut inclure un maximum de 2 Survivalistes Paludiers.*",
+                    "name": "Limité "
+                },
+                {
+                    "text": "*Le premier Survivaliste Paludier de votre armée est gratuit si votre armée comprend Howland Reed, Seigneur des Paluds.\nLe Survivaliste Paludier ignore les restrictions habituelles d'attachements.*"
+                }
+            ],
+            "icon": "infantry"
         },
         {
             "id": "20224",
             "name": "Gardien de Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Audacieux",
-                    "Ténacité Acharnée"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Audacieux",
+                "Ténacité Acharnée"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20225",
             "name": "Howland Reed",
-            "subname": "Seigneur des Paluds",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Prise de Flanc Avancée",
-                    "Affiliation : Paludiers",
-                    "Déstabilisation"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40223": "Piège des Paluds",
-                    "40224": "Embuscade des Diables des Marais",
-                    "40225": "La menace invisible"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Seigneur des Paluds",
+            "abilities": [
+                "Ordre : Prise de Flanc Avancée",
+                "Affiliation : Paludiers",
+                "Déstabilisation"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40223",
+                "40224",
+                "40225"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Vous ne les voyez jamais, mais ils vous voient, eux. Ceux qui les poursuivent dans les marais s’égarent et ne reparaissent jamais. »"
             }
@@ -1429,32 +1393,32 @@
         {
             "id": "20226",
             "name": "Capitaine Loyaliste",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Charge Furieuse",
-                    "Supériorité Numérique"
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Charge Furieuse",
+                "Supériorité Numérique"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20227",
             "name": "Rickard Karstark",
-            "subname": "Banneret Vengeur",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Fureur des Stark",
-                    "Rage Incontrôlable"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Banneret Vengeur",
+            "abilities": [
+                "Ordre : Fureur des Stark",
+                "Rage Incontrôlable"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ne t’y méprends pas, Robb, ils sont tes bannerets, pas tes amis. » – Catelyn Stark"
             }
@@ -1462,27 +1426,24 @@
         {
             "id": "20228",
             "name": "Rickard Karstark",
-            "subname": "Seigneur de Karhold",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Maison Karstark",
-                    "Supériorité Numérique",
-                    "Soif de Massacre"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40229": "Provocation",
-                    "40230": "Un besoin de vengeance",
-                    "40231": "Rétribution Karstark"
-                }
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Seigneur de Karhold",
+            "abilities": [
+                "Affiliation : Maison Karstark",
+                "Supériorité Numérique",
+                "Soif de Massacre"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40229",
+                "40230",
+                "40231"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« En guerre, on tue ses ennemis. Votre père ne vous a pas appris ça, p’tit gars ? »"
             }
@@ -1490,26 +1451,23 @@
         {
             "id": "20229",
             "name": "Maege Mormont",
-            "subname": "Dame de l'île-aux-Ours",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Maison Mormont",
-                    "Cicatrices de Combat"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40232": "Ici nous demeurons !",
-                    "40233": "Soutien de L'Île-aux-Ours",
-                    "40234": "Assaut soutenu"
-                }
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Dame de l'île-aux-Ours",
+            "abilities": [
+                "Affiliation : Maison Mormont",
+                "Cicatrices de Combat"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40232",
+                "40233",
+                "40234"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Selon toute probabilité, ma soeur fait partie de l’armée de ton frère, ma soeur et les espèces de filles qu’elle a, vêtues de maille comme des hommes. » – Jeor Mormont à Jon Snow."
             }
@@ -1517,44 +1475,44 @@
         {
             "id": "20230",
             "name": "Champion de Winterfell",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Colère de Winterfell"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée peut inclure un maximum de 2 Champions de Winterfell.*"
-                    },
-                    {
-                        "text": "*Le premier Champion de Winterfell de votre armée est gratuit si votre armée comprend Eddard Stark, Seigneur de Winterfell.*"
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Colère de Winterfell"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Votre armée peut inclure un maximum de 2 Champions de Winterfell.*",
+                    "name": "Limité "
+                },
+                {
+                    "text": "*Le premier Champion de Winterfell de votre armée est gratuit si votre armée comprend Eddard Stark, Seigneur de Winterfell.*"
+                }
+            ],
+            "icon": "infantry"
         },
         {
             "id": "20221",
             "name": "Jaqen H'ghar",
-            "subname": "Prisonnier Mystérieux",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Un Homme Libéré, un Nom Dû"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Arya Stark. Avant le déploiement, attachez Jaqen à une unité d’Infanterie ennemie, en ignorant les restrictions d’attachement normales.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Prisonnier Mystérieux",
+            "abilities": [
+                "Un Homme Libéré, un Nom Dû"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Arya Stark. Avant le déploiement, attachez Jaqen à une unité d’Infanterie ennemie, en ignorant les restrictions d’attachement normales.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Dis les noms, et un homme fera le reste. »"
             }
@@ -1564,716 +1522,683 @@
         {
             "id": "40201",
             "name": "Force de l'hiver",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque gagne **Fracasser**.",
-                            "Si cette unité ne possède plus qu'un seul rang restant, elle peut relancer n'importe quels dés d'Attaque,",
-                            "Si vous contrôlez [SWORDS], cette attaque utilise sa valeur de dés d’Attaque la plus élevée."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque gagne **Fracasser**.",
+                        "Si cette unité ne possède plus qu'un seul rang restant, elle peut relancer n'importe quels dés d'Attaque,",
+                        "Si vous contrôlez [SWORDS], cette attaque utilise sa valeur de dés d’Attaque la plus élevée."
+                    ]
+                }
+            ]
         },
         {
             "id": "40202",
             "name": "Férocité Nordienne",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque gagne **Cruel**.",
-                            "Si cette unité ne possède plus qu'un seul rang restant, et que le défenseur échoue son Test de Panique, il subit +2 Blessures. Si vous contrôlez [SWORDS], le défenseur devient **Paniqué**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque gagne **Cruel**.",
+                        "Si cette unité ne possède plus qu'un seul rang restant, et que le défenseur échoue son Test de Panique, il subit +2 Blessures. Si vous contrôlez [SWORDS], le défenseur devient **Paniqué**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40203",
             "name": "Impact dévastateur",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, après avoir lancé les dés de Distance de Charge :",
-                        "effect": [
-                            "Les ennemis Chargés avec succès par cette unité deviennent **Paniqués** et **Vulnérables**.",
-                            "Si vous contrôlez [HORSE], cette unité peut relancer n'importe quels dés de Distance de Charge."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une action de Charge, après avoir lancé les dés de Distance de Charge :",
+                    "effect": [
+                        "Les ennemis Chargés avec succès par cette unité deviennent **Paniqués** et **Vulnérables**.",
+                        "Si vous contrôlez [HORSE], cette unité peut relancer n'importe quels dés de Distance de Charge."
+                    ]
+                }
+            ]
         },
         {
             "id": "40204",
             "name": "Le Nord se souvient",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Au début de n'importe quel tour :",
-                        "effect": [
-                            "Ciblez une Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité d’Infanterie ou de Cavalerie alliée est détruite, placez 1 pion Ordre sur cette carte.",
-                            "Tant que cette carte est pourvue d’un pion Ordre, l’unité à laquelle elle est attachée utilise toujours sa valeur de dés d’Attaque la plus élevée et, tant que vous contrôlez [SWORDS], elle gagne +1 pour Toucher."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n'importe quel tour :",
+                    "effect": [
+                        "Ciblez une Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité d’Infanterie ou de Cavalerie alliée est détruite, placez 1 pion Ordre sur cette carte.",
+                        "Tant que cette carte est pourvue d’un pion Ordre, l’unité à laquelle elle est attachée utilise toujours sa valeur de dés d’Attaque la plus élevée et, tant que vous contrôlez [SWORDS], elle gagne +1 pour Toucher."
+                    ]
+                }
+            ]
         },
         {
             "id": "40205",
             "name": "L'hiver vient",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée Charge avec Succès :",
-                        "effect": [
-                            "Choisissez 1 option : si vous contrôlez [HORSE], gagnez les deux.",
-                            "• Les ennemis Chargés avec succès par cette unité ne peuvent pas être ciblés par des Ordres ou des cartes Tactique alliés ce tour-ci.",
-                            "• L’attaquant utilise sa valeur de dés d’Attaque la plus élevée."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée Charge avec Succès :",
+                    "effect": [
+                        "Choisissez 1 option : si vous contrôlez [HORSE], gagnez les deux.",
+                        "• Les ennemis Chargés avec succès par cette unité ne peuvent pas être ciblés par des Ordres ou des cartes Tactique alliés ce tour-ci.",
+                        "• L’attaquant utilise sa valeur de dés d’Attaque la plus élevée."
+                    ]
+                }
+            ]
         },
         {
             "id": "40206",
             "name": "Repositionnement éclair",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée. Elle se décale de 2’’.",
-                            "Si vous contrôlez [HORSE], cette unité effectue une action de Manœuvre de 3’’ à la place."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée. Elle se décale de 2’’.",
+                        "Si vous contrôlez [HORSE], cette unité effectue une action de Manœuvre de 3’’ à la place."
+                    ]
+                }
+            ]
         },
         {
             "id": "40207",
             "name": "Ordres d'assaut",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez l’effet de cette zone par :",
-                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d'Attaque la plus basse.*",
-                            "*Si cette UNC s’est emparée de [SWORDS], cette Unité Combattante peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez l’effet de cette zone par :",
+                        "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d'Attaque la plus basse.*",
+                        "*Si cette UNC s’est emparée de [SWORDS], cette Unité Combattante peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
+                    ]
+                }
+            ]
         },
         {
             "id": "40208",
             "name": "Retraite soudaine",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez le défenseur. Il effectue 1 action de Repli.",
-                            "Si cette carte cible l’unité de Robb Stark, celle-ci peut relancer n’importe quels dés de Distance de Repli."
-                        ]
-                    }
-                ],
-                "commander_id": "20201",
-                "commander_name": "Robb Stark",
-                "commander_subname": "Le Seigneur Loup"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez le défenseur. Il effectue 1 action de Repli.",
+                        "Si cette carte cible l’unité de Robb Stark, celle-ci peut relancer n’importe quels dés de Distance de Repli."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20201"
             }
         },
         {
             "id": "40209",
             "name": "Position supérieure",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une action de Charge, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Si cet ennemi Charge une unité de Front, il subit une Charge Désordonnée sur des lancers de Distance de Charge de 3 ou moins. S’il subit une Charge Désordonnée, il devient **Vulnérable**.",
-                            "Si le défenseur est l'unité de Robb Stark, l'ennemi subit une Charge Désordonnée sur des lancers de Distance de Charge de 5 ou moins à la place."
-                        ]
-                    }
-                ],
-                "commander_id": "20201",
-                "commander_name": "Robb Stark",
-                "commander_subname": "Le Seigneur Loup"
+            "faction": "stark",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une action de Charge, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Si cet ennemi Charge une unité de Front, il subit une Charge Désordonnée sur des lancers de Distance de Charge de 3 ou moins. S’il subit une Charge Désordonnée, il devient **Vulnérable**.",
+                        "Si le défenseur est l'unité de Robb Stark, l'ennemi subit une Charge Désordonnée sur des lancers de Distance de Charge de 5 ou moins à la place."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20201"
             }
         },
         {
             "id": "40210",
             "name": "Harcèlement",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Cette unité effectue 1 action de Repli.",
-                            "Si cette carte cible l’unité de Robb Stark, chaque ennemi duquel elle se désengage devient **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20201",
-                "commander_name": "Robb Stark",
-                "commander_subname": "Le Seigneur Loup"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Cette unité effectue 1 action de Repli.",
+                        "Si cette carte cible l’unité de Robb Stark, chaque ennemi duquel elle se désengage devient **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20201"
             }
         },
         {
             "id": "40211",
             "name": "Tactiques de Berserker",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Choisissez 1 option. Cette unité peut subir jusqu'à 3 Blessures. Pour chaque Blessure subie, choisissez 1 option supplémentaire :",
-                            "• **Frappe Critique**",
-                            "• **Fracasser**",
-                            "• Cette Attaque lance sa valeur de dés la plus élevée.",
-                            "• Cette Attaque peut relancer n'importe quels dés d'Attaque."
-
-                        ]
-                    }
-                ],
-                "commander_id": "20202",
-                "commander_name": "Lard-Jon Omble",
-                "commander_subname": "Seigneur d'Âtre-Lès-Confins"
+            "faction": "stark",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Choisissez 1 option. Cette unité peut subir jusqu'à 3 Blessures. Pour chaque Blessure subie, choisissez 1 option supplémentaire :",
+                        "• **Frappe Critique**",
+                        "• **Fracasser**",
+                        "• Cette Attaque lance sa valeur de dés la plus élevée.",
+                        "• Cette Attaque peut relancer n'importe quels dés d'Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20202"
             }
         },
         {
             "id": "40212",
             "name": "Retour de bâton",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est une unité de la Maison Omble, l’attaquant devient également **Paniqué**."
-                        ]
-                    }
-                ],
-                "commander_id": "20202",
-                "commander_name": "Lard-Jon Omble",
-                "commander_subname": "Seigneur d'Âtre-Lès-Confins"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur. Si le défenseur est une unité de la Maison Omble, l’attaquant devient également **Paniqué**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20202"
             }
         },
         {
             "id": "40213",
             "name": "Pas sans combattre",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée est détruite :",
-                        "effect": [
-                            "Avant d’être retirée, cette unité effectue 1 Attaque de Mêlée qui utilise sa valeur de dés la plus élevée. Si cette carte cible une unité de la Maison Omble, elle peut relancer n’importe quels dés d’Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20202",
-                "commander_name": "Lard-Jon Omble",
-                "commander_subname": "Seigneur d'Âtre-Lès-Confins"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée est détruite :",
+                    "effect": [
+                        "Avant d’être retirée, cette unité effectue 1 Attaque de Mêlée qui utilise sa valeur de dés la plus élevée. Si cette carte cible une unité de la Maison Omble, elle peut relancer n’importe quels dés d’Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20202"
             }
         },
         {
             "id": "40214",
             "name": "Recevoir la charge",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée est Chargée avec succès, avant que l’attaquant n’effectue son Attaque de Mêlée :",
-                        "effect": [
-                            "Si cette unité n’était pas engagée avec un autre ennemi, et qu’elle a été Chargée de Front ou de Flanc, elle effectue 1 action d’Attaque de Mêlée sur l’attaquant avant que celui-ci ne résolve son attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20208",
-                "commander_name": "Brynden Tully",
-                "commander_subname": "Le Silure"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée est Chargée avec succès, avant que l’attaquant n’effectue son Attaque de Mêlée :",
+                    "effect": [
+                        "Si cette unité n’était pas engagée avec un autre ennemi, et qu’elle a été Chargée de Front ou de Flanc, elle effectue 1 action d’Attaque de Mêlée sur l’attaquant avant que celui-ci ne résolve son attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20208"
             }
         },
         {
             "id": "40215",
             "name": "Refuser de se soumettre",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée réussit un Test de Panique :",
-                        "effect": [
-                            "Tous les ennemis engagés avec cette unité deviennent **Vulnérable**. Attachez cette carte à cette unité jusqu’à ce qu’elle échoue un Test de Panique.",
-                            "Tant que cette carte est attachée, chaque fois que cette unité réussit un Test de Panique, tous les ennemis engagés avec elle deviennent **Vulnérables**. Si cette carte est attachée à une unité de la Maison Tully, cette dernière gagne +1 à ses lancers de Test de Panique."
-                        ]
-                    }
-                ],
-                "commander_id": "20208",
-                "commander_name": "Brynden Tully",
-                "commander_subname": "Le Silure"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée réussit un Test de Panique :",
+                    "effect": [
+                        "Tous les ennemis engagés avec cette unité deviennent **Vulnérable**. Attachez cette carte à cette unité jusqu’à ce qu’elle échoue un Test de Panique.",
+                        "Tant que cette carte est attachée, chaque fois que cette unité réussit un Test de Panique, tous les ennemis engagés avec elle deviennent **Vulnérables**. Si cette carte est attachée à une unité de la Maison Tully, cette dernière gagne +1 à ses lancers de Test de Panique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20208"
             }
         },
         {
             "id": "40216",
             "name": "Cri de Guerre",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée est activée :",
-                        "effect": [
-                            "Cette unité effectue 1 Test de Moral.",
-                            "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** ou **Vulnérable**.",
-                            "Si cette carte cible une unité de la Maison Tully et qu’elle réussit, l’ennemi devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20208",
-                "commander_name": "Brynden Tully",
-                "commander_subname": "Le Silure"
+            "faction": "stark",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral.",
+                        "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** ou **Vulnérable**.",
+                        "Si cette carte cible une unité de la Maison Tully et qu’elle réussit, l’ennemi devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20208"
             }
         },
         {
             "id": "40217",
             "name": "Bravade Nordienne",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Panique, après avoir lancé les dés :",
-                        "effect": [
-                            "Cette unité peut relancer n’importe quels dés de ce test. Si elle se trouve à Courte Portée ou moins d’Eddard Stark, elle réussit ce test au lieu de relancer les dés.",
-                            "Si cette carte cible l’unité d’Eddard Stark, ciblez 1 ennemi avec qui elle est engagée. Il subit 1 Blessure, +1 pour chaque rang détruit de cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20210",
-                "commander_name": "Eddard Stark",
-                "commander_subname": "Seigneur de Winterfell"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Panique, après avoir lancé les dés :",
+                    "effect": [
+                        "Cette unité peut relancer n’importe quels dés de ce test. Si elle se trouve à Courte Portée ou moins d’Eddard Stark, elle réussit ce test au lieu de relancer les dés.",
+                        "Si cette carte cible l’unité d’Eddard Stark, ciblez 1 ennemi avec qui elle est engagée. Il subit 1 Blessure, +1 pour chaque rang détruit de cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20210"
             }
         },
         {
             "id": "40218",
             "name": "Mener par l'exemple",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Après que l’unité d’Eddard Stark a résolu une attaque :",
-                        "effect": [
-                            "Jusqu’à la fin du round, attachez cette carte à 1 autre unité alliée située à Longue Portée ou moins.",
-                            "Tant que cette carte est attachée, cette unité gagne +2 à ses lancers de Test de Moral et ses Attaques de Mêlée gagnent +1 pour Toucher."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20210",
-                "commander_name": "Eddard Stark",
-                "commander_subname": "Seigneur de Winterfell"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après que l’unité d’Eddard Stark a résolu une attaque :",
+                    "effect": [
+                        "Jusqu’à la fin du round, attachez cette carte à 1 autre unité alliée située à Longue Portée ou moins.",
+                        "Tant que cette carte est attachée, cette unité gagne +2 à ses lancers de Test de Moral et ses Attaques de Mêlée gagnent +1 pour Toucher."
+                    ]
+                },
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20210"
             }
         },
         {
             "id": "40219",
             "name": "Pour ceux qui sont tombés",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez l’unité d’Eddard Stark. Elle effectue 1 action d’Attaque ou de Charge. Si le défenseur a été détruit, l’unité d’Eddard peut relancer n’importe lesquels de ses dés d’Attaque et de Distance de Charge."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20210",
-                "commander_name": "Eddard Stark",
-                "commander_subname": "Seigneur de Winterfell"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez l’unité d’Eddard Stark. Elle effectue 1 action d’Attaque ou de Charge. Si le défenseur a été détruit, l’unité d’Eddard peut relancer n’importe lesquels de ses dés d’Attaque et de Distance de Charge."
+                    ]
+                },
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20210"
             }
         },
         {
             "id": "40220",
             "name": "Prouesse guerrière",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi est ciblé par une Capacité ou une carte Tactique :",
-                        "effect": [
-                            "Vous pouvez dépenser 1 pion État sur cet ennemi. Si vous le faites, annulez les effets de cette Capacité ou carte Tactique."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée engagée. Retirez 1 pion État de cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20211",
-                "commander_name": "Rodrik Cassel",
-                "commander_subname": "Maître d'Armes"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi est ciblé par une Capacité ou une carte Tactique :",
+                    "effect": [
+                        "Vous pouvez dépenser 1 pion État sur cet ennemi. Si vous le faites, annulez les effets de cette Capacité ou carte Tactique."
+                    ]
+                },
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée engagée. Retirez 1 pion État de cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20211"
             }
         },
         {
             "id": "40221",
             "name": "Supériorité martiale",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité ennemie effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "L’attaquant subit 1 Touche pour chaque échec.",
-                            "Si le défenseur est l’unité de Rodrik, cette attaque subit également -1 pour Toucher."
-                        ]
-                    }
-                ],
-                "commander_id": "20211",
-                "commander_name": "Rodrik Cassel",
-                "commander_subname": "Maître d'Armes"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité ennemie effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "L’attaquant subit 1 Touche pour chaque échec.",
+                        "Si le défenseur est l’unité de Rodrik, cette attaque subit également -1 pour Toucher."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20211"
             }
         },
         {
             "id": "40222",
             "name": "Prendre l'avantage",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Choisissez 1 option, +1 par pion État sur le défenseur :",
-                            "• Cette attaque lance sa valeur de dés la plus élevée.",
-                            "• Cette attaque gagne +1 pour Toucher.",
-                            "• Le défenseur perd toutes ses Capacités et ne peut plus être ciblé par des cartes Tactique alliées jusqu’à la fin du tour."
-                        ]
-                    }
-                ],
-                "commander_id": "20211",
-                "commander_name": "Rodrik Cassel",
-                "commander_subname": "Maître d'Armes"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Choisissez 1 option, +1 par pion État sur le défenseur :",
+                        "• Cette attaque lance sa valeur de dés la plus élevée.",
+                        "• Cette attaque gagne +1 pour Toucher.",
+                        "• Le défenseur perd toutes ses Capacités et ne peut plus être ciblé par des cartes Tactique alliées jusqu’à la fin du tour."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20211"
             }
         },
         {
             "id": "40223",
             "name": "Piège des Paluds",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité ennemie effectue une action de Marche, Manœuvre ou Repli, avant de résoudre cette Action :",
-                        "effect": [
-                            "Il subit −1 [MOVEMENT] ce tour-ci.",
-                            "Si cet ennemi se trouve à Longue Portée ou moins d’une unité de Paludiers alliée il est considéré comme se déplaçant sur un terrain Dangereux."
-                        ]
-                    }
-                ],
-                "commander_id": "20225",
-                "commander_name": "Howland Reed",
-                "commander_subname": "Seigneur des Paluds"
+            "faction": "stark",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité ennemie effectue une action de Marche, Manœuvre ou Repli, avant de résoudre cette Action :",
+                    "effect": [
+                        "Il subit −1 [MOVEMENT] ce tour-ci.",
+                        "Si cet ennemi se trouve à Longue Portée ou moins d’une unité de Paludiers alliée il est considéré comme se déplaçant sur un terrain Dangereux."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20225"
             }
         },
         {
             "id": "40224",
             "name": "Embuscade des Diables des Marais",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité ennemie est activée :",
-                        "effect": [
-                            "Choisissez 1 option :",
-                            "• Si cet ennemi se trouve à Longue Portée ou moins d’une unité de Paludiers alliée, il devient **Affaibli**.",
-                            "• Ciblez 1 unité de Paludiers alliée non-activée située à Longue Portée ou moins. Elle effectue 1 Attaque à Distance sur cet ennemi."
-                        ]
-                    }
-                ],
-                "commander_id": "20225",
-                "commander_name": "Howland Reed",
-                "commander_subname": "Seigneur des Paluds"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité ennemie est activée :",
+                    "effect": [
+                        "Choisissez 1 option :",
+                        "• Si cet ennemi se trouve à Longue Portée ou moins d’une unité de Paludiers alliée, il devient **Affaibli**.",
+                        "• Ciblez 1 unité de Paludiers alliée non-activée située à Longue Portée ou moins. Elle effectue 1 Attaque à Distance sur cet ennemi."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20225"
             }
         },
         {
             "id": "40225",
             "name": "La menace invisible",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante ennemie.",
-                            "Si une unité de Paludiers alliée non-engagée se trouve à Longue Portée ou moins de cet ennemi, cet ennemi devient **Paniqué**, puis subit 1 Test de Panique."
-                        ]
-                    }
-                ],
-                "commander_id": "20225",
-                "commander_name": "Howland Reed",
-                "commander_subname": "Seigneur des Paluds"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie.",
+                        "Si une unité de Paludiers alliée non-engagée se trouve à Longue Portée ou moins de cet ennemi, cet ennemi devient **Paniqué**, puis subit 1 Test de Panique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20225"
             }
         },
         {
             "id": "40226",
             "name": "Attaque montée",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité de Cavalerie alliée choisit son action lors de son activation, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Pour son action, cette unité peut effectuer un pivot, puis 1 action de Marche, même si elle est engagée. Elle peut traverser les ennemis au cours de cette Marche. Les ennemis desquels elle se désengage ne peuvent pas pivoter.",
-                            "Une fois cette Marche résolue, 1 ennemi traversé subit 1 Blessure, +1 par rang restant dans cette unité ennemie."
-                        ]
-                    }
-                ],
-                "commander_id": "20215",
-                "commander_name": "Brynden Tully",
-                "commander_subname": "Commandant de la Cavalerie"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité de Cavalerie alliée choisit son action lors de son activation, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Pour son action, cette unité peut effectuer un pivot, puis 1 action de Marche, même si elle est engagée. Elle peut traverser les ennemis au cours de cette Marche. Les ennemis desquels elle se désengage ne peuvent pas pivoter.",
+                        "Une fois cette Marche résolue, 1 ennemi traversé subit 1 Blessure, +1 par rang restant dans cette unité ennemie."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20215"
             }
         },
         {
             "id": "40227",
             "name": "Piétinez-les !",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi termine une action de Manœuvre, de Marche ou de Repli :",
-                        "effect": [
-                            "Ciblez 1 Unité de Cavalerie alliée située à Longue Portée ou moins capable de Charger cet ennemi.",
-                            "Elle effectue 1 action de Charge sur cet ennemi. Si elle réussit sa Charge, au lieu d’effectuer une Attaque de Mêlée, cet ennemi devient **Paniqué** et subit 2 Touches par rang restant dans cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20215",
-                "commander_name": "Brynden Tully",
-                "commander_subname": "Commandant de la Cavalerie"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi termine une action de Manœuvre, de Marche ou de Repli :",
+                    "effect": [
+                        "Ciblez 1 Unité de Cavalerie alliée située à Longue Portée ou moins capable de Charger cet ennemi.",
+                        "Elle effectue 1 action de Charge sur cet ennemi. Si elle réussit sa Charge, au lieu d’effectuer une Attaque de Mêlée, cet ennemi devient **Paniqué** et subit 2 Touches par rang restant dans cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20215"
             }
         },
         {
             "id": "40228",
             "name": "Rassemblement",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité de Cavalerie alliée non engagée est activée :",
-                        "effect": [
-                            "Une fois ce tour-ci, si cette unité doit effectuer une action de Manœuvre, elle peut soigner 3 de ses Blessures et retirer 1 pion État au lieu d’effectuer cette action."
-                        ]
-                    }
-                ],
-                "commander_id": "20215",
-                "commander_name": "Brynden Tully",
-                "commander_subname": "Commandant de la Cavalerie"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité de Cavalerie alliée non engagée est activée :",
+                    "effect": [
+                        "Une fois ce tour-ci, si cette unité doit effectuer une action de Manœuvre, elle peut soigner 3 de ses Blessures et retirer 1 pion État au lieu d’effectuer cette action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20215"
             }
         },
         {
             "id": "40229",
             "name": "Provocation",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante ennemie est activée :",
-                        "effect": [
-                            "Ciblez 1 unité alliée située à Longue Portée ou moins.",
-                            "Si cet ennemi peut Attaquer ou Charger l’unité ciblée, et qu’il déclare une autre action qu’Attaque ou Charge sur l’unité ciblée ce tour-ci, avant d’effectuer son action, il devient **Vulnérable** et **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20228",
-                "commander_name": "Rickard Karstark,Seigneur de Karhold"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante ennemie est activée :",
+                    "effect": [
+                        "Ciblez 1 unité alliée située à Longue Portée ou moins.",
+                        "Si cet ennemi peut Attaquer ou Charger l’unité ciblée, et qu’il déclare une autre action qu’Attaque ou Charge sur l’unité ciblée ce tour-ci, avant d’effectuer son action, il devient **Vulnérable** et **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20228"
             }
         },
         {
             "id": "40230",
             "name": "Un besoin de vengeance",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel Round :",
-                        "effect": [
-                            "Ciblez une Unité Combattante alliée. Cette unité effectue 1 action d’Attaque.",
-                            "Si cette unité est une unité de la Maison Karstark, elle gagne +1 pour Toucher.",
-                            "Une fois cette attaque résolue, votre adversaire peut activer 1 UNC."
-                        ]
-                    }
-                ],
-                "commander_id": "20228",
-                "commander_name": "Rickard Karstark,Seigneur de Karhold"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel Round :",
+                    "effect": [
+                        "Ciblez une Unité Combattante alliée. Cette unité effectue 1 action d’Attaque.",
+                        "Si cette unité est une unité de la Maison Karstark, elle gagne +1 pour Toucher.",
+                        "Une fois cette attaque résolue, votre adversaire peut activer 1 UNC."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20228"
             }
         },
         {
             "id": "40231",
             "name": "Rétribution Karstark",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité ennemie effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Si cette attaque cible une unité de la Maison Karstark, attachez cette carte à cet ennemi jusqu’à la fin de la partie. Sinon, attachez cette carte à cet ennemi jusqu’à la fin du round.",
-                            "Tant que cette carte est attachée, chaque fois qu’elle résout une attaque, cette unité devient **Vulnérable**. Chaque fois qu’un rang de cette unité est détruit, une unité avec laquelle est engagée soigne 2 de ses Blessures."
-                        ]
-                    }
-                ],
-                "commander_id": "20228",
-                "commander_name": "Rickard Karstark,Seigneur de Karhold"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité ennemie effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si cette attaque cible une unité de la Maison Karstark, attachez cette carte à cet ennemi jusqu’à la fin de la partie. Sinon, attachez cette carte à cet ennemi jusqu’à la fin du round.",
+                        "Tant que cette carte est attachée, chaque fois qu’elle résout une attaque, cette unité devient **Vulnérable**. Chaque fois qu’un rang de cette unité est détruit, une unité avec laquelle est engagée soigne 2 de ses Blessures."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20228"
             }
         },
         {
             "id": "40232",
             "name": "Ici nous demeurons !",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Attachez cette carte à une unité alliée jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, quand cette unité devrait être détruite, vous pouvez défausser cette carte. Si vous le faites, cette unité n’est pas détruite et reste en jeu avec 1 Blessure."
-                        ]
-                    }
-                ],
-                "commander_id": "20229",
-                "commander_name": "Maege Mormont",
-                "commander_subname": "Dame de l'Île-aux-Ours"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Attachez cette carte à une unité alliée jusqu’à la fin de la partie.",
+                        "Tant que cette carte est attachée, quand cette unité devrait être détruite, vous pouvez défausser cette carte. Si vous le faites, cette unité n’est pas détruite et reste en jeu avec 1 Blessure."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20229"
             }
         },
         {
             "id": "40233",
             "name": "Soutien de L'Île-aux-Ours",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Au début d’un Tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée. Elle subit jusqu’à 3 Blessures.",
-                            "Soignez ce nombre de Blessures +1 d'1 autre unité alliée située à Longue Portée ou moins.",
-                            "Si cette carte cible une unité de la Maison Mormont, ciblez également 1 ennemi engagé avec celle-ci. Cet ennemi devient **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20229",
-                "commander_name": "Maege Mormont",
-                "commander_subname": "Dame de l'Île-aux-Ours"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un Tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée. Elle subit jusqu’à 3 Blessures.",
+                        "Soignez ce nombre de Blessures +1 d'1 autre unité alliée située à Longue Portée ou moins.",
+                        "Si cette carte cible une unité de la Maison Mormont, ciblez également 1 ennemi engagé avec celle-ci. Cet ennemi devient **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20229"
             }
         },
         {
             "id": "40234",
             "name": "Assaut soutenu",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée et elle peut relancer n'importe quels dés d'Attaque.",
-                            "Si cette carte cible l’unité de Maege, le défenseur devient également **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20229",
-                "commander_name": "Maege Mormont",
-                "commander_subname": "Dame de l'Île-aux-Ours"
+            "faction": "stark",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si cette unité a commencé le tour engagée avec le défenseur, elle lance sa valeur de dés d’Attaque la plus élevée et elle peut relancer n'importe quels dés d'Attaque.",
+                        "Si cette carte cible l’unité de Maege, le défenseur devient également **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20229"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Poison des Paludiers",
             "id": "50201",
-            "statistics": {
-                "faction": "stark",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "[SKILL:Venom]",
-                        "Chaque fois que cette unité effectue une action, avant de résoudre celle-ci, elle subit 1 Blessure, +1 si elle possède au moins 1 pion État.",
-                        "Si vous devez retirer un pion État de cette unité, vous pouvez retirer cette carte à la place."
-                    ]
-                },
-                "back": {
-                    "top": [
-                        "[SKILL:Venom]",
-                        "**POISON**"
-                    ],
-                    "quote": "« Un homme, un vrai, ne tuait pas par le poison. Le poison était bon pour les pleutres, les femmes et les Dorniens. »\n- Victarion Greyjoy",
-                    "ratio": 0.5,
-                    "crests": 1,
-                    "text": [
-                        "**Au début de la partie, placez cette carte à côté de votre Paquet Tactique.**",
-                        "Certaines Capacités ou effets indiquent quand jouer cette carte."
-                    ]
-                }
+            "name": "Poison des Paludiers",
+            "faction": "stark",
+            "version": "2021",
+            "role": "special",
+            "category": "poison",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "[SKILL:Venom]",
+                    "Chaque fois que cette unité effectue une action, avant de résoudre celle-ci, elle subit 1 Blessure, +1 si elle possède au moins 1 pion État.",
+                    "Si vous devez retirer un pion État de cette unité, vous pouvez retirer cette carte à la place."
+                ]
             },
-            "type": "poison"
+            "back": {
+                "top": [
+                    "[SKILL:Venom]",
+                    "**POISON**"
+                ],
+                "quote": "« Un homme, un vrai, ne tuait pas par le poison. Le poison était bon pour les pleutres, les femmes et les Dorniens. »\n- Victarion Greyjoy",
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**Au début de la partie, placez cette carte à côté de votre Paquet Tactique.**",
+                    "Certaines Capacités ou effets indiquent quand jouer cette carte."
+                ]
+            }
         }
     ]
 }

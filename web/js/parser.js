@@ -594,10 +594,9 @@ Parser.renderFaction = function (faction, isLong = false) {
 Parser.renderProp = function (prop) {
 	prop = prop || "";
 	switch (prop) {
-		case "ncus": return "NCU";
+		case "ncu": return "NCU";
 		case "tactics": return "Tactics Card";
-		case "units": return "Combat Unit";
-		case "attachments": return "Attachment";
+		case "unit": return "Combat Unit";
 		default: return prop.uppercaseFirst();
 	}
 };

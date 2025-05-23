@@ -2,7 +2,7 @@ from PIL import Image
 import os
 import re
 from pathlib import Path
-from const import FACTIONS
+from py.song_data import FACTIONS
 import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from image_cropper import ImageLoader, ImageSaver, ImageCropper, Rectangle
@@ -46,7 +46,7 @@ class AssetManager:
         return self.get(f"{self.ASSETS_DIR}/{faction}/crest-shadow.png", (282, 300), (40, 0))
 
     def get_crest(self, faction):
-        return self.get(f"{self.ASSETS_DIR}/{faction}/crest.png", (200, 230), (20, 40))
+        return self.get(f"{self.ASSETS_DIR}/{faction}/crest.png", (200, 230), (60, 40))
 
     def get_unit_bg(self, faction):
         return self.get(f"{self.ASSETS_DIR}/{faction}/bg-large.png", (1417, 827), (0, 0))

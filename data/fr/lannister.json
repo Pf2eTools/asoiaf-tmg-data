@@ -1,599 +1,588 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "lannister",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "10101",
             "name": "Gardes Lannister",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 4,
-                "defense": 3,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Suprématie des Lannister"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Suprématie des Lannister"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 7,
+            "speed": 4,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Lannister sont notoirement riches,et l’influence de leur fortune se fait sentir jusque dans les rangs de la piétaille. Leur infanterie bénéficie d’un avantage au combat grâce aux lourdes armures et aux boucliers en acier dont elle est équipée, ce qui lui procure un sentiment d’invincibilité. La plupart des ennemis de la Maison Lannister se révèlent incapables de percer des lignes aussi robustes."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10102",
             "name": "Hallebardiers Lannister",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Hallebarde",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Recevoir la Charge",
-                    "Hallebarde"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Recevoir la Charge",
+                "Hallebarde"
+            ],
+            "attacks": [
+                {
+                    "name": "Hallebarde",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Bien qu’ils soient capables de mener des assauts de front, les Hallebardiers Lannister excellent dans les formations et les positions défensives. Un ennemi qui charge une ligne de Hallebardiers retranchés prend un risque considérable. Il faut toutefois savoir les protéger des attaques de flanc ou des tirs ennemis mais, lorsqu’ils sont employés à bon escient, les Hallebardiers peuvent faire des ravages."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10103",
             "name": "Hommes de la Montagne de la Maison Clegane",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Lames de Soudard",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Lames de Soudards",
-                    "Se Nourrir de la Peur"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Lames de Soudards",
+                "Se Nourrir de la Peur"
+            ],
+            "attacks": [
+                {
+                    "name": "Lames de Soudard",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Brutaux, sauvages, cruels et féroces, les Hommes de la Montagne sont prêts à toutes les bassesses au combat. Ils ne connaissent aucune pitié. Ceux qui fuient sont massacrés. Ceux qui se rendent sont exécutés. Leur spécialité consiste à attaquer des troupes ennemies déjà engagées et d’écraser toute volonté de résistance. Celui qui les commande devra cependant veiller à garder ces brutes épaisses en laisse."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10104",
             "name": "Pyromanciens",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Feu Grégeois",
-                        "type": "short",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Feu Grégeois",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Feu Grégeois",
-                    "Visage Horrifique"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Feu Grégeois",
+                "Visage Horrifique"
+            ],
+            "attacks": [
+                {
+                    "name": "Feu Grégeois",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Feu Grégeois",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Pyromanciens de la Guilde des Alchimistes manient l’arme la plus terrible et la plus dévastatrice de la Maison Lannister : le Feu Grégeois. Appelé également « la substance », le Feu Grégeois est un liquide vert doté d’un énorme potentiel de destruction. Du fait de sa haute volatilité, transporter et utiliser la substance se révèle extrêmement délicat. Cependant, aucune unité constituée d’hommes mortels ne saurait résister à son pouvoir ravageur. Même la plus solide des armures est inutile contre ces flammes collantes et pernicieuses."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10105",
             "name": "Chevaliers de Castral Roc",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Lance",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Suprématie des Lannister",
-                    "Cavalerie",
-                    "Lance"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "lannister",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Suprématie des Lannister",
+                "Cavalerie",
+                "Lance"
+            ],
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Équipés du matériel le plus coûteux qui soit et entraînés à la perfection, les Chevaliers de Castral Roc offrent à la bannière du Lion une rapidité et une force de frappe inégalées. Rares sont les ennemis suffisamment équipés pour encaisser la charge de ces mastodontes lourdement blindés. Plus rares encore sont ceux qui peuvent espérer surpasser leur vitesse. Face à une infanterie déterminée, un commandant avisé veillera à ce qu’ils ne s’enlisent pas dans la mêlée."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10106",
             "name": "Arbalétriers Lannister",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Arbalète",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Arbalète"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Arbalète"
+            ],
+            "attacks": [
+                {
+                    "name": "Arbalète",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Arbalétriers sont plus faciles à former que leurs homologues plus archaïques. Pourtant, l’arbalète elle-même est plus coûteuse à fabriquer et à entretenir, en particulier sur un champ de bataille. Même avec un entraînement minimal, les Arbalétriers peuvent tirer avec précision et percer une armure lourde, y compris sous la pression d’une charge directe. Toutefois, aucun général Lannister digne de ce nom ne s’aviserait de placer ses Arbalétriers à proximité d’une mêlée !"
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10107",
             "name": "Gregor Clegane",
-            "subname": "La Montagne à Cheval",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 4,
-                "speed": 4,
-                "defense": 2,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Équarrissage",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "La Montagne à Cheval",
-                    "Équarrissage",
-                    "Présence Intimidante"
-                ],
-                "wounds": 4,
-                "tray": "solo"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "title": "La Montagne à Cheval",
+            "abilities": [
+                "La Montagne à Cheval",
+                "Équarrissage",
+                "Présence Intimidante"
+            ],
+            "attacks": [
+                {
+                    "name": "Équarrissage",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 2,
+            "morale": 4,
+            "speed": 4,
+            "cost": 4,
+            "tray": "solo",
             "fluff": {
                 "lore": "Ser Gregor Clegane est un géant parmi les hommes. Quelqu’un d’aussi colossal se doit d’avoir une monture qui l’est tout autant. Pourtant, même le palefroi le plus imposant fait figure de poney lorsqu’il est chevauché par la Montagne. Les unités placées sous le commandement de Clegane frappent avec la force d’une avalanche, ne laissant que destruction dans leur sillage. La Montagne est une arme vivante, faite de muscles et d’acier, qui ne connaît pas la moindre pitié.",
                 "quote": "« Comment espérer vaincre un tel monstre ? ». – Petyr Baelish"
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 4
         },
         {
             "id": "10108",
             "name": "Les Fils du Guerrier",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Lame Ointe",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Prière de Bataille"
-                ],
-                "tokens": {
-                    "number": 1,
-                    "name": "faith"
-                },
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Prière de Bataille"
+            ],
+            "attacks": [
+                {
+                    "name": "Lame Ointe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Bien nés ou anoblis, les Fils du Guerrier tous sont issus du milieu de la chevalerie et mettent leur talent au service des Sept. Armés de lames étincelantes, équipés d’armures lourdes et confortés par une foi inébranlable, les Fils du Guerrier peuvent prendre ou tenir n’importe quel objectif. C’est dans l’adversité que les Fils du Guerrier donnent le meilleur d’eux-mêmes, notamment lorsque tout semble définitivement perdu."
+            },
+            "icon": "infantry",
+            "tokens": {
+                "name": "faith",
+                "number": 1
             }
         },
         {
             "id": "10109",
             "name": "Pauvres Hères",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 6,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Gourdin",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Zèle Fanatique",
-                    "Résurgence Zélée"
-                ],
-                "tokens": {
-                    "number": 1,
-                    "name": "faith"
-                },
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Zèle Fanatique",
+                "Résurgence Zélée"
+            ],
+            "attacks": [
+                {
+                    "name": "Gourdin",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Pauvres Hères ne portent pas d’armure et sont équipés d’armes de fortune, pourtant, il faudrait être un général stupide pour ne pas les accepter dans ses rangs. Soutenus par leur nombre et leur foi inébranlable dans les Sept, ils combattent là où des hommes moins pieux tourneraient les talons. Leur fanatisme leur permet de tenir le front envers et contre tout ou de se lancer à l’assaut d’un ennemi apparemment invincible !"
+            },
+            "icon": "infantry",
+            "tokens": {
+                "name": "faith",
+                "number": 1
             }
         },
         {
             "id": "10110",
             "name": "Garde Royale",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Lame de Maître",
-                        "type": "melee",
-                        "hit": 2,
-                        "dice": [
-                            7,
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Résilience",
-                    "Escorte de Joffrey",
-                    "Riposte"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recrutée que dans une armée qui comprend 'Joffrey Baratheon, Premier du Nom'. Vous ne pouvez pas inclure Jaime Lannister. Joffrey doit être attaché à cette unité.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Résilience",
+                "Escorte de Joffrey",
+                "Riposte"
+            ],
+            "attacks": [
+                {
+                    "name": "Lame de Maître",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        7,
+                        7
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recrutée que dans une armée qui comprend 'Joffrey Baratheon, Premier du Nom'. Vous ne pouvez pas inclure Jaime Lannister. Joffrey doit être attaché à cette unité.*"
+                }
+            ],
             "fluff": {
                 "lore": "De toutes les troupes qui participent à la Guerre de Cinq Rois, la Garde Royale est la mieux équipée et la plus expérimentée. Outre les faiblesses inhérentes à toutes les infanteries lourdes en cas d’encerclement, la Garde doit traîner son propre boulet : le Roi Joffrey Baratheon. Pourtant, même si elle n’est composée que de sept hommes, la Garde Royale est largement capable d’affronter des unités trois fois plus importantes, en attaque comme en défense."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10111",
             "name": "Manteaux Rouges",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cupidité Intrépide",
-                    "Justice des Lannister"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Cupidité Intrépide",
+                "Justice des Lannister"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Manteaux Rouges forment une unité d’élite et représentent le bras armé de la Maison Lannister à Port-Réal. Leur rôle est de maintenir la population sous contrôle par l’intimidation, la peur et l’épée. Ils se distinguent non seulement par leurs manteaux pourpres, mais également par leurs armures de demi-plates, aussi finement ouvragées que leur production de masse le permet. Les Manteaux Rouges constituent une infanterie moyenne solide et font partie des troupes Lannister les mieux payées."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10112",
             "name": "Brigands de la Maison Clegane",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armes Brutales",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Armes Brutales"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Armes Brutales"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes Brutales",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Alors que la plupart des assauts de cavalerie sont déjà bien assez violents, les bandes de brigands montés de Gregor Clegane poussent la brutalité au-delà de toutes limites. Écraser les rangs ennemis de flanc ou de dos ne leur suffit pas. Pour ceux qui rejoignent les rangs de Clegane, une arme qui mutile ou brise est toute aussi bonne qu’une arme qui tue rapidement et efficacement. Pourtant, malgré leur redoutable réputation, les Brigands ne recherchent pas le combat équitable."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10113",
             "name": "Guet de Port-Lannis",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Lance",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Technique Réactive",
-                    "Fierté Dominatrice"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Technique Réactive",
+                "Fierté Dominatrice"
+            ],
+            "attacks": [
+                {
+                    "name": "Lance",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Défenseurs du siège du pouvoir de la Maison Lannister, Les hommes du Guet de Port-Lannis sont aussi bien armés et protégés (si ce n’est mieux) que la plupart des unités de première ligne engagées dans la Guerre des Cinq Rois. Ils ne bénéficient toutefois pas de l’expérience des troupes régulières, et ne sont pas adaptés pour tenir l’avant-garde ou encaisser une charge de cavalerie trop violente. Malgré tout, lorsqu’ils sont en nombre suffisant et correctement soutenus, ils constituent une unité auxiliaire de qualité, qui se révèle à la fois efficace et dangereuse."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10114",
             "name": "Garde d'Honneur de Castral Roc",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 3,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Oppression Lannister",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Oppression Lannister"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Oppression Lannister"
+            ],
+            "attacks": [
+                {
+                    "name": "Oppression Lannister",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "L’immense château de Castral Roc qui domine Port-Lannis constitue le symbole de la suprématie des Lannister. Son gardien, la célèbre Garde d’Honneur de Castral Roc, représente tout autant la puissance inébranlable de la Maison Lannister. Équipés d’armures de plates luxueuses, les hommes de la Garde d’Honneur sont des fantassins lourds entraînés à faire face à toute menace locale. Ils sont aptes à tenir leur position et à exploiter les faiblesses de l’ennemi au fur et à mesure qu’elles se révèlent."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10115",
             "name": "Manteaux d'Or",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Gourdin",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Lois du Royaume",
-                    "Pacification Oppressive"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Lois du Royaume",
+                "Pacification Oppressive"
+            ],
+            "attacks": [
+                {
+                    "name": "Gourdin",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Port-Réal est généralement considéré comme un endroit sûr, notamment grâce aux célèbres Manteaux d’Or, qui patrouillent les avenues et ruelles avec zèle en faisant régner la justice d’une main de fer. Toutefois, la justice en question est celle des Lannister, maîtres incontestés de Port-Réal, et les Manteaux d’Or ont prêté allégeance au Trône de Fer. Diffamez le Roi à vos risques et périls."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10116",
             "name": "Freux",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armes de Récupération",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Incitation",
-                    "Désorganisé",
-                    "Recrutement dans les Collines"
-                ],
-                "requirements": [
-                    {
-                        "name": "Personnage",
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Tyrion Lannister. Celui-ci peut être attaché gratuitement à cette unité.*"
-                    }
-                ],
-                "tray": "infantry",
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Incitation",
+                "Désorganisé",
+                "Recrutement dans les Collines"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes de Récupération",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Tyrion Lannister. Celui-ci peut être attaché gratuitement à cette unité.*",
+                    "name": "Personnage"
+                }
+            ],
             "fluff": {
                 "lore": "Si l’on excepte leur étonnante loyauté, les Freux de Tyrion Lannister ne sont guère différents des autres tribus montagnardes et des pillards ordinaires. Bien qu’ils soient plus attachés à la fortune de Tyrion qu’à sa propre personne, ils ont su rester fidèles, même lorsque la trahison aurait constitué une option plus lucrative. En tant que mercenaires, ces troupes se révèlent tout à fait rentables si elles sont employées en tant qu’éclaireurs ou pour harceler les flancs ennemis. Leur équipement léger ne leur permet pas de soutenir un engagement prolongé en première ligne."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30101",
             "name": "Tywin Lannister",
-            "subname": "Le Grand Lion",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 6,
-                "abilities": [
-                    {
-                        "name": "Les Pluies de Castamere",
-                        "effect": [
-                            "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d'Unités Combattantes ennemies de votre choix :",
-                            "• 1 de ces ennemis devient **Paniqué**.",
-                            "• 1 de ces ennemis devient **Vulnérable**.",
-                            "• 1 de ces ennemis subit 4 Touches.",
-                            "• 1 de ces ennemis subit 1 Test de Panique.",
-                            "• 1 de ces ennemis perd toutes ses Capacités jusqu’à la fin du Round.",
-                            "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Le Grand Lion",
+            "abilities": [
+                {
+                    "name": "Les Pluies de Castamere",
+                    "effect": [
+                        "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d'Unités Combattantes ennemies de votre choix :",
+                        "• 1 de ces ennemis devient **Paniqué**.",
+                        "• 1 de ces ennemis devient **Vulnérable**.",
+                        "• 1 de ces ennemis subit 4 Touches.",
+                        "• 1 de ces ennemis subit 1 Test de Panique.",
+                        "• 1 de ces ennemis perd toutes ses Capacités jusqu’à la fin du Round.",
+                        "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
+                    ]
+                }
+            ],
+            "cost": 6,
+            "character": true,
             "fluff": {
                 "quote": "« Il est des batailles qu’on gagne à la pointe des piques et des épées, d’autres à la pointe de la plume et avec des corbeaux. »"
             }
@@ -601,47 +590,47 @@
         {
             "id": "30102",
             "name": "Pycelle",
-            "subname": "Grand Mestre",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Manipulation et Tromperie",
-                        "effect": [
-                            "Pycelle commence la partie avec 3 pions Ordre sur sa carte.",
-                            "Chaque fois que Pycelle est activé, vous pouvez retirer 1 pion Ordre sur sa carte. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Grand Mestre",
+            "abilities": [
+                {
+                    "name": "Manipulation et Tromperie",
+                    "effect": [
+                        "Pycelle commence la partie avec 3 pions Ordre sur sa carte.",
+                        "Chaque fois que Pycelle est activé, vous pouvez retirer 1 pion Ordre sur sa carte. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Pycelle est une canaille. Mais plutôt une canaille Lannister qu’une canaille Tyrell, non ? » – Tyrion Lannister"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30103",
             "name": "Le Grand Moineau",
-            "subname": "Père de la Foi",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Allégeance aux Sept",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence un ennemi, chaque fois que celui-ci subit des Blessures en ayant échoué un Test de Panique, ciblez 1 unité alliée située à Longue Portée ou moins. Elle se soigne du même nombre de Blessures, maximum 3."
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Père de la Foi",
+            "abilities": [
+                {
+                    "name": "Allégeance aux Sept",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence un ennemi, chaque fois que celui-ci subit des Blessures en ayant échoué un Test de Panique, ciblez 1 unité alliée située à Longue Portée ou moins. Elle se soigne du même nombre de Blessures, maximum 3."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Je me sens rarement aussi proche de la divinité que lorsque je me fais flageller pour peine de ma propre perversité. »"
             }
@@ -649,21 +638,21 @@
         {
             "id": "30104",
             "name": "Tyrion Lannister",
-            "subname": "Le Lutin",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Tacticien de Génie",
-                        "effect": [
-                            "Votre limite de cartes Tactique est augmentée de 1. Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main.",
-                            "Une fois par partie, quand un adversaire joue une carte Tactique, avant de résoudre celle-ci, vous pouvez chercher 1 exemplaire de **Contre-Complot** dans votre paquet ou défausse Tactique et le jouer. Mélangez votre paquet Tactique."
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Le Lutin",
+            "abilities": [
+                {
+                    "name": "Tacticien de Génie",
+                    "effect": [
+                        "Votre limite de cartes Tactique est augmentée de 1. Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main.",
+                        "Une fois par partie, quand un adversaire joue une carte Tactique, avant de résoudre celle-ci, vous pouvez chercher 1 exemplaire de **Contre-Complot** dans votre paquet ou défausse Tactique et le jouer. Mélangez votre paquet Tactique."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Il est plus grand qu’il ne paraît, je pense. »"
             }
@@ -671,50 +660,50 @@
         {
             "id": "30105",
             "name": "Cersei Lannister",
-            "subname": "Reine Régente",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Jouer le Jeu",
-                        "effect": [
-                            "Cersei commence la partie avec 2 pions Ordre.",
-                            "Quand Cersei s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
-                            "Si vous contrôlez [CROWN], cherchez 1 exemplaire de **Je Rugis !** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
-                            "Si vous contrôlez [MONEY], cherchez 1 exemplaire d'**Assujettissement au Pouvoir** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Reine Régente",
+            "abilities": [
+                {
+                    "name": "Jouer le Jeu",
+                    "effect": [
+                        "Cersei commence la partie avec 2 pions Ordre.",
+                        "Quand Cersei s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
+                        "Si vous contrôlez [CROWN], cherchez 1 exemplaire de **Je Rugis !** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
+                        "Si vous contrôlez [MONEY], cherchez 1 exemplaire d'**Assujettissement au Pouvoir** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Lorsqu’on s’amuse au jeu des trônes, il faut vaincre ou périr, il n’y a pas de moyen terme. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30106",
             "name": "Joffrey Baratheon",
-            "subname": "Seigneur des Sept Royaumes",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Puissance du Trône De Fer",
-                        "effect": [
-                            "Tant que Joffrey se trouve sur le Tableau Stratégique, vous êtes considéré comme contrôlant [CROWN].",
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence un ennemi, celui-ci subit +1 Blessure lorsqu’il échoue un Test de Panique."
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Seigneur des Sept Royaumes",
+            "abilities": [
+                {
+                    "name": "Puissance du Trône De Fer",
+                    "effect": [
+                        "Tant que Joffrey se trouve sur le Tableau Stratégique, vous êtes considéré comme contrôlant [CROWN].",
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence un ennemi, celui-ci subit +1 Blessure lorsqu’il échoue un Test de Panique."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Façon singulière, en effet, de conquérir le coeur de ses sujets. »"
             }
@@ -722,25 +711,25 @@
         {
             "id": "30107",
             "name": "Kevan Lannister",
-            "subname": "Maître des Lois",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Justice Implacable",
-                        "effect": [
-                            "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d’Unités Combattantes alliées au choix :",
-                            "• 1 de ces unités soigne 2 de ses Blessures.",
-                            "• 1 de ces unités retire tous ses pions État.",
-                            "• 1 de ces unités se décale de 2’’.",
-                            "• Jusqu’à la fin du round, 1 de ces unités utilise sa valeur de dés d’Attaque la plus élevée et peut relancer n’importe quels dés d’Attaque.",
-                            "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Maître des Lois",
+            "abilities": [
+                {
+                    "name": "Justice Implacable",
+                    "effect": [
+                        "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d’Unités Combattantes alliées au choix :",
+                        "• 1 de ces unités soigne 2 de ses Blessures.",
+                        "• 1 de ces unités retire tous ses pions État.",
+                        "• 1 de ces unités se décale de 2’’.",
+                        "• Jusqu’à la fin du round, 1 de ces unités utilise sa valeur de dés d’Attaque la plus élevée et peut relancer n’importe quels dés d’Attaque.",
+                        "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Les dieux l’ont façonné pour être un suiveur, pas un meneur. » – Tyrion Lannister"
             }
@@ -748,106 +737,106 @@
         {
             "id": "30108",
             "name": "Qyburn",
-            "subname": "Maître des Chuchoteurs",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Petites Colombes",
-                        "effect": [
-                            "Qyburn commence la partie avec 3 pions Ordre sur sa carte.",
-                            "Chaque fois qu’une UNC ennemie est activée, vous pouvez retirer 1 pion Ordre de Qyburn. Si vous le faites, choisissez 2 zones, Si cette UNC s'empare de l'une de ces deux zones ce tour-ci, après en avoir résolu l'effet, ciblez un maximum de 2 Unités Combattantes ennemies. Elles deviennent **Vulnérables**."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
-                },
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend Varys.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Maître des Chuchoteurs",
+            "abilities": [
+                {
+                    "name": "Petites Colombes",
+                    "effect": [
+                        "Qyburn commence la partie avec 3 pions Ordre sur sa carte.",
+                        "Chaque fois qu’une UNC ennemie est activée, vous pouvez retirer 1 pion Ordre de Qyburn. Si vous le faites, choisissez 2 zones, Si cette UNC s'empare de l'une de ces deux zones ce tour-ci, après en avoir résolu l'effet, ciblez un maximum de 2 Unités Combattantes ennemies. Elles deviennent **Vulnérables**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend Varys.*"
+                }
+            ],
             "fluff": {
                 "quote": "« Vos secrets seront bien gardés avec moi. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30109",
             "name": "Tommen Baratheon",
-            "subname": "Suivant de  la Lignée",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Influence de la Reine",
-                        "effect": [
-                            "Tommen commence la partie avec 2 pions Ordre sur sa carte.",
-                            "Chaque fois que Tommen s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
-                            "Si vous contrôlez [CROWN], cherchez 1 exemplaire d’**Intrigue et Faux-Semblants** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
-                            "Si vous contrôlez [MONEY], cherchez 1 exemplaire de **Pot-De-Vin** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Suivant de  la Lignée",
+            "abilities": [
+                {
+                    "name": "Influence de la Reine",
+                    "effect": [
+                        "Tommen commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Chaque fois que Tommen s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
+                        "Si vous contrôlez [CROWN], cherchez 1 exemplaire d’**Intrigue et Faux-Semblants** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
+                        "Si vous contrôlez [MONEY], cherchez 1 exemplaire de **Pot-De-Vin** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Quand je serai roi pour de bon, j’interdirai les betteraves. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20101",
             "name": "Vétéran d'Assaut",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Présence Intimidante"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Présence Intimidante"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20102",
             "name": "Capitaine de la Garde",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Tenez Bon !"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Tenez Bon !"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20103",
             "name": "Sandor Clegane",
-            "subname": "Le Limier",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Affiliation : Maison Clegane",
-                    "Soif de Massacre",
-                    "Charge Furieuse"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Limier",
+            "abilities": [
+                "Affiliation : Maison Clegane",
+                "Soif de Massacre",
+                "Charge Furieuse"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il n’est rien de plus agréable au monde que de tuer. »"
             }
@@ -855,26 +844,23 @@
         {
             "id": "20104",
             "name": "Tywin Lannister",
-            "subname": "Seigneur de Castral Roc",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Suprématie des Lannister",
-                    "Ordre : Menacer"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40114": "Exploiter La faiblesse",
-                    "40115": "Volonté brisée",
-                    "40116": "Donner des ordres"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Seigneur de Castral Roc",
+            "abilities": [
+                "Ordre : Suprématie des Lannister",
+                "Ordre : Menacer"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40114",
+                "40115",
+                "40116"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il existe un outil pour chaque besogne, et une besogne pour chaque outil. »"
             }
@@ -882,26 +868,23 @@
         {
             "id": "20105",
             "name": "Tyrion Lannister",
-            "subname": "Le Mi-Homme",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Contre Stratégie",
-                    "Ordre : Repositionnement Tactique"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40117": "Objectif trompeur",
-                    "40118": "Habile stratagème",
-                    "40119": "Intercepter les ordres"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Mi-Homme",
+            "abilities": [
+                "Ordre : Contre Stratégie",
+                "Ordre : Repositionnement Tactique"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40117",
+                "40118",
+                "40119"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« En voilà, des braves ! Allons les tuer. »"
             }
@@ -909,23 +892,23 @@
         {
             "id": "20106",
             "name": "Barristan Selmy",
-            "subname": "Lord Commandant de la Garde Royale",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Devoir Envers la Couronne",
-                    "Vaillance"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lord Commandant de la Garde Royale",
+            "abilities": [
+                "Devoir Envers la Couronne",
+                "Vaillance"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Des sept actuels, seul est fait d’authentique acier ser Barristan Selmy, mais Selmy est vieux. » – Varys"
             }
@@ -933,26 +916,26 @@
         {
             "id": "20107",
             "name": "Jaime Lannister",
-            "subname": "Garde Royal",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Duelliste Chevronné",
-                    "Riposte"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
-                    },
-                    {
-                        "text": "*Si votre armée comprend Cersei Lannister, réduisez le coût de Jaime Lannister d'1 point.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Garde Royal",
+            "abilities": [
+                "Duelliste Chevronné",
+                "Riposte"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                },
+                {
+                    "text": "*Si votre armée comprend Cersei Lannister, réduisez le coût de Jaime Lannister d'1 point.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« ... frère lige de la Blanche Épée, et nul n’ignore quel crédit mérite sa foi jurée. » – Varys"
             }
@@ -960,22 +943,22 @@
         {
             "id": "20108",
             "name": "Mandon Moore",
-            "subname": "Garde Royal",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Dominance de la Couronne"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Garde Royal",
+            "abilities": [
+                "Dominance de la Couronne"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Un éclair neigeux et soyeux de mort. » – Tyrion Lannister"
             }
@@ -983,22 +966,22 @@
         {
             "id": "20109",
             "name": "Meryn Trant",
-            "subname": "Garde Royal",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Intimidation de la Couronne"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Garde Royal",
+            "abilities": [
+                "Intimidation de la Couronne"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ils faisaient d’elle un joyau, jadis, une éblouissante leçon pour le monde. » – Bran Stark"
             }
@@ -1006,22 +989,22 @@
         {
             "id": "20110",
             "name": "Arys du Rouvre",
-            "subname": "Garde Royal",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Protection de la Couronne"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Garde Royal",
+            "abilities": [
+                "Protection de la Couronne"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Il y a toujours eu des hommes pour trouver plus facile de prononcer des voeux que pour les respecter."
             }
@@ -1029,22 +1012,22 @@
         {
             "id": "20111",
             "name": "Boros Blount",
-            "subname": "Garde Royal",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Vengeance de la Couronne"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Garde Royal",
+            "abilities": [
+                "Vengeance de la Couronne"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Nul ne menace impunément Sa Majesté en présence de la Garde. »"
             }
@@ -1052,22 +1035,22 @@
         {
             "id": "20112",
             "name": "Preston Verchamps",
-            "subname": "Garde Royal",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordres de la Couronne (Preston Greenfield)"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Garde Royal",
+            "abilities": [
+                "Ordres de la Couronne (Preston Greenfield)"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend l’unité Garde Royale.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "– Qui écoute tout et n’entend rien ?\n– Un chevalier de la Garde Royale."
             }
@@ -1075,40 +1058,40 @@
         {
             "id": "20113",
             "name": "Champion de la Foi",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Cri de Guerre"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée peut inclure un maximum de 2 Champions de la Foi.*"
-                    },
-                    {
-                        "text": "*Le premier Champion de la Foi de votre armée est gratuit si votre armée comprend Le Grand Moineau.*"
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Cri de Guerre"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Votre armée peut inclure un maximum de 2 Champions de la Foi.*",
+                    "name": "Limité "
+                },
+                {
+                    "text": "*Le premier Champion de la Foi de votre armée est gratuit si votre armée comprend Le Grand Moineau.*"
+                }
+            ],
+            "icon": "infantry"
         },
         {
             "id": "20114",
             "name": "Gregor Clegane",
-            "subname": "Chien Enragé de Lord Tywin",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Fureur Incoercible",
-                    "Rage Incontrôlable"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Chien Enragé de Lord Tywin",
+            "abilities": [
+                "Fureur Incoercible",
+                "Rage Incontrôlable"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Jamais personne n’a résisté à Gregor. »"
             }
@@ -1116,27 +1099,24 @@
         {
             "id": "20115",
             "name": "Jaime Lannister",
-            "subname": "Le Régicide",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Précision",
-                    "Riposte",
-                    "Déstabilisation"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40108": "La réputation du Régicide",
-                    "40109": "La prouesse du Régicide",
-                    "40110": "L'infamie du Régicide"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Le Régicide",
+            "abilities": [
+                "Précision",
+                "Riposte",
+                "Déstabilisation"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40108",
+                "40109",
+                "40110"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« De face, on l’appelait le Lion des Lannister, quitte à l’affubler, dans son dos, du sobriquet de Régicide. »"
             }
@@ -1144,27 +1124,24 @@
         {
             "id": "20116",
             "name": "Gregor Clegane",
-            "subname": "La Montagne",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Maison Clegane",
-                    "Indomptable",
-                    "La Force de la Montagne"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40111": "Débordement",
-                    "40112": "Ordres d'assaut",
-                    "40113": "Le prix de l'échec"
-                }
-            },
+            "faction": "lannister",
+            "version": "S04",
+            "role": "attachment",
+            "title": "La Montagne",
+            "abilities": [
+                "Affiliation : Maison Clegane",
+                "Indomptable",
+                "La Force de la Montagne"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40111",
+                "40112",
+                "40113"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Aucun autre chevalier du royaume n’inspire autant de terreur à nos ennemis. »"
             }
@@ -1172,18 +1149,18 @@
         {
             "id": "20117",
             "name": "Jaime Lannister",
-            "subname": "Le Jeune Lion",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Entraînement Martial",
-                    "Vaillance"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Le Jeune Lion",
+            "abilities": [
+                "Ordre : Entraînement Martial",
+                "Vaillance"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il n’y a pas d’êtres de mon espèce. Je suis unique. »"
             }
@@ -1191,19 +1168,19 @@
         {
             "id": "20118",
             "name": "Gregor Clegane",
-            "subname": "Mastodonte Monté",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 3,
-                "abilities": [
-                    "Indomptable",
-                    "Assaut Féroce",
-                    "Présence Intimidante"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Mastodonte Monté",
+            "abilities": [
+                "Indomptable",
+                "Assaut Féroce",
+                "Présence Intimidante"
+            ],
+            "cost": 3,
+            "tray": "cavalry",
+            "character": true,
+            "icon": "cavalry",
             "fluff": {
                 "quote": "« Quel noble cadeau ce serait, ma foi, pour tout le royaume que la tête de ce fauve-là... ! » – Brynden Tully"
             }
@@ -1211,18 +1188,18 @@
         {
             "id": "20120",
             "name": "Tyrion Lannister",
-            "subname": "Le Géant Lannister",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Plan de Bataille",
-                    "Ordre : Contre Stratégie"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Le Géant Lannister",
+            "abilities": [
+                "Ordre : Plan de Bataille",
+                "Ordre : Contre Stratégie"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Un géant, je pense, venu se mêler à nous, ici, au bout du monde. » – Mestre Aemon"
             }
@@ -1230,25 +1207,22 @@
         {
             "id": "20121",
             "name": "Joffrey Baratheon",
-            "subname": "Premier du Nom",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordres de la Couronne (Joffrey Baratheon)"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40123": "Vous allez m'obéir !",
-                    "40124": "Traîtres ! J'aurai leurs têtes !",
-                    "40125": "Je suis le Roi !"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Premier du Nom",
+            "abilities": [
+                "Ordres de la Couronne (Joffrey Baratheon)"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40123",
+                "40124",
+                "40125"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Mon fils. Comment diable ai-je pu engendrer pareil rejeton, Ned ? » – Robert Baratheon"
             }
@@ -1256,52 +1230,49 @@
         {
             "id": "20123",
             "name": "Exécuteur Sentinelle",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Provocation"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Provocation"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20124",
             "name": "Boucher Clegane",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Soif de Massacre"
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Soif de Massacre"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20125",
             "name": "Le Grand Moineau",
-            "subname": "Sa Sainteté Suprême",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Présence Intimidante",
-                    "Enhardir"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40120": "Miséricorde de la Mère",
-                    "40121": "Protection  du Père",
-                    "40122": "Colère du Guerrier"
-                }
-            },
+            "faction": "lannister",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Sa Sainteté Suprême",
+            "abilities": [
+                "Présence Intimidante",
+                "Enhardir"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40120",
+                "40121",
+                "40122"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Que sommes-nous devenus, pour que rois et grands seigneurs doivent danser au gazouillis de moineaux ? »"
             }
@@ -1309,18 +1280,18 @@
         {
             "id": "20126",
             "name": "Qyburn",
-            "subname": "Connaissances Interdites",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Améliorations Expérimentales",
-                    "Réactions Violentes"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Connaissances Interdites",
+            "abilities": [
+                "Améliorations Expérimentales",
+                "Réactions Violentes"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« La Citadelle m’a confisqué mes chaînes, mais elle ne m’a pas ôté mon savoir. »"
             }
@@ -1328,18 +1299,18 @@
         {
             "id": "20127",
             "name": "Addam Marpheux",
-            "subname": "Banneret de Confiance",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Vassal de Jaime"
-                ],
-                "character": true
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Banneret de Confiance",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Vassal de Jaime"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je frotterais volontiers mon acier contre celui du petit Stark. »"
             }
@@ -1347,23 +1318,23 @@
         {
             "id": "20128",
             "name": "Ser Robert Fort",
-            "subname": "Le Géant Silencieux",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Résilience",
-                    "Fureur Incoercible"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut pas être recruté dans une armée qui comprend Gregor Clegane. Ne peut être recruté que dans une armée qui comprend Qyburn ou Tommen Baratheon, Suivant de la Lignée.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Le Géant Silencieux",
+            "abilities": [
+                "Ordre : Résilience",
+                "Fureur Incoercible"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut pas être recruté dans une armée qui comprend Gregor Clegane. Ne peut être recruté que dans une armée qui comprend Qyburn ou Tommen Baratheon, Suivant de la Lignée.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Nous ne savons même pas s’il est vivant. » – Kevan Lannister"
             }
@@ -1371,26 +1342,23 @@
         {
             "id": "20129",
             "name": "Addam Marpheux",
-            "subname": "Commandant du Guet",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Endurci",
-                    "Volonté de Fer"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40126": "Diriger avec charisme",
-                    "40127": "Retour de bâton",
-                    "40128": "Exemple de vaillance"
-                }
-            },
+            "faction": "lannister",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Commandant du Guet",
+            "abilities": [
+                "Endurci",
+                "Volonté de Fer"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40126",
+                "40127",
+                "40128"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il était comme Jaime, un entraîneur d’hommes. » – Tyrion Lannister"
             }
@@ -1398,26 +1366,23 @@
         {
             "id": "20130",
             "name": "Kevan Lannister",
-            "subname": "Protecteur du Royaume",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Suprématie des Lannister",
-                    "Puissance du Trône"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40129": "Manœuvres  prévisibles",
-                    "40130": "Trouver la faille",
-                    "40131": "La richesse du Roc"
-                }
-            },
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Protecteur du Royaume",
+            "abilities": [
+                "Ordre : Suprématie des Lannister",
+                "Puissance du Trône"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40129",
+                "40130",
+                "40131"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Il y en a beaucoup des comme vous, de braves hommes au service de mauvaises causes... » – Varys"
             }
@@ -1425,37 +1390,37 @@
         {
             "id": "20131",
             "name": "Gardien des Portes",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Supériorité Numérique",
-                    "Renforts"
-                ]
-            }
+            "faction": "lannister",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Supériorité Numérique",
+                "Renforts"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20119",
             "name": "Jaime Lannister",
-            "subname": "Otage Mutilé",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Otage Précieux (Jaime Lannister)",
-                    "Otage Rancunier"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Avant le Déploiement, attachez Jaime à une unité d’Infanterie ennemie en ignorant les restrictions normales d’Attachement.*"
-                    }
-                ]
-            },
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Otage Mutilé",
+            "abilities": [
+                "Otage Précieux (Jaime Lannister)",
+                "Otage Rancunier"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Avant le Déploiement, attachez Jaime à une unité d’Infanterie ennemie en ignorant les restrictions normales d’Attachement.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Ce qu’ils lui ont fait est d’une cruauté sans nom. »"
             }
@@ -1463,689 +1428,657 @@
         {
             "id": "20122",
             "name": "Félon",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Sabotage et Subversion"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Après le Déploiement, attachez cette figurine à une Unité d’Infanterie ennemie, en ignorant les limites normales d’Attachement.*"
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Sabotage et Subversion"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Après le Déploiement, attachez cette figurine à une Unité d’Infanterie ennemie, en ignorant les limites normales d’Attachement.*"
+                }
+            ],
+            "icon": "infantry"
         }
     ],
     "tactics": [
         {
             "id": "40101",
             "name": "Intrigue et Faux-Semblants",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC ennemie est activée :",
-                        "effect": [
-                            "Cette UNC perd toutes ses Capacités jusqu’à la fin du round.",
-                            "Si vous contrôlez [MONEY], ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC ennemie est activée :",
+                    "effect": [
+                        "Cette UNC perd toutes ses Capacités jusqu’à la fin du round.",
+                        "Si vous contrôlez [MONEY], ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40102",
             "name": "Un Lannister paie toujours ses dettes",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité de Cavalerie ou d’Infanterie alliée est détruite, placez 1 pion Ordre sur cette carte.",
-                            "Tant que cette carte est pourvue d’un pion, les Attaques de Mêlée de l’unité attachée gagnent **Cruel** et, tant que vous contrôlez [CROWN], +1 pour Toucher."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité de Cavalerie ou d’Infanterie alliée est détruite, placez 1 pion Ordre sur cette carte.",
+                        "Tant que cette carte est pourvue d’un pion, les Attaques de Mêlée de l’unité attachée gagnent **Cruel** et, tant que vous contrôlez [CROWN], +1 pour Toucher."
+                    ]
+                }
+            ]
         },
         {
             "id": "40103",
             "name": "Je Rugis !",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue un Test de Moral, avant de lancer les dés :",
-                        "effect": [
-                            "Cet ennemi subit −1 à son lancer, et −1 supplémentaire pour chacun de ses rangs détruits. S’il échoue, il subit 1 Blessure *(ou +1 Blessure lors d’un test de Panique échoué)*."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue un Test de Moral, avant de lancer les dés :",
+                    "effect": [
+                        "Cet ennemi subit −1 à son lancer, et −1 supplémentaire pour chacun de ses rangs détruits. S’il échoue, il subit 1 Blessure *(ou +1 Blessure lors d’un test de Panique échoué)*."
+                    ]
+                }
+            ]
         },
         {
             "id": "40104",
             "name": "Pot-de-Vin",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez l’effet de cette zone par :",
-                            "*Ciblez 1 Unité Combattante ennemie et attachez-lui la carte Pot-de-vin jusqu’à ce qu’elle réussisse un Test de Moral ou qu’elle soit ciblée par [MONEY]*.",
-                            "Tant que cette carte est attachée, cette unité attaque en utilisant sa valeur de dés d’Attaque la plus basse et subit -1 à ses lancers de Test de Moral."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez l’effet de cette zone par :",
+                        "*Ciblez 1 Unité Combattante ennemie et attachez-lui la carte Pot-de-vin jusqu’à ce qu’elle réussisse un Test de Moral ou qu’elle soit ciblée par [MONEY]*.",
+                        "Tant que cette carte est attachée, cette unité attaque en utilisant sa valeur de dés d’Attaque la plus basse et subit -1 à ses lancers de Test de Moral."
+                    ]
+                }
+            ]
         },
         {
             "id": "40105",
             "name": "Contre-Complot",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un adversaire joue une carte Tactique, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Lancez 1 dé : Sur un résultat de 3+, annulez les effets de la carte Tactique.",
-                            "Si vous contrôlez [CROWN] ou [MONEY], vous annulez l’effet de la carte sur un 2+.",
-                            "Si vous contrôlez les deux, vous réussissez automatiquement."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un adversaire joue une carte Tactique, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Lancez 1 dé : Sur un résultat de 3+, annulez les effets de la carte Tactique.",
+                        "Si vous contrôlez [CROWN] ou [MONEY], vous annulez l’effet de la carte sur un 2+.",
+                        "Si vous contrôlez les deux, vous réussissez automatiquement."
+                    ]
+                }
+            ]
         },
         {
             "id": "40106",
             "name": "Allégeance à la Couronne",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi échoue un Test de Panique :",
-                        "effect": [
-                            "Ciblez 1 unité alliée située à Longue Portée ou moins.",
-                            "Pour chaque Blessure que cet ennemi a subie lors de ce Test, soignez 1 Blessure de l’unité alliée ciblée, maximum 3.",
-                            "Si vous contrôlez [CROWN], infligez +1 Blessure à l’unité ennemie et soignez 1 Blessure supplémentaire de l’unité alliée *(maximum 4)*."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi échoue un Test de Panique :",
+                    "effect": [
+                        "Ciblez 1 unité alliée située à Longue Portée ou moins.",
+                        "Pour chaque Blessure que cet ennemi a subie lors de ce Test, soignez 1 Blessure de l’unité alliée ciblée, maximum 3.",
+                        "Si vous contrôlez [CROWN], infligez +1 Blessure à l’unité ennemie et soignez 1 Blessure supplémentaire de l’unité alliée *(maximum 4)*."
+                    ]
+                }
+            ]
         },
         {
             "id": "40107",
             "name": "Assujettissement au pouvoir",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante ennemie est activée :",
-                        "effect": [
-                            "Cet ennemi effectue un Test de Moral. Pour chaque zone que vous contrôlez entre [CROWN] et [MONEY], il subit −1 à son lancer.",
-                            "S’il échoue, jusqu’à la fin du tour, il ne peut plus être ciblé par des cartes Tactique alliées et perd toutes ses Capacités."
-                        ]
-                    }
-                ]
-            }
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante ennemie est activée :",
+                    "effect": [
+                        "Cet ennemi effectue un Test de Moral. Pour chaque zone que vous contrôlez entre [CROWN] et [MONEY], il subit −1 à son lancer.",
+                        "S’il échoue, jusqu’à la fin du tour, il ne peut plus être ciblé par des cartes Tactique alliées et perd toutes ses Capacités."
+                    ]
+                }
+            ]
         },
         {
             "id": "40108",
             "name": "La réputation du Régicide",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée située à Longue Portée ou moins effectue un Test de Moral, après avoir lancé les dés :",
-                        "effect": [
-                            "Cette unité réussit son Test.",
-                            "S’il s’agit de l’unité de Jaime, elle soigne également 2 de ses Blessures."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20115",
-                "commander_name": "Jaime Lannister",
-                "commander_subname": "Le Régicide"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée située à Longue Portée ou moins effectue un Test de Moral, après avoir lancé les dés :",
+                    "effect": [
+                        "Cette unité réussit son Test.",
+                        "S’il s’agit de l’unité de Jaime, elle soigne également 2 de ses Blessures."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20115"
             }
         },
         {
             "id": "40109",
             "name": "La prouesse du Régicide",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand l’unité de Jaime Lannister effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque lance sa valeur de dés la plus élevée, peut relancer tous les Échecs et le défenseur devient **Vulnérable**."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20115",
-                "commander_name": "Jaime Lannister",
-                "commander_subname": "Le Régicide"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand l’unité de Jaime Lannister effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque lance sa valeur de dés la plus élevée, peut relancer tous les Échecs et le défenseur devient **Vulnérable**."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20115"
             }
         },
         {
             "id": "40110",
             "name": "L'infamie du Régicide",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi situé à Longue Portée ou moins de l’unité de Jaime Lannister est activé :",
-                        "effect": [
-                            "Cet ennemi devient **Paniqué** et subit 1 Test de Panique.",
-                            "S’il échoue, cet ennemi devient aussi **Affaibli**."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20115",
-                "commander_name": "Jaime Lannister",
-                "commander_subname": "Le Régicide"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi situé à Longue Portée ou moins de l’unité de Jaime Lannister est activé :",
+                    "effect": [
+                        "Cet ennemi devient **Paniqué** et subit 1 Test de Panique.",
+                        "S’il échoue, cet ennemi devient aussi **Affaibli**."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20115"
             }
         },
         {
             "id": "40111",
             "name": "Débordement",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Percée :",
-                        "effect": [
-                            "Au lieu de faire une Percée, cette unité effectue 1 action de Charge ou de Marche.",
-                            "Si cette carte cible une unité de la Maison Clegane, celle-ci peut relancer n’importe quels dés de Distance de Charge."
-                        ]
-                    }
-                ],
-                "commander_id": "20116",
-                "commander_name": "Gregor Clegane",
-                "commander_subname": "La Montagne"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Percée :",
+                    "effect": [
+                        "Au lieu de faire une Percée, cette unité effectue 1 action de Charge ou de Marche.",
+                        "Si cette carte cible une unité de la Maison Clegane, celle-ci peut relancer n’importe quels dés de Distance de Charge."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20116"
             }
         },
         {
             "id": "40112",
             "name": "Ordres d'assaut",
-            "statistics": {
-                "version": "S06",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez les effets de cette zone par :",
-                            "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
-                            "*Si cette unité est une unité de la Maison Clegane, celle-ci peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20116",
-                "commander_name": "Gregor Clegane",
-                "commander_subname": "La Montagne"
+            "faction": "lannister",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez les effets de cette zone par :",
+                        "*1 Unité Combattante alliée effectue 1 action d’Attaque de Mêlée en utilisant sa valeur de dés d’Attaque la plus basse.*",
+                        "*Si cette unité est une unité de la Maison Clegane, celle-ci peut effectuer 1 action de Charge en utilisant sa valeur de dés d’Attaque la plus basse à la place.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20116"
             }
         },
         {
             "id": "40113",
             "name": "Le prix de l'échec",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Tous les résultats des dés de cette attaque Touchent automatiquement.",
-                            "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20116",
-                "commander_name": "Gregor Clegane",
-                "commander_subname": "La Montagne"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Tous les résultats des dés de cette attaque Touchent automatiquement.",
+                        "Une fois cette attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20116"
             }
         },
         {
             "id": "40114",
             "name": "Exploiter La faiblesse",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Le défenseur devient **Vulnérable**.",
-                            "Si le défenseur est **Affaibli**, l’attaquant peut relancer n’importe quels dés d’Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20104",
-                "commander_name": "Tywin Lannister",
-                "commander_subname": "Seigneur de Castral Roc"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Le défenseur devient **Vulnérable**.",
+                        "Si le défenseur est **Affaibli**, l’attaquant peut relancer n’importe quels dés d’Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20104"
             }
         },
         {
             "id": "40115",
             "name": "Volonté brisée",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante ennemie échoue un Test de Moral :",
-                        "effect": [
-                            "Cet ennemi devient **Affaibli**.",
-                            "Attachez-lui cette carte jusqu’à ce qu’il réussisse un Test de Moral.",
-                            "Tant que cette carte est attachée, chaque fois que cette unité est activée, elle devient **Affaiblie**."
-                        ]
-                    }
-                ],
-                "commander_id": "20104",
-                "commander_name": "Tywin Lannister",
-                "commander_subname": "Seigneur de Castral Roc"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante ennemie échoue un Test de Moral :",
+                    "effect": [
+                        "Cet ennemi devient **Affaibli**.",
+                        "Attachez-lui cette carte jusqu’à ce qu’il réussisse un Test de Moral.",
+                        "Tant que cette carte est attachée, chaque fois que cette unité est activée, elle devient **Affaiblie**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20104"
             }
         },
         {
             "id": "40116",
             "name": "Donner des ordres",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand l’unité de votre Général est activée :",
-                        "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée située à Longue Portée ou moins. Elle effectue 1 action d’Attaque ou de Charge."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 unité Combattante alliée. Retirez 1 pion Ordre de cette unité. Elle peut utiliser cet Ordre une nouvelle fois ce round-ci."
-                        ]
-                    }
-                ],
-                "commander_id": "20104",
-                "commander_name": "Tywin Lannister",
-                "commander_subname": "Seigneur de Castral Roc"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand l’unité de votre Général est activée :",
+                    "effect": [
+                        "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée située à Longue Portée ou moins. Elle effectue 1 action d’Attaque ou de Charge."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 unité Combattante alliée. Retirez 1 pion Ordre de cette unité. Elle peut utiliser cet Ordre une nouvelle fois ce round-ci."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20104"
             }
         },
         {
             "id": "40117",
             "name": "Objectif trompeur",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC ennemie est activée :",
-                        "effect": [
-                            "Si cette UNC s’empare d’une zone ce tour-ci, après avoir résolu l’effet de cette dernière, vous pouvez déplacer cette UNC sur n’importe quelle autre zone libre.",
-                            "Si vous avez déplacé cette UNC depuis [LETTER], ciblez 1 Unité Combattante ennemie. Elle gagne 1 pion État."
-                        ]
-                    }
-                ],
-                "commander_id": "20105",
-                "commander_name": "Tyrion Lannister",
-                "commander_subname": "Le Mi-Homme"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC ennemie est activée :",
+                    "effect": [
+                        "Si cette UNC s’empare d’une zone ce tour-ci, après avoir résolu l’effet de cette dernière, vous pouvez déplacer cette UNC sur n’importe quelle autre zone libre.",
+                        "Si vous avez déplacé cette UNC depuis [LETTER], ciblez 1 Unité Combattante ennemie. Elle gagne 1 pion État."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20105"
             }
         },
         {
             "id": "40118",
             "name": "Habile stratagème",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée est activée :",
-                        "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action de Manœuvre, de Marche ou de Repli.",
-                            "S’il s’agit de l’unité de Tyrion, avant d’effectuer cette action, 1 ennemi situé à longue Portée ou moins de cette unité devient **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20105",
-                "commander_name": "Tyrion Lannister",
-                "commander_subname": "Le Mi-Homme"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée. Elle effectue 1 action de Manœuvre, de Marche ou de Repli.",
+                        "S’il s’agit de l’unité de Tyrion, avant d’effectuer cette action, 1 ennemi situé à longue Portée ou moins de cette unité devient **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20105"
             }
         },
         {
             "id": "40119",
             "name": "Intercepter les ordres",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un adversaire cible une unité avec une zone Stratégique :",
-                        "effect": [
-                            "Lancez un dé. Sur un résultat de 3+, votre adversaire doit cibler une unité différente avec l’effet de cette zone *(si possible)*.",
-                            "Si vous contrôlez [LETTER], vous pouvez relancer ce dé.",
-                            "Si la nouvelle unité ciblée se trouve à Longue Portée ou moins de l’unité de Tyrion, elle gagne 1 pion État."
-                        ]
-                    }
-                ],
-                "commander_id": "20105",
-                "commander_name": "Tyrion Lannister",
-                "commander_subname": "Le Mi-Homme"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un adversaire cible une unité avec une zone Stratégique :",
+                    "effect": [
+                        "Lancez un dé. Sur un résultat de 3+, votre adversaire doit cibler une unité différente avec l’effet de cette zone *(si possible)*.",
+                        "Si vous contrôlez [LETTER], vous pouvez relancer ce dé.",
+                        "Si la nouvelle unité ciblée se trouve à Longue Portée ou moins de l’unité de Tyrion, elle gagne 1 pion État."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20105"
             }
         },
         {
             "id": "40120",
             "name": "Miséricorde de la Mère",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée est activée :",
-                        "effect": [
-                            "Retirez 1 pion État de cette unité.",
-                            "Cette unité effectue 1 Test de Moral.",
-                            "Si elle réussit, soignez 2 Blessures de cette unité, +1 pour chacun de ses rangs détruits.",
-                            "Si elle échoue, soignez 1 de ses Blessures."
-                        ]
-                    }
-                ],
-                "commander_id": "20125",
-                "commander_name": "Le Grand Moineau",
-                "commander_subname": "Sa Sainteté Suprême"
+            "faction": "lannister",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée est activée :",
+                    "effect": [
+                        "Retirez 1 pion État de cette unité.",
+                        "Cette unité effectue 1 Test de Moral.",
+                        "Si elle réussit, soignez 2 Blessures de cette unité, +1 pour chacun de ses rangs détruits.",
+                        "Si elle échoue, soignez 1 de ses Blessures."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20125"
             }
         },
         {
             "id": "40121",
             "name": "Protection du Père",
-            "statistics": {
-                "version": "S05",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après avoir lancé les dés de Défense :",
-                        "effect": [
-                            "Le défenseur effectue 1 Test de Moral.",
-                            "S'il réussit, il bloque +3 Touches.",
-                            "S'il échoue, il bloque +1 Touche."
-                        ]
-                    }
-                ],
-                "commander_id": "20125",
-                "commander_name": "Le Grand Moineau",
-                "commander_subname": "Sa Sainteté Suprême"
+            "faction": "lannister",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après avoir lancé les dés de Défense :",
+                    "effect": [
+                        "Le défenseur effectue 1 Test de Moral.",
+                        "S'il réussit, il bloque +3 Touches.",
+                        "S'il échoue, il bloque +1 Touche."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20125"
             }
         },
         {
             "id": "40122",
             "name": "Colère du Guerrier",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette unité effectue un Test de Moral.",
-                            "Si elle réussit, cette attaque gagne +1 pour Toucher et **Fracasser**.",
-                            "Si elle échoue, cette attaque inflige +1 Touche."
-                        ]
-                    }
-                ],
-                "commander_id": "20125",
-                "commander_name": "Le Grand Moineau",
-                "commander_subname": "Sa Sainteté Suprême"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette unité effectue un Test de Moral.",
+                        "Si elle réussit, cette attaque gagne +1 pour Toucher et **Fracasser**.",
+                        "Si elle échoue, cette attaque inflige +1 Touche."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20125"
             }
         },
         {
             "id": "40123",
             "name": "Vous allez m'obéir !",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque gagne +2 dés d’Attaque et **Fracasser**.",
-                            "Si cette attaque ne détruit pas au moins 1 rang du défenseur, l’attaquant devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20121",
-                "commander_name": "Joffrey Baratheon",
-                "commander_subname": "Premier du Nom"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque gagne +2 dés d’Attaque et **Fracasser**.",
+                        "Si cette attaque ne détruit pas au moins 1 rang du défenseur, l’attaquant devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20121"
             }
         },
         {
             "id": "40124",
             "name": "Traîtres ! J'aurai leurs têtes !",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante ennemie et attachez-lui cette carte.",
-                            "Tant que cette carte est attachée, les Attaques de Mêlée alliées effectuées sur cette unité gagnent **Cruel**.",
-                            "À la fin du round, si cet ennemi n’a pas été détruit, retirez-lui cette carte et chaque unité qui l’a attaqué ce round-ci devient **Paniquée** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20121",
-                "commander_name": "Joffrey Baratheon",
-                "commander_subname": "Premier du Nom"
+            "faction": "lannister",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie et attachez-lui cette carte.",
+                        "Tant que cette carte est attachée, les Attaques de Mêlée alliées effectuées sur cette unité gagnent **Cruel**.",
+                        "À la fin du round, si cet ennemi n’a pas été détruit, retirez-lui cette carte et chaque unité qui l’a attaqué ce round-ci devient **Paniquée** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20121"
             }
         },
         {
             "id": "40125",
             "name": "Je suis le Roi !",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après le lancer des dés de Défense :",
-                        "effect": [
-                            "Ciblez le défenseur. Il bloque +2 Touches.",
-                            "Après que cette attaque a été résolue, le défenseur devient **Paniqué** et **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20121",
-                "commander_name": "Joffrey Baratheon",
-                "commander_subname": "Premier du Nom"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une Attaque de Mêlée, après le lancer des dés de Défense :",
+                    "effect": [
+                        "Ciblez le défenseur. Il bloque +2 Touches.",
+                        "Après que cette attaque a été résolue, le défenseur devient **Paniqué** et **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20121"
             }
         },
         {
             "id": "40126",
             "name": "Diriger avec charisme",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée est ciblée par un Ordre ennemi, une UNC ou une zone Stratégique, avant de résoudre l’effet :",
-                        "effect": [
-                            "Cette unité effectue 1 Test de Moral. En cas de réussite, annulez l’effet de cet Ordre, UNC, ou zone Stratégique.",
-                            "Si cette unité est située à Courte Portée ou moins de celle d’Addam Marpheux, elle gagne +2 à son Test de Moral."
-                        ]
-                    }
-                ],
-                "commander_id": "20129",
-                "commander_name": "Addam Marpheux",
-                "commander_subname": "Commandant du Guet"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée est ciblée par un Ordre ennemi, une UNC ou une zone Stratégique, avant de résoudre l’effet :",
+                    "effect": [
+                        "Cette unité effectue 1 Test de Moral. En cas de réussite, annulez l’effet de cet Ordre, UNC, ou zone Stratégique.",
+                        "Si cette unité est située à Courte Portée ou moins de celle d’Addam Marpheux, elle gagne +2 à son Test de Moral."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20129"
             }
         },
         {
             "id": "40127",
             "name": "Retour de bâton",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur.",
-                            "Si le défenseur est l’unité d’Addam Marpheux, l’attaquant devient également **Paniqué**."
-                        ]
-                    }
-                ],
-                "commander_id": "20129",
-                "commander_name": "Addam Marpheux",
-                "commander_subname": "Commandant du Guet"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si le défenseur n’a pas été détruit, l’attaquant subit 2 Blessures pour chaque rang détruit du défenseur.",
+                        "Si le défenseur est l’unité d’Addam Marpheux, l’attaquant devient également **Paniqué**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20129"
             }
         },
         {
             "id": "40128",
             "name": "Exemple de vaillance",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Après que l’unité d’Addam Marpheux a réussi un Test de Moral :",
-                        "effect": [
-                            "Toutes les autres unités alliées situées à Longue Portée ou moins soignent 1 de leurs Blessures, +1 pour chaque rang détruit dans l’unité d’Addam.",
-                            "Ensuite, soignez 2 Blessures de l’unité d’Addam."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Piochez une carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20129",
-                "commander_name": "Addam Marpheux",
-                "commander_subname": "Commandant du Guet"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après que l’unité d’Addam Marpheux a réussi un Test de Moral :",
+                    "effect": [
+                        "Toutes les autres unités alliées situées à Longue Portée ou moins soignent 1 de leurs Blessures, +1 pour chaque rang détruit dans l’unité d’Addam.",
+                        "Ensuite, soignez 2 Blessures de l’unité d’Addam."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez une carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20129"
             }
         },
         {
             "id": "40129",
             "name": "Manœuvres  prévisibles",
-            "statistics": {
-                "version": "S04",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Au début du premier tour ennemi d'un round :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante ennemie et 1 UNC ennemie.",
-                            "Si l’une ou l’autre de ces unités effectue une action ce tour-ci, avant de résoudre celle-ci, 1 Unité Combattante alliée effectue 1 action d’Attaque, de Manœuvre ou de Repli."
-                        ]
-                    }
-                ],
-                "commander_id": "20130",
-                "commander_name": "Kevan Lannister",
-                "commander_subname": "Protecteur du Royaume"
+            "faction": "lannister",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début du premier tour ennemi d'un round :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie et 1 UNC ennemie.",
+                        "Si l’une ou l’autre de ces unités effectue une action ce tour-ci, avant de résoudre celle-ci, 1 Unité Combattante alliée effectue 1 action d’Attaque, de Manœuvre ou de Repli."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20130"
             }
         },
         {
             "id": "40130",
             "name": "Trouver la faille",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
-                        "effect": [
-                            "Cet ennemi devient **Vulnérable** et **Paniqué**.",
-                            "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité de Kevan Lannister attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
-                        ]
-                    }
-                ],
-                "commander_id": "20130",
-                "commander_name": "Kevan Lannister",
-                "commander_subname": "Protecteur du Royaume"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une Unité Combattante ennemie a résolu une action :",
+                    "effect": [
+                        "Cet ennemi devient **Vulnérable** et **Paniqué**.",
+                        "Attachez cette carte à cet ennemi jusqu’à la fin du round. Tant que cette carte est attachée, quand l’unité de Kevan Lannister attaque cet ennemi, celui-ci perd toutes ses Capacités et ne peut pas être ciblé par des cartes Tactique alliées."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20130"
             }
         },
         {
             "id": "40131",
             "name": "La richesse du Roc",
-            "statistics": {
-                "version": "2021",
-                "faction": "lannister",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une attaque, après avoir lancé les dés d’Attaque :",
-                        "effect": [
-                            "Ciblez le Défenseur.",
-                            "Si vous contrôlez [CROWN], le défenseur gagne +2 à son lancer de Test de Panique.",
-                            "Si vous contrôlez [MONEY],le défenseur gagne +1 à ses lancers de dés de Défense.",
-                            "Si la cible est l’unité de Kevan Lannister, vous comptez comme contrôlant les deux zones."
-                        ]
-                    }
-                ],
-                "commander_id": "20130",
-                "commander_name": "Kevan Lannister",
-                "commander_subname": "Protecteur du Royaume"
+            "faction": "lannister",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une attaque, après avoir lancé les dés d’Attaque :",
+                    "effect": [
+                        "Ciblez le Défenseur.",
+                        "Si vous contrôlez [CROWN], le défenseur gagne +2 à son lancer de Test de Panique.",
+                        "Si vous contrôlez [MONEY],le défenseur gagne +1 à ses lancers de dés de Défense.",
+                        "Si la cible est l’unité de Kevan Lannister, vous comptez comme contrôlant les deux zones."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20130"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Bannières Baratheon",
             "id": "50101",
-            "statistics": {
-                "faction": "lannister",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.2,
-                    "crests": 2,
-                    "style": "banners",
-                    "text": [
-                        "La Garde Royale est déployée avec 4 Bannières Baratheon. Au début de son Activation, elle peut retirer des Bannières Baratheon pour gagner les effets suivants. Chaque effet ne peut être choisi qu'une seule fois par Activation :",
-                        "• Ce tour-ci, les Attaques de cette unité gagnent **Frappe Critique** et **Fracasser**.",
-                        "• Ce tour-ci, les Attaques de cette unité gagnent **Cruel** et, si le Défenseur échoue son Test de Panique, il subit +1 Blessure.",
-                        "• Ce tour-ci, quand cette unité effectue une Attaque, avant de lancer les dés d'Attaque, le Défenseur devient **Paniqué** et **Affaibli**.",
-                        "• Cette unité soigne 2 de ses Blessures et peut relancer ses dés de Distance de Charge et de Repli ce tour-ci."
-                    ]
-                },
-                "back": {
-                    "ratio": 0.25,
-                    "crests": 2,
-                    "image": true
-                }
+            "name": "Bannières Baratheon",
+            "faction": "lannister",
+            "version": "2021",
+            "role": "special",
+            "category": "banners",
+            "front": {
+                "ratio": 0.2,
+                "crests": 2,
+                "style": "banners",
+                "text": [
+                    "La Garde Royale est déployée avec 4 Bannières Baratheon. Au début de son Activation, elle peut retirer des Bannières Baratheon pour gagner les effets suivants. Chaque effet ne peut être choisi qu'une seule fois par Activation :",
+                    "• Ce tour-ci, les Attaques de cette unité gagnent **Frappe Critique** et **Fracasser**.",
+                    "• Ce tour-ci, les Attaques de cette unité gagnent **Cruel** et, si le Défenseur échoue son Test de Panique, il subit +1 Blessure.",
+                    "• Ce tour-ci, quand cette unité effectue une Attaque, avant de lancer les dés d'Attaque, le Défenseur devient **Paniqué** et **Affaibli**.",
+                    "• Cette unité soigne 2 de ses Blessures et peut relancer ses dés de Distance de Charge et de Repli ce tour-ci."
+                ]
             },
-            "type": "banners"
+            "back": {
+                "ratio": 0.25,
+                "crests": 2,
+                "image": true
+            }
         }
     ]
 }

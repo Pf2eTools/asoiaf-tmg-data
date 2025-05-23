@@ -1,893 +1,866 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "freefolk",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "10301",
             "name": "Géant Sauvage",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Balayage Enragé",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Géant",
-                    "Balayage Enragé"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Géant",
+                "Balayage Enragé"
+            ],
+            "attacks": [
+                {
+                    "name": "Balayage Enragé",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
             "fluff": {
                 "lore": "Considérés comme une légende par la plupart des Seigneurs Sudiens de Westeros, les Géants Sauvages qui vivent au-delà du Mur sont bel et bien réels, comme la Garde de Nuit peut le confirmer. Ces gigantesques créatures ne portent aucune armure et manient des armes rudimentaires, comme des os de mammouth ou des troncs d’arbre. En vérité, ils n’ont besoin de rien d’autre. Un seul Géant peut causer des ravages dans les rangs de l’infanterie la plus lourde et ne pas être le moins du monde dérangé par une charge de chevaliers. Il n’existe que deux solutions pour abattre un Géant : le noyer sous le nombre ou avoir recours à une puissante arme de siège."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10302",
             "name": "Trappeurs du Peuple Libre",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 6,
-                "defense": 6,
-                "morale": 8,
-                "attacks": [
-                    {
-                        "name": "Arc de Sauvageon",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Armes Rudimentaires",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Pièges Cachés"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Pièges Cachés"
+            ],
+            "attacks": [
+                {
+                    "name": "Arc de Sauvageon",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Armes Rudimentaires",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 8,
+            "speed": 6,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Le Peuple Libre compense largement son manque de matériel sophistiqué par la ruse. Les Trappeurs du Peuple Libre n’ont pas leurs pareils pour truffer le champ de bataille de pièges aussi inventifs que vicieux. Le but n’est pas de causer de lourdes pertes aux unités ennemies, mais de les ralentir. Les cavaliers sont contraints d’avancer au pas sous peine de perdre leurs montures et l’infanterie doit faire preuve de prudence afin de ne pas déclencher les pièges. Pendant ce temps, les Trappeurs s’en donnent à cœur joie pour cribler de flèches les unités ainsi empêtrées."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10303",
             "name": "Pillards du Peuple Libre",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armes Rudimentaires",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Désorganisé"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "name": "Réactivité ",
-                        "text": "*Réduisez le coût de 1 Attachement de cette unité de 1.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Désorganisé"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes Rudimentaires",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Réduisez le coût de 1 Attachement de cette unité de 1.*",
+                    "name": "Réactivité "
+                }
+            ],
             "fluff": {
                 "lore": "Manquant d’entraînement et sommairement équipés d’armes en os ou de lames de récupération, les Pillards du Peuple Libre n’ont qu’une seule chose à offrir pour contrer l’avancée des lourdes armées de Westeros : leur multitude. Les échauffourées au sud du Mur ont donné aux généraux de Westeros une fausse idée du nombre des Sauvageons au-delà du Mur. S’il est vrai qu’en petit nombre, ils ne valent guère mieux qu’une bande de paysans, sous la bannière du Peuple Libre, ils forment une véritable armée."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10304",
             "name": "Piqueuses",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Lancer de Pique",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Pique",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Volée d'Assaut",
-                    "Charge Furieuse"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Volée d'Assaut",
+                "Charge Furieuse"
+            ],
+            "attacks": [
+                {
+                    "name": "Lancer de Pique",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Pique",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Si dans le sud, la guerre est surtout une affaire d’hommes, les femmes du Peuple Libre ont largement prouvé leur valeur au combat. Les Piqueuses ne sont pas adaptées à l’affrontement direct sur la ligne de front et se montrent bien plus utiles sur les flancs, tant pour lancer leurs assauts que pour protéger des charges ennemies. Leurs armes sont peut-être rudimentaires, mais elles en ont à profusion et sont capables de les lancer avec une précision mortelle. Un général avisé saura exploiter au mieux ce talent."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10305",
             "name": "Sauvages Troglodytes",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 6,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Assaut Frénétique",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            7,
-                            8
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Assaut Frénétique"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Assaut Frénétique"
+            ],
+            "attacks": [
+                {
+                    "name": "Assaut Frénétique",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        7,
+                        8
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 4,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Troglodytes ne portent que des pagnes ou de simples fourrures et leur équipement se limite à des armes primitives. Pourtant, sous-estimer leur soif de sang serait une grave erreur, comme l’ont appris à leurs dépens plusieurs patrouilles imprudentes. Ces sauvages ne tiendront pas longtemps en première ligne, mais pour effectuer une percée dans les rangs adverses ou attaquer de flanc des archers mal protégés, ils sont parfaits. Dès qu’ils ont senti le sang, leur férocité est sans égale."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10306",
             "name": "Wun Wun",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Dérouillée",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Cri de Guerre",
-                    "Dérouillée",
-                    "Géant"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Cri de Guerre",
+                "Dérouillée",
+                "Géant"
+            ],
+            "attacks": [
+                {
+                    "name": "Dérouillée",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 5,
+            "cost": 8,
+            "tray": "solo",
             "fluff": {
                 "lore": "Wun Wun est encore plus imposant que son chef, Mag le Puissant. Comme tous les géants, Wun Wun est doté d’une force titanesque et d’un cuir épais, mais il est également convaincu d’être invulnérable et possède une combativité hors du commun. Si Wun Wun est capable d’enfoncer les lignes ennemies les plus solides avec une effarante facilité, les généraux du Peuple Libre devront veiller à soutenir les attaques de ce béhémoth, de peur qu’il ne se retrouve encerclé et submergé par la masse de ses minuscules adversaires."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10307",
             "name": "Disciples des Os",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Armes en Os",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Armes en Os",
-                    "Visage Horrifique"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Armes en Os",
+                "Visage Horrifique"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes en Os",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Bien qu’ils n’appartiennent à aucune faction particulière du Peuple Libre, les Disciples des Os ont consacré leur vie à servir les ambitions belliqueuses du Seigneur des Os. Au combat, on pourrait penser que leurs armes en os ne font pas le poids face à l’acier, pourtant une mâchoire d’auroch montée sur un épais manche de bois peut se révéler terriblement efficace, y compris contre un adversaire en armures de plaques. Le trouble causé par ces sauvages au sein des troupes ennemies constitue un avantage qu’un général avisé saura exploiter."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10308",
             "name": "Guerriers Thenn",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Armes en Bronze",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Tenez Bon !",
-                    "Ordre : Provocation"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Tenez Bon !",
+                "Ordre : Provocation"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes en Bronze",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les Guerriers Thenns constituent les troupes régulières les plus lourdes alignées par le Peuple Libre. Leurs armes et armures de bronze ont été forgées de leurs propres mains, et non pas volées à la Garde de Nuit ou pillées sur le champ de bataille. Cependant, les généraux du Peuple Libre doivent tenir compte du fait que ces armes Nordiennes, bien que relativement avancées, ne font pas le poids face à l’acier trempé du sud. C’est généralement sur les flancs ou en tant qu’arrière-garde dans le sillage d’un géant que les Guerriers Thenns se montrent les plus efficaces."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10309",
             "name": "Chars de la Grève Glacée",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "siegeengine",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Impact Mortel",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Repli Éclair",
-                    "Char",
-                    "Impact Mortel"
-                ],
-                "wounds": 6,
-                "tray": "warmachine"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Repli Éclair",
+                "Char",
+                "Impact Mortel"
+            ],
+            "attacks": [
+                {
+                    "name": "Impact Mortel",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 5,
+            "tray": "warmachine",
             "fluff": {
                 "lore": "Les Sauvageons sont rarement associés aux machines de guerre, mais les Chars de la Grève Glacée sont étonnamment efficaces. Ces chars, faits de bois et d’os, tirés par d’énormes bâtards de loups et de molosses croisés pour leur force et leur férocité, abritent deux hommes et toute une panoplie d’armes permettant non seulement de charger l’adversaire, mais également d’enfoncer les rangs les plus solides. Ils sont toutefois à utiliser avec prudence, car les chars deviennent extrêmement vulnérables une fois immobilisés."
-            }
+            },
+            "icon": "siegeengine",
+            "wounds": 6
         },
         {
             "id": "10310",
             "name": "Ours",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 0,
-                "speed": 4,
-                "defense": 3,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Mutilation Sauvage",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ours Lié",
-                    "Mutilation Sauvage (Bear)"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "text": "*Cette figurine n’est utilisée qu’avec la Capacité Lien du Change-peau.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ours Lié",
+                "Mutilation Sauvage (Bear)"
+            ],
+            "attacks": [
+                {
+                    "name": "Mutilation Sauvage",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 3,
+            "speed": 4,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Cette figurine n’est utilisée qu’avec la Capacité Lien du Change-peau.*"
+                }
+            ],
             "fluff": {
                 "lore": "Les Change-peaux sont des hommes et des femmes capables de pénétrer dans l’esprit des animaux et de manipuler leurs actions, que ce soit de façon subtile ou ostentatoire. En temps de guerre, ce n’est pas le Change-peau lui-même que l’on remarque sur le champ de bataille, mais les bêtes qu’il contrôle, tels que les énormes ours Nordiens, les loups, les lynx-de-fumée, les hiboux et les aigles. Si ses animaux peuvent être tués, il est rare qu’un Change-peau soit vaincu longtemps, car le Nord ne manque pas de créatures féroces et redoutables."
-            }
+            },
+            "icon": "monster"
         },
         {
             "id": "10311",
             "name": "Élu du Seigneur des Os",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Armes en Os",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Armes en Os",
-                    "Visage Horrifique",
-                    "Se Nourrir de la Peur"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Clinquefrac. Il doit être attaché à cette unité.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Armes en Os",
+                "Visage Horrifique",
+                "Se Nourrir de la Peur"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes en Os",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Clinquefrac. Il doit être attaché à cette unité.*"
+                }
+            ],
             "fluff": {
                 "lore": "Seuls les plus forts et les plus sauvages parmi les disciples des Os peuvent devenir un Élu du Seigneur des Os. Chaque Élu prend la place de son prédécesseur en le tuant au cours d’un combat rituel. L’armure du nouvel Élu est assemblée à partir des ossements du vaincu et complétée avec des os d’animaux afin d’offrir une meilleure protection. De prime abord, les Élus peuvent sembler n’être que de vulgaires sauvages, mais les vétérans de la Garde de Nuit enseignent aux frères novices de ne sous-estimer ni leur incroyable ruse, ni leurs extraordinaires talents martiaux."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10312",
             "name": "Mammouth de Guerre",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 6,
-                "speed": 6,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Saccage",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Mammouth",
-                    "Saccage"
-                ],
-                "wounds": 8,
-                "tray": "warmachine",
-                "requirements": [
-                    {
-                        "name": "Limité ",
-                        "text": "*Votre armée peut inclure un maximum de 2 Mammouths de Guerre.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Mammouth",
+                "Saccage"
+            ],
+            "attacks": [
+                {
+                    "name": "Saccage",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Votre armée peut inclure un maximum de 2 Mammouths de Guerre.*",
+                    "name": "Limité "
+                }
+            ],
             "fluff": {
                 "lore": "Sur le champ de bataille, voir un Mammouth de Guerre foncer sur les positions ennemies constitue un spectacle impressionnant. Sa force incroyable et sa peau épaisse le rendent difficile à neutraliser. Il arrive que des géants chevauchent ces pachydermes, mais il ne reste plus assez de Mammouths dans le monde pour former de véritables corps de cavalerie. Ceux qui combattent aux ordres de leur maîtres sont cependant bien entraînés. Même si cela reste un événement rare, un Mammouth paniqué peut s’en prendre aussi bien à ses alliés qu’à ses ennemis."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10313",
             "name": "Mag Le Puissant",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Fureur du Chef",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Géant",
-                    "Fureur du Chef"
-                ],
-                "requirements":[
-                    {
-                        "name": "Général",
-                        "text": "*Quand vous choisissez Mag le Puissant en tant que Général, remplacez le paquet Tactique du Peuple Libre par celui de Mag.*"
-                    }             
-                ],
-                "commander": true,
-                "wounds": 6,
-                "tray": "solo"
-            },
-            "tactics": {
-                "cards": {
-                    "40326": "Juste une égratignure",
-                    "40327": "Piétinement",
-                    "40328": "Enragé",
-                    "40329": "Ordres du chef",
-                    "40330": "Monstres du Nord",
-                    "40331": "Dernier de son espèce",
-                    "40332": "Rugissement de défi",
-                    "40333": "Lancer de rocher",
-                    "40334": "Débordement",
-                    "40335": "Attaque éclair"
-                },
-                "remove": [
-                    "ALL"
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Géant",
+                "Fureur du Chef"
+            ],
+            "attacks": [
+                {
+                    "name": "Fureur du Chef",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 5,
+            "tray": "solo",
+            "commander": true,
+            "tactics": [
+                "40326",
+                "40327",
+                "40328",
+                "40329",
+                "40330",
+                "40331",
+                "40332",
+                "40333",
+                "40334",
+                "40335"
+            ],
+            "back_text": [
+                {
+                    "text": "*Quand vous choisissez Mag le Puissant en tant que Général, remplacez le paquet Tactique du Peuple Libre par celui de Mag.*",
+                    "name": "Général"
+                }
+            ],
             "fluff": {
                 "lore": "Le Titre de Mag le Puissant reste, somme toute, relativement modeste. En tant que chef des géants, il a mené maintes fois son peuple à la victoire grâce à sa force redoutable. Même les troupes les plus lourdement protégées ne font pas le poids face à sa puissance, et ses qualités de chef (pour autant que les géants en possèdent) inspirent les siens au coeur de la bataille. Mag a largement les moyens de se jeter dans la mêlée, mais il doit toutefois rester prudent. Bien que difficiles à abattre, les géants ne sont pas immortels."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10314",
             "name": "Mag Le Puissant",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 9,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Fureur du Chef",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Géant",
-                    "Fureur du Chef"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Géant",
+                "Fureur du Chef"
+            ],
+            "attacks": [
+                {
+                    "name": "Fureur du Chef",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 9,
+            "tray": "solo",
             "fluff": {
                 "lore": "Le Titre de Mag le Puissant reste, somme toute, relativement modeste. En tant que chef des géants, il a mené maintes fois son peuple à la victoire grâce à sa force redoutable. Même les troupes les plus lourdement protégées ne font pas le poids face à sa puissance, et ses qualités de chef (pour autant que les géants en possèdent) inspirent les siens au coeur de la bataille. Mag a largement les moyens de se jeter dans la mêlée, mais il doit toutefois rester prudent. Bien que difficiles à abattre, les géants ne sont pas immortels."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10315",
             "name": "Oursières de la Grève Glacée",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 4,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Lancer de Pique",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Piques et Lacérations",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Volée d'Assaut",
-                    "Cavalerie d'Ours",
-                    "Piques et Lacérations"
-                ],
-                "wounds": 4,
-                "tray": "cavalry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Volée d'Assaut",
+                "Cavalerie d'Ours",
+                "Piques et Lacérations"
+            ],
+            "attacks": [
+                {
+                    "name": "Lancer de Pique",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Piques et Lacérations",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 4,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Dans les terres lointaines qui s’étendent au-delà du Mur vivent les ours blancs les plus imposants de leur espèce, aussi grands que deux hommes quand ils se redressent, et capables de déchiqueter la roche comme l’acier. Seuls les sauvageons oseraient dompter de telles bêtes et les monter au combat. Les Oursières de la Grève Glacée sont peut-être plus lentes et plus lourdes que la cavalerie traditionnelle, mais là où un cheval ne peut que piétiner un ennemi, les Ours des Neiges peuvent mordre, déchiqueter et lacérer. Même en armure de plate complète, un homme ne fait pas le poids face à un ours."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 4
         },
         {
             "id": "10316",
             "name": "Le Sanglier de Borroq",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 0,
-                "speed": 5,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Festin Macabre",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Sanglier Lié",
-                    "Festin Macabre"
-                ],
-                "wounds": 3,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Borroq.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Sanglier Lié",
+                "Festin Macabre"
+            ],
+            "attacks": [
+                {
+                    "name": "Festin Macabre",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 5,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Borroq.*"
+                }
+            ],
             "fluff": {
                 "lore": "Le fidèle sanglier de Borroq se tient toujours aux côtés de son maître. Cet animal porcin, aussi massif qu’un taureau adulte, est doté de défenses aussi longues que le bras d’un homme. Sa peau épaisse lui fournit une armure naturelle qui le protège des lames les plus tranchantes. Au combat, il empale ses adversaires et les envoie valdinguer d’un puissant coup de tête, pour ensuite se livrer à un macabre festin. Cependant, si Borroq quitte le champ de bataille, le sanglier fera de même."
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10317",
             "name": "Varamyr Sixpeaux",
-            "subname": "Maître Change-Peau",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 3,
-                "speed": 4,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Mutilation Sauvage",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Maître Change-Peau",
-                    "Mutilation Sauvage"
-                ],
-                "wounds": 4,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "title": "Maître Change-Peau",
+            "abilities": [
+                "Maître Change-Peau",
+                "Mutilation Sauvage"
+            ],
+            "attacks": [
+                {
+                    "name": "Mutilation Sauvage",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 4,
+            "cost": 3,
+            "tray": "solo",
             "fluff": {
                 "lore": "Comptant parmi les plus puissants Changes- Peaux au-delà du Mur, Varamyr Sixpeaux peut se lier simultanément à un énorme ours des neiges, trois loups, un lynx-de-fumée et un aigle. Au combat, il chevauche son grand ours des neiges depuis lequel il commande et coordonne les attaques de ses différents animaux. Rien n’échappe au regard de son aigle, ni à la traque implacable de son lynx-de-fumée. Quiconque tente de s’approcher de lui s’expose à être sauvagement agressé. Même s’il est possible de terrasser chacune de ses créatures individuellement, rien n’empêchera Varamyr d’en invoquer d’autres.",
                 "quote": "« Et moi, je peux survoler le Mur et voir avec des yeux d’aigle. »"
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10318",
             "name": "Varamyr Sixpeaux",
-            "subname": "Maître Change-Peau",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 2,
-                "speed": 4,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Mutilation Sauvage",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Maître Change-Peau",
-                    "Mutilation Sauvage"
-                ],
-                "commander": true,
-                "wounds": 4,
-                "tray": "solo"
-            },
-            "tactics": {
-                "cards": {
-                    "40339": "Invocation de compagnons",
-                    "40340": "Gardiens liés",
-                    "40341": "Ordres liés"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "title": "Maître Change-Peau",
+            "abilities": [
+                "Maître Change-Peau",
+                "Mutilation Sauvage"
+            ],
+            "attacks": [
+                {
+                    "name": "Mutilation Sauvage",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
                 }
-            },
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 4,
+            "cost": 2,
+            "tray": "solo",
+            "commander": true,
+            "tactics": [
+                "40339",
+                "40340",
+                "40341"
+            ],
             "fluff": {
                 "lore": "Comptant parmi les plus puissants Changes- Peaux au-delà du Mur, Varamyr Sixpeaux peut se lier simultanément à un énorme ours des neiges, trois loups, un lynx-de-fumée et un aigle. Au combat, il chevauche son grand ours des neiges depuis lequel il commande et coordonne les attaques de ses différents animaux. Rien n’échappe au regard de son aigle, ni à la traque implacable de son lynx-de-fumée. Quiconque tente de s’approcher de lui s’expose à être sauvagement agressé. Même s’il est possible de terrasser chacune de ses créatures individuellement, rien n’empêchera Varamyr d’en invoquer d’autres.",
                 "quote": "« Et moi, je peux survoler le Mur et voir avec des yeux d’aigle. »"
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10319",
             "name": "Lynx-de-Fumée",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 2,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Coup de Griffes",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            2
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Lynx-de-Fumée de Varamyr",
-                    "Déstabilisation"
-                ],
-                "wounds": 2,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Varamyr Sixpeaux.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Lynx-de-Fumée de Varamyr",
+                "Déstabilisation"
+            ],
+            "attacks": [
+                {
+                    "name": "Coup de Griffes",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        2
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 2,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Varamyr Sixpeaux.*"
+                }
+            ],
             "fluff": {
                 "lore": "Même si un lynx-de-fumée seul ne représente pas un grand danger pour une unité d’hommes en armure, celui-ci est animé de la ruse de Varamyr Sixpeaux. En soutien des forces du Peuple Libre et oeuvrant en bande avec les autres animaux, le Lynx-de-Fumée de Varamyr constitue une menace aussi redoutable qu’insaisissable. Même lorsque Sixpeaux ne contrôle plus son gracieux félin, son Lynx-de-Fumée demeure un prédateur redoutable presqu’aussi gros homme. Investi de l’esprit de Sixpeaux, il devient une arme mortelle."
-            }
+            },
+            "icon": "monster",
+            "wounds": 2
         },
         {
             "id": "10320",
             "name": "Meute de Loups",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Tactiques de Meute",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Meute de Loups de Varamyr",
-                    "Diversion"
-                ],
-                "wounds": 3,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Varamyr Sixpeaux.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Meute de Loups de Varamyr",
+                "Diversion"
+            ],
+            "attacks": [
+                {
+                    "name": "Tactiques de Meute",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Varamyr Sixpeaux.*"
+                }
+            ],
             "fluff": {
                 "lore": "Bien qu’inadaptés à tenir le front d’une bataille rangée, les loups contrôlés par Varamyr Sixpeaux sont excellents pour harceler les flancs et semer la panique parmi les archers et les machines de guerre à l’écart de la ligne de front. Ils ne semblent être que de simples loups, mais lorsqu’ils sont animés par l’esprit de leur maître, ils ne forment plus qu’un, une véritable meute capable de coordonner ses tactiques avec celles des combattants humains du Peuple Libre. Faut-il encore se demander pourquoi les change-peaux sont craints à ce point ?"
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10321",
             "name": "Chasseurs de La Grève Glacée",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Harpon",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Harpon",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Marquer la Cible",
-                    "Harpon"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Marquer la Cible",
+                "Harpon"
+            ],
+            "attacks": [
+                {
+                    "name": "Harpon",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Harpon",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Les hommes du Clan du Morse maîtrisent l’art de la chasse qu’ils pratiquent dans les lointaines étendues glacées qui s’étendent au-delà du Mur. Désormais à la recherche d’un climat plus doux et de pâturages plus verts, ils descendent vers le sud en mettant leur expertise au service du Peuple Libre. Leurs robustes harpons sont capables d’embrocher aussi bien les soldats ennemis que les bêtes les plus sauvages. Leur habileté à maintenir leurs proies sous pression, couplée à une très grande mobilité, leur permet de surprendre l’ennemi en l’attaquant là où il s’y attend le moins."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10322",
             "name": "Géants Lanceurs d’Épieux",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Épieu de Géant",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    },
-                    {
-                        "name": "Épieu de Géant",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Géant",
-                    "Lance de Géant"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Géant",
+                "Lance de Géant"
+            ],
+            "attacks": [
+                {
+                    "name": "Épieu de Géant",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                },
+                {
+                    "name": "Épieu de Géant",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
             "fluff": {
                 "lore": "Qu’il y a-t-il de pire dans une bataille que de devoir affronter des géants ? Se retrouver face à des géants qui lancent des épieux de la taille d’un tronc d’arbre. Grâce à son alliance avec les géants, le Peuple Libre peut désormais aligner leurs Lanceurs d’Épieux, une véritable artillerie sur pattes. Leurs armes sont certes rudimentaires, mais une hampe de bois aussi épaisse que le torse d’un homme ne requiert guère de finesse. Toutefois, ces géants peuvent rapidement se retrouver débordés au corps à corps et doivent donc être protégés."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10323",
             "name": "Avant-garde d'Harma",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "cavalry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 6,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armes Rudimentaires",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Approche planifiée",
-                    "Cavalerie"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Approche planifiée",
+                "Cavalerie"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes Rudimentaires",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Au nord du mur, les chevaux sont plutôt rares, ce qui rend l'avant- garde d'Harma la Truffe d'autant plus inspirante pour le Peuple Libre. Si, en comparaison avec les troupes Sudiennes, ces unités ne sont équipées que d'armures légères et d'armes rudimentaires, elles sont bien plus que de simples cavaliers légers, servant à la fois d'éclaireurs et de fer de lance pour les armées du Peuple Libre. Si leur manque de protection constitue leur plus grande faiblesse, cela leur confere également leur plus grand avantage : la vitesse pure."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30301",
             "name": "Lady Val",
-            "subname": "La Princesse Sauvageonne",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "La Dame des Forêts",
-                        "effect": [
-                            "Chaque fois que Lady Val s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*1 Unité Combattante alliée effectue 1 action de Manœuvre ou de Repli.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "La Princesse Sauvageonne",
+            "abilities": [
+                {
+                    "name": "La Dame des Forêts",
+                    "effect": [
+                        "Chaque fois que Lady Val s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                        "*1 Unité Combattante alliée effectue 1 action de Manœuvre ou de Repli.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Je connais la forêt mieux que tous vos patrouilleurs en défroque noire. Elle n’a pas de fantômes, pour moi. »"
             }
@@ -895,21 +868,21 @@
         {
             "id": "30302",
             "name": "Mance Rayder",
-            "subname": "Tacticien Rusé",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Préparations Méticuleuses",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte influence une unité, quand celle-ci est activée ou qu’elle est ciblée par une zone Stratégique, avant de résoudre l’effet de la zone, vous pouvez piocher 1 carte Tactique."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Tacticien Rusé",
+            "abilities": [
+                {
+                    "name": "Préparations Méticuleuses",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte influence une unité, quand celle-ci est activée ou qu’elle est ciblée par une zone Stratégique, avant de résoudre l’effet de la zone, vous pouvez piocher 1 carte Tactique."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Il a l’astuce. On l’a élevé corbeau, tu sais, et le corbeau est un oiseau roublard. »"
             }
@@ -917,22 +890,22 @@
         {
             "id": "30303",
             "name": "Craster",
-            "subname": "Allié de Convenance",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Refuge et Ravitaillement",
-                        "effect": [
-                            "Une fois par partie, au début de n’importe quel tour, vous pouvez soigner 2 Blessures sur 1 Unité d'Infanterie alliée.",
-                            "Chaque fois que Craster s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*Piochez 1 carte Tactique et soignez 2 Blessures sur 1 Unité d'Infanterie alliée.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Allié de Convenance",
+            "abilities": [
+                {
+                    "name": "Refuge et Ravitaillement",
+                    "effect": [
+                        "Une fois par partie, au début de n’importe quel tour, vous pouvez soigner 2 Blessures sur 1 Unité d'Infanterie alliée.",
+                        "Chaque fois que Craster s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                        "*Piochez 1 carte Tactique et soignez 2 Blessures sur 1 Unité d'Infanterie alliée.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Jamais il n’a refusé d’héberger l’un de nos patrouilleurs, et il n’aime pas Mance Rayder… »"
             }
@@ -940,21 +913,21 @@
         {
             "id": "30304",
             "name": "Styr",
-            "subname": "Tyran à la Main de Fer",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "La Fureur des Thenns",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité alliée, les Attaques de Mêlée de celle-ci gagnent **Fracasser** et comptent comme ayant +1 rang pour les dés d'Attaque."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Tyran à la Main de Fer",
+            "abilities": [
+                {
+                    "name": "La Fureur des Thenns",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité alliée, les Attaques de Mêlée de celle-ci gagnent **Fracasser** et comptent comme ayant +1 rang pour les dés d'Attaque."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Ce sont des sauvageons… des animaux plus que des hommes. »"
             }
@@ -962,22 +935,22 @@
         {
             "id": "30305",
             "name": "Ygritte",
-            "subname": "Baisée par le Feu",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Ruse de  Piqueuse",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité alliée, celle-ci gagne +1 [MOVEMENT] et ignore les mots-clés Difficile et Entravant.",
-                            "Tant que cette carte Influence une unité ennemie, celle-ci subit −1 [MOVEMENT] et déclenche une Charge Désordonnée sur des résultats de 1 ou 2."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Baisée par le Feu",
+            "abilities": [
+                {
+                    "name": "Ruse de  Piqueuse",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité alliée, celle-ci gagne +1 [MOVEMENT] et ignore les mots-clés Difficile et Entravant.",
+                        "Tant que cette carte Influence une unité ennemie, celle-ci subit −1 [MOVEMENT] et déclenche une Charge Désordonnée sur des résultats de 1 ou 2."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Je sais toujours une chose, c’est que tu es une sauvageonne jusqu’à la moelle. » – Jon Snow"
             }
@@ -985,23 +958,23 @@
         {
             "id": "30306",
             "name": "Lady Della",
-            "subname": "Épouse et Conseillère",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Conseil de Piqueuse",
-                        "effect": [
-                            "Chaque fois que Della s’empare d’une zone, résolvez les effets suivants en fonction de la zone :",
-                            "[CROWN] : 1 ennemi devient **Affaibli**.",
-                            "[MONEY] : Au lieu de retirer un pion État, ciblez 1 ennemi engagé avec cette unité. Il subit 1 Touche, +1 Touche pour chacun des rangs restants dans cette unité.",
-                            "[LETTER] : Au lieu de piocher des cartes, regardez les 2 premières cartes du paquet Tactique de votre adversaire. Vous pouvez défausser une de ces cartes. Ensuite, remettez toute carte restante au sommet du paquet Tactique."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Épouse et Conseillère",
+            "abilities": [
+                {
+                    "name": "Conseil de Piqueuse",
+                    "effect": [
+                        "Chaque fois que Della s’empare d’une zone, résolvez les effets suivants en fonction de la zone :",
+                        "[CROWN] : 1 ennemi devient **Affaibli**.",
+                        "[MONEY] : Au lieu de retirer un pion État, ciblez 1 ennemi engagé avec cette unité. Il subit 1 Touche, +1 Touche pour chacun des rangs restants dans cette unité.",
+                        "[LETTER] : Au lieu de piocher des cartes, regardez les 2 premières cartes du paquet Tactique de votre adversaire. Vous pouvez défausser une de ces cartes. Ensuite, remettez toute carte restante au sommet du paquet Tactique."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Nous autres, du peuple libre, nous savons des choses que vous autres, agenouillés, vous avez oubliées. Parfois, le chemin le plus court n’est pas le plus sûr, Jon Snow. »"
             }
@@ -1009,27 +982,27 @@
         {
             "id": "30307",
             "name": "Mance Rayder",
-            "subname": "Barde Trompeur",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Intrigues et Faux-Semblants",
-                        "effect": [
-                            "Une fois par partie, quand une UNC ennemie est activée, elle perd toutes ses Capacités jusqu’à la fin du round."
-                        ]
-                    },
-                    {
-                        "name": "Distraire les Messagers",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité ennemie, votre adversaire ne peut pas la cibler avec les effets d’une zone Stratégique ou des capacités d’Influence."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Barde Trompeur",
+            "abilities": [
+                {
+                    "name": "Intrigues et Faux-Semblants",
+                    "effect": [
+                        "Une fois par partie, quand une UNC ennemie est activée, elle perd toutes ses Capacités jusqu’à la fin du round."
+                    ]
+                },
+                {
+                    "name": "Distraire les Messagers",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité ennemie, votre adversaire ne peut pas la cibler avec les effets d’une zone Stratégique ou des capacités d’Influence."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Le Mur peut arrêter une armée, pas un homme seul. »"
             }
@@ -1037,56 +1010,53 @@
         {
             "id": "30308",
             "name": "Jon Snow",
-            "subname": "Corbac Tourne-Casaque",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Résilience Nordienne",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
-                            "Tant qu’elle est influencée par cette carte, l’unité gagne +1 à ses lancers de Test de Moral et subit -1 Blessure quand ellle échoue un Test de Panique."
-                        ]
-                    },
-                    {
-                        "name": "Discipline du Sud",
-                        "effect": [
-                            "Une fois par partie, au début de n’importe quel round, cherchez 1 exemplaire de **Tactique de Coordination** ou de **Regroupement en Formation** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Corbac Tourne-Casaque",
+            "abilities": [
+                {
+                    "name": "Résilience Nordienne",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
+                        "Tant qu’elle est influencée par cette carte, l’unité gagne +1 à ses lancers de Test de Moral et subit -1 Blessure quand ellle échoue un Test de Panique."
+                    ]
+                },
+                {
+                    "name": "Discipline du Sud",
+                    "effect": [
+                        "Une fois par partie, au début de n’importe quel round, cherchez 1 exemplaire de **Tactique de Coordination** ou de **Regroupement en Formation** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Mance Rayder a prêté serment, lui aussi... »"
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20301",
             "name": "Tormund Fléau-d'Ogres",
-            "subname": "Poing-la-Foudre",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Débordement",
-                    "Fracasser"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40308": "Poussée aggressive",
-                    "40309": "Contre assaut",
-                    "40310": "Impact dévastateur"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Poing-la-Foudre",
+            "abilities": [
+                "Ordre : Débordement",
+                "Fracasser"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40308",
+                "40309",
+                "40310"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il m’a paru le genre d’homme à faire un excellent ami et un exécrable ennemi. »"
             }
@@ -1094,18 +1064,18 @@
         {
             "id": "20302",
             "name": "Tormund Fléau-d'Ogres",
-            "subname": "Haut-Disert, Cor-Souffleur et Brise-Glace",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Cri de Guerre",
-                    "Vaillance"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Haut-Disert, Cor-Souffleur et Brise-Glace",
+            "abilities": [
+                "Ordre : Cri de Guerre",
+                "Vaillance"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Et maintenant, qu’on serve l’hydromel ! »"
             }
@@ -1113,27 +1083,24 @@
         {
             "id": "20303",
             "name": "Mance Rayder",
-            "subname": "Roi d'Au-Délà du Mur",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Contre Stratégie",
-                    "Charisme Fougueux",
-                    "Présence Motivante"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40311": "Diplomatie Sauvageonne",
-                    "40312": "Manœuvres prévisibles",
-                    "40313": "Plan à long terme"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Roi d'Au-Délà du Mur",
+            "abilities": [
+                "Ordre : Contre Stratégie",
+                "Charisme Fougueux",
+                "Présence Motivante"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40311",
+                "40312",
+                "40313"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je suis mon propre champion, mon propre bouffon, mon propre harpiste. »"
             }
@@ -1141,130 +1108,125 @@
         {
             "id": "20304",
             "name": "Chef de Raid",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Attaque en Bande"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Attaque en Bande"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20305",
             "name": "Alpha Troglodyte",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Incitation"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Incitation"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20306",
             "name": "Matriarche Piqueuse",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Repli Éclair"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Repli Éclair"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20307",
             "name": "Change-Peau",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Lien du Change-Peau"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Lien du Change-Peau"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20308",
             "name": "Aigle",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Aigle Lié",
-                    "Reconnaissance Aérienne"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Cette figurine n’est utilisée qu’avec la Capacité Lien du Change-peau.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Aigle Lié",
+                "Reconnaissance Aérienne"
+            ],
+            "tray": "none",
+            "back_text": [
+                {
+                    "text": "*Cette figurine n’est utilisée qu’avec la Capacité Lien du Change-peau.*"
+                }
+            ],
+            "icon": "none"
         },
         {
             "id": "20309",
             "name": "Loup",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Loup Lié",
-                    "Instinct du Prédateur"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Cette figurine n’est utilisée qu’avec la Capacité Lien du Change-peau.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Loup Lié",
+                "Instinct du Prédateur"
+            ],
+            "tray": "none",
+            "back_text": [
+                {
+                    "text": "*Cette figurine n’est utilisée qu’avec la Capacité Lien du Change-peau.*"
+                }
+            ],
+            "icon": "none"
         },
         {
             "id": "20310",
             "name": "Élu de Styr",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Charge Furieuse",
-                    "Tomber au Combat"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Charge Furieuse",
+                "Tomber au Combat"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20313",
             "name": "Styr",
-            "subname": "Magnar de Thenn",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Suprématie des Thenns",
-                    "Volonté de Fer"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40323": "Disparition Amère",
-                    "40324": "Bravade des Thenn",
-                    "40325": "Vengeance de Styr"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Magnar de Thenn",
+            "abilities": [
+                "Ordre : Suprématie des Thenns",
+                "Volonté de Fer"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40323",
+                "40324",
+                "40325"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Pour les Thenns, le Magnar est plus un dieu vivant qu’un homme. »"
             }
@@ -1272,40 +1234,37 @@
         {
             "id": "20314",
             "name": "Champion des Os",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Présence Intimidante"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Présence Intimidante"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20315",
             "name": "Clinquefrac",
-            "subname": "Le Seigneur des Os",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Chasseur de Trophées",
-                    "Collectionneur de Trophées",
-                    "Présence Intimidante"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40314": "Trophées sanglants",
-                    "40315": "Trophées d'armes",
-                    "40316": "Trophées d'armures"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Le Seigneur des Os",
+            "abilities": [
+                "Ordre : Chasseur de Trophées",
+                "Collectionneur de Trophées",
+                "Présence Intimidante"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40314",
+                "40315",
+                "40316"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Clinquefrac pourrait cent fois se laver les mains, il aurait toujours du sang sous les ongles. »"
             }
@@ -1313,18 +1272,18 @@
         {
             "id": "20316",
             "name": "Clinquefrac",
-            "subname": "Massacreur Impitoyable",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Soif de Massacre",
-                    "Présence Intimidante"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Massacreur Impitoyable",
+            "abilities": [
+                "Soif de Massacre",
+                "Présence Intimidante"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Un homme petit, malveillant et Sournois, aussi borné que cruel. »"
             }
@@ -1332,26 +1291,23 @@
         {
             "id": "20317",
             "name": "Harma",
-            "subname": "Commandante de l'Avant-Garde",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Prise de Flanc Avancée",
-                    "Mobilité Améliorée"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40317": "Harcèlement",
-                    "40318": "Manœuvre trompeuse",
-                    "40319": "Repositionnement  éclair"
-                }
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Commandante de l'Avant-Garde",
+            "abilities": [
+                "Ordre : Prise de Flanc Avancée",
+                "Mobilité Améliorée"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40317",
+                "40318",
+                "40319"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je me garderai sa tête pour mon étendard. Un tourne-casaque, c’est plus dégueulasse qu’un chien. »"
             }
@@ -1359,18 +1315,18 @@
         {
             "id": "20318",
             "name": "Harma",
-            "subname": "La Truffe",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Mobilité Améliorée"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "La Truffe",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Mobilité Améliorée"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Tous les quinze jours, un nouveau chien, une nouvelle bannière. »"
             }
@@ -1378,23 +1334,23 @@
         {
             "id": "20319",
             "name": "Porte-Bannière d'Harma",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Vassal d'Harma",
-                    "Regroupement",
-                    "Ordre : Repositionnement Tactique"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Harma. Cette figurine ignore les restrictions d’attachement normales.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "attachment",
+            "abilities": [
+                "Vassal d'Harma",
+                "Regroupement",
+                "Ordre : Repositionnement Tactique"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Harma. Cette figurine ignore les restrictions d’attachement normales.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Elle déteste les chiens presque autant que les corbeaux. »"
             }
@@ -1402,27 +1358,24 @@
         {
             "id": "20320",
             "name": "Le Chassieux",
-            "subname": "Horrible Boucher",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Exemple Macabre",
-                    "Cruel",
-                    "Affaiblir la Volonté"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40320": "Méthodes cruelles",
-                    "40321": "Le prix de l'échec",
-                    "40322": "Décapitations Sanglantes"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Horrible Boucher",
+            "abilities": [
+                "Ordre : Exemple Macabre",
+                "Cruel",
+                "Affaiblir la Volonté"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40320",
+                "40321",
+                "40322"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Arracher les yeux, c’est l’oeuvre du Chassieux. Les meilleurs corbacs sont les corbacs aveugles, aime-t-il répéter. »"
             }
@@ -1430,17 +1383,17 @@
         {
             "id": "20321",
             "name": "Le Chassieux Tyran Cruel",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Exemple Macabre",
-                    "Cruel"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Exemple Macabre",
+                "Cruel"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Jamais le Chassieux dira les voeux. Il prendra pas le noir. Même les autres razzieurs ont pas confiance en lui. »"
             }
@@ -1448,18 +1401,18 @@
         {
             "id": "20322",
             "name": "Ygrid",
-            "subname": "Archère Piqueuse",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Marquer la Cible",
-                    "Déstabilisation"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Archère Piqueuse",
+            "abilities": [
+                "Ordre : Marquer la Cible",
+                "Déstabilisation"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Et les gens peuvent pas avoir la terre, pas plus qu’ils peuvent avoir le ciel ou la mer. »"
             }
@@ -1467,22 +1420,22 @@
         {
             "id": "20323",
             "name": "Jarl",
-            "subname": "Grand Chef de Raid",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Attaque de Flanc"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Jarl ignore les restrictions d’attachement normales.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Grand Chef de Raid",
+            "abilities": [
+                "Attaque de Flanc"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Jarl ignore les restrictions d’attachement normales.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Le Mur se défend lui-même. »"
             }
@@ -1490,31 +1443,31 @@
         {
             "id": "20324",
             "name": "Chef du Clan du Morse",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Endurci",
-                    "Volonté de Fer"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Endurci",
+                "Volonté de Fer"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20325",
             "name": "Le Grand Morse",
-            "subname": "Trempé à la Glace et la Neige",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Cicatrices de Combat"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Trempé à la Glace et la Neige",
+            "abilities": [
+                "Cicatrices de Combat"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Hrmph »"
             }
@@ -1522,18 +1475,18 @@
         {
             "id": "20326",
             "name": "Jon Snow",
-            "subname": "Le Corbac Retourné",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Héroïsme Téméraire",
-                    "Connaissances du Sud"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Corbac Retourné",
+            "abilities": [
+                "Ordre : Héroïsme Téméraire",
+                "Connaissances du Sud"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Les hommes sont des hommes, et les femmes, des femmes, quel que soit le côté du Mur où nous sommes nés. » – Lady Val"
             }
@@ -1541,18 +1494,18 @@
         {
             "id": "20328",
             "name": "Borroq",
-            "subname": "Change-Peau Sanglier",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Pièges Cachés",
-                    "Vaillance"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Change-Peau Sanglier",
+            "abilities": [
+                "Ordre : Pièges Cachés",
+                "Vaillance"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Et tu s’ras où, l’corbac ? Caché ici, à Châteaunoir avec ton chien blanc ? »"
             }
@@ -1560,27 +1513,24 @@
         {
             "id": "20329",
             "name": "Le Grand Morse",
-            "subname": "Seigneur de la Grève Glacée",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Grève Glacée",
-                    "Tomber au Combat",
-                    "Endurci"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40336": "Endurance au combat",
-                    "40337": "Resilience de la Grève Glacée",
-                    "40338": "La force du Morse"
-                }
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Seigneur de la Grève Glacée",
+            "abilities": [
+                "Affiliation : Grève Glacée",
+                "Tomber au Combat",
+                "Endurci"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40336",
+                "40337",
+                "40338"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Un peuple de sauvages. Les hommes sont mauvais et les femmes sont pires. » – Tormund Fléau d’Ogre."
             }
@@ -1588,23 +1538,23 @@
         {
             "id": "20327",
             "name": "Mance Rayder",
-            "subname": "Abel le Barde",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "« Suit-la-Troupe »",
-                    "Sabotage et Subversion"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Avant le déploiement, attachez Mance à une unité d’Infanterie ennemie, en ignorant les restrictions d’attachement normales.*"
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Abel le Barde",
+            "abilities": [
+                "« Suit-la-Troupe »",
+                "Sabotage et Subversion"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Avant le déploiement, attachez Mance à une unité d’Infanterie ennemie, en ignorant les restrictions d’attachement normales.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je connais toutes les chansons paillardes jamais composées tant au nord qu’au sud du Mur. »"
             }
@@ -1612,923 +1562,877 @@
         {
             "id": "20330",
             "name": "Aigle de Varamyr",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Aigle de Varamyr",
-                    "Éclaireur de Varamyr"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Cette figurine n’est utilisée qu’avec la Capacité Maître Change-Peau de Varamyr.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Aigle de Varamyr",
+                "Éclaireur de Varamyr"
+            ],
+            "tray": "none",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Cette figurine n’est utilisée qu’avec la Capacité Maître Change-Peau de Varamyr.*"
+                }
+            ],
+            "icon": "none"
         }
     ],
     "tactics": [
         {
             "id": "40301",
             "name": "Regroupement en formation",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 2 unités d’Infanterie alliées, situées à Longue Portée ou moins l’une de l’autre. Retirez jusqu’à 4 figurines de l’une de ces unités. Soignez l’autre d’autant de Blessures.",
-                            "Vous pouvez ensuite soit déplacer 1 Attachement de l’une de ces unités à l’autre *(en remplaçant normalement une figurine et en conservant les restrictions d’Attachements)*, soit échanger 2 Attachements alliés entre ces unités."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 2 unités d’Infanterie alliées, situées à Longue Portée ou moins l’une de l’autre. Retirez jusqu’à 4 figurines de l’une de ces unités. Soignez l’autre d’autant de Blessures.",
+                        "Vous pouvez ensuite soit déplacer 1 Attachement de l’une de ces unités à l’autre *(en remplaçant normalement une figurine et en conservant les restrictions d’Attachements)*, soit échanger 2 Attachements alliés entre ces unités."
+                    ]
+                }
+            ]
         },
         {
             "id": "40302",
             "name": "Tactique de coordination",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 2 unités d’Infanterie alliées, situées à Courte Portée ou moins l’une de l’autre.",
-                            "Jusqu’à la fin du tour, ces unités gagnent chacune les Capacités non innées de l’autre.",
-                            "Vous pouvez immédiatement déclencher un Ordre non utilisé « Début du Tour » de l’une ou l’autre de ces unités."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 2 unités d’Infanterie alliées, situées à Courte Portée ou moins l’une de l’autre.",
+                        "Jusqu’à la fin du tour, ces unités gagnent chacune les Capacités non innées de l’autre.",
+                        "Vous pouvez immédiatement déclencher un Ordre non utilisé « Début du Tour » de l’une ou l’autre de ces unités."
+                    ]
+                }
+            ]
         },
         {
             "id": "40303",
             "name": "Ils sont trop nombreux !",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue un Test de Panique, avant de lancer les dés :",
-                        "effect": [
-                            "Pour chacune de vos unités alliées situées à Courte Portée ou moins, cet ennemi subit −1 à son lancer *(maximum 3)*."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue un Test de Panique, avant de lancer les dés :",
+                    "effect": [
+                        "Pour chacune de vos unités alliées situées à Courte Portée ou moins, cet ennemi subit −1 à son lancer *(maximum 3)*."
+                    ]
+                }
+            ]
         },
         {
             "id": "40304",
             "name": "Tactique de diversion",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu'un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez 1 autre unité alliée située à Longue Portée ou moins du défenseur. Elle effectue 1 action de Manœuvre."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu'un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez 1 autre unité alliée située à Longue Portée ou moins du défenseur. Elle effectue 1 action de Manœuvre."
+                    ]
+                }
+            ]
         },
         {
             "id": "40305",
             "name": "Assaut implacable",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Pour chaque unité alliée engagée avec le défenseur, choisissez 1 option :",
-                            "• Cette Attaque peut relancer n’importe quels dés d’Attaque.",
-                            "• Cette Attaque gagne **Frappe Critique**.",
-                            "• Cette Attaque gagne **Fracasser**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Pour chaque unité alliée engagée avec le défenseur, choisissez 1 option :",
+                        "• Cette Attaque peut relancer n’importe quels dés d’Attaque.",
+                        "• Cette Attaque gagne **Frappe Critique**.",
+                        "• Cette Attaque gagne **Fracasser**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40306",
             "name": "Encerclés et à découvert",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 unité ennemie. Pour chacune de vos unités alliées au-delà de la première situées à Courte Portée ou moins, celui-ci gagne 1 pion État."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 unité ennemie. Pour chacune de vos unités alliées au-delà de la première situées à Courte Portée ou moins, celui-ci gagne 1 pion État."
+                    ]
+                }
+            ]
         },
         {
             "id": "40307",
             "name": "La horde sans fin",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité d’Infanterie alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand cette unité est détruite, placez 1 unité de Pillards du Peuple Libre dotée d’un Attachement Chef de Raid, non activée, entièrement à Longue Portée ou moins d’un bord de table allié."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité d’Infanterie alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand cette unité est détruite, placez 1 unité de Pillards du Peuple Libre dotée d’un Attachement Chef de Raid, non activée, entièrement à Longue Portée ou moins d’un bord de table allié."
+                    ]
+                }
+            ]
         },
         {
             "id": "40308",
             "name": "Poussée aggressive",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, avant de lancer les dés de Distance de Charge :",
-                        "effect": [
-                            "Cette unité est considérée comme ayant obtenu des 6 sur tous ses dés de Distance de Charge et ses Attaques de Mêlée gagnent **Frappe Critique**.",
-                            "Une fois cette attaque résolue, l’attaquant devient **Vulnérable**, sauf s’il s’agit de l’unité de Tormund."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Fléau-d'Ogres",
-                "commander_subname": "Poing-la-Foudre"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une action de Charge, avant de lancer les dés de Distance de Charge :",
+                    "effect": [
+                        "Cette unité est considérée comme ayant obtenu des 6 sur tous ses dés de Distance de Charge et ses Attaques de Mêlée gagnent **Frappe Critique**.",
+                        "Une fois cette attaque résolue, l’attaquant devient **Vulnérable**, sauf s’il s’agit de l’unité de Tormund."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40309",
             "name": "Contre assaut",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez 1 unité Combattante alliée autre que le défenseur. Elle effectue 1 action d’Attaque ou de Charge contre l’attaquant.",
-                            "Si cette carte cible l’unité de Tormund, celle-ci peut relancer n’importe lesquels de ses dés d’Attaque et de Distance de Charge pour cette action."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Fléau-d'Ogres",
-                "commander_subname": "Poing-la-Foudre"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez 1 unité Combattante alliée autre que le défenseur. Elle effectue 1 action d’Attaque ou de Charge contre l’attaquant.",
+                        "Si cette carte cible l’unité de Tormund, celle-ci peut relancer n’importe lesquels de ses dés d’Attaque et de Distance de Charge pour cette action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40310",
             "name": "Impact dévastateur",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une action de Charge, après avoir lancé les dés de Distance de Charge :",
-                        "effect": [
-                            "Les ennemis Chargés avec succès par cette unité deviennent **Paniqués** et **Vulnérables**.",
-                            "Si cette carte cible l’unité de Tormund, celle-ci peut relancer n’importe quels dés de Distance de Charge."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Fléau-d'Ogres",
-                "commander_subname": "Poing-la-Foudre"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une action de Charge, après avoir lancé les dés de Distance de Charge :",
+                    "effect": [
+                        "Les ennemis Chargés avec succès par cette unité deviennent **Paniqués** et **Vulnérables**.",
+                        "Si cette carte cible l’unité de Tormund, celle-ci peut relancer n’importe quels dés de Distance de Charge."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40311",
             "name": "Diplomatie Sauvageonne",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC ennemie est activée :",
-                        "effect": [
-                            "Si cette UNC s’empare d’une zone ce tour-ci, avant ou après d’en résoudre l’effet, ciblez 1 unité Combattante ennemie. Elle gagne 1 pion État. Ciblez ensuite 1 Unité Combattante ennemie. Elle subit D3+1 Blessures."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Mance Rayder",
-                "commander_subname": "Roi d'Au-delà du Mur"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC ennemie est activée :",
+                    "effect": [
+                        "Si cette UNC s’empare d’une zone ce tour-ci, avant ou après d’en résoudre l’effet, ciblez 1 unité Combattante ennemie. Elle gagne 1 pion État. Ciblez ensuite 1 Unité Combattante ennemie. Elle subit D3+1 Blessures."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40312",
             "name": "Manœuvres prévisibles",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début du premier tour ennemi d'un round :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante ennemie et 1 UNC ennemie.",
-                            "Si l’une ou l’autre de ces unités effectue une action ce tour-ci,avant de résoudre celle-ci, 1 Unité Combattante alliée effectue 1 action d’Attaque, de Manœuvre ou de Repli."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Mance Rayder",
-                "commander_subname": "Roi d'Au-delà du Mur"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début du premier tour ennemi d'un round :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie et 1 UNC ennemie.",
+                        "Si l’une ou l’autre de ces unités effectue une action ce tour-ci,avant de résoudre celle-ci, 1 Unité Combattante alliée effectue 1 action d’Attaque, de Manœuvre ou de Repli."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40313",
             "name": "Plan à long terme",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "À la fin de n’importe quel tour, si un adversaire contrôle [LETTER] :",
-                        "effect": [
-                            "Cherchez 1 carte dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
-                        ]
-                    },
-                    {
-                        "trigger": "À la fin du round :",
-                        "effect": [
-                            "Cherchez 1 carte dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
-                        ]
-                    },
-                    {
-                        "trigger": "À la fin de n’importe quel tour :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Mance Rayder",
-                "commander_subname": "Roi d'Au-delà du Mur"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "À la fin de n’importe quel tour, si un adversaire contrôle [LETTER] :",
+                    "effect": [
+                        "Cherchez 1 carte dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
+                    ]
+                },
+                {
+                    "trigger": "À la fin du round :",
+                    "effect": [
+                        "Cherchez 1 carte dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
+                    ]
+                },
+                {
+                    "trigger": "À la fin de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40314",
             "name": "Trophées sanglants",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
-                        "effect": [
-                            "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant. Tous les ennemis avec lesquels elle est engagée deviennent **Paniqués**.",
-                            "Quand un ennemi effectue une action en étant engagé avec cette unité, avant de résoudre celle-ci, cet ennemi devient **Paniqué**.",
-                            "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Clinquefrac",
-                "commander_subname": "le Seigneur des Os"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
+                    "effect": [
+                        "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant. Tous les ennemis avec lesquels elle est engagée deviennent **Paniqués**.",
+                        "Quand un ennemi effectue une action en étant engagé avec cette unité, avant de résoudre celle-ci, cet ennemi devient **Paniqué**.",
+                        "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40315",
             "name": "Trophées d'armes",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
-                        "effect": [
-                            "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant.",
-                            "Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent +1 pour Toucher.",
-                            "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Clinquefrac",
-                "commander_subname": "le Seigneur des Os"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
+                    "effect": [
+                        "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant.",
+                        "Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent +1 pour Toucher.",
+                        "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40316",
             "name": "Trophées d'armures",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
-                        "effect": [
-                            "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant.",
-                            "Tant que cette carte est attachée, cette unité gagne +1 à ses lancers de dés de Défense et les adversaires ne peuvent pas dépenser de pions **Vulnérable** sur cette unité.",
-                            "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Clinquefrac",
-                "commander_subname": "le Seigneur des Os"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée, si le défenseur a subi une Blessure :",
+                    "effect": [
+                        "Attachez cette carte à 1 unité de Cavalerie ou d’Infanterie alliée située à Courte Portée ou moins de l’Attaquant.",
+                        "Tant que cette carte est attachée, cette unité gagne +1 à ses lancers de dés de Défense et les adversaires ne peuvent pas dépenser de pions **Vulnérable** sur cette unité.",
+                        "Une fois par tour, après avoir attaché une carte de Général de Clinquefrac, vous pouvez jouer 1 carte Tactique de Clinquefrac depuis votre main, en ignorant le déclencheur habituel."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40317",
             "name": "Harcèlement",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Cette unité effectue 1 action de Repli.",
-                            "Si cette carte cible l’unité d’Harma, chaque ennemi duquel elle se désengage devient **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma",
-                "commander_subname": "Commandante de l'Avant-Garde"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Cette unité effectue 1 action de Repli.",
+                        "Si cette carte cible l’unité d’Harma, chaque ennemi duquel elle se désengage devient **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40318",
             "name": "Manœuvre trompeuse",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée Charge avec succès :",
-                        "effect": [
-                            "Si elle est entrée en contact avec le Front de l’ennemi, alignez cette unité sur l’un ou l’autre des Flancs de celui-ci.",
-                            "Si elle est entrée en contact avec un Flanc de l’ennemi, alignez cette unité sur le Dos de celui-ci."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma",
-                "commander_subname": "Commandante de l'Avant-Garde"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée Charge avec succès :",
+                    "effect": [
+                        "Si elle est entrée en contact avec le Front de l’ennemi, alignez cette unité sur l’un ou l’autre des Flancs de celui-ci.",
+                        "Si elle est entrée en contact avec un Flanc de l’ennemi, alignez cette unité sur le Dos de celui-ci."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40319",
             "name": "Repositionnement  éclair",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée. Elle se décale de 2’’.",
-                            "Si cette carte cible l’unité d’Harma, elle effectue 1 action de Manœuvre de 3’’ à la place."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma",
-                "commander_subname": "Commandante de l'Avant-Garde"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée. Elle se décale de 2’’.",
+                        "Si cette carte cible l’unité d’Harma, elle effectue 1 action de Manœuvre de 3’’ à la place."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40320",
             "name": "Méthodes cruelles",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante ennemie. Vous pouvez dépenser 1 pion **Paniqué** de cette unité. Si vous le faites, choisissez 2 options :",
-                            "• 1 unité d’Infanterie alliée située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*.",
-                            "• Cet ennemi devient **Vulnérable**.",
-                            "• Cet ennemi devient **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "Le Chassieux",
-                "commander_subname": "Horrible Boucher"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie. Vous pouvez dépenser 1 pion **Paniqué** de cette unité. Si vous le faites, choisissez 2 options :",
+                        "• 1 unité d’Infanterie alliée située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*.",
+                        "• Cet ennemi devient **Vulnérable**.",
+                        "• Cet ennemi devient **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40321",
             "name": "Le prix de l'échec",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Tous les résultats des dés de cette attaque Touchent automatiquement.",
-                            "Une fois l’attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "Le Chassieux",
-                "commander_subname": "Horrible Boucher"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Tous les résultats des dés de cette attaque Touchent automatiquement.",
+                        "Une fois l’attaque résolue, si le défenseur n’a pas été détruit, l’attaquant devient **Paniqué** et **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40322",
             "name": "Décapitations Sanglantes",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Si cette attaque a détruit un rang ennemi, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué**. S'ils étaient déjà **Paniqués**, ils subissent 1 Test de Panique.",
-                            "Si cette attaque a détruit l'unité ennemie, à la place, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué** et subit 1 Test de Panique."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "Le Chassieux",
-                "commander_subname": "Horrible Boucher"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’une unité alliée a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Si cette attaque a détruit un rang ennemi, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué**. S'ils étaient déjà **Paniqués**, ils subissent 1 Test de Panique.",
+                        "Si cette attaque a détruit l'unité ennemie, à la place, chaque ennemi situé à Longue Portée ou moins de l'attaquant devient **Paniqué** et subit 1 Test de Panique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40323",
             "name": "Disparition Amère",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité d'Infanterie ou de Cavalerie alliée est détruite :",
-                        "effect": [
-                            "Avant de retirer cette unité, elle effectue 1 Action d'Attaque de Mêlée utilisant la valeur de dés d'Attaque la plus élevée.",
-                            "Si cette carte cible l'unité de Styr, celle-ci peut relancer n'importe quels dés d'Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr",
-                "commander_subname": "Magnar de Thenn"
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité d'Infanterie ou de Cavalerie alliée est détruite :",
+                    "effect": [
+                        "Avant de retirer cette unité, elle effectue 1 Action d'Attaque de Mêlée utilisant la valeur de dés d'Attaque la plus élevée.",
+                        "Si cette carte cible l'unité de Styr, celle-ci peut relancer n'importe quels dés d'Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40324",
             "name": "Bravade des Thenn",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Panique, avant de lancer les dés :",
-                        "effect": [
-                            "Cette unité peut relancer n’importe quels dés pour ce Test. Si elle se trouve à Courte Portée ou moins de l’unité de Styr, elle réussit ce Test à la place.",
-                            "Si cette carte cible l’unité de Styr, ciblez 1 ennemi avec lequel elle est engagée. Il subit 1 Blessure, +1 pour chaque rang détruit dans cette unité."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr",
-                "commander_subname": "Magnar de Thenn"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Panique, avant de lancer les dés :",
+                    "effect": [
+                        "Cette unité peut relancer n’importe quels dés pour ce Test. Si elle se trouve à Courte Portée ou moins de l’unité de Styr, elle réussit ce Test à la place.",
+                        "Si cette carte cible l’unité de Styr, ciblez 1 ennemi avec lequel elle est engagée. Il subit 1 Blessure, +1 pour chaque rang détruit dans cette unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40325",
             "name": "Vengeance de Styr",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité alliée est détruite, placez 1 pion Ordre sur cette carte.",
-                            "Tant qu’il y a un pion sur cette carte, l’unité à laquelle elle est attachée gagne :",
-                            "Quand cette unité attaque, avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr",
-                "commander_subname": "Magnar de Thenn"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Quand une unité alliée est détruite, placez 1 pion Ordre sur cette carte.",
+                        "Tant qu’il y a un pion sur cette carte, l’unité à laquelle elle est attachée gagne :",
+                        "Quand cette unité attaque, avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40326",
             "name": "Juste une égratignure",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Monstrueuse alliée effectue une action, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Cette unité peut remplacer son action par :",
-                            "*Cette unité se soigne d’un maximum de 3 Blessures.*"
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Monstrueuse alliée effectue une action, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Cette unité peut remplacer son action par :",
+                        "*Cette unité se soigne d’un maximum de 3 Blessures.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40327",
             "name": "Piétinement",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité de Géant alliée effectue une action de Charge, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Cette unité remplace son action de Charge par :",
-                            "*Cette unité pivote, puis se déplace de 10’’ en traversant les autres unités. Si elle termine son Déplacement sur une unité, elle s’arrête à 1’’ de cette dernière. Chaque unité non individuelle qu’elle traverse ou sur laquelle elle aurait dû s’arrêter subit D3 Blessures.*"
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité de Géant alliée effectue une action de Charge, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Cette unité remplace son action de Charge par :",
+                        "*Cette unité pivote, puis se déplace de 10’’ en traversant les autres unités. Si elle termine son Déplacement sur une unité, elle s’arrête à 1’’ de cette dernière. Chaque unité non individuelle qu’elle traverse ou sur laquelle elle aurait dû s’arrêter subit D3 Blessures.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40328",
             "name": "Enragé",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de l’activation d’une Unité Monstrueuse alliée :",
-                        "effect": [
-                            "Cette unité subit 2 Blessures.",
-                            "Jusqu’à la fin du tour, cette unité peut relancer les dés d’Attaque de son choix et les défenseurs deviennent **Paniqués** et **Affaiblis**."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de l’activation d’une Unité Monstrueuse alliée :",
+                    "effect": [
+                        "Cette unité subit 2 Blessures.",
+                        "Jusqu’à la fin du tour, cette unité peut relancer les dés d’Attaque de son choix et les défenseurs deviennent **Paniqués** et **Affaiblis**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40329",
             "name": "Ordres du chef",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de l’activation de Mag le Puissant :",
-                        "effect": [
-                            "Peut remplacer son action par:",
-                            "*1 Unité de Géant alliée située à Longue Portée ou moins effectue 1 action.*"
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Piochez 1 carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de l’activation de Mag le Puissant :",
+                    "effect": [
+                        "Peut remplacer son action par:",
+                        "*1 Unité de Géant alliée située à Longue Portée ou moins effectue 1 action.*"
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Piochez 1 carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40330",
             "name": "Monstres du Nord",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi situé à Courte Portée ou moins d’un Monstre allié est activé :",
-                        "effect": [
-                            "Cet ennemi subit un Test de Panique avec une pénalité de −1 pour chaque Unité Monstrueuse alliée située à Courte Portée ou moins, jusqu’à un maximum de −3. Si elle échoue, elle subit +1 Blessure pour chaque Unité Monstrueuse alliée située à Courte Portée ou moins, jusqu'à un maximum de +3."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi situé à Courte Portée ou moins d’un Monstre allié est activé :",
+                    "effect": [
+                        "Cet ennemi subit un Test de Panique avec une pénalité de −1 pour chaque Unité Monstrueuse alliée située à Courte Portée ou moins, jusqu’à un maximum de −3. Si elle échoue, elle subit +1 Blessure pour chaque Unité Monstrueuse alliée située à Courte Portée ou moins, jusqu'à un maximum de +3."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40331",
             "name": "Dernier de son espèce",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité de Géant alliée est détruite :",
-                        "effect": [
-                            "1 autre Unité de Géant alliée effectue 1 action d’Attaque ou de Charge."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité de Géant alliée est détruite :",
+                    "effect": [
+                        "1 autre Unité de Géant alliée effectue 1 action d’Attaque ou de Charge."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40332",
             "name": "Rugissement de défi",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Monstrueuse alliée réussit un Test de Moral :",
-                        "effect": [
-                            "Ciblez tous les ennemis engagés avec cette unité qui deviennent **Affaiblis**."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Monstrueuse alliée réussit un Test de Moral :",
+                    "effect": [
+                        "Ciblez tous les ennemis engagés avec cette unité qui deviennent **Affaiblis**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40333",
             "name": "Lancer de rocher",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité de Géant alliée effectue une action, avant de résoudre celle-ci :",
-                        "effect": [
-                            "Cette unité remplace son action par l’action à Distance suivante :",
-                            "[ATTACK:LongRanged:Lancer de Rocher:3+1]",
-                            "Si cette attaque génère des Touches, au lieu de lancer les dés de Défense, le défenseur subit D3 Blessures, +1 par rang restant dans l’unité."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité de Géant alliée effectue une action, avant de résoudre celle-ci :",
+                    "effect": [
+                        "Cette unité remplace son action par l’action à Distance suivante :",
+                        "[ATTACK:LongRanged:Lancer de Rocher:3+1]",
+                        "Si cette attaque génère des Touches, au lieu de lancer les dés de Défense, le défenseur subit D3 Blessures, +1 par rang restant dans l’unité."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40334",
             "name": "Débordement",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une Unité Combattante alliée effectue une Percée :",
-                        "effect": [
-                            "Au lieu d’effectuer une Percée, cette unité effectue une action de Charge ou de Marche."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une Unité Combattante alliée effectue une Percée :",
+                    "effect": [
+                        "Au lieu d’effectuer une Percée, cette unité effectue une action de Charge ou de Marche."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40335",
             "name": "Attaque éclair",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début de l’activation d’une Unité Monstrueuse alliée :",
-                        "effect": [
-                            "Cette unité devient **Vulnérable**. Jusqu’à la fin du tour, cette unité gagne +2 [MOVEMENT] et peut relancer les dés de Distance de Charge de son choix."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag le Puissant",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de l’activation d’une Unité Monstrueuse alliée :",
+                    "effect": [
+                        "Cette unité devient **Vulnérable**. Jusqu’à la fin du tour, cette unité gagne +2 [MOVEMENT] et peut relancer les dés de Distance de Charge de son choix."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40336",
             "name": "Endurance au combat",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)* :**",
-                            "**3+:** Peut relancer n’importe quels Échecs.",
-                            "**4+:** **Fracasser**",
-                            "**5+:** **Frappe Critique**",
-                            "**6+:** +2 dés d’Attaque"
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "Le Grand Morse",
-                "commander_subname": "Seigneur de la Grève Glacée"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée et attachez-lui cette carte jusqu’à la fin de la partie. Tant que cette carte est attachée, les Attaques de Mêlée de cette unité gagnent les bonus suivants, en fonction du round de jeu *(cumulatif)* :**",
+                        "**3+:** Peut relancer n’importe quels Échecs.",
+                        "**4+:** **Fracasser**",
+                        "**5+:** **Frappe Critique**",
+                        "**6+:** +2 dés d’Attaque"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40337",
             "name": "Resilience de la Grève Glacée",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue une Attaque, après le lancer des dés Défense :",
-                        "effect": [
-                            "Ciblez le défenseur. Cette unité peut relancer n’importe quels dés de Défense.",
-                            "Si le défenseur est une unité de la Grève Glacée, il peut également relancer n’importe quels dés du Test de Panique de cette attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "Le Grand Morse",
-                "commander_subname": "Seigneur de la Grève Glacée"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue une Attaque, après le lancer des dés Défense :",
+                    "effect": [
+                        "Ciblez le défenseur. Cette unité peut relancer n’importe quels dés de Défense.",
+                        "Si le défenseur est une unité de la Grève Glacée, il peut également relancer n’importe quels dés du Test de Panique de cette attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40338",
             "name": "La force du Morse",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début d'un tour allié :",
-                        "effect": [
-                            "Ciblez 1 unité d'Infanterie ou de Cavalerie alliée. Attachez-lui cette carte jusqu'à la fin de la partie.",
-                            "Tant que cette carte est attachée, quand cette unité est Activée elle soigne 1 de ses Blessures. Si elle est située à Courte Portée ou moins de l'unité du Grand Morse, elle peut également retirer 1 pion État."
-
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "Le Grand Morse",
-                "commander_subname": "Seigneur de la Grève Glacée"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d'un tour allié :",
+                    "effect": [
+                        "Ciblez 1 unité d'Infanterie ou de Cavalerie alliée. Attachez-lui cette carte jusqu'à la fin de la partie.",
+                        "Tant que cette carte est attachée, quand cette unité est Activée elle soigne 1 de ses Blessures. Si elle est située à Courte Portée ou moins de l'unité du Grand Morse, elle peut également retirer 1 pion État."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40339",
             "name": "Invocation de compagnons",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour ennemi :",
-                        "effect": [
-                            "Choisissez soit le Lynx-de-Fumée, soit la Meute de Loups. Si cette unité est sur le champ de bataille, vous pouvez la retirer.",
-                            "Ensuite, si cette unité n’est pas sur le champ de bataille *(grâce à cet effet ou après avoir été détruite)*, redéployez-la entièrement à Courte Portée ou moins de n’importe quel flanc de table. Si cette unité avait déjà été activée ce tour-ci, elle est redéployée activée."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sixpeaux",
-                "commander_subname": "Maître Change-Peau"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour ennemi :",
+                    "effect": [
+                        "Choisissez soit le Lynx-de-Fumée, soit la Meute de Loups. Si cette unité est sur le champ de bataille, vous pouvez la retirer.",
+                        "Ensuite, si cette unité n’est pas sur le champ de bataille *(grâce à cet effet ou après avoir été détruite)*, redéployez-la entièrement à Courte Portée ou moins de n’importe quel flanc de table. Si cette unité avait déjà été activée ce tour-ci, elle est redéployée activée."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         },
         {
             "id": "40340",
             "name": "Gardiens liés",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une attaque sur une unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée :",
-                        "effect": [
-                            "Ciblez 1 autre unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée.",
-                            "Elle effectue une action d’Attaque, de Charge ou de Manœuvre. Si elle attaque ou Charge, elle doit cibler l’attaquant."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sixpeaux",
-                "commander_subname": "Maître Change-Peau"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une attaque sur une unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée :",
+                    "effect": [
+                        "Ciblez 1 autre unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée.",
+                        "Elle effectue une action d’Attaque, de Charge ou de Manœuvre. Si elle attaque ou Charge, elle doit cibler l’attaquant."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         },
         {
             "id": "40341",
             "name": "Ordres liés",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Quand une unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée est activée :",
-                        "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée située à Longue Portée ou moins. Elle effectue 1 action."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sixpeaux",
-                "commander_subname": "Maître Change-Peau"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée est activée :",
+                    "effect": [
+                        "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité Varamyr, Lynx-de-Fumée, ou Meute de Loups alliée située à Longue Portée ou moins. Elle effectue 1 action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Pas d'argent au-delà du Mur",
             "id": "50399",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.5,
-                    "crests": 1,
-                    "text": [
-                        "**Les armées du Peuple Libre ne peuvent inclure ni unités ni attachements neutres.**"
-                    ]
-                }
-            },
-            "type": "faction"
+            "name": "Pas d'argent au-delà du Mur",
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**Les armées du Peuple Libre ne peuvent inclure ni unités ni attachements neutres.**"
+                ]
+            }
         },
         {
-            "name": "Chef des Géants",
             "id": "50301",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021-S02",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "**Vous pouvez choisir Mag le Puissant comme Général**",
-                        "Si vous le faites, son coût en points passe à 5 *(au lieu de 9)*, et pour chaque point supplémentaire d'attachement non dépensé, réduisez le coût de Mag de 1 point."
-                    ]
-                },
-                "back": {
-                    "style": "commander",
-                    "data": {
-                        "cost": 5,
-                        "name": "Mag le Puissant",
-                        "subname": "Mag Mar Tun Doh Weg",
-                        "quote": "« Libre à toi d'y faire des génuflexions, si ça te chante, il en aura rien à foutre. »",
-                        "type": "monster",
-                        "tactics": [
-                            "*Remplacez le paquet Tactique du Peuple Libre par celui de Mag.*"
-                        ]
-                    }
-                }
+            "name": "Chef des Géants",
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "special",
+            "category": "commander",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "**Vous pouvez choisir Mag le Puissant comme Général**",
+                    "Si vous le faites, son coût en points passe à 5 *(au lieu de 9)*, et pour chaque point supplémentaire d'attachement non dépensé, réduisez le coût de Mag de 1 point."
+                ]
             },
-            "type": "commander"
+            "back": {
+                "style": "commander",
+                "data": {
+                    "cost": 5,
+                    "name": "Mag le Puissant",
+                    "title": "Mag Mar Tun Doh Weg",
+                    "quote": "« Libre à toi d'y faire des génuflexions, si ça te chante, il en aura rien à foutre. »",
+                    "type": "monster",
+                    "tactics": [
+                        "*Remplacez le paquet Tactique du Peuple Libre par celui de Mag.*"
+                    ]
+                }
+            }
         },
         {
-            "name": "Varamyr Sixpeaux",
             "id": "50302",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021-S02",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "Vous pouvez choisir Varamyr Sixpeaux comme Général. Si vous le faites, son coût en points passe à 2.",
-                        "Quand vous l'incluez comme Général, vous **devez** également inclure le Lynx-de-Fumée et la Meute de Loups."
-                    ]
-                },
-                "back": {
-                    "style": "commander",
-                    "data": {
-                        "cost": 2,
-                        "name": "Varamyr Sixpeaux",
-                        "subname": "Maître Change-Peau",
-                        "quote": "« Un vicieux petit avorton. » -Tormund Fléau-d'Ogres",
-                        "type": "monster",
-                        "tactics": [
-                            "Ordres Liés",
-                            "Gardiens Liés",
-                            "Invocation de Compagnons"
-                        ]
-                    }
-                }
+            "name": "Varamyr Sixpeaux",
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "special",
+            "category": "commander",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "Vous pouvez choisir Varamyr Sixpeaux comme Général. Si vous le faites, son coût en points passe à 2.",
+                    "Quand vous l'incluez comme Général, vous **devez** également inclure le Lynx-de-Fumée et la Meute de Loups."
+                ]
             },
-            "type": "commander"
+            "back": {
+                "style": "commander",
+                "data": {
+                    "cost": 2,
+                    "name": "Varamyr Sixpeaux",
+                    "title": "Maître Change-Peau",
+                    "quote": "« Un vicieux petit avorton. » -Tormund Fléau-d'Ogres",
+                    "type": "monster",
+                    "tactics": [
+                        "Ordres Liés",
+                        "Gardiens Liés",
+                        "Invocation de Compagnons"
+                    ]
+                }
+            }
         }
     ]
 }

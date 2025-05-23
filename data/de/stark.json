@@ -1,696 +1,682 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "stark",
+        "language": "de"
+    },
+    "unit": [
         {
             "id": "10201",
             "name": "Geschworene Schwerter von Haus Stark",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Schärfe des Winters",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Schärfe des Winters",
-					"Kämpfend untergehen"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Schärfe des Winters",
+                "Kämpfend untergehen"
+            ],
+            "attacks": [
+                {
+                    "name": "Schärfe des Winters",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Geschworenen Schwerter sind die Grundfeste, auf der alle Strategien der Heerführer von Haus Stark errichtet sind. Tapfer, versiert und dem Wolfsbanner treu ergeben, würden die Geschworenen Schwerter eher sterben, als ihre Waffenbrüder im Stich zu lassen. Es mag sein, dass ihre Ausrüstung mit den Waffen und Panzerhemden der reicheren Häuser nicht mithalten kann, doch sie wissen, dass Gold allein keinen Mann zum Krieger macht."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10202",
             "name": "Vorreiter von Haus Stark",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Klinge des Vorreiters",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Taktisches Umstellen",
-                    "Kavallerie",
-                    "Überfall"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Taktisches Umstellen",
+                "Kavallerie",
+                "Überfall"
+            ],
+            "attacks": [
+                {
+                    "name": "Klinge des Vorreiters",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Ein langer Schlagabtausch ist nicht die Spezialität der Vorreiter von Haus Stark. Glücklicherweise landen sie auch selten im Schlachtgetümmel. Was sie auszeichnet, ist ihre uneingeschränkte Mobilität, die durch leichtgerüstete Reiter auf ungepanzerten Rössern mit flinken Hufen und ruhigen Gemütern zustande kommt. Wie alle leichten Truppen sind sie Verwundbar gegen Pfeile. Gleichzeitig betrachten sie Schützen als ihre natürliche Beute und können unverteidigte Fernkämpfer mit Leichtigkeit vernichten."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10203",
             "name": "Berserker von Haus Umber",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Berserkeräxte",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            8,
-                            9
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Inbrunst des Berserkers"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Inbrunst des Berserkers"
+            ],
+            "attacks": [
+                {
+                    "name": "Berserkeräxte",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        8,
+                        9
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Berserker eignen sich für geschickte Flankenmanöver, vernichtende Sturmangriffe und die Verfolgung aufgeriebener Truppen. Ein kluger Feldherr sollte stets darauf achten, dass sie sich nicht blindlings in Gefahr stürzen. Dennoch sind die Berserker kampferprobte Soldaten, die sich zwar gerne dem Blutrausch hingeben, aber nur selten von ihm übermannt werden. Lass deinen Feind den kalten Stahl und den Zorn der Nordmänner spüren!"
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10204",
             "name": "Grauwind",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Zähne & Klauen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Schattenwolf",
-                    "Zähne & Klauen",
-                    "Unterbrechen"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestelltwerden, die Robb Stark enthält.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Schattenwolf",
+                "Zähne & Klauen",
+                "Unterbrechen"
+            ],
+            "attacks": [
+                {
+                    "name": "Zähne & Klauen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestelltwerden, die Robb Stark enthält.*"
+                }
+            ],
             "fluff": {
                 "lore": "Ein gewöhnlicher Wolf mag schon einschüchternd sein, doch der Schattenwolf Grauwind ist wahrhaft furchterregend. Schneller als jeder Mann zu Fuß und beinahe so flink wie ein Reiter, lässt sich Grauwind von seinen Instinkten über das Schlachtfeld leiten. Er ist nicht nur ein beeindruckender Kämpfer, sondern auch von enormem taktischem Wert, da er seine Feinde in nackte Panik versetzt."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10205",
             "name": "Bogenschützen von Haus Stark",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 6,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Pfeilhagel",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            5
-                        ]
-                    },
-                    {
-                        "name": "Kurzschwert",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Pfeilhagel"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Pfeilhagel"
+            ],
+            "attacks": [
+                {
+                    "name": "Pfeilhagel",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        5
+                    ]
+                },
+                {
+                    "name": "Kurzschwert",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Jäger, Holzfäller und Überlebenskünstler des rauen Nordens dienen ihren Lords auch im Verteidigungsfall. Wenn der Schattenwolf in den Krieg zieht, folgen ihm mehr fähige Bogenschützen als den meisten anderen Häusern. Auf kurze Distanz schwindet ihre Effizienz, und im Schlachtgetümmel oder bei heranstürmender Reiterei sind sie äußerst Verwundbar. Doch auf weite Entfernung können die Bogenschützen von Haus Stark den Feind regelrecht zunichtemachen."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10206",
             "name": "Geschworene Schilde von Haus Tully",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Langschwert",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Schildwall",
-                    "Beharrlich Bleiben"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Schildwall",
+                "Beharrlich Bleiben"
+            ],
+            "attacks": [
+                {
+                    "name": "Langschwert",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Mit schweren Rüstungen und starken Verteidigungsmanövern marschieren die Geschworenen Schilde von Haus Tully unter dem Banner der Starks in die Schlacht. Sie vermögen so gut wie jedem Angriff standzuhalten und ihr erstaunliches Durchhaltevermögen hat schon so manche Schlacht entschieden. Wenngleich sie mit der Schnelligkeit offensiver Einheiten nicht mithalten können, so bilden sie doch die Front, hinter der die Stoßtrupps nach ihren Angriffsschlägen Deckung finden."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10207",
             "name": "Sommer",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Zähne & Klauen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Schattenwolf",
-                    "Zähne & Klauen",
-                    "Brans Beschützer"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestelltwerden, die Bran Stark enthält.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Schattenwolf",
+                "Zähne & Klauen",
+                "Brans Beschützer"
+            ],
+            "attacks": [
+                {
+                    "name": "Zähne & Klauen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestelltwerden, die Bran Stark enthält.*"
+                }
+            ],
             "fluff": {
                 "lore": "Alles begann, als Bran Stark in Winterfell von einem Turm stürzte und gelähmt blieb. Während seiner Genesung beschützte Sommer ihn vor einem Meuchelmord und bekräftigte so das Freundschaftsband zwischen den Stark-Kindern und ihren Schattenwölfen. Hodor, ein hünenhafter Mann von enormer Stärke, aber getrübtem Verstand, stellte Bran seine Beine zur Verfügung, damit der junge Stark das Bett verlassen konnte. Mit der Zeit wuchsen die drei wie zu einem Wesen zusammen, einem Geschöpf aus Treue, Ehrgefühl und Klugheit."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10208",
             "name": "Großäxte von Haus Umber",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Zorn des Henkers",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Zorn des Henkers",
-                    "Wilder Angriff"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Zorn des Henkers",
+                "Wilder Angriff"
+            ],
+            "attacks": [
+                {
+                    "name": "Zorn des Henkers",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Großäxte der Umbers verbinden Beweglichkeit und Verteidigung mit einem furchterregenden Waffenarsenal, um eine Einheit mit überragender Flexibilität ins Feld zu führen. Die Großäxte können schwerfälligere Gegner jagen, einem Ansturm standhalten und einen vernichtenden Angriff mit ihren markanten Waffen ausführen. Da sie sich keiner speziellen Kampfweise verschrieben haben, kann ein erfahrener Heerführer sie nach Belieben einsetzen, um Löcher in der Verteidigung zu stopfen oder das schlechte Urteilsvermögen eines Gegners auszunutzen."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10209",
             "name": "Fährtenleser der Pfahlbaumänner",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 6,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Bogen des Pfahlbaumannes",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Klinge des Fährtenlesers",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Verborgene Fallen",
-                    "Befehl: Ziel markieren"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Verborgene Fallen",
+                "Befehl: Ziel markieren"
+            ],
+            "attacks": [
+                {
+                    "name": "Bogen des Pfahlbaumannes",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Klinge des Fährtenlesers",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 7,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Fährtenleser der Pfahlbaumänner sind keine Einheit, die man in der vordersten Schlachtreihe einsetzen würde. Die nur mit leichter Rüstung und Waffen ausgestatteten Fährtenleser hätten in einem Gefecht Mann gegen Mann keine Chance. Was ihnen an Durchschlagskraft fehlt, machen sie mit ihrer Fähigkeit wett, die feindlichen Formationen zu stören und zu verwirren. Sie nutzen ihre Schnelligkeit und Beweglichkeit für tödliche Überraschungsangriffe. So schnell sie auch auftauchen, umso schneller ziehen sie sich wieder aus dem Kampf zurück, um ein direktes Aufeinandertreffen zu vermeiden."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10210",
             "name": "Struppel",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Grausames Zerfleischen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Schattenwolf",
-                    "Grausames Zerfleischen"
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "requirements": [
-                    {
-                        "name": "Charakter",
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Rickon Stark enthält.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Schattenwolf",
+                "Grausames Zerfleischen"
+            ],
+            "attacks": [
+                {
+                    "name": "Grausames Zerfleischen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Rickon Stark enthält.*",
+                    "name": "Charakter"
+                }
+            ],
             "fluff": {
                 "lore": "Von den Schattenwölfen der Stark Geschwister erwies sich Struppel als der wildeste. Er ging sofort auf jeden los, der seinen Herrn, den jungen Rickon Stark, verärgerte. Rickons kindliche Wutausbrüche und Wutanfälle übertrugen sich auf Struppel. Es kam so zu Gefährlichen Situationen, da selbst junge Schattenwölfe eine tödliche Gefahr darstellen. In bewaffneten Konflikten waren der furchterregende Schutzinstinkt und die Wildheit Struppels allerdings genau richtig am Platz. Niemand wagte es, Rickon zu bedrohen, ohne Gefahr zu laufen, sich mit Zähnen und Zorn auseinandersetzen zu müssen."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10212",
             "name": "Eddards Ehrengarde",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Schärfe des Winters",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Schärfe des Winters",
-                    "Kämpfend untergehen"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "name": "Charakter",
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Eddard Stark, Lord von Winterfell, enthält. Eddard muss diese Einheit verstärken.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Schärfe des Winters",
+                "Kämpfend untergehen"
+            ],
+            "attacks": [
+                {
+                    "name": "Schärfe des Winters",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Eddard Stark, Lord von Winterfell, enthält. Eddard muss diese Einheit verstärken.*",
+                    "name": "Charakter"
+                }
+            ],
             "fluff": {
                 "lore": "Lord Eddards Ehrengarde besteht aus ausgewählten Kriegern des Hauses Stark, die sich durch äußerste Redlichkeit hervorgetan haben. Sie sind bereit, jeder Übermacht zu trotzen, und können ebenso gut austeilen, wie sie einstecken können. Jeder von ihnen würde ohne zu zögern sein Leben für seinen Lord geben, zumal Lord Eddard Stark dasselbe für sie tun würde. Auf eines ist Verlass: Die Ehrengarde ist eine überaus fähige Vorhut für jede Stark-Armee."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10213",
             "name": "Ritter von Haus Tully",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Lanze",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kavallerie",
-                    "Lanze",
-                    "Sammelbanner"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Lanze",
+                "Sammelbanner"
+            ],
+            "attacks": [
+                {
+                    "name": "Lanze",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Schwer bewaffnet und schwer gepanzert sind die Ritter von Haus Tully für ihre schnellen vernichtenden Sturmangriffe berüchtigt, die selbst die härtesten feindlichen Linien zerschmettern können. Allein die Gefahr eines solchen unmittelbar bevorstehenden Angriffs zwingt einen feindlichen Heerführer zum Handeln, sodass die Ritter die feindlichen Linien bereits aufreiben können, ohne auch nur wirklich anzugreifen. Ein weiser Feldherr hat für diesen Fall bereits Truppen bereitstehen, um das unausweichlich entstehende Chaos zu seinem Vorteil zu nutzen."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10214",
             "name": "Bärinnen von Haus Mormont",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Entschlossener Schlag",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Schlachtruf",
-                    "Entschlossener Schlag"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Schlachtruf",
+                "Entschlossener Schlag"
+            ],
+            "attacks": [
+                {
+                    "name": "Entschlossener Schlag",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Bärinnen von Haus Mormont gestalten ihre Ausrüstung und Taktiken nach dem Vorbild von Lady Alysane Mormont. Die Bärinnen sind mächtige Frauen, die bekannt für ihre Stärke sind und sich in dickes Leder und Platten kleiden. Als Waffen dienen ihnen zweihändige Keulen, die einen schweren Helm oder einen Brustpanzer mit einem Schlag zertrümmern können. Die Bärinnen sind der Sache der Mormonts blind ergeben. Ihre starke Rüstung und ihre Entschlossenheit erlaubt es ihnen, dort zu bestehen und zu kämpfen, wo andere Einheiten fallen würden."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10215",
             "name": "Speerträger von Haus Karstark",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Speer",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Linie halten!",
-                    "Haltet stand!"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Linie halten!",
+                "Haltet stand!"
+            ],
+            "attacks": [
+                {
+                    "name": "Speer",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Es gibt nur wenige Dinge, die für eine angreifende Kavallerie furchteinflößender sind als eine Reihe erfahrener Speerträger, die in einer geschlossenen Schildformation mit erhobenen Speeren warten, vor allem, wenn diese Soldaten unter dem Banner der weißen Sonne marschieren. Die Speerträger von Haus Karstark sind die perfekte Deckung für die verwundbaren Flanken einer Schlachtreihe, wo die Kavallerie den verheerendsten Schaden anrichten kann. Ausgerüstet mit Ketten und Leder können sie einen gewissen Teil der Treffer abfangen, sind aber nicht als eigenständige Vorhut geeignet."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10216",
             "name": "Schläger von Haus Mormont",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Knüppel & Dornen",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Knüppel & Dornen",
-                    "Unterbrechen"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Knüppel & Dornen",
+                "Unterbrechen"
+            ],
+            "attacks": [
+                {
+                    "name": "Knüppel & Dornen",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Schläger von Haus Mormont machen dem Bären auf ihrem Wappen alle Ehre: Sie schlagen hart zu und gehen kämpfend unter. Ihre leichte Rüstung besteht größtenteils aus gepolstertem Leder sowie leichten Ketten und schränkt ihre Beweglichkeit kaum ein. Viele Gegner fürchten sich, wenn diese Truppen in der Flanke eingesetzt werden. Wenn sie Verluste erleiden, werden die Schläger nur noch gefährlicher, schwören Blut gegen Blut und nehmen ihre Feinde mit in den Tod."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10217",
             "name": "Loyalisten von Haus Karstark",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Flegel",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Wilder Angriff",
-                    "Flegel",
-                    "Entfesselte Wildheit"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Wilder Angriff",
+                "Flegel",
+                "Entfesselte Wildheit"
+            ],
+            "attacks": [
+                {
+                    "name": "Flegel",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Mitglieder des Hauses Karstarkvon Karholt sind die treuesten Vasallenvon Haus Stark. Wenn die Starksdie Loyalisten zu Hilfe rufen, werdenderen Streitkräfte als Erstes aufgestelltund in die Schlacht geschickt. Siesind hauptsächlich mit Flegeln undSchilden bewaffnet. Ihre Hauptwaffezeigt den unerschütterlichen Glaubenan die Sache. Wunden, die einengewöhnlichen Mann niederschlagenwürden, kümmern sie nicht. Sie sindnicht kleinzukriegen und rennen gegenFeinde an, denen sie zahlenmäßigüberlegen sind."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10218",
             "name": "Sumpfteufel der Pfahlbaumänner",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Vergifteter Dreizack",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Schwachstellen entdecken",
-                    "Befehl: Rascher Rückzug",
-                    "Vergifteter Dreizack"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Schwachstellen entdecken",
+                "Befehl: Rascher Rückzug",
+                "Vergifteter Dreizack"
+            ],
+            "attacks": [
+                {
+                    "name": "Vergifteter Dreizack",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Wenn man auf dem Schlachtfeld in einen Hinterhalt gerät, kann man nur hoffen, dass man es nicht mit den Sumpfteufeln der Pfahlbaumänner zu tun hat. Als Vasallen dienen sie der Familie Reet und sind sehr geschickt darin, sich durch sumpfiges Gelände zu bewegen. Ihre leichte Rüstung verhindert, dass sie in ihrem bevorzugten Terrain versinken, während ihre vergifteten Dreizacke ihren Feinden einen qualvollen Tod bereiten. Nach einem Angriff ziehen sich die Sumpfteufel einfach wieder ins Unterholz zurück und lassen nichts als Tote und Sterbende zurück."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10219",
             "name": "Zerstörer von Haus Umber",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Axt des Henkers",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            8
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kavallerie",
-                    "Axt des Henkers"
-                ],
-                "tray": "cavalry",
-                "wounds": 3
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Axt des Henkers"
+            ],
+            "attacks": [
+                {
+                    "name": "Axt des Henkers",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        8
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Haus Umber ist nicht für seine Kavallerie bekannt, doch seine Kavallerie ist genauso verheerend und tödlich wie jede andere in Westeros. Die Zerstörer von Haus Umber sind nicht so schwer gepanzert wie andere Kavallerien, aber sie schlagen mit ungezügelter Wut zu. Wenn sie einen Feind von der Flanke oder von hinten angreifen, bedeutet das für den Feind den raschen, grausamen Tod. Sie sind schnell, effizient und enorm widerstandsfähig, eine perfekte Truppe für den Norden, wo das nackte Überleben davon abhängt, wie schnell und hart man zuschlägt."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10220",
             "name": "Wachen von Winterfell",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Langschwert",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Vorräte von Winterfell",
-                    "Verbesserte Verteidigung (Stark)"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Vorräte von Winterfell",
+                "Verbesserte Verteidigung (Stark)"
+            ],
+            "attacks": [
+                {
+                    "name": "Langschwert",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": ""
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30201",
             "name": "Catelyn Stark",
-            "subname": "Lady von Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Familie, Pflicht, Ehre",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Immer wenn Catelyn Einfluss auf eine Einheit ausübt, lege 1 Zustandsmarker von jener Einheit ab.",
-                            "Solange Catelyn Einfluss auf eine Einheit ausübt, greift jene Einheit mit ihrem höchsten Angriffswürfelwert an."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Lady von Winterfell",
+            "abilities": [
+                {
+                    "name": "Familie, Pflicht, Ehre",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Immer wenn Catelyn Einfluss auf eine Einheit ausübt, lege 1 Zustandsmarker von jener Einheit ab.",
+                        "Solange Catelyn Einfluss auf eine Einheit ausübt, greift jene Einheit mit ihrem höchsten Angriffswürfelwert an."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Weise mir den Weg, den ich gehen muss, und lass mich an den dunklen Orten, die vor mir liegen, nicht stolpern.“"
             }
@@ -698,22 +684,22 @@
         {
             "id": "30202",
             "name": "Sansa Stark",
-            "subname": "Kleiner Vogel",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Worte nachplappern",
-                        "effect": [
-                            "Du darfst ein Mal pro Partie, sobald Sansa aktiviert wird, 1 Taktikkarte aus deinem Ablagestapel zurück auf deine Hand schicken.",
-                            "Immer wenn Sansa eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Schicke 1 Taktikkarte aus deinem Ablagestapel zurück auf deine Hand.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Kleiner Vogel",
+            "abilities": [
+                {
+                    "name": "Worte nachplappern",
+                    "effect": [
+                        "Du darfst ein Mal pro Partie, sobald Sansa aktiviert wird, 1 Taktikkarte aus deinem Ablagestapel zurück auf deine Hand schicken.",
+                        "Immer wenn Sansa eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Schicke 1 Taktikkarte aus deinem Ablagestapel zurück auf deine Hand.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Der Bluthund hat Recht … ich bin nur ein kleiner Vogel und plappere die Worte nach, die man mich gelehrt hat.“"
             }
@@ -721,101 +707,101 @@
         {
             "id": "30204",
             "name": "Eddard Stark",
-            "subname": "Wächter des Nordens",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "cost": 6,
-                "abilities": [
-                    {
-                        "name": "Tapferkeit im Angesicht des Todes",
-                        "effect": [
-                            "Bei Spielbeginn werden 4 Befehlsmarker auf Eddard gelegt.",
-                            "Immer wenn eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind, darfst du 1 Befehlsmarker von Eddard ablegen. Falls du das tust, darf jene Einheit beliebig viele Würfel für diese Probe neu werfen.",
-                            "Immer wenn eine befreundete Einheit eine Panikprobe besteht, darfst du 1 Befehlsmarker von Eddard ablegen. Falls du das tust, heilt jene Einheit 2 Wunden, +1 Wunde für jede ihrer vernichteten Schlachtreihen."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 4,
-                    "name": "order"
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Wächter des Nordens",
+            "abilities": [
+                {
+                    "name": "Tapferkeit im Angesicht des Todes",
+                    "effect": [
+                        "Bei Spielbeginn werden 4 Befehlsmarker auf Eddard gelegt.",
+                        "Immer wenn eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind, darfst du 1 Befehlsmarker von Eddard ablegen. Falls du das tust, darf jene Einheit beliebig viele Würfel für diese Probe neu werfen.",
+                        "Immer wenn eine befreundete Einheit eine Panikprobe besteht, darfst du 1 Befehlsmarker von Eddard ablegen. Falls du das tust, heilt jene Einheit 2 Wunden, +1 Wunde für jede ihrer vernichteten Schlachtreihen."
+                    ]
                 }
-            },
+            ],
+            "cost": 6,
+            "character": true,
             "fluff": {
                 "quote": "„Ihr tragt Euer Ehrgefühl wie eine Rüstung, Stark.“ – Petyr Baelish"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 4
             }
         },
         {
             "id": "30205",
             "name": "Rodrik Cassel",
-            "subname": "Kriegsveteran",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Kampfkompetenz",
-                        "effect": [
-                            "Immer wenn Rodrik die [SWORDS]-Zone beansprucht, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**.",
-                            "Bei Spielbeginn werden 2 Befehlsmarker auf Rodrik gelegt.",
-                            "Immer wenn eine befreundete Einheit einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind, darfst du 1 Befehlsmarker von Rodrik ablegen. Wenn du das tust, darf der Angreifer beliebig viele Angriffswürfel neu werfen."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "stark",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Kriegsveteran",
+            "abilities": [
+                {
+                    "name": "Kampfkompetenz",
+                    "effect": [
+                        "Immer wenn Rodrik die [SWORDS]-Zone beansprucht, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**.",
+                        "Bei Spielbeginn werden 2 Befehlsmarker auf Rodrik gelegt.",
+                        "Immer wenn eine befreundete Einheit einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind, darfst du 1 Befehlsmarker von Rodrik ablegen. Wenn du das tust, darf der Angreifer beliebig viele Angriffswürfel neu werfen."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Es gibt keinen besseren Lehrer als Rodrik.“"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30206",
             "name": "Arya Stark",
-            "subname": "Das Wolfsmädchen",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Tu nie, was sie von dir erwarten",
-                        "effect": [
-                            "Bei Spielbeginn werden 2 Befehlsmarker auf Arya gelegt. Zu Beginn eines feindlichen Zuges darfst du 1 Befehlsmarker von Arya ablegen. Falls du das tust, bestimme 1 befreundete Infanterie-Einheit zum Ziel. Sie führt 1 Manöver- oder Rückzugsaktion durch."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Das Wolfsmädchen",
+            "abilities": [
+                {
+                    "name": "Tu nie, was sie von dir erwarten",
+                    "effect": [
+                        "Bei Spielbeginn werden 2 Befehlsmarker auf Arya gelegt. Zu Beginn eines feindlichen Zuges darfst du 1 Befehlsmarker von Arya ablegen. Falls du das tust, bestimme 1 befreundete Infanterie-Einheit zum Ziel. Sie führt 1 Manöver- oder Rückzugsaktion durch."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Junge, Mädchen. Du hältst ein Schwert in der Hand, das ist entscheidend.“ – Syrio Forel"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30207",
             "name": "Holand Reet",
-            "subname": "Beschützer der Eng",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Listenreicher Jäger",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Holand Einluss auf eine feindliche Einheit ausübt, behandelt sie alle Geländeteile so, als hätten diese das Schlüsselwort Einschränkend.",
-                            "Solange Holand Einluss auf eine feindliche Einheit ausübt, sobald jene Einheit eine Angriffsaktion durchführt, bevor jene Angriffsaktion abgehandelt wird, darfst du diese Karte von jener Einheit entfernen. Falls du das tust, erhält dieser Angriff -1 auf den Trefferwurf."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Beschützer der Eng",
+            "abilities": [
+                {
+                    "name": "Listenreicher Jäger",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Holand Einluss auf eine feindliche Einheit ausübt, behandelt sie alle Geländeteile so, als hätten diese das Schlüsselwort Einschränkend.",
+                        "Solange Holand Einluss auf eine feindliche Einheit ausübt, sobald jene Einheit eine Angriffsaktion durchführt, bevor jene Angriffsaktion abgehandelt wird, darfst du diese Karte von jener Einheit entfernen. Falls du das tust, erhält dieser Angriff -1 auf den Trefferwurf."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Er konnte mit Bäumen sprechen und Worte weben und Burgen verschwinden und wieder auftauchen lassen.“ – Meera Reet"
             }
@@ -823,27 +809,27 @@
         {
             "id": "30208",
             "name": "Eddard Stark",
-            "subname": "Hand des Königs",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Der Preis der Ehre",
-                        "effect": [
-                            "Zu Beginn eines beliebigen Zuges darfst du Eddard vernichten. Falls du das tust, bestimme 1 feindliche zivile Einheit zum Ziel. Jene zivile Einheit kann nicht aktiviert werden und verliert bis zum Ende der Runde alle Fähigkeiten."
-                        ]
-                    },
-                    {
-                        "name": "Befehl der Hand",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Eddard Einfluss auf eine Einheit ausübt, immer wenn jene Einheit von der Fähigkeit einer zivilen Einheit oder einer Taktikzone zum Ziel bestimmt wird, darfst du den Effekt der zivilen Einheit oder Taktikzone aufheben."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Hand des Königs",
+            "abilities": [
+                {
+                    "name": "Der Preis der Ehre",
+                    "effect": [
+                        "Zu Beginn eines beliebigen Zuges darfst du Eddard vernichten. Falls du das tust, bestimme 1 feindliche zivile Einheit zum Ziel. Jene zivile Einheit kann nicht aktiviert werden und verliert bis zum Ende der Runde alle Fähigkeiten."
+                    ]
+                },
+                {
+                    "name": "Befehl der Hand",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Eddard Einfluss auf eine Einheit ausübt, immer wenn jene Einheit von der Fähigkeit einer zivilen Einheit oder einer Taktikzone zum Ziel bestimmt wird, darfst du den Effekt der zivilen Einheit oder Taktikzone aufheben."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Ich bin so wenigen davon in meinem Leben begegnet.Wenn ich sehe, was Ehrlichkeit und Ehre Euchgebracht haben, verstehe ich, wieso.“ – Varys"
             }
@@ -851,25 +837,25 @@
         {
             "id": "30209",
             "name": "Lyanna Mormont",
-            "subname": "Jüngste Bärin",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Rache des Nordens",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Lyanna Einfluss auf eine befreundete Einheit ausübt, erhält sie folgende Effekte basierend auf der Anzahl der vernichteten befreundeten Kampfeinheiten *(die Effekte sind kumulativ)*:",
-                            "**0+**: Die Einheit erhält +1 auf das Ergebnis von Moralproben.",
-                            "**1+**: Die Nahkampfangriffe der Einheit erhalten **Kritischer Treffer**.",
-                            "**2+**: Die Einheit besteht automatisch alle Panikproben.",
-                            "**3+**: Die Einheit darf beliebig viele Angriffswürfel neu werfen."
-                        ]
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Jüngste Bärin",
+            "abilities": [
+                {
+                    "name": "Rache des Nordens",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Lyanna Einfluss auf eine befreundete Einheit ausübt, erhält sie folgende Effekte basierend auf der Anzahl der vernichteten befreundeten Kampfeinheiten *(die Effekte sind kumulativ)*:",
+                        "**0+**: Die Einheit erhält +1 auf das Ergebnis von Moralproben.",
+                        "**1+**: Die Nahkampfangriffe der Einheit erhalten **Kritischer Treffer**.",
+                        "**2+**: Die Einheit besteht automatisch alle Panikproben.",
+                        "**3+**: Die Einheit darf beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Die Bäreninsel anerkennt keinen anderenKönig außer dem König des Nordens,und dessen Name lautet STARK.“"
             }
@@ -877,63 +863,60 @@
         {
             "id": "30210",
             "name": "Robb Stark",
-            "subname": "König des Nordens",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Wolfslist",
-                        "effect": [
-                            "Bestimme nach der Aufstellung 1 befreundete Kampfeinheit zum Ziel. Entferne sie vom Schlachtfeld und platziere sie neben der Spielfläche *(in deiner Reserve)*. Ein Mal pro Partie, sobald Robb die [HORSE]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Stelle die Einheit, die durch Robb in deiner Reserve platziert wurde, vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand auf und lege diese Karte bis zum Ende der Partie an sie an. Solange diese Karte an dieser Einheit anliegt, werden Feinde, gegen die diese Einheit einen erfolgreichen Ansturm in die Flanke oder den Rücken durchführt, **Panisch** und **Verwundbar**.*"
-                        ]
-                    },
-					{
-                        "name": "Schnelligkeit des Wolfes",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                            "Solange Robb Einfluss auf eine befreundete Einheit ausübt, erhält sie +1 [MOVEMENT]."
-                        ]
-                    }
-                ],
-                "requirements": [
-                    {
-                        "text": "*Deine Armee darf nicht Eddard Stark enthalten.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "ncu",
+            "title": "König des Nordens",
+            "abilities": [
+                {
+                    "name": "Wolfslist",
+                    "effect": [
+                        "Bestimme nach der Aufstellung 1 befreundete Kampfeinheit zum Ziel. Entferne sie vom Schlachtfeld und platziere sie neben der Spielfläche *(in deiner Reserve)*. Ein Mal pro Partie, sobald Robb die [HORSE]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Stelle die Einheit, die durch Robb in deiner Reserve platziert wurde, vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand auf und lege diese Karte bis zum Ende der Partie an sie an. Solange diese Karte an dieser Einheit anliegt, werden Feinde, gegen die diese Einheit einen erfolgreichen Ansturm in die Flanke oder den Rücken durchführt, **Panisch** und **Verwundbar**.*"
+                    ]
+                },
+                {
+                    "name": "Schnelligkeit des Wolfes",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Robb Einfluss auf eine befreundete Einheit ausübt, erhält sie +1 [MOVEMENT]."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Deine Armee darf nicht Eddard Stark enthalten.*"
+                }
+            ],
             "fluff": {
                 "quote": "„Ich dachte immer, die Kämpfe wärendas Schwierigste, aber ...“"
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20201",
             "name": "Robb Stark",
-            "subname": "Der Wolfslord",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Taktisches Umstellen",
-                    "Verbesserte Mobilität",
-                    "Rückzug"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40208": "Plötzlicher Rückzug",
-                    "40209": "Überlegene Position",
-                    "40210": "Überfalltaktik"
-                }
-            },
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Der Wolfslord",
+            "abilities": [
+                "Befehl: Taktisches Umstellen",
+                "Verbesserte Mobilität",
+                "Rückzug"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40208",
+                "40209",
+                "40210"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Alle Männer sollten ihr Wort halten, und Könige ganz besonders.“"
             }
@@ -941,27 +924,24 @@
         {
             "id": "20202",
             "name": "Großjon Umber",
-            "subname": "Lord vom letzten Herd",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Überrennen",
-                    "Befehl: Waghalsiger Heldenmut",
-                    "Zugehörigkeit: Haus Umber"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40211": "Berserkertaktik",
-                    "40212": "Peitschenhieb",
-                    "40213": "Letztes Gefecht"
-                }
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Lord vom letzten Herd",
+            "abilities": [
+                "Befehl: Überrennen",
+                "Befehl: Waghalsiger Heldenmut",
+                "Zugehörigkeit: Haus Umber"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40211",
+                "40212",
+                "40213"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Grauwind hat ihm zwei Finger abgebissen und er hat darüber gelacht.“ – Robb Stark"
             }
@@ -969,68 +949,68 @@
         {
             "id": "20203",
             "name": "Streiter von Haus Umber",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Anspornen",
-					"Wütender Ansturm"
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Anspornen",
+                "Wütender Ansturm"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20204",
             "name": "Hauptmann der geschworenen Schwerter",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Kampfausbildung"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Kampfausbildung"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20205",
             "name": "Großjon Umber",
-            "subname": "Grimmiger Vasall",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Bis zum letzten Mann!",
-                    "Wütender Ansturm"
-                ],
-                "character": true,
-                "tokens": {
-                    "number": 2,
-                    "name": "wound"
-                }
-            },
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Grimmiger Vasall",
+            "abilities": [
+                "Bis zum letzten Mann!",
+                "Wütender Ansturm"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Dein Vater hat mir einmal gesagt, der Großjon sei furchtlos wie niemand sonst, dem er je begegnet sei.“ – Catelyn Stark"
+            },
+            "tokens": {
+                "name": "wound",
+                "number": 2
             }
         },
         {
             "id": "20206",
             "name": "Robb Stark",
-            "subname": "Der junge Wolf",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Befehl: Rascher Rückzug",
-                    "Verbesserte Mobilität"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Der junge Wolf",
+            "abilities": [
+                "Befehl: Rascher Rückzug",
+                "Verbesserte Mobilität"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Kein Schwert ist scharf, solange es nicht geschliffen ist.“"
             }
@@ -1038,18 +1018,18 @@
         {
             "id": "20207",
             "name": "Bran und Hodor",
-            "subname": "Schützling und Beschützer",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Hodor!",
-                    "Hodor!!!"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Schützling und Beschützer",
+            "abilities": [
+                "Hodor!",
+                "Hodor!!!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Hodor. Hodor Hodor.“„Du hast recht. Das könnte Gefährlich werden.“"
             }
@@ -1057,27 +1037,24 @@
         {
             "id": "20208",
             "name": "Brynden Tully",
-            "subname": "Der Schwarzfisch",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Zugehörigkeit: Haus Tully",
-                    "Standhaft",
-                    "Haltet stand!"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40214": "Speerwall",
-                    "40215": "Niemals aufgeben",
-                    "40216": "Schlachtruf"
-                }
-            },
+            "faction": "stark",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Der Schwarzfisch",
+            "abilities": [
+                "Zugehörigkeit: Haus Tully",
+                "Standhaft",
+                "Haltet stand!"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40214",
+                "40215",
+                "40216"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Meine erste Regel im Krieg lautet: Erfülle dem Feind niemals seine Wünsche.“"
             }
@@ -1085,19 +1062,19 @@
         {
             "id": "20209",
             "name": "Brynden Tully",
-            "subname": "Unbeugsamer Ritter",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Zugehörigkeit: Haus Tully",
-                    "Verwegenheit",
-                    "Eiserne Entschlossenheit"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Unbeugsamer Ritter",
+            "abilities": [
+                "Zugehörigkeit: Haus Tully",
+                "Verwegenheit",
+                "Eiserne Entschlossenheit"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Macht die Augen auf, und Ihr werdet sehen, dass der Schattenwolf noch immer über unseren Mauern weht.“"
             }
@@ -1105,26 +1082,23 @@
         {
             "id": "20210",
             "name": "Eddard Stark",
-            "subname": "Lord von Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Sammelruf",
-                    "Eiserne Entschlossenheit"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40217": "Starrsinn der Nordmänner",
-                    "40218": "Mit gutem Beispiel voran",
-                    "40219": "Rache für die Gefallenen"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lord von Winterfell",
+            "abilities": [
+                "Sammelruf",
+                "Eiserne Entschlossenheit"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40217",
+                "40218",
+                "40219"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Du musst die Männer kennen, die dir folgen, und sie dich. Verlange von deinen Leuten nicht, für einen Fremden zu sterben.“"
             }
@@ -1132,26 +1106,23 @@
         {
             "id": "20211",
             "name": "Rodrik Cassel",
-            "subname": "Waffenmeister",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Ziel markieren",
-                    "Mut und Kühnheit"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40220": "Kampfgeschick",
-                    "40221": "Militärische Überlegenheit",
-                    "40222": "Vorteil nutzen"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Waffenmeister",
+            "abilities": [
+                "Befehl: Ziel markieren",
+                "Mut und Kühnheit"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40220",
+                "40221",
+                "40222"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Sprechen wir vom Morgen, können wir nichts als sicher betrachten.“"
             }
@@ -1159,31 +1130,31 @@
         {
             "id": "20212",
             "name": "Wächter der Pfahlbaumänner",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Überwachen"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Überwachen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20213",
             "name": "Maegen Mormont",
-            "subname": "Die Bärin",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Kämpfend untergehen",
-                    "Unbeugsam"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Die Bärin",
+            "abilities": [
+                "Kämpfend untergehen",
+                "Unbeugsam"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Maegen ist ein grauer, alter Snark, halsstarrig, undgeduldig und eigensinnig.“ – Jeor Mormont"
             }
@@ -1191,18 +1162,18 @@
         {
             "id": "20214",
             "name": "Brynden Tully",
-            "subname": "Invasor der Vorreiter",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Ziel markieren",
-                    "Die Flanke umgehen"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Invasor der Vorreiter",
+            "abilities": [
+                "Befehl: Ziel markieren",
+                "Die Flanke umgehen"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "icon": "cavalry",
             "fluff": {
                 "quote": "„Niemand kennt die Länder des Nordens so gut wie Brynden.“"
             }
@@ -1210,26 +1181,23 @@
         {
             "id": "20215",
             "name": "Brynden Tully",
-            "subname": "Befehlshaber der Vorreiter",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Bewachen",
-                    "Trügerische Flucht"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40226": "Berittener Angriff",
-                    "40227": "Reitet sie nieder!",
-                    "40228": "Aufstellen"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Befehlshaber der Vorreiter",
+            "abilities": [
+                "Befehl: Bewachen",
+                "Trügerische Flucht"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40226",
+                "40227",
+                "40228"
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "„Es ist nicht gut, sein Schwert zu einer Pflugschar umzuschmieden, wenn man es am nächsten Tag wieder neu schmieden muss.“"
             }
@@ -1237,18 +1205,18 @@
         {
             "id": "20216",
             "name": "Meera Reet",
-            "subname": "Gerissene Fallenstellerin",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Verborgene Fallen",
-                    "Zugehörigkeit: Pfahlbaumänner"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Gerissene Fallenstellerin",
+            "abilities": [
+                "Befehl: Verborgene Fallen",
+                "Zugehörigkeit: Pfahlbaumänner"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Schlammmenschen sind Schleicher. Sie kämpfen nicht wie anständige Männer.“ – Kleiner Walder Frey"
             }
@@ -1256,18 +1224,18 @@
         {
             "id": "20217",
             "name": "Jojen Reet",
-            "subname": "Grünseher",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Zugehörigkeit: Pfahlbaumänner",
-                    "Jojens Grünsicht"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Grünseher",
+            "abilities": [
+                "Zugehörigkeit: Pfahlbaumänner",
+                "Jojens Grünsicht"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Winterfell vertrauen wir Grauwasser an. Herd und Herz und Herbsternte bieten wir Euch, Mylord.“"
             }
@@ -1275,23 +1243,23 @@
         {
             "id": "20218",
             "name": "Syrio Forel",
-            "subname": "Der erste Krieger von Braavos",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Präzision",
-                    "Wassertanz"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Eddard Stark oder Arya, Das Wolfsmädchen, enthält.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Der erste Krieger von Braavos",
+            "abilities": [
+                "Präzision",
+                "Wassertanz"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Eddard Stark oder Arya, Das Wolfsmädchen, enthält.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Meine Worte haben gelogen. Meine Augen und meine Arme haben die Wahrheit herausgeschrien, nur hast du nicht hingesehen.“"
             }
@@ -1299,17 +1267,17 @@
         {
             "id": "20219",
             "name": "Rickon Stark",
-            "subname": "Prinz von Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Wertvoller Gefangener (Rickon Stark)"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Prinz von Winterfell",
+            "abilities": [
+                "Wertvoller Gefangener (Rickon Stark)"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Gehen wir dorthin, wo Struppel ist?“"
             }
@@ -1317,23 +1285,22 @@
         {
             "id": "20220",
             "name": "Osha",
-            "subname": "Speerfrau-Beschützerin",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Gegenschlag",
-                    "Beharrlich Bleiben"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Rickon Stark enthält, und muss seine Einheit verstärken. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Speerfrau-Beschützerin",
+            "abilities": [
+                "Gegenschlag",
+                "Beharrlich Bleiben"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Rickon Stark enthält, und muss seine Einheit verstärken. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Die Riesen habe ich gesehen, von den Kindern nur Geschichten gehört und von den Weißen Wanderern …“"
             }
@@ -1341,77 +1308,74 @@
         {
             "id": "20222",
             "name": "Veteranin von Haus Mormont",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Abgehärtet"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Abgehärtet"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20223",
             "name": "Überlebenskünstler der Pfahlbaumänner",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Trügerische Flucht",
-                    "Wegbereiter"
-                ],
-				"requirements": [
-                    {   
-					    "name": "Begrenzt",
-                        "text": "*Deine Armee darf bis zu 2 Überlebenskünstler der Pfahlbaumänner enthalten.*"
-                    },
-                    {
-                        "text": "*Wenn deine Armee Holand Reet, Lord der Pfahlbaumänner enthält, ignoriere die üblichen Verstärkungsbeschränkungen für Überlebenskünstler der Pfahlbaumänner.*"
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Trügerische Flucht",
+                "Wegbereiter"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Deine Armee darf bis zu 2 Überlebenskünstler der Pfahlbaumänner enthalten.*",
+                    "name": "Begrenzt"
+                },
+                {
+                    "text": "*Wenn deine Armee Holand Reet, Lord der Pfahlbaumänner enthält, ignoriere die üblichen Verstärkungsbeschränkungen für Überlebenskünstler der Pfahlbaumänner.*"
+                }
+            ],
+            "icon": "infantry"
         },
         {
             "id": "20224",
             "name": "Beschützer von Winterfell",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Verwegenheit",
-                    "Beharrlich Bleiben"
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Verwegenheit",
+                "Beharrlich Bleiben"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20225",
             "name": "Holand Reet",
-            "subname": "Lord der Pfahlbaumänner",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Überlegenes Flankieren",
-                    "Zugehörigkeit: Pfahlbaumänner",
-                    "Unterbrechen"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40223": "Fallen der Pfahlbaumänner",
-                    "40224": "Sumpfteufelüberfall",
-                    "40225": "Die unsichtbare Bedrohung"
-                }
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lord der Pfahlbaumänner",
+            "abilities": [
+                "Befehl: Überlegenes Flankieren",
+                "Zugehörigkeit: Pfahlbaumänner",
+                "Unterbrechen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40223",
+                "40224",
+                "40225"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ihr werdet sie nicht bemerken, aber sie sehen Euch. Wer ihnen in die Sümpfe folgt, verirrt sich und kommt niemals wieder heraus.“ – Walder Frey"
             }
@@ -1419,32 +1383,32 @@
         {
             "id": "20226",
             "name": "Hauptmann der Loyalisten",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Wütender Ansturm",
-                    "In der Überzahl"
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Wütender Ansturm",
+                "In der Überzahl"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20227",
             "name": "Rickard Karstark",
-            "subname": "Rachsüchtiger Bannerträger",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Zorn der Starks",
-                    "Unbändige Wut"
-                ],
-                "character": true
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Rachsüchtiger Bannerträger",
+            "abilities": [
+                "Befehl: Zorn der Starks",
+                "Unbändige Wut"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Täusch dich nicht, Robb – sie sind deine Gefolgsleute, nicht deine Freunde.“ – Catelyn Stark"
             }
@@ -1452,27 +1416,24 @@
         {
             "id": "20228",
             "name": "Rickard Karstark",
-            "subname": "Lord von Karholt",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Zugehörigkeit: Haus Karstark",
-                    "In der Überzahl",
-                    "Durch das Gemetzel befeuert"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40229": "Spott",
-                    "40230": "Durst nach Rache",
-                    "40231": "Vergeltung der Karstarks"
-                }
-            },
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Lord von Karholt",
+            "abilities": [
+                "Zugehörigkeit: Haus Karstark",
+                "In der Überzahl",
+                "Durch das Gemetzel befeuert"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40229",
+                "40230",
+                "40231"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Im Krieg tötet man seine Feinde. Hat Euch Euer Vater das nicht beigebracht, Knabe?“"
             }
@@ -1480,26 +1441,23 @@
         {
             "id": "20229",
             "name": "Maegen Mormont",
-            "subname": "Lady der Bäreninsel",
-            "statistics": {
-                "version": "S04",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Zugehörigkeit: Haus Mormont",
-                    "Kampfnarben"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40232": "Hier stehen wir!",
-                    "40233": "Unterstützung von der Bäreninsel",
-                    "40234": "Ausdauernder Angriff"
-                }
-            },
+            "faction": "stark",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Lady der Bäreninsel",
+            "abilities": [
+                "Zugehörigkeit: Haus Mormont",
+                "Kampfnarben"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40232",
+                "40233",
+                "40234"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ob es mir gefällt oder nicht: Meine Schwester marschiert in der Armee deines Bruders, sie und ihre Töchter, in Männerrüstungen.“ – Jeor Mormont"
             }
@@ -1507,22 +1465,22 @@
         {
             "id": "20221",
             "name": "Jaqen H’ghar",
-            "subname": "Geheimnisvoller Gefangener",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ein befreiter Mann, ein geschuldeter Name"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Arya Stark enthält. Verstärke vor der Aufstellung eine feindliche Infanterie-Einheit mit Jaqen. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            },
+            "faction": "stark",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Geheimnisvoller Gefangener",
+            "abilities": [
+                "Ein befreiter Mann, ein geschuldeter Name"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Arya Stark enthält. Verstärke vor der Aufstellung eine feindliche Infanterie-Einheit mit Jaqen. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Sag die Namen, und der Mann wird den Rest erledigen.“"
             }
@@ -1530,724 +1488,710 @@
         {
             "id": "20230",
             "name": "Champion von Winterfell",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Zorn von Winterfell"
-                ],
-				"requirements": [
-                    {   
-					    "name": "Begrenzt",
-                        "text": "*Deine Armee darf bis zu 2 Champion von Winterfell enthalten.*"
-                    },
-                    {
-                        "text": "*Wenn deine Armee Eddard Stark enthält, ist der ersten Champion von Winterfell kostenlos.*"
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Zorn von Winterfell"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Deine Armee darf bis zu 2 Champion von Winterfell enthalten.*",
+                    "name": "Begrenzt"
+                },
+                {
+                    "text": "*Wenn deine Armee Eddard Stark enthält, ist der ersten Champion von Winterfell kostenlos.*"
+                }
+            ],
+            "icon": "infantry"
         }
     ],
     "tactics": [
         {
             "id": "40201",
             "name": "Macht des Winters",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Dieser Angriff erhält **Spaltschlag**.",
-                            "Falls diese Einheit nur noch eine verbleibende Schlachtreihe hat, dürfen beliebig viele Angriffswürfel neu geworfen werden.",
-                            "Falls du [SWORDS] kontrollierst, wird bei diesem Angriff der höchste Angriffswürfelwert verwendet."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff erhält **Spaltschlag**.",
+                        "Falls diese Einheit nur noch eine verbleibende Schlachtreihe hat, dürfen beliebig viele Angriffswürfel neu geworfen werden.",
+                        "Falls du [SWORDS] kontrollierst, wird bei diesem Angriff der höchste Angriffswürfelwert verwendet."
+                    ]
+                }
+            ]
         },
         {
             "id": "40202",
             "name": "Wildheit des Nordens",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Dieser Angriff erhält **Grausam**.",
-                            "Falls diese Einheit nur noch eine verbleibende Schlachtreihe hat und der Verteidiger an seiner Panikprobe scheitert, erleidet er +2 Wunden.",
-                            "Falls du [SWORDS] kontrollierst, wird der Verteidiger **Panisch**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff erhält **Grausam**.",
+                        "Falls diese Einheit nur noch eine verbleibende Schlachtreihe hat und der Verteidiger an seiner Panikprobe scheitert, erleidet er +2 Wunden.",
+                        "Falls du [SWORDS] kontrollierst, wird der Verteidiger **Panisch**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40203",
             "name": "Vernichtender Zusammenstoß",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
-                        "effect": [
-                            "Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, werden **Panisch** und **Verwundbar**.",
-                            "Falls du [HORSE] kontrollierst, darf diese Einheit alle Würfel für die Bewegungsweite des Ansturms neu werfen."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind:",
+                    "effect": [
+                        "Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, werden **Panisch** und **Verwundbar**.",
+                        "Falls du [HORSE] kontrollierst, darf diese Einheit alle Würfel für die Bewegungsweite des Ansturms neu werfen."
+                    ]
+                }
+            ]
         },
         {
             "id": "40204",
             "name": "Der Norden vergisst nicht",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
-                            "Solange auf dieser Karte ein Befehlsmarker liegt, verwendet die angelegte Einheit immer ihren höchsten Angriffswürfelwert und erhält, solange du [SWORDS] kontrollierst, +1 auf den Trefferwurf."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an. Sobald eine befreundete Infanterie- oder Kavallerie-Einheit vernichtet wird, lege 1 Befehlsmarker auf diese Karte.",
+                        "Solange auf dieser Karte ein Befehlsmarker liegt, verwendet die angelegte Einheit immer ihren höchsten Angriffswürfelwert und erhält, solange du [SWORDS] kontrollierst, +1 auf den Trefferwurf."
+                    ]
+                }
+            ]
         },
         {
             "id": "40205",
             "name": "Der Winter naht",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
-                        "effect": [
-                            "Wähle 1 der folgenden Effekte. Falls du [HORSE] kontrollierst, wähle stattdessen 2 Effekte:",
-                            "• Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, können in diesem Zug nicht zum Ziel von befreundeten Befehlen oder Taktikkarten bestimmt werden.",
-                            "• Der Angreifer verwendet seinen höchsten Angriffswürfelwert."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
+                    "effect": [
+                        "Wähle 1 der folgenden Effekte. Falls du [HORSE] kontrollierst, wähle stattdessen 2 Effekte:",
+                        "• Feinde, gegen die diese Einheit einen erfolgreichen Ansturm durchgeführt hat, können in diesem Zug nicht zum Ziel von befreundeten Befehlen oder Taktikkarten bestimmt werden.",
+                        "• Der Angreifer verwendet seinen höchsten Angriffswürfelwert."
+                    ]
+                }
+            ]
         },
         {
             "id": "40206",
             "name": "Rasche Neuaufstellung",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie wird um 2 Zoll verschoben.",
-                            "Falls du [HORSE] kontrollierst, führt jene Einheit stattdessen eine Manöveraktion durch, bei der sie sich 3 Zoll bewegen darf."
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie wird um 2 Zoll verschoben.",
+                        "Falls du [HORSE] kontrollierst, führt jene Einheit stattdessen eine Manöveraktion durch, bei der sie sich 3 Zoll bewegen darf."
+                    ]
+                }
+            ]
         },
         {
             "id": "40207",
             "name": "Angriffsbefehle",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
-                        "effect": [
-                            "Ersetze den Effekt jener Zone durch:",
-                             "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
-                             "*Falls jene zivile Einheit die [SWORDS]-Zone beansprucht hat, darf jene Kampfeinheit stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"                        
-                        ]
-                    }
-                ]
-            }
+            "faction": "stark",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht:",
+                    "effect": [
+                        "Ersetze den Effekt jener Zone durch:",
+                        "*1 befreundete Kampfeinheit führt 1 Nahkampfangriffsaktion durch mit ihrem niedrigsten Angriffswürfelwert.",
+                        "*Falls jene zivile Einheit die [SWORDS]-Zone beansprucht hat, darf jene Kampfeinheit stattdessen 1 Ansturmaktion durchführen mit ihrem niedrigsten Angriffswürfelwert.*"
+                    ]
+                }
+            ]
         },
         {
             "id": "40208",
             "name": "Plötzlicher Rückzug",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Bestimme den Verteidiger zum Ziel.",
-                            "Er führt 1 Rückzugsaktion durch.",
-                            "Falls diese Karte Robb Starks Einheit zum Ziel hat, darf sie alle Würfe für die Bewegungsweite des Rückzugs neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20201",
-                "commander_name": "Robb Stark"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Bestimme den Verteidiger zum Ziel.",
+                        "Er führt 1 Rückzugsaktion durch.",
+                        "Falls diese Karte Robb Starks Einheit zum Ziel hat, darf sie alle Würfe für die Bewegungsweite des Rückzugs neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20201"
             }
         },
         {
             "id": "40209",
             "name": "Überlegene Position",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind eine Ansturmaktion durchführt, bevor jene Aktion abgehandelt wird:",
-                        "effect": [
-                            "Falls jener Feind auf die Front einer Einheit einen Ansturm durchführt, erleidet er bei einem Wurf auf die Bewegungsweite des Ansturms von 3 oder weniger einen ungeordneten Ansturm. Falls er einen ungeordneten Ansturm erleidet, wird er **Verwundbar**.",
-                            "Wenn jener Ansturm Robb Stark's Einheit als Ziel hat, erleidet jener Feind bei einem Wurf auf die Bewegungsweite des Ansturms von 5 oder weniger einen ungeordneten Ansturm. "
-                        ]
-                    }
-                ],
-                "commander_id": "20201",
-                "commander_name": "Robb Stark"
+            "faction": "stark",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind eine Ansturmaktion durchführt, bevor jene Aktion abgehandelt wird:",
+                    "effect": [
+                        "Falls jener Feind auf die Front einer Einheit einen Ansturm durchführt, erleidet er bei einem Wurf auf die Bewegungsweite des Ansturms von 3 oder weniger einen ungeordneten Ansturm. Falls er einen ungeordneten Ansturm erleidet, wird er **Verwundbar**.",
+                        "Wenn jener Ansturm Robb Stark's Einheit als Ziel hat, erleidet jener Feind bei einem Wurf auf die Bewegungsweite des Ansturms von 5 oder weniger einen ungeordneten Ansturm. "
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20201"
             }
         },
         {
             "id": "40210",
             "name": "Überfalltaktik",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Diese Einheit führt 1 Rückzugsaktion durch.",
-                            "Falls diese Karte Robb Starks Einheit zum Ziel hat, wird jeder Feind, aus dessen Nahkampf sie sich löst, **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20201",
-                "commander_name": "Robb Stark"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Diese Einheit führt 1 Rückzugsaktion durch.",
+                        "Falls diese Karte Robb Starks Einheit zum Ziel hat, wird jeder Feind, aus dessen Nahkampf sie sich löst, **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20201"
             }
         },
         {
             "id": "40211",
             "name": "Berserkertaktik",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind:",
-                        "effect": [
-                            "Wähle 1. Diese Einheit erleidet bis zu 3 Wunden, für jede auf diese Weise erleidete Wunden, wähle +1:",
-							"**• Kritische Treffer**",
-							"**• Spaltschlag**",
-							"Dieser Angriff verwendet den höchsten Angriffswürfelwert",
-                            "Dieser Angriff darf beliebig viele Angriffswürfel neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20202",
-                "commander_name": "Großjon Umber"
+            "faction": "stark",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind:",
+                    "effect": [
+                        "Wähle 1. Diese Einheit erleidet bis zu 3 Wunden, für jede auf diese Weise erleidete Wunden, wähle +1:",
+                        "**• Kritische Treffer**",
+                        "**• Spaltschlag**",
+                        "Dieser Angriff verwendet den höchsten Angriffswürfelwert",
+                        "Dieser Angriff darf beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20202"
             }
         },
         {
             "id": "40212",
             "name": "Peitschenhieb",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 Wunden für jede vernichtete Schlachtreihe des Verteidigers. Falls der Verteidiger eine Haus-Umber-Einheit ist, wird der Angreifer zudem **Panisch**."
-                        ]
-                    }
-                ],
-                "commander_id": "20202",
-                "commander_name": "Großjon Umber"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Falls der Verteidiger nicht vernichtet wurde, erleidet der Angreifer 2 Wunden für jede vernichtete Schlachtreihe des Verteidigers. Falls der Verteidiger eine Haus-Umber-Einheit ist, wird der Angreifer zudem **Panisch**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20202"
             }
         },
         {
             "id": "40213",
             "name": "Letztes Gefecht",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit vernichtet wird:",
-                        "effect": [
-                            "Bevor jene Einheit entfernt wird, darf sie 1 Nahkampfangriffsaktion durchführen und dabei ihren höchsten Angriffswürfelwert verwenden. Falls diese Karte eine Haus-Umber-Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel neu werfen."
-                        ]
-                    }
-                ],
-                "commander_id": "20202",
-                "commander_name": "Großjon Umber"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit vernichtet wird:",
+                    "effect": [
+                        "Bevor jene Einheit entfernt wird, darf sie 1 Nahkampfangriffsaktion durchführen und dabei ihren höchsten Angriffswürfelwert verwenden. Falls diese Karte eine Haus-Umber-Einheit zum Ziel hat, darf sie beliebig viele Angriffswürfel neu werfen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20202"
             }
         },
         {
             "id": "40214",
             "name": "Speerwall",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald auf eine befreundete Einheit ein erfolgreicher Ansturm durchgeführt wird, bevor der Angreifer seinen Nahkampfangriff durchführt:",
-                        "effect": [
-                            "Falls jene befreundete Einheit nicht mit einem anderen Feind im Nahkampf ist und der Ansturm auf die Front oder in die Flanke durchgeführt worden ist, führt sie 1 Nahkampfangriffsaktion auf den Angreifer durch, bevor der Angreifer seinen Nahkampfangriff abhandelt."
-                        ]
-                    }
-                ],
-                "commander_id": "20208",
-                "commander_name": "Brynden Tully"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald auf eine befreundete Einheit ein erfolgreicher Ansturm durchgeführt wird, bevor der Angreifer seinen Nahkampfangriff durchführt:",
+                    "effect": [
+                        "Falls jene befreundete Einheit nicht mit einem anderen Feind im Nahkampf ist und der Ansturm auf die Front oder in die Flanke durchgeführt worden ist, führt sie 1 Nahkampfangriffsaktion auf den Angreifer durch, bevor der Angreifer seinen Nahkampfangriff abhandelt."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20208"
             }
         },
         {
             "id": "40215",
             "name": "Niemals aufgeben",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit eine Panikprobe bestanden hat:",
-                        "effect": [
-                            "Alle Feinde, die mit jener Einheit im Nahkampf sind, werden **Verwundbar**. Lege diese Karte an jene Einheit an, bis sie an einer Panikprobe scheitert.",
-                            "Solange diese Karte an dieser Einheit anliegt, immer wenn diese Einheit eine Panikprobe besteht, werden alle Einheiten, die mit jener Einheit im Nahkampf sind, **Verwundbar**. Falls diese Karte an einer Haus-Tully-Einheit anliegt, erhält sie +1 auf das Ergebnis von Panikproben."
-                        ]
-                    }
-                ],
-                "commander_id": "20208",
-                "commander_name": "Brynden Tully"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit eine Panikprobe bestanden hat:",
+                    "effect": [
+                        "Alle Feinde, die mit jener Einheit im Nahkampf sind, werden **Verwundbar**. Lege diese Karte an jene Einheit an, bis sie an einer Panikprobe scheitert.",
+                        "Solange diese Karte an dieser Einheit anliegt, immer wenn diese Einheit eine Panikprobe besteht, werden alle Einheiten, die mit jener Einheit im Nahkampf sind, **Verwundbar**. Falls diese Karte an einer Haus-Tully-Einheit anliegt, erhält sie +1 auf das Ergebnis von Panikproben."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20208"
             }
         },
         {
             "id": "40216",
             "name": "Schlachtruf",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
-                        "effect": [
-                            "Jene Einheit legt 1 Moralprobe ab.",
-                            "Bei Bestehen bestimme 1 Feind innerhalb Langer Reichweite zum Ziel. Er wird **Panisch** oder **Verwundbar**.",
-                            "Falls sie eine Haus Tully Einheit ist, wird er bei Bestehen stattdessen **Panisch** und **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20208",
-                "commander_name": "Brynden Tully"
+            "faction": "stark",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Jene Einheit legt 1 Moralprobe ab.",
+                        "Bei Bestehen bestimme 1 Feind innerhalb Langer Reichweite zum Ziel. Er wird **Panisch** oder **Verwundbar**.",
+                        "Falls sie eine Haus Tully Einheit ist, wird er bei Bestehen stattdessen **Panisch** und **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20208"
             }
         },
         {
             "id": "40217",
             "name": "Starrsinn der Nordmänner",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind:",
-                        "effect": [
-                            "Jene Einheit darf beliebig viele Würfel für diese Probe neu werfen. Falls sie innerhalb Kurzer Reichweite zu Eddard Stark ist, besteht sie diese Probe stattdessen.",
-                            "Falls diese Karte Eddard Starks Einheit zum Ziel hat, bestimme 1 Feind zum Ziel, der mit ihr im Nahkampf ist. Er erleidet 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe dieser Einheit."
-                        ]
-                    }
-                ],
-                "commander_id": "20210",
-                "commander_name": "Eddard Stark"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind:",
+                    "effect": [
+                        "Jene Einheit darf beliebig viele Würfel für diese Probe neu werfen. Falls sie innerhalb Kurzer Reichweite zu Eddard Stark ist, besteht sie diese Probe stattdessen.",
+                        "Falls diese Karte Eddard Starks Einheit zum Ziel hat, bestimme 1 Feind zum Ziel, der mit ihr im Nahkampf ist. Er erleidet 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe dieser Einheit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20210"
             }
         },
         {
             "id": "40218",
             "name": "Mit gutem Beispiel voran",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Nachdem Eddard Starks Einheit einen Angriff abgeschlossen hat:",
-                        "effect": [
-                            "Lege diese Karte bis zum Ende der Runde an 1 andere befreundete Einheit innerhalb Langer Reichweite an.",
-                            "Solange diese Karte an dieser Einheit anliegt, erhält diese Einheit +2 auf das Ergebnis von Moralproben und ihre Nahkampfangriffe erhalten +1 auf den Trefferwurf."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "20210",
-                "commander_name": "Eddard Stark"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem Eddard Starks Einheit einen Angriff abgeschlossen hat:",
+                    "effect": [
+                        "Lege diese Karte bis zum Ende der Runde an 1 andere befreundete Einheit innerhalb Langer Reichweite an.",
+                        "Solange diese Karte an dieser Einheit anliegt, erhält diese Einheit +2 auf das Ergebnis von Moralproben und ihre Nahkampfangriffe erhalten +1 auf den Trefferwurf."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20210"
             }
         },
         {
             "id": "40219",
             "name": "Rache für die Gefallenen",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Bestimme Eddard Starks Einheit zum Ziel.",
-                            "Sie führt 1 Angriffs- oder Ansturmaktion durch. Falls der Verteidiger vernichtet wurde, darf Eddard Starks Einheit beliebig viele Angriffswürfel oder Würfel für die Bewegungsweite des Ansturms neu werfen."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Ziehe 1 Taktikkarte."
-                        ]
-                    }
-                ],
-                "commander_id": "20210",
-                "commander_name": "Eddard Stark"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem ein Feind einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Bestimme Eddard Starks Einheit zum Ziel.",
+                        "Sie führt 1 Angriffs- oder Ansturmaktion durch. Falls der Verteidiger vernichtet wurde, darf Eddard Starks Einheit beliebig viele Angriffswürfel oder Würfel für die Bewegungsweite des Ansturms neu werfen."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Ziehe 1 Taktikkarte."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20210"
             }
         },
         {
             "id": "40220",
             "name": "Kampfgeschick",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
-                        "effect": [
-                            "Du darfst 1 Zustandsmarker von jenem Feind ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
-                        ]
-                    },
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit, die im Nahkampf ist, zum Ziel. Lege 1 Zustandsmarker von jener Einheit ab."
-                        ]
-                    }
-                ],
-                "commander_id": "20211",
-                "commander_name": "Rodrik Cassel"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
+                    "effect": [
+                        "Du darfst 1 Zustandsmarker von jenem Feind ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
+                    ]
+                },
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit, die im Nahkampf ist, zum Ziel. Lege 1 Zustandsmarker von jener Einheit ab."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20211"
             }
         },
         {
             "id": "40221",
             "name": "Militärische Überlegenheit",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Der Angreifer erleidet 1 Treffer für jeden Fehlschlag.",
-                            "Falls der Verteidiger Rodrik Cassels Einheit ist, erleidet dieser Angriff –1 auf den Trefferwurf."
-                        ]
-                    }
-                ],
-                "commander_id": "20211",
-                "commander_name": "Rodrik Cassel"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Der Angreifer erleidet 1 Treffer für jeden Fehlschlag.",
+                        "Falls der Verteidiger Rodrik Cassels Einheit ist, erleidet dieser Angriff –1 auf den Trefferwurf."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20211"
             }
         },
         {
             "id": "40222",
             "name": "Vorteil nutzen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Wähle 1 der folgenden Effekte. Für jeden Zustandsmarker auf dem Verteidiger wähle +1:",
-                            "• Dieser Angriff verwendet seinen höchsten Angriffswürfelwert.",
-                            "• Dieser Angriff erhält +1 auf den Trefferwurf.",
-                            "• Der Verteidiger verliert bis zum Ende des Zuges alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
-                        ]
-                    }
-                ],
-                "commander_id": "20211",
-                "commander_name": "Rodrik Cassel"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Wähle 1 der folgenden Effekte. Für jeden Zustandsmarker auf dem Verteidiger wähle +1:",
+                        "• Dieser Angriff verwendet seinen höchsten Angriffswürfelwert.",
+                        "• Dieser Angriff erhält +1 auf den Trefferwurf.",
+                        "• Der Verteidiger verliert bis zum Ende des Zuges alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20211"
             }
         },
         {
             "id": "40223",
             "name": "Fallen der Pfahlbaumänner",
-            "statistics": {
-                "version": "S05",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Einheit ein Manöver-, Marsch-, oder Rückzugsaktion durchführt, bevor jene Aktion abgehandelt wird:",
-                        "effect": [
-                            "Jener Feind erleidet er –1 [MOVEMENT] in diesem Zug.",
-                            "Falls jener Feind sich in Langer Reichweite zu einer befreundeten Pfahlbaumänner Einheit befindet, wird er so behandelt, als würde er sich durch Gefährliches Gelände bewegen."
-                        ]
-                    }
-                ],
-                "commander_id": "20225",
-                "commander_name": "Holand Reet"
+            "faction": "stark",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Einheit ein Manöver-, Marsch-, oder Rückzugsaktion durchführt, bevor jene Aktion abgehandelt wird:",
+                    "effect": [
+                        "Jener Feind erleidet er –1 [MOVEMENT] in diesem Zug.",
+                        "Falls jener Feind sich in Langer Reichweite zu einer befreundeten Pfahlbaumänner Einheit befindet, wird er so behandelt, als würde er sich durch Gefährliches Gelände bewegen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20225"
             }
         },
         {
             "id": "40224",
             "name": "Sumpfteufelüberfall",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Einheit aktiviert wird:",
-                        "effect": [
-                            "Wähle 1:",
-                            "• Falls jener Feind innerhalb Langer Reichweite zu einer befreundeten Pfahlbaumänner-Einheit ist, wird jener Feind **Geschwächt**.",
-                            "• Bestimme 1 befreundete, nicht aktivierte Pfahlbaumänner-Einheit innerhalb Langer Reichweite zum Ziel. Sie führt 1 Fernkampfangriffsaktion auf jenen Feind durch."
-                        ]
-                    }
-                ],
-                "commander_id": "20225",
-                "commander_name": "Holand Reet"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Einheit aktiviert wird:",
+                    "effect": [
+                        "Wähle 1:",
+                        "• Falls jener Feind innerhalb Langer Reichweite zu einer befreundeten Pfahlbaumänner-Einheit ist, wird jener Feind **Geschwächt**.",
+                        "• Bestimme 1 befreundete, nicht aktivierte Pfahlbaumänner-Einheit innerhalb Langer Reichweite zum Ziel. Sie führt 1 Fernkampfangriffsaktion auf jenen Feind durch."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20225"
             }
         },
         {
             "id": "40225",
             "name": "Die unsichtbare Bedrohung",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit zum Ziel. Falls eine befreundete Kampfeinheit, die nicht im Nahkampf ist, innerhalb Langer Reichweite zu ihr ist, wird jener Feind **Panisch** und muss dann 1 Panikprobe ablegen."
-                        ]
-                    }
-                ],
-                "commander_id": "20225",
-                "commander_name": "Holand Reet"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit zum Ziel. Falls eine befreundete Kampfeinheit, die nicht im Nahkampf ist, innerhalb Langer Reichweite zu ihr ist, wird jener Feind **Panisch** und muss dann 1 Panikprobe ablegen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20225"
             }
         },
         {
             "id": "40226",
             "name": "Berittener Angriff",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Kavallerie-Einheit während ihrer Aktivierung ihre Aktion auswählt, bevor jene Aktion abgehandelt wird:",
-                        "effect": [
-                            "Als ihre Aktion darf sich jene Einheit drehen und dann 1 Marschaktion durchführen, auch wenn sie im Nahkampf ist. Sie darf sich bei diesem Marsch durch Feinde hindurchbewegen. Feinde, aus deren Nahkampf sie sich löst, dürfen sich nicht drehen.",
-                            "Nachdem dieser Marsch abgeschlossen worden ist, erleidet 1 Feind, durch den sie sich hindurchbewegt hat, 1 Wunde, +1 Wunde für jede verbleibende Schlachtreihe jenes Feindes."
-                        ]
-                    }
-                ],
-                "commander_id": "20215",
-                "commander_name": "Brynden Tully"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kavallerie-Einheit während ihrer Aktivierung ihre Aktion auswählt, bevor jene Aktion abgehandelt wird:",
+                    "effect": [
+                        "Als ihre Aktion darf sich jene Einheit drehen und dann 1 Marschaktion durchführen, auch wenn sie im Nahkampf ist. Sie darf sich bei diesem Marsch durch Feinde hindurchbewegen. Feinde, aus deren Nahkampf sie sich löst, dürfen sich nicht drehen.",
+                        "Nachdem dieser Marsch abgeschlossen worden ist, erleidet 1 Feind, durch den sie sich hindurchbewegt hat, 1 Wunde, +1 Wunde für jede verbleibende Schlachtreihe jenes Feindes."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20215"
             }
         },
         {
             "id": "40227",
             "name": "Reitet sie nieder!",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind eine Manöver-, Marsch- oder Rückzugsaktion beendet:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kavallerie-Einheit innerhalb Langer Reichweite zum Ziel, die eine Ansturmaktion gegen jenen Einheit durchführen kann.",
-                            "Sie führt 1 Ansturmaktion gegen jenen Feind durch. Falls sie einen erfolgreichen Ansturm gegen jenen Feind durchführt, führt sie keinen Nahkampfangriff durch, sondern jener Feind wird stattdessen **Panisch** und erleidet 2 Treffer für jede verbleibende Schlachtreihe dieser Einheit."
-                        ]
-                    }
-                ],
-                "commander_id": "20215",
-                "commander_name": "Brynden Tully"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind eine Manöver-, Marsch- oder Rückzugsaktion beendet:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kavallerie-Einheit innerhalb Langer Reichweite zum Ziel, die eine Ansturmaktion gegen jenen Einheit durchführen kann.",
+                        "Sie führt 1 Ansturmaktion gegen jenen Feind durch. Falls sie einen erfolgreichen Ansturm gegen jenen Feind durchführt, führt sie keinen Nahkampfangriff durch, sondern jener Feind wird stattdessen **Panisch** und erleidet 2 Treffer für jede verbleibende Schlachtreihe dieser Einheit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20215"
             }
         },
         {
             "id": "40228",
             "name": "Aufstellen",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Kavallerie-Einheit, die nicht im Nahkampf ist, aktiviert wird:",
-                        "effect": [
-                            "Ein Mal in diesem Zug, falls jene Einheit eine Manöveraktion durchführen würde, darf sie stattdessen 3 Wunden heilen und 1 Zustandsmarker ablegen."
-                        ]
-                    }
-                ],
-                "commander_id": "20215",
-                "commander_name": "Brynden Tully"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Kavallerie-Einheit, die nicht im Nahkampf ist, aktiviert wird:",
+                    "effect": [
+                        "Ein Mal in diesem Zug, falls jene Einheit eine Manöveraktion durchführen würde, darf sie stattdessen 3 Wunden heilen und 1 Zustandsmarker ablegen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20215"
             }
         },
         {
             "id": "40229",
             "name": "Spott",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
-                        "effect": [
-                            "Bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel.",
-                            "Falls jener Feind in diesem Zug einen Angriff oder einen Ansturm auf die zum Ziel bestimmte Einheit durchführen kann und in diesem Zug eine beliebige andere Aktion als einen Angriff oder Ansturm auf die zum Ziel bestimmte Einheit deklariert, wird jener Feind, bevor jene Aktion durchgeführt wird, **Verwundbar** und **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20228",
-                "commander_name": "Rickard Karstark",
-                "commander_subname": "Lord von Karholt"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel.",
+                        "Falls jener Feind in diesem Zug einen Angriff oder einen Ansturm auf die zum Ziel bestimmte Einheit durchführen kann und in diesem Zug eine beliebige andere Aktion als einen Angriff oder Ansturm auf die zum Ziel bestimmte Einheit deklariert, wird jener Feind, bevor jene Aktion durchgeführt wird, **Verwundbar** und **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20228"
             }
         },
         {
             "id": "40230",
             "name": "Durst nach Rache",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn einer beliebigen Runde:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit führt 1 Angriffsaktion durch.",
-                            "Falls diese Karte eine Haus-Karstark-Einheit zum Ziel hat, erhält sie +1 auf den Trefferwurf.",
-                            "Nachdem jener Angriff abgeschlossen worden ist, darf dein Gegner 1 zivile Einheit aktivieren."
-                        ]
-                    }
-                ],
-                "commander_id": "20228",
-                "commander_name": "Rickard Karstark",
-                "commander_subname": "Lord von Karholt"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn einer beliebigen Runde:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Jene Einheit führt 1 Angriffsaktion durch.",
+                        "Falls diese Karte eine Haus-Karstark-Einheit zum Ziel hat, erhält sie +1 auf den Trefferwurf.",
+                        "Nachdem jener Angriff abgeschlossen worden ist, darf dein Gegner 1 zivile Einheit aktivieren."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20228"
             }
         },
         {
             "id": "40231",
             "name": "Vergeltung der Karstarks",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Falls dieser Angriff eine Haus-Karstark-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jenen Feind an. Falls nicht, lege diese Karte bis zum Ende der Runde an jenen Feind an.",
-                            "Solange diese Karte an dieser Einheit anliegt, immer wenn diese Einheit einen Angriff abschließt, wird sie **Verwundbar**. Immer wenn eine Schlachtreihe in dieser Einheit vernichtet wird, heilt 1 Einheit, mit der diese Einheit im Nahkampf ist, 2 Wunden."
-                        ]
-                    }
-                ],
-                "commander_id": "20228",
-                "commander_name": "Rickard Karstark",
-                "commander_subname": "Lord von Karholt"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls dieser Angriff eine Haus-Karstark-Einheit zum Ziel hat, lege diese Karte bis zum Ende der Partie an jenen Feind an. Falls nicht, lege diese Karte bis zum Ende der Runde an jenen Feind an.",
+                        "Solange diese Karte an dieser Einheit anliegt, immer wenn diese Einheit einen Angriff abschließt, wird sie **Verwundbar**. Immer wenn eine Schlachtreihe in dieser Einheit vernichtet wird, heilt 1 Einheit, mit der diese Einheit im Nahkampf ist, 2 Wunden."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20228"
             }
         },
         {
             "id": "40232",
             "name": "Hier stehen wir!",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Lege diese Karte bis zum Ende der Partie an eine befreundete Einheit an.",
-                            "Solange diese Karte an dieser Einheit anliegt, sobald diese Einheit vernichtet werden würde, darfst du diese Karte ablegen.",
-                            "Falls du das tust, wird diese Einheit nicht vernichtet, sondern verbleibt stattdessen mit 1 geheilten Wunde im Spiel."
-                        ]
-                    }
-                ],
-                "commander_id": "20229",
-                "commander_name": "Maegen Mormont",
-                "commander_subname": "Lady der Bäreninsel"
+            "faction": "stark",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Lege diese Karte bis zum Ende der Partie an eine befreundete Einheit an.",
+                        "Solange diese Karte an dieser Einheit anliegt, sobald diese Einheit vernichtet werden würde, darfst du diese Karte ablegen.",
+                        "Falls du das tust, wird diese Einheit nicht vernichtet, sondern verbleibt stattdessen mit 1 geheilten Wunde im Spiel."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20229"
             }
         },
         {
             "id": "40233",
             "name": "Unterstützung von der Bäreninsel",
-            "statistics": {
-                "version": "2021",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines befreundeten Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie erleidet bis zu 3 Wunden.",
-                            "Heile 1+ ebenso viele Wunden von 1 anderen befreundeten Einheit innerhalb Langer Reichweite.",
-                            "Falls diese Karte eine Haus-Mormont-Einheit zum Ziel hat, bestimme zudem 1 Feind, der mit jener befreundeten Einheit im Nahkampf ist, zum Ziel. Er wird **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "20229",
-                "commander_name": "Maegen Mormont",
-                "commander_subname": "Lady der Bäreninsel"
+            "faction": "stark",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines befreundeten Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie erleidet bis zu 3 Wunden.",
+                        "Heile 1+ ebenso viele Wunden von 1 anderen befreundeten Einheit innerhalb Langer Reichweite.",
+                        "Falls diese Karte eine Haus-Mormont-Einheit zum Ziel hat, bestimme zudem 1 Feind, der mit jener befreundeten Einheit im Nahkampf ist, zum Ziel. Er wird **Geschwächt**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20229"
             }
         },
         {
             "id": "40234",
             "name": "Ausdauernder Angriff",
-            "statistics": {
-                "version": "S06",
-                "faction": "stark",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
-                            "Falls diese Karte Maegen Mormonts Einheit zum Ziel hat, wird der Verteidiger **Verwundbar**."
-                        ]
-                    }
-                ],
-                "commander_id": "20229",
-                "commander_name": "Maegen Mormont",
-                "commander_subname": "Lady der Bäreninsel"
+            "faction": "stark",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, verwendet sie ihren höchsten Angriffswürfelwert und darf beliebig viele Angriffswürfel neu werfen.",
+                        "Falls diese Karte Maegen Mormonts Einheit zum Ziel hat, wird der Verteidiger **Verwundbar**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20229"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "Gift der Pfahlbaumänner",
             "id": "50201",
-            "statistics": {
-                "faction": "stark",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "[SKILL:Venom]",
-                        "Immer wenn diese Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird, erleidet sie 1 Wunde, +1 Wunde, falls beliebige Zustandsmarker auf ihr liegen.",
-                        "Falls von dieser Einheit ein Zustandsmarker abgelegt werden würde, darfst du diese Karte ablegen statt jenen Marker."
-                    ]
-                },
-                "back": {
-                    "top": [
-                        "[SKILL:Venom]",
-                        "**GIFT**"
-                    ],
-                    "quote": "„Kein richtiger Mann tötete mit Gift. Gift war die Waffe von Feiglingen, Frauen und Dornischen.“\n-Victarion Graufreud",
-                    "ratio": 0.5,
-                    "crests": 1,
-                    "text": [
-                        "**Lege diese Karte zu Beginnder Partie in die Nähedeines Taktikdecks.**",
-                        "*Diese Karte kommt durch Fähigkeiten und Effekte ins Spiel.*"
-                    ]
-                }
+            "name": "Gift der Pfahlbaumänner",
+            "faction": "stark",
+            "version": "2021",
+            "role": "special",
+            "category": "poison",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "[SKILL:Venom]",
+                    "Immer wenn diese Einheit eine Aktion durchführt, bevor jene Aktion abgehandelt wird, erleidet sie 1 Wunde, +1 Wunde, falls beliebige Zustandsmarker auf ihr liegen.",
+                    "Falls von dieser Einheit ein Zustandsmarker abgelegt werden würde, darfst du diese Karte ablegen statt jenen Marker."
+                ]
             },
-            "type": "poison"
+            "back": {
+                "top": [
+                    "[SKILL:Venom]",
+                    "**GIFT**"
+                ],
+                "quote": "„Kein richtiger Mann tötete mit Gift. Gift war die Waffe von Feiglingen, Frauen und Dornischen.“\n-Victarion Graufreud",
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**Lege diese Karte zu Beginnder Partie in die Nähedeines Taktikdecks.**",
+                    "*Diese Karte kommt durch Fähigkeiten und Effekte ins Spiel.*"
+                ]
+            }
         }
     ]
 }

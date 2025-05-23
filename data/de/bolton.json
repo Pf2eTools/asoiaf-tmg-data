@@ -1,245 +1,244 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "bolton",
+        "language": "de"
+    },
+    "unit": [
         {
             "id": "11001",
             "name": "Halsabschneider von Haus Bolton",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Rücksichtsloser Angriff",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Rücksichtsloser Angriff"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Rücksichtsloser Angriff"
+            ],
+            "attacks": [
+                {
+                    "name": "Rücksichtsloser Angriff",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Sie sind einfach gerüstet und leicht bewaffnet, doch ihr Ruf als eiskalte und grausame Kämpfer eilt den Halsabschneidern von Haus Bolton voraus und lässt selbst gut ausgerüstete Soldaten vor Angst erstarren. Ihre Stachelkeulen machen kurzen Prozess und versetzen durch ihre enorme Brutalität den Feind in Panik. Die Halsabschneider von Haus Bolton lieben es, am Boden liegende Gegner niederzumetzeln oder gefangen zu nehmen, um sie später noch ausgiebiger foltern zu können."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11002",
             "name": "Rohlinge von Haus Bolton",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Morgenstern",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Morgenstern",
-                    "Schrecklicher Anblick"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Morgenstern",
+                "Schrecklicher Anblick"
+            ],
+            "attacks": [
+                {
+                    "name": "Morgenstern",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Rücksichtslosigkeit der Rohlinge von Haus Bolton ist unter ihren Feinden wohlbekannt. Selbst schwere Schilde können kaum Schutz gegen ihre grausamen Morgensterne bieten. Die bestgepanzerte Truppe im Arsenal von Haus Bolton ist dafür bekannt, zuverlässig jedwede Stellung auf dem Schlachtfeld einnehmen und auch halten zu können."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11003",
             "name": "Bogenschützen von Grauenstein",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Gnadenlose Salven",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Kurzschwert",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Gnadenlose Salven"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Gnadenlose Salven"
+            ],
+            "attacks": [
+                {
+                    "name": "Gnadenlose Salven",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Kurzschwert",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Wenn es ein Haus gibt, das nur die grausamsten Methoden wählt, um Angst und Schrecken zu verbreiten, dann ist es das Haus Bolton. Die Bogenschützen von Grauenstein ertränken ihre Feinde genüsslich in Pfeilsalven, ganz egal ob sich die eigenen Kameraden im Kampfgetümmel befinden. So wird zwar der ein oder andere Soldat aus den eigenen Reihen verletzt, aber die lebensverachtende Einstellung, die Haus Bolton an den Tag legt, richtet sich nicht nur gegen seine Feinde."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11004",
             "name": "Mädchen des Bastards von Haus Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Fährtenleserbogen",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Zähne und Klinge",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Stürmende Salve",
-                    "Fährtenleser-Bogen",
-                    "Zähne und Klinge"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Stürmende Salve",
+                "Fährtenleser-Bogen",
+                "Zähne und Klinge"
+            ],
+            "attacks": [
+                {
+                    "name": "Fährtenleserbogen",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Zähne und Klinge",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Mädchen des Bastards können selbst schwer gerüstete Fußsoldaten in die Enge treiben und zur Strecke bringen. Ihre wahre Stärke liegt jedoch im Flankieren von Feinden und im Verfolgen von Flüchtenden. Ihr Fell bietet kaum Schutz vor Schwerthieben, dafür stürzen sie sich gerne auf Feinde, in denen bereits die schmerzhaften Pfeilspitzen ihrer Hundeführer stecken. Ein saftiges Kopfgeld wartet auf den Hundeführer, der einen feindlichen Heerführer gefangen nimmt und ihn an Ramsay Bolton zu dessen „Vergnügen“ ausliefert."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "11005",
             "name": "Gehäutete von Haus Bolton",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Streitflegel",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Kavallerie",
-                    "Streitflegel",
-                    "Bedrohliche Erscheinung"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "bolton",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Streitflegel",
+                "Bedrohliche Erscheinung"
+            ],
+            "attacks": [
+                {
+                    "name": "Streitflegel",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Die sogenannten Gehäuteten gehören zu den mächtigsten Reitern im Krieg der Fünf Könige, selbst unter den Großen Häusern. Mit harten Stahlrüstungen (natürlich geschwärzt), schweren Schilden und Pferdeharnischen können die Gehäuteten nicht nur vernichtende Sturmangriffe vollführen, sondern auch kurzzeitig an der Front ausharren. Ihre unverkennbaren Streitflegel durchdringen fast jede Verteidigung, wenngleich ihre tödlichste Waffe ihr furchterregender Anblick ist."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "11006",
             "name": "Speerträger von Grauenstein",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Spitzer Speer",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Befehl: Speerwall",
-                    "Spitzer Speer"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Befehl: Speerwall",
+                "Spitzer Speer"
+            ],
+            "attacks": [
+                {
+                    "name": "Spitzer Speer",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Die Kampfethik der Speerträger von Haus Bolton lässt sich so zusammenfassen: Möglichst viel Angst und Schrecken in den Reihen des Feindes verbreiten. Dafür sind ihre Helme und Schilde mit dicken Stacheln besetzt. Die Speerträger sind darauf spezialisiert, die Gegner an den schmerzhaftesten Stellen zu treffen, aber nicht zu töten. So gewinnt das Haus Bolton viele Gefangene, mit denen es hinterher machen kann, was es will …"
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "31001",
             "name": "Walda Frey",
-            "subname": "Fette Walda",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Ehrgeiz der Freys",
-                        "effect": [
-                            "Immer wenn Walda die [CROWN]-Zone beansprucht, wird 1 feindliche Kampfeinheit **Geschwächt**.",
-                            "Immer wenn Walda die [LETTER]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*Durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Heerführer-Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.*",
-                            "Immer wenn Walda die [MONEY]-Zone beansprucht, darfst du, anstatt einen Zustandsmarker abzulegen, +1 Wunde heilen."
-                        ]
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Fette Walda",
+            "abilities": [
+                {
+                    "name": "Ehrgeiz der Freys",
+                    "effect": [
+                        "Immer wenn Walda die [CROWN]-Zone beansprucht, wird 1 feindliche Kampfeinheit **Geschwächt**.",
+                        "Immer wenn Walda die [LETTER]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*Durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Heerführer-Taktikkarte und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.*",
+                        "Immer wenn Walda die [MONEY]-Zone beansprucht, darfst du, anstatt einen Zustandsmarker abzulegen, +1 Wunde heilen."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Ich habe meine kleine fette Gemahlin\nseltsam lieb gewonnen.“ – Roose Bolton"
             }
@@ -247,23 +246,23 @@
         {
             "id": "31002",
             "name": "Jeyne Pool",
-            "subname": "Arya Stark, Braut von Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Ergebene Betrügerin",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                            "Solange Jeyne Einfluss auf eine Einheit ausübt, erhält jene Einheit +2 auf das Ergebnis von Moralproben.",
-                            "Ein Mal pro Partie zu Beginn einer beliebigen Runde, darfst du deinem Gegner die Kontrolle über Jeyne bis zum Ende der Runde überlassen.",
-                            "Falls du das tust, wirst du Startspieler. Jeyne kann in jener Runde keinen Einfluss auf Einheiten ausüben."
-                        ]
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Arya Stark, Braut von Bolton",
+            "abilities": [
+                {
+                    "name": "Ergebene Betrügerin",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Jeyne Einfluss auf eine Einheit ausübt, erhält jene Einheit +2 auf das Ergebnis von Moralproben.",
+                        "Ein Mal pro Partie zu Beginn einer beliebigen Runde, darfst du deinem Gegner die Kontrolle über Jeyne bis zum Ende der Runde überlassen.",
+                        "Falls du das tust, wirst du Startspieler. Jeyne kann in jener Runde keinen Einfluss auf Einheiten ausüben."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "„Ich bete darum, Euch eine gute Gemahlin zu sein und Euch starke Söhne zu schenken, die einst Eure Nachfolge antreten.“"
             }
@@ -271,50 +270,50 @@
         {
             "id": "31003",
             "name": "Roose Bolton",
-            "subname": "Kalkulierend und grausam",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Schreckliche Gerüchte",
-                        "effect": [
-                            "Bei Spielbeginn werden 3 Befehlsmarker auf Roose gelegt.",
-                            "Immer wenn Roose aktiviert wird, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**.",
-                            "Immer wenn Roose eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                            "*1 feindliche Kampfeinheit muss 1 Panikprobe ablegen.*"
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Kalkulierend und grausam",
+            "abilities": [
+                {
+                    "name": "Schreckliche Gerüchte",
+                    "effect": [
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Roose gelegt.",
+                        "Immer wenn Roose aktiviert wird, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**.",
+                        "Immer wenn Roose eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
+                        "*1 feindliche Kampfeinheit muss 1 Panikprobe ablegen.*"
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "Man brauchte Bolton nur anzusehen, um zu wissen, dass in seinem kleinen Zeh mehr Grausamkeit steckte, als in allen Freys zusammen."
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "31004",
             "name": "Ramsay Schnee",
-            "subname": "Der Rote Helm",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Sadistisches Gemetzel",
-                        "effect": [
-                            "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                            "Solange Ramsay Einfluss auf eine befreundete Einheit ausübt, erhalten ihre Nahkampfangriffe **Durch das Gemetzel befeuert**:",
-                            "Nachdem diese Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat, heilt diese Einheit 1 Wunde, +1 zusätzliche Wunde für jede vernichtete Schlachtreihe des Verteidigers."
-                        ]
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Der Rote Helm",
+            "abilities": [
+                {
+                    "name": "Sadistisches Gemetzel",
+                    "effect": [
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
+                        "Solange Ramsay Einfluss auf eine befreundete Einheit ausübt, erhalten ihre Nahkampfangriffe **Durch das Gemetzel befeuert**:",
+                        "Nachdem diese Einheit einen Nahkampfangriff abgeschlossen hat, falls der Verteidiger mindestens 1 Wunde erlitten hat, heilt diese Einheit 1 Wunde, +1 zusätzliche Wunde für jede vernichtete Schlachtreihe des Verteidigers."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Macht schmeckt besser, wann man sie mit ein wenig Höflichkeit süßt. Du solltest das lernen, wenn du jemals selbst herrschen willst.“ – Roose Bolton"
             }
@@ -322,56 +321,53 @@
         {
             "id": "31005",
             "name": "Tybald",
-            "subname": "Maester von Grauenstein",
-            "statistics": {
-                "version": "S04",
-                "faction": "bolton",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Hinterlistiger Gesandter",
-                        "effect": [
-                            "Bei Spielbeginn werden 2 Befehlsmarker auf Tybald gelegt.",
-                            "Immer wenn eine feindliche zivile Einheit aktiviert wird, falls Tybald nicht auf der Taktiktafel ist, darfst du 1 Befehlsmarker von Tybald ablegen. Falls du das tust, bestimme 1 Zone auf der Taktiktafel zum Ziel.",
-                            "Falls jene zivile Einheit jene Zone beansprucht, nachdem der Effekt der Zone abgehandelt worden ist, wird 1 feindliche Kampfeinheit **Verwundbar**.",
-                            "Falls jene zivile Einheit jene Zone in diesem Zug nicht beansprucht, beansprucht Tybald am Ende des Zuges jene Zone."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "bolton",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Maester von Grauenstein",
+            "abilities": [
+                {
+                    "name": "Hinterlistiger Gesandter",
+                    "effect": [
+                        "Bei Spielbeginn werden 2 Befehlsmarker auf Tybald gelegt.",
+                        "Immer wenn eine feindliche zivile Einheit aktiviert wird, falls Tybald nicht auf der Taktiktafel ist, darfst du 1 Befehlsmarker von Tybald ablegen. Falls du das tust, bestimme 1 Zone auf der Taktiktafel zum Ziel.",
+                        "Falls jene zivile Einheit jene Zone beansprucht, nachdem der Effekt der Zone abgehandelt worden ist, wird 1 feindliche Kampfeinheit **Verwundbar**.",
+                        "Falls jene zivile Einheit jene Zone in diesem Zug nicht beansprucht, beansprucht Tybald am Ende des Zuges jene Zone."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "„Und ist es nicht schlau, dass die Maester nur einen Namen haben, selbst wenn sie bei ihrer Ankunft in der Zitadelle noch zwei trugen?“ – Barbra Staublin"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "21001",
             "name": "Ramsay Schnee",
-            "subname": "Gehässiger Erbe",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Schrecklicher Anblick",
-                    "Angst Ausnutzen"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41008": "Hautsammlung",
-                    "41009": "Opportunist",
-                    "41010": "Beute in Form von Fleisch"
-                }
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Gehässiger Erbe",
+            "abilities": [
+                "Schrecklicher Anblick",
+                "Angst Ausnutzen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41008",
+                "41009",
+                "41010"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Schnee hat mich mein Weib genannt, bevor sie ihre eigenen Finger gefressen hat, aber ich sage Bolton.“"
             }
@@ -379,26 +375,23 @@
         {
             "id": "21002",
             "name": "Roose Bolton",
-            "subname": "Lord von Grauenstein",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Befehl: Angst verbreiten",
-                    "Bedrohliche Erscheinung"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41011": "Geflüsterte Drohungen",
-                    "41012": "Schwächen erkennen",
-                    "41013": "Geheimnisse von Grauenstein"
-                }
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lord von Grauenstein",
+            "abilities": [
+                "Befehl: Angst verbreiten",
+                "Bedrohliche Erscheinung"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41011",
+                "41012",
+                "41013"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Furcht ist es, was einen Mann in dieser Welt des Verrats und des Betrugs am Leben erhält.“"
             }
@@ -406,18 +399,18 @@
         {
             "id": "21003",
             "name": "Ramsay Schnee",
-            "subname": "Sadist",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Durch das Gemetzel befeuert",
-                    "Bedrohliche Erscheinung"
-                ],
-                "character": true
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Sadist",
+            "abilities": [
+                "Durch das Gemetzel befeuert",
+                "Bedrohliche Erscheinung"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "„... ein nackter Mann hat wenig Geheimnisse, aber ein gehäuteter Mann hat gar keine mehr.“"
             }
@@ -425,22 +418,21 @@
         {
             "id": "21004",
             "name": "Theon Graufreud",
-            "subname": "Stinker",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Befehl: Ein Exempel statuieren"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Darf nur in einer Armee aufgestellt werden, die Ramsay Schnee enthält, und muss seine Einheit verstärken. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Stinker",
+            "abilities": [
+                "Befehl: Ein Exempel statuieren"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Darf nur in einer Armee aufgestellt werden, die Ramsay Schnee enthält, und muss seine Einheit verstärken. Ignoriere die üblichen Verstärkungsbeschränkungen.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Ich bin nicht er, bin nicht der Abtrünnige, er ist in Winterfell gestorben. Mein Name ist Stinker.“"
             }
@@ -448,48 +440,48 @@
         {
             "id": "21005",
             "name": "Hauptmann von Grauenstein",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Angst ausnutzen"
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Angst ausnutzen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "21006",
             "name": "Schinder von Haus Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Angst verbreiten"
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Befehl: Angst verbreiten"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "21007",
             "name": "Ben Knochen",
-            "subname": "Hundeführer",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Fass!"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Senke die Kosten dieser Verstärkung um 1, falls sie eine Mädchen-des-Bastards-Einheit verstärkt.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Hundeführer",
+            "abilities": [
+                "Fass!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Senke die Kosten dieser Verstärkung um 1, falls sie eine Mädchen-des-Bastards-Einheit verstärkt.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Wenn sie ihm eine gute Jagd liefern, benennt\ner vielleicht die Hündinnen in seinem nächsten\nWurf nach ihnen.“ – Theon Graufreud"
             }
@@ -497,22 +489,22 @@
         {
             "id": "21008",
             "name": "Damon Tanz-für-mich",
-            "subname": "Bursche des Bastards",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Mut und Kühnheit"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bursche des Bastards",
+            "abilities": [
+                "Mut und Kühnheit"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Lord Ramsay hat vor, dir die Lippen abzuschneiden, wenn das alles hier vorbei ist.“"
             }
@@ -520,22 +512,22 @@
         {
             "id": "21009",
             "name": "Häuter",
-            "subname": "Bursche des Bastards",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Entschlossenheit schwächen"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bursche des Bastards",
+            "abilities": [
+                "Entschlossenheit schwächen"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Kein Schmerz, den Theon je erlebt hatte, kam auch nur in die Nähe dessen, was Häuter mit seinem kleinen Flensmesser anrichten konnte."
             }
@@ -543,22 +535,22 @@
         {
             "id": "21010",
             "name": "Grunzer",
-            "subname": "Bursche des Bastards",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Widerstandskraft"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bursche des Bastards",
+            "abilities": [
+                "Befehl: Widerstandskraft"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Grunzer hatte keine Zunge, und der Saure Alyn hatte keinen Verstand, sagte Lord Ramsay immer."
             }
@@ -566,22 +558,22 @@
         {
             "id": "21011",
             "name": "Saurer Alyn",
-            "subname": "Bursche des Bastards",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Brutaler Sadismus"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
-                    }
-                ]
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bursche des Bastards",
+            "abilities": [
+                "Brutaler Sadismus"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Die erste Bursche-des-Bastards-Verstärkung, die du deiner Armee hinzufügst, ist kostenlos.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "Grunzer hatte keine Zunge, und der Saure Alyn hatte keinen Verstand, sagte Lord Ramsay immer."
             }
@@ -589,18 +581,18 @@
         {
             "id": "21012",
             "name": "Stahlbein Walton",
-            "subname": "Erbarmungsloser Soldat",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Befehl: Bewachen",
-                    "Rooses Vasall"
-                ],
-                "character": true
-            },
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Erbarmungsloser Soldat",
+            "abilities": [
+                "Befehl: Bewachen",
+                "Rooses Vasall"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "… er war unverblümt, schroff und brutal, im Herzen ein einfacher Soldat."
             }
@@ -608,27 +600,24 @@
         {
             "id": "21013",
             "name": "Stahlbein Walton",
-            "subname": "Hauptmann der Wache",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "type": "infantry",
-                "cost": "H",
-                "abilities": [
-                    "Spaltschlag",
-                    "Eiserne Entschlossenheit",
-                    "Geteilte Angst"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "41014": "Der Preis der Angst",
-                    "41015": "Angriffsrausch",
-                    "41016": "Spott"
-                }
-            },
+            "faction": "bolton",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Hauptmann der Wache",
+            "abilities": [
+                "Spaltschlag",
+                "Eiserne Entschlossenheit",
+                "Geteilte Angst"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41014",
+                "41015",
+                "41016"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "„Stahlbein nennt man ihn. Ein Soldat von eiserner Treue.“ – Roose Bolton"
             }
@@ -638,319 +627,302 @@
         {
             "id": "41001",
             "name": "Blutige Enthauptungen",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch**. Falls einer dieser Feinde bereits **Panisch** ist, muss er stattdessen 1 Panikprobe ablegen:",
-                            "Falls dieser Angriff eine feindliche Kampfeinheit vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch** und muss eine Panikprobe ablegen."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch**. Falls einer dieser Feinde bereits **Panisch** ist, muss er stattdessen 1 Panikprobe ablegen:",
+                        "Falls dieser Angriff eine feindliche Kampfeinheit vernichtet hat, wird jeder Feind innerhalb Langer Reichweite **Panisch** und muss eine Panikprobe ablegen."
+                    ]
+                }
+            ]
         },
         {
             "id": "41002",
             "name": "Harte Strafen",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an.",
-                            "Solange diese Karte an jener Einheit anliegt, wird bei ihren Nahkampfangriffen immer der höchste Angriffswürfelwert verwendet und die Angriffe erhalten **Spaltschlag**. Immer wenn diese Einheit an einer Panikprobe scheitert, erleidet sie +1 Wunde."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit zum Ziel und lege diese Karte bis zum Ende der Partie an sie an.",
+                        "Solange diese Karte an jener Einheit anliegt, wird bei ihren Nahkampfangriffen immer der höchste Angriffswürfelwert verwendet und die Angriffe erhalten **Spaltschlag**. Immer wenn diese Einheit an einer Panikprobe scheitert, erleidet sie +1 Wunde."
+                    ]
+                }
+            ]
         },
         {
             "id": "41003",
             "name": "Unsere Klingen sind scharf",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Dieser Angriff erhält **Präzision**.",
-                            "Falls der Verteidiger **Panisch** ist, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Dieser Angriff erhält **Präzision**.",
+                        "Falls der Verteidiger **Panisch** ist, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden."
+                    ]
+                }
+            ]
         },
         {
             "id": "41004",
             "name": "Sadistische Spiele",
-            "statistics": {
-                "version": "S06",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines feindlichen Zuges:",
-                        "effect": [
-                            "Dein Gegner wählt 1 der folgenden Effekte *(du bestimmst die Ziele erst, nachdem er den Effekt gewählt hat)*:",
-                            "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Panisch**.",
-                            "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Geschwächt**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines feindlichen Zuges:",
+                    "effect": [
+                        "Dein Gegner wählt 1 der folgenden Effekte *(du bestimmst die Ziele erst, nachdem er den Effekt gewählt hat)*:",
+                        "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Panisch**.",
+                        "• Bestimme bis zu 2 feindliche Kampfeinheiten zum Ziel. Sie werden **Geschwächt**."
+                    ]
+                }
+            ]
         },
         {
             "id": "41005",
             "name": "Grausame Methoden",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Bestimme 1 feindliche Kampfeinheit zum Ziel. Du darfst 1 **Panisch**-Marker von jener Einheit ausgeben. Falls du das tust, wähle 2 der folgenden Effekte:",
-                            "• 1 befreundete Infanterie-Einheit innerhalb Langer Reichweite heilt 2 Wunden. *(Dieser Effekt darf mehrfach gewählt werden.)*",
-                            "• Jener Feind wird **Verwundbar**.",
-                            "• Jener Feind wird **Geschwächt**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Bestimme 1 feindliche Kampfeinheit zum Ziel. Du darfst 1 **Panisch**-Marker von jener Einheit ausgeben. Falls du das tust, wähle 2 der folgenden Effekte:",
+                        "• 1 befreundete Infanterie-Einheit innerhalb Langer Reichweite heilt 2 Wunden. *(Dieser Effekt darf mehrfach gewählt werden.)*",
+                        "• Jener Feind wird **Verwundbar**.",
+                        "• Jener Feind wird **Geschwächt**."
+                    ]
+                }
+            ]
         },
         {
             "id": "41006",
             "name": "Ein gehäuteter Mann hat keine Geheimnisse",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald eine Einheit zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
-                        "effect": [
-                            "Du darfst 1 Zustandsmarker von einem Feind innerhalb Langer Reichweite zu jener Einheit ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine Einheit zum Ziel einer Fähigkeit oder Taktikkarte bestimmt wird:",
+                    "effect": [
+                        "Du darfst 1 Zustandsmarker von einem Feind innerhalb Langer Reichweite zu jener Einheit ausgeben. Falls du das tust, hebe den Effekt jener Fähigkeit oder Taktikkarte auf."
+                    ]
+                }
+            ]
         },
         {
             "id": "41007",
             "name": "Furcht hält einen Mann am Leben",
-            "statistics": {
-                "version": "S05",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
-                        "effect": [
-                            "Bestimme eine beliebige Anzahl befreundeter Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten.",
-                            "War jener Feind in Kurzer Reichweiter zu deiner Heerführer-Einheit, heile +1 Wunde."
-                        ]
-                    }
-                ]
-            }
+            "faction": "bolton",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald ein Feind an einer Panikprobe scheitert:",
+                    "effect": [
+                        "Bestimme eine beliebige Anzahl befreundeter Einheiten innerhalb Langer Reichweite zum Ziel. Für jede Wunde, die von dieser Panikprobe verursacht wird, heile ebenso viele Wunden *(insgesamt)* von diesen Einheiten.",
+                        "War jener Feind in Kurzer Reichweiter zu deiner Heerführer-Einheit, heile +1 Wunde."
+                    ]
+                }
+            ]
         },
         {
             "id": "41008",
             "name": "Hautsammlung",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Zu Beginn eines beliebigen Zuges:",
-                        "effect": [
-                            "Lege diese Karte bis zum Ende der Partie an eine befreundete Infanterie-Einheit an.",
-                            "Immer wenn diese Einheit eine feindliche Schlachtreihe vernichtet, lege 1 Befehlsmarker auf diese Karte.",
-                            "Feinde, die mit dieser Einheit im Nahkampf sind, erleiden –1 auf das Ergebnis von Panikproben für jeden Befehlsmarker auf dieser Karte, bis zu –2."
-                        ]
-                    }
-                ],
-                "commander_id": "21001",
-                "commander_name": "Ramsay Schnee",
-                "commander_subname": "Gehässiger Erbe"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Zu Beginn eines beliebigen Zuges:",
+                    "effect": [
+                        "Lege diese Karte bis zum Ende der Partie an eine befreundete Infanterie-Einheit an.",
+                        "Immer wenn diese Einheit eine feindliche Schlachtreihe vernichtet, lege 1 Befehlsmarker auf diese Karte.",
+                        "Feinde, die mit dieser Einheit im Nahkampf sind, erleiden –1 auf das Ergebnis von Panikproben für jeden Befehlsmarker auf dieser Karte, bis zu –2."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
             }
         },
         {
             "id": "41009",
             "name": "Opportunist",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
-                        "effect": [
-                            "Falls der Verteidiger in dieser Runde noch nicht aktiviert worden ist, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden und er erhält **Präzision** oder **Grausam**. Falls der Angreifer Ramsay Schnees Einheit ist, erhält der Angriff stattdessen beides."
-                        ]
-                    }
-                ],
-                "commander_id": "21001",
-                "commander_name": "Ramsay Schnee",
-                "commander_subname": "Gehässiger Erbe"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit einen Angriff durchführt, bevor die Angriffswürfel geworfen werden:",
+                    "effect": [
+                        "Falls der Verteidiger in dieser Runde noch nicht aktiviert worden ist, dürfen bei diesem Angriff beliebig viele Angriffswürfel neu geworfen werden und er erhält **Präzision** oder **Grausam**. Falls der Angreifer Ramsay Schnees Einheit ist, erhält der Angriff stattdessen beides."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
             }
         },
         {
             "id": "41010",
             "name": "Beute in Form von Fleisch",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
-                        "effect": [
-                            "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, heilt 1 befreundete Einheit innerhalb Kurzer Reichweite zum Angreifer 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe des Verteidigers."
-                        ]
-                    }
-                ],
-                "commander_id": "21001",
-                "commander_name": "Ramsay Schnee",
-                "commander_subname": "Gehässiger Erbe"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat:",
+                    "effect": [
+                        "Falls dieser Angriff eine feindliche Schlachtreihe vernichtet hat, heilt 1 befreundete Einheit innerhalb Kurzer Reichweite zum Angreifer 1 Wunde, +1 Wunde für jede vernichtete Schlachtreihe des Verteidigers."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
             }
         },
         {
             "id": "41011",
             "name": "Geflüsterte Drohungen",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
-                        "effect": [
-                            "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**. Bestimme dann 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**."
-                        ]
-                    }
-                ],
-                "commander_id": "21002",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Lord von Grauenstein"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche zivile Einheit aktiviert wird:",
+                    "effect": [
+                        "Falls jene zivile Einheit in diesem Zug eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**. Bestimme dann 1 feindliche Kampfeinheit zum Ziel. Sie wird **Panisch**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
             }
         },
         {
             "id": "41012",
             "name": "Schwächen erkennen",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine feindliche Kampfeinheit eine Aktion abgeschlossen hat:",
-                        "effect": [
-                            "Jener Feind wird **Verwundbar** und **Panisch**.",
-                            "Lege diese Karte bis zum Ende der Runde an jenen Feind an. Solange diese Karte an diesem Feind anliegt, solange Roose Boltons Einheit ihn angreift, verliert er alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
-                        ]
-                    }
-                ],
-                "commander_id": "21002",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Lord von Grauenstein"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine feindliche Kampfeinheit eine Aktion abgeschlossen hat:",
+                    "effect": [
+                        "Jener Feind wird **Verwundbar** und **Panisch**.",
+                        "Lege diese Karte bis zum Ende der Runde an jenen Feind an. Solange diese Karte an diesem Feind anliegt, solange Roose Boltons Einheit ihn angreift, verliert er alle Fähigkeiten und kann nicht zum Ziel von befreundeten Taktikkarten bestimmt werden."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
             }
         },
         {
             "id": "41013",
             "name": "Geheimnisse von Grauenstein",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls sie eine feindliche Schlachtreihe vernichtet hat:",
-                        "effect": [
-                            "Lege diese Karte an eine befreundete Infanterie-Einheit innerhalb Kurzer Reichweite zum Angreifer an. Alle Feinde, die mit dieser Einheit im Nahkampf sind, werden **Panisch**.",
-                            "Solange diese Karte an dieser Einheit anliegt, immer wenn eine feindliche Einheit innerhalb Kurzer Reichweite aktiviert wird, wird jener Feind **Panisch**."
-                        ]
-                    }
-                ],
-                "commander_id": "21002",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Lord von Grauenstein"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Nachdem eine befreundete Einheit einen Nahkampfangriff abgeschlossen hat, falls sie eine feindliche Schlachtreihe vernichtet hat:",
+                    "effect": [
+                        "Lege diese Karte an eine befreundete Infanterie-Einheit innerhalb Kurzer Reichweite zum Angreifer an. Alle Feinde, die mit dieser Einheit im Nahkampf sind, werden **Panisch**.",
+                        "Solange diese Karte an dieser Einheit anliegt, immer wenn eine feindliche Einheit innerhalb Kurzer Reichweite aktiviert wird, wird jener Feind **Panisch**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
             }
         },
         {
             "id": "41014",
             "name": "Der Preis der Angst",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Einheit an einer Panikprobe scheitert:",
-                        "effect": [
-                            "Bestimme 1 befreundete Kampfeinheit innerhalb Langer Reichweite zu jenem Feind zum Ziel. Sie darf 1 Manöveraktion durchführen."
-                        ]
-                    }
-                ],
-                "commander_id": "21013",
-                "commander_name": "Stahlbein Walton",
-                "commander_subname": "Hauptmann der Wache"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Einheit an einer Panikprobe scheitert:",
+                    "effect": [
+                        "Bestimme 1 befreundete Kampfeinheit innerhalb Langer Reichweite zu jenem Feind zum Ziel. Sie darf 1 Manöveraktion durchführen."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
             }
         },
         {
             "id": "41015",
             "name": "Angriffsrausch",
-            "statistics": {
-                "version": "2021",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
-                        "effect": [
-                            "Die Würfe für die Bewegungsweite des Ansturms dieser Einheit zählen automatisch, als hättest du eine 6 gewürfelt, und ihre Nahkampfangriffe erhalten **Kritischer Treffer**.",
-                            "Nachdem dieser Angriff abgeschlossen worden ist, wird der Angreifer **Verwundbar**, es sei denn, der Angreifer ist Stahlbein Waltons Einheit."
-                        ]
-                    }
-                ],
-                "commander_id": "21013",
-                "commander_name": "Stahlbein Walton",
-                "commander_subname": "Hauptmann der Wache"
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine befreundete Einheit eine Ansturmaktion durchführt, bevor die Würfel für die Bewegungsweite des Ansturms geworfen werden:",
+                    "effect": [
+                        "Die Würfe für die Bewegungsweite des Ansturms dieser Einheit zählen automatisch, als hättest du eine 6 gewürfelt, und ihre Nahkampfangriffe erhalten **Kritischer Treffer**.",
+                        "Nachdem dieser Angriff abgeschlossen worden ist, wird der Angreifer **Verwundbar**, es sei denn, der Angreifer ist Stahlbein Waltons Einheit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
             }
         },
         {
             "id": "41016",
             "name": "Spott",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "bolton",
-                "text": [
-                    {
-                        "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
-                        "effect": [
-                            "Bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel.",
-                            "Falls jener Feind in diesem Zug einen Angriff oder einen Ansturm auf die zum Ziel bestimmte Einheit durchführen kann und in diesem Zug eine beliebige andere Aktion als einen Angriff oder Ansturm auf die zum Ziel bestimmte Einheit deklariert, wird jener Feind, bevor jene Aktion durchgeführt wird, **Verwundbar** und **Geschwächt**."
-                        ]
-                    }
-                ],
-                "commander_id": "21013",
-                "commander_name": "Stahlbein Walton",
-                "commander_subname": "Hauptmann der Wache"
-            }
-        }
-    ],  
-	"specials": [
-        {
-            "name": "Gefangener von Grauenstein",
-            "id": "51002",
-            "statistics": {
-                "faction": "bolton",
-                "version": "S06",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 2,
-                    "text": [
-                        "Zu Beginn des Spiels lege 3 Befehlsmarker auf diese Karte. Immer wenn eine gegnerische Schlachtreihe zerstört wird, lege 1 Befehlsmarker auf diese Karte. Es dürfen bis zu 3 Befehlsmarker auf dieser Karte liegen.",
-                        "Zu Beginn eines beliebigen Zuges, darfst du 3 Befehlsmarker von dieser Karte entfernen, falls du das tust, wähle eine gegnerische Kampfeinheit zum Ziel, sie wird **Panisch**."
+            "faction": "bolton",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Sobald eine feindliche Kampfeinheit aktiviert wird:",
+                    "effect": [
+                        "Bestimme 1 befreundete Einheit innerhalb Langer Reichweite zum Ziel.",
+                        "Falls jener Feind in diesem Zug einen Angriff oder einen Ansturm auf die zum Ziel bestimmte Einheit durchführen kann und in diesem Zug eine beliebige andere Aktion als einen Angriff oder Ansturm auf die zum Ziel bestimmte Einheit deklariert, wird jener Feind, bevor jene Aktion durchgeführt wird, **Verwundbar** und **Geschwächt**."
                     ]
                 }
-            },
-            "type": "faction"
+            ],
+            "commander": {
+                "id": "21013"
+            }
+        }
+    ],
+    "special": [
+        {
+            "id": "51002",
+            "name": "Gefangener von Grauenstein",
+            "faction": "bolton",
+            "version": "S06",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "Zu Beginn des Spiels lege 3 Befehlsmarker auf diese Karte. Immer wenn eine gegnerische Schlachtreihe zerstört wird, lege 1 Befehlsmarker auf diese Karte. Es dürfen bis zu 3 Befehlsmarker auf dieser Karte liegen.",
+                    "Zu Beginn eines beliebigen Zuges, darfst du 3 Befehlsmarker von dieser Karte entfernen, falls du das tust, wähle eine gegnerische Kampfeinheit zum Ziel, sie wird **Panisch**."
+                ]
+            }
         }
     ]
 }

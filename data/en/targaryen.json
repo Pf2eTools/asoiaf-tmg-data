@@ -1,657 +1,645 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "targaryen",
+        "language": "en"
+    },
+    "unit": [
         {
             "id": "10701",
             "name": "Dothraki Screamers",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Screamer's Arakh",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalry",
-                    "Furious Charge",
-                    "Screamer's Arakh"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Furious Charge",
+                "Screamer's Arakh"
+            ],
+            "attacks": [
+                {
+                    "name": "Screamer's Arakh",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "While it would be easy to categorize the Dothraki as a mindless horde of screaming barbarians, their method of attack looks precisely as such to the untrained eye. A Dothraki khalasar can have many thousand horsemen, even the least of which has spent more of his life in the saddle than otherwise. Although lightly armored, Dothraki horsemanship is honed to such a degree that it’s difficult to land a blade on them, even when engaged in close melee."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10702",
             "name": "Dothraki Outriders",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Outrider’s Bow",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Outrider’s Blade",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalry",
-                    "Outrider’s Bow"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Outrider’s Bow"
+            ],
+            "attacks": [
+                {
+                    "name": "Outrider’s Bow",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Outrider’s Blade",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "As scouts, the Dothraki Outriders have few equals on their home terrain, but once battle is engaged, the true threat emerges: ranged combat power delivered from horseback. While typical archers plague any foot-bound force, the ability to strike from a distance, then whisk away on horseback gives the Dothraki a powerful capability that can only be countered by swift cavalry or archers. That said, Outriders should take care to remain mobile."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10703",
             "name": "Dothraki Veterans",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Shortbow",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Dothraki Arakh",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Swift Retreat",
-                    "Order: Quick Fire",
-                    "Cavalry"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: Swift Retreat",
+                "Order: Quick Fire",
+                "Cavalry"
+            ],
+            "attacks": [
+                {
+                    "name": "Shortbow",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Dothraki Arakh",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Superior Dothraki horsemanship finds its pinnacle in the Dothraki Veterans. Adept with both blade and bow, Veterans soften up their chosen prey with deadly arrows before a brutal charge, slashing left and right with their razor-sharp arakhs. As adept as Dothraki horsemanship can be, the Veterans take this skill to unimaginable heights, with man and mount moving in perfect precision even in the midst of the fiercest melee."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10704",
             "name": "Jorah Mormont",
-            "subname": "The Wandering Knight",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 4,
-                "speed": 6,
-                "defense": 4,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Long Sword",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Scout Openings",
-                    "Westerosi Rider"
-                ],
-                "wounds": 3,
-                "tray": "solo"
-            },
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "unit",
+            "title": "The Wandering Knight",
+            "abilities": [
+                "Order: Scout Openings",
+                "Westerosi Rider"
+            ],
+            "attacks": [
+                {
+                    "name": "Long Sword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 3,
+            "speed": 6,
+            "cost": 4,
+            "tray": "solo",
             "fluff": {
                 "lore": "Whatever one thinks of Ser Jorah Mormont’s personal dealings and checkered past, his skill-at-arms earned him respect among the Dothraki, no simple feat. As a veteran of multiple wars and later a sellsword, his expert eye can pick out vulnerabilities in the enemy ranks for nearby troops to exploit. Ser Jorah prefers to remain mounted in combat, and his horsemanship exceeds many of his Western counterparts.",
                 "quote": "“There are ghosts everywhere. We carry them with us wherever we go.”"
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10705",
             "name": "Unsullied Swordmasters",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Unsullied Prowess",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            8,
-                            7,
-                            6
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Unsullied Prowess",
-                    "Combat Mastery: Resolve"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Unsullied Prowess",
+                "Combat Mastery: Resolve"
+            ],
+            "attacks": [
+                {
+                    "name": "Unsullied Prowess",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        8,
+                        7,
+                        6
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Only one in three prospects for the famed Unsullied survive the brutal training process. These fearsome eunuch legions are renowned for their individual skill and unshakable discipline. While individually not quite a physical match for western soldiers, the Unsullied feel no pain and are adept at striking foes where least expected. Underestimating the Unsullied for their slight stature and strange ways is a quick route to the grave."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10706",
             "name": "Unsullied Pikemen",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Phalanx Pike",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Set For Charge",
-                    "Order: Shield Wall",
-                    "Combat Mastery: Defense"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Order: Set For Charge",
+                "Order: Shield Wall",
+                "Combat Mastery: Defense"
+            ],
+            "attacks": [
+                {
+                    "name": "Phalanx Pike",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Although considered to be in light armor by western standards, Unsullied Pikemen fight in lockstep formations according to doctrines laid down by the Old Empire of Ghis. An Unsullied phalanx with shields locked is nigh unbreakable to cavalry charge, and even more nimble foot troops would have a difficult time getting past the wall of spears. While taking this unit by surprise is difficult, a commander should beware their becoming encircled."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10707",
             "name": "Drogon",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "targaryen",
-                "type": "monster",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Black Fire",
-                        "type": "melee",
-                        "hit": 2,
-                        "dice": [
-                            2
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Juvenile Dragon",
-                    "Black Fire"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May only be fielded in an army including Daenerys Targaryen*"
-                    }
-                ],
-                "wounds": 8,
-                "tray": "solo",
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Juvenile Dragon",
+                "Black Fire"
+            ],
+            "attacks": [
+                {
+                    "name": "Black Fire",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        2
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 7,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Daenerys Targaryen*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "Drogon is named for Daenerys Targaryen’s deceased husband Khal Drogo. His scales are solid black, with blood red horns and crest. His eyes are described as ‘smoldering red pits’. While nowhere near fully grown, Drogon’s current size (and especially his temperament) makes him one of the deadliest creatures in the world. With unparalleled movement capabilities and breathing fire, Drogon can be anywhere on the field and kill anything he wishes."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10708",
             "name": "Viserion",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "targaryen",
-                "type": "monster",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Golden Fire",
-                        "type": "melee",
-                        "hit": 2,
-                        "dice": [
-                            2
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Juvenile Dragon",
-                    "Golden Fire"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May only be fielded in an army including Daenerys Targaryen*"
-                    }
-                ],
-                "wounds": 8,
-                "tray": "solo",
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Juvenile Dragon",
+                "Golden Fire"
+            ],
+            "attacks": [
+                {
+                    "name": "Golden Fire",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        2
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 7,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Daenerys Targaryen*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "Viserion is named for Daenerys Targaryen’s brother Viserys. He’s often called the white dragon, yet is cream colored with golden horns and crest. His claws and teeth are shining black, and his eyes are ‘pools of molten gold’. While nowhere near fully grown, Viserion is one of the deadliest creatures in the world. With unparalleled movement capabilities and breathing fire, Viserion can be anywhere on the field and kill anything he wishes."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10709",
             "name": "Rhaegal",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "targaryen",
-                "type": "monster",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Jade Fire",
-                        "type": "melee",
-                        "hit": 2,
-                        "dice": [
-                            2
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Juvenile Dragon",
-                    "Jade Fire"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May only be fielded in an army including Daenerys Targaryen*"
-                    }
-                ],
-                "wounds": 8,
-                "tray": "solo",
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Juvenile Dragon",
+                "Jade Fire"
+            ],
+            "attacks": [
+                {
+                    "name": "Jade Fire",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        2
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 7,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Daenerys Targaryen*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "Rhaegal is named for Daenerys Targaryen’s brother Rhaegar. He is a majestic green and bronze, with jet black fangs and claws, and eyes that ‘burn with their own heat, brighter than polished shields’. While nowhere near fully grown, Rhaegal’s current size still makes him one of the most dangerous creatures in the world. With unparalleled movement capabilities and breathing fire, Rhaegal can be anywhere on the field and kill anything he wishes."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10710",
             "name": "Dothraki Hrakkars",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "type": "monster",
-                "cost": 4,
-                "speed": 6,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Claw & Blade",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Hrakkars & Tamers",
-                    "Claw & Blade",
-                    "Outflank"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limited",
-                        "text": "*Your army may only include up to 2 Dothraki Hrakkars.*"
-                    }
-                ],
-                "wounds": 6,
-                "tray": "warmachine"
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Hrakkars & Tamers",
+                "Claw & Blade",
+                "Outflank"
+            ],
+            "attacks": [
+                {
+                    "name": "Claw & Blade",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 6,
+            "cost": 4,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Your army may only include up to 2 Dothraki Hrakkars.*",
+                    "name": "Limited"
+                }
+            ],
             "fluff": {
                 "lore": "Taming one of the great white lions of the Dothraki Sea is a feat accomplished by only the mightiest khalasars. These powerful beasts match even the famed Stark Direwolves in terms of conferred status, and a Hrakkar in war is just as fearsome a sight on the field. Fast, deadly, and above all stealthy, troops facing the Dothraki should beware of sudden attacks from unsuspected quarters by lurking Hrakkars."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10711",
             "name": "Stormcrow Dervishes",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Swift Strike",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ambush",
-                    "Swift Strike",
-                    "Motivated by Coin"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Ambush",
+                "Swift Strike",
+                "Motivated by Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Swift Strike",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "A Stormcrow Dervish paid up to the end of the week will buy you a hardened veteran skirmisher, adept at swift movement in medium armor to strike exposed enemy positions—to the end of the week. The infamous Stormcrow loyalty to coin extends even to their best-trained soldiers. Yet employers seeing Dervishes in action rarely have cause to complain as these heavy-hitters shred enemy flanks and fade away safely beyond any possible counterattack."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10712",
             "name": "Stormcrow Archers",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Mercenary’s Longbow",
-                        "type": "long",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Short Sword",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Mercenary's Longbow",
-                    "Loyalty Through Coin"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Mercenary's Longbow",
+                "Loyalty Through Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Mercenary’s Longbow",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "A Stormcrow is a Stormcrow, whether wielding blade, bow, or both. Money remains the prime motivator in the Stormcrow mind, and extra coin can prod added effort from these mercenaries. Stormcrow Archers are adept in long-range combat, with recurved longbows and arrows made for distant flight. They’re not meant for melee, though their shortswords can fend off weakened attackers. Still, a wise commander will keep them far from flankers or cavalry."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10713",
             "name": "Stormcrow Mercenaries",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Longsword",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Motivated by Coin"
-                ],
-                "requirements": [
-                    {
-                        "name": "Adaptive",
-                        "text": "*Reduce the cost of 1 Attachment in this unit by 1.*"
-                    }
-                ],
-                "tray": "infantry"
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Motivated by Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Reduce the cost of 1 Attachment in this unit by 1.*",
+                    "name": "Adaptive"
+                }
+            ],
             "fluff": {
                 "lore": "While one might question Stormcrow loyalty to their leaders, their employers, and even themselves, one can always count on their absolute devotion to coin. Once properly motivated, Stormcrow Mercenaries are capable medium infantry, adept at holding a flank or performing flanking maneuvers themselves. Their professionalism guarantees a good working relationship with whomever their employer might be, but only as long as the coin lasts."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10714",
             "name": "Freedmen",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 3,
-                "speed": 6,
-                "defense": 6,
-                "morale": 8,
-                "attacks": [
-                    {
-                        "name": "Improsived Weapons",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            6
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Untrained Masses",
-                    "Gang-up"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Untrained Masses",
+                "Gang-up"
+            ],
+            "attacks": [
+                {
+                    "name": "Improsived Weapons",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        6
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 8,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
             "fluff": {
                 "lore": "When Daenerys Targaryen swept across Essos, she freed slaves by the tens of thousands. While she may not have been specifically looking for a fighting force, now her ranks do not lack for numbers, as Freedmen and women gather up spare blades, picks, scythes, or simple clubs in her service. The Freedmen are numerous, but lacking in training or discipline. They can fill out a force, but should not be relied on to hold the line."
-            }
+            },
+            "icon": "infantry",
+            "wounds": 6
         },
         {
             "id": "10715",
             "name": "Drogo's Bloodriders",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Bloodriders' Arakh",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: War Cry",
-                    "Drogo's Bloodriders",
-                    "Bloodriders' Arakh"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May only be fielded in an army including Khal Drogo. He must be attached to this unit.*"
-                    }
-                ],
-                "wounds": 3,
-                "tray": "cavalry",
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: War Cry",
+                "Drogo's Bloodriders",
+                "Bloodriders' Arakh"
+            ],
+            "attacks": [
+                {
+                    "name": "Bloodriders' Arakh",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 8,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Khal Drogo. He must be attached to this unit.*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "Bloodriders of the Dothraki in Essos pledge their blood and lives to their khal as constant companions, bodyguards, and lieutenants. A Bloodrider’s oath is unbreakable, and they obey their lord even unto death. Serving Khal Drogo as individual leaders or riding with their khal on the field are Cohollo, Haggo, and Qotho, each a skilled and deadly warrior easily besting ten times their number."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10716",
             "name": "Brazen Beasts",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Motley Armaments",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Sentinel",
-                    "Motley Armaments"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Order: Sentinel",
+                "Motley Armaments"
+            ],
+            "attacks": [
+                {
+                    "name": "Motley Armaments",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "The Brazen Beasts, established by Daenerys Targaryen, patrol the streets of Meereen, one of the great Slaver Cities. Their name comes from the bronze masks they wear, molded to have the visage of giant cats, raptors, and bears. Their creation helped lessen the burden on the Unsullied, who were often targets of assassination as they patrolled. The Beasts lack fear, charging at their enemies in the narrow streets, cutting them down in close combat."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10717",
             "name": "Pit Fighters",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Fighter's Armament's",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Pit Fighter Rage",
-                    "Fighter's Armaments",
-                    "Unyielding"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Order: Pit Fighter Rage",
+                "Fighter's Armaments",
+                "Unyielding"
+            ],
+            "attacks": [
+                {
+                    "name": "Fighter's Armament's",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Gladiatorial combat is one of the most popular (and most dangerous) forms of entertainment. Since these enslaved fighters must compete in all forms of combat, they must be prepared for anything, despite their lack of formal training and hodge-podge of gear. After being freed by Daenerys, they’ve pledged their allegiance to her. And despite their lack of experience in open-field battle, enemy commanders would do well to not underestimate these unconventional fighters."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30701",
             "name": "Daenerys Targaryen",
-            "subname": "Khaleesi",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Conviction of a True Khaleesi",
-                        "effect": [
-                            "**Influence** *(When this unit claims a Tactics Zone, attach this card to a Combat Unit until the end of the round)*:",
-                            "Each time Daenerys Influences a unit, remove 1 Condition token from them.",
-                            "While Influencing a unit, that unit's Melee Attacks may re-roll any Attack Dice."
-                        ]
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Khaleesi",
+            "abilities": [
+                {
+                    "name": "Conviction of a True Khaleesi",
+                    "effect": [
+                        "**Influence** *(When this unit claims a Tactics Zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "Each time Daenerys Influences a unit, remove 1 Condition token from them.",
+                        "While Influencing a unit, that unit's Melee Attacks may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"My sun-and-stars made a queen of me, but if he had been a different man, it might have been much otherwise.\""
             }
@@ -659,49 +647,49 @@
         {
             "id": "30702",
             "name": "Illyrio Mopatis",
-            "subname": "Magister of Pentos",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Illyrio's Boon",
-                        "effect": [
-                            "Illyrio begins the game with 2 Order tokens. \nEach time Illyrio Claims a zone, you may remove 1 Order token from him. If you do, replace that zone's effect with: \n*Target 1 friendly Combat Unit. They restore up to 3 Wounds. Place 1 Condition token on 1 enemy they are engaged with.*"
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "ncu",
+            "title": "Magister of Pentos",
+            "abilities": [
+                {
+                    "name": "Illyrio's Boon",
+                    "effect": [
+                        "Illyrio begins the game with 2 Order tokens. \nEach time Illyrio Claims a zone, you may remove 1 Order token from him. If you do, replace that zone's effect with: \n*Target 1 friendly Combat Unit. They restore up to 3 Wounds. Place 1 Condition token on 1 enemy they are engaged with.*"
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"You Westerosi are all the same. You sew some beast upon a scrap of silk, and suddenly you are all lions or dragons or eagles.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30703",
             "name": "Pyat Pree",
-            "subname": "Warlock of Qarth",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "House of The Undying",
-                        "effect": [
-                            "Each time Pyat Pree Claims a zone, you may replace that zone's effect with:",
-                            "*Your opponent must reveal all Tactics card from their hand.*",
-                            "*Then, your opponent must discard 1 Tactics card at random from their hand.*",
-                            "Once per game, when Pyat Pree Claims [UNDYING], you may replace that zone's effect with:",
-                            "*Return 1 Tactics card from your discard pile to your hand.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Warlock of Qarth",
+            "abilities": [
+                {
+                    "name": "House of The Undying",
+                    "effect": [
+                        "Each time Pyat Pree Claims a zone, you may replace that zone's effect with:",
+                        "*Your opponent must reveal all Tactics card from their hand.*",
+                        "*Then, your opponent must discard 1 Tactics card at random from their hand.*",
+                        "Once per game, when Pyat Pree Claims [UNDYING], you may replace that zone's effect with:",
+                        "*Return 1 Tactics card from your discard pile to your hand.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "rules": [
                 "50701"
             ],
@@ -712,21 +700,21 @@
         {
             "id": "30704",
             "name": "Barristan Selmy",
-            "subname": "Advisor to the Dragon",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Wisdom of The Old Knight",
-                        "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
-                            "While Influencing a unit, each time that unit is targeted by an enemy Ability or Tactics card, you may remove this card from that unit to cancel the effect of that Ability or Tactics card."
-                        ]
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Advisor to the Dragon",
+            "abilities": [
+                {
+                    "name": "Wisdom of The Old Knight",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "While Influencing a unit, each time that unit is targeted by an enemy Ability or Tactics card, you may remove this card from that unit to cancel the effect of that Ability or Tactics card."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "\"Men can always ﬁght, Your Grace. Ask rather if we can win.\""
             }
@@ -734,55 +722,55 @@
         {
             "id": "30705",
             "name": "Xaro Xhoan Daxos",
-            "subname": "Merchant Prince of Qarth",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Wealth Of The Thirteen",
-                        "effect": [
-                            "Xaro begins the game with 2 Order Tokens on him.",
-                            "Each time Xaro Claims [MONEY], place 1 Order token on him. ",
-                            "When a Combat Unit performs an Attack, you may remove 1 Order token from Xaro and target that Combat Unit. If you do, choose 1 of the following for the unit to gain/suffer until the end of that Attack:",
-                            "• This unit is treated as having +1 rank for Attack Dice.",
-                            "• This unit is treated as having -1 rank for Attack Dice."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Merchant Prince of Qarth",
+            "abilities": [
+                {
+                    "name": "Wealth Of The Thirteen",
+                    "effect": [
+                        "Xaro begins the game with 2 Order Tokens on him.",
+                        "Each time Xaro Claims [MONEY], place 1 Order token on him. ",
+                        "When a Combat Unit performs an Attack, you may remove 1 Order token from Xaro and target that Combat Unit. If you do, choose 1 of the following for the unit to gain/suffer until the end of that Attack:",
+                        "• This unit is treated as having +1 rank for Attack Dice.",
+                        "• This unit is treated as having -1 rank for Attack Dice."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"I no longer lust for dragons. I saw their work at Astapor.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30707",
             "name": "Daenerys Targaryen",
-            "subname": "The Unburnt",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Dracarys!",
-                        "effect": [
-                            "Each time Daenerys Claims a zone, you may replace that zone's effect with:",
-                            "*1 friendly **Drogon**, **Rhaegal**, or **Viserion** unit performs 1 Attack Action.*"
-                        ]
-                    }
-                ],
-                "requirements": [
-                    {
-                        "text": "*Reduce the cost of 1 **Drogon**, **Rhaegal**, or **Viserion** unit in your army by 1.*"
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "ncu",
+            "title": "The Unburnt",
+            "abilities": [
+                {
+                    "name": "Dracarys!",
+                    "effect": [
+                        "Each time Daenerys Claims a zone, you may replace that zone's effect with:",
+                        "*1 friendly **Drogon**, **Rhaegal**, or **Viserion** unit performs 1 Attack Action.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Reduce the cost of 1 **Drogon**, **Rhaegal**, or **Viserion** unit in your army by 1.*"
+                }
+            ],
             "fluff": {
                 "quote": "\"I am blood of the dragon. I am Daenerys Stormborn, Princess of Dragonstone, of the blood and seed of Aegon the Conqueror.\""
             }
@@ -790,24 +778,24 @@
         {
             "id": "30708",
             "name": "Mirri Maz Duur",
-            "subname": "Godswife",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Maegi's Knowledge",
-                        "effect": [
-                            "Each time Mirri Claims a zone, restore 1 Wound to 1 friendly Combat Unit.",
-                            "Each time Mirri Claims a zone, you may replace that zone's effect with:",
-                            "*Choose 1:*",
-                            "• *Target 1 friendly Combat Unit. Attach 1 previously destroyed, friendly, non-Commander Attachment to that unit, replacing a model as usual, but ignoring the usual Attachment limits.*",
-                            "• *Target 1 enemy Combat Unit. They become **Panicked** and **Weakened**.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Godswife",
+            "abilities": [
+                {
+                    "name": "Maegi's Knowledge",
+                    "effect": [
+                        "Each time Mirri Claims a zone, restore 1 Wound to 1 friendly Combat Unit.",
+                        "Each time Mirri Claims a zone, you may replace that zone's effect with:",
+                        "*Choose 1:*",
+                        "• *Target 1 friendly Combat Unit. Attach 1 previously destroyed, friendly, non-Commander Attachment to that unit, replacing a model as usual, but ignoring the usual Attachment limits.*",
+                        "• *Target 1 enemy Combat Unit. They become **Panicked** and **Weakened**.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Look to your khal and see what life is worth, when all the rest is gone.\""
             }
@@ -815,51 +803,51 @@
         {
             "id": "30709",
             "name": "Quaithe",
-            "subname": "Of The Shadow",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "The Way, Revealed",
-                        "effect": [
-                            "Quaithe begins the game with 2 Order tokens on her.",
-                            "At the start of an enemy Turn, you may remove 1 Order token from Quaithe. If you do, target 1 enemy unit.",
-                            "If that unit performs an Action this Turn, before resolving that Action, 1 of your friendly Combat Units may perform 1 Maneuver, March, or Retreat Action."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Of The Shadow",
+            "abilities": [
+                {
+                    "name": "The Way, Revealed",
+                    "effect": [
+                        "Quaithe begins the game with 2 Order tokens on her.",
+                        "At the start of an enemy Turn, you may remove 1 Order token from Quaithe. If you do, target 1 enemy unit.",
+                        "If that unit performs an Action this Turn, before resolving that Action, 1 of your friendly Combat Units may perform 1 Maneuver, March, or Retreat Action."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"What do you want of me, Quaithe?\"\n\"To show you the way.\" -Daenerys and Quaithe"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30710",
             "name": "Hizdahr Zo Loraq",
-            "subname": "Fourteenth Of That Noble Name",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Merchant Lord's Reach",
-                        "effect": [
-                            "Each time a friendly NCU Claims a zone, unless its effect is replaced, its effect gains the following additional bonus:",
-                            "[CROWN]: If the unit fails this Panic Test, it may not be the target of friendly Orders this Round.",
-                            "[MONEY]: 1 other friendly unit in Short Range restores 1 Wound.",
-                            "[LETTER]: May draw 1 fewer Tactics cards to place +1 Condition token on the targeted enemy.",
-                            "[UNDYING]: Also discard the top card of your opponent's Tactics deck."
-                        ]
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Fourteenth Of That Noble Name",
+            "abilities": [
+                {
+                    "name": "Merchant Lord's Reach",
+                    "effect": [
+                        "Each time a friendly NCU Claims a zone, unless its effect is replaced, its effect gains the following additional bonus:",
+                        "[CROWN]: If the unit fails this Panic Test, it may not be the target of friendly Orders this Round.",
+                        "[MONEY]: 1 other friendly unit in Short Range restores 1 Wound.",
+                        "[LETTER]: May draw 1 fewer Tactics cards to place +1 Condition token on the targeted enemy.",
+                        "[UNDYING]: Also discard the top card of your opponent's Tactics deck."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"One day all men must die, but it serves no good to dwell on death.\""
             }
@@ -867,21 +855,21 @@
         {
             "id": "30711",
             "name": "Missandei",
-            "subname": "Scribe",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Wisdom Beyond Her Years",
-                        "effect": [
-                            "At the start of the game, search your Tactics Deck for 1 Commander Tactics card and place it face-down near this card.",
-                            "Once per game, at the start of a friendly Turn, you may discard 1 Tactics card from your hand. If you do, take the face-down card and add it to your hand."
-                        ]
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Scribe",
+            "abilities": [
+                {
+                    "name": "Wisdom Beyond Her Years",
+                    "effect": [
+                        "At the start of the game, search your Tactics Deck for 1 Commander Tactics card and place it face-down near this card.",
+                        "Once per game, at the start of a friendly Turn, you may discard 1 Tactics card from your hand. If you do, take the face-down card and add it to your hand."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Eleven years of age, yet Missandei is as clever as half the men at this table and wiser than all of them.\""
             }
@@ -889,27 +877,27 @@
         {
             "id": "30712",
             "name": "Alicent Hightower",
-            "subname": "Dowager Queen",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Ways Of The Court",
-                        "effect": [
-                            "Each time Alicent Claims a zone, you may replace that zone's effect with:\nFor each Controlled zone on the Tactics Board *(by friendly and enemy NCUs)*, place 1 Condition Token on 1 enemy Combat Unit."
-                        ]
-                    }
-                ],
-                "requirements": [
-                    {
-                        "name": "Loyalty",
-                        "heading": "GREENS",
-                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
-                    }
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Dowager Queen",
+            "abilities": [
+                {
+                    "name": "Ways Of The Court",
+                    "effect": [
+                        "Each time Alicent Claims a zone, you may replace that zone's effect with:\nFor each Controlled zone on the Tactics Board *(by friendly and enemy NCUs)*, place 1 Condition Token on 1 enemy Combat Unit."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*",
+                    "name": "Loyalty",
+                    "heading": "GREENS"
+                }
+            ],
             "fluff": {
                 "quote": ""
             }
@@ -917,64 +905,58 @@
         {
             "id": "30713",
             "name": "Rhaenyra Targaryen",
-            "subname": "Dragon Queen",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Syrax's Presence",
-                        "effect": [
-                            "Rhaenyra begins the game with 2 Order tokens.\nEach time an enemy Combat Unit Activates you may expend 1 Order token from Rhaenyra.\nIf you do, that enemy Combat Unit becomes **Vulnerable** and **Weakened**."
-                        ]
-                    }
-                ],
-                "requirements": [
-                    {
-                        "name": "Loyalty",
-                        "heading": "BLACKS",
-                        "text": "*Your army may never contain Units or Attachments with different Loyalties.*"
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Dragon Queen",
+            "abilities": [
+                {
+                    "name": "Syrax's Presence",
+                    "effect": [
+                        "Rhaenyra begins the game with 2 Order tokens.\nEach time an enemy Combat Unit Activates you may expend 1 Order token from Rhaenyra.\nIf you do, that enemy Combat Unit becomes **Vulnerable** and **Weakened**."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may never contain Units or Attachments with different Loyalties.*",
+                    "name": "Loyalty",
+                    "heading": "BLACKS"
+                }
+            ],
             "fluff": {
                 "quote": ""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20701",
             "name": "Khal Drogo",
-            "subname": "The Great Khal",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": "C",
-                "abilities": [
-                    "Expert Duelist",
-                    "Iron Resolve"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40708": "Addrivat!",
-                    "40709": "Ride-by Attack",
-                    "40710": "Assault Orders",
-                    "40711": "Lead by Example"
-                },
-                "remove": [
-                    "Sudden Retreat"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "The Great Khal",
+            "abilities": [
+                "Expert Duelist",
+                "Iron Resolve"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40708",
+                "40709",
+                "40710",
+                "40711"
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"The Dothraki follow only the strong.\""
             }
@@ -982,30 +964,24 @@
         {
             "id": "20702",
             "name": "Jorah Mormont",
-            "subname": "Westerosi Tactician",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": "C",
-                "abilities": [
-                    "Ambush",
-                    "Stubborn Tenacity"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40712": "Marshal",
-                    "40713": "Betrayal",
-                    "40714": "Opportunist",
-                    "40715": "Feinting Maneuver"
-                },
-                "remove": [
-                    "Overrun"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Westerosi Tactician",
+            "abilities": [
+                "Ambush",
+                "Stubborn Tenacity"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40712",
+                "40713",
+                "40714",
+                "40715"
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"I vow to serve you, to obey you, to die for you if need be. Whatever may come.\""
             }
@@ -1013,18 +989,18 @@
         {
             "id": "20703",
             "name": "Jorah Mormont",
-            "subname": "The Exiled Knight",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Tactical Reposition",
-                    "Stubborn Tenacity"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "The Exiled Knight",
+            "abilities": [
+                "Order: Tactical Reposition",
+                "Stubborn Tenacity"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"I did things it shames me to speak of... In the end it cost me all.\""
             }
@@ -1032,80 +1008,74 @@
         {
             "id": "20704",
             "name": "Screamer Ko",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Martial Training"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be Attached to Targaryen units.*"
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Martial Training"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*May only be Attached to Targaryen units.*"
+                }
+            ],
+            "icon": "cavalry"
         },
         {
             "id": "20705",
             "name": "Outrider Ko",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Disrupt"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be Attached to Targaryen units.*"
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Disrupt"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*May only be Attached to Targaryen units.*"
+                }
+            ],
+            "icon": "cavalry"
         },
         {
             "id": "20706",
             "name": "Unsullied Officer",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Go Down Fighting",
-                    "Relentless"
-                ]
-            }
+            "faction": "targaryen",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Go Down Fighting",
+                "Relentless"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20707",
             "name": "Barristan Selmy",
-            "subname": "The Bold",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Knightly Vow",
-                    "Embolden"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40720": "Sustained Assault",
-                    "40721": "Combat Prowess",
-                    "40722": "Legendary Boldness",
-                    "40723": "Victory Comes Hard"
-                },
-                "remove": [
-                    "Sudden Retreat"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "The Bold",
+            "abilities": [
+                "Knightly Vow",
+                "Embolden"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40720",
+                "40721",
+                "40722",
+                "40723"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I am a knight. I shall die a knight.\""
             }
@@ -1113,17 +1083,17 @@
         {
             "id": "20708",
             "name": "Belwas",
-            "subname": "Veteran Pit-Fighter",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Battle Scars"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Veteran Pit-Fighter",
+            "abilities": [
+                "Battle Scars"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Bad fighting, good dying. Strong Belwas hates it when they scream.\""
             }
@@ -1131,22 +1101,21 @@
         {
             "id": "20709",
             "name": "Jorah Mormont",
-            "subname": "Penitent Betrayer",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Whatever May Come"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Jorah may only be attached to a unit containing Daenerys Targaryen. He ignores the usual attachment limits.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Penitent Betrayer",
+            "abilities": [
+                "Whatever May Come"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Jorah may only be attached to a unit containing Daenerys Targaryen. He ignores the usual attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"He lied to me, informed on me, but he loved me too, and he always gave good counsel.\""
             }
@@ -1154,18 +1123,18 @@
         {
             "id": "20710",
             "name": "Jorah Mormont",
-            "subname": "The Andal",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Martial Training",
-                    "Stand Your Ground!"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "The Andal",
+            "abilities": [
+                "Order: Martial Training",
+                "Stand Your Ground!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"There is a savage beast in every man, and when you hand that man a sword or spear and send him forth to war, the beast stirs.\""
             }
@@ -1173,30 +1142,24 @@
         {
             "id": "20711",
             "name": "Belwas",
-            "subname": "The Strong",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Taunt",
-                    "Hardened"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40716": "Pathetic Attempt",
-                    "40717": "Expert Parry",
-                    "40718": "Good Dying",
-                    "40719": "Count The Cuts"
-                },
-                "remove": [
-                    "Field Control"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "The Strong",
+            "abilities": [
+                "Order: Taunt",
+                "Hardened"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40716",
+                "40717",
+                "40718",
+                "40719"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I let each man cut me once, before I kill him. Count the cuts and you will know how many Strong Belwas has slain.\""
             }
@@ -1204,30 +1167,24 @@
         {
             "id": "20712",
             "name": "Grey Worm",
-            "subname": "Unsullied Commander",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Boldness and Courage",
-                    "Counterstrike"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40724": "Issue Commands",
-                    "40725": "Lash Out",
-                    "40726": "Battle Endurance",
-                    "40727": "Retribution Of The Dragon"
-                },
-                "remove": [
-                    "Blood of the Dragon"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Unsullied Commander",
+            "abilities": [
+                "Boldness and Courage",
+                "Counterstrike"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40724",
+                "40725",
+                "40726",
+                "40727"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I don't make peace with the queen's enemies. I kill the queen's enemies.\""
             }
@@ -1235,18 +1192,18 @@
         {
             "id": "20713",
             "name": "Grey Worm",
-            "subname": "Freed by the Dragon",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Boldness and Courage",
-                    "Rally Cry"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Freed by the Dragon",
+            "abilities": [
+                "Boldness and Courage",
+                "Rally Cry"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Grey Worm is the name this one drew the day Daenerys Stormborn set him free.\""
             }
@@ -1254,30 +1211,24 @@
         {
             "id": "20714",
             "name": "Daenerys Targaryen",
-            "subname": "Mother of Dragons",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Threaten",
-                    "Mother Of Dragons"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40728": "Dracarys!",
-                    "40729": "Dragon's Flight",
-                    "40730": "Promise Of Fire",
-                    "40731": "Fire Made Flesh"
-                },
-                "remove": [
-                    "Field Control"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Mother of Dragons",
+            "abilities": [
+                "Order: Threaten",
+                "Mother Of Dragons"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40728",
+                "40729",
+                "40730",
+                "40731"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I am the blood of the dragon. If they are monsters, so am I.\""
             }
@@ -1285,31 +1236,25 @@
         {
             "id": "20715",
             "name": "Daenerys Targaryen",
-            "subname": "Queen of Meereen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Threaten",
-                    "Intimidating Presence",
-                    "The Rightful Queen"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40732": "Targaryen Supremacy",
-                    "40733": "Counterplot",
-                    "40734": "Subjugation Of Power",
-                    "40735": "Remorseless Examples"
-                },
-                "remove": [
-                    "Swift Reposition"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Queen of Meereen",
+            "abilities": [
+                "Order: Threaten",
+                "Intimidating Presence",
+                "The Rightful Queen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40732",
+                "40733",
+                "40734",
+                "40735"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Why do the gods make kings and queens, if not to protect the ones who can't protect themselves?\""
             }
@@ -1317,18 +1262,18 @@
         {
             "id": "20716",
             "name": "Daario Naharis",
-            "subname": "Reckless Mercenary",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Reckless Strikes",
-                    "Dauntless"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Reckless Mercenary",
+            "abilities": [
+                "Reckless Strikes",
+                "Dauntless"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal.\""
             }
@@ -1336,31 +1281,25 @@
         {
             "id": "20717",
             "name": "Daario Naharis",
-            "subname": "Stormcrow Captain",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Affiliation: Stormcrows",
-                    "Improved Armaments",
-                    "Motivated by Coin"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40736": "Sellsword Negotiations",
-                    "40737": "Sellsword Bravado",
-                    "40738": "Reckless Strikes",
-                    "40739": "Hasty Offense"
-                },
-                "remove": [
-                    "Fire and Blood"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Stormcrow Captain",
+            "abilities": [
+                "Affiliation: Stormcrows",
+                "Improved Armaments",
+                "Motivated by Coin"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40736",
+                "40737",
+                "40738",
+                "40739"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"He has a sellsword's conscience, That is to say, none at all.\""
             }
@@ -1368,32 +1307,32 @@
         {
             "id": "20718",
             "name": "Stormcrow Lieutenant",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Improved Armaments"
-                ]
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Improved Armaments"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20719",
             "name": "Rakharo",
-            "subname": "Bloodrider",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Bloodrider",
-                    "Order: Sentinel",
-                    "Elusive Escape"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Bloodrider",
+            "abilities": [
+                "Bloodrider",
+                "Order: Sentinel",
+                "Elusive Escape"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"As you say, I do, blood of my blood.\""
             }
@@ -1401,24 +1340,24 @@
         {
             "id": "20720",
             "name": "Qotho",
-            "subname": "Bloodrider",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Bloodrider",
-                    "Intimidating Presence",
-                    "Prey On Fear"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Bloodrider",
+            "abilities": [
+                "Bloodrider",
+                "Intimidating Presence",
+                "Prey On Fear"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                }
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"The Dothraki say a man and his bloodriders share one life...\""
             }
@@ -1426,23 +1365,23 @@
         {
             "id": "20721",
             "name": "Cohollo",
-            "subname": "Bloodrider",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Bloodrider",
-                    "Battle Scars"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Bloodrider",
+            "abilities": [
+                "Bloodrider",
+                "Battle Scars"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                }
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"They were the khal's brothers, his shadows, his fiercest friends.\""
             }
@@ -1450,23 +1389,23 @@
         {
             "id": "20722",
             "name": "Haggo",
-            "subname": "Bloodrider",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Bloodrider",
-                    "Fueled By Slaughter"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Bloodrider",
+            "abilities": [
+                "Bloodrider",
+                "Fueled By Slaughter"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                }
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"'Blood of my blood', Drogo called them, and so it was; they shared a single life.\""
             }
@@ -1474,23 +1413,23 @@
         {
             "id": "20723",
             "name": "Mirri Maz Duur",
-            "subname": "Resentful Healer",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Maegi's Healing",
-                    "Stubborn Tenacity"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Mirri ignores the usual Attachment limits.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Resentful Healer",
+            "abilities": [
+                "Maegi's Healing",
+                "Stubborn Tenacity"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Mirri ignores the usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"You knew the price.\""
             }
@@ -1498,18 +1437,18 @@
         {
             "id": "20724",
             "name": "Marselen",
-            "subname": "Unsullied Captain",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Dauntless",
-                    "Embolden"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Unsullied Captain",
+            "abilities": [
+                "Dauntless",
+                "Embolden"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"It's their discipline that makes them dangerous\" -Tyrion Lannister"
             }
@@ -1517,18 +1456,18 @@
         {
             "id": "20725",
             "name": "Skahaz Mo Kandaq",
-            "subname": "Merciless Ghiscari",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Incite",
-                    "Fueled By Slaughter"
-                ],
-                "character": true
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Merciless Ghiscari",
+            "abilities": [
+                "Order: Incite",
+                "Fueled By Slaughter"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The Shavepate would feed them to your dragons, it is said.\""
             }
@@ -1536,30 +1475,24 @@
         {
             "id": "20726",
             "name": "Skahaz Mo Kandaq",
-            "subname": "The Shavepate",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Incite",
-                    "Order: Mark Target"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40744": "Keeping The Peace",
-                    "40745": "The Queen's Law",
-                    "40746": "Eyes of The Watch",
-                    "40747": "Ghiscari Justice"
-                },
-                "remove": [
-                    "Unstoppable Advance"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "attachment",
+            "title": "The Shavepate",
+            "abilities": [
+                "Order: Incite",
+                "Order: Mark Target"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40744",
+                "40745",
+                "40746",
+                "40747"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"We will rue your old man’s honor before this game is done.\" -Skahaz to Barristan Selmy"
             }
@@ -1567,30 +1500,24 @@
         {
             "id": "20727",
             "name": "Marselen",
-            "subname": "Mother's Men Commander",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Unfaltering Conviction",
-                    "Dauntless"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40740": "Devotees of The Dragon",
-                    "40741": "Devastating Impact",
-                    "40742": "War Cry",
-                    "40743": "Supply Aid"
-                },
-                "remove": [
-                    "Field Control"
-                ]
-            },
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Mother's Men Commander",
+            "abilities": [
+                "Unfaltering Conviction",
+                "Dauntless"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40740",
+                "40741",
+                "40742",
+                "40743"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The Unsullied have something better than strength... They have discipline.\""
             }
@@ -1598,1069 +1525,1021 @@
         {
             "id": "20728",
             "name": "Brazen Beasts Captain",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Incite",
-                    "Furious Charge"
-                ]
-            }
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Order: Incite",
+                "Furious Charge"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         }
     ],
     "tactics": [
         {
             "id": "40701",
             "name": "Overrun",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit Surges Forth:",
-                        "effect": [
-                            "Instead of Surging Forth, that unit performs 1 Charge or March Action.",
-                            "If you Control [HORSE], it may re-roll any Charge Distance Dice."
-                        ]
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Surges Forth:",
+                    "effect": [
+                        "Instead of Surging Forth, that unit performs 1 Charge or March Action.",
+                        "If you Control [HORSE], it may re-roll any Charge Distance Dice."
+                    ]
+                }
+            ]
         },
         {
             "id": "40702",
             "name": "Sudden Retreat",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes a Melee Attack:",
-                        "effect": [
-                            "Target the Defender. They performs 1 Retreat Action.",
-                            "If this targets your Commander's unit, it may re-roll any Retreat Distance Dice."
-                        ]
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target the Defender. They performs 1 Retreat Action.",
+                        "If this targets your Commander's unit, it may re-roll any Retreat Distance Dice."
+                    ]
+                }
+            ]
         },
         {
             "id": "40703",
             "name": "Swift Reposition",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. It shifts 2\".",
-                            "If you Control [HORSE], that unit performs a 3\" Maneuver Action instead."
-                        ]
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. It shifts 2\".",
+                        "If you Control [HORSE], that unit performs a 3\" Maneuver Action instead."
+                    ]
+                }
+            ]
         },
         {
             "id": "40704",
             "name": "Fire and Blood",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "Choose 1. If you Control [HORSE], choose 2 instead:",
-                            "• This Attack may re-roll any Misses.",
-                            "• This Attack gains **Sundering**.",
-                            "• This Attack gains **Vicious**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Choose 1. If you Control [HORSE], choose 2 instead:",
+                        "• This Attack may re-roll any Misses.",
+                        "• This Attack gains **Sundering**.",
+                        "• This Attack gains **Vicious**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40705",
             "name": "Field Control",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a NCU Claims [HORSE]:",
-                        "effect": [
-                            "If the NCU was friendly, you may replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Maneuver or Retreat Action with +1[MOVEMENT] . Any enemy it disengages from becomes **Weakened**.*",
-                            "If the NCU was an enemy, after resolving that zone's effect, 1 friendly combat unit performs a 3\" shift."
-                        ]
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a NCU Claims [HORSE]:",
+                    "effect": [
+                        "If the NCU was friendly, you may replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Maneuver or Retreat Action with +1[MOVEMENT] . Any enemy it disengages from becomes **Weakened**.*",
+                        "If the NCU was an enemy, after resolving that zone's effect, 1 friendly combat unit performs a 3\" shift."
+                    ]
+                }
+            ]
         },
         {
             "id": "40706",
             "name": "Unstoppable Advance",
-            "statistics": {
-                "version": "S04",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
-                        "effect": [
-                            "This unit may re-roll any Charge Distance Dice."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly unit Surges Forth:",
-                        "effect": [
-                            "That unit gains +3[MOVEMENT] when Maneuvering during this Surge Forth. After moving, target all Enemies in Short Range. They become **Weakened**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
+                    "effect": [
+                        "This unit may re-roll any Charge Distance Dice."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly unit Surges Forth:",
+                    "effect": [
+                        "That unit gains +3[MOVEMENT] when Maneuvering during this Surge Forth. After moving, target all Enemies in Short Range. They become **Weakened**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40707",
             "name": "Blood of The Dragon",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly unit is destroyed, place 1 Order token on this card.",
-                            "While this card has a token, the attached unit's Melee Attacks gain +1 Attack Die and this unit suffers -1 Wound from failing Panic Tests."
-                        ]
-                    }
-                ]
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly unit is destroyed, place 1 Order token on this card.",
+                        "While this card has a token, the attached unit's Melee Attacks gain +1 Attack Die and this unit suffers -1 Wound from failing Panic Tests."
+                    ]
+                }
+            ]
         },
         {
             "id": "40708",
             "name": "Addrivat!",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When Khal Drogo's unit Activates:",
-                        "effect": [
-                            "Target 1 enemy in Long Range and attach this card to them until the end of the Round.",
-                            "While attached, Melee Attacks on this enemy gain **Critical Blow**."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20701",
-                "commander_name": "Khal Drogo",
-                "commander_subname": "The Great Khal"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When Khal Drogo's unit Activates:",
+                    "effect": [
+                        "Target 1 enemy in Long Range and attach this card to them until the end of the Round.",
+                        "While attached, Melee Attacks on this enemy gain **Critical Blow**."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20701"
             }
         },
         {
             "id": "40709",
             "name": "Ride-by Attack",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly Cavalry unit selects its Action during its Activation, before resolving that Action:",
-                        "effect": [
-                            "As its Action, that unit may pivot, then perform 1 March Action, even if engaged. It may move through enemies during this March. Enemies it disengages from may not pivot.",
-                            "After completing this March, 1 enemy it moved through suffers 1 Wound, +1 Wound for each of that enemy's remaining ranks."
-                        ]
-                    }
-                ],
-                "commander_id": "20701",
-                "commander_name": "Khal Drogo",
-                "commander_subname": "The Great Khal"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Cavalry unit selects its Action during its Activation, before resolving that Action:",
+                    "effect": [
+                        "As its Action, that unit may pivot, then perform 1 March Action, even if engaged. It may move through enemies during this March. Enemies it disengages from may not pivot.",
+                        "After completing this March, 1 enemy it moved through suffers 1 Wound, +1 Wound for each of that enemy's remaining ranks."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20701"
             }
         },
         {
             "id": "40710",
             "name": "Assault Orders",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly NCU Claims a zone:",
-                        "effect": [
-                            "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
-                            "*If this targets Khal Drogo's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Sudden Retreat\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40702",
-                "commander_id": "20701",
-                "commander_name": "Khal Drogo",
-                "commander_subname": "The Great Khal"
-            }
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                        "*If this targets Khal Drogo's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Sudden Retreat\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20701"
+            },
+            "remove": "40702"
         },
         {
             "id": "40711",
             "name": "Lead by Example",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After Khal Drogo's unit completes an Attack:",
-                        "effect": [
-                            "Attach this card to 1 other friendly unit in Long Range until the end of the Round.",
-                            "While attached, this unit gains +2 to Panic Test rolls and its Melee Attacks gain +1 to Hit."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20701",
-                "commander_name": "Khal Drogo",
-                "commander_subname": "The Great Khal"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After Khal Drogo's unit completes an Attack:",
+                    "effect": [
+                        "Attach this card to 1 other friendly unit in Long Range until the end of the Round.",
+                        "While attached, this unit gains +2 to Panic Test rolls and its Melee Attacks gain +1 to Hit."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20701"
             }
         },
         {
             "id": "40712",
             "name": "Marshal",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an unengaged friendly Cavalry Unit Activates:",
-                        "effect": [
-                            "Once this Turn, if that unit would perform a Maneuver Action, instead of performing that Action, it may restore 3 Wounds and remove 1 Condition token."
-                        ]
-                    }
-                ],
-                "commander_id": "20702",
-                "commander_name": "Jorah Mormont",
-                "commander_subname": "Westerosi Tactician"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an unengaged friendly Cavalry Unit Activates:",
+                    "effect": [
+                        "Once this Turn, if that unit would perform a Maneuver Action, instead of performing that Action, it may restore 3 Wounds and remove 1 Condition token."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20702"
             }
         },
         {
             "id": "40713",
             "name": "Betrayal",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly NCU Claims a zone:",
-                        "effect": [
-                            "Replace that zone's effect with:",
-                            "*Draw 2 Tactics Cards. Restore 3 Wounds to Jorah Mormont's unit. 1 enemy Combat Unit becomes **Vulnerable** and **Weakend**. Then attach this card to Jorah's unit until they destroy 1 enemy Combat Unit.*",
-                            "*While attached, each time that unit Activates, they suffer 1 Wound and become **Panicked**.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20702",
-                "commander_name": "Jorah Mormont",
-                "commander_subname": "Westerosi Tactician"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*Draw 2 Tactics Cards. Restore 3 Wounds to Jorah Mormont's unit. 1 enemy Combat Unit becomes **Vulnerable** and **Weakend**. Then attach this card to Jorah's unit until they destroy 1 enemy Combat Unit.*",
+                        "*While attached, each time that unit Activates, they suffer 1 Wound and become **Panicked**.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20702"
             }
         },
         {
             "id": "40714",
             "name": "Opportunist",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or **Vicious**. If the Attacker is Jorah Mormont's unit, gain both instead."
-                        ]
-                    }
-                ],
-                "commander_id": "20702",
-                "commander_name": "Jorah Mormont",
-                "commander_subname": "Westerosi Tactician"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or **Vicious**. If the Attacker is Jorah Mormont's unit, gain both instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20702"
             }
         },
         {
             "id": "40715",
             "name": "Feinting Maneuver",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit Successfully Charges:",
-                        "effect": [
-                            "If that unit contacted the Front of the enemy, align them to any Flank of that enemy instead.",
-                            "If that unit contacted a Flank of the enemy, align them to the Rear of that enemy instead."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Overrun\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40701",
-                "commander_id": "20702",
-                "commander_name": "Jorah Mormont",
-                "commander_subname": "Westerosi Tactician"
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Successfully Charges:",
+                    "effect": [
+                        "If that unit contacted the Front of the enemy, align them to any Flank of that enemy instead.",
+                        "If that unit contacted a Flank of the enemy, align them to the Rear of that enemy instead."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Overrun\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20702"
+            },
+            "remove": "40701"
         },
         {
             "id": "40716",
             "name": "Pathetic Attempt",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit passes a Panic Test from being Attacked by a Melee Attack:",
-                        "effect": [
-                            "Target the Attacker. They suffer 2 Hits for each remaining rank in this unit.",
-                            "If the Defender was Belwas' unit, they also become **Weakened**."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40705",
-                "commander_id": "20711",
-                "commander_name": "Belwas",
-                "commander_subname": "The Strong"
-            }
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit passes a Panic Test from being Attacked by a Melee Attack:",
+                    "effect": [
+                        "Target the Attacker. They suffer 2 Hits for each remaining rank in this unit.",
+                        "If the Defender was Belwas' unit, they also become **Weakened**."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20711"
+            },
+            "remove": "40705"
         },
         {
             "id": "40717",
             "name": "Expert Parry",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly Cavalry or Infantry unit is Attacked, after Defense Dice are rolled:",
-                        "effect": [
-                            "For each blocked Hit, the Attacker suffers 1 Hit.",
-                            "If the Defender is Belwas' unit, the Attacker suffers -1 to Defense Dice rolls for these Hits."
-                        ]
-                    }
-                ],
-                "commander_id": "20711",
-                "commander_name": "Belwas",
-                "commander_subname": "The Strong"
+            "faction": "targaryen",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Cavalry or Infantry unit is Attacked, after Defense Dice are rolled:",
+                    "effect": [
+                        "For each blocked Hit, the Attacker suffers 1 Hit.",
+                        "If the Defender is Belwas' unit, the Attacker suffers -1 to Defense Dice rolls for these Hits."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20711"
             }
         },
         {
             "id": "40718",
             "name": "Good Dying",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly Cavalry or Infantry unit is destroyed:",
-                        "effect": [
-                            "Before being removed, that unit performs 1 Melee Attack Action using its lowest Attack Die Value on the Attacker. If this targets Belwas' unit, it gains +2 Attack Dice.",
-                            "If this Attack destroys the Defender, your friendly unit is not destroyed, but instead remains in play with 1 Wound."
-                        ]
-                    }
-                ],
-                "commander_id": "20711",
-                "commander_name": "Belwas",
-                "commander_subname": "The Strong"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Cavalry or Infantry unit is destroyed:",
+                    "effect": [
+                        "Before being removed, that unit performs 1 Melee Attack Action using its lowest Attack Die Value on the Attacker. If this targets Belwas' unit, it gains +2 Attack Dice.",
+                        "If this Attack destroys the Defender, your friendly unit is not destroyed, but instead remains in play with 1 Wound."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20711"
             }
         },
         {
             "id": "40719",
             "name": "Count The Cuts",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes a Melee Attack:",
-                        "effect": [
-                            "Target the Defender. Attach this card to them until they destroy an enemy.",
-                            "While attached, this unit rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-                            "If this targets Belwas' unit, it also gains +1 to Morale Test results."
-                        ]
-                    }
-                ],
-                "commander_id": "20711",
-                "commander_name": "Belwas",
-                "commander_subname": "The Strong"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target the Defender. Attach this card to them until they destroy an enemy.",
+                        "While attached, this unit rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                        "If this targets Belwas' unit, it also gains +1 to Morale Test results."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20711"
             }
         },
         {
             "id": "40720",
             "name": "Sustained Assault",
-            "statistics": {
-                "version": "S06",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-                            "If this targets Barristan's unit, the Defender also becomes **Vulnerable**."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Sudden Retreat\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40702",
-                "commander_id": "20707",
-                "commander_name": "Barristan Selmy",
-                "commander_subname": "The Bold"
-            }
+            "faction": "targaryen",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                        "If this targets Barristan's unit, the Defender also becomes **Vulnerable**."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Sudden Retreat\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20707"
+            },
+            "remove": "40702"
         },
         {
             "id": "40721",
             "name": "Combat Prowess",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an enemy is targeted by an Ability or Tactics card:",
-                        "effect": [
-                            "You may expend 1 Condition token from that enemy. If you do, cancel the effect of that Ability or Tactics card."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 engaged friendly Combat Unit. Remove 1 Condition token from that unit."
-                        ]
-                    }
-                ],
-                "commander_id": "20707",
-                "commander_name": "Barristan Selmy",
-                "commander_subname": "The Bold"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is targeted by an Ability or Tactics card:",
+                    "effect": [
+                        "You may expend 1 Condition token from that enemy. If you do, cancel the effect of that Ability or Tactics card."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 engaged friendly Combat Unit. Remove 1 Condition token from that unit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20707"
             }
         },
         {
             "id": "40722",
             "name": "Legendary Boldness",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit within Long Range of Barristan rolls Defense Dice:",
-                        "effect": [
-                            "That unit blocks +2 Hits and automatically passes the Panic Test from this Attack."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20707",
-                "commander_name": "Barristan Selmy",
-                "commander_subname": "The Bold"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit within Long Range of Barristan rolls Defense Dice:",
+                    "effect": [
+                        "That unit blocks +2 Hits and automatically passes the Panic Test from this Attack."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20707"
             }
         },
         {
             "id": "40723",
             "name": "Victory Comes Hard",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After a friendly Combat Unit is attacked, if it passes its Panic Test:",
-                        "effect": [
-                            "Attach this card to that unit until it fails a Panic Test.",
-                            "While attached, this unit's Melee Attacks gain **Sundering** and +1 to Hit.",
-                            "When this card is removed, this unit becomes **Weakened** and **Vulnerable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20707",
-                "commander_name": "Barristan Selmy",
-                "commander_subname": "The Bold"
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly Combat Unit is attacked, if it passes its Panic Test:",
+                    "effect": [
+                        "Attach this card to that unit until it fails a Panic Test.",
+                        "While attached, this unit's Melee Attacks gain **Sundering** and +1 to Hit.",
+                        "When this card is removed, this unit becomes **Weakened** and **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20707"
             }
         },
         {
             "id": "40724",
             "name": "Issue Commands",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When your Commander's unit Activates:",
-                        "effect": [
-                            "Instead of this unit performing an Action this Turn, target 1 friendly unit in Long Range. It performs 1 Attack or Charge Action."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. Remove 1 Order token from that unit. They may use that Order again this Round."
-                        ]
-                    }
-                ],
-                "commander_id": "20712",
-                "commander_name": "Grey Worm",
-                "commander_subname": "Unsullied Commander"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When your Commander's unit Activates:",
+                    "effect": [
+                        "Instead of this unit performing an Action this Turn, target 1 friendly unit in Long Range. It performs 1 Attack or Charge Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. Remove 1 Order token from that unit. They may use that Order again this Round."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20712"
             }
         },
         {
             "id": "40725",
             "name": "Lash Out",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes a Melee Attack:",
-                        "effect": [
-                            "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is Grey Worm's unit, the Attacker also becomes **Vulnerable**."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Blood of the Dragon\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40707",
-                "commander_id": "20712",
-                "commander_name": "Grey Worm",
-                "commander_subname": "Unsullied Commander"
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is Grey Worm's unit, the Attacker also becomes **Vulnerable**."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Blood of the Dragon\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20712"
+            },
+            "remove": "40707"
         },
         {
             "id": "40726",
             "name": "Battle Endurance",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round *(effects are cumulative)*:",
-                            "**3+:** May re-roll any Misses",
-                            "**4+: Sundering**",
-                            "**5+: Critical Blow**",
-                            "**6+:** +2 Attack Dice"
-                        ]
-                    }
-                ],
-                "commander_id": "20712",
-                "commander_name": "Grey Worm",
-                "commander_subname": "Unsullied Commander"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round *(effects are cumulative)*:",
+                        "**3+:** May re-roll any Misses",
+                        "**4+: Sundering**",
+                        "**5+: Critical Blow**",
+                        "**6+:** +2 Attack Dice"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20712"
             }
         },
         {
             "id": "40727",
             "name": "Retribution Of The Dragon",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit is Attacked:",
-                        "effect": [
-                            "Target the Attacker. Attach this card to them until the end of the game.",
-                            "While attached, each time this unit is Attacked, the Attacker gains **Vicious**.",
-                            "Each time this unit is Attacked, if the Attacker is Grey Worm's unit or an Unsullied unit, this unit also becomes **Vulnerable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20712",
-                "commander_name": "Grey Worm",
-                "commander_subname": "Unsullied Commander"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit is Attacked:",
+                    "effect": [
+                        "Target the Attacker. Attach this card to them until the end of the game.",
+                        "While attached, each time this unit is Attacked, the Attacker gains **Vicious**.",
+                        "Each time this unit is Attacked, if the Attacker is Grey Worm's unit or an Unsullied unit, this unit also becomes **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20712"
             }
         },
         {
             "id": "40728",
             "name": "Dracarys!",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When Daenerys' unit Activates:",
-                        "effect": [
-                            "Instead of performing an Action, target 1 friendly Drogon, Rhaegal, or Viserion unit in Long Range. It performs 1 Melee Attack Action."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20714",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Mother Of Dragons"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When Daenerys' unit Activates:",
+                    "effect": [
+                        "Instead of performing an Action, target 1 friendly Drogon, Rhaegal, or Viserion unit in Long Range. It performs 1 Melee Attack Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20714"
             }
         },
         {
             "id": "40729",
             "name": "Dragon's Flight",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an enemy ends a move in Short Range of Daenerys' unit:",
-                        "effect": [
-                            "Target 1 friendly Drogon, Rhaegal, or Viserion unit. It performs 1 Maneuver Action."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20714",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Mother Of Dragons"
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy ends a move in Short Range of Daenerys' unit:",
+                    "effect": [
+                        "Target 1 friendly Drogon, Rhaegal, or Viserion unit. It performs 1 Maneuver Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20714"
             }
         },
         {
             "id": "40730",
             "name": "Promise Of Fire",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an enemy NCU Activates:",
-                        "effect": [
-                            "If that NCU Claims a zone this Activation, attach this card to 1 enemy Combat Unit.",
-                            "They suffer 1 Panic Test.",
-                            "While attached, each time a Drogon, Rhaegal, or Viserion units performs an Attack against this unit, this unit suffers 3 Wounds instead of D3 Wounds."
-                        ]
-                    }
-                ],
-                "commander_id": "20714",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Mother Of Dragons"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy NCU Activates:",
+                    "effect": [
+                        "If that NCU Claims a zone this Activation, attach this card to 1 enemy Combat Unit.",
+                        "They suffer 1 Panic Test.",
+                        "While attached, each time a Drogon, Rhaegal, or Viserion units performs an Attack against this unit, this unit suffers 3 Wounds instead of D3 Wounds."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20714"
             }
         },
         {
             "id": "40731",
             "name": "Fire Made Flesh",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an enemy Attacks a friendly Drogon, Rhaegal, or Viserion unit, after rolling Defense Dice:",
-                        "effect": [
-                            "The Defender only suffers 1 Wound for every 2 unblocked Hits."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40701",
-                "commander_id": "20714",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Mother Of Dragons"
-            }
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Attacks a friendly Drogon, Rhaegal, or Viserion unit, after rolling Defense Dice:",
+                    "effect": [
+                        "The Defender only suffers 1 Wound for every 2 unblocked Hits."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20714"
+            },
+            "remove": "40701"
         },
         {
             "id": "40732",
             "name": "Targaryen Supremacy",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes an Attack:",
-                        "effect": [
-                            "That enemy suffers 1 Panic Test.",
-                            "If that enemy is engaged with Daenerys' unit, they suffer -1 to their roll and +1 Wounds on failure for each of the Defender's remaining ranks."
-                        ]
-                    }
-                ],
-                "commander_id": "20715",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Queen of Meereen"
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes an Attack:",
+                    "effect": [
+                        "That enemy suffers 1 Panic Test.",
+                        "If that enemy is engaged with Daenerys' unit, they suffer -1 to their roll and +1 Wounds on failure for each of the Defender's remaining ranks."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20715"
             }
         },
         {
             "id": "40733",
             "name": "Counterplot",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an opponent plays a Tactics card, before resolving that Tactics card:",
-                        "effect": [
-                            "Roll a die: On a 3+, cancel the effect of that Tactics Card.",
-                            "If you Control [CROWN] or [SWORDS], cancel the effect of that Tactics card on a 2+ instead.",
-                            "If you Control both, this roll automatically succeeds."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Swift Reposition\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40703",
-                "commander_id": "20715",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Queen of Meereen"
-            }
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an opponent plays a Tactics card, before resolving that Tactics card:",
+                    "effect": [
+                        "Roll a die: On a 3+, cancel the effect of that Tactics Card.",
+                        "If you Control [CROWN] or [SWORDS], cancel the effect of that Tactics card on a 2+ instead.",
+                        "If you Control both, this roll automatically succeeds."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Swift Reposition\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20715"
+            },
+            "remove": "40703"
         },
         {
             "id": "40734",
             "name": "Subjugation Of Power",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an enemy Combat Unit Activates:",
-                        "effect": [
-                            "That enemy suffers 1 Panic Test. For each zone you Control among [CROWN] and [SWORDS] they suffer -1 to their roll.",
-                            "On a failure, until the end of the Turn, they cannot be targeted by friendly Tactics cards and lose all Abilities."
-                        ]
-                    }
-                ],
-                "commander_id": "20715",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Queen of Meereen"
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "That enemy suffers 1 Panic Test. For each zone you Control among [CROWN] and [SWORDS] they suffer -1 to their roll.",
+                        "On a failure, until the end of the Turn, they cannot be targeted by friendly Tactics cards and lose all Abilities."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20715"
             }
         },
         {
             "id": "40735",
             "name": "Remorseless Examples",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack:",
-                        "effect": [
-                            "If this Attack destroyed an enemy rank, target 1 other enemy in Long Range of that enemy. They become **Panicked**. If this Attack destroyed the enemy, also place 1 Corpse Pile with the following keywords anywhere fully in Short Range and not overlapping other Terrain:",
-                            "• **Hindering**",
-                            "• **Grim Reminder:** Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range."
-                        ]
-                    }
-                ],
-                "commander_id": "20715",
-                "commander_name": "Daenerys Targaryen",
-                "commander_subname": "Queen of Meereen"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "If this Attack destroyed an enemy rank, target 1 other enemy in Long Range of that enemy. They become **Panicked**. If this Attack destroyed the enemy, also place 1 Corpse Pile with the following keywords anywhere fully in Short Range and not overlapping other Terrain:",
+                        "• **Hindering**",
+                        "• **Grim Reminder:** Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20715"
             }
         },
         {
             "id": "40736",
             "name": "Sellsword Negotiations",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly NCU Claims a zone:",
-                        "effect": [
-                            "Replace that zone's effect with:",
-                            "*Until the end of the Round, you count as Controlling [MONEY]. Restore 2 Wounds to 1 friendly Combat Unit. If this targets a Stormcrow Unit, restore +1 Wound for each of that unit's destroyed ranks.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20717",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*Until the end of the Round, you count as Controlling [MONEY]. Restore 2 Wounds to 1 friendly Combat Unit. If this targets a Stormcrow Unit, restore +1 Wound for each of that unit's destroyed ranks.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20717"
             }
         },
         {
             "id": "40737",
             "name": "Sellsword Bravado",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. That unit performs 1 Morale Test. If this is a Stormcrow Unit, it gains +2 to its roll.",
-                            "On a success, target 1 enemy in Long Range. It becomes **Panicked** and **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20717",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit performs 1 Morale Test. If this is a Stormcrow Unit, it gains +2 to its roll.",
+                        "On a success, target 1 enemy in Long Range. It becomes **Panicked** and **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20717"
             }
         },
         {
             "id": "40738",
             "name": "Reckless Strikes",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly Combat Unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
-                            "If this targets a Stormcrow unit, this Attack rolls its highest Attack Die Value."
-                        ]
-                    }
-                ],
-                "commander_id": "20717",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
+                        "If this targets a Stormcrow unit, this Attack rolls its highest Attack Die Value."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20717"
             }
         },
         {
             "id": "40739",
             "name": "Hasty Offense",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "Start of any Round:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. That unit performs 1 Attack Action.",
-                            "After completing that Attack, your opponent may Activate 1 NCU."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Fire and Blood\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40704",
-                "commander_id": "20717",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Stormcrow Captain"
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Round:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit performs 1 Attack Action.",
+                        "After completing that Attack, your opponent may Activate 1 NCU."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Fire and Blood\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20717"
+            },
+            "remove": "40704"
         },
         {
             "id": "40740",
             "name": "Devotees of The Dragon",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly NCU Claims [SWORDS]:",
-                        "effect": [
-                            "Replace that zone's effect with:",
-                            "*Deploy 1 Freedmen unit fully within Long Range of a friendly Table Edge, or fully within Short Range of Marselen's unit, and at least 1\" from any enemy unit.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20727",
-                "commander_name": "Marselen",
-                "commander_subname": "Mother's Men Commander"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims [SWORDS]:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*Deploy 1 Freedmen unit fully within Long Range of a friendly Table Edge, or fully within Short Range of Marselen's unit, and at least 1\" from any enemy unit.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20727"
             }
         },
         {
             "id": "40741",
             "name": "Devastating Impact",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
-                        "effect": [
-                            "Enemies Successfully Charged by this unit become **Panicked** and **Vulnerable**.",
-                            "If this targets Marselen's unit, this unit may re-roll any Charge Distance Dice."
-                        ]
-                    }
-                ],
-                "commander_id": "20727",
-                "commander_name": "Marselen",
-                "commander_subname": "Mother's Men Commander"
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
+                    "effect": [
+                        "Enemies Successfully Charged by this unit become **Panicked** and **Vulnerable**.",
+                        "If this targets Marselen's unit, this unit may re-roll any Charge Distance Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20727"
             }
         },
         {
             "id": "40742",
             "name": "War Cry",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When a friendly Combat Unit Activates:",
-                        "effect": [
-                            "That unit performs 1 Morale Test.",
-                            "On a success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**.",
-                            "If this is Marselen's unit or an Unsullied unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
-                        ]
-                    }
-                ],
-                "commander_id": "20727",
-                "commander_name": "Marselen",
-                "commander_subname": "Mother's Men Commander"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "That unit performs 1 Morale Test.",
+                        "On a success, target 1 enemy in Long Range. It becomes **Panicked** or **Vulnerable**.",
+                        "If this is Marselen's unit or an Unsullied unit, on a success, it becomes **Panicked** and **Vulnerable** instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20727"
             }
         },
         {
             "id": "40743",
             "name": "Supply Aid",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. That unit suffers up to 3 Wounds. Restore 1+ that many Wounds to 1 other friendly unit in Long Range."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40705",
-                "commander_id": "20727",
-                "commander_name": "Marselen",
-                "commander_subname": "Mother's Men Commander"
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit suffers up to 3 Wounds. Restore 1+ that many Wounds to 1 other friendly unit in Long Range."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Field Control\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20727"
+            },
+            "remove": "40705"
         },
         {
             "id": "40744",
             "name": "Keeping The Peace",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an enemy NCU Activates:",
-                        "effect": [
-                            "Target 1 enemy Combat Unit in Long Range of Skahaz's unit.",
-                            "Until the end of the Turn, that enemy cannot be targeted by Tactics Zones."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20726",
-                "commander_name": "Skahaz Mo Kandaq",
-                "commander_subname": "The Shavepate"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy NCU Activates:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit in Long Range of Skahaz's unit.",
+                        "Until the end of the Turn, that enemy cannot be targeted by Tactics Zones."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20726"
             }
         },
         {
             "id": "40745",
             "name": "The Queen's Law",
-            "statistics": {
-                "version": "S05",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "When an enemy Combat Unit Activates:",
-                        "effect": [
-                            "Attach this card to that enemy until the end of the Round.",
-                            "While attached, during your opponent's Turns, this Unit loses all Abilities and cannot be targeted by friendly Tactics cards.",
-                            "If Skahaz's unit, or a Brazen Beast unit, performes a Charge Action against this unit, they automatically counts as rolling a 6 on all Charge Distance dice."
-                        ]
-                    }
-                ],
-                "commander_id": "20726",
-                "commander_name": "Skahaz Mo Kandaq",
-                "commander_subname": "The Shavepate"
+            "faction": "targaryen",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "Attach this card to that enemy until the end of the Round.",
+                        "While attached, during your opponent's Turns, this Unit loses all Abilities and cannot be targeted by friendly Tactics cards.",
+                        "If Skahaz's unit, or a Brazen Beast unit, performes a Charge Action against this unit, they automatically counts as rolling a 6 on all Charge Distance dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20726"
             }
         },
         {
             "id": "40746",
             "name": "Eyes of The Watch",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "Start of an enemy Turn:",
-                        "effect": [
-                            "Target up to 2 enemy Combat Units in Long Range of Skahaz's unit. If either of those units performs an Action this Turn, it suffers -1 [MOVEMENT] and rolls -1 Attack Die until the end of the Turn."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20726",
-                "commander_name": "Skahaz Mo Kandaq",
-                "commander_subname": "The Shavepate"
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of an enemy Turn:",
+                    "effect": [
+                        "Target up to 2 enemy Combat Units in Long Range of Skahaz's unit. If either of those units performs an Action this Turn, it suffers -1 [MOVEMENT] and rolls -1 Attack Die until the end of the Turn."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20726"
             }
         },
         {
             "id": "40747",
             "name": "Ghiscari Justice",
-            "statistics": {
-                "version": "2021",
-                "faction": "targaryen",
-                "text": [
-                    {
-                        "trigger": "After a friendly Combat Unit is targeted by an enemy Ability or Tactics card, after resolving that Ability/card:",
-                        "effect": [
-                            "Target 1 enemy in Short Range of that unit. It suffers 4 Hits, then suffers 1 Panic Test."
-                        ]
-                    },
-                    {
-                        "remove": "Before the game begins, remove the \"Unstoppable Advance\" Tactics card from your Tactics Deck and replace it with this card."
-                    }
-                ],
-                "remove": "40706",
-                "commander_id": "20726",
-                "commander_name": "Skahaz Mo Kandaq",
-                "commander_subname": "The Shavepate"
-            }
+            "faction": "targaryen",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly Combat Unit is targeted by an enemy Ability or Tactics card, after resolving that Ability/card:",
+                    "effect": [
+                        "Target 1 enemy in Short Range of that unit. It suffers 4 Hits, then suffers 1 Panic Test."
+                    ]
+                },
+                {
+                    "remove": "Before the game begins, remove the \"Unstoppable Advance\" Tactics card from your Tactics Deck and replace it with this card."
+                }
+            ],
+            "commander": {
+                "id": "20726"
+            },
+            "remove": "40706"
         }
     ],
-    "specials": [
+    "special": [
         {
             "id": "50701",
             "name": "House of the Undying",
-            "type": "zone",
-            "statistics": {
-                "faction": "targaryen",
-                "version": "2021-S03",
-                "size": {
-                    "w": 70,
-                    "h": 120
-                },
-                "front": {
-                    "style": "zone",
-                    "note": [
-                        "**There can only be 1 House of the Undying in the Game.**"
-                    ],
-                    "effect": [
-                        "Your opponent must discard 1 Tactics card at random from their hand."
-                    ]
-                },
-                "back": {
-                    "style": "zone",
-                    "text": [
-                        "If your army includes Pyat Pree, Warlock of Qarth, before the game begins, place the House of the Undying Tactics zone card next to the Tactics Board. It acts as an additional Tactics Zone for all purposes."
-                    ]
-                }
+            "faction": "targaryen",
+            "version": "2021-S03",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "note": [
+                    "**There can only be 1 House of the Undying in the Game.**"
+                ],
+                "effect": [
+                    "Your opponent must discard 1 Tactics card at random from their hand."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    "If your army includes Pyat Pree, Warlock of Qarth, before the game begins, place the House of the Undying Tactics zone card next to the Tactics Board. It acts as an additional Tactics Zone for all purposes."
+                ]
+            },
+            "size": {
+                "w": 70,
+                "h": 120
             }
         }
     ]

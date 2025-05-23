@@ -1598,11 +1598,11 @@ Renderer.song = class {
 		const stack = [`<div class="ve-flex-h-center">
 				<img style="max-height: 400px; max-width: 100%" src="${src}" alt="?">
 			</div>`];
-		if (!isBack && ent.statistics.commander && ent.tactics.cards) {
-			const tacticsNote = renderer.render(`{@note Tactics cards: ${Object.entries(ent.tactics.cards).map(([id, name]) => `{@tactics ${id}|${ent.lang}|${name}}`).join(", ")}}`);
+		if (!isBack && ent.commander === true && ent.tactics) {
+			const tacticsNote = renderer.render(`{@note Tactics cards: ${ent.tactics.map(t => `{@tactics ${t.id}|${ent.lang}|${t.name}}`).join(", ")}}`);
 			stack.push(`<div class="m-2">${tacticsNote}</div>`);
-		} else if (ent.__prop === "tactics" && ent.statistics.commander_id) {
-			const cmdrNote = renderer.render(`{@note Commander: {@attachments ${ent.statistics.commander_id}|${ent.lang}|${ent.statistics.commander_name}}}`)
+		} else if (ent.__prop === "tactics" && ent.commander) {
+			const cmdrNote = renderer.render(`{@note Commander: {@attachment ${ent.commander.id}|${ent.lang}|${ent.commander.name}}}`)
 			stack.push(`<div class="m-2">${cmdrNote}</div>`);
 		}
 		return stack.join("");
@@ -1610,12 +1610,12 @@ Renderer.song = class {
 
 	static getRealSize_mm (ent) {
 		switch (ent.__prop) {
-			case "units": return {w: 120, h: 70}
-			case "attachments":
+			case "unit": return {w: 120, h: 70}
+			case "attachment":
 			case "tactics":
-			case "ncus": return {w: 64, h: 90}
-			case "specials": {
-				if (ent.statistics && ent.statistics.size) return ent.statistics.size;
+			case "ncu": return {w: 64, h: 90}
+			case "special": {
+				if (ent.size) return ent.size;
 				return {w: 64, h: 90}
 			}
 		}
@@ -1900,9 +1900,10 @@ Renderer.utils = class {
 
 	static getTagMeta (tag, text) {
 		switch (tag) {
-			case "@attachments":
-			case "@units":
-			case "@ncus":
+			case "@special":
+			case "@attachment":
+			case "@unit":
+			case "@ncu":
 			case "@tactics":
 			case "@song": {
 				let [id, source, displayText, ...others] = Renderer.splitTagByPipe(text);
@@ -2226,7 +2227,7 @@ Renderer.tag = class {
 	};
 
 	static TagAttachments = class extends this._TagPipedDisplayTextThird {
-		tagName = "attachments";
+		tagName = "attachment";
 		defaultSource = "en";
 		page = UrlUtil.PG_SONG;
 	};
@@ -2813,10 +2814,10 @@ Renderer.hover = class {
 
 	static _getDefaultWidth (ent) {
 		switch (ent.__prop) {
-			case "attachments":
+			case "attachment":
 			case "tactics":
-			case "ncus": return 300
-			case "units": return 600
+			case "ncu": return 300
+			case "unit": return 600
 			default: return 600
 		}
 	}

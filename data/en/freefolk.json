@@ -1,671 +1,654 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "freefolk",
+        "language": "en"
+    },
+    "unit": [
         {
             "id": "10301",
             "name": "Savage Giant",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Furious Swing",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Giant",
-                    "Furious Swing"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Giant",
+                "Furious Swing"
+            ],
+            "attacks": [
+                {
+                    "name": "Furious Swing",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
             "fluff": {
                 "lore": "Although considered a myth by most southern Westerosi lords, the Savage Giants beyond the Wall are all too real, as the Night’s Watch will attest. These huge creatures wear no armor, and wield little more than crude mammoth bones or tree trunks. Yet, this is all they really need. A single giant can lay waste to the heaviest infantry, and virtually ignore a line of charging knights. Only raw numbers or mighty siege weapons can bring a Giant down."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10302",
             "name": "Free Folk Trappers",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 6,
-                "defense": 6,
-                "morale": 8,
-                "attacks": [
-                    {
-                        "name": "Windling Bow",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Crude Weapons",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Hidden traps"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Order: Hidden traps"
+            ],
+            "attacks": [
+                {
+                    "name": "Windling Bow",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Crude Weapons",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 8,
+            "speed": 6,
+            "cost": 4,
+            "tray": "infantry",
             "fluff": {
                 "lore": "What the Free Folk lack in sophisticated gear, they more than make up for in cunning. Free Folk Trappers prep the battlefield with hindering snares and artful traps. Such tactics rarely produce more than temporary casualties, though their intent is not to kill. Cavalry units must tread carefully, lest their mounts suffer, and infantry advance slowly for fear of the same. All the while trappers rain arrows down upon these beleaguered formations."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10303",
             "name": "Free Folk Raiders",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 4,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Crude Weapons",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Disorganized"
-                ],
-                "requirements": [
-                    {
-                        "name": "Adaptive",
-                        "text": "*Reduce the cost of 1 Attachment in this unit by 1.*"
-                    }
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Disorganized"
+            ],
+            "attacks": [
+                {
+                    "name": "Crude Weapons",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Reduce the cost of 1 Attachment in this unit by 1.*",
+                    "name": "Adaptive"
+                }
+            ],
             "fluff": {
                 "lore": "With little training and crude weapons of bone and scavenged iron or steel, the Free Folk Raiders offer only one thing to counter advanced Westerosi arms and armor: multitudes. Encounters with Raider warbands in the south have left most Westerosi commanders with little notion of Free Folk numbers north of the Wall. It’s true that in small units, they’re little more than armed peasants. However, under the Free Folk banner, they’re an army."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10304",
             "name": "Spearwives",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Spear Toss",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Spear",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Charging Volley",
-                    "Furious Charge"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: Charging Volley",
+                "Furious Charge"
+            ],
+            "attacks": [
+                {
+                    "name": "Spear Toss",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Spear",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "While warfare is largely the province of men in the south, the Free Folk women are more than capable of standing beside the men in a line-of-battle. While not suited as a vanguard, the Spearwives make for superior flankers, both on assault and for protection against charges. Their weapons may be crude, but they’re plentiful, cheap, and the Spearwives hurl them with deadly accuracy. Intelligent commanders can make full use of this capability."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10305",
             "name": "Cave Dweller Savages",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 6,
-                "defense": 6,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Frenzied Swings",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            7,
-                            8
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Frenzied Swings"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Frenzied Swings"
+            ],
+            "attacks": [
+                {
+                    "name": "Frenzied Swings",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        7,
+                        8
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 4,
+            "speed": 6,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "While they are indeed armed with little more than primitive weapons and armored with furs and loincloths, underestimating the sheer bloodthirst of Cave Dweller Savages has brought a quick end to more than one unwary patrol. Savages may not survive long as a vanguard unit, but for opening a hole in enemy lines or as flankers intent on unprotected archers, the Savages excel. When blood has been spilled, their ruthless brutality knows no equal."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10306",
             "name": "Wun Wun",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Pummeling Fists",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: War Cry",
-                    "Pummeling Fists",
-                    "Giant"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Order: War Cry",
+                "Pummeling Fists",
+                "Giant"
+            ],
+            "attacks": [
+                {
+                    "name": "Pummeling Fists",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 5,
+            "cost": 8,
+            "tray": "solo",
             "fluff": {
                 "lore": "If anything, Wun Wun is larger even than his chief, Mag the Mighty. Wun Wun shares the vast strength and thick hide common to all giants, coupled with a personal sense of invulnerability and uncommon fighting spirit. Wun Wun can break even the heaviest enemy line with ease, although Free Folk commanders should take care to support his crushing advances, lest he be surrounded and stung to death by a thousand cuts."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10307",
             "name": "Followers of Bone",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Jagged Weapons",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Jagged Weapons",
-                    "Horrific Visage"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Jagged Weapons",
+                "Horrific Visage"
+            ],
+            "attacks": [
+                {
+                    "name": "Jagged Weapons",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "While not part of any particular Free Folk faction, the Followers of Bone have devoted themselves to serving the Lord of Bones in all his warlike ambitions. In battle, one might not think bone weapons and armor would be terribly effective against steel, yet an auroch’s jawbone on a thick wooden haft can deliver a surprising blow, even to a man in plate armor. The disquiet these savages cause among enemy troops is of great value to a canny commander."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10308",
             "name": "Thenn Warriors",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Bronze Weapons",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Hold The Line!",
-                    "Order: Taunt"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Order: Hold The Line!",
+                "Order: Taunt"
+            ],
+            "attacks": [
+                {
+                    "name": "Bronze Weapons",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "The Thenn Warriors are the heaviest regular troops fielded by the Free Folk. Their bronze arms and armor were forged by their own hands, not stolen from the Night’s Watch or looted from battlefields. These relatively advanced northerners’ weapons cannot match against tempered steel from the south, and Free Folk Commanders must keep this in mind. However, Thenn Warriors excel as flankers or as a rearguard in a giant’s wake."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10309",
             "name": "Frozen Shore Chariots",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "siegeengine",
-                "cost": 5,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Deadly Impact",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Swift Retreat",
-                    "Chariot",
-                    "Deadly Impact"
-                ],
-                "wounds": 6,
-                "tray": "warmachine"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Order: Swift Retreat",
+                "Chariot",
+                "Deadly Impact"
+            ],
+            "attacks": [
+                {
+                    "name": "Deadly Impact",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 5,
+            "tray": "warmachine",
             "fluff": {
                 "lore": "One does not normally connect the Wildlings with war machines, but Frozen Shore Chariots are surprisingly effective. Made of wood and bone, and hauled by massive wolf/hound hybrids bred for strength and ferocity, Chariots pull two men and an assortment of weaponry, not only towards the enemy, but often crashing straight through even hardened ranks. That said, use them with caution, for a chariot’s primary weakness lies in becoming bogged down."
-            }
+            },
+            "icon": "siegeengine",
+            "wounds": 6
         },
         {
             "id": "10310",
             "name": "Bear",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 0,
-                "speed": 4,
-                "defense": 3,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Savage Mauling",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Bonded Bear",
-                    "Savage Mauling (Bear)"
-                ],
-                "requirements": [
-                    {
-                        "text": "*This model is only utilized by the Bonded Skinchanger Ability.*"
-                    }
-                ],
-                "wounds": 3,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Bonded Bear",
+                "Savage Mauling (Bear)"
+            ],
+            "attacks": [
+                {
+                    "name": "Savage Mauling",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 3,
+            "speed": 4,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*This model is only utilized by the Bonded Skinchanger Ability.*"
+                }
+            ],
             "fluff": {
                 "lore": "Skinchangers are men and women capable of entering the minds of beasts and manipulating their actions, either subtly or overtly. In war, the Skinchanger’s presence on the battlefield is not marked by the human, but by the beasts they control, such as huge northern bears, direwolves, shadowcats, owls, and eagles. While their animals can be slain, such a person is rarely defeated for long, as the north is not lacking in fierce, powerful creatures."
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10311",
             "name": "The Bonelord's Chosen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Jagged Weapons",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Jagged Weapons",
-                    "Horrific Visage",
-                    "Prey On Fear"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May only be fielded in an army containing Rattleshirt. He must be attached to this unit.*"
-                    }
-                ],
-                "tray": "infantry",
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Jagged Weapons",
+                "Horrific Visage",
+                "Prey On Fear"
+            ],
+            "attacks": [
+                {
+                    "name": "Jagged Weapons",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Rattleshirt. He must be attached to this unit.*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "The Bonelord’s Chosen represent the strongest, most savage among the Followers of Bone. Each Chosen takes his place by killing his predecessor through ritual combat. The new Chosen’s armor uses bones from their predecessor, though augmented with animal bones for greater protection. The Chosen may appear as mere savages, but Night’s Watch veterans warn their brothers to beware of their exceptional cunning and surprising skill at arms."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10312",
             "name": "War Mammoth",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 6,
-                "speed": 6,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Rampage",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Mammoth",
-                    "Rampage"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limited",
-                        "text": "*Your army may only include up to 2 Mammoths.*"
-                    }
-                ],
-                "wounds": 8,
-                "tray": "warmachine"
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Mammoth",
+                "Rampage"
+            ],
+            "attacks": [
+                {
+                    "name": "Rampage",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Your army may only include up to 2 Mammoths.*",
+                    "name": "Limited"
+                }
+            ],
             "fluff": {
                 "lore": "On the battlefield the War Mammoth is a fearsome sight bearing down on an enemy position. Its incredible strength and thick hide make it difficult to neutralize. Giants have been known to ride Mammoths into battle, though not enough Mammoths still exist in the world to form a true cavalry corps. But, those that battle on behalf of their masters are well-trained. It’s a rare event, but a panicked Mammoth is no one’s ally on the battlefield."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10313",
             "name": "Mag the Mighty",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Chieftain's Fury",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Giant",
-                    "Chieftain's Fury"
-                ],
-                "commander": true,
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Giant",
+                "Chieftain's Fury"
+            ],
+            "attacks": [
+                {
+                    "name": "Chieftain's Fury",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 5,
+            "tray": "solo",
+            "commander": true,
+            "tactics": [
+                "40326",
+                "40327",
+                "40328",
+                "40329",
+                "40330",
+                "40331",
+                "40332",
+                "40333",
+                "40334",
+                "40335"
+            ],
             "rules": [
                 "50301"
             ],
             "fluff": {
                 "lore": "Mag the Mighty has, if anything, an understated title. As chieftain of the giants, his fearsome strength has led his people to victory time and again. Even the most heavily armored troops are no match for his vast strength, and his leadership skills (such as giants possess) inspire his own kind in the heat of battle. Mag can easily wade directly into a fray, although he should beware. While difficult to bring down, giants are not immune to steel."
             },
-            "tactics": {
-                "cards": {
-                    "40326": "Shrug It Off",
-                    "40327": "Trample",
-                    "40328": "Enrage",
-                    "40329": "Chieftain's Orders",
-                    "40330": "Monsters From The North",
-                    "40331": "Last of Their Kind",
-                    "40332": "Defiant Roar",
-                    "40333": "Hurl Boulder",
-                    "40334": "Overrun",
-                    "40335": "Blitz"
-                },
-                "remove": [
-                    "ALL"
-                ]
-            }
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10314",
             "name": "Mag the Mighty",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 9,
-                "speed": 5,
-                "defense": 4,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Chieftain's Fury",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Giant",
-                    "Chieftain's Fury"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Giant",
+                "Chieftain's Fury"
+            ],
+            "attacks": [
+                {
+                    "name": "Chieftain's Fury",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 9,
+            "tray": "solo",
             "fluff": {
                 "lore": "Mag the Mighty has, if anything, an understated title. As chieftain of the giants, his fearsome strength has led his people to victory time and again. Even the most heavily armored troops are no match for his vast strength, and his leadership skills (such as giants possess) inspire his own kind in the heat of battle. Mag can easily wade directly into a fray, although he should beware. While difficult to bring down, giants are not immune to steel."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10315",
             "name": "Frozen Shore Bear Riders",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 4,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Spear Toss",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Spear and Maul",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Charging Volley",
-                    "Bear Cavalry",
-                    "Spear and Maul"
-                ],
-                "wounds": 4,
-                "tray": "cavalry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: Charging Volley",
+                "Bear Cavalry",
+                "Spear and Maul"
+            ],
+            "attacks": [
+                {
+                    "name": "Spear Toss",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Spear and Maul",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 4,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "The white bears of the hinterlands beyond the Wall are massive even among bear kind, often standing as tall as two men and capable of rending rock and steel. Only the Wildlings would think to tame such beasts and ride them into battle. As ‘cavalry’ go, Frozen Shore Bear Riders are slow and lumbering, but where an ordinary horse can but trample an enemy, Snow Bears can bite, rend, and maul. Even a man in full plate armor is no match for a bear."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 4
         },
         {
             "id": "10316",
             "name": "Borroq’s Boar",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 0,
-                "speed": 5,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Gore and Feed",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Bonded Boar",
-                    "Gore and Feed"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May only be fielded in an army including Borroq.*"
-                    }
-                ],
-                "wounds": 3,
-                "tray": "solo",
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Bonded Boar",
+                "Gore and Feed"
+            ],
+            "attacks": [
+                {
+                    "name": "Gore and Feed",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 5,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Borroq.*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "Wherever Borroq goes, his companion boar stays at his side. This porcine monster has truly massive proportions, standing as high as a full-grown bull and sporting tusks as long as a man’s arm. Its thick hide provides adequate defense against even the sharpest blade. In battle, it swings its massive head back and forth, impaling foes before tucking in for a grisly feast. However, should Borroq quit the battlefield, the boar is certain to follow."
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10317",
             "name": "Varamyr Sixskins",
-            "subname": "Master Skinchanger",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 3,
-                "speed": 4,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Vicious Mauling",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Master Skinchanger",
-                    "Vicious Mauling"
-                ],
-                "wounds": 4,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "unit",
+            "title": "Master Skinchanger",
+            "abilities": [
+                "Master Skinchanger",
+                "Vicious Mauling"
+            ],
+            "attacks": [
+                {
+                    "name": "Vicious Mauling",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 4,
+            "cost": 3,
+            "tray": "solo",
             "fluff": {
                 "lore": "Among the most powerful Skinchangers beyond the Wall, Varamyr Sixskins commands a huge snow bear, three wolves, a shadowcat, and an eagle simultaneously. In battle he rides astride his great snowbear, commanding his various beasts in coordinated attacks. Nothing escapes his eagle’s gaze, nor his shadowcat’s patient stalking. Any that approach his person face a savage mauling. One may defeat the individual creatures, but Varamyr will find more.",
                 "quote": "“I can soar above the Wall, and see with eagle eyes.”"
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10318",
             "name": "Varamyr Sixskins",
-            "subname": "Master Skinchanger",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 2,
-                "speed": 4,
-                "defense": 3,
-                "morale": 4,
-                "attacks": [
-                    {
-                        "name": "Vicious Mauling",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Master Skinchanger",
-                    "Vicious Mauling"
-                ],
-                "commander": true,
-                "wounds": 4,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "title": "Master Skinchanger",
+            "abilities": [
+                "Master Skinchanger",
+                "Vicious Mauling"
+            ],
+            "attacks": [
+                {
+                    "name": "Vicious Mauling",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 4,
+            "cost": 2,
+            "tray": "solo",
+            "commander": true,
+            "tactics": [
+                "40339",
+                "40340",
+                "40341"
+            ],
             "rules": [
                 "50302"
             ],
@@ -673,224 +656,214 @@
                 "lore": "Among the most powerful Skinchangers beyond the Wall, Varamyr Sixskins commands a huge snow bear, three wolves, a shadowcat, and an eagle simultaneously. In battle he rides astride his great snowbear, commanding his various beasts in coordinated attacks. Nothing escapes his eagle’s gaze, nor his shadowcat’s patient stalking. Any that approach his person face a savage mauling. One may defeat the individual creatures, but Varamyr will find more.",
                 "quote": "“I can soar above the Wall, and see with eagle eyes.”"
             },
-            "tactics": {
-                "cards": {
-                    "40339": "Summon Companions",
-                    "40340": "Bonded Guardians",
-                    "40341": "Bonded Command"
-                }
-            }
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10319",
             "name": "Shadowcat",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 2,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Claw Slash",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            2
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Varamyr’s Shadowcat",
-                    "Disrupt"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army including Varamyr Sixskins.*"
-                    }
-                ],
-                "wounds": 2,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Varamyr’s Shadowcat",
+                "Disrupt"
+            ],
+            "attacks": [
+                {
+                    "name": "Claw Slash",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        2
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 2,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Varamyr Sixskins.*"
+                }
+            ],
             "fluff": {
                 "lore": "While a single Shadowcat alone may not pose much danger to a unit of armored men, this Shadowcat comes bearing the cunning of Varamyr Sixskins. Working in tandem with Varamyr’s other beasts and in support of Free Folk forces, his Shadowcat serves as a powerful and elusive threat. Even without Sixskins commanding its mind, his Shadowcat is a graceful feline predator half-again the size of a man. With Sixskins though, it becomes a lethal weapon."
-            }
+            },
+            "icon": "monster",
+            "wounds": 2
         },
         {
             "id": "10320",
             "name": "Wolf Pack",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Pack Tactics",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Varamyr’s Wolf Pack",
-                    "Distract"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army including Varamyr Sixskins.*"
-                    }
-                ],
-                "wounds": 3,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Varamyr’s Wolf Pack",
+                "Distract"
+            ],
+            "attacks": [
+                {
+                    "name": "Pack Tactics",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Varamyr Sixskins.*"
+                }
+            ],
             "fluff": {
                 "lore": "Although not fit to stand in the formal line of battle, the wolves controlled by Varamyr Sixskins make for brilliant flankers and a true nightmare for archers and artillery behind the line. The beasts themselves are simple wolves, but when inhabited by a man’s consciousness, they act and function as one, capable of utilizing pack tactics in coordination with human elements in the Free Folk army. Is it any wonder Skinchangers are so feared?"
-            }
+            },
+            "icon": "monster",
+            "wounds": 3
         },
         {
             "id": "10321",
             "name": "Frozen Shore Hunters",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Harpoon",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Harpoon",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Mark Target",
-                    "Harpoon"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: Mark Target",
+                "Harpoon"
+            ],
+            "attacks": [
+                {
+                    "name": "Harpoon",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Harpoon",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "The Walrus clan are adept at hunting in the far, northern wastes beyond the Wall. Now, they bring their expertise south with the Free Folk as they seek out warmer climes and greener pastures. Their weighted harpoons are perfect for skewering both vicious beast and enemy soldier. Their knowledge of keeping prey on their lines keeps them nimble, and under constant maneuver to attack from unexpected angles against enemy formations. "
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10322",
             "name": "Giant Spear Throwers",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "monster",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Giant's Spear",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    },
-                    {
-                        "name": "Giant's Spear",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Giant",
-                    "Giant's Spear"
-                ],
-                "wounds": 6,
-                "tray": "solo"
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Giant",
+                "Giant's Spear"
+            ],
+            "attacks": [
+                {
+                    "name": "Giant's Spear",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                },
+                {
+                    "name": "Giant's Spear",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
             "fluff": {
                 "lore": "What’s worse than facing giants in the line-of-battle? Facing giants hurling spears the size of tree trunks from afar. The Free Folk’s alliance with the giants brought their Spear Throwers into the fray, giving them what amounts to artillery made of flesh. Their weapons are crude, but not much finesse is needed for a wooden haft as thick as a large man’s torso. That said, these giants have trouble dealing with foes up close, and must be guarded."
-            }
+            },
+            "icon": "monster",
+            "wounds": 6
         },
         {
             "id": "10323",
             "name": "Harma's Vanguard",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "cavalry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 6,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Crude Weapons",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Planned Approach",
-                    "Cavalry"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Order: Planned Approach",
+                "Cavalry"
+            ],
+            "attacks": [
+                {
+                    "name": "Crude Weapons",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "North of the wall horses are a somewhat rare sighting, which makes Harma Dogshead’s Vanguard all the more inspiring for the Free Folk. While lightly armored and crudely armed compared to southern troops, these cavalry units serve as more than outriders, being both scouts and spearheads to the Free Folk armies. Their greatest weakness is in fact their lack of armor, but this gives rise to their greatest strength: pure speed."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30301",
             "name": "Lady Val",
-            "subname": "The Wildling Princess",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Lady of the Wilds",
-                        "effect": [
-                            "Each time Lady Val Claims a zone, you may replace that zone's effect with:",
-                            "*1 Friendly Combat Unit performs 1 Maneuver or Retreat Action.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "The Wildling Princess",
+            "abilities": [
+                {
+                    "name": "Lady of the Wilds",
+                    "effect": [
+                        "Each time Lady Val Claims a zone, you may replace that zone's effect with:",
+                        "*1 Friendly Combat Unit performs 1 Maneuver or Retreat Action.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"I know the forest better than all your black-cloaked rangers. It holds no ghosts for me.\""
             }
@@ -898,21 +871,21 @@
         {
             "id": "30302",
             "name": "Mance Rayder",
-            "subname": "Artful Tactician",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Skillful Preparations",
-                        "effect": [
-                            "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
-                            "While Influencing a unit, each time that unit Activates, or is targeted by a Tactics Zone, before resolving that zone's effect, you may draw 1 Tactics card."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Artful Tactician",
+            "abilities": [
+                {
+                    "name": "Skillful Preparations",
+                    "effect": [
+                        "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
+                        "While Influencing a unit, each time that unit Activates, or is targeted by a Tactics Zone, before resolving that zone's effect, you may draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Mance has cunning. He was raised a crow, you know, and the crow's a tricksy bird.\""
             }
@@ -920,22 +893,22 @@
         {
             "id": "30303",
             "name": "Craster",
-            "subname": "Ally of Convenience",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Refuge and Supplies",
-                        "effect": [
-                            "Once per game, at the start of any Turn, you may restore 2 Wounds to 1 friendly Infantry unit.",
-                            "Each time Craster Claims a zone, you may replace its effect with:",
-                            "*Draw 1 Tactics card and restore 2 Wounds to 1 friendly Infantry Unit.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Ally of Convenience",
+            "abilities": [
+                {
+                    "name": "Refuge and Supplies",
+                    "effect": [
+                        "Once per game, at the start of any Turn, you may restore 2 Wounds to 1 friendly Infantry unit.",
+                        "Each time Craster Claims a zone, you may replace its effect with:",
+                        "*Draw 1 Tactics card and restore 2 Wounds to 1 friendly Infantry Unit.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"He's never turned a ranger away from his fire, nor does he love Mance Rayder...\""
             }
@@ -943,21 +916,21 @@
         {
             "id": "30304",
             "name": "Styr",
-            "subname": "Iron-Fisted Tyrant",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Fury of the Thenns",
-                        "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
-                            "While Influencing a friendly unit, that unit's Melee Attacks gain **Sundering** and it is treated as having +1 rank for Attack Dice."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Iron-Fisted Tyrant",
+            "abilities": [
+                {
+                    "name": "Fury of the Thenns",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
+                        "While Influencing a friendly unit, that unit's Melee Attacks gain **Sundering** and it is treated as having +1 rank for Attack Dice."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"These are wildlings... more beast than man.\""
             }
@@ -965,22 +938,22 @@
         {
             "id": "30305",
             "name": "Ygritte",
-            "subname": "Kissed by Fire",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Spearwife's Guile",
-                        "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
-                            "While Influencing a friendly unit, that unit gains +1 [MOVEMENT] and ignores the Hindering and Rough keywords.",
-                            "While Influencing an enemy unit, that enemy suffers -1 [MOVEMENT] and triggers Disorderly Charges on rolls of 1 or 2."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Kissed by Fire",
+            "abilities": [
+                {
+                    "name": "Spearwife's Guile",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "While Influencing a friendly unit, that unit gains +1 [MOVEMENT] and ignores the Hindering and Rough keywords.",
+                        "While Influencing an enemy unit, that enemy suffers -1 [MOVEMENT] and triggers Disorderly Charges on rolls of 1 or 2."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"I know one thing. I know that you are wildling to the bone\" -Jon Snow"
             }
@@ -988,23 +961,23 @@
         {
             "id": "30306",
             "name": "Lady Dalla",
-            "subname": "Wife and Council",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Spearwife Council",
-                        "effect": [
-                            "Each time Dalla Claims a zone, perform the following based on the zone she Claimed:",
-                            "[CROWN]: 1 enemy becomes **Weakened**.",
-                            "[MONEY]: Instead of removing a Condition token, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.",
-                            "[LETTER]: Instead of drawing cards, look at the top 2 cards of your opponent's Tactics deck. You may discard one of those cards. Then, place the remaining cards on the top of the Tactics deck."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Wife and Council",
+            "abilities": [
+                {
+                    "name": "Spearwife Council",
+                    "effect": [
+                        "Each time Dalla Claims a zone, perform the following based on the zone she Claimed:",
+                        "[CROWN]: 1 enemy becomes **Weakened**.",
+                        "[MONEY]: Instead of removing a Condition token, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.",
+                        "[LETTER]: Instead of drawing cards, look at the top 2 cards of your opponent's Tactics deck. You may discard one of those cards. Then, place the remaining cards on the top of the Tactics deck."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"We free folk know things you kneelers have forgotten. Sometimes the short road is not the safest, Jon Snow.\""
             }
@@ -1012,27 +985,27 @@
         {
             "id": "30307",
             "name": "Mance Rayder",
-            "subname": "Deceptive Bard",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Intrigue and Subterfuge",
-                        "effect": [
-                            "Once per game, when an enemy NCU Activates, that NCU loses all Abilities until the end of the Round."
-                        ]
-                    },
-                    {
-                        "name": "Disrupt Communication",
-                        "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                            "While Influencing an enemy unit, your opponent may not target that unit with Tactics Zone effects or Influence Abilities."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Deceptive Bard",
+            "abilities": [
+                {
+                    "name": "Intrigue and Subterfuge",
+                    "effect": [
+                        "Once per game, when an enemy NCU Activates, that NCU loses all Abilities until the end of the Round."
+                    ]
+                },
+                {
+                    "name": "Disrupt Communication",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing an enemy unit, your opponent may not target that unit with Tactics Zone effects or Influence Abilities."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "\"The Wall can stop an army, but not a man alone.\""
             }
@@ -1040,56 +1013,53 @@
         {
             "id": "30308",
             "name": "Jon Snow",
-            "subname": "Turncloak Crow",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Northern Resilience",
-                        "effect": [
-                            "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
-                            "While Influencing a unit, it gains +1 to Morale Test rolls and suffers -1 Wound from failing Panic Tests.."
-                        ]
-                    },
-                    {
-                        "name": "Southern Discipline",
-                        "effect": [
-                            "Once per game, at the start of any Round, you may search your Tactics deck or discard pile for one **Cooordination Tactics** or **Regroup and Reform** Tactics card and add it to your hand. Shuffle your Tactics deck."
-                        ]
-                    }
-                ]
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Turncloak Crow",
+            "abilities": [
+                {
+                    "name": "Northern Resilience",
+                    "effect": [
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "While Influencing a unit, it gains +1 to Morale Test rolls and suffers -1 Wound from failing Panic Tests.."
+                    ]
+                },
+                {
+                    "name": "Southern Discipline",
+                    "effect": [
+                        "Once per game, at the start of any Round, you may search your Tactics deck or discard pile for one **Cooordination Tactics** or **Regroup and Reform** Tactics card and add it to your hand. Shuffle your Tactics deck."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Mance Rayder swore an oath as well...\""
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20301",
             "name": "Tormund Giantsbane",
-            "subname": "Thunderfist",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Overrun",
-                    "Sundering"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40308": "Rush of Aggression",
-                    "40309": "Counter Assault",
-                    "40310": "Devastating Impact"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Thunderfist",
+            "abilities": [
+                "Order: Overrun",
+                "Sundering"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40308",
+                "40309",
+                "40310"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"He seemed to me the sort of man who would make a good friend and a bad enemy.\""
             }
@@ -1097,18 +1067,18 @@
         {
             "id": "20302",
             "name": "Tormund Giantsbane",
-            "subname": "Tall-Talker, Horn-Blower, Breaker of Ice",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: War Cry",
-                    "Stalwart"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Tall-Talker, Horn-Blower, Breaker of Ice",
+            "abilities": [
+                "Order: War Cry",
+                "Stalwart"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Now bring out the mead!\""
             }
@@ -1116,27 +1086,24 @@
         {
             "id": "20303",
             "name": "Mance Rayder",
-            "subname": "King Beyond the Wall",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Counterstrategy",
-                    "Boisterous Charisma",
-                    "Inspiring Presence"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40311": "Wildling Diplomacy",
-                    "40312": "Predictable Maneuvers",
-                    "40313": "The Long Plan"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "King Beyond the Wall",
+            "abilities": [
+                "Order: Counterstrategy",
+                "Boisterous Charisma",
+                "Inspiring Presence"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40311",
+                "40312",
+                "40313"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I am my own champion, my own fool, and my own harpist.\""
             }
@@ -1144,130 +1111,125 @@
         {
             "id": "20304",
             "name": "Raid Leader",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Gang-Up"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Gang-Up"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20305",
             "name": "Cave Dweller Alpha",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Incite"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Incite"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20306",
             "name": "Spearwife Matriarch",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Swift Retreat"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Swift Retreat"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20307",
             "name": "Skinchanger",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Bonded Skinchanger"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Bonded Skinchanger"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20308",
             "name": "Eagle",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Bonded Eagle",
-                    "Aerial Scouting"
-                ],
-                "requirements": [
-                    {
-                        "text": "*This model is only utilized by the Bonded Skinchanger Ability.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Bonded Eagle",
+                "Aerial Scouting"
+            ],
+            "tray": "none",
+            "back_text": [
+                {
+                    "text": "*This model is only utilized by the Bonded Skinchanger Ability.*"
+                }
+            ],
+            "icon": "none"
         },
         {
             "id": "20309",
             "name": "Wolf",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Bonded Wolf",
-                    "Predator's Instincts"
-                ],
-                "requirements": [
-                    {
-                        "text": "*This model is only utilized by the Bonded Skinchanger Ability.*"
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "abilities": [
+                "Bonded Wolf",
+                "Predator's Instincts"
+            ],
+            "tray": "none",
+            "back_text": [
+                {
+                    "text": "*This model is only utilized by the Bonded Skinchanger Ability.*"
+                }
+            ],
+            "icon": "none"
         },
         {
             "id": "20310",
             "name": "Chosen of Styr",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Furious Charge",
-                    "Go Down Fighting"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Furious Charge",
+                "Go Down Fighting"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20313",
             "name": "Styr",
-            "subname": "Magnar of Thenn",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Thenn Supremacy",
-                    "Iron Resolve"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40323": "Bitter Demise",
-                    "40324": "Thenn Defiance",
-                    "40325": "Styr's Vengeance"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Magnar of Thenn",
+            "abilities": [
+                "Order: Thenn Supremacy",
+                "Iron Resolve"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40323",
+                "40324",
+                "40325"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"To the Thenns, the Magnar is more a living god than a man.\""
             }
@@ -1275,40 +1237,37 @@
         {
             "id": "20314",
             "name": "Champion of Bone",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Intimidating Presence"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Intimidating Presence"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20315",
             "name": "Rattleshirt",
-            "subname": "The Lord of Bones",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Trophy Hunter",
-                    "Trophy Collector",
-                    "Intimidating Presence"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40314": "Bloody Trophies",
-                    "40315": "Weapon Trophies",
-                    "40316": "Armor Trophies"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "The Lord of Bones",
+            "abilities": [
+                "Order: Trophy Hunter",
+                "Trophy Collector",
+                "Intimidating Presence"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40314",
+                "40315",
+                "40316"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Rattleshirt could wash his hands a hundred times a day and he'd still have blood beneath his nails.\""
             }
@@ -1316,18 +1275,18 @@
         {
             "id": "20316",
             "name": "Rattleshirt",
-            "subname": "Ruthless Slaughterer",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Fueled By Slaughter",
-                    "Intimidating Presence"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Ruthless Slaughterer",
+            "abilities": [
+                "Fueled By Slaughter",
+                "Intimidating Presence"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"A small, malicious, treacherous man, as stupid as he is cruel.\""
             }
@@ -1335,26 +1294,23 @@
         {
             "id": "20317",
             "name": "Harma",
-            "subname": "Vanguard Commander",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Superior Flanking",
-                    "Enhanced Mobility"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40317": "Hit and Run",
-                    "40318": "Feinting Maneuver",
-                    "40319": "Swift Reposition"
-                }
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Vanguard Commander",
+            "abilities": [
+                "Order: Superior Flanking",
+                "Enhanced Mobility"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40317",
+                "40318",
+                "40319"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I'll keep his head for my standard. A turncloak's worse than a dog.\""
             }
@@ -1362,18 +1318,18 @@
         {
             "id": "20318",
             "name": "Harma",
-            "subname": "The Dogshead",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Sentinel",
-                    "Enhanced Mobility"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "The Dogshead",
+            "abilities": [
+                "Order: Sentinel",
+                "Enhanced Mobility"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Every fortnight a new dog, a new banner.\""
             }
@@ -1381,23 +1337,23 @@
         {
             "id": "20319",
             "name": "Harma's Bannerman",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Harma's Vassal",
-                    "Regroup",
-                    "Order: Tactical Reposition"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army containing Harma. This model ignores the usual Attachment limit.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "attachment",
+            "abilities": [
+                "Harma's Vassal",
+                "Regroup",
+                "Order: Tactical Reposition"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Harma. This model ignores the usual Attachment limit.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"She hates dogs almost as much as she hates crows.\""
             }
@@ -1405,27 +1361,24 @@
         {
             "id": "20320",
             "name": "The Weeper",
-            "subname": "Horrific Butcher",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Grisly Example",
-                    "Weaken Resolve",
-                    "Vicious"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40320": "Cruel Methods",
-                    "40321": "Price of Failure",
-                    "40322": "Bloody Beheadings"
-                }
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Horrific Butcher",
+            "abilities": [
+                "Order: Grisly Example",
+                "Weaken Resolve",
+                "Vicious"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40320",
+                "40321",
+                "40322"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Cutting out the eyes, that's the Weeper's work. The best crow's a blind crow, he likes to say.\""
             }
@@ -1433,18 +1386,18 @@
         {
             "id": "20321",
             "name": "The Weeper",
-            "subname": "Cruel Tyrant",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Grisly Example",
-                    "Vicious"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Cruel Tyrant",
+            "abilities": [
+                "Order: Grisly Example",
+                "Vicious"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The Weeper will not say the words. He will not wear the cloak. Even other raiders do not trust him.\""
             }
@@ -1452,18 +1405,18 @@
         {
             "id": "20322",
             "name": "Ygritte",
-            "subname": "Spearwife Archer",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Mark Target",
-                    "Disrupt"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Spearwife Archer",
+            "abilities": [
+                "Order: Mark Target",
+                "Disrupt"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Men can’t own the land no more’n they can own the sea or the sky.\""
             }
@@ -1471,22 +1424,22 @@
         {
             "id": "20323",
             "name": "Jarl",
-            "subname": "Advance Raid Leader",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Outflank"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Jarl ignores the usual Attachment limits.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Advance Raid Leader",
+            "abilities": [
+                "Outflank"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Jarl ignores the usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The Wall defends itself.\""
             }
@@ -1494,31 +1447,31 @@
         {
             "id": "20324",
             "name": "Walrus Clan Chieftain",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Hardened",
-                    "Iron Resolve"
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Hardened",
+                "Iron Resolve"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20325",
             "name": "The Great Walrus",
-            "subname": "Steeled Through Ice and Snow",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Battle Scars"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Steeled Through Ice and Snow",
+            "abilities": [
+                "Battle Scars"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Hrmph.\""
             }
@@ -1526,18 +1479,18 @@
         {
             "id": "20326",
             "name": "Jon Snow",
-            "subname": "The Crow-Come-Over",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Reckless Heroism",
-                    "Southern Knowledge"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "The Crow-Come-Over",
+            "abilities": [
+                "Order: Reckless Heroism",
+                "Southern Knowledge"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Men are men and women women, no matter which side of the Wall we were born on.\" -Lady Val"
             }
@@ -1545,18 +1498,18 @@
         {
             "id": "20328",
             "name": "Borroq",
-            "subname": "Boar Skinchanger",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Hidden Traps",
-                    "Stalwart"
-                ],
-                "character": true
-            },
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Boar Skinchanger",
+            "abilities": [
+                "Order: Hidden Traps",
+                "Stalwart"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"And where will you be, crow? Hiding here in Castle Black with your white dog?\""
             }
@@ -1564,27 +1517,24 @@
         {
             "id": "20329",
             "name": "The Great Walrus",
-            "subname": "Lord of the Frozen Shore",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Affiliation: Frozen Shore",
-                    "Go Down Fighting",
-                    "Hardened"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40336": "Battle Endurance",
-                    "40337": "Frozen Shore Resilience",
-                    "40338": "Walrus' Strength"
-                }
-            },
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Lord of the Frozen Shore",
+            "abilities": [
+                "Affiliation: Frozen Shore",
+                "Go Down Fighting",
+                "Hardened"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40336",
+                "40337",
+                "40338"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"A savage folk. The men are bad, the women worse.\" -Tormund Giantsbane"
             }
@@ -1592,24 +1542,24 @@
         {
             "id": "20327",
             "name": "Mance Rayder",
-            "subname": "Abel The Bard",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "\"Camp Followers\"",
-                    "Sabotage and Subvert"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Before Deployment, attach Mance to an enemy Infantry unit, ignoring the usual Attachment limits.*"
-                    }
-                ],
-                "character": true,
-                "enemy": true
-            },
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Abel The Bard",
+            "abilities": [
+                "\"Camp Followers\"",
+                "Sabotage and Subvert"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "enemy": true,
+            "back_text": [
+                {
+                    "text": "*Before Deployment, attach Mance to an enemy Infantry unit, ignoring the usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I know every bawdy song that's ever been made, north or south of the Wall.\""
             }
@@ -1617,922 +1567,876 @@
         {
             "id": "20330",
             "name": "Varamyr's Eagle",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "type": "none",
-                "cost": 0,
-                "abilities": [
-                    "Varamyr's Eagle",
-                    "Varamyr's Scout"
-                ],
-                "requirements": [
-                    {
-                        "text": "*This model is only utilized by Varamyr's Master Skinchanger Ability.*"
-                    }
-                ],
-                "character": true
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Varamyr's Eagle",
+                "Varamyr's Scout"
+            ],
+            "tray": "none",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*This model is only utilized by Varamyr's Master Skinchanger Ability.*"
+                }
+            ],
+            "icon": "none"
         }
     ],
     "tactics": [
         {
             "id": "40301",
             "name": "Regroup and Reform",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 2 friendly Infantry units in Long Range of each other. Remove up to 4 models from 1 of these units. Restore that many Wounds to the other.",
-                            "You may then move 1 Attachment from 1 of these units to the other *(replacing 1 model as usual, and keeping usual Attachment restrictions)*, or switch 2 friendly Attachments in those units."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 2 friendly Infantry units in Long Range of each other. Remove up to 4 models from 1 of these units. Restore that many Wounds to the other.",
+                        "You may then move 1 Attachment from 1 of these units to the other *(replacing 1 model as usual, and keeping usual Attachment restrictions)*, or switch 2 friendly Attachments in those units."
+                    ]
+                }
+            ]
         },
         {
             "id": "40302",
             "name": "Coordination Tactics",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 2 friendly Infantry units in Short Range of each other.",
-                            "Until the end of the Turn, both units gain any non-Innate Abilities on the other unit.",
-                            "You may immediately trigger 1 unused \"Start of Turn\" Order on either of those units."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 2 friendly Infantry units in Short Range of each other.",
+                        "Until the end of the Turn, both units gain any non-Innate Abilities on the other unit.",
+                        "You may immediately trigger 1 unused \"Start of Turn\" Order on either of those units."
+                    ]
+                }
+            ]
         },
         {
             "id": "40303",
             "name": "There's Too Many!",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When an enemy is performing a Panic Test, before dice are rolled:",
-                        "effect": [
-                            "That enemy suffers -1 to their roll for each of your friendly units in Short Range, up to 3."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is performing a Panic Test, before dice are rolled:",
+                    "effect": [
+                        "That enemy suffers -1 to their roll for each of your friendly units in Short Range, up to 3."
+                    ]
+                }
+            ]
         },
         {
             "id": "40304",
             "name": "Diversion Tactics",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes a Melee Attack:",
-                        "effect": [
-                            "Target 1 other friendly unit in Long Range of the Defender. It performs 1 Maneuver Action."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 other friendly unit in Long Range of the Defender. It performs 1 Maneuver Action."
+                    ]
+                }
+            ]
         },
         {
             "id": "40305",
             "name": "Overwhelming Assault",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "For each friendly unit engaging the Defender, choose 1:",
-                            "• This Attack may re-roll any Attack Dice.",
-                            "• This Attack gains **Critical Blow**.",
-                            "• This Attack gains **Sundering**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "For each friendly unit engaging the Defender, choose 1:",
+                        "• This Attack may re-roll any Attack Dice.",
+                        "• This Attack gains **Critical Blow**.",
+                        "• This Attack gains **Sundering**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40306",
             "name": "Surrounded and Exposed",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 enemy unit. For each of your friendly units in Short Range of that enemy beyond the first, that enemy gains 1 Condition token."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy unit. For each of your friendly units in Short Range of that enemy beyond the first, that enemy gains 1 Condition token."
+                    ]
+                }
+            ]
         },
         {
             "id": "40307",
             "name": "The Endless Horde",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Infantry Unit and attach this card to them until the end of the game. When this unit is destroyed, place 1 Free Folk Raiders unit with 1 Raid Leader attached to it fully within Long Range of a friendly table edge, unactivated."
-                        ]
-                    }
-                ]
-            }
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Infantry Unit and attach this card to them until the end of the game. When this unit is destroyed, place 1 Free Folk Raiders unit with 1 Raid Leader attached to it fully within Long Range of a friendly table edge, unactivated."
+                    ]
+                }
+            ]
         },
         {
             "id": "40308",
             "name": "Rush of Aggression",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Charge Action, before rolling Charge Distance Dice:",
-                        "effect": [
-                            "This unit automatically counts as rolling a 6 on all Charge Distance Dice and their Melee Attack gains **Critical Blow**.",
-                            "After this Attack has been completed, unless the Attacker is Tormund's unit, they become **Vulnerable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Giantsbane",
-                "commander_subname": "Thunderfist"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Charge Action, before rolling Charge Distance Dice:",
+                    "effect": [
+                        "This unit automatically counts as rolling a 6 on all Charge Distance Dice and their Melee Attack gains **Critical Blow**.",
+                        "After this Attack has been completed, unless the Attacker is Tormund's unit, they become **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40309",
             "name": "Counter Assault",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes a Melee Attack:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit other than the Defender. They perform 1 Attack or Charge Action on the Attacker.",
-                            "If this targets Tormund's unit, they may re-roll any Attack and Charge Distance Dice for this Action."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Giantsbane",
-                "commander_subname": "Thunderfist"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit other than the Defender. They perform 1 Attack or Charge Action on the Attacker.",
+                        "If this targets Tormund's unit, they may re-roll any Attack and Charge Distance Dice for this Action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40310",
             "name": "Devastating Impact",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
-                        "effect": [
-                            "Enemies Successfully Charged by this unit become **Panicked** and **Vulnerable**.",
-                            "If this targets Tormund's unit, this unit may re-roll any Charge Distance Dice."
-                        ]
-                    }
-                ],
-                "commander_id": "20301",
-                "commander_name": "Tormund Giantsbane",
-                "commander_subname": "Thunderfist"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
+                    "effect": [
+                        "Enemies Successfully Charged by this unit become **Panicked** and **Vulnerable**.",
+                        "If this targets Tormund's unit, this unit may re-roll any Charge Distance Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20301"
             }
         },
         {
             "id": "40311",
             "name": "Wildling Diplomacy",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When an enemy NCU Activates:",
-                        "effect": [
-                            "If that NCU Claims a zone this Turn, before or after resolving that zone's effect, target 1 enemy Combat Unit. It gains 1 Condition token. Then target 1 enemy Combat Unit. It suffers D3+1 Wounds."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Mance Rayder",
-                "commander_subname": "King Beyond the Wall"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy NCU Activates:",
+                    "effect": [
+                        "If that NCU Claims a zone this Turn, before or after resolving that zone's effect, target 1 enemy Combat Unit. It gains 1 Condition token. Then target 1 enemy Combat Unit. It suffers D3+1 Wounds."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40312",
             "name": "Predictable Maneuvers",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of the first Enemy Turn in a Round:",
-                        "effect": [
-                            "Target 1 enemy Combat Unit and 1 enemy NCU. If either unit performs an Action this Turn, before they resolve that Action, 1 friendly Combat Unit performs 1 Attack, Maneuver, or Retreat Action."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Mance Rayder",
-                "commander_subname": "King Beyond the Wall"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of the first Enemy Turn in a Round:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit and 1 enemy NCU. If either unit performs an Action this Turn, before they resolve that Action, 1 friendly Combat Unit performs 1 Attack, Maneuver, or Retreat Action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40313",
             "name": "The Long Plan",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "End of any Turn, if an opponent Controls [LETTER]:",
-                        "effect": [
-                            "Search your Tactics Deck for any 1 card and add it to your hand. Shuffle your Tactics deck."
-                        ]
-                    },
-                    {
-                        "trigger": "End of the Round:",
-                        "effect": [
-                            "Search your Tactics Deck for any 1 card and add it to your hand. Shuffle your Tactics deck."
-                        ]
-                    },
-                    {
-                        "trigger": "End of any Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20303",
-                "commander_name": "Mance Rayder",
-                "commander_subname": "King Beyond the Wall"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "End of any Turn, if an opponent Controls [LETTER]:",
+                    "effect": [
+                        "Search your Tactics Deck for any 1 card and add it to your hand. Shuffle your Tactics deck."
+                    ]
+                },
+                {
+                    "trigger": "End of the Round:",
+                    "effect": [
+                        "Search your Tactics Deck for any 1 card and add it to your hand. Shuffle your Tactics deck."
+                    ]
+                },
+                {
+                    "trigger": "End of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20303"
             }
         },
         {
             "id": "40314",
             "name": "Bloody Trophies",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
-                        "effect": [
-                            "All enemies engaged with the Attacker become **Panicked**. Then, attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
-                            "While attached, when an enemy performs an Action engaged with this unit, before resolving that Action, that enemy becomes **Panicked**.",
-                            "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Rattleshirt",
-                "commander_subname": "The Lord Of Bones"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
+                    "effect": [
+                        "All enemies engaged with the Attacker become **Panicked**. Then, attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
+                        "While attached, when an enemy performs an Action engaged with this unit, before resolving that Action, that enemy becomes **Panicked**.",
+                        "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40315",
             "name": "Weapon Trophies",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
-                        "effect": [
-                            "Attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
-                            "While attached, their Melee Attacks gain +1 to Hit.",
-                            "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Rattleshirt",
-                "commander_subname": "The Lord Of Bones"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
+                    "effect": [
+                        "Attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
+                        "While attached, their Melee Attacks gain +1 to Hit.",
+                        "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40316",
             "name": "Armor Trophies",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
-                        "effect": [
-                            "Attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
-                            "While attached, they gain +1 to Defense Dice rolls and opponents cannot expend **Vulnerable** tokens on this unit.",
-                            "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
-                        ]
-                    }
-                ],
-                "commander_id": "20315",
-                "commander_name": "Rattleshirt",
-                "commander_subname": "The Lord Of Bones"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack, if the Defender suffered any Wounds:",
+                    "effect": [
+                        "Attach this card to 1 friendly Infantry or Cavalry unit in Short Range of the Attacker.",
+                        "While attached, they gain +1 to Defense Dice rolls and opponents cannot expend **Vulnerable** tokens on this unit.",
+                        "Once per Turn, after attaching a Rattleshirt’s Commander Tactics card, you also may play 1 Rattleshirt’s Commander Tactics card from your hand, ignoring its usual trigger."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20315"
             }
         },
         {
             "id": "40317",
             "name": "Hit and Run",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack:",
-                        "effect": [
-                            "That unit performs 1 Retreat Action.",
-                            "If this targets Harma's unit, any enemy it disengages from becomes **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma",
-                "commander_subname": "Vanguard Commander"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "That unit performs 1 Retreat Action.",
+                        "If this targets Harma's unit, any enemy it disengages from becomes **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40318",
             "name": "Feinting Maneuver",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit Successfully Charges:",
-                        "effect": [
-                            "If they contacted the Front of the enemy, instead, align this unit's tray to any Flank of that enemy.",
-                            "If they contacted a Flank of the enemy, instead, align this unit's tray to the Rear of that enemy."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma",
-                "commander_subname": "Vanguard Commander"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Successfully Charges:",
+                    "effect": [
+                        "If they contacted the Front of the enemy, instead, align this unit's tray to any Flank of that enemy.",
+                        "If they contacted a Flank of the enemy, instead, align this unit's tray to the Rear of that enemy."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40319",
             "name": "Swift Reposition",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. It shifts 2\".",
-                            "If this targets Harma's unit, they perform a 3\" Maneuver Action instead."
-                        ]
-                    }
-                ],
-                "commander_id": "20317",
-                "commander_name": "Harma",
-                "commander_subname": "Vanguard Commander"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. It shifts 2\".",
+                        "If this targets Harma's unit, they perform a 3\" Maneuver Action instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20317"
             }
         },
         {
             "id": "40320",
             "name": "Cruel Methods",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 enemy Combat Unit.You may expend 1 Panic token from that unit. If you do, choose 2:",
-                            "• 1 friendly Infantry unit in Long Range restores 2 Wounds *(This may be selected multiple times)*.",
-                            "• That enemy becomes **Vulnerable**.",
-                            "• That enemy becomes **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "The Weeper",
-                "commander_subname": "Horrific Butcher"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit.You may expend 1 Panic token from that unit. If you do, choose 2:",
+                        "• 1 friendly Infantry unit in Long Range restores 2 Wounds *(This may be selected multiple times)*.",
+                        "• That enemy becomes **Vulnerable**.",
+                        "• That enemy becomes **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40321",
             "name": "Price of Failure",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "All Attack Dice rolls automatically Hit for this Attack.",
-                            "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Vulnerable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "The Weeper",
-                "commander_subname": "Horrific Butcher"
+            "faction": "freefolk",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "All Attack Dice rolls automatically Hit for this Attack.",
+                        "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40322",
             "name": "Bloody Beheadings",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack:",
-                        "effect": [
-                            "If this Attack destroyed an enemy rank, each enemy in Long Range becomes **Panicked**. If they were already **Panicked**, they suffer 1 Panic Test.",
-                            "If this Attack destroyed the enemy instead, each enemy in Long Range becomes **Panicked** and they suffer 1 Panic Test."
-                        ]
-                    }
-                ],
-                "commander_id": "20320",
-                "commander_name": "The Weeper",
-                "commander_subname": "Horrific Butcher"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "If this Attack destroyed an enemy rank, each enemy in Long Range becomes **Panicked**. If they were already **Panicked**, they suffer 1 Panic Test.",
+                        "If this Attack destroyed the enemy instead, each enemy in Long Range becomes **Panicked** and they suffer 1 Panic Test."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20320"
             }
         },
         {
             "id": "40323",
             "name": "Bitter Demise",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Infantry or Cavalry unit is destroyed:",
-                        "effect": [
-                            "Before removing that unit, it performs 1 Melee Attack Action using its highest Attack Die Value.",
-                            "If this targets Styr's unit, it may re-roll any Attack Dice."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr",
-                "commander_subname": "Magnar Of Thenn"
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Infantry or Cavalry unit is destroyed:",
+                    "effect": [
+                        "Before removing that unit, it performs 1 Melee Attack Action using its highest Attack Die Value.",
+                        "If this targets Styr's unit, it may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40324",
             "name": "Thenn Defiance",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Panic Test, after dice are rolled:",
-                        "effect": [
-                            "That unit may re-roll any dice for this Test. If they are in Short Range of Styr, they pass this test instead.",
-                            "If this targets Styr's unit, target 1 enemy they are engaged with. They suffer 1 Wound, +1 Wound for each of this unit's destroyed ranks."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr",
-                "commander_subname": "Magnar Of Thenn"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Panic Test, after dice are rolled:",
+                    "effect": [
+                        "That unit may re-roll any dice for this Test. If they are in Short Range of Styr, they pass this test instead.",
+                        "If this targets Styr's unit, target 1 enemy they are engaged with. They suffer 1 Wound, +1 Wound for each of this unit's destroyed ranks."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40325",
             "name": "Styr's Vengeance",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly unit is destroyed, place 1 Order token on this card.",
-                            "While this card has a token, the attached unit gains:",
-                            "When this unit Attacks, before Attack Dice are rolled, the Defender becomes **Vulnerable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20313",
-                "commander_name": "Styr",
-                "commander_subname": "Magnar Of Thenn"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly unit is destroyed, place 1 Order token on this card.",
+                        "While this card has a token, the attached unit gains:",
+                        "When this unit Attacks, before Attack Dice are rolled, the Defender becomes **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20313"
             }
         },
         {
             "id": "40326",
             "name": "Shrug It Off",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Monster Unit performs an Action, before resolving that Action:",
-                        "effect": [
-                            "That unit may replace that Action with:",
-                            "*This unit restores up to 3 Wounds.*"
-                        ]
-                    }
-                ],
-                "remove": "40301\n40302\n40303\n40304\n40305\n40306\n40307",
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Monster Unit performs an Action, before resolving that Action:",
+                    "effect": [
+                        "That unit may replace that Action with:",
+                        "*This unit restores up to 3 Wounds.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40327",
             "name": "Trample",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Giant Unit performs a Charge Action, before resolving that Action:",
-                        "effect": [
-                            "That unit replaces that Charge Action with:",
-                            "*Pivot this unit, then move it 10”, moving through units. If it ends over a unit, it instead stops 1” away. Each non-Solo unit moved through or that it would have ended on suffers D3 Wounds.*"
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Giant Unit performs a Charge Action, before resolving that Action:",
+                    "effect": [
+                        "That unit replaces that Charge Action with:",
+                        "*Pivot this unit, then move it 10”, moving through units. If it ends over a unit, it instead stops 1” away. Each non-Solo unit moved through or that it would have ended on suffers D3 Wounds.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40328",
             "name": "Enrage",
-            "statistics": {
-                "version": "S05",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Monster Unit's Activation:",
-                        "effect": [
-                            "That unit suffers 2 Wounds.",
-                            "Until the end of the Turn, that unit may re-roll any Attack Dice and Defenders become **Panicked** and **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Monster Unit's Activation:",
+                    "effect": [
+                        "That unit suffers 2 Wounds.",
+                        "Until the end of the Turn, that unit may re-roll any Attack Dice and Defenders become **Panicked** and **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40329",
             "name": "Chieftain's Orders",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of Mag the Mighty's Activation:",
-                        "effect": [
-                            "Mag may replace his Action with:",
-                            "*1 friendly Giant Unit in Long Range performs 1 Action.*"
-                        ]
-                    },
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Draw 1 Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of Mag the Mighty's Activation:",
+                    "effect": [
+                        "Mag may replace his Action with:",
+                        "*1 friendly Giant Unit in Long Range performs 1 Action.*"
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40330",
             "name": "Monsters From The North",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When an enemy in Short Range of a friendly Monster Unit Activates:",
-                        "effect": [
-                            "That enemy suffers 1 Panic Test with -1 to their roll for each friendly Monster Unit in Short Range, up to -3. On failure, they suffer +1 Wound for each friendly Monster Unit in Short Range, up to +3."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy in Short Range of a friendly Monster Unit Activates:",
+                    "effect": [
+                        "That enemy suffers 1 Panic Test with -1 to their roll for each friendly Monster Unit in Short Range, up to -3. On failure, they suffer +1 Wound for each friendly Monster Unit in Short Range, up to +3."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40331",
             "name": "Last of Their Kind",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Giant Unit is destroyed:",
-                        "effect": [
-                            "1 other friendly Giant Unit performs 1 Attack or Charge Action."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Giant Unit is destroyed:",
+                    "effect": [
+                        "1 other friendly Giant Unit performs 1 Attack or Charge Action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40332",
             "name": "Defiant Roar",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Monster Unit passes a Morale Test:",
-                        "effect": [
-                            "Target all enemies engaged with this unit. They become **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Monster Unit passes a Morale Test:",
+                    "effect": [
+                        "Target all enemies engaged with this unit. They become **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40333",
             "name": "Hurl Boulder",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Giant Unit performs an Action, before resolving that Action:",
-                        "effect": [
-                            "That unit replaces that Action with performing the following Ranged Attack:",
-                            "[ATTACK:LongRanged:Hurl Boulder:3+1]",
-                            "If this Attack generates any Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each remaining rank in that unit."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Giant Unit performs an Action, before resolving that Action:",
+                    "effect": [
+                        "That unit replaces that Action with performing the following Ranged Attack:",
+                        "[ATTACK:LongRanged:Hurl Boulder:3+1]",
+                        "If this Attack generates any Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each remaining rank in that unit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40334",
             "name": "Overrun",
-            "statistics": {
-                "version": "S04",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Combat Unit Surges Forth:",
-                        "effect": [
-                            "Instead of Surging Forth, that unit performs 1 Charge or March Action."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Surges Forth:",
+                    "effect": [
+                        "Instead of Surging Forth, that unit performs 1 Charge or March Action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40335",
             "name": "Blitz",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Monster Unit's Activation:",
-                        "effect": [
-                            "That unit becomes **Vulnerable**. Until the end of the Turn, that unit gains +2[MOVEMENT] and may re-roll any Charge Distance Dice."
-                        ]
-                    }
-                ],
-                "commander_id": "10313",
-                "commander_name": "Mag the Mighty",
-                "commander_subname": "Mag Mar Tun Doh Weg"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Monster Unit's Activation:",
+                    "effect": [
+                        "That unit becomes **Vulnerable**. Until the end of the Turn, that unit gains +2[MOVEMENT] and may re-roll any Charge Distance Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10313"
             }
         },
         {
             "id": "40336",
             "name": "Battle Endurance",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gains the following bonuses, based on the Game Round *(effects are cumulative)*:",
-                            "**3+:** May re-roll any Misses",
-                            "**4+:** **Sundering**",
-                            "**5+:** **Critical Blow**",
-                            "**6+:** +2 Attack Dice"
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "The Great Walrus",
-                "commander_subname": "Lord of the Frozen Shore"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gains the following bonuses, based on the Game Round *(effects are cumulative)*:",
+                        "**3+:** May re-roll any Misses",
+                        "**4+:** **Sundering**",
+                        "**5+:** **Critical Blow**",
+                        "**6+:** +2 Attack Dice"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40337",
             "name": "Frozen Shore Resilience",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When an enemy is performing an Attack, after rolling Defense Dice:",
-                        "effect": [
-                            "Target the Defender. They may re-roll any Defense Dice.",
-                            "If the Defender is a Frozen Shore unit, they may also re-roll any Panic Test dice for this Attack."
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "The Great Walrus",
-                "commander_subname": "Lord of the Frozen Shore"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is performing an Attack, after rolling Defense Dice:",
+                    "effect": [
+                        "Target the Defender. They may re-roll any Defense Dice.",
+                        "If the Defender is a Frozen Shore unit, they may also re-roll any Panic Test dice for this Attack."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40338",
             "name": "Walrus' Strength",
-            "statistics": {
-                "version": "S06",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 friendly Infantry or Cavalry Unit. Attach this card to it until the end of the game.",
-                            "While attached, when this unit activates, it restores 1 Wound.",
-                            "If it is in Short Range of The Great Walrus, it may also remove 1 Condition token."
-                        ]
-                    }
-                ],
-                "commander_id": "20329",
-                "commander_name": "The Great Walrus",
-                "commander_subname": "Lord of the Frozen Shore"
+            "faction": "freefolk",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Infantry or Cavalry Unit. Attach this card to it until the end of the game.",
+                        "While attached, when this unit activates, it restores 1 Wound.",
+                        "If it is in Short Range of The Great Walrus, it may also remove 1 Condition token."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20329"
             }
         },
         {
             "id": "40339",
             "name": "Summon Companions",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "Start of an enemy Turn:",
-                        "effect": [
-                            "Select either Shadowcat or Wolf Pack. If that unit is on the battlefield, you may remove it from the battlefield.",
-                            "After, if that unit is not on the battlefield *(from either this effect or having been destroyed)*, redeploy it fully within Short Range of any Flank table edge. If that unit had already Activated this Round, it deploys Activated."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sixskins",
-                "commander_subname": "Master Skinchanger"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of an enemy Turn:",
+                    "effect": [
+                        "Select either Shadowcat or Wolf Pack. If that unit is on the battlefield, you may remove it from the battlefield.",
+                        "After, if that unit is not on the battlefield *(from either this effect or having been destroyed)*, redeploy it fully within Short Range of any Flank table edge. If that unit had already Activated this Round, it deploys Activated."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         },
         {
             "id": "40340",
             "name": "Bonded Guardians",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "After a friendly Varamyr, Shadowcat, or Wolf Pack unit is Attacked:",
-                        "effect": [
-                            "Target 1 other friendly Varamyr, Shadowcat, or Wolf Pack unit.",
-                            "It performs 1 Attack, Charge, or Maneuver Action. If Attacking or Charging, it must target the Attacker."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sixskins",
-                "commander_subname": "Master Skinchanger"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly Varamyr, Shadowcat, or Wolf Pack unit is Attacked:",
+                    "effect": [
+                        "Target 1 other friendly Varamyr, Shadowcat, or Wolf Pack unit.",
+                        "It performs 1 Attack, Charge, or Maneuver Action. If Attacking or Charging, it must target the Attacker."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         },
         {
             "id": "40341",
             "name": "Bonded Command",
-            "statistics": {
-                "version": "2021",
-                "faction": "freefolk",
-                "text": [
-                    {
-                        "trigger": "When a friendly Varamyr, Shadowcat, or Wolf Pack unit Activates:",
-                        "effect": [
-                            "This unit cannot perform Actions this Turn. Instead, target 1 other friendly Varamyr, Shadowcat, or Wolf Pack unit in Long Range. It performs 1 Action."
-                        ]
-                    }
-                ],
-                "commander_id": "10318",
-                "commander_name": "Varamyr Sixskins",
-                "commander_subname": "Master Skinchanger"
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Varamyr, Shadowcat, or Wolf Pack unit Activates:",
+                    "effect": [
+                        "This unit cannot perform Actions this Turn. Instead, target 1 other friendly Varamyr, Shadowcat, or Wolf Pack unit in Long Range. It performs 1 Action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "10318"
             }
         }
     ],
-    "specials": [
+    "special": [
         {
-            "name": "No Coin Beyond the Wall",
             "id": "50399",
-            "type": "faction",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021",
-                "front": {
-                    "ratio": 0.5,
-                    "crests": 1,
-                    "text": [
-                        "**Free Folk armies may never include Neutral Attachments or Units.**"
-                    ]
-                }
+            "name": "No Coin Beyond the Wall",
+            "faction": "freefolk",
+            "version": "2021",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**Free Folk armies may never include Neutral Attachments or Units.**"
+                ]
             }
         },
         {
-            "name": "Chieftain of the Giants",
             "id": "50301",
-            "type": "commander",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021-S02",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "**You may select Mag the Mighty as your Commander**",
-                        "If you do, his points cost becomes 5 *(Instead of the usual 9)*.",
-                        "When you include Mag the Mighty as your Commander, replace the Free Folk Tactics Deck with Mag's deck."
+            "name": "Chieftain of the Giants",
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "special",
+            "category": "commander",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "**You may select Mag the Mighty as your Commander**",
+                    "If you do, his points cost becomes 5 *(Instead of the usual 9)*.",
+                    "When you include Mag the Mighty as your Commander, replace the Free Folk Tactics Deck with Mag's deck."
+                ]
+            },
+            "back": {
+                "style": "commander",
+                "data": {
+                    "cost": 5,
+                    "name": "Mag the Mighty",
+                    "title": "Mag Mar Tun Doh Weg",
+                    "quote": "\"You can kneel to him if you like, he won't mind.\"",
+                    "type": "monster",
+                    "tactics": [
+                        "Replace the Free Folk Tactics deck with Mag's Tactics deck"
                     ]
-                },
-                "back": {
-                    "style": "commander",
-                    "data": {
-                        "cost": 5,
-                        "name": "Mag the Mighty",
-                        "subname": "Mag Mar Tun Doh Weg",
-                        "quote": "\"You can kneel to him if you like, he won't mind.\"",
-                        "type": "monster",
-                        "tactics": [
-                            "Replace the Free Folk Tactics deck with Mag's Tactics deck"
-                        ]
-                    }
                 }
             }
         },
         {
-            "name": "Varamyr Sixskins",
             "id": "50302",
-            "type": "commander",
-            "statistics": {
-                "faction": "freefolk",
-                "version": "2021-S02",
-                "front": {
-                    "ratio": 0.3,
-                    "crests": 1,
-                    "text": [
-                        "You may select Varamyr Sixskins as your Commander. If you do, reduce his cost to 2.",
-                        "When you include Varamyr as your Commander, your army **must** also include Shadowcat and Wolf Pack."
+            "name": "Varamyr Sixskins",
+            "faction": "freefolk",
+            "version": "2021-S02",
+            "role": "special",
+            "category": "commander",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "text": [
+                    "You may select Varamyr Sixskins as your Commander. If you do, reduce his cost to 2.",
+                    "When you include Varamyr as your Commander, your army **must** also include Shadowcat and Wolf Pack."
+                ]
+            },
+            "back": {
+                "style": "commander",
+                "data": {
+                    "cost": 2,
+                    "name": "Varamyr Sixskins",
+                    "title": "Master Skinchanger",
+                    "quote": "\"A vicious litte runt.\" -Tormund Giantsbane",
+                    "type": "monster",
+                    "tactics": [
+                        "Bonded Command",
+                        "Bonded Guardians",
+                        "Summon Companions"
                     ]
-                },
-                "back": {
-                    "style": "commander",
-                    "data": {
-                        "cost": 2,
-                        "name": "Varamyr Sixskins",
-                        "subname": "Master Skinchanger",
-                        "quote": "\"A vicious litte runt.\" -Tormund Giantsbane",
-                        "type": "monster",
-                        "tactics": [
-                            "Bonded Command",
-                            "Bonded Guardians",
-                            "Summon Companions"
-                        ]
-                    }
                 }
             }
         }

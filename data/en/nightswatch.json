@@ -1,530 +1,522 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "nightswatch",
+        "language": "en"
+    },
+    "unit": [
         {
             "id": "10501",
             "name": "Veterans of the Watch",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Dual Weapons",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Dual Weapons",
-                    "Counterstrike",
-                    "Disrupt"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Dual Weapons",
+                "Counterstrike",
+                "Disrupt"
+            ],
+            "attacks": [
+                {
+                    "name": "Dual Weapons",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "While Sworn Brothers can confidently keep their place in the line, Veterans possess the arms and expertise to push the line forward. They’re skilled combatants, nigh impossible to break, and their personal kit consists of the best armor the Builders can forge. Even the most professional units the Seven Kingdoms can muster would find the Veterans difficult to thwart, let alone defeat."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10502",
             "name": "Sworn Brothers",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Greatsword",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Martial Training",
-                    "Greatsword"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Order: Martial Training",
+                "Greatsword"
+            ],
+            "attacks": [
+                {
+                    "name": "Greatsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "As the mainstay of the Night’s Watch forces, the Sworn Brothers face Wildlings and other northern terrors with stoicism and reserve born of long-training and solid gear. Indeed, having their own forges and smiths allows the average Brother a better kit than the average foot soldier belonging to most great houses (except House Lannister, of course). Sworn Brothers can be relied upon to hold the line, almost regardless of the odds."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10503",
             "name": "Ranger Trackers",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Recurve Bow",
-                        "type": "short",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5
-                        ]
-                    },
-                    {
-                        "name": "Short Sword",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Mark Target",
-                    "Cavalry",
-                    "Pathfinder"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Order: Mark Target",
+                "Cavalry",
+                "Pathfinder"
+            ],
+            "attacks": [
+                {
+                    "name": "Recurve Bow",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "The Night’s Watch Rangers employ many units of varying skill sets, but their eyes are embodied by the Trackers. As dedicated scouting cavalry, Trackers are charged with providing intelligence on enemy strength, numbers, and location. On the battlefield their expertise extends to determining enemies in vulnerable positions. Wise commanders will heed their counsel, and position troops to exploit such weaknesses accordingly."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10504",
             "name": "Ghost",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "monster",
-                "cost": 3,
-                "speed": 6,
-                "defense": 4,
-                "morale": 2,
-                "attacks": [
-                    {
-                        "name": "Tooth & Claw",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Direwolf",
-                    "True Bond",
-                    "Tooth & Claw"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May only be fielded in an army including Jon Snow.*"
-                    }
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Direwolf",
+                "True Bond",
+                "Tooth & Claw"
+            ],
+            "attacks": [
+                {
+                    "name": "Tooth & Claw",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 2,
+            "speed": 6,
+            "cost": 3,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including Jon Snow.*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "The albino direwolf known as Ghost could not be more aptly named, trailing in Jon Snow’s wake like an ominous shadow. On the battlefield, Ghost ranges more or less freely, having an instinctive grasp of his master’s will. Capable of shocking speed and rending through armor with his powerful jaws, Ghost operates best as a flanker or in pursuit of broken troops. Indeed, the sight of a charging direwolf is enough to shake most men to their core."
-            }
+            },
+            "icon": "monster",
+            "wounds": 4
         },
         {
             "id": "10505",
             "name": "Ranger Hunters",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Hunter's Bow",
-                        "type": "short",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Swift Strike",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Quick Fire",
-                    "Swift Strike"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Order: Quick Fire",
+                "Swift Strike"
+            ],
+            "attacks": [
+                {
+                    "name": "Hunter's Bow",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Swift Strike",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Often working hand-in-hand with Ranger Trackers, Ranger Hunters specialize in eliminating critical targets on the battlefield. While stealth is rarely an option in open battle, Hunters strike suddenly, exploiting weakened or vulnerable enemies, often eliminating them to a man before any serious resistance can mount. However, as with all light infantry, being bogged down in an extended melee can prove fatal, something any commander should avoid."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10506",
             "name": "Builder Scorpion Crew",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 5,
-                "speed": 4,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Bolt Thrower",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    },
-                    {
-                        "name": "Weapon Crew",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "War Machine",
-                    "Bolt Thrower"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limited",
-                        "text": "*Your army may only contain up to 2 Builder Scorpion Crews.*"
-                    }
-                ],
-                "wounds": 6,
-                "tray": "warmachine"
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "War Machine",
+                "Bolt Thrower"
+            ],
+            "attacks": [
+                {
+                    "name": "Bolt Thrower",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                },
+                {
+                    "name": "Weapon Crew",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 4,
+            "cost": 5,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain up to 2 Builder Scorpion Crews.*",
+                    "name": "Limited"
+                }
+            ],
             "fluff": {
                 "lore": "The Night’s Watch Builders are known for their ingenuity, and none embodies this more than the Builder Scorpion Crew. With just a few specialized parts, and enough available timber, the Crew can construct a mobile Scorpion, capable of firing massive bolts at long range and with surprising accuracy. Entire ranks can be cut down by a single projectile. However, the Scorpion itself requires time to reposition, and it moves very slowly."
-            }
+            },
+            "icon": "siegeengine",
+            "wounds": 6
         },
         {
             "id": "10507",
             "name": "Builder Stone Thrower",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 8,
-                "speed": 1,
-                "defense": 5,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Rock Volley",
-                        "type": "long",
-                        "hit": 4,
-                        "dice": [
-                            2
-                        ]
-                    },
-                    {
-                        "name": "Weapon Crew",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "War Machine",
-                    "Rock Volley"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limited",
-                        "text": "*Your army may only contain up to 2 Builder Stone Throwers.*"
-                    }
-                ],
-                "wounds": 6,
-                "tray": "warmachine"
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "War Machine",
+                "Rock Volley"
+            ],
+            "attacks": [
+                {
+                    "name": "Rock Volley",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        2
+                    ]
+                },
+                {
+                    "name": "Weapon Crew",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 5,
+            "speed": 1,
+            "cost": 8,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain up to 2 Builder Stone Throwers.*",
+                    "name": "Limited"
+                }
+            ],
             "fluff": {
                 "lore": "Builder Stone Thrower Crews are adept at constructing and operating mobile Stone Throwers in the field. The Builders insist these are not catapults, as those siege engines are typically on a larger scale and often use specialized projectiles, but the principles are the same. A competent Stone Thrower Crew can land their deadly projectiles dead-center in enemy formations, against which not even the heaviest of infantry have any protection."
-            }
+            },
+            "icon": "siegeengine",
+            "wounds": 6
         },
         {
             "id": "10508",
             "name": "Builder Crossbowmen",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Crossbow",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Short Sword",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Ready! Aim! Release!",
-                    "Crossbow"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Order: Ready! Aim! Release!",
+                "Crossbow"
+            ],
+            "attacks": [
+                {
+                    "name": "Crossbow",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "While the Wall and its fortifications remain the Builders’ primary responsibility, they also service arms and armor for the entirety of the Night’s Watch. Thus, their role on the battlefield is not traditionally as front-line combatants. But in the face of some enemies, every man wants a weapon at hand. As crossbows require more attention to upkeep and maintenance than most weapons, the Builders are a natural choice to act as second-line fire support."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10509",
             "name": "Conscripts",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Simple Weapons",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Supply Aid",
-                    "Disorganized"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Order: Supply Aid",
+                "Disorganized"
+            ],
+            "attacks": [
+                {
+                    "name": "Simple Weapons",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Somewhat ragged and often unruly, Night’s Watch Conscripts are literally the lowest of the low. While the Watch prefers to provide at least some training to their newest recruits, on occasion, defense of the Wall requires every man standing to grab a blade and sally forth. Liable to break and run at the first sign of serious resistance, a wise commander will not depend too heavily on the Conscripts holding against strong odds."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10510",
             "name": "Watch Marshal",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 4,
-                "speed": 6,
-                "defense": 4,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Longsword",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Tactical Reposition",
-                    "Marshal"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limited",
-                        "text": "*Your army may only include up to 2 Watch Marshals.*"
-                    }
-                ],
-                "wounds": 3,
-                "tray": "solo"
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: Tactical Reposition",
+                "Marshal"
+            ],
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 3,
+            "speed": 6,
+            "cost": 4,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Your army may only include up to 2 Watch Marshals.*",
+                    "name": "Limited"
+                }
+            ],
             "fluff": {
                 "lore": "Rising to the rank of Watch Marshal requires more than simple horsemanship and command authority. It requires a Watch Brother to have spent their time in the front lines and on long patrols beyond the Wall, enough to have seen every enemy the Watch must contend with and learning to deal with them effectively and decisively. Watch Marshals excel at getting the best out of their troops through pressing advantages in both attack and maneuver."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10511",
             "name": "Coldhands",
-            "subname": "Mysterious Ally",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 3,
-                "morale": 3,
-                "attacks": [
-                    {
-                        "name": "Longsword",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Raven Flock",
-                    "Eye Of The Crow"
-                ],
-                "requirements": [
-                    {
-                        "name": "Character",
-                        "text": "*May not be fielded in an army containing Benjen Stark.*"
-                    }
-                ],
-                "wounds": 4,
-                "tray": "solo",
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "unit",
+            "title": "Mysterious Ally",
+            "abilities": [
+                "Order: Raven Flock",
+                "Eye Of The Crow"
+            ],
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 3,
+            "speed": 5,
+            "cost": 5,
+            "tray": "solo",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army containing Benjen Stark.*",
+                    "name": "Character"
+                }
+            ],
             "fluff": {
                 "lore": "A mysterious specter that aids or hinders forces according to an unknown design, the entity known as Coldhands might be an ally one day and an enemy the next. He commands endless flocks of ravens to savage opponents with raking claws and battering wings, and rides a mighty elk into battle, where his own considerable prowess comes into play. He wears the armor and cloak of a Night’s Watch brother, though whether these were his in life or looted from a fallen foe, none can say. Even if cut down, Coldhands reappears on the field a short time later."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 4
         },
         {
             "id": "10512",
             "name": "Ranger Vanguards",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Longsword",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalry",
-                    "Ambush",
-                    "Outflank"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Ambush",
+                "Outflank"
+            ],
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Night’s Watch Rangers are known for their ability to blend into the wilderness, lying in ambush for their enemies. Such assaults are even more devastating when delivered on horseback. Hiding cavalry proves tricky in most any terrain, but the Ranger Vanguards know the woods north of the Wall better than anyone. Thick copses of trees, hidden dells, and even mild depressions in the terrain provide plenty of territory from which to surprise foes."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10513",
             "name": "Shadow Tower Spearmen",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 3,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Spear",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Set For Charge",
-                    "Unyielding"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Order: Set For Charge",
+                "Unyielding"
+            ],
+            "attacks": [
+                {
+                    "name": "Spear",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Guarding the Wall’s western end stands the Shadow Tower and the Black Brothers who stand their vigil. Like all Night’s Watch brothers, the Shadow Tower Spearmen are clad in black leather and darkened steel, suited for warmth against the North’s legendary cold. Spearmen make superior flank guards, adept at receiving enemy charges, whether that be from cavalry or infantry, and delivering punishing blows before their opponent closes range."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30501",
             "name": "Bowen Marsh",
-            "subname": "First Steward",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Counts and Measures",
-                        "effect": [
-                            "Each time Bowen Claims a zone, you may look at the top 2 cards of your Tactics Deck. Place 1 of those cards in your hand and the other on the bottom of your Tactics Deck."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "ncu",
+            "title": "First Steward",
+            "abilities": [
+                {
+                    "name": "Counts and Measures",
+                    "effect": [
+                        "Each time Bowen Claims a zone, you may look at the top 2 cards of your Tactics Deck. Place 1 of those cards in your hand and the other on the bottom of your Tactics Deck."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"For the Watch.\""
             }
@@ -532,20 +524,20 @@
         {
             "id": "30502",
             "name": "Aemon",
-            "subname": "Maester of Castle Black",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Maester's Healing",
-                        "effect": [
-                            "Each time Aemon Claims a zone, you may target 1 friendly Combat Unit. That unit restores 1 Wound, +1 additional Wound for each of its destroyed ranks."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Maester of Castle Black",
+            "abilities": [
+                {
+                    "name": "Maester's Healing",
+                    "effect": [
+                        "Each time Aemon Claims a zone, you may target 1 friendly Combat Unit. That unit restores 1 Wound, +1 additional Wound for each of its destroyed ranks."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Knowledge is a weapon, Jon. Arm yourself well before you ride forth to battle.\""
             }
@@ -553,22 +545,22 @@
         {
             "id": "30503",
             "name": "Jeor Mormont",
-            "subname": "The Old Bear",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Duty To The Realms Of Men",
-                        "effect": [
-                            "Each time Jeor Claims a zone, you may target 2 friendly Night's Watch Combat Units. Move 1 friendly attached Tactics card from 1 of those units to the other.",
-                            "Once per game, when Jeor Claims a zone, you may replace that zone's effect with:",
-                            "*Take 1 Tactics card that can be attached to a unit from your discard pile and attach it to a friendly Night's Watch unit.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "The Old Bear",
+            "abilities": [
+                {
+                    "name": "Duty To The Realms Of Men",
+                    "effect": [
+                        "Each time Jeor Claims a zone, you may target 2 friendly Night's Watch Combat Units. Move 1 friendly attached Tactics card from 1 of those units to the other.",
+                        "Once per game, when Jeor Claims a zone, you may replace that zone's effect with:",
+                        "*Take 1 Tactics card that can be attached to a unit from your discard pile and attach it to a friendly Night's Watch unit.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"The Wall was made to guard the realms of men... and not against other men\""
             }
@@ -576,27 +568,27 @@
         {
             "id": "30506",
             "name": "Qhorin Halfhand",
-            "subname": "Unwavering Ranger",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Sacrifice For The Cause",
-                        "effect": [
-                            "At the start of any Turn, if Qhorin is not on the Tactics Board, you may destroy him. If you do, target 1 enemy unit. That enemy becomes **Vulnerable**, and cannot perform Attack or Charge Actions this Round."
-                        ]
-                    },
-                    {
-                        "name": "Halfhand's Guidance",
-                        "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round):*",
-                            "While Influencing a friendly Cavalry or Infantry unit, it gains + 1 Attack Die."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Unwavering Ranger",
+            "abilities": [
+                {
+                    "name": "Sacrifice For The Cause",
+                    "effect": [
+                        "At the start of any Turn, if Qhorin is not on the Tactics Board, you may destroy him. If you do, target 1 enemy unit. That enemy becomes **Vulnerable**, and cannot perform Attack or Charge Actions this Round."
+                    ]
+                },
+                {
+                    "name": "Halfhand's Guidance",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round):*",
+                        "While Influencing a friendly Cavalry or Infantry unit, it gains + 1 Attack Die."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "\"Our honor means no more than our lives, so long as the realm is safe.\""
             }
@@ -604,51 +596,51 @@
         {
             "id": "30507",
             "name": "Donal Noye",
-            "subname": "Expert Blacksmith",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Expert Maintenance",
-                        "effect": [
-                            "Donal begins the game with 2 Order Tokens on him.",
-                            "Each time a unit is performing an Attack, after rolling Attack Dice, you may remove 1 Order Token from Donal. If you do, choose 1:",
-                            "• Attacker may re-roll any Attack Dice and opponents cannot expend **Weakened** tokens from them.",
-                            "• Defender gains +1 to Defense Dice rolls and opponents cannot expend **Vulnerable** tokens from them."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "ncu",
+            "title": "Expert Blacksmith",
+            "abilities": [
+                {
+                    "name": "Expert Maintenance",
+                    "effect": [
+                        "Donal begins the game with 2 Order Tokens on him.",
+                        "Each time a unit is performing an Attack, after rolling Attack Dice, you may remove 1 Order Token from Donal. If you do, choose 1:",
+                        "• Attacker may re-roll any Attack Dice and opponents cannot expend **Weakened** tokens from them.",
+                        "• Defender gains +1 to Defense Dice rolls and opponents cannot expend **Vulnerable** tokens from them."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"The Watch is not what it was. Too few honest men to keep the rogues in line.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30508",
             "name": "Othell Yarwyck",
-            "subname": "Warmachine Specialist",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "War Machines of The Wall",
-                        "effect": [
-                            "Each time Othell Claims a zone, you may replace that zone's effect with:",
-                            "*Make the following Ranged Attack on 1 enemy Combat Unit:*",
-                            "[ATTACK:Ranged:Ranged Volley:3+3]",
-                            "*Gains +1 Attack Die for each of the Defenders remaining ranks.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Warmachine Specialist",
+            "abilities": [
+                {
+                    "name": "War Machines of The Wall",
+                    "effect": [
+                        "Each time Othell Claims a zone, you may replace that zone's effect with:",
+                        "*Make the following Ranged Attack on 1 enemy Combat Unit:*",
+                        "[ATTACK:Ranged:Ranged Volley:3+3]",
+                        "*Gains +1 Attack Die for each of the Defenders remaining ranks.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "\"This will show them how we deal with their kind.\""
             }
@@ -656,20 +648,20 @@
         {
             "id": "30509",
             "name": "Samwell Tarly",
-            "subname": "Craven Scholar",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Knowledge Is Power",
-                        "effect": [
-                            "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Craven Scholar",
+            "abilities": [
+                {
+                    "name": "Knowledge Is Power",
+                    "effect": [
+                        "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"I can't command you to be brave, but I can command you to hide your fears.\" -Jon Snow"
             }
@@ -677,59 +669,59 @@
         {
             "id": "30510",
             "name": "Gilly",
-            "subname": "The Wildling Girl",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 1,
-                "abilities": [
-                    {
-                        "name": "Gilly's Insight",
-                        "effect": [
-                            "At the start of the game, after drawing your Tactics Hand, you may draw 1 Tactics Card, then shuffle 1 card from your hand into your Tactics Deck."
-                        ]
-                    },
-                    {
-                        "name": "Samwell's Influence",
-                        "effect": [
-                            "Gilly begins the game with 1 Order token. Each time Gilly Claims a zone, after resolving that zone's effect, remove 1 Order token from Gilly.",
-                            "At the end of each Round, if Gilly has no Order token, destroy Gilly."
-                        ]
-                    }
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army including **Samwell Tarly, Craven Scholar**.*"
-                    }
-                ],
-                "tokens": {
-                    "number": 1,
-                    "name": "order"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "The Wildling Girl",
+            "abilities": [
+                {
+                    "name": "Gilly's Insight",
+                    "effect": [
+                        "At the start of the game, after drawing your Tactics Hand, you may draw 1 Tactics Card, then shuffle 1 card from your hand into your Tactics Deck."
+                    ]
+                },
+                {
+                    "name": "Samwell's Influence",
+                    "effect": [
+                        "Gilly begins the game with 1 Order token. Each time Gilly Claims a zone, after resolving that zone's effect, remove 1 Order token from Gilly.",
+                        "At the end of each Round, if Gilly has no Order token, destroy Gilly."
+                    ]
                 }
-            },
+            ],
+            "cost": 1,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army including **Samwell Tarly, Craven Scholar**.*"
+                }
+            ],
             "fluff": {
                 "quote": "\"Well I think you're quite brave.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 1
             }
         },
         {
             "id": "30511",
             "name": "Craster",
-            "subname": "Ally of the Watch",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Rest and Refuge",
-                        "effect": [
-                            "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                            "Each time Craster Influences a unit, remove 1 Condition token from them.",
-                            "While Influencing a unit, that unit ignores the Rough and Hindering keyword."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Ally of the Watch",
+            "abilities": [
+                {
+                    "name": "Rest and Refuge",
+                    "effect": [
+                        "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "Each time Craster Influences a unit, remove 1 Condition token from them.",
+                        "While Influencing a unit, that unit ignores the Rough and Hindering keyword."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"The man's half-mad, I won't deny it, but you'd be the same if you'd spent your life in this cursed wood.\""
             }
@@ -737,20 +729,20 @@
         {
             "id": "30512",
             "name": "Yoren",
-            "subname": "Wandering Crow",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Recruitment",
-                        "effect": [
-                            "Each time Yoren Claims a zone, before resolving that zone's effect, place 1 Order token on him.\nEach time Yoren Claims [CROWN], you may replace that zone's effect with:\n*Place 1 Order token on Yoren.*\nAt the start of any Round, you may remove 4 Order tokens from Yoren. \nIf you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "ncu",
+            "title": "Wandering Crow",
+            "abilities": [
+                {
+                    "name": "Recruitment",
+                    "effect": [
+                        "Each time Yoren Claims a zone, before resolving that zone's effect, place 1 Order token on him.\nEach time Yoren Claims [CROWN], you may replace that zone's effect with:\n*Place 1 Order token on Yoren.*\nAt the start of any Round, you may remove 4 Order tokens from Yoren. \nIf you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "\"I'm here to find men for the Wall...\""
             }
@@ -758,53 +750,50 @@
         {
             "id": "30513",
             "name": "Ser Denys Mallister",
-            "subname": "Honorable Brother",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Time May Yet Come",
-                        "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                            "While Influencing a friendly unit, each time it performs a Melee Attack, before rolling Attack Dice, choose 1. For each destroyed rank in this unit, choose +1:",
-                            "•This unit's Melee Attacks may re-roll any Attack Dice.",
-                            "•This unit rolls its highest Attack Die Value.",
-                            "•1 enemy engaged with this unit gains 1 Condition token."
-                        ]
-                    }
-                ]
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Honorable Brother",
+            "abilities": [
+                {
+                    "name": "Time May Yet Come",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing a friendly unit, each time it performs a Melee Attack, before rolling Attack Dice, choose 1. For each destroyed rank in this unit, choose +1:",
+                        "•This unit's Melee Attacks may re-roll any Attack Dice.",
+                        "•This unit rolls its highest Attack Die Value.",
+                        "•1 enemy engaged with this unit gains 1 Condition token."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"The men of the Night's Watch dressed in black, Ser Denys Mallister reminded me sternly, as if I had forgotten.\" -Mance Rayder"
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20501",
             "name": "Jeor Mormont",
-            "subname": "997th Lord Commander",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Stay At Your Posts!",
-                    "Stand Your Ground!"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40508": "And Now My Watch Begins",
-                    "40509": "Live And Die At My Post",
-                    "40510": "Night Gathers"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "997th Lord Commander",
+            "abilities": [
+                "Order: Stay At Your Posts!",
+                "Stand Your Ground!"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40508",
+                "40509",
+                "40510"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"When dead men come hunting in the night, do you think it matters who sits the Iron Throne?\""
             }
@@ -812,26 +801,23 @@
         {
             "id": "20502",
             "name": "Jon Snow",
-            "subname": "998th Lord Commander",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Boldness and Courage",
-                    "Furious Charge"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40511": "It Shall Not End Until My Death!",
-                    "40512": "Stand United, Brothers!",
-                    "40513": "For The Watch!"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "998th Lord Commander",
+            "abilities": [
+                "Boldness and Courage",
+                "Furious Charge"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40511",
+                "40512",
+                "40513"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"There's no shame in fear, my father told me, what matters is how we face it.\""
             }
@@ -839,18 +825,18 @@
         {
             "id": "20503",
             "name": "Jon Snow",
-            "subname": "\"Lord Snow\"",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Reckless Heroism",
-                    "Order: War Cry"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "\"Lord Snow\"",
+            "abilities": [
+                "Order: Reckless Heroism",
+                "Order: War Cry"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The only gods he worshipped were honor and duty.\""
             }
@@ -858,55 +844,52 @@
         {
             "id": "20504",
             "name": "Watch Captain",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Boldness and Courage",
-                    "Relentless"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Boldness and Courage",
+                "Relentless"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20505",
             "name": "Watch Recruiter",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Incite",
-                    "Reinforcements"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Incite",
+                "Reinforcements"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20509",
             "name": "Alliser Thorne",
-            "subname": "Master-at-Arms",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Threaten",
-                    "Vicious",
-                    "Prey On Fear"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40514": "Pathetic Attempt",
-                    "40515": "Seeing Their Flaws",
-                    "40516": "Price Of Failure"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Master-at-Arms",
+            "abilities": [
+                "Order: Threaten",
+                "Vicious",
+                "Prey On Fear"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40514",
+                "40515",
+                "40516"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"When the winter comes you will die like flies.\""
             }
@@ -914,18 +897,18 @@
         {
             "id": "20510",
             "name": "Alliser Thorne",
-            "subname": "Vindictive Overseer",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Iron Resolve",
-                    "Stubborn Tenacity"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Vindictive Overseer",
+            "abilities": [
+                "Iron Resolve",
+                "Stubborn Tenacity"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I have seen dead men with more humor than your Ser Alliser.\""
             }
@@ -933,26 +916,23 @@
         {
             "id": "20511",
             "name": "Donal Noye",
-            "subname": "Defender of Castle Black",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Shield Wall",
-                    "Improved Armaments"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40517": "Defensive Formation",
-                    "40518": "Refuse To Yield",
-                    "40519": "Lash Out"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Defender of Castle Black",
+            "abilities": [
+                "Order: Shield Wall",
+                "Improved Armaments"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40517",
+                "40518",
+                "40519"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"A one-armed smith slew Mag the Mighty? Har! That must o' been a fight to see.\""
             }
@@ -960,17 +940,17 @@
         {
             "id": "20512",
             "name": "Grenn",
-            "subname": "Aurochs",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Taunt"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "Aurochs",
+            "abilities": [
+                "Order: Taunt"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Grenn's the ugly one.\" -Pypar"
             }
@@ -978,22 +958,22 @@
         {
             "id": "20513",
             "name": "Pypar",
-            "subname": "Monkey",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Swift Retreat"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Pypar may be added to a unit containing Grenn, ignoring the usual Attachment limits.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Monkey",
+            "abilities": [
+                "Order: Swift Retreat"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Pypar may be added to a unit containing Grenn, ignoring the usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"You're uglier than me. At least I don't have ears like a bat.\" -Grenn"
             }
@@ -1001,18 +981,18 @@
         {
             "id": "20514",
             "name": "Qhorin Halfhand",
-            "subname": "Grizzled Ranger",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Battle Scars",
-                    "Go Down Fighting"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "attachment",
+            "title": "Grizzled Ranger",
+            "abilities": [
+                "Battle Scars",
+                "Go Down Fighting"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Why else do we don these black cloaks, but to die in defense of the realm?\""
             }
@@ -1020,18 +1000,18 @@
         {
             "id": "20516",
             "name": "Othell Yarwyck",
-            "subname": "Spotter",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Improved Defenses",
-                    "Spotter"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Spotter",
+            "abilities": [
+                "Improved Defenses",
+                "Spotter"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Pick who you want. Just so it's not me.\""
             }
@@ -1039,111 +1019,108 @@
         {
             "id": "20517",
             "name": "Scorpion Modifications (Othell Yarwyck)",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 1,
-                "abilities": [
-                    "Stake Mountings"
-                ],
-                "requirements": [
-                    {
-                        "text": "*This card may only be included if your army also includes Othell Yarwyck. It is attached to a friendly Builder Scorpion Crew unit. You may ignore the Limited Rule of Builder Scorpion Crews.*"
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Stake Mountings"
+            ],
+            "cost": 1,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*This card may only be included if your army also includes Othell Yarwyck. It is attached to a friendly Builder Scorpion Crew unit. You may ignore the Limited Rule of Builder Scorpion Crews.*"
+                }
+            ],
+            "icon": "siegeengine"
         },
         {
             "id": "20518",
             "name": "Senior Builder",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Improved Defenses",
-                    "Stake Building"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Improved Defenses",
+                "Stake Building"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20519",
             "name": "Hardened Ranger",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Furious Charge",
-                    "Elusive Escape"
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Furious Charge",
+                "Elusive Escape"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20520",
             "name": "Watch Marshal",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Adaptive Planning",
-                    "Order: Swift Retreat"
-                ],
-                "requirements": [
-                    {
-                        "name": "Limited",
-                        "text": "*Your army may only include up to 2 Watch Marshals*"
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Adaptive Planning",
+                "Order: Swift Retreat"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*Your army may only include up to 2 Watch Marshals*",
+                    "name": "Limited"
+                }
+            ],
+            "icon": "cavalry"
         },
         {
             "id": "20521",
             "name": "Scorpion Modifications (Builder)",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "siegeengine",
-                "cost": 1,
-                "abilities": [
-                    "Order: Overwatch"
-                ],
-                "requirements": [
-                    {
-                        "text": "*This card may only be included in your army if it also includes at least 1 Senior Builder. It is attached to a friendly Builder Scorpion Crew unit.*"
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Overwatch"
+            ],
+            "cost": 1,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*This card may only be included in your army if it also includes at least 1 Senior Builder. It is attached to a friendly Builder Scorpion Crew unit.*"
+                }
+            ],
+            "icon": "siegeengine"
         },
         {
             "id": "20522",
             "name": "Othell Yarwyck",
-            "subname": "First Builder",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Affiliation: Builder",
-                    "Hardened",
-                    "Spotter"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40520": "Honed Enhancement",
-                    "40521": "Rapid Construction",
-                    "40522": "Serrated Enhancement"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "First Builder",
+            "abilities": [
+                "Affiliation: Builder",
+                "Hardened",
+                "Spotter"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40520",
+                "40521",
+                "40522"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Few men possess the knowledge or skills of the First Builder.\""
             }
@@ -1151,18 +1128,18 @@
         {
             "id": "20523",
             "name": "Benjen Stark",
-            "subname": "Wolf of the Wall",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Sentinel",
-                    "Ambush"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Wolf of the Wall",
+            "abilities": [
+                "Order: Sentinel",
+                "Ambush"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The Night's Watch is a sworn brotherhood. We have no families.\""
             }
@@ -1170,23 +1147,23 @@
         {
             "id": "20524",
             "name": "Coldhands",
-            "subname": "Enigmatic Guide",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Outflank",
-                    "Pathfinder"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May not be fielded in an army that includes Benjen Stark.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Enigmatic Guide",
+            "abilities": [
+                "Outflank",
+                "Pathfinder"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes Benjen Stark.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"They killed him long ago.\""
             }
@@ -1194,18 +1171,18 @@
         {
             "id": "20525",
             "name": "Samwell Tarly",
-            "subname": "Sam The Slayer",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Battle Plan",
-                    "Bookkeeping (Samwell Tarly)"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Sam The Slayer",
+            "abilities": [
+                "Order: Battle Plan",
+                "Bookkeeping (Samwell Tarly)"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I went beyond the Wall and fought in battles. They call me Sam the Slayer.\""
             }
@@ -1213,23 +1190,23 @@
         {
             "id": "20526",
             "name": "Coldhands",
-            "subname": "Former Crow",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Sentinel",
-                    "Intimidating Presence"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May not be fielded in an army that includes Benjen Stark.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Former Crow",
+            "abilities": [
+                "Order: Sentinel",
+                "Intimidating Presence"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes Benjen Stark.*"
+                }
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"Dead meat, dry blood, a faint whiff of rot. And cold. Cold over all.\""
             }
@@ -1237,27 +1214,24 @@
         {
             "id": "20527",
             "name": "Benjen Stark",
-            "subname": "First Ranger",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Stark Fury",
-                    "Affiliation: Rangers",
-                    "Enhanced Mobility"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40523": "Hit and Run",
-                    "40524": "Lying In Wait",
-                    "40525": "Hunter's Insight"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "First Ranger",
+            "abilities": [
+                "Order: Stark Fury",
+                "Affiliation: Rangers",
+                "Enhanced Mobility"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40523",
+                "40524",
+                "40525"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"There's not a man on the Wall knows the haunted forest better than Benjen Stark.\""
             }
@@ -1265,18 +1239,18 @@
         {
             "id": "20528",
             "name": "Cotter Pyke",
-            "subname": "Ironborn Brother",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Reckless Heroism",
-                    "Furious Charge"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Ironborn Brother",
+            "abilities": [
+                "Order: Reckless Heroism",
+                "Furious Charge"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"... if you muck this up, I'm going to rip your liver out and eat it raw with onions.\""
             }
@@ -1284,19 +1258,19 @@
         {
             "id": "20529",
             "name": "Yoren",
-            "subname": "Harsh Recruiter",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Incite",
-                    "Intimidating Presence",
-                    "Reinforcements"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Harsh Recruiter",
+            "abilities": [
+                "Order: Incite",
+                "Intimidating Presence",
+                "Reinforcements"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I got thirty this time, men and boys all bound for the Wall...\""
             }
@@ -1304,22 +1278,22 @@
         {
             "id": "20530",
             "name": "Satin",
-            "subname": "Commander's Steward",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Commander's Vassal"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Satin ignores the usual Attachment limits.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021-S02",
+            "role": "attachment",
+            "title": "Commander's Steward",
+            "abilities": [
+                "Commander's Vassal"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Satin ignores the usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Whatever Satin may have done in Oldtown, he is our brother now...\" -Jon Snow"
             }
@@ -1327,22 +1301,22 @@
         {
             "id": "20531",
             "name": "Satin",
-            "subname": "Brave Recruit",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Dauntless"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Satin ignores the usual Attachment limits.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Brave Recruit",
+            "abilities": [
+                "Dauntless"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Satin ignores the usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Half a year at Castle Black had toughened up his hands... Whether he had the courage to face what was coming, though...\""
             }
@@ -1350,17 +1324,17 @@
         {
             "id": "20532",
             "name": "Eddison Tollett",
-            "subname": "Dolorous Edd",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Gallows Humor"
-                ],
-                "character": true
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Dolorous Edd",
+            "abilities": [
+                "Gallows Humor"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Once they figure a way to work a dead horse, we'll be next. Likely I'll be the first too.\""
             }
@@ -1368,27 +1342,24 @@
         {
             "id": "20533",
             "name": "Benjen Stark",
-            "subname": "Beyond The Wall",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "type": "cavalry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Hidden Traps",
-                    "Ranging Specialist (Benjen)",
-                    "Disrupt"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40526": "Hunter's Insight",
-                    "40527": "Marshal",
-                    "40528": "Ride-by Attack"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Beyond The Wall",
+            "abilities": [
+                "Order: Hidden Traps",
+                "Ranging Specialist (Benjen)",
+                "Disrupt"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40526",
+                "40527",
+                "40528"
+            ],
+            "icon": "cavalry",
             "fluff": {
                 "quote": "\"I've not seen Benjen Stark for three years. And if truth be told, I never once missed him.\" -Craster"
             }
@@ -1396,26 +1367,23 @@
         {
             "id": "20534",
             "name": "Cotter Pyke",
-            "subname": "Eastwatch Commander",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Reckless Heroism",
-                    "Fueled by Slaughter"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40529": "Assault Orders",
-                    "40530": "Pyke Aggression",
-                    "40531": "Reckless Strikes"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Eastwatch Commander",
+            "abilities": [
+                "Order: Reckless Heroism",
+                "Fueled by Slaughter"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40529",
+                "40530",
+                "40531"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Cotter Pyke always had more guts than sense.\" -Mance Rayder"
             }
@@ -1423,26 +1391,23 @@
         {
             "id": "20535",
             "name": "Ser Denys Mallister",
-            "subname": "Shadow Tower Commander",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Knightly Vow",
-                    "Dutiful Commander"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40532": "Adaptive Methods",
-                    "40533": "Combat Prowess",
-                    "40534": "Tempered by Duty"
-                }
-            },
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Shadow Tower Commander",
+            "abilities": [
+                "Knightly Vow",
+                "Dutiful Commander"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40532",
+                "40533",
+                "40534"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Do not make me die regretful.\""
             }
@@ -1452,708 +1417,675 @@
         {
             "id": "40501",
             "name": "The Sword In The Darkness",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "The Defender become **Vulnerable**.",
-                            "If the Defender has not Activated this Round, they also become **Panicked**."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, this unit's Melee Attack is treated as having +1 rank for Attack Dice."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "The Defender become **Vulnerable**.",
+                        "If the Defender has not Activated this Round, they also become **Panicked**."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, this unit's Melee Attack is treated as having +1 rank for Attack Dice."
+                    ]
+                }
+            ]
         },
         {
             "id": "40502",
             "name": "The Fire That Burns Against The Cold",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
-                        "effect": [
-                            "That unit may re-roll any dice for this test.",
-                            "If this targets your Commander's unit, they pass this test instead."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit gains a Condition token, it may suffer 1 Wound to remove that token."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
+                    "effect": [
+                        "That unit may re-roll any dice for this test.",
+                        "If this targets your Commander's unit, they pass this test instead."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, each time this unit gains a Condition token, it may suffer 1 Wound to remove that token."
+                    ]
+                }
+            ]
         },
         {
             "id": "40503",
             "name": "The Shield Of The Realms Of Men",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When an enemy is performing an Attack, after rolling Defense Dice:",
-                        "effect": [
-                            "Target the Defender. They may re-roll any Defense Dice."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit is attacked, after rolling defense dice, this unit blocks + 1 Hit."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is performing an Attack, after rolling Defense Dice:",
+                    "effect": [
+                        "Target the Defender. They may re-roll any Defense Dice."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, each time this unit is attacked, after rolling defense dice, this unit blocks + 1 Hit."
+                    ]
+                }
+            ]
         },
         {
             "id": "40504",
             "name": "The Watcher On The Wall",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit is Attacked:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit other than the Defender. That unit pivots, then shifts 2\"."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 [MOVEMENT] and may re-roll Charge Distance dice."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit is Attacked:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit other than the Defender. That unit pivots, then shifts 2\"."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 [MOVEMENT] and may re-roll Charge Distance dice."
+                    ]
+                }
+            ]
         },
         {
             "id": "40505",
             "name": "The Light That Brings The Dawn",
-            "statistics": {
-                "version": "S05",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "This Attack may re-roll any Misses."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 to Morale Test results.",
-                            "If this targets your Commander's unit, this unit also cannot become **Panicked**."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack may re-roll any Misses."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, this unit gains +1 to Morale Test results.",
+                        "If this targets your Commander's unit, this unit also cannot become **Panicked**."
+                    ]
+                }
+            ]
         },
         {
             "id": "40506",
             "name": "Take The Black",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack:",
-                        "effect": [
-                            "If the Defender suffered any Wounds, the attacker restores 1 Wound, +1 additional Wound for each rank they destroyed with this attack. If an Infantry Attachment was destroyed, you may also take it and attach it to the Attacker, replacing a model as normal, but ignoring the usual Attachment limits."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "If the Defender suffered any Wounds, the attacker restores 1 Wound, +1 additional Wound for each rank they destroyed with this attack. If an Infantry Attachment was destroyed, you may also take it and attach it to the Attacker, replacing a model as normal, but ignoring the usual Attachment limits."
+                    ]
+                }
+            ]
         },
         {
             "id": "40507",
             "name": "And Now His Watch Is Ended",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is destroyed by a Melee Attack:",
-                        "effect": [
-                            "Target the Attacker. They become** Vulnerable**. Then, target any friendly units that were within Long Range. They restore 2 Wounds."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit passes a Morale Test, it may restore 1 Wound."
-                        ]
-                    }
-                ]
-            }
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is destroyed by a Melee Attack:",
+                    "effect": [
+                        "Target the Attacker. They become** Vulnerable**. Then, target any friendly units that were within Long Range. They restore 2 Wounds."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, each time this unit passes a Morale Test, it may restore 1 Wound."
+                    ]
+                }
+            ]
         },
         {
             "id": "40508",
             "name": "And Now My Watch Begins",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly Night's Watch Combat Unit Activates:",
-                        "effect": [
-                            "That unit performs 1 Morale Test. On a success, choose 1:",
-                            "• Search your Tactics Deck for any 1 Tactics card and add it to your hand, then discard 1 card. Shuffle your Tactics Deck.",
-                            "• Search your Tactics Deck or discard pile for any 1 Tactics card that can be attached to this unit and attach it to this unit. Shuffle your Tactics Deck."
-                        ]
-                    }
-                ],
-                "commander_id": "20501",
-                "commander_name": "Jeor Mormont",
-                "commander_subname": "997th Lord Commander"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Night's Watch Combat Unit Activates:",
+                    "effect": [
+                        "That unit performs 1 Morale Test. On a success, choose 1:",
+                        "• Search your Tactics Deck for any 1 Tactics card and add it to your hand, then discard 1 card. Shuffle your Tactics Deck.",
+                        "• Search your Tactics Deck or discard pile for any 1 Tactics card that can be attached to this unit and attach it to this unit. Shuffle your Tactics Deck."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20501"
             }
         },
         {
             "id": "40509",
             "name": "Live And Die At My Post",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit passes a Morale Test:",
-                        "effect": [
-                            "All enemies engaged with that unit become **Vulnerable**.",
-                            "If this targeted a Night's Watch unit, attach this card to that unit until the end of the game.",
-                            "While attached, this unit cannot lose its last remaining Wound from failing Panic Tests *(it can only be reduced to 1 remaining Wound)*."
-                        ]
-                    }
-                ],
-                "commander_id": "20501",
-                "commander_name": "Jeor Mormont",
-                "commander_subname": "997th Lord Commander"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit passes a Morale Test:",
+                    "effect": [
+                        "All enemies engaged with that unit become **Vulnerable**.",
+                        "If this targeted a Night's Watch unit, attach this card to that unit until the end of the game.",
+                        "While attached, this unit cannot lose its last remaining Wound from failing Panic Tests *(it can only be reduced to 1 remaining Wound)*."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20501"
             }
         },
         {
             "id": "40510",
             "name": "Night Gathers",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, each time an enemy is performing a Melee Attack on this unit, before Attack Dice are rolled, the Attacker suffers 1 Hit, +1 Hit for each remaining rank in this unit."
-                        ]
-                    }
-                ],
-                "commander_id": "20501",
-                "commander_name": "Jeor Mormont",
-                "commander_subname": "997th Lord Commander"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, each time an enemy is performing a Melee Attack on this unit, before Attack Dice are rolled, the Attacker suffers 1 Hit, +1 Hit for each remaining rank in this unit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20501"
             }
         },
         {
             "id": "40511",
             "name": "It Shall Not End Until My Death!",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly Combat Unit would be destroyed by a Melee Attack:",
-                        "effect": [
-                            "Before being removed, that unit performs 1 Melee Attack Action using its lowest Attack Die Value on the Attacker. If this targets Jon Snow's unit, it gains +2 Attack Dice.",
-                            "If this Attack destroys the Defender, your friendly unit is not destroyed, but instead remains in play with 1 Wound."
-                        ]
-                    }
-                ],
-                "commander_id": "20502",
-                "commander_name": "Jon Snow",
-                "commander_subname": "998th Lord Commander"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit would be destroyed by a Melee Attack:",
+                    "effect": [
+                        "Before being removed, that unit performs 1 Melee Attack Action using its lowest Attack Die Value on the Attacker. If this targets Jon Snow's unit, it gains +2 Attack Dice.",
+                        "If this Attack destroys the Defender, your friendly unit is not destroyed, but instead remains in play with 1 Wound."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20502"
             }
         },
         {
             "id": "40512",
             "name": "Stand United, Brothers!",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. Remove up to 4 models *(total)* from other friendly Combat Units in Long Range. Restore that many Wounds to this unit.",
-                            "If targeting Jon Snow's unit, it may restore +2 Wounds *(without removing models)*."
-                        ]
-                    }
-                ],
-                "commander_id": "20502",
-                "commander_name": "Jon Snow",
-                "commander_subname": "998th Lord Commander"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. Remove up to 4 models *(total)* from other friendly Combat Units in Long Range. Restore that many Wounds to this unit.",
+                        "If targeting Jon Snow's unit, it may restore +2 Wounds *(without removing models)*."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20502"
             }
         },
         {
             "id": "40513",
             "name": "For The Watch!",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
-                        "effect": [
-                            "This unit may re-roll any Charge Distance Dice."
-                        ]
-                    },
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. While attached, each time this unit is targeted by the [HORSE] zone, you may replace that zone's effect with: *This unit performs 1 Charge Action.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20502",
-                "commander_name": "Jon Snow",
-                "commander_subname": "998th Lord Commander"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Charge Action, after rolling Charge Distance Dice:",
+                    "effect": [
+                        "This unit may re-roll any Charge Distance Dice."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. While attached, each time this unit is targeted by the [HORSE] zone, you may replace that zone's effect with: *This unit performs 1 Charge Action.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20502"
             }
         },
         {
             "id": "40514",
             "name": "Pathetic Attempt",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit passes a Panic Test from being Attacked by a Melee Attack:",
-                        "effect": [
-                            "Target the Attacker. They suffer 2 Hits for each remaining rank in this unit.",
-                            "If the Defender was Alliser's unit, they also become **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20509",
-                "commander_name": "Alliser Thorne",
-                "commander_subname": "Master-at-Arms"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit passes a Panic Test from being Attacked by a Melee Attack:",
+                    "effect": [
+                        "Target the Attacker. They suffer 2 Hits for each remaining rank in this unit.",
+                        "If the Defender was Alliser's unit, they also become **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20509"
             }
         },
         {
             "id": "40515",
             "name": "Seeing Their Flaws",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "After an enemy Combat Unit completes an Action:",
-                        "effect": [
-                            "That enemy becomes **Vulnerable** and **Panicked**.",
-                            "Attach this card to that enemy until the end of the Round. While attached, while Alliser Thorne's unit is Attacking that enemy, that enemy loses all Abilities and cannot be targeted by friendly Tactics cards."
-                        ]
-                    }
-                ],
-                "commander_id": "20509",
-                "commander_name": "Alliser Thorne",
-                "commander_subname": "Master-at-Arms"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy Combat Unit completes an Action:",
+                    "effect": [
+                        "That enemy becomes **Vulnerable** and **Panicked**.",
+                        "Attach this card to that enemy until the end of the Round. While attached, while Alliser Thorne's unit is Attacking that enemy, that enemy loses all Abilities and cannot be targeted by friendly Tactics cards."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20509"
             }
         },
         {
             "id": "40516",
             "name": "Price Of Failure",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "All Attack Dice rolls automatically Hit for this Attack.",
-                            "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Vulnerable**."
-                        ]
-                    }
-                ],
-                "commander_id": "20509",
-                "commander_name": "Alliser Thorne",
-                "commander_subname": "Master-at-Arms"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "All Attack Dice rolls automatically Hit for this Attack.",
+                        "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20509"
             }
         },
         {
             "id": "40517",
             "name": "Defensive Formation",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Attach this card to a friendly Combat Unit until the start of its next Activation.",
-                            "While attached, this unit cannot perform Attack or Charge Actions, but gains +1 to Defense Dice rolls and Attackers do not gain Charge, Flank, or Rear Bonuses against it."
-                        ]
-                    }
-                ],
-                "commander_id": "20511",
-                "commander_name": "Donal Noye",
-                "commander_subname": "Defender Of Castle Black"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to a friendly Combat Unit until the start of its next Activation.",
+                        "While attached, this unit cannot perform Attack or Charge Actions, but gains +1 to Defense Dice rolls and Attackers do not gain Charge, Flank, or Rear Bonuses against it."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20511"
             }
         },
         {
             "id": "40518",
             "name": "Refuse To Yield",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit passes a Panic Test:",
-                        "effect": [
-                            "All enemies engaged with that unit become **Vulnerable**. Attach this card to that unit until it fails a Panic Test.",
-                            "While Attached, each time this unit passes a Panic Test, all enemies engaged with that unit become **Vulnerable**. If this card is attached to Donal Noye's unit, it gains +1 to Panic Test rolls."
-                        ]
-                    }
-                ],
-                "commander_id": "20511",
-                "commander_name": "Donal Noye",
-                "commander_subname": "Defender Of Castle Black"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit passes a Panic Test:",
+                    "effect": [
+                        "All enemies engaged with that unit become **Vulnerable**. Attach this card to that unit until it fails a Panic Test.",
+                        "While Attached, each time this unit passes a Panic Test, all enemies engaged with that unit become **Vulnerable**. If this card is attached to Donal Noye's unit, it gains +1 to Panic Test rolls."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20511"
             }
         },
         {
             "id": "40519",
             "name": "Lash Out",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes a Melee Attack:",
-                        "effect": [
-                            "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is Donal Noye's unit, the Attacker also becomes **Panicked**."
-                        ]
-                    }
-                ],
-                "commander_id": "20511",
-                "commander_name": "Donal Noye",
-                "commander_subname": "Defender Of Castle Black"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is Donal Noye's unit, the Attacker also becomes **Panicked**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20511"
             }
         },
         {
             "id": "40520",
             "name": "Honed Enhancement",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "This Attack gains +1 to Hit.",
-                            "If this is a Builder unit, this Attack rolls +1 Attack Die."
-                        ]
-                    }
-                ],
-                "commander_id": "20522",
-                "commander_name": "Othell Yarwyck",
-                "commander_subname": "First Builder"
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains +1 to Hit.",
+                        "If this is a Builder unit, this Attack rolls +1 Attack Die."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20522"
             }
         },
         {
             "id": "40521",
             "name": "Rapid Construction",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Start of the Round:",
-                        "effect": [
-                            "Place 1 Low Wall terrain with the Destructible, Fortified, and Hindering keywords within 1\" of a friendly unit. This terrain cannot overlap units or other terrain."
-                        ]
-                    }
-                ],
-                "commander_id": "20522",
-                "commander_name": "Othell Yarwyck",
-                "commander_subname": "First Builder"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of the Round:",
+                    "effect": [
+                        "Place 1 Low Wall terrain with the Destructible, Fortified, and Hindering keywords within 1\" of a friendly unit. This terrain cannot overlap units or other terrain."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20522"
             }
         },
         {
             "id": "40522",
             "name": "Serrated Enhancement",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "This Attack gains **Vicious**.",
-                            "If the Attacker is a Builder unit, enemies that fail their Panic Test from this Attack becomes **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20522",
-                "commander_name": "Othell Yarwyck",
-                "commander_subname": "First Builder"
+            "faction": "nightswatch",
+            "version": "2021-S01",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Vicious**.",
+                        "If the Attacker is a Builder unit, enemies that fail their Panic Test from this Attack becomes **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20522"
             }
         },
         {
             "id": "40523",
             "name": "Hit and Run",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack:",
-                        "effect": [
-                            "That unit performs 1 Retreat Action.",
-                            "If this targets a Ranger unit, any enemies it disengages from becomes **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20527",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "First Ranger"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "That unit performs 1 Retreat Action.",
+                        "If this targets a Ranger unit, any enemies it disengages from becomes **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20527"
             }
         },
         {
             "id": "40524",
             "name": "Lying In Wait",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When an enemy Combat Unit Activates:",
-                        "effect": [
-                            "Target 1 friendly, unactivated unit in Long Range of that enemy that has Line of Sight.",
-                            "They perform 1 Ranged Attack Action on that enemy.",
-                            "If this targets a Ranger unit, it may re-roll any misses."
-                        ]
-                    }
-                ],
-                "commander_id": "20527",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "First Ranger"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "Target 1 friendly, unactivated unit in Long Range of that enemy that has Line of Sight.",
+                        "They perform 1 Ranged Attack Action on that enemy.",
+                        "If this targets a Ranger unit, it may re-roll any misses."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20527"
             }
         },
         {
             "id": "40525",
             "name": "Hunter's Insight",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 enemy in Long Range of a friendly Ranger unit and choose 1:",
-                            "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
-                            "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
-                            "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
-                        ]
-                    }
-                ],
-                "commander_id": "20527",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "First Ranger"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 enemy in Long Range of a friendly Ranger unit and choose 1:",
+                        "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
+                        "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
+                        "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20527"
             }
         },
         {
             "id": "40526",
             "name": "Hunter's Insight",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 enemy in Long Range of a friendly Ranger unit and choose 1:",
-                            "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
-                            "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
-                            "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
-                        ]
-                    }
-                ],
-                "commander_id": "20533",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Beyond The Wall"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 enemy in Long Range of a friendly Ranger unit and choose 1:",
+                        "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
+                        "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
+                        "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20533"
             }
         },
         {
             "id": "40527",
             "name": "Marshal",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When an unengaged friendly Cavalry Unit Activates:",
-                        "effect": [
-                            "Once this Turn, if that unit would perform a Maneuver Action, instead of performing that Action, it may restore 3 Wounds and remove 1 Condition token."
-                        ]
-                    }
-                ],
-                "commander_id": "20533",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Beyond The Wall"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an unengaged friendly Cavalry Unit Activates:",
+                    "effect": [
+                        "Once this Turn, if that unit would perform a Maneuver Action, instead of performing that Action, it may restore 3 Wounds and remove 1 Condition token."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20533"
             }
         },
         {
             "id": "40528",
             "name": "Ride-by Attack",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly Cavalry unit selects its Action during its Activation, before resolving that Action:",
-                        "effect": [
-                            "As its Action, that unit may pivot then perform 1 March Action, even if engaged. It may move through enemies during this March. Enemies it disengages from may not pivot.",
-                            "After completing this March, 1 enemy it moved through suffers 1 Wound, +1 Wound for each of that enemy's remaining ranks."
-                        ]
-                    }
-                ],
-                "commander_id": "20533",
-                "commander_name": "Benjen Stark",
-                "commander_subname": "Beyond The Wall"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Cavalry unit selects its Action during its Activation, before resolving that Action:",
+                    "effect": [
+                        "As its Action, that unit may pivot then perform 1 March Action, even if engaged. It may move through enemies during this March. Enemies it disengages from may not pivot.",
+                        "After completing this March, 1 enemy it moved through suffers 1 Wound, +1 Wound for each of that enemy's remaining ranks."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20533"
             }
         },
         {
             "id": "40529",
             "name": "Assault Orders",
-            "statistics": {
-                "version": "S06",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly NCU Claims a zone:",
-                        "effect": [
-                            "Replace that zone's effect with:",
-                            "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
-                            "*If this targets Cotter Pyke's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20534",
-                "commander_name": "Cotter Pyke",
-                "commander_subname": "Eastwatch Commander"
+            "faction": "nightswatch",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                        "*If this targets Cotter Pyke's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20534"
             }
         },
         {
             "id": "40530",
             "name": "Pyke Aggression",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "After a friendly unit completes a Melee Attack:",
-                        "effect": [
-                            "That unit performs 1 Melee Attack using its lowest Attack Die Value. This Attack does not cause a Panic Test.",
-                            "After completing this Attack, the Attacker suffers 1 Hit for each Hit it rolled during that Attack."
-                        ]
-                    }
-                ],
-                "commander_id": "20534",
-                "commander_name": "Cotter Pyke",
-                "commander_subname": "Eastwatch Commander"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "That unit performs 1 Melee Attack using its lowest Attack Die Value. This Attack does not cause a Panic Test.",
+                        "After completing this Attack, the Attacker suffers 1 Hit for each Hit it rolled during that Attack."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20534"
             }
         },
         {
             "id": "40531",
             "name": "Reckless Strikes",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
-                            "If this targets Cotter Pyke's unit, this Attack rolls its highest Attack Die Value."
-                        ]
-                    }
-                ],
-                "commander_id": "20534",
-                "commander_name": "Cotter Pyke",
-                "commander_subname": "Eastwatch Commander"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
+                        "If this targets Cotter Pyke's unit, this Attack rolls its highest Attack Die Value."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20534"
             }
         },
         {
             "id": "40532",
             "name": "Adaptive Methods",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 enemy Combat Unit.",
-                            "They gain 1 Condition token.",
-                            "Then, you may replace 1 Condition token on any 1 unit with any other Condition token.",
-                            "If you Control [LETTER], you may then move 1 Condition token from 1 unit to any other unit."
-                        ]
-                    }
-                ],
-                "commander_id": "20535",
-                "commander_name": "Ser Denys Mallister",
-                "commander_subname": "Shadow Tower Commander"
+            "faction": "nightswatch",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit.",
+                        "They gain 1 Condition token.",
+                        "Then, you may replace 1 Condition token on any 1 unit with any other Condition token.",
+                        "If you Control [LETTER], you may then move 1 Condition token from 1 unit to any other unit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20535"
             }
         },
         {
             "id": "40533",
             "name": "Combat Prowess",
-            "statistics": {
-                "version": "2021",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When an enemy is targeted by an Ability or Tactics card:",
-                        "effect": [
-                            "You may expend 1 Condition token from that enemy. If you do, cancel the effect of that Ability or Tactics card."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 engaged friendly Combat Unit. Remove 1 Condition token from that unit."
-                        ]
-                    }
-                ],
-                "commander_id": "20535",
-                "commander_name": "Ser Denys Mallister",
-                "commander_subname": "Shadow Tower Commander"
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is targeted by an Ability or Tactics card:",
+                    "effect": [
+                        "You may expend 1 Condition token from that enemy. If you do, cancel the effect of that Ability or Tactics card."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 engaged friendly Combat Unit. Remove 1 Condition token from that unit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20535"
             }
         },
         {
             "id": "40534",
             "name": "Tempered by Duty",
-            "statistics": {
-                "version": "S04",
-                "faction": "nightswatch",
-                "text": [
-                    {
-                        "trigger": "When a friendly Night's Watch Unit Activates:",
-                        "effect": [
-                            "Attach this card to them until they fail a Panic Test. When this card is attached and each time this unit Activates, you may target 1 enemy in Long Range and Line of Sight. They gain 1 Condition token."
-                        ]
-                    }
-                ],
-                "commander_id": "20535",
-                "commander_name": "Ser Denys Mallister",
-                "commander_subname": "Shadow Tower Commander"
+            "faction": "nightswatch",
+            "version": "S04",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Night's Watch Unit Activates:",
+                    "effect": [
+                        "Attach this card to them until they fail a Panic Test. When this card is attached and each time this unit Activates, you may target 1 enemy in Long Range and Line of Sight. They gain 1 Condition token."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20535"
             }
         }
-    ]
+    ],
+    "special": []
 }

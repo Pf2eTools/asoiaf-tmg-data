@@ -1,623 +1,612 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "neutral",
+        "language": "en"
+    },
+    "unit": [
         {
             "id": "10401",
             "name": "House Bolton Cutthroats",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Ruthless Aggression",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ruthless Aggression"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Ruthless Aggression"
+            ],
+            "attacks": [
+                {
+                    "name": "Ruthless Aggression",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "While simply armored and lightly armed, Bolton Cutthroats enjoy a reputation for brutality and cold efficiency that allows them to strike panic in enemies with far more expensive armaments. Their spiked maces can easily dispatch enemies, but are more effective for the fear their brutality creates. Bolton Cutthroats make sport of downed foes or, worse for the opponent, take them prisoner to suffer a much more agonizing fate."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10402",
             "name": "House Bolton Bastard's Girls",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Tracker's Bow",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Blade and Fang",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Charging Volley",
-                    "Tracker’s Bow",
-                    "Blade and Fang"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Order: Charging Volley",
+                "Tracker’s Bow",
+                "Blade and Fang"
+            ],
+            "attacks": [
+                {
+                    "name": "Tracker's Bow",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Blade and Fang",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Trained to corner and bring down even heavy infantry, the Bastard’s Girls are best utilized as flankers or in pursuit of fleeing foes. While they do not possess the armor to counter a determined assault, enemies suffering from their handlers’ wounding arrows make for easy prey. A fat bounty can be expected for handlers bringing down enemy commanders to await Ramsay Bolton’s ‘entertainments’ following battle."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10403",
             "name": "House Bolton Flayed Men",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "War Flail",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalry",
-                    "War Flail",
-                    "Intimidating Presence"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "War Flail",
+                "Intimidating Presence"
+            ],
+            "attacks": [
+                {
+                    "name": "War Flail",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "The so-called Flayed Men rank among the heaviest cavalry employed by even the largest houses in the War of the Five Kings. With thick steel armor (blackened, of course), heavy shields, and even protective barding for the horses, the Flayed Men are capable of truly devastating charges and can endure in the line for a short time. Their signature war flails render most defenses only marginal at best, but their terriying visage remains their most vital weapon."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10404",
             "name": "House Bolton Blackguards",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Spiked Flail",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Spiked Flail",
-                    "Horrific Visage"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Spiked Flail",
+                "Horrific Visage"
+            ],
+            "attacks": [
+                {
+                    "name": "Spiked Flail",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "The ruthlessness of House Bolton’s Blackguards is known by every enemy force they face. Their vicious spiked flails render heavy shields only moderately effective. Being the heaviest troops in House Bolton’s arsenal, the Blackguards can be relied upon to take and hold any position on the battlefield."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10405",
             "name": "Bloody Mummer Skirmishers",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Mummer's Blade",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Mummer's Blade",
-                    "Counterstrike",
-                    "Disrupt"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Mummer's Blade",
+                "Counterstrike",
+                "Disrupt"
+            ],
+            "attacks": [
+                {
+                    "name": "Mummer's Blade",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Despite their outrageous appearance, the Bloody Mummers remain a deadly band of mercenaries, noted for their cruelty, itself excessive for even low-brow mercenaries. They’re loyal to coin alone, but meet their price and their ranks will fill whatever role an army requires. The Skirmishers are lightly armed and armored, granting them the mobility needed for rapid flanking, though they should be protected from direct charges."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10406",
             "name": "Stormcrow Mercenaries",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Longsword",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Motivated by Coin"
-                ],
-                "requirements": [
-                    {
-                        "name": "Adaptive",
-                        "text": "*Reduce the cost of 1 Attachment in this unit by 1.*"
-                    }
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Motivated by Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Reduce the cost of 1 Attachment in this unit by 1.*",
+                    "name": "Adaptive"
+                }
+            ],
             "fluff": {
                 "lore": "While one might question Stormcrow loyalty to their leaders, their employers, and even themselves, one can always count on their absolute devotion to coin. Once properly motivated, Stormcrow Mercenaries are capable medium infantry, adept at holding a flank or performing flanking maneuvers themselves. Their professionalism guarantees a good working relationship with whomever their employer might be, but only as long as the coin lasts."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10407",
             "name": "Stormcrow Archers",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Mercenary’s Longbow",
-                        "type": "long",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Short Sword",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Mercenary's Longbow",
-                    "Loyalty Through Coin"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Mercenary's Longbow",
+                "Loyalty Through Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Mercenary’s Longbow",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "A Stormcrow is a Stormcrow, whether wielding blade, bow, or both. Money remains the prime motivator in the Stormcrow mind, and extra coin can prod added effort from these mercenaries. Stormcrow Archers are adept in long-range combat, with recurved longbows and arrows made for distant flight. They’re not meant for melee, though their shortswords can fend off weakened attackers. Still, a wise commander will keep them far from flankers or cavalry."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10408",
             "name": "Bloody Mummer Zorse Riders",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Motley Armaments",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalry",
-                    "Motley Armaments",
-                    "Elusive Escape"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Motley Armaments",
+                "Elusive Escape"
+            ],
+            "attacks": [
+                {
+                    "name": "Motley Armaments",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Never lacking for outrageous flair, Bloody Mummer cavalry ride Zorses into battle. These unusual beasts originate from Essos, where striped animals and horses were interbred to create the species. Zorses can survive on little food and water for extended periods, but remain as swift as their western counterparts. Zorse Riders fill a classic light cavalry role in the Mummer ranks, flanking and charging pinned units and exposed archers."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10409",
             "name": "Stormcrow Dervishes",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Swift Strike",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ambush",
-                    "Swift Strike",
-                    "Motivated by Coin"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Ambush",
+                "Swift Strike",
+                "Motivated by Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Swift Strike",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "A Stormcrow Dervish paid up to the end of the week will buy you a hardened veteran skirmisher, adept at swift movement in medium armor to strike exposed enemy positions—to the end of the week. The infamous Stormcrow loyalty to coin extends even to their best-trained soldiers. Yet employers seeing Dervishes in action rarely have cause to complain as these heavy-hitters shred enemy flanks and fade away safely beyond any possible counterattack."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10410",
             "name": "Hedge Knights",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Knight’s Blade",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalry",
-                    "Knight’s Blade",
-                    "Loyalty Through Coin"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Knight’s Blade",
+                "Loyalty Through Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Knight’s Blade",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 7,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "So-called Hedge Knights travel the world in search of employment. Owning little but their arms, armor, and their horse, these landless nobles are shunned and disdained—except in times of war. With their blades for hire, and supplying their own equipment, nobles from all sides of the War of Five Kings can find a use for a half dozen or so trained knights on the battlefield. That said, their equipment rarely matches that of true knights."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10411",
             "name": "Golden Company Swordsmen",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Mastercraft Longsword",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Adaptive Style",
-                    "Mastercraft Longsword"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: Adaptive Style",
+                "Mastercraft Longsword"
+            ],
+            "attacks": [
+                {
+                    "name": "Mastercraft Longsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "The Golden Company is well known for their motto, “Our word is good as gold.” When hired on to fight, they make sure to give every penny’s worth on the battlefield. Their Swordsmen have trained relentlessly, letting them find any weak spot in an enemy’s defenses, exploiting it. Meanwhile, they almost never flee the field, even when faced with seemingly insurmountable odds, making them a sound investment for anyone with the coffers to afford them."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10412",
             "name": "Golden Company Crossbowmen",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Crossbow",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Short Sword",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Sentinel",
-                    "Crossbow",
-                    "Iron Resolve"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Order: Sentinel",
+                "Crossbow",
+                "Iron Resolve"
+            ],
+            "attacks": [
+                {
+                    "name": "Crossbow",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "The Golden Company, the Free Cities’ most reliable mercenary group, offers several types of troops for hire. One being their Crossbowmen. These sharp-eyed fighters never waste a shot, resolutely waiting until enemies have closed to within perfect range before unleashing their bolts. These bolts punch through enemy armor with ease, especially at closer ranges. Anyone looking to bolster their forces can get a bargain by hiring them."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10413",
             "name": "Golden Company War Elephant",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "monster",
-                "cost": 6,
-                "speed": 6,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Stomp",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "War Elephant",
-                    "Stomp"
-                ],
-                "requirements": [
-                    {
-                        "text": "*Your army may only contain 1 War Elephant for each Golden Company Infantry unit.*"
-                    }
-                ],
-                "wounds": 8,
-                "tray": "warmachine"
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "War Elephant",
+                "Stomp"
+            ],
+            "attacks": [
+                {
+                    "name": "Stomp",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain 1 War Elephant for each Golden Company Infantry unit.*"
+                }
+            ],
             "fluff": {
                 "lore": "Even the best-trained soldier will likely have no idea what to do when a massive elephant bears down on their battle line. The brutish War Elephants of the Golden Company stomp their way into enemy lines, seemingly impervious to attack, while they use their massive feet and tusks to demolish foes. However, they are simple creatures and without a handler nearby, it’s possible they’ll stop acting entirely, unsure about what action they should be taking."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10414",
             "name": "Lysene Sellswords",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Pirate's Blades",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Raiders Of The Free Cities",
-                    "Pirate's Blades"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Raiders Of The Free Cities",
+                "Pirate's Blades"
+            ],
+            "attacks": [
+                {
+                    "name": "Pirate's Blades",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "The island fortresses of Lys have high, thick walls and plenty of Sellswords patrolling their coast to make them an unappealing target for attack. However, these Sellswords are just that, offering their services to anyone with coffers deep enough to hire them abroad. Not interested in individual glory, they’re only focused on grabbing plunder and the payment waiting for them when they head back to their home port."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10415",
             "name": "Stone Crows",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Scavenged Weapons",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Order: Incite",
-                    "Disorganized",
-                    "Recruiting From The Hills"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Order: Incite",
+                "Disorganized",
+                "Recruiting From The Hills"
+            ],
+            "attacks": [
+                {
+                    "name": "Scavenged Weapons",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "As mountain tribes and raiders go, Tyrion Lannister’s Stone Crows are quite ordinary, save their unexpected loyalty. While pledged more to Tyrion’s coin than his person, they proved true to their word, even when betrayal might have been a more lucrative option. As mercenaries, these troops are worth their coin, if properly employed as scouts and flankers. Their light arms and armor make them unsuited to the front line in  a protracted engagement."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30402",
             "name": "Petyr Baelish",
-            "subname": "Littlefinger",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Master of the Game",
-                        "effect": [
-                            "Petyr Baelish starts the game with 2 Order Tokens.",
-                            "Each time Petyr Claims a zone, you may spend 1 Order token to replace its effect with the effect of any unclaimed zone.",
-                            "Once per game, at the start of any Turn, you may select 1 zone. Until the end of the Round, you count as Controlling that zone."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Littlefinger",
+            "abilities": [
+                {
+                    "name": "Master of the Game",
+                    "effect": [
+                        "Petyr Baelish starts the game with 2 Order Tokens.",
+                        "Each time Petyr Claims a zone, you may spend 1 Order token to replace its effect with the effect of any unclaimed zone.",
+                        "Once per game, at the start of any Turn, you may select 1 zone. Until the end of the Round, you count as Controlling that zone."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"In King's Landing, there are two sorts of people. The players and the pieces.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30403",
             "name": "Lord Varys",
-            "subname": "The Spider",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Little Birds",
-                        "effect": [
-                            "Varys begins the game with 3 Order tokens.",
-                            "Each time an enemy NCU Claims a zone, after resolving that zone's effect, you may remove 1 Order token from Varys. If you do, gain the following based on that zone:",
-                            "[CROWN]: 1 enemy suffers 1 Panic Test.",
-                            "[MONEY]: Restore 2 Wounds to 1 friendly unit.",
-                            "[LETTER]: Draw 1 Tactics card.",
-                            "[SWORDS]: 1 enemy suffers 3 Hits.",
-                            "[HORSE]: 1 friendly unit shifts 3\"."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "The Spider",
+            "abilities": [
+                {
+                    "name": "Little Birds",
+                    "effect": [
+                        "Varys begins the game with 3 Order tokens.",
+                        "Each time an enemy NCU Claims a zone, after resolving that zone's effect, you may remove 1 Order token from Varys. If you do, gain the following based on that zone:",
+                        "[CROWN]: 1 enemy suffers 1 Panic Test.",
+                        "[MONEY]: Restore 2 Wounds to 1 friendly unit.",
+                        "[LETTER]: Draw 1 Tactics card.",
+                        "[SWORDS]: 1 enemy suffers 3 Hits.",
+                        "[HORSE]: 1 friendly unit shifts 3\"."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"Varys has ways of learning things that no man could know.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30404",
             "name": "The High Seneschal",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 0,
-                "abilities": [
-                    {
-                        "name": "History is Written by the Victors",
-                        "effect": [
-                            "**The High Seneschal cannot activate and cannot be targeted in any way. He merely observes the battle.**",
-                            "Once the victor has been determined, that player may define all actions and events that transpired throughout the game. No opponent may refute or deny any retelling of said events *(regardless of how unlikely or exaggerated)* until such a time where they best the victor in a new game."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "abilities": [
+                {
+                    "name": "History is Written by the Victors",
+                    "effect": [
+                        "**The High Seneschal cannot activate and cannot be targeted in any way. He merely observes the battle.**",
+                        "Once the victor has been determined, that player may define all actions and events that transpired throughout the game. No opponent may refute or deny any retelling of said events *(regardless of how unlikely or exaggerated)* until such a time where they best the victor in a new game."
+                    ]
+                }
+            ],
+            "character": true,
             "fluff": {
                 "quote": "\"He is the keeper of this world's history.\""
             }
@@ -625,27 +614,27 @@
         {
             "id": "30405",
             "name": "Jaqen H'ghar",
-            "subname": "Follower of The Red God",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Choosing a Name",
-                        "effect": [
-                            "Each time Jaqen Activates, he may replace his Influence Ability with the Influence Ability of any friendly or enemy NCU until the end of the Round."
-                        ]
-                    },
-                    {
-                        "name": "A Name Given",
-                        "effect": [
-                            "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                            "While Influencing a friendly Infantry unit, its Melee Attacks gain **Precision**."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Follower of The Red God",
+            "abilities": [
+                {
+                    "name": "Choosing a Name",
+                    "effect": [
+                        "Each time Jaqen Activates, he may replace his Influence Ability with the Influence Ability of any friendly or enemy NCU until the end of the Round."
+                    ]
+                },
+                {
+                    "name": "A Name Given",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing a friendly Infantry unit, its Melee Attacks gain **Precision**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"The Red God has his due, sweet girl, and only death may pay for life.\""
             }
@@ -653,20 +642,20 @@
         {
             "id": "30406",
             "name": "Tycho Nestoris",
-            "subname": "Iron Banker",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Backing of The Iron Bank",
-                        "effect": [
-                            "Once per game, at the start of any Turn, you may restore 5 Wounds *(total)* across any number of friendly Combat Units."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Iron Banker",
+            "abilities": [
+                {
+                    "name": "Backing of The Iron Bank",
+                    "effect": [
+                        "Once per game, at the start of any Turn, you may restore 5 Wounds *(total)* across any number of friendly Combat Units."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "\"We who serve the Iron Bank face death full as often as you who serve the Iron Throne.\""
             }
@@ -674,24 +663,24 @@
         {
             "id": "30407",
             "name": "Walder Frey",
-            "subname": "Lord of the Crossing",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Strategic Alliance",
-                        "effect": [
-                            "Once per game, when Walder Claims a zone, you may replace that zone's effect with:",
-                            "*Choose 2:*",
-                            "• *1 enemy becomes **Weakened**, **Vulnerable** and **Panicked**.*",
-                            "• *1 friendly unit restores 3 Wounds.*",
-                            "• *At the start of the next Round, you become the First Player.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Lord of the Crossing",
+            "abilities": [
+                {
+                    "name": "Strategic Alliance",
+                    "effect": [
+                        "Once per game, when Walder Claims a zone, you may replace that zone's effect with:",
+                        "*Choose 2:*",
+                        "• *1 enemy becomes **Weakened**, **Vulnerable** and **Panicked**.*",
+                        "• *1 friendly unit restores 3 Wounds.*",
+                        "• *At the start of the next Round, you become the First Player.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "\"He has an old man's caution and a young man's ambition, and has never lacked for cunning.\""
             }
@@ -699,100 +688,97 @@
         {
             "id": "30408",
             "name": "Roose Bolton",
-            "subname": "Calculating and Cruel",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Horrific Rumors",
-                        "effect": [
-                            "Roose begins the game with 3 Order tokens. ",
-                            "Each time Roose Activates, you may remove 1 Order token from him. ",
-                            "If you do, target 1 enemy Combat Unit. They become **Panicked**.",
-                            "Each time Roose Claims a zone, you may replace that zone's effect with:",
-                            "*1 enemy Combat Unit suffers 1 Panic Test.*"
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Calculating and Cruel",
+            "abilities": [
+                {
+                    "name": "Horrific Rumors",
+                    "effect": [
+                        "Roose begins the game with 3 Order tokens. ",
+                        "Each time Roose Activates, you may remove 1 Order token from him. ",
+                        "If you do, target 1 enemy Combat Unit. They become **Panicked**.",
+                        "Each time Roose Claims a zone, you may replace that zone's effect with:",
+                        "*1 enemy Combat Unit suffers 1 Panic Test.*"
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"You had only to look at Bolton to know that he had more cruelty in his pinky toe than all the Freys combined.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30409",
             "name": "Shae",
-            "subname": "Hidden in Court",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Finding The Best Patron",
-                        "effect": [
-                            "Shae begins the game with 3 Order tokens. Each time Shae Claims a zone, after resolving that zone's effect, remove 1 Order token from Shae.",
-                            "At the end of each Round, if Shae has no Order tokens, destroy Shae.",
-                            "Each time Shae Claims a zone, before resolving that zone's effect, choose 1:",
-                            "• Restore 1 Wound to 1 friendly Unit.",
-                            "• 1 enemy Unit becomes **Weakened**.",
-                            "• Shae gains 2 Order tokens."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Hidden in Court",
+            "abilities": [
+                {
+                    "name": "Finding The Best Patron",
+                    "effect": [
+                        "Shae begins the game with 3 Order tokens. Each time Shae Claims a zone, after resolving that zone's effect, remove 1 Order token from Shae.",
+                        "At the end of each Round, if Shae has no Order tokens, destroy Shae.",
+                        "Each time Shae Claims a zone, before resolving that zone's effect, choose 1:",
+                        "• Restore 1 Wound to 1 friendly Unit.",
+                        "• 1 enemy Unit becomes **Weakened**.",
+                        "• Shae gains 2 Order tokens."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "\"My mother named me Shae. Men call me ... often.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20401",
             "name": "Dreadfort Captain",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Prey on Fear"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Prey on Fear"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20402",
             "name": "Ramsay Snow",
-            "subname": "The Bastard of Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Affiliation: House Bolton",
-                    "Horrific Visage"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40408": "Our Blades Are Sharp",
-                    "40409": "Cruel Methods",
-                    "40410": "Sadistic Games"
-                }
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "The Bastard of Bolton",
+            "abilities": [
+                "Affiliation: House Bolton",
+                "Horrific Visage"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40408",
+                "40409",
+                "40410"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Snow, my wife called me before she ate her fingers, but I say Bolton.\""
             }
@@ -800,19 +786,19 @@
         {
             "id": "20403",
             "name": "Ramsay Snow",
-            "subname": "Sadist",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Affiliation: House Bolton",
-                    "Fueled By Slaughter",
-                    "Intimidating Presence"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Sadist",
+            "abilities": [
+                "Affiliation: House Bolton",
+                "Fueled By Slaughter",
+                "Intimidating Presence"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"A naked man has few secrets, but a flayed man's got none.\""
             }
@@ -820,22 +806,21 @@
         {
             "id": "20404",
             "name": "Theon Greyjoy",
-            "subname": "Reek",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Order: Set An Example"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army that includes Ramsay Snow, and must be attached to his unit, ignoring usual Attachment limits.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Reek",
+            "abilities": [
+                "Order: Set An Example"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army that includes Ramsay Snow, and must be attached to his unit, ignoring usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I'm not him, I'm not the turncloak, he died at Winterfell. My name is Reek!\""
             }
@@ -843,18 +828,18 @@
         {
             "id": "20406",
             "name": "Brienne",
-            "subname": "Maiden of Tarth",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Knightly Vow",
-                    "Stalwart"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Maiden of Tarth",
+            "abilities": [
+                "Knightly Vow",
+                "Stalwart"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"A true knight is sworn to protect those who are weaker than himself, or die in the attempt.\""
             }
@@ -862,18 +847,18 @@
         {
             "id": "20407",
             "name": "Bronn",
-            "subname": "The Sellsword",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Loyalty through Coin",
-                    "Motivated by Coin"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "The Sellsword",
+            "abilities": [
+                "Loyalty through Coin",
+                "Motivated by Coin"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I sell my sword, I don’t give it away.\""
             }
@@ -881,40 +866,37 @@
         {
             "id": "20408",
             "name": "Bolton Flayer",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Spread Fear"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Spread Fear"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20409",
             "name": "Vargo Hoat",
-            "subname": "The Goat of Harrenhal",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Threaten",
-                    "Affiliation: Bloody Mummers",
-                    "Sadistic Mutilation"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40414": "The Crippler's Infamy",
-                    "40415": "Careless Aggression",
-                    "40416": "Exploit Weakness"
-                }
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "The Goat of Harrenhal",
+            "abilities": [
+                "Order: Threaten",
+                "Affiliation: Bloody Mummers",
+                "Sadistic Mutilation"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40414",
+                "40415",
+                "40416"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The goat is Lord of Harrenhal, and the Lord of Harrenhal does not haggle.\""
             }
@@ -922,19 +904,19 @@
         {
             "id": "20410",
             "name": "Vargo Hoat",
-            "subname": "The Crippler",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Sadistic Mutilation",
-                    "Vicious",
-                    "Weaken Resolve"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "The Crippler",
+            "abilities": [
+                "Sadistic Mutilation",
+                "Vicious",
+                "Weaken Resolve"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"How many monsters does Lord Tywin have?\""
             }
@@ -942,27 +924,24 @@
         {
             "id": "20411",
             "name": "Daario Naharis",
-            "subname": "Stormcrow Captain",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Affiliation: Stormcrows",
-                    "Improved Armaments",
-                    "Motivated By Coin"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40417": "Sellsword Negotiations",
-                    "40418": "Sellsword Bravado",
-                    "40419": "Reckless Strikes"
-                }
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Stormcrow Captain",
+            "abilities": [
+                "Affiliation: Stormcrows",
+                "Improved Armaments",
+                "Motivated By Coin"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40417",
+                "40418",
+                "40419"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"He has a sellsword's conscience, That is to say, none at all.\""
             }
@@ -970,18 +949,18 @@
         {
             "id": "20412",
             "name": "Daario Naharis",
-            "subname": "Reckless Mercenary",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Reckless Strikes",
-                    "Dauntless"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Reckless Mercenary",
+            "abilities": [
+                "Reckless Strikes",
+                "Dauntless"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal.\""
             }
@@ -989,17 +968,17 @@
         {
             "id": "20413",
             "name": "Jaqen H'ghar",
-            "subname": "Unnamed",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Taking a New Name"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Unnamed",
+            "abilities": [
+                "Order: Taking a New Name"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Valar Morghulis.\""
             }
@@ -1007,40 +986,37 @@
         {
             "id": "20414",
             "name": "Stormcrow Lieutenant",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Improved Armaments"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Improved Armaments"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20415",
             "name": "Roose Bolton",
-            "subname": "The Leech Lord",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Order: Spread Fear",
-                    "Affiliation: House Bolton",
-                    "Prey on Fear"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40411": "A Flayed Man Has No Secrets",
-                    "40412": "Fear Keeps a Man Alive",
-                    "40413": "Whispered Threats"
-                }
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "The Leech Lord",
+            "abilities": [
+                "Order: Spread Fear",
+                "Affiliation: House Bolton",
+                "Prey on Fear"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40411",
+                "40412",
+                "40413"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Fear is what keeps a man alive in this world of treachery and deceit.\""
             }
@@ -1048,78 +1024,78 @@
         {
             "id": "20416",
             "name": "Fortune Seeker",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Dauntless",
-                    "Motivated by Coin"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Dauntless",
+                "Motivated by Coin"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20417",
             "name": "Glory Seeker",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Iron Resolve",
-                    "Stubborn Tenacity"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Iron Resolve",
+                "Stubborn Tenacity"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20418",
             "name": "Golden Company Officer",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Affiliation: Golden Company",
-                    "Boisterous Charisma"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Affiliation: Golden Company",
+                "Boisterous Charisma"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20419",
             "name": "Lysene Bosun",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Interrogate",
-                    "Domineering Pride"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Interrogate",
+                "Domineering Pride"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20420",
             "name": "Arya Stark",
-            "subname": "Fugitive Princess",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Names On The List"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army containing Sandor Clegane, Fugitive Bodyguard*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Fugitive Princess",
+            "abilities": [
+                "Names On The List"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Sandor Clegane, Fugitive Bodyguard*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"And that night, there was one less name to hate.\""
             }
@@ -1127,17 +1103,17 @@
         {
             "id": "20421",
             "name": "Sandor Clegane",
-            "subname": "Fugitive Bodyguard",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Order: Threaten"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Fugitive Bodyguard",
+            "abilities": [
+                "Order: Threaten"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"When a dog goes bad, the fault lies with his master\" -Kevan Lannister"
             }
@@ -1145,18 +1121,18 @@
         {
             "id": "20422",
             "name": "Rorge",
-            "subname": "The Mad Dog of Saltpans",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Order: Incite",
-                    "Elusive Escape"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "The Mad Dog of Saltpans",
+            "abilities": [
+                "Order: Incite",
+                "Elusive Escape"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"You want a nose like mine?  Fight me, and you'll get one.\""
             }
@@ -1164,22 +1140,21 @@
         {
             "id": "20423",
             "name": "Biter",
-            "subname": "Rorge's Mad Dog",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Gang-Up"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army containing Rorge.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Rorge's Mad Dog",
+            "abilities": [
+                "Gang-Up"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Rorge.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"His tongue had been cut and  he does not speak, except to hiss.\""
             }
@@ -1187,25 +1162,22 @@
         {
             "id": "20424",
             "name": "Jokin",
-            "subname": "Stormcrow Captain",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "C",
-                "abilities": [
-                    "Accute Precision"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40420": "Brothers  In Arms",
-                    "40421": "Diversion  Tactics",
-                    "40422": "Stalwart  Mercenaries"
-                }
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Stormcrow Captain",
+            "abilities": [
+                "Accute Precision"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40420",
+                "40421",
+                "40422"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"The Stormcrows do not stand alone.\"  -Prendahl"
             }
@@ -1213,24 +1185,23 @@
         {
             "id": "20425",
             "name": "The Widower",
-            "subname": "Stormcrow Captain",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Jokin's Vassal",
-                    "Order: Hold The Line!",
-                    "Sundering"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army containing Jokin, Stormcrow Captain.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Stormcrow Captain",
+            "abilities": [
+                "Jokin's Vassal",
+                "Order: Hold The Line!",
+                "Sundering"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Jokin, Stormcrow Captain.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Stormcrows do not stand at all.\" -Daenerys Targaryen"
             }
@@ -1238,17 +1209,17 @@
         {
             "id": "20426",
             "name": "Jokin",
-            "subname": "Archer Captain",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Accute Precision"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Archer Captain",
+            "abilities": [
+                "Accute Precision"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"Five hundred sellswords of uncertain loyalty.\"  -Jorah Mormont"
             }
@@ -1256,23 +1227,22 @@
         {
             "id": "20427",
             "name": "The Widower",
-            "subname": "Second In Command",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Jokin's Protector",
-                    "Sundering"
-                ],
-                "requirements": [
-                    {
-                        "text": "*May only be fielded in an army containing Jokin, Archer Captain.*"
-                    }
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Second In Command",
+            "abilities": [
+                "Jokin's Protector",
+                "Sundering"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Jokin, Archer Captain.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "\"I trust all my men. Just as far as I can spit.\"  -Daario Naharis"
             }
@@ -1282,439 +1252,418 @@
         {
             "id": "40401",
             "name": "Planning and Insight",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "Choose 1:",
-                            "• This Attack deals +1 Hit.",
-                            "• After rolling Defense Dice, the Defender blocks +1 Hit.",
-                            "If you Control [LETTER], or if your Commander's unit is the Attacker/Defender, deal/block +1 Hit."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Choose 1:",
+                        "• This Attack deals +1 Hit.",
+                        "• After rolling Defense Dice, the Defender blocks +1 Hit.",
+                        "If you Control [LETTER], or if your Commander's unit is the Attacker/Defender, deal/block +1 Hit."
+                    ]
+                }
+            ]
         },
         {
             "id": "40402",
             "name": "Adaptive Methods",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 enemy Combat Unit.",
-                            "They gain 1 Condition token.",
-                            "Then, you may replace 1 Condition token on any 1 unit with any other Condition token.",
-                            "If you Control [LETTER], you may then move 1 Condition token from 1 unit to any other unit."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit.",
+                        "They gain 1 Condition token.",
+                        "Then, you may replace 1 Condition token on any 1 unit with any other Condition token.",
+                        "If you Control [LETTER], you may then move 1 Condition token from 1 unit to any other unit."
+                    ]
+                }
+            ]
         },
         {
             "id": "40403",
             "name": "Issue Commands",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When your Commander's unit Activates:",
-                        "effect": [
-                            "Instead of this unit performing an Action this Turn, target 1 other friendly unit in Long Range. It performs 1 Attack or Charge Action."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. Remove 1 Order token from that unit. They may use that Order again this Round."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When your Commander's unit Activates:",
+                    "effect": [
+                        "Instead of this unit performing an Action this Turn, target 1 other friendly unit in Long Range. It performs 1 Attack or Charge Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. Remove 1 Order token from that unit. They may use that Order again this Round."
+                    ]
+                }
+            ]
         },
         {
             "id": "40404",
             "name": "Worth The Risk",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
-                        "effect": [
-                            "That unit may re-roll any dice for this test.",
-                            "If that unit is in Short Range of your Commander, it passes this test instead.",
-                            "On a success, it restores 2 Wounds."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
+                    "effect": [
+                        "That unit may re-roll any dice for this test.",
+                        "If that unit is in Short Range of your Commander, it passes this test instead.",
+                        "On a success, it restores 2 Wounds."
+                    ]
+                }
+            ]
         },
         {
             "id": "40405",
             "name": "Meticulous Planning",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "End of the Round:",
-                        "effect": [
-                            "Search your Tactics Deck for 1 **Commander** Tactics card and add it to your hand. Shuffle your Tactics deck."
-                        ]
-                    },
-                    {
-                        "trigger": "Start of any Turn, if you Control [LETTER]:",
-                        "effect": [
-                            "Search your Tactics Deck for 1 **Commander** Tactics card and add it to your hand. Shuffle your Tactics deck."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "End of the Round:",
+                    "effect": [
+                        "Search your Tactics Deck for 1 **Commander** Tactics card and add it to your hand. Shuffle your Tactics deck."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn, if you Control [LETTER]:",
+                    "effect": [
+                        "Search your Tactics Deck for 1 **Commander** Tactics card and add it to your hand. Shuffle your Tactics deck."
+                    ]
+                }
+            ]
         },
         {
             "id": "40406",
             "name": "Surprise Strategy",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Discard this card and 1 other card to return 1 card from your discard pile to your hand.",
-                            "If you Control [LETTER], you only have to discard this card."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Discard this card and 1 other card to return 1 card from your discard pile to your hand.",
+                        "If you Control [LETTER], you only have to discard this card."
+                    ]
+                }
+            ]
         },
         {
             "id": "40407",
             "name": "Spoils of War",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Attach this card to 1 friendly Cavalry or Infantry unit until the end of the game.",
-                            "While attached, each time an enemy in Short Range is destroyed, place 1 Order token on this card. This unit's Melee Attacks gain the following based on the number of Order tokens *(effects are cumulative)*:",
-                            "**1+:** Rolls its highest Attack Die Value and, before rolling Attack Dice, the Defender becomes **Vulnerable**.\n**2:** +1 to Hit."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Attach this card to 1 friendly Cavalry or Infantry unit until the end of the game.",
+                        "While attached, each time an enemy in Short Range is destroyed, place 1 Order token on this card. This unit's Melee Attacks gain the following based on the number of Order tokens *(effects are cumulative)*:",
+                        "**1+:** Rolls its highest Attack Die Value and, before rolling Attack Dice, the Defender becomes **Vulnerable**.\n**2:** +1 to Hit."
+                    ]
+                }
+            ]
         },
         {
             "id": "40408",
             "name": "Our Blades Are Sharp",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "If the Defender is **Panicked**, this Attack gains **Precision**.",
-                            "If the Defender is **Panicked**, and the Attacker is a House Bolton unit, this Attack may re-roll any Attack Dice."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "The Bastard of Bolton"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If the Defender is **Panicked**, this Attack gains **Precision**.",
+                        "If the Defender is **Panicked**, and the Attacker is a House Bolton unit, this Attack may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40409",
             "name": "Cruel Methods",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of any Turn:",
-                        "effect": [
-                            "Target 1 enemy Combat Unit. You may expend 1 Panic token from that unit. If you do, choose 2:",
-                            "• 1 House Bolton unit in Long Range restores 2 Wounds *(This may be selected multiple times)*.",
-                            "• That enemy becomes **Vulnerable**.",
-                            "• That enemy becomes **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "The Bastard of Bolton"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit. You may expend 1 Panic token from that unit. If you do, choose 2:",
+                        "• 1 House Bolton unit in Long Range restores 2 Wounds *(This may be selected multiple times)*.",
+                        "• That enemy becomes **Vulnerable**.",
+                        "• That enemy becomes **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40410",
             "name": "Sadistic Games",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of an enemy Turn:",
-                        "effect": [
-                            "Your opponent chooses 1 (you select targets only after they choose):",
-                            "• Target up to 2 enemy Combat Units. They become **Panicked**.",
-                            "• Target up to 2 enemy Combat Units. They become **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "The Bastard of Bolton"
+            "faction": "neutral",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of an enemy Turn:",
+                    "effect": [
+                        "Your opponent chooses 1 (you select targets only after they choose):",
+                        "• Target up to 2 enemy Combat Units. They become **Panicked**.",
+                        "• Target up to 2 enemy Combat Units. They become **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40411",
             "name": "A Flayed Man Has No Secrets",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a unit is targeted by an Ability or Tactics card:",
-                        "effect": [
-                            "You may expend 1 Condition token from an enemy in Long Range of that unit. If you do, cancel the effect of that Ability or Tactics card."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "The Leech Lord"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a unit is targeted by an Ability or Tactics card:",
+                    "effect": [
+                        "You may expend 1 Condition token from an enemy in Long Range of that unit. If you do, cancel the effect of that Ability or Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40412",
             "name": "Fear Keeps a Man Alive",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When an enemy fails a Panic Test:",
-                        "effect": [
-                            "Target any number of friendly House Bolton units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units.",
-                            "If that enemy is in Short Range of Roose's unit, restore +1 Wounds."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "The Leech Lord"
+            "faction": "neutral",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy fails a Panic Test:",
+                    "effect": [
+                        "Target any number of friendly House Bolton units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units.",
+                        "If that enemy is in Short Range of Roose's unit, restore +1 Wounds."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40413",
             "name": "Whispered Threats",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When an enemy NCU Activates:",
-                        "effect": [
-                            "If that NCU Claims a zone this Turn, after resolving that zone's effect, target 1 enemy Combat Unit. They become **Vulnerable**. Then target 1 enemy Combat Unit, they become **Panicked**."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "The Leech Lord"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy NCU Activates:",
+                    "effect": [
+                        "If that NCU Claims a zone this Turn, after resolving that zone's effect, target 1 enemy Combat Unit. They become **Vulnerable**. Then target 1 enemy Combat Unit, they become **Panicked**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40414",
             "name": "The Crippler's Infamy",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When an enemy is performing a Panic Test, before rolling dice:",
-                        "effect": [
-                            "If that enemy fails this Panic Test, you may expend 1 **Weakened** token from them. If you do, they suffer +2 Wounds.",
-                            "If that enemy is engaged with a Bloody Mummer unit, they suffer -2 to their Panic Tests roll."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Vargo Hoat",
-                "commander_subname": "The Goat of Harrenhal"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is performing a Panic Test, before rolling dice:",
+                    "effect": [
+                        "If that enemy fails this Panic Test, you may expend 1 **Weakened** token from them. If you do, they suffer +2 Wounds.",
+                        "If that enemy is engaged with a Bloody Mummer unit, they suffer -2 to their Panic Tests roll."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40415",
             "name": "Careless Aggression",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of any Round:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. That unit performs 1 Attack Action.",
-                            "After completing that Attack, your opponent may Activate 1 NCU."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Vargo Hoat",
-                "commander_subname": "The Goat of Harrenhal"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Round:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit performs 1 Attack Action.",
+                        "After completing that Attack, your opponent may Activate 1 NCU."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40416",
             "name": "Exploit Weakness",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "The Defender becomes **Vulnerable**.",
-                            "If the Defender is **Weakened**, the Attacker may re-roll any Attack Dice."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Vargo Hoat",
-                "commander_subname": "The Goat of Harrenhal"
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "The Defender becomes **Vulnerable**.",
+                        "If the Defender is **Weakened**, the Attacker may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40417",
             "name": "Sellsword Negotiations",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a friendly NCU Claims a zone:",
-                        "effect": [
-                            "Replace that zone's effect with:",
-                            "*Until the end of the Round, you count as Controlling [MONEY]. Restore 2 Wounds to 1 friendly Combat Unit. If this is a Stormcrow Unit, restore +1 Wound for each of that unit's destroyed ranks.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*Until the end of the Round, you count as Controlling [MONEY]. Restore 2 Wounds to 1 friendly Combat Unit. If this is a Stormcrow Unit, restore +1 Wound for each of that unit's destroyed ranks.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40418",
             "name": "Sellsword Bravado",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Target 1 friendly Combat Unit. That unit performs 1 Morale Test. If this is a Stormcrow Unit, it gains +2 to its roll.",
-                            "On a success, target 1 enemy in Long Range. It becomes **Panicked** and **Weakened**."
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit performs 1 Morale Test. If this is a Stormcrow Unit, it gains +2 to its roll.",
+                        "On a success, target 1 enemy in Long Range. It becomes **Panicked** and **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40419",
             "name": "Reckless Strikes",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
-                        "effect": [
-                            "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
-                            "If this targets a Stormcrow unit, this Attack rolls its highest Attack Die Value."
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
+                        "If this targets a Stormcrow unit, this Attack rolls its highest Attack Die Value."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40420",
             "name": "Brothers  In Arms",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Start of a friendly Turn:",
-                        "effect": [
-                            "Attach this card to a friendly Stormcrow Combat Unit until the end of the Game or until they fail a Panic Test.",
-                            "While attached, each time this unit Attacks, it rolls +1 Attack Die for each other friendly unit in Short Range.",
-                            "If they are in Short Range of Jokin’s unit, they gain an additional +1 Attack Die."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Attach this card to a friendly Stormcrow Combat Unit until the end of the Game or until they fail a Panic Test.",
+                        "While attached, each time this unit Attacks, it rolls +1 Attack Die for each other friendly unit in Short Range.",
+                        "If they are in Short Range of Jokin’s unit, they gain an additional +1 Attack Die."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         },
         {
             "id": "40421",
             "name": "Diversion  Tactics",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "After an enemy completes a Melee Attack:",
-                        "effect": [
-                            "Target 1 other friendly unit in Long Range of the Defender.",
-                            "It performs 1 Maneuver Action."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 other friendly unit in Long Range of the Defender.",
+                        "It performs 1 Maneuver Action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         },
         {
             "id": "40422",
             "name": "Stalwart  Mercenaries",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "When a friendly unit is performing a Panic Test, before rolling dice:",
-                        "effect": [
-                            "That unit gains +2 to their roll.",
-                            "If they are in Short Range of Jokin, they automatically pass this test instead."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Panic Test, before rolling dice:",
+                    "effect": [
+                        "That unit gains +2 to their roll.",
+                        "If they are in Short Range of Jokin, they automatically pass this test instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         }
-    ]
+    ],
+    "special": []
 }

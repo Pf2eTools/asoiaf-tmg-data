@@ -364,9 +364,10 @@ class _DataTypeLoaderSong extends _DataTypeLoaderMultiSource {
 class DataLoader {
 	static _PROP_TO_HASH_PAGE = {
 		"song": UrlUtil.PG_SONG,
-		"attachments": UrlUtil.PG_SONG,
-		"units": UrlUtil.PG_SONG,
-		"ncus": UrlUtil.PG_SONG,
+		"attachment": UrlUtil.PG_SONG,
+		"unit": UrlUtil.PG_SONG,
+		"ncu": UrlUtil.PG_SONG,
+		"special": UrlUtil.PG_SONG,
 		"tactics": UrlUtil.PG_SONG,
 	};
 

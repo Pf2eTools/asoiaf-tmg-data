@@ -1,623 +1,612 @@
 {
-    "units": [
+    "_meta": {
+        "author": "CMON",
+        "id": "neutral",
+        "language": "fr"
+    },
+    "unit": [
         {
             "id": "10401",
             "name": "Coupe-Jarrets de la Maison Bolton",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Aggression Impitoyable",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Agression Impitoyable"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Agression Impitoyable"
+            ],
+            "attacks": [
+                {
+                    "name": "Aggression Impitoyable",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Malgré leur équipement léger, les Coupe-Jarrets de la Maison Bolton jouissent d’une réputation de brutalité et d’efficacité impitoyable qui leur permet de répandre la peur dans les rangs de troupes ennemies bien mieux équipées. Leurs masses à pointes peuvent broyer leurs ennemis, mais c’est en tant qu’instruments de terreur qu’elles se révèlent les plus utiles. Les Coupe-Jarrets de la Maison Bolton se plaisent à humilier leurs ennemis vaincus ou, pire encore, à les capturer pour leur faire subir un sort plus terrible encore"
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10402",
             "name": "Filles du Bâtard de la Maison Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 6,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Arc de Pisteur",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            4,
-                            4,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Lames et Crocs",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Volée d'Assaut",
-                    "Arc de Pisteur",
-                    "Lames et Crocs"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Volée d'Assaut",
+                "Arc de Pisteur",
+                "Lames et Crocs"
+            ],
+            "attacks": [
+                {
+                    "name": "Arc de Pisteur",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Lames et Crocs",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Dressées à acculer et à abattre la plus lourde des infanteries, les Filles du Bâtard excellent dans les attaques de flanc et dans la traque d’adversaires en fuite. Bien qu’elles ne soient pas assez protégées pour soutenir un assaut prolongé, elles se complaisent à fondre sur les ennemis blessés par les flèches de leurs maîtres. Une forte récompense attend le dresseur qui aura su capturer un officier ennemi afin que Ramsay Bolton puisse « se divertir » après la bataille."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10403",
             "name": "Écorchés de la Maison Bolton",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 8,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Fléau de Guerre",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Fléau de Guerre",
-                    "Présence Intimidante"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Fléau de Guerre",
+                "Présence Intimidante"
+            ],
+            "attacks": [
+                {
+                    "name": "Fléau de Guerre",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Dans la Guerre des Cinq Rois, ceux que l’on nomme les Écorchés forment les rangs d’une cavalerie plus lourde que la plupart de celles combattant sous des bannières pourtant plus prestigieuses. Équipés de robustes armures d’acier (noirci, bien évidemment), de grands boucliers et de lourdes bardes pour leurs chevaux, les Écorchés peuvent effectuer des charges dévastatrices et tenir le front pour un temps limité. Le fléau de guerre, leur arme de prédilection, est capable d’anéantir les meilleures défenses, mais c’est encore leur apparence terrifiante qui constitue leur meilleur atout."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10404",
             "name": "Gardes Noirs de la Maison Bolton",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Fléau à Pointes",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Fléau à Pointes",
-                    "Visage Horrifique"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Fléau à Pointes",
+                "Visage Horrifique"
+            ],
+            "attacks": [
+                {
+                    "name": "Fléau à Pointes",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Tous les adversaires des Gardes Noirs de la Maison Bolton ont eu vent de leur cruauté. Leurs terribles fléaux à pointes peuvent défoncer les boucliers les plus solides. Les Gardes Noirs constituent les troupes les plus lourdes des forces de la Maison Bolton et sont donc capables de prendre et de tenir n’importe quelle position sur le champ de bataille."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10405",
             "name": "Tirailleurs des Pitres Sanglants",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Lame de Pitre",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            5
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Lame de Pitre",
-                    "Riposte",
-                    "Déstabilisation"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Lame de Pitre",
+                "Riposte",
+                "Déstabilisation"
+            ],
+            "attacks": [
+                {
+                    "name": "Lame de Pitre",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "En dépit de leur apparence outrancière, les Pitres Sanglants forment une redoutable compagnie de mercenaires dont la cruauté est réputée excessive, y compris parmi les mercenaires les moins recommandables. Leur seule loyauté va à l’argent, mais si vous y mettez le prix, ils seront capables d’occuper n’importe quelle position dans votre armée. Les Tirailleurs portent des armes et des armures légères, ce qui leur donne la mobilité nécessaire pour se livrer à des attaques rapides sur les flancs, mais ils devront toutefois être mis à l’abri des charges directes."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10406",
             "name": "Mercenaires Corbeaux Tornade",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Épée Longue",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Appât du Gain"
-                ],
-                "tray": "infantry",
-                "requirements": [
-                    {
-                        "name": "Réactivité ",
-                        "text": "*Réduisez le coût de 1 Attachement de cette unité de 1.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Appât du Gain"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Réduisez le coût de 1 Attachement de cette unité de 1.*",
+                    "name": "Réactivité "
+                }
+            ],
             "fluff": {
                 "lore": "Bien que les Corbeaux Tornade ne soient pas toujours loyaux envers leurs chefs, leurs employeurs, voire envers eux-mêmes, leur dévouement absolu à l’argent est indiscutable. Lorsqu’on y met le prix, les Mercenaires Corbeaux Tornade se révèlent être une infanterie moyenne efficace, et sont capables de tenir une aile ou d’effectuer eux-mêmes des manœuvres de flanc. Tant que l’argent coule à flots, leur employeur, quel qu’il soit, peut compter sur leur professionnalisme sans faille."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10407",
             "name": "Archers Corbeaux Tornade",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 6,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Arc Long de Mercenaire",
-                        "type": "long",
-                        "hit": 4,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 5,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Arc Long de Mercenaire",
-                    "Loyauté Intéressée"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Arc Long de Mercenaire",
+                "Loyauté Intéressée"
+            ],
+            "attacks": [
+                {
+                    "name": "Arc Long de Mercenaire",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Que ce soit avec une lame, un arc ou les deux, un Corbeau Tornade reste un Corbeau Tornade. Il n’est motivé que par l’argent et une petite rallonge peut suffire à lui faire accomplir des miracles. Avec leurs arcs longs recourbés et leurs flèches à longue portée, les Archers Corbeaux Tornade sont des spécialistes du combat à distance. Ils ne brillent pas au corps à corps, même si leurs épées courtes peuvent occasionnellement leur permettre de repousser un assaillant affaibli. Un général avisé saura les tenir éloignés de la cavalerie ou de troupes débordant par le flanc."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10408",
             "name": "Chevaucheurs de Zébrules des Pitres Sanglants",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 6,
-                "speed": 6,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armement Disparate",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Armement Disparate",
-                    "Évasion Insaisissable"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Armement Disparate",
+                "Évasion Insaisissable"
+            ],
+            "attacks": [
+                {
+                    "name": "Armement Disparate",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Montée à dos de Zébrule, la cavalerie des Pitres Sanglants fait preuve d’un flair insolent. Leurs montures pour le moins inhabituelles, originaires d’Essos, sont issues du croisement d’équidés rayés et de chevaux. Les Zébrules sont capables de survivre de très longues périodes avec très peu d’eau et de nourriture et ils se montrent tout aussi vifs que leurs homologues occidentaux. Dans les rangs des Pitres Sanglants, les Chevaucheurs de Zébrules font office de cavalerie légère, débordant par les flancs pour charger les unités bloquées et les archers exposés."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10409",
             "name": "Derviches Corbeaux Tornade",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 6,
-                "defense": 4,
-                "morale": 5,
-                "attacks": [
-                    {
-                        "name": "Frappe Éclair",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            6,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Embuscade",
-                    "Frappe Éclair",
-                    "Appât du Gain"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Embuscade",
+                "Frappe Éclair",
+                "Appât du Gain"
+            ],
+            "attacks": [
+                {
+                    "name": "Frappe Éclair",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Payez à un Derviche Corbeau Tornade une semaine de solde, et vous aurez à votre disposition tirailleur aguerri et endurci, apte à se déplacer rapidement en armure moyenne afin de frapper les positions ennemies les plus exposées. Les Corbeaux Tornade sont connus pour n’être fidèles qu’à l’argent et cette sinistre réputation s’étend jusqu’à leurs soldats les mieux entraînés. Pourtant, les employeurs qui voient les derviches en action ont rarement des raisons de se plaindre, car ces guerriers redoutables sont capables de mettre en pièces les flancs ennemis avant de se replier en toute sécurité, annihilant toute velléité de contre-attaque."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10410",
             "name": "Chevaliers Errants",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Lame de Chevalier",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Cavalerie",
-                    "Lame de Chevalier",
-                    "Loyauté Intéressée"
-                ],
-                "wounds": 3,
-                "tray": "cavalry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Cavalerie",
+                "Lame de Chevalier",
+                "Loyauté Intéressée"
+            ],
+            "attacks": [
+                {
+                    "name": "Lame de Chevalier",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 7,
+            "tray": "cavalry",
             "fluff": {
                 "lore": "Les Chevaliers Errants parcourent le monde à la recherche d’un emploi. Ces nobles sans terre, qui n’ont pour seuls biens que leurs armes, leur armure et leur destrier, sont souvent rejetés et méprisés par leurs pairs, mis à part en temps de guerre. Quel que soit leur camp dans la Guerre des Cinq Rois, les nobles trouvent toujours une utilité à un groupe d’une demi-douzaine de chevaliers mercenaires, bien entraînés et déjà équipés. Néanmoins, leur équipement est rarement à la hauteur de celui des véritables chevaliers."
-            }
+            },
+            "icon": "cavalry",
+            "wounds": 3
         },
         {
             "id": "10411",
             "name": "Maîtres d'Armes de la Compagnie Dorée",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 4,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Épée Longue de Maître",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Technique Réactive",
-                    "Épée Longue de Maître"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Technique Réactive",
+                "Épée Longue de Maître"
+            ],
+            "attacks": [
+                {
+                    "name": "Épée Longue de Maître",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "La Compagnie Dorée est bien connue pour sa devise, « Notre parole vaut de l’or ». Celui qui les engage sait pertinemment qu’une fois sur le champ de bataille, ils savent rendre la monnaie de leur pièce. Les Maîtres d’Armes de la Compagnie Dorée ont reçu un entraînement intensif, et sont experts dans l’art d’exploiter tout point faible de la défense adverse. Ils sont réputés pour ne jamais reculer, même lorsqu’ils sont confrontés à des situations désespérées. Louer les services des Maîtres d’Armes est un investissement sûr pour celui dont les coffres sont suffisamment remplis."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10412",
             "name": "Arbalétriers de la Compagnie Dorée",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 7,
-                "speed": 5,
-                "defense": 5,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Arbalète",
-                        "type": "long",
-                        "hit": 3,
-                        "dice": [
-                            6,
-                            6,
-                            4
-                        ]
-                    },
-                    {
-                        "name": "Épée Courte",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            5,
-                            4,
-                            3
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Sentinelle",
-                    "Arbalète",
-                    "Volonté de Fer"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Sentinelle",
+                "Arbalète",
+                "Volonté de Fer"
+            ],
+            "attacks": [
+                {
+                    "name": "Arbalète",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Épée Courte",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
             "fluff": {
                 "lore": "La Compagnie Dorée, le groupe de mercenaires le plus fiable des Citées Libres, propose les services de plusieurs troupes de combat. Les Arbalétriers sont l’une d’entre elles. D’une résolution sans faille, ces tireurs émérites attendent patiemment que l’ennemi se rapproche pour faire pleuvoir leur déluge de mort. Leurs carreaux transpercent les armures avec aisance, notamment à courte portée. Quiconque cherche à renforcer ses troupes fera une bonne affaire en les engageant."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10413",
             "name": "Éléphant de Guerre de la Compagnie Dorée",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "monster",
-                "cost": 6,
-                "speed": 6,
-                "defense": 3,
-                "morale": 6,
-                "attacks": [
-                    {
-                        "name": "Écrasement",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Éléphant de Guerre",
-                    "Écrasement"
-                ],
-                "wounds": 8,
-                "tray": "warmachine",
-                "requirements": [
-                    {
-                        "text": "*Votre armée ne peut inclure qu’un seul Éléphant de Guerre pour chaque unité d’Infanterie de la Compagnie Dorée.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "Éléphant de Guerre",
+                "Écrasement"
+            ],
+            "attacks": [
+                {
+                    "name": "Écrasement",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Votre armée ne peut inclure qu’un seul Éléphant de Guerre pour chaque unité d’Infanterie de la Compagnie Dorée.*"
+                }
+            ],
             "fluff": {
                 "lore": "Face à la charge de ces gigantesques mastodontes, même les soldats les plus aguerris se retrouvent démunis. Les Éléphants de Guerre de la Compagnie Dorée sont capables d’enfoncer n’importe quelle ligne ennemie avec une brutalité sans égale. Ils semblent invulnérables lorsqu’ils piétinent sauvagement leurs adversaires ou qu’ils les fauchent de leurs défenses. Toutefois, ce ne sont que des animaux et, sans leur dresseur à proximité, ils s’arrêtent parfois en plein élan, désemparés."
-            }
+            },
+            "icon": "monster",
+            "wounds": 8
         },
         {
             "id": "10414",
             "name": "Épées Louées de Lys",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 5,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Lames de Pirate",
-                        "type": "melee",
-                        "hit": 3,
-                        "dice": [
-                            7,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Pillards des Cités Libres",
-                    "Lames de Pirate"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Pillards des Cités Libres",
+                "Lames de Pirate"
+            ],
+            "attacks": [
+                {
+                    "name": "Lames de Pirate",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Sur les îles-forteresses de Lys, les hautes murailles et les incessantes patrouilles d’Épées Louées suffisent à dissuader tout éventuel attaquant. Les Épées louées ne sont toutefois rien d’autre que des pirates qui offrent leurs services au plus offrant. La gloire ne les intéresse pas. Ils ne sont motivés que par le pillage et le paiement de leur solde une fois de retour à leur port d’attache."
-            }
+            },
+            "icon": "infantry"
         },
         {
             "id": "10415",
             "name": "Freux",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 5,
-                "speed": 5,
-                "defense": 4,
-                "morale": 7,
-                "attacks": [
-                    {
-                        "name": "Armes de Récupération",
-                        "type": "melee",
-                        "hit": 4,
-                        "dice": [
-                            6,
-                            5,
-                            4
-                        ]
-                    }
-                ],
-                "abilities": [
-                    "Ordre : Incitation",
-                    "Désorganisé",
-                    "Recrutement dans les Collines"
-                ],
-                "tray": "infantry"
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Ordre : Incitation",
+                "Désorganisé",
+                "Recrutement dans les Collines"
+            ],
+            "attacks": [
+                {
+                    "name": "Armes de Récupération",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
             "fluff": {
                 "lore": "Si l’on excepte leur étonnante loyauté, les Freux de Tyrion Lannister ne sont guère différents des autres tribus montagnardes et des pillards ordinaires. Bien qu’ils soient plus attachés à la fortune de Tyrion qu’à sa propre personne, ils ont su rester fidèles, même lorsque la trahison aurait constitué une option plus lucrative. En tant que mercenaires, ces troupes se révèlent tout à fait rentables si elles sont employées en tant qu’éclaireurs ou pour harceler les flancs ennemis. Leur équipement léger ne leur permet pas de soutenir un engagement prolongé en première ligne."
-            }
+            },
+            "icon": "infantry"
         }
     ],
-    "ncus": [
+    "ncu": [
         {
             "id": "30402",
             "name": "Petyr Baelish",
-            "subname": "Littlefinger",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Maître du Jeu",
-                        "effect": [
-                            "Petyr Baelish commence la partie avec 2 pions Ordre sur sa carte.",
-                            "Chaque fois que Petyr s’empare d’une zone, vous pouvez dépenser 1 pion Ordre pour remplacer l’effet de celle-ci par celui de n’importe quelle autre zone libre.",
-                            "Une fois par partie, au début de n’importe quel tour, vous pouvez choisir 1 zone. Jusqu’à la fin du round, vous êtes considéré comme contrôlant cette zone."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 2,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Littlefinger",
+            "abilities": [
+                {
+                    "name": "Maître du Jeu",
+                    "effect": [
+                        "Petyr Baelish commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Chaque fois que Petyr s’empare d’une zone, vous pouvez dépenser 1 pion Ordre pour remplacer l’effet de celle-ci par celui de n’importe quelle autre zone libre.",
+                        "Une fois par partie, au début de n’importe quel tour, vous pouvez choisir 1 zone. Jusqu’à la fin du round, vous êtes considéré comme contrôlant cette zone."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« À Port-Réal, il y a deux sortes de gens. Les joueurs et les pièces. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
             }
         },
         {
             "id": "30403",
             "name": "Lord Varys",
-            "subname": "L'Araignée",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Oisillons",
-                        "effect": [
-                            "Varys commence la partie avec 3 pions Ordre sur sa carte.",
-                            "Chaque fois qu’une UNC ennemie s’empare d’une zone, après en avoir résolu l’effet, vous pouvez retirer 1 pion Ordre de Varys. Si vous le faites, gagnez l’effet suivant en fonction de la zone : ",
-                            "[CROWN] : 1 ennemi subit 1 Test de Panique.",
-                            "[MONEY] : Soignez 2 Blessures de 1 unité alliée.",
-                            "[LETTER] : Piochez 1 carte Tactique.",
-                            "[SWORDS] : 1 ennemi subit 3 Touches.",
-                            "[HORSE] : 1 unité alliée se décale de 3’’."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "L'Araignée",
+            "abilities": [
+                {
+                    "name": "Oisillons",
+                    "effect": [
+                        "Varys commence la partie avec 3 pions Ordre sur sa carte.",
+                        "Chaque fois qu’une UNC ennemie s’empare d’une zone, après en avoir résolu l’effet, vous pouvez retirer 1 pion Ordre de Varys. Si vous le faites, gagnez l’effet suivant en fonction de la zone : ",
+                        "[CROWN] : 1 ennemi subit 1 Test de Panique.",
+                        "[MONEY] : Soignez 2 Blessures de 1 unité alliée.",
+                        "[LETTER] : Piochez 1 carte Tactique.",
+                        "[SWORDS] : 1 ennemi subit 3 Touches.",
+                        "[HORSE] : 1 unité alliée se décale de 3’’."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Mais il possède l’art de pénétrer les secrets les mieux gardés. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30404",
             "name": "Le Grand Sénéchal",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 0,
-                "abilities": [
-                    {
-                        "name": "L’Histoire Est Écrite par les Vainqueurs",
-                        "effect": [
-                            "**Le Grand Sénéchal ne peut ni être activé, ni être ciblé d’aucune façon que ce soit. Il se contente d’observer la bataille.**",
-                            "Une fois le vainqueur déclaré, celui-ci peut décrire à sa manière tous les événements qui sont produits dans la bataille. Aucun adversaire ne peut contredire, réfuter ou reformuler l’histoire contée par le vainqueur *(aussi déformée et exagérée soit-elle)* jusqu’à ce que ce dernier soit vaincu lors d’une prochaine partie."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "abilities": [
+                {
+                    "name": "L’Histoire Est Écrite par les Vainqueurs",
+                    "effect": [
+                        "**Le Grand Sénéchal ne peut ni être activé, ni être ciblé d’aucune façon que ce soit. Il se contente d’observer la bataille.**",
+                        "Une fois le vainqueur déclaré, celui-ci peut décrire à sa manière tous les événements qui sont produits dans la bataille. Aucun adversaire ne peut contredire, réfuter ou reformuler l’histoire contée par le vainqueur *(aussi déformée et exagérée soit-elle)* jusqu’à ce que ce dernier soit vaincu lors d’une prochaine partie."
+                    ]
+                }
+            ],
+            "character": true,
             "fluff": {
                 "quote": "« Il est le gardien de l’histoire de ce monde. »"
             }
@@ -625,27 +614,27 @@
         {
             "id": "30405",
             "name": "Jaqen H'ghar",
-            "subname": "Disciple du Dieu Rouge",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Choisir un Nom",
-                        "effect": [
-                            "Chaque fois que Jaqen est activé, il peut, jusqu’à la fin du round, remplacer sa Capacité d’Influence par celle de n’importe quelle UNC alliée ou ennemie."
-                        ]
-                    },
-                    {
-                        "name": "Un Nom Donné",
-                        "effect": [
-                            "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                            "Tant que cette carte Influence une unité d’Infanterie alliée, les Attaques de Mêlée de celle-ci gagnent **Précision**."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "ncu",
+            "title": "Disciple du Dieu Rouge",
+            "abilities": [
+                {
+                    "name": "Choisir un Nom",
+                    "effect": [
+                        "Chaque fois que Jaqen est activé, il peut, jusqu’à la fin du round, remplacer sa Capacité d’Influence par celle de n’importe quelle UNC alliée ou ennemie."
+                    ]
+                },
+                {
+                    "name": "Un Nom Donné",
+                    "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte Influence une unité d’Infanterie alliée, les Attaques de Mêlée de celle-ci gagnent **Précision**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Le dieu Rouge, il lui faut son dû, petite, et seule la mort peut payer la vie. »"
             }
@@ -653,20 +642,20 @@
         {
             "id": "30406",
             "name": "Tycho Nestoris",
-            "subname": "Banquier de Fer",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Soutien de la Banque de Fer",
-                        "effect": [
-                            "Une fois par partie, au début de n’importe quel tour, vous pouvez soigner un total de 5 Blessures réparties sur le nombre d’Unités Combattantes alliées de votre choix."
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "ncu",
+            "title": "Banquier de Fer",
+            "abilities": [
+                {
+                    "name": "Soutien de la Banque de Fer",
+                    "effect": [
+                        "Une fois par partie, au début de n’importe quel tour, vous pouvez soigner un total de 5 Blessures réparties sur le nombre d’Unités Combattantes alliées de votre choix."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Nous qui servons la Banque de Fer affrontons la mort tout aussi souvent que vous qui servez le Trône de Fer. »"
             }
@@ -674,24 +663,24 @@
         {
             "id": "30407",
             "name": "Walder Frey",
-            "subname": "Sire du Pont",
-            "statistics": {
-                "version": "S04",
-                "faction": "neutral",
-                "cost": 5,
-                "abilities": [
-                    {
-                        "name": "Alliance Stratégique",
-                        "effect": [
-                            "Une fois par partie, quand Walder s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*Choisissez 2 options:*",
-                            "• *1 ennemi devient Affaibli, Vulnérable et Paniqué.*",
-                            "• *1 unité alliée soigne 3 de ses Blessures.*",
-                            "• *Au début du prochain round, vous devenez le Premier Joueur.*"
-                        ]
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "S04",
+            "role": "ncu",
+            "title": "Sire du Pont",
+            "abilities": [
+                {
+                    "name": "Alliance Stratégique",
+                    "effect": [
+                        "Une fois par partie, quand Walder s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                        "*Choisissez 2 options:*",
+                        "• *1 ennemi devient Affaibli, Vulnérable et Paniqué.*",
+                        "• *1 unité alliée soigne 3 de ses Blessures.*",
+                        "• *Au début du prochain round, vous devenez le Premier Joueur.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
             "fluff": {
                 "quote": "« Il combine la cautèle de son grand âge à un appétit juvénile, et l’astuce ne lui a jamais fait défaut. »"
             }
@@ -699,99 +688,96 @@
         {
             "id": "30408",
             "name": "Roose Bolton",
-            "subname": "Cruel et Calculateur",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Rumeurs Horribles",
-                        "effect": [
-                            "Roose commence la partie avec 3 pions Ordre sur sa carte.",
-                            "Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**.",
-                            "Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                            "*1 Unité Combattante ennemie subit 1 Test de Panique.*"
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Cruel et Calculateur",
+            "abilities": [
+                {
+                    "name": "Rumeurs Horribles",
+                    "effect": [
+                        "Roose commence la partie avec 3 pions Ordre sur sa carte.",
+                        "Chaque fois que Roose est activé, vous pouvez retirer 1 de ses pions Ordre. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée**.",
+                        "Chaque fois que Roose s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
+                        "*1 Unité Combattante ennemie subit 1 Test de Panique.*"
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Il suffisait de regarder Bolton pour comprendre qu’il avait plus de cruauté dans son petit orteil que tous les Frey combinés. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         },
         {
             "id": "30409",
             "name": "Shae",
-            "subname": "Cachée à la Cour",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "cost": 4,
-                "abilities": [
-                    {
-                        "name": "Trouver le Meilleur Client",
-                        "effect": [
-                            "Shae commence la partie avec 3 pions Ordre. Chaque fois qu’elle s’empare d’une zone, après en avoir résolu l’effet, retirez 1 pion Ordre de Shae.",
-                            "À la fin de chaque Round, si Shae ne détient plus aucun pion Ordre, détruisez-la.",
-                            "Chaque fois que Shae s’empare d’une Zone, avant d’en résoudre l’effet, choisissez une option :",
-                            "• Soignez 1 Blessure sur 1 unité alliée.",
-                            "• 1 unité ennemie devient **Affaiblie**.",
-                            "• Shae gagne 2 pions Ordre."
-                        ]
-                    }
-                ],
-                "tokens": {
-                    "number": 3,
-                    "name": "order"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Cachée à la Cour",
+            "abilities": [
+                {
+                    "name": "Trouver le Meilleur Client",
+                    "effect": [
+                        "Shae commence la partie avec 3 pions Ordre. Chaque fois qu’elle s’empare d’une zone, après en avoir résolu l’effet, retirez 1 pion Ordre de Shae.",
+                        "À la fin de chaque Round, si Shae ne détient plus aucun pion Ordre, détruisez-la.",
+                        "Chaque fois que Shae s’empare d’une Zone, avant d’en résoudre l’effet, choisissez une option :",
+                        "• Soignez 1 Blessure sur 1 unité alliée.",
+                        "• 1 unité ennemie devient **Affaiblie**.",
+                        "• Shae gagne 2 pions Ordre."
+                    ]
                 }
-            },
+            ],
+            "cost": 4,
+            "character": true,
             "fluff": {
                 "quote": "« Ma mère m’a nommée Shae. Les hommes m’appellent... fréquemment. »"
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
             }
         }
     ],
-    "attachments": [
+    "attachment": [
         {
             "id": "20401",
             "name": "Capitaine de Fort-Terreur",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Se Nourrir de la Peur"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Se Nourrir de la Peur"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20402",
             "name": "Ramsay Snow",
-            "subname": "Le Bâtard de Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Maison Bolton",
-                    "Visage Horrifique"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40408": "Nos lames sont acérées",
-                    "40409": "Méthodes cruelles",
-                    "40410": "Jeux sadiques"
-                }
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Bâtard de Bolton",
+            "abilities": [
+                "Affiliation : Maison Bolton",
+                "Visage Horrifique"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40408",
+                "40409",
+                "40410"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Snow, m’appelait ma femme avant de se ronger les doigts, mais je dis Bolton. »"
             }
@@ -799,19 +785,19 @@
         {
             "id": "20403",
             "name": "Ramsay Snow",
-            "subname": "Le Sadique",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Affiliation : Maison Bolton",
-                    "Soif de Massacre",
-                    "Présence Intimidante"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Sadique",
+            "abilities": [
+                "Affiliation : Maison Bolton",
+                "Soif de Massacre",
+                "Présence Intimidante"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Lord Bolton, y disait qu’un type à poil ç’a peu d’ secrets, mais qu’sans peau c’en a pus du tout. »"
             }
@@ -819,22 +805,21 @@
         {
             "id": "20404",
             "name": "Theon Greyjoy",
-            "subname": "Schlingue",
-            "statistics": {
-                "version": "2021-S01",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Ordre : Pour l’Exemple"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui comprend Ramsay Snow et doit être rattaché à l’unité de ce dernier, en ignorant toutes les restrictions normales d’Attachement.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Schlingue",
+            "abilities": [
+                "Ordre : Pour l’Exemple"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui comprend Ramsay Snow et doit être rattaché à l’unité de ce dernier, en ignorant toutes les restrictions normales d’Attachement.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je ne suis pas lui, je ne suis pas le tourne-casaque, il a péri à Winterfell. Mon nom est Schlingue. »"
             }
@@ -842,18 +827,18 @@
         {
             "id": "20406",
             "name": "Brienne",
-            "subname": "Pucelle de Torth",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Serment de Chevalier",
-                    "Vaillance"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Pucelle de Torth",
+            "abilities": [
+                "Serment de Chevalier",
+                "Vaillance"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Un authentique chevalier est tenu par serment de protéger les plus faibles que lui, quitte à périr dans l’entreprise. »"
             }
@@ -861,18 +846,18 @@
         {
             "id": "20407",
             "name": "Bronn",
-            "subname": "Épée-Louée",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Loyauté Intéressée",
-                    "Appât du Gain"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Épée-Louée",
+            "abilities": [
+                "Loyauté Intéressée",
+                "Appât du Gain"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Mon épée, je la vends, je ne la donne pas. »"
             }
@@ -880,40 +865,37 @@
         {
             "id": "20408",
             "name": "Écorcheur Bolton",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Répandre la Peur"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Ordre : Répandre la Peur"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20409",
             "name": "Varshé Hèvre",
-            "subname": "La Chèvre d'Harrenhal",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Menacer",
-                    "Affiliation : Pitres Sanglants",
-                    "Mutilation Sadique"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40414": "L'infamie de l'Estropieur",
-                    "40415": "Aggression gratuite",
-                    "40416": "Exploiter La faiblesse"
-                }
-            },
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "attachment",
+            "title": "La Chèvre d'Harrenhal",
+            "abilities": [
+                "Ordre : Menacer",
+                "Affiliation : Pitres Sanglants",
+                "Mutilation Sadique"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40414",
+                "40415",
+                "40416"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« La chèvre est sire d’Harrenhal, et le sire d’Harrenhal ne chipote point. »"
             }
@@ -921,19 +903,19 @@
         {
             "id": "20410",
             "name": "Varshé Hèvre",
-            "subname": "L'Estropieur",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Mutilation Sadique",
-                    "Cruel",
-                    "Affaiblir la Volonté"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "L'Estropieur",
+            "abilities": [
+                "Mutilation Sadique",
+                "Cruel",
+                "Affaiblir la Volonté"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Mais combien lord Tywin en possède-t-il, de monstres ? »"
             }
@@ -941,27 +923,24 @@
         {
             "id": "20411",
             "name": "Daario Naharis",
-            "subname": "Capitaine Corbeau Tornade",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Affiliation : Corbeaux Tornade",
-                    "Armement Amélioré",
-                    "Appât du Gain"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40417": "Négotiations d'Épée-Louée",
-                    "40418": "Bravade d'Épée-Louée",
-                    "40419": "Frappes téméraires"
-                }
-            },
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Capitaine Corbeau Tornade",
+            "abilities": [
+                "Affiliation : Corbeaux Tornade",
+                "Armement Amélioré",
+                "Appât du Gain"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40417",
+                "40418",
+                "40419"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Il a une conscience d’épée-louée, c’est-à-dire aucune. »"
             }
@@ -969,18 +948,18 @@
         {
             "id": "20412",
             "name": "Daario Naharis",
-            "subname": "Mercenaire Audacieux",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Frappes Téméraires",
-                    "Audacieux"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Mercenaire Audacieux",
+            "abilities": [
+                "Frappes Téméraires",
+                "Audacieux"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Je compte comme non vécu tout jour où je n’ai aimé une femme, tué un adversaire et fait un repas fin. »"
             }
@@ -988,17 +967,17 @@
         {
             "id": "20413",
             "name": "Jaqen H'ghar",
-            "subname": "Sans Nom",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Un Nouveau Nom"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Sans Nom",
+            "abilities": [
+                "Ordre : Un Nouveau Nom"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Valar Morghulis. »"
             }
@@ -1006,40 +985,37 @@
         {
             "id": "20414",
             "name": "Lieutenant Corbeau Tornade",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Armement Amélioré"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Armement Amélioré"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20415",
             "name": "Roose Bolton",
-            "subname": "Le Seigneur Sangsue",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Ordre : Répandre la Peur",
-                    "Affiliation : Maison Bolton",
-                    "Se nourrir de la peur"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40411": "Un écorché n'a pas de secrets",
-                    "40412": "La peur garde l'homme en vie",
-                    "40413": "Menaces voilées"
-                }
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Le Seigneur Sangsue",
+            "abilities": [
+                "Ordre : Répandre la Peur",
+                "Affiliation : Maison Bolton",
+                "Se nourrir de la peur"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40411",
+                "40412",
+                "40413"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« C’est la peur qui garde l’homme en vie dans ce monde de traîtrise et de cautèle. »"
             }
@@ -1047,78 +1023,78 @@
         {
             "id": "20416",
             "name": "Quêteur de Fortune",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Audacieux",
-                    "Appât du Gain"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Audacieux",
+                "Appât du Gain"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20417",
             "name": "Quêteur de Gloire",
-            "statistics": {
-                "version": "2021-S02",
-                "faction": "neutral",
-                "type": "cavalry",
-                "cost": 1,
-                "abilities": [
-                    "Volonté de Fer",
-                    "Ténacité Acharnée"
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S02",
+            "role": "attachment",
+            "abilities": [
+                "Volonté de Fer",
+                "Ténacité Acharnée"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry"
         },
         {
             "id": "20418",
             "name": "Officier de la Compagnie Dorée",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Affiliation : Compagnie Dorée",
-                    "Charisme Fougueux"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Affiliation : Compagnie Dorée",
+                "Charisme Fougueux"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20419",
             "name": "Bosco Lysien",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Interrogatoire",
-                    "Fierté Dominatrice"
-                ]
-            }
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "abilities": [
+                "Interrogatoire",
+                "Fierté Dominatrice"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
         },
         {
             "id": "20420",
             "name": "Arya Stark",
-            "subname": "Princesse Fugitive",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Des Noms sur la Liste"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recrutée que dans une armée qui comprend Sandor Clegane, Garde du Corps Fugitif*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Princesse Fugitive",
+            "abilities": [
+                "Des Noms sur la Liste"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recrutée que dans une armée qui comprend Sandor Clegane, Garde du Corps Fugitif*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Et, cette nuit-là, il y eut un nom de moins à haïr. »"
             }
@@ -1126,17 +1102,17 @@
         {
             "id": "20421",
             "name": "Sandor Clegane",
-            "subname": "Garde du Corps Fugitif",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 1,
-                "abilities": [
-                    "Ordre : Menacer"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Garde du Corps Fugitif",
+            "abilities": [
+                "Ordre : Menacer"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Lorsqu’un chien devient agressif, la faute en incombe à son maître » \n– Kevan Lannister"
             }
@@ -1144,18 +1120,18 @@
         {
             "id": "20422",
             "name": "Rorge",
-            "subname": "Le Chien Fou des Salins",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Ordre : Incitation",
-                    "Évasion Insaisissable"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Le Chien Fou des Salins",
+            "abilities": [
+                "Ordre : Incitation",
+                "Évasion Insaisissable"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Te tente, un pif comme moi ? Résiste, et tu l’as. »"
             }
@@ -1163,22 +1139,21 @@
         {
             "id": "20423",
             "name": "Mordeur",
-            "subname": "Chien Fou de Rorge",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Attaque en Bande"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans une armée qui contient Rorge.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Chien Fou de Rorge",
+            "abilities": [
+                "Attaque en Bande"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans une armée qui contient Rorge.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Sa langue a été tranchée et il ne parle jamais, si ce n’est pour siffler. »"
             }
@@ -1186,25 +1161,22 @@
         {
             "id": "20424",
             "name": "Jokin",
-            "subname": "Capitaine Corbeau Tornade",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": "G",
-                "abilities": [
-                    "Précision Aigüe"
-                ],
-                "commander": true,
-                "character": true
-            },
-            "tactics": {
-                "cards": {
-                    "40420": "Frères d'armes",
-                    "40421": "Tactique de diversion",
-                    "40422": "Vaillants Mercenaires"
-                }
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Capitaine Corbeau Tornade",
+            "abilities": [
+                "Précision Aigüe"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "40420",
+                "40421",
+                "40422"
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Les Corbeaux Tornade ne tiennent pas le terrain tout seuls » \n– Prendahl"
             }
@@ -1212,24 +1184,23 @@
         {
             "id": "20425",
             "name": "Le Veuf",
-            "subname": "Capitaine Corbeau Tornade",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Vassal de Jokin",
-                    "Ordre : Tenez Bon !",
-                    "Fracasser"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans\nune armée qui contient Jokin, Capitaine Corbeau Tornade.*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Capitaine Corbeau Tornade",
+            "abilities": [
+                "Vassal de Jokin",
+                "Ordre : Tenez Bon !",
+                "Fracasser"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans\nune armée qui contient Jokin, Capitaine Corbeau Tornade.*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Les Corbeaux Tornade ne tiennent rien du tout. » \n– Daenerys Targaryen"
             }
@@ -1237,17 +1208,17 @@
         {
             "id": "20426",
             "name": "Jokin",
-            "subname": "Capitaine des Archers",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 2,
-                "abilities": [
-                    "Précision Aigüe"
-                ],
-                "character": true
-            },
+            "faction": "neutral",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Capitaine des Archers",
+            "abilities": [
+                "Précision Aigüe"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
             "fluff": {
                 "quote": "« Cinq cents mercenaires de loyauté pour\nle moins douteuse » \n– Jorah Mormont"
             }
@@ -1255,23 +1226,22 @@
         {
             "id": "20427",
             "name": "Le Veuf",
-            "subname": "Commandant en Second",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "type": "infantry",
-                "cost": 0,
-                "abilities": [
-                    "Protecteur de Jokin",
-                    "Fracasser"
-                ],
-                "character": true,
-                "requirements": [
-                    {
-                        "text": "*Ne peut être recruté que dans\nune armée qui contient Jokin, Capitaine des Archers*"
-                    }
-                ]
-            },
+            "faction": "neutral",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Commandant en Second",
+            "abilities": [
+                "Protecteur de Jokin",
+                "Fracasser"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Ne peut être recruté que dans\nune armée qui contient Jokin, Capitaine des Archers*"
+                }
+            ],
+            "icon": "infantry",
             "fluff": {
                 "quote": "« J’ai confiance en tous mes hommes. Je leur lâche la bride aussi loin que fusent mes crachats. » \n– Daario Nahariss"
             }
@@ -1281,440 +1251,419 @@
         {
             "id": "40401",
             "name": "Planification et prévision",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une unité effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Choisissez 1 option :",
-                            "• Cette attaque inflige +1 Touche.",
-                            "• Après avoir lancé les dés de Défense, le défenseur bloque +1 Touche.",
-                            "Si vous contrôlez [LETTER], ou si l’unité de votre Général est attaquant/défenseur, infligez/bloquez +1 Touche."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Choisissez 1 option :",
+                        "• Cette attaque inflige +1 Touche.",
+                        "• Après avoir lancé les dés de Défense, le défenseur bloque +1 Touche.",
+                        "Si vous contrôlez [LETTER], ou si l’unité de votre Général est attaquant/défenseur, infligez/bloquez +1 Touche."
+                    ]
+                }
+            ]
         },
         {
             "id": "40402",
             "name": "Méthodes réactives",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 unité Combattante ennemie.",
-                            "Elle gagne 1 pion État.",
-                            "Ensuite, vous pouvez remplacer 1 pion État de n’importe quelle unité par 1 autre pion État de votre choix.",
-                            "Enfin, si vous contrôlez [LETTER], vous pouvez déplacer 1 pion État d’une unité vers n’importe quelle autre unité."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 unité Combattante ennemie.",
+                        "Elle gagne 1 pion État.",
+                        "Ensuite, vous pouvez remplacer 1 pion État de n’importe quelle unité par 1 autre pion État de votre choix.",
+                        "Enfin, si vous contrôlez [LETTER], vous pouvez déplacer 1 pion État d’une unité vers n’importe quelle autre unité."
+                    ]
+                }
+            ]
         },
         {
             "id": "40403",
             "name": "Donner  des ordres",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand l’unité de votre Général est activée :",
-                        "effect": [
-                            "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée située à Longue Portée ou moins. Elle effectue 1 action d’Attaque ou de Charge."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 unité Combattante alliée. Retirez 1 pion Ordre de cette unité. Elle peut utiliser cet Ordre une nouvelle fois ce round-ci."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand l’unité de votre Général est activée :",
+                    "effect": [
+                        "Cette unité ne peut pas effectuer d’action ce tour-ci. À la place, ciblez 1 autre unité alliée située à Longue Portée ou moins. Elle effectue 1 action d’Attaque ou de Charge."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 unité Combattante alliée. Retirez 1 pion Ordre de cette unité. Elle peut utiliser cet Ordre une nouvelle fois ce round-ci."
+                    ]
+                }
+            ]
         },
         {
             "id": "40404",
             "name": "Risque assumé",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
-                        "effect": [
-                            "Cette unité peut relancer n’importe quels dés de ce test.",
-                            "Si cette unité se trouve à Courte Portée ou moins de votre Général, elle réussit le test à la place.",
-                            "Sur un succès, elle soigne 2 de ses Blessures."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Moral, après avoir lancé les dés :",
+                    "effect": [
+                        "Cette unité peut relancer n’importe quels dés de ce test.",
+                        "Si cette unité se trouve à Courte Portée ou moins de votre Général, elle réussit le test à la place.",
+                        "Sur un succès, elle soigne 2 de ses Blessures."
+                    ]
+                }
+            ]
         },
         {
             "id": "40405",
             "name": "Planification méticuleuse",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "À la fin du round :",
-                        "effect": [
-                            "Cherchez 1 carte Tactique de **Général** dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
-                        ]
-                    },
-                    {
-                        "trigger": "Au début de n’importe quel tour, si vous contrôlez [LETTER]:",
-                        "effect": [
-                            "Cherchez 1 carte Tactique de **Général** dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "À la fin du round :",
+                    "effect": [
+                        "Cherchez 1 carte Tactique de **Général** dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
+                    ]
+                },
+                {
+                    "trigger": "Au début de n’importe quel tour, si vous contrôlez [LETTER]:",
+                    "effect": [
+                        "Cherchez 1 carte Tactique de **Général** dans votre paquet Tactique et ajoutez-la à votre main. Mélangez votre paquet Tactique."
+                    ]
+                }
+            ]
         },
         {
             "id": "40406",
             "name": "Stratégie surprise",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Défaussez cette carte et 1 autre carte pour renvoyer une carte de votre défausse dans votre main.",
-                            "Si vous contrôlez [LETTER], vous ne défaussez que cette carte."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Défaussez cette carte et 1 autre carte pour renvoyer une carte de votre défausse dans votre main.",
+                        "Si vous contrôlez [LETTER], vous ne défaussez que cette carte."
+                    ]
+                }
+            ]
         },
         {
             "id": "40407",
             "name": "Butin de guerre",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Attachez cette carte à une unité de Cavalerie ou d’Infanterie alliée jusqu’à la fin de la partie.",
-                            "Tant que cette carte est attachée, chaque fois qu’un ennemi situé à Courte Portée ou moins est détruit, placez 1 pion Ordre sur cette carte. Les Attaques de Mêlée de cette unité gagnent les effets suivants en fonction du nombre de pions Ordre *(cumulatif)* : ",
-                            "**1+ :** Lance sa valeur de dés d’Attaque la plus élevée et, avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**.",
-                            "**2+ :** +1 pour Toucher."
-                        ]
-                    }
-                ]
-            }
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Attachez cette carte à une unité de Cavalerie ou d’Infanterie alliée jusqu’à la fin de la partie.",
+                        "Tant que cette carte est attachée, chaque fois qu’un ennemi situé à Courte Portée ou moins est détruit, placez 1 pion Ordre sur cette carte. Les Attaques de Mêlée de cette unité gagnent les effets suivants en fonction du nombre de pions Ordre *(cumulatif)* : ",
+                        "**1+ :** Lance sa valeur de dés d’Attaque la plus élevée et, avant de lancer les dés d’Attaque, le défenseur devient **Vulnérable**.",
+                        "**2+ :** +1 pour Toucher."
+                    ]
+                }
+            ]
         },
         {
             "id": "40408",
             "name": "Nos lames sont acérées",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Si le Défenseur est **Paniqué**, cette attaque gagne **Précision**.",
-                            "Si le Défenseur est **Paniqué**, et si l’Attaquant est une unité de la Maison Bolton, cette attaque peut également relancer n’importe quels dés d’attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "La Bâtard de Bolton"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Si le Défenseur est **Paniqué**, cette attaque gagne **Précision**.",
+                        "Si le Défenseur est **Paniqué**, et si l’Attaquant est une unité de la Maison Bolton, cette attaque peut également relancer n’importe quels dés d’attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40409",
             "name": "Méthodes cruelles",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel tour :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante ennemie. Vous pouvez dépenser 1 pion **Paniqué** de cette unité. Si vous le faites, choisissez 2 options :",
-                            "• 1 unité d’Infanterie de la Maison Bolton située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*.",
-                            "• Cet ennemi devient **Vulnérable**.",
-                            "• Cet ennemi devient **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "La Bâtard de Bolton"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel tour :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante ennemie. Vous pouvez dépenser 1 pion **Paniqué** de cette unité. Si vous le faites, choisissez 2 options :",
+                        "• 1 unité d’Infanterie de la Maison Bolton située à Longue Portée ou moins soigne 2 de ses Blessures *(peut être choisi plusieurs fois)*.",
+                        "• Cet ennemi devient **Vulnérable**.",
+                        "• Cet ennemi devient **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40410",
             "name": "Jeux sadiques",
-            "statistics": {
-                "version": "S06",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour ennemi :",
-                        "effect": [
-                            "Votre adversaire choisit 1 option *(vous ne désignez les cibles qu’une fois le choix effectué)* :",
-                            "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées**.",
-                            "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Affaiblies**."
-                        ]
-                    }
-                ],
-                "commander_id": "20402",
-                "commander_name": "Ramsay Snow",
-                "commander_subname": "La Bâtard de Bolton"
+            "faction": "neutral",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour ennemi :",
+                    "effect": [
+                        "Votre adversaire choisit 1 option *(vous ne désignez les cibles qu’une fois le choix effectué)* :",
+                        "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Paniquées**.",
+                        "• Ciblez jusqu’à 2 Unités Combattantes ennemies. Elles deviennent **Affaiblies**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20402"
             }
         },
         {
             "id": "40411",
             "name": "Un écorché n'a pas de secrets",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une unité est ciblée par une Capacité ou une carte Tactique :",
-                        "effect": [
-                            "Vous pouvez dépenser 1 pion État d’une unité ennemie située à Longue Portée ou moins de cette unité. Si vous le faites, annulez l’effet de cette Capacité ou carte Tactique."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Le Seigneur Sangsue"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité est ciblée par une Capacité ou une carte Tactique :",
+                    "effect": [
+                        "Vous pouvez dépenser 1 pion État d’une unité ennemie située à Longue Portée ou moins de cette unité. Si vous le faites, annulez l’effet de cette Capacité ou carte Tactique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40412",
             "name": "La peur garde l'homme en vie",
-            "statistics": {
-                "version": "S05",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi échoue un Test de Panique :",
-                        "effect": [
-                            "Ciblez un nombre au choix d’unités de la Maison Bolton alliées situées à Longue Portée ou moins. Soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités.",
-                            "Si cet ennemi est situé à Courte Portée ou moins de l'unité de Roose, soignez +1 Blessure."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Le Seigneur Sangsue"
+            "faction": "neutral",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi échoue un Test de Panique :",
+                    "effect": [
+                        "Ciblez un nombre au choix d’unités de la Maison Bolton alliées situées à Longue Portée ou moins. Soignez le montant total de Blessures infligées par le test, réparti au choix sur ces unités.",
+                        "Si cet ennemi est situé à Courte Portée ou moins de l'unité de Roose, soignez +1 Blessure."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40413",
             "name": "Menaces voilées",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC ennemie est activée :",
-                        "effect": [
-                            "Si cette UNC s’empare d’une zone ce tour-ci, après en avoir résolu l’effet, ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**. Ciblez ensuite 1 Unité Combattante ennemie. Elle devient **Paniquée**."
-                        ]
-                    }
-                ],
-                "commander_id": "20415",
-                "commander_name": "Roose Bolton",
-                "commander_subname": "Le Seigneur Sangsue"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC ennemie est activée :",
+                    "effect": [
+                        "Si cette UNC s’empare d’une zone ce tour-ci, après en avoir résolu l’effet, ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**. Ciblez ensuite 1 Unité Combattante ennemie. Elle devient **Paniquée**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20415"
             }
         },
         {
             "id": "40414",
             "name": "L'infamie de l'Estropieur",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand un ennemi effectue un Test de Panique, avant de lancer les dés :",
-                        "effect": [
-                            "Si cet ennemi échoue le Test de Panique, vous pouvez dépenser 1 de ses pions **Affaibli**. Si vous le faites, elle subit +2 Blessures.",
-                            "Si cet ennemi est engagé avec une unité de Pitres Sanglants, il subit −2 à son lancer de Test de Panique."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Varshé Hèvre",
-                "commander_subname": "La Chèvre d'Harrenhal"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand un ennemi effectue un Test de Panique, avant de lancer les dés :",
+                    "effect": [
+                        "Si cet ennemi échoue le Test de Panique, vous pouvez dépenser 1 de ses pions **Affaibli**. Si vous le faites, elle subit +2 Blessures.",
+                        "Si cet ennemi est engagé avec une unité de Pitres Sanglants, il subit −2 à son lancer de Test de Panique."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40415",
             "name": "Aggression gratuite",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début de n’importe quel round :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée. Cette unité effectue 1 action d’Attaque.",
-                            "Après avoir résolu cette attaque, votre adversaire peut activer 1 UNC."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Varshé Hèvre",
-                "commander_subname": "La Chèvre d'Harrenhal"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début de n’importe quel round :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée. Cette unité effectue 1 action d’Attaque.",
+                        "Après avoir résolu cette attaque, votre adversaire peut activer 1 UNC."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40416",
             "name": "Exploiter La faiblesse",
-            "statistics": {
-                "version": "2021-S03",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Le défenseur devient **Vulnérable**.",
-                            "Si le défenseur est **Affaibli**, l’attaquant peut relancer n’importe quels dés d’Attaque."
-                        ]
-                    }
-                ],
-                "commander_id": "20409",
-                "commander_name": "Varshé Hèvre",
-                "commander_subname": "La Chèvre d'Harrenhal"
+            "faction": "neutral",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une attaque, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Le défenseur devient **Vulnérable**.",
+                        "Si le défenseur est **Affaibli**, l’attaquant peut relancer n’importe quels dés d’Attaque."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20409"
             }
         },
         {
             "id": "40417",
             "name": "Négotiations d'Épée-Louée",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une UNC alliée s’empare d’une zone :",
-                        "effect": [
-                            "Remplacez l’effet de cette zone par :",
-                            "*Jusqu’à la fin du round, vous êtes considéré comme contrôlant [MONEY]. Soignez 2 Blessures de 1 Unité Combattante alliée. S’il s’agit d’une unité de Corbeaux Tornade, soignez +1 Blessure pour chacun de ses rangs détruits.*"
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Capitaine Corbeau Tornade"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une UNC alliée s’empare d’une zone :",
+                    "effect": [
+                        "Remplacez l’effet de cette zone par :",
+                        "*Jusqu’à la fin du round, vous êtes considéré comme contrôlant [MONEY]. Soignez 2 Blessures de 1 Unité Combattante alliée. S’il s’agit d’une unité de Corbeaux Tornade, soignez +1 Blessure pour chacun de ses rangs détruits.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40418",
             "name": "Bravade d'Épée-Louée",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Ciblez 1 Unité Combattante alliée. Cette unité effectue 1 Test de Moral. S’il s’agit d’une unité de Corbeaux Tornade, elle gagne +2 au lancer.",
-                            "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** et **Affaibli**."
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Capitaine Corbeau Tornade"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Ciblez 1 Unité Combattante alliée. Cette unité effectue 1 Test de Moral. S’il s’agit d’une unité de Corbeaux Tornade, elle gagne +2 au lancer.",
+                        "Si elle réussit, ciblez 1 ennemi situé à Longue Portée ou moins. Il devient **Paniqué** et **Affaibli**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40419",
             "name": "Frappes téméraires",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
-                        "effect": [
-                            "Cette attaque gagne **Frappe Critique** et **Précision**. L’Attaquant subit 1 Blessure pour chaque résultat de 1 sur les dés d’Attaque.",
-                            "Si cette carte cible une unité de Corbeaux Tornade, celle-ci lance sa valeur de dés la plus élevée."
-                        ]
-                    }
-                ],
-                "commander_id": "20411",
-                "commander_name": "Daario Naharis",
-                "commander_subname": "Capitaine Corbeau Tornade"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+                    "effect": [
+                        "Cette attaque gagne **Frappe Critique** et **Précision**. L’Attaquant subit 1 Blessure pour chaque résultat de 1 sur les dés d’Attaque.",
+                        "Si cette carte cible une unité de Corbeaux Tornade, celle-ci lance sa valeur de dés la plus élevée."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20411"
             }
         },
         {
             "id": "40420",
             "name": "Frères d'armes",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Au début d’un tour allié :",
-                        "effect": [
-                            "Attachez cette carte à une Unité Combattante Corbeau Tornade alliée jusqu’à la fin de la partie ou qu’elle échoue un Test de Panique.",
-                            "Tant que cette carte est attachée, chaque fois que cette unité attaque, elle lance +1 dé d’Attaque pour chaque autre unité alliée située à Courte Portée ou moins.",
-                            "Si cette unité se trouve à Courte Portée ou moins de l’unité de Jokin, elle gagne +1 dé d’Attaque supplémentaire."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Capitaine Corbeau Tornade"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Au début d’un tour allié :",
+                    "effect": [
+                        "Attachez cette carte à une Unité Combattante Corbeau Tornade alliée jusqu’à la fin de la partie ou qu’elle échoue un Test de Panique.",
+                        "Tant que cette carte est attachée, chaque fois que cette unité attaque, elle lance +1 dé d’Attaque pour chaque autre unité alliée située à Courte Portée ou moins.",
+                        "Si cette unité se trouve à Courte Portée ou moins de l’unité de Jokin, elle gagne +1 dé d’Attaque supplémentaire."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         },
         {
             "id": "40421",
             "name": "Tactique de diversion",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
-                        "effect": [
-                            "Ciblez 1 autre unité alliée située à Longue Portée ou moins du défenseur.",
-                            "Elle effectue 1 action de Manœuvre."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Capitaine Corbeau Tornade"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Après qu’un ennemi a résolu une Attaque de Mêlée :",
+                    "effect": [
+                        "Ciblez 1 autre unité alliée située à Longue Portée ou moins du défenseur.",
+                        "Elle effectue 1 action de Manœuvre."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         },
         {
             "id": "40422",
             "name": "Vaillants Mercenaires",
-            "statistics": {
-                "version": "2021",
-                "faction": "neutral",
-                "text": [
-                    {
-                        "trigger": "Quand une unité alliée effectue un Test de Panique, avant de lancer les dés :",
-                        "effect": [
-                            "Cette unité gagne +2 à son lancer.",
-                            "Si elle se trouve à Courte Portée ou moins de l’unité de Jokin, elle réussit automatiquement le test à la place."
-                        ]
-                    }
-                ],
-                "commander_id": "20424",
-                "commander_name": "Jokin",
-                "commander_subname": "Stormcrow Captain"
+            "faction": "neutral",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Quand une unité alliée effectue un Test de Panique, avant de lancer les dés :",
+                    "effect": [
+                        "Cette unité gagne +2 à son lancer.",
+                        "Si elle se trouve à Courte Portée ou moins de l’unité de Jokin, elle réussit automatiquement le test à la place."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "20424"
             }
         }
-    ]
+    ],
+    "special": []
 }
