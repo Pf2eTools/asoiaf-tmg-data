@@ -595,6 +595,8 @@ class TextRenderer:
     LINEBREAK_OPTIMAL = "optimal"
     LINEBREAK_NAME = "name"
 
+    KERN_AUTO = "auto"
+
     # FIXME/TODO: Custom data might require custom icons!
     ICONS = {
         "CROWN": "simple",
@@ -677,7 +679,10 @@ class TextRenderer:
         self.align_x = kwargs.get("align_x", self.ALIGN_CENTER)
         self.align_y = kwargs.get("align_y", self.ALIGN_TOP)
         self._supersample = kwargs.get("supersample", 0)
-        self.fix_kerning = kwargs.get("fix_kerning", True)
+        if kwargs.get("fix_kerning") is not None:
+            self.fix_kerning = kwargs.get("fix_kerning")
+        else:
+            self.fix_kerning = self.KERN_AUTO
 
         self.margin = kwargs.get("margin", Spacing(0, 0))
         self.base_bias_extra_height = kwargs.get("base_bias_extra_height", 0.7)
@@ -999,6 +1004,11 @@ class TextRenderer:
             return 0
         if char2 == " ":
             return 0
+
+        if self.fix_kerning == self.KERN_AUTO:
+            if font.getlength(char1 + char2) != font.getlength(char1) + font.getlength(char2):
+                return 0
+
         mem = entry.font_size / 1000
         if entry.font_family == "Tuff":
             match (char1, char2):
