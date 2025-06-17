@@ -132,6 +132,12 @@ class AssetManager:
     def get_cost_bg(self, border_color, commander):
         return self.get(f"{self.ASSETS_DIR}/common/bg-cost-{border_color}-{commander}.png", (78, 78), (0, 0))
 
+    def get_blank_objective(self):
+        return self.get(f"./assets/objectives/blank.png", (488, 750), (0, 0))
+
+    def get_blank_mission(self):
+        return self.get(f"./assets/missions/blank.png", (488, 750), (0, 0))
+
     @staticmethod
     def get_warcouncil_faction(faction):
         if faction == "nightswatch":

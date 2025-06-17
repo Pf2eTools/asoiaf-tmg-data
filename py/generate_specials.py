@@ -9,6 +9,11 @@ class ImageGeneratorSpecials(ImageGenerator):
         side = (data.back if is_back else None) or data.front
         style = side.get("style", "default")
 
+        if data.category == "objective":
+            return self.generate_objective_mission(context)
+        elif data.category == "mission":
+            return self.generate_objective_mission(context)
+
         if style == "commander":
             return self.generate_commander(context, is_back)
         if style == "zone":
@@ -332,6 +337,38 @@ class ImageGeneratorSpecials(ImageGenerator):
         special_card.alpha_composite(apply_drop_shadow(bars_lower, shadow_size=5, color="#00000088"), (-20, -20))
         special_card.alpha_composite(apply_drop_shadow(bars), (-20, -20))
         special_card.alpha_composite(layer_crests)
+        special_card.alpha_composite(layer_text)
+
+        return special_card
+
+    def generate_objective_mission(self, context):
+        data: SongDataSpecials = context["data"]
+        side = data.front
+
+        if data.category == "mission":
+            background = self.asset_manager.get_blank_mission()
+            name_color = "#9b7425"
+            text_color = "#215b34"
+        elif data.category == "objective":
+            background = self.asset_manager.get_blank_objective()
+            name_color = "#7b7060"
+            text_color = "#14607e"
+
+        special_card = Image.new("RGBA", background.size)
+        w, h = special_card.size
+        special_card.alpha_composite(background)
+
+        layer_text = Image.new("RGBA", (w, h))
+
+        name_entries = TextEntry.from_string(data.name.upper(), styles=RootStyle(font_size=34, font_color=name_color))
+        rd_name = self.text_renderer.render(name_entries, bbox=(230, 30), margin=Spacing(2), align_y=TextRenderer.ALIGN_CENTER, align_x=TextRenderer.ALIGN_CENTER)
+        layer_text.alpha_composite(rd_name, (130, 90))
+
+        text_entries = TextEntry.from_array([TextEntry(e) for e in side.get("text")], styles=RootStyle(font_color=text_color, font_size=34, leading=1300))
+        rd_text = self.text_renderer.render(text_entries, bbox=(335, 536), margin=Spacing(20), align_x=TextRenderer.ALIGN_CENTER,
+                                            align_y=TextRenderer.ALIGN_CENTER, linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
+        layer_text.alpha_composite(rd_text, (75, 136))
+
         special_card.alpha_composite(layer_text)
 
         return special_card

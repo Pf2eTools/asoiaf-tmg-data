@@ -33,6 +33,12 @@ def get_filter(languages=None, ids=None, roles=None, factions=None, versions=Non
         if isinstance(entity, SongDataTactics):
             return ["front"]
 
+        if isinstance(entity, SongDataSpecials):
+            if entity.category == "mission":
+                return ["front"]
+            elif entity.category == "objective":
+                return ["front"]
+
         return sides
 
     return filter_func
@@ -134,8 +140,8 @@ class Generator:
             save_metas = get_save_metas(context, render_sides)
             if not overwrite:
                 save_metas = {
-                    "front": [sm for sm in save_metas["front"] if Path(sm.get("fp")).exists()],
-                    "back": [sm for sm in save_metas["back"] if Path(sm.get("fp")).exists()]
+                    "front": [sm for sm in save_metas["front"] if not Path(sm.get("fp")).exists()],
+                    "back": [sm for sm in save_metas["back"] if not Path(sm.get("fp")).exists()]
                 }
             if save_metas["front"]:
                 to_generate.append([self, context, "front", save_metas["front"]])

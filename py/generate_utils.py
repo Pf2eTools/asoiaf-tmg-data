@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops, ImageOps
 import math
 import re
 from copy import copy
+from asset_manager import AssetManager
 from song_data import UnitAbility
 from py.song_data import BackText, Attack, AttackType, FactionStore, LanguageStore
 
@@ -105,10 +106,10 @@ def get_requirement_data_for_renderer(requirements, sections=None, section_paddi
 
 class ImageGenerator:
     def __init__(self, asset_manager, text_renderer, language_store=None, faction_store=None):
-        self.asset_manager = asset_manager
+        self.asset_manager: AssetManager = asset_manager
         self.text_renderer: TextRenderer = text_renderer
-        self.language_store = language_store or LanguageStore()
-        self.faction_store = faction_store or FactionStore()
+        self.language_store: LanguageStore = language_store or LanguageStore()
+        self.faction_store: FactionStore = faction_store or FactionStore()
 
     def render_character_box(self, faction, language):
         text = self.language_store.translate("character", language)
@@ -610,6 +611,7 @@ class TextRenderer:
         "MOVEMENT": "image",
         "WOUND": "image",
         "LONGRANGE": "image",
+        "VICTORY": "image",
     }
 
     FACTOR_CAP_HEIGHT = 0.82
