@@ -1,5 +1,4 @@
 import os.path
-
 from generate import *
 from asset_manager import CustomAssetManager, get_path_or_dialogue
 from image_cropper import *
@@ -27,13 +26,13 @@ class CustomGenerator(Generator):
         if isinstance(entity, SongDataTactics):
             return ImageGeneratorTactics(am, tr, language_store=ls, faction_store=fs)
         elif isinstance(entity, SongDataSpecials):
-            return ImageGeneratorSpecials(am, tr)
+            return ImageGeneratorSpecials(am, tr, language_store=ls, faction_store=fs)
         elif isinstance(entity, SongDataNCU):
-            return ImageGeneratorNCUs(am, tr)
+            return ImageGeneratorNCUs(am, tr, language_store=ls, faction_store=fs)
         elif isinstance(entity, SongDataUnit):
-            return ImageGeneratorUnits(am, tr)
+            return ImageGeneratorUnits(am, tr, language_store=ls, faction_store=fs)
         elif isinstance(entity, SongDataAttachment):
-            return ImageGeneratorAttachments(am, tr)
+            return ImageGeneratorAttachments(am, tr, language_store=ls, faction_store=fs)
 
         return None
 
@@ -134,8 +133,8 @@ def main(path, skip_portrait=True, overwrite=True):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate custom data.")
     parser.add_argument("filenames", nargs="*", default=["brew.json"], help="List of filenames relative to ./custom/data/ path.")
-    parser.add_argument("--skip-portraits", action="store_true", help="Skip generating portraits.")
-    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files.")
+    parser.add_argument("--skip-portraits", default=True, action="store_true", help="Skip generating portraits.")
+    parser.add_argument("--overwrite", default=False, action="store_true", help="Overwrite existing files.")
 
     args = parser.parse_args()
     for filename in args.filenames:

@@ -3,8 +3,7 @@ import math
 import re
 from copy import copy
 from asset_manager import AssetManager
-from song_data import UnitAbility
-from py.song_data import BackText, Attack, AttackType, FactionStore, LanguageStore
+from song_data import UnitAbility, BackText, Attack, AttackType, FactionStore, LanguageStore
 
 
 def get_gradient_color(val, colors):

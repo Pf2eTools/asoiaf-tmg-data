@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import re
 from copy import deepcopy
-from py.song_data import LANGUAGES, FACTIONS
+from song_data import LANGUAGES, FACTIONS
 
 CSV_PATH = "./data/warcouncil"
 

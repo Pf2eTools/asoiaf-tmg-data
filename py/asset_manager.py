@@ -2,7 +2,7 @@ from PIL import Image
 import os
 import re
 from pathlib import Path
-from py.song_data import FACTIONS
+from song_data import FACTIONS
 import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from image_cropper import ImageLoader, ImageSaver, ImageCropper, Rectangle

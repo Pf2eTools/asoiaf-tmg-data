@@ -1,7 +1,7 @@
 import json
 from PIL import Image
 import os
-from py.song_data import FACTIONS, DataLoader
+from song_data import FACTIONS, DataLoader
 
 DIST = {
     "commander": 21,

@@ -353,6 +353,8 @@ class ImageGeneratorSpecials(ImageGenerator):
             background = self.asset_manager.get_blank_objective()
             name_color = "#7b7060"
             text_color = "#14607e"
+        else:
+            raise ValueError(f"Enexpected category '{data.category}'")
 
         special_card = Image.new("RGBA", background.size)
         w, h = special_card.size
@@ -449,7 +451,7 @@ class ImageGeneratorSpecials(ImageGenerator):
 
 
 def gen_faction_images():
-    from py.song_data import FACTIONS
+    from song_data import FACTIONS
     from asset_manager import AssetManager
     am = AssetManager()
     gen = ImageGeneratorSpecials(am, TextRenderer(am))

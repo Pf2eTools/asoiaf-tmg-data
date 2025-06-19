@@ -5,8 +5,7 @@ from PIL import ImageTk, Image
 import json
 from abc import ABC, abstractmethod
 from pathlib import Path
-
-from py.song_data import FACTIONS
+from song_data import FACTIONS
 
 
 class ImageLoader:
