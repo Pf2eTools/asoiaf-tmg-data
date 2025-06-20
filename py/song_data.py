@@ -128,10 +128,11 @@ class Token(MixinTypeCheck):
 @dataclass(frozen=True)
 class SongData(MixinTypeCheck):
     id: str
-    name: str
-    faction: str
-    version: str
     role: SongRole
+    name: str
+    title: Optional[str] = None
+    faction: Optional[str] = None
+    version: Optional[str] = None
 
     def to_json(self):
         def fix_dictionary(data):
@@ -162,7 +163,6 @@ class SongData(MixinTypeCheck):
 @dataclass(frozen=True)
 class SongDataNCU(SongData):
     role = SongRole.ncu
-    title: Optional[str] = None
     abilities: List[NcuAbility] = dataclasses.field(default_factory=list)
     cost: int = 0
     character: bool = True
@@ -214,7 +214,6 @@ class SongDataNCU(SongData):
 @dataclass(frozen=True)
 class SongDataUnit(SongData):
     role = SongRole.unit
-    title: Optional[str] = None
     abilities: List[str] = dataclasses.field(default_factory=list)
     attacks: List[Attack] = dataclasses.field(default_factory=list)
     defense: int = 0
@@ -278,7 +277,6 @@ class SongDataUnit(SongData):
 @dataclass(frozen=True)
 class SongDataAttachment(SongData):
     role = SongRole.attachment
-    title: Optional[str] = None
     abilities: List[str] = dataclasses.field(default_factory=list)
     cost: int = 0
     tray: Tray = Tray.infantry
@@ -370,8 +368,8 @@ class SongDataTactics(SongData):
 @dataclass(frozen=True)
 class SongDataSpecials(SongData):
     role = SongRole.special
-    category: str
-    front: dict
+    category: str = "unknown"
+    front: dict = dataclasses.field(default_factory=dict)
     back: Optional[dict] = None
     size: Optional[dict] = None
 

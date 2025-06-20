@@ -138,6 +138,12 @@ class AssetManager:
     def get_blank_mission(self):
         return self.get(f"./assets/missions/blank.png", (488, 750), (0, 0))
 
+    def get_blank_siege_attacker(self):
+        return self.get(f"./assets/siege/blank-attacker.png", (546, 750), (0, 0))
+
+    def get_blank_siege_defender(self):
+        return self.get(f"./assets/siege/blank-defender.png", (546, 750), (0, 0))
+
     @staticmethod
     def get_warcouncil_faction(faction):
         if faction == "nightswatch":

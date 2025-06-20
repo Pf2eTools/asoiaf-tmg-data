@@ -13,6 +13,10 @@ class ImageGeneratorSpecials(ImageGenerator):
             return self.generate_objective_mission(context)
         elif data.category == "mission":
             return self.generate_objective_mission(context)
+        elif data.category == "siege-attacker":
+            return self.generate_objective_mission(context)
+        elif data.category == "siege-defender":
+            return self.generate_objective_mission(context)
 
         if style == "commander":
             return self.generate_commander(context, is_back)
@@ -349,10 +353,31 @@ class ImageGeneratorSpecials(ImageGenerator):
             background = self.asset_manager.get_blank_mission()
             name_color = "#9b7425"
             text_color = "#215b34"
+            name_text = data.name.upper()
+            title_text = side.get("title")
+            offset = 0
         elif data.category == "objective":
             background = self.asset_manager.get_blank_objective()
             name_color = "#7b7060"
             text_color = "#14607e"
+            name_text = data.name.upper()
+            title_text = side.get("title")
+            offset = 0
+        elif data.category == "siege-attacker":
+            background = self.asset_manager.get_blank_siege_attacker()
+            name_color = "#9a1e14"
+            text_color = "#635f54"
+            # TODO? Perhaps don't hardcode these
+            name_text = "ATTACKER"
+            title_text = data.name.upper()
+            offset = 58
+        elif data.category == "siege-defender":
+            background = self.asset_manager.get_blank_siege_defender()
+            name_color = "#302a28"
+            text_color = "#635f54"
+            name_text = "DEFENDER"
+            title_text = data.name.upper()
+            offset = 58
         else:
             raise ValueError(f"Enexpected category '{data.category}'")
 
@@ -362,12 +387,17 @@ class ImageGeneratorSpecials(ImageGenerator):
 
         layer_text = Image.new("RGBA", (w, h))
 
-        name_entries = TextEntry.from_string(data.name.upper(), styles=RootStyle(font_size=34, font_color=name_color))
-        rd_name = self.text_renderer.render(name_entries, bbox=(230, 30), margin=Spacing(2), align_y=TextRenderer.ALIGN_CENTER, align_x=TextRenderer.ALIGN_CENTER)
+        name_entries = TextEntry.from_string(name_text, styles=RootStyle(font_size=32, bold=True, font_color=name_color, tracking=10))
+        rd_name = self.text_renderer.render(name_entries, bbox=(230 + offset, 30), margin=Spacing(2), align_y=TextRenderer.ALIGN_CENTER, align_x=TextRenderer.ALIGN_CENTER)
         layer_text.alpha_composite(rd_name, (130, 90))
 
-        text_entries = TextEntry.from_array([TextEntry(e) for e in side.get("text")], styles=RootStyle(font_color=text_color, font_size=34, leading=1300))
-        rd_text = self.text_renderer.render(text_entries, bbox=(335, 536), margin=Spacing(20), align_x=TextRenderer.ALIGN_CENTER,
+        title = []
+        if title_text is not None:
+            title.append(TextEntry(TextEntry(title_text, styles=TextStyle(font_color=name_color, padding=Spacing(8), bold=True, tracking=10))))
+        text = [TextEntry(TextEntry(e)) for e in side.get("text")]
+        section = [TextEntry([*title, *text])]
+        text_entries = TextEntry.from_array(section, styles=RootStyle(font_color=text_color, font_size=32, leading=1300))
+        rd_text = self.text_renderer.render(text_entries, bbox=(335 + offset, 536), margin=Spacing(20), align_x=TextRenderer.ALIGN_CENTER,
                                             align_y=TextRenderer.ALIGN_CENTER, linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
         layer_text.alpha_composite(rd_text, (75, 136))
 

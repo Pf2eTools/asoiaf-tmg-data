@@ -139,5 +139,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     for filename in args.filenames:
-        filepath = f"./custom/data/{filename}"
+        filepath = filename
+        if Path(filename).is_file():
+            pass
+        else:
+            filepath = f"./custom/data/{filename}"
         main(filepath, skip_portrait=not args.portraits, overwrite=args.overwrite)

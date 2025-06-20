@@ -38,6 +38,10 @@ def get_filter(languages=None, ids=None, roles=None, factions=None, versions=Non
                 return ["front"]
             elif entity.category == "objective":
                 return ["front"]
+            elif entity.category == "siege-attacker":
+                return ["front"]
+            elif entity.category == "siege-defender":
+                return ["front"]
 
         return sides
 
@@ -106,8 +110,7 @@ class Generator:
     def do_save(img, save_meta):
         path = save_meta.get("fp")
         print(f"Saving to '{path}'...")
-        folder = re.sub(r"/.*$", "", path)
-        Path(folder).mkdir(parents=True, exist_ok=True)
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
 
         preprocess = save_meta.get("preprocess")
         if preprocess is None:
