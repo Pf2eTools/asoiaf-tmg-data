@@ -60,12 +60,18 @@ class AssetManager:
     def get_unit_back_image(self, unit_id):
         return self.get(f"{self.ASSETS_DIR}/units/{unit_id}b.png", (797, 827), (40, 40))
 
-    def get_attachment_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png", (197, 248), (60, 60))
+    def get_attachment_image(self, attachment_id, commander=False):
+        size = (240, 250) if commander else (185, 235)
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}.png", size, (60, 60))
 
-    # FIXME/TODO: Named Chars/Commanders might be a different size
-    def get_attachment_back_image(self, attachment_id):
-        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}b.png", (566, 878), (200, 200))
+    def get_attachment_back_image(self, attachment_id, commander=False, character=False):
+        if commander:
+            size = (610, 760)
+        elif character:
+            size = (560, 715)
+        else:
+            size = (560, 800)
+        return self.get(f"{self.ASSETS_DIR}/attachments/{attachment_id}b.png", size, (200, 200))
 
     def get_special_image(self, attachment_id, img_size=None):
         return self.get(f"{self.ASSETS_DIR}/specials/{attachment_id}.png", img_size)

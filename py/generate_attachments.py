@@ -19,7 +19,7 @@ class ImageGeneratorAttachments(ImageGenerator):
             text_bg = self.asset_manager.get_unit_skills_bg()
             text_bg = text_bg.crop((0, 0, 555, text_bg.size[1]))
             attachment_card.alpha_composite(text_bg, (141, 338))
-        portrait = self.asset_manager.get_attachment_image(data.id)
+        portrait = self.asset_manager.get_attachment_image(data.id, commander=data.commander)
         # FIXME: HACK
         if data.id == "20521" or data.id == "20517":
             portrait = portrait.resize((portrait.width // 2, portrait.height // 2)).crop((0, 0, 197, 248))
@@ -174,7 +174,7 @@ class ImageGeneratorAttachments(ImageGenerator):
         attachment_card.alpha_composite(background.rotate(self.faction_store.bg_rotation(data.faction)))
 
         # TODO: Instead of assuming the image has the right size, resize it
-        portrait = self.asset_manager.get_attachment_back_image(data.id)
+        portrait = self.asset_manager.get_attachment_back_image(data.id, commander=data.commander, character=data.character)
         if data.commander:
             attachment_card.alpha_composite(portrait, (148, 292))
         elif data.character:
