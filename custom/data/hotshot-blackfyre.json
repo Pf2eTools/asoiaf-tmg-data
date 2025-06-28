@@ -1,0 +1,2106 @@
+{
+    "_meta": {
+        "author": "Hotshot",
+        "id": "hotshot-blackfyre",
+        "language": "en",
+        "pre": "hsb"
+    },
+    "factions": {
+        "blackfyre": {
+            "text_color": "#530000",
+            "highlight_color": "gold",
+            "bg_rotation": 0,
+            "long": "House Blackfyre"
+        }
+    },
+    "abilities": {
+        "BITTER STEEL": {
+            "effect": [
+                "• Opponents cannot expend **Weakened** tokens on this unit while it is Attacking.",
+                "• **Sundering**",
+                "• While you Control [CROWN] This unit's Melee Attacks gain **Critical Blow** and may re-roll any misses.",
+                "• While you Control [LETTER] Before rolling Attack die, the Defender becomes **Vulnerable**"
+            ],
+            "icons": [
+                "melee",
+                "wounds"
+            ]
+        },
+        "AFFILIATION: HOUSE PEAKE": {
+            "effect": [
+                "This unit is a House Peake unit."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "BOOKKEEPING (HARRY STRICKLAND)": {
+            "effect": [
+                "As long as Harry Strickland is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand."
+            ]
+        },
+        "MAHOUT": {
+            "effect": [
+                "Friendly Golden Company Elephants within Long Range of this unit gain +1 to Morale Test rolls."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "REGRESSED DEFENSIVES": {
+            "effect": [
+                "After completing a Melee Attack, if the Defender failed the Panic Test, they become **Vulnerable**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "PROMISES OF WEALTH AND GLORY": {
+            "effect": [
+                "When this unit Activates, If you Control [MONEY] choose 1:",
+                "• This unit gains +1 to Defense Die rolls and +1 to Morale Rolls.",
+                "• This unit Gains **Prescision**"
+            ]
+        },
+        "SHOCK AND AWE": {
+            "effect": [
+                "After Successfully completing a Charge:",
+                "• if this Melee Attack delt any wounds, This unit heals 1 Wound.",
+                "• If this Attack destroyed a Rank, the defender becomes **Panicked**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "TRUE CONVICTION (BLACKFYRE)": {
+            "effect": [
+                "If this unit is a Blackfyre unit, each time it Attacks an enemy with the same or more remaining ranks, it may re-roll Attack Dice."
+            ],
+            "icons": [
+                "melee",
+                "ranged"
+            ]
+        },
+        "GOLDEN LANCES": {
+            "effect": [
+                "• **Sundering**",
+                "• When charging this unit Gains +2 Attack Die for each of it's remaing ranks."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "SQUIRES' SWORDS": {
+            "effect": [
+                "If your Opponent does not Control [CROWN], This unit gains +1 to hit"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "AUXILIARY TRAINING": {
+            "effect": [
+                "• While you Control [MONEY], this unit gains +1 to Defensive Die rolls.",
+                "• When performing an Attack against an Engaged Enemy, this unit may re-roll any Attack Die."
+            ],
+            "icons": [
+                "ranged",
+                "melee"
+            ]
+        },
+        "GOLDEN HEART BOW MASTERS": {
+            "effect": [
+                "• **Vicious.",
+                "• Only Defense Die rolls of 6 may block Hits from this Attack.",
+                "• If this unit has not performed the 2 Inch Shift from Ranged Attacks, this Attack gains **Critical Blow**.",
+                "• If this Attack is performed is within Short Range, you may re-roll any misses."
+            ],
+            "icons": [
+                "ranged",
+                "wounds"
+            ]
+        },
+        "RENOWNED MIGHT": {
+            "effect": [
+                "•**Critical Blow**",
+                "• Enemies Successfully Charged by this unit become **Vulnerable** and **Panicked**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ORDER: SET FOR CHARGE": {
+            "trigger": "When this unit is Successfully Charged from the Front or Flank:",
+            "effect": [
+                "If this unit is not engaged with another enemy, it performs 1 Melee Attack Action on the Attacker before they perform their Melee Attack."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "IMPORTANT MAN": {
+            "effect": [
+                "When Black Balaq is destroyed, your opponent gains 1 Victory Point and may activate a NCU."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "ORDER: RESILIENCE": {
+            "trigger": "When an Enemy is performing an Attack on this unit, after Attack Dice are rolled:",
+            "effect": [
+                "This unit only suffers 1 Wound for every two unblocked hits."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: ACT FOR ME": {
+            "trigger": "When Aegon's Unit Activates, This unit does not perform an Action:",
+            "effect": [
+                "Instead target a friendly Combat unit within Long Range, it Performs a Maneuver or Attack Action."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "BRUTE'S STRENGTH": {
+            "effect": [
+                "This unit's Melee Attacks deal +1 Wound."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ORDERS OF THE CROWN (JON MUDD)": {
+            "effect": [
+                "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:",
+                "John Mudds's unit performs 1 Maneuver or March Action.*"
+            ]
+        },
+        "I AM HIS BANNER!": {
+            "effect": [
+                "Ser Rolly Duckfield, counts as Aegon Targaryen for all Abilities and Effects."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "TO HIS SIDE!": {
+            "effect": [
+                "When Ser Rolly's unit is Attacking a enemy engaged with Aegon's unit, this unit's Melee Attacks gain **Sundering**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "BRUISER'S PRESENCE": {
+            "effect": [
+                "Each time a enemy that is engaged with this unit fails a Panic Test, that enemy becomes **Vulnerable**."
+            ]
+        },
+        "PRIDE OF THE COMPANY": {
+            "effect": [
+                "If fielding one or more Golden Company War Elephant, select 1 during Deployment phase. Attach *Harry's Pride* to that unit."
+            ]
+        },
+        "HARRY'S PRIDE": {
+            "effect": [
+                "After Harry's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",
+                "When the *Pride of the Company* is destroyed, your opponent gains +1 Victory Point."
+            ]
+        },
+        "BOLSTER LEVIES": {
+            "effect": [
+                "When this unit Activates, Target 1 other friendly unit in Long Range. It restores 1 wound."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "AEGON'S WHITECLOAKS": {
+            "effect": [
+                "This unit has 8 models (including Aegon), 8 wounds and 2 ranks."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "DRAKE'S SPEED": {
+            "effect": [
+                "This unit gains +1 Movement."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "ARMOR BEARER": {
+            "effect": [
+                "This unit Blocks +1 Hit"
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "STRENGTH PREVAILS": {
+            "effect": [
+                "• This unit cannot become **Weakened**"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "MASTERCRAFT SPEAR": {
+            "effect": [
+                "• This unit's Attacks always have re-rolls.",
+                "• After this Attack is completed, if the Defender suffered any wounds, they become **Weakened**"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "VETERANCY": {
+            "effect": [
+                "This unit may not be targeted by enemy Tactics Cards or Influenced by enemy NCUs. While engaged with this unit, enemies may not be the target of Tactics Cards or influenced by freindly NCUs."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "SHARPENED AND POLISHED": {
+            "effect": [
+                "When this unit is targeted by [MONEY] instead of removing a condition token and/or restoring Wounds. Place one order token on this unit, for each effect of bags forfeited. When this unit is performing an Attack Action, you may remove 1 order token to re-roll any misses. When this unit activates you may remove 1 token to remove 1 Condition Token."
+            ]
+        }
+    },
+    "unit": [
+        {
+            "id": "golden-company-greatswords3",
+            "name": "Golden Company Greatswords",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Bitter Steel"
+            ],
+            "attacks": [
+                {
+                    "name": "Bitter Steel",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "Armored in gilded plate and armed with towering blades that shimmer like sunfire, the Golden Company Greatswords are the embodiment of mercenary might—an elite cadre of warriors trained for decisive violence and unstoppable momentum. When the Golden Company commits its Greatswords, it signals the final judgment: this battle will end in fire and steel. Whether storming breached walls or cutting through the heart of enemy formations, their presence breaks the foe's spirit before blade meets flesh."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "golden-company-lancers",
+            "name": "Golden Company Lancers",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Golden Lances",
+                "Shock And Awe"
+            ],
+            "attacks": [
+                {
+                    "name": "Golden Lances",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
+            "fluff": {
+                "lore": "Clad in gleaming armor etched with exiled pride and mounted on destriers trained for war from birth, the Lancers use their speed and heavy armaments to send opposing men fleeing. In battle, the Golden Company Lancers serve as the hammer, slamming into disrupted battle-lines or driving into flanks softened by arrow or infantry assault. When they ride, they ride to end the fight. No commander would over look the crushing impact this force can have on the battlefield."
+            },
+            "icon": "cavalry"
+        },
+        {
+            "id": "golden-company-men-at-arms",
+            "name": "Golden Company Men at Arms",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Dauntless",
+                "Counterstrike"
+            ],
+            "attacks": [
+                {
+                    "name": "Long Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "These trained and battle hardened soldiers have fought in more battles then many of the men of Westeros, earning a heavy coin purse and a life of glory following the golden skull of Bittersteel. Under the direction and command of great captains and knights, these armsmen stand shoulder to shoulder, rallying their fellow man to stay in the fight, countering enemy blows in unison as one complete force on the battlefield."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "golden-company-knights",
+            "name": "Golden Company Knights",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Renowned Might",
+                "Hardened"
+            ],
+            "attacks": [
+                {
+                    "name": "Renowned Might",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
+            "back_text": [],
+            "fluff": {
+                "lore": "More then 500 knights fill the ranks of the Golden Company. Many of them the second or third sons of Westerosi Lords, whom traveled across the Narrow Sea in search of glory and renown that could only be found on the battlefield. The Golden Company's knights are well equiped with full plate, riding atop horses in steel barding, make up the tip of the spear able to charge headfirst into enemy formations most would not dare approach."
+            },
+            "icon": "cavalry"
+        },
+        {
+            "id": "golden-company-pikemen",
+            "name": "Golden Company Pikemen",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Order: Set for Charge",
+                "Rally Banner"
+            ],
+            "attacks": [
+                {
+                    "name": "Skull Pikes",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "The Golden Company armored pikemen form the unbreakable heart of the Golden Company's disciplined phalanx, these Pikemen are the anvil of the most renowned sellsword legion in Essos, pehaps even the whole world. Armored in well-forged mail and bearing broad shields marked with the golden skull, are trained to fight not as men, but as a wall—unyielding, unified, unbreakable. These pikemen bare the honor of carrying a golden skull, of a fallen Captain General, mounted atop a pike into battle."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "golden-company-squires",
+            "name": "Golden Company Squires",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Promises of wealth and glory",
+                "Squires Swords"
+            ],
+            "attacks": [
+                {
+                    "name": "Squires Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
+            "fluff": {
+                "lore": "Following their Lords and knights, many squires entered the service of the Golden Company. No longer treated as simple servants, these squires were placed within the Golden Company's ranks and now given a chance to make their marks and earn knighthood. Many of these squires take up the sword to fight along side their knights in battle. Aiding in driving the enemy off the field of battle, with the promise of wealth and glory drving their reason."
+            },
+            "icon": "cavalry"
+        },
+        {
+            "id": "10411",
+            "name": "Golden Company Swordsmen",
+            "faction": "blackfyre",
+            "version": "S04",
+            "role": "unit",
+            "abilities": [
+                "Order: Adaptive Style",
+                "Mastercraft Longsword"
+            ],
+            "attacks": [
+                {
+                    "name": "Mastercraft Longsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "The Golden Company is well known for their motto, “Our word is good as gold.” When hired on to fight, they make sure to give every penny’s worth on the battlefield. Their Swordsmen have trained relentlessly, letting them find any weak spot in an enemy’s defenses, exploiting it. Meanwhile, they almost never flee the field, even when faced with seemingly insurmountable odds, making them a sound investment for anyone with the coffers to afford them."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "10412",
+            "name": "Golden Company Crossbowmen",
+            "faction": "blackfyre",
+            "version": "2021-S02",
+            "role": "unit",
+            "abilities": [
+                "Order: Sentinel",
+                "Crossbow",
+                "Iron Resolve"
+            ],
+            "attacks": [
+                {
+                    "name": "Crossbow",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "The Golden Company, the Free Cities’ most reliable mercenary group, offers several types of troops for hire. One being their Crossbowmen. These sharp-eyed fighters never waste a shot, resolutely waiting until enemies have closed to within perfect range before unleashing their bolts. These bolts punch through enemy armor with ease, especially at closer ranges. Anyone looking to bolster their forces can get a bargain by hiring them."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "10413",
+            "name": "Golden Company War Elephant",
+            "faction": "blackfyre",
+            "version": "2021-S03",
+            "role": "unit",
+            "abilities": [
+                "War Elephant",
+                "Stomp"
+            ],
+            "attacks": [
+                {
+                    "name": "Stomp",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain 1 War Elephant for each Golden Company Infantry unit.*"
+                }
+            ],
+            "fluff": {
+                "lore": "Even the best-trained soldier will likely have no idea what to do when a massive elephant bears down on their battle line. The brutish War Elephants of the Golden Company stomp their way into enemy lines, seemingly impervious to attack, while they use their massive feet and tusks to demolish foes. However, they are simple creatures and without a handler nearby, it’s possible they’ll stop acting entirely, unsure about what action they should be taking."
+            },
+            "icon": "monster",
+            "wounds": 8
+        },
+        {
+            "id": "golden-company-mounted-sargent",
+            "name": "Golden Company Mounted Sargent",
+            "faction": "blackfyre",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Order: Scout Openings",
+                "Solo Rider",
+                "Mastercraft Spear"
+            ],
+            "attacks": [
+                {
+                    "name": "Mastercraft Spear",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 3,
+            "speed": 5,
+            "cost": 4,
+            "tray": "solo",
+            "back_text": [
+                {
+                    "text": "*Your army may only include up to 2 Golden Company Mounted Sargents.*",
+                    "name": "Limited"
+                }
+            ],
+            "fluff": {
+                "lore": "Every battle-field commander needs a man to enforce his orders, even if the men he commands are experienced knights or even war scarred Lords. To do the job, a well trusted and loyal Company Sargent, who has spend years leading men within the Golden Company from ordering shield walls in pike formations to leading assualts on fortified positions, is placed with the knights to ensure his commander's will and battle plans."
+            },
+            "icon": "cavalry",
+            "wounds": 3
+        },
+        {
+            "id": "golden-company-auxiliaries",
+            "name": "Golden Company Auxilaries",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Auxiliary Training"
+            ],
+            "attacks": [
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short bow",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "Those who seek wealth and glory flock to the caravans of the Golden Company and seek to join it's ever growing ranks. Freedmen, Peasants, debtors and Pirates alike join the ranks of the Golden Company as Auxiliaries to guard encampments and supply trains all in search of coin or a pathway to climbing the ranks and becoming a Captain."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "aegons-whitecloaks1",
+            "name": "Aegon's Whitecloaks",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Order: Resilience",
+                "Aegon's Whitecloaks",
+                "Disrupt"
+            ],
+            "attacks": [
+                {
+                    "name": "Disputed Steel",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        7,
+                        7
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Can only be fielded in an army including 'Aegon Targaryn, The Heir Returned', He must be attached to this unit. Your Army cannot contain any **King's Guard**.*",
+                    "name": "Character"
+                }
+            ],
+            "fluff": {
+                "lore": "Ser Rolly was the first, the first to bend the knee and swear to defend Aegon VI's life with his own. None of the seven swore before the Iron Throne, nor before the High Sept but when Aegon takes King's Landing, their names will be written in the White Book, and locked in the White Sword Tower for all of history, along side Arthur Dayne, Ducan the Tall, Aemon the Dragonknight and Corlys Velaryon."
+            },
+            "icon": "infantry"
+        }
+    ],
+    "ncu": [
+        {
+            "id": "harry-strickland-n",
+            "name": "Harry Strickland",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Ser Strickland",
+            "abilities": [
+                {
+                    "name": "Life Of Experience",
+                    "effect": [
+                        "Once per game, at the start of any Turn, you may draw 2 Tactics Cards.",
+                        "When Harry Claims [LETTER], after resolving the zone's effect, you may replace 1 Tactics Card in your hand with 1 from your discard pile."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"Harry had always been a genial man, better at hammering out contracts then foes.\""
+            }
+        },
+        {
+            "id": "duncan-strong-n",
+            "name": "Duncan Strong",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "The Ransomer",
+            "abilities": [
+                {
+                    "name": "Ransom Planning",
+                    "effect": [
+                        "Each time Duncan Claims [MONEY] you may replace that zone's effect with:",
+                        "*Your Opponent must discard the top card of their Tactics Deck.*",
+                        "At the start of Round 2, when Duncan Claims a zone on the Tactics Board, Choose 1 other Tactics Zone. The next time a enemy NCU claims that zone, attach **Marked Target** card to that NCU."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "fluff": {
+                "quote": "\"A wealth of a Lord's ransom can let a man be called whatever he chooses.\""
+            }
+        },
+        {
+            "id": "gorys-edoryen-n",
+            "name": "Gorys Edoryen",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "The Gold Leopard",
+            "abilities": [
+                {
+                    "name": "Earn Your Pay",
+                    "effect": [
+                        "**Influence** (*When this unit Claims a zone, attach this card to a friendly Combat unit until the end of the Round*):",
+                        "When Gorys Influences a unit, each time that unit performs an Action, it restores 1 Wound.",
+                        "If Gorys Claimed [MONEY], You may remove 1 Condition Token from 1 other unit in Short Range of the Targeted Unit."
+                    ]
+                },
+                {
+                    "name": "Gold Sways",
+                    "effect": [
+                        "**Once per game, when an enemy combat unit is destroyed, you may restore 1 wound +1 wound for each of it's destroyed ranks to a friendly combat unit in Short Range of the destroyed unit, if an attachemnt was destroyed, 1 of those wounds may be an attachment, ignoring normal attachment rules.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"A Paymaster pays and a Paymaster recruits.\""
+            }
+        },
+        {
+            "id": "lysono-marr-n",
+            "name": "Lysono Maar",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "The Golden Spy",
+            "abilities": [
+                {
+                    "name": "Whispering Walls",
+                    "effect": [
+                        "Lysono begins the game with 2 Order tokens.",
+                        "Each time an enemy NCU Claims a zone, after resolving that zone's effect, you may remove 1 Order token from Lysono. If you do that NCU does not count as controlling that Zone for purposes of Abilities and Tactics Cards. "
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"Arianne's company was met by a column of sellswords, led by the most exotic creature that the Princess had ever seen...\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
+            }
+        },
+        {
+            "id": "haldon-n",
+            "name": "Haldon",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Halfmaester",
+            "abilities": [
+                {
+                    "name": "Patient Study",
+                    "effect": [
+                        "Each time Haldon or a enemy NCU Claim [MONEY], place 1 Order token on Haldon.",
+                        "When Haldon Claims [MONEY], after resolving that zone's effect, you may target 1 unit and remove up to 2 tokens. If you do that unit heals 1 wound +1 for each token removed."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"The dead do not rise....\""
+            }
+        },
+        {
+            "id": "30104",
+            "name": "Tyrion Lannister",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Hugor Hill",
+            "abilities": [
+                {
+                    "name": "False Truths?",
+                    "effect": [
+                        "Each time Tyrion claims a zone, you may replace that zone's effect with:",
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "While Influencing a unit, that unit gains **Order**: Counterstrategy.",
+                        "Once per game, when your opponent plays a Tactics Card: Roll a die: on a 3+, cancel the effect of that Tactics Card."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "fluff": {
+                "quote": "\"My mind is a weapon...\""
+            }
+        },
+        {
+            "id": "pykwood-peake-n",
+            "name": "Pykewood Peake",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Emboldening Captain",
+            "abilities": [
+                {
+                    "name": "Prideful Retaliation",
+                    "effect": [
+                        "When Pykewood Peake Claims a Zone, you may replace that zone's effect with:",
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "While Influencing a unit, each time that unit passes a Morale test, 1 engaged enemy suffers 2 hits +1 for each of this unit's remainging Ranks.",
+                        "While Influencing a unit, that unit counts as *House Peake*."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"During the Storming of Starpike, for every Peake slain, we took thrice as many with us, even King Maekar fell before our walls.\""
+            }
+        },
+        {
+            "id": "septa-lemore-n",
+            "name": "Septa Lemore",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Spiritual Teacher",
+            "abilities": [
+                {
+                    "name": "Faithful Teachings",
+                    "effect": [
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
+                        "While Influencing a unit, that unit suffers -1 Wounds from failing Panic Tests.",
+                        "Each time a Influcenced unit passes a Morale Test place 1 Faith Token on Speta Lemore. These Faith Tokens may be expended (on the Influcenced unit only) after rolling Defence Die. If you do, the Defender blocks 1 Hit +1 for each of its destroyed ranks."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"The Mother and the Father made us in their Image.\""
+            }
+        },
+        {
+            "id": "30702",
+            "name": "Illyrio Mopatis",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Secret Benefactor",
+            "abilities": [
+                {
+                    "name": "Illyrio's Planning",
+                    "effect": [
+                        "Each time Illyrio Claims a zone you may replace that Zone's effect with:",
+                        "*Draw 1 Tactics Card and restore 1 Wound to a frirndly unit*."
+                    ]
+                },
+                {
+                    "name": "Playing Many Sides",
+                    "effect": [
+                        "Once per game, at the start of a round, which you are not the starting player, You may place Illyrio on the Tactics Board. After resolving the effect, your opponent may Activate a NCU."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "fluff": {
+                "quote": "\"Black or red, a dragon is still a dragon.\""
+            }
+        }
+    ],
+    "attachment": [
+        {
+            "id": "laswell-peake-c",
+            "name": "Laswell Peake",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Exiled Lord",
+            "abilities": [
+                "Relentless",
+                "Iron Resolve",
+                "Affiliation: House Peake"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "legacy-of-the-storm-of-starpike",
+                "march-on-rain-house",
+                "rush-of-aggression"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Even after a century, some of us still have friends in the Reach.\""
+            }
+        },
+        {
+            "id": "aegon-targaryen-c",
+            "name": "Aegon Targaryen",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Heir Returned",
+            "abilities": [
+                "Embolden",
+                "Order: Act For Me"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "your-king-honors-you",
+                "my-claim-is-best",
+                "battle-endurance"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"If my aunt wants Merreen, she is welcome to it. I will claim the Iron Throne by myself.\""
+            }
+        },
+        {
+            "id": "harry-strickland-c",
+            "name": "Harry Strickland",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Captain General",
+            "abilities": [
+                "Mahout",
+                "Bookkeeping (Harry Strickland)"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "cowards-ways",
+                "ivory-in-battle",
+                "surprise-strategy"
+            ],
+            "back_text": [
+                {
+                    "text": "*If Harry Strickland, Captain General is included in your army, the cost of 1 Golden Company Unit is reduced by 1,  the cost of 1 Golden Company Elephant is reduced by 1."
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Gold for four generations!\""
+            }
+        },
+        {
+            "id": "jon-connington-c",
+            "name": "Jon Connington",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Griffin Reborn",
+            "abilities": [
+                "Veterancy",
+                "Dauntless"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "never-ending-loyalty",
+                "vengeance-for-the-bells",
+                "to-bold-to-eager-for-glory"
+            ],
+            "back_text": [
+                {
+                    "text": "*Your army may include 1 Non Renly or Stannis loyalty Baratheon unit.*",
+                    "name": "Limited"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"I failed the father, but i will not fail the son.\""
+            }
+        },
+        {
+            "id": "jon-lothston-c",
+            "name": "Jon Lothston",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Gold Bat",
+            "abilities": [
+                "Battle Scars",
+                "Intimidating Presence"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "a-need-for-vengeance",
+                "lothston-rumors",
+                "broken-swords-splintered-shields"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"The black bat of Lothston, now gold but still the arms of ill repute...\""
+            }
+        },
+        {
+            "id": "tristan-rivers-c",
+            "name": "Tristan Rivers",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Reckless Dragoon",
+            "abilities": [
+                "Order: Sentinel",
+                "Reckless Strikes"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "price-of-failure",
+                "overrun",
+                "feinting-maneuver"
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"Robert Baratheon won the Iron Throne without the benefit of dragons. We can do the same.\""
+            }
+        },
+        {
+            "id": "rolly-duckfield-c",
+            "name": "Rolly Duckfield",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "First of the King's Guard",
+            "abilities": [
+                "Order: Shield Wall",
+                "True Conviction (Blackfyre)"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "lone-knight",
+                "son-of-a-smith",
+                "crushing-a-caswell"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"A knight needs more than just one name...\""
+            }
+        },
+        {
+            "id": "tristan-rivers-a",
+            "name": "Tristan Rivers",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Outlaw Knight",
+            "abilities": [
+                "Counterstrike",
+                "Disrupt"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Prince Aegon... We are your men.\""
+            }
+        },
+        {
+            "id": "denys-strong-a",
+            "name": "Denys Strong",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Brute",
+            "abilities": [
+                "Brute's Strength",
+                "Vengeance of the crown"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Even if they had no real ties to House Strong, this brother was.\""
+            }
+        },
+        {
+            "id": "rolly-duckfield-a",
+            "name": "Rolly Duckfield",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The King's Banner",
+            "abilities": [
+                "I Am His Banner!",
+                "To His Side!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Duck will die for me if need be, and that's all I require in my Kingsguard.\""
+            }
+        },
+        {
+            "id": "marq-mandrake-a",
+            "name": "Marq Mandrake",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Scarred Captain",
+            "abilities": [
+                "Dominance of the Crown"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Me, I'd sooner live, win lands and some great castle.\""
+            }
+        },
+        {
+            "id": "black-balaq-a",
+            "name": "Black Balaq",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Archer Commander",
+            "abilities": [
+                "Important Man",
+                "Accute Precision"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*If Black Balaq is placed in a Archer unit, the cost of that unit is reduced by 1.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"No more Messages...\""
+            }
+        },
+        {
+            "id": "titus-peake-a",
+            "name": "Titus Peake",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Black Peake",
+            "abilities": [
+                "Regressed Defensives",
+                "Expert Duelist",
+                "Affiliation: House Peake"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Orphan Maker was it's name, Soon House Peake will have another.\""
+            }
+        },
+        {
+            "id": "john-mudd-a",
+            "name": "John Mudd",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Young Mudd",
+            "abilities": [
+                "Orders of the Crown (Jon Mudd)"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*This Attachment ignores the usual Attachment limits when added to a unit containing Lorimas Mudd.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Connington wont have that. We follow orders.\""
+            }
+        },
+        {
+            "id": "lorimas-mudd-a",
+            "name": "Lorimas Mudd",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Old Mudd",
+            "abilities": [
+                "Protection of the Crown"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*This Attachment ignores the usual Attachment limits when added to a unit containing John Mudd.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"A Westerosi exile, his surname of Mudd, perhaps a decendant or perhaps not...\""
+            }
+        },
+        {
+            "id": "jon-connington-a",
+            "name": "Jon Connington",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Old Griff",
+            "abilities": [
+                "To The Last!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*This Attachment ignores the usual Attachment limits when added to a unit containing Aegon Targaryen.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Who better to raise Prince Rhaegar's infant son...\""
+            }
+        },
+        {
+            "id": "aegon-targaryen-a",
+            "name": "Aegon Targaryen",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Young Griff",
+            "abilities": [
+                "Boldness and Courage"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Swords? Swords will be sweet.\""
+            }
+        },
+        {
+            "id": "franklyn-flowers-a",
+            "name": "Franklyn Flowers",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Bastard of Cider Hall",
+            "abilities": [
+                "Might of the Throne"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"So long as I can kill some Fossoways, i'm all for it.\""
+            }
+        },
+        {
+            "id": "chain-a",
+            "name": "Chain",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Bruiser",
+            "abilities": [
+                "Bruiser's Presence"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in a army containing Jon Lothston, The Gold Bat.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Chain bore no weapon but five feet of iron links...\""
+            }
+        },
+        {
+            "id": "harry-strickland-a",
+            "name": "Harry Strickland",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Homeless Harry",
+            "abilities": [
+                "Regroup",
+                "Pride of the Company"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Homeless Harry looked little like a warrior.\""
+            }
+        },
+        {
+            "id": "jon-lothston-a",
+            "name": "Jon Lothston",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Trusted Officer",
+            "abilities": [
+                "Intimidation of the Crown"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"The black bat of Lothston, now gold but still the arms of ill repute...\""
+            }
+        },
+        {
+            "id": "10413",
+            "name": "Harry's Pride",
+            "faction": "blackfyre",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Harry's Pride"
+            ],
+            "cost": 0,
+            "tray": "warmachine",
+            "back_text": [
+                {
+                    "text": "*This card may only be included if your army also includes Harry Strickland, Homeless Harry. It is attached to a friendly Golden Company Elephant unit.*"
+                }
+            ],
+            "icon": "monster"
+        },
+        {
+            "id": "stormlord-declarant-a",
+            "name": "Stormlord Declarant",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Bolster Levies"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Jon Connington, The Griffin Reborn.*"
+                }
+            ],
+            "icon": "infantry"
+        },
+        {
+            "id": "golden-company-sword-master-a",
+            "name": "Golden Company Sword Master",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Domineering Pride",
+                "Stand Your Ground!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
+        },
+        {
+            "id": "foot-squire-a",
+            "name": "Foot Squire",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Armor Bearer",
+                "Sharpened and Polished"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
+        },
+        {
+            "id": "veteran-company-captain-a",
+            "name": "Veteran Company Captain",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Veterancy"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain up to 1 Veteran Company Captain.*",
+                    "name": "Limited"
+                }
+            ],
+            "icon": "infantry"
+        },
+        {
+            "id": "golden-company-mounted-sargent-a",
+            "name": "Golden Company Mounted Sargent",
+            "faction": "nightswatch",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Strength Prevails",
+                "Stubborn Tenacity"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*Your army may only include up to 2 Golden Company Mounted Sargents.*",
+                    "name": "Limited"
+                }
+            ],
+            "icon": "cavalry"
+        },
+        {
+            "id": "franklyn-flowers-ac",
+            "name": "Franklyn Flowers",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Bastard Knight",
+            "abilities": [
+                "Perseverance and Valor"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"It's worse then that, you bugger. They knighted me as well \""
+            }
+        }
+    ],
+    "tactics": [
+        {
+            "id": "beneath-the-gold",
+            "name": "Beneath The Gold",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy combat unit is performing a Melee Attack, After rolling Defense Die:",
+                    "effect": [
+                        "The Defender blocks +1 Hit for each of it's remaining ranks.",
+                        "If this unit is a Blackfyre unit, restore 1 wound."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "the-bitter-steel",
+            "name": "The Bitter Steel",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attacks:",
+                    "effect": [
+                        "If that Attack did not destroy the defender, the defender performs 1 Melee Attack.",
+                        "If you Control [CROWN], you may re-roll any misses."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "the-defiant-and-the-unbroken",
+            "name": "The Defiant And The Unbroken",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit passes a Morale Test:",
+                    "effect": [
+                        "On a success, attach this card to that Unit, until the end of the Round.",
+                        "While attached, enemy units engaged with this unit loose all Abilites."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "our-word-is-good-as-gold",
+            "name": "Our Word Is Good As Gold",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any turn:",
+                    "effect": [
+                        "Target 1 friendly Combat unit and attach this card to them until the end of the game. Each time an enemy unit is destroyed within Short Range of this unit, place 1 Order token on this card. This unit gains the following benefits for each token:",
+                        "1+: Melee Attacks gain **Precision**.",
+                        "2+: This unit gains +1 to Morale Test rolls.",
+                        "3+: Opponents cannot expend **Vulnerable** tokens on this unit."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "blood-oaths",
+            "name": "Blood Oaths",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any turn:",
+                    "effect": [
+                        "Target 2 friendly Combat units, While they are within Short Range of each other, they gain +1 Attack Die and +1 to Morale rolls.",
+                        "Remove this card when 1 of those units fails a Panic Tests."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "blood-and-fire",
+            "name": "Blood And Fire",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy Combat unit is performing a Attack, before rolling Attack Die:",
+                    "effect": [
+                        "Choose 1, If you Control [CROWN] choose 2.",
+                        "• Attacker suffers -1 to Hit.",
+                        "• Attacker counts as 1 rank lower for Attack Die Value.",
+                        "• Attacker becomes **Weakened**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "blackfyre's-revenge",
+            "name": "Blackfyre's Revenge",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy NCU claims a zone:",
+                    "effect": [
+                        "After resolving that zone's effect, attach this card to a enemy Combat unit. They perform 1 Panic test.",
+                        "Until this unit is targeted by the [MONEY] every time a Blackfyre unit perfroms a Attack against this unit, it suffers 1 hit +1 for each of its remaining ranks."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "your-king-honors-you",
+            "name": "Your King Honors You",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a frendly unit performs a Morale Test:",
+                    "effect": [
+                        "If that unit failed, restore 1 wound +1 for each of it's missing ranks.",
+                        "If that unit passed, Attach this card to that unit. While attached, if this unit is within Long Range of Aegon's unit, This unit gains +1 to Morale tests and suffers -1 wounds on failed Panic Tests."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "aegon-targaryen-c"
+            }
+        },
+        {
+            "id": "my-claim-is-best",
+            "name": "My Claim Is Best",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "start of any round:",
+                    "effect": [
+                        "Target 2 zones on the Tactics Board, until the end of the round. If any enemy NCU claims a targeted zone, draw 1 Tactics Card.",
+                        "If one of those zones is [CROWN] and any NCU claim that zone, you may return 1 Tactic Card from your discard pile."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "aegon-targaryen-c"
+            }
+        },
+        {
+            "id": "battle-endurance",
+            "name": "Battle Endurance",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of friendly turn:",
+                    "effect": [
+                        "Target 1 friendly Combat unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round (*effects are cumulative):",
+                        "3+: May re-roll any Misses.",
+                        "4+: **Sundering**",
+                        "5+: **Critical Blow",
+                        "6+: +2 Attack Dice"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "aegon-targaryen-c"
+            }
+        },
+        {
+            "id": "to-bold-to-eager-for-glory",
+            "name": "To Bold, To Eager For Glory",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a enemy turn:",
+                    "effect": [
+                        "Attach this card to 1 enemy Combat unit, until they are targeted by [SWORDS].",
+                        "While attached, this unit suffers the following effects Based on the Game Round (effects are cumulative)",
+                        "3+: This unit can not be targeted by friendly Tactics Cards.",
+                        "4+: This unit suffers -1 to Defense Die rolls.",
+                        "5+: This unit cannot restore wounds"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-connington-c"
+            }
+        },
+        {
+            "id": "never-ending-loyalty",
+            "name": "Never Ending Loyalty",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit would be destroyed by a Melee Attack:",
+                    "effect": [
+                        "Before removing that unit, it performs 1 Melee Attack.",
+                        "If this targets Jon Connington's unit, and this Attack destroys the Defender, your friendly unit is not destroyed, but instead remains in play with 1 Wound."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-connington-c"
+            }
+        },
+        {
+            "id": "vengeance-for-the-bells",
+            "name": "Vengeance For The Bells",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*Jon Connington's unit performs 1 Melee Attack",
+                        "After completing this Attack, the Attacker becomes **Vunerable**. If the defender was not destroyed, the Attacker suffers 1 wound, +1 for each of the Defender's remaining ranks."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-connington-c"
+            }
+        },
+        {
+            "id": "cowards-ways",
+            "name": "Coward's Ways",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Attack:",
+                    "effect": [
+                        "The Defender performs 1 Retreat or Maneuver Action",
+                        "If this targets Harry Strickland's unit, it restores 1 Wound +1 for each of it's missing ranks."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "harry-strickland-a"
+            }
+        },
+        {
+            "id": "ivory-in-battle",
+            "name": "Ivory In Battle",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When Harry's unit Activates:",
+                    "effect": [
+                        "Instead of performing an Action, target 1 friendly Golden Company Elephant unit in Short Range of Harry's unit. It performs 1 Melee or Charge Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "harry-strickland-a"
+            }
+        },
+        {
+            "id": "surprise-strategy",
+            "name": "Surprise Strategy",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Discatd this card and 1 other card to return 1 card from your discard pile to your hand.",
+                        "If you control [LETTER] you only need to discard this card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "harry-strickland-a"
+            }
+        },
+        {
+            "id": "broken-swords-splintered-shields",
+            "name": "Broken Swords Splintered Shields",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Die:",
+                    "effect": [
+                        "The Defender becomes **Weakened** and **Vulnerable**, If the Defender was already **Weakened** and/or **Vulnerable** Choose 1 for each:",
+                        "• This unit may re-roll any Attack Dice.",
+                        "• This Attack gains **Vicious**",
+                        "• Defender may not be the target of friendly Tactics Cards."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-lothston-c"
+            }
+        },
+        {
+            "id": "lothston-rumors",
+            "name": "Lothston Rumors",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy Combat Unit Activates:",
+                    "effect": [
+                        "That enemy suffers 1 Panic Test, if that Unit is within Long Range and Line of Sight of Jon Lothston's unit, it becomes **Panicked**.",
+                        "On a failure, Attatch this card to that unit untill Jon Lothston is destroyed.",
+                        "While attached, each time that unit performs a Attack Action and is within Short Range of Jon Lothston, that unit must perform a Panic Test before performing that Attack."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-lothston-c"
+            }
+        },
+        {
+            "id": "a-need-for-vengeance",
+            "name": "A Need For Vengeance",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Round:",
+                    "effect": [
+                        "Target 1 friendly Combat unit. That unit performs 1 Attack Action",
+                        "If you control [SWORDS], this Attack gains +1 to Hit",
+                        "After completing that Attack your opponent may Activate 1 NCU."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-lothston-c"
+            }
+        },
+        {
+            "id": "march-on-rain-house",
+            "name": "March On Rain House",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any turn:",
+                    "effect": [
+                        "Target 1 friendly Combat unit and Attach this card to that unit, until it performs an Attack Action.",
+                        "While attached, this unit gains +1 [MOVEMENT] and Ignores **Fortified** Key words."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "laswell-peake-c"
+            }
+        },
+        {
+            "id": "legacy-of-the-storm-of-starpike",
+            "name": "Legacy Of The Storm Of Starpike",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "End of a enemy turn:",
+                    "effect": [
+                        "Target 1 enemy unit that is engaged with a friendly Combat unit:",
+                        "If that unit performed a Melee Attack on a friendly unit this round, place 1 Condition token on that unit. If the Defender was House Peake place 2 instead",
+                        "If that unit is your opponent's Commander, that unit suffers 1 Wound."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "laswell-peake-c"
+            }
+        },
+        {
+            "id": "rush-of-aggression",
+            "name": "Rush Of Aggression",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Charge Action, before rolling Charge Distance Dice:",
+                    "effect": [
+                        "This unit automatically counts as rolling a 6 on all Charge Distance dice and their Melee Attack gains **Critical Blow**.",
+                        "After this Attack has been completed, unless the Attacker is Laswell Peake's unit, they become **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "laswell-peake-c"
+            }
+        },
+        {
+            "id": "price-of-failure",
+            "name": "Price Of Failure",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "All Attack Dice rolls automatically Hit for this Attack:",
+                        "After this attack is completed, if the Defender was not destroyed, the Attacker becomes **Panicked** and **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "tristan-rivers-c"
+            }
+        },
+        {
+            "id": "feinting-maneuver",
+            "name": "Feinting Maneuver",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Successfully Charges:",
+                    "effect": [
+                        "If that unit contacted the Front of the enemy, align them to any Flank of that enemy instead.",
+                        "If that unit contacted the Flank of the enemy, align them to the Rear of that enemy instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "tristan-rivers-c"
+            }
+        },
+        {
+            "id": "overrun",
+            "name": "Overrun",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Surges Forth:",
+                    "effect": [
+                        "Instead of Surging Forth, that unit performs 1 Charge or March Action.",
+                        "If you Control [HORSE], it may re-roll any Charge Distance Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "tristan-rivers-c"
+            }
+        },
+        {
+            "id": "son-of-a-smith",
+            "name": "Son Of A Smith",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy Combat unit is performing a Attack, after rolling Attack Dice:",
+                    "effect": [
+                        "The Defender gains +1 to Defence Die rolls.",
+                        "If the Defender is Rolly Duckfield's unit, Opponents cannot expend **Vulnerable** tokens from them."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rolly-duckfield-a"
+            }
+        },
+        {
+            "id": "crushing-a-caswell",
+            "name": "Crushing A Caswell",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat unit performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If the Defender is **Weakened**, this Attack gains **Vicious** or **Critical Blow**.",
+                        "If the Attacker is Rolly Duckfield's unit gain both instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rolly-duckfield-a"
+            }
+        },
+        {
+            "id": "lone-knight",
+            "name": "Lone Knight",
+            "faction": "blackfyre",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any friendly turn:",
+                    "effect": [
+                        "Target Rolly Duckfield's unit, if there are no other friendly units in Long Range of it, Rolly's unit may perform a Maneuver or March Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rolly-duckfield-a"
+            }
+        }
+    ],
+    "special": [
+        {
+            "id": "blackfyre-banner",
+            "name": "Blackfyre Banners",
+            "faction": "blackfyre",
+            "version": "2021",
+            "role": "special",
+            "category": "banners",
+            "front": {
+                "ratio": 0.2,
+                "crests": 2,
+                "style": "banners",
+                "text": [
+                    "Aegon's Whitecloaks come with 4 Blackfyre Banners. At the start of its Activation, it may remove Blackfyre Banners to gain the following. Each may be selected only once per Activation:",
+                    "• This Turn, this unit's Attacks gain **Precision** and **Sundering**.",
+                    "• This Turn, this unit's Attacks gain **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound.",
+                    "• This Turn, when this unit is defending against a Melee Attack, before after Attack Dice, the Attacker suffers 1 Hit for each miss.",
+                    "• This unit restores 2 Wounds and may re-roll Charge and Retreat Distance Dice this Turn."
+                ]
+            },
+            "back": {
+                "ratio": 0.25,
+                "crests": 2,
+                "image": true
+            }
+        },
+        {
+            "id": "marked-target",
+            "name": "Marked Target",
+            "faction": "blackfyre",
+            "version": "2021",
+            "role": "special",
+            "category": "ncu",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "style": "small-padding",
+                "text": [
+                    "Attach this card to the enemy NCU that claimed the **Marked Zone** on the Tactics Board. Each time this NCU claims a zone, after resolving that zone's effect, roll a D6 on a 4+ that NCU is kidnapped and removed from play.",
+                    "After rolling, you may choose to discard 2 Tactics Cards at random from your hand to automatically pass the roll and remove the effect."
+                ]
+            },
+            "back": {
+                "top": [],
+                "quote": "\"Three hundred gold dragons is fair for a knight... How much for a Lord or Lady?\"",
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**At the Start of the Game, place this card close to your Tactics Deck.**",
+                    "An Ability or effect will state when this card will be played."
+                ]
+            }
+        }
+    ]
+}
