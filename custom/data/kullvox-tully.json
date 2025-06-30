@@ -94,10 +94,11 @@
         },
         "MALLISTER ASCENDANCY": {
             "effect": [
-                "Gain the following based on which Condition tokens are on this unit *(effects are cumulative)*:",
-                "• **Panicked:** Defender suffers +2 Wounds from failed Panic Test Rolls.",
-                "• **Vulnerable:** Defender loses any Abilities until the end of the Turn.",
-                "• **Weakened:** Before rolling Attack Dice this unit restores 2 Wounds."
+                "Each time this unit performs a Melee Attack, before rolling Attack Dice choose 1, for each Condition token on this unit, choose +1:",
+                "• **Precision**",
+                "• **Critical Blow**",
+                "• **Sundering**",
+                "• This unit restores 2 Wounds."
             ],
             "icons": [
                 "melee"
@@ -192,6 +193,14 @@
                 "ranged"
             ]
         },
+        "VETERANCY": {
+            "effect": [
+                "This unit may not be targeted by enemy Tactics Cards or Influenced by enemy NCUs. While engaged with this unit, enemies may not be the target of Tactics Cards or influenced by friendly NCUs."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
         "WEIRWOOD BOW": {
             "effect": [
                 "• **Sundering**",
@@ -247,7 +256,7 @@
             "id": "tully-cavaliers",
             "name": "Tully Cavaliers",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Cavalry",
@@ -279,7 +288,7 @@
             "id": "riverrun-defenders",
             "name": "Riverrun Defenders",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Order: Ready! Aim! Release!",
@@ -353,7 +362,7 @@
             "id": "blackfishs-riders",
             "name": "Blackfish's Riders",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Cavalry",
@@ -387,7 +396,7 @@
             "tray": "cavalry",
             "back_text": [
                 {
-                    "text": "*May only be fielded in an army containing Brynden Tully, Knight of the Gate. He must be attached to this unit at no cost.*",
+                    "text": "*May only be fielded in an army containing Brynden Tully, Outrider's Bane. He must be attached to this unit at no cost.*",
                     "name": "Character"
                 }
             ],
@@ -538,7 +547,7 @@
             "id": "house-blackwood-prowlers",
             "name": "House Blackwood Prowlers",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Weirwood Bow",
@@ -573,7 +582,7 @@
             "tray": "infantry",
             "back_text": [
                 {
-                    "text": "*If your army contains Jonos Bracken or any House Bracken unit, this unit's cost is increased by 1.*",
+                    "text": "*If your army contains Jonos Bracken or any House Bracken unit, the cost of the first Rivaly unit is increased by 1.*",
                     "name": "Rivalry"
                 }
             ],
@@ -586,7 +595,7 @@
             "id": "house-bracken-dragoons",
             "name": "House Bracken Dragoons",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Glaive",
@@ -605,13 +614,13 @@
                 }
             ],
             "defense": 5,
-            "morale": 7,
+            "morale": 6,
             "speed": 6,
             "cost": 6,
             "tray": "cavalry",
             "back_text": [
                 {
-                    "text": "*If your army contains Tytos Blackwood or any House Blackwood unit, this unit's cost is increased by 1.*",
+                    "text": "*If your army contains Tytos Blackwood or any House Blackwood unit, the cost of the first Rivaly unit is increased by 1.*",
                     "name": "Rivalry"
                 }
             ],
@@ -624,7 +633,7 @@
             "id": "house-mallister-eagle-guardians",
             "name": "House Mallister Eagle Guardians",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Order: Eagle's Deliverance",
@@ -686,7 +695,7 @@
             "id": "edmure-tully-n",
             "name": "Edmure Tully",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "ncu",
             "title": "Heir of Riverrun",
             "abilities": [
@@ -694,9 +703,9 @@
                     "name": "Eager for Glory",
                     "effect": [
                         "Each time Edmure Claims [LETTER] you may replace that zone's effect with:",
-                        "*1 friendly unit performs 1 Melee Attack Action.*",
+                        "*1 friendly unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
                         "Each time Edmure Claims [HORSE] you may replace that zone's effect with:",
-                        "*1 friendly unit performs 1 Charge Action.*"
+                        "*1 friendly unit performs 1 Charge Action using its lowest Attack Die Value.*"
                     ]
                 }
             ],
@@ -758,7 +767,7 @@
             "id": "rymund-the-rhymer-n",
             "name": "Rymund the Rhymer",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "ncu",
             "title": "Clever Harper",
             "abilities": [
@@ -766,7 +775,7 @@
                     "name": "Songs of Valor",
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
-                        "Each time Rymund Influences a Tully Infantry Unit, that unit gains +1 to Hit when performing Melee Attacks and +1 to Morale Test rolls."
+                        "Each time Rymund Influences a Tully Infantry Unit, that unit's Melee Attack To Hit Value becomes 3+ and gains +1 to Morale Test rolls."
                     ]
                 }
             ],
@@ -900,11 +909,11 @@
             "id": "brynden-tully-c",
             "name": "Brynden Tully",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "title": "Warden of the Southern Marches",
             "abilities": [
-                "Boisterous Charisma",
+                "Veterancy",
                 "Order: Taunt"
             ],
             "tray": "infantry",
@@ -1052,9 +1061,9 @@
             "id": "brynden-tully-ca",
             "name": "Brynden Tully",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
-            "title": "Knight of the Gate",
+            "title": "Outrider's Bane",
             "abilities": [
                 "Order: Sentinel",
                 "Pathfinder"
@@ -1147,11 +1156,12 @@
             "id": "marq-piper-a",
             "name": "Marq Piper",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "title": "Heir of Pinkmaiden",
             "abilities": [
-                "Reckless Strikes"
+                "Reckless Strikes",
+                "Go Down Fighting"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1165,10 +1175,11 @@
             "id": "robin-ryger-a",
             "name": "Robin Ryger",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "title": "Captain of the Guard",
             "abilities": [
+                "Order: Hold the Line!",
                 "Hardened"
             ],
             "cost": 1,
@@ -1264,10 +1275,9 @@
             "id": "mallister-shield-bearer-a",
             "name": "Mallister Shield Bearer",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Unyielding",
                 "Order: Resilience"
             ],
             "cost": 2,
@@ -1278,10 +1288,11 @@
             "id": "riverrun-sentry-a",
             "name": "Riverrun Sentry",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Order: Mark Target"
+                "Order: Mark Target",
+                "Rally Banner"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1305,10 +1316,11 @@
             "id": "eagle-knight-captain-a",
             "name": "Eagle Knight Captain",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Order: Adaptive Planning"
+                "Order: Adaptive Planning",
+                "Order: Sentinel"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1318,10 +1330,11 @@
             "id": "ravens-talon-a",
             "name": "Raven's Talon",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Agile"
+                "Agile",
+                "Pathfinder"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1340,10 +1353,11 @@
             "id": "stone-hedge-stallion-a",
             "name": "Stone Hedge Stallion",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "abilities": [
-                "Counterstrike"
+                "Counterstrike",
+                "Weaken Resolve"
             ],
             "cost": 1,
             "tray": "cavalry",
@@ -1570,15 +1584,14 @@
             "id": "blackfishs-infamy",
             "name": "Blackfish's Infamy",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "When an enemy in Long Range of Brynden Tully's unit Activates:",
                     "effect": [
-                        "Attach this card to that unit until Brynden Tully's unit is destroyed.",
-                        "If that unit performs an Attack or Charge Action this turn, before rolling Attack Dice, they become **Vulnerable** and then suffer 3 Hits.",
-                        "If you Control [HORSE] that unit also becomes **Weakened**."
+                            "If that unit performs an Attack or Charge Action this turn, before rolling Attack Dice, they become **Vulnerable** and then suffer 3 Hits.",
+                            "If you Control [HORSE] that unit also becomes **Weakened**."
                     ]
                 },
                 {
@@ -1815,13 +1828,13 @@
             "id": "sortie-tactics",
             "name": "Sortie Tactics",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "After an enemy completes a Melee Atack:",
                     "effect": [
-                        "Target 1 friendly House Blackwood unit in Long Range of the Defender. It performs 1 Charge or Retreat Action:"
+                        "Target 1 friendly House Blackwood unit in Long Range of the Defender. It becomes **Vulnerable**, then performs 1 Charge or Retreat Action."
                     ]
                 }
             ],
