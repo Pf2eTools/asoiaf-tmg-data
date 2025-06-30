@@ -550,7 +550,7 @@
             "id": "tyrell-captain",
             "name": "Tyrell Captain",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Solo Rider",
@@ -561,7 +561,7 @@
                 {
                     "name": "Sword",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         3
                     ]
@@ -614,7 +614,7 @@
             "id": "house-tarly-enforcers",
             "name": "House Tarly Enforcers",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "abilities": [
                 "Order: Laws of the Realm",
@@ -633,7 +633,7 @@
                 }
             ],
             "defense": 4,
-            "morale": 7,
+            "morale": 6,
             "speed": 5,
             "cost": 5,
             "tray": "infantry",
@@ -646,7 +646,7 @@
             "id": "ser-loras-tyrell",
             "name": "Ser Loras Tyrell",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "unit",
             "title": "The Tournament Champion",
             "abilities": [
@@ -665,7 +665,7 @@
             ],
             "defense": 3,
             "morale": 3,
-            "speed": 6,
+            "speed": 5,
             "cost": 4,
             "tray": "solo",
             "fluff": {
@@ -754,15 +754,18 @@
             "id": "willas-tyrell-n",
             "name": "Willas Tyrell",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "ncu",
             "title": "Heir of Highgarden",
             "abilities": [
                 {
                     "name": "Gentle, Pious, and Good-Hearted",
                     "effect": [
-                        "Each time Willas Claims a zone, you may replace that zone's effect with:",
-                        "Remove 1 Condition Token from that friendly unit, restore 2 Wounds (total) across any number of friendly units. Draw 1 Tactics card."
+                            "Willas begins the game with 1 Order token.",
+                            "Each time Willas Claims a zone he gains 1 Order token. Each time another friendly NCU claims a zone, after resolving that zone's effect, you may remove 1 Order token from Willas. If you do, choose 1:",
+                            "• Remove 1 Condition token from a friendly unit.",
+                            "• Restore 2 Wounds (total) across any number of friendly units.",
+                            "• Draw 1 Tactics Card."
                     ]
                 }
             ],
@@ -847,9 +850,9 @@
         },
         {
             "id": "gormon-n",
-            "name": "Maester Gormon",
+            "name": "Gormon",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "ncu",
             "title": "Ravencraft Maester",
             "abilities": [
@@ -898,7 +901,7 @@
             "id": "paxter-redwyne-n",
             "name": "Paxter Redwyne",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "ncu",
             "title": "Lord Admiral",
             "abilities": [
@@ -907,12 +910,12 @@
                     "effect": [
                         "Each time Paxter Claims a zone, you may replace that zone's effect with:",
                         "*Make the following Ranged Attack on 1 enemy Combat Unit:*",
-                        "[ATTACK:Ranged:Naval Volley:3+6]",
+                        "[ATTACK:Ranged:Naval Volley:3+5]",
                         "*After resolving this Attack, choose 1 friendly unit engaged with the Defender. For each Miss, that unit suffers 1 Hit.*"
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "\"Redwyne galleys closed the sea during the siege...\" -Littlefinger"
@@ -1105,7 +1108,8 @@
             "title": "The Third Rose",
             "abilities": [
                 "Order: Reckless Heroism",
-                "Furious Charge"
+                "Furious Charge",
+                "Dauntless"
             ],
             "cost": 2,
             "tray": "infantry",
@@ -1138,7 +1142,7 @@
             "id": "dickon-tarly-a",
             "name": "Dickon Tarly",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "attachment",
             "title": "Heir of Hornhill",
             "abilities": [
@@ -1723,11 +1727,11 @@
             "id": "a-rousing-speech",
             "name": "A Rousing Speech",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When an infantry unit is performing an Attack, before rolling Attack Dice:",
+                    "trigger": "When an infantry unit is performing a Melee Attack, before rolling Attack Dice:",
                     "effect": [
                         "This unit gains **Critical Blow** and **Sundering**.",
                         "After the Attack is completed, if the Defender was not destroyed, this unit suffers a Panic Test with -2 to their roll."
