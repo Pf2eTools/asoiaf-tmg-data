@@ -14,16 +14,13 @@
         }
     },
     "abilities": {
-        "BITTER STEEL": {
+        "BATTLEFIELD EXPERIENCE": {
             "effect": [
-                "• Opponents cannot expend **Weakened** tokens on this unit while it is Attacking.",
-                "• **Sundering**",
                 "• While you Control [CROWN] This unit's Melee Attacks gain **Critical Blow** and may re-roll any misses.",
                 "• While you Control [LETTER] Before rolling Attack die, the Defender becomes **Vulnerable**"
             ],
             "icons": [
-                "melee",
-                "wounds"
+                "melee"
             ]
         },
         "AFFILIATION: HOUSE PEAKE": {
@@ -31,6 +28,16 @@
                 "This unit is a House Peake unit."
             ],
             "icons": [
+                "wounds"
+            ]
+        },
+        "BITTER STEEL": {
+            "effect": [
+                "• Opponents cannot expend **Weakened** tokens on this unit while it is Attacking.",
+                "• **Sundering**"
+            ],
+            "icons": [
+                "melee",
                 "wounds"
             ]
         },
@@ -58,14 +65,14 @@
         "PROMISES OF WEALTH AND GLORY": {
             "effect": [
                 "When this unit Activates, If you Control [MONEY] choose 1:",
-                "• This unit gains +1 to Defense Die rolls and +1 to Morale Rolls.",
-                "• This unit Gains **Prescision**"
+                "• This unit gains +1 to Defense Die rolls and +1 to Morale Rolls, untill the end of the round.",
+                "• This unit Gains **Precision**, until the end of the round."
             ]
         },
         "SHOCK AND AWE": {
             "effect": [
                 "After Successfully completing a Charge:",
-                "• if this Melee Attack delt any wounds, This unit heals 1 Wound.",
+                "• If this Melee Attack delt any wounds, this unit heals 1 Wound.",
                 "• If this Attack destroyed a Rank, the defender becomes **Panicked**."
             ],
             "icons": [
@@ -140,7 +147,7 @@
         },
         "IMPORTANT MAN": {
             "effect": [
-                "When Black Balaq is destroyed, your opponent gains 1 Victory Point and may activate a NCU."
+                "When Black Balaq is destroyed, your opponent gains 1 Victory Point and may activate 1 NCU."
             ],
             "icons": [
                 "wounds"
@@ -149,16 +156,16 @@
         "ORDER: RESILIENCE": {
             "trigger": "When an Enemy is performing an Attack on this unit, after Attack Dice are rolled:",
             "effect": [
-                "This unit only suffers 1 Wound for every two unblocked hits."
+                "This unit only suffers 1 Wound for every 2 unblocked hits."
             ],
             "icons": [
                 "order"
             ]
         },
         "ORDER: ACT FOR ME": {
-            "trigger": "When Aegon's Unit Activates, This unit does not perform an Action:",
+            "trigger": "When Aegon's Unit Activates:",
             "effect": [
-                "Instead target a friendly Combat unit within Long Range, it Performs a Maneuver or Attack Action."
+                "Instead of this unit performing an Action this turn, target 1 friendly Combat unit within Long Range, it Performs a Maneuver or Attack Action."
             ],
             "icons": [
                 "order"
@@ -175,7 +182,7 @@
         "ORDERS OF THE CROWN (JON MUDD)": {
             "effect": [
                 "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:",
-                "John Mudds's unit performs 1 Maneuver or March Action.*"
+                "*John Mudds's unit performs 1 Maneuver or March Action.*"
             ]
         },
         "I AM HIS BANNER!": {
@@ -206,8 +213,12 @@
         },
         "HARRY'S PRIDE": {
             "effect": [
+                "This unit counts as *Pride of the Company*.",
                 "After Harry's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",
                 "When the *Pride of the Company* is destroyed, your opponent gains +1 Victory Point."
+            ],
+            "icons": [
+                "wounds"
             ]
         },
         "BOLSTER LEVIES": {
@@ -244,7 +255,7 @@
         },
         "STRENGTH PREVAILS": {
             "effect": [
-                "• This unit cannot become **Weakened**"
+                " This unit cannot become **Weakened**."
             ],
             "icons": [
                 "melee"
@@ -252,7 +263,7 @@
         },
         "MASTERCRAFT SPEAR": {
             "effect": [
-                "• This unit's Attacks always have re-rolls.",
+                "• May always re-roll Attack Dice.",
                 "• After this Attack is completed, if the Defender suffered any wounds, they become **Weakened**"
             ],
             "icons": [
@@ -261,7 +272,7 @@
         },
         "VETERANCY": {
             "effect": [
-                "This unit may not be targeted by enemy Tactics Cards or Influenced by enemy NCUs. While engaged with this unit, enemies may not be the target of Tactics Cards or influenced by freindly NCUs."
+                "This unit may not be targeted by enemy Tactics Cards or Influenced by enemy NCUs. While engaged with this unit, enemies may not be the target of Tactics Cards or influenced by friendly NCUs."
             ],
             "icons": [
                 "wounds"
@@ -269,7 +280,7 @@
         },
         "SHARPENED AND POLISHED": {
             "effect": [
-                "When this unit is targeted by [MONEY] instead of removing a condition token and/or restoring Wounds. Place one order token on this unit, for each effect of bags forfeited. When this unit is performing an Attack Action, you may remove 1 order token to re-roll any misses. When this unit activates you may remove 1 token to remove 1 Condition Token."
+                "When this unit is targeted by [MONEY] instead of removing a condition token and/or restoring Wounds. Place one order token on this unit, for each effect of [MONEY] forfeited. When this unit is performing an Attack Action, you may remove 1 order token to re-roll any misses. When this unit activates you may remove 1 token to remove 1 Condition Token."
             ]
         }
     },
@@ -281,7 +292,8 @@
             "version": "S06 V1",
             "role": "unit",
             "abilities": [
-                "Bitter Steel"
+                "Bitter Steel",
+                "Battlefield Experience"
             ],
             "attacks": [
                 {
@@ -807,7 +819,7 @@
                 {
                     "name": "Patient Study",
                     "effect": [
-                        "Each time Haldon or a enemy NCU Claim [MONEY], place 1 Order token on Haldon.",
+                        "Each time Haldon or an enemy NCU Claims [MONEY], place 1 Order token on Haldon.",
                         "When Haldon Claims [MONEY], after resolving that zone's effect, you may target 1 unit and remove up to 2 tokens. If you do that unit heals 1 wound +1 for each token removed."
                     ]
                 }
@@ -829,9 +841,13 @@
                 {
                     "name": "False Truths?",
                     "effect": [
-                        "Each time Tyrion claims a zone, you may replace that zone's effect with:",
-                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
-                        "While Influencing a unit, that unit gains **Order**: Counterstrategy.",
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
+                        "While Influencing a unit, that unit gains **Order**: Counterstrategy."
+                    ]
+                },
+                {
+                    "name": "Counterplot",
+                    "effect": [
                         "Once per game, when your opponent plays a Tactics Card: Roll a die: on a 3+, cancel the effect of that Tactics Card."
                     ]
                 }
@@ -853,8 +869,7 @@
                 {
                     "name": "Prideful Retaliation",
                     "effect": [
-                        "When Pykewood Peake Claims a Zone, you may replace that zone's effect with:",
-                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
                         "While Influencing a unit, each time that unit passes a Morale test, 1 engaged enemy suffers 2 hits +1 for each of this unit's remainging Ranks.",
                         "While Influencing a unit, that unit counts as *House Peake*."
                     ]
@@ -907,7 +922,7 @@
                 {
                     "name": "Playing Many Sides",
                     "effect": [
-                        "Once per game, at the start of a round, which you are not the starting player, You may place Illyrio on the Tactics Board. After resolving the effect, your opponent may Activate a NCU."
+                        "Once per game, at the start of a round, which you are not the starting player, You may place Illyrio on the Tactics Board. After resolving the effect, your opponent may Activate 1 NCU."
                     ]
                 }
             ],
@@ -1014,7 +1029,7 @@
             "tactics": [
                 "never-ending-loyalty",
                 "vengeance-for-the-bells",
-                "to-bold-to-eager-for-glory"
+                "too-bold-too-eager-for-glory"
             ],
             "back_text": [
                 {
@@ -1183,14 +1198,14 @@
             "title": "Archer Commander",
             "abilities": [
                 "Important Man",
-                "Accute Precision"
+                "Acute Precision"
             ],
             "cost": 1,
             "tray": "infantry",
             "character": true,
             "back_text": [
                 {
-                    "text": "*If Black Balaq is placed in a Archer unit, the cost of that unit is reduced by 1.*"
+                    "text": "*If Black Balaq is placed in a Ranged unit, the cost of that unit is reduced by 1.*"
                 }
             ],
             "icon": "infantry",
@@ -1469,7 +1484,7 @@
         {
             "id": "golden-company-mounted-sargent-a",
             "name": "Golden Company Mounted Sargent",
-            "faction": "nightswatch",
+            "faction": "blackfyre",
             "version": "2021",
             "role": "attachment",
             "abilities": [
@@ -1513,7 +1528,7 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When a enemy combat unit is performing a Melee Attack, After rolling Defense Die:",
+                    "trigger": "When a enemy Combat Unit is performing a Melee Attack, After rolling Defense Die:",
                     "effect": [
                         "The Defender blocks +1 Hit for each of it's remaining ranks.",
                         "If this unit is a Blackfyre unit, restore 1 wound."
@@ -1529,7 +1544,7 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "After an enemy completes a Melee Attacks:",
+                    "trigger": "After an enemy completes a Melee Attack:",
                     "effect": [
                         "If that Attack did not destroy the defender, the defender performs 1 Melee Attack.",
                         "If you Control [CROWN], you may re-roll any misses."
@@ -1547,7 +1562,7 @@
                 {
                     "trigger": "When a friendly unit passes a Morale Test:",
                     "effect": [
-                        "On a success, attach this card to that Unit, until the end of the Round.",
+                        "Attach this card to that Unit, until the end of the Round.",
                         "While attached, enemy units engaged with this unit loose all Abilites."
                     ]
                 }
@@ -1595,11 +1610,11 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When a enemy Combat unit is performing a Attack, before rolling Attack Die:",
+                    "trigger": "When a enemy Combat Unit is performing a Attack, before rolling Attack Dice:",
                     "effect": [
                         "Choose 1, If you Control [CROWN] choose 2.",
                         "• Attacker suffers -1 to Hit.",
-                        "• Attacker counts as 1 rank lower for Attack Die Value.",
+                        "• Attacker is treated as having -1 rank for Attack Dice.",
                         "• Attacker becomes **Weakened**."
                     ]
                 }
@@ -1648,10 +1663,10 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "start of any round:",
+                    "trigger": "Start of any round:",
                     "effect": [
-                        "Target 2 zones on the Tactics Board, until the end of the round. If any enemy NCU claims a targeted zone, draw 1 Tactics Card.",
-                        "If one of those zones is [CROWN] and any NCU claim that zone, you may return 1 Tactic Card from your discard pile."
+                        "Choose 2 zones on the Tactics Board, until the end of the round. If any enemy NCU claims a choosen zone, draw 1 Tactics Card.",
+                        "If one of those zones is [CROWN] and any NCU claim that zone, you may return 1 Tactics Card from your discard pile."
                     ]
                 }
             ],
@@ -1669,7 +1684,7 @@
                 {
                     "trigger": "Start of friendly turn:",
                     "effect": [
-                        "Target 1 friendly Combat unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round (*effects are cumulative):",
+                        "Target 1 friendly Combat unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round *(effects are cumulative)*:",
                         "3+: May re-roll any Misses.",
                         "4+: **Sundering**",
                         "5+: **Critical Blow",
@@ -1682,17 +1697,17 @@
             }
         },
         {
-            "id": "to-bold-to-eager-for-glory",
-            "name": "To Bold, To Eager For Glory",
+            "id": "to0-bold-to0-eager-for-glory",
+            "name": "Too Bold, Too Eager For Glory",
             "faction": "blackfyre",
             "version": "S06 V1",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "Start of a enemy turn:",
+                    "trigger": "Start of an enemy turn:",
                     "effect": [
                         "Attach this card to 1 enemy Combat unit, until they are targeted by [SWORDS].",
-                        "While attached, this unit suffers the following effects Based on the Game Round (effects are cumulative)",
+                        "While attached, this unit suffers the following effects based on the Game Round (effects are cumulative)",
                         "3+: This unit can not be targeted by friendly Tactics Cards.",
                         "4+: This unit suffers -1 to Defense Die rolls.",
                         "5+: This unit cannot restore wounds"
@@ -1756,15 +1771,15 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "After an enemy completes a Attack:",
+                    "trigger": "After an enemy completes an Attack:",
                     "effect": [
-                        "The Defender performs 1 Retreat or Maneuver Action",
+                        "Target the Defender, they perform 1 Retreat or Maneuver Action",
                         "If this targets Harry Strickland's unit, it restores 1 Wound +1 for each of it's missing ranks."
                     ]
                 }
             ],
             "commander": {
-                "id": "harry-strickland-a"
+                "id": "harry-strickland-c"
             }
         },
         {
@@ -1775,7 +1790,7 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When Harry's unit Activates:",
+                    "trigger": "When Harry Strickland's unit activates:",
                     "effect": [
                         "Instead of performing an Action, target 1 friendly Golden Company Elephant unit in Short Range of Harry's unit. It performs 1 Melee or Charge Action."
                     ]
@@ -1788,7 +1803,7 @@
                 }
             ],
             "commander": {
-                "id": "harry-strickland-a"
+                "id": "harry-strickland-c"
             }
         },
         {
@@ -1807,7 +1822,7 @@
                 }
             ],
             "commander": {
-                "id": "harry-strickland-a"
+                "id": "harry-strickland-c"
             }
         },
         {
@@ -1839,11 +1854,11 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When a enemy Combat Unit Activates:",
+                    "trigger": "When an enemy Combat Unit Activates:",
                     "effect": [
-                        "That enemy suffers 1 Panic Test, if that Unit is within Long Range and Line of Sight of Jon Lothston's unit, it becomes **Panicked**.",
+                        "If that Unit is within Long Range and Line of Sight of Jon Lothston's unit, it becomes **Panicked**, that enemy suffers 1 Panic Test .",
                         "On a failure, Attatch this card to that unit untill Jon Lothston is destroyed.",
-                        "While attached, each time that unit performs a Attack Action and is within Short Range of Jon Lothston, that unit must perform a Panic Test before performing that Attack."
+                        "While attached, each time that unit performs an Attack Action and is in Short Range of Jon Lothston, that unit must perform a Panic Test before performing that Attack."
                     ]
                 }
             ],
@@ -1862,7 +1877,7 @@
                     "trigger": "Start of any Round:",
                     "effect": [
                         "Target 1 friendly Combat unit. That unit performs 1 Attack Action",
-                        "If you control [SWORDS], this Attack gains +1 to Hit",
+                        "If this unit is Jon Lothston's, this Attack gains +1 to Hit",
                         "After completing that Attack your opponent may Activate 1 NCU."
                     ]
                 }
@@ -1882,7 +1897,7 @@
                     "trigger": "Start of any turn:",
                     "effect": [
                         "Target 1 friendly Combat unit and Attach this card to that unit, until it performs an Attack Action.",
-                        "While attached, this unit gains +1 [MOVEMENT] and Ignores **Fortified** Key words."
+                        "While attached, this unit gains +1 [MOVEMENT] and Ignores **Fortified** keywords."
                     ]
                 }
             ],
@@ -1898,7 +1913,7 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "End of a enemy turn:",
+                    "trigger": "End of an enemy turn:",
                     "effect": [
                         "Target 1 enemy unit that is engaged with a friendly Combat unit:",
                         "If that unit performed a Melee Attack on a friendly unit this round, place 1 Condition token on that unit. If the Defender was House Peake place 2 instead",
@@ -1994,7 +2009,7 @@
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When a enemy Combat unit is performing a Attack, after rolling Attack Dice:",
+                    "trigger": "When an enemy Combat unit is performing an Attack, after rolling Attack Dice:",
                     "effect": [
                         "The Defender gains +1 to Defence Die rolls.",
                         "If the Defender is Rolly Duckfield's unit, Opponents cannot expend **Vulnerable** tokens from them."
