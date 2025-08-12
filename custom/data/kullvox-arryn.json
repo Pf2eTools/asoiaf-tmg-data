@@ -7,37 +7,59 @@
     },
     "factions": {
         "arryn": {
-            "text_color": "#30436d",
+            "text_color": "#f603a3",
             "highlight_color": "silver",
             "bg_rotation": 0,
             "long": "House Arryn"
         }
     },
-    "abilities": {},
     "unit": [
         {
-            "id": "blackfishs-riders",
-            "name": "Blackfish's Riders",
+            "id": "knights-of-the-vale",
+            "name": "Knights of the Vale",
             "faction": "arryn",
-            "version": "S06 V2",
+            "version": "Boardmangaming",
             "role": "unit",
             "abilities": [
                 "Cavalry",
-                "Handpicked Hunters",
-                "Order: Charging Volley"
+                "Knight's Valor",
+                "Rally Banner"
             ],
             "attacks": [
                 {
-                    "name": "Handpicked Bow",
-                    "type": "short",
-                    "hit": 4,
+                    "name": "Knight's Valor",
+                    "type": "melee",
+                    "hit": 3,
                     "dice": [
                         6,
                         4
                     ]
-                },
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
+            "wounds": 3,
+            "fluff": {
+                "lore": "The gallant cavalrymen of the Reach believe themselves to be the truest knights in all of Westeros, but in actuality, the first knights of the realm lived amongst the fertile valleys and great mountains of the Vale. Compromised of the boldest riders of the Seven Kingdoms, they can speedily navigate mountainious terrain to gain advantage over any opponent fool enough to test the Mountains of the Moon. From the holdfast of Strongsong to the port city of Gulltown, the great deeds of the Knights of the Vale hearten both the lowborn and high lords alike."
+            },
+            "icon": "cavalry"
+        },
+        {
+            "id": "arryn-lancers",
+            "name": "Arryn Lancers",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Lance"
+            ],
+            "attacks": [
                 {
-                    "name": "Handpicked Sword",
+                    "name": "Lance",
                     "type": "melee",
                     "hit": 3,
                     "dice": [
@@ -47,23 +69,2191 @@
                 }
             ],
             "defense": 4,
-            "morale": 5,
-            "speed": 5,
+            "morale": 6,
+            "speed": 6,
             "cost": 7,
             "tray": "cavalry",
+            "wounds": 3,
+            "fluff": {
+                "lore": "Tourneys are incredibly popular amongst the high lords of the Vale and the jousting contests most of all. Many young men who excel in these matches go on to join the Arryn Lancers, a speedy cavalry division that specializes in lance charges. Though not as hardy as the Knights of the Vale, Lancers are still a highly effective offensive weapon. A smart commander will use House Arryn's sturdy infantry to bog down enemy troops, then employ the lancers in a pincer movement to sweep in and decimate all rivals."
+            },
+            "icon": "cavalry"
+        },
+        {
+            "id": "vale-outriders",
+            "name": "Vale Outriders",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "abilities": [
+                "Disrupt",
+                "Cavalry",
+                "Order: Call for Aid"
+            ],
+            "attacks": [
+                {
+                    "name": "Outrider's Spear",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
+            "wounds": 3,
+            "fluff": {
+                "lore": "The Vale of Arryn is a vast egion filled with fertile valleys, lakes, rivers and the surrounding mountians. While the Vale Sentinels defend the high passes, the interior valley and mountain roads are patrolled by the Vale Outriders. The Outriders are not known for their skills in combat. Instead, they keep a watchful eye over the land and notify the Knights of the Vale or Falcon Knights of any encroaching dangers. When thrust into battle, the Outriders are best used as a distraction while another unit finishes the job."
+            },
+            "icon": "cavalry"
+        },
+        {
+            "id": "sky-cell-gaolers",
+            "name": "Sky Cell Gaolers",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "abilities": [
+                "Order: Laws of the Realm",
+                "Handsome Reward",
+                "Motivated by Coin"
+            ],
+            "attacks": [
+                {
+                    "name": "Cudgel",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "wounds": 3,
+            "fluff": {
+                "lore": "The Arryns keep the only dungeons in Westeros where the prisoners are welcome to escape at will. The infamous sky cells have only three walls, with the fourth side opening up to thin air hundreds of feet above the mountain surface below. Being a sky cell gaoler is not for the faint of heart. Not only do you deal with dangerous prisoners, but you must also content with the terrifying heights and unpredictable elements. Most think that any person willing to do the job is likely mad, and at most who've met the gaolers agree."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "royce-runestone-swordsmen",
+            "name": "House Royce Runestone Swordsmen",
+            "fluff": {
+                "lore": "House Royce of Runestone is best known for their heavy bronze shields and mighty runic armor, but the heart and soul of their army is comprised of dynamic swordsmen. Every Bronze Guardian began their career with a sword before they graduated to the spear, though to be truthful, even Swordsmen of Runestone are better equipped than several other regions so-called heavy infantry. The runestone Swordsmen's enthusiasm on the battlefield inspires all around them making them a tremendous vanguard"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Perseverance and Valor",
+                "Rally Cry"
+            ]
+        },
+        {
+            "id": "royce-bronze-destriers",
+            "name": "House Royce Bronze Destriers",
+            "fluff": {
+                "lore": "While the Bronze Guardians are akin to an unmovable boulder blocking any attacker's path, the Bronze Destriers have needed to be more flexible when dealing with invading foes. Cavalry are typically meant to be maneuverable, but with the rough terrain the Destriers tread around Runestone, they've instead focused on heavy armor and deadly force. A wise general will utilize the Destriers as the hammer to the Guardians' anvil, but if the circumstances of battle change, the Destriers will be able to adapt to whatever comes their way."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "cavalry",
+            "icon": "cavalry",
+            "cost": 8,
+            "speed": 4,
+            "defense": 3,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Bronze Sword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Cavalry",
+                "Order: Adaptive Style"
+            ],
+            "wounds": 3
+        },
+        {
+            "id": "vale-arryn-pack-mules",
+            "name": "Vale of Arryn Pack Mules",
+            "fluff": {
+                "lore": "Though most of the glory typically falls upon a daring commander or dashing knight, the true hero of most battles is logistics. Having a steady baggage train to supply your men with food and arms is far more important than having someone like the Kingslayer or Knight of Flowers fighting amongst the throng. In the Vale of Arryn, sure-footed pack mules traverse the difficult terrain to bring supplies to the front line. These humble creatures are often the difference between victory and defeat."
+            },
+
             "back_text": [
                 {
-                    "text": "*May only be fielded in an army containing Brynden Tully, Outrider's Bane. He must be attached to this unit at no cost.*",
-                    "name": "Character"
+                    "text": "*May only be fielded in an army including Mya Stone.*"
+                }
+            ],
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "cavalry",
+            "icon": "cavalry",
+            "cost": 4,
+            "speed": 4,
+            "defense": 6,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Armed Escort",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "abilities": [
+                "Pack Mules",
+                "Well Provisioned"
+            ],
+            "wounds": 3
+        },
+        {
+            "id": "brotherhood-winged-knights",
+            "name": "Brotherhood of Winged Knights",
+            "fluff": {
+                "lore": "The Winged Knight of legend was said to have flown upon a giant falcon and lead eagles into battle. 'Sweetrobin' Robert Arryn does not inspire such devotion from friend or foe. Stories of past valor have been the main comfort to the Lord of the Eyrie since his mother's untimely fall, so it was suggested that Robert would benefit from having his own valiant bodyguard. They would be named the Brotherhood of Wimnged Knights and it was their duty to inspire their sickly little Lord... or at least get him stop crying."
+            },
+            "faction": "arryn",
+            "version": "S04",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 6,
+            "speed": 5,
+            "defense": 3,
+            "morale": 4,
+            "attacks": [
+                {
+                    "name": "Masterwork Blade",
+                    "type": "melee",
+                    "hit": 2,
+                    "dice": [
+                        7,
+                        7
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Natural Defenses",
+                "Sweetrobin's Retinue",
+                "Order: Resilience"
+            ],
+            "back_text": [
+                {
+                    "name": "Character",
+                    "text": "*Can only be fielded in an army including Robert Arryn and may never have an Attachment.*"
+                }
+            ]
+        },
+        {
+            "id": "arryn-guards",
+            "name": "Arryn Guards",
+            "fluff": {
+                "lore": "The Eyrie is the smallest of the great castles, so its household guard is limited in size. This allows the head of House Arryn to be very selective of who will ascend the mountain to guard the High Hall. Protecting members of a Great House is usually considered a tremendous honor, yet many Vale citizens quip that the Giant's Lance should be the one to collect the Guards' wages. Though their skills dwindle slightly during the long summer months, Arryn Guards know better than anyone how to use the mountain against attacking foes."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Natural Defenses",
+                "Vantage Point"
+            ]
+        },
+        {
+            "id": "arryn-crossbowmen",
+            "name": "Arryn Crossbowmen",
+            "fluff": {
+                "lore": "The Crossbowmen who safeguard the mountain waycastles are as well known for their uncouth eccentricities as for their marksmanship. Unlike their comfortable counterparts residing in the Eyrie, these Arryn soldiers live a harsh, lonely existence upon the mountain side, often stationed at the same small tower for months on end. The garrison of the waycastle Stone, affectionately nicknamed 'The Bastards,' have a friendly rivalry with the 'Snowmen' and 'Basket Boys' who defend the passes high above them."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 7,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Crossbow",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "abilities": [
+                "Crossbow",
+                "Order: Suppressive Volley",
+                "Advantegeous Position"
+            ]
+        },
+        {
+            "id": "falcon-knights",
+            "name": "Falcon Knights",
+            "fluff": {
+                "lore": "Named after the legendary Ser Artys Arryn, the Falcon Knights are the pinnacle of courage, honor,and loyalty. Trained to rout hill tribes and raiders with proficiency, the Knights are exceptionally precise with their broadsword. More lightly armored than many of their western counterparts, they make up for their lack of kit with a tactical knowledge of the land and its natural defenses. Just like the grey noble falcons who circle above the mighty Eyrie, the Falcon Knights watch over the land and all its people."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 6,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Broadsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Broadsword",
+                "Take Cover!",
+                "Dauntless"
+            ]
+        },
+        {
+            "id": "royce-bronze-guardian",
+            "name": "House Royce Bronze Guardian",
+            "fluff": {
+                "lore": "Before the Andal Invasion, the Bronze Kings of House Royce ruled resolutely over their petty kingdom. Defeated by the valiant Ser Artys Arryn in the Battle of the Seven Stars, the Royces did not flee to the mountains like the barbaric hillmen, but instead affirmed their loyalty to this new dominion. Since that time, House Royce has been one of the greatest champions of the Vale.House Royce's Bronze Guardians are the heaviest troops in the entire kingdom, robust as the Mountains of the Moon. If the Guardians control the high ground or a choke point, there is almost nothing the enemy can do to depose them."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 7,
+            "speed": 4,
+            "defense": 3,
+            "morale": 5,
+            "attacks": [
+                {
+                    "name": "Bronze Spear",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Natural Defenses",
+                "Bronze Spear",
+                "Make Haste!"
+            ]
+        },
+        {
+            "id": "royce-guardians-moon",
+            "name": "House Royce Guardians of the Moon",
+            "fluff": {
+                "lore": "House Royce of the Gates of the Moon is a new branch, created to secure the loyalty of Lord Nestor Royce. While the Runestone branch of House Royce remains as rugged as the mountains, Lord Nestor's infatuation with courtly pageantry has had a big influence on his household guard. The Guardians of the Moon spend more time preparing for tourneys and feasts than for war. Though they see more ceremony than soldiery, they are still well prepared to eliminate any foe foolish enough to attack their stout castle walls."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 6,
+            "speed": 4,
+            "defense": 3,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Greatsword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Hold The Line!",
+                "Unyielding",
+                "Make Haste!"
+            ]
+        },
+        {
+            "id": "keepers-gate",
+            "name": "Keepers of the Gate",
+            "fluff": {
+                "lore": "Many determined villains have dared to enter the Vale of Arryn through the Bloody Gate. Many have tried, and many thousands of corpses have been piled-up against its battlements. As stout as the mountains that surround it, the Bloody Gate is nigh impassable, and the guardsmen who patrol the Gate are equally steadfast. Any foe who attacks should expect to be hit first and be hit hard. Who would pass the Bloody Gate? Only those whom the Keepers allow. "
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 5,
+            "speed": 5,
+            "defense": 4,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Poleaxe",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Set for Charge",
+                "Form Ranks!"
+            ]
+        },
+        {
+            "id": "vale-sentries",
+            "name": "Vale Sentries",
+            "fluff": {
+                "lore": "Vale Sentries guard the high passes sight unseen, ensuring no raiders or enemy forces enter the Vale of Arryn unawares. The Sentries elusiveness in the mountains is unrivalled. They have good speed and can escape from almost any direct assault. Beyond that, they expertly utilize the rugged terrain to avoid the worst of enemy charges. Like a shadowcat hunting upon the mountain side, Vale Sentries watch silently and wait for the right time to strike. Yet also like a shadowcat, they are prone to run if exposed or left in the open."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "unit",
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 7,
+            "speed": 6,
+            "defense": 5,
+            "morale": 6,
+            "attacks": [
+                {
+                    "name": "Recurve Bow",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "abilities": [
+                "Order: Swift Retreat",
+                "Order: Let Fly!",
+                "Elusive Escape"
+            ]
+        }
+    ],
+    "ncu": [
+        {
+            "id": "benedar-belmore-n",
+            "name": "Benedar Belmore",
+            "fluff": {
+                "quote": "\"Belmore is corrupt and can be bought.\" - Petyr Baelish"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Strength in Numbers",
+                    "effect": [
+                        "While Benedar is on the Tactics Board, you count es Controlling [LETTER]",
+                        "If, at the end of the Round, you have more NCUs on the Tactics Baord than your opponent, target 1 enemy unit. They become **Weakened**. If the unit is Controlling an Objective, it also suffers D3 + 1 hits."
+                    ]
+                }
+            ],
+            "title": "Crooked Noble"
+        },
+        {
+            "id": "horton-redfort-n",
+            "name": "Horton Redfort",
+            "fluff": {
+                "quote": "\"... these are dangerous men, each in his own way. And proud. - Kevan Lannister\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Strong as Stone",
+                    "effect": [
+                        "Horton begins the game with 3 Order tokens on him",
+                        "When an enemy NCU Claims [LETTER], you may remove 1 Order token from Horton. If you do, target 1 enemy unit. That unit suffers 2 Wounds. Your opponent may discard any number of Tactics cards to reduce these wounds by 1 for each discarded card.",
+                        "When an enemy NCU Claims [CROWN], after a friendly unit is targeted, you may remove 1 Order token from Horton. If you do, that unit automatically passes the Panic Test and restores 1 Wounds."
+                    ]
+                }
+            ],
+            "tokens": {
+                "number": 3,
+                "name": "order"
+            },
+            "title": "Dangerous Suitor"
+        },
+        {
+            "id": "anya-waynwood-n",
+            "name": "Anya Waynwood",
+            "fluff": {
+                "quote": "\"YNone of us wants war. Autumn wanes, and we must grid ourselves for winter"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "The Lords Declarant",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing a friendly unit, it gains the following based on the number of destroyed friendly Combat Units *(effects are not cumulative)*:",
+                        "**1:** Unit gains +1 [MOVEMENT].",
+                        "**2:** This unit loses all abilities.",
+                        "**3:** This unit gains +2 Attack Dice",
+                        "**4+:** No effect"
+                    ]
+                }
+            ],
+            "title": "Lady of Ironoaks"
+        },
+        {
+            "id": "petyr-baelish-n",
+            "name": "Petyr Baelish",
+            "fluff": {
+                "quote": "\"Littlefinger... the gods only know what game Littlfinger is playing\" - Varys"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 5,
+            "abilities": [
+                {
+                    "name": "Mockingbird",
+                    "effect": [
+                        "Petyr begins the game with 2 Order tokens on him.",
+                        "When Petyr Activates, you may remove 1 Order token from him. If you do, you may move 1 NCU on the Tactics Board to any unclaimed zone (*the NCU that is moved does not trigger the effect of its new zone)."
+                    ]
+                }
+            ],
+            "tokens": {
+                "number": 2,
+                "name": "order"
+            },
+            "title": "Master Manipulator"
+        },
+        {
+            "id": "lysa-arryn-n",
+            "name": "Lysa Arryn",
+            "fluff": {
+                "quote": "\"The Mother shaped us to protect our children, and our only dishonor is in failure\" -Syrio Forel"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 5,
+            "abilities": [
+                {
+                    "name": "Only Cat",
+                    "effect": [
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "Each time Lysa influences a enemy unit, this unit suffers D3-1 Wounds. Each time Lysa influences a friendly unit, it restores D3-1 Wounds.",
+                        "While Influencing an infantry Unit composed of 3 ranks, that unit must roll a D3 each time before it makes an Attack:",
+                        "• 1 : Roll lowest Attack Die Value",
+                        "• 2 : Roll middle Attack Die Value",
+                        "• 3 : Roll highest Attack Die Value"
+                    ]
+                }
+            ],
+            "title": "Lady of the Eyrie"
+        },
+        {
+            "id": "alayne-stone-n",
+            "name": "Alayne Stone",
+            "fluff": {
+                "quote": "\"You are Alayne, and you must be Alayne all the time.Even here, in your heart.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 5,
+            "abilities": [
+                {
+                    "name": "Mastering the Game",
+                    "effect": [
+                        "Each time Alayne Claims a zone, you may replace that zones's effect with:",
+                        "*Draw 1 Tactics Card. Your opponent must also reveal 1 Tactics Card from their hand.*",
+                        "*If you controll [LETTER], after your opponent reveals their Tactics Card, they must discard a separate Tactics Card from their Hand*"
+                    ]
+                }
+            ],
+            "title": "Cloaked Wolf"
+        },
+        {
+            "id": "gerold-grafton-n",
+            "name": "Gerold Grafton",
+            "fluff": {
+                "quote": "\"The merchants are clamoring to buy and the lords are clamoring to sell.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Seller's Market",
+                    "effect": [
+                        "Each time Gerold Claims [MONEY], target 1 enemy Combat Unit. They become **Vulnerable**.",
+                        "Once per game, when an enemy NCU Claims [MONEY] before resolving that zone's effect, you may target 2 enemy combat units. They cannot be targeted by [MONEY] this Turn."
+                    ]
+                }
+            ],
+            "title": "Lord of Gulltown"
+        },
+        {
+            "id": "lyonel-corbray-n",
+            "name": "Lyonel Corbray",
+            "fluff": {
+                "quote": "\"He writes that Lyonel Corbray seems well pleased with his bride and even more so with her dowry\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Immense Dowry",
+                    "effect": [
+                        "Each time Lyonel Claims a zone, perform  the following based on the zone he Claimed",
+                        "[MONEY]: Instead of removing a Condition token, restore +1 Wound",
+                        "[CROWN]: Draw a Tactics Card.",
+                        "[LETTER]: Instead of placing a condition roken, target 1 friendly unit. It restores 1 WOund, +1 Wound for each of its destroyed ranks"
+                    ]
+                }
+            ],
+            "title": "Lord of Heart's Home"
+        },
+        {
+            "id": "robert-arryn-n",
+            "name": "Robert Arryn",
+            "fluff": {
+                "quote": "\"The bad little man. Mother, can I make him fly? I want so see him fly.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "The Moon Door",
+                    "effect": [
+                        "Robert begins the game with 4 Order Tokens on him",
+                        "When an enemy fails a Panic Test, you may remove 1 Order token from him to make that unit suffer +1 Wound (*this may be repeated on a single failed Panic Test if the enemy unit is **Vulnerable**)."
+                    ]
+                }
+            ],
+            "tokens": {
+                "number": 4,
+                "name": "order"
+            },
+            "title": "Sweet Robin"
+        },
+        {
+            "id": "myranda-royce-n",
+            "name": "Myranda Royce",
+            "fluff": {
+                "quote": "\"Kind? How boring that would be. I aspire to be wicked.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "ncu",
+            "character": true,
+            "cost": 4,
+            "abilities": [
+                {
+                    "name": "Gracious Host",
+                    "effect": [
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*)",
+                        "While Influencing a friendly unit, that unit is a House Royce unit. It also gains +1 to Morale Test Rolls and each time it passes a Morale Test, restores 1 Wound, +2 Wounds if the unit has 2 desgtroyed ranks."
+                    ]
+                }
+            ],
+            "title": "Lady of the Gates"
+        }
+    ],
+    "attachment": [
+        {
+            "id": "petyr-baelish-a",
+            "name": "Petyr Baelish",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"A bag of dragons buys a man's silence for a while, but a well-placed quarrel buys it forever.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Knowledge is Power",
+                "Order: Counterstrategy"
+            ],
+            "commander": true,
+            "title": "Lord Protector of the Vale"
+        },
+        {
+            "id": "gilwood-hunter-a",
+            "name": "Gilwood Hunter",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"Grey Wind ate two of his fingers, and he laughed about it.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Ambush",
+                "Order: Tactical Reposition"
+            ],
+            "commander": true,
+            "title": "Lord of Longbow Hall"
+        },
+        {
+            "id": "mord-a",
+            "name": "Mord",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Taunt",
+                "Interrogate"
+            ]
+        },
+        {
+            "id": "albar-royce-a",
+            "name": "Albar Royce",
+            "fluff": {
+                "quote": "\"The turnkey was twenty stone of gross stupidity with brown rotting teeth and small dark eyes.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Boldness and Courage",
+                "Duty to the Crown",
+                "Affiliation: House Royce"
+            ],
+            "title": "Heir to the Gates"
+        },
+        {
+            "id": "samwell-stone-a",
+            "name": "Samwell Stone",
+            "fluff": {
+                "quote": "\"No man could hope for a finer master-at-arms.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 2,
+            "abilities": [
+                "Veteran Savvy",
+                "Battle Scars"
+            ],
+            "title": "Strong Sam"
+        },
+        {
+            "id": "symond-templeton-a",
+            "name": "Symond Templeton",
+            "fluff": {
+                "quote": "\"A beak of a nose and icy blue yeys made the Knight of Ninestars look like some elegant bird of prey.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Supply Aid",
+                "Reinforcements"
+            ],
+            "title": "Knight of Ninestars"
+        },
+        {
+            "id": "vardis-egen-a",
+            "name": "Vardis Egen",
+            "fluff": {
+                "quote": "\"For the Eyrie and the Vale!\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Natural Defenses",
+                "Iron Resolve"
+            ],
+            "title": "Captain of the Guard"
+        },
+        {
+            "id": "donnel-waynwood-a",
+            "name": "Donnel Waynwood",
+            "fluff": {
+                "quote": "\"Who would pass the Bloody Gate\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Resilience",
+                "Rearguard"
+            ],
+            "title": "Knight of the Gate"
+        },
+        {
+            "id": "lyn-corbray-a",
+            "name": "Lyn Corbray",
+            "tactics": [
+                    "40217",
+                    "40218",
+                    "40219"
+            ],
+            "fluff": {
+                "quote": "\"Know the men who follow you and let them know you. Don't ask your men to die for a stranger.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Reckless Strikes",
+                "Order: Incite"
+            ],
+            "commander": true,
+            "title": "Knight of Heart's Home"
+        },
+        {
+            "id": "donnel-waynwood-a",
+            "name": "Donnel Waynwood",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"When we speak of the morrow nothing is ever certain.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Stand Your Ground!",
+                "Improved Defenses"
+            ],
+            "commander": true,
+            "title": "Knight of Ironoaks"
+        },
+        {
+            "id": "brynden-tully-a",
+            "name": "Brynden Tully",
+            "fluff": {
+                "quote": "\"Well, I told her she could bloody well find herself a new Knight of the Gate. Black fish or no, I am still a Tully.\""
+            },
+            "faction": "arryn",
+            "version": "2021-S02",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 2,
+            "abilities": [
+                "Order: Sentinel",
+                "Order: Adaptive Planning"
+            ],
+            "title": "Former Knight of the Gate"
+        },
+        {
+            "id": "marillion-a",
+            "name": "Marillion",
+            "fluff": {
+                "quote": "\"In truth, I was made to sing for kings and high lords\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Scapegoat",
+                "Rousing Ballad"
+            ],
+            "title": "Wandering Bard"
+        },
+        {
+            "id": "mya-stone-a",
+            "name": "Mya Stone",
+            "fluff": {
+                "quote": "\"I've made the dark climb a hundred times. Mychel says my father must have been a goat.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Pathfinder",
+                "Outflank"
+            ],
+            "title": "Mountain Guide"
+        },
+        {
+            "id": "mychel-redfort-a",
+            "name": "Mychel Redfort",
+            "back_text": [
+                {
+                    "text": "*Reduce this Attachment's cost by 1 if your Commander is Lyn Corbray, Knight of Heart's Home.*"
                 }
             ],
             "fluff": {
-                "lore": "A veteran of many conflicts, Brynden \"Blackfish\" Tully is well aware of common military doctrine when it comes to outriders. Whereas other houses utilize such units for scouting and harassment, Blackfish's Riders have all been carefully selected by the knight himself to target those very cavalry units his enemy would choose to deploy against him.  Armed with sword and bow, the handpicked men of Brynden's company seldom fail to cut down every rider they face."
+                "quote": "\"Petyr trusts him as mush as he trusts anyone.\" - Sansa Stark"
             },
-            "icon": "cavalry"
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Lyn's Vassal",
+                "Loyal Apprentice",
+                "Armor Bearer"
+            ],
+            "title": "Lyn Corbray's Squire"
+        },
+        {
+            "id": "lothor-brune-a",
+            "name": "Lothor Brune",
+            "back_text": [
+                {
+                    "text": "*This Attachment ignores the usual Attachment limits when added to a unit containing Petyr Baelish.*"
+                }
+            ],
+            "fluff": {
+                "quote": "\"Petyr trusts him as mush as he trusts anyone.\" - Sansa Stark"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Motivated by Coin",
+                "Protection of the Crown"
+            ],
+            "title": "Apple-Eater"
+        },
+        {
+            "id": "harlan-hunter-a",
+            "name": "Harlan Hunter",
+            "fluff": {
+                "quote": "\"Gilwood Hunter will be murdered by his brothers. Most likely by Young Harlan, who arranged Lord Eon's death.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Order: Threaten",
+                "Strengthen your Claim"
+            ],
+            "title": "Ruthless Kinsman"
+        },
+        {
+            "id": "eustace-hunter-a",
+            "name": "Eustace Hunter",
+            "fluff": {
+                "quote": "\"His father had ruled Longbow Hall for nigh on sixty years.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Intimidation of the Crown",
+                "Disputed Succession"
+            ],
+            "title": "Knight of Longbow Hall"
+        },
+        {
+            "id": "lyonel-corbray-a",
+            "name": "Lyonel Corbray",
+            "fluff": {
+                "quote": "\"Lord Lyonel Corbray is well disposed toward my rule....\" -Petyr Baelish"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Consolidate Power",
+                "Vengeance of the Crown"
+            ],
+            "title": "Lord Baelish's Ally"
+        },
+        {
+            "id": "yohn-royce-a",
+            "name": "Yohn Royce",
+            "fluff": {
+                "quote": "\"Though his hair was grey and his face lined, Lord Yohn still looked as though he could break most younger men like twigs..."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 2,
+            "abilities": [
+                "Relentless",
+                "Battle Ready"
+            ],
+            "title": "Bronze Yohn"
+        },
+        {
+            "id": "harrold-hardyng-a",
+            "name": "Harrold Hardyng",
+            "fluff": {
+                "quote": "\"Jon Arryn's bannermen will never love me, nor our silly, shaking Robert, but they will love their Young Falcon."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "cavalry",
+            "icon": "cavalry",
+            "cost": 2,
+            "abilities": [
+                "Order: Swift Retreat",
+                "Regroup"
+            ],
+            "title": "The Heir"
+        },
+        {
+            "id": "lyn-corbray-a",
+            "name": "Lyn Corbray",
+            "fluff": {
+                "quote": "\"He will speak of me with scorn and loathing to every man he meets, and lend his sword to every secret plot to bring me down.\""
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "cost": 1,
+            "abilities": [
+                "Reckless Strikes",
+                "Advantage Strike"
+            ],
+            "title": "Dangerous Conspirator"
+        },
+        {
+            "id": "nestor-royce-a",
+            "name": "Nestor Royce",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"No man lingers as long in the sky cells. The blue will call to him."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Affiliation: House Royce",
+                "Hardened",
+                "Dauntless"
+            ],
+            "commander": true,
+            "title": "Keeper of the Gates of the Moon"
+        },
+        {
+            "id": "bronze-yohn-royce-a",
+            "name": "Bronze Yohn Royce",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"His armor is bronze, thousands and thousands of years old, engraved with magic runes that ward him against harm."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Affiliation: House Royce",
+                "Order: Mark Target",
+                "Critical Blow"
+            ],
+            "commander": true,
+            "title": "Lord of Runestone"
+        },
+        {
+            "id": "horton-redfort-a",
+            "name": "Horton Redfort",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"The six had gathered at Runestone after Lsya Arrin's fall, and there made a pact together, vowing to defend Lord Robert, the Vale, and one another."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Order: Battle Plan",
+                "Knightly Vow"
+            ],
+            "commander": true,
+            "title": "Lord of Redfort"
+        },
+        {
+            "id": "benedar-belmore-a",
+            "name": "Benedar Belmore",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"Give us the boy, and you may depart the Vale unmolested for your proper seat at Harrenhal."
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Pinned Down",
+                "Seeds of Doubt"
+            ],
+            "commander": true,
+            "title": "Lord of Strongsong"
+        },
+        {
+            "id": "gilwood-hunter-a",
+            "name": "Gilwood Hunter",
+            "tactics": [
+
+            ],
+            "fluff": {
+                "quote": "\"Like as not, my sister is marching in your brother’s host, her and those daughters of hers, dressed in men’s mail\" -Jeor Mormont to Jon Snow"
+            },
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "attachment",
+            "character": true,
+            "tray": "infantry",
+            "icon": "infantry",
+            "abilities": [
+                "Ambush",
+                "Order: Tactical Reposition"
+            ],
+            "commander": true,
+            "title": "Lord of Longbow Hall"
         }
     ],
-    "attachment": [],
-    "tactics": [],
+    "tactics": [
+        {
+            "id": "chivalry-and-might",
+            "name": "Chivalry and Might",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Successfully Charges:",
+                    "effect": [
+                        "That unit gains +1 to hit until the end of the Turn.",
+                        "If you Control [LETTER], the Charged enemy also becomes **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "defensive-formation",
+            "name": "Defensive Formation",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to a friendly Combat Unit until the start of its next Activation.",
+                        "While attached, this unit cannot perform Attack or Charge Actions, but gains +1 to Defense Dice rolls and Attackers do not gain Charge, Flank, or Rear Bonuses against it."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "as-high-as-honor",
+            "name": "As High as Honor",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to it until the end of the game. When a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
+                        "IWhile this card has a token, the attached unit deals +1 Hit when Charging, and blocks +1 Hit when being Charged in the Front."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "valiant-example",
+            "name": "Valiant Example",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit passes a Morale Test:",
+                    "effect": [
+                        "All other friendly units in Long Range restore 1 Wound, +1 Wound for each of this unit's destroyed ranks.",
+                        "If you Control [Letter], restore 2 Wounds to this unit."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "stone",
+            "name": "Stone",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "1 enemy unit becomes **Vulnerable**.",
+                        "Once this Tactics Card has been played, it does not go into your discard pile, but is instead put aside. Once all 3 of **Stone, Snow** and **Sky** have been played, immediately remove those copies from the game and select 1 Special Ability card: **Giant's Lance** or **Alyssa's Tears**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "snow",
+            "name": "Snow",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "1 enemy unit becomes **Weakened**.",
+                        "Once this Tactics Card has been played, it does not go into your discard pile, but is instead put aside. Once all 3 of **Stone, Snow** and **Sky** have been played, immediately remove those copies from the game and select 1 Special Ability card: **Giant's Lance** or **Alyssa's Tears**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sky",
+            "name": "Sky",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "1 enemy unit becomes **Panicked**.",
+                        "Once this Tactics Card has been played, it does not go into your discard pile, but is instead put aside. Once all 3 of **Stone, Snow** and **Sky** have been played, immediately remove those copies from the game and select 1 Special Ability card: **Giant's Lance** or **Alyssa's Tears**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "false-agenda",
+            "name": "False Agenda",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy NCU activates:",
+                    "effect": [
+                        "If that NCU Claims a zine this TUrn, after resolving that zone's effect, you may move that NCU to any unclaimed zone.",
+                        "If you removed that NCU from [LETTER], target 1 enemy Combat Unit. They gain 1 Condition token."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "counterplot",
+            "name": "Counterplot",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an opponent plays a Tactics card, before resolving that Tactics card:",
+                    "effect": [
+                        "Roll a die: On a 3+, cancel the effect of that Tactics Card.",
+                        "If you Control [CROWN] or [LETTER], cancel the effect of that Tactics card on a 2+ instead.",
+                        "If you Control both, this roll automatically succeeds."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "parlay",
+            "name": "Parlay",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Activates:",
+                    "effect": [
+                        "That unit cannot perform Actions this Turn. Target 1 enemy in Short Range. It Activates, but does not perform any Actions.",
+                        "If this targets Petyr's unit, you may have both units restore 2 Wounds."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "berserker-tactics",
+            "name": "Berserker Tactics",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 other friendly combat unit in Long Range of the Defender. It performs 1 Maneuver Action"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hunter's-insight",
+            "name": "Hunter's Insight",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 enemy in Long Range of a friendly Ranger unit and choose 1:",
+                        "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
+                        "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
+                        "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sudden-retreat",
+            "name": "Sudden Retreat",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target the Defender. They perform 1 Retreat Action.",
+                        "If this targets Gilwood Hunter's unit, it may re-roll any Retreat Distance Dice."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cunning-ploy",
+            "name": "Cunning Ploy",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "This unit cannot perform Actions this Turn. Instead, target 1 other friendly Combat Unit. It performs 1 Maneuver, March, or Retreat Action.",
+                        "If either unit is Lyn's unit, before performing this Action, 1 enemy in Long Range of Tyrion's unit becomes **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "a-need-for-vengeance",
+            "name": "A Need for Vengeance",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Round:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit performs 1 Attack Action.",
+                        "If this targets Lyn Corbray's unit, it gains +1 to Hit.",
+                        "After completing that Attack, your opponent may Activate 1 NCU."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "taunt",
+            "name": "Taunt",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "Target 1 friendly unit in Long Range.",
+                        "If that enemy could Attack or Charge the targeted unit, and declares any Action other than an Attack or Charge on the targeted unit this Turn, before performing that Action, that enemy becomes **Vulnerable** and **Weakened**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sustained-assault",
+            "name": "Sustained Assault",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If this unit began the Turn engaged with the Defender, it rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+                        "If this targets Donnel's unit, the Defender also becomes **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "battle-endurance",
+            "name": "Battle Endurance",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round *(effects are cumulative)*:",
+                        "**3+:** May re-roll any Misses",
+                        "**4+:** **Sundering**",
+                        "**5+:** **Critical Blow**",
+                        "**6+:** +2 Attack Dice"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "seeing-their-flaws",
+            "name": "Seeing their Flaws",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy Combat Unit completes an Action:",
+                    "effect": [
+                        "That enemy becomes **Vulnerable** and **Panicked**.",
+                        "Attach this card to that enemy until the end of the Round. While attached, and Roose Bolton's unit is Attacking that enemy, that enemy loses all Abilities and cannot be targeted by friendly Tactics cards."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "here-we-stand!",
+            "name": "Here We Stand!",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is Successfully Charged, before the Attacker performs their Melee Attack:",
+                    "effect": [
+                        "If that friendly unit is not engaged with another enemy, and was Charged from the Front or Flank, it performs 1 Melee Attack Action on the Attacker before the Attacker resolves their Melee Attack."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "refuse-to-yield",
+            "name": "Refuse to Yield",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit passes a Panic Test:",
+                    "effect": [
+                        "All enemies engaged with that unit become **Vulnerable**. Attach this card to that unit until it fails a Panic Test.",
+                        "While Attached, each time this unit passes a Panic Test, all enemies engaged with that unit become **Vulnerable**. If this card is attached to Donal Noye's unit, it gains +1 to Panic Test rolls."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "martial-superiority",
+            "name": "Martial Superiority",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "The Attacker suffers 1 Hit for each Miss.",
+                        "If the Defender is Nestor's unit, this Attack also suffers -1 to Hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "lash-out",
+            "name": "Lash Out",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is a House Royce unit, the Attacker also becomes **Panicked**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "counter-assault",
+            "name": "Counter Assault",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit other than the Defender. They perform 1 Attack or Charge Action on the Attacker.",
+                        "If this targets a House Royce unit, they may re-roll any Attack and Charge Distance Dice for this Action."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "press-the-advantage",
+            "name": "Press the Advantage",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing an Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Choose 1. For each Condition token on the Defender, choose +1:",
+                        "•This Attack rolls its highest Attack Die Value.",
+                        "•This Attack gains +1 to Hit.",
+                        "•The Defender loses all Abilities and cannot be the target of friendly Tactics cards until the end of the Turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "wealth-of-the-vale",
+            "name": "Wealth of the Vale",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy is performing an Attack, after rolling Attack Dice:",
+                    "effect": [
+                        "Target the Defender.",
+                        "If you Control [CROWN], the Defender gains +2 to their Panic Test roll.",
+                        "If you Control [MONEY], the Defender gains +1 to Defense Dice rolls.",
+                        "If this targets Horton Redfort's unit, you count as Controlling both zones."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hefty-ransom",
+            "name": "Hefty Ransom",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Attachment is destroyed:",
+                    "effect": [
+                        "Attach this card to 1 enemy unit in Short Range until the end of the game. When that unit is destroyed, gain 1 Victory Point."
+                    ]
+                },
+                {
+                    "trigger": "When an enemy Attachment is destroyed:",
+                    "effect": [
+                        "Attach this card to 1 friendly unit in Short Range until the end of the game. While attached, that unit's Melee Attacks roll +1 Attack Die and it gains +1 to Morale Test rolls."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "adaptive-methods",
+            "name": "Adaptive Methods",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit.",
+                        "They gain 1 Condition token.",
+                        "Then, you may replace 1 Condition token on any 1 unit with any other Condition token.",
+                        "If you Control [LETTER], you may then move 1 Condition token from 1 unit to any other unit."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "spiteful-truce",
+            "name": "Spiteful Truce",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy unit passes a Morale Test:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit in Long Range of that unit. They restore 2 Wounds, +1 Wound for each of their destroyed ranks."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "worth-the-risk",
+            "name": "Worth the Risk",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Morale Test, after rolling dice:",
+                    "effect": [
+                        "That unit may re-roll any dice for this Test.",
+                        "If that unit is in Short Range of Benedar, it passes this test instead.",
+                        "On a success, it restores 2 Wounds."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "lord's-defiance",
+            "name": "Lord's Defiance",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Panic Test, after rolling dice:",
+                    "effect": [
+                        "That unit may re-roll any dice for this Test. If they are in Short Range of Benedar, they pass this test instead.",
+                        "If this targets Benedar's unit, target 1 enemy engaged with them. They suffer 1 Wound, +1 Wound for each of this unit's destroyed ranks."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sudden-retreat",
+            "name": "Sudden Retreat",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "The Defender performs 1 Retreat Action.",
+                        "If this targets your Gilwood Hunter's unit, it may re-roll any Retreat Distance Dice."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hunter's-insight",
+            "name": "Hunter's Insight",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 enemy in Long Range of a friendly unit and choose 1:",
+                        "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
+                        "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
+                        "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "diversion-tactics",
+            "name": "Diversion Tactics",
+            "faction": "arryn",
+            "version": "Boardmangaming",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target 1 other friendly unit in Long Range of the Defender.",
+                        "It performs 1 Maneuver Action."
+                    ]
+                }
+            ]
+        }
+    ],
+    "abilities": {
+        "\"BROADSWORD": {
+            "effect": [
+                "• **Precision**",
+                "• After this unit completed a melee attack, it makes a morale test"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "SWEETROBIN'S RETINUE": {
+            "effect": [
+                "This unit has 8 models, 8 Wounds, and 2 ranks."
+            ],
+            "icons": [
+                "wounds8"
+            ]
+        },
+        "CONSOLIDATE POWER": {
+            "effect": [
+                "After a friendly unit in Long Range is Attacked, for each friendly rank that was destroyed, this unit restores 1 Wound."
+            ]
+        },
+        "CONCEALED": {
+            "effect": [
+                "Each time an enemy is performing a ranged attack on this unit, after rolling defense dice, this unit blocks 1 Hit, +1 Hit for each of its destroyed ranks "
+            ]
+        },
+        "BRONZE SPEAR": {
+            "effect": [
+                "• **Sundering**",
+                "• May always re-roll Attack Dice."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "KNIGHT'S VALOR": {
+            "effect": [
+                "• **Critical Blow**",
+                "Enemies Successfully Charged by this unit become **Vulnerable** or **Panicked**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "HANDSOME REWARD": {
+            "effect": [
+                "If this unit destroys an enemy unit, gain an additional victory point"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "FORM RANKS!": {
+            "effect": [
+                "Each time this unit Attacks a Cavalry Unit, if this unit is engaged with only 1 enemy, this Attack deals +1 wound for each of the Defender's ranks"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ORDER: LET FLY": {
+            "trigger": "After a friendly Arryn unit is attacked:",
+            "effect": [
+                "This unit performs 1 Ranged Attack Action on that enemy using its lowest attack die value."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: SUPPRESSIVE VOLLEY": {
+            "trigger": "Start of a friendly Turn:",
+            "effect": [
+                "Target 1 friendly unit in Short Range. It gains +1 [MOVEMENT] for the Turn."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: CALL FOR AID": {
+            "trigger": "After a friendly Arryn unit is attacked:",
+            "effect": [
+                "This unit performs 1 Ranged Attack Action on that enemy using its lowest attack die value."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: LAWS OF THE REALM": {
+            "trigger": "When an enemy in Short Range Attacks, before rolling Attack Dice:",
+            "effect": [
+                "That enemy is treated as having -1 rank for Attack Dice. If it has only 1 remaining rank, it becomes **Vulnerable**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "DISPUTED SUCCESSION": {
+            "effect": [
+                "If this unit is within Short Range of your Commander's unit when it is destroyed, score 1 Victory Point."
+            ]
+        },
+        "STRENGTHEN YOUR CLAIM": {
+            "effect": [
+                "Each time your Commander's unit Activates or has a rank destroyed, this unit restores 1 Wound. When your Commander's unit is destroyed, this unit restores D3+1 Wounds."
+            ]
+        },
+        "LYN'S VASSAL": {
+            "effect": [
+                "This model counts as Lyn Corbray for all abilities and effects."
+            ],
+            "icons": [
+                "wound"
+            ]
+        },
+        "LOYAL APPRENTICE": {
+            "effect": [
+                "Beginning on Round 3, this unit's Attacks add +1 Attack Die."
+            ],
+            "icons": [
+                "ranged",
+                "melee"
+            ]
+        },
+        "ROUSING BALLAD": {
+            "effect": [
+                "When an enemy NCU Claimns [SWORD], this unit may suffer 2 Wounds. If so, this unit cannot be Attacked this turn."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "ARMOR BEARER": {
+            "effect": [
+                "Each time an enemy is performing an Attack on this unit, after rolling Defense Dice, this unit blocks +1 Hit."
+            ]
+        },
+        "ORDER: SCAPEGOAT": {
+            "trigger": "When a friendly Infantry Unit within Long Range fails a Panic Test:",
+            "effect": [
+                "You may deal the same amount of Wounds to this unit instead. If this Ability destroys Marillion's unit, your opponent does not gain a Victory Point from **Victory through Combat**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: TAUNT": {
+            "trigger": "When an enemy in Long Range Activates:",
+            "effect": [
+                "If that enemy could Attack or Charge this unit, and declares any Action other than an Attack or Charge that targets this unit this Turn, before performing that Action, that enemy becomes **Vulnerable** and **Weakened**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "DISRUPT": {
+            "effect": [
+                "Enemies engaged with this unit suffer -1 to Hit."
+            ]
+        },
+        "MOTIVATED BY COIN (SKY CELL GAOLERS)": {
+            "effect": [
+                "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:",
+                "*Bronn's unit performs 1 Attack Action.*"
+            ]
+        },
+        "TAKE COVER!": {
+            "effect": [
+                "Each time an enemy is performing a Ranged Attack on this unit, after rolling Defense Dice, this unit blocks 1 Hit, +1 Hit for each of its destroyed ranks."
+            ]
+        },
+        "INTERROGATE": {
+            "effect": [
+                "Each time this unit destroys an enemy with a Melee Attack, you may look at your opponent's hand of Tactics cards and discard 1 card."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "MAKE HASTE!": {
+            "effect": [
+                "While you Control [HORSE], this unit gains +1 [MOVEMENT]."
+            ]
+        },
+        "PERSEVERANCE AND VALOR": {
+            "effect": [
+                "Each time this unit performs a Melee Attack, before rolling Attack Dice, it restores 1 Wound."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "VETERAN SAVVY": {
+            "effect": [
+                "Once per game, at the start of any Round, this unit may perform 1 Melee Attack Action."
+            ]
+        },
+        "RALLY CRY": {
+            "effect": [
+                "Each time this unit is performing a Melee Attack, before rolling Attack Dice, target 1 other friendly unit in Long Range. It restores 2 Wounds."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ORDER: ADAPTIVE STYLE": {
+            "trigger": "When this unit Attacks or is Attacked, before rolling Attack Dice:",
+            "effect": [
+                "Choose 1:",
+                "• This unit gains +1 to Defense Dice rolls and +2 to Panic Test rolls against this Attack.",
+                "• This Attack gains **Critical Blow** and **Sundering**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "CAVALRY": {
+            "effect": [
+                "• Each model in this unit has 3 Wounds.",
+                "• At the start of this unit’s Activation, it may perform 1 Maneuver Action."
+            ],
+            "icons": [
+                "wounds3"
+            ]
+        },
+        "WELL PROVISIONED": {
+            "effect": [
+                "This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "PACK MULE": {
+            "effect": [
+                "• This unit has 6 Wounds.",
+                "• This unit cannot control Objectives and cannot grant Victory Points.",
+                "• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+                "• This unit cannot suffer wounds from panic tests. Instead when this unit fails a panic test, 1 enemy unit engaged with this unit restores D3 Wounds"
+            ],
+            "icons": [
+                "wounds6"
+            ]
+        },
+        "BOLDNESS AND COURAGE": {
+            "effect": [
+                "Each time this unit Attacks, if it has full ranks, it gains +1 Attack Die. Otherwise, it is treated as having +1 rank for Attack Dice."
+            ],
+            "icons": [
+                "ranged",
+                "melee"
+            ]
+        },
+        "DUTY TO THE CROWN": {
+            "effect": [
+                "Each time this unit passes a Morale Test, it restores 1 Wound. If you Control [CROWN], restore +1 Wound."
+            ]
+        },
+        "AFFILIATION: HOUSE ROYCE": {
+            "effect": [
+                "This unit is a House Royce unit."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "MIGHT OF THE THRONE (SAMWELL STONE)": {
+            "effect": [
+                "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:",
+                "*Samwell Stone's unit performs 1 Melee Attack or Charge Action*."
+            ]
+        },
+        "STUBBORN TENACITY": {
+            "effect": [
+                "Each time this unit passes a Panic Test, 1 enemy they are engaged with suffers 1 Wound."
+            ]
+        },
+        "ORDER: SUPPLY AID": {
+            "trigger": "Start of a friendly Turn:",
+            "effect": [
+                "This unit suffers up to 3 Wounds. Restore 1+ that many Wounds to 1 other friendly unit in Long Range."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "REINFORCEMENTS": {
+            "effect": [
+                "Each time this unit Activates, it restores 1 Wound. If you Control [CROWN], restore +1 Wound."
+            ]
+        },
+        "KNOWLEDGE IS POWER": {
+            "effect": [
+                "Once per game, at the start of any Turn, you may make your opponent reveal all Tactics Cards from their hand. Then, you may discard 1 of their Tactics cards."
+            ]
+        },
+        "ADVANTAGEOUS POSITION": {
+            "effect": [
+                "Each time a friendly NCU Claims [HORSE], you may replace that zone's effect with: *1 friendly unit with Advantageous Position perform 1 Attack Action using its lowest Attack Die Value.*"
+            ]
+        },
+        "VANTAGE POINT": {
+            "effect": [
+                "When this unit Activates, as its Action, this unit may pivot and you may draw 1 Tactics Card."
+            ]
+        },
+        "AMBUSH": {
+            "effect": [
+                "Enemies this unit Successfully Charges in the Flank or Rear become **Panicked** and **Weakened**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ORDER: TACTICAL REPOSITION": {
+            "trigger": "Start of an enemy Turn:",
+            "effect": [
+                "Target 1 friendly unit in Short Range. They perform a 3\" shift."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "CRITICAL BLOW": {
+            "effect": [
+                "This unit's Melee Attacks gain **Critical Blow**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "PINNED DOWN": {
+            "effect": [
+                "Enemies engaged with this unit and at least 1 other friendly unit automatically fail all Panic Tests."
+            ]
+        },
+        "SEEDS OF DOUBT": {
+            "effect": [
+                "When this unit passes a Panic Test, all enemy units within Short Range become **Vulnerable**. If you Control [LETTER], you also restore 1 Wound."
+            ]
+        },
+        "IMPROVED DEFENSES": {
+            "effect": [
+                "While you Control [CROWN] this unit gains +1 to Defense Dice rolls."
+            ]
+        },
+        "ORDER: NATURAL DEFENSES": {
+            "trigger": "When this unit is successfully charged from the Front or Flank:",
+            "effect": [
+                "This unit gets +1 to defense rolls."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "IRON RESOLVE": {
+            "effect": [
+                "This unit gains +1 to Panic Test rolls and suffers -1 Wounds from failing Panic Tests."
+            ]
+        },
+        "ORDER: RESILIENCE": {
+            "trigger": "When an enemy is performing an Attack on this unit, after rolling Attack Dice:",
+            "effect": [
+                "This unit only suffers 1 Wound for every 2 unblocked Hits."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "REARGUARD": {
+            "effect": [
+                "Once per game, when this unit is Attacked in the Rear, before Attack Dice are rolled, the Attacker suffers 2 Wounds."
+            ]
+        }
+    },
     "special": []
 }
