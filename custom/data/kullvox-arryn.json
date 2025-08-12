@@ -1,0 +1,69 @@
+{
+    "_meta": {
+        "author": "Kullvox",
+        "id": "kullvox-arryn",
+        "language": "en",
+        "pre": "kvu"
+    },
+    "factions": {
+        "arryn": {
+            "text_color": "#30436d",
+            "highlight_color": "silver",
+            "bg_rotation": 0,
+            "long": "House Arryn"
+        }
+    },
+    "abilities": {},
+    "unit": [
+        {
+            "id": "blackfishs-riders",
+            "name": "Blackfish's Riders",
+            "faction": "arryn",
+            "version": "S06 V2",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Handpicked Hunters",
+                "Order: Charging Volley"
+            ],
+            "attacks": [
+                {
+                    "name": "Handpicked Bow",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Handpicked Sword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Brynden Tully, Outrider's Bane. He must be attached to this unit at no cost.*",
+                    "name": "Character"
+                }
+            ],
+            "fluff": {
+                "lore": "A veteran of many conflicts, Brynden \"Blackfish\" Tully is well aware of common military doctrine when it comes to outriders. Whereas other houses utilize such units for scouting and harassment, Blackfish's Riders have all been carefully selected by the knight himself to target those very cavalry units his enemy would choose to deploy against him.  Armed with sword and bow, the handpicked men of Brynden's company seldom fail to cut down every rider they face."
+            },
+            "icon": "cavalry"
+        }
+    ],
+    "attachment": [],
+    "tactics": [],
+    "special": []
+}
