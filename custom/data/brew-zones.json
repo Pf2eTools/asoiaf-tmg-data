@@ -1,0 +1,421 @@
+{
+    "_meta": {
+        "author": "Cruellion",
+        "id": "brew-zones"
+    },
+    "unit": [],
+    "ncu": [],
+    "attachment": [],
+    "tactics": [],
+    "special": [
+        {
+            "id": "c0",
+            "name": "Crown",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[CROWN]",
+                "effect": [
+                    "1 enemy must make a Panic Test and suffers -1 to their roll."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "c1",
+            "name": "Crown",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[CROWN]",
+                "effect": [
+                    "You may remove 1 Activation Token from 1 friendly Combat Unit *(it may activate again this Round)*. If you did, place 1 Activation token on another friendly Combat Unit without an Activation token *(it may not activate this Round)*."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "c2",
+            "name": "Crown",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[CROWN]",
+                "effect": [
+                    "Score 1 Victory Point."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "c3",
+            "name": "Crown",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[CROWN]",
+                "effect": [
+                    "Draw 1 Tactics card. Restore 1 Wound to 1 friendly Unit. Place 1 Condition token on 1 enemy Combat unit."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "w0",
+            "name": "Wealth",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[MONEY]",
+                "effect": [
+                    "Restore up to 3 Wounds and remove 1 Condition Token from 1 unit."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "w1",
+            "name": "Wealth",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[MONEY]",
+                "effect": [
+                    "Target 1 Friendly unit. It gains the **Order: Resilience** and **Iron Resolve** abilities until the end of the Round.",
+                    "**Order: Resilience**",
+                    "***When an enemy is performing an Attack on this unit, after Attack Dice are rolled:** This unit only suffers 1 Wound for every 2 unblocked Hits.*",
+                    "**Iron Resolve**",
+                    "*This unit gains +1 to Panic Test rolls and suffers -1 Wounds from failing Panic Tests.*"
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "w2",
+            "name": "Wealth",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[MONEY]",
+                "effect": [
+                    "Target 1 Friendly unit. Remove all condition tokens from this unit and restore up to 2 wounds for each of its destroyed ranks."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "w3",
+            "name": "Wealth",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[MONEY]",
+                "effect": [
+                    "Restore up to 5 Wounds to 1 friendly Unit. Your opponent may then restore up to 2 Wounds to 1 of their friendly Units."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "t0",
+            "name": "Tactics",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[LETTER]",
+                "effect": [
+                    "Draw 2 Tactic Cards and place any 1 Condition Token on an enemy unit."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "t1",
+            "name": "Tactics",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[LETTER]",
+                "effect": [
+                    "Search your Tactics Deck for 1 card and add it to your hand. Shuffle your Tactics deck. Place 1 Condition token on 1 enemy unit."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "t2",
+            "name": "Tactics",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[LETTER]",
+                "effect": [
+                    "Target 1 friendly Combat Unit. Remove all Order tokens from it. It may use its Orders again this Round."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "t3",
+            "name": "Tactics",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[LETTER]",
+                "effect": [
+                    "Draw 1 Tactics Card from each Player's Tactics deck."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "s0",
+            "name": "Combat",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[SWORDS]",
+                "effect": [
+                    "1 friendly unit may make a free Attack action."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "s1",
+            "name": "Combat",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[SWORDS]",
+                "effect": [
+                    "Target 1 enemy combat unit. It becomes **Panicked** and **Vulnerable**.",
+                    "Draw 2 Random cards from Objectives 6-10. Target 1 friendly Combat unit and attach those cards to that unit until the end of the Round."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "s2",
+            "name": "Combat",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[SWORDS]",
+                "effect": [
+                    "1 friendly Combat Unit may perform 1 Melee Attack Action using its lowest Attack die, and then perform a 3\" Retreat Action."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "s3",
+            "name": "Combat",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[SWORDS]",
+                "effect": [
+                    "1 friendly combat unit may perform a 6\" Charge Action. Instead of making an Attack, the Defender suffers 2 Hits +1 Hit for each rank in this unit."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "h0",
+            "name": "Maneuver",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[HORSE]",
+                "effect": [
+                    "1 friendly unit may make a free Maneuver or Retreat action."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "h1",
+            "name": "Maneuver",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[HORSE]",
+                "effect": [
+                    "Up to 2 friendly Combat Units may pivot and shift 3\"."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "h2",
+            "name": "Maneuver",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[HORSE]",
+                "effect": [
+                    "1 Friendly Combat Unit may perform 1 March Action."
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        },
+        {
+            "id": "h3",
+            "name": "Maneuver",
+            "version": "Cruellion",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[HORSE]",
+                "effect": [
+                    "Target 1 Friendly unit. It gains the **Swift Strike** and **Order: Swift Retreat** abilities until the end of the Round.",
+                    "**Swift Strike**",
+                    "*After this unit completes a Melee Attack, this unit may perform 1 Retreat Action.*",
+                    "**Order: Swift Retreat**",
+                    "***After an enemy completes a Melee Attack on this unit:** This unit performs 1 Retreat Action.*"
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
