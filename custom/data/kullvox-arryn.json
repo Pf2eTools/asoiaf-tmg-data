@@ -86,9 +86,9 @@
             "version": "U16",
             "role": "unit",
             "abilities": [
-                "Disrupt",
                 "Cavalry",
-                "Order: Call for Aid"
+                "Order: Call for Aid",
+                "Disrupt"
             ],
             "attacks": [
                 {
@@ -357,7 +357,7 @@
             "abilities": [
                 "Crossbow",
                 "Order: Suppressive Volley",
-                "Advantegeous Position"
+                "Advantageous Position"
             ]
         },
         {
@@ -562,7 +562,7 @@
             "id": "horton-redfort-n",
             "name": "Horton Redfort",
             "fluff": {
-                "quote": "\"... these are dangerous men, each in his own way. And proud. - Kevan Lannister\""
+                "quote": "\"...these are dangerous men, each in his own way. And proud. - Kevan Lannister\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -589,7 +589,7 @@
             "id": "anya-waynwood-n",
             "name": "Anya Waynwood",
             "fluff": {
-                "quote": "\"YNone of us wants war. Autumn wanes, and we must grid ourselves for winter"
+                "quote": "\"None of us wants war. Autumn wanes, and we must gird ourselves for winter"
             },
             "faction": "arryn",
             "version": "U16",
@@ -627,7 +627,7 @@
                     "name": "Mockingbird",
                     "effect": [
                         "Petyr begins the game with 2 Order tokens on him.",
-                        "When Petyr Activates, you may remove 1 Order token from him. If you do, you may move 1 NCU on the Tactics Board to any unclaimed zone (*the NCU that is moved does not trigger the effect of its new zone)."
+                        "When Petyr Activates, you may remove 1 Order token from him. If you do, you may move 1 NCU on the Tactics Board to any unclaimed zone *(the NCU that is moved does not trigger the effect of its new zone)*."
                     ]
                 }
             ],
@@ -641,7 +641,7 @@
             "id": "lysa-arryn-n",
             "name": "Lysa Arryn",
             "fluff": {
-                "quote": "\"The Mother shaped us to protect our children, and our only dishonor is in failure\" -Syrio Forel"
+                "quote": "\"The Mother shaped us to protect our children, and our only dishonor is in failure\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -653,7 +653,7 @@
                     "name": "Only Cat",
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
-                        "Each time Lysa influences a enemy unit, this unit suffers D3-1 Wounds. Each time Lysa influences a friendly unit, it restores D3-1 Wounds.",
+                        "Each time Lysa influences an enemy unit, this unit suffers D3-1 Wounds. Each time Lysa influences a friendly unit, it restores D3-1 Wounds.",
                         "While Influencing an infantry Unit composed of 3 ranks, that unit must roll a D3 each time before it makes an Attack:",
                         "• 1 : Roll lowest Attack Die Value",
                         "• 2 : Roll middle Attack Die Value",
@@ -667,7 +667,7 @@
             "id": "alayne-stone-n",
             "name": "Alayne Stone",
             "fluff": {
-                "quote": "\"You are Alayne, and you must be Alayne all the time.Even here, in your heart.\""
+                "quote": "\"You are Alayne, and you must be Alayne all the time. Even here, in your heart.\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -712,7 +712,7 @@
             "id": "lyonel-corbray-n",
             "name": "Lyonel Corbray",
             "fluff": {
-                "quote": "\"He writes that Lyonel Corbray seems well pleased with his bride and even more so with her dowry\""
+                "quote": "\"He writes that Lyonel Corbray seems well pleased with his bride and even more so with her dowry.\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -726,7 +726,7 @@
                         "Each time Lyonel Claims a zone, perform  the following based on the zone he Claimed",
                         "[MONEY]: Instead of removing a Condition token, restore +1 Wound",
                         "[CROWN]: Draw a Tactics Card.",
-                        "[LETTER]: Instead of placing a condition roken, target 1 friendly unit. It restores 1 WOund, +1 Wound for each of its destroyed ranks"
+                        "[LETTER]: Instead of placing a condition roken, target 1 friendly unit. It restores 1 Wound, +1 Wound for each of its destroyed ranks"
                     ]
                 }
             ],
@@ -748,7 +748,7 @@
                     "name": "The Moon Door",
                     "effect": [
                         "Robert begins the game with 4 Order Tokens on him",
-                        "When an enemy fails a Panic Test, you may remove 1 Order token from him to make that unit suffer +1 Wound (*this may be repeated on a single failed Panic Test if the enemy unit is **Vulnerable**)."
+                        "When an enemy fails a Panic Test, you may remove 1 Order token from him to make that unit suffer +1 Wound *(this may be repeated on a single failed Panic Test if the enemy unit is **Vulnerable**).*"
                     ]
                 }
             ],
@@ -774,7 +774,7 @@
                     "name": "Gracious Host",
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*)",
-                        "While Influencing a friendly unit, that unit is a House Royce unit. It also gains +1 to Morale Test Rolls and each time it passes a Morale Test, restores 1 Wound, +2 Wounds if the unit has 2 desgtroyed ranks."
+                        "While Influencing a friendly unit, that unit is a House Royce unit. It also gains +1 to Morale Test Rolls and each time it passes a Morale Test, restores 1 Wound, +2 Wounds if the unit has 2 destroyed ranks."
                     ]
                 }
             ],
@@ -815,7 +815,7 @@
                 "diversion-tactics"
             ],
             "fluff": {
-                "quote": "\"Grey Wind ate two of his fingers, and he laughed about it.\""
+                "quote": "\"Hunter's cheeks and nose were red as apples, which despoke a certain fondness for the grape.\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -862,9 +862,9 @@
             "icon": "infantry",
             "cost": 1,
             "abilities": [
+                "Affiliation: House Royce",
                 "Boldness and Courage",
-                "Duty to the Crown",
-                "Affiliation: House Royce"
+                "Duty to the Crown"
             ],
             "title": "Heir to the Gates"
         },
@@ -1015,7 +1015,7 @@
             "id": "marillion-a",
             "name": "Marillion",
             "fluff": {
-                "quote": "\"In truth, I was made to sing for kings and high lords\""
+                "quote": "\"In truth, I was made to sing for kings and high lords.\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -1058,7 +1058,7 @@
                 }
             ],
             "fluff": {
-                "quote": "\"Petyr trusts him as mush as he trusts anyone.\" - Sansa Stark"
+                "quote": "\"Mychel was the best young swordsman in the Vale, and gallant."
             },
             "faction": "arryn",
             "version": "U16",
@@ -1140,7 +1140,7 @@
             "id": "lyonel-corbray-a",
             "name": "Lyonel Corbray",
             "fluff": {
-                "quote": "\"Lord Lyonel Corbray is well disposed toward my rule....\" -Petyr Baelish"
+                "quote": "\"Lord Lyonel Corbray is well disposed toward my rule...\" - Petyr Baelish"
             },
             "faction": "arryn",
             "version": "U16",
@@ -1221,7 +1221,7 @@
                 "martial-superiority"
             ],
             "fluff": {
-                "quote": "\"No man lingers as long in the sky cells. The blue will call to him."
+                "quote": "\"No man lingers as long in the sky cells. The blue will call to him.\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -1246,7 +1246,7 @@
                 "lash-out"
             ],
             "fluff": {
-                "quote": "\"His armor is bronze, thousands and thousands of years old, engraved with magic runes that ward him against harm."
+                "quote": "\"His armor is bronze, thousands and thousands of years old, engraved with magic runes that ward him against harm.\""
             },
             "faction": "arryn",
             "version": "U16",
@@ -1322,7 +1322,7 @@
                 {
                     "trigger": "When a friendly unit Successfully Charges:",
                     "effect": [
-                        "That unit gains +1 to hit until the end of the Turn.",
+                        "That unit gains +1 to Hit until the end of the Turn.",
                         "If you Control [LETTER], the Charged enemy also becomes **Vulnerable**."
                     ]
                 }
@@ -1355,7 +1355,7 @@
                     "trigger": "Start of any Turn:",
                     "effect": [
                         "Target 1 friendly Combat Unit and attach this card to it until the end of the game. When a friendly Infantry or Cavalry unit is destroyed, place 1 Order token on this card.",
-                        "IWhile this card has a token, the attached unit deals +1 Hit when Charging, and blocks +1 Hit when being Charged in the Front."
+                        "While this card has a token, the attached unit deals +1 Hit when Charging, and blocks +1 Hit when being Charged in the Front."
                     ]
                 }
             ]
@@ -1371,7 +1371,7 @@
                     "trigger": "After a friendly unit passes a Morale Test:",
                     "effect": [
                         "All other friendly units in Long Range restore 1 Wound, +1 Wound for each of this unit's destroyed ranks.",
-                        "If you Control [Letter], restore 2 Wounds to this unit."
+                        "If you Control [LETTER], restore 2 Wounds to this unit."
                     ]
                 }
             ]
@@ -1434,11 +1434,14 @@
                 {
                     "trigger": "When an enemy NCU activates:",
                     "effect": [
-                        "If that NCU Claims a zine this TUrn, after resolving that zone's effect, you may move that NCU to any unclaimed zone.",
+                        "If that NCU Claims a zine this Turn, after resolving that zone's effect, you may move that NCU to any unclaimed zone.",
                         "If you removed that NCU from [LETTER], target 1 enemy Combat Unit. They gain 1 Condition token."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "petyr-baelish-c"
+            }     
         },
         {
             "id": "counterplot",
@@ -1455,11 +1458,14 @@
                         "If you Control both, this roll automatically succeeds."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "petyr-baelish-c"
+            }     
         },
         {
-            "id": "parlay",
-            "name": "Parlay",
+            "id": "parley",
+            "name": "Parley",
             "faction": "arryn",
             "version": "U16",
             "role": "tactics",
@@ -1471,56 +1477,10 @@
                         "If this targets Petyr's unit, you may have both units restore 2 Wounds."
                     ]
                 }
-            ]
-        },
-        {
-            "id": "berserker-tactics",
-            "name": "Berserker Tactics",
-            "faction": "arryn",
-            "version": "U16",
-            "role": "tactics",
-            "text": [
-                {
-                    "trigger": "After an enemy completes a Melee Attack:",
-                    "effect": [
-                        "Target 1 other friendly combat unit in Long Range of the Defender. It performs 1 Maneuver Action"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "hunters-insight",
-            "name": "Hunter's Insight",
-            "faction": "arryn",
-            "version": "U16",
-            "role": "tactics",
-            "text": [
-                {
-                    "trigger": "Start of a friendly Turn:",
-                    "effect": [
-                        "Target 1 enemy in Long Range of a friendly Ranger unit and choose 1:",
-                        "• 1 friendly unit in Long Range of that enemy performs a 3\" shift.",
-                        "• Friendly units may re-roll Attack and Charge Distance Dice when targeting that enemy this Turn.",
-                        "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "sudden-retreat",
-            "name": "Sudden Retreat",
-            "faction": "arryn",
-            "version": "U16",
-            "role": "tactics",
-            "text": [
-                {
-                    "trigger": "After an enemy completes a Melee Attack:",
-                    "effect": [
-                        "Target the Defender. They perform 1 Retreat Action.",
-                        "If this targets Gilwood Hunter's unit, it may re-roll any Retreat Distance Dice."
-                    ]
-                }
-            ]
+            ],
+            "commander": {
+                "id": "petyr-baelish-c"
+            }     
         },
         {
             "id": "cunning-ploy",
@@ -1536,7 +1496,10 @@
                         "If either unit is Lyn's unit, before performing this Action, 1 enemy in Long Range of Tyrion's unit becomes **Vulnerable**."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "lyn-corbray-c"
+            }     
         },
         {
             "id": "a-need-for-vengeance",
@@ -1553,7 +1516,10 @@
                         "After completing that Attack, your opponent may Activate 1 NCU."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "lyn-corbray-c"
+            }     
         },
         {
             "id": "taunt",
@@ -1569,7 +1535,10 @@
                         "If that enemy could Attack or Charge the targeted unit, and declares any Action other than an Attack or Charge on the targeted unit this Turn, before performing that Action, that enemy becomes **Vulnerable** and **Weakened**."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "lyn-corbray-c"
+            }     
         },
         {
             "id": "sustained-assault",
@@ -1585,7 +1554,10 @@
                         "If this targets Donnel's unit, the Defender also becomes **Vulnerable**."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "donnel-waynwood-c"
+            }     
         },
         {
             "id": "battle-endurance",
@@ -1604,7 +1576,10 @@
                         "**6+:** +2 Attack Dice"
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "donnel-waynwood-c"
+            }     
         },
         {
             "id": "seeing-their-flaws",
@@ -1617,14 +1592,17 @@
                     "trigger": "After an enemy Combat Unit completes an Action:",
                     "effect": [
                         "That enemy becomes **Vulnerable** and **Panicked**.",
-                        "Attach this card to that enemy until the end of the Round. While attached, and Roose Bolton's unit is Attacking that enemy, that enemy loses all Abilities and cannot be targeted by friendly Tactics cards."
+                        "Attach this card to that enemy until the end of the Round. While attached, while Donnel Waynwood's unit is Attacking that enemy, that enemy loses all Abilities and cannot be targeted by friendly Tactics cards."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "donnel-waynwood-c"
+            }     
         },
         {
-            "id": "here-we-stand!",
-            "name": "Here We Stand!",
+            "id": "set-for-charge",
+            "name": "Set For Charge",
             "faction": "arryn",
             "version": "U16",
             "role": "tactics",
@@ -1635,7 +1613,10 @@
                         "If that friendly unit is not engaged with another enemy, and was Charged from the Front or Flank, it performs 1 Melee Attack Action on the Attacker before the Attacker resolves their Melee Attack."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "nestor-royce-c"
+            }     
         },
         {
             "id": "refuse-to-yield",
@@ -1648,10 +1629,13 @@
                     "trigger": "After a friendly unit passes a Panic Test:",
                     "effect": [
                         "All enemies engaged with that unit become **Vulnerable**. Attach this card to that unit until it fails a Panic Test.",
-                        "While Attached, each time this unit passes a Panic Test, all enemies engaged with that unit become **Vulnerable**. If this card is attached to Donal Noye's unit, it gains +1 to Panic Test rolls."
+                        "While Attached, each time this unit passes a Panic Test, all enemies engaged with that unit become **Vulnerable**. If this card is attached to a House Royce unit, it gains +1 to Panic Test rolls."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "nestor-royce-c"
+            }     
         },
         {
             "id": "martial-superiority",
@@ -1667,7 +1651,10 @@
                         "If the Defender is Nestor's unit, this Attack also suffers -1 to Hit."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "nestor-royce-c"
+            }     
         },
         {
             "id": "lash-out",
@@ -1682,7 +1669,10 @@
                         "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is a House Royce unit, the Attacker also becomes **Panicked**."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "yohn-royce-c"
+            }     
         },
         {
             "id": "counter-assault",
@@ -1698,7 +1688,10 @@
                         "If this targets a House Royce unit, they may re-roll any Attack and Charge Distance Dice for this Action."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "yohn-royce-c"
+            }     
         },
         {
             "id": "press-the-advantage",
@@ -1716,7 +1709,10 @@
                         "•The Defender loses all Abilities and cannot be the target of friendly Tactics cards until the end of the Turn."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "yohn-royce-c"
+            }     
         },
         {
             "id": "wealth-of-the-vale",
@@ -1734,7 +1730,10 @@
                         "If this targets Horton Redfort's unit, you count as Controlling both zones."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "horton-redfort-c"
+            }     
         },
         {
             "id": "hefty-ransom",
@@ -1755,7 +1754,10 @@
                         "Attach this card to 1 friendly unit in Short Range until the end of the game. While attached, that unit's Melee Attacks roll +1 Attack Die and it gains +1 to Morale Test rolls."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "horton-redfort-c"
+            }     
         },
         {
             "id": "adaptive-methods",
@@ -1773,7 +1775,10 @@
                         "If you Control [LETTER], you may then move 1 Condition token from 1 unit to any other unit."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "horton-redfort-c"
+            }     
         },
         {
             "id": "spiteful-truce",
@@ -1788,7 +1793,10 @@
                         "Target 1 friendly Combat Unit in Long Range of that unit. They restore 2 Wounds, +1 Wound for each of their destroyed ranks."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "benedar-belmore-c"
+            }     
         },
         {
             "id": "worth-the-risk",
@@ -1805,7 +1813,10 @@
                         "On a success, it restores 2 Wounds."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "benedar-belmore-c"
+            }     
         },
         {
             "id": "lords-defiance",
@@ -1821,7 +1832,10 @@
                         "If this targets Benedar's unit, target 1 enemy engaged with them. They suffer 1 Wound, +1 Wound for each of this unit's destroyed ranks."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "benedar-belmore-c"
+            }     
         },
         {
             "id": "sudden-retreat",
@@ -1837,7 +1851,10 @@
                         "If this targets your Gilwood Hunter's unit, it may re-roll any Retreat Distance Dice."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "gilwood-hunter-c"
+            }     
         },
         {
             "id": "hunters-insight",
@@ -1855,7 +1872,10 @@
                         "• That enemy may not use Orders or be the target of friendly Tactics cards this Turn."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "gilwood-hunter-c"
+            }     
         },
         {
             "id": "diversion-tactics",
@@ -1871,10 +1891,21 @@
                         "It performs 1 Maneuver Action."
                     ]
                 }
-            ]
+            ],
+            "commander": {
+                "id": "gilwood-hunter-c"
+            }            
         }
     ],
     "abilities": {
+        "\"BATTLE READY": {
+            "effect": [
+                "If this unit is **Weakened**, its Melee Attacks gain +2 Attack Dice."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
         "\"BROADSWORD": {
             "effect": [
                 "• **Precision**",
@@ -1955,9 +1986,9 @@
             ]
         },
         "ORDER: CALL FOR AID": {
-            "trigger": "After a friendly Arryn unit is attacked:",
+            "trigger": "After another friendly unit in Line of Sight and Long Range is Attacked:",
             "effect": [
-                "This unit performs 1 Ranged Attack Action on that enemy using its lowest attack die value."
+                "Target 1 friendly unit in Long Range other than the Defender. It performs 1 Maneuver Action with +2 [MOVEMENT]."
             ],
             "icons": [
                 "order"
@@ -2102,18 +2133,18 @@
         },
         "WELL PROVISIONED": {
             "effect": [
-                "This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs."
+                "At the start of any Turn, target 1 friendly unit in Short Range. It restores 1 Wound, +1 Wound for each of its destroyed ranks. This unit suffers D3-1 Wounds."
             ],
             "icons": [
                 "wounds"
             ]
         },
-        "PACK MULE": {
+        "PACK MULES": {
             "effect": [
                 "• This unit has 6 Wounds.",
-                "• This unit cannot control Objectives and cannot grant Victory Points.",
+                "• This unit cannot Control Objectives and cannot grant Victory Points.",
                 "• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-                "• This unit cannot suffer wounds from panic tests. Instead when this unit fails a panic test, 1 enemy unit engaged with this unit restores D3 Wounds"
+                "• This unit cannot suffer Wounds from panic tests. Instead when this unit fails a panic test, 1 enemy unit engaged with this unit restores D3 Wounds"
             ],
             "icons": [
                 "wounds6"
@@ -2250,5 +2281,76 @@
             ]
         }
     },
-    "special": []
+    "special": [
+        {
+            "id": "arryn-banners",
+            "name": "Arryn Banners",
+            "faction": "baratheon",
+            "version": "U16",
+            "role": "special",
+            "category": "banners",
+            "front": {
+                "ratio": 0.2,
+                "crests": 2,
+                "style": "banners",
+                "text": [
+                    "The Brotherhood of Winged Knights come with 4 Baratheon Banners. At the start of its Activation, it may remove Arryn Banners to gain the following. Each may be selected only once per Activation:",
+                    "• This Turn, this unit's Attacks gain **Critical Blow** and **Sundering**.",
+                    "• This Turn, this unit's Attacks gain **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound.",
+                    "• This Turn, when this unit is performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**.",
+                    "• This unit restores 2 Wounds and may re-roll Charge and Retreat Distance Dice this Turn."
+                ]
+            },
+            "back": {
+                "ratio": 0.25,
+                "crests": 2,
+                "image": true
+            }
+        },
+        {
+            "id": "giants-lance",
+            "name": "Giant's Lance",
+            "faction": "arryn",
+            "version": "U16",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.2,
+                "crests": 2,
+                "style": "banners",
+                "text": [
+                    "**Play immediately:**",
+                    "Score 1 Victory Point",
+                    "Remove this card from the game once it has been played"
+                ]
+            },
+            "back": {
+                "ratio": 0.25,
+                "crests": 2,
+                "image": true
+            }
+        },
+        {
+            "id": "alyssas-tears",
+            "name": "Giant's Lance",
+            "faction": "arryn",
+            "version": "U16",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.2,
+                "crests": 2,
+                "style": "banners",
+                "text": [
+                    "**Play immediately:**",
+                    "You may restore up to 5 Wounds *(total)* across any number of friendly Combat Units.",
+                    "Remove this card from the game once it has been played."
+                ]
+            },
+            "back": {
+                "ratio": 0.25,
+                "crests": 2,
+                "image": true
+            }
+        }
 }
