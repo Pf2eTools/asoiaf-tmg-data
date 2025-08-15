@@ -652,7 +652,7 @@
                 {
                     "name": "Only Cat",
                     "effect": [
-                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*):",
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
                         "Each time Lysa influences an enemy unit, this unit suffers D3-1 Wounds. Each time Lysa influences a friendly unit, it restores D3-1 Wounds.",
                         "While Influencing an infantry Unit composed of 3 ranks, that unit must roll a D3 each time before it makes an Attack:",
                         "• 1 : Roll lowest Attack Die Value",
@@ -726,7 +726,7 @@
                         "Each time Lyonel Claims a zone, perform  the following based on the zone he Claimed",
                         "[MONEY]: Instead of removing a Condition token, restore +1 Wound",
                         "[CROWN]: Draw a Tactics Card.",
-                        "[LETTER]: Instead of placing a condition roken, target 1 friendly unit. It restores 1 Wound, +1 Wound for each of its destroyed ranks"
+                        "[LETTER]: Instead of placing a Condition token, target 1 friendly unit. It restores 1 Wound, +1 Wound for each of its destroyed ranks"
                     ]
                 }
             ],
@@ -773,7 +773,7 @@
                 {
                     "name": "Gracious Host",
                     "effect": [
-                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*)",
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
                         "While Influencing a friendly unit, that unit is a House Royce unit. It also gains +1 to Morale Test Rolls and each time it passes a Morale Test, restores 1 Wound, +2 Wounds if the unit has 2 destroyed ranks."
                     ]
                 }
@@ -788,7 +788,7 @@
             "tactics": [
                 "counterplot",
                 "false-agenda",
-                "parley"
+                "parlay"
             ],
             "fluff": {
                 "quote": "\"A bag of dragons buys a man's silence for a while, but a well-placed quarrel buys it forever.\""
@@ -1271,7 +1271,7 @@
                 "adaptive-methods"
             ],
             "fluff": {
-                "quote": "\"The six had gathered at Runestone after Lsya Arrin's fall, and there made a pact together, vowing to defend Lord Robert, the Vale, and one another."
+                "quote": "\"The six had gathered at Runestone after Lsya Arryn's fall, and there made a pact together, vowing to defend Lord Robert, the Vale, and one another."
             },
             "faction": "arryn",
             "version": "U16",
@@ -1434,7 +1434,7 @@
                 {
                     "trigger": "When an enemy NCU activates:",
                     "effect": [
-                        "If that NCU Claims a zine this Turn, after resolving that zone's effect, you may move that NCU to any unclaimed zone.",
+                        "If that NCU Claims a zone this Turn, after resolving that zone's effect, you may move that NCU to any unclaimed zone.",
                         "If you removed that NCU from [LETTER], target 1 enemy Combat Unit. They gain 1 Condition token."
                     ]
                 }
@@ -1464,8 +1464,8 @@
             }     
         },
         {
-            "id": "parley",
-            "name": "Parley",
+            "id": "parlay",
+            "name": "Parlay",
             "faction": "arryn",
             "version": "U16",
             "role": "tactics",
@@ -1898,7 +1898,7 @@
         }
     ],
     "abilities": {
-        "\"BATTLE READY": {
+        "BATTLE READY": {
             "effect": [
                 "If this unit is **Weakened**, its Melee Attacks gain +2 Attack Dice."
             ],
@@ -1906,7 +1906,7 @@
                 "melee"
             ]
         },
-        "\"BROADSWORD": {
+        "BROADSWORD": {
             "effect": [
                 "• **Precision**",
                 "• After this Attack is completed, this unit performs 1 Morale Test."
@@ -1953,7 +1953,7 @@
         },
         "HANDSOME REWARD": {
             "effect": [
-                "If this unit destroys an enemy unit, gain an additional victory point"
+                "If this unit destroys an enemy unit, gain an additional Victory Point"
             ],
             "icons": [
                 "melee"
@@ -2018,7 +2018,7 @@
                 "This model counts as Lyn Corbray for all abilities and effects."
             ],
             "icons": [
-                "wound"
+                "wounds"
             ]
         },
         "LOYAL APPRENTICE": {
@@ -2046,7 +2046,7 @@
         "ORDER: SCAPEGOAT": {
             "trigger": "When a friendly Infantry Unit within Long Range fails a Panic Test:",
             "effect": [
-                "You may deal the same amount of Wounds to this unit instead. If this Ability destroys Marillion's unit, your opponent does not gain a Victory Point from **Victory through Combat**."
+                "You may deal the same amount of Wounds to this unit instead. If this Ability destroys Marillion's unit, your opponent does not gain a Victory Point from **Victory Through Combat**."
             ],
             "icons": [
                 "order"
@@ -2144,7 +2144,7 @@
                 "• This unit has 6 Wounds.",
                 "• This unit cannot Control Objectives and cannot grant Victory Points.",
                 "• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-                "• This unit cannot suffer Wounds from panic tests. Instead when this unit fails a panic test, 1 enemy unit engaged with this unit restores D3 Wounds"
+                "• This unit cannot suffer Wounds from Panic Tests. Instead when this unit fails a Panic Test, 1 enemy unit engaged with this unit restores D3 Wounds"
             ],
             "icons": [
                 "wounds6"
@@ -2285,12 +2285,12 @@
         {
             "id": "arryn-banners",
             "name": "Arryn Banners",
-            "faction": "baratheon",
+            "faction": "arryn",
             "version": "U16",
             "role": "special",
             "category": "banners",
             "front": {
-                "ratio": 0.2,
+                "ratio": 0.3,
                 "crests": 2,
                 "style": "banners",
                 "text": [
@@ -2302,7 +2302,7 @@
                 ]
             },
             "back": {
-                "ratio": 0.25,
+                "ratio": 0.3,
                 "crests": 2,
                 "image": true
             }
@@ -2315,9 +2315,9 @@
             "role": "special",
             "category": "faction",
             "front": {
-                "ratio": 0.2,
+                "ratio": 0.3,
                 "crests": 2,
-                "style": "banners",
+                "style": "special",
                 "text": [
                     "**Play immediately:**",
                     "Score 1 Victory Point",
@@ -2325,22 +2325,22 @@
                 ]
             },
             "back": {
-                "ratio": 0.25,
+                "ratio": 0.3,
                 "crests": 2,
                 "image": true
             }
         },
         {
             "id": "alyssas-tears",
-            "name": "Giant's Lance",
+            "name": "Alyssa's Tears",
             "faction": "arryn",
             "version": "U16",
             "role": "special",
             "category": "faction",
             "front": {
-                "ratio": 0.2,
+                "ratio": 0.3,
                 "crests": 2,
-                "style": "banners",
+                "style": "special",
                 "text": [
                     "**Play immediately:**",
                     "You may restore up to 5 Wounds *(total)* across any number of friendly Combat Units.",
@@ -2348,7 +2348,7 @@
                 ]
             },
             "back": {
-                "ratio": 0.25,
+                "ratio": 0.3,
                 "crests": 2,
                 "image": true
             }
