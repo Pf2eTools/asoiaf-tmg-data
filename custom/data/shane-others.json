@@ -1,0 +1,1034 @@
+{
+    "_meta": {
+        "author": "shane",
+        "id": "shane-others",
+        "language": "en",
+        "pre": "kvy"
+    },
+    "factions": {
+        "others": {
+            "text_color": "#4b667e",
+            "highlight_color": "gold",
+            "bg_rotation": 0,
+            "long": "The Others"
+        }
+    },
+    "abilities": {
+        "RISE AGAIN": {
+            "effect": [
+                "Each time this unit fails a Panic Test, target 1 other friendly Infantry unit in Long Range. It restores 2 Wounds."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "ORDER: CONSUMED BY FEAR": {
+            "trigger": "When this unit Attacks or is Attacked, after the Attack is completed:",
+            "effect": [
+                "Target 1 enemy in Long Range of this unit. It suffers 1 Panic Test with -2 to thier roll. On failure, it becomes **Weakend**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "SHROUDED SENTRIES": {
+            "effect": [
+                "This unit cannot be targeted by Ranged Attacks."
+            ]
+        },
+        "PETRIFIED MOUNT": {
+            "effect": [
+                "Each time an enemy Cavalry unit Activates within Long Range of this unit, it suffers 1 Panic Test with -2 to thier roll. On failure, it suffers -3[MOVEMENT] for that Turn."
+            ]
+        },
+        "NO FEAR": {
+            "effect": [
+                "If this unit fails a Panic Test, instead of suffering any Wounds, it restores 2 Wounds"
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "DEMONIC HORDE": {
+            "effect": [
+                "• **Critical Blow**",
+                "• May always re-roll Attack Dice."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "COLD SHADOW": {
+            "effect": [
+                "• This unit has 5 Wounds.",
+                "• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action."
+            ],
+            "icons": [
+                "wounds5"
+            ]
+        },
+        "UNSEEN TERROR": {
+            "effect": [
+                "Enemies in Long Range suffer -1 to Morale Test rolls."
+            ]
+        },
+        "UNDEAD SNOW BEAR": {
+            "effect": [
+                "• This unit has 5 Wounds.",
+                "• At the start of this unit’s Activation, it may perform 1 Maneuver Action."
+            ],
+            "icons": [
+                "wounds5"
+            ]
+        },
+        "LETHAL MAULING": {
+            "effect": [
+                "• **Vicious**",
+                "• **Sundering**",
+                "• Gains +1 Attack Die for each Wound this unit has suffered."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "UNDEAD GIANT": {
+            "effect": [
+                "• This unit has 6 Wounds.",
+                "• This unit only suffers 1 Wound for every 2 unblocked Hits from Attack or effect.",
+                "• This unit only suffer a maximum of 2 Wounds from failing Panic Tests."
+            ],
+            "icons": [
+                "wounds6"
+            ]
+        },
+        "SKULL CRUSHING": {
+            "effect": [
+                "• **Vicious**",
+                "• Defenders do not roll Defense Dice",
+                "• If the Defender fails thier Panic Test, target 1 other enemy unit in Short Range of that unit. They suffer 1 Panic Test with -2 to thier roll."
+            ],
+            "icons": [
+                "melee",
+                "wounds"
+            ]
+        },
+        "ICE SPIDERS": {
+            "effect": [
+                "• Each model in this unit has 3 Wounds.",
+                "• At the start of this unit’s Activation, it may perform 1 Maneuver Action."
+            ],
+            "icons": [
+                "wounds3"
+            ]
+        },
+        "FRIGID STING": {
+            "effect": [
+                "Before rolling Attack Dice, the Defender becomes **Weakened**, **Vulneralbe** and **Panicked**. Attach 1 Spider Venom card to the Defender."
+            ],
+            "icons": [
+                "melee",
+                "poison"
+            ]
+        }
+    },
+    "unit": [
+        {
+            "id": "Decayed-Wights",
+            "name": "Decayed Wights",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Rise Again",
+                "Order: Consumed by fear"
+            ],
+            "attacks": [
+                {
+                    "name": "Rotted Steel",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 4,
+            "cost": 4,
+            "tray": "infantry",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "Sentry-Wights",
+            "name": "Sentry Wights",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Rise Again",
+                "Shrouded Sentries",
+                "Order: Threaten"
+            ],
+            "attacks": [
+                {
+                    "name": "Tainted Spear",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "Prowler-Wights",
+            "name": "Prowler Wights",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Rise Again",
+                "Order: War Cry",
+                "Petrified Mount"
+            ],
+            "attacks": [
+                {
+                    "name": "Piercing Terror",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "Berserker-Wights",
+            "name": "Berserker Wights",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Superior Numbers",
+                "Fueled by Slaughter"
+            ],
+            "attacks": [
+                {
+                    "name": "Tear & Bite",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        7,
+                        8
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "Wight-Horde",
+            "name": "Wight Horde",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "No Fear",
+                "Order: Resilience",
+                "Demonic Horde"
+            ],
+            "attacks": [
+                {
+                    "name": "Demonic Horde",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        8,
+                        7,
+                        6
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 6,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "Cold-Shadows",
+            "name": "Cold Shadows",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Cold Shadow",
+                "Unseen Terror",
+                "Order: Tactical Reposition"
+            ],
+            "attacks": [
+                {
+                    "name": "Striking Fear",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 5,
+            "cost": 5,
+            "tray": "solo",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "cavalry"
+        },
+        {
+            "id": "Undead-Snow-Bear",
+            "name": "Undead Snow Bear",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Undead Snow Bear",
+                "Intimidating Presence",
+                "Lethal Mauling"
+            ],
+            "attacks": [
+                {
+                    "name": "Lethal Mauling",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        3
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 4,
+            "speed": 4,
+            "cost": 5,
+            "tray": "solo",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "monster"
+        },
+        {
+            "id": "Undead-Giant",
+            "name": "Undead Giant",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Undead Giant",
+                "Skull Crushing"
+            ],
+            "attacks": [
+                {
+                    "name": "Skull Crushing",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 4,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "monster"
+        },
+        {
+            "id": "Ice-Spiders",
+            "name": "Ice Spiders",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "unit",
+            "abilities": [
+                "Ice Spiders",
+                "Intimidating Presence",
+                "Frigid Sting"
+            ],
+            "attacks": [
+                {
+                    "name": "Frigid Sting",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 6,
+            "cost": 8,
+            "tray": "cavalry",
+            "rules": [
+                "spider-venom"
+            ],
+            "fluff": {
+                "lore": ""
+            },
+            "icon": "cavalry"
+        }
+    ],
+    "ncu": [
+        {
+            "id": "White-Walkern",
+            "name": "White Walker",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Bringer of Death",
+            "abilities": [
+                {
+                    "name": "Master of the Slain",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing a friendly Infantry unit, it gains +1 to Hit and +1[MOVEMENT]."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "back_text": [
+                {
+                    "text": "*Your army may only include 1 White Walker, Bringer of Death.*",
+                    "name": "Limited"
+                }
+            ],
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "30303",
+            "name": "Craster",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Godly Man",
+            "abilities": [
+                {
+                    "name": "Appeasing the Gods",
+                    "effect": [
+                        "Craster cannot Claim [Swords].",
+                        "Each time Craster Claims a zone, you may draw 1 Tactics card.",
+                        "If you do not draw a Tacticscard, instead place 1 Order token on Craster.",
+                        "At the start of any Round, you may target 1 friendly Combat Unit. Remove any number of Order tokens from Craster and restore that many Wounds to that unit."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Nella",
+            "name": "Nella",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "ncu",
+            "title": "Wildling Wife of Craster",
+            "abilities": [
+                {
+                    "name": "Unspeakable Sacrifice",
+                    "effect": [
+                        "Nella cannot Claim [Swords].",
+                        "Nella begins the game with 3 Order tokens on her.",
+                        "Each time Nella Activates, you may remove 1 Order token from her.",
+                        "If you do, target 1 friendly Combat Unit. It restores 2 Wounds, Target all enemies engaged with that unit. They become **Panicked**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "White-Mist",
+            "name": "White Mist",
+            "faction": "others",
+            "version": "S06 V2",
+            "role": "ncu",
+            "abilities": [
+                {
+                    "name": "Herald of the Others",
+                    "effect": [
+                            "When this Element Claims a zone, you must replace that zone's effect with:",
+                            "*Target 1 enemy Combat Unit. It becomes* **Panicked** *and loses all Abilities until the end of the Round.*",
+                            "If this Element Claims a zone, it is destroyed at the end of the Round."
+                    ]
+                }
+            ],
+            "cost": 2,
+            "character": true,
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Gathering-Cold",
+            "name": "Gathering Cold",
+            "faction": "others",
+            "version": "S06 V2",
+            "role": "ncu",
+            "abilities": [
+                {
+                    "name": "Herald of the Others",
+                    "effect": [
+                            "When this Element Claims a zone, you must replace that zone's effect with:",
+                            "*Remove all Condition tokens from each friendly Combat Unit.*",
+                            "*Target 2 friendly Combat Units. They each restore 2 Wounds, +1 Wound for each of your Elements currently Claiming a tone on the Tactics Board.*",
+                            "If this Element Claims a zone, it is destroyed at the end of the Round."
+                    ]
+                }
+            ],
+            "cost": 2,
+            "character": true,
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Winds-of-Winter",
+            "name": "Winds of Winter",
+            "faction": "others",
+            "version": "S06 V2",
+            "role": "ncu",
+            "abilities": [
+                {
+                    "name": "Herald of the Others",
+                    "effect": [
+                            "When this Element Claims a zone, you must replace that zone's effect with:",
+                            "*All enemy Combat Units become* **Panicked**.",
+                            "*2 enemy Combat Units become* **Vulnerable**.",
+                            "*2 enemy Combat Units become* **Weakened**.",
+                            "If this Element Claims a zone, it is destroyed at the end of the Round."
+                    ]
+                }
+            ],
+            "cost": 2,
+            "character": true,
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Veil-of-Night",
+            "name": "Veil of Night",
+            "faction": "others",
+            "version": "S06 V2",
+            "role": "ncu",
+            "abilities": [
+                {
+                    "name": "Herald of the Others",
+                    "effect": [
+                            "When this Element Claims a zone, you must replace that zone's effect with:",
+                            "*Target 1 enemy Combat Unit. It becomes* **Panicked** *and suffers 1 Panic Test with -2 to its roll. It also suffers -1 to Hit and must Attack using its lowest Attack Die Value unit the end of the Round.*",
+                            "If this Element Claims a zone, it is destroyed at the end of the Round."
+                    ]
+                }
+            ],
+            "cost": 2,
+            "character": true,
+            "fluff": {
+                "quote": ""
+            }
+        } 
+    ],
+    "attachment": [
+        {
+            "id": "White-Walker-c",
+            "name": "White Walker",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "The Ancient Enemy",
+            "abilities": [
+                "Intimidating Presence",
+                "Horrific Visage"
+            ],
+            "tray": "infantry",
+            "commander": true,
+            "tactics": [
+                "issue-commands",
+                "ancient-infamy",
+                "cold-winds-rising"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Ice-Wight-c",
+            "name": "Ice Wight",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "attachment",
+            "title": "Thrall of the Others",
+            "abilities": [
+                "Relentless",
+                "Order: Incite"
+            ],
+            "tray": "infantry",
+            "commander": true,
+            "tactics": [
+                "assault-orders",
+                "reckless-strikes",
+                "spoils-in-flesh"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "White-Walker",
+            "name": "White Walker",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Intimidating Presence",
+                "Horrific Visage"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry",
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing White Walker, The Ancient Enemy. Your army may onlyinclude 1 non-Commander White Walker Attachment.*"
+                }
+            ],
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Ice-Wight",
+            "name": "Ice Wight",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Relentless",
+                "Order: Incite"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry",
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Ice Wight, Thrall of the Others. Your army may onlyinclude 1 non-Commander Ice Wight Attachment.*"
+                }
+            ],
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Undead-Direwolf",
+            "name": "Undead Direwolf",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Vicious",
+                "Prey on Fear"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry",
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Armored-Wight",
+            "name": "Armored Wight",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Protection of the Crown",
+                "Improved Defenses"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry",
+            "fluff": {
+                "quote": ""
+            }
+        },
+        {
+            "id": "Stalker-Wight",
+            "name": "Stalker Wight",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "attachment",
+            "abilities": [
+                "Outflank",
+                "Furious Charge"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry",
+            "back_text": [
+                {
+                    "text": "*This Attachment ignores the usual Attachment limits.*"
+                }
+            ],
+            "fluff": {
+                "quote": ""
+            }
+        }
+    ],
+    "tactics": [
+        {
+            "id": "the-long-night",
+            "name": "The long Night",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "Attach this card to that unit until they are targeted by [Horses].",
+                        "While attached, this unit suffers the following effects based on the Game Round (*effects are cumulative*):",
+                        "**2+**: Suffers -2 to Morale Test rolls.",
+                        "**3+**: When it performs an Action, before resolving that Action, it suffers 1 Wound.",
+                        "**4+**: Cannot restore Wounds."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "price-of-fear",
+            "name": "Price of Fear",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy unit fails a Panic Test:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit in Long Range of that enemy. They may perform 1 Maneuver Action."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "overwhelming-assault",
+            "name": "Overwhelming Assault",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Choose 1. For each of your Elements that have yet to Claim a zone, choose +1:",
+                        "• This Attack may re-roll any Attack Dice.",
+                        "• This Attack gains **Critical Blow**.",
+                        "• This Attack gains **Sundering**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "soul-of-ice",
+            "name": "Soul of Ice",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to a friendly Infantry unit until the end of the game.",
+                        "Each time an enemy Attacks this unit with a Melee Attack, after resolving that Attack, the Attacker suffers 2 Hits, +1 Hit for each of your Elements that have yet to Claim a zone."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "maleficent-necromancers",
+            "name": "Maleficent Necromancers",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Infantry unit and attach this card to them until the end of the game.",
+                        "When a freindly or enemy unit is destroyed, this unit restores 2 Wounds, +1 Wound for each of your Elements that have yet to Claim a zone."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ancient-supremacy",
+            "name": "Ancient-Supremacy",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes an Attack:",
+                    "effect": [
+                        "Target the Attacker. They suffer 1 Panic Test with -1 to thier roll and +1 Wounds on failure for each of your Elements that have yet to Claim a zone."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "always-winter",
+            "name": "Always Winter",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Round:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit. Attach this card to them until they pass a Morale Test.",
+                        "While attached, your opponent may not target this unit with Tactics Zone effects."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "issue-commands",
+            "name": "Issue Commands",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When your Commander's unit Activates:",
+                    "effect": [
+                        "This unit cannot perform Actions this Turn. Instead, target 1 other friendly unit in Long Range. It performs 1 Attack or Charge Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. Remove 1 Order token from that unit. They may use that Order again this Round."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "White-Walker"
+            }
+        },
+        {
+            "id": "cold-winds-rising",
+            "name": "Cold Winds Rising",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly unit. Attach this card to them until the end of the game",
+                        "While attached, each time this unit restores Wounds, target 1 enemy it is engaged with. They suffer 1 Wound."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "White-Walker"
+            }
+        },
+        {
+            "id": "ancient-infamy",
+            "name": "Ancient Infamy",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy in Long Range of a White Walker's unit Activates:",
+                    "effect": [
+                        "That enemy becomes **Panicked** and suffers 1 Panic Test.",
+                        "On a failure, that enemy also becomes **Weakened**."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "White-Walker"
+            }
+        },
+        {
+            "id": "spoils-in-flesh",
+            "name": "Spoils in Flesh",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "If this Attack destoryed an enemey rank, 1 friendly unit in Short Range of the Attacker restores 1 Wound, +1 Wound for each of the Defender's destroyed ranks."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "Ice-Wight"
+            }
+        },
+        {
+            "id": "reckless-strikes",
+            "name": "Reckless Strikes",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Critical Blow** and **Precision**. The Attacker suffers 1 Wound for each Attack Die roll of 1.",
+                        "If this targets an Ice Wight's unit, this Attack rolls its highest Attack Die Value."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "Ice-Wight"
+            }
+        },
+        {
+            "id": "assault-orders",
+            "name": "Assault Orders",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                        "*If this targets an Ice Wight's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "Ice-Wight"
+            }
+        }
+    ],
+    "special": [
+        {
+            "id": "spider-venom",
+            "name": "Spider Venom",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "special",
+            "category": "poison",
+            "front": {
+                "ratio": 0.3,
+                "crests": 1,
+                "style": "small-padding",
+                "text": [
+                    "[SKILL:Venom]",
+                    "A unit may only ever have 1 Attached Spider Venom card at a time.",
+                    "This unit suffers -1 [Movement].",
+                    "Each time this unit performs an Action, before resolving that Action, it suffers 1 Wound, +1 Wound if there are any Elements on the Tactics Board.",
+                    "When a friendly NCU Claims [Bags], you may replace that zone's effect with:",
+                    "*Target 1 friendly unit. Restore up to 2 Wounds and remove 1 Spider Venom card from that unit.*"
+                ]
+            },
+            "back": {
+                "top": [
+                    "[SKILL:Venom]",
+                    "**POISON**"
+                ],
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**At the Start of the Game, place this card close to your Tactics Deck.**",
+                    "An Ability or effect will state when this card will be played."
+                ]
+            }
+        },
+        {
+            "id": "army-of-the-dead",
+            "name": "Army of the Dead",
+            "faction": "others",
+            "version": "S06 V1",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.5,
+                "crests": 1,
+                "text": [
+                    "**The Others armies may never include Neutral Attachments or Units.**"
+                ]
+            }
+        }
+    ]
+}
