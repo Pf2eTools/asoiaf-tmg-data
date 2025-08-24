@@ -65,7 +65,7 @@ class ImageGeneratorTactics(ImageGenerator):
         all_text = Image.new("RGBA", (w, h))
 
         name_max_w = 440 if commander is None else 392
-        name_entry = TextEntry.from_string(data.name.upper(), styles=RootStyle(bold=True, font_size=50, leading=940, font_color="white"))
+        name_entry = TextEntry.from_string(data.name.upper(), styles=RootStyle(bold=True, font_size=50, leading=940, font_color=self.faction_store.name_color(data.faction)))
         rd_name = self.text_renderer.render(name_entry, bbox=(name_max_w, 200), align_y=TextRenderer.ALIGN_CENTER, margin=Spacing(10),
                                             linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
         if commander:
@@ -81,7 +81,8 @@ class ImageGeneratorTactics(ImageGenerator):
 
             rd_cmdr_name = self.text_renderer.render_cmdr_name(commander_name, commander_title, bbox=(622, 66),
                                                                align_y=TextRenderer.ALIGN_CENTER, margin=Spacing(5),
-                                                               styles=RootStyle(font_size=32, font_color="white", leading=1000))
+                                                               styles=RootStyle(font_size=32, font_color=self.faction_store.name_color(data.faction),
+                                                                                leading=1000))
             all_text.alpha_composite(rd_cmdr_name, ((tactics_bg.size[0] - 622) // 2, 262))
 
         section_padding = small_bar.height
@@ -99,8 +100,9 @@ class ImageGeneratorTactics(ImageGenerator):
             bars.alpha_composite(decor, (33, center - decor.size[1] // 2))
             bars.alpha_composite(decor, (673, center - decor.size[1] // 2))
 
-        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, font_color="white", leading=1000,
-                                                                        tracking=-10, stroke_width=0))
+        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, leading=1000, tracking=-10,
+                                                                             font_color=self.faction_store.name_color(data.faction),
+                                                                             stroke_width=0))
         rd_version = self.text_renderer.render(entry_version, bbox=(100, 25), align_y=TextRenderer.ALIGN_BOTTOM,
                                                align_x=TextRenderer.ALIGN_LEFT, supersample=1.0, margin=Spacing(0, 5))
         all_text.alpha_composite(rd_version.rotate(90, expand=1), (19, h - 170))

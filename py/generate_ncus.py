@@ -19,7 +19,7 @@ class ImageGeneratorNCUs(ImageGenerator):
 
         bars = Image.new("RGBA", (w, h))
         large_bar, small_bar, weird_bar = self.asset_manager.get_bars(data.faction)
-        unit_type = self.asset_manager.get_unit_type("NCU", data.faction)
+        unit_type = self.asset_manager.get_unit_type(data.icon or "ncu", data.faction)
         decor = self.asset_manager.get_decor(data.faction)
 
         wb_w, wb_h = weird_bar.size
@@ -58,7 +58,8 @@ class ImageGeneratorNCUs(ImageGenerator):
         sections = []
         for ability in data.abilities:
             section = TextEntry([
-                TextEntry(TextEntry(f"**{ability.name.upper()}**", styles=TextStyle(font_color=self.faction_store.text_color(data.faction)))),
+                TextEntry(
+                    TextEntry(f"**{ability.name.upper()}**", styles=TextStyle(font_color=self.faction_store.text_color(data.faction)))),
                 *[TextEntry(TextEntry(e)) for e in ability.effect]
             ])
             sections.append(section)
@@ -84,15 +85,16 @@ class ImageGeneratorNCUs(ImageGenerator):
         ]
         if data.title is not None:
             names.append(TextEntry(TextEntry(data.title.upper(), styles=TextStyle(font_size=0.6, leading=950, padding=Spacing(0, 40)))))
-        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color="white", font_size=50, stroke_width=0.1,
-                                                                    paragraph_padding=80))
+        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(data.faction), font_size=50,
+                                                                    stroke_width=0.1, paragraph_padding=80))
         rd_names = self.text_renderer.render(name_entries, bbox=(362, 160), margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
         all_text.alpha_composite(rd_names, (326, 62))
         # endregion name
 
-        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, font_color="white", leading=1000,
-                                                                        tracking=-10, stroke_width=0))
+        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, leading=1000, tracking=-10,
+                                                                             font_color=self.faction_store.name_color(data.faction),
+                                                                             stroke_width=0))
         rd_version = self.text_renderer.render(entry_version, bbox=(100, 25), align_y=TextRenderer.ALIGN_BOTTOM,
                                                align_x=TextRenderer.ALIGN_LEFT, supersample=1.0, margin=Spacing(0, 5))
         all_text.alpha_composite(rd_version.rotate(90, expand=1), (19, h - 170))
@@ -124,7 +126,7 @@ class ImageGeneratorNCUs(ImageGenerator):
         bars_lower = Image.new("RGBA", (w, h))
         bars_upper = Image.new("RGBA", (w, h))
         large_bar, small_bar, corner_bar = self.asset_manager.get_bars(data.faction)
-        unit_type = self.asset_manager.get_unit_type("NCU", data.faction)
+        unit_type = self.asset_manager.get_unit_type(data.icon or "ncu", data.faction)
         decor = self.asset_manager.get_decor(data.faction)
         wb_w, wb_h = corner_bar.size
         lb_w, lb_h = large_bar.size
@@ -211,8 +213,8 @@ class ImageGeneratorNCUs(ImageGenerator):
         paras = [TextEntry(names)]
         if data.fluff and data.fluff.quote:
             paras.append(TextEntry(TextEntry(data.fluff.quote, styles=TextStyle(font_size=0.6, italic=True))))
-        entries = TextEntry.from_array(paras, styles=RootStyle(font_color="white", font_size=54, stroke_width=0.1, leading=1000,
-                                                               paragraph_padding=300))
+        entries = TextEntry.from_array(paras, styles=RootStyle(font_color=self.faction_store.name_color(data.faction), font_size=54,
+                                                               stroke_width=0.1, leading=1000, paragraph_padding=300))
         rd_names = self.text_renderer.render(entries, bbox=(540, 224), margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
         layer_text.alpha_composite(rd_names, (147, 62))

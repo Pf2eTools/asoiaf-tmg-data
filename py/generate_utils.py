@@ -1264,7 +1264,12 @@ class TextRenderer:
             text_renderer = self.__class__(self.asset_manager)
             im_gen = ImageGenerator(self.asset_manager, text_renderer)
             icon = token.replace("SKILL:", "")
-            rendered = apply_drop_shadow(im_gen.render_skill_icon(icon), color="black")
+            # FIXME: TODO: Set color automatically from the faction
+            if icon.startswith(":"):
+                [_, color, icon] = icon.split(":", 2)
+            else:
+                color = "gold"
+            rendered = apply_drop_shadow(im_gen.render_skill_icon(icon, color), color="black")
             self._do_render_full_width_icon(entry, rendered)
         else:
             icon = self.get_icon(entry, token)

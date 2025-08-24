@@ -123,7 +123,7 @@ class ImageGeneratorSpecials(ImageGenerator):
         quote = side.get("quote")
         if quote is not None:
             names.append(TextEntry(TextEntry(quote, styles=TextStyle(italic=True, font_size=0.64))))
-        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color="white", font_size=50, stroke_width=0.1))
+        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(data.faction), font_size=50, stroke_width=0.1))
         if style == "banners":
             name_bbox = (bbox_top[2] - bbox_top[0] - 200, bbox_top[3] - bbox_top[1] - 20)
         else:
@@ -151,8 +151,9 @@ class ImageGeneratorSpecials(ImageGenerator):
                 image = self.asset_manager.get_special_image(data.id, (inner_w, inner_h_bot))
             special_card.alpha_composite(image.crop((0, 0, inner_w, inner_h_bot)), (bbox_bot[0], bbox_bot[1]))
 
-        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, font_color="white", leading=1000,
-                                                                        tracking=-10, stroke_width=0))
+        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, tracking=-10, leading=1000,
+                                                                             font_color=self.faction_store.name_color(data.faction),
+                                                                             stroke_width=0))
         rd_version = self.text_renderer.render(entry_version, bbox=(100, 25), align_y=TextRenderer.ALIGN_BOTTOM,
                                                align_x=TextRenderer.ALIGN_LEFT, supersample=1.0, margin=Spacing(0, 5))
         layer_text.alpha_composite(rd_version.rotate(90, expand=1), (19, h - 170))
@@ -458,7 +459,7 @@ class ImageGeneratorSpecials(ImageGenerator):
 
         layer_text = Image.new("RGBA", (w, h))
         names = [TextEntry(TextEntry(self.faction_store.get_rendered(faction).upper(), styles=TextStyle(leading=1000, bold=True)))]
-        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color="white", font_size=54, stroke_width=0.1))
+        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(faction), font_size=54, stroke_width=0.1))
         name_bbox = (bbox_top[2] - bbox_top[0] - 20, bbox_top[3] - bbox_top[1] - 20)
         rd_names = self.text_renderer.render(name_entries, bbox=name_bbox, margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)

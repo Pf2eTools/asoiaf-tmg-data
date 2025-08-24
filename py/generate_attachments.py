@@ -137,14 +137,15 @@ class ImageGeneratorAttachments(ImageGenerator):
                 TextEntry(TextEntry(data.title.upper(), styles=TextStyle(font_size=0.6, leading=950, padding=Spacing(0, padding_x)))))
         # FIXME: HACK
         name_font_size = 50 if data.id != "20517" else 35
-        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color="white", font_size=name_font_size, stroke_width=0.1,
-                                                                    paragraph_padding=80))
+        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(data.faction),
+                                                                    font_size=name_font_size, stroke_width=0.1, paragraph_padding=80))
         rd_names = self.text_renderer.render(name_entries, bbox=bbox, margin=Spacing(10), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
         all_text.alpha_composite(rd_names, (name_x, name_y))
 
-        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, font_color="white", leading=1000,
-                                                                             tracking=-10, stroke_width=0))
+        entry_version = TextEntry.from_string(data.version, styles=RootStyle(font_size=20, italic=True, leading=1000, tracking=-10,
+                                                                             font_color=self.faction_store.name_color(data.faction),
+                                                                             stroke_width=0))
         rd_version = self.text_renderer.render(entry_version, bbox=(100, 25), align_y=TextRenderer.ALIGN_BOTTOM,
                                                align_x=TextRenderer.ALIGN_LEFT, supersample=1.0, margin=Spacing(0, 5))
         all_text.alpha_composite(rd_version.rotate(90, expand=1), (19, h - 130))
@@ -331,8 +332,8 @@ class ImageGeneratorAttachments(ImageGenerator):
         paras = [TextEntry(names)]
         if data.fluff and data.fluff.quote:
             paras.append(TextEntry(TextEntry(data.fluff.quote, styles=TextStyle(italic=True, font_size=0.6))))
-        entries = TextEntry.from_array(paras, styles=RootStyle(font_color="white", font_size=name_fs, stroke_width=0.1, leading=1000,
-                                                               paragraph_padding=300))
+        entries = TextEntry.from_array(paras, styles=RootStyle(font_color=self.faction_store.name_color(data.faction), font_size=name_fs,
+                                                               stroke_width=0.1, leading=1000, paragraph_padding=300))
         rd_names = self.text_renderer.render(entries, bbox=bbox, margin=Spacing(10), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
         layer_text.alpha_composite(rd_names, (names_x, names_y))

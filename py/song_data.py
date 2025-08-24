@@ -163,6 +163,7 @@ class SongData(MixinTypeCheck):
 @dataclass(frozen=True)
 class SongDataNCU(SongData):
     role = SongRole.ncu
+    icon: Optional[str] = None
     abilities: List[NcuAbility] = dataclasses.field(default_factory=list)
     cost: int = 0
     character: bool = True
@@ -538,6 +539,9 @@ class FactionStore:
         if faction is None:
             return default
         return faction.get(key, default)
+
+    def name_color(self, faction):
+        return self._get(faction, "name_text_color", "white")
 
     def text_color(self, faction):
         return self._get(faction, "text_color", "#7FDBFF")
