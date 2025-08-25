@@ -125,7 +125,7 @@ class ImageGeneratorSpecials(ImageGenerator):
             names.append(TextEntry(TextEntry(quote, styles=TextStyle(italic=True, font_size=0.64))))
         name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(data.faction), font_size=50, stroke_width=0.1))
         if style == "banners":
-            name_bbox = (bbox_top[2] - bbox_top[0] - 200, bbox_top[3] - bbox_top[1] - 20)
+            name_bbox = (bbox_top[2] - bbox_top[0] - 300, bbox_top[3] - bbox_top[1] - 20)
         else:
             name_bbox = (bbox_top[2] - bbox_top[0] - 20, bbox_top[3] - bbox_top[1] - 20)
         rd_names = self.text_renderer.render(name_entries, bbox=name_bbox, margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
