@@ -55,7 +55,7 @@ class AssetManager:
         return self.get(f"{self.ASSETS_DIR}/common/bg-skills.png", (611, 827), (0, 0))
 
     def get_unit_image(self, unit_id):
-        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}.png", (460, 640), (10, 40))
+        return self.get(f"{self.ASSETS_DIR}/units/{unit_id}.png", (460, 640), (20, 60))
 
     def get_unit_back_image(self, unit_id):
         return self.get(f"{self.ASSETS_DIR}/units/{unit_id}b.png", (797, 827), (40, 40))

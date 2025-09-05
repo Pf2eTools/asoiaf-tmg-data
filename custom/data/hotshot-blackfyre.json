@@ -3,7 +3,7 @@
         "author": "Hotshot",
         "id": "hotshot-blackfyre",
         "language": "en",
-        "pre": "hsb"
+        "pre": "hst"
     },
     "factions": {
         "blackfyre": {
@@ -72,7 +72,7 @@
         "SHOCK AND AWE": {
             "effect": [
                 "After Successfully completing a Charge:",
-                "• If this Melee Attack delt any wounds, this unit heals 1 Wound.",
+                "• If this Melee Attack dealt any wounds, this unit heals 1 Wound.",
                 "• If this Attack destroyed a Rank, the defender becomes **Panicked**."
             ],
             "icons": [
@@ -695,9 +695,12 @@
             "speed": 5,
             "cost": 6,
             "tray": "infantry",
+            "rules": [
+                "blackfyre-banner"
+            ],
             "back_text": [
                 {
-                    "text": "*Can only be fielded in an army including 'Aegon Targaryn, The Heir Returned', He must be attached to this unit. Your Army cannot contain any **King's Guard**.*",
+                    "text": "*Can only be fielded in an army including 'Aegon Targaryen, The Heir Returned', He must be attached to this unit. Your Army cannot contain any **King's Guard**.*",
                     "name": "Character"
                 }
             ],
@@ -772,7 +775,7 @@
                 {
                     "name": "Gold Sways",
                     "effect": [
-                        "**Once per game, when an enemy combat unit is destroyed, you may restore 1 wound +1 wound for each of it's destroyed ranks to a friendly combat unit in Short Range of the destroyed unit, if an attachemnt was destroyed, 1 of those wounds may be an attachment, ignoring normal attachment rules.*"
+                        "**Once per game, when an enemy combat unit is destroyed, you may target 1 friendly unit in Short Range and restore 1 Wound +1 for each of that unit's missing ranks, if an attachemnt was destroyed, 1 of those wounds may be an attachment, ignoring normal attachment rules.*"
                     ]
                 }
             ],
@@ -841,7 +844,8 @@
                 {
                     "name": "False Truths?",
                     "effect": [
-                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
+                        "Each time Tyrion claims a zone, you may replace that zone's effect with:",
+                        "**Influence** (*Attach this card to a Combat Unit until the end of the Round*):",
                         "While Influencing a unit, that unit gains **Order**: Counterstrategy."
                     ]
                 },
@@ -870,7 +874,7 @@
                     "name": "Prideful Retaliation",
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
-                        "While Influencing a unit, each time that unit passes a Morale test, 1 engaged enemy suffers 2 hits +1 for each of this unit's remainging Ranks.",
+                        "While Influencing a unit, each time that unit passes a Morale test, 1 engaged enemy suffers 2 Hits +1 for each of this unit's remaining ranks.",
                         "While Influencing a unit, that unit counts as *House Peake*."
                     ]
                 }
@@ -894,7 +898,7 @@
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
                         "While Influencing a unit, that unit suffers -1 Wounds from failing Panic Tests.",
-                        "Each time a Influcenced unit passes a Morale Test place 1 Faith Token on Speta Lemore. These Faith Tokens may be expended (on the Influcenced unit only) after rolling Defence Die. If you do, the Defender blocks 1 Hit +1 for each of its destroyed ranks."
+                        "Each time a Influcenced unit passes a Morale Test place 1 Faith Token on Speta Lemore. Faith Tokens may be expended after the *influcenced unit* has rolled Defence Die, you may expend 1 Token. If you do, the Defender blocks 1 Hit +1 for each of its destroyed ranks."
                     ]
                 }
             ],
@@ -1353,7 +1357,10 @@
             "character": true,
             "back_text": [
                 {
-                    "text": "*May only be fielded in a army containing Jon Lothston, The Gold Bat.*"
+                    "text": "*May only be fielded in a army containing Jon Lothston.*"
+                },
+                {
+                    "text": "*Chain ignores the usual Attachment Limits.*"
                 }
             ],
             "icon": "infantry",
@@ -1631,7 +1638,7 @@
                     "trigger": "When a enemy NCU claims a zone:",
                     "effect": [
                         "After resolving that zone's effect, attach this card to a enemy Combat unit. They perform 1 Panic test.",
-                        "Until this unit is targeted by the [MONEY] every time a Blackfyre unit perfroms a Attack against this unit, it suffers 1 hit +1 for each of its remaining ranks."
+                        "Until this unit is targeted by the [MONEY], each time a Blackfyre unit performs a Attack against this unit, before rolling Attack Die, it suffers 1 Hit +1 for each of its remaining ranks."
                     ]
                 }
             ]
@@ -1697,7 +1704,7 @@
             }
         },
         {
-            "id": "to0-bold-to0-eager-for-glory",
+            "id": "too-bold-too-eager-for-glory",
             "name": "Too Bold, Too Eager For Glory",
             "faction": "blackfyre",
             "version": "S06 V1",
@@ -1729,7 +1736,7 @@
                     "trigger": "When a friendly Combat Unit would be destroyed by a Melee Attack:",
                     "effect": [
                         "Before removing that unit, it performs 1 Melee Attack.",
-                        "If this targets Jon Connington's unit, and this Attack destroys the Defender, your friendly unit is not destroyed, but instead remains in play with 1 Wound."
+                        "If this targets Jon Connington's unit, and this Attack destroys the Defender, Jon Connington's unit is not destroyed, but instead remains in play with 1 Wound."
                     ]
                 }
             ],
@@ -1749,7 +1756,7 @@
                     "effect": [
                         "Replace that zone's effect with:",
                         "*Jon Connington's unit performs 1 Melee Attack",
-                        "After completing this Attack, the Attacker becomes **Vunerable**. If the defender was not destroyed, the Attacker suffers 1 wound, +1 for each of the Defender's remaining ranks."
+                        "After completing this Attack, if this Attack did not destroy a rank, the Attacker becomes **Vunerable**."
                     ]
                 },
                 {
