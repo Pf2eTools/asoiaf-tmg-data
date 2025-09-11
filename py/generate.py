@@ -135,7 +135,12 @@ class Generator:
             get_save_metas = self._default_saves
 
         all_entities = data.all_entities
-        entities_context = [get_generate_context(e, data) for e in all_entities]
+
+        # Jank alert
+        ref_data = [] if data.meta.ref is None else [DataLoader.load_structured(p) for p in data.meta.ref]
+        combined = DataLoader.combine([data] + ref_data)
+
+        entities_context = [get_generate_context(e, combined) for e in all_entities]
 
         to_generate = []
         for context in entities_context:

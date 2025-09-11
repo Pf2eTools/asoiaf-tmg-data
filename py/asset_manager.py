@@ -315,7 +315,7 @@ class CustomAssetManager(AssetManager):
     # FIXME: cropped image overwrites
     def get_cropped(self, path, size, tolerance, cropped_path):
         original = self._get(path)
-        if size is None or self.is_image_right_size(original, size, tolerance):
+        if size is None or "custom" not in path or self.is_image_right_size(original, size, tolerance):
             return original
 
         root = tk.Tk()

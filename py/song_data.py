@@ -402,6 +402,7 @@ class SongMeta(MixinTypeCheck):
     author: Optional[str] = None
     language: Optional[str] = "en"
     pre: Optional[str] = None
+    ref: Optional[List[str]] = None
 
 
 @dataclass(frozen=True)
@@ -451,6 +452,31 @@ class DataLoader:
             languages=json_data.get("languages"),
             factions=json_data.get("factions"),
             icons=json_data.get("icons"),
+        )
+
+    @staticmethod
+    def combine(data_arr):
+
+        def take_first_ids(arr):
+            out = []
+            ids = []
+            for item in arr:
+                if item.id not in ids:
+                    out.append(item)
+                    ids.append(item.id)
+            return out
+
+        return SongDataCollection(
+            meta=data_arr[0].meta,
+            unit=take_first_ids(sum([d.unit for d in data_arr], [])),
+            attachment=take_first_ids(sum([d.attachment for d in data_arr], [])),
+            ncu=take_first_ids(sum([d.ncu for d in data_arr], [])),
+            tactics=take_first_ids(sum([d.tactics for d in data_arr], [])),
+            special=take_first_ids(sum([d.special for d in data_arr], [])),
+            abilities=data_arr[0].abilities,
+            languages=data_arr[0].languages,
+            factions=data_arr[0].factions,
+            icons=data_arr[0].icons,
         )
 
     @staticmethod
