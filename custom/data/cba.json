@@ -320,7 +320,7 @@
         },
         "PROVEN ENDURANCE": {
             "effect": [
-                "While this unit is engaged with an enemy with the same remaining ranks, they do not control Objectives."
+                "Enemies engaged with this unit do not Control Objectives if they have the same remaining ranks as this unit."
             ]
         },
         "QUEEN'S BLADE": {
@@ -399,6 +399,19 @@
         "HARMA'S VANGUARD": {
             "effect": [
                 "This unit counts as containing Harma for abilities and effects."
+            ]
+        },
+        "GIANT'S SPEAR": {
+            "effect": [
+                "• **Vicious**",
+                "• **Sundering**",
+                "• If the Defender is a Cavalry, Monster or War Machine unit, this Attack gains +1 to Hit and rolls +1 Attack Die.",
+                "**• Ranged Only:** Defenders do not roll Defense Dice."
+            ],
+            "icons": [
+                "wounds",
+                "ranged",
+                "melee"
             ]
         },
         "MAMMOTH": {
@@ -1069,6 +1082,45 @@
             "icon": "infantry"
         },
         {
+            "id": "10322",
+            "name": "Giant Spear Throwers",
+            "faction": "freefolk",
+            "version": "cba",
+            "role": "unit",
+            "abilities": [
+                "Giant",
+                "Giant's Spear"
+            ],
+            "attacks": [
+                {
+                    "name": "Giant's Spear",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        5
+                    ]
+                },
+                {
+                    "name": "Giant's Spear",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "solo",
+            "fluff": {
+                "lore": "What’s worse than facing giants in the line-of-battle? Facing giants hurling spears the size of tree trunks from afar. The Free Folk’s alliance with the giants brought their Spear Throwers into the fray, giving them what amounts to artillery made of flesh. Their weapons are crude, but not much finesse is needed for a wooden haft as thick as a large man’s torso. That said, these giants have trouble dealing with foes up close, and must be guarded."
+            },
+            "icon": "monster",
+            "wounds": 6
+        },
+        {
             "id": "10323",
             "name": "Harma's Vanguard",
             "faction": "freefolk",
@@ -1417,7 +1469,7 @@
                 "lore": "The Night’s Watch Builders are known for their ingenuity, and none embodies this more than the Builder Scorpion Crew. With just a few specialized parts, and enough available timber, the Crew can construct a mobile Scorpion, capable of firing massive bolts at long range and with surprising accuracy. Entire ranks can be cut down by a single projectile. However, the Scorpion itself requires time to reposition, and it moves very slowly."
             },
             "icon": "siegeengine",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10507",
@@ -1462,7 +1514,7 @@
                 "lore": "Builder Stone Thrower Crews are adept at constructing and operating mobile Stone Throwers in the field. The Builders insist these are not catapults, as those siege engines are typically on a larger scale and often use specialized projectiles, but the principles are the same. A competent Stone Thrower Crew can land their deadly projectiles dead-center in enemy formations, against which not even the heaviest of infantry have any protection."
             },
             "icon": "siegeengine",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10508",
@@ -4286,6 +4338,79 @@
             }
         },
         {
+            "id": "20720",
+            "name": "Qotho",
+            "faction": "targaryen",
+            "version": "cba",
+            "role": "attachment",
+            "title": "Bloodrider",
+            "abilities": [
+                "Bloodrider",
+                "Intimidating Presence",
+                "Prey On Fear"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                }
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"The Dothraki say a man and his bloodriders share one life...\""
+            }
+        },
+        {
+            "id": "20721",
+            "name": "Cohollo",
+            "faction": "targaryen",
+            "version": "cba",
+            "role": "attachment",
+            "title": "Bloodrider",
+            "abilities": [
+                "Bloodrider",
+                "Battle Scars"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                }
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"They were the khal's brothers, his shadows, his fiercest friends.\""
+            }
+        },
+        {
+            "id": "20722",
+            "name": "Haggo",
+            "faction": "targaryen",
+            "version": "cba",
+            "role": "attachment",
+            "title": "Bloodrider",
+            "abilities": [
+                "Bloodrider",
+                "Fueled By Slaughter"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May not be fielded in an army that includes the \"Drogo's Bloodriders\" unit.*"
+                }
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"'Blood of my blood', Drogo called them, and so it was; they shared a single life.\""
+            }
+        },
+        {
             "id": "20801",
             "name": "Asha Greyjoy",
             "faction": "greyjoy",
@@ -4520,6 +4645,11 @@
             "abilities": [
                 "Order: Scout Openings",
                 "Order: Departing Strike"
+            ],
+            "back_text": [
+                {
+                    "text": "*This Attachment may only be Attached to Martell units.*"
+                }
             ],
             "cost": 2,
             "tray": "infantry",
@@ -4888,7 +5018,7 @@
             "id": "40221",
             "name": "Martial Superiority",
             "faction": "stark",
-            "version": "2021-S03",
+            "version": "cba",
             "role": "tactics",
             "text": [
                 {
