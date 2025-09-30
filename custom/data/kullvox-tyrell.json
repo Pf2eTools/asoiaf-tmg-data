@@ -197,6 +197,15 @@
                 "order"
             ]
         },
+        "ORDER: RELENTLESS": {
+            "trigger": "After this unit is Attacked:",
+            "effect": [
+                "This unit may perform 1 Melee Attack Action."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
         "PROTECTION OF THE CITADEL": {
             "effect": [
                 "While you Control [LETTER], each time this unit is Attacked, it may reroll any Defense Dice and opponents cannot expend **Panicked** tokens on this unit."
@@ -210,6 +219,11 @@
             "icons": [
                 "wounds"
             ]
+        },
+        "TARLY DISCIPLINE": {
+            "effect": [
+                "When an enemy engaged to this unit is targeted by a Ranged Attack, this unit does not suffer a Panic Test as a result of that Attack."
+            ]
         }
     },
     "unit": [
@@ -217,7 +231,7 @@
             "id": "highgarden-pikemen",
             "name": "Highgarden Pikemen",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "unit",
             "abilities": [
                 "Perseverance and Valor",
@@ -230,7 +244,7 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        6,
+                        7,
                         4
                     ]
                 }
@@ -249,11 +263,12 @@
             "id": "rose-knights",
             "name": "Rose Knights",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "unit",
             "abilities": [
                 "Perseverance and Valor",
-                "Deadly Bloom"
+                "Deadly Bloom",
+                "Mastercraft Longsword"
             ],
             "attacks": [
                 {
@@ -582,7 +597,7 @@
             "id": "house-hightower-guards",
             "name": "House Hightower Guards",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "unit",
             "abilities": [
                 "Oldtown Armaments",
@@ -592,7 +607,7 @@
                 {
                     "name": "Oldtown Armaments",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         6,
@@ -614,11 +629,12 @@
             "id": "house-tarly-enforcers",
             "name": "House Tarly Enforcers",
             "faction": "tyrell",
-            "version": "S06 V2",
+            "version": "S06 V2 CBA",
             "role": "unit",
             "abilities": [
                 "Order: Laws of the Realm",
-                "Enforcer's Spear"
+                "Enforcer's Spear",
+                "Tarly Discipline"
             ],
             "attacks": [
                 {
@@ -976,12 +992,12 @@
             "id": "garlan-tyrell-c",
             "name": "Garlan Tyrell",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "attachment",
             "title": "Highgarden's Gallant Knight",
             "abilities": [
                 "Boldness and Courage",
-                "Relentless"
+                "Order: Relentless"
             ],
             "tray": "infantry",
             "character": true,
@@ -1341,12 +1357,11 @@
             "id": "thorn-watch-sentinel-a",
             "name": "Thorn Watch Sentinel",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "attachment",
             "abilities": [
-                "Furious Charge",
                 "Dauntless",
-                "Pathfinder"
+                "Counterstrike"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1488,14 +1503,13 @@
             "id": "loved-by-the-smallfolk",
             "name": "Loved by the Smallfolk",
             "faction": "tyrell",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "When an enemy is performing a Melee Attack, before rolling Attack Dice:",
                     "effect": [
-                        "That enemy performs 1 Morale Test. On a failure, they become **Vulnerable** and **Weakened**.",
-                        "If they are in Short Range of Loras Tyrell's unit, they suffer -2 to their roll."
+                        "The Defender performs 1 Morale Test. On a sucess, the Attacker becomes **Vulnerable** and **Weakened**."
                     ]
                 }
             ],
