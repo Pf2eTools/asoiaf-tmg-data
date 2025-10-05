@@ -107,7 +107,7 @@
         "ORDER: BASTARD'S RETRIBUTION": {
             "trigger": "When this unit Activates:",
             "effect": [
-                "Target 1 enemy in Short Range. They become **Weakened** and **Vulnerable**. Roll a die, on a 6, destroy Harry."
+                "Target 1 enemy in Short Range. They become **Panicked**, **Vulnerable** and **Weakened**. At the end of this Turn roll a die, on a 6, destroy Harry."
             ],
             "icons": [
                 "order"
@@ -126,6 +126,15 @@
             "trigger": "After this unit completes a Melee Attack:",
             "effect": [
                 "This unit may perform 1 Retreat Action and may re-roll Retreat Distance Dice."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: RELENTLESS": {
+            "trigger": "After this unit is Attacked:",
+            "effect": [
+                "This unit may perform 1 Melee Attack Action."
             ],
             "icons": [
                 "order"
@@ -256,12 +265,12 @@
             "id": "tully-cavaliers",
             "name": "Tully Cavaliers",
             "faction": "tully",
-            "version": "S06 V2",
+            "version": "S06 V2 CBA",
             "role": "unit",
             "abilities": [
                 "Cavalry",
                 "Lance",
-                "Rally Banner"
+                "Stubborn Tenacity"
             ],
             "attacks": [
                 {
@@ -441,7 +450,7 @@
             "id": "knights-of-the-trident",
             "name": "Knights of the Trident",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "unit",
             "abilities": [
                 "Cavalry",
@@ -452,10 +461,10 @@
                 {
                     "name": "Sword",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
-                        7,
-                        4
+                        6,
+                        5
                     ]
                 }
             ],
@@ -695,7 +704,7 @@
             "id": "edmure-tully-n",
             "name": "Edmure Tully",
             "faction": "tully",
-            "version": "S06 V2",
+            "version": "S06 V2 CBA",
             "role": "ncu",
             "title": "Heir of Riverrun",
             "abilities": [
@@ -703,9 +712,9 @@
                     "name": "Eager for Glory",
                     "effect": [
                         "Each time Edmure Claims [LETTER] you may replace that zone's effect with:",
-                        "*1 friendly unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                        "*1 Tully Infantry unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
                         "Each time Edmure Claims [HORSE] you may replace that zone's effect with:",
-                        "*1 friendly unit performs 1 Charge Action using its lowest Attack Die Value.*"
+                        "*1 Tully Infantry unit performs 1 Charge Action using its lowest Attack Die Value.*"
                     ]
                 }
             ],
@@ -719,14 +728,14 @@
             "id": "roslin-frey-n",
             "name": "Roslin Frey",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "ncu",
             "title": "Surprising Bride",
             "abilities": [
                 {
                     "name": "Wedding Plans",
                     "effect": [
-                        "Once per game at the start of any Round when you are not First Player, you may destroy 1 friendly NCU other than Roslin. If you do, you become First Player and Activate Roslin."
+                        "Once per game at the start of any Round when you are not First Player, you may destroy 1 friendly NCU other than Roslin. If you do, immediately Activate Roslin and become First Player."
                     ]
                 }
             ],
@@ -913,8 +922,8 @@
             "role": "attachment",
             "title": "Warden of the Southern Marches",
             "abilities": [
-                "Veterancy",
-                "Order: Taunt"
+                "Order: Taunt",
+                "Veterancy"
             ],
             "tray": "infantry",
             "character": true,
@@ -958,12 +967,12 @@
             "id": "karyl-vance-a",
             "name": "Karyl Vance",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "attachment",
             "title": "Heir of Wayfarer's Rest",
             "abilities": [
                 "Dispatched by Riverrun",
-                "Relentless"
+                "Order: Relentless"
             ],
             "tray": "infantry",
             "character": true,
@@ -1256,7 +1265,7 @@
             "id": "harry-rivers-a",
             "name": "Harry Rivers",
             "faction": "tully",
-            "version": "S06 V1",
+            "version": "S06 V2 CBA",
             "role": "attachment",
             "title": "The Bastard of Bracken",
             "abilities": [
