@@ -14,21 +14,11 @@
                 "melee"
             ]
         },
-        "PREDATORY STRIKES": {
-            "effect": [
-                "• **Vicious**",
-                "• Before rolling attack dice, target the Defender. If it has not yet activated this round, it becomes **Vulnerable**."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
         "RUTHLESS VOLLEY": {
             "effect": [
                 "• **Vicious**",
                 "• Ignores units and terrain when determining Line of Sight.",
-                "• Before rolling attack dice, if the Defender is engaged, target the Defender. It becomes **Vulnerable**.",
-                "• After rolling attack dice, you may expend 1 condition token from the Defender to reroll any attack dice."
+                "• Before rolling attack dice, if the Defender is engaged, target the Defender. It becomes **Vulnerable**, and this unit may re-roll any Attack Dice."
             ],
             "icons": [
                 "ranged"
@@ -87,12 +77,13 @@
                 "Before rolling Attack Dice, you may expend 1 Panic token from the Defender and target this unit. If you do, this attack rolls its highest Attack Die Value and may reroll any Attack Dice."
             ],
             "icons": [
-                "melee"
+                "melee",
+                "ranged"
             ]
         },
         "CRUEL INDULGENCE": {
             "effect": [
-                "When an Enemy engaged with this unit gains a condition token, this unit may restore 1 Wound."
+                "When an Enemy engaged with this unit gains a condition token, this unit may restore 2 Wound."
             ]
         },
         "MY NAME IS REEK!": {
@@ -105,7 +96,8 @@
                 "Before rolling Attack Dice, you may expend 1 Condition token from the Defender and target that Enemy. If you do, until the end of the Turn, it loses all Abilities and cannot be targeted by friendly Tactics Cards."
             ],
             "icons": [
-                "melee"
+                "melee",
+                "ranged"
             ]
         },
         "INTIMIDATING REPUTATION": {
@@ -144,7 +136,7 @@
         "ORDER: DANCE!!!": {
             "trigger": "Start of any Turn:",
             "effect": [
-                "This unit performs a 3\" shift. Then, it becomes **Vulnerable**."
+                "This unit performs a 3 [MOVEMENT] Maneuver. Then, it becomes **Vulnerable**."
             ],
             "icons": [
                 "order"
@@ -169,7 +161,8 @@
                 "Before rolling Attack Dice, if the Defender has not yet Activated this Round, this Attack rolls its highest Attack Die Value and gains **Critical Blow** until the end of the turn."
             ],
             "icons": [
-                "melee"
+                "melee",
+                "ranged"
             ]
         },
         "EXPLOIT WEAKNESS": {
@@ -196,6 +189,14 @@
                 "**Panicked** tokens on enemies engaged with this unit may be treated and expented as if they were **Vulnerable** tokens or **Weakened** tokens."
             ]
         },
+        "SADISTIC MUTILATION": {
+            "effect": [
+                "After this unit completes a Melee Attack, you may expend 1 **Weakened** token from the Defender and target that Enemy. If you do, you may either have it suffer 2 Wounds or destroy 1 of its Infantry Attachments."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
         "WEAKENED RESOLVE": {
             "effect": [
                 "When an Enemy engaged with this unit fails a Panic Test, you may target that Enemy. It becomes **Weakened**."
@@ -210,17 +211,17 @@
             "version": "S06B",
             "role": "unit",
             "abilities": [
-                "Predatory Strikes",
+                "Ruthless Aggression",
                 "Prey on Fear"
             ],
             "attacks": [
                 {
-                    "name": "Predatory Strikes",
+                    "name": "Ruthless Aggression",
                     "type": "melee",
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -258,7 +259,7 @@
                 }
             ],
             "defense": 3,
-            "morale": 6,
+            "morale": 5,
             "speed": 5,
             "cost": 7,
             "tray": "infantry",
@@ -280,7 +281,7 @@
                 {
                     "name": "Ruthless Volley",
                     "type": "long",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         7,
@@ -417,7 +418,7 @@
             "icon": "infantry"
         },
         {
-            "id": "10408",
+            "id": "11070",
             "name": "Bloody Mummer Zorse Riders",
             "faction": "bolton",
             "version": "S06B",
@@ -450,7 +451,7 @@
             "wounds": 3
         },
         {
-            "id": "10405",
+            "id": "11071",
             "name": "Bloody Mummer Skirmishers",
             "faction": "bolton",
             "version": "S06B",
@@ -494,8 +495,8 @@
                 {
                     "name": "Worth her Weight in Silver",
                     "effect": [
-                        "Each time Walda Claims a zone, you may target 1 friendly Combat Unit. It restores 1 Wound.",
-                        "Once per game, when Walda would Claim a zone, instead you may target any number of friendly Combat Units and restore a total of 1 + the current game Round Wounds among those units, divided as you choose"
+                        "Each time Walda Claims a zone, you may target 1 friendly Combat Unit. It restores 2 Wound.",
+                        "Once per game, when Walda would Claim a zone, instead you may target any number of friendly Combat Units and restore a total of 2 + the current game Round Wounds among those units, divided as you choose"
                     ]
                 }
             ],
@@ -517,7 +518,7 @@
                     "name": "Bolton Hostage",
                     "effect": [
                         "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*.",
-                        "While influencing an enemy Combat Unit, that unit suffers -1 to Morale Test rolls.",
+                        "While influencing an enemy Combat Unit, that unit suffers -2 to Morale Test rolls.",
                         "If Jeyne Claims [CROWN] and the enemy fails their Panic Test, that unit's owner must discard 1 Tactics Card at random from their hand."
                     ]
                 }
@@ -539,7 +540,8 @@
                 {
                     "name": "Calculated Cruelty",
                     "effect": [
-                        "Once per Round, if Roose has not yet Claimed a zone, when an enemy Combat Unit gains a Condition token, you may target 1 other Enemy Combat Unit in Long Range of it. That unit gains 1 Condition token of the same type."
+                        "Once per Round, if Roose has not yet Claimed a zone, when an enemy Combat Unit gains a Condition token, you may target 1 other Enemy Combat Unit in Long Range of it. That unit gains 1 Condition token of the same type.",
+                        "Each time Roose Claims a zone, you may target 1 enemy Combat Unit. It suffers 1 Hit for each Condition token on it."
                     ]
                 }
             ],
@@ -560,7 +562,7 @@
                 {
                     "name": "Sadistic Hunting",
                     "effect": [
-                        "Once per Round, while Ramsay has not claimed a zone, you may choose 1:",
+                        "Once per Round, choose 1:",
                         "• After a friendly Combat Unit rolls Charge Distance Dice, you may reroll any of those dice and, on a Successful Charge, target all Enemies in Short Range. They become **Panicked**.",
                         "• After a friendly Combat Unit completes a Melee Attack, target 1 other Enemy in Long Range of the Attacker. It suffers 1 Panic Test with -1 to its roll for each of the Defender's destroyed ranks."
                     ]
@@ -588,7 +590,7 @@
                     ]
                 }
             ],
-            "cost": 5,
+            "cost": 4,
             "character": true,
             "fluff": {
                 "quote": "\"Isn't it clever how the maesters go only by one name, even those who had two when they first arrived at the Citadel?\""
@@ -645,7 +647,7 @@
             }
         },
         {
-            "id": "21002",
+            "id": "21083",
             "name": "Roose Bolton",
             "faction": "bolton",
             "version": "S06B",
@@ -664,7 +666,7 @@
             }
         },
         {
-            "id": "20409",
+            "id": "21080",
             "name": "Vargo Hoat",
             "faction": "bolton",
             "version": "S06B",
@@ -688,7 +690,7 @@
             }
         },
         {
-            "id": "20409",
+            "id": "21090",
             "name": "Vargo Hoat",
             "faction": "bolton",
             "version": "S06B",
@@ -769,7 +771,7 @@
             "role": "attachment",
             "abilities": [
                 "Order: Spread Fear",
-                "Ferocious Charge"
+                "Ferocious assault"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -936,7 +938,7 @@
             }
         },
         {
-            "id": "20422",
+            "id": "21081",
             "name": "Rorge",
             "faction": "bolton",
             "version": "S06B",
@@ -955,7 +957,7 @@
             }
         },
         {
-            "id": "20423",
+            "id": "21082",
             "name": "Biter",
             "faction": "bolton",
             "version": "S06B",
@@ -1005,6 +1007,12 @@
                     "effect": [
                         "Target that enemy. It suffers 1 Panic Test. If it is engaged, you may instead have it suffer 1 Panic Test with -1 to its roll for each remaining rank in 1 unit it is engaging. On failure, it suffers 1 Wound per remaining rank in that unit instead of rolling for damage."
                     ]
+                },
+                {
+                    "trigger": "When an friendly Combat Unit Activates:",
+                    "effect": [
+                        "Target 1 enemy engaged with this unit. It performs 1 Morale Test with -1 to its roll for each remaining rank in all units it is engaging. On failure, it becomes **Panicked** and **Vulnerable**."
+                    ]
                 }
             ]
         },
@@ -1051,6 +1059,12 @@
                     "trigger": "When an enemy Combat Unit fails a Panic Test:",
                     "effect": [
                         "Target that enemy. It suffers +1 Wound from that test, and +1 additional Wound if it is **Vulnerable** and +1 additional Wound if it is **Weakened**."
+                    ]
+                },
+                {
+                    "trigger": "When an enemy Combat Unit performs a Melee Attack, before rolling attack dice:",
+                    "effect": [
+                        "Target the Attacker. For each condition token on them, they roll -1 Attack Die."
                     ]
                 }
             ]
@@ -1131,7 +1145,7 @@
                 {
                     "trigger": "After a friendly unit completes a Melee Attack:",
                     "effect": [
-                        "Target the Attacker. It restores 1 Wound, +1 additional Wound for each of the Defender’s destroyed ranks. If this targets a unit containing Ramsay Snow, it restores +1 additional Wound."
+                        "Target the Attacker. It restores 2 Wound, +1 additional Wound for each of the Defender’s destroyed ranks. If this targets a unit containing Ramsay Snow, it restores +1 additional Wound."
                     ]
                 }
             ],
@@ -1262,7 +1276,7 @@
                 }
             ],
             "commander": {
-                "id": "20409"
+                "id": "21080"
             }
         },
         {
@@ -1280,7 +1294,7 @@
                 }
             ],
             "commander": {
-                "id": "20409"
+                "id": "21080"
             }
         },
         {
@@ -1298,7 +1312,7 @@
                 }
             ],
             "commander": {
-                "id": "20409"
+                "id": "21080"
             }
         }
     ]
