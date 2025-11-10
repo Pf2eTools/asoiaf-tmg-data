@@ -102,7 +102,8 @@ def main(path, skip_portrait=True, overwrite=True):
 
             Path(f"./custom/portraits/{meta.id}/round").mkdir(parents=True, exist_ok=True)
             path_round = f"./custom/portraits/{meta.id}/round/{entity.id}.png"
-            if not os.path.exists(path_round):
+            path_round_nc = f"./portraits/round/{entity.id}.png"
+            if not os.path.exists(path_round) and not os.path.exists(path_round_nc):
                 path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{entity.id}b.png", asset_manager.asset_path)
                 loader = ImageLoader(path)
                 saver_round = ImageSaver(path_round)
@@ -112,7 +113,8 @@ def main(path, skip_portrait=True, overwrite=True):
 
             Path(f"./custom/portraits/{meta.id}/square").mkdir(parents=True, exist_ok=True)
             path_square = f"./custom/portraits/{meta.id}/square/{entity.id}.jpg"
-            if not os.path.exists(path_square):
+            path_square_nc = f"./portraits/square/{entity.id}.jpg"
+            if not os.path.exists(path_square) and not os.path.exists(path_square_nc):
                 path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{entity.id}b.png", asset_manager.asset_path)
                 loader = ImageLoader(path)
                 saver_square = ImageSaver(path_square)
@@ -122,7 +124,8 @@ def main(path, skip_portrait=True, overwrite=True):
 
             Path(f"./custom/portraits/{meta.id}/standees").mkdir(parents=True, exist_ok=True)
             path_standee = f"./custom/portraits/{meta.id}/standees/{entity.id}.jpg"
-            if not os.path.exists(path_standee):
+            path_standee_nc = f"./portraits/standees/{entity.id}.jpg"
+            if not os.path.exists(path_standee) and not os.path.exists(path_standee_nc):
                 path = path or get_path_or_dialogue(f"{asset_manager.asset_path}/{entity.id}b.png", asset_manager.asset_path)
                 loader = ImageLoader(path)
                 saver_standee = ImageSaver(path_standee)
