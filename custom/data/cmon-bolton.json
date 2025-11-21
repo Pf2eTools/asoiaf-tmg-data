@@ -102,7 +102,7 @@
         },
         "INTIMIDATING REPUTATION": {
             "effect": [
-                "When an enemy in Short Range Activates, you may target it. If you do, it performs 1 Morale Test with -1 to its roll for each remaining rank in this unit. On a failure, it becomes **Weakened**."
+                "When an enemy in Long Range Activates, you may target it. If you do, it performs 1 Morale Test with -1 to its roll for each remaining rank in this unit. On a failure, it becomes **Weakened**."
             ]
         },
         "SEASONED BRUTALITY": {
@@ -1005,11 +1005,11 @@
                 {
                     "trigger": "When an enemy Combat Unit Activates:",
                     "effect": [
-                        "Target that enemy. It suffers 1 Panic Test. If it is engaged, you may instead have it suffer 1 Panic Test with -1 to its roll for each remaining rank in 1 unit it is engaging. On failure, it suffers 1 Wound per remaining rank in that unit instead of rolling for damage."
+                        "Target that enemy. It performs 1 Morale Test. If it is engaged, it suffers -1 to its roll for each remaining rank in all units it is engaging. On failure, it becomes **Panicked** and **Vulnerable**."
                     ]
                 },
                 {
-                    "trigger": "When an friendly Combat Unit Activates:",
+                    "trigger": "When a friendly Combat Unit Activates:",
                     "effect": [
                         "Target 1 enemy engaged with this unit. It performs 1 Morale Test with -1 to its roll for each remaining rank in all units it is engaging. On failure, it becomes **Panicked** and **Vulnerable**."
                     ]
