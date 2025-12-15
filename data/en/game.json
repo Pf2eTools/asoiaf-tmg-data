@@ -1,0 +1,147 @@
+{
+    "_meta": {
+        "author": "CMON",
+        "id": "game",
+        "language": "en"
+    },
+    "unit": [
+    ],
+    "ncu": [
+    ],
+    "attachment": [
+    ],
+    "tactics": [
+    ],
+    "special": [
+        {
+            "id": "default-tactics-board",
+            "name": "Tactics Board",
+            "role": "special",
+            "category": "tactics-board",
+            "version": "2021",
+            "front": {
+                "CROWN": [
+                    "*1 enemy must make a Panic Test and suffers -1 to their roll.*"
+                ],
+                "MONEY": [
+                    "*Restore up to 3 Wounds and remove 1 Condition Token from 1 unit.*"
+                ],
+                "LETTER": [
+                    "*Draw 2 Tactics Cards and place 1 Condition token on an enemy unit.*"
+                ],
+                "SWORDS": [
+                    "*1 friendly unit may make a free Attack action.*"
+                ],
+                "HORSE": [
+                    "*1 friendly unit may make a free Maneuver or Retreat action.*"
+                ]
+            }
+        },
+        {
+            "id": "scaling-tactics-board",
+            "name": "Tactics Board",
+            "role": "special",
+            "category": "tactics-board",
+            "version": "Playtest 2026",
+            "front": {
+                "CROWN": [
+                    "*Target 1 enemy battlefield unit. It gains 1 condition token, plus 1 additional token for each other zone you control on the council board.*"
+                ],
+                "MONEY": [
+                    "*Target 1 friendly battlefield unit. It restores 2 wounds, plus 1 additional wound for each other zone you control on the council board. Then, it may remove 1 condition token.*"
+                ],
+                "LETTER": [
+                    "*Draw 1 tactics card, plus 1 additional tactics card for each other zone you control on the council board.*"
+                ],
+                "SWORDS": [
+                    "*Target 1 engaged enemy battlefield unit. It suffers 3 hits, plus 1 additional hit for each other zone you control on the council board.*"
+                ],
+                "HORSE": [
+                    "*Target 1 friendly battlefield unit. It may perform a 3” shift, plus 1 additional inch for each other zone you control on the council board. Then, it may pivot.*"
+                ]
+            }
+        },
+        {
+            "id": "faction-tactics-board",
+            "name": "Tactics Board",
+            "role": "special",
+            "category": "tactics-board",
+            "version": "Playtest v0.1",
+            "front": {
+                "CROWN": [
+                    "*Target 1 enemy battlefield unit. It gains 1 condition token. Then, it suffers 1 panic test with -1 to its result for each of its destroyed ranks. On failure, it counts as rolling a 2 on the panic damage die.*"
+                ],
+                "MONEY": [
+                    "*Target 1 friendly battlefield unit. It restores 2 wounds, and may remove 1 condition token.*"
+                ],
+                "LETTER": [
+                    "*Choose 1:*",
+                    "*• Draw 2 tactics cards.*",
+                    "*• At the start of the next round, you become the first player (you take the first turn that round).*"
+                ],
+                "SWORDS": [
+                    "*Target 1 friendly battlefield unit. It may perform 1 charge or melee attack action. It attacks using its lowest attack die value for this action.*"
+                ],
+                "HORSE": [
+                    "*Target 1 friendly battlefield unit. It becomes Weakened. Then, it may perform 1 maneuver or retreat action.*"
+                ]
+            }
+        },
+        {
+            "id": "zone-house",
+            "name": "House",
+            "version": "Playtest v0.1",
+            "role": "special",
+            "category": "zone",
+            "front": {
+                "style": "zone",
+                "icon": "[UNDYING]",
+                "effect": [
+                    "*Activate your House Card's ability.*"
+                ]
+            },
+            "back": {
+                "style": "zone",
+                "text": [
+                    "Used with the 2026 Playtest v0.1"
+                ]
+            },
+            "size": {
+                "w": 70,
+                "h": 120
+            }
+        },
+        {
+            "id": "zone-house-stark",
+            "name": "House Stark",
+            "faction": "stark",
+            "version": "Playtest v0.1",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.4,
+                "crests": 1,
+                "text": [
+                    "*Target 1 friendly  battlefield unit and attach this card to them until the end of their next activation.*",
+                    "*While attached, this unit attacks using its highest attack die value, even if it would be forced to attack using a lower attack die value.*"
+                ]
+            }
+        },
+        {
+            "id": "zone-house-bolton",
+            "name": "House Bolton",
+            "faction": "bolton",
+            "version": "Playtest v0.1",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.4,
+                "crests": 1,
+                "text": [
+                    "*Target 1 enemy  battlefield unit and attach this card to them until the end of their next activation.*",
+                    "*When attached, and each time this unit would perform an action, before it performs that action, it gains 1 condition token of your choice.*"
+                ]
+            }
+        }
+    ]
+}

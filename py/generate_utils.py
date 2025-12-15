@@ -687,7 +687,8 @@ class TextRenderer:
 
         self.margin = kwargs.get("margin", Spacing(0, 0))
         self.base_bias_extra_height = kwargs.get("base_bias_extra_height", 0.7)
-        self.max_font_reduction = kwargs.get("max_font_reduction", 10)
+        max_font_reduction = kwargs.get("max_font_reduction")
+        self.max_font_reduction = 10 if max_font_reduction is None else max_font_reduction
         self.font_reduction_stepsize = kwargs.get("font_reduction_stepsize", 1)
 
         self.bold = False

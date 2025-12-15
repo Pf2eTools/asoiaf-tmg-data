@@ -17,6 +17,8 @@ class ImageGeneratorSpecials(ImageGenerator):
             return self.generate_objective_mission(context)
         elif data.category == "siege-defender":
             return self.generate_objective_mission(context)
+        elif data.category == "tactics-board":
+            return self.generate_tacticsboard(context)
 
         if style == "commander":
             return self.generate_commander(context, is_back)
@@ -123,7 +125,8 @@ class ImageGeneratorSpecials(ImageGenerator):
         quote = side.get("quote")
         if quote is not None:
             names.append(TextEntry(TextEntry(quote, styles=TextStyle(italic=True, font_size=0.64))))
-        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(data.faction), font_size=50, stroke_width=0.1))
+        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(data.faction), font_size=50,
+                                                                    stroke_width=0.1))
         if style == "banners":
             name_bbox = (bbox_top[2] - bbox_top[0] - 300, bbox_top[3] - bbox_top[1] - 20)
         else:
@@ -189,7 +192,7 @@ class ImageGeneratorSpecials(ImageGenerator):
         layer_text = Image.new("RGBA", (w, h))
         if not is_back:
             name_entries = TextEntry.from_string(data.name.upper(), styles=RootStyle(font_color="#5b4a43", font_size=64, stroke_width=0.1,
-                                                                                bold=True, leading=900))
+                                                                                     bold=True, leading=900))
             rd_names = self.text_renderer.render(name_entries, bbox=(380, 140), margin=Spacing(10), align_y=TextRenderer.ALIGN_CENTER,
                                                  linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
             layer_text.alpha_composite(rd_names, ((w - rd_names.width) // 2, 680))
@@ -202,7 +205,8 @@ class ImageGeneratorSpecials(ImageGenerator):
                                                 max_font_reduction=20)
             layer_text.alpha_composite(rd_text, ((w - rd_text.width) // 2, 890))
         else:
-            text_entries = TextEntry.from_array([TextEntry(e) for e in side.get("text")], styles=RootStyle(font_color="white", font_size=32))
+            text_entries = TextEntry.from_array([TextEntry(e) for e in side.get("text")],
+                                                styles=RootStyle(font_color="white", font_size=32))
             rd_text = self.text_renderer.render(text_entries, bbox=(624, 320), margin=Spacing(20), align_x=TextRenderer.ALIGN_CENTER,
                                                 align_y=TextRenderer.ALIGN_CENTER, linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL)
             layer_text.alpha_composite(rd_text, ((w - rd_text.width) // 2, 770))
@@ -235,8 +239,9 @@ class ImageGeneratorSpecials(ImageGenerator):
             bbox_names = (312, 152)
         else:
             bbox_names = (624, 74)
-        name_entries = TextEntry.from_string(data.name.upper(), styles=RootStyle(font_color="white", font_size=50, stroke_width=0.1, bold=True,
-                                                                            leading=900))
+        name_entries = TextEntry.from_string(data.name.upper(),
+                                             styles=RootStyle(font_color="white", font_size=50, stroke_width=0.1, bold=True,
+                                                              leading=900))
         rd_names = self.text_renderer.render(name_entries, bbox=bbox_names, margin=Spacing(10), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
         layer_text.alpha_composite(rd_names, ((w - rd_names.width) // 2, 64))
@@ -389,12 +394,14 @@ class ImageGeneratorSpecials(ImageGenerator):
         layer_text = Image.new("RGBA", (w, h))
 
         name_entries = TextEntry.from_string(name_text, styles=RootStyle(font_size=32, bold=True, font_color=name_color, tracking=10))
-        rd_name = self.text_renderer.render(name_entries, bbox=(230 + offset, 30), margin=Spacing(2), align_y=TextRenderer.ALIGN_CENTER, align_x=TextRenderer.ALIGN_CENTER)
+        rd_name = self.text_renderer.render(name_entries, bbox=(230 + offset, 30), margin=Spacing(2), align_y=TextRenderer.ALIGN_CENTER,
+                                            align_x=TextRenderer.ALIGN_CENTER)
         layer_text.alpha_composite(rd_name, (130, 90))
 
         title = []
         if title_text is not None:
-            title.append(TextEntry(TextEntry(title_text, styles=TextStyle(font_color=name_color, padding=Spacing(8), bold=True, tracking=10))))
+            title.append(
+                TextEntry(TextEntry(title_text, styles=TextStyle(font_color=name_color, padding=Spacing(8), bold=True, tracking=10))))
         text = [TextEntry(TextEntry(e)) for e in side.get("text")]
         section = [TextEntry([*title, *text])]
         text_entries = TextEntry.from_array(section, styles=RootStyle(font_color=text_color, font_size=32, leading=1300))
@@ -406,6 +413,44 @@ class ImageGeneratorSpecials(ImageGenerator):
 
         return special_card
 
+    def generate_tacticsboard(self, context):
+        data: SongDataSpecials = context["data"]
+        side = data.front
+
+        background = self.asset_manager.get_blank_tacticsboard()
+        special_card = Image.new("RGBA", background.size)
+        w, h = special_card.size
+        special_card.alpha_composite(background)
+
+        layer_text = Image.new("RGBA", (w, h))
+
+        zones = ["CROWN", "MONEY", "LETTER", "SWORDS", "HORSE"]
+        zone_entries = [side.get(z) for z in zones]
+
+        def get_rendered_text(entries, font_size, leading, font_reduction_stepsize):
+            entries_renderer = TextEntry.from_array([TextEntry(TextEntry(e)) for e in entries],
+                                                    styles=RootStyle(font_color="#5b4a43", font_size=font_size, leading=leading, paragraph_padding=450))
+            rd_text = self.text_renderer.render(entries_renderer, bbox=(420, 245), margin=Spacing(0), align_x=TextRenderer.ALIGN_CENTER,
+                                                align_y=TextRenderer.ALIGN_TOP, linebreak_algorithm=TextRenderer.LINEBREAK_OPTIMAL,
+                                                font_reduction_stepsize=font_reduction_stepsize)
+            return rd_text
+
+        fs_zones = 48
+        ld_zones = 1300
+        for ze in zone_entries:
+            _ = get_rendered_text(ze, 48, 1200, 1)
+            fs = self.text_renderer.input.font_size / self.text_renderer.input.supersample
+            fs_zones = min(fs, fs_zones)
+            ld = int(self.text_renderer.input.leading * 1000 / self.text_renderer.input.font_size)
+            ld_zones = min(ld, ld_zones)
+
+        zones_x = [120, 600, 1080, 1560, 2040]
+        for x, ze in zip(zones_x, zone_entries):
+            layer_text.alpha_composite(get_rendered_text(ze, fs_zones, ld_zones, 0), (x, 760))
+
+        special_card.alpha_composite(layer_text)
+
+        return special_card
 
     def generate_faction(self, faction):
         background = self.asset_manager.get_bg(faction)
@@ -459,7 +504,8 @@ class ImageGeneratorSpecials(ImageGenerator):
 
         layer_text = Image.new("RGBA", (w, h))
         names = [TextEntry(TextEntry(self.faction_store.get_rendered(faction).upper(), styles=TextStyle(leading=1000, bold=True)))]
-        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(faction), font_size=54, stroke_width=0.1))
+        name_entries = TextEntry.from_array(names, styles=RootStyle(font_color=self.faction_store.name_color(faction), font_size=54,
+                                                                    stroke_width=0.1))
         name_bbox = (bbox_top[2] - bbox_top[0] - 20, bbox_top[3] - bbox_top[1] - 20)
         rd_names = self.text_renderer.render(name_entries, bbox=name_bbox, margin=Spacing(20), align_y=TextRenderer.ALIGN_CENTER,
                                              linebreak_algorithm=TextRenderer.LINEBREAK_NAME)
