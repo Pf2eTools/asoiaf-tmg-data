@@ -185,7 +185,7 @@
                 "lore": "While the Bronze Guardians are akin to an unmovable boulder blocking any attacker's path, the Bronze Destriers have needed to be more flexible when dealing with invading foes. Cavalry are typically meant to be maneuverable, but with the rough terrain the Destriers tread around Runestone, they've instead focused on heavy armor and deadly force. A wise general will utilize the Destriers as the hammer to the Guardians' anvil, but if the circumstances of battle change, the Destriers will be able to adapt to whatever comes their way."
             },
             "faction": "arryn",
-            "version": "v1.8",
+            "version": "v1.8 CBA",
             "role": "unit",
             "tray": "cavalry",
             "icon": "cavalry",
@@ -199,8 +199,8 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        6,
-                        4
+                        7,
+                        5
                     ]
                 }
             ],
@@ -818,7 +818,7 @@
                 "quote": "\"Hunter's cheeks and nose were red as apples, which bespoke a certain fondness for the grape.\""
             },
             "faction": "arryn",
-            "version": "v1.8",
+            "version": "v1.8 CBA",
             "role": "attachment",
             "character": true,
             "tray": "infantry",
@@ -1124,7 +1124,7 @@
                 "quote": "\"His father had ruled Longbow Hall for nigh on sixty years.\""
             },
             "faction": "arryn",
-            "version": "v1.8",
+            "version": "v1.8 CBA",
             "role": "attachment",
             "character": true,
             "tray": "infantry",
@@ -1162,7 +1162,7 @@
                 "quote": "\"Though his hair was grey and his face lined, Lord Yohn still looked as though he could break most younger men like twigs..."
             },
             "faction": "arryn",
-            "version": "v1.8",
+            "version": "v1.8 CBA",
             "role": "attachment",
             "character": true,
             "tray": "infantry",
@@ -1170,7 +1170,7 @@
             "cost": 2,
             "abilities": [
                 "Battle Ready",
-                "Relentless"
+                "Order: Relentless"
             ],
             "title": "Bronze Yohn"
         },
@@ -1274,7 +1274,7 @@
                 "quote": "\"The six had gathered at Runestone after Lsya Arryn's fall, and there made a pact together, vowing to defend Lord Robert, the Vale, and one another."
             },
             "faction": "arryn",
-            "version": "v1.8",
+            "version": "v1.8 CBA",
             "role": "attachment",
             "character": true,
             "tray": "infantry",
@@ -2008,6 +2008,11 @@
                 "If this unit is within Short Range of your Commander's unit when it is destroyed, score 1 Victory Point."
             ]
         },
+        "INTIMIDATION OF THE CROWN": {
+            "effect": [
+                "If your opponent does not Control [CROWN], when this unit is performing a Melee Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**."
+            ]
+        },
         "STRENGTHEN YOUR CLAIM": {
             "effect": [
                 "Each time your Commander's unit Activates or has a rank destroyed, this unit restores 1 Wound. When your Commander's unit is destroyed, this unit restores D3+1 Wounds."
@@ -2079,6 +2084,15 @@
                 "melee"
             ]
         },
+        "KNIGHTLY VOW": {
+            "effect": [
+                "• After deployment target 1 enemy unit. When Charging that enemy, this unit may re-roll any Charge Distance dice.",
+                "• While your opponent does not Control [SWORDS], each time this unit performs a Melee Attack, before rolling Attack Dice, the Defender becomes **Vulnerable**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
         "MAKE HASTE!": {
             "effect": [
                 "While you Control [HORSE], this unit gains +1 [MOVEMENT]."
@@ -2109,8 +2123,17 @@
             "trigger": "When this unit Attacks or is Attacked, before rolling Attack Dice:",
             "effect": [
                 "Choose 1:",
-                "• This unit gains +1 to Defense Dice rolls and +2 to Panic Test rolls against this Attack.",
+                "• This unit gains +1 to Defense Dice rolls and +2 to Panic Test rolls until the end of the Round.",
                 "• This Attack gains **Critical Blow** and **Sundering**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: RELENTLESS": {
+            "trigger": "When this unit Attacked:",
+            "effect": [
+                "This unit may perform 1 Melee Attack Action."
             ],
             "icons": [
                 "order"
@@ -2208,7 +2231,7 @@
         },
         "AMBUSH": {
             "effect": [
-                "Enemies this unit Successfully Charges in the Flank or Rear become **Panicked** and **Weakened**."
+                "Enemies this unit Successfully Charges in the Flank or Rear become **Panicked**, **Vulnerable** and **Weakened**."
             ],
             "icons": [
                 "melee"
