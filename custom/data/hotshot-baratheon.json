@@ -1,0 +1,1407 @@
+{
+    "_meta": {
+        "author": "Hotshot",
+        "id": "hotshot-baratheon",
+        "language": "en",
+        "pre": "hsb"
+    },
+    "abilities": {
+        "STORM KING'S STRENGTH": {
+            "effect": [
+                "• Enemies engaged with this unit suffer -1 to Defense Die rolls.",
+                "• This unit's Melee Attacks deal +2 Hits."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "HANDSOME AND GALLANT": {
+            "effect": [
+                "• Each time this unit passes a Morale test, restore 1 Wound.",
+                "• Each time this unit Activates, perform 1 Morale test, on a failure suffer 1 Wound.",
+                "Once per Game, you may destroy Denys. If you do, target 1 friendly unit, they perform 1 Melee Attack using their Lowest Attack Die Value."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ROBERT'S REBELLION": {
+            "effect": [
+                "Your Army may only include Rebel units or Attachments."
+            ]
+        },
+        "MARCHER LORD'S RETALIATION": {
+            "effect": [
+                "After this unit has been Attacked, If the Attacker started the Turn engaged with this unit, they suffer 2 Hits, +1 Hit for each of this units remaining ranks."
+            ]
+        },
+        "MARCHER VALOR": {
+            "effect": [
+                "• **Critical Blow**.",
+                "• When this unit is performing a Melee Attack, if the Defender has already performed an Action this turn, this Attack gains re-rolls and the Defender becomes **Weakened**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "RAGING STORM": {
+            "effect": [
+                "This Attack gains the following based on the Game Round *(effects are cumulative)*:",
+                "**• 2+:** **Critical Blow**.",
+                "**• 3+:** **Vicious**.",
+                "**• 4+:** May re-roll any misses.",
+                "**• 5+:** If the Defender began this Turn engaged with this unit, before rolling Attack Dice, the Defender becomes **Panicked**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "HONOR BOUND CAUSE": {
+            "effect": [
+                "While your opponent does not control [CROWN], this unit may not be the target of enemy Tactics Cards."
+            ]
+        },
+        "STARK SILENCE": {
+            "effect": [
+                "This unit only suffers a maximum of 2 Wounds on failed Panic Tests."
+            ]
+        },
+        "PERFECT KNIGHT": {
+            "effect": [
+                "• You count as Controlling the [CROWN] and [LETTER] zones for Tactics cards that target this unit.",
+                "• While your opponent does not Control [CROWN], this unit may always re-roll Attack Dice",
+                "• While your opponent does not Control [LETTER], opponents may not expend **Weakened** tokens when this unit is Attacking."
+            ]
+        },
+        "THE BARRACUDA TROUT": {
+            "effect": [
+                "• **Precision**.",
+                "• While your opponent does not control [HORSE], each time this unit is Attacked, target 1 enemy unit in Short Range. That unit becomes **Weakened**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "STRIKE TWICE, STRIKE TRUE": {
+            "effect": [
+                "• Each time this unit is performing a Melee Attack, choose 1, While this unit is on it's last Rank, gain both.",
+                "• **Critical Blow**.",
+                "• **Precision**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "RAGEFUL GAZE": {
+            "effect": [
+                "• After deployment target 1 enemy attachment. While Attacking a unit containing this attachment, this unit's Melee Attacks gain **Sundering** and may re-roll any misses.",
+                "• While you Control [SWORDS], this unit's Melee attacks deal +1 Wound."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "MISTBOWS": {
+            "effect": [
+                "• If this unit has not performed the 2 Inch Shift from Ranged this Turn, this Attack gains re-rolls.",
+                "• When Attacking enemies in the Flank or Rear, the Defender becomes **Vulnerable**."
+            ],
+            "icons": [
+                "ranged"
+            ]
+        },
+        "ORDER: DURRAN'S DEFIANCE": {
+            "trigger": "End of enemy Turn:",
+            "effect": [
+                "Target each enemy engaged with this unit. Roll a D3. On a roll of 1, each targeted unit becomes **Weakened**. On a roll of 2, each targeted unit becomes **Vulnerable**. On a roll of 3, each targeted unit becomes **Vulnerable** and **Weakened**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: SMUGGLER'S TUNNELS": {
+            "trigger": "End of enemy Turn:",
+            "effect": [
+                "When a enemy in Long Range of this unit, ends its Turn and does not have Line Of Sight of this unit. This unit may perform a 3 Inch Maneuver."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: RELENTLESS": {
+            "trigger": "After this unit is Attacked:",
+            "effect": [
+                "This unit may perform 1 Melee Attack Action."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: SWIFT REPOSITION": {
+            "trigger": "Start of any Turn:",
+            "effect": [
+                "This unit performs a 2 Inch Shift. If you Control [HORSE], it may perform a 3 Inch Maneuver instead.."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "STORM'S END DEFENSES": {
+            "trigger": "When this unit is Successfully Charged:",
+            "effect": [
+                "Enemies are treated as having been effected by Fortified or Rough Keywords. *(Choose 1 Keyword)*"
+            ]
+        },
+        "KEEPER OF THE GATES OF THE MOON": {
+            "trigger": "While Jon Arryn is on the Tactics Board:",
+            "effect": [
+                "•This unit's Defense can not be affected by **Sundering**.",
+                "•If Jon Arryn is Controlling the [SWORDS], enemy unit's do not gain Flank or Rear bonuses."
+            ]
+        },
+        "PARCHMENT AND SCROLLS": {
+            "effect": [
+                "At the beginning of the game, place 2 Order Tokens on this card. Each time a friendly NCU claims [LETTER], before resolving that Zone's effect, you may remove 1 Order token. If you do, Shuffle your Tactics Hand into your Deck and draw up to 3 Tactics Cards."
+            ]
+        }
+    },
+    "unit": [
+        {
+            "id": "mistwood-marksmen",
+            "name": "Mistwood Marksmen",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "unit",
+            "abilities": [
+                "Outflank",
+                "Mistbows"
+            ],
+            "attacks": [
+                {
+                    "name": "Mistbows",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "name": "Daggers",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "The woods of the Stormlands have long been watched and patrolled by the Marksmen of House Mertyns, the expert archers and trackers have aided in stopping Dornish incursions for centuries well before the dragons came. The Mistwood Marksmen are deadly to any force they are able to flank and ambush with their percise and deadly aim. Any Stormlord would proudly allow the horned owl banner of Mertyns to fly and for their marksmen to strike true."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "march-knights",
+            "name": "Marcher Knights",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "unit",
+            "abilities": [
+                "Marcher Valor",
+                "MARCHER LORD'S RETALIATION",
+                "Rally Cry"
+            ],
+            "attacks": [
+                {
+                    "name": "Marcher Valor",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "The Marcher lords have proudly defended the realms of the Storm Kings and Kings of the Reach against incursions from Dorne. Many ballads and tales praise the valor and skill at arms of the Marcher lords and their knights that stand steady against Dornish invasion. From the Noble Houses of Caron, Dondarrion, Selmy and Swann these brave men of the Stormlands have long battled and skirmished Dornish spearmen and bandits. Their valor and stubborn nature is the back bone of the Stormlands against enemies that seek to invade from the far south or even the Palemarches of the Reach."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "stormlordnobles",
+            "name": "Stormlord Nobles",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Raging Storm",
+                "Stubborn Tenacity"
+            ],
+            "attacks": [
+                {
+                    "name": "Raging Storm",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
+            "fluff": {
+                "lore": "The Stormlords of Estermont, Tarth, Penrose, Cole, Errol and many others have long sent their second sons to Storm's End to gain their Knighthood and to serve their Lord Paramount. It is when these noble sons earn their Knighthood are they then permitted to serve in the retinue of their overlord. The Stormlord Nobles carry not only the Stag banner of Baratheon but their own houses colors into the bloody battlefield and look like a raging storm of colors and heralds. These feirce knights and sons of Lords seek to charge into enemy lines like a hurricane to disprut orders and battle planning, for they do not retreat, they stay and fight.   ."
+            },
+            "icon": "cavalry"
+        }
+    ],
+    "ncu": [
+        {
+            "id": "stannisncu",
+            "name": "Stannis Baratheon",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "ncu",
+            "title": "Defender Of Storm's End",
+            "abilities": [
+                {
+                    "name": "Good Men Starve",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "Each time Stannis Influences a unit, that unit suffers D3 Wounds, -1 Wound for each of it's missing ranks.",
+                        "While Influencing a unit, That unit can not gain Condition tokens."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Baratheon"
+                },
+                {
+                    "text": "*The first House Baratheon unit included in your army, cost is reduced by 1.*"
+                }
+            ],
+            "fluff": {
+                "quote": "\"I held Storm's End for him, watching good men starve while Mace Tyrell and Paxter Redwyne feasted within sight of my walls. Did Robert thank me? No.\"- Stannis to Cressen"
+            }
+        },
+        {
+            "id": "jonarrynncu",
+            "name": "Jon Arryn",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "ncu",
+            "title": "Foster Of The Rebellion",
+            "abilities": [
+                {
+                    "name": "Companion Or Adversary",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "Each time Jon Influences an enemy unit, It suffers 2 Hits and Becomes **Weakend**.",
+                        "While Influencing a friendly unit, all other friendly unit's in Short Range gain +1 to Morale test rolls."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Baratheon"
+                }
+            ],
+            "fluff": {
+                "quote": "\"He was calming and wise and kindly and trusting.\""
+            }
+        },
+        {
+            "id": "renlymertynsncu",
+            "name": "Renly Mertyns",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "ncu",
+            "title": "Lord Of The Mistwood",
+            "abilities": [
+                {
+                    "name": "Mistwood Maneuvers",
+                    "effect": [
+                        "Each time Renly claims a zone, you may replace that zone's effect with:",
+                        "*1 Friendly Combat unit performs 1 Maneuver.",
+                        "If the Zone replaced was [HORSE], that unit ignores the Hindering, Rough and Dangerous Keywords."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Baratheon"
+                }
+            ],
+            "fluff": {
+                "quote": "\"The Mistwood and Rainwood are ours, just like the sands are the Dornishmens.\""
+            }
+        },
+        {
+            "id": "jonarryn-cn",
+            "name": "Jon Arryn",
+            "faction": "baratheon",
+            "version": "Hotshot",
+            "role": "ncu",
+            "title": "Lord Of The Vale",
+            "abilities": [
+                {
+                    "name": "Wise Words And Commands",
+                    "effect": [
+                        "Jon begins the game with 2 Order tokens.",
+                        "When a friendly NCU claims a Zone, you may remove a Order token. If you do, replace that Zone's effect with:",
+                        "*Target 1 friendly Combat unit, that unit performs 1 Maneuver or Attack Action, If performing an Attack Action, that unit uses its Lowest Attack Die Value.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "jon1",
+                "jon2",
+                "jon3"
+            ],
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Baratheon"
+                },
+                {
+                    "text": "*Your army may include 1 House Arryn Unit.*"
+                }
+            ],
+            "fluff": {
+                "quote": "Eddard Stark and Robert Baratheon warded under his roof, were taught by him."
+            }
+        }
+    ],
+    "attachment": [
+        {
+            "id": "youngrobert",
+            "name": "Robert Baratheon",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Rebellion Leader",
+            "abilities": [
+                "Order: Sentinel",
+                "Sundering",
+                "Iron Resolve",
+                "Robert's Rebellion"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "robert1",
+                "robert2",
+                "robert3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"I will not kill a man for loyalty, nor for fighting well.\"- Robert to Roose Bolton"
+            }
+        },
+        {
+            "id": "bobbyb2",
+            "name": "Robert Baratheon",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Demon Of The Trident",
+            "abilities": [
+                "Order: Overrun",
+                "Storm King's Strength",
+                "Robert's Rebellion"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "robert4",
+                "robert5",
+                "robert6"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "They say Robert Baratheon was strong as a bull and fearless in battle, a man who loved nothing better than war"
+            }
+        },
+        {
+            "id": "mountedrobertb",
+            "name": "Robert Baratheon",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "The Storm Lord",
+            "abilities": [
+                "Rageful Gaze",
+                "Unleashed Ferocity",
+                "Robert's Rebellion"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "mountedbob1",
+                "mountedbob2",
+                "mountedbob3"
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "Some men are like swords, made for fighting."
+            }
+        },
+        {
+            "id": "nedc",
+            "name": "Eddard Stark",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "The Quiet Wolf",
+            "abilities": [
+                "Stark Silence",
+                "HONOR BOUND CAUSE",
+                "Robert's Rebellion"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "ned1",
+                "ned2",
+                "ned3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"He preferred to scorn the arse he found sitting on Robert's Throne.\"- Jamie Lannister"
+            }
+        },
+        {
+            "id": "hosterc",
+            "name": "Hoster Tully",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Lord OF The Trident",
+            "abilities": [
+                "Order: Mark Target",
+                "Order: Battle Plan",
+                "Robert's Rebellion"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "hoster1",
+                "hoster2",
+                "hoster3"
+            ],
+            "icon": "infantry",
+            "back_text": [
+                {
+                    "text": "*You may include 1 House Tully Unit in your army.*",
+                    "name": "Tully"
+                }
+            ],
+            "fluff": {
+                "quote": "\"When Riverrun declared for Robert, Goodbrook stayed loyal to the King, so Lord Tully came down on him with fire and sword.\""
+            }
+        },
+        {
+            "id": "stannisc",
+            "name": "Ser Stannis Baratheon",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Besieged Lord",
+            "abilities": [
+                "Order: Durran's Defiance",
+                "Reinforcements",
+                "Robert's Rebellion"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "stannis1",
+                "stannis2",
+                "stannis3"
+            ],
+            "icon": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may include Davos Seaworth, Opportunist Smuggler. He ignores the normal Attachment rules.*"
+                }
+            ],
+            "fluff": {
+                "quote": "\"Good men starve while Mace Tyrell and Paxter Redwyne feasted within sight of my walls.\""
+            }
+        },
+        {
+            "id": "denysca",
+            "name": "Denys Arryn",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Jon Arryn's Heir",
+            "abilities": [
+                "Inspiring Presence",
+                "Keeper Of The Gates Of The Moon"
+            ],
+            "cost": 0,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                },
+                {
+                    "text": "*Denys Arryn, Jon Arryn's Heir may only be fielded in an army including Jon Arryn, Lord of the Vale.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"He showed promise, and was Keeper of the Gates of the Moon, Lord Jon Arryn's heir.\""
+            }
+        },
+        {
+            "id": "denys",
+            "name": "Denys Arryn",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Darling Of The Vale",
+            "abilities": [
+                "Inspiring Presence",
+                "Handsome And Gallant"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"He showed promise, and was Keeper of the Gates of the Moon, Lord Jon Arryn's heir.\""
+            }
+        },
+        {
+            "id": "neda",
+            "name": "Eddard Stark",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Second Son Of Rickard Stark",
+            "abilities": [
+                "Order: Stark Fury",
+                "Stark Silence"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Ned Stark has suffered more then any in this war.\""
+            }
+        },
+        {
+            "id": "hostera",
+            "name": "Hoster Tully",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Riverlord Rebel",
+            "abilities": [
+                "The Barracuda Trout",
+                "Boldness And Courage"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Darry, Goodbrook, Mooton, Ryger. They'll be put to the sword or they'll kneel.\"- Hoster on his Bannermen who remained loyal"
+            }
+        },
+        {
+            "id": "stannisa",
+            "name": "Ser Stannis Baratheon",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Spiteful Brother",
+            "abilities": [
+                "Storm's End Defenses",
+                "Order: Relentless"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"I held Storm's End for near a year. Did Robert thank me? No.\""
+            }
+        },
+        {
+            "id": "smuggler",
+            "name": "Davos Seaworth",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Opportunist Smuggler",
+            "abilities": [
+                "Order: Supply Aid",
+                "Order: Smuggler's Tunnels"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"A smuggler must be a fair judge of men.\" -Stannis Baratheon"
+            }
+        },
+        {
+            "id": "steffonpenrose",
+            "name": "Steffon Penrose",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Lord of Parchments",
+            "abilities": [
+                "Parchment And Scrolls",
+                "Order: Battle Plan"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "The Lord Penrose chose his Lord, over his blood."
+            }
+        },
+        {
+            "id": "selwyntarth",
+            "name": "Selwyn Tarth",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "The Evenstar",
+            "abilities": [
+                "Leadership Follower",
+                "Perfect Knight"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "The Lord of Tarth and Evenstar, following the Footsteps of the Perfect Knight."
+            }
+        },
+        {
+            "id": "bryencaron",
+            "name": "Byren Caron",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "The Carrion Knight",
+            "abilities": [
+                "Fueled By Slaughter",
+                "Order: Tactical Reposition"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Lord of Nightsong and Lord of the Marches, followed intoe by his favorite son, a Bastard."
+            }
+        },
+        {
+            "id": "edricdondarrion",
+            "name": "Edric Dondarrion",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Lord Of Blackhaven",
+            "abilities": [
+                "Strike Twice, Strike True"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Strike twice. Strike true."
+            }
+        },
+        {
+            "id": "haryshorpe",
+            "name": "Ser Harys Horpe",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "Knight Of Death's Head",
+            "abilities": [
+                "Order: Martial Training",
+                "Counterstrike"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Named after Harys Horpe, who was slain in the Trial Of Seven of King Maegor."
+            }
+        },
+        {
+            "id": "renlymertyns",
+            "name": "Renly Mertyns",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "attachment",
+            "title": "The Old Owl",
+            "abilities": [
+                "Order: Swift Reposition",
+                "Order: Mark Target"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Rebellion Units or Attachments.*",
+                    "name": "Rebel Forces",
+                    "heading": "BARATHEON"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "The Old Owl of Mistwood."
+            }
+        }
+    ],
+    "tactics": [
+        {
+            "id": "robert1",
+            "name": "Loyalty Of Lords",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit performs a Melee Attack:",
+                    "effect": [
+                        "If the Defender suffered any Wounds, the Attacker restores 1 Wound +1 for each of the Defender's destroyed ranks.",
+                        "If the Attacker is a House Baratheon unit, restore +1 Wounds.",
+                        "If this is Robert Baratheon's unit and this Attack destroyed any Attachments, also take 1 Attachment and attach it to Robert's unit, replacing a model as normal, but ignoring Attachment limits."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "youngrobert"
+            }
+        },
+        {
+            "id": "robert2",
+            "name": "Robert's March",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to a friendly Baratheon unit, while attached that unit gains +1 [MOVEMENT].",
+                        "Each time a friendly NCU Claims a Zone, you may replace that Zone's effect with:",
+                        "*This unit performs 1 Maneuver or March Action, then suffers D3 Wounds, -1 Wound for each of this unit's missing ranks. Remove this card.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "youngrobert"
+            }
+        },
+        {
+            "id": "robert3",
+            "name": "Joint Forces",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of friendly turn:",
+                    "effect": [
+                        "Attach this card to a friendly unit, that unit counts as House Baratheon until the end of the Game.",
+                        "While this card is attached, If this unit is in Long Range of Robert baratheon, gain +1 to Moral test rolls."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "youngrobert"
+            }
+        },
+        {
+            "id": "robert4",
+            "name": "Baratheon Might",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Critical Blow**.",
+                        "If this unit is House Baratheon, it may re-roll any Attack Dice.",
+                        "If you Control [SWORDS], this Attack rolls its highest Attack Die Value."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "bobbyb2"
+            }
+        },
+        {
+            "id": "robert5",
+            "name": "Thrill Of Battle",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of friendly Turn:",
+                    "effect": [
+                        "Attach this card to a friendly unit, until the end of the Game.",
+                        "While attached, each time this unit is performing a Melee Attack, if this unit began the Turn engaged with the Defender, this Attack gains **Sundering**.",
+                        "If this unit is a House Baratheon unit, may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "bobbyb2"
+            }
+        },
+        {
+            "id": "robert6",
+            "name": "Rush Of Aggression",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Charge Action, before rolling Charge Distance Dice:",
+                    "effect": [
+                        "This unit automatically counts as rolling a 6 on all Charge Distance dice and their Melee Attack gains **Critical Blow**.",
+                        "After this Attack has been completed, unless the Attacker is Robert Baratheon's unit, they become **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "bobbyb2"
+            }
+        },
+        {
+            "id": "mountedbob1",
+            "name": "Lash Out",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is Robert Baratheon's unit. the Attacker also becomes **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "mountedrobertb"
+            }
+        },
+        {
+            "id": "mountedbob2",
+            "name": "Battle Endurance",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of friendly turn:",
+                    "effect": [
+                        "Target 1 friendly Combat unit and attach this card to it until the end of the game. While attached, this unit's Melee Attacks gain the following bonuses, based on the Game Round *(effects are cumulative)*:",
+                        "3+: May re-roll any Misses.",
+                        "4+: **Sundering**",
+                        "5+: **Critical Blow",
+                        "6+: +2 Attack Dice"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "mountedrobertb"
+            }
+        },
+        {
+            "id": "mountedbob3",
+            "name": "Robert's Rage",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Melee Attack",
+                        "If this Targets Robert Baratheon's unit, it may perform 1 Charge Action instead.",
+                        "If your opponent Controls [CROWN], this Attack gains +1 to Hit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "mountedrobertb"
+            }
+        },
+        {
+            "id": "ned1",
+            "name": "All Smiles Die",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit is Attacked:",
+                    "effect": [
+                        "If the Defender passed the Panic Test, the Attacker suffers 1 Wound, +1 for each of the Defender's remaining ranks.",
+                        "If the Defender is Eddard's unit or a House Stark unit, the Attacker becomes **Vulnerable**."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics Card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "nedc"
+            }
+        },
+        {
+            "id": "ned2",
+            "name": "Brothers In Rebellion",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly unit, until the end of the turn, choose 1, +1 for each House Stark or Baratheon unit in Short Range.",
+                        "• This unit's Melee Attacks gain **Critical Blow**.",
+                        "• This unit may re-roll any Attack Die.",
+                        "• Opponents can not expend **Weakend** tokens while this unit is Attacking.",
+                        "• This unit restores 2 Wounds and removes 1 Condition Token."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "nedc"
+            }
+        },
+        {
+            "id": "ned3",
+            "name": "The Wolf Remembers",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit performs a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "The Defender cannot be the Target of friendly Tactics Cards.",
+                        "For each missing rank in this unit, gain the following:",
+                        "**1+** This unit's Attack gains +1 to Hit.",
+                        "**2+** This unit's Attack uses it's Highest Attack Die Value.",
+                        "If this is a House Stark, may also re-roll any Attack Die."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "nedc"
+            }
+        },
+        {
+            "id": "hoster1",
+            "name": "Issue Commands",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When Hoster Tully's unit Activates:",
+                    "effect": [
+                        "This unit cannot perform Actions this Turn. Instead, target 1 other friendly unit in Long Range. It performs 1 Attack or Charge Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. Remove 1 Order token from that unit. They may use that Order again this Round."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "hosterc"
+            }
+        },
+        {
+            "id": "hoster2",
+            "name": "Predictable Maneuvers",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of the first enemy Turn of a Round:",
+                    "effect": [
+                        "Target 1 enemy Combat unit and 1 enemy NCU.",
+                        "If either unit performs an Action this Turn, before resolving that Action, 1 friendly Combat unit performs 1 Attack, Maneuver, or Retreat Action."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics Card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "hosterc"
+            }
+        },
+        {
+            "id": "hoster3",
+            "name": "Barracuda Of The Trident",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Precision** and the Defender becomes **Vulnerable**.",
+                        "If this is Hoster Tully's unit, may re-roll any Misses."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "hosterc"
+            }
+        },
+        {
+            "id": "stannis1",
+            "name": "Set For Charge",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is Successfully Charged, before the Attacker performs their Melee Attack:",
+                    "effect": [
+                        "If that friendly unit is not engaged with another enemy, and was Charged from the Front or Flank, it performs 1 Melee Attack Action on the Attacker before the Attacker resolves their Melee Attack."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "stannisc"
+            }
+        },
+        {
+            "id": "stannis2",
+            "name": "Unlikely Supplies",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU claims a Zone:",
+                    "effect": [
+                        "Replace that Zone's effect with:",
+                        "*1 friendly Combat unit restores 3 Wounds and removes 1 Condition token.",
+                        "If this targets Stannis Baratheon's unit, restore +1 Wound."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "stannisc"
+            }
+        },
+        {
+            "id": "stannis3",
+            "name": "More Arrows Then Apples",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Activates:",
+                    "effect": [
+                        "Replace that unit's Activation with:",
+                        "*Make the following Ranged Attack on 1 enemy Combat Unit in Long Range of this Unit:*",
+                        "[ATTACK:Ranged:Storm's End Archers:3+5]",
+                        "If your opponent Controls [MONEY], gain +2 Attack Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "stannisc"
+            }
+        },
+        {
+            "id": "jon1",
+            "name": "Valiant Example",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit passes a Morale Test:",
+                    "effect": [
+                        "All other friendly units in Long Range restore 1 Wounds, +1 Wound for each of this unit's destroyed ranks",
+                        "If you Control [LETTER], restore 2 Wounds to this unit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jonarryn-cn"
+            }
+        },
+        {
+            "id": "jon2",
+            "name": "The Falcon And Silver Moon",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Panic Test:",
+                    "effect": [
+                        "That unit may re-roll any dice, and cannot have **Panicked** tokens expended during this test.",
+                        "If you Control [LETTER], automatically pass this test instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jonarryn-cn"
+            }
+        },
+        {
+            "id": "jon3",
+            "name": "Battle Of The Seven Stars",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "That unit performs a Morale test. On a success gain all of the following. On a failure, choose 1.",
+                        "• **Vicious** and the Defender becomes **Panicked**.",
+                        "• This unit may re-roll any Attack Die.",
+                        "• **Critical Blow** and Opponents may not expend **Weakened** token while this unit is performing this Attack."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jonarryn-cn"
+            }
+        }
+    ],
+    "special": [
+        {
+            "id": "rebels",
+            "name": "Rebel Forces",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "Only Rebel Units and Attachments may be included in your Army.",
+                    "Your Army may field Stark units, but may never include more than 30% of your total points worth of Stark units."
+                ]
+            }
+        },
+        {
+            "id": "sworntorobert",
+            "name": "Baratheon Rebels",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "The Following Baratheon Characters, Units and their associated attachments can be included in your Army",
+                    "• Sentinels",
+                    "• Wardens",
+                    "• Halberdiers",
+                    "• Stag Knights",
+                    "• Champions of The Stag",
+                    "• Cortnay Penrose",
+                    "• Eldon Estermont",
+                    "• Andrew Estermont",
+                    "• Justin Massey",
+                    "• Davos Seaworth, Onion Knight"
+                ]
+            }
+        },
+        {
+            "id": "sworntoned",
+            "name": "Stark Rebels",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "The Following Stark Characters, Units and their associated attachments can be included in your Army",
+                    "• Stark Sworn Swords",
+                    "• Stark Bowman",
+                    "• Stark Outriders",
+                    "• Karstark Loyalists",
+                    "• Karstark Spearmen",
+                    "• House Umber Berserkers",
+                    "• House Umber Greataxes",
+                    "• House Umber Ravagers",
+                    "• Catelyn Stark",
+                    "• Howland Reed",
+                    "• Rodrik Cassel",
+                    "• Greatjon Umber",
+                    "• Rickard Karstark"
+                ]
+            }
+        },
+        {
+            "id": "rebel leaders",
+            "name": "Rebel Leaders",
+            "faction": "baratheon",
+            "version": "Rebels",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "If your army contains any Rebel Commander, before the game begins, remove the \"**Sustained Assault**\" Tactics card from your Tactics Deck and replace it with 1 other Rebel Commander Card. *(Your army must include that named Character.)*"
+                ]
+            }
+        }
+    ]
+}

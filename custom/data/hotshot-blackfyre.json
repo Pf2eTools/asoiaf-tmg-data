@@ -23,6 +23,11 @@
                 "melee"
             ]
         },
+        "INTIMIDATION OF THE CROWN": {
+            "effect": [
+                "If your opponent does not Control [CROWN], when this unit is performing a Melee Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**."
+            ]
+        },
         "AFFILIATION: HOUSE PEAKE": {
             "effect": [
                 "This unit is a House Peake unit."
@@ -64,9 +69,9 @@
         },
         "PROMISES OF WEALTH AND GLORY": {
             "effect": [
-                "When this unit Activates, If you Control [MONEY] choose 1:",
-                "• This unit gains +1 to Defense Die rolls and +1 to Morale Rolls, untill the end of the round.",
-                "• This unit Gains **Precision**, until the end of the round."
+                "When this unit Activates, choose 1. If you Control [MONEY], gain both instead:",
+                "• This unit gains +1 to Defense Die rolls and +1 to Morale test rolls, until the end of the Round.",
+                "• This unit gains **Precision**and may re-roll any misses, until the end of the Round."
             ]
         },
         "SHOCK AND AWE": {
@@ -107,8 +112,8 @@
         },
         "AUXILIARY TRAINING": {
             "effect": [
-                "• While you Control [MONEY], this unit gains +1 to Defensive Die rolls.",
-                "• When performing an Attack against an Engaged Enemy, this unit may re-roll any Attack Die."
+                "• While you Control [MONEY], this unit gains +1 to Defensive Die rolls and +1 to Morale test rolls.",
+                "• When performing an Attack against a engaged enemy, may re-roll any Attack Die."
             ],
             "icons": [
                 "ranged",
@@ -162,6 +167,15 @@
                 "order"
             ]
         },
+        "ORDER: RELENTLESS": {
+            "trigger": "After this unit is Attacked:",
+            "effect": [
+                "This unit may perform 1 Melee Attack Action."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
         "ORDER: ACT FOR ME": {
             "trigger": "When Aegon's Unit Activates:",
             "effect": [
@@ -195,7 +209,8 @@
         },
         "TO HIS SIDE!": {
             "effect": [
-                "When Ser Rolly's unit is Attacking a enemy engaged with Aegon's unit, this unit's Melee Attacks gain **Sundering**."
+                "• **Sundering**.",
+                "• Each time Aegon Targaryen's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker."
             ],
             "icons": [
                 "melee"
@@ -253,12 +268,14 @@
                 "wounds"
             ]
         },
-        "STRENGTH PREVAILS": {
+        "ORDER: STRENGTH PREVAILS": {
+            "trigger": "When this unit gains a Condition token:",
             "effect": [
-                " This unit cannot become **Weakened**."
+                "Perform 1 Morale Test. On a pass, remove that Condition token, then target 1 enemy unit in Long Range.",
+                "Place 1 Condition token on that unit."
             ],
             "icons": [
-                "melee"
+                "order"
             ]
         },
         "MASTERCRAFT SPEAR": {
@@ -280,7 +297,26 @@
         },
         "SHARPENED AND POLISHED": {
             "effect": [
-                "When this unit is targeted by [MONEY] instead of removing a condition token and/or restoring Wounds. Place one order token on this unit, for each effect of [MONEY] forfeited. When this unit is performing an Attack Action, you may remove 1 order token to re-roll any misses. When this unit activates you may remove 1 token to remove 1 Condition Token."
+                "When this unit is targeted by [MONEY], instead of removing a Condition token and/or restoring Wounds. Place one order token on this unit, for each effect of [MONEY] forfeited. These tokens may be expended to do the following:",
+                "• When this unit is performing an Attack Action, you may remove 1 order token to re-roll any misses.",
+                "• When this unit activates you may remove 1 token to remove 1 Condition Token."
+            ]
+        },
+        "BROTHERHOOD OF EXILES": {
+            "effect": [
+                "Each time this unit Activates, it restores 1 Wound, +1 Wound for each other friendly Unit in Short Range.",
+                "While you Control [CROWN], This unit gains +1 to Attack Die rolls."
+            ]
+        },
+        "BOUND TOGETHER": {
+            "effect": [
+                "When an enemy unit engaged with this unit performs a Melee Attack on another friendly unit, if that Attack destroyed a Rank, remove 1 Condtion token from this unit."
+            ]
+        },
+        "FRONTLINE ADVANCE": {
+            "effect": [
+                "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:",
+                "*This unit performs 1 Maneuver Action.*"
             ]
         }
     },
@@ -356,7 +392,8 @@
             "version": "S06 V1",
             "role": "unit",
             "abilities": [
-                "Dauntless",
+                "Brotherhood Of Exiles",
+                "Bound Together",
                 "Counterstrike"
             ],
             "attacks": [
@@ -365,8 +402,8 @@
                     "type": "melee",
                     "hit": 4,
                     "dice": [
+                        7,
                         6,
-                        5,
                         4
                     ]
                 }
@@ -469,7 +506,7 @@
                 }
             ],
             "defense": 4,
-            "morale": 7,
+            "morale": 6,
             "speed": 6,
             "cost": 6,
             "tray": "cavalry",
@@ -675,8 +712,9 @@
             "version": "S06 V1",
             "role": "unit",
             "abilities": [
-                "Order: Resilience",
                 "Aegon's Whitecloaks",
+                "Order: Resilience",
+                "Frontline Advance",
                 "Disrupt"
             ],
             "attacks": [
@@ -722,8 +760,8 @@
                 {
                     "name": "Life Of Experience",
                     "effect": [
-                        "Once per game, at the start of any Turn, you may draw 2 Tactics Cards.",
-                        "When Harry Claims [LETTER], after resolving the zone's effect, you may replace 1 Tactics Card in your hand with 1 from your discard pile."
+                        "Once per game, at the Start of any Turn, you may draw 2 Tactics Cards.",
+                        "Each time Harry Claims [LETTER], after resolving the zone's effect, you may replace 1 Tactics Card in your hand with 1 from your discard pile."
                     ]
                 }
             ],
@@ -775,7 +813,7 @@
                 {
                     "name": "Gold Sways",
                     "effect": [
-                        "**Once per game, when an enemy combat unit is destroyed, you may target 1 friendly unit in Short Range and restore 1 Wound +1 for each of that unit's missing ranks, if an attachemnt was destroyed, 1 of those wounds may be an attachment, ignoring normal attachment rules.*"
+                        "**Once per game, when an enemy Combat unit is destroyed, you may target 1 friendly unit in Short Range and restore 1 Wound +1 for each of that unit's missing ranks, if an attachment was destroyed, 1 of those Wounds may be an attachment, ignoring normal attachment rules.*"
                     ]
                 }
             ],
@@ -823,7 +861,7 @@
                     "name": "Patient Study",
                     "effect": [
                         "Each time Haldon or an enemy NCU Claims [MONEY], place 1 Order token on Haldon.",
-                        "When Haldon Claims [MONEY], after resolving that zone's effect, you may target 1 unit and remove up to 2 tokens. If you do that unit heals 1 wound +1 for each token removed."
+                        "When Haldon Claims [MONEY], after resolving that zone's effect, you may target 1 unit and remove up to 2 tokens. If you do that unit heals 1 Wound +1 for each token removed."
                     ]
                 }
             ],
@@ -844,15 +882,14 @@
                 {
                     "name": "False Truths?",
                     "effect": [
-                        "Each time Tyrion claims a zone, you may replace that zone's effect with:",
-                        "**Influence** (*Attach this card to a Combat Unit until the end of the Round*):",
+                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
                         "While Influencing a unit, that unit gains **Order**: Counterstrategy."
                     ]
                 },
                 {
                     "name": "Counterplot",
                     "effect": [
-                        "Once per game, when your opponent plays a Tactics Card: Roll a die: on a 3+, cancel the effect of that Tactics Card."
+                        "Once per game, when your opponent plays a Tactics Card: Roll a die: On a 3+, cancel the effect of that Tactics Card."
                     ]
                 }
             ],
@@ -898,7 +935,8 @@
                     "effect": [
                         "**Influence** (*When this unit Claims a zone, attach this card to a Combat unit until the end of the Round*):",
                         "While Influencing a unit, that unit suffers -1 Wounds from failing Panic Tests.",
-                        "Each time a Influcenced unit passes a Morale Test place 1 Faith Token on Speta Lemore. Faith Tokens may be expended after the *influcenced unit* has rolled Defence Die, you may expend 1 Token. If you do, the Defender blocks 1 Hit +1 for each of its destroyed ranks."
+                        "Each time a Influcenced unit passes a Morale Test place 1 Faith Token on Speta Lemore. Faith Tokens may be expended after the *influcenced unit* has rolled Defence Die, you may expend 1 Token.",
+                        "If you do, the Defender blocks 1 Hit, +1 Hit for each of its destroyed ranks."
                     ]
                 }
             ],
@@ -946,7 +984,7 @@
             "role": "attachment",
             "title": "The Exiled Lord",
             "abilities": [
-                "Relentless",
+                "Order: Relentless",
                 "Iron Resolve",
                 "Affiliation: House Peake"
             ],
@@ -1103,7 +1141,8 @@
             "title": "First of the King's Guard",
             "abilities": [
                 "Order: Shield Wall",
-                "True Conviction (Blackfyre)"
+                "True Conviction (Blackfyre)",
+                "Dauntless"
             ],
             "tray": "infantry",
             "character": true,
@@ -1126,6 +1165,7 @@
             "role": "attachment",
             "title": "The Outlaw Knight",
             "abilities": [
+                "Precision",
                 "Counterstrike",
                 "Disrupt"
             ],
@@ -1406,7 +1446,7 @@
             }
         },
         {
-            "id": "10413",
+            "id": "pride",
             "name": "Harry's Pride",
             "faction": "blackfyre",
             "version": "2021",
@@ -1430,7 +1470,8 @@
             "version": "S06 V1",
             "role": "attachment",
             "abilities": [
-                "Bolster Levies"
+                "Bolster Levies",
+                "Leadership Follower"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -1495,7 +1536,7 @@
             "version": "2021",
             "role": "attachment",
             "abilities": [
-                "Strength Prevails",
+                "Order: Strength Prevails",
                 "Stubborn Tenacity"
             ],
             "cost": 1,
@@ -1638,7 +1679,7 @@
                     "trigger": "When a enemy NCU claims a zone:",
                     "effect": [
                         "After resolving that zone's effect, attach this card to a enemy Combat unit. They perform 1 Panic test.",
-                        "Until this unit is targeted by the [MONEY], each time a Blackfyre unit performs a Attack against this unit, before rolling Attack Die, it suffers 1 Hit +1 for each of its remaining ranks."
+                        "Until this unit is targeted by the [MONEY], each time a Blackfyre Infantry unit performs a Melee Attack against this unit, before rolling Attack Die, it suffers 1 Hit +1 for each of its remaining ranks."
                     ]
                 }
             ]
@@ -1863,7 +1904,7 @@
                 {
                     "trigger": "When an enemy Combat Unit Activates:",
                     "effect": [
-                        "If that Unit is within Long Range and Line of Sight of Jon Lothston's unit, it becomes **Panicked**, that enemy suffers 1 Panic Test .",
+                        "If that unit is within Long Range and Line of Sight of Jon Lothston's unit, it becomes **Panicked**, that enemy suffers 1 Panic Test .",
                         "On a failure, Attatch this card to that unit untill Jon Lothston is destroyed.",
                         "While attached, each time that unit performs an Attack Action and is in Short Range of Jon Lothston, that unit must perform a Panic Test before performing that Attack."
                     ]
@@ -1884,7 +1925,7 @@
                     "trigger": "Start of any Round:",
                     "effect": [
                         "Target 1 friendly Combat unit. That unit performs 1 Attack Action",
-                        "If this unit is Jon Lothston's, this Attack gains +1 to Hit",
+                        "If this unit is Jon Lothston's, this Attack gains +1 to Hit.",
                         "After completing that Attack your opponent may Activate 1 NCU."
                     ]
                 }
@@ -2087,7 +2128,7 @@
                     "Aegon's Whitecloaks come with 4 Blackfyre Banners. At the start of its Activation, it may remove Blackfyre Banners to gain the following. Each may be selected only once per Activation:",
                     "• This Turn, this unit's Attacks gain **Precision** and **Sundering**.",
                     "• This Turn, this unit's Attacks gain **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound.",
-                    "• This Turn, when this unit is defending against a Melee Attack, before after Attack Dice, the Attacker suffers 1 Hit for each miss.",
+                    "• This Turn, when this unit is defending against a Melee Attack, after rolling Attack Dice, the Attacker suffers 1 Hit for each miss.",
                     "• This unit restores 2 Wounds and may re-roll Charge and Retreat Distance Dice this Turn."
                 ]
             },
@@ -2120,7 +2161,7 @@
                 "crests": 1,
                 "text": [
                     "**At the Start of the Game, place this card close to your Tactics Deck.**",
-                    "An Ability or effect will state when this card will be played."
+                    "An Ability or Effect will state when this card will be played."
                 ]
             }
         }

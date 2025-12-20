@@ -1,0 +1,3191 @@
+{
+    "_meta": {
+        "author": "Hotshot",
+        "id": "hotshot-targaryen",
+        "language": "en",
+        "pre": "hsa"
+    },
+    "abilities": {
+        "ROYALIST: TARGARYEN": {
+            "effect": [
+                "Your army may only include Royalist Units or Attachments."
+            ]
+        },
+        "ORDER: RESILIENCE": {
+            "trigger": "When an Enemy is performing an Attack on this unit, after Attack Dice are rolled:",
+            "effect": [
+                "This unit only suffers 1 Wound for every 2 unblocked hits."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "ORDER: RELENTLESS": {
+            "trigger": "After this unit is Attacked:",
+            "effect": [
+                "This unit may perform 1 Melee Attack Action."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "BLADEMASTER": {
+            "effect": [
+                "• Opponents cannot expend **Weakened** tokens on this unit while it is Attacking."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "VETERANCY": {
+            "effect": [
+                "This unit may not be targeted by enemy Tactics Cards or Influenced by enemy NCUs. While engaged with this unit, enemies may not be the target of Tactics Cards or influenced by friendly NCUs."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "MACE AND HAMMER": {
+            "effect": [
+                "While your opponent does not Control [SWORDS] this unit's Melee Attacks gain **Critical Blow**.",
+                "Each time this unit performs a Melee Attack, before rolling Attack Die, the Defender becomes **Vulnerbale**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "HIGHTOWER HONOR": {
+            "effect": [
+                "• While you Control [CROWN], This unit always rolls it's highest Attack Die Value.",
+                "• While your opponent does not Control [SWORDS] this unit's Melee Attacks gain +1 to Hit."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "BLACK LION OF THE STORMLANDS": {
+            "effect": [
+                "If you Control [SWORDS], when this unit is performing a Melee Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**."
+            ]
+        },
+        "ORDER: LIGHT OF THE GULL TOWER": {
+            "trigger": "After an enemy ends a March or Maneuver Action in Long Range and Line of Sight of this unit:",
+            "effect": [
+                "If this unit is not engaged with another enemy, this unit may perform a 3 Inch Maneuver."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "DORNISH TIMING": {
+            "effect": [
+                "During Deployment Phase, select 1 friendly unit, hold that unit off the table *(In Reserve)* instead of Deploying it. Each time Lewyn's unit Activates, you may forgo his unit's Activation and place 1 unit from Reserve fully within Short Range of a Friendly or Flank table egde, unactivated."
+            ]
+        },
+        "DRAGON DREAMER": {
+            "effect": [
+                "After Deployment Phase, search your Tactics Deck for 1 *Commander* Tactics Card, Place that card face down near your Tactics Deck. Once per game, When Rhaegar Targaryen's Unit Activates, add the face down card to your hand *(Ignoring Hand Limits)*."
+            ]
+        },
+        "CROWNLAND LANCE": {
+            "effect": [
+                "• **Precision**",
+                "• When Charging, rolls +2 Attack Dice for each remaining rank in this unit."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "BLOODED BLADE": {
+            "effect": [
+                "Each time this unit performs a Melee Attack, before rolling Attack Dice, choose 1:",
+                "• This Attack deals +1 Wound.",
+                "• This Attack gains **Vicious**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "PATHETIC METTLE": {
+            "effect": [
+                "After this unit is Attacked with a Melee Attack, if the Attack did not destory a Rank, the Attacker suffers 1 Panic Test, with -1 to their roll for each of this unit's remaining Ranks."
+            ]
+        },
+        "RED KEEP TRAINING": {
+            "effect": [
+                "• While your opponent does not Control [SWORDS], this unit may re-roll any Attack Die.",
+                "• While your opponent does not Control [CROWN], each time this unit is Attacked, it may re-roll any Defense Dice."
+            ]
+        },
+        "EXPERT STRIKE": {
+            "effect": [
+                "• Each time this unit performs a Melee Attack, before rolling Attack Dice choose 1, for each of the Defenders remaining Ranks, choose +1",
+                "• **Vicious**",
+                "• **Sundering**",
+                "• **Precision**",
+                "• This unit may re-roll any Attack Dice."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "MARITIME WARFARE": {
+            "effect": [
+                "This unit ignores the Hindering and Rough keywords."
+            ]
+        },
+        "AFFILIATION: HOUSE VELARYON": {
+            "effect": [
+                "This unit counts as House Velaryon."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "AFFILIATION: HOUSE CELTIGAR": {
+            "effect": [
+                "This unit counts as House Celtigar."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "SCORCHED AND BURNED": {
+            "effect": [
+                "Enemies within Short Range of this unit suffer -1 to Moral rolls. While your opponent does not Control [CROWN], they suffer +1 Wounds on a failed Panic Test."
+            ]
+        },
+        "HEIR TO DRIFTMARK": {
+            "effect": [
+                "This unit counts as House Velaryon and starts the game with 1 Trade token."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "FEARLESS": {
+            "effect": [
+                "This unit cannot become **Panicked** and can only suffer a maximum of 2 Wounds from failing a Panic Test."
+            ],
+            "icons": [
+                "wounds"
+            ]
+        },
+        "WEALTH OF THE CRAB": {
+            "effect": [
+                "• While you Control [MONEY], When this unit Activates, it restores 2 Wounds.",
+                "• While you Control [CROWN], Opponents cannot expend **Weakened** Tokens on this unit while it is Attacking.",
+                "• While you Control [LETTER], When this unit performs a Action, remove 1 Condition Token from 1 Unit in Short Range."
+            ]
+        },
+        "HERO OF DUSKENDALE": {
+            "effect": [
+                "• You count as Controlling the [CROWN] *and* [SWORDS] zones for Tactics cards that target this unit.",
+                "• While your opponent does not Control [SWORDS], this unit automatically passes all Panic Tests."
+            ]
+        },
+        "AVENGER": {
+            "effect": [
+                "Each time a friendly unit in long Range looses a Rank, place 1 Order token on this card. Each time this unit performs a Melee Attack, before rolling Attack Dice, you may remove up to 2 tokens, for each token removed gain +1 Attack Die."
+            ]
+        },
+        "DAWN": {
+            "effect": [
+                "• Each time this unit performs a Melee Attack, If the Defender rolls a 1 on Defence Die, the Defender suffers +1 Wound.",
+                "• Each time this unit performs a Melee Attack, if it has full ranks, it gains +1 Attack Dice, Otherwise it is treated as having +1 rank for Attack Dice."
+            ],
+            "icons": [
+                "melee",
+                "wounds"
+            ]
+        },
+        "FALLEN STAR": {
+            "effect": [
+                "While you Control [CROWN], Each time this unit performs a Melee Attack, This unit rolls its highest Attack Die Value and the Defender becomes **Vulnerable**."
+            ]
+        },
+        "THE BOLD": {
+            "effect": [
+                "While you Control [CROWN], enemies engaged with this unit suffer -1 to Defense Die rolls."
+            ]
+        },
+        "THE BLACK BAT": {
+            "effect": [
+                "•** Vicious**",
+                "While you Control [CROWN], each time an engaged enemy performs an Action, they become **Panicked** and **Vulnerable**."
+            ]
+        },
+        "BOLD AS BRASS": {
+            "effect": [
+                "When this unit Activates, this unit may make a Morale Test. on a success, 1 enemy unit in Short Range becomes **Panicked**.",
+                "If you Control [SWORDS], when this unit is performing a Melee Attack, if the Defender is **Panicked**, may re-roll any Attack Die."
+            ]
+        },
+        "SKULLS AND KISSES": {
+            "effect": [
+                "When this unit Activates, target 1 enemy it is engaged with. They suffer 1 Wound.",
+                "If you Control [SWORDS], Each time this unit restores Wounds, 1 engaged enemy suffers 1 Wound."
+            ]
+        },
+        "SILENT VIGIL": {
+            "effect": [
+                "While you Control [CROWN], each time a friendly unit in Long Range, passes a Morale Test, that unit restores 2 Wounds."
+            ]
+        },
+        "PRINCE'S BLADE": {
+            "effect": [
+                "While you Control [CROWN], When this unit Performs a Melee Attack, after rolling Defense Die. You may remove any number of Condition tokens on the Defender. If you do, the Defender suffers +1 Wounds for each Condition token removed"
+            ]
+        },
+        "PIERCER": {
+            "effect": [
+                "• **Precision**.",
+                "• If the Defender suffers any Wounds, they become **Vulnerable**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "GRIFFIN'S STRENGTH": {
+            "effect": [
+                "• **Critical Blow**",
+                "• **Sundering**",
+                "• When Charging, the Defender becomes **Panicked**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ROYAL ARMAMENTS": {
+            "effect": [
+                "• This unit's Melee Attack gains +1 to Hit on enemies that are engaged with this unit and at least 1 other Royal unit.",
+                "• While your opponent does not Control [CROWN], each time this unit Attacks, it gains **Critical Blow** and may re-roll any Misses.",
+                "• While your opponent does not Control [SWORDS], each time this unit is Attacked by a Melee Attack, block +1 Hit."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "SWING OF JUSTICE": {
+            "effect": [
+                "• **Vicious**",
+                "• After rolling Attack Die, you may remove 1 Condition token from the Defender. If you do, the Defender suffers +2 Hits."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "SWIFT JUDGEMENT": {
+            "effect": [
+                "After Successfully Charging. Place 1 Condition token on the Defender, before rolling Attack Die."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "DRIFTWOOD RECURVE BOW": {
+            "effect": [
+                "• If this unit has not performed the 2 inch Shift from Ranged Attack this turn, this Attack gains +1 to Hit.",
+                "• When Attacking enemies that have already Activated this Round, may re-roll Attack Dice and the Defender becomes **Weakended**."
+            ],
+            "icons": [
+                "ranged"
+            ]
+        },
+        "BATTLEAXE": {
+            "effect": [
+                "• **Sundering**",
+                "• When Attacking enemies that have already Activated this Round, may re-roll Attack Dice."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "RISING TIDE": {
+            "effect": [
+                "This unit gains the following based on the Game Round *(effects are cumulative)*",
+                "**• 2+**: Each time an enemy is performing an Attack on this unit, it blocks +1 Hit.",
+                "**• 3+:** Each time this unit passes a Morale test, it restores 1 Wound.",
+                "**• 4+:** Each time an enemy completes an Attack on this unit, target the Attacker. It becomes **Weakend**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "WRATH OF THE SEA": {
+            "effect": [
+                "• **Critical Blow**.",
+                "• When Attacking enemies that have already Activated this Round, this unit's Melee Attack gains +1 to Hit."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "LOYAL TO THE DRAGON": {
+            "effect": [
+                "For each other Royal unit in Short Range, gain +1 Morale."
+            ]
+        },
+        "MARINE TRAINING": {
+            "effect": [
+                "This unit ignores the Dangerous, Hindering, and Rough keywords.",
+                "If you Control [SWORDS], may re-roll Charge Distance Die."
+            ]
+        },
+        "RED SHELL": {
+            "effect": [
+                "Each time this unit Activates, it may choose to enter Testudo formation. If it does, gain the following until the end of the Round:",
+                "• Each time this unit is Attacked by a Ranged Attack. After rolling Defense Die, block +1 Hit for each of it's remaining ranks.",
+                "• Enemies who successfully Charge this unit in the Front do not gain Charge Bonuses.",
+                "• This unit cannot perform Charge or March Actions this round."
+            ]
+        },
+        "CRAB'S AEGIS": {
+            "effect": [
+                "When this unit passes a Moral test, Target 1 friendly unit in Short Range. You may remove 1 Condition token from that unit."
+            ]
+        },
+        "BREAKING THE TIDE": {
+            "effect": [
+                "• For each Pillage Token this unit has, it gains +1 Attack Die.",
+                "• If this unit has 2 Pillage Tokens, Enemies succesfully charged lose all Abilities and cannot be targeted by Friendly Tactics Cards, untill the end of the turn."
+            ]
+        },
+        "BRACKYORE BACKING": {
+            "effect": [
+                "This unit begins the game with 2 Order Tokens. Each time this unit Activates, it may remove 1 Order Token. If you do, this unit restores 2 Wounds."
+            ]
+        },
+        "ANCIENT TOMES": {
+            "effect": [
+                "Each time a friendly NCU Claims a zone, your may replace that zone's effect with:",
+                "*Draw 1 Tactics Card and remove 1 Condition token.*"
+            ]
+        },
+        "HARP AND BLADE": {
+            "effect": [
+                "• Each time this unit performs a Melee Attack before rolling Attack Dice, The Defender becomes **Vulnerable**.",
+                "• Each time this unit completes an Attack, perform 1 Morale test. On a Success target 1 friendly unit in Short Range, they restore 1 Wound."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ORDER: DANCING GRIFFINS": {
+            "trigger": "When this unit Activates:",
+            "effect": [
+                "Instead of performing the Maneuver from Calavry, target 1 friendly unit, that unit performs a 4 Inch Shift."
+            ],
+            "icons": [
+                "order"
+            ]
+        }
+    },
+    "unit": [
+        {
+            "id": "royal-shields",
+            "name": "Royal Shieldbearers",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "PATHETIC METTLE",
+                "Red Keep Training",
+                "Order: Shield Wall"
+            ],
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "Capable rank-and-file soldiers, Royalist Shield Bearers defend better than they attack. So well do they defend, in fact, that attackers often wilt before the sheer impossibility of getting through a Shield Bearer’s formidable armor, and with their tower shield bearing the crest of House Targaryen, these soldiers march into battle with well-drilled doctrines and heavy defenses. Many people's tales have ended upon crashing into a Targaryen shield wall."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "targaryen-honor-guard",
+            "name": "House Targaryen Honor Guard",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Expert Strike",
+                "Coordinated Assault"
+            ],
+            "attacks": [
+                {
+                    "name": "Expert Strike",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        8,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "Years of training back every Targaryen Honor Guard, for the title is not won lightly. They are deadly in melee while protecting their lords with equal viciousness and expertise. Under the banner of a three-headed dragon on a black field, fight the Targaryen Honor Guard. Sworn to serve and protect the members of House Targaryen. These soldiers are well equipped and trained, ready to fight for their lords and ladies."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "knights-of-the-dragon",
+            "name": "Knights Of The Dragon",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Order: Swift Retreat",
+                "Crownland Lance",
+                "Cavalry"
+            ],
+            "attacks": [
+                {
+                    "name": "Crownland Lance",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The lands around King's Landing are filled with loyal vassal houses, from Rykker and Rosby to Cargyll. These loyal lords send their sons to the royal court, Many of these sons of loyal nobles find themselves squiring for the Whitecloaks and other royal knights. The most elite of those whom are knighted are granted the privilege to serve along side renowned Knights under the banner of House Targaryen. Equiped in black plate forged by the master smiths of King's Landing, these well trained Knights serve as the Crowned Prince's Lance on the battlefield, best used in hit and run tactics to shake and break rebel formations."
+            },
+            "icon": "cavalry",
+            "wounds": 3
+        },
+        {
+            "id": "companions",
+            "name": "Rhaegar's Companions",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Rally Cry",
+                "Harp and Blade",
+                "Cavalry"
+            ],
+            "attacks": [
+                {
+                    "name": "Harp And Blade",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Rhaegar Targaryen, The Last Dragon. He must be attached to this unit.*",
+                    "name": "Character"
+                }
+            ],
+            "fluff": {
+                "lore": "When Rhaegar rides from the Red Keep, the Crowned Prince is joined by his most loyal followers, the most trusted and closest of his friends. Those who see the pale steed, clad in plate barding designed to look like a dragon, know their Prince and Lord has arrived followed by his retinue of knights and Lords. The Banner of the Dragon follows closely and inspires all who fight in the name of House Targaryen, for those Loyal to the Dragon see their Prince as the future."
+            },
+            "icon": "cavalry",
+            "wounds": 3
+        },
+        {
+            "id": "griffin-knights",
+            "name": "House Connington Griffin Knights",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Griffin's Strength",
+                "Order: Dancing Griffins"
+            ],
+            "attacks": [
+                {
+                    "name": "Griffin's Strength",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The dancing Griffins of House Connington's herald are well known to the realm, more loyal to the crown then ton their own leige lords. House Connington prides itself with the imagery of the feirce Griffin and no more so then the Griffin Knights. Heavily armored cavalry used to desimate unprepared and untrained enemy formations, easily spotted with their red and white wings attacked to their armor as they ride towards the enemy lines. To be on the recieving end of a Griffin Knight charge is marked with horror, blood and the sound of crushing and snapping bones as their war horses in heavy plate barding crush mens skulls and their weapons cut down those attempting to flee."
+            },
+            "icon": "cavalry",
+            "wounds": 3
+        },
+        {
+            "id": "javelincav",
+            "name": "Royal Outriders",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Order: Charging Volley"
+            ],
+            "attacks": [
+                {
+                    "name": "Sword And Javelin",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                },
+                {
+                    "name": "Javelin Toss",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The Royal Outriders are the swift horsemen of the Crownlands, loyal houses to the crown send their best riders to fill their ranks. Tasked with patrolling the lands surrouding King's Landing, and the borders of the Crownlands, these well trained riders are asked to ensure the King's peace within the heart of the realm. Unlike heavily armored knights, these riders rely on speed, cunning and well thrown javelins, excelling in hit and run tactics, harassing invaders, flanking unknowing formations and pelting them from afar."
+            },
+            "icon": "cavalry",
+            "wounds": 3
+        },
+        {
+            "id": "celtigar-vault-guard",
+            "name": "House Celtigar Vault Guard",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Piercer",
+                "Wealth OF The Crab"
+            ],
+            "attacks": [
+                {
+                    "name": "Piercer",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The Celtigar family possesses many treasures, many of which date back to the time of Valyria, from the ancestral Valyrian Steel axe to a horn said to call and summon krakens from the depths of the sea. House Celtigar's vault helps fuel the royal war machine and thus the family insures it's pride and heart is protected. The Vault Guard is a numerous garrison within Crab's Return and Claw Isle, tasked with protecting the Ancient Valyrian family and it's treasures."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "celtigar-red-shells",
+            "name": "House Celtigar Red Shells",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Red Shell",
+                "Crab's Aegis"
+            ],
+            "attacks": [
+                {
+                    "name": "Longsword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 4,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The Red Shells of Claw Isle are the defenders of House Celtigar's lands, from the rocky shores to the streets of Crab's Return. These men sworn to House Celtigar are marked by their red heavy armor, desgined to look like the hard shells of crabs along with heavy reinforced shields with the herald of the red crab. The Red Shells are trained in defensive doctrine. Any invading force will struggle to break through the heavy shields and tight testudo formation of the Red Shells."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "royal-levies",
+            "name": "Royal levies",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Loyal To The Dragon"
+            ],
+            "attacks": [
+                {
+                    "name": "Levy Weapons",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 7,
+            "speed": 5,
+            "cost": 4,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                },
+                {
+                    "text": "*Reduce the cost of 1 Attachment in this unit by 1.*",
+                    "name": "Adaptive"
+                }
+            ],
+            "fluff": {
+                "lore": "When the clarion of war sounds and the Iron Throne calls it's loayal banners to take up arms in the name of the king, levies from across the Seven Kingdoms are formed. From Duskendale and Rosby to Highgarden and Oldtown those lords loyal to the Dragon call their men. These untrained men wearing the colors of their leige lords and flying the banner of the Three-Headed Dragon make up the bold of many Royalist force, equiped with a bounty of different weapons from spears and glaives to swords. However uninspiring these rables look, do not underestmate them when led by the right Lord or Knight. "
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "royal-footmen",
+            "name": "Royal Footmen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Royal Armaments",
+                "Loyal To The Dragon"
+            ],
+            "attacks": [
+                {
+                    "name": "Royal Armaments",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "Royal Footman, battle hardened and trusted men who've served Iron Throne. From the Stepstones to the King's Wood, these men can be relied on. Whether aiding in assualting enemy postitions or defending encampments, these men excel when fighting shoulder to shoulder with their fellow man. Using experience and training to gain an upper hand against traitors and scum alike."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "grafton-marines",
+            "name": "House Grafton Marines",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Order: Charging Volley",
+                "Marine Training"
+            ],
+            "attacks": [
+                {
+                    "name": "Javelin",
+                    "type": "short",
+                    "hit": 4,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Marine's Blade",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The Marines of House Grafton are well known, aiding in quelling piracy in the northern depths of the Narrow Sea, and dealing with slaving ships traveling toward the Wildling harbor of Hardhome. These men are loyal to Lord Grafton and will aid his cause how every they can. Even on land these men can be devastating, using their missiles to reck havoc on enemy flanks or using them to soften enemy ranks before charging. "
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "gulltown-guard",
+            "name": "Gulltown Guard",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Order: Light Of The Gull Tower",
+                "Order: Adaptive Style"
+            ],
+            "attacks": [
+                {
+                    "name": "Spear",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "Stationed along the gates, walls, and bustling harbor of Gulltown, the Gulltown Guard are the sworn defenders of House Grafton’s seat. Clad in yellow, black, and red, they stand as a vivid warning to any who would threaten the city. Trained to respond to attacks from both land and sea, guided by the warning flames of the Gull Tower. They know the maze of streets, alleys, and docks better than any foe could hope to. Whether repelling raiders on the wharves or holding the city’s gates against invading forces, the Gulltown Guard fight with discipline and fierce loyalty. To them, Gulltown is not merely a port. It is their home, and every stone of its walls is worth their last breath."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "driftmark-sentinels",
+            "name": "Driftmark Sentinels",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Driftwood Recurve Bow",
+                "Maritime Warfare"
+            ],
+            "attacks": [
+                {
+                    "name": "Driftwood Recurve Bow",
+                    "type": "long",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The Island of Driftmark has long been the seat of House Velaryon, who's Sentinels watch the coastline from Hull to Hightide, In times of war, when the Lord of Tides raises his banner The Sentinels can be found aiding in naval battles using their keen eyes and recurved bows to drop enemies reliaby, aiding their fellow men. While best at range, they are capable with the sword when the need arises."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "driftmark-defenders",
+            "name": "Driftmark Defenders",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Battleaxe",
+                "Rising Tide"
+            ],
+            "attacks": [
+                {
+                    "name": "Battleaxe",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 5,
+            "speed": 5,
+            "cost": 7,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "Though House Velaryon is not the power it was during the reign of the Sea Snake, vestiges of that time still permeate across the island of Driftmark. The Driftmark Defenders are perhaps the proudest reminder of the bygone era. The castle of High Tide is protected by the rising waters that surround it, and the Driftmark Defenders rise to even greater strength as the battle drags on. The heavily armored Defenders stand ready to repel any enemy that dare challenge the Lord of the Tides."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "house-velaryon-sea-swords",
+            "name": "House Velaryon Sea Swords",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "unit",
+            "abilities": [
+                "Wrath Of The Sea",
+                "Maritime Warfare"
+            ],
+            "attacks": [
+                {
+                    "name": "Wrath Of The Sea",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "lore": "The age of the Sea Snake and the Oakenfist is over and a dusk has fallen apon House Velayron but even so they are still one of House Targaryen's greatest vassals. The Sea Swords insure the kings laws are enforced through Blackwater Bay and Driftmark. Taking up arms against smugglers, slavers and pirates who seek to exercise their trade in royal waters. Whether on the deck of a pirate galley or on the shores of Crackclaw Point, the Sea Sword bring the wrath of the tides and seas."
+            },
+            "icon": "infantry"
+        }
+    ],
+    "ncu": [
+        {
+            "id": "mad-king",
+            "name": "Aerys Targaryen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "The Mad King",
+            "abilities": [
+                {
+                    "name": "I Rule Them All!",
+                    "effect": [
+                        "While Aerys is on the Tactics Board, you count as Controlling [CROWN]."
+                    ]
+                },
+                {
+                    "name": "Maddening Paranoia",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "While Influencing a unit, that unit suffers +1 Wounds from failed Panic tests. Each time that unit is targeted by an Ability, Order or Tactics card, You may cancel the effect of the Ability, Order, or Tactics Card."
+                    ]
+                }
+            ],
+            "cost": 6,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"He'll serve as I see fit. I am the king. I rule, and he'll obey...\""
+            }
+        },
+        {
+            "id": "30403",
+            "name": "Lord Varys",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "The Spider",
+            "abilities": [
+                {
+                    "name": "Little Birds",
+                    "effect": [
+                        "Varys begins the game with 3 Order tokens.",
+                        "Each time an enemy NCU Claims a zone, after resolving that zone's effect, you may remove 1 Order token from Varys. If you do, gain the following based on that zone:",
+                        "[CROWN]: 1 enemy suffers 1 Panic Test.",
+                        "[MONEY]: Restore 2 Wounds to 1 friendly unit.",
+                        "[LETTER]: Draw 1 Tactics card.",
+                        "[SWORDS]: 1 enemy suffers 3 Hits.",
+                        "[HORSE]: 1 friendly unit shifts 3\"."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"Varys has ways of learning things that no man could know.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
+            }
+        },
+        {
+            "id": "rossart",
+            "name": "Rossart",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "Alchemists' Guild Grand Master",
+            "abilities": [
+                {
+                    "name": "Wildfire Plot",
+                    "effect": [
+                        "Rossart begins the game with 3 Order tokens. Each time a Enemy Combat unit Activates, you may remove 1 Order token. If you do:",
+                        "*Make the following Ranged Attack on that unit:*",
+                        "[ATTACK:Ranged:Wildfire:3+4]",
+                        "*Defenders do not roll Defense Dice.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"he was no one, lowborn, Hand for a fortnight, just another mad fancy of the Mad.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
+            }
+        },
+        {
+            "id": "ardrian-celtigar",
+            "name": "Ardrian Celtigar",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "Lord of Claw Isle",
+            "abilities": [
+                {
+                    "name": "Celtigar Wealth and Wisdom",
+                    "effect": [
+                        "Each time Ardrian Claims a zone, you may replace that zone's effect with:",
+                        "*Shuffle your Tactics Card hand into your deck, draw up to 3 Tactics Cards.*",
+                        "Once per game, when Ardrian Claims a Zone, you may replace that zone's effect with:",
+                        "*Restore 4 wounds *(total)* across any number of friendly Combat Units.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"There were great lords and noble knights in that company too: sour old Lord Celtigar, the Red Crab\""
+            }
+        },
+        {
+            "id": "symond-staunton",
+            "name": "Symond Staunton",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "Lord Staunton",
+            "abilities": [
+                {
+                    "name": "Master of Laws",
+                    "effect": [
+                        "While Symond is on the Tactics Board, increase your Tactics Hand Size limit by +1. At the end of the round, if your Hand Size is greater then 5, discard 2 Tactics Cards at random.",
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "While Influencing a unit, each time that unit is performing a Attack, you may remove this card from that unit. If you do that enemy is treated having -1 Rank for Attack Dice, If it only has 1 remaining Rank, it becomes **Weakened**."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"The Crowning of the Stark girl... meant to win the allegiance of Winterfell to the Prince.\""
+            }
+        },
+        {
+            "id": "lucerys-velaryon",
+            "name": "Lucerys Velaryon",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "Master Of Ships",
+            "abilities": [
+                {
+                    "name": "Velaryon Blockade",
+                    "effect": [
+                        "Lucerys begins the game with 2 Order Tokens on him.",
+                        "Each time Lucerys Claims [SWORDS], you may replace that zone's effect with: *place 1 Order token on Lucerys.*",
+                        "When a Enemy NCU claims a Zone. After resolving that Zone's effect, you may remove 1 Order token from Lucerys. If you do:",
+                        "*Make the following Ranged Attack on 1 enemy Combat Unit:*",
+                        "[ATTACK:Ranged:Velayron Ship Mangonel:3+3]",
+                        "*Gains +1 Attack Die for each of the Defenders remaining ranks.*",
+                        "At the end of each Round, if Lucerys as no Order tokens, Lucerys can not regain Order tokens."
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"Even now the Royal Fleet looks to stop the rebels from the Blackwater to White Harbor.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 2
+            }
+        },
+        {
+            "id": "owen-merryweather",
+            "name": "Owen Merryweather",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "The Horn-Of-Plenty Hand",
+            "abilities": [
+                {
+                    "name": "lavishing Praise",
+                    "effect": [
+                        "Each time a friendly NCU Claims a zone, unless its effect is replaced, its effect gains the following additional bonus:",
+                        "[CROWN]: If the unit fails this Panic Test, one friendly unit removes 1 Condition token and restores 1 Wound.",
+                        "[MONEY]: 1 other friendly unit in Short Range removes 1 Condition token.",
+                        "[LETTER]: May forgo placing 1 Condition token to draw 1 addional Tactics card.",
+                        "[SWORDS]: Targeted Unit restores 2 Wounds."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"An aged and amiable lickspittle famed for laughing loudest at every jape and witticism uttered by the king, no matter how feeble...\""
+            }
+        },
+        {
+            "id": "qarlton-chelsted",
+            "name": "Qarlton Chelsted",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "Master of Coin",
+            "abilities": [
+                {
+                    "name": "Mace and Dagger Gold",
+                    "effect": [
+                        "Each time Qarlton Claims a zone, restore 1 Wound to 1 friendly Combat Unit.",
+                        "Each time Qarlton Claims [MONEY], you may forgo removing 1 Condition token, if you do, draw 1 Tactics Card."
+                    ]
+                },
+                {
+                    "name": "A Moment Of Courage",
+                    "effect": [
+                        "Once per game, when a friendly Combat Unit would be Destroyed, if Qarlton has not Activated. You may Activate him, instead of claiming a Zone, That friendly Combat unit is not destroyed and remains in play with D3 Wounds. Until the end of the game, it is a Royal unit."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"Qarlton was a craven, save the day he confronted his King and was dipped in Wildfire for it.\""
+            }
+        },
+        {
+            "id": "willem-darry",
+            "name": "Willem Darry",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "Rhaegar's Teacher",
+            "abilities": [
+                {
+                    "name": "Knighting The Dragon",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:",
+                        "Each time Willem Influences a unit, remove 1 Condition token from them.",
+                        "While Influencing a unit, that unit's Attacks gain +1 Attack Die."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "fluff": {
+                "quote": "\"I will require a sword and armor. It seems I must be a warrior\"- Rhaegar to Ser Willem"
+            }
+        },
+        {
+            "id": "mad-king-c",
+            "name": "Aerys Targaryen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "ncu",
+            "title": "Second Of His Name",
+            "abilities": [
+                {
+                    "name": "King's Will and Decree",
+                    "effect": [
+                        "Each time Aery's claims a Zone, he may replace that Zone's effect with:",
+                        "Search your Tactics Deck or discard pile for 1 **Commander** Tactics Card and add it to your hand. Shuffle your Tactics Deck."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "aerys1",
+                "aerys2",
+                "aerys3"
+            ],
+            "fluff": {
+                "quote": "\"...preferring to rule his city from the clouds.\""
+            }
+        }
+    ],
+    "attachment": [
+        {
+            "id": "rhaegar-targaryen-cc",
+            "name": "Rhaegar Targaryen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The Last Dragon",
+            "abilities": [
+                "Boldness and Courage",
+                "Embolden",
+                "Royalist: Targaryen"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "rhaegar-cav1",
+                "rhaegar-cav2",
+                "rhaegar-cav3"
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"Rhaegar fought valiantly, Rhaegar fought nobly, Rhaegar fought honorably. .\""
+            }
+        },
+        {
+            "id": "barristan-selmy-cc",
+            "name": "Barristan Selmy",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Bloody Barristan",
+            "abilities": [
+                "Order: Overrun",
+                "Blooded Blade",
+                "Royalist: Targaryen"
+            ],
+            "tray": "cavalry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "barristan-1",
+                "barristan-2",
+                "barristan-3"
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"Slew Maelys the Monstrous, last of the Blackfyre Pretenders.\"- The White Book"
+            }
+        },
+        {
+            "id": "barristan-selmy-ca",
+            "name": "Barristan Selmy",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Sole Champion",
+            "abilities": [
+                "Might Of The Throne",
+                "Stubborn Tenacity"
+            ],
+            "cost": 1,
+            "tray": "cavalry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "cavalry",
+            "fluff": {
+                "quote": "\"Sole champion of Lord Steffon's tourney at Storm's End, whereat he unhorsed Lord Robert Baratheon.\"- The White Book"
+            }
+        },
+        {
+            "id": "gerold-hightower",
+            "name": "Gerold Hightower",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Lord Commander Of The Kingsguard",
+            "abilities": [
+                "Blademaster",
+                "Order: Relentless"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"a better man than me, all agree\" -Jamie Lannister"
+            }
+        },
+        {
+            "id": "gerold-hightower-c",
+            "name": "Gerold Hightower",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The White Bull",
+            "abilities": [
+                "Hightower Honor",
+                "To The Last!",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "gerold-1",
+                "gerold-2",
+                "gerold-3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"The Kingsguard does not flee.\""
+            }
+        },
+        {
+            "id": "barristan-selmy-c",
+            "name": "Barristan Selmy",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The Mad King's Savior",
+            "abilities": [
+                "Avenger",
+                "Hero of Duskendale"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                },
+                {
+                    "text": "Barristan Selmy, The Mad King's Savior may only be fielded in an army that includes Aerys Targaryen, Second of His Name"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Avenged the murder of his Sworn Brother, Ser Gawyne Gaunt.\" - The White Book"
+            }
+        },
+        {
+            "id": "barristan-selmy-a",
+            "name": "Barristan Selmy",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Kingsguard",
+            "abilities": [
+                "Blademaster",
+                "The Bold",
+                "COUNTERSTRIKE"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"He lied to me, informed on me, but he loved me too, and he always gave good counsel.\""
+            }
+        },
+        {
+            "id": "monford-c",
+            "name": "Monford Velaryon",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Heir to Driftmark",
+            "abilities": [
+                "Heir To Driftmark",
+                "Order: Reckless Heroism",
+                "Furious Charge"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "monford1",
+                "monford2",
+                "monford3"
+            ],
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Victory is not won by hesitation.\""
+            }
+        },
+        {
+            "id": "monford",
+            "name": "Monford Velaryon",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Captain Of The Pride Of Driftmark",
+            "abilities": [
+                "Affiliation: House Velaryon",
+                "Order: Overrun",
+                "Furious Charge"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Monford is arrogant, but ambitious\""
+            }
+        },
+        {
+            "id": "oswell-whent",
+            "name": "Oswell Whent",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Kingsguard",
+            "abilities": [
+                "Blademaster",
+                "The Black Bat"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Woe to the Usurper if we had been.\""
+            }
+        },
+        {
+            "id": "jonothor-darry",
+            "name": "Jonothor Darry",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Kingsguard",
+            "abilities": [
+                "Blademaster",
+                "Silent Vigil"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"When you donned that cloak, you promised to obey.\""
+            }
+        },
+        {
+            "id": "lewyn-martell",
+            "name": "Lewyn Martell",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Kingsguard",
+            "abilities": [
+                "Blademaster",
+                "Prince's Blade"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"My uncle always said that it was the sword in a man's hand that determined his worth, not the one between his legs.\"- Arianne Martell"
+            }
+        },
+        {
+            "id": "arthur-dayne-a",
+            "name": "Arthur Dayne",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Kingsguard",
+            "abilities": [
+                "Blademaster",
+                "Fallen Star",
+                "Expert Duelist"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Blood is the seal of our devotion\""
+            }
+        },
+        {
+            "id": "silveraxe-a",
+            "name": "Edric Fell",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The Silveraxe",
+            "abilities": [
+                "Battle Scars",
+                "Hardened"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"The Silveraxe, they call him, Lord Fell's son, a true and loyal Stormlander.\""
+            }
+        },
+        {
+            "id": "lucasfell",
+            "name": "Lucas Fell",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Lord Fell",
+            "abilities": [
+                "Iron Resolve",
+                "Dauntless"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Lord Fell, rallied his men and his son to march on Storm's End.\""
+            }
+        },
+        {
+            "id": "joncafferen",
+            "name": "Jon Cafferen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Lord Cafferen",
+            "abilities": [
+                "Ledership Follower",
+                "Order: Mark Target"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Fawnton heard Robert's call, but the Lord Jon stayed loyal to the Iron Throne.\""
+            }
+        },
+        {
+            "id": "hugh",
+            "name": "Ser Hugh Grandison",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Heir To Grandview",
+            "abilities": [
+                "Black Lion Of The Stormlands",
+                "Order: Martial Training"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"The Black lion of Grandison\"- Other Knights on Ser Hugh"
+            }
+        },
+        {
+            "id": "randyllgrafton",
+            "name": "Ser Randyll Grafton",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Watcher Of The Gulltower",
+            "abilities": [
+                "Order: Light Of The Gull Tower"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "The Gull Tower would not fall unless Ser Randyll fell with it."
+            }
+        },
+        {
+            "id": "alliser-thorne-a",
+            "name": "Alliser Thorne",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Ser Throne",
+            "abilities": [
+                "Swing Of Justice",
+                "Swift Judgement"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "The banner of House Thorne was seen, Ser Alliser was to hold the Gate Of The Gods."
+            }
+        },
+        {
+            "id": "jaremy-rykker-a",
+            "name": "Jaremy Rykker",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Ser Rykker",
+            "abilities": [
+                "Order: Stay At Your Posts!",
+                "Order: Hold THe Line!"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Ser Jaremy Rykker rallied his men. Answering the call to arms, his men garrison the walls of King's Landing."
+            }
+        },
+        {
+            "id": "myles=mooton-a",
+            "name": "Myles Mooton",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Bold Companion",
+            "abilities": [
+                "Bold As Brass"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                },
+                {
+                    "text": "*If your army contains Rhaegar Targaryen, reduce the cost of Myles Mooton, Bold Companion by 1.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Former squire of the Prince, now a storied knight. Known for being bold as brass."
+            }
+        },
+        {
+            "id": "lyncorbray",
+            "name": "Lyn Corbray",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Dangerous Defender",
+            "abilities": [
+                "Reckless Strikes",
+                "Advantage Strike"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                },
+                {
+                    "text": "*Your army must contain Marq Grafton.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Lyn Corbray is a Dangerous Man.\"- Nestor Royce"
+            }
+        },
+        {
+            "id": "richard-lonmouth-a",
+            "name": "Richard Lonmouth",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The knight of skulls and kisses",
+            "abilities": [
+                "Skulls and Kisses"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                },
+                {
+                    "text": "*If your army contains Rhaegar Targaryen, reduce the cost of Richard Lonmouth, The knight of skulls and kisses by 1.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "One of the most trusted companions of Rhaegar, a knight of Lonmouth."
+            }
+        },
+        {
+            "id": "willem-darry-a",
+            "name": "Willem Darry",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Master at Arms of the Red Keep",
+            "abilities": [
+                "Commander's Vassal",
+                "Knightly Vow"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                },
+                {
+                    "text": "*Willem ignores the usual Attachment Limits.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Ser Darry, the most loyal of all the servants of House Targaryen."
+            }
+        },
+        {
+            "id": "arthur-dayne-c",
+            "name": "Arthur Dayne",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The Sword Of The Morning",
+            "abilities": [
+                "Dawn",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "arthur-1",
+                "arthur-2",
+                "arthur-3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"And now it begins.\""
+            }
+        },
+        {
+            "id": "lewyn-martell-c",
+            "name": "Lewyn Martell",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The White Spear",
+            "abilities": [
+                "DORNISH TIMING",
+                "Acute Precision",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "lewyn-1",
+                "lewyn-2",
+                "lewyn-3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"All agree that he is a great Knight.\""
+            }
+        },
+        {
+            "id": "jon-connington-c",
+            "name": "Jon Connington",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The Dancing Griffins Hand",
+            "abilities": [
+                "Order: Overrun",
+                "Reckless Strikes",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "jon-1",
+                "jon-2",
+                "jon-3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Too soon. Connington is too young, too bold...\" - Tywin Lannister"
+            }
+        },
+        {
+            "id": "marq-grafton-c",
+            "name": "Marq Grafton",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Lord Grafton",
+            "abilities": [
+                "Order: Shield Wall",
+                "Superior Numbers",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "marq-1",
+                "marq-2",
+                "marq-3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "A loyal lord, loyal to the true king even when his leige lord rebelled."
+            }
+        },
+        {
+            "id": "rhaegar-targaryen-c",
+            "name": "Rhaegar Targaryen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The Crowned Prince",
+            "abilities": [
+                "Expert Duelist",
+                "Rally Banner",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "rhaegar-1",
+                "rhaegar-2",
+                "rhaegar-3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "When the battle's done I mean to call a council."
+            }
+        },
+        {
+            "id": "rhaegar-targaryen-c2",
+            "name": "Rhaegar Targaryen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "The Prince That Was Promised",
+            "abilities": [
+                "Embolden",
+                "Dragon Dreamer",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "rhaegar-4",
+                "rhaegar-5",
+                "rhaegar-6"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "The prince who was promised, born among the flames of Summerhall and the tears of greif."
+            }
+        },
+        {
+            "id": "maric-c",
+            "name": "Maric Celtigar",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Heir To Claw Isle",
+            "abilities": [
+                "Ancient Tomes",
+                "Brackyore Backing",
+                "Affiliation: Celtigar",
+                "Royalist: Targaryen"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "maric-3",
+                "maric-2",
+                "maric-1"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Maric, the heir of Claw Isle and Steward of Brackyore."
+            }
+        },
+        {
+            "id": "terrance-a",
+            "name": "Ser Terrance Celtigar",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Knight Of The Red Crab",
+            "abilities": [
+                "Scorched And Burned",
+                "AFFILIATION: HOUSE CELTIGAR"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "Terrance earned his Knighthood through fire, his body burned and scarred."
+            }
+        },
+        {
+            "id": "jon-a",
+            "name": "Jon Connington",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "attachment",
+            "title": "Young Lord Connington",
+            "abilities": [
+                "Order: Sentinel",
+                "Order: Battle Plan"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*Your army may only contain Royalists Units or Attachments.*",
+                    "name": "Royalists",
+                    "heading": "TARGARYEN"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "He promised King Aerys, he would deliver Robert's head."
+            }
+        }
+    ],
+    "tactics": [
+        {
+            "id": "1rtd1",
+            "name": "Blood of The Dragon",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to them until the end of the game. When a friendly unit is destroyed, place 1 Order token on this card.",
+                        "While this card has a token, the attached unit's Melee Attacks gain +1 Attack Die and this unit suffers -1 Wound from failing Panic Tests."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1rtd2",
+            "name": "Legacy Of Conquest",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a you score a Victory point:",
+                    "effect": [
+                        "Attach this card to one friendly unit until the end of the game, While Attached it gains the following:",
+                        "• While you Control [CROWN]: This unit gains +1 to Morale Tests, and suffers -1 Wounds from failed Panic Tests.",
+                        "• While you Control [SWORDS]: This unit may always re-roll Attack Dice.",
+                        "• Each time this Unit scores a Victory point, it restores 1 Wound."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1rtd3",
+            "name": "Toss Of A Coin",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit. That unit performs 1 Panic test.",
+                        "On a success, Attatch this card until the end of the Round. While Attached, this unit cannot be the Target of Enemy Tactics Cards, NCU Abilities or Influences.",
+                        "On a failure, this unit becomes **Panicked**.",
+                        "If you Control [CROWN], may re-roll any dice for this test."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1rtd4",
+            "name": "Targaryen Justice",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly Combat unit is targeted by an enemy Ability or Tactics card, after resolving that Ability/Tactics Card:",
+                    "effect": [
+                        "Target 1 enemy in Short Range of that unit. It suffers 4 Hits, then suffers 1 Panic Test."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1rtd5",
+            "name": "Fire and Blood",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Choose 1. If you Control [CROWN], choose 2 instead:",
+                        "• This Attack may re-roll any Misses.",
+                        "• This Attack gains **Sundering**.",
+                        "• This Attack gains **Vicious**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1rtd6",
+            "name": "Targaryen Devotion",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Panic Test, before rolling dice:",
+                    "effect": [
+                        "That unit gains +2 to their roll",
+                        "If you Control [CROWN], they Automatically pass this test instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1rtd7",
+            "name": "Retribution Of The Dragon",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit is Attacked:",
+                    "effect": [
+                        "Target the Attacker. Attach this card to them until the end of the game.",
+                        "While attached, each time this unit is Attacked, the Attacker gains **Vicious**.",
+                        "If you Control [SWORDS], this unit also becomes **Vulnerable**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "rhaegar-cav1",
+            "name": "Prince's Valiancy",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When Rhaegar's unit is performing a Melee Attack, before rolling Attack Die:",
+                    "effect": [
+                        "This Attack rolls it's highest Attack Die Value, may re-roll any Misses, and the Defender becomes **Vulnerable**."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-cc"
+            }
+        },
+        {
+            "id": "rhaegar-cav2",
+            "name": "Prince's Nobility",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit in Long Range of Rhaegar's unit is performing a Morale Test, after rolling dice:",
+                    "effect": [
+                        "On a success, this unit restores 2 Wounds and may remove a Condition token.",
+                        "If this is Rhaegar's unit, restore +1 Wound."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-cc"
+            }
+        },
+        {
+            "id": "rhaegar-cav3",
+            "name": "Prince's Honor",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "Target Rhaegar's unit. It performs 1 Attack or Charge Action. If the Defender was destroyed, Rhaegar's unit may re-roll any Attack and Charge Distance Die."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-cc"
+            }
+        },
+        {
+            "id": "gerold-1",
+            "name": "We Do Not Flee",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Panic Test, before rolling dice:",
+                    "effect": [
+                        "That unit automatically pass the test.",
+                        "If they are in Short Range of Gerold Hightower, target 1 Enemy unit they are engaged with. They suffer 2 hits, +1 for each of this unit's destroyed ranks.",
+                        "If this targets Gerold Hightower's unit, they suffer -1 to Defense Die rolls."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "gerold-hightower-c"
+            }
+        },
+        {
+            "id": "gerold-2",
+            "name": "Sworn To Die",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After Gerold Hightower's unit is Attacked:",
+                    "effect": [
+                        "Target 1 friendly unit, other then Gerold's unit. That unit performs 1 Melee or Charge Action. If Charging, it must target the Attacker.",
+                        "If Gerold Hightower is Destroyed, remove all Condition Tokens from each friendly Combat unit."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "gerold-hightower-c"
+            }
+        },
+        {
+            "id": "gerold-3",
+            "name": "Last Stand",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is destroyed:",
+                    "effect": [
+                        "Before removing that unit, it performs 1 Melee Attack Action using it's highest Attack Die Value. If you Control [CROWN], it may re-roll any Attack Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "gerold-hightower-c"
+            }
+        },
+        {
+            "id": "aerys1",
+            "name": "Burn Them All!",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy NCU Claims a zone:",
+                    "effect": [
+                        "After resolving that zone's effect, Target 1 Enemy Combat unit.",
+                        "That unit suffers +1 Wound for each Enemy NCU on the Tactics Board.",
+                        "If that NCU Claimed [CROWN], place 1 Condition token for each Enemy NCU on the Tactics Board. *(The same Combat Unit may be Targeted)*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "mad-king-c"
+            }
+        },
+        {
+            "id": "aerys2",
+            "name": "King's Madness",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy Combat Unit Activates:",
+                    "effect": [
+                        "They perform 1 Panic Test. For each zone you Control among [CROWN] and [LETTER] they suffer -1",
+                        "On a failure, that unit suffers no Wounds. Instead may not be the target of Friendly Tactics Cards or Tactics Zone Effects until the end of the Round."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "mad-king-c"
+            }
+        },
+        {
+            "id": "aerys3",
+            "name": "Paranoia and Delusion",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy NCU Claims a zone:",
+                    "effect": [
+                        "After resolving that zone's effect, choose 1, for each zone [CROWN] and [LETTER] you Control, choose +1.",
+                        "• 1 enemy unit cannot restore Wounds by any means until the End of the Round.",
+                        "• 1 enemy unit becomes **Panicked** and suffers 1 Panic Test.",
+                        "• 1 enemy NCU does not count as controlling zones for Abilites and Tactics Cards until the End of the Round.",
+                        "(*You may choose the same effect multiple times*)"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "mad-king-c"
+            }
+        },
+        {
+            "id": "barristan-1",
+            "name": "Only The Bold",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Activates:",
+                    "effect": [
+                        "This unit removes all Condition Tokens. For each Condition token removed restore 1 Wound",
+                        "If this targets Barristan Selmy's unit, restore +1 Wound"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "barristan-selmy-cc"
+            }
+        },
+        {
+            "id": "barristan-2",
+            "name": "Assualt Orders",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                        "*If that NCU Claimed [SWORDS], that Combat Unit may perform 1 Charge Action using its lowest Attack Die Value instead.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "barristan-selmy-cc"
+            }
+        },
+        {
+            "id": "barristan-3",
+            "name": "Slayer Of The Monsterous",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Precision**",
+                        "If this targets Barristan Selmy's unit, target 1 Attachment in the Defender's unit. Roll a die, on a 4+, destroy that Attachment."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "barristan-selmy-cc"
+            }
+        },
+        {
+            "id": "arthur-1",
+            "name": "Now It Begins",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of Any Round",
+                    "effect": [
+                        "Attach this card to 1 Enemy Combat unit, until the End of the Round.",
+                        "While this card is attached, friendly units that Attack this unit gain re-rolls. If the Attacking unit is Arthur Dayne's unit, that unit gains +1 to Hit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "arthur-dayne-c"
+            }
+        },
+        {
+            "id": "arthur-2",
+            "name": "Then You Shall Have It",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Choose 1. If this targets Arthur Dayne's unit gain both.",
+                        "• This Attack gains **Sundering** and the Defender becomes **Panicked**.",
+                        "• This Attack gains **Precision** and the Defender becomes **Weakned**."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "arthur-dayne-c"
+            }
+        },
+        {
+            "id": "arthur-3",
+            "name": "Fortune In The Wars To Come",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit. Attach this card to that unit, until that unit is targeted by [SWORDS]. While attached, that unit gains the **Iron Resolve** Ability.",
+                        "*This unit gains +1 to Panic Test rolls and suffers -1 Wounds from failed Panic Tests.*",
+                        "When this unit is Attacked, this unit suffers the following based on the zones controlled by the Attacker.",
+                        "[CROWN]: The Defender looses all Abilites until the end of the Turn.",
+                        "[LETTER]: The Defender cannot be the target of friendly Tactics Cards until the end of the Turn.",
+                        "[HORSE]: Defender does not benefit from **Fortified** key words."
+                    ]
+                },
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "arthur-dayne-c"
+            }
+        },
+        {
+            "id": "lewyn-1",
+            "name": "Dornish March",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a March or Maneuver Action:",
+                    "effect": [
+                        "That unit gains +2 [MOVEMENT], If performing a March Action this unit may Pivot before Movement.",
+                        "If you Control [HORSE] this unit ignores Hindering and Rough keywords."
+                    ]
+                },
+                {
+                    "trigger": "When a Unit is targeted by the [HORSE]:",
+                    "effect": [
+                        "Instead of performing a Maneuver Action, you may perform a March."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "lewyn-martell-c"
+            }
+        },
+        {
+            "id": "lewyn-2",
+            "name": "Superior Postitioning",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy performs a Charge Action, before resolving that Action:",
+                    "effect": [
+                        "If that enemy Charges a unit in the Front, they suffer a Disorderly Charge on Charge Distance rolls of 3 or less. If they suffer a Disorderly Charge, they become **Vulnerable**.",
+                        "If the defender is Lewyn's unit, they suffer a Disorderly Charge on Charge Distance rolls of 5 or less instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "lewyn-martell-c"
+            }
+        },
+        {
+            "id": "lewyn-3",
+            "name": "Cornered Not Broken",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a Enemy Combat unit is performing a Melee Attack, before rolling Attack Die:",
+                    "effect": [
+                        "The Attacker suffers 2 Hits, +2 Hits for each Enemy unit in Short Range of the Defender.",
+                        "If the Defender is Lewyn's unit, the Attacker becomes **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "lewyn-martell-c"
+            }
+        },
+        {
+            "id": "jon-1",
+            "name": "Assualt Orders",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*1 friendly Combat Unit performs 1 Melee Attack Action using its lowest Attack Die Value.*",
+                        "*If this targets Jon Connington's unit, it may perform 1 Charge Action using its lowest Attack Die Value instead.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-connington-c"
+            }
+        },
+        {
+            "id": "jon-2",
+            "name": "Crow Cages",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to 1 friendly Combat unit, until the end of the Game:",
+                        "Each time this unit destroys a Rank, place 1 Order token on this card. If this unit destroys an Enemy Attachment, place 2 Order tokens on this card instead",
+                        "*At the start of a Enemy Turn, you may remove 3 Order tokens from this card. If you do, your Opponent must discard 1 Tactics Card at random and play the turn with their Tactics Card Hand revealed.*"
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-connington-c"
+            }
+        },
+        {
+            "id": "jon-3",
+            "name": "Too Young And Impetuous",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Charge Action, After rolling Charge Distance dice:",
+                    "effect": [
+                        "This unit may re-roll Charge Distance dice.",
+                        "If you Control [SWORDS], this unit's Melee Attack gains **Critical Blow**.",
+                        "If this targets Jon Connington's unit, this unit's Melee Attack gains **Sundering**.",
+                        "If this Attack does not destroy a rank, the Attacker becomes **Weakend** and **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "jon-connington-c"
+            }
+        },
+        {
+            "id": "marq-1",
+            "name": "Set For Charge",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is Successfully Charged, before the Attacker performs their Melee Attack:",
+                    "effect": [
+                        "If that friendly unit is not engaged with another enemy, and was Charged from the Front or Flank, it performs 1 Melee Attack Action on the Attacker before the Attacker resolves their Melee Attack."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "marq-grafton-c"
+            }
+        },
+        {
+            "id": "marq-2",
+            "name": "Lash Out",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy completes a Melee Attack:",
+                    "effect": [
+                        "If the Defender was not destroyed, the Attacker suffers 2 Wounds for each of the Defender's destroyed ranks. If the Defender is a House Grafton unit, the Attacker also becomes **Panicked**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "marq-grafton-c"
+            }
+        },
+        {
+            "id": "marq-3",
+            "name": "United Defense",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a Enemy Combat unit is performing a Melee Attack, after rolling Defense Die:",
+                    "effect": [
+                        "IF there is 1 or more friendly units in Short Range, block +2 Hits.",
+                        "If this is Marq Grafton's unit block +2 Hit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "marq-grafton-c"
+            }
+        },
+        {
+            "id": "rhaegar-1",
+            "name": "Hidden Affairs",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit not containing Rhaegar Targaryen is Attacked:",
+                    "effect": [
+                        "Rhaegar's unit performs 1 Attack or Charge Action on the Attacker. This Attack rolls its highest Attack Die Value."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-c"
+            }
+        },
+        {
+            "id": "rhaegar-2",
+            "name": "Beauty And Intelligence",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy NCU Claims a zone:",
+                    "effect": [
+                        "Roll a die. On a 3+, that zone has no effect this turn.",
+                        "If you Control [CROWN] or [SWORDS], cancel the effect of that zone on a 2+ instead.",
+                        "If you Control both, this roll automatically succeeds."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-c"
+            }
+        },
+        {
+            "id": "rhaegar-3",
+            "name": "Blood of Dragons And Gods",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat unit. That unit performs 1 Morale Test.",
+                        "On a success, Attatch this card until this unit fails a Panic Test. While Attached, Opponents cannot place condition tokens on this unit."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-c"
+            }
+        },
+        {
+            "id": "rhaegar-4",
+            "name": "Tears And The Death Of Kings",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit is Attacked:",
+                    "effect": [
+                        "If that unit passed the Panic test, place 2 Condition tokens on any enemy Combat unit in Long Range.",
+                        "If that unit failed, place 1 Condition token instead.",
+                        "If the Defender is Rhaegar's unit place +1 Condition tokens."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-c2"
+            }
+        },
+        {
+            "id": "rhaegar-5",
+            "name": "Amongst The Flames",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit fails a Panic Test:",
+                    "effect": [
+                        "Target 1 friendly Combat unit. That unit performs 1 Attack, Charge or Maneuver Action, if Charging it must target the Attacker.",
+                        "After resolving this action, this unit suffers D3 wounds.",
+                        "If this targets Rheagar's unit, This unit's Attack gains +2 Attack Dice."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-c2"
+            }
+        },
+        {
+            "id": "rhaegar-6",
+            "name": "A Song Of Ice And Fire",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a enemy Combat unit is performing a Melee Attack, before rolling Defense Die:",
+                    "effect": [
+                        "The Defender gains +1 to Defense Die rolls and +2 to Morale Tests.",
+                        "If the Defender is Rhaegar's Unit, This unit may re-roll any Defense Die"
+                    ]
+                },
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This unit's Melee Attack gains **Sundering** and **Vicious**.",
+                        "If the Attacker is Rhaegar's unit, may re-roll Attack Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "rhaegar-targaryen-c2"
+            }
+        },
+        {
+            "id": "monford1",
+            "name": "Legacy Of The Sea Snake",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly House Velaryon unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "Remove 1 Condition token and place 1 Trade token on this unit.",
+                        "If you Control [MONEY], gains +1 to Hit."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "monford-c"
+            }
+        },
+        {
+            "id": "monford2",
+            "name": "Changing Of The Tides",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy performs a Charge Action, before resolving that Action:",
+                    "effect": [
+                        "If that enemy Charges a unit in the Front, they suffer a Disorderly Charge on Charge Distance rolls of 3 or less. If they suffer a Disorderly Charge, this Attack rolls its lowest Attack Die Value."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "monford-c"
+            }
+        },
+        {
+            "id": "monford3",
+            "name": "Rush Of Aggression",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Charge Action, before rolling Charge Distance dice:",
+                    "effect": [
+                        "This unit automatically counts as rolling a 6 on all Charge Distance dice and their Melee Attack gains **Critical Blow**.",
+                        "After this Attack has been completed, unless the Attacker is Monford's unit, they become **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "monford-c"
+            }
+        },
+        {
+            "id": "maric-1",
+            "name": "Protectors Of The Claw",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly House Celtigar unit, until the end of the Turn, that unit gains +1 Attack Die.",
+                        "If you Control [MONEY], that unit gains +1 to Hit."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "maric-c"
+            }
+        },
+        {
+            "id": "maric-2",
+            "name": "Jewels Of Blackwater Bay",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly NCU Claims a zone:",
+                    "effect": [
+                        "Replace that zone's effect with:",
+                        "*Restore 5 Wounds (Total) across any number of friendly units.",
+                        "If a Targeted unit is House Celtigar, instead of restoring 1 Wound, you may remove 1 Condition token."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "maric-c"
+            }
+        },
+        {
+            "id": "maric-3",
+            "name": "Celtigar Steeped Will",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is targeted by an Enemy Order, NCU, or Tactics Card, before resolving that effect:",
+                    "effect": [
+                        "That unit performs 1 Morale Test. On a Success, cancel the effect of the Order, NCU or Tactics Card.",
+                        "If that unit is House Celtigar, gain +2 to their Morale Test roll."
+                    ]
+                },
+                {
+                    "trigger": "Start of a friendly Turn:",
+                    "effect": [
+                        "Draw 1 Tactics card."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "maric-c"
+            }
+        }
+    ],
+    "special": [
+        {
+            "id": "royalist",
+            "name": "Royalist: Targaryen",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "Only Royalist Targaryen Units and Attachments may be included in your Army.",
+                    "You may include any Royalist Commander in your army. If you do, replace the Targaryen Tactics Deck with the Royalist Targaryen Deck."
+                ]
+            }
+        },
+        {
+            "id": "the-white-spear",
+            "name": "The White Spear",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "If Lewyn Martell, The White Spear is your Commander, your Army may include the following House Martell Units, their associated Attachments and the following named Characters.",
+                    "• Martell Spearmen.",
+                    "• Sunspear Royal Guard",
+                    "• Sunspear Dervishes",
+                    "• Sand Skirmishers",
+                    "• Starfall Outriders",
+                    "• Starfall Knights",
+                    "• Harmen Uller",
+                    "• Doran Martell"
+                ]
+            }
+        },
+        {
+            "id": "wealth-of-the-sea",
+            "name": "Wealth Of The Sea",
+            "faction": "targaryen",
+            "version": "Royalists",
+            "role": "special",
+            "category": "faction",
+            "front": {
+                "ratio": 0.3,
+                "crests": 2,
+                "text": [
+                    "If your army contains 1 or more Velaryon units, place this card near your Tactics Deck.",
+                    "This card starts the game with 3 Trade tokens. Every time a friendly NCU claims [MONEY], place 1 Trade token on this card.",
+                    "Each time a friendly Velaryon unit Activates, you may place up to 2 Trade tokens on that unit. Trade tokens may be expended, for each token expended gain 1 of the following:",
+                    "• This unit's Attack gains **Sundering**.",
+                    "• This unit's Attack gains +1 Attack Die.",
+                    "• This unit restores 1 Wound +1 for each Trade token on this unit. (*tokens counted before removing*)",
+                    "• This unit Blocks 1 Hit for each token removed."
+                ]
+            }
+        }
+    ]
+}
