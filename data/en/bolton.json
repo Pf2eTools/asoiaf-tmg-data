@@ -4,15 +4,215 @@
         "id": "bolton",
         "language": "en"
     },
+    "abilities": {
+        "IMPALING SPEAR": {
+            "effect": [
+                "• **Vicious**",
+                "• After completing this attack, if the Defender failed their Panic Test, or this attack destroyed an enemy rank, target the Defender. It becomes **Weakened**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "RUTHLESS VOLLEY": {
+            "effect": [
+                "• **Vicious**",
+                "• Ignores units and terrain when determining Line of Sight.",
+                "• Before rolling attack dice, if the Defender is engaged, target the Defender. It becomes **Vulnerable**, and this unit may re-roll any Attack Dice."
+            ],
+            "icons": [
+                "ranged"
+            ]
+        },
+        "MUMMER'S TRICKS": {
+            "effect": [
+                "• Before rolling attack dice, target the Defender. Until this Attack is completed, the Defender loses all abilities.",
+                "• After completing this attack, this unit may perform 1 Retreat Action. If it does, after completing that retreat, target any number of enemies this unit disengaged from. They become **Weakened**."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "SKIRMISHER": {
+            "effect": [
+                "Enemies Charging this unit do not gain Charge Bonuses. When this unit activates, if it is not already engaged, it may pivot to any facing."
+            ]
+        },
+        "MUMMER'S TOOLS": {
+            "effect": [
+                "Before rolling attack dice, choose 1. For each condition token on the Defender, choose +1:",
+                "• **Critical Blow**",
+                "• **Sundering**",
+                "• **Vicious**"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "HARASSMENT TACTICS": {
+            "effect": [
+                "After this unit completes a Maneuver Action, you may target 1 enemy in Short Range of this unit. That enemy becomes **Vulnerable**."
+            ]
+        },
+        "FLAIL & SHIELD": {
+            "effect": [
+                "• **Precision**",
+                "• **Vicious**"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "WAR FLAIL": {
+            "effect": [
+                "• **Precision**",
+                "• **Vicious**"
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "SADISTIC EXHILARATION": {
+            "effect": [
+                "Before rolling Attack Dice, you may expend 1 Panic token from the Defender and target this unit. If you do, this attack rolls its highest Attack Die Value and may reroll any Attack Dice."
+            ],
+            "icons": [
+                "melee",
+                "ranged"
+            ]
+        },
+        "CRUEL INDULGENCE": {
+            "effect": [
+                "When an Enemy engaged with this unit gains a condition token, this unit may restore 2 Wound."
+            ]
+        },
+        "MY NAME IS REEK!": {
+            "effect": [
+                "When this unit Activates, target any number of Enemies in Short Range of this unit. They become **Panicked**."
+            ]
+        },
+        "CALCULATED CRUELTY": {
+            "effect": [
+                "Before rolling Attack Dice, you may expend 1 Condition token from the Defender and target that Enemy. If you do, until the end of the Turn, it loses all Abilities and cannot be targeted by friendly Tactics Cards."
+            ],
+            "icons": [
+                "melee",
+                "ranged"
+            ]
+        },
+        "INTIMIDATING REPUTATION": {
+            "effect": [
+                "When an enemy in Long Range Activates, you may target it. If you do, it performs 1 Morale Test with -1 to its roll for each remaining rank in this unit. On a failure, it becomes **Weakened**."
+            ]
+        },
+        "SEASONED BRUTALITY": {
+            "effect": [
+                "Before rolling Attack Dice, this Attack rolls +1 Attack Die for each Condition token on the Defender, to a maximum of +2 Attack Dice."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "BATTLE-HARDENED": {
+            "effect": [
+                "This unit suffers -1 Wound from failing Panic Tests, to a minimum of 1."
+            ]
+        },
+        "LOYALTY IN SERVICE": {
+            "effect": [
+                "While your opponent does not Control [CROWN], this unit may reroll any Defense Dice."
+            ]
+        },
+        "SIC 'EM": {
+            "effect": [
+                "• This unit may always reroll Charge Distance Dice",
+                "• Enemies this unit Successfully Charge become **Panicked**.",
+                "• When an enemy would Retreat from this unit, before performing that Retreat, target that enemy. It suffers 1 Hit, +1 Hit for each remaining rank in this unit."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "ORDER: DANCE!!!": {
+            "trigger": "Start of any Turn:",
+            "effect": [
+                "This unit performs a 3 [MOVEMENT] Maneuver. Then, it becomes **Vulnerable**."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "MASTER FLAYER": {
+            "effect": [
+                "• This unit's Melee Attacks gain **Precision**.",
+                "• After rolling Attack Dice, you may expend 1 **Weakened** token from the defender to reroll any Attack Dice."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "SADISTIC TOUGHNESS": {
+            "effect": [
+                "After rolling Defense Dice, this unit blocks 1 Hit, +1 Hit for each Condition token on the Attacker."
+            ]
+        },
+        "OPPORTUNISTIC BRUTALITY": {
+            "effect": [
+                "Before rolling Attack Dice, if the Defender has not yet Activated this Round, this Attack rolls its highest Attack Die Value and gains **Critical Blow** until the end of the turn."
+            ],
+            "icons": [
+                "melee",
+                "ranged"
+            ]
+        },
+        "EXPLOIT WEAKNESS": {
+            "effect": [
+                "**Weakened** tokens on enemies engaged with this unit may be treated and expented as if they were **Panicked** or **Vulnerable** tokens."
+            ]
+        },
+        "MAD DOG'S FEROCITY": {
+            "effect": [
+                "After an enemy completes a Melee Attack on this unit, you may target that enemy. They become **Panicked** or **Vulnerable**."
+            ]
+        },
+        "FERAL RAGE": {
+            "effect": [
+                "• This unit's Melee Attacks gain **Sundering**.",
+                "• When Charging, this unit rolls 1 additional Charge Distance Die and discards the lowest result."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "EXPLOIT FEAR": {
+            "effect": [
+                "**Panicked** tokens on enemies engaged with this unit may be treated and expented as if they were **Vulnerable** tokens or **Weakened** tokens."
+            ]
+        },
+        "SADISTIC MUTILATION": {
+            "effect": [
+                "After this unit completes a Melee Attack, you may expend 1 **Weakened** token from the Defender and target that Enemy. If you do, you may either have it suffer 2 Wounds or destroy 1 of its Infantry Attachments."
+            ],
+            "icons": [
+                "melee"
+            ]
+        },
+        "WEAKENED RESOLVE": {
+            "effect": [
+                "When an Enemy engaged with this unit fails a Panic Test, you may target that Enemy. It becomes **Weakened**."
+            ]
+        }
+    },
     "unit": [
         {
             "id": "11001",
-            "name": "Cutthroats",
+            "name": "Dreadfort Cutthroats",
             "faction": "bolton",
-            "version": "2021-S01",
+            "version": "S06B",
             "role": "unit",
             "abilities": [
-                "Ruthless Aggression"
+                "Ruthless Aggression",
+                "Prey on Fear"
             ],
             "attacks": [
                 {
@@ -38,30 +238,30 @@
         },
         {
             "id": "11002",
-            "name": "Blackguards",
+            "name": "Dreadfort Blackguards",
             "faction": "bolton",
-            "version": "S06",
+            "version": "S06B",
             "role": "unit",
             "abilities": [
-                "Spiked Flail",
+                "Flail & Shield",
                 "Horrific Visage"
             ],
             "attacks": [
                 {
-                    "name": "Spiked Flail",
+                    "name": "Flail & Shield",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
+                        7,
                         6,
-                        5,
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 3,
-            "morale": 6,
+            "morale": 5,
             "speed": 5,
-            "cost": 6,
+            "cost": 7,
             "tray": "infantry",
             "fluff": {
                 "lore": "The ruthlessness of House Bolton’s Blackguards is known by every enemy force they face. Their vicious spiked flails render heavy shields only moderately effective. Being the heaviest troops in House Bolton’s arsenal, the Blackguards can be relied upon to take and hold any position on the battlefield."
@@ -72,7 +272,7 @@
             "id": "11003",
             "name": "Dreadfort Archers",
             "faction": "bolton",
-            "version": "S05",
+            "version": "S06B",
             "role": "unit",
             "abilities": [
                 "Ruthless Volley"
@@ -111,9 +311,9 @@
         },
         {
             "id": "11004",
-            "name": "Bastard's Girls",
+            "name": "Dreadfort Bastard's Girls",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "unit",
             "abilities": [
                 "Order: Charging Volley",
@@ -143,7 +343,7 @@
                 }
             ],
             "defense": 6,
-            "morale": 5,
+            "morale": 4,
             "speed": 6,
             "cost": 7,
             "tray": "infantry",
@@ -154,14 +354,14 @@
         },
         {
             "id": "11005",
-            "name": "Flayed Men",
+            "name": "Dreadfort Flayed Men",
             "faction": "bolton",
-            "version": "S06",
+            "version": "S06B",
             "role": "unit",
             "abilities": [
                 "Cavalry",
-                "War Flail",
-                "Intimidating Presence"
+                "Order: Spread Fear",
+                "War Flail"
             ],
             "attacks": [
                 {
@@ -169,8 +369,8 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        6,
-                        5
+                        8,
+                        6
                     ]
                 }
             ],
@@ -189,7 +389,7 @@
             "id": "11006",
             "name": "Dreadfort Spearmen",
             "faction": "bolton",
-            "version": "S05",
+            "version": "S06B",
             "role": "unit",
             "abilities": [
                 "Order: Set For Charge",
@@ -216,6 +416,71 @@
                 "lore": "House Bolton’s Spearmen are indoctrinated in the combat ethic of causing fear and panic among the enemy ranks. Their helmets and shields are designed with extra spikes purely for terrifying effect. The spearmen are trained to strike at points on foes that will cause maximum pain but not kill their opponents, leaving plenty of prisoners for the sadists in House Bolton to do with as they will after battle."
             },
             "icon": "infantry"
+        },
+        {
+            "id": "11070",
+            "name": "Bloody Mummer Zorse Riders",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "Mummer's Tools",
+                "Harassment Tactics"
+            ],
+            "attacks": [
+                {
+                    "name": "Mummer's Tools",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "cavalry",
+            "fluff": {
+                "lore": "Never lacking for outrageous flair, Bloody Mummer cavalry ride Zorses into battle. These unusual beasts originate from Essos, where striped animals and horses were interbred to create the species. Zorses can survive on little food and water for extended periods, but remain as swift as their western counterparts. Zorse Riders fill a classic light cavalry role in the Mummer ranks, flanking and charging pinned units and exposed archers."
+            },
+            "icon": "cavalry",
+            "wounds": 3
+        },
+        {
+            "id": "11071",
+            "name": "Bloody Mummer Skirmishers",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "unit",
+            "abilities": [
+                "Mummer's Tricks",
+                "Skirmisher"
+            ],
+            "attacks": [
+                {
+                    "name": "Mummer's Tricks",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 6,
+            "cost": 6,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "Despite their outrageous appearance, the Bloody Mummers remain a deadly band of mercenaries, noted for their cruelty, itself excessive for even low-brow mercenaries. They’re loyal to coin alone, but meet their price and their ranks will fill whatever role an army requires. The Skirmishers are lightly armed and armored, granting them the mobility needed for rapid flanking, though they should be protected from direct charges."
+            },
+            "icon": "infantry"
         }
     ],
     "ncu": [
@@ -223,17 +488,15 @@
             "id": "31001",
             "name": "Walda Frey",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "ncu",
             "title": "Fat Walda",
             "abilities": [
                 {
-                    "name": "Frey Ambition",
+                    "name": "Worth her Weight in Silver",
                     "effect": [
-                        "Each time Walda Claims [CROWN], 1 enemy Combat Unit becomes **Weakened**.",
-                        "Each time Walda Claims [LETTER], you may replace that zone's effect with:",
-                        "*Search your Tactics Deck or discard pile for 1 of your **Commander's** Tactics cards and add it to your hand. Shuffle your Tactics Deck.*",
-                        "Each time Walda Claims [MONEY], instead of removing a Condition token, you may restore +1 Wound."
+                        "Each time Walda Claims a zone, you may target 1 friendly Combat Unit. It restores 2 Wound.",
+                        "Once per game, when Walda would Claim a zone, instead you may target any number of friendly Combat Units and restore a total of 2 + the current game Round Wounds among those units, divided as you choose"
                     ]
                 }
             ],
@@ -247,16 +510,16 @@
             "id": "31002",
             "name": "Jeyne Poole",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "ncu",
             "title": "Arya Stark, Bride Of Bolton",
             "abilities": [
                 {
-                    "name": "Loyal Imposter",
+                    "name": "Bolton Hostage",
                     "effect": [
                         "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*.",
-                        "While Influencing a unit, that unit gains +2 to Morale Test rolls.",
-                        "Once per game, at the start of any Round, you may have your opponent gain control of Jeyne until the end of the Round. If you do, you become the First Player. Jeyne cannot Influence a unit that Round."
+                        "While influencing an enemy Combat Unit, that unit suffers -2 to Morale Test rolls.",
+                        "If Jeyne Claims [CROWN] and the enemy fails their Panic Test, that unit's owner must discard 1 Tactics Card at random from their hand."
                     ]
                 }
             ],
@@ -270,44 +533,38 @@
             "id": "31003",
             "name": "Roose Bolton",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "ncu",
             "title": "Calculating And Cruel",
             "abilities": [
                 {
-                    "name": "Horrific Rumors",
+                    "name": "Calculated Cruelty",
                     "effect": [
-                        "Roose begins the game with 3 Order tokens on him.",
-                        "When Roose Activates, you may remove 1 Order token from him. If you do, 1 enemy Combat Unit becomes **Panicked**.",
-                        "When Roose Claims a zone, you may replace that zone's effect with:",
-                        "*1 enemy Combat Unit suffers 1 Panic Test.*"
+                        "Once per Round, if Roose has not yet Claimed a zone, when an enemy Combat Unit gains a Condition token, you may target 1 other Enemy Combat Unit in Long Range of it. That unit gains 1 Condition token of the same type.",
+                        "Each time Roose Claims a zone, you may target 1 enemy Combat Unit. It suffers 1 Hit for each Condition token on it."
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "\"You had only to look at Bolton to know that he had more cruelty in his pinky toe than all the Freys combined.\""
-            },
-            "tokens": {
-                "name": "order",
-                "number": 3
             }
         },
         {
             "id": "31004",
             "name": "Ramsay Snow",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "ncu",
-            "title": "Red Helm",
+            "title": "The Red Helm",
             "abilities": [
                 {
-                    "name": "Sadistic Butchery",
+                    "name": "Sadistic Hunting",
                     "effect": [
-                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*.",
-                        "While Influencing a friendly House Bolton unit, it's Melee Attacks gain **Fueled by Slaughter:**",
-                        "*After this unit completes a Melee Attack, if the Defender suffered any Wounds, it restores 1 Wound, +1 additional Wound for each of the Defender's destroyed ranks.*"
+                        "Once per Round, choose 1:",
+                        "• After a friendly Combat Unit rolls Charge Distance Dice, you may reroll any of those dice and, on a Successful Charge, target all Enemies in Short Range. They become **Panicked**.",
+                        "• After a friendly Combat Unit completes a Melee Attack, target 1 other Enemy in Long Range of the Attacker. It suffers 1 Panic Test with -1 to its roll for each of the Defender's destroyed ranks."
                     ]
                 }
             ],
@@ -321,17 +578,15 @@
             "id": "31005",
             "name": "Tybald",
             "faction": "bolton",
-            "version": "S04",
+            "version": "S06B",
             "role": "ncu",
             "title": "Maester of the Dreadfort",
             "abilities": [
                 {
                     "name": "Deceitful Envoy",
                     "effect": [
-                        "Tybald begins the game with 2 Order tokens on him.",
-                        "Each time an enemy NCU Activates, if Tybald is not on the Tactics Board, you may remove 1 Order token from Tybald. If you do, target 1 zone.",
-                        "If that NCU Claims that zone, after resolving that zone's effect, 1 enemy Combat Unit becomes **Vulnerable**.",
-                        "If that NCU does not Claim that zone this Turn, at the end of the Turn, Tybald Claims that zone."
+                        "Once per round, when an enemy NCU Activates, if Tybald has not yet claimed a zone, you may select 1 zone. If that enemy Claims that zone this Activation, target 1 enemy Combat Unit. It becomes **Vulnerable** and **Weakened**.",
+                        "When Tybald Claims [LETTER], you may replace that zone's effect with: \"*Target 1 enemy Combat Unit. It becomes **Panicked**. Then, reveal the top 3 cards of the opponent's Tactics Deck. Select and discard 1 of those cards, then place the rest back on top of their deck in any order*.\""
                     ]
                 }
             ],
@@ -339,10 +594,6 @@
             "character": true,
             "fluff": {
                 "quote": "\"Isn't it clever how the maesters go only by one name, even those who had two when they first arrived at the Citadel?\""
-            },
-            "tokens": {
-                "name": "order",
-                "number": 2
             }
         }
     ],
@@ -351,12 +602,12 @@
             "id": "21001",
             "name": "Ramsay Snow",
             "faction": "bolton",
-            "version": "S05",
+            "version": "S06B",
             "role": "attachment",
-            "title": "Spiteful Heir",
+            "title": "The Bastard of Bolton",
             "abilities": [
-                "Horrific Visage",
-                "Prey on Fear"
+                "Sadistic Exhilaration",
+                "Cruel Indulgence"
             ],
             "tray": "infantry",
             "character": true,
@@ -375,12 +626,12 @@
             "id": "21002",
             "name": "Roose Bolton",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "title": "Lord of the Dreadfort",
             "abilities": [
-                "Order: Spread Fear",
-                "Intimidating Presence"
+                "Calculated Cruelty",
+                "Intimidating Reputation"
             ],
             "tray": "infantry",
             "character": true,
@@ -396,15 +647,77 @@
             }
         },
         {
+            "id": "21083",
+            "name": "Roose Bolton",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "attachment",
+            "title": "The Leechlord",
+            "abilities": [
+                "Calculated Cruelty",
+                "Intimidating Reputation"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Fear is what keeps a man alive in this world of treachery and deceit.\""
+            }
+        },
+        {
+            "id": "21080",
+            "name": "Vargo Hoat",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "attachment",
+            "title": "The Goat of Harrenhal",
+            "abilities": [
+                "Sadistic Mutilation",
+                "Weakened Resolve"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41017",
+                "41018",
+                "41019"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"The goat is Lord of Harrenhal, and the Lord of Harrenhal does not haggle.\""
+            }
+        },
+        {
+            "id": "21090",
+            "name": "Vargo Hoat",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "attachment",
+            "title": "Mummer's Master",
+            "abilities": [
+                "Sadistic Mutilation",
+                "Weakened Resolve"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"The goat is Lord of Harrenhal, and the Lord of Harrenhal does not haggle.\""
+            }
+        },
+        {
             "id": "21003",
             "name": "Ramsay Snow",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "title": "Sadist",
             "abilities": [
-                "Fueled by Slaughter",
-                "Intimidating Presence"
+                "Sadistic Exhilaration",
+                "Cruel Indulgence"
             ],
             "cost": 2,
             "tray": "infantry",
@@ -418,11 +731,11 @@
             "id": "21004",
             "name": "Theon Greyjoy",
             "faction": "bolton",
-            "version": "2021-S01",
+            "version": "S06B",
             "role": "attachment",
             "title": "Reek",
             "abilities": [
-                "Order: Set An Example"
+                "My Name Is Reek!"
             ],
             "tray": "infantry",
             "character": true,
@@ -440,10 +753,11 @@
             "id": "21005",
             "name": "Dreadfort Captain",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "abilities": [
-                "Prey on Fear"
+                "Fueled by Slaughter",
+                "Exploit Fear"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -451,12 +765,13 @@
         },
         {
             "id": "21006",
-            "name": "Bolton Flayer",
+            "name": "Dreadfort Flayer",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "abilities": [
-                "Order: Spread Fear"
+                "Order: Spread Fear",
+                "Ferocious assault"
             ],
             "cost": 1,
             "tray": "infantry",
@@ -466,9 +781,9 @@
             "id": "21007",
             "name": "Ben Bones",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
-            "title": "Kennelmaster",
+            "title": "Bastard's Boy",
             "abilities": [
                 "Sic 'Em"
             ],
@@ -477,7 +792,7 @@
             "character": true,
             "back_text": [
                 {
-                    "text": "*Reduce this Attachment's cost by 1 if attached to a unit of Bastard's Girls.*"
+                    "text": "*Bastard's Boys do not count towards the usual attachment limits. Each unit may only include 1 Bastard's Boy.*"
                 }
             ],
             "icon": "infantry",
@@ -489,18 +804,18 @@
             "id": "21008",
             "name": "Damon Dance-For-Me",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "title": "Bastard's Boy",
             "abilities": [
-                "Boldness and Courage"
+                "Order: Dance!!!"
             ],
             "cost": 1,
             "tray": "infantry",
             "character": true,
             "back_text": [
                 {
-                    "text": "*The first Bastard's Boy Attachment included in your army is free.*"
+                    "text": "*Bastard's Boys do not count towards the usual attachment limits. Each unit may only include 1 Bastard's Boy.*"
                 }
             ],
             "icon": "infantry",
@@ -512,18 +827,18 @@
             "id": "21009",
             "name": "Skinner",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "title": "Bastard's Boy",
             "abilities": [
-                "Weaken Resolve"
+                "Master Flayer"
             ],
             "cost": 1,
             "tray": "infantry",
             "character": true,
             "back_text": [
                 {
-                    "text": "*The first Bastard's Boy Attachment included in your army is free.*"
+                    "text": "*Bastard's Boys do not count towards the usual attachment limits. Each unit may only include 1 Bastard's Boy.*"
                 }
             ],
             "icon": "infantry",
@@ -535,18 +850,18 @@
             "id": "21010",
             "name": "Grunt",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "title": "Bastard's Boy",
             "abilities": [
-                "Order: Resilience"
+                "Sadistic Toughness"
             ],
             "cost": 1,
             "tray": "infantry",
             "character": true,
             "back_text": [
                 {
-                    "text": "*The first Bastard's Boy Attachment included in your army is free.*"
+                    "text": "*Bastard's Boys do not count towards the usual attachment limits. Each unit may only include 1 Bastard's Boy.*"
                 }
             ],
             "icon": "infantry",
@@ -558,18 +873,18 @@
             "id": "21011",
             "name": "Sour Alyn",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "title": "Bastard's Boy",
             "abilities": [
-                "Brutal Sadism"
+                "Opportunistic Brutality"
             ],
             "cost": 1,
             "tray": "infantry",
             "character": true,
             "back_text": [
                 {
-                    "text": "*The first Bastard's Boy Attachment included in your army is free.*"
+                    "text": "*Bastard's Boys do not count towards the usual attachment limits. Each unit may only include 1 Bastard's Boy.*"
                 }
             ],
             "icon": "infantry",
@@ -581,14 +896,15 @@
             "id": "21012",
             "name": "Steelshanks Walton",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "attachment",
             "title": "Relentless Soldier",
             "abilities": [
-                "Order: Sentinel",
-                "Roose's Vassal"
+                "Seasoned Brutality",
+                "Battle-Hardened",
+                "Loyalty in Service"
             ],
-            "cost": 1,
+            "cost": 2,
             "tray": "infantry",
             "character": true,
             "icon": "infantry",
@@ -600,13 +916,13 @@
             "id": "21013",
             "name": "Steelshanks Walton",
             "faction": "bolton",
-            "version": "S05",
+            "version": "S06B",
             "role": "attachment",
             "title": "Captain of the Guard",
             "abilities": [
-                "Sundering",
-                "Iron Resolve",
-                "Shared Fear"
+                "Seasoned Brutality",
+                "Battle-Hardened",
+                "Loyalty in Service"
             ],
             "tray": "infantry",
             "character": true,
@@ -620,37 +936,82 @@
             "fluff": {
                 "quote": "\"Steelshanks, he is called. A soldier of iron loyalty.\""
             }
+        },
+        {
+            "id": "21081",
+            "name": "Rorge",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "attachment",
+            "title": "The Mad Dog of Saltpans",
+            "abilities": [
+                "Exploit Weakness",
+                "Mad Dog's Ferocity"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"You want a nose like mine?  Fight me, and you'll get one.\""
+            }
+        },
+        {
+            "id": "21082",
+            "name": "Biter",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "attachment",
+            "title": "Rorge's Mad Dog",
+            "abilities": [
+                "Feral Rage"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army containing Rorgee, and must be attached to his unit. Biter ignores any usual attachment restrictions.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"His tongue had been cut and  he does not speak, except to hiss.\""
+            }
         }
     ],
     "tactics": [
         {
             "id": "41001",
-            "name": "Bloody Beheadings",
+            "name": "Flay them all!",
             "faction": "bolton",
-            "version": "S06",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "After a friendly unit completes a Melee Attack:",
                     "effect": [
-                        "If this Attack destroyed an enemy rank, each enemy in Long Range becomes **Panicked**. If they were already **Panicked**, they suffer 1 Panic Test.",
-                        "If this Attack destroyed the enemy instead, each enemy in Long Range becomes **Panicked** and they suffer 1 Panic Test."
+                        "If this Attack destroyed an enemy rank, target any number of enemy units in Long Range of the Attacker. They become **Panicked**."
                     ]
                 }
             ]
         },
         {
             "id": "41002",
-            "name": "Harsh Punishments",
+            "name": "Horrific Reputation",
             "faction": "bolton",
-            "version": "S05",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "Start of any Turn:",
+                    "trigger": "When an enemy Combat Unit Activates:",
                     "effect": [
-                        "Target 1 friendly Combat Unit and attach this card to them until the end of the game.",
-                        "While this card is attached, this unit's Melee Attacks always roll their highest Attack Die Value and gains **Sundering**. Each time this unit fails a Panic Test, it suffers +1 Wound."
+                        "Target that enemy. It performs 1 Morale Test. If it is engaged, it suffers -1 to its roll for each remaining rank in all units it is engaging. On failure, it becomes **Panicked** and **Vulnerable**."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly Combat Unit Activates:",
+                    "effect": [
+                        "Target 1 enemy engaged with this unit. It performs 1 Morale Test with -1 to its roll for each remaining rank in all units it is engaging. On failure, it becomes **Panicked** and **Vulnerable**."
                     ]
                 }
             ]
@@ -659,13 +1020,13 @@
             "id": "41003",
             "name": "Our Blades Are Sharp",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
                     "effect": [
-                        "This Attack gains **Precision**. If the Defender is **Panicked**, this Attack may also re-roll any Attack Dice."
+                        "Target the Attacker. This attack may reroll any attack dice. You may expend 1 condition token from the Defender. If you do, this attack also gains **Sundering** until the end of the turn"
                     ]
                 }
             ]
@@ -674,33 +1035,36 @@
             "id": "41004",
             "name": "Sadistic Games",
             "faction": "bolton",
-            "version": "S06",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "Start of an enemy Turn:",
+                    "trigger": "Start of any Turn:",
                     "effect": [
                         "Your opponent chooses 1 *(you select targets only after they choose)*:",
-                        "• Target up to 2 enemy Combat Units. They become **Panicked**.",
-                        "• Target up to 2 enemy Combat Units. They become **Weakened**."
+                        "• Target up to 2 enemy Combat Units. They become **Weakened**.",
+                        "• Target up to 2 enemy Combat Units. They become **Vulnerable**."
                     ]
                 }
             ]
         },
         {
             "id": "41005",
-            "name": "Cruel Methods",
+            "name": "Cruelty and Cunning",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "Start of any Turn:",
+                    "trigger": "When an enemy Combat Unit fails a Panic Test:",
                     "effect": [
-                        "Target 1 enemy Combat Unit. You may expend 1 Panic token from that unit. If you do, choose 2:",
-                        "• That enemy becomes **Vulnerable**.",
-                        "• That enemy becomes **Weakened**.",
-                        "• 1 friendly Infantry unit in Long Range restores 2 Wounds *(this may be selected multiple times)*."
+                        "Target that enemy. It suffers +1 Wound from that test, and +1 additional Wound if it is **Vulnerable** and +1 additional Wound if it is **Weakened**."
+                    ]
+                },
+                {
+                    "trigger": "When an enemy Combat Unit performs a Melee Attack, before rolling attack dice:",
+                    "effect": [
+                        "Target the Attacker. For each condition token on them, they roll -1 Attack Die."
                     ]
                 }
             ]
@@ -709,7 +1073,7 @@
             "id": "41006",
             "name": "A Flayed Man Has No Secrets",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
@@ -724,31 +1088,28 @@
             "id": "41007",
             "name": "Fear Keeps a Man Alive",
             "faction": "bolton",
-            "version": "S05",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "When an enemy fails a Panic Test:",
                     "effect": [
-                        "Target any number of friendly units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units.",
-                        "If that enemy is in Short Range of your Commander's unit, restore +1 Wounds."
+                        "Target any number of friendly units in Short Range of that enemy. For each Wound caused by this Panic Test, each targeted unit may restore 1 Wound."
                     ]
                 }
             ]
         },
         {
             "id": "41008",
-            "name": "Skin Collection",
+            "name": "Echoes of Agony",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "Start of any Turn:",
+                    "trigger": "After a friendly Combat Unit completes a Melee Attack::",
                     "effect": [
-                        "Attach this card to 1 friendly Infantry unit until the end of the game.",
-                        "Each time this unit destroys an enemy rank, place 1 Order token on this card.",
-                        "Enemies engaged with this unit suffer -1 to Panic tests for each Order token on this card, up to -2."
+                        "Target 1 other enemy in Long Range of the Attacker. That enemy suffers 1 Panic Test with a -1 to its result for each of the Defender’s destroyed ranks. If the Attacker's unit contains Ramsay Snow, that enemy suffers +1 additional Wound on failure."
                     ]
                 }
             ],
@@ -758,15 +1119,15 @@
         },
         {
             "id": "41009",
-            "name": "Opportunist",
+            "name": "Broken Playthings",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "trigger": "Start of Any Turn:",
                     "effect": [
-                        "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or **Vicious**. If the Attacker is Ramsay Snow's unit, gain both instead."
+                        "Target 1 enemy Combat Unit. You may expend 1 Panicked token from them. If you do, they become **Weakened** and **Vulnerable**, and if that unit is in Short Range of a unit containing Ramsay Snow, his unit may remove any condition tokens on it."
                     ]
                 }
             ],
@@ -778,13 +1139,13 @@
             "id": "41010",
             "name": "Spoils In Flesh",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "After a friendly unit completes a Melee Attack:",
                     "effect": [
-                        "If this Attack destroyed an enemy rank, 1 friendly unit in Short Range of the Attacker restores 1 Wound, +1 Wound for each of the Defender's destroyed ranks."
+                        "Target the Attacker. It restores 2 Wound, +1 additional Wound for each of the Defender’s destroyed ranks. If this targets a unit containing Ramsay Snow, it restores +1 additional Wound."
                     ]
                 }
             ],
@@ -796,13 +1157,13 @@
             "id": "41011",
             "name": "Whispered Threats",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
                     "trigger": "When an enemy NCU Activates:",
                     "effect": [
-                        "If that NCU Claims a zone this Turn, after resolving that zone's effect, target 1 enemy Combat Unit. They become **Vulnerable**. Then target 1 enemy Combat Unit, they become **Panicked**."
+                        "If that unit Claims a Zone this Activation, after resolving that Zone's effect, target up to 3 enemy Combat Units. 1 of those units becomes **Weakened**, 1 becomes **Vulnerable**, and 1 becomes **Panicked** (*You may assign more than one token to the same unit*.)"
                     ]
                 }
             ],
@@ -812,16 +1173,15 @@
         },
         {
             "id": "41012",
-            "name": "Seeing Their Flaws",
+            "name": "Cold Regards",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "After an enemy Combat Unit completes an Action:",
+                    "trigger": "When an enemy Combat Unit Activates:",
                     "effect": [
-                        "That enemy becomes **Vulnerable** and **Panicked**.",
-                        "Attach this card to that enemy until the end of the Round. While attached, and Roose Bolton's unit is Attacking that enemy, that enemy loses all Abilities and cannot be targeted by friendly Tactics cards."
+                        "If that enemy is in Long Range of a friendly Combat Unit, target that enemy. It suffers 1 Hit, +1 additional Hit for each condition token on it, and +1 additional Hit if it is in Long Range of a unit containing Roose Bolton."
                     ]
                 }
             ],
@@ -833,14 +1193,13 @@
             "id": "41013",
             "name": "Dreadfort Secrets",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "After a friendly unit completes a Melee Attack, if it destroyed an enemy rank:",
+                    "trigger": "Start of Any Turn:",
                     "effect": [
-                        "Attach this card to 1 friendly Infantry unit in Short Range of the Attacker. All enemies they are engaged with become **Panicked**.",
-                        "While attached, each time an enemy unit Activates in Short Range, that enemy becomes **Panicked**."
+                        "Target 1 enemy Combat Unit. Expend up to 2 condition tokens from that unit. If you removed 1 token, its owner discards 1 random Tactic Card from their hand. If you removed 2 tokens, look at that player’s hand of Tactic Cards and choose 1 card to discard and, until the end of the Round, that player plays with their hand of Tactic Cards revealed."
                     ]
                 }
             ],
@@ -850,15 +1209,15 @@
         },
         {
             "id": "41014",
-            "name": "Price of Fear",
+            "name": "Steelshank's Watch",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When an enemy unit fails a Panic Test:",
+                    "trigger": "After an enemy Combat Unit completes its Activation:",
                     "effect": [
-                        "Target 1 friendly Combat unit in Long Range of that enemy. They may perform 1 Maneuver Action."
+                        "Target that enemy. If it is in Long Range of a House Bolton unit, it becomes **Vulnerable**. Then, target 1 friendly House Bolton unit in Long Range of that enemy. It may shift up to 2\". If this targets a unit containing Steelshanks Walton, you may also draw 1 Tactics Card."
                     ]
                 }
             ],
@@ -868,16 +1227,15 @@
         },
         {
             "id": "41015",
-            "name": "Rush of Aggression",
+            "name": "Fear is Loyalty",
             "faction": "bolton",
-            "version": "2021",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When a friendly unit performs a Charge Action, before rolling Charge Distance Dice:",
+                    "trigger": "When a friendly Combat Unit is performing a Panic Test, after rolling dice:",
                     "effect": [
-                        "This unit automatically counts as rolling a 6 on all Charge Distance dice and their Melee Attack gains **Critical Blow**.",
-                        "After this Attack has been completed, unless the Attacker is Steelshanks Walton's unit, they become **Vulnerable**."
+                        "Target that unit. It may reroll any dice for this test. If it is in Long Range of a unit containing Steelshanks Walton, it gains +1 to its result for each remaining rank in his unit. On a success, you may target 1 enemy in Short Range. It becomes **Vulnerable**."
                     ]
                 }
             ],
@@ -887,39 +1245,74 @@
         },
         {
             "id": "41016",
-            "name": "Taunt",
+            "name": "Disciplined Execution",
             "faction": "bolton",
-            "version": "2021-S03",
+            "version": "S06B",
             "role": "tactics",
             "text": [
                 {
-                    "trigger": "When an enemy Combat Unit Activates:",
+                    "trigger": "When a friendly Combat Unit performs a melee attack, before rolling attack dice:",
                     "effect": [
-                        "Target 1 friendly unit in Long Range.",
-                        "If that enemy could Attack or Charge the targeted unit, and declares any Action other than an Attack or Charge on the targeted unit this Turn, before performing that Action, that enemy becomes **Vulnerable** and **Weakened**."
+                        "Target the Attacker. Until the end of the Turn, this Attack rolls its highest attack die value and, if the Defender has already activated this round, or this targets a unit containing Steelshanks Walton, it also gains **Critical Blow** and **Sundering**."
                     ]
                 }
             ],
             "commander": {
                 "id": "21013"
             }
-        }
-    ],
-    "special": [
+        },
         {
-            "id": "51002",
-            "name": "Dreadfort Prisoners",
+            "id": "41017",
+            "name": "The Crippler's Infamy",
             "faction": "bolton",
-            "version": "S06",
-            "role": "special",
-            "category": "faction",
-            "front": {
-                "ratio": 0.3,
-                "crests": 2,
-                "text": [
-                    "This card starts the game with 3 order tokens. Every time an enemy rank is destroyed, place 1 order token on this card. This card can have up to 3 Order tokens.",
-                    "At the start of any Turn, you may spend 3 Order tokens to target 1 enemy Combat Unit. If you do, they become **Panicked**."
-                ]
+            "version": "S06B",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit performs a Panic Test, before rolling dice:",
+                    "effect": [
+                        "If that enemy fails this Panic Test, you may expend 1 **Weakened** token from it and target that enemy. It suffers +2 Wounds from failing this test. If that enemy is in Long Range of a unit containing Vargo Hoat, it also suffers -2 to its Panic Test roll."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21080"
+            }
+        },
+        {
+            "id": "41018",
+            "name": "Butcher's Work",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly Combat Unit performs a Melee Attack, after rolling dice:",
+                    "effect": [
+                        "Target the Attacker. All attack dice results are treated as Hits. After completing this attack, the Attacker becomes **Vulnerable**. If this targets a unit containing Vargo Hoat, this unit's Melee Attacks also gain **Sundering** until the end of the Turn."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21080"
+            }
+        },
+        {
+            "id": "41019",
+            "name": "Savored Suffering",
+            "faction": "bolton",
+            "version": "S06B",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of Any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit and expend 1 **Weakened** token from it. If you do, target 1 friendly Combat Unit in Long Range of that enemy. That friendly unit restores 2 Wounds, +1 Wound for each of that enemy's destroyed ranks and, until the end of the turn, that friendly unit’s Melee Attacks roll their highest attack die value. If this targets a unit containing Vargo Hoat, restore +1 Wound and that unit may also remove any condition tokens."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21080"
             }
         }
     ]
