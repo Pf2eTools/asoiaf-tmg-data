@@ -4405,7 +4405,7 @@ globalThis.DataUtil = {
 		static async _pLoadFile ({file, source, abilityData}) {
 			const data = await DataUtil.loadJSON(file)
 			Object.entries(data).forEach(([prop, items]) => {
-				if (prop.startsWith("_")) return;
+				if (!["unit", "ncu", "attachment", "tactics", "special"].includes(prop)) return;
 				data[prop] = items.map(ent => this._mutateEntity({ent, prop, source, abilityData, data}));
 			});
 
