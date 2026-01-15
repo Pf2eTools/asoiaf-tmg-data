@@ -1,0 +1,151 @@
+{
+    "_meta": {
+        "author": "asten",
+        "id": "hnc-tattered-prince",
+        "pre": "hnc"
+    },
+    "abilities": {
+        "ORDER: SUPERIOR TACTICIAN": {
+            "trigger": "Start of an enemy turn:",
+            "effect": [
+                "One friendly infantry unit in long range may perform a pivot or shift 2\"."
+            ],
+            "icons": [
+                "order"
+            ]
+        },
+        "COLLECTING TATTERS": {
+            "effect": [
+                "Each time this unit destroys a rank with a Melee Attack, place one Order Token on it. When performing a Melee Attack, before attack dice are rolled place 1 Condition Token on the defender for each Order Token on this unit. When attached to a Neutral Unit, it starts the game with 1 Order token."
+            ],
+              "icons": [
+                "melee"
+            ]
+        },
+         "WAYWAR COMMANDS": {
+            "effect": [
+                "When the Tattered Prince claims [SWORDS]: You may replace this zones effect with: *One friendly combat unit may perform a Charge Action, using its lowest Attack Die Value for the Attack. Each time this unit performs a Melee Attack, before rolling attack dice, place 1 Condition Token on the Defender, for each Order Token on this unit. If attached to a Neutral Unit, this unit starts the game with one Order Token.*"
+            ]
+        }
+    },
+    "ncu": [
+        {
+            "id": "tatterd_prince_ncu",
+            "name": "Tattered Prince",
+            "faction": "neutral",
+            "version": "H&C S06",
+            "role": "ncu",
+            "title": "The Prince of Promises",
+             "abilities": [
+                {
+                    "name": "Ragged Raiment",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "Each time the Tattered Prince influences a unit choose 1 (if attached to a Neutral Unit, choose 2):",
+                        "• This unit gains +1 attack die, when performing a melee attack.",
+                        "• This unit gains +1 to Morale Test Rolls.",
+                        "• This unit gains +1 Movement."
+                    ]
+                },
+                {
+                    "name": "Wayward Commands",
+                    "effect": [
+                        "When the Tattered Prince claims [MONEY] you may replace this zones effect with:",
+                        "*One friendly combat unit may perform a Charge Action, using its lowest Attack Die Value for the Attack.*"
+                    ]
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "fluff": {
+                "quote": "\"I am the Tattered Prince, and I will have what was promised.\""
+            }
+        },
+        {
+            "id": "tatterd_prince_ncu_2",
+            "name": "Tattered Prince",
+            "faction": "neutral",
+            "version": "H&C S06",
+            "role": "ncu",
+            "title": "The Prince of Promises",
+             "abilities": [
+                {
+                    "name": "Pentos is mine!",
+                    "effect": [
+                        "The Prince of Tatters beginns the Game with 2 Order Tokens. Each time this NCU claims a zone, you may spend an Order Token. If you do, replace that zone‘s effect with: *1 friendly combat unit performs 1 Melee Attack action*."
+                    ]
+                }
+            ],
+             "back_text": [
+                {
+                    "text": "*Reduce this unit‘s cost by 1, if your Commander is from the Neutral Faction.*"
+                }
+            ],
+            "cost": 5,
+            "character": true,
+            "fluff": {
+                "quote": "\"I am the Tattered Prince, and I will have what was promised.\""
+            }
+        },
+        {
+            "id": "tatterd_prince_ncu_1",
+            "name": "Tattered Prince",
+            "faction": "neutral",
+            "version": "H&C S06",
+            "role": "ncu",
+            "title": "The Prince of Promises",
+             "abilities": [
+                {
+                    "name": "Controlled Chaos",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While influencing a friendly unit enemies engaged with this unit suffer -1 to Hit."
+                    ]
+                },
+                {
+                    "name": "Always Emerges on Top",
+                    "effect": [
+                        "When your Commander is destroyed, you may destroy this NCU. If you do, place the \"Prince of Tatters - Colorful Tactician\" (1 point Neutral Attachment) in the first slot of a friendly Infantry unit, ignoring Attachment restrictions. The \"Prince of Tatters - Colorful Tactician\" becomes your Commander for all purposes. Tactics Cards that would target your former Commander instead target this unit."
+                    ]
+                }
+
+            ],
+            "cost": 5,
+            "character": true,
+            "fluff": {
+                "quote": "\"I am the Tattered Prince, and I will have what was promised.\""
+            }
+        }
+    ],
+    "attachment": [
+        {
+            "id": "tatterd_prince_attachment",
+            "name": "Tattered Prince",
+            "faction": "neutral",
+            "version": "H&C S06",
+            "role": "attachment",
+            "title": "colorful tactician",
+            "abilities": [
+                "ORDER: Superior Tactician",
+                "Collecting Tatters"
+            ],
+            "tray": "infantry",
+            "cost": 1,
+            "character": true,
+            "commander": false,
+            "tactics": [
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"War is a canvas — I merely add the color.\""
+            },
+              "back_text": [
+                {
+                    "text": "*The Tattered Prince counts towards attachment points as if it was an attachment of your faction.*"
+                }
+            ]
+        }
+    ],
+    "tactics": [],
+    "special": []
+}
