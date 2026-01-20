@@ -1,3 +1,5 @@
+from unittest.mock import DEFAULT
+
 from PIL.Image import Resampling
 from generate_utils import *
 from song_data import *
@@ -435,10 +437,11 @@ class ImageGeneratorSpecials(ImageGenerator):
                                                 font_reduction_stepsize=font_reduction_stepsize)
             return rd_text
 
-        fs_zones = 48
+        DEFAULT_FS_ZONES = side.get("font_size", 48)
+        fs_zones = DEFAULT_FS_ZONES
         ld_zones = 1300
         for ze in zone_entries:
-            _ = get_rendered_text(ze, 48, 1200, 1)
+            _ = get_rendered_text(ze, DEFAULT_FS_ZONES, 1200, 1)
             fs = self.text_renderer.input.font_size / self.text_renderer.input.supersample
             fs_zones = min(fs, fs_zones)
             ld = int(self.text_renderer.input.leading * 1000 / self.text_renderer.input.font_size)
