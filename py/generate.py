@@ -215,13 +215,14 @@ class Generator:
 
 
 def main():
+    overwrite = True
     data = DataLoader.load_structured(f"./data/en/game.json")
-    Generator().generate(data, overwrite=True)
+    Generator().generate(data, overwrite=overwrite)
     for lang in LANGUAGES:
         for faction in FACTIONS:
             data = DataLoader.load_structured(f"./data/{lang}/{faction}.json")
             generator = Generator()
-            generator.generate(data, overwrite=True)
+            generator.generate(data, overwrite=overwrite)
 
 
 if __name__ == "__main__":
