@@ -2507,6 +2507,186 @@
             "icon": "infantry"
         },
         {
+            "id": "11001",
+            "name": "Cutthroats",
+            "faction": "bolton",
+            "version": "2021-S01",
+            "role": "unit",
+            "abilities": [
+                "Ruthless Aggression"
+            ],
+            "attacks": [
+                {
+                    "name": "Ruthless Aggression",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 5,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "While simply armored and lightly armed, Bolton Cutthroats enjoy a reputation for brutality and cold efficiency that allows them to strike panic in enemies with far more expensive armaments. Their spiked maces can easily dispatch enemies, but are more effective for the fear their brutality creates. Bolton Cutthroats make sport of downed foes or, worse for the opponent, take them prisoner to suffer a much more agonizing fate."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "11002",
+            "name": "Blackguards",
+            "faction": "bolton",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Spiked Flail",
+                "Horrific Visage"
+            ],
+            "attacks": [
+                {
+                    "name": "Spiked Flail",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "The ruthlessness of House Bolton’s Blackguards is known by every enemy force they face. Their vicious spiked flails render heavy shields only moderately effective. Being the heaviest troops in House Bolton’s arsenal, the Blackguards can be relied upon to take and hold any position on the battlefield."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "11003",
+            "name": "Dreadfort Archers",
+            "faction": "bolton",
+            "version": "S05",
+            "role": "unit",
+            "abilities": [
+                "Ruthless Volley"
+            ],
+            "attacks": [
+                {
+                    "name": "Ruthless Volley",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        7,
+                        7,
+                        4
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "type": "melee",
+                    "hit": 5,
+                    "dice": [
+                        5,
+                        4,
+                        3
+                    ]
+                }
+            ],
+            "defense": 5,
+            "morale": 7,
+            "speed": 5,
+            "cost": 6,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "When it comes to the most horrific methods of war, designed to maximize terror as much as damage, one need look no further than House Bolton. Their Dreadfort archers will gleefully let loose savage volleys of arrows, aimed towards their enemies, without regard for their comrades mixed in the melee. Sure, a few allies may sustain injuries, but the disregard for life that House Bolton breeds isn’t only for their foes. "
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "11004",
+            "name": "Bastard's Girls",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Order: Charging Volley",
+                "Tracker’s Bow",
+                "Blade and Fang"
+            ],
+            "attacks": [
+                {
+                    "name": "Tracker's Bow",
+                    "type": "long",
+                    "hit": 3,
+                    "dice": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "name": "Blade and Fang",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        6,
+                        4
+                    ]
+                }
+            ],
+            "defense": 6,
+            "morale": 5,
+            "speed": 6,
+            "cost": 7,
+            "tray": "infantry",
+            "fluff": {
+                "lore": "Trained to corner and bring down even heavy infantry, the Bastard’s Girls are best utilized as flankers or in pursuit of fleeing foes. While they do not possess the armor to counter a determined assault, enemies suffering from their handlers’ wounding arrows make for easy prey. A fat bounty can be expected for handlers bringing down enemy commanders to await Ramsay Bolton’s ‘entertainments’ following battle."
+            },
+            "icon": "infantry"
+        },
+        {
+            "id": "11005",
+            "name": "Flayed Men",
+            "faction": "bolton",
+            "version": "S06",
+            "role": "unit",
+            "abilities": [
+                "Cavalry",
+                "War Flail",
+                "Intimidating Presence"
+            ],
+            "attacks": [
+                {
+                    "name": "War Flail",
+                    "type": "melee",
+                    "hit": 3,
+                    "dice": [
+                        6,
+                        5
+                    ]
+                }
+            ],
+            "defense": 3,
+            "morale": 6,
+            "speed": 5,
+            "cost": 8,
+            "tray": "cavalry",
+            "fluff": {
+                "lore": "The so-called Flayed Men rank among the heaviest cavalry employed by even the largest houses in the War of the Five Kings. With thick steel armor (blackened, of course), heavy shields, and even protective barding for the horses, the Flayed Men are capable of truly devastating charges and can endure in the line for a short time. Their signature war flails render most defenses only marginal at best, but their terriying visage remains their most vital weapon."
+            },
+            "icon": "cavalry",
+            "wounds": 3
+        },
+        {
             "id": "11006",
             "name": "Dreadfort Spearmen",
             "faction": "bolton",
@@ -2960,6 +3140,30 @@
             }
         },
         {
+            "id": "31001",
+            "name": "Walda Frey",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Fat Walda",
+            "abilities": [
+                {
+                    "name": "Frey Ambition",
+                    "effect": [
+                        "Each time Walda Claims [CROWN], 1 enemy Combat Unit becomes **Weakened**.",
+                        "Each time Walda Claims [LETTER], you may replace that zone's effect with:",
+                        "*Search your Tactics Deck or discard pile for 1 of your **Commander's** Tactics cards and add it to your hand. Shuffle your Tactics Deck.*",
+                        "Each time Walda Claims [MONEY], instead of removing a Condition token, you may restore +1 Wound."
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"I have become oddly fond of my fat little wife. \""
+            }
+        },
+        {
             "id": "31002",
             "name": "Jeyne Poole",
             "faction": "bolton",
@@ -2980,6 +3184,57 @@
             "character": true,
             "fluff": {
                 "quote": "\"I pray that I will make you a good wife and give you strong sons to follow after you.\""
+            }
+        },
+        {
+            "id": "31003",
+            "name": "Roose Bolton",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Calculating And Cruel",
+            "abilities": [
+                {
+                    "name": "Horrific Rumors",
+                    "effect": [
+                        "Roose begins the game with 3 Order tokens on him.",
+                        "When Roose Activates, you may remove 1 Order token from him. If you do, 1 enemy Combat Unit becomes **Panicked**.",
+                        "When Roose Claims a zone, you may replace that zone's effect with:",
+                        "*1 enemy Combat Unit suffers 1 Panic Test.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"You had only to look at Bolton to know that he had more cruelty in his pinky toe than all the Freys combined.\""
+            },
+            "tokens": {
+                "name": "order",
+                "number": 3
+            }
+        },
+        {
+            "id": "31004",
+            "name": "Ramsay Snow",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "ncu",
+            "title": "Red Helm",
+            "abilities": [
+                {
+                    "name": "Sadistic Butchery",
+                    "effect": [
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*.",
+                        "While Influencing a friendly House Bolton unit, it's Melee Attacks gain **Fueled by Slaughter:**",
+                        "*After this unit completes a Melee Attack, if the Defender suffered any Wounds, it restores 1 Wound, +1 additional Wound for each of the Defender's destroyed ranks.*"
+                    ]
+                }
+            ],
+            "cost": 4,
+            "character": true,
+            "fluff": {
+                "quote": "\"Power tastes best when sweetened by courtesy; you had best learn that if you ever hope to rule.\""
             }
         },
         {
@@ -4709,6 +4964,121 @@
             }
         },
         {
+            "id": "21001",
+            "name": "Ramsay Snow",
+            "faction": "bolton",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Spiteful Heir",
+            "abilities": [
+                "Horrific Visage",
+                "Prey on Fear"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41008",
+                "41009",
+                "41010"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Snow, my wife called me before she ate her fingers, but I say Bolton.\""
+            }
+        },
+        {
+            "id": "21002",
+            "name": "Roose Bolton",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Lord of the Dreadfort",
+            "abilities": [
+                "Order: Spread Fear",
+                "Intimidating Presence"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41011",
+                "41012",
+                "41013"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Fear is what keeps a man alive in this world of treachery and deceit.\""
+            }
+        },
+        {
+            "id": "21003",
+            "name": "Ramsay Snow",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Sadist",
+            "abilities": [
+                "Fueled by Slaughter",
+                "Intimidating Presence"
+            ],
+            "cost": 2,
+            "tray": "infantry",
+            "character": true,
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"A naked man has few secrets, but a flayed man's got none.\""
+            }
+        },
+        {
+            "id": "21004",
+            "name": "Theon Greyjoy",
+            "faction": "bolton",
+            "version": "2021-S01",
+            "role": "attachment",
+            "title": "Reek",
+            "abilities": [
+                "Order: Set An Example"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*May only be fielded in an army that includes Ramsay Snow, and must be attached to his unit, ignoring usual Attachment limits.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"I'm not him, I'm not the turncloak, he died at Winterfell. My name is Reek!\""
+            }
+        },
+        {
+            "id": "21005",
+            "name": "Dreadfort Captain",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Prey on Fear"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
+        },
+        {
+            "id": "21006",
+            "name": "Bolton Flayer",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "abilities": [
+                "Order: Spread Fear"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "icon": "infantry"
+        },
+        {
             "id": "21007",
             "name": "Ben Bones",
             "faction": "bolton",
@@ -4732,6 +5102,29 @@
             "icon": "infantry",
             "fluff": {
                 "quote": "\"If they lead him a good chase, he may name his next litter after them.\""
+            }
+        },
+        {
+            "id": "21008",
+            "name": "Damon Dance-For-Me",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bastard's Boy",
+            "abilities": [
+                "Boldness and Courage"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*The first Bastard's Boy Attachment included in your army is free.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Lord Ramsay means to cut your lips off when all this is done.\""
             }
         },
         {
@@ -4759,6 +5152,52 @@
             }
         },
         {
+            "id": "21010",
+            "name": "Grunt",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bastard's Boy",
+            "abilities": [
+                "Order: Resilience"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*The first Bastard's Boy Attachment included in your army is free.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Grunt had no tongue and Sour Alyn had no wits, Lord Ramsay liked to say.\""
+            }
+        },
+        {
+            "id": "21011",
+            "name": "Sour Alyn",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "attachment",
+            "title": "Bastard's Boy",
+            "abilities": [
+                "Brutal Sadism"
+            ],
+            "cost": 1,
+            "tray": "infantry",
+            "character": true,
+            "back_text": [
+                {
+                    "text": "*The first Bastard's Boy Attachment included in your army is free.*"
+                }
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Grunt had no tongue and Sour Alyn had no wits, Lord Ramsay liked to say.\""
+            }
+        },
+        {
             "id": "21012",
             "name": "Steelshanks Walton",
             "faction": "bolton",
@@ -4776,6 +5215,31 @@
             "icon": "infantry",
             "fluff": {
                 "quote": "\"Blunt, brusque, brutal, at heart a simple soldier...\""
+            }
+        },
+        {
+            "id": "21013",
+            "name": "Steelshanks Walton",
+            "faction": "bolton",
+            "version": "S05",
+            "role": "attachment",
+            "title": "Captain of the Guard",
+            "abilities": [
+                "Sundering",
+                "Iron Resolve",
+                "Shared Fear"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "41014",
+                "41015",
+                "41016"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Steelshanks, he is called. A soldier of iron loyalty.\""
             }
         },
         {
@@ -6171,6 +6635,287 @@
             ],
             "commander": {
                 "id": "20921"
+            }
+        },
+        {
+            "id": "41001",
+            "name": "Bloody Beheadings",
+            "faction": "bolton",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "If this Attack destroyed an enemy rank, each enemy in Long Range becomes **Panicked**. If they were already **Panicked**, they suffer 1 Panic Test.",
+                        "If this Attack destroyed the enemy instead, each enemy in Long Range becomes **Panicked** and they suffer 1 Panic Test."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "41002",
+            "name": "Harsh Punishments",
+            "faction": "bolton",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 friendly Combat Unit and attach this card to them until the end of the game.",
+                        "While this card is attached, this unit's Melee Attacks always roll their highest Attack Die Value and gains **Sundering**. Each time this unit fails a Panic Test, it suffers +1 Wound."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "41003",
+            "name": "Our Blades Are Sharp",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "This Attack gains **Precision**. If the Defender is **Panicked**, this Attack may also re-roll any Attack Dice."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "41004",
+            "name": "Sadistic Games",
+            "faction": "bolton",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of an enemy Turn:",
+                    "effect": [
+                        "Your opponent chooses 1 *(you select targets only after they choose)*:",
+                        "• Target up to 2 enemy Combat Units. They become **Panicked**.",
+                        "• Target up to 2 enemy Combat Units. They become **Weakened**."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "41005",
+            "name": "Cruel Methods",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Target 1 enemy Combat Unit. You may expend 1 Panic token from that unit. If you do, choose 2:",
+                        "• That enemy becomes **Vulnerable**.",
+                        "• That enemy becomes **Weakened**.",
+                        "• 1 friendly Infantry unit in Long Range restores 2 Wounds *(this may be selected multiple times)*."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "41006",
+            "name": "A Flayed Man Has No Secrets",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a unit is targeted by an Ability or Tactics card:",
+                    "effect": [
+                        "You may expend 1 Condition token from an enemy in Long Range of that unit. If you do, cancel the effect of that Ability or Tactics card."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "41007",
+            "name": "Fear Keeps a Man Alive",
+            "faction": "bolton",
+            "version": "S05",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy fails a Panic Test:",
+                    "effect": [
+                        "Target any number of friendly units in Long Range. For each Wound caused by this Panic Test, restore that many Wounds *(total)* across these units.",
+                        "If that enemy is in Short Range of your Commander's unit, restore +1 Wounds."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "41008",
+            "name": "Skin Collection",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "Start of any Turn:",
+                    "effect": [
+                        "Attach this card to 1 friendly Infantry unit until the end of the game.",
+                        "Each time this unit destroys an enemy rank, place 1 Order token on this card.",
+                        "Enemies engaged with this unit suffer -1 to Panic tests for each Order token on this card, up to -2."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
+            }
+        },
+        {
+            "id": "41009",
+            "name": "Opportunist",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit is performing a Melee Attack, before rolling Attack Dice:",
+                    "effect": [
+                        "If the Defender has not Activated this Round, this Attack may re-roll any Attack Dice and gains **Precision** or **Vicious**. If the Attacker is Ramsay Snow's unit, gain both instead."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
+            }
+        },
+        {
+            "id": "41010",
+            "name": "Spoils In Flesh",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack:",
+                    "effect": [
+                        "If this Attack destroyed an enemy rank, 1 friendly unit in Short Range of the Attacker restores 1 Wound, +1 Wound for each of the Defender's destroyed ranks."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21001"
+            }
+        },
+        {
+            "id": "41011",
+            "name": "Whispered Threats",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy NCU Activates:",
+                    "effect": [
+                        "If that NCU Claims a zone this Turn, after resolving that zone's effect, target 1 enemy Combat Unit. They become **Vulnerable**. Then target 1 enemy Combat Unit, they become **Panicked**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
+            }
+        },
+        {
+            "id": "41012",
+            "name": "Seeing Their Flaws",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After an enemy Combat Unit completes an Action:",
+                    "effect": [
+                        "That enemy becomes **Vulnerable** and **Panicked**.",
+                        "Attach this card to that enemy until the end of the Round. While attached, and Roose Bolton's unit is Attacking that enemy, that enemy loses all Abilities and cannot be targeted by friendly Tactics cards."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
+            }
+        },
+        {
+            "id": "41013",
+            "name": "Dreadfort Secrets",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "After a friendly unit completes a Melee Attack, if it destroyed an enemy rank:",
+                    "effect": [
+                        "Attach this card to 1 friendly Infantry unit in Short Range of the Attacker. All enemies they are engaged with become **Panicked**.",
+                        "While attached, each time an enemy unit Activates in Short Range, that enemy becomes **Panicked**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21002"
+            }
+        },
+        {
+            "id": "41014",
+            "name": "Price of Fear",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy unit fails a Panic Test:",
+                    "effect": [
+                        "Target 1 friendly Combat unit in Long Range of that enemy. They may perform 1 Maneuver Action."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
+            }
+        },
+        {
+            "id": "41015",
+            "name": "Rush of Aggression",
+            "faction": "bolton",
+            "version": "2021",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Charge Action, before rolling Charge Distance Dice:",
+                    "effect": [
+                        "This unit automatically counts as rolling a 6 on all Charge Distance dice and their Melee Attack gains **Critical Blow**.",
+                        "After this Attack has been completed, unless the Attacker is Steelshanks Walton's unit, they become **Vulnerable**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
+            }
+        },
+        {
+            "id": "41016",
+            "name": "Taunt",
+            "faction": "bolton",
+            "version": "2021-S03",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When an enemy Combat Unit Activates:",
+                    "effect": [
+                        "Target 1 friendly unit in Long Range.",
+                        "If that enemy could Attack or Charge the targeted unit, and declares any Action other than an Attack or Charge on the targeted unit this Turn, before performing that Action, that enemy becomes **Vulnerable** and **Weakened**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "21013"
             }
         },
         {
