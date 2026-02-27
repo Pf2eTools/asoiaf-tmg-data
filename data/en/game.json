@@ -113,6 +113,36 @@
             }
         },
         {
+            "id": "escalating-tactics-board-v2",
+            "name": "Tactics Board",
+            "role": "special",
+            "category": "tactics-board",
+            "version": "Playtest v1.0",
+            "front": {
+                "font_size": 42,
+                "CROWN": [
+                    "**Target 1 enemy battlefield unit. It gains 1 Condition token.**",
+                    "**Escalation 2:** Target then suffers a panic test (1), with (+1) for each condition token on it.\n**Escalation 4:** Target suffers -1 to its morale dice results."
+                ],
+                "MONEY": [
+                    "**Target 1 friendly battlefield unit. It restores 2 wounds or removes 1 condition token**",
+                    "**Escalation 2:** Target may perform both effects.\n**Escalation 4:** Target may restore +1 wound or remove +1 token."
+                ],
+                "LETTER": [
+                    "**Draw 1 tactics card or target 1 friendly battlefield unit. It refreshes 1 spent order.**",
+                    "**Escalation 2:** Perform this effect twice.\n**Escalation 4:** Then, draw 2 tactics cards and shuffle 1 card from your hand into your deck."
+                ],
+                "SWORDS": [
+                    "**Target 1 engaged enemy battlefield unit. It suffers 3 hits.**",
+                    "**Escalation 2:** Target suffers +3 hits.\n**Escalation 4:** The target suffers -1 to its defense dice results."
+                ],
+                "HORSE": [
+                    "**Target 1 friendly battlefield unit. It performs a 2” shift.**",
+                    "**Escalation 2:** Target may instead perform 1 maneuver or retreat action.\n**Escalation 4:** Target may instead perform 1 march action."
+                ]
+            }
+        },
+        {
             "id": "zone-house",
             "name": "House",
             "version": "Playtest v0.1",
