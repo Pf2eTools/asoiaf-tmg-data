@@ -5,6 +5,20 @@
         "pre": "hnc"
     },
     "abilities": {
+        "RAGS AND TATTERS": {
+            "effect": [
+                "Each time this unit destroys an enemy rank with a Melee Attack, place 1 Order token on this card. For each Order token on this card gain the following:",
+                "1+: This unit's Attacks gain Sundering.",
+                "2+: Each time this unit performs a Melee Attack, before rolling Attack Die, the Defender becomes Panicked and suffers +1 Wound on a failed Panic Test."
+            ]
+        },
+        "ENMITY AND UNEASE": {
+            "effect": [
+                "At the start of each Round, target 1 enemy Combat unit.",
+                "While your opponent does not Control [SWORDS] that unit suffers -1 to Hit.",
+                "While that unit is within Short Range of The Tattered Prince's unit, it suffers -1 to Morale test rolls."
+            ]
+        },
         "ORDER: SUPERIOR TACTICIAN": {
             "trigger": "Start of an enemy turn:",
             "effect": [
@@ -18,11 +32,11 @@
             "effect": [
                 "Each time this unit destroys a rank with a Melee Attack, place one Order Token on it. When performing a Melee Attack, before attack dice are rolled place 1 Condition Token on the defender for each Order Token on this unit. When attached to a Neutral Unit, it starts the game with 1 Order token."
             ],
-              "icons": [
+            "icons": [
                 "melee"
             ]
         },
-         "WAYWAR COMMANDS": {
+        "WAYWAR COMMANDS": {
             "effect": [
                 "When the Tattered Prince claims [SWORDS]: You may replace this zones effect with: *One friendly combat unit may perform a Charge Action, using its lowest Attack Die Value for the Attack. Each time this unit performs a Melee Attack, before rolling attack dice, place 1 Condition Token on the Defender, for each Order Token on this unit. If attached to a Neutral Unit, this unit starts the game with one Order Token.*"
             ]
@@ -36,7 +50,7 @@
             "version": "H&C S06",
             "role": "ncu",
             "title": "The Prince of Promises",
-             "abilities": [
+            "abilities": [
                 {
                     "name": "Ragged Raiment",
                     "effect": [
@@ -68,7 +82,7 @@
             "version": "H&C S06",
             "role": "ncu",
             "title": "The Prince of Promises",
-             "abilities": [
+            "abilities": [
                 {
                     "name": "Pentos is mine!",
                     "effect": [
@@ -76,7 +90,7 @@
                     ]
                 }
             ],
-             "back_text": [
+            "back_text": [
                 {
                     "text": "*Reduce this unit‘s cost by 1, if your Commander is from the Neutral Faction.*"
                 }
@@ -94,7 +108,7 @@
             "version": "H&C S06",
             "role": "ncu",
             "title": "The Prince of Promises",
-             "abilities": [
+            "abilities": [
                 {
                     "name": "Controlled Chaos",
                     "effect": [
@@ -108,7 +122,6 @@
                         "When your Commander is destroyed, you may destroy this NCU. If you do, place the \"Prince of Tatters - Colorful Tactician\" (1 point Neutral Attachment) in the first slot of a friendly Infantry unit, ignoring Attachment restrictions. The \"Prince of Tatters - Colorful Tactician\" becomes your Commander for all purposes. Tactics Cards that would target your former Commander instead target this unit."
                     ]
                 }
-
             ],
             "cost": 5,
             "character": true,
@@ -139,13 +152,107 @@
             "fluff": {
                 "quote": "\"War is a canvas — I merely add the color.\""
             },
-              "back_text": [
+            "back_text": [
                 {
                     "text": "*The Tattered Prince counts towards attachment points as if it was an attachment of your faction.*"
                 }
             ]
+        },
+        {
+            "id": "tatterd_prince_c",
+            "name": "The Tattered Prince",
+            "faction": "neutral",
+            "version": "S06",
+            "role": "attachment",
+            "title": "Commander of the Windblown",
+            "abilities": [
+                "Rags And Tatters",
+                "Enmity And Unease"
+            ],
+            "tray": "infantry",
+            "character": true,
+            "commander": true,
+            "tactics": [
+                "tatters1",
+                "tatters2",
+                "tatters3"
+            ],
+            "icon": "infantry",
+            "fluff": {
+                "quote": "\"Blue and grey and purple, red and gold and green...The strips bloodstained...torn from the surcoats of men he has slain\""
+            }
         }
     ],
-    "tactics": [],
+    "tactics": [
+        {
+            "id": "tatters1",
+            "name": "Battlefield Colors",
+            "faction": "neutral",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit Activates:",
+                    "effect": [
+                        "Attach this card to that unit, until they fail a Panic Test.",
+                        "While Attached this unit gains +1 to Morale test rolls. While you Control [MONEY], opponents cannot expend **Panicked** tokens on this unit while it is performing a Morale test.",
+                        "If this is card is attached to the Tattered Prince's unit, this card is not removed when his unit fails a Panic Test."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "tatterd_prince_c"
+            }
+        },
+        {
+            "id": "tatters2",
+            "name": "Tattered And Twisty",
+            "faction": "neutral",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "End of enemy Turn:",
+                    "effect": [
+                        "Target 1 unengaged friendly unit, that unit performs a Maneuver Action.",
+                        "If your opponent Controls [SWORDS], that unit may perform a Charge Action instead, using its Lowest Attack Die value.",
+                        "If this targets the Tattered Prince's unit, it automatically counts as rolling a 6 on all Charge Distance Dice."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "tatterd_prince_c"
+            }
+        },
+        {
+            "id": "tatters3",
+            "name": "Windblown Advantage",
+            "faction": "neutral",
+            "version": "S06",
+            "role": "tactics",
+            "text": [
+                {
+                    "trigger": "When a friendly unit performs a Charge Action, before rolling Charge Distance Die:",
+                    "effect": [
+                        "This unit ignores the Hindering, Rough and Dangerous Keywords.",
+                        "If your opponent Controls [HORSE], You may re-roll Charge Distance Die.",
+                        "If this targets the Tattered Prince's unit, the Defender becomes **Vulnerable**."
+                    ]
+                },
+                {
+                    "trigger": "When a friendly unit performs a Melee Attack, before rolling Attack Die:",
+                    "effect": [
+                        "Choose 1. For each zone your opponent Controls among [SWORDS] or [MONEY], choose +1:",
+                        "• This Attack gains +1 Attack Die.",
+                        "• May re-roll any Attack Dice.",
+                        "• This Attack gains **Vicious**."
+                    ]
+                }
+            ],
+            "commander": {
+                "id": "tatterd_prince_c"
+            }
+        }
+    ],
     "special": []
 }
