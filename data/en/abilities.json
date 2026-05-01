@@ -654,7 +654,7 @@
         "effect": [
             "**• Vicious**",
             "• Only Defense Die rolls of 6 may block Hits from this attack.",
-            "• If this unit has only 1 remaining rank, after this Attack is completed, the Defender become **Weakened**."
+            "• After this Attack is completed, the Defender become **Weakened**."
         ],
         "icons": [
             "melee"
@@ -2590,11 +2590,20 @@
             "melee"
         ]
     },
-    "WINTER'S BITE": {
+    "WINTER'S BITE (HONOR GUARD)": {
         "effect": [
             "• **Critical Blow**",
             "• If this unit has 1 or more destroyed ranks, gains +1 to Hit.",
             "• If this unit has 2 destroyed ranks, may re-roll any Attack Dice."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "WINTER'S BITE (SWORN SWORDS)": {
+        "effect": [
+            "• **Critical Blow**",
+            "• If this unit has 1 or more destroyed ranks, it may re-roll any Attack Dice."
         ],
         "icons": [
             "melee"
@@ -2909,7 +2918,7 @@
     "ORDER: SHE-BEAR'S FURY": {
         "trigger": "Start of a friendly Turn:",
         "effect": [
-            "Target 1 enemy in Long Range. It performs 1 Morale Test with -1 to its roll for each of this unit's remaining ranks. On a failure, it becomes **Pnaicked** and **Vulnerable**."
+            "Target 1 enemy in Long Range. It performs 1 Morale Test with -1 to its roll for each of this unit's remaining ranks. On a failure, it becomes **Panicked** and **Vulnerable**."
         ],
         "icons": [
             "order"
