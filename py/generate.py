@@ -13,7 +13,7 @@ from song_data import *
 def get_filter(languages=None, ids=None, roles=None, factions=None, versions=None):
     def filter_func(context):
         entity: SongEntity = context["data"]
-        language = context.get("language")
+        language = context.get("meta").language
         sides = [
             "front",
             "back"

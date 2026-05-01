@@ -41,17 +41,18 @@
             "id": "10902",
             "name": "Sand Skirmishers",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Quick Fire",
-                "Order: Scout Openings"
+                "Skirmisher",
+                "Pathfinder"
             ],
             "attacks": [
                 {
                     "name": "Skirmisher’s Bow",
                     "type": "short",
-                    "hit": 3,
+                    "hit": 4,
                     "dice": [
                         7,
                         5,
@@ -61,7 +62,7 @@
                 {
                     "name": "Skirmisher’s Blade",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         5,
@@ -69,7 +70,7 @@
                     ]
                 }
             ],
-            "defense": 4,
+            "defense": 5,
             "morale": 6,
             "speed": 6,
             "cost": 7,
@@ -83,7 +84,7 @@
             "id": "10903",
             "name": "Sunspear Dervishes",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Swift Retreat",
@@ -94,7 +95,7 @@
                 {
                     "name": "Dervish Blades",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         6,
@@ -148,10 +149,11 @@
             "id": "10905",
             "name": "Dune Vipers",
             "faction": "martell",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Spear & Net",
+                "Disrupt",
                 "Gang-Up"
             ],
             "attacks": [
@@ -184,7 +186,7 @@
             "role": "unit",
             "abilities": [
                 "Cavalry",
-                "Scimitar",
+                "Scimitar (Outriders)",
                 "Rally Cry"
             ],
             "attacks": [
@@ -245,12 +247,12 @@
             "id": "10908",
             "name": "Darkstar Retinue",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Overrun",
                 "Fueled By Slaughter",
-                "Scimitar"
+                "Scimitar (Retinue)"
             ],
             "attacks": [
                 {
@@ -260,7 +262,7 @@
                     "dice": [
                         7,
                         6,
-                        4
+                        5
                     ]
                 }
             ],
@@ -355,19 +357,23 @@
             "id": "30902",
             "name": "Doran Martell",
             "faction": "martell",
-            "version": "S05",
+            "version": "S07",
             "role": "ncu",
             "title": "Prince of Dorne",
             "abilities": [
                 {
                     "name": "Sunspear Secrets",
                     "effect": [
-                        "Each time Doran Claims a zone, before resolving that zone's effect, place 1 Order token on him. If Doran Claims [OASIS], place +1 Order token on him.\nEach time Doran Claims [OASIS], you may replace that zone's effect with:",
-                        "*Remove up to 4 Order tokens from a friendly Doran, for each Order token removes, choose 1:\n• Restore up to 2 Wounds from 1 unit.\n• Remove 1 Condition token from 1 unit.\n• Draw 1 Tactics Card.\n• Place any 1 Condition token on an enemy unit.\n• 1 friendly unit pivots, then shifts 2\".\n• 1 enemy Combat Unit suffers 1 Wound.*"
+                        "Each time Doran Claims a zone, after resolving that zone's effect, choose 1 of the following. Additional options become available based on the Game Round:",
+                        "**Game Round 1+:** Remove 1 Condition token from 1 friendly House Martell unit.",
+                        "**Game Round 2+:** Restore 2 Wounds to 1 friendly House Martell unit.",
+                        "**Game Round 3+:** Target 1 friendly Martell unit. It performs a 2\" shift.",
+                        "**Game Round 4+:** Target 1 enemy Combat Unit. It suffers 3 Hits.",
+                        "**Game Round 5+:** Target any number of enemy Combat Units. They become **Vulnerable**."
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "rules": [
                 "50900"
@@ -450,7 +456,7 @@
             "id": "30906",
             "name": "Nymeria Sand",
             "faction": "martell",
-            "version": "S05",
+            "version": "S07",
             "role": "ncu",
             "title": "Lady Nym",
             "abilities": [
@@ -458,10 +464,11 @@
                     "name": "Conflicting Reactions",
                     "effect": [
                         "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                        "While Influencing a friendly Infantry unit:",
-                        "• If you or your opponent Controls [CROWN], its Melee Attacks gain **Vicious**.",
-                        "• If you or your opponent Controls [SWORDS], its Melee Attacks gain **Critical Blow**.",
-                        "• If you or your opponent Controls [HORSE], it gains +1[MOVEMENT]."
+                        "While Influencing a friendly Combat Unit, they gain the following based on the total number of Controlled zones *(friendly or enemy)*:",
+                        "**1+:** Their Melee Attacks gain **Vicious**.",
+                        "**2+:** Their Melee Attacks gain **Critical Blow**.",
+                        "**4+:** Their Melee Attacks may re-roll any Attack Dice.",
+                        "**5+:** Their Melee Attacks roll +2 Attack Dice."
                     ]
                 }
             ],
@@ -475,7 +482,7 @@
             "id": "30907",
             "name": "Arianne Martell",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Heiress To Dorne",
             "abilities": [
@@ -483,13 +490,13 @@
                     "name": "Negotiator",
                     "effect": [
                         "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                        "Each time Arianne Martell Influences a unit, Choose 1:",
+                        "Each time Arianne Martell Influences a unit, Choose 1. If you Control [CROWN] or [OASIS], gain both instead:",
                         "• While Influencing an enemy unit, Attachments on that unit lose all Abilities.",
-                        "• While Influencing an enemy unit, they cannot be the target of friendly Orders."
+                        "• While Influencing an enemy unit, that unit is treated as having -1 rank for Attack Dice. If Arianne Controls [CROWN] or [OASIS], that unit instead attacks using its lowest Attack Die Value."
                     ]
                 }
             ],
-            "cost": 5,
+            "cost": 4,
             "character": true,
             "fluff": {
                 "quote": "\"I was a foolish willful girl, playing at the game of thrones like a drunkard rolling dice.\""

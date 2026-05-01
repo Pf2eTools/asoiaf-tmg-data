@@ -4,205 +4,6 @@
         "id": "bolton",
         "language": "en"
     },
-    "abilities": {
-        "IMPALING SPEAR": {
-            "effect": [
-                "• **Vicious**",
-                "• After completing this attack, if the Defender failed their Panic Test, or this attack destroyed an enemy rank, target the Defender. It becomes **Weakened**."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "RUTHLESS VOLLEY": {
-            "effect": [
-                "• **Vicious**",
-                "• Ignores units and terrain when determining Line of Sight.",
-                "• Before rolling attack dice, if the Defender is engaged, target the Defender. It becomes **Vulnerable**, and this unit may re-roll any Attack Dice."
-            ],
-            "icons": [
-                "ranged"
-            ]
-        },
-        "MUMMER'S TRICKS": {
-            "effect": [
-                "• Before rolling attack dice, target the Defender. Until this Attack is completed, the Defender loses all abilities.",
-                "• After completing this attack, this unit may perform 1 Retreat Action. If it does, after completing that retreat, target any number of enemies this unit disengaged from. They become **Weakened**."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "SKIRMISHER": {
-            "effect": [
-                "Enemies Charging this unit do not gain Charge Bonuses. When this unit activates, if it is not already engaged, it may pivot to any facing."
-            ]
-        },
-        "MUMMER'S TOOLS": {
-            "effect": [
-                "Before rolling attack dice, choose 1. For each condition token on the Defender, choose +1:",
-                "• **Critical Blow**",
-                "• **Sundering**",
-                "• **Vicious**"
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "HARASSMENT TACTICS": {
-            "effect": [
-                "After this unit completes a Maneuver Action, you may target 1 enemy in Short Range of this unit. That enemy becomes **Vulnerable**."
-            ]
-        },
-        "FLAIL & SHIELD": {
-            "effect": [
-                "• **Precision**",
-                "• **Vicious**"
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "WAR FLAIL": {
-            "effect": [
-                "• **Precision**",
-                "• **Vicious**"
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "SADISTIC EXHILARATION": {
-            "effect": [
-                "Before rolling Attack Dice, you may expend 1 Panic token from the Defender and target this unit. If you do, this attack rolls its highest Attack Die Value and may reroll any Attack Dice."
-            ],
-            "icons": [
-                "melee",
-                "ranged"
-            ]
-        },
-        "CRUEL INDULGENCE": {
-            "effect": [
-                "When an Enemy engaged with this unit gains a condition token, this unit may restore 2 Wound."
-            ]
-        },
-        "MY NAME IS REEK!": {
-            "effect": [
-                "When this unit Activates, target any number of Enemies in Short Range of this unit. They become **Panicked**."
-            ]
-        },
-        "CALCULATED CRUELTY": {
-            "effect": [
-                "Before rolling Attack Dice, you may expend 1 Condition token from the Defender and target that Enemy. If you do, until the end of the Turn, it loses all Abilities and cannot be targeted by friendly Tactics Cards."
-            ],
-            "icons": [
-                "melee",
-                "ranged"
-            ]
-        },
-        "INTIMIDATING REPUTATION": {
-            "effect": [
-                "When an enemy in Long Range Activates, you may target it. If you do, it performs 1 Morale Test with -1 to its roll for each remaining rank in this unit. On a failure, it becomes **Weakened**."
-            ]
-        },
-        "SEASONED BRUTALITY": {
-            "effect": [
-                "Before rolling Attack Dice, this Attack rolls +1 Attack Die for each Condition token on the Defender, to a maximum of +2 Attack Dice."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "BATTLE-HARDENED": {
-            "effect": [
-                "This unit suffers -1 Wound from failing Panic Tests, to a minimum of 1."
-            ]
-        },
-        "LOYALTY IN SERVICE": {
-            "effect": [
-                "While your opponent does not Control [CROWN], this unit may reroll any Defense Dice."
-            ]
-        },
-        "SIC 'EM": {
-            "effect": [
-                "• This unit may always reroll Charge Distance Dice",
-                "• Enemies this unit Successfully Charge become **Panicked**.",
-                "• When an enemy would Retreat from this unit, before performing that Retreat, target that enemy. It suffers 1 Hit, +1 Hit for each remaining rank in this unit."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "ORDER: DANCE!!!": {
-            "trigger": "Start of any Turn:",
-            "effect": [
-                "This unit performs a 3 [MOVEMENT] Maneuver. Then, it becomes **Vulnerable**."
-            ],
-            "icons": [
-                "order"
-            ]
-        },
-        "MASTER FLAYER": {
-            "effect": [
-                "• This unit's Melee Attacks gain **Precision**.",
-                "• After rolling Attack Dice, you may expend 1 **Weakened** token from the defender to reroll any Attack Dice."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "SADISTIC TOUGHNESS": {
-            "effect": [
-                "After rolling Defense Dice, this unit blocks 1 Hit, +1 Hit for each Condition token on the Attacker."
-            ]
-        },
-        "OPPORTUNISTIC BRUTALITY": {
-            "effect": [
-                "Before rolling Attack Dice, if the Defender has not yet Activated this Round, this Attack rolls its highest Attack Die Value and gains **Critical Blow** until the end of the turn."
-            ],
-            "icons": [
-                "melee",
-                "ranged"
-            ]
-        },
-        "EXPLOIT WEAKNESS": {
-            "effect": [
-                "**Weakened** tokens on enemies engaged with this unit may be treated and expented as if they were **Panicked** or **Vulnerable** tokens."
-            ]
-        },
-        "MAD DOG'S FEROCITY": {
-            "effect": [
-                "After an enemy completes a Melee Attack on this unit, you may target that enemy. They become **Panicked** or **Vulnerable**."
-            ]
-        },
-        "FERAL RAGE": {
-            "effect": [
-                "• This unit's Melee Attacks gain **Sundering**.",
-                "• When Charging, this unit rolls 1 additional Charge Distance Die and discards the lowest result."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "EXPLOIT FEAR": {
-            "effect": [
-                "**Panicked** tokens on enemies engaged with this unit may be treated and expented as if they were **Vulnerable** tokens or **Weakened** tokens."
-            ]
-        },
-        "SADISTIC MUTILATION": {
-            "effect": [
-                "After this unit completes a Melee Attack, you may expend 1 **Weakened** token from the Defender and target that Enemy. If you do, you may either have it suffer 2 Wounds or destroy 1 of its Infantry Attachments."
-            ],
-            "icons": [
-                "melee"
-            ]
-        },
-        "WEAKENED RESOLVE": {
-            "effect": [
-                "When an Enemy engaged with this unit fails a Panic Test, you may target that Enemy. It becomes **Weakened**."
-            ]
-        }
-    },
     "unit": [
         {
             "id": "11001",
@@ -272,9 +73,10 @@
             "id": "11003",
             "name": "Dreadfort Archers",
             "faction": "bolton",
-            "version": "S06B",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Order: Mark Target",
                 "Ruthless Volley"
             ],
             "attacks": [
@@ -361,7 +163,7 @@
             "abilities": [
                 "Cavalry",
                 "Order: Spread Fear",
-                "War Flail"
+                "War Flail (Bolton)"
             ],
             "attacks": [
                 {
@@ -389,7 +191,7 @@
             "id": "11006",
             "name": "Dreadfort Spearmen",
             "faction": "bolton",
-            "version": "S06B",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Set For Charge",
@@ -421,7 +223,7 @@
             "id": "11070",
             "name": "Bloody Mummer Zorse Riders",
             "faction": "bolton",
-            "version": "S06B",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalry",
@@ -434,8 +236,8 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        6,
-                        4
+                        7,
+                        6
                     ]
                 }
             ],
@@ -454,7 +256,7 @@
             "id": "11071",
             "name": "Bloody Mummer Skirmishers",
             "faction": "bolton",
-            "version": "S06B",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Mummer's Tricks",
@@ -488,7 +290,7 @@
             "id": "31001",
             "name": "Walda Frey",
             "faction": "bolton",
-            "version": "S06B",
+            "version": "S07",
             "role": "ncu",
             "title": "Fat Walda",
             "abilities": [
@@ -496,7 +298,7 @@
                     "name": "Worth her Weight in Silver",
                     "effect": [
                         "Each time Walda Claims a zone, you may target 1 friendly Combat Unit. It restores 2 Wound.",
-                        "Once per game, when Walda would Claim a zone, instead you may target any number of friendly Combat Units and restore a total of 2 + the current game Round Wounds among those units, divided as you choose"
+                        "Once per game, when Walda would Claim a zone, instead you may target any number of friendly Combat Units and restore a total of 1 + the current game Round Wounds among those units, divided as you choose"
                     ]
                 }
             ],

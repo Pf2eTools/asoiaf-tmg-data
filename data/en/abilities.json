@@ -185,6 +185,7 @@
     },
     "BARDICHE": {
         "effect": [
+            "• **Critical Blow**",
             "• **Vicious**"
         ],
         "icons": [
@@ -294,10 +295,9 @@
     "BOLT THROWER": {
         "effect": [
             "• **Vicious**",
-            "• Measures Range and Line of Sight from any part of this unit's tray.",
-            "• May suffer -3 to Hit to ignore Line of Sight and gain **Unlimited Range**.",
+            "• Rolls +1 Attack Die for each of the Defender's remaining ranks.",
             "• Defenders do not roll Defense Dice.",
-            "• If the Defender is Cavalry, Monster or War Machine, this Attack deals 2 Hits for each success."
+            "• For each unblocked Hit, Cavalry, Monster, and War Machine units suffer 2 Wounds."
         ],
         "icons": [
             "ranged",
@@ -398,8 +398,7 @@
     "CHAMPION’S WRATH": {
         "effect": [
             "• **Critical Blow**",
-            "• Enemies Succesfully Charged become **Weakened**.",
-            "• If this unit began the Turn engaged with the Defender, before rolling Attack Dice, the Defender becomes **Vulnerable**."
+            "• Before rolling attack dice, if this unit began the turn engaged, target the Defender. It becomes **Vulnerable**, and this Attack rolls +2 Attack Dice."
         ],
         "icons": [
             "melee"
@@ -408,7 +407,8 @@
     "CHARIOT": {
         "effect": [
             "• This unit has 6 Wounds.",
-            "• At the start of this unit’s Activation, it may perform 1 Maneuver Action."
+            "• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+            "• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests."
         ],
         "icons": [
             "wounds6"
@@ -506,7 +506,7 @@
     "DERVISH BLADES": {
         "effect": [
             "• **Precision**",
-            "• When Attacking enemies that have not Activated this Round, this Attack gains **Critical Blow**."
+            "• When Charging, this Attack gains **Critical Blow**."
         ],
         "icons": [
             "melee"
@@ -600,12 +600,12 @@
     },
     "DROWNED GOD'S FANATICS": {
         "effect": [
-            "• This unit has 3 Wounds.",
+            "• This unit has 4 Wounds.",
             "• This unit can only suffer a maximum of 1 Wound from failing Panic Tests.",
             "• This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect."
         ],
         "icons": [
-            "wounds3"
+            "wounds4"
         ]
     },
     "DUAL WEAPONS": {
@@ -718,10 +718,12 @@
             "melee"
         ]
     },
-    "FIRE ARROWS": {
+    "R'HLLOR'S FIRE": {
         "effect": [
             "• **Vicious**",
-            "• If the Defender fails their Panic Test, target 1 other enemy in Short Range of that unit. They suffer 1 Panic Test with -2 to their roll."
+            "• If the Defender fails their Panic Test, they suffer +1 Wound for each enemy R'hllor unit in Long Range.",
+            "• If this Attack destroys the Defender, before they are removed, target all enemies in Long Range. They become **Vulnerable**.",
+            "• After completing this Attack, you may target 1 friendly R'hllor unit in Long Range. They restore 2 Wounds."
         ],
         "icons": [
             "ranged"
@@ -801,12 +803,12 @@
     },
     "GIANT": {
         "effect": [
-            "• This unit has 6 Wounds.",
+            "• This unit has 8 Wounds.",
             "• This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.",
-            "• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests."
+            "• This unit can only suffer a maximum of 1 Wounds from failing Panic Tests."
         ],
         "icons": [
-            "wounds6"
+            "wounds8"
         ]
     },
     "GIANT'S SPEAR": {
@@ -854,7 +856,7 @@
     "GREAT AXE": {
         "effect": [
             "• **Sundering**",
-            "• If this unit has 2 Pillage tokens, enemies suffer an additional -1 to Defense Dice rolls."
+            "• If this unit has 2 Pillage tokens, only Defense Dice rolls of 6 may block Hits from this Attack."
         ],
         "icons": [
             "melee"
@@ -871,7 +873,8 @@
     },
     "GREATSWORD": {
         "effect": [
-            "• **Sundering**"
+            "• **Sundering**",
+            "• **Critical Blow**"
         ],
         "icons": [
             "melee"
@@ -901,22 +904,11 @@
     "HARPOON": {
         "effect": [
             "• After completing this Attack, the Defender becomes **Weakened**.",
-            "• If the Defender suffers any Wounds from this attack, until the end of the Round, they suffer -1 [MOVEMENT] and, if they Charge, they suffer a Disorderly Charge."
+            "• ***Ranged Attack Only:*** Then, this unit may shift 2\" directly backwards. If the Defender is unengaged and suffered any Wounds from this attack, you may then force them to shift up to 2\" toward this unit, in a direction determined by the attack arc *(forward if attacked from the front, sideways based on the corresponding flank, etc)*."
         ],
         "icons": [
             "melee",
             "ranged"
-        ]
-    },
-    "HEART OF FIRE": {
-        "effect": [
-            "This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:",
-            "**• When this unit performs a Melee Attack, before rolling Attack Dice:** This Attack gains +1 to Hit and **Vicious**.",
-            "**• After this unit completes a Melee Attack: **This unit restores 1 Wound, +1 Wound for each of the Defender’s destroyed ranks.",
-            "**• When this unit performs a Charge Action, before resolving that action:** This unit may re-roll any Charge Distance Dice, and any enemies they successfully charge become **Panicked**."
-        ],
-        "icons": [
-            "fire"
         ]
     },
     "HEIR OF HOUSE TARGARYEN": {
@@ -956,7 +948,8 @@
     },
     "IMPALING SPEAR": {
         "effect": [
-            "After completing this Attack, if this Attack destroyed an enemy rank, all enemies in Short Range of the Attacker become **Panicked**, if they were already **Panicked**, they instead become **Weakened**."
+            "• **Vicious**",
+            "• After completing this Attack, target the Defender. It becomes **Weakened**."
         ],
         "icons": [
             "melee"
@@ -1156,8 +1149,9 @@
             "Each time this unit performs a Melee Attack, before rolling Attack Dice choose 1, for each Condition token on the Defender, choose +1:",
             "• **Vicious**",
             "• **Sundering**",
-            "• Until the end of the Turn, Defender loses all Abilities.",
-            "• This unit may re-roll any Attack Dice."
+            "• This unit may re-roll any Attack Dice.",
+            "• Until this Attack has been completed, the Defender may not be targeted by friendly Tactics cards.",
+            "• Until this Attack has been completed, the Defender may not be targeted by friendly Orders."
         ],
         "icons": [
             "melee"
@@ -1200,8 +1194,9 @@
         "effect": [
             "• This unit has 8 Wounds.",
             "• This unit cannot Control Objectives.",
-            "• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.",
-            "• When this unit is destroyed, before being removed, target 1 enemy it is engaged with. They suffer D3 Wounds."
+            "• Once during this unit's Activation, before selecting its Action, it may shift 5\" directly forward.",
+            "• When Charging, this unit ignores all terrain penalties.",
+            "• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests and, each time this unit fails a Panic Test, target all units within 2\". They each suffer D3 Wounds."
         ],
         "icons": [
             "wounds8"
@@ -1218,8 +1213,8 @@
     },
     "MARAUDER’S BLADES": {
         "effect": [
-            "• **Vicious**",
-            "• Gains +1 to Hit and **Critical Blow** when Attacking enemies with the same or fewer remaining ranks."
+            "• **Critical Blow**",
+            "• **Vicious**"
         ],
         "icons": [
             "melee"
@@ -1229,6 +1224,7 @@
         "effect": [
             "• This unit has 3 Wounds.",
             "• At the start of this unit's Activation, it may perform 1 Maneuver or Retreat Action.",
+            "• This unit can only suffer a maximum of 1 Wound from failing Panic Tests.",
             "• Other friendly units in Short Range gain +1 Attack Die on Melee Attacks and suffer -1 Wound from failing Panic Tests."
         ],
         "icons": [
@@ -1331,7 +1327,7 @@
     },
     "OPPRESSIVE PEACEKEEPING": {
         "effect": [
-            "While you Control [CROWN], enemies in Short Range of this unit suffer -1 to Morale Test rolls."
+            "While you Control [CROWN], enemies in Short Range of this unit suffer -1 to Morale Test rolls and, each time they are targeted by a friendly Tactics card or Order, after resolving that card/Order, target them. They become **Weakened**."
         ]
     },
     "ORDER: ADAPTIVE PLANNING": {
@@ -1391,7 +1387,10 @@
     "ORDER: DROWNED GOD'S BLESSING": {
         "trigger": "Start of any Turn:",
         "effect": [
-            "Target 1 friendly Greyjoy Infantry unit in Short Range and choose 1:\n• That unit restores 2 Wounds.\n• That unit may re-roll any Attack Dice this Turn.\n• Enemies that Attack that unit this Turn become **Vulnerable**."
+            "Target 1 friendly Greyjoy Infantry unit in Short Range and choose 1:",
+            "• That unit restores 2 Wounds.",
+            "• That unit may re-roll any Attack Dice this Turn.",
+            "• Enemies that Attack that unit this Turn become **Vulnerable** and **Weakened**."
         ],
         "icons": [
             "order"
@@ -1517,7 +1516,7 @@
     "ORDER: PIT FIGHTER RAGE": {
         "trigger": "When this unit is performing a Melee Attack, before rolling Attack Dice:",
         "effect": [
-            "The Defender becomes **Vulnerable**, **Panicked** and **Weakened**. After this Attack has been completed, the Attacker suffers 2 Wounds."
+            "Target the Defender. It gains 1 Condition token, +1 additional Condition token for each of the Attacker's destroyed ranks."
         ],
         "icons": [
             "order"
@@ -1950,10 +1949,8 @@
     },
     "RAMPAGE": {
         "effect": [
-            "• **Critical Blow**",
-            "• **Sundering**",
-            "• Before rolling Attack Dice, the Defender becomes **Panicked**.",
-            "• When Charging, this unit may re-roll any Charge Distance Dice."
+            "• Defenders do not roll Defense Dice.",
+            "• This Attack gains +1 Attack Die for each Woud this unit has suffered, to a maximum of +3."
         ],
         "icons": [
             "melee",
@@ -2029,7 +2026,7 @@
     "RESOLUTE STRIKES": {
         "effect": [
             "• **Critical Blow**",
-            "• Gains +1 to Hit for each of this unit’s destroyed ranks."
+            "• Before rolling Attack Dice, target 1 firendly unit in Long Range. It restores 1 Wound or removes 1 Condition token. For each Condition token on the Defender, repeat this."
         ],
         "icons": [
             "melee"
@@ -2038,9 +2035,10 @@
     "ROCK VOLLEY": {
         "effect": [
             "• **Vicious**",
-            "• Cannot Attack Solo units.",
-            "• May Attack enemies regardless of range and Line of Sight.",
-            "• If this Attack generates any Hits, instead of rolling Defense Dice, the Defender suffers 1 Wound, +1 Wound for each of its remaining ranks."
+            "• Ignores Range and Line of Sight when targeting enemies, but may only target enemies within Long Range and Line of Sight of another friendly unit.",
+            "• When Attacking Cavalry or Infantry units, gains +1 to Hit for each of the Defender's remaining ranks.",
+            "• Defenders do not roll Defense Dice.",
+            "• Each Success generates +1 Hit for each of the Defender's remaining ranks beyond the first."
         ],
         "icons": [
             "ranged",
@@ -2064,26 +2062,9 @@
             "melee"
         ]
     },
-    "RUTHLESS VOLLEY": {
-        "effect": [
-            "• Ignores units and terrain when determining Line of Sight.",
-            "• When Attacking engaged enemies, gains **Precision** and may re-roll any Attack Dice."
-        ],
-        "icons": [
-            "ranged"
-        ]
-    },
     "SABOTAGE AND SUBVERT": {
         "effect": [
             "Once per game, at the start of any Turn, your opponent may deal this unit 1 Wound *(remove this model)*. If they do, they place 1 Condition token on this unit, and it may not use Orders or be the target of friendly Tactics cards this Turn."
-        ]
-    },
-    "SADISTIC MUTILATION": {
-        "effect": [
-            "After this unit completes a Melee Attack, you may expend 1 **Weakened** token from the Defender. If you do, destroy 1 Infantry Attachment in that unit."
-        ],
-        "icons": [
-            "melee"
         ]
     },
     "SAVAGE MAULING": {
@@ -2102,7 +2083,7 @@
             "melee"
         ]
     },
-    "SCIMITAR": {
+    "SCIMITAR (OUTRIDERS)": {
         "effect": [
             "• **Critical Blow**"
         ],
@@ -2123,11 +2104,6 @@
             "Each time this unit fails a Panic Test, all enemies within Short Range of this unit become **Panicked**."
         ]
     },
-    "SIC 'EM": {
-        "effect": [
-            "This unit may always re-roll Charge Distance Dice. Enemies this unit Successfully Charge become **Panicked**."
-        ]
-    },
     "SOLO RIDER": {
         "effect": [
             "• This unit has 3 Wounds.",
@@ -2140,6 +2116,7 @@
     "WESTEROSI RIDER": {
         "effect": [
             "• This unit has 3 Wounds.",
+            "• This unit can only suffer a maximum of 1 Wound from failing Panic Tests.",
             "• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action.",
             "• As long as Jorah is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand."
         ],
@@ -2167,7 +2144,7 @@
         "effect": [
             "• **Vicious**",
             "• **Sundering**",
-            "• **Precision**"
+            "• After rolling Attack Dice, if the Defender has any Condition tokens on them, this unit may re-roll any Attack Dice."
         ],
         "icons": [
             "melee"
@@ -2186,13 +2163,13 @@
             "When Attacking enemies in Long Range of this unit, friendly War Machine units may re-roll any Attack Dice."
         ]
     },
-    "STAG’S FURY": {
+    "STAG'S FURY": {
         "effect": [
-            "This Attack gains the following based on the Game Round *(effects are cumulative)*:",
-            "**• 2+:** **Critical Blow**",
-            "**• 3+:** **Vicious**",
-            "**• 4+:** **Sundering**",
-            "**• 5+:** Deals +1 Hit for each of this unit’s remaining ranks."
+            "Before rolling Attack Dice, for each Game Round beyond the first, choose 1 of the following effects. This Attack gains the selected effects until the end of this Action.",
+            "• **Critical Blow**",
+            "• **Vicious**",
+            "• **Sundering**",
+            "• If the unit began the Turn engaged, this Attack deals +1 Hit for each of this unit's remaining ranks."
         ],
         "icons": [
             "melee"
@@ -2228,9 +2205,8 @@
             "melee"
         ]
     },
-    "STOMP": {
+    "TRAMPLING STOMP": {
         "effect": [
-            "• **Vicious**",
             "• Defenders do not roll Defense Dice.",
             "• When Charging, gains +1 Attack Die for each of the Defender’s remaining ranks."
         ],
@@ -2317,7 +2293,7 @@
     },
     "THE SILENCE'S INFAMY": {
         "effect": [
-            "If this unit has 2 Pillage tokens, enemies in Short Range suffer -1 to Morale Test rolls."
+            "If this unit has 2 Pillage tokens, enemies in Short Range suffer -1 to Morale Test rolls and enemies Activating while engaged with this unit suffer 1 Panic Test."
         ]
     },
     "TO THE LAST!": {
@@ -2540,15 +2516,17 @@
     },
     "WAR ELEPHANT": {
         "effect": [
-            "• This unit has 8 Wounds and cannot Control Objectives.",
-            "• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.",
-            "• Each time this unit would perform an Action, if there is no friendly Golden Company Infantry unit within Long Range, it must perform 1 Morale Test. On a failure, it does not perform that Action."
+            "• This unit has 8 Wounds.",
+            "• This unit cannot Control Objectives.",
+            "• Once during this unit's Activation, before selecting its Action, it may shift 5\" directly forward.",
+            "• When Charging, this unit ignores all terrain penalties.",
+            "• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests."
         ],
         "icons": [
             "wounds8"
         ]
     },
-    "WAR FLAIL": {
+    "WAR FLAIL (NEUTRAL)": {
         "effect": [
             "• **Vicious**",
             "• When Charging, gains **Critical Blow**."
@@ -2569,7 +2547,8 @@
         "effect": [
             "• This unit has 6 Wounds.",
             "• This unit cannot Control Objectives.",
-            "• This unit cannot gain Condition tokens, Charge, Retreat, or Shift."
+            "• This unit cannot gain Condition tokens, Charge, Retreat, or Shift.",
+            "• This unit suffers a maximum of 2 Wounds from failing Panic Tests."
         ],
         "icons": [
             "wounds6"
@@ -2639,9 +2618,9 @@
         ]
     },
     "ORDER: PLANNED APPROACH": {
-        "trigger": "Start of any Turn:",
+        "trigger": "When a friendly unit in Long Range Activates:",
         "effect": [
-            "Target 1 friendly unit in Long Range. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities."
+            "Target that unit. Until the end of the Turn, that unit may not be targeted by enemy effects or abilities."
         ],
         "icons": [
             "order"
@@ -2848,6 +2827,375 @@
     "WATER DANCE": {
         "effect": [
             "Each time a rank in this unit is destroyed, target the Attacker, they become **Vulnerable**."
+        ]
+    },
+    "LANNISTER STEEL": {
+        "effect": [
+            "Before rolling Attack Dice, if this unit has an equal or greater number of remaining ranks than the Defender, target the Defender. It becomes **Panicked**, and this Attack gains +1 to Hit."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "KINGSGUARD": {
+        "effect": [
+            "• This unit has 8 models *(including Joffrey)* and 2 ranks.",
+            "• Each model in this unit has 2 Wounds.",
+            "• This unit can suffer a maximum of 2 Wounds each time it fails a Panic Test.",
+            "• Each time you Claim [CROWN], if this unit has less than 4 Baratheon Banners, it gains 1 Baratheon Banner."
+        ],
+        "icons": [
+            "wounds2"
+        ]
+    },
+    "LANNISPORT SPEARS": {
+        "effect": [
+            "• **Precision**.",
+            "• After rolling Attack Dice, if the Defender has not Activated this round, this Attack may re-roll any Attack Dice."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "WATCHFUL EYE": {
+        "effect": [
+            "When an enemy in Long Range and Line of Sight Activates, if this unit has not Activated this Round, you may target that enemy. It becomes **Vulnerable**."
+        ]
+    },
+    "ORDER: AT ANY COST": {
+        "trigger": "When this unit performs a Melee Attack, before rolling Attack Dice:",
+        "effect": [
+            "This Attack rolls +1 Attack Die and this unit attacks using its highest Attack Die Value. After completing this Attack, this unit becomes **Vulnerable**."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "ORDER: SCOUT TERRAIN": {
+        "trigger": "When a friendly unit in Long Range Activates:",
+        "effect": [
+            "Target that unit. Until the end of the Turn, it may re-roll any Charge Distance Dice and ignores all terrain penalties."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "BERSERKER'S AXES": {
+        "effect": [
+            "• **Critical Blow**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "ORDER: SUPPRESSIVE VOLLEY": {
+        "trigger": "Start of any Turn:",
+        "effect": [
+            "Target 1 enemy in Long Range and Line of Sight. It becomes **Vulnerable** and, until the end of the Turn, cannot be the target of enemy Orders or Tactics cards."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "HUNTER'S VOLLEY": {
+        "effect": [
+            "• **Precision**.",
+            "• Ignores units and terrain when determining Line of Sight."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "ORDER: SHE-BEAR'S FURY": {
+        "trigger": "Start of a friendly Turn:",
+        "effect": [
+            "Target 1 enemy in Long Range. It performs 1 Morale Test with -1 to its roll for each of this unit's remaining ranks. On a failure, it becomes **Pnaicked** and **Vulnerable**."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "INDOMITABLE MIGHT": {
+        "effect": [
+            "• Defenders do not roll Defense Dice.",
+            "• When Charging, the Defender becomes **Weakened**.",
+            "• Roll +1 Attack Die for each Wound Wun Wun has suffered, to a maximum of +3.",
+            "• After this Attack has been completed, Wun Wun may restore 1 Wound."
+        ],
+        "icons": [
+            "melee",
+            "wounds"
+        ]
+    },
+    "GOLDEN REPUTATION": {
+        "effect": [
+            "After an enemy completes a Melee Attack on this unit, if that enemy does not have more remaining ranks than this unit, target that enemy. It becomes **Panicked** and **Vulnerable**."
+        ]
+    },
+    "LIFE AND HONOR TO THE WATCH": {
+        "effect": [
+            "If this unit fails a Panic Test, it only discards 1 attached Night's Watch Tactics card, instead of all."
+        ]
+    },
+    "VETERAN'S PROWESS": {
+        "effect": [
+            "Enemies engaged with this unit suffer -1 to Hit and, each time this unit is Attacked with a Melee Attack, for each Miss, the Attacker suffers 1 Hit."
+        ]
+    },
+    "STAG'S METTLE": {
+        "effect": [
+            "Beginning on Game Round 4, this unit gains +1 to Defense Dice rolls and +1 to Morale Test rolls."
+        ]
+    },
+    "PUNISH COWARDICE": {
+        "effect": [
+            "After an enemy engaged with this unit completes a Retreat Action, target that enemy. It becomes **Vulnerable** and **Weakened**."
+        ]
+    },
+    "FAITHFUL": {
+        "effect": [
+            "This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, or an enemy in Long Range is destroyed, it gains 1 Faith token. It may have a maximum of 3 Faith tokens at any time."
+        ],
+        "icons": [
+            "fire"
+        ]
+    },
+    "SWORD OF THE FAITH": {
+        "effect": [
+            "• **Vicious**.",
+            "• Before rolling Attack Dice, this unit may expend 1 Faith token. If they do, target the Defender. They become **Panicked** and **Vulnerable**.",
+            "• After rolling Attack Dice, this unit may expend 1 Faith Token to re-roll any Attack Dice.",
+            "• After completing this Attack, this unit may expend 1 Faith token to restore 2 Wounds, +1 Wound for each of this unit's destroyed ranks."
+        ],
+        "icons": [
+            "fire"
+        ]
+    },
+    "HIGHGARDEN CROSSBOW": {
+        "effect": [
+            "• **Precision**",
+            "• **Sundering**"
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "ORDER: ADVANCE THE LINE!": {
+        "trigger": "Start of the Round:",
+        "effect": [
+            "Target 1 friendly unit in Long Range. It performs a 2\" shift directly forward."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "RAINBOW GUARD": {
+        "effect": [
+            "• This unit has 8 models *(including Renly)* and 2 ranks.",
+            "• Each model in this unit has 2 Wounds.",
+            "• This unit can suffer a maximum of 2 Wounds each time it fails a Panic Test.",
+            "• Each time you Claim [CROWN], if this unit has less than 4 Baratheon Banners, it gains 1 Baratheon Banner."
+        ],
+        "icons": [
+            "wounds2"
+        ]
+    },
+    "SCIMITAR (RETINUE)": {
+        "effect": [
+            "• **Critical Blow**",
+            "• **Sundering**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "RUTHLESS VOLLEY": {
+        "effect": [
+            "• **Vicious**",
+            "• Ignores units and terrain when determining Line of Sight.",
+            "• Before rolling attack dice, if the Defender is engaged, target the Defender. It becomes **Vulnerable**, and this unit may re-roll any Attack Dice."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "MUMMER'S TRICKS": {
+        "effect": [
+            "• **Vicious**",
+            "• Before rolling attack dice, target the Defender. Until this Attack is completed, the Defender loses all abilities.",
+            "• After completing this attack, this unit may perform 1 Retreat Action. If it does, after completing that retreat, target any number of enemies this unit disengaged from. They become **Weakened**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "SKIRMISHER": {
+        "effect": [
+            "Enemies Charging this unit do not gain Charge Bonuses. When this unit activates, if it is not already engaged, it may pivot to any facing."
+        ]
+    },
+    "MUMMER'S TOOLS": {
+        "effect": [
+            "Before rolling attack dice, choose 1. For each condition token on the Defender, choose +1:",
+            "• **Critical Blow**",
+            "• **Sundering**",
+            "• **Vicious**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "HARASSMENT TACTICS": {
+        "effect": [
+            "After this unit completes a Maneuver Action, you may target 1 enemy in Short Range of this unit. That enemy becomes **Vulnerable**."
+        ]
+    },
+    "FLAIL & SHIELD": {
+        "effect": [
+            "• **Precision**",
+            "• **Vicious**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "WAR FLAIL (BOLTON)": {
+        "effect": [
+            "• **Precision**",
+            "• **Vicious**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "SADISTIC EXHILARATION": {
+        "effect": [
+            "Before rolling Attack Dice, you may expend 1 Panic token from the Defender and target this unit. If you do, this attack rolls its highest Attack Die Value and may reroll any Attack Dice."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "CRUEL INDULGENCE": {
+        "effect": [
+            "When an Enemy engaged with this unit gains a condition token, this unit may restore 2 Wound."
+        ]
+    },
+    "MY NAME IS REEK!": {
+        "effect": [
+            "When this unit Activates, target any number of Enemies in Short Range of this unit. They become **Panicked**."
+        ]
+    },
+    "CALCULATED CRUELTY": {
+        "effect": [
+            "Before rolling Attack Dice, you may expend 1 Condition token from the Defender and target that Enemy. If you do, until the end of the Turn, it loses all Abilities and cannot be targeted by friendly Tactics Cards."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "INTIMIDATING REPUTATION": {
+        "effect": [
+            "When an enemy in Long Range Activates, you may target it. If you do, it performs 1 Morale Test with -1 to its roll for each remaining rank in this unit. On a failure, it becomes **Weakened**."
+        ]
+    },
+    "SEASONED BRUTALITY": {
+        "effect": [
+            "Before rolling Attack Dice, this Attack rolls +1 Attack Die for each Condition token on the Defender, to a maximum of +2 Attack Dice."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "BATTLE-HARDENED": {
+        "effect": [
+            "This unit suffers -1 Wound from failing Panic Tests, to a minimum of 1."
+        ]
+    },
+    "LOYALTY IN SERVICE": {
+        "effect": [
+            "While your opponent does not Control [CROWN], this unit may reroll any Defense Dice."
+        ]
+    },
+    "SIC 'EM": {
+        "effect": [
+            "• This unit may always reroll Charge Distance Dice",
+            "• Enemies this unit Successfully Charge become **Panicked**.",
+            "• When an enemy would Retreat from this unit, before performing that Retreat, target that enemy. It suffers 1 Hit, +1 Hit for each remaining rank in this unit."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "ORDER: DANCE!!!": {
+        "trigger": "Start of any Turn:",
+        "effect": [
+            "This unit performs a 3 [MOVEMENT] Maneuver. Then, it becomes **Vulnerable**."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "MASTER FLAYER": {
+        "effect": [
+            "• This unit's Melee Attacks gain **Precision**.",
+            "• After rolling Attack Dice, you may expend 1 **Weakened** token from the defender to reroll any Attack Dice."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "SADISTIC TOUGHNESS": {
+        "effect": [
+            "After rolling Defense Dice, this unit blocks 1 Hit, +1 Hit for each Condition token on the Attacker."
+        ]
+    },
+    "OPPORTUNISTIC BRUTALITY": {
+        "effect": [
+            "Before rolling Attack Dice, if the Defender has not yet Activated this Round, this Attack rolls its highest Attack Die Value and gains **Critical Blow** until the end of the turn."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "EXPLOIT WEAKNESS": {
+        "effect": [
+            "**Weakened** tokens on enemies engaged with this unit may be treated and expented as if they were **Panicked** or **Vulnerable** tokens."
+        ]
+    },
+    "MAD DOG'S FEROCITY": {
+        "effect": [
+            "After an enemy completes a Melee Attack on this unit, you may target that enemy. They become **Panicked** or **Vulnerable**."
+        ]
+    },
+    "FERAL RAGE": {
+        "effect": [
+            "• This unit's Melee Attacks gain **Sundering**.",
+            "• When Charging, this unit rolls 1 additional Charge Distance Die and discards the lowest result."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "EXPLOIT FEAR": {
+        "effect": [
+            "**Panicked** tokens on enemies engaged with this unit may be treated and expented as if they were **Vulnerable** tokens or **Weakened** tokens."
+        ]
+    },
+    "SADISTIC MUTILATION": {
+        "effect": [
+            "After this unit completes a Melee Attack, you may expend 1 **Weakened** token from the Defender and target that Enemy. If you do, you may either have it suffer 2 Wounds or destroy 1 of its Infantry Attachments."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "WEAKENED RESOLVE": {
+        "effect": [
+            "When an Enemy engaged with this unit fails a Panic Test, you may target that Enemy. It becomes **Weakened**."
         ]
     }
 }

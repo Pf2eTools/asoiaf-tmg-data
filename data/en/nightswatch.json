@@ -9,12 +9,12 @@
             "id": "10501",
             "name": "Veterans of the Watch",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Dual Weapons",
-                "Counterstrike",
-                "Disrupt"
+                "Life and Honor to the Watch",
+                "Veteran's Prowess"
             ],
             "attacks": [
                 {
@@ -24,7 +24,7 @@
                     "dice": [
                         7,
                         6,
-                        5
+                        6
                     ]
                 }
             ],
@@ -42,7 +42,7 @@
             "id": "10502",
             "name": "Sworn Brothers",
             "faction": "nightswatch",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Martial Training",
@@ -55,8 +55,8 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
-                        4
+                        6,
+                        5
                     ]
                 }
             ],
@@ -155,11 +155,12 @@
             "id": "10505",
             "name": "Ranger Hunters",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Quick Fire",
-                "Swift Strike"
+                "Swift Strike",
+                "Skirmisher"
             ],
             "attacks": [
                 {
@@ -197,7 +198,7 @@
             "id": "10506",
             "name": "Builder Scorpion Crew",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "War Machine",
@@ -215,7 +216,7 @@
                 {
                     "name": "Weapon Crew",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 5,
                     "dice": [
                         3
                     ]
@@ -242,7 +243,7 @@
             "id": "10507",
             "name": "Builder Stone Thrower",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "War Machine",
@@ -251,10 +252,10 @@
             "attacks": [
                 {
                     "name": "Rock Volley",
-                    "type": "long",
-                    "hit": 4,
+                    "type": "ranged",
+                    "hit": 6,
                     "dice": [
-                        2
+                        1
                     ]
                 },
                 {
@@ -269,7 +270,7 @@
             "defense": 5,
             "morale": 5,
             "speed": 1,
-            "cost": 8,
+            "cost": 6,
             "tray": "warmachine",
             "back_text": [
                 {
@@ -329,7 +330,7 @@
             "id": "10509",
             "name": "Conscripts",
             "faction": "nightswatch",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Supply Aid",
@@ -350,7 +351,7 @@
             "defense": 5,
             "morale": 7,
             "speed": 5,
-            "cost": 5,
+            "cost": 4,
             "tray": "infantry",
             "fluff": {
                 "lore": "Somewhat ragged and often unruly, Night’s Watch Conscripts are literally the lowest of the low. While the Watch prefers to provide at least some training to their newest recruits, on occasion, defense of the Wall requires every man standing to grab a blade and sally forth. Liable to break and run at the first sign of serious resistance, a wise commander will not depend too heavily on the Conscripts holding against strong odds."
@@ -361,7 +362,7 @@
             "id": "10510",
             "name": "Watch Marshal",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Tactical Reposition",
@@ -504,14 +505,15 @@
             "id": "30501",
             "name": "Bowen Marsh",
             "faction": "nightswatch",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "First Steward",
             "abilities": [
                 {
                     "name": "Counts and Measures",
                     "effect": [
-                        "Each time Bowen Claims a zone, you may look at the top 2 cards of your Tactics Deck. Place 1 of those cards in your hand and the other on the bottom of your Tactics Deck."
+                        "Each time Bowen Claims a zone, you may look at the top 2 cards of your Tactics Deck. Place 1 of those cards in your hand and the other on the bottom of your Tactics Deck.",
+                        "Each time 1 of your Night's Watch units is destroyed, you may take 1 attached Night's Watch Tactics card from that unit and place it in your hand."
                     ]
                 }
             ],
@@ -546,7 +548,7 @@
             "id": "30503",
             "name": "Jeor Mormont",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "The Old Bear",
             "abilities": [
@@ -554,8 +556,7 @@
                     "name": "Duty To The Realms Of Men",
                     "effect": [
                         "Each time Jeor Claims a zone, you may target 2 friendly Night's Watch Combat Units. Move 1 friendly attached Tactics card from 1 of those units to the other.",
-                        "Once per game, when Jeor Claims a zone, you may replace that zone's effect with:",
-                        "*Take 1 Tactics card that can be attached to a unit from your discard pile and attach it to a friendly Night's Watch unit.*"
+                        "Once per game, at the start of any Turn, you may take 1 Tactics card that can be attached to a unit from your discard pile and attach it to a friendly Night's Watch unit.*"
                     ]
                 }
             ],
@@ -649,17 +650,23 @@
             "id": "30509",
             "name": "Samwell Tarly",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Craven Scholar",
             "abilities": [
                 {
                     "name": "Knowledge Is Power",
                     "effect": [
-                        "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand."
+                        "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",
+                        "Samwell begins the game with 2 Order tokens.",
+                        "Each time a friendly Combat Unit is performing an Attack, before rolling Attack Dice, you may remove 1 Order token from Samwell. If you do, target the defender. It becomes **Vulnerable**."
                     ]
                 }
             ],
+            "tokens": {
+                "number": 2,
+                "name": "order"
+            },
             "cost": 4,
             "character": true,
             "fluff": {
@@ -707,7 +714,7 @@
             "id": "30511",
             "name": "Craster",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Ally of the Watch",
             "abilities": [
@@ -716,7 +723,7 @@
                     "effect": [
                         "**Influence*** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
                         "Each time Craster Influences a unit, remove 1 Condition token from them.",
-                        "While Influencing a unit, that unit ignores the Rough and Hindering keyword."
+                        "While Influencing a unit, that unit ignores the Rough and Hindering keywords and cannot be targeted by enemy Tactics cards or enemy Tactics Board zone effects."
                     ]
                 }
             ],

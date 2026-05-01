@@ -9,11 +9,11 @@
             "id": "10601",
             "name": "Stag Knights",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Resilience",
-                "Stag’s Fury"
+                "Stag's Fury",
+                "Stag's Mettle"
             ],
             "attacks": [
                 {
@@ -22,8 +22,8 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        6,
-                        5
+                        7,
+                        7
                     ]
                 }
             ],
@@ -41,9 +41,10 @@
             "id": "10602",
             "name": "Baratheon Wardens",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Order: Hold the Line!",
                 "War Hammer",
                 "Counterstrike"
             ],
@@ -73,11 +74,12 @@
             "id": "10603",
             "name": "Baratheon Sentinels",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Sentinel",
-                "Double Hammers"
+                "Double Hammers",
+                "Go Down Fighting"
             ],
             "attacks": [
                 {
@@ -86,8 +88,8 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        5,
-                        4
+                        6,
+                        5
                     ]
                 }
             ],
@@ -144,16 +146,17 @@
             "id": "10605",
             "name": "R’hllor Faithful",
             "faction": "baratheon",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Heart of Fire"
+                "Faithful",
+                "Sword of the Faith"
             ],
             "attacks": [
                 {
-                    "name": "Sword Of The Faith",
+                    "name": "Sword of the Faith",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         6,
@@ -186,11 +189,12 @@
             "id": "10606",
             "name": "Champions of The Stag",
             "faction": "baratheon",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalry",
-                "Champion’s Wrath"
+                "Champion’s Wrath",
+                "Punish Cowardice"
             ],
             "attacks": [
                 {
@@ -199,12 +203,12 @@
                     "hit": 3,
                     "dice": [
                         6,
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 2,
-            "morale": 6,
+            "morale": 5,
             "speed": 4,
             "cost": 8,
             "tray": "cavalry",
@@ -344,19 +348,19 @@
             "id": "10610",
             "name": "R’hllor Lightbringers",
             "faction": "baratheon",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Fire Arrows"
+                "R'hllor's Fire"
             ],
             "attacks": [
                 {
-                    "name": "Fire Arrows",
+                    "name": "R'hllor's Fire",
                     "type": "long",
                     "hit": 3,
                     "dice": [
                         7,
-                        6,
+                        7,
                         4
                     ]
                 },
@@ -392,31 +396,31 @@
             "id": "10611",
             "name": "Thorn Watch",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Watcher's Crossbow",
-                "Swift Strike",
-                "Regroup"
+                "Order: Overwatch",
+                "Highgarden Crossbow",
+                "Skirmisher"
             ],
             "attacks": [
                 {
-                    "name": "Watcher's Crossbow",
-                    "type": "short",
+                    "name": "Highgarden Crossbow",
+                    "type": "long",
                     "hit": 3,
                     "dice": [
-                        6,
-                        5,
+                        7,
+                        7,
                         4
                     ]
                 },
                 {
                     "name": "Longsword",
                     "type": "melee",
-                    "hit": 3,
+                    "hit": 4,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -442,17 +446,18 @@
             "id": "10612",
             "name": "Riders of Highgarden",
             "faction": "baratheon",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalry",
-                "Highgarden Lance"
+                "Order: Swift Retreat",
+                "Lance"
             ],
             "attacks": [
                 {
                     "name": "Lance",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         5,
                         4
@@ -520,11 +525,10 @@
             "id": "10614",
             "name": "Rainbow Guard",
             "faction": "baratheon",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Resilience",
-                "Renly's Retinue",
+                "Rainbow Guard",
                 "Rally Cry"
             ],
             "attacks": [
@@ -556,15 +560,17 @@
             "fluff": {
                 "lore": "King Renly Baratheon’s Rainbow Guard are formed of the most formidable individuals to claim the youngest Baratheon as their liege and king. When taking the field together, they form the deadly core of Renly’s force, capable of holding the line or flanking vulnerable units. Perhaps more importantly they serve as a symbol of the hope and faith which King Renly plans to use in uniting all of Westeros under his banner."
             },
-            "icon": "infantry"
+            "icon": "infantry",
+            "wounds": 2
         },
         {
             "id": "10615",
             "name": "Baratheon Halberdiers",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Order: Advance the Line!",
                 "Order: Taunt",
                 "Halberd"
             ],
@@ -572,7 +578,7 @@
                 {
                     "name": "Halberd",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         7,
@@ -582,7 +588,7 @@
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 5,
+            "speed": 4,
             "cost": 6,
             "tray": "infantry",
             "fluff": {
@@ -655,16 +661,14 @@
             "id": "30602",
             "name": "Shyra Errol",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Lady of Haystack Hall",
             "abilities": [
                 {
                     "name": "Support Of Haystack Hall",
                     "effect": [
-                        "Each time Shyra Claims [CROWN], restore 1 Wound to 1 friendly Combat Unit.",
-                        "Each time Shyra Claims [LETTER], remove 1 Condition Token from 1 friendly Combat Unit.",
-                        "Each time Shyra Claims [MONEY], if you remove a token, place 1 Condition Token of that type on 1 enemy Combat Unit."
+                        "Once per Round, if Shyra has Claimed a zone, and an enemy targets 1 of your engaged Combat Units with an NCU Ability, zone effect, or Tactics card, after resolving that effect, you may target any enemies engaged with that unit. They become **Vulnerable**, then suffer 1 Hit for each remaining rank in your unit."
                     ]
                 }
             ],
@@ -678,7 +682,7 @@
             "id": "30603",
             "name": "Melisandre",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "The Red Woman",
             "abilities": [
@@ -686,8 +690,11 @@
                     "name": "Sacrifice To The Lord Of Light",
                     "effect": [
                         "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                        "When Melisandre Influences a friendly unit, you may have them suffer 2 Wounds and 1 Panic Test. If you do, target 1 enemy Combat Unit in Long Range. That enemy suffers 1 Panic Test with -2 to their roll and +2 Wounds on failure.",
-                        "While influencing a friendly unit, that unit is a R'hllor unit and its Melee Attacks gain **Vicious**."
+                        "When Melisandre Influences a friendly unit, you may have them suffer up to 2 Wounds. It gains 1 of the following effects while she is influencing it, +1 additional effect for each Wound it suffered:",
+                        "• This unit gains +2 to Morale Test rolls.",
+                        "• This unit's Melee Attacks gain **Vicious**.",
+                        "• When this unit performs a Melee Attack, before rolling Attack Dice, targe the Defender. It becomes **Vulnerable**.",
+                        "• When this unit Activates, target any enemies in Short Range. They become **Panicked**."
                     ]
                 }
             ],
@@ -708,14 +715,14 @@
             "id": "30604",
             "name": "Davos Seaworth",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Hand of The True King",
             "abilities": [
                 {
                     "name": "Smuggler's Cunning",
                     "effect": [
-                        "Davos begins the game with 3 Order tokens on him.",
+                        "Davos begins the game with 4 Order tokens on him.",
                         "Each time a friendly unit Charges, after rolling Charge Distance Dice, you may remove 1 token from Davos. If you do, you may re-roll any Charge Distance Dice.",
                         "Each time a friendly unit Activates, you may remove 1 token from Davos. If you do, until the end of the Turn, enemies engaged with that unit may not use Orders or be the target of friendly Tactics cards."
                     ]
@@ -735,7 +742,7 @@
             },
             "tokens": {
                 "name": "order",
-                "number": 3
+                "number": 4
             }
         },
         {
@@ -807,14 +814,15 @@
             "id": "30608",
             "name": "Margaery Tyrell",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Little Rose",
             "abilities": [
                 {
                     "name": "A Rose and its Thorns",
                     "effect": [
-                        "Each time Margaery Claims a zone, you may target 1 friendly Combat Unit. They restore 1 Wound. You may then target 1 enemy engaged with that unit. They become **Vulnerable**."
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing a friendly unit, each time that unit restores Wounds, you may target 1 enemy it is engaged with. That enemy suffers 1 Hit for each Wound this unit restores, to a maximum of 3."
                     ]
                 }
             ],
@@ -865,14 +873,15 @@
             "id": "30610",
             "name": "Eldon Estermont",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Venerable Knight",
             "abilities": [
                 {
-                    "name": "Elderly Caution",
+                    "name": "Age and Wisdom",
                     "effect": [
-                        "Each time Eldon Claims a zone, you may replace that Zone's effect with: ",
+                        "Once per game, when Eldon Claims a zone, you may search your Tactics Deck for any 1 card and place it in your hand. Then, shuffle your Tactics Deck.",
+                        "Each time Eldon Claims a zone, you may replace that Zone's effect with:",
                         "*Draw 3 Tactics Cards, then shuffle 1 card from your hand into your Tactics Deck.*"
                     ]
                 }
@@ -927,7 +936,7 @@
             "id": "30613",
             "name": "Cressen",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Maester at Dragonstone",
             "abilities": [
@@ -945,7 +954,7 @@
                     ]
                 }
             ],
-            "cost": 5,
+            "cost": 4,
             "character": true,
             "back_text": [
                 {

@@ -9,10 +9,11 @@
             "id": "10101",
             "name": "Lannister Guardsmen",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Lannister Supremacy"
+                "Order: Lannister Supremacy",
+                "Lannister Steel"
             ],
             "attacks": [
                 {
@@ -20,7 +21,7 @@
                     "type": "melee",
                     "hit": 4,
                     "dice": [
-                        6,
+                        7,
                         5,
                         4
                     ]
@@ -72,7 +73,7 @@
             "id": "10103",
             "name": "House Clegane Mountain's Men",
             "faction": "lannister",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Marauder’s Blades",
@@ -82,10 +83,10 @@
                 {
                     "name": "Marauder’s Blades",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -325,12 +326,12 @@
             "id": "10110",
             "name": "Kingsguard",
             "faction": "lannister",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Resilience",
-                "Joffrey's Retinue",
-                "Counterstrike"
+                "Kingsguard",
+                "Counterstrike",
+                "Disrupt"
             ],
             "attacks": [
                 {
@@ -361,7 +362,8 @@
             "fluff": {
                 "lore": "As a unit, the Kingsguard are the best-armed, best-armored, and most experienced troops in the War of the Five Kings. Though they suffer from the usual weakness of any heavy infantry if they become surrounded, they are also hobbled with one additional irritant: King Joffrey Baratheon. Still, despite being but seven men, the Kingsguard can successfully assault or defend against three times their number."
             },
-            "icon": "infantry"
+            "icon": "infantry",
+            "wounds": 2
         },
         {
             "id": "10111",
@@ -431,11 +433,12 @@
             "id": "10113",
             "name": "Lannisport City Watch",
             "faction": "lannister",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Adaptive Style",
-                "Domineering Pride"
+                "Order: Sentinel",
+                "Lannisport Spears",
+                "Watchful Eye"
             ],
             "attacks": [
                 {
@@ -444,7 +447,7 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        6,
+                        7,
                         4
                     ]
                 }
@@ -568,24 +571,18 @@
             "id": "30101",
             "name": "Tywin Lannister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "The Great Lion",
             "abilities": [
                 {
                     "name": "The Rains of Castamere",
                     "effect": [
-                        "Once per game, at the start of any Turn, target any number of enemy Combat Units:",
-                        "• 1 of those enemies becomes **Panicked**.",
-                        "• 1 of those enemies becomes **Vulnerable**.",
-                        "• 1 of those enemies suffers 4 Hits.",
-                        "• 1 of those enemies suffers 1 Panic Test.",
-                        "• 1 of those enemies loses all Abilities until the end of the Round.",
-                        "*(The same Combat Unit may be targeted by multiple effects)*"
+                        "Once per game, when an enemy Combat Unit Activates, you may target that unit. If you do, it becomes **Panicked**, **Weakened**, and **Vulnerable**. Then, it suffers either 3 Hits or 1 Panic Test."
                     ]
                 }
             ],
-            "cost": 6,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "\"Some battles are won with swords and spears, others with quills and ravens.\""
@@ -595,15 +592,17 @@
             "id": "30102",
             "name": "Pycelle",
             "faction": "lannister",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Grand Maester",
             "abilities": [
                 {
                     "name": "Manipulation and Deception",
                     "effect": [
-                        "Pycelle begins the game with 3 Order tokens. ",
-                        "Each time Pycelle Activates, you may remove 1 Order token from him. If you do, target 1 enemy Combat Unit. They become **Weakened**."
+                        "**Influence** *(When this unit Claims a Tactics Zone, attach this card to a Combat Unit until the end of the Round)*,:",
+                        "Pycelle begins the game with 3 Order tokens.",
+                        "While Influencing an enemy unit, that unit is treated as having -1 rank when performing Attacks.",
+                        "When Pycelle Influences an enemy unit, you may remove 1 Order token from him. If you do, that enemy becomes **Weakened**."
                     ]
                 }
             ],
@@ -628,7 +627,7 @@
                 {
                     "name": "Fealty to The Seven",
                     "effect": [
-                        "**Influence** *(When this unit Claims a Tactics Zone, attach this card to a Combat Unit until the end of the Round)*: ",
+                        "**Influence** *(When this unit Claims a Tactics Zone, attach this card to a Combat Unit until the end of the Round)*:",
                         "While Influencing an enemy, each time that enemy suffers Wounds from failing Panic Tests, target 1 friendly unit in Long Range. They restore that many Wounds, up to 3."
                     ]
                 }
@@ -643,15 +642,16 @@
             "id": "30104",
             "name": "Tyrion Lannister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "The Imp",
             "abilities": [
                 {
                     "name": "Tactical Mastermind",
                     "effect": [
-                        "Your maximum Tactics Hand size is increased by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand.",
-                        "Once per game, when an opponent plays a Tactics card, before resolving that card, you may search your Tactics deck or discard pile for 1 **Counterplot** card and play it. Shuffle your Tactics deck."
+                        "Your maximum Tactics Hand size is increased by +1.",
+                        "You start the game with 4 cards and may draw up to 4 cards when re-filling your hand. Each time you draw Tactics cards, you may draw 1 additional card, then shuffle 1 card from your hand into your deck.",
+                        "Once per game, at the start of any Round, you may look at you opponent's hand of Tactics cards."
                     ]
                 }
             ],
@@ -665,18 +665,16 @@
             "id": "30105",
             "name": "Cersei Lannister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Queen Regent",
             "abilities": [
                 {
-                    "name": "Playing The Game",
+                    "name": "Queen's Manipulation",
                     "effect": [
-                        "Cersei begins the game with 2 Order tokens. ",
-                        "Each time Cersei Claims a zone, you may remove 1 Order token from her.",
-                        "If you do, perform the following: ",
-                        "If you Control [CROWN], search your Tactics deck or discard pile for 1 **Hear Me Roar!** card and add it to your hand. Shuffle your Tactics deck.",
-                        "If you Control [MONEY], search your Tactics deck or discard pile for 1 **Subjugation of Power** card and add it to your hand. Shuffle your Tactics deck."
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing an enemy unit, that enemy may not be targeted by friendly Orders or Tactics cards.",
+                        "If Cersei Controls [CROWN] or [MONEY], any Attachments in that unit also lose all Abilities."
                     ]
                 }
             ],

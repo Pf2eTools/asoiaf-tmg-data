@@ -9,7 +9,7 @@
             "id": "10301",
             "name": "Savage Giant",
             "faction": "freefolk",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Giant",
@@ -34,7 +34,7 @@
                 "lore": "Although considered a myth by most southern Westerosi lords, the Savage Giants beyond the Wall are all too real, as the Night’s Watch will attest. These huge creatures wear no armor, and wield little more than crude mammoth bones or tree trunks. Yet, this is all they really need. A single giant can lay waste to the heaviest infantry, and virtually ignore a line of charging knights. Only raw numbers or mighty siege weapons can bring a Giant down."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10302",
@@ -194,9 +194,8 @@
             "version": "2021-S02",
             "role": "unit",
             "abilities": [
-                "Order: War Cry",
-                "Pummeling Fists",
-                "Giant"
+                "Giant",
+                "Indomitable Might"
             ],
             "attacks": [
                 {
@@ -211,13 +210,13 @@
             "defense": 3,
             "morale": 4,
             "speed": 5,
-            "cost": 8,
+            "cost": 9,
             "tray": "solo",
             "fluff": {
                 "lore": "If anything, Wun Wun is larger even than his chief, Mag the Mighty. Wun Wun shares the vast strength and thick hide common to all giants, coupled with a personal sense of invulnerability and uncommon fighting spirit. Wun Wun can break even the heaviest enemy line with ease, although Free Folk commanders should take care to support his crushing advances, lest he be surrounded and stung to death by a thousand cuts."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10307",
@@ -287,7 +286,7 @@
             "id": "10309",
             "name": "Frozen Shore Chariots",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Swift Retreat",
@@ -296,9 +295,17 @@
             ],
             "attacks": [
                 {
+                    "name": "Spear Toss",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        6
+                    ]
+                },
+                {
                     "name": "Deadly Impact",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         4
                     ]
@@ -307,7 +314,7 @@
             "defense": 5,
             "morale": 5,
             "speed": 6,
-            "cost": 5,
+            "cost": 4,
             "tray": "warmachine",
             "fluff": {
                 "lore": "One does not normally connect the Wildlings with war machines, but Frozen Shore Chariots are surprisingly effective. Made of wood and bone, and hauled by massive wolf/hound hybrids bred for strength and ferocity, Chariots pull two men and an assortment of weaponry, not only towards the enemy, but often crashing straight through even hardened ranks. That said, use them with caution, for a chariot’s primary weakness lies in becoming bogged down."
@@ -394,7 +401,7 @@
             "id": "10312",
             "name": "War Mammoth",
             "faction": "freefolk",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Mammoth",
@@ -404,9 +411,9 @@
                 {
                     "name": "Rampage",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
-                        7
+                        5
                     ]
                 }
             ],
@@ -431,7 +438,7 @@
             "id": "10313",
             "name": "Mag the Mighty",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Giant",
@@ -447,8 +454,8 @@
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 4,
+            "defense": 3,
+            "morale": 3,
             "speed": 5,
             "cost": 5,
             "tray": "solo",
@@ -472,13 +479,13 @@
                 "lore": "Mag the Mighty has, if anything, an understated title. As chieftain of the giants, his fearsome strength has led his people to victory time and again. Even the most heavily armored troops are no match for his vast strength, and his leadership skills (such as giants possess) inspire his own kind in the heat of battle. Mag can easily wade directly into a fray, although he should beware. While difficult to bring down, giants are not immune to steel."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10314",
             "name": "Mag the Mighty",
             "faction": "freefolk",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Giant",
@@ -494,8 +501,8 @@
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 4,
+            "defense": 3,
+            "morale": 3,
             "speed": 5,
             "cost": 9,
             "tray": "solo",
@@ -503,17 +510,17 @@
                 "lore": "Mag the Mighty has, if anything, an understated title. As chieftain of the giants, his fearsome strength has led his people to victory time and again. Even the most heavily armored troops are no match for his vast strength, and his leadership skills (such as giants possess) inspire his own kind in the heat of battle. Mag can easily wade directly into a fray, although he should beware. While difficult to bring down, giants are not immune to steel."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10315",
             "name": "Frozen Shore Bear Riders",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Charging Volley",
                 "Bear Cavalry",
+                "Order: Mark Target",
                 "Spear and Maul"
             ],
             "attacks": [
@@ -735,7 +742,7 @@
             "id": "10321",
             "name": "Frozen Shore Hunters",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Mark Target",
@@ -777,7 +784,7 @@
             "id": "10322",
             "name": "Giant Spear Throwers",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Giant",
@@ -810,17 +817,18 @@
                 "lore": "What’s worse than facing giants in the line-of-battle? Facing giants hurling spears the size of tree trunks from afar. The Free Folk’s alliance with the giants brought their Spear Throwers into the fray, giving them what amounts to artillery made of flesh. Their weapons are crude, but not much finesse is needed for a wooden haft as thick as a large man’s torso. That said, these giants have trouble dealing with foes up close, and must be guarded."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10323",
             "name": "Harma's Vanguard",
             "faction": "freefolk",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Planned Approach",
-                "Cavalry"
+                "Cavalry",
+                "Order: Tactical Reposition",
+                "Order: Planned Approach"
             ],
             "attacks": [
                 {
@@ -835,7 +843,7 @@
             ],
             "defense": 6,
             "morale": 7,
-            "speed": 5,
+            "speed": 6,
             "cost": 5,
             "tray": "cavalry",
             "fluff": {
@@ -917,7 +925,7 @@
             "id": "30304",
             "name": "Styr",
             "faction": "freefolk",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Iron-Fisted Tyrant",
             "abilities": [
@@ -925,7 +933,8 @@
                     "name": "Fury of the Thenns",
                     "effect": [
                         "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*",
-                        "While Influencing a friendly unit, that unit's Melee Attacks gain **Sundering** and it is treated as having +1 rank for Attack Dice."
+                        "While Influencing a Infantry or Cavalry unit, that unit's Melee Attacks gain **Sundering** and it is treated as having +1 rank for Attack Dice.",
+                        "While Influencing a friendly Monster unit, that unit may re-roll any Charge Distance Dice, and any enemy it Successfully Charges becomes **Weakened**."
                     ]
                 }
             ],
@@ -962,7 +971,7 @@
             "id": "30306",
             "name": "Lady Dalla",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Wife and Council",
             "abilities": [
@@ -971,8 +980,8 @@
                     "effect": [
                         "Each time Dalla Claims a zone, perform the following based on the zone she Claimed:",
                         "[CROWN]: 1 enemy becomes **Weakened**.",
-                        "[MONEY]: Instead of removing a Condition token, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.",
-                        "[LETTER]: Instead of drawing cards, look at the top 2 cards of your opponent's Tactics deck. You may discard one of those cards. Then, place the remaining cards on the top of the Tactics deck."
+                        "[MONEY]: After restoring Wounds, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.",
+                        "[LETTER]: Look at the top 2 cards of your opponent's Tactics deck. You may discard 1 of those cards. Then, shuffle the remaining card back into their deck."
                     ]
                 }
             ],

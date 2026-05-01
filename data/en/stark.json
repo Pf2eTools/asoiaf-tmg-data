@@ -9,9 +9,10 @@
             "id": "10201",
             "name": "Stark Sworn Swords",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Order: At any Cost",
                 "Winter's Bite",
                 "Go Down Fighting"
             ],
@@ -41,21 +42,21 @@
             "id": "10202",
             "name": "Stark Outriders",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Tactical Reposition",
                 "Cavalry",
-                "Ambush"
+                "Order: Scout Terrain",
+                "Order: Tactical Reposition"
             ],
             "attacks": [
                 {
                     "name": "Outrider’s Blade",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        4
+                        5
                     ]
                 }
             ],
@@ -74,10 +75,12 @@
             "id": "10203",
             "name": "House Umber Berserkers",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Berserker's Fervor"
+                "Berserker's Fervor",
+                "Berserker's Axes",
+                "Ferocious Assault"
             ],
             "attacks": [
                 {
@@ -147,7 +150,8 @@
             "version": "S06",
             "role": "unit",
             "abilities": [
-                "Arrow Volley"
+                "Order: Suppressive Volley",
+                "Hunter's Volley"
             ],
             "attacks": [
                 {
@@ -256,11 +260,11 @@
             "id": "10208",
             "name": "House Umber Greataxes",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Executioner's Fury",
-                "Ferocious Assault"
+                "Prey on Fear"
             ],
             "attacks": [
                 {
@@ -268,8 +272,8 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
+                        7,
                         6,
-                        5,
                         4
                     ]
                 }
@@ -407,12 +411,12 @@
             "id": "10213",
             "name": "House Tully Cavaliers",
             "faction": "stark",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalry",
                 "Lance",
-                "Rally Banner"
+                "Stubborn Tenacity"
             ],
             "attacks": [
                 {
@@ -440,21 +444,21 @@
             "id": "10214",
             "name": "House Mormont She-Bears",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: War Cry",
+                "Order: She-Bear's Fury",
                 "Resolute Strikes"
             ],
             "attacks": [
                 {
                     "name": "Resolute Strikes",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        6,
-                        5
+                        5,
+                        4
                     ]
                 }
             ],
@@ -723,16 +727,16 @@
             "id": "30204",
             "name": "Eddard Stark",
             "faction": "stark",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "ncu",
             "title": "Warden of the North",
             "abilities": [
                 {
                     "name": "Bravery in the Face of Death",
                     "effect": [
-                        "Eddard begins the game with 4 Order tokens on him.",
+                        "Eddard begins the game with 3 Order tokens on him.",
                         "Each time a friendly unit is performing a Panic Test, after rolling dice, you may remove 1 Order token from Eddard. If you do, that unit may re-roll any dice for this test.",
-                        "Each time a friendly unit passes a Panic Test, you may remove 1 Order token from Eddard. If you do, that unit restores 2 Wounds, +1 Wound for each of its destroyed ranks."
+                        "Each time a friendly unit passes a Panic Test, you may remove 1 Order token from Eddard. If you do, that unit restores 1 Wounds, +1 Wound for each of its destroyed ranks."
                     ]
                 }
             ],
@@ -743,22 +747,22 @@
             },
             "tokens": {
                 "name": "order",
-                "number": 4
+                "number": 3
             }
         },
         {
             "id": "30205",
             "name": "Rodrik Cassel",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Combat Veteran",
             "abilities": [
                 {
                     "name": "Martial Expertise",
                     "effect": [
-                        "Each time Rodrik Claims [SWORDS], target 1 enemy Combat Unit. They become **Vulnerable**.",
-                        "Rodrik begins the game with 2 Order tokens on him.",
+                        "Each time Rodrik Claims a zone, target 1 enemy Combat Unit. They become **Vulnerable**.",
+                        "Rodrik begins the game with 3 Order tokens on him.",
                         "Each time a friendly Combat Unit is performing a Melee Attack, after rolling Attack Dice, you may remove 1 Order Token from Rodrik. If you do, the Attacker may re-roll any Attack Dice."
                     ]
                 }
@@ -770,7 +774,7 @@
             },
             "tokens": {
                 "name": "order",
-                "number": 2
+                "number": 3
             }
         },
         {
@@ -879,24 +883,20 @@
             "id": "30210",
             "name": "Robb Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "ncu",
             "title": "King in the North",
             "abilities": [
                 {
-                    "name": "Wolf's Cunning",
+                    "name": "Wolf Lord's Claim",
                     "effect": [
-                        "At the start of Deployment, you may target 1 friendly Combat Unit. Until the end of the game, that unit gains the **Outflank** Ability: \n**OUTFLANK**\n*You may hold this unit off the table (In Reserve) instead of Deploying it. At the start of any Round, if you are not the first player, you may place 1 unit from Reserve fully within Short Range of a Friendly or Flank table edge, unactivated.*"
-                    ]
-                },
-                {
-                    "name": "Wolf's Swiftness",
-                    "effect": [
-                        "**Influence** (*When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round*): \nWhile influencing a friendly unit, that unit gains +1 [MOVEMENT]."
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing a friendly unit, if your opponent does not Control [CROWN], this unit gains +1 to Hit and its Melee Attacks gain **Sundering**.",
+                        "While Influencing an enemy unit, if their owner does not Control [CROWN], that enemy's Attacks suffer -1 to Hit and, after completing an Attack, they become **Vulnerable**."
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "back_text": [
                 {

@@ -87,7 +87,7 @@
             "role": "unit",
             "abilities": [
                 "Cavalry",
-                "War Flail",
+                "War Flail (Neutral)",
                 "Intimidating Presence"
             ],
             "attacks": [
@@ -326,7 +326,7 @@
             "id": "10410",
             "name": "Hedge Knights",
             "faction": "neutral",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalry",
@@ -340,12 +340,12 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 4,
-            "morale": 7,
+            "morale": 6,
             "speed": 5,
             "cost": 7,
             "tray": "cavalry",
@@ -362,8 +362,8 @@
             "version": "S04",
             "role": "unit",
             "abilities": [
-                "Order: Adaptive Style",
-                "Mastercraft Longsword"
+                "Mastercraft Longsword",
+                "Golden Reputation"
             ],
             "attacks": [
                 {
@@ -372,13 +372,13 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 6,
+            "defense": 3,
+            "morale": 5,
             "speed": 5,
             "cost": 7,
             "tray": "infantry",
@@ -434,25 +434,25 @@
             "id": "10413",
             "name": "Golden Company War Elephant",
             "faction": "neutral",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "War Elephant",
-                "Stomp"
+                "Trampling Stomp"
             ],
             "attacks": [
                 {
-                    "name": "Stomp",
+                    "name": "Trampling Stomp",
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 6,
+            "speed": 5,
             "cost": 6,
             "tray": "warmachine",
             "back_text": [
@@ -564,14 +564,14 @@
             "id": "30403",
             "name": "Lord Varys",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "The Spider",
             "abilities": [
                 {
                     "name": "Little Birds",
                     "effect": [
-                        "Varys begins the game with 3 Order tokens.",
+                        "Varys begins the game with 4 Order tokens.",
                         "Each time an enemy NCU Claims a zone, after resolving that zone's effect, you may remove 1 Order token from Varys. If you do, gain the following based on that zone:",
                         "[CROWN]: 1 enemy suffers 1 Panic Test.",
                         "[MONEY]: Restore 2 Wounds to 1 friendly unit.",
@@ -581,14 +581,14 @@
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "\"Varys has ways of learning things that no man could know.\""
             },
             "tokens": {
                 "name": "order",
-                "number": 3
+                "number": 4
             }
         },
         {
@@ -615,24 +615,22 @@
             "id": "30405",
             "name": "Jaqen H'ghar",
             "faction": "neutral",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Follower of The Red God",
             "abilities": [
                 {
                     "name": "Choosing a Name",
                     "effect": [
-                        "Each time Jaqen Activates, he may replace his Influence Ability with the Influence Ability of any friendly or enemy NCU until the end of the Round."
-                    ]
-                },
-                {
-                    "name": "A Name Given",
-                    "effect": [
-                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
-                        "While Influencing a friendly Infantry unit, its Melee Attacks gain **Precision**."
+                        "Jaqen begins the game with 3 Order tokens.",
+                        "Each time Jaqen Activates, you may remove 1 Order token from him and target 1 other NCU. Jaqen gains all Abilities of that NCU until the end of the Round, replacing their name in the Ability with his. Hey may not use any Abilities that can only be used once per game. If a copied Ability requires Order tokens, they must be spent from this card."
                     ]
                 }
             ],
+            "tokens": {
+                "name": "order",
+                "number": 3
+            },
             "cost": 4,
             "character": true,
             "fluff": {
@@ -664,18 +662,16 @@
             "id": "30407",
             "name": "Walder Frey",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Lord of the Crossing",
             "abilities": [
                 {
-                    "name": "Strategic Alliance",
+                    "name": "Control of the Crossings",
                     "effect": [
-                        "Once per game, when Walder Claims a zone, you may replace that zone's effect with:",
-                        "*Choose 2:*",
-                        "• *1 enemy becomes **Weakened**, **Vulnerable** and **Panicked**.*",
-                        "• *1 friendly unit restores 3 Wounds.*",
-                        "• *At the start of the next Round, you become the First Player.*"
+                        "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:",
+                        "While Influencing a friendly Combat Unit, that unit gains +1 [MOVEMENT] and may pivot at the start of its Activation.",
+                        "While Influencing an enemy Combat Unit, that unit suffers -1 [MOVEMENT] and may not pivot at the end of Maneuver and March Actions."
                     ]
                 }
             ],

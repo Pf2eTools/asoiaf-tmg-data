@@ -9,7 +9,7 @@
             "id": "10801",
             "name": "Ironborn Reavers",
             "faction": "greyjoy",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Reaver Axes",
@@ -29,7 +29,7 @@
             ],
             "defense": 5,
             "morale": 7,
-            "speed": 5,
+            "speed": 6,
             "cost": 5,
             "tray": "infantry",
             "fluff": {
@@ -83,7 +83,7 @@
             "id": "10803",
             "name": "House Harlaw Reapers",
             "faction": "greyjoy",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Bardiche",
@@ -180,11 +180,11 @@
             "id": "10806",
             "name": "Blacktyde Chosen",
             "faction": "greyjoy",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Order: Divide The Spoils",
-                "First Claim"
+                "Order: Sentinel",
+                "Order: Shield Wall"
             ],
             "attacks": [
                 {
@@ -193,7 +193,7 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -212,7 +212,7 @@
             "id": "10807",
             "name": "Silenced Men",
             "faction": "greyjoy",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Great Axe",
@@ -245,7 +245,7 @@
             "id": "10808",
             "name": "Drowned Men",
             "faction": "greyjoy",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Order: Drowned God's Blessing",
@@ -262,7 +262,7 @@
                 }
             ],
             "defense": 6,
-            "morale": 5,
+            "morale": 4,
             "speed": 5,
             "cost": 4,
             "tray": "solo",
@@ -270,7 +270,7 @@
                 "lore": "Armored with only their faith, and armed only with deadwood cudgels and other detritus from the shore, the Drowned Men make surprisingly effective support for followers of the Kraken banner. Their presence in battle signifies the Drowned God’s blessing, bolstering men to fight past their wounds and strike all the harder against their foes. While few in number, the Drowned Men’s faith is such that they can survive even killing blows."
             },
             "icon": "infantry",
-            "wounds": 3
+            "wounds": 4
         },
         {
             "id": "10809",
@@ -392,14 +392,15 @@
             "id": "30803",
             "name": "Balon Greyjoy",
             "faction": "greyjoy",
-            "version": "S06",
+            "version": "S07",
             "role": "ncu",
             "title": "King of Salt and Rock",
             "abilities": [
                 {
                     "name": "Rise Again, Blade in Hand",
                     "effect": [
-                        "Once per game, when Balon activates, instead of Claiming a Zone, redeploy 1 previously destroyed House Greyjoy Combat Unit fully within Long Range of a friendly Deployment Edge, or fully within Short Range of any Flank table edge. It deploys without any Pillage tokens it previously had. If the unit had not Activated this Round, it deploys Unactivated. Otherwise, it deploys Activated."
+                        "Once per game, when Balon Claims a zone, you may replace that zone's effect with:",
+                        "*Redeploy 1 previously destroyed House Greyjoy Combat Unit fully within Long Range of a friendly Deployment Edge. It deploys without any Pillage tokens it previously had. If the unit had not Activated this Round, it deploys Unactivated. Otherwise, it deploys Activated.*"
                     ]
                 }
             ],
@@ -438,16 +439,16 @@
             "id": "30805",
             "name": "Erik Ironmaker",
             "faction": "greyjoy",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "The Just",
             "abilities": [
                 {
                     "name": "Gifts of Iron, Gold, and Steel",
                     "effect": [
-                        "At the start of the game, place 1 Pillage token on Erik. ",
-                        "When Erik or an enemy NCU claims [MONEY] place 1 Pillage token on Erik.",
-                        "When Erik Claims a zone other than [MONEY], you may remove 1 Pillage token from him and place it on 1 friendly Greyjoy unit."
+                        "At the start of the game, place 2 Pillage tokens on Erik and 1 Pillage token on 1 friendly Greyjoy Combat Unit. ",
+                        "Each time Erik or an enemy NCU claims [MONEY] place 1 Pillage token on Erik.",
+                        "When Erik Claims a zone, you may remove 1 Pillage token from him and place it on 1 friendly Greyjoy unit."
                     ]
                 }
             ],
@@ -458,7 +459,7 @@
             },
             "tokens": {
                 "name": "pillage",
-                "number": 1
+                "number": 3
             }
         },
         {
@@ -487,16 +488,20 @@
             "id": "30807",
             "name": "Moqorro",
             "faction": "greyjoy",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "The Black Flame",
             "abilities": [
                 {
+                    "name": "Visions in the Flames",
+                    "effect": [
+                        "Once per game, at the start of any Turn, you may target your opponent. If you do, until the end of the Turn, they cannot play Tactics cards or use friendly Orders."
+                    ]
+                },
+                {
                     "name": "R'hllor's Magics",
                     "effect": [
-                        "Once per game, at the start of any Turn, you may use this ability. If you do, until the end of the Turn, your opponent may not use Orders or Tactics cards.",
-                        "Once per game, when Moqorro Claims a zone, you may replace that zone's effect with:",
-                        "*Return 1 previously destroyed friendly Attachment to a friendly Combat Unit, replacing a model as usual but ignoring the usual Attachment limits.*"
+                        "Once per game, when a friendly Combat Unit Activates, you may target that unit. If you do, place 1 previously destroyed friendly Greyjoy Attachment into that Unit, replacing a model as usual but ignoring the usual Attachment limits."
                     ]
                 }
             ],
