@@ -9,12 +9,12 @@
             "id": "10501",
             "name": "Veteranen der Wache",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Beidhändig",
-                "Gegenschlag",
-                "Unterbrechen"
+                "Leben und Ehre der Wache",
+                "Alte Schule"
             ],
             "attacks": [
                 {
@@ -24,7 +24,7 @@
                     "dice": [
                         7,
                         6,
-                        5
+                        6
                     ]
                 }
             ],
@@ -42,21 +42,21 @@
             "id": "10502",
             "name": "Geschworene Brüder",
             "faction": "nightswatch",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Kampfausbildung",
-                "Großschwert"
+                "Grossschwert"
             ],
             "attacks": [
                 {
-                    "name": "Großschwert",
+                    "name": "Grossschwert",
                     "type": "melee",
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
-                        4
+                        6,
+                        5
                     ]
                 }
             ],
@@ -153,11 +153,12 @@
             "id": "10505",
             "name": "Jäger der Grenzer",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Schnellfeuer",
-                "Schneller Hieb"
+                "Schneller Hieb",
+				"Plänkler"
             ],
             "attacks": [
                 {
@@ -195,7 +196,7 @@
             "id": "10506",
             "name": "Skorpion-Mannschaft der Baumeister",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Kriegsmaschine",
@@ -213,7 +214,7 @@
                 {
                     "name": "Bewaffnete Mannschaft",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 5,
                     "dice": [
                         3
                     ]
@@ -240,7 +241,7 @@
             "id": "10507",
             "name": "Steinwerfer der Baumeister",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Kriegsmaschine",
@@ -250,9 +251,9 @@
                 {
                     "name": "Steinhagel",
                     "type": "long",
-                    "hit": 4,
+                    "hit":6,
                     "dice": [
-                        2
+                        1
                     ]
                 },
                 {
@@ -267,7 +268,7 @@
             "defense": 5,
             "morale": 5,
             "speed": 1,
-            "cost": 8,
+            "cost": 6,
             "tray": "warmachine",
             "back_text": [
                 {
@@ -327,7 +328,7 @@
             "id": "10509",
             "name": "Rekruten der Wache",
             "faction": "nightswatch",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Hilfslieferung",
@@ -348,7 +349,7 @@
             "defense": 5,
             "morale": 7,
             "speed": 5,
-            "cost": 5,
+            "cost": 4,
             "tray": "infantry",
             "fluff": {
                 "lore": "Die Rekruten der Wache sind oftmals ein widerspenstiger, zerlumpter Haufen Wehrpflichtiger, rekrutiert aus den Niedrigsten der Niedrigen in ganz Westeros. Bei der Wache werden sie wenigstens in den Grundlagen des Kampfes ausgebildet, denn es ist des öfteren notwendig, dass jeder Mann, der ein Schwert halten kann, zur Verteidigung der Mauer herangezogen wird. Ein kluger Heerführer tut allerdings gut daran, sich nicht zu sehr auf die Rekruten zu verlassen. Eher sollte er damit rechnen, dass sie beim geringsten Anzeichen von Widerstand die Flucht ergreifen."
@@ -359,7 +360,7 @@
             "id": "10510",
             "name": "Marschall der Wache",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Taktisches Umstellen",
@@ -378,7 +379,7 @@
             "defense": 4,
             "morale": 3,
             "speed": 6,
-            "cost": 4,
+            "cost": 3,
             "tray": "solo",
             "back_text": [
                 {
@@ -501,14 +502,15 @@
             "id": "30501",
             "name": "Bowen Marsch",
             "faction": "nightswatch",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Erster Kämmerer",
             "abilities": [
                 {
                     "name": "Zahlen und Maße",
                     "effect": [
-                        "Immer wenn Bowen eine Zone auf der Taktiktafel beansprucht, darfst du dir die obersten 2 Karten deines Taktikdecks anschauen. Nimm 1 dieser Karten auf die Hand und lege die andere unter dein Taktikdeck."
+                        "Immer wenn Bowen eine Zone auf der Taktiktafel beansprucht, darfst du dir die obersten 2 Karten deines Taktikdecks anschauen. Nimm 1 dieser Karten auf die Hand und lege die andere unter dein Taktikdeck.",
+						"Immer wenn 1 Nachtwachen Einheit vernichtet wird, darfst du eine anliegende Nachtwachen Taktikkarte von dieser Einheit auf die Hand zurück nehmen."
                     ]
                 }
             ],
@@ -544,7 +546,7 @@
             "id": "30503",
             "name": "Jeor Mormont",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Der alte Bär",
             "abilities": [
@@ -552,8 +554,7 @@
                     "name": "Den Reichen der Menschen zu Diensten",
                     "effect": [
                         "Immer wenn Jeor eine Zone auf der Taktiktafel beansprucht, darfst du 2 befreundete Nachtwache-Kampfeinheiten zum Ziel bestimmen. Bewege 1 befreundete angelegte Taktikkarte von 1 jener Einheiten zu der anderen.",
-                        "Ein Mal pro Partie, sobald Jeor eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Nimm 1 Taktikkarte, die an eine Einheit angelegt werden kann, von deinem Ablagestapel und lege sie an eine befreundete Nachtwache-Einheit an.*"
+                        "Ein Mal pro Partie, zum Start eines Zuges, darfst du 1 Taktikkarte, die an eine Einheit anlegbar ist, vom Ablagestapel an eine befreundete Nachtwacheneinheit anlegen."
                     ]
                 }
             ],
@@ -647,7 +648,7 @@
             "id": "30509",
             "name": "Samwell Tarly",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Feiger Gelehrter",
             "abilities": [
@@ -655,7 +656,9 @@
                     "name": "Wissen ist Macht",
                     "effect": [
                         "Du hältst +1 Taktikkarte auf der Hand.",
-                        "Du beginnst das Spiel mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst."
+                        "Du beginnst das Spiel mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst.",
+						"Zu Beginn der Partie, lege 2 **Befehlsmarker** auf Samwell.",
+						"Immer wenn eine befreundete Kampfeinheit einen Angriff ausführt, bevor die Angriffswürfel geworfen werden, darfst du 1 **Befehlsmarker** von Samwell ablegen. Wenn du das tust, bestimme den Verteidiger zum Ziel, er wird **Verwundbar**."
                     ]
                 }
             ],
@@ -707,7 +710,7 @@
             "id": "30511",
             "name": "Craster",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Verbündeter der Wache",
             "abilities": [
@@ -716,7 +719,7 @@
                     "effect": [
                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
                         "Immer wenn Craster Einfluss auf eine Einheit ausübt, lege 1 Zustandsmarker von jener Einheit ab.",
-                        "Solange Craster Einfluss auf eine Einheit ausübt, ignoriert jene Einheit die Schlüsselwörter Unwegsam und Einschränkend."
+                        "Solange Craster Einfluss auf eine Einheit ausübt, ignoriert jene Einheit die Schlüsselwörter Unwegsam und Einschränkend und kann nicht das Ziel von feindlichen Taktikkarten oder feindlichen Taktikzoneneffekten werden."
                     ]
                 }
             ],
@@ -781,8 +784,8 @@
         {
             "id": "20501",
             "name": "Jeor Mormont",
+            "version": "S07",
             "faction": "nightswatch",
-            "version": "2021-S03",
             "role": "attachment",
             "title": "997. Lord Kommandant",
             "abilities": [

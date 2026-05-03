@@ -9,7 +9,7 @@
             "id": "10301",
             "name": "Wilder Riese",
             "faction": "freefolk",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Riese",
@@ -34,7 +34,7 @@
                 "lore": "Für die meisten Lords aus dem südlichen Westeros sind die Wilden Riesen nichts weiter als ein Mythos. Jenseits der Mauer sind sie jedoch sehr real, wie die Nachtwache bestätigen wird. Diese riesigen Kreaturen tragen keine Rüstungen. Ihre Waffen sind nichts anderes als grob bearbeitete Mammutknochen oder Baumstämme. Mehr brauchen sie aber auch gar nicht. Ein einziger Riese kann die schwerste Infanterie in Grund und Boden stampfen und bleibt von einer Schlachtreihe anstürmender Ritter völlig unbeeindruckt. Nur mit schierer Masse oder mächtigen Belagerungswaffen kann ein Riese zu Fall gebracht werden."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10302",
@@ -191,33 +191,32 @@
             "id": "10306",
             "name": "Wun Wun",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Schlachtruf",
-                "Trommelnde Fäuste",
-                "Riese"
+                "Riese",
+                "Unbezwingbare Kraft"                
             ],
             "attacks": [
                 {
-                    "name": "Trommelnde Fäuste",
+                    "name": "Unbezwingbare Kraft",
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        6
+                        7
                     ]
                 }
             ],
             "defense": 3,
             "morale": 4,
             "speed": 5,
-            "cost": 8,
+            "cost": 9,
             "tray": "solo",
             "fluff": {
                 "lore": "Wun Wun ist sogar noch größer als sein Häuptling Mag der Mächtige. Die gewaltige Stärke und die dicht behaarte Haut hat er mit den anderen Riesen gemein. Zusätzlich ist er nahezu unverwundbar und trägt einen ungewöhnlichen Kämpfergeist in sich. Wun Wun kann die stärkste Feindeslinie mit Leichtigkeit brechen, obwohl die Heerführer des freien Volks darauf achten sollten, seine zerschmetternden Vormärsche zu unterstützen. Ansonsten könnte er umrundet und mit tausenden Schnitten getötet werden."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10307",
@@ -287,7 +286,7 @@
             "id": "10309",
             "name": "Streitwagen der Eisigen Küste",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Rascher Rückzug",
@@ -295,10 +294,18 @@
                 "Tödlicher Zusammenstoß"
             ],
             "attacks": [
+			    {
+                    "name": "Speerwurf",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        6
+                    ]
+                },
                 {
                     "name": "Tödlicher Zusammenstoß",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         4
                     ]
@@ -307,7 +314,7 @@
             "defense": 5,
             "morale": 5,
             "speed": 6,
-            "cost": 5,
+            "cost": 4,
             "tray": "warmachine",
             "fluff": {
                 "lore": "Normalerweise verbindet man die Wildlinge nicht mit Kriegsmaschinen, doch die Streitwagen der Eisigen Küste sind erstaunlich effektiv. Sie sind aus Holz und Knochen gefertigt und werden von riesigen Wolfshund-Mischlingen gezogen, die für ihre Stärke und Grausamkeit gezüchtet werden. Ein Streitwagen ist für zwei Männer und eine Auswahl an Waffen gemacht und gelangt nicht nur schnell beim Feind an, sondern bricht oft mitten durch die Schlachtreihen. Er sollte mit Bedacht verwendet werden, denn die größte Schwachstelle eines Streitwagens liegt darin, steckenzubleiben."
@@ -393,7 +400,7 @@
             "id": "10312",
             "name": "Kriegsmammut",
             "faction": "freefolk",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Mammut",
@@ -403,15 +410,15 @@
                 {
                     "name": "Wüten",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
-                        7
+                        5
                     ]
                 }
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 6,
+            "speed": 5,
             "cost": 6,
             "tray": "warmachine",
             "back_text": [
@@ -430,11 +437,11 @@
             "id": "10313",
             "name": "Mag der Mächtige",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Riese",
-                "Zorn des Häuptlings"
+			    "Zorn des Häuptlings",
+                "Riese"                
             ],
             "attacks": [
                 {
@@ -446,10 +453,10 @@
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 4,
+            "defense": 3,
+            "morale": 3,
             "speed": 5,
-            "cost": 5,
+            "cost": 9,
             "tray": "solo",
             "commander": true,
             "tactics": [
@@ -468,7 +475,7 @@
                 "lore": "Der Titel „der Mächtige“ ist eine gewaltige Untertreibung für Mag, den Häuptling der Riesen. Mit seiner furchterregenden Stärke hat er sein Volk wieder und wieder zum Sieg geführt. Selbst die am schwersten gepanzerten Truppen sind seiner gewaltigen Kraft in keinster Weise gewachsen. Seine erfahrene Führung (wie sie Riesen eben besitzen) ist in der Hitze des Gefechts eine Inspiration für sein Gefolge. Mag kann zwar mühelos in die Schlacht eingreifen, sollte sich dabei aber auch in Acht nehmen. Es ist schwierig, einen Riesen zu erlegen, aber Stahl ist ihre große Schwäche."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10314",
@@ -505,10 +512,10 @@
             "id": "10315",
             "name": "Bärenreiter der Eisigen Küste",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Stürmende Salve",
+                "Befehl: Ziel markieren",
                 "Bärenkavallerie",
                 "Durchbohren und Zerfleischen"
             ],
@@ -534,7 +541,7 @@
             ],
             "defense": 4,
             "morale": 5,
-            "speed": 4,
+            "speed": 5,
             "cost": 8,
             "tray": "cavalry",
             "fluff": {
@@ -726,7 +733,7 @@
             "id": "10321",
             "name": "Jäger der Eisigen Küste",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Ziel markieren",
@@ -768,7 +775,7 @@
             "id": "10322",
             "name": "Speerwerfende Riese",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Riese",
@@ -801,16 +808,17 @@
                 "lore": "Was ist schlimmer als ein Riese auf dem Schlachtfeld? Ein speerwerfender Riese, der aus der Ferne Speere so dick wie Baumstämme regnen lässt. Die Allianz des Freien Volkes mit den Riesen bringt diesen Speerwerfer auf das Schlachtfeld, eine Art lebendige Artillerie. Seine Waffe ist grob, aber wenn der Griff so dick ist wie der Rumpf eines großen Mannes, ist nicht viel Finesse erforderlich. Seine einzige Schwäche ist der Nahkampf. Daher muss er gut geschützt werden."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10323",
             "name": "Harmas Vorhut",
             "faction": "freefolk",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Geplante Vorgehensweise",
+				"Befehl: Taktisches Umstellen",
                 "Kavallerie"
             ],
             "attacks": [
@@ -826,7 +834,7 @@
             ],
             "defense": 6,
             "morale": 7,
-            "speed": 5,
+            "speed": 6,
             "cost": 5,
             "tray": "cavalry",
             "fluff": {
@@ -908,7 +916,7 @@
             "id": "30304",
             "name": "Styr",
             "faction": "freefolk",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Tyrann mit eiserner Faust",
             "abilities": [
@@ -916,7 +924,8 @@
                     "name": "Zorn der Thenns",
                     "effect": [
                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                        "Solange Styr Einfluss auf eine befreundete Einheit ausübt, wird sie so behandelt, als hätte sie +1 Schlachtreihe für die Anzahl der Angriffswürfel, und die Nahkampfangriffe jener Einheit erhalten **Spaltschlag**."
+						"Solange Styr Einfluss auf eine Infanterie- oder Kavallerie-Einheit ausübt, haben ihre Nahkampfangriffe **Spaltschlag** und als hätte sie +1 Schlachtreihe für die Anzahl der Angriffswürfel",
+                        "Solange Styr Einfluss auf eine befreundete Monster-Einheit ausübt, darf diese Einheit alle Würfel für die Bewegungsreichweite des Ansturms neu werfen, und jeder Gegner der erfolgreich angestürmt wird, wird **Geschwächt**."
                     ]
                 }
             ],
@@ -953,17 +962,17 @@
             "id": "30306",
             "name": "Lady Dalla",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Ehefrau und Beraterin",
             "abilities": [
                 {
                     "name": "Rat einer Speerfrau",
                     "effect": [
-                        "Immer wenn Dalla eine Zone auf der Taktiktafel beansprucht, führe Folgendes durch, basierend auf der Zone, die sie beansprucht hat:",
+                        "Immer wenn Dalla eine Zone auf der Taktiktafel beansprucht, nach dem abhandeln des Zoneneffektes, führe Folgendes durch, basierend auf der Zone, die sie beansprucht hat:",
                         "[CROWN]: 1 Feind wird **Geschwächt**.",
-                        "[MONEY]: Anstatt einen Zustandsmarker abzulegen, bestimme 1 Feind, der mit jener Einheit im Nahkampf ist, zum Ziel. Er erleidet 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe dieser Einheit.",
-                        "[LETTER]: Anstatt Karten zu ziehen, schau dir die obersten 2 Karten des Taktikdecks deines Gegners an. Du darfst eine der Karten ablegen. Lege die übrigen Karten zurück auf das Taktikdeck."
+                        "[MONEY]: Nachdem heilen der Wunde, bestimme 1 Feind, der mit jener Einheit im Nahkampf ist, zum Ziel. Er erleidet 1 Treffer, +1 Treffer für jede verbleibende Schlachtreihe dieser Einheit.",
+                        "[LETTER]: Schau dir die obersten 2 Karten des Taktikdecks deines Gegners an. Du darfst eine der Karten ablegen. Lege die übrigen Karten zurück auf das Taktikdeck."
                     ]
                 }
             ],

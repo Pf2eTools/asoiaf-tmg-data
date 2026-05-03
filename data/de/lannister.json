@@ -12,7 +12,8 @@
             "version": "2021",
             "role": "unit",
             "abilities": [
-                "Befehl: Überlegenheit der Lennisters"
+                "Befehl: Überlegenheit der Lennisters",
+				"Lannister Stahl"
             ],
             "attacks": [
                 {
@@ -20,7 +21,7 @@
                     "type": "melee",
                     "hit": 4,
                     "dice": [
-                        6,
+                        7,
                         5,
                         4
                     ]
@@ -72,7 +73,7 @@
             "id": "10103",
             "name": "Gefolgsmänner des Berges von Haus Clegane",
             "faction": "lannister",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Klinge des Marodeurs",
@@ -82,10 +83,10 @@
                 {
                     "name": "Klinge des Marodeurs",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -325,12 +326,12 @@
             "id": "10110",
             "name": "Königsgarde",
             "faction": "lannister",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Widerstandskraft",
-                "Joffreys Gefolge",
-                "Gegenschlag"
+                "Königsgarde",
+                "Gegenschlag",
+				"Unterbrechen"
             ],
             "attacks": [
                 {
@@ -426,20 +427,21 @@
             "id": "10113",
             "name": "Stadtwache von Lennisport",
             "faction": "lannister",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Stil anpassen",
-                "Tyrannischer Stolz"
+                "Befehl: Bewachen",
+				"Lannisport Speere",
+                "Wachsames Auge"
             ],
             "attacks": [
                 {
-                    "name": "Speer",
+                    "name": "Lannisport Speere",
                     "type": "melee",
                     "hit": 4,
                     "dice": [
                         7,
-                        6,
+                        7,
                         4
                     ]
                 }
@@ -458,7 +460,7 @@
             "id": "10114",
             "name": "Ehrengarde von Casterlystein",
             "faction": "lannister",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Unterdrückung der Lennisters"
@@ -489,7 +491,7 @@
             "id": "10115",
             "name": "Goldröcke",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Gesetze des Reiches",
@@ -562,24 +564,18 @@
             "id": "30101",
             "name": "Tywin Lennister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Der große Löwe",
             "abilities": [
                 {
                     "name": "Der Regen von Castamaer",
                     "effect": [
-                        "Bestimme ein Mal pro Partie zu Beginn eines beliebigen Zuges beliebig viele feindliche Kampfeinheiten zum Ziel:",
-                        "• 1 dieser Feinde wird **Panisch**.",
-                        "• 1 dieser Feinde wird **Verwundbar**.",
-                        "• 1 dieser Feinde erleidet 4 Treffer.",
-                        "• 1 dieser Feinde muss 1 Panikprobe ablegen.",
-                        "• 1 dieser Feinde verliert bis zum Ende der Runde alle Fähigkeiten.",
-                        "*(Dieselbe Kampfeinheit darf für mehrere Effekte zum Ziel bestimmt werden.)*"
+                        "Ein Mal pro Partie, wenn eine feindliche Kampfeinheit aktiviert wird, bestimme diese Einheit zum Ziel. Wenn du das tust,wird sie **Panisch**, **Geschwächt** und **Verwundbar**. Danach erleidet sie 3 Treffer oder muss 1 Panikprobe ablegen."
                     ]
                 }
             ],
-            "cost": 6,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "„Manche Schlachten werden mit Schwertern und Speeren gewonnen, andere mit Federn und Raben.“"
@@ -589,15 +585,17 @@
             "id": "30102",
             "name": "Pycelle",
             "faction": "lannister",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Großmaester",
             "abilities": [
                 {
                     "name": "Manipulation und Täuschung",
                     "effect": [
-                        "Bei Spielbeginn werden 3 Befehlsmarker auf Pycelle gelegt.",
-                        "Immer wenn Pycelle aktiviert wird, darfst du ein Befehlsmarker von Pycelle ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Geschwächt**."
+                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+						 "Zu Beginn der Partie lege 3 **Befehlsmarker** auf Pycelle.",
+                         "Solange Pycelle Einfluss auf einen feindliche Einheit ausübt, zählt diese Einheit als hätte sie -1 Schlachtreihe wenn sie einen Angriff ausführt.",
+						 "Wenn Pycelle eine feindliche Einheit beeinflusst, darfst du einen **Befehlsmarker** von ihm ablegen, wenn du das tust, wird diese Einheit **Geschwächt**."
                     ]
                 }
             ],
@@ -637,15 +635,16 @@
             "id": "30104",
             "name": "Tyrion Lennister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Der Gnom",
             "abilities": [
                 {
                     "name": "Genialer Taktiker",
                     "effect": [
-                        "Du hältst +1 Taktikkarte auf der Hand. Du beginnst die Partie mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst.",
-                        "Du darfst ein Mal pro Partie, sobald ein Gegner eine Taktikkarte spielt, bevor jene Karte abgehandelt wird, dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Gegenkomplott** durchsuchen und sie spielen. Mische danach dein Taktikdeck."
+                        "Du hältst +1 Taktikkarte auf der Hand.",
+						"Du beginnst die Partie mit 4 Karten und darfst immer auf 4 Karten aufziehen, sobald du deine Hand auffüllst. Immer wenn du eine Taktikkarte ziehst, darfst du 1 weitere Taktikkarte ziehen, danach mische 1 Taktikkarte von deiner Hand zurück in dein Taktikdeck.",
+                        "Du darfst ein Mal pro Partie, zu Beginn einer beliebigen Runde, die Taktikarten auf der Hand deines Gegners anschauen."
                     ]
                 }
             ],
@@ -659,18 +658,16 @@
             "id": "30105",
             "name": "Cersei Lennister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Königin Regentin",
             "abilities": [
                 {
-                    "name": "Nach den Regeln spielen",
+                    "name": "Die Manipulation der Königin",
                     "effect": [
-                        "Bei Spielbeginn werden 2 Befehlsmarker auf Cersei gelegt.",
-                        "Immer wenn Cersei eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihr ablegen.",
-                        "Falls du das tust, führe Folgendes durch:",
-                        "Falls du [CROWN] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Hört mich brüllen!** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck.",
-                        "Falls du [MONEY] kontrollierst, durchsuche dein Taktikdeck oder deinen Ablagestapel nach 1 Taktikkarte **Machtunterwerfung** und füge sie deiner Hand hinzu. Mische danach dein Taktikdeck."
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Cersei Einfluss auf einen feindliche Einheit ausübt, darf jener Feind nicht mehr das Ziel von befreundeten Befehlen oder Taktikkarten werden.",
+						"Solange Cersei [CROWN] oder [MONEY] beansprucht, verliegen alle Verstärkunden die an dieser Einheit anliegen, ihre Fähigkeiten."
                     ]
                 }
             ],

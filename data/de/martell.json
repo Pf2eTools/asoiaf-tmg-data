@@ -41,11 +41,12 @@
             "id": "10902",
             "name": "Sand-Plänkler",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Schnellfeuer",
-                "Befehl: Schwachstellen entdecken"
+                "Plänkler",
+				"Wegbereiter"
             ],
             "attacks": [
                 {
@@ -83,7 +84,7 @@
             "id": "10903",
             "name": "Derwische von Sonnspeer",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Rascher Rückzug",
@@ -94,7 +95,7 @@
                 {
                     "name": "Klingen der Derwische",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         6,
@@ -148,11 +149,11 @@
             "id": "10905",
             "name": "Dünenvipern",
             "faction": "martell",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Speer & Netz",
-                "Gegenschlag",
+                "Unterbrechen",
                 "Zusammenrotten"
             ],
             "attacks": [
@@ -246,7 +247,7 @@
             "id": "10908",
             "name": "Dunkelsterns Gefolgschaft",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Überrennen",
@@ -353,22 +354,20 @@
             "id": "30902",
             "name": "Doran Martell",
             "faction": "martell",
-            "version": "S05",
+            "version": "S07",
             "role": "ncu",
             "title": "Fürst von Dorne",
             "abilities": [
                 {
-                    "name": "Geheimnisse von Sonnspeer",
+                    "name": "Pläne und Geheimnisse",
                     "effect": [
-                        "Immer wenn Doran die Zone auf der Taktiktafel beansprucht, bevor du den Effekt der Zone abhandelst, lege 1 Befehlsmarker auf ihn. Wenn Doran [OASIS] beansprucht, lege +1 Befehlsmarker auf ihn.",
+                        "Immer wenn Doran die Zone auf der Taktiktafel beansprucht, bevor du den Effekt der Zone abhandelst, wähle 1 der folgenden Effekte. Zusätzliche Effekte werde verfügbar, basierend auf der aktuellen Spielrunde:",
                         "Immer wenn Doran [OASIS] beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Entferne bis zu 4 Befehlsmarker von Doran Martell, für jeden entfernten Befehlsmarker wähle 1:*",
-                        "*• Heile bis zu 2 Wunden von 1 Einheit.*",
-                        "*• Entferne 1 Zustandsmarker von 1 Einheit.*",
-                        "*• Ziehe 1 Karte.*",
-                        "*• Lege 1 Zustandsmarker an eine feindliche Einheit an.*",
-                        "*• Eine befreundete Einheit darf sich drehen und danach um 2 Zoll verschieben.",
-                        "*• Eine feindliche Einheit erleidet 1 Wunde.*"
+                        "**Spielrunde 1+**: Entferne 1 Zustandsmarker von 1 befreundeten Haus Martell Einheit.",
+                        "**Spielrunde 2+**: Heile 2 Wunden bei 1 befreundeten Haus Martell Einheit.",
+                        "**Spielrunde 3+**: Nimm 1 befreundete Haus Martell Einheit zum Ziel. Sie darf 2 Zoll verschieben.",
+                        "**Spielrunde 4+**: Nimm 1 feindliche Kampfeinheit zum Ziel. Sie erleidert 3 Treffer.",
+                        "**Spielrunde 5+**: Nimm 1 beliebige Anzahl feindlicher Kampfeinheiten zum Ziel. Sie werden **Verwundbar**."                       
                     ]
                 }
             ],
@@ -449,18 +448,19 @@
             "id": "30906",
             "name": "Nymeria Sand",
             "faction": "martell",
-            "version": "S05",
+            "version": "S07",
             "role": "ncu",
             "title": "Lady Nym",
             "abilities": [
                 {
-                    "name": "Widersprüchliche Reaktionen",
+                    "name": "Zunehmende Spannungen",
                     "effect": [
                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                        "Solange Nymeria Einfluss auf eine befreundete Infanterie-Einheit ausübt:",
-                        "• Falls du oder dein Gegner [CROWN] kontrolliert, erhalten ihre Nahkampfangriffe **Grausam**.",
-                        "• Falls du oder dein Gegner [SWORDS] kontrolliert, erhalten ihre Nahkampfangriffe **Kritischer Treffer**.",
-                        "• Falls du oder dein Gegner [HORSE] kontrolliert, erhält sie +1 [MOVEMENT]."
+                        "Solange Nymeria Einfluss auf eine befreundete Kampfeinheit hat, bekommt sie folgende Effekte abhängig der Anzahl an beanspruchten Zonen auf der Taktiktafel (befreundet oder feindlich):",
+                        "**1+**: Nahkampfangriffe haben **Grausam**.",
+                        "**2+**: Nahkampfangriffe haben **Kritische Treffer**.",
+                        "**4+**: Nahkampfangriffe dürfen beliebig viele Angriffswürfel neu werfen.",
+                        "**5+**: Nahkampfangriffe werfen +2 Angriffswürfel."
                     ]
                 }
             ],
@@ -474,7 +474,7 @@
             "id": "30907",
             "name": "Arianne Martell",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Erbin von Dorne",
             "abilities": [
@@ -482,9 +482,9 @@
                     "name": "Vermittlerin",
                     "effect": [
                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an):*",
-                        "Immer wenn Arianne Martell Einfluss auf eine Einheit ausübt, wähle 1 der folgenden Effekte:",
-                        "• Solange Arianne Martell Einfluss auf eine feindliche Einheit ausübt, verlieren die Verstärkungen jener Einheit alle Fähigkeiten.",
-                        "• Solange Arianne Martell Einfluss auf eine feindliche Einheit ausübt, kann jene Einheit nicht zum Ziel von befreundeten Befehlen bestimmt werden."
+                        "Immer wenn Arianne Martell Einfluss auf eine Einheit ausübt, wähle 1 der folgenden Effekte. Wenn du [CROWN] oder [OASIS] kontrollierst, wähle beide:",
+                        "• Solange Arianne Martell Einfluss auf eine feindliche Einheit ausübt, verliert jener Einheit alle Fähigkeiten.",
+                        "• Solange Arianne Martell Einfluss auf eine feindliche Einheit ausübt, zählt diese Einheit -1 Schlachtreihen bei Angriffen. Wenn Arianne [CROWN] oder [OASIS] beansprucht, verwendet sie ihren niedrigsten Angriffswürfelwert."
                     ]
                 }
             ],

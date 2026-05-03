@@ -9,11 +9,10 @@
             "id": "10701",
             "name": "Schreier der Dothraki",
             "faction": "targaryen",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Kavallerie",
-                "Wütender Ansturm",
                 "Dothrakisches Arakh"
             ],
             "attacks": [
@@ -125,7 +124,7 @@
             "id": "10704",
             "name": "Jorah Mormont",
             "faction": "targaryen",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "title": "Der Umherziehende Ritter",
             "abilities": [
@@ -145,7 +144,7 @@
             "defense": 4,
             "morale": 3,
             "speed": 6,
-            "cost": 4,
+            "cost": 3,
             "tray": "solo",
             "fluff": {
                 "lore": "Was man auch immer von Ser Jorah Mormonts persönlichen Beziehungen und seiner bewegten Vergangenheit halten mag, sein Umgang mit Waffen hat ihm bei den Dothraki Respekt verschafft, was keine einfache Leistung ist. Als Veteran vieler Kriege und späterer Söldner kann sein geschultes Auge Schwachstellen in den feindlichen Reihen der Feinde ausmachen, die verbündete Truppen in der Nähe dann ausnutzen können. Ser Jorah zieht es vor, beritten in die Schlacht zu ziehen, denn seine Reitkunst übertrifft die vieler seiner westlichen Gegner.",
@@ -158,11 +157,11 @@
             "id": "10705",
             "name": "Schwertmeister der Unbefleckten",
             "faction": "targaryen",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Talent der Unbefleckten",
-                "Kampfbeherrschung: Auflösen"
+                "Gegenschlag"
             ],
             "attacks": [
                 {
@@ -176,7 +175,7 @@
                     ]
                 }
             ],
-            "defense": 4,
+            "defense": 3,
             "morale": 4,
             "speed": 5,
             "cost": 7,
@@ -190,12 +189,12 @@
             "id": "10706",
             "name": "Pikeniere der Unbefleckten",
             "faction": "targaryen",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Speerwall",
                 "Befehl: Schildwall",
-                "Kampfbeherrschung: Verteidigung"
+                "Unbeugsam"
             ],
             "attacks": [
                 {
@@ -209,7 +208,7 @@
                     ]
                 }
             ],
-            "defense": 4,
+            "defense": 3,
             "morale": 4,
             "speed": 5,
             "cost": 7,
@@ -331,7 +330,7 @@
             "id": "10710",
             "name": "Hrakkars der Dothraki",
             "faction": "targaryen",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Hrakkars & Bändiger",
@@ -344,11 +343,11 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        5
+                        6
                     ]
                 }
             ],
-            "defense": 6,
+            "defense": 5,
             "morale": 5,
             "speed": 6,
             "cost": 4,
@@ -550,7 +549,7 @@
             "id": "10716",
             "name": "Messingtiere",
             "faction": "targaryen",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Bewachen",
@@ -560,10 +559,10 @@
                 {
                     "name": "Bunte Ausrüstung",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
+                        7,
                         6,
-                        5,
                         4
                     ]
                 }
@@ -582,7 +581,7 @@
             "id": "10717",
             "name": "Arenakämpfer",
             "faction": "targaryen",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Wut des Arenakämpfers",
@@ -595,9 +594,9 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        7,
                         6,
-                        4
+                        7,
+                        8
                     ]
                 }
             ],
@@ -640,16 +639,19 @@
             "id": "30702",
             "name": "Illyrio Mopatis",
             "faction": "targaryen",
-            "version": "S06",
+            "version": "S07",
             "role": "ncu",
             "title": "Magister aus Pentos",
             "abilities": [
                 {
                     "name": "Illyrios Gunst",
                     "effect": [
-                        "Bei Spielbeginn werden 2 Befehlsmarker auf Illyrio gelegt.",
-                        "Immer wenn Illyrio eine Zone auf der Taktiktafel beansprucht, darfst du 1 Befehlsmarker von ihm ablegen. Falls du das tust, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Bestimme 1 befreundete Kampfeinheit zum Ziel. Sie heilt 3 Wunden. Lege 1 Statusmarker auf 1 Feind, mit der sie im Nahkampf ist.*"
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Illyrio gelegt. Du darfst Illyrios Einfluss nur anwenden, wenn du einen Befehlsmarker von Illyrio entfernst.",
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Illyrio Einfluss auf eine Einheit ausübt, wähle 1 der folgenden Effekte:",
+						"• Diese Einheit heilt 2 Wunden",
+						"• Solange Illyrio Einfluss auf eine Einheit ausübt, verwendet diese Einheit bei Nahkampfangriffen immer ihren höchsten Angriffswürfelwert und bekommt **Spaltschlag**.",
+						"• Wähle einen Fein in kurzer Reichweite dieser Einheit aus. Sie wird **Panisch** und **Geschwächt**."
                     ]
                 }
             ],
@@ -667,17 +669,16 @@
             "id": "30703",
             "name": "Pyat Pree",
             "faction": "targaryen",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Hexenmeister von Qarth",
             "abilities": [
                 {
                     "name": "Das Haus der Unsterblichen",
                     "effect": [
-                        "Immer wenn Pyat Pree eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Schau dir die Taktikkarten auf der Hand deines Gegners an. Danach muss dein Gegner 1 zufällige Karte ablegen.*",
-                        "Ein Mal pro Partie, wenn Pyat Pree die [UNDYING] Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Schicke 1 Taktikkarte aus deinem Ablagestapel zurück auf deine Hand.*"
+                        "Ein Mal pro Partie, wenn Pyat Pree eine Zone auf der Taktiktafel beansprucht, darfst du 1 Taktikkarte aus deinem Ablagestapel auf die Hand zurücknehmen",						
+                        "Immer wenn Pyat Pree die [UNDYING] Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",                     
+                        "*Dein Gegner wird 1 zufällige Taktikkarte von seiner Hand ab. Danach, bis zum Ende der Runde, spielt er mit offenen Handkarten.*"
                     ]
                 }
             ],
@@ -769,18 +770,15 @@
             "id": "30708",
             "name": "Mirri Maz Duur",
             "faction": "targaryen",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Götterweib",
             "abilities": [
                 {
                     "name": "Wissen der Maegi",
                     "effect": [
-                        "Immer wenn Mirri eine Zone auf der Taktiktafel beansprucht, heile 1 Wunde einer befreundeten Kampfeinheit.",
-                        "Immer wenn Mirri eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "wähle 1 der folgenden Effekte:",
-                        "• *Bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 zuvor vernichtete befreundete Nicht-Heerführer-Verstärkung an jene Einheit an (ersetze wie gewohnt eine Figur, aber ignoriere die üblichen Verstärkungsbeschränkungen).*",
-                        "• *Bestimme 1 feindliche Kampfeinheit zum Ziel. Diese Einheit wird **Panisch** und **Geschwächt**."
+                        "Immer wenn Mirri eine Zone auf der Taktiktafel beansprucht, wähle 1 der folgenden Effekte: Entferne 1 Zustandsmarker von 1 befreundeten Einheit und legen ihn auf Mirris Karte, oder entferne 1 Zustandsmarker von Mirris Karte und lege sie an 1 im Nahkampf befindliche feindliche Einheit.",
+                        "Einmal im Spiel, wenn Mirri eine Zone auf der Taktiktafel beansprucht, bestimme 1 befreundete Kampfeinheit zum Ziel. Lege 1 zuvor vernichtete befreundete Nicht-Heerführer-Verstärkung an jene Einheit an (ersetze wie gewohnt eine Figur, aber ignoriere die üblichen Verstärkungsbeschränkungen)"
                     ]
                 }
             ],
@@ -821,18 +819,18 @@
             "id": "30710",
             "name": "Hizdahr Zo Loraq",
             "faction": "targaryen",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Vierzehnter dieses edlen Namens",
             "abilities": [
                 {
                     "name": "Einfluss des Handelsherren",
                     "effect": [
-                        "Immer wenn eine befreundete zivile Einheit eine Zone auf der Taktiktafel beansprucht, erhält sie die folgenden zusätzlichen Effekte, es sei denn, der Effekt der Zone wurde ersetzt:",
-                        "[CROWN]: Falls die Einheit an dieser Panikprobe scheitert, darf sie in dieser Runde nicht zum Ziel von befreundeten Befehlen bestimmt werden.",
-                        "[MONEY]: 1 andere befreundete Einheiten innerhalb Kurzer Reichweite heilt 1 Wunde.",
-                        "[LETTER]: Du darfst 1 Taktikkarte weniger ziehen, um +1 Zustandsmarker auf die feindliche Einheit zu legen.",
-                        "[UNDYING]: Dein Gegner muss zusätzlich die oberste Karte seines Taktikdecks ablegen."
+                        "Immer wenn Hizdahr eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt dieser Zone abgehandelt wurde, führe folgenden Effekt je nach Zone aus:",
+                        "[CROWN]: Die feindliche Einheit, die von dieser Zone als Ziel bestimmt wurde, wird **Verwundbar**.",
+                        "[MONEY]: Alle anderen freundlichen Einheiten in kurzer Reichweite der Einheit die von dieser Zone als Ziel bestimmt wurde, heilen 1 Wunde oder entfernen einen Zustandsmarker.",
+                        "[LETTER]: Wenn du einen Zustandsmarker an eine feindliche Einheit gelegt hast, bestimme 1 andere Feindliche Einheit in Langer Reichweiter zu jener Einheit zum Ziel. Sie bekommt 1 Zustandsmarker des selben Typs.",
+                        "[UNDYING]: Du darfst 1 Taktikkarte ziehen, danach wird 1 Taktikkarte ab."
                     ]
                 }
             ],

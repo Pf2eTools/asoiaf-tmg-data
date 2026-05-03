@@ -9,9 +9,10 @@
             "id": "10201",
             "name": "Geschworene Schwerter von Haus Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+			    "Befehl: Um jedem Preis",
                 "Schärfe des Winters",
                 "Kämpfend untergehen"
             ],
@@ -41,12 +42,12 @@
             "id": "10202",
             "name": "Vorreiter von Haus Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
-            "abilities": [
+            "abilities": [			    
+                "Befehl: Gegend Erkunden",
                 "Befehl: Taktisches Umstellen",
-                "Kavallerie",
-                "Überfall"
+                "Kavallerie"
             ],
             "attacks": [
                 {
@@ -55,7 +56,7 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        4
+                        5
                     ]
                 }
             ],
@@ -74,10 +75,12 @@
             "id": "10203",
             "name": "Berserker von Haus Umber",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Inbrunst des Berserkers"
+                "Inbrunst des Berserkers",
+				"Berserkeräxte",
+				"Brutaler Angriff"
             ],
             "attacks": [
                 {
@@ -142,9 +145,10 @@
             "id": "10205",
             "name": "Bogenschützen von Haus Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+			    "Befehl: Sperrfeuer",
                 "Pfeilhagel"
             ],
             "attacks": [
@@ -252,11 +256,11 @@
             "id": "10208",
             "name": "Großäxte von Haus Umber",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Zorn des Henkers",
-                "Wilder Angriff"
+                "Angst Ausnutzen"
             ],
             "attacks": [
                 {
@@ -264,8 +268,8 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
+                        7,
                         6,
-                        5,
                         4
                     ]
                 }
@@ -401,12 +405,12 @@
             "id": "10213",
             "name": "Ritter von Haus Tully",
             "faction": "stark",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Kavallerie",
                 "Lanze",
-                "Sammelbanner"
+                "Unbeugsam"
             ],
             "attacks": [
                 {
@@ -434,21 +438,21 @@
             "id": "10214",
             "name": "Bärinnen von Haus Mormont",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Schlachtruf",
+                "Befehl: Zorn der Bärinnen",
                 "Entschlossener Schlag"
             ],
             "attacks": [
                 {
                     "name": "Entschlossener Schlag",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        6,
-                        5
+                        5,
+                        4
                     ]
                 }
             ],
@@ -708,14 +712,14 @@
             "id": "30204",
             "name": "Eddard Stark",
             "faction": "stark",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "ncu",
             "title": "Wächter des Nordens",
             "abilities": [
                 {
                     "name": "Tapferkeit im Angesicht des Todes",
                     "effect": [
-                        "Bei Spielbeginn werden 4 Befehlsmarker auf Eddard gelegt.",
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Eddard gelegt.",
                         "Immer wenn eine befreundete Einheit eine Panikprobe ablegt, nachdem die Würfel geworfen worden sind, darfst du 1 Befehlsmarker von Eddard ablegen. Falls du das tust, darf jene Einheit beliebig viele Würfel für diese Probe neu werfen.",
                         "Immer wenn eine befreundete Einheit eine Panikprobe besteht, darfst du 1 Befehlsmarker von Eddard ablegen. Falls du das tust, heilt jene Einheit 2 Wunden, +1 Wunde für jede ihrer vernichteten Schlachtreihen."
                     ]
@@ -735,15 +739,15 @@
             "id": "30205",
             "name": "Rodrik Cassel",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Kriegsveteran",
             "abilities": [
                 {
                     "name": "Kampfkompetenz",
                     "effect": [
-                        "Immer wenn Rodrik die [SWORDS]-Zone beansprucht, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**.",
-                        "Bei Spielbeginn werden 2 Befehlsmarker auf Rodrik gelegt.",
+                        "Immer wenn Rodrik eine Zone auf der Taktiktafel beansprucht, bestimme 1 feindliche Kampfeinheit zum Ziel. Sie wird **Verwundbar**.",
+                        "Bei Spielbeginn werden 3 Befehlsmarker auf Rodrik gelegt.",
                         "Immer wenn eine befreundete Einheit einen Nahkampfangriff durchführt, nachdem die Angriffswürfel geworfen worden sind, darfst du 1 Befehlsmarker von Rodrik ablegen. Wenn du das tust, darf der Angreifer beliebig viele Angriffswürfel neu werfen."
                     ]
                 }
@@ -864,26 +868,20 @@
             "id": "30210",
             "name": "Robb Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "ncu",
             "title": "König des Nordens",
             "abilities": [
                 {
-                    "name": "Wolfslist",
-                    "effect": [
-                        "Bestimme nach der Aufstellung 1 befreundete Kampfeinheit zum Ziel. Entferne sie vom Schlachtfeld und platziere sie neben der Spielfläche *(in deiner Reserve)*. Ein Mal pro Partie, sobald Robb die [HORSE]-Zone beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Stelle die Einheit, die durch Robb in deiner Reserve platziert wurde, vollständig innerhalb Kurzer Reichweite zu einem beliebigen Seitenrand auf und lege diese Karte bis zum Ende der Partie an sie an. Solange diese Karte an dieser Einheit anliegt, werden Feinde, gegen die diese Einheit einen erfolgreichen Ansturm in die Flanke oder den Rücken durchführt, **Panisch** und **Verwundbar**.*"
-                    ]
-                },
-                {
-                    "name": "Schnelligkeit des Wolfes",
+                    "name": "Der Anspruch des Wolfsfürsten",
                     "effect": [
                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                        "Solange Robb Einfluss auf eine befreundete Einheit ausübt, erhält sie +1 [MOVEMENT]."
+                        "Solange Robb Einfluss auf eine befreundete Einheit ausübt, wenn dein Gegner nicht [CROWN] kontrolliert, bekommt diese Einheit +1 auf ihren Angriffswürfelwert und ihre Nachkampfangriffe erhalten **Spaltschlag**.",
+						"Solange Robb Einfluss auf eine feindliche Einheit ausübt, wenn ihr Besitzer nicht [CROWN] kontrolliert, bekommt diese Einheit -1 auf ihren Angriffswürfelwert und nach dem abhandeln des Angriffes, wird sie **Verwundbar**."
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "back_text": [
                 {

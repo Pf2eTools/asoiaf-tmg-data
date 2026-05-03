@@ -326,7 +326,7 @@
             "id": "10410",
             "name": "Heckenritter",
             "faction": "neutral",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Kavallerie",
@@ -340,12 +340,12 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 4,
-            "morale": 7,
+            "morale": 6,
             "speed": 5,
             "cost": 7,
             "tray": "cavalry",
@@ -359,11 +359,11 @@
             "id": "10411",
             "name": "Schwertkämpfer der Goldenen Kompanie",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Stil anpassen",
-                "Meister-Langschwert"
+                "Meister-Langschwert",
+                "Hervorragender Ruf"
             ],
             "attacks": [
                 {
@@ -372,13 +372,13 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 6,
+            "defense": 3,
+            "morale": 5,
             "speed": 5,
             "cost": 7,
             "tray": "infantry",
@@ -434,7 +434,7 @@
             "id": "10413",
             "name": "Kriegselefant der Goldenen Kompanie",
             "faction": "neutral",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Kriegselefant",
@@ -446,13 +446,13 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 6,
+            "speed": 5,
             "cost": 6,
             "tray": "solo",
             "back_text": [
@@ -564,14 +564,14 @@
             "id": "30403",
             "name": "Lord Varys",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Die Spinne",
             "abilities": [
                 {
                     "name": "Kleine Vögel",
                     "effect": [
-                        "Bei Spielbeginn werden 3 Befehlsmarker auf Varys gelegt.",
+                        "Bei Spielbeginn werden 4 Befehlsmarker auf Varys gelegt.",
                         "Immer wenn eine feindliche zivile Einheit eine Zone auf der Taktiktafel beansprucht, nachdem der Effekt jener Zone abgehandelt worden ist, darfst du 1 Befehlsmarker von Varys ablegen. Falls du das tust, erhältst du den folgenden Effekt basierend auf jener Zone:",
                         "[CROWN]: 1 Feind muss 1 Panikprobe ablegen.",
                         "[MONEY]: Heile 2 Wunden von 1 befreundeten Einheit.",
@@ -581,7 +581,7 @@
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "„Nur besitzt Varys wie kein anderer Möglichkeiten, Dinge in Erfahrung zu bringen.“ – Catelyn Stark"
@@ -615,21 +615,15 @@
             "id": "30405",
             "name": "Jaqen H’Ghar",
             "faction": "neutral",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Anhänger des Roten Gottes",
             "abilities": [
                 {
                     "name": "Einen Namen wählen",
                     "effect": [
-                        "Immer wenn Jaqen H’Ghar aktiviert wird, darfst du seine Einfluss-Fähigkeit bis zum Ende der Runde durch die Einfluss-Fähigkeit einer beliebigen befreundeten oder feindlichen zivilen Einheit ersetzen."
-                    ]
-                },
-                {
-                    "name": "Ein gegebener Name",
-                    "effect": [
-                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                        "Solange Jaqen Einfluss auf eine befreundete Infanterie-Einheit ausübt, erhalten ihre Nahkampfangriffe **Präzision**."
+                        "Jaqen beginnt das Spiel mit 3 **Befehlsmarkern**.",
+						"Immer wenn Jaqen aktiviert, darfst du 1 **Befehlsmarker** von ihm entfernen und 1 andere zivile Einheit als Ziel bestimmen. Jaqen bekommt alle Fähigkeiten dieser Einheit bis zum Ende der Runde, tausche den Namen in der Fähigkeit mit seinem aus. Er darf keine Fähigkeit benutzen die nur ein Mal im Spiel nutzbar ist. Wenn die kopierte Fähigkeit **Befehlsmarker** benötigt, müssen diese von Jaqen genommen werden."
                     ]
                 }
             ],
@@ -664,18 +658,16 @@
             "id": "30407",
             "name": "Walder Frey",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Lord vom Kreuzweg",
             "abilities": [
                 {
                     "name": "Strategische Allianz",
                     "effect": [
-                        "Einmal pro Partie, wenn Walder eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Wähle 2 der folgenden Effekte:*",
-                        "*• 1 Feind wird **Geschwächt**, **Verwundbar** und **Panisch**.*",
-                        "*• 1 befreundete Einheit heilt 3 Wunden.*",
-                        "*• Zu Beginn der nächsten Runde wirst du Startspieler.*"
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Immer wenn Walder Einfluss auf eine befreundete Kampfeinheit ausübt, erhält diese Einheit +1 [MOVEMENT] and darf sich zum Start ihrer Aktion drehen.",
+                        "Immer wenn Walder Einfluss auf eine feindliche Kampfeinheit ausübt, erhält diese Einheit -1 [MOVEMENT] and darf sich am Ende ihrer Manöver- oder Marschaktion nicht drehen."
                     ]
                 }
             ],

@@ -9,11 +9,11 @@
             "id": "10601",
             "name": "Hirschritter",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Widerstandskraft",
-                "Zorn der Hirsche"
+                "Zorn der Hirsche",
+                "Mut der Hirsche"
             ],
             "attacks": [
                 {
@@ -41,9 +41,10 @@
             "id": "10602",
             "name": "Wächter von Haus Baratheon",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+			    "Befehl: Linie halten!",
                 "Kriegshammer",
                 "Gegenschlag"
             ],
@@ -73,11 +74,12 @@
             "id": "10603",
             "name": "Schildwachen von Haus Baratheon",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Befehl: Bewachen",
-                "Doppelhämmer"
+                "Doppelhämmer",
+				"Kämpfend untergehen"
             ],
             "attacks": [
                 {
@@ -86,8 +88,8 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        5,
-                        4
+                        6,
+                        5
                     ]
                 }
             ],
@@ -144,16 +146,17 @@
             "id": "10605",
             "name": "Anhänger von R’hllor",
             "faction": "baratheon",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Herz aus Feuer"
+                "Treu",
+				"Schwert des Glaubens"
             ],
             "attacks": [
                 {
                     "name": "Schwert des Glaubens",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         6,
@@ -186,11 +189,12 @@
             "id": "10606",
             "name": "Streiter des Hirsches",
             "faction": "baratheon",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Kavallerie",
-                "Zorn der Streiter"
+                "Zorn der Streiter",
+				"Feigheit bestrafen"
             ],
             "attacks": [
                 {
@@ -199,12 +203,12 @@
                     "hit": 3,
                     "dice": [
                         6,
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 2,
-            "morale": 6,
+            "morale": 5,
             "speed": 4,
             "cost": 8,
             "tray": "cavalry",
@@ -344,19 +348,19 @@
             "id": "10610",
             "name": "R’hllors Lichtbringer",
             "faction": "baratheon",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Feuerpfeile"
+                "R’hllors Feuer"
             ],
             "attacks": [
                 {
-                    "name": "Feuerpfeile",
+                    "name": "R’hllors Feuer",
                     "type": "long",
                     "hit": 3,
                     "dice": [
                         7,
-                        6,
+                        7,
                         4
                     ]
                 },
@@ -392,31 +396,31 @@
             "id": "10611",
             "name": "Armbrustschützen der Dornen-Garde",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Armbrust der Wache",
-                "Schneller Hieb",
-                "Rückzug"
+                "Befehl: Überwachen",
+                "Armbrust aus Rosengarten",
+                "Plänkler"
             ],
             "attacks": [
                 {
-                    "name": "Armbrust der Wache",
-                    "type": "short",
+                    "name": "Armbrust aus Rosengarten",
+                    "type": "long",
                     "hit": 3,
                     "dice": [
-                        6,
-                        5,
+                        7,
+                        7,
                         4
                     ]
                 },
                 {
                     "name": "Langschwert",
                     "type": "melee",
-                    "hit": 3,
+                    "hit": 4,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -424,13 +428,13 @@
             "defense": 5,
             "morale": 6,
             "speed": 6,
-            "cost": 6,
+            "cost": 7,
             "tray": "infantry",
             "back_text": [
                 {
                     "text": "*Deine Armee darf nie Einheiten oder Verstärkungen mit anderen Loyalitäten enthalten.*",
                     "name": "Loyalität",
-                    "heading": "STANNIS BARATHEON"
+                    "heading": "RENLY BARATHEON"
                 }
             ],
             "fluff": {
@@ -442,17 +446,18 @@
             "id": "10612",
             "name": "Reiter von Rosengarten",
             "faction": "baratheon",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+			    "Befehl: Rascher Rückzug",
                 "Kavallerie",
-                "Rosengarten Lanze"
+                "Lanze"
             ],
             "attacks": [
                 {
                     "name": "Lanze",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         5,
                         4
@@ -520,11 +525,10 @@
             "id": "10614",
             "name": "Regenbogengarde",
             "faction": "baratheon",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Befehl: Widerstandskraft",
-                "Renlys Gefolge",
+                "Regenbogengarde",
                 "Sammelruf"
             ],
             "attacks": [
@@ -558,9 +562,10 @@
             "id": "10615",
             "name": "Hellebardiere von Haus Baratheon",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+			    "Befehl: Geschlossen Vorrücken!",
                 "Befehl: Spott",
                 "Hellebarde"
             ],
@@ -568,7 +573,7 @@
                 {
                     "name": "Hellebarde",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         7,
@@ -578,7 +583,7 @@
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 5,
+            "speed": 4,
             "cost": 6,
             "tray": "infantry",
             "fluff": {
@@ -618,16 +623,14 @@
             "id": "30602",
             "name": "Shyra Errol",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Lady von Erntehall",
             "abilities": [
                 {
-                    "name": "Unterstützung von Erntehall",
+                    "name": "Entschluss von Erntehall",
                     "effect": [
-                        "Immer wenn Shyra die [CROWN]-Zone beansprucht, heile 1 Wunde von 1 befreundeten Kampfeinheit.",
-                        "Immer wenn Shyra die [LETTER]-Zone beansprucht, lege 1 Zustandsmarker von 1 befreundeten Kampfeinheit ab.",
-                        "Immer wenn Shyra die [MONEY]-Zone beansprucht, falls du einen Zustandsmarker ablegst, lege 1 Zustandsmarker jener Art auf 1 feindliche Kampfeinheit."
+                        "Ein Mal pro Runde, wenn Shyra eine Zone auf der Taktiktafel beansprucht hat, und ein Gegner eine deiner Kampfeinheiten die sich im Nahkampf befindet, mit einer zivilen Einheit, Zone auf der Taktiktafel oder mit einer Taktikkarte zum Ziel bestimmt, nachdem der Effekt abgehandelt wurde, darfst du alle feindliche Einheiten mit der sie sich im Nahkampf befindet zum Ziel bestimmen. Sie werden **Verwundbar**, danach erleiden sie 1 Treffer für jede verbleibene Schlachtreihe in deiner Einheit."
                     ]
                 }
             ],
@@ -641,7 +644,7 @@
             "id": "30603",
             "name": "Melisandre",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Die Rote Frau",
             "abilities": [
@@ -649,9 +652,12 @@
                     "name": "Opfer für den Herrn des Lichts",
                     "effect": [
                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-                        "Sobald Melisandre Einfluss auf eine befreundete Einheit ausübt, darfst du sie 2 Wunden erleiden lassen und sie muss 1 Panikprobe ablegen. Falls du das tust, bestimme 1 feindliche Kampfeinheit zum Ziel. Jener Feind muss 1 Panikprobe ablegen, erhält –2 auf das Ergebnis und erleidet bei einem Fehlschlag +2 Wunden.",
-                        "Solange Melisandre Einfluss auf eine befreundete Einheit ausübt, ist jene Einheit eine R’hllor-Einheit und ihre Nahkampfangriffe erhalten **Grausam**."
-                    ]
+                        "Sobald Melisandre Einfluss auf eine befreundete Einheit ausübt, darfst du sie 2 Wunden erleiden lassen. Falls du das tust, erhält sie 1 der folgenden Effekte, +1 zusätzlichen Effekt für jede Wunde die sie erleidet hat.",
+                        "• Diese Einheit erhält +2 auf das Ergebnis von Moralproben.",
+						"• Die Angriffe dieser Einheit erhalten **Grausam**",
+						"• Wenn diese Einheit einen Nahkampfangriff ausführt, bevor die Angriffswürfel geworfen werden, bestimme den Verteidiger zum Ziel. Er wird **Verwundbar**.",
+						"• Wenn diese Einheit aktiviert, bestimme eine feindliche Einheit in kurzer Reichweite zum Ziel. Sie wird **Panisch**."
+						 ]
                 }
             ],
             "cost": 5,
@@ -671,14 +677,14 @@
             "id": "30604",
             "name": "Davos Seewert",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Die Hand des einzig wahren Königs",
             "abilities": [
                 {
                     "name": "Schmugglerlist",
                     "effect": [
-                        "Bei Spielbeginn werden 3 Befehlsmarker auf Davos gelegt.",
+                        "Bei Spielbeginn werden 4 Befehlsmarker auf Davos gelegt.",
                         "Immer wenn eine befreundete Einheit einen Ansturm durchführt, nachdem die Würfel für die Bewegungsweite des Ansturms geworfen worden sind, darfst du 1 Befehlsmarker von Davos ablegen. Falls du das tust, darfst du alle Würfel für die Bewegungsweite des Ansturms neu werfen.",
                         "Immer wenn eine befreundete Einheit aktiviert wird, darfst du 1 Befehlsmarker von Davos ablegen. Falls du das tust, dürfen Feinde, die mit jener Einheit im Nahkampf sind, bis zum Ende des Zuges keine Befehle verwenden oder zum Ziel von befreundeten Taktikkarten bestimmt werden."
                     ]
@@ -770,14 +776,15 @@
             "id": "30608",
             "name": "Margaery Tyrell",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Kleine Rose",
             "abilities": [
                 {
                     "name": "Eine Rose und ihre Dornen",
                     "effect": [
-                        "Immer wenn Margaery eine Zone auf der Taktiktafel beansprucht, darfst du 1 befreundete Kampfeinheit zum Ziel bestimmen. Sie heilt 1 Wunde. Du darfst dann 1 Feind, der mit jener Einheit im Nahkampf ist, zum Ziel bestimmen. Er wird **Verwundbar**."
+                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+						 "Solange Margaery Einfluss auf eine befreundete Einheit ausübt, immer wenn diese Einheit Wunden heilt, darfst du 1 feindliche Einheit mit der sie im Nahkampf ist zum Ziel bestimmen. Diese feindliche Einheit erleidet 1 Treffer für jede geheilte Wunde, bis zu einem Maximum von 3."
                     ]
                 }
             ],
@@ -828,15 +835,16 @@
             "id": "30610",
             "name": "Eldon Estermont",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Ehrwürdiger Ritter",
             "abilities": [
                 {
-                    "name": "Die Vorsicht der Älteren",
+                    "name": "Alter und Weisheit",
                     "effect": [
-                        "Immer wenn Eldon eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt jener Zone ersetzen durch:",
-                        "*Ziehe 3 Taktikkarten. Mische danach 1 Karte aus deiner Hand in dein Taktikdeck.*"
+                        "Ein Mal im Spiel, wenn Eldon eine Zone auf der Taktiktafel beansprucht, darfst du in deinem Taktikdeck nach 1 Karte suchen und diese auf die Hand nehmen. Mische danach dein Taktikdeck.",
+                        "Immer wenn Eldon eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt ersetzen durch:",
+						"Ziehe 3 Taktikkarten, dann mische 1 Karte aus deiner Hand zurück in das Taktikdeck."
                     ]
                 }
             ],
@@ -890,7 +898,7 @@
             "id": "30613",
             "name": "Cressen",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Maester von Drachenstein",
             "abilities": [
@@ -908,7 +916,7 @@
                     ]
                 }
             ],
-            "cost": 5,
+            "cost": 4,
             "character": true,
             "back_text": [
                 {
