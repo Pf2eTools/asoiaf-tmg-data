@@ -202,7 +202,8 @@
     },
     "BARDICHE": {
         "effect": [
-            "• **Cruel**"
+            "• **Cruel**",
+            "• **Frappe Critique**"
         ],
         "icons": [
             "melee"
@@ -238,14 +239,6 @@
         ],
         "icons": [
             "wounds4"
-        ]
-    },
-    "HACHES DE BERSERKERS": {
-        "effect": [
-            "Gagnent +1 pour Toucher pour chaque rang détruit dans cette unité."
-        ],
-        "icons": [
-            "melee"
         ]
     },
     "FERVEUR DU BERSERKER": {
@@ -311,10 +304,9 @@
     "BALISTE": {
         "effect": [
             "• **Cruel**",
-            "• Mesurez la Portée et la Ligne de Vue depuis n’importe quelle partie du plateau de cette unité.",
-            "• Peut subir -3 pour Toucher afin d’ignorer la Ligne de Vue et de gagner **Portée Illimitée**.",
+            "• Lance +1 dé d'Attaque pour chaque rang restant du Défenseur.",
             "• Les défenseurs ne lancent pas de dés de Défense.",
-            "• Si le défenseur est une unité de Cavalerie, Monstrueuse ou une Machine de Guerre, cette attaque inflige 2 Touches pour chaque succès."
+            "• Si le défenseur est une unité de Cavalerie, une unité Monstrueuse ou une Machine de Guerre, cette attaque inflige 2 Blessures pour chaque touche non bloquée."
         ],
         "icons": [
             "ranged",
@@ -428,8 +420,7 @@
     "COLÈRE DU CHAMPION": {
         "effect": [
             "• **Frappe Critique**",
-            "• Les ennemis Chargés avec succès par cette unité deviennent **Affaiblis**.",
-            "• Si cette unité a commencé le tour engagée avec le défenseur, avant de lancer les dés de Défense, le défenseur devient **Vulnérable**."
+            "• Avant de lancer les dés d'Attaque, si cette unité a commencé le tour engagée avec le défenseur, ciblez le défenseur. Il devient **Vulnérable** et cette Attaque lance +2 dés d'Attaque."
         ],
         "icons": [
             "melee"
@@ -438,7 +429,8 @@
     "CHAR": {
         "effect": [
             "• Cette unité possède 6 Blessures.",
-            "• Au début de son activation, cette unité peut effectuer 1 action de Manœuvre."
+            "• Au début de son activation, cette unité peut effectuer 1 action de Manœuvre.",
+            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique."
         ],
         "icons": [
             "wounds6"
@@ -570,7 +562,7 @@
     "LAMES DE DERVICHE": {
         "effect": [
             "• **Précision**",
-            "• **Frappe Critique** si le défenseur n’a pas été activé ce round-ci."
+            "• En charge, cette attaque gagne **Frappe Critique**."
         ],
         "icons": [
             "melee"
@@ -676,12 +668,12 @@
     },
     "FANATIQUES DU DIEU NOYÉ": {
         "effect": [
-            "• Cette unité possède 3 Blessures.",
+            "• Cette unité possède 4 Blessures.",
             "• Cette unité ne peut pas subir plus de 1 Blessure quand elle échoue un Test de Panique.",
             "• Cette unité ne subit qu'1 Blessure par tranche de 2 Touches non bloquées, peu importe l’attaque ou l’effet."
         ],
         "icons": [
-            "wounds3"
+            "wounds4"
         ]
     },
     "ARMES DOUBLES": {
@@ -743,7 +735,7 @@
         "effect": [
             "**• Cruel**",
             "• Seuls les résultats de 6 sur les dés de Défense peuvent bloquer les Touches de cette attaque.",
-            "• Si cette unité ne possède plus qu'1 rang restant, une fois cette attaque résolue, le défenseur devient **Affaibli**."
+            "• Une fois cette attaque résolue, le défenseur devient **Affaibli**."
         ],
         "icons": [
             "melee"
@@ -908,9 +900,9 @@
     "BALAYAGE ENRAGÉ": {
         "effect": [
             "• **Cruel**",
-            "• Gagne +1 Dé d'Attaque pour chaque Blessure subie par cette unité.",
-            "• Le Défenseur ne lance pas de Dés de Défense.",
-            "• Les ennemis Chargés avec Succès par cette unité deviennent **Paniqués**."
+            "• **Frappe Critique**",
+            "• Gagne +1 Dé d'Attaque pour chaque rang restant du Défenseur.",
+            "• Le Défenseur ne lance pas de Dés de Défense."
         ],
         "icons": [
             "melee",
@@ -940,12 +932,12 @@
     },
     "GÉANT": {
         "effect": [
-            "• Cette unité possède 6 Blessures.",
+            "• Cette unité possède 8 Blessures.",
             "• Cette unité ne subit qu'1 Blessure par tranche de 2 Touches non bloquées, quel que soit l’attaque ou l’effet.",
-            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique."
+            "• Cette unité ne peut pas subir plus de 1 Blessure quand elle échoue un Test de Panique."
         ],
         "icons": [
-            "wounds6"
+            "wounds8"
         ]
     },
     "LANCE DE GÉANT": {
@@ -1005,7 +997,7 @@
     "GRANDE HACHE": {
         "effect": [
             "• **Fracasser**",
-            "• Si cette unité possède 2 pions Pillage, les ennemis subissent -1 supplémentaire à leurs lancers de dés de Défense."
+            "• Si cette unité possède 2 pions Pillage, seuls les résultats de 6 sur les dés de Défense peuvent bloquer les Touches de cette attaque."
         ],
         "icons": [
             "melee"
@@ -1022,7 +1014,8 @@
     },
     "ESPADON": {
         "effect": [
-            "• **Fracasser**"
+            "• **Fracasser**",
+            "• **Frappe Critique**"
         ],
         "icons": [
             "melee"
@@ -1064,7 +1057,8 @@
     "HARPON": {
         "effect": [
             "• Après avoir résolu cette attaque, le défenseur devient **Affaibli**.",
-            "• Si le défenseur subit des Blessures de cette attaque, jusqu'à la fin du round, il subit -1 [MOVEMENT] et, s'il Charge, il subit une Charge Désordonnée."
+            "** *Attaque à distance uniquement :* **",
+            "Ensuite, cette unité peut se décaler de 2\" en arrière. Si le défenseur n'est pas engagé et a subi des Blessures à cause de cette Attaque, vous pouvez le forcer à se décaler de 2\" vers cette unité dans une direction déterminée par l'arc d'Attaque."
         ],
         "icons": [
             "melee",
@@ -1169,7 +1163,8 @@
     },
     "PIQUE D'EMPALEMENT": {
         "effect": [
-            "Après avoir résolu cette attaque, si elle a détruit au moins un rang ennemi, tous les ennemis situés à Courte Portée ou moins de l’attaquant deviennent **Paniqués**, s'ils l'étaient déjà, ils deviennent **Affaiblis**."
+            "• **Cruel**",
+            "• Après avoir résolu cette Attaque, ciblez le Défenseur. Il devient **Affaibli**."
         ],
         "icons": [
             "melee"
@@ -1398,8 +1393,9 @@
             "Chaque fois que cette unité effectue une Attaque de Mêlée, avant de lancer les dés d'Attaque, choisissez 1 option, +1 option par pion État sur le défenseur :",
             "• **Cruel**",
             "• **Fracasser**",
-            "• Jusqu'à la fin du tour, le défenseur perd toutes ses capacités.",
-            "• Cette unité peut relancer n'importe quels dés d'Attaque"
+            "• Cette unité peut relancer n'importe quels dés d'Attaque.",
+            "• Jusqu'à la fin de l'Attaque, le défenseur ne peut pas être ciblé par des cartes Tactiques alliées.",
+            "• Jusqu'à la fin de l'Attaque, le défenseur ne peut pas être ciblé par des Ordres alliés."
         ],
         "icons": [
             "melee"
@@ -1493,8 +1489,9 @@
         "effect": [
             "• Cette unité possède 8 Blessures.",
             "• Cette unité ne peut pas Contrôler d’Objectif.",
-            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique.",
-            "• Quand cette unité est détruite, avant d’être retirée, ciblez 1 ennemi avec lequel elle est engagée. Il subit D3 Blessures."
+            "• Une fois pendant son Activation, avant de choisir son Action, cette unité peut se décaler de 5\" en avant.",
+            "• Quand cette unité Charge, elle ignore tous les désavantages de terrain.",
+            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique et, à chaque fois que cette unité échoue un Test de Panique, ciblez toutes les autres unités situées à 2\". Elles subissent D3 Blessures."
         ],
         "icons": [
             "wounds8"
@@ -1502,8 +1499,10 @@
     },
     "MANIPULATION ET TROMPERIE": {
         "effect": [
+            "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
             "Pycelle commence la partie avec 3 pions Ordre sur sa carte.",
-            "Chaque fois que Pycelle est activé, vous pouvez retirer 1 pion Ordre sur sa carte. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
+            "Tant que Pycelle influence une unité ennemie, l'unité est considérée comme ayant -1 rang quand elle effectue une Attaque.",
+            "Quand Pycelle influence une unité ennemie, vous pouvez lui retirer 1 pion Ordre. Si vous le faites, cet ennemi devient **Affaibli**."
         ]
     },
     "VENIN DE MANTICORE": {
@@ -1518,7 +1517,7 @@
     "LAMES DE SOUDARDS": {
         "effect": [
             "• **Cruel**",
-            "• Gagne +1 pour Toucher et **Frappe Critique** en attaquant un ennemi qui possède autant ou moins de rangs restants."
+            "• **Frappe Critique**"
         ],
         "icons": [
             "melee"
@@ -1528,6 +1527,7 @@
         "effect": [
             "• Cette unité possède 3 Blessures.",
             "• Au début de son activation, cette unité peut effectuer 1 action de Manœuvre ou de Repli.",
+            "• Cette unité ne peut pas subir plus de 1 Blessure quand elle échoue un Test de Panique.",
             "• Les autres unités alliées situées à Courte Portée ou moins gagnent +1 dé d'Attaque à leurs Attaques de Mêlée et subissent -1 Blessure quand elles échouent un Test de Panique."
         ],
         "icons": [
@@ -1688,7 +1688,7 @@
     },
     "PACIFICATION OPPRESSIVE": {
         "effect": [
-            "Tant que vous contrôlez [CROWN], les ennemis situés à Courte Portée ou moins subissent −1 à leurs lancers de Tests de Moral."
+            "Tant que vous contrôlez [CROWN], les ennemis situés à Courte Portée ou moins subissent −1 à leurs lancers de Tests de Moral et, à chaque fois qu'ils sont ciblés par une carte Tactique alliée ou un ordre allié, après avoir résolu cette carte / cet ordre, ciblez-les. Ils deviennent **Affaiblis**."
         ]
     },
     "ORDRE : PLANIFICATION RÉACTIVE": {
@@ -1748,7 +1748,10 @@
     "ORDRE : BÉNÉDICTION DU DIEU NOYÉ": {
         "trigger": "Au début de n’importe quel Tour :",
         "effect": [
-            "Ciblez 1 unité d’Infanterie Greyjoy alliée située à Courte Portée ou moins et choisissez 1 option :\n• Cette unité soigne 2 de ses Blessures.\n• Cette unité peut relancer n’importe quels dés d’Attaque ce tour-ci.\n• Les ennemis qui attaquent cette unité ce tour-ci deviennent **Vulnérable**."
+            "Ciblez 1 unité d'infanterie Greyjoy alliée située\nà Courte Portée et choisissez 1 option :",
+            "• Cette unité soigne 2 de ses Blessures.",
+            "• Cette unité peut relancer n'importe quels dés d'Attaque ce tour-ci.",
+            "• Les ennemis qui attaquent cette unité deviennent **Vulnérables** et **Affaiblis** avant de lancer les dés d'Attaque."
         ],
         "icons": [
             "order"
@@ -1874,7 +1877,7 @@
     "ORDRE : RAGE DU GLADIATEUR": {
         "trigger": "Quand cette unité effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
         "effect": [
-            "Le défenseur devient **Vulnérable**, **Paniqué** et **Affaibli**. Une fois cette attaque résolue, l’attaquant subit 2 Blessures."
+            "Ciblez le Défenseur. Il gagne 1 pion État, +1 pion par rang détruit de l'Attaquant."
         ],
         "icons": [
             "order"
@@ -2072,7 +2075,7 @@
     "ORDRE : PROVOCATION": {
         "trigger": "Quand un ennemi à Longue Portée ou moins est activé :",
         "effect": [
-            "Si cet ennemi peut Attaquer ou Charger cette unité, et qu’il déclare une autre action qu’Attaque ou Charge ciblant cette unité ce tour-ci, il devient **Vulnérable** et **Affaibli** avant d’effectuer son action."
+            "Si cet ennemi peut Attaquer ou Charger cette unité et qu’il déclare une autre action qu’Attaque ou Charge ciblant cette unité ce tour-ci, il devient **Vulnérable** et **Affaibli** avant d’effectuer son action."
         ],
         "icons": [
             "order"
@@ -2340,10 +2343,8 @@
     },
     "SACCAGE": {
         "effect": [
-            "• **Frappe Critique**",
-            "• **Fracasser**",
-            "• Avant de lancer les dés d’Attaque, le défenseur devient **Paniqué**.",
-            "• Quand cette unité charge, elle peut relancer n'importe quels dés de Distance de Charge."
+            "• Le Défenseur ne lance pas de Dés de Défense.",
+            "• Cette attaque gagne +1 dé d'Attaque pour chaque Blessure subie par cette unité, pour un maximum de +3."
         ],
         "icons": [
             "melee",
@@ -2446,7 +2447,7 @@
     "FRAPPE RÉSOLUE": {
         "effect": [
             "• **Frappe Critique**",
-            "• Gagne +1 pour Toucher pour chaque rang détruit de cette unité."
+            "• Avant de lancer les dés d'Attaque, ciblez 1 unité alliée située à Longue Portée. Elle soigne 1 Blessure ou retire un pion État. Pour chaque pion État du Défenseur, répétez cet effet."
         ],
         "icons": [
             "melee"
@@ -2474,9 +2475,10 @@
     "TIR DE ROCHER": {
         "effect": [
             "• **Cruel**",
-            "• Ne peut pas attaquer des unités Individuelles.",
-            "• Peut attaquer des ennemis sans restriction de Portée et de Ligne de Vue.",
-            "• Si l’attaque génère des Touches, au lieu de lancer les dés de Défense, le défenseur subit 1 Blessure, +1 pour chacun de ses rangs restants."
+            "• Ignore les limitations de portées et de Ligne de Vue, mais ne peut cibler que des unités situées à Longue Portée et en Ligne de Vue d'une autre unité alliée.",
+            "• Quand cette unité attaque une unité de Cavalerie ou d'Infanterie, elle gagne +1 pour Toucher par rang restant du Défenseur.",
+            "• Les défenseurs ne lancent pas de dés de Défense.",
+            "• Chaque réussite génère +1 Touche par rang restant du Défenseur, au delà du premier."
         ],
         "icons": [
             "ranged",
@@ -2494,7 +2496,7 @@
     "AGRESSION IMPITOYABLE": {
         "effect": [
             "• **Cruel**",
-            "• En attaquant des ennemis qui n’ont pas été activés ce tour-ci, peut relancer les dés d’Attaque et le défenseur devient **Vulnérable**."
+            "• Avant de lancer les dés d'Attaque, ciblez le Défenseur. S'il n'a pas encore été activé ce Round, il devient **Vulnérable** et cette unité peut relancer n'importe quels dés d'Attaque."
         ],
         "icons": [
             "melee"
@@ -2502,8 +2504,9 @@
     },
     "VOLÉE IMPITOYABLE": {
         "effect": [
+            "• **Cruel**",
             "• Cette attaque ignore les unités et les Terrains pour déterminer sa Ligne de Vue.",
-            "• Contre un ennemi engagé, cette attaque gagne **Précision** et peut relancer n’importe quels dés d’Attaque."
+            "• Avant de lancer les dés d'Attaque, si le Défenseur est engagé, ciblez le Défenseur. Il devient **Vulnérable** et cette unité peut relancer n'importe quels dés d'Attaque."
         ],
         "icons": [
             "ranged"
@@ -2540,7 +2543,7 @@
     },
     "MUTILATION SADIQUE": {
         "effect": [
-            "Après que cette unité a résolu une Attaque de Mêlée, vous pouvez dépenser 1 pion **Affaibli** du défenseur. Si vous le faites, détruisez 1 Attachement d’Infanterie du défenseur."
+            "Après que cette unité a résolu une Attaque de Mêlée, vous pouvez dépenser 1 pion **Affaibli** du Défenseur et cibler cet ennemi. Si vous le faites, vous pouvez lui faire subir 2 Blessures ou détruire un de ses Attachements d'Infanterie."
         ],
         "icons": [
             "melee"
@@ -2606,8 +2609,9 @@
     },
     "NIAQ'LES": {
         "effect": [
-            "Cette unité peut relancer n’importe quels dés de Distance de Charge.",
-            "Les ennemis Chargés avec succès deviennent **Paniqués**."
+            "• Cette unité peut relancer n’importe quels dés de Distance de Charge.",
+            "• Les ennemis Chargés avec succès deviennent **Paniqués**.",
+            "• Lorsqu'un ennemi devrait se désengager de cette unité, avant d'effectuer l'Action de Repli, ciblez cet ennemi. Il subit 1 Touche, +1 Touche pour chaque rang restant dans cette unité."
         ]
     },
     "PRÉPARATIONS MÉTICULEUSES": {
@@ -2657,7 +2661,7 @@
         "effect": [
             "• **Cruel**",
             "• **Fracasser**",
-            "• **Précision**"
+            "• Après avoir lancé les dés d'Attaque, si le Défenseur a au moins un pion État sur lui, cette unité peut relancer n'importe quels dés d'Attaque."
         ],
         "icons": [
             "melee"
@@ -2693,11 +2697,11 @@
     },
     "FUREUR DU CERF": {
         "effect": [
-            "Cette attaque gagne les effets suivant en fonction du round de jeu *(ces effets sont cumulatifs)* :",
-            "• **2+ : Frappe Critique**",
-            "• **3+ : Cruel**",
-            "• **4+ : Fracasser**",
-            "• **5+ :** inflige +1 Touche pour chaque rang restant de cette unité."
+            "Avant de lancer les dés d'Attaque, pour chaque Round de jeu au delà du premier, choisissez un effet, cette Attaque gagne les effets choisis jusqu'à la fin de l'Action :",
+            "• **Frappe Critique**",
+            "• **Cruel**",
+            "• **Fracasser**",
+            "• Si l'unité a commencé le Tour en étant engagée, cette Attaque inflige +1 Touche par rang restant dans cette unité."
         ],
         "icons": [
             "melee"
@@ -2804,8 +2808,10 @@
     },
     "TACTICIEN DE GÉNIE": {
         "effect": [
-            "Votre limite de cartes Tactique est augmentée de 1. Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main.",
-            "Une fois par partie, quand un adversaire joue une carte Tactique, avant de résoudre celle-ci, vous pouvez chercher 1 exemplaire de **Contre-Complot** dans votre paquet ou défausse Tactique et le jouer. Mélangez votre paquet Tactique."
+            "Votre limite de cartes Tactique est augmentée de 1.",
+            "Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main.",
+            "Chaque fois que vous piochez des cartes Tactiques, vous pouvez piocher 1 carte supplémentaire, puis mélanger 1 carte de votre main avec votre paquet Tactique.",
+            "Une fois par partie, au début d'un Round, vous pouvez regarder la main de votre adversaire."
         ]
     },
     "FRAPPE TACTIQUE": {
@@ -2851,13 +2857,7 @@
     },
     "LES PLUIES DE CASTAMERE": {
         "effect": [
-            "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d'Unités Combattantes ennemies de votre choix :",
-            "• 1 de ces ennemis devient **Paniqué**.",
-            "• 1 de ces ennemis devient **Vulnérable**.",
-            "• 1 de ces ennemis subit 4 Touches.",
-            "• 1 de ces ennemis subit 1 Test de Panique.",
-            "• 1 de ces ennemis perd toutes ses Capacités jusqu’à la fin du Round.",
-            "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
+            "Une fois par partie, quand une unité ennemie est Activée, vous pouvez cibler cette unité ennemie. Si vous le faites, elle devient **Paniquée**, **Vulnérable** et **Affaiblie**. Puis, elle subit 3 Touches ou un Test de Panique."
         ]
     },
     "LA REINE LÉGITIME": {
@@ -2868,7 +2868,7 @@
     },
     "INFAMIE DU SILENCE": {
         "effect": [
-            "Si cette unité possède 2 pions Pillage, les ennemis à Courte Portée ou moins subissent -1 aux lancers de Test de Moral."
+            "Si cette unité possède 2 pions Pillage, les ennemis à Courte Portée ou moins subissent -1 aux lancers de Test de Moral. De plus, les ennemis qui sont activés en étant engagés avec cette unité subissent 1 Test de Panique."
         ]
     },
     "MONTRER LE CHEMIN": {
@@ -2905,19 +2905,10 @@
     },
     "ARC DE PISTEUR": {
         "effect": [
-            "Après avoir résolu cette attaque, le défenseur devient **Vulnérable**."
+            "Après avoir résolu cette Attaque, ciblez le Défenseur. Il devient **Vulnérable**."
         ],
         "icons": [
             "ranged"
-        ]
-    },
-    "PIÉTINEMENT": {
-        "effect": [
-            "Chaque fois que cette unité effectue une action de Marche, elle peut remplacer cette action par une action de Piétinement :",
-            "Elle effectue un Pivot, puis se déplace de 12” en traversant les unités. Si elle termine son déplacement sur une unité, elle s’arrête à 1” devant celle-ci. Chaque unité non individuelle traversée ou sur laquelle elle aurait dû s’arrêter subit D3 Blessures."
-        ],
-        "icons": [
-            "wounds"
         ]
     },
     "LIEN SPIRITUEL": {
@@ -3115,9 +3106,11 @@
     },
     "ÉLÉPHANT DE GUERRE": {
         "effect": [
-            "• Cette unité possède 8 Blessures et ne peut pas contrôler d’Objectif.",
-            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique.",
-            "• Chaque fois que cette unité effectue une action, si aucune Unité d’Infanterie de la Compagnie Dorée alliée n’est située à Longue Portée ou moins, elle effectue un Test de Moral. Si elle échoue, elle n’effectue pas cette action."
+            "• Cette unité possède 8 Blessures.",
+            "• Cette unité ne peut pas Contrôler d’Objectif.",
+            "• Une fois pendant son Activation, avant de choisir son Action, cette unité peut se décaler de 5\" en avant.",
+            "• Quand cette unité Charge, elle ignore tous les désavantages de terrain.",
+            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique."
         ],
         "icons": [
             "wounds8"
@@ -3134,7 +3127,7 @@
     },
     "MARTEAU DE GUERRE": {
         "effect": [
-            "Si le défenseur obtient un 1 sur n’importe quels dés de Défense, il devient **Affaibli** une fois cette attaque résolue."
+            "Une fois cette attaque résolue, le défenseur devient **Affaibli**."
         ],
         "icons": [
             "melee"
@@ -3144,7 +3137,8 @@
         "effect": [
             "• Cette unité possède 6 Blessures.",
             "• Cette unité ne peut pas contrôler d’Objectifs.",
-            "• Cette unité ne peut ni gagner de pions État, ni effectuer d’actions de Charge ou de Repli, ni se décaler."
+            "• Cette unité ne peut ni effectuer d’actions de Charge ou de Repli, ni se décaler.",
+            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique."
         ],
         "icons": [
             "wounds6"
@@ -3168,7 +3162,7 @@
     },
     "AFFAIBLIR LA VOLONTÉ": {
         "effect": [
-            "Chaque fois qu’un ennemi engagé avec cette unité échoue un Test de Panique, il devient **Affaibli**."
+            "Chaque fois qu’un ennemi engagé avec cette unité échoue un Test de Panique, vous pouvez cibler cet ennemi. Il devient **Affaibli**."
         ]
     },
     "RICHESSE DES TREIZE": {
@@ -3206,8 +3200,7 @@
     "MORSURE DE L’HIVER": {
         "effect": [
             "• **Frappe Critique**",
-            "• Si cette unité possède au moins 1 rang détruit, elle gagne +1 pour Toucher.",
-            "• Si cette unité possède 2 rangs détruits, elle peut relancer n'importe quels dés d'Attaque."
+            "• Si cette unité possède au moins 1 rang détruit, elle peut relancer n'importe quels dés d'Attaque."
         ],
         "icons": [
             "melee"
@@ -3275,6 +3268,7 @@
     "CAVALIER OUESTRIEN": {
         "effect": [
             "• Cette unité possède 3 Blessures.",
+            "• Cette unité ne peut pas subir plus de 1 Blessure quand elle échoue un Test de Panique.",
             "• Au début de son activation, cette unité peut effectuer 1 action de Manœuvre ou de Repli.",
             "• Tant que Jorah se trouve sur le champ de bataille, votre limite de cartes Tactique est augmentée de 1. Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir\n4 cartes quand vous refaites votre main."
         ],
@@ -3284,8 +3278,8 @@
     },
     "ORDRE : APPROCHE PLANIFIÉE": {
         "effect": [
-            "**Au début de n'importe quel tour :**",
-            "Ciblez 1 unité alliée située à Longue Portée ou moins. Jusqu'à la fin du tour, elle ne peut pas être ciblée par des effets ennemis ou des capacités ennemies."
+            "**Quand une unité alliée située à Longue Portée est Activée :**",
+            "Ciblez cette unité alliée. Jusqu'à la fin du tour, elle ne peut pas être ciblée par des effets ennemis ou des capacités ennemies."
         ],
         "icons": [
             "order"
@@ -3325,7 +3319,7 @@
         ],
         "icons": [
             "ranged"
-        ]    
+        ]
     },
     "ARMEMENT DE LA FRATERNITÉ": {
         "effect": [
@@ -3334,7 +3328,7 @@
         ],
         "icons": [
             "melee"
-        ]    
+        ]
     },
     "ORDRE : REPOSITIONNEMENT TROMPEUR": {
         "effect": [
@@ -3343,7 +3337,7 @@
         ],
         "icons": [
             "order"
-        ]    
+        ]
     },
     "TIR CACHÉ": {
         "effect": [
@@ -3352,7 +3346,7 @@
         ],
         "icons": [
             "ranged"
-        ]    
+        ]
     },
     "ARMEMENT DE CHEVALIER": {
         "effect": [
@@ -3374,7 +3368,7 @@
             "**• Quand cette unité effectue une Attaque de Mêlée, avant de résoudre celle-ci :**",
             "Cette attaque gagne +2 dés d'Attaque.",
             "**• Quand cette unité devrait être détruite par une Attaque de Mêlée :**",
-            "Avant d'être retirée, cette unité effectue 1 Attaque de Mêlée en utilisant sa valeur de dés la plus basse. Si cette attaque détruit le défenseur, cette unité n'est pas détruite et demeure en jeu avec 1 Blessure restante."                 
+            "Avant d'être retirée, cette unité effectue 1 Attaque de Mêlée en utilisant sa valeur de dés la plus basse. Si cette attaque détruit le défenseur, cette unité n'est pas détruite et demeure en jeu avec 1 Blessure restante."
         ],
         "icons": [
             "faith"
@@ -3410,51 +3404,409 @@
             "Tant que vous contrôlez [CROWN], cette unité gagne +1 à ses lancers de dés de Défense."
         ]
     },
-    "DANSE DE L'EAU":{
+    "DANSE DE L'EAU": {
         "effect": [
             "Chaque fois qu'un rang de cette unité est détruit par une Attaque, ciblez l'Attaquant, il devient **Vulnérable**."
         ]
-    }, 
-    "COLLECTIONNEUR DE TROPHÉES":{
+    },
+    "COLLECTIONNEUR DE TROPHÉES": {
         "effect": [
             "Cette unité peut considérer toutes les cartes de Général de Clinquefrac attachées à des unités situées à Courte Portée ou moins comme étant également attachées à cette unité."
         ],
-        "icons":[
+        "icons": [
             "wounds"
         ]
     },
-    "HACHE D'ABORDAGE":{
+    "HACHE D'ABORDAGE": {
         "effect": [
             "• **Fracasser**",
             "• Si cette unité possède 2 pions Pillage, quand elle effectue une attaque, avant de lancer les dés d'Attaque, le défenseur devient **Paniqué**."
         ]
     },
-    "HOMMES DU CAPITAINE":{
+    "HOMMES DU CAPITAINE": {
         "effect": [
             "Si Victarion Greyjoy est attaché à cette unité, elle est déployée avec 1 pion Pillage."
         ]
     },
-    "PARTISAN DU COMMANDEMENT":{
+    "PARTISAN DU COMMANDEMENT": {
         "effect": [
             "Cette unité gagne +1 à ses lancers de Tests de Moral tant qu'elle est située à Longue Portée ou moins de l'unité du Général."
         ]
     },
-    "COLÈRE DE WINTERFELL":{
+    "COLÈRE DE WINTERFELL": {
         "effect": [
             "• **Frappe Critique**",
             "• Les ennemis Chargés avec Succès par cette unité deviennent **Affaiblis**."
         ]
     },
-    "RAVITAILLEMENT DE WINTERFELL":{
-        "effect":[
+    "RAVITAILLEMENT DE WINTERFELL": {
+        "effect": [
             "• **Précision**",
             "• Tant que vous contrôlez [SWORDS], les Attaques de Mêlée de cette unité lancent leur valeur de dés la plus élevée."
         ]
     },
-    
-    "DÉFENSES AMÉLIORÉES (STARK)":{
-        "effect":[
+    "DÉFENSES AMÉLIORÉES (STARK)": {
+        "effect": [
             "Tant que vous contrôlez [HORSE], cette unité gagne +1 à ses lancers de dés de Défense."
+        ]
+    },
+    "ACIER LANNISTER": {
+        "effect": [
+            "Avant de lancer les dés d'Attaque, si cette unité a autant ou davantage de rangs restants que le Défenseur, ciblez le Défenseur. Il devient **Paniqué**, et cette Attaque gagne +1 pour Toucher."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "GARDE ROYALE": {
+        "effect": [
+            "• Cette unité comprend 8 figurines *(Joffrey compris)* et 2 Rangs.",
+            "• Chaque figurine de cette unité possède 2 Blessures.",
+            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique.",
+            "• À chaque fois que vous vous emparez de [CROWN], si cette unité a moins de 4 Bannières Baratheon, elle gagne 1 Bannière Baratheon."
+        ],
+        "icons": [
+            "wounds2"
+        ]
+    },
+    "LANCE DE PORT-LANNIS": {
+        "effect": [
+            "• **Précision**.",
+            "• Après avoir lancé les dés d'Attaque, si le Défenseur n'a pas encore été Activé ce round, cette attaque peut relancer n'importe quels dés d'Attaque."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "OEIL VIGILANT": {
+        "effect": [
+            "Quand un ennemi à Longue Portée et en Ligne de Vue est Activé, si cette unité n'a pas encore été Activée ce round, vous pouvez ciblez cet ennemi. Il devient **Vulnérable**."
+        ]
+    },
+    "ORDRE : À TOUT PRIX": {
+        "trigger": "Quand cette unité effectue une Attaque de Mêlée, avant de lancer les dés d’Attaque :",
+        "effect": [
+            "Cette Attaque lance +1 dé d'Attaque et utilise sa Valeur de dés d'Attaque la plus élevée. Après avoir complété cette attaque, cette unité devient **Vulnérable**."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "ORDRE : REPÉRER LE TERRAIN": {
+        "trigger": "Quand une unité alliée située à Longue Portée est Activée :",
+        "effect": [
+            "Ciblez cette unité alliée. Jusqu'à la fin du Tour, elle peut relancer n'importe quels dés de Distance de Charge et ignorer les désavantages de terrain."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "HACHES DE BERSERKERS": {
+        "effect": [
+            "• **Frappe Critique**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "ORDRE : TIR DE SUPPRESSION": {
+        "trigger": "Au début de n’importe quel Tour :",
+        "effect": [
+            "Ciblez 1 ennemi situé à Longue Portée et en Ligne de Vue. Il devient **Vulnérable** et, jusqu'à la fin du tour, ne peut pas être la cible d'Ordres ennemis ni de Cartes Tactiques ennemies."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "SALVE DE CHASSEUR": {
+        "effect": [
+            "• **Précision**",
+            "• Ignore les unités et les terrains quand elle détermine sa Ligne de Vue."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "ORDRE : FUREUR DES OURSES": {
+        "trigger": "Au début d’un tour allié :",
+        "effect": [
+            "Ciblez 1 ennemi situé à Longue Portée. Il effectue un Test de Moral avec -1 au lancer pour chacun des rangs restants de cette unité. En cas d'Échec, il devient **Paniqué** et **Vulnérable**."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "PUISSANCE INDOMPTABLE": {
+        "effect": [
+            "• Les défenseurs ne lancent pas de dés de Défense.",
+            "• Quand cette unité charge, le Défenseur devient **Affaibli**.",
+            "• Lance +1 dé d'Attaque pour chaque Blessure subie par Wun Wun (maximum +3).",
+            "• Après cette Attaque résolue, Wun Wun peut soigner 1 de ses Blessures."
+        ],
+        "icons": [
+            "melee",
+            "wounds"
+        ]
+    },
+    "RÉPUTATION DORÉE": {
+        "effect": [
+            "Après qu'un ennemi a résolu une Attaque de Mêlée sur cette unité, si cet ennemi n'a pas davantage de rangs que cette unité, ciblez cete ennemi. Il devient **Paniqué** et **Vulnérable**."
+        ]
+    },
+    "VIE ET HONNEUR POUR LA GARDE": {
+        "effect": [
+            "Si cette unité échoue un Test de Panique, elle ne défausse qu'une carte Garde de Nuit attachée, au lieu de toutes."
+        ]
+    },
+    "PROUESSE DE VÉTÉRAN": {
+        "effect": [
+            "Les ennemis engagés avec cette unité subissent -1 pour Toucher et, chaque fois que cette unité est Attaquée par une Attaque de Mêlée, l'Attaquant subit 1 Touche pour chaque Échec."
+        ]
+    },
+    "TREMPE DU CERF": {
+        "effect": [
+            "À partir du Round 4, cette unité gagne +1 aux lancers de Dés de Défense et +1 aux lancers de Tests de Moral."
+        ]
+    },
+    "PUNIR LA LÂCHETÉ": {
+        "effect": [
+            "Après qu'un ennemi engagé avec cette unité a résolu une Action de Repli, ciblez cet ennemi. Il devient **Vulnérable** et **Affaibli**."
+        ]
+    },
+    "FIDÈLE": {
+        "effect": [
+            "Cette unité commence la partie avec 1 **pion Foi**. Chaque fois qu’elle réussit un Test de Moral ou qu'un ennemi situé à Longue Portée est détruit, elle gagne 1 pion Foi. Elle ne peut avoir qu'un maximum de 3 pions Foi."
+        ],
+        "icons": [
+            "fire"
+        ]
+    },
+    "LAME DE LA FOI": {
+        "effect": [
+            "• **Cruel**",
+            "• Avant de lancer les dés d'Attaque, cette unité peut dépenser un pion Foi. Si elle le fait, ciblez le Défenseur. Il devient **Paniqué** et **Vulnérable**.",
+            "• Après avoir lancé les dés d'Attaque, cette unité peut dépenser un pion Foi pour relancer n'importe quels dés d'Attaque.",
+            "• Après avoir résolu cette Attaque, cette unité peut dépenser un pion Foi pour soigner 2 Blessures, +1 Blessure pour chacun de ses rangs détruits."
+        ],
+        "icons": [
+            "fire",
+            "melee"
+        ]
+    },
+    "ARBALÈTE DE HAUTJARDIN": {
+        "effect": [
+            "• **Précision**",
+            "• **Fracasser**"
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "ORDRE : AVANCEZ LA LIGNE !": {
+        "trigger": "Au début du Round:",
+        "effect": [
+            "Ciblez 1 unité alliée située à Longue Portée, elle se décale de 2\" vers l'avant."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "GARDE ARC-EN-CIEL": {
+        "effect": [
+            "• Cette unité comprend 8 figurines *(Renly compris)* et 2 Rangs.",
+            "• Chaque figurine de cette unité possède 2 Blessures.",
+            "• Cette unité ne peut pas subir plus de 2 Blessures quand elle échoue un Test de Panique.",
+            "• À chaque fois que vous vous emparez de [CROWN], si cette unité a moins de 4 Bannières Baratheon, elle gagne 1 Bannière Baratheon."
+        ],
+        "icons": [
+            "wounds2"
+        ]
+    },
+    "CIMETERRE (RETINUE)": {
+        "effect": [
+            "• **Frappe Critique**",
+            "• **Fracasser**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "TOURS DE PITRE": {
+        "effect": [
+            "• **Cruel**",
+            "• Avant de lancer les dés d'Attaque, ciblez le Défenseur. Jusqu'à la fin de l'Attaque, le Défenseur perd toutes ses capacités.",
+            "• Après avoir résolu cette Attaque, cette unité peut effectuer une Action de Repli et peut relancer n'importe quels dés de Distance de Repli. Si elle le fait, ciblez n'importe quel nombre d'ennemis dont elle s'est désengagée. Ils deviennent **Affaiblis**."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "TIRAILLEUR": {
+        "effect": [
+            "Les ennemis qui chargent cette unité ne gagnent pas de Bonus de Charge. Quand cette unité est Activée, si elle n'est pas déjà engagée, elle peut pivoter dans n'importe quelle direction."
+        ]
+    },
+    "ARTIFICES DE PITRE": {
+        "effect": [
+            "Avant de lancer les dés d'Attaque, choisissez 1 option, +1 option pour chaque pion État du Défenseur :",
+            "• **Frappe Critique**",
+            "• **Fracasser**",
+            "• **Cruel**",
+            "•  Cette attaque peut relancer n'importe quels dés d'Attaque."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "TACTIQUES DE HARCÈLEMENT": {
+        "effect": [
+            "Après que cette unité a résolu une Action de Manoeuvre, vous pouvez cibler 1 ennemi situé à Courte Portée de cette unité. Il devient **Vulnérable**."
+        ]
+    },
+    "FLÉAU & BOUCLIER": {
+        "effect": [
+            "• **Précision**",
+            "• **Cruel**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "FLÉAU DE GUERRE (BOLTON)": {
+        "effect": [
+            "• **Précision**",
+            "• **Cruel**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "EUPHORIE SADIQUE": {
+        "effect": [
+            "Avant de lancer les dés d'Attaque, vous pouvez dépenser 1 pion Paniqué du Défenseur et cibler cette unité. Si vous le faites, cette Attaque utilise la valeur de dés d'Attaque la plus élevée et peut relancer n'importe quels dés d'Attaque."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "PLAISIR CRUEL": {
+        "effect": [
+            "Quand un ennemi engagé avec cette unité gagne un pion État, cette unité peut soigner 2 Blessures."
+        ]
+    },
+    "MON NOM EST SCHLINGUE !": {
+        "effect": [
+            "Quand cette unité est Activée, ciblez n'importe quel nombre d'ennemis situés à Courte Portée de cette unité. Ils deviennent **Paniqués**."
+        ]
+    },
+    "CRUAUTÉ CALCULÉE": {
+        "effect": [
+            "Avant de lancer les dés d'Attaque, vous pouvez dépenser 1 pion État du Défenseur et le cibler. Si vous le faites, jusqu'à la fin du Tour, il perd toutes ses capacités et ne peut pas être ciblé par des cartes Tactiques alliées."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "RÉPUTATION INTIMIDANTE": {
+        "effect": [
+            "Quand un ennemi à Longue Portée est Activé, vous pouvez le cibler. Si vous le faites, il effectue 1 Test de Moral avec -1 au lancer pour chacun des rangs restants de cette unité. En cas d'Échec, il devient **Affaibli**."
+        ]
+    },
+    "BRUTALITÉ CHEVRONNÉE": {
+        "effect": [
+            "Avant de lancer les dés d'Attaque, cette Attaque lance +1 dé d'Attaque pour chaque pion État du Défenseur, pour un maximum de +2 dés."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "COMBATTANT AGUERRI": {
+        "effect": [
+            "Cette unité subit -1 Blessure lorsqu'elle échoue un Test de Panique, pour un minimum de 1."
+        ]
+    },
+    "LOYAUTÉ DANS LE SERVICE": {
+        "effect": [
+            "Tant que votre adversaire ne contrôle pas [CROWN], cette unité peut relancer n'importe quels dés de Défense."
+        ]
+    },
+    "ORDRE : DANSE !!!": {
+        "trigger": "Au début de n’importe quel Tour :",
+        "effect": [
+            "Cette unité effectue une Manœuvre de 3 [MOVEMENT]. Ensuite, elle devient **Vulnérable**."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
+    "MAÎTRE ÉCORCHEUR": {
+        "effect": [
+            "• Les Attaques de Mêlée de cette unité gagnent **Précision**.",
+            "• Après avoir lancé les dés d'Attaque, vous pouvez dépenser 1 pion **Affaibli** du défenseur pour relancer n'importe quels dés d'Attaque."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "TÉNACITÉ SADIQUE": {
+        "effect": [
+            "Après avoir lancé les dés de Défense, cette unité bloque 1 Touche, +1 Touche pour chaque pion État de l'Attaquant."
+        ]
+    },
+    "BRUTALITÉ OPPORTUNISTE": {
+        "effect": [
+            "Avant de lancer les dés d'Attaque, si le Défenseur n'a pas encore été activé ce Round, cette attaque utilise la plus haute valeur de dés d'Attaque et gagne **Frappe Critique** jusqu'à la fin du Tour."
+        ],
+        "icons": [
+            "melee",
+            "ranged"
+        ]
+    },
+    "EXPLOITER LA FAIBLESSE": {
+        "effect": [
+            "Les pions **Affaibli** sur les ennemis engagés avec cette unité peuvent être traités et dépensés comme s'ils étaient des pions **Vulnérable** ou **Paniqué**."
+        ]
+    },
+    "FÉROCITÉ DU CHIEN FOU": {
+        "effect": [
+            "Après qu'un ennemi a résolu une Attaque de Mêlée sur cette unité, vous pouvez cibler cet ennemi. Il devient **Paniqué** ou **Vulnérable**."
+        ]
+    },
+    "RAGE SAUVAGE": {
+        "effect": [
+            "• Les Attaques de Mêlée de cette unité gagnent **Fracasser**.",
+            "• Quand cette unité Charge, elle lance 1 dé de Distance de Charge supplémentaire et ignore le plus petit résultat."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "EXPLOITER LA PEUR": {
+        "effect": [
+            "Les pions **Paniqué** sur les ennemis engagés avec cette unité peuvent être traités et dépensés comme s'ils étaient des pions **Vulnérable** ou **Affaibli**."
+        ]
+    },
+    "PIÉTINEMENT": {
+        "effect": [
+            "• Les défenseurs ne lancent pas de dés de Défense.",
+            "• En charge, cette attaque gagne +1 dé d'Attaque pour chaque rang restant du Défenseur."
+        ],
+        "icons": [
+            "wounds",
+            "melee"
+        ]
+    },
+    "FEU DE R'HLLOR": {
+        "effect": [
+            "• **Cruel**",
+            "• Si le Défenseur échoue son Test de Panique, il subit +1 Blessure pour chaque unité R'hllor ennemie située à Longue Portée.",
+            "• Si l'Attaque détruit le Défenseur, avant de le retirer, ciblez tous les ennemis à Longue Portée. Ils deviennent **Vulnérables**.",
+            "• Après avoir résolu cette Attaque, vous pouvez cibler 1 unité R'hllor alliée située à Longue Portée. Elle soigne 2 Blessures."
+        ],
+        "icons": [
+            "ranged"
         ]
     }
 }

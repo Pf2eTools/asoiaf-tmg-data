@@ -9,7 +9,7 @@
             "id": "10801",
             "name": "Ravageurs Fer-nés",
             "faction": "greyjoy",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Haches de Ravageurs",
@@ -29,7 +29,7 @@
             ],
             "defense": 5,
             "morale": 7,
-            "speed": 5,
+            "speed": 6,
             "cost": 5,
             "tray": "infantry",
             "fluff": {
@@ -83,7 +83,7 @@
             "id": "10803",
             "name": "Faucheurs de la Maison Harloi",
             "faction": "greyjoy",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Bardiche",
@@ -180,11 +180,11 @@
             "id": "10806",
             "name": "Élus des Noirmarées",
             "faction": "greyjoy",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Partager le Butin",
-                "Premiers Servis"
+                "Ordre : Sentinelle",
+                "Ordre : Mur de Boucliers"
             ],
             "attacks": [
                 {
@@ -193,7 +193,7 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -212,7 +212,7 @@
             "id": "10807",
             "name": "Hommes du Silence",
             "faction": "greyjoy",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Grande Hache",
@@ -245,7 +245,7 @@
             "id": "10808",
             "name": "Les Noyés",
             "faction": "greyjoy",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Bénédiction du Dieu Noyé",
@@ -262,7 +262,7 @@
                 }
             ],
             "defense": 6,
-            "morale": 5,
+            "morale": 4,
             "speed": 5,
             "cost": 4,
             "tray": "solo",
@@ -270,7 +270,7 @@
                 "lore": "Uniquement protégés par leur foi, et armés de gourdins en bois flotté ou d’autres détritus glanés sur le rivage, les Noyés apportent un soutien étonnamment efficace à ceux qui combattent sous la bannière de la Seiche. Leur présence sur le champ de bataille est le signe de la bénédiction du Dieu Noyé, encourageant les hommes à faire fi de leurs blessures et à combattre avec un acharnement renouvelé. Bien qu’ils soient peu nombreux, les Noyés puisent une telle force dans leur foi qu’ils sont capables de résister à des coups mortels."
             },
             "icon": "infantry",
-            "wounds": 3
+            "wounds": 4
         },
         {
             "id": "10809",
@@ -392,14 +392,14 @@
             "id": "30803",
             "name": "Balon Greyjoy",
             "faction": "greyjoy",
-            "version": "S06",
+            "version": "S07",
             "role": "ncu",
             "title": "Roi du Sel et du Roc",
             "abilities": [
                 {
                     "name": "Se Relever, la Lame à la Main",
                     "effect": [
-                        "Une fois par partie, quand Balon est activé, au lieu de le faire s’emparer d’une zone, redéployez 1 Unité Combattante précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée ou entièrement à Courte Portée ou moins d’un Flanc de table. Elle se déploie sans les pions Pillage qu’elle possédait. Si l’unité n’avait pas encore été activée ce round-ci, elle est déployée non activée. Dans le cas contraire, elle est déployée activée."
+                        "Une fois par partie, quand Balon s'empare d'une zone, vous pouvez remplacer l'effet de cette zone par : *Redéployez 1 Unité Combattante de la maison Greyjoy précédemment détruite entièrement à Longue Portée ou moins d’une Zone de Déploiement alliée. Elle se déploie sans les pions Pillage qu’elle possédait. Si l’unité n’avait pas encore été activée ce round-ci, elle est déployée non activée. Dans le cas contraire, elle est déployée activée.*"
                     ]
                 }
             ],
@@ -438,16 +438,16 @@
             "id": "30805",
             "name": "Erik Forgefer",
             "faction": "greyjoy",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Le Juste",
             "abilities": [
                 {
                     "name": "Cadeaux de Fer, d'Or et d'Acier",
                     "effect": [
-                        "Au début de la partie, placez 1 pion Pillage sur Erik.",
+                        "Au début de la partie, placez 2 pions Pillage sur Erik et 1 pion Pillage sur une Unité Combattante Greyjoy alliée.",
                         "Quand Erik ou une UNC ennemie s’empare de [MONEY], placez 1 pion Pillage sur Erik.",
-                        "Quand Erik s’empare d’une zone autre que [MONEY], vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité Greyjoy alliée."
+                        "Quand Erik s’empare d’une zone, vous pouvez retirer 1 pion Pillage de sa carte et le placer sur 1 unité Greyjoy alliée."
                     ]
                 }
             ],
@@ -487,23 +487,27 @@
             "id": "30807",
             "name": "Moqorro",
             "faction": "greyjoy",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "La Flamme Noire",
             "abilities": [
                 {
+                    "name": "Visions dans les Flammes",
+                    "effect": [
+                        "Une fois par partie, au début d'un Tour, vous pouvez cibler votre adversaire. Si vous le faites, jusqu'à la fin du Tour, cet adversaire ne pourra jouer ni cartes Tactiques ni Ordres."
+                    ]
+                },
+                {
                     "name": "La Magie de R'hllor",
                     "effect": [
-                        "Une fois par partie, au début d’un tour, vous pouvez utiliser cette capacité. Si vous le faites, jusqu’à la fin du tour, votre adversaire ne peut pas utiliser d’Ordres ou de cartes Tactique.",
-                        "Une fois par partie, quand Moqorro s’empare d’une zone, vous pouvez remplacer l’effet de cette zone par :",
-                        "*Remettez en jeu 1 Attachement déjà détruit et attachez-le à une Unité Combattante alliée, en remplaçant normalement une figurine, mais en ignorant les restrictions d’Attachement.*"
+                        "Une fois par partie, quand une unité Combattante aliée est Activée, vous pouvez cibler cette unité. Si vous le faites, placez 1 Attachement précédemment détruit dans cette unité, en remplaçant une figurine mais en ignorant les restrictions habituelles."
                     ]
                 }
             ],
             "cost": 4,
             "character": true,
             "fluff": {
-                "quote": "« Qu’est-ce qui te fait raconter que cet homme est un conjurateur ? Je ne vois qu’un prêtre rouge en loques » – Victartion Greyjoy à Rodrick Sparr"
+                "quote": "« Qu’est-ce qui te fait raconter que cet homme est un conjurateur ? Je ne vois qu’un prêtre rouge en loques » – Victarion Greyjoy à Rodrik Sparr"
             }
         },
         {
@@ -1244,7 +1248,7 @@
             "id": "40812",
             "name": "Ordres d'assaut",
             "faction": "greyjoy",
-            "version": "2021",
+            "version": "S06",
             "role": "tactics",
             "text": [
                 {

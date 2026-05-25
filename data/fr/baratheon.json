@@ -9,11 +9,11 @@
             "id": "10601",
             "name": "Chevaliers du Cerf",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Résilience",
-                "Fureur du Cerf"
+                "Fureur du Cerf",
+                "Trempe du Cerf"
             ],
             "attacks": [
                 {
@@ -22,8 +22,8 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        6,
-                        5
+                        7,
+                        7
                     ]
                 }
             ],
@@ -41,9 +41,10 @@
             "id": "10602",
             "name": "Gardiens Baratheon",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Ordre : Tenez Bon !",
                 "Marteau de Guerre",
                 "Riposte"
             ],
@@ -77,7 +78,8 @@
             "role": "unit",
             "abilities": [
                 "Ordre : Sentinelle",
-                "Doubles Marteaux"
+                "Doubles Marteaux",
+                "Tomber au Combat"
             ],
             "attacks": [
                 {
@@ -86,8 +88,8 @@
                     "hit": 4,
                     "dice": [
                         7,
-                        5,
-                        4
+                        6,
+                        5
                     ]
                 }
             ],
@@ -144,10 +146,11 @@
             "id": "10605",
             "name": "Fidèles de R'hllor",
             "faction": "baratheon",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Cœur Ardent"
+                "Fidèle",
+                "Lame de la Foi"
             ],
             "attacks": [
                 {
@@ -186,11 +189,12 @@
             "id": "10606",
             "name": "Champions du Cerf",
             "faction": "baratheon",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalerie",
-                "Colère du Champion"
+                "Colère du Champion",
+                "Punir la Lâcheté"
             ],
             "attacks": [
                 {
@@ -199,12 +203,12 @@
                     "hit": 3,
                     "dice": [
                         6,
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 2,
-            "morale": 6,
+            "morale": 5,
             "speed": 4,
             "cost": 8,
             "tray": "cavalry",
@@ -348,19 +352,19 @@
             "id": "10610",
             "name": "Illuminés de R'hllor",
             "faction": "baratheon",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Flèches Enflammées"
+                "Feu de R'hllor"
             ],
             "attacks": [
                 {
-                    "name": "Flèches Enflammées",
+                    "name": "Feu de R'hllor",
                     "type": "long",
                     "hit": 3,
                     "dice": [
                         7,
-                        6,
+                        7,
                         4
                     ]
                 },
@@ -396,21 +400,21 @@
             "id": "10611",
             "name": "Garde des Épines",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Arbalète du Gardien",
-                "Frappe Éclair",
-                "Regroupement"
+                "Ordre : État d’alerte",
+                "Arbalète de Hautjardin",
+                "Tirailleur"
             ],
             "attacks": [
                 {
-                    "name": "Arbalète du Gardien",
-                    "type": "short",
+                    "name": "Arbalète de Hautjardin",
+                    "type": "long",
                     "hit": 3,
                     "dice": [
-                        6,
-                        5,
+                        7,
+                        7,
                         4
                     ]
                 },
@@ -420,7 +424,7 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -428,7 +432,7 @@
             "defense": 5,
             "morale": 6,
             "speed": 6,
-            "cost": 6,
+            "cost": 7,
             "tray": "infantry",
             "back_text": [
                 {
@@ -449,14 +453,15 @@
             "version": "S05",
             "role": "unit",
             "abilities": [
+                "Ordre : Repli Éclair",
                 "Cavalerie",
-                "Lance de Hautjardin"
+                "Lance"
             ],
             "attacks": [
                 {
-                    "name": "Lance de Hautjardin",
+                    "name": "Lance",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         5,
                         4
@@ -524,11 +529,10 @@
             "id": "10614",
             "name": "Garde Arc-en-Ciel",
             "faction": "baratheon",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Résilience",
-                "Escorte de Renly",
+                "Garde Arc-en-ciel",
                 "Cri de Ralliement"
             ],
             "attacks": [
@@ -556,15 +560,17 @@
             "fluff": {
                 "lore": "La Garde Arc-en-Ciel du Roi Renly Baratheon réunit ses plus redoutables et fidèles lieutenants. Ces chevaliers sont au service du cadet des Baratheon et lui ont prêté allégeance. Lorsqu’ils se rassemblent sur le champ de bataille, ils constituent le noyau dur des forces de Renly, capables de tenir la ligne de front comme de prendre de flanc les ennemis à découvert. Mais le plus important est peut-être qu’ils incarnent l’espoir et la foi envers la cause du Roi Renly, ainsi que son ambition d’unifier tout Westeros sous sa bannière."
             },
-            "icon": "infantry"
+            "icon": "infantry",
+            "wounds": 2
         },
         {
             "id": "10615",
             "name": "Hallebardiers Baratheon",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Ordre : Avancez la ligne !",
                 "Ordre : Provocation",
                 "Hallebarde"
             ],
@@ -572,7 +578,7 @@
                 {
                     "name": "Hallebarde",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         7,
@@ -582,7 +588,7 @@
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 5,
+            "speed": 4,
             "cost": 6,
             "tray": "infantry",
             "fluff": {
@@ -654,16 +660,14 @@
             "id": "30602",
             "name": "Shyra Errol",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Dame du Fenil",
             "abilities": [
                 {
-                    "name": "Soutien du Fenil",
+                    "name": "Détermination du Fenil",
                     "effect": [
-                        "Chaque fois que Shyra s’empare de [CROWN], soignez 1 Blessure de 1 Unité Combattante alliée.",
-                        "Chaque fois que Shyra s’empare de [LETTER], retirez 1 pion État de 1 Unité Combattante alliée.",
-                        "Chaque fois que Shyra s’empare de [MONEY], si vous retirez un pion, placez 1 pion État du même type sur 1 Unité Combattante ennemie."
+                        "Une fois par Round, si Shyra s'est emparée d'une zone et que l'une de vos Unités Combattantes engagées est ciblée par une Capacité d'UNC, un effet de zone ou une carte Tactique, vous pouvez cibler n'importe quel nombre d'ennemis engagés avec cette unité. Ils deviennent **Vulnérables** et subissent 1 Touche par rang restant dans votre unité."
                     ]
                 }
             ],
@@ -677,7 +681,7 @@
             "id": "30603",
             "name": "Mélisandre",
             "faction": "baratheon",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "La Femme Rouge",
             "abilities": [
@@ -685,8 +689,11 @@
                     "name": "Sacrifice au Seigneur de la Lumière",
                     "effect": [
                         "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                        "Quand Mélisandre Influence une unité alliée, vous pouvez faire subir 2 Blessures et 1 Test de Panique à celle-ci. Si vous le faites, ciblez 1 Unité Combattante ennemie à Longue Portée ou moins. Cet ennemi subit 1 Test de Panique avec −2 au lancer et +2 Blessure en cas d’échec.",
-                        "Tant que Mélisandre Influence une unité alliée, celle-ci est une unité R’hllor et ses Attaques de Mêlée gagnent **Cruel**."
+                        "Quand Mélisandre Influence une unité alliée, vous pouvez lui faire subir jusqu'à 2 Blessures. Elle gagne 1 effet tant qu'elle est influencée par Mélisandre, +1 par Blessure subie :",
+                        "• Cette unité gagne +2 à ses lancers de Tests de Moral.",
+                        "• Les Attaques de Mêlée de cette unité gagnent **Cruel**.",
+                        "• Quand cette unité effectue une Attaque de Mêlée, avant de lancer les dés d'Attaque, ciblez le Défenseur, il devient **Vulnérable**.",
+                        "• Quand cette unité est Activée, ciblez n'importe quel nombre d'ennemis situés à Courte Portée, ils deviennent **Paniqués**."
                     ]
                 }
             ],
@@ -707,14 +714,14 @@
             "id": "30604",
             "name": "Davos Mervault",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Main du Roi Légitime",
             "abilities": [
                 {
                     "name": "Ruse du Contrebandier",
                     "effect": [
-                        "Davos commence le jeu avec 3 pions Ordre sur sa carte.",
+                        "Davos commence le jeu avec 4 pions Ordre sur sa carte.",
                         "Chaque fois qu’une unité alliée Charge, après avoir lancé les dés de Distance de Charge, vous pouvez retirer 1 pion Ordre de Davos. Si vous le faites, vous pouvez relancer n’importe quels dés de Distance de Charge.",
                         "Chaque fois qu’une unité alliée est activée, vous pouvez retirer 1 pion Ordre de Davos. Si vous le faites, jusqu’à la fin du tour, les ennemis engagés avec cette unité ne peuvent pas utiliser d’Ordres ou être ciblés par des cartes Tactique alliées."
                     ]
@@ -806,14 +813,15 @@
             "id": "30608",
             "name": "Margaery Tyrell",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "La Petite Rose",
             "abilities": [
                 {
                     "name": "Une Rose et ses Épines",
                     "effect": [
-                        "Chaque fois que Margaery s’empare d’une zone, vous pouvez cibler 1 Unité Combattante alliée. Elle soigne 1 de ses Blessures. Vous pouvez ensuite cibler 1 ennemi engagé avec cette unité. Il devient **Vulnérable**."
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que cette carte influence une unité alliée, chaque fois que cette unité soigne une ou plusieurs de ses Blessures, vous pouvez cibler 1 ennemi engagé avec cette unité. Cet ennemi subit 1 Touche pour chaque Blessure soignée, pour un maximum de 3."
                     ]
                 }
             ],
@@ -864,13 +872,14 @@
             "id": "30610",
             "name": "Eldon Estremont",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Chevalier Vénérable",
             "abilities": [
                 {
                     "name": "Sagesse de L’Âge",
                     "effect": [
+                        "Une fois par partie, quand Eldon s'empare d'une zone, vous pouvez aller chercher 1 carte Tactique dans votre paquet Tactique et la placer dans votre main. Mélangez votre paquet Tactique.",
                         "Chaque fois qu’Eldon s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
                         "*Piochez 3 cartes Tactique, puis mélangez 1 carte de votre main dans votre paquet Tactique.*"
                     ]
@@ -926,14 +935,14 @@
             "id": "30613",
             "name": "Cressen",
             "faction": "baratheon",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Mestre de Peyredragon",
             "abilities": [
                 {
                     "name": "Sacrifice pour le Roi",
                     "effect": [
-                        "Au début de n’importe quel round, vous pouvez activer Cressen. Si vous le faites, détruisez Cressen à la fin du round."
+                        "Au début de n’importe quel Round, vous pouvez activer Cressen. Si vous le faites, détruisez Cressen à la fin du Round."
                     ]
                 },
                 {
@@ -944,7 +953,7 @@
                     ]
                 }
             ],
-            "cost": 5,
+            "cost": 4,
             "character": true,
             "back_text": [
                 {

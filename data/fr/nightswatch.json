@@ -9,12 +9,12 @@
             "id": "10501",
             "name": "Vétérans de la Garde",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Armes Doubles",
-                "Riposte",
-                "Déstabilisation"
+                "Vie et Honneur pour la Garde",
+                "Prouesse de Vétéran"
             ],
             "attacks": [
                 {
@@ -24,7 +24,7 @@
                     "dice": [
                         7,
                         6,
-                        5
+                        6
                     ]
                 }
             ],
@@ -42,7 +42,7 @@
             "id": "10502",
             "name": "Frères Jurés",
             "faction": "nightswatch",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Entraînement Martial",
@@ -55,8 +55,8 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
-                        4
+                        6,
+                        5
                     ]
                 }
             ],
@@ -154,11 +154,12 @@
             "id": "10505",
             "name": "Patrouilleurs Chasseurs",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Tir Rapide",
-                "Frappe Éclair"
+                "Frappe Éclair",
+                "Tirailleur"
             ],
             "attacks": [
                 {
@@ -196,7 +197,7 @@
             "id": "10506",
             "name": "Scorpion et Équipe de Constructeurs",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Machine de Guerre",
@@ -214,7 +215,7 @@
                 {
                     "name": "Armes de l'Équipage",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 5,
                     "dice": [
                         3
                     ]
@@ -241,7 +242,7 @@
             "id": "10507",
             "name": "Mangonneau des Constructeurs",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Machine de Guerre",
@@ -251,9 +252,9 @@
                 {
                     "name": "Tir de Rocher",
                     "type": "long",
-                    "hit": 4,
+                    "hit": 6,
                     "dice": [
-                        2
+                        1
                     ]
                 },
                 {
@@ -268,7 +269,7 @@
             "defense": 5,
             "morale": 5,
             "speed": 1,
-            "cost": 8,
+            "cost": 6,
             "tray": "warmachine",
             "back_text": [
                 {
@@ -328,7 +329,7 @@
             "id": "10509",
             "name": "Recrues",
             "faction": "nightswatch",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Assistance",
@@ -349,7 +350,7 @@
             "defense": 5,
             "morale": 7,
             "speed": 5,
-            "cost": 5,
+            "cost": 4,
             "tray": "infantry",
             "fluff": {
                 "lore": "Généralement dépenaillées et souvent indisciplinées, les Recrues de la Garde de Nuit sont la lie de tout Westeros. Bien que la Garde ait pour habitude d’entraîner ses recrues avant de les envoyer au front, il peut arriver que chaque homme valide soit appelé à défendre le Mur. Contre un adversaire de taille, un général avisé saura ne pas trop se reposer sur les Recrues, susceptibles d’être mises en déroute au premier signe de résistance."
@@ -360,7 +361,7 @@
             "id": "10510",
             "name": "Maréchal de la Garde",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Repositionnement Tactique",
@@ -379,7 +380,7 @@
             "defense": 4,
             "morale": 3,
             "speed": 6,
-            "cost": 4,
+            "cost": 3,
             "tray": "solo",
             "back_text": [
                 {
@@ -502,14 +503,15 @@
             "id": "30501",
             "name": "Bowen Marsh",
             "faction": "nightswatch",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Premier Intendant",
             "abilities": [
                 {
                     "name": "Compter et Mesurer",
                     "effect": [
-                        "Chaque fois que Bowen s’empare d’une zone, vous pouvez regarder les 2 premières cartes de votre paquet Tactique. Prenez 1 de ces cartes en main et placez l’autre au bas de votre paquet Tactique."
+                        "Chaque fois que Bowen s’empare d’une zone, vous pouvez regarder les 2 premières cartes de votre paquet Tactique. Prenez 1 de ces cartes en main et placez l’autre au bas de votre paquet Tactique.",
+                        "Chaque fois qu'une unité de la Garde de Nuit est détruite, vous pouvez récupérer une carte attachée de la Garde de Nuit de cette unité et la remettre dans votre main."
                     ]
                 }
             ],
@@ -544,7 +546,7 @@
             "id": "30503",
             "name": "Jeor Mormont",
             "faction": "nightswatch",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Le Vieil Ours",
             "abilities": [
@@ -552,8 +554,7 @@
                     "name": "Devoir Envers les Royaumes Humains",
                     "effect": [
                         "Chaque fois que Jeor s’empare d’une zone, vous pouvez cibler 2 unités de la Garde de Nuit . Déplacez 1 carte Tactique alliée attachée de l’une de ces unités à l’autre.",
-                        "Une fois par partie, quand Jeor s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                        "*Dans votre défausse Tactique, cherchez 1 carte pouvant être attachée à une unité et attachez-la à une unité de la Garde de Nuit alliée.*"
+                        "Une fois par partie, au début d'un Tour, vous pouvez prendre depuis votre défausse Tactique 1 carte pouvant être attachée et l'attacher à une unité de la Garde de Nuit alliée."
                     ]
                 }
             ],
@@ -647,14 +648,16 @@
             "id": "30509",
             "name": "Samwell Tarly",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Érudit Poltron",
             "abilities": [
                 {
                     "name": "Le Savoir, C'est le Pouvoir",
                     "effect": [
-                        "Augmentez votre limite de cartes Tactique de +1. Vous commencez la partie avec 4 cartes et vous repiochez jusqu’à 4 cartes quand vous refaites votre main."
+                        "Augmentez votre limite de cartes Tactique de +1. Vous commencez la partie avec 4 cartes et vous repiochez jusqu’à 4 cartes quand vous refaites votre main.",
+                        "Samwell commence la partie avec 2 pions Ordre.",
+                        "Chaque fois qu'une unité alliée effectue une Attaque, avant de lancer les dés d'Attaque, vous pouvez retirer 1 pion Ordre de Samwell, si vous le faites, ciblez le Défenseur. Il devient **Vulnérable**."
                     ]
                 }
             ],
@@ -705,7 +708,7 @@
             "id": "30511",
             "name": "Craster",
             "faction": "nightswatch",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Allié de la Garde",
             "abilities": [
@@ -713,8 +716,8 @@
                     "name": "Le Gîte et le Couvert",
                     "effect": [
                         "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
-                        "Chaque fois que Craster Influence une unité, retirez 1 pion État de celle-ci.",
-                        "Tant qu’elle est influencée, l’unité ignore les mots-clés Difficile et Entravant."
+                        "Chaque fois que Craster Influence une unité alliée, retirez 1 pion État de celle-ci.",
+                        "Tant que cette carte Influence une unité alliée, l’unité ignore les mots-clés Difficile et Entravant et ne peut pas être ciblée par les cartes Tactiques ennemies ou par les zones ennemies du Tableau Stratégique."
                     ]
                 }
             ],

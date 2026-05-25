@@ -9,9 +9,10 @@
             "id": "10201",
             "name": "Épées Liges Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Ordre : À Tout Prix",
                 "Morsure de l’Hiver",
                 "Tomber au Combat"
             ],
@@ -41,21 +42,21 @@
             "id": "10202",
             "name": "Cavaliers Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Ordre : Repérer le Terrain",
                 "Ordre : Repositionnement Tactique",
-                "Cavalerie",
-                "Embuscade"
+                "Cavalerie"
             ],
             "attacks": [
                 {
                     "name": "Lame de Cavalerie",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        4
+                        5
                     ]
                 }
             ],
@@ -74,10 +75,12 @@
             "id": "10203",
             "name": "Berserkers de la Maison Omble",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ferveur du Berserker"
+                "Ferveur du Berserker",
+                "Haches de Berserkers",
+                "Assaut Féroce"
             ],
             "attacks": [
                 {
@@ -143,14 +146,15 @@
             "id": "10205",
             "name": "Archers Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Volée de Flèches"
+                "Ordre : Tir de Suppression",
+                "Salve de Chasseur"
             ],
             "attacks": [
                 {
-                    "name": "Volée de Flèches",
+                    "name": "Salve de Chasseur",
                     "type": "long",
                     "hit": 3,
                     "dice": [
@@ -254,11 +258,11 @@
             "id": "10208",
             "name": "Grandes Haches de la Maison Omble",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Fureur du Bourreau",
-                "Assaut Féroce"
+                "Se Nourrir de la Peur"
             ],
             "attacks": [
                 {
@@ -266,8 +270,8 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
+                        7,
                         6,
-                        5,
                         4
                     ]
                 }
@@ -365,9 +369,10 @@
             "id": "10212",
             "name": "Garde d'Honneur d'Eddard",
             "faction": "stark",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
+                "Ordre : À Tout Prix",
                 "Morsure de l’Hiver",
                 "Tomber au Combat"
             ],
@@ -403,12 +408,12 @@
             "id": "10213",
             "name": "Cavaliers de la Maison Tully",
             "faction": "stark",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalerie",
                 "Lance",
-                "Bannière de Ralliement"
+                "Ténacité Acharnée"
             ],
             "attacks": [
                 {
@@ -436,21 +441,21 @@
             "id": "10214",
             "name": "Ourses de la Maison Mormont",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Cri de Guerre",
+                "Ordre : Fureur des Ourses",
                 "Frappe Résolue"
             ],
             "attacks": [
                 {
                     "name": "Frappe Résolue",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        6,
-                        5
+                        5,
+                        4
                     ]
                 }
             ],
@@ -716,16 +721,16 @@
             "id": "30204",
             "name": "Eddard Stark",
             "faction": "stark",
-            "version": "2021-S01",
+            "version": "S07",
             "role": "ncu",
             "title": "Gouverneur du Nord",
             "abilities": [
                 {
                     "name": "Courage Face à la Mort",
                     "effect": [
-                        "Eddard commence la partie avec 4 pions Ordre sur sa carte.",
+                        "Eddard commence la partie avec 3 pions Ordre sur sa carte.",
                         "Chaque fois qu’une unité alliée effectue un Test de Panique, après avoir lancé les dés, vous pouvez retirer 1 pion Ordre d’Eddard. Si vous le faites, cette unité peut relancer n’importe quels dés de ce test.",
-                        "Chaque fois qu’une unité alliée réussit un Test de Panique, vous pouvez retirer 1 pion Ordre d’Eddard. Si vous le faites, cette unité soigne de ses 2 Blessures, +1 pour chacun de ses rangs détruits."
+                        "Chaque fois qu’une unité alliée réussit un Test de Panique, vous pouvez retirer 1 pion Ordre d’Eddard. Si vous le faites, cette unité soigne 1 de ses Blessures, +1 pour chacun de ses rangs détruits."
                     ]
                 }
             ],
@@ -743,15 +748,15 @@
             "id": "30205",
             "name": "Rodrik Cassel",
             "faction": "stark",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Véteran Chevronné",
             "abilities": [
                 {
                     "name": "Expertise Martiale",
                     "effect": [
-                        "Chaque fois que Rodrik s’empare de [SWORDS], ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
-                        "Rodrik commence la partie avec 2 pions Ordre sur sa carte.",
+                        "Chaque fois que Rodrik s’empare d'une zone, ciblez 1 Unité Combattante ennemie. Elle devient **Vulnérable**.",
+                        "Rodrik commence la partie avec 3 pions Ordre sur sa carte.",
                         "Chaque fois qu’une unité alliée effectue une Attaque de Mêlée, après avoir lancé les dés d’Attaque, vous pouvez retirer 1 pion Ordre de Rodrik. Si vous le faites, l’attaquant peut relancer n’importe quels dés d’Attaque."
                     ]
                 }
@@ -873,27 +878,20 @@
             "id": "30210",
             "name": "Robb Stark",
             "faction": "stark",
-            "version": "S06",
+            "version": "S07",
             "role": "ncu",
             "title": "Roi du Nord",
             "abilities": [
                 {
-                    "name": "La Ruse du Loup",
-                    "effect": [
-                        "Au début du déploiement, vous pouvez cibler une 1 Unité Combattante alliée. Jusqu'à la fin de la partie, cette unité gagne la capacité **Attaque de Flanc** :",
-                        "**ATTAQUE DE FLANC**",
-                        "Vous pouvez laisser cette unité hors de la table *(en Réserve)* au lieu de la déployer. Au début de n’importe quel round, si vous n’êtes pas le premier joueur, vous pouvez déployer 1 unité en Réserve, non activée, entièrement à Courte Portée ou moins d’un bord de table allié ou d’un flanc de table."
-                    ]
-                },
-                {
-                    "name": "Rapidité du Loup",
+                    "name": "Revendication du Seigneur Loup",
                     "effect": [
                         "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                        "Quand Robb influence une unité alliée, cette unité gagne +1 [MOVEMENT]."
+                        "Tant que Robb influence une unité alliée, si votre adversaire ne contrôle pas [CROWN], cette unité gagne +1 pour Toucher et ses Attaques de Mêlée gagnent **Fracasser**.",
+                        "Tant que Robb influence une unité ennemie, si cet adversaire ne contrôle pas [CROWN], les Attaques de cet ennemi subissent -1 pour Toucher et après avoir résolu une Attaque, il devient **Vulnérable**."
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "back_text": [
                 {

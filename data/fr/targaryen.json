@@ -9,11 +9,10 @@
             "id": "10701",
             "name": "Hurleurs Dothraki",
             "faction": "targaryen",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalerie",
-                "Charge Furieuse",
                 "Arakh de Hurleur"
             ],
             "attacks": [
@@ -125,7 +124,7 @@
             "id": "10704",
             "name": "Jorah Mormont",
             "faction": "targaryen",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "title": "le Chevalier Errant",
             "abilities": [
@@ -145,7 +144,7 @@
             "defense": 4,
             "morale": 3,
             "speed": 6,
-            "cost": 4,
+            "cost": 3,
             "tray": "solo",
             "fluff": {
                 "lore": "Quoi que l’on puisse penser des agissements et du passé trouble de Jorah Mormont, ses prouesses martiales lui ont permis de gagner le respect des Dothraki, ce qui est loin d’être une mince affaire. Vétéran de nombreuses batailles devenu mercenaire, Jorah possède un œil aguerri pour déceler les failles dans les rangs ennemis et permettre à ses troupes de les exploiter. Ser Jorah préfère combattre à cheval et ses talents de cavalier surpassent ceux de la plupart des Ouestriens.",
@@ -158,11 +157,11 @@
             "id": "10705",
             "name": "Maîtres d'Armes Immaculés",
             "faction": "targaryen",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Prouesse Immaculée",
-                "Maîtrise du Combat : Détermination"
+                "Riposte"
             ],
             "attacks": [
                 {
@@ -176,7 +175,7 @@
                     ]
                 }
             ],
-            "defense": 4,
+            "defense": 3,
             "morale": 4,
             "speed": 5,
             "cost": 7,
@@ -190,12 +189,12 @@
             "id": "10706",
             "name": "Piquiers Immaculés",
             "faction": "targaryen",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Recevoir la Charge",
                 "Ordre : Mur de Boucliers",
-                "Maîtrise du Combat : Défense"
+                "Inflexible"
             ],
             "attacks": [
                 {
@@ -209,7 +208,7 @@
                     ]
                 }
             ],
-            "defense": 4,
+            "defense": 3,
             "morale": 4,
             "speed": 5,
             "cost": 7,
@@ -334,7 +333,7 @@
             "id": "10710",
             "name": "Hrakkars Dothraki",
             "faction": "targaryen",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Hrakkars et Dresseurs",
@@ -347,11 +346,11 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        5
+                        6
                     ]
                 }
             ],
-            "defense": 6,
+            "defense": 5,
             "morale": 5,
             "speed": 6,
             "cost": 4,
@@ -554,7 +553,7 @@
             "id": "10716",
             "name": "Bêtes d'Airain",
             "faction": "targaryen",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Sentinelle",
@@ -564,10 +563,10 @@
                 {
                     "name": "Armement Disparate",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
+                        7,
                         6,
-                        5,
                         4
                     ]
                 }
@@ -586,7 +585,7 @@
             "id": "10717",
             "name": "Gladiateurs",
             "faction": "targaryen",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Rage du Gladiateur",
@@ -599,9 +598,9 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        7,
                         6,
-                        4
+                        7,
+                        8
                     ]
                 }
             ],
@@ -644,16 +643,19 @@
             "id": "30702",
             "name": "Illyrio Mopatis",
             "faction": "targaryen",
-            "version": "S06",
+            "version": "S07",
             "role": "ncu",
             "title": "Magistrat de Pentos",
             "abilities": [
                 {
-                    "name": "Faveur d'Illyrio",
+                    "name": "Trois Faveurs",
                     "effect": [
-                        "Illyrio commence la partie avec 2 pions Ordre sur sa carte :",
-                        "Chaque fois qu’Illyrio s’empare d’une zone, vous pouvez retirer 1 pion Ordre de sa carte. Si vous le faites, vous pouvez remplacer l’effet de cette zone par :",
-                        "*Ciblez 1 Unité Combattante alliée. Elle soigne jusqu'à 3 de ses Blessures. Placez 1 pion État sur une unité avec laquelle elle est engagée.*"
+                        "Illyrio commence la partie avec 3 pions Ordre sur sa carte. Vous ne pouvez utiliser son influence qu'en retirant un pion Ordre.",
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Quand Illyrio influence une unité alliée, choisissez 1 option :",
+                        "• Cette unité soigne 2 de ses Blessures.",
+                        "• Tant qu'Illyrio influence cette unité, ses Attaques de Mêlée utilisent la plus haute valeur d'Attaque et gagnent **Fracasser**.",
+                        "• Ciblez 1 ennemi situé à Courte Portée de cette unité. Il devient **Paniqué** et **Affaibli**."
                     ]
                 }
             ],
@@ -671,18 +673,16 @@
             "id": "30703",
             "name": "Pyat Pree",
             "faction": "targaryen",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Conjurateur de Qarth",
             "abilities": [
                 {
                     "name": "Maison des Nonmourants",
                     "effect": [
-                        "Chaque fois que Pyat Pree s'empare d'une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                        "*Votre adversaire doit révéler toutes les cartes Tactique de sa main.*",
-                        "*Ensuite, il doit défausser 1 carte Tactique au hasard de sa main.*",
-                        "Une fois par partie, quand Pyat Pree s'empare de [UNDYING], vous pouvez remplacer l’effet de cette zone par :",
-                        "*Renvoyez 1 carte Tactique de votre défausse dans votre main.*"
+                        "Une fois par partie, quand Pyat Pree s'empare d'une zone, vous pouvez renvoyer 1 carte Tactique de votre défausse dans votre main.",
+                        "Chaque fois que Pyat Pree s'empare de [UNDYING], vous pouvez remplacer son effet par :",
+                        "*Votre adversaire défausse 1 carte Tactique au hasard de sa main. Jusqu'à la fin du Round, il doit jouer avec sa main révélée.*"
                     ]
                 }
             ],
@@ -774,18 +774,15 @@
             "id": "30708",
             "name": "Mirri Maz Duur",
             "faction": "targaryen",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Épouse Divine",
             "abilities": [
                 {
                     "name": "Pratiques de Maegi",
                     "effect": [
-                        "Chaque fois que Mirri s’empare d’une zone, 1 Unité Combattante alliée soigne 1 de ses Blessures.",
-                        "Chaque fois Mirri s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                        "*Choisissez 1 option:*",
-                        "• *Ciblez 1 Unité Combattante alliée. Attachez-lui 1 Attachement allié non-Général détruit, en remplaçant une figurine de cette unité et en ignorant les restrictions d’Attachements normales.*",
-                        "• *Ciblez 1 Unité Combattante ennemie. Elle devient **Paniquée** et **Affaiblie**.*"
+                        "Chaque fois que Mirri s'empare d'une zone, vous pouvez choisir 1 option : retirez 1 pion État d'une unité alliée et placez-le sur Mirri, ou retirez 1 pion État de Mirri pour le placer sur 1 Unité Combattante ennemie engagée.",
+                        "Une fois par partie, quand Mirri s'empare d'une zone, vous pouvez cibler 1 Unité Combattante alliée. Si vous le faites, attachez 1 Attachement non commandant précédemment détruit à cette unité, en remplaçant une figurine mais en ignorant les restrictions habituelles."
                     ]
                 }
             ],
@@ -826,18 +823,18 @@
             "id": "30710",
             "name": "Hizdahr Zo Loraq",
             "faction": "targaryen",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Quatorzième de ce Nom",
             "abilities": [
                 {
                     "name": "L'Empreinte du Seigneur Marchand",
                     "effect": [
-                        "Chaque fois qu’une UNC alliée s’empare d’une zone, à moins que son effet ne soit remplacé, elle gagne les bonus supplémentaires suivants :",
-                        "[CROWN] : Si l’unité échoue ce Test de Panique, elle ne peut pas être la cible d’Ordres alliés ce round-ci.",
-                        "[MONEY] : 1 autre unité alliée à Courte Portée ou moins soigne 1 de ses Blessures.",
-                        "[LETTER] : Vous pouvez piocher 1 carte Tactique de moins pour placer +1 pion État sur l’ennemi ciblé.",
-                        "[UNDYING] : Défaussez également la carte du dessus du paquet Tactique de votre adversaire."
+                        "Chaque fois qu’Hizdahr s’empare d’une zone, après avoir résolu l'effet de cette zone, résolvez les effets en fonction de la zone :",
+                        "[CROWN] : L'unité ciblée par cette zone devient **Vulnérable**.",
+                        "[MONEY] : Toutes les autres unités alliées situées à Courte Portée de l'unité ciblée par la zone soignent 1 de leurs Blessures ou retirent 1 pion État.",
+                        "[LETTER] : Si vous avez placé 1 pion État sur une unité ennemie, ciblez 1 autre unité ennemie située à Longue Portée. Elle gagne 1 pion État identique.",
+                        "[UNDYING] : Vous pouvez piocher une carte Tactique puis en défausser une."
                     ]
                 }
             ],

@@ -41,17 +41,18 @@
             "id": "10902",
             "name": "Tirailleurs des Sables",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Tir Rapide",
-                "Ordre : Faille de L’Éclaireur"
+                "Tirailleur",
+                "Éclaireur"
             ],
             "attacks": [
                 {
                     "name": "Arc de Tirailleur",
                     "type": "short",
-                    "hit": 3,
+                    "hit": 4,
                     "dice": [
                         7,
                         5,
@@ -61,7 +62,7 @@
                 {
                     "name": "Lame de Tirailleur",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         5,
@@ -69,7 +70,7 @@
                     ]
                 }
             ],
-            "defense": 4,
+            "defense": 5,
             "morale": 6,
             "speed": 6,
             "cost": 7,
@@ -83,7 +84,7 @@
             "id": "10903",
             "name": "Derviches de Lancehélion",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Repli Éclair",
@@ -94,7 +95,7 @@
                 {
                     "name": "Lames de Derviche",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
                         6,
@@ -148,11 +149,12 @@
             "id": "10905",
             "name": "Vipères des Dunes",
             "faction": "martell",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Lance et Filet",
-                "Attaque en Bande"
+                "Attaque en Bande",
+                "Déstabilisation"
             ],
             "attacks": [
                 {
@@ -245,12 +247,12 @@
             "id": "10908",
             "name": "Escorte de Sombre Astre",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Débordement",
                 "Soif de Massacre",
-                "Cimeterre"
+                "Cimeterre (Retinue)"
             ],
             "attacks": [
                 {
@@ -260,7 +262,7 @@
                     "dice": [
                         7,
                         6,
-                        4
+                        5
                     ]
                 }
             ],
@@ -352,26 +354,23 @@
             "id": "30902",
             "name": "Doran Martell",
             "faction": "martell",
-            "version": "S05",
+            "version": "S07",
             "role": "ncu",
             "title": "Prince de Dorne",
             "abilities": [
                 {
-                    "name": "Secrets de Lancehélion",
+                    "name": "Plans et Secrets",
                     "effect": [
-                        "Chaque fois que Doran s’empare d'une zone, avant d'en résoudre l'effet placez 1 pion Ordre sur Doran, +1 s'il s'empare de [OASIS].",
-                        "Chaque fois que Doran s'empare de [OASIS], vous pouvez remplacer l'effet de cette zone par :",
-                        "*Retirez jusqu'à 4 pions Ordre de Doran, pour chaque pion retiré, choisissez 1 option :*",
-                        "*• Soignez jusqu'à 2 Blessures d'une unité.*",
-                        "*• Retirez 1 pion État d'une unité.*",
-                        "*• Piochez 1 Carte Tactique.*",
-                        "*• Placez 1 pion État sur une unité ennemie.*",
-                        "*• 1 unité alliée pivote et se décale de 2’’.*",
-                        "*• 1 unité Combatante ennemie subit 1 Blessure.*"
+                        "Chaque fois que Doran s’empare d'une zone, après avoir résolu l'effet de la zone, choisissez 1 option (*les options disponibles dépendent du Round en cours*).",
+                        "**Round 1+** : Retirer 1 pion État d'une unité Martell alliée.",
+                        "**Round 2+** : Soignez 2 Blessures d'une unité Martell alliée.",
+                        "**Round 3+** : Ciblez 1 unité Martell alliée. Elle se décale de 2\".",
+                        "**Round 4+** : Ciblez 1 unité Combattante ennemie. Elle subit 3 Touches.",
+                        "**Round 5+** : Ciblez n'importe quel nombre d'unité Combattantes ennemies. Elles deviennent **Vulérables**."
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "« Qui craint de marcher sur l’herbe ? »"
@@ -405,7 +404,7 @@
             "faction": "martell",
             "version": "2021-S03",
             "role": "ncu",
-            "title": "Prince de Dorne",
+            "title": "Vipère Rouge",
             "abilities": [
                 {
                     "name": "Tempérament Bouillant",
@@ -448,18 +447,19 @@
             "id": "30906",
             "name": "Nymeria Sand",
             "faction": "martell",
-            "version": "S05",
+            "version": "S07",
             "role": "ncu",
             "title": "Lady Nym",
             "abilities": [
                 {
-                    "name": "Attitudes Conflictuelles",
+                    "name": "Tensions Croissantes",
                     "effect": [
                         "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                        "Tant que cette carte Influence une Unité d’Infanterie alliée :",
-                        "• Si votre adversaire ou vous contrôlez [CROWN], les Attaques de Mêlée de cette unité gagnent **Cruel**.",
-                        "• Si votre adversaire ou vous contrôlez [SWORDS], les Attaques de Mêlée de cette unité gagnent **Frappe Critique**.",
-                        "• Si votre adversaire ou vous contrôlez [HORSE], cette unité gagne +1 [MOVEMENT]."
+                        "Tant que cette carte Influence une Unité Combattante alliée, elle gagne les effets suivants en fonction du nombre de zones contrôlées (*alliées ou ennemies*) :",
+                        "1+ : Ses attaques de Mêlée gagnent **Cruel**",
+                        "2+ : Ses attaques de Mêlée gagnent **Frappe Critique**",
+                        "4+ : Ses attaques de Mêlée peuvent relancer n'importe quels dés d'Attaque",
+                        "5+ : Ses attaques de Mêlée lancent +2 dés d'Attaque."
                     ]
                 }
             ],
@@ -473,7 +473,7 @@
             "id": "30907",
             "name": "Arianne Martell",
             "faction": "martell",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Héritière de Dorne",
             "abilities": [
@@ -481,13 +481,13 @@
                     "name": "Négotiatrice",
                     "effect": [
                         "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round) :",
-                        "Chaque fois qu’Arianne Martell Influence une unité, choisissez 1 option :",
+                        "Chaque fois qu’Arianne Martell Influence une unité, choisissez 1 option. Si vous contrôlez [CROWN] ou [OASIS], gagnez les deux :",
                         "• Tant que cette carte Influence une unité ennemie, les Attachements de cette unité perdent toutes leurs Capacités.",
-                        "• Tant que cette carte Influence une unité ennemie, elle ne peut pas être la cible d’Ordres alliés."
+                        "• Tant que cette carte Influence une unité ennemie, cette unité est considérée comme ayant -1 rang pour déterminer les dés d'Attaque. Si Arianne contrôle [CROWN] ou [OASIS], cette unité attaque en utilisant sa valeur de dés d'Attaque la plus basse."
                     ]
                 }
             ],
-            "cost": 5,
+            "cost": 4,
             "character": true,
             "fluff": {
                 "quote": "« Je n’étais qu’une fille stupide et insensée, qui jouait aux jeux des trônes comme un ivrogne joue aux dés. »"
@@ -704,7 +704,7 @@
             "id": "20911",
             "name": "Nymeria Sand",
             "faction": "martell",
-            "version": "2021",
+            "version": "S06",
             "role": "attachment",
             "title": "Aspic des Sables",
             "abilities": [

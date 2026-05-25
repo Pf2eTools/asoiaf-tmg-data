@@ -9,7 +9,7 @@
             "id": "10301",
             "name": "Géant Sauvage",
             "faction": "freefolk",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Géant",
@@ -34,7 +34,7 @@
                 "lore": "Considérés comme une légende par la plupart des Seigneurs Sudiens de Westeros, les Géants Sauvages qui vivent au-delà du Mur sont bel et bien réels, comme la Garde de Nuit peut le confirmer. Ces gigantesques créatures ne portent aucune armure et manient des armes rudimentaires, comme des os de mammouth ou des troncs d’arbre. En vérité, ils n’ont besoin de rien d’autre. Un seul Géant peut causer des ravages dans les rangs de l’infanterie la plus lourde et ne pas être le moins du monde dérangé par une charge de chevaliers. Il n’existe que deux solutions pour abattre un Géant : le noyer sous le nombre ou avoir recours à une puissante arme de siège."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10302",
@@ -191,33 +191,32 @@
             "id": "10306",
             "name": "Wun Wun",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Cri de Guerre",
-                "Dérouillée",
-                "Géant"
+                "Géant",
+                "Puissance Indomptable"
             ],
             "attacks": [
                 {
-                    "name": "Dérouillée",
+                    "name": "Puissance Indomptable",
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        6
+                        7
                     ]
                 }
             ],
             "defense": 3,
             "morale": 4,
             "speed": 5,
-            "cost": 8,
+            "cost": 9,
             "tray": "solo",
             "fluff": {
                 "lore": "Wun Wun est encore plus imposant que son chef, Mag le Puissant. Comme tous les géants, Wun Wun est doté d’une force titanesque et d’un cuir épais, mais il est également convaincu d’être invulnérable et possède une combativité hors du commun. Si Wun Wun est capable d’enfoncer les lignes ennemies les plus solides avec une effarante facilité, les généraux du Peuple Libre devront veiller à soutenir les attaques de ce béhémoth, de peur qu’il ne se retrouve encerclé et submergé par la masse de ses minuscules adversaires."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10307",
@@ -287,7 +286,7 @@
             "id": "10309",
             "name": "Chars de la Grève Glacée",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Repli Éclair",
@@ -296,9 +295,17 @@
             ],
             "attacks": [
                 {
+                    "name": "Lancer de Pique",
+                    "type": "short",
+                    "hit": 3,
+                    "dice": [
+                        6
+                    ]
+                },
+                {
                     "name": "Impact Mortel",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         4
                     ]
@@ -307,7 +314,7 @@
             "defense": 5,
             "morale": 5,
             "speed": 6,
-            "cost": 5,
+            "cost": 4,
             "tray": "warmachine",
             "fluff": {
                 "lore": "Les Sauvageons sont rarement associés aux machines de guerre, mais les Chars de la Grève Glacée sont étonnamment efficaces. Ces chars, faits de bois et d’os, tirés par d’énormes bâtards de loups et de molosses croisés pour leur force et leur férocité, abritent deux hommes et toute une panoplie d’armes permettant non seulement de charger l’adversaire, mais également d’enfoncer les rangs les plus solides. Ils sont toutefois à utiliser avec prudence, car les chars deviennent extrêmement vulnérables une fois immobilisés."
@@ -392,7 +399,7 @@
             "id": "10312",
             "name": "Mammouth de Guerre",
             "faction": "freefolk",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Mammouth",
@@ -402,15 +409,15 @@
                 {
                     "name": "Saccage",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
-                        7
+                        5
                     ]
                 }
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 6,
+            "speed": 5,
             "cost": 6,
             "tray": "warmachine",
             "back_text": [
@@ -429,7 +436,7 @@
             "id": "10313",
             "name": "Mag Le Puissant",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Géant",
@@ -445,8 +452,8 @@
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 4,
+            "defense": 3,
+            "morale": 3,
             "speed": 5,
             "cost": 5,
             "tray": "solo",
@@ -473,13 +480,13 @@
                 "lore": "Le Titre de Mag le Puissant reste, somme toute, relativement modeste. En tant que chef des géants, il a mené maintes fois son peuple à la victoire grâce à sa force redoutable. Même les troupes les plus lourdement protégées ne font pas le poids face à sa puissance, et ses qualités de chef (pour autant que les géants en possèdent) inspirent les siens au coeur de la bataille. Mag a largement les moyens de se jeter dans la mêlée, mais il doit toutefois rester prudent. Bien que difficiles à abattre, les géants ne sont pas immortels."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10314",
             "name": "Mag Le Puissant",
             "faction": "freefolk",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Géant",
@@ -495,8 +502,8 @@
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 4,
+            "defense": 3,
+            "morale": 3,
             "speed": 5,
             "cost": 9,
             "tray": "solo",
@@ -504,16 +511,16 @@
                 "lore": "Le Titre de Mag le Puissant reste, somme toute, relativement modeste. En tant que chef des géants, il a mené maintes fois son peuple à la victoire grâce à sa force redoutable. Même les troupes les plus lourdement protégées ne font pas le poids face à sa puissance, et ses qualités de chef (pour autant que les géants en possèdent) inspirent les siens au coeur de la bataille. Mag a largement les moyens de se jeter dans la mêlée, mais il doit toutefois rester prudent. Bien que difficiles à abattre, les géants ne sont pas immortels."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10315",
             "name": "Oursières de la Grève Glacée",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Volée d'Assaut",
+                "Ordre : Marquer la Cible",
                 "Cavalerie d'Ours",
                 "Piques et Lacérations"
             ],
@@ -532,14 +539,14 @@
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        6,
-                        4
+                        7,
+                        7
                     ]
                 }
             ],
             "defense": 4,
             "morale": 5,
-            "speed": 4,
+            "speed": 5,
             "cost": 8,
             "tray": "cavalry",
             "fluff": {
@@ -732,7 +739,7 @@
             "id": "10321",
             "name": "Chasseurs de La Grève Glacée",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Marquer la Cible",
@@ -807,16 +814,17 @@
                 "lore": "Qu’il y a-t-il de pire dans une bataille que de devoir affronter des géants ? Se retrouver face à des géants qui lancent des épieux de la taille d’un tronc d’arbre. Grâce à son alliance avec les géants, le Peuple Libre peut désormais aligner leurs Lanceurs d’Épieux, une véritable artillerie sur pattes. Leurs armes sont certes rudimentaires, mais une hampe de bois aussi épaisse que le torse d’un homme ne requiert guère de finesse. Toutefois, ces géants peuvent rapidement se retrouver débordés au corps à corps et doivent donc être protégés."
             },
             "icon": "monster",
-            "wounds": 6
+            "wounds": 8
         },
         {
             "id": "10323",
             "name": "Avant-garde d'Harma",
             "faction": "freefolk",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Approche planifiée",
+                "Ordre : Repositionnement Tactique",
                 "Cavalerie"
             ],
             "attacks": [
@@ -832,7 +840,7 @@
             ],
             "defense": 6,
             "morale": 7,
-            "speed": 5,
+            "speed": 6,
             "cost": 5,
             "tray": "cavalry",
             "fluff": {
@@ -914,7 +922,7 @@
             "id": "30304",
             "name": "Styr",
             "faction": "freefolk",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Tyran à la Main de Fer",
             "abilities": [
@@ -922,7 +930,8 @@
                     "name": "La Fureur des Thenns",
                     "effect": [
                         "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                        "Tant que cette carte Influence une unité alliée, les Attaques de Mêlée de celle-ci gagnent **Fracasser** et comptent comme ayant +1 rang pour les dés d'Attaque."
+                        "Tant que cette carte Influence une unité d'Infanterie ou de Cavalerie, les Attaques de Mêlée de celle-ci gagnent **Fracasser** et comptent comme ayant +1 rang pour les dés d'Attaque.",
+                        "Tant que cette carte Influence une unité Monstrueuse alliée, cette unité peut relancer n'importe quels dés de Distance de Charge et les ennemis Chargés avec Succès par cette unité deviennent **Affaiblis**."
                     ]
                 }
             ],
@@ -959,17 +968,17 @@
             "id": "30306",
             "name": "Lady Della",
             "faction": "freefolk",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Épouse et Conseillère",
             "abilities": [
                 {
                     "name": "Conseil de Piqueuse",
                     "effect": [
-                        "Chaque fois que Della s’empare d’une zone, résolvez les effets suivants en fonction de la zone :",
+                        "Chaque fois que Della s’empare d’une zone, après avoir résolu l'effet de la zone, résolvez les effets suivants en fonction de la zone :",
                         "[CROWN] : 1 ennemi devient **Affaibli**.",
-                        "[MONEY] : Au lieu de retirer un pion État, ciblez 1 ennemi engagé avec cette unité. Il subit 1 Touche, +1 Touche pour chacun des rangs restants dans cette unité.",
-                        "[LETTER] : Au lieu de piocher des cartes, regardez les 2 premières cartes du paquet Tactique de votre adversaire. Vous pouvez défausser une de ces cartes. Ensuite, remettez toute carte restante au sommet du paquet Tactique."
+                        "[MONEY] : Ciblez 1 ennemi engagé avec l'unité soignée. Il subit 1 Touche, +1 Touche pour chacun des rangs restants dans cette unité.",
+                        "[LETTER] : Regardez les 2 premières cartes du paquet Tactique de votre adversaire. Vous pouvez défausser une de ces cartes. Ensuite, mélangez les cartes restantes dans le Paquet Tactique."
                     ]
                 }
             ],
@@ -1819,7 +1828,7 @@
             "id": "40314",
             "name": "Trophées sanglants",
             "faction": "freefolk",
-            "version": "2021",
+            "version": "S06",
             "role": "tactics",
             "text": [
                 {
@@ -1839,7 +1848,7 @@
             "id": "40315",
             "name": "Trophées d'armes",
             "faction": "freefolk",
-            "version": "2021",
+            "version": "S06",
             "role": "tactics",
             "text": [
                 {
@@ -1859,7 +1868,7 @@
             "id": "40316",
             "name": "Trophées d'armures",
             "faction": "freefolk",
-            "version": "2021",
+            "version": "S06",
             "role": "tactics",
             "text": [
                 {
@@ -2378,7 +2387,7 @@
             "id": "50301",
             "name": "Chef des Géants",
             "faction": "freefolk",
-            "version": "2021-S02",
+            "version": "S07",
             "role": "special",
             "category": "commander",
             "front": {

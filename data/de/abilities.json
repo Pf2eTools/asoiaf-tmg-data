@@ -309,11 +309,11 @@
         ]
     },
     "GRAUSAMER GENUSS": {
-            "effect": [
-                "Wenn ein Gegner der im Nahkampf mit dieser Einheit ist, einen **Zustandsmarker** bekommt, heilt diese Einheit 2 Wunden."
-            ]
-        },
-    "ORDER: ANGST VERBREITEN": {
+        "effect": [
+            "Wenn ein Gegner der im Nahkampf mit dieser Einheit ist, einen **Zustandsmarker** bekommt, heilt diese Einheit 2 Wunden."
+        ]
+    },
+    "BEFEHL: ANGST VERBREITEN": {
         "trigger": "Wenn eine gegnerische Einheit im Nahkampf an einer Panikprobe scheitert:",
         "effect": [
             "Nimm 1 andere gegnerische Einheit in Langer Reichweite zum Ziel. Sie legt 1 Panikprobe ab mit -1 für jede verbleibende Schlachtreihe. Wenn sie scheitert erleidet sie +1 Wunde."
@@ -324,8 +324,8 @@
     },
     "STREITFLEGEL (BOLTON)": {
         "effect": [
-            "• **Precision**",
-            "• **Vicious**"
+            "• **Präzision**",
+            "• **Grausam**"
         ],
         "icons": [
             "melee"
@@ -493,8 +493,7 @@
     "ZORN DER STREITER": {
         "effect": [
             "• **Kritischer Treffer**",
-            "• Feinde, gegen die ein erfolgreicher Ansturm durchgeführt worden ist, werden **Geschwächt**.",
-            "• Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, bevor die Angriffswürfel geworfen werden, wird der Verteidiger **Verwundbar**."
+            "• Falls diese Einheit den Zug im Nahkampf mit dem Verteidiger begonnen hat, bevor die Angriffswürfel geworfen werden, wähle den Verteidiger zum Ziel. Der Verteidiger wird **Verwundbar**, und dieser Angriff wirft +2 Angriffswürfel."
         ],
         "icons": [
             "melee"
@@ -1099,17 +1098,11 @@
     "LEBEN UND EHRE DER WACHE": {
         "effect": [
             "Wenn diese Einheit bei einer Panikprobe scheitert, verliert sie 1 angelegte Nachtwache Taktikkarte, statt aller."
-        ],
-        "icons": [
-            "melee"
         ]
     },
     "ALTE SCHULE": {
         "effect": [
             "Gegner die sich im Nahkampf mit dieser Einheit befinden, erleiden -1 auf ihren Angriffswürfelwurf und, immer wenn diese Einheit mit einem Nahkampfangriff angegriffen wird, für jeden Fehlschlag, erleider der Angreifer 1 Treffer."
-        ],
-        "icons": [
-            "melee"
         ]
     },
     "HELLEBARDE": {
@@ -1149,7 +1142,7 @@
         "effect": [
             "Nachdem dieser Angriff abgeschlossen worden ist, wird der Verteidiger **Geschwächt**.",
             "***Fernkampf Angriffe**:*",
-            "Diese Einheit darf 2 Zoll nach hinten verschieben. Wenn der Verteidiger sich nicht im Nahkampf befindet und eine belibige Anzahl an Wunden von diesem Angriff erlitten hat, darfst du sie 2 Zoll Richtung dieser Einheit verschieben, in einer Richtung, die durch den Angriffswinkel bestimmt wird (nach vorne, wenn von vorne angegriffen wird, seitwärts entsprechend den jeweiligen Flanken usw.)"
+            "Diese Einheit darf 2 Zoll nach hinten verschieben. Wenn der Verteidiger sich nicht im Nahkampf befindet und eine beliebige Anzahl an Wunden von diesem Angriff erlitten hat, darfst du sie 2 Zoll Richtung dieser Einheit verschieben, in einer Richtung, die durch den Angriffswinkel bestimmt wird (nach vorne, wenn von vorne angegriffen wird, seitwärts entsprechend den jeweiligen Flanken usw.)"
         ],
         "icons": [
             "melee",
@@ -1185,6 +1178,7 @@
         "effect": [
             "• **Grausam**",
             "• Bevor die Angriffswürfel geworfen werden, darf diese Einheit einen **Glaubensmarker** ausgeben. Wenn sie das tut, bestimme den Verteidiger zum Ziel. Er wird **Panisch** und **Verwundbar**.",
+            "• Nachdem die Angriffswürfel geworfen wurden, darf diese Einheit einen **Glaubensmarker** ausgeben. Wenn sie das tut, darf sie beliebige Angriffswürfel neu werfen.",
             "• Nachdem dieser Angriff abgeschlossen wurde, darf diese EInheit einen **Glaubensmarker** ausgeben um 2 Wunden zu heilen, +1 Wunde für jede zerstörte Schlachtreihe dieser Einheit."
         ],
         "icons": [
@@ -1782,7 +1776,7 @@
     },
     "LANNISTER STAHL": {
         "effect": [
-            "Bevor du die Angriffswürfel wirst, wenn diese Einheit mehr oder gleichviele Schlachtreihen wie der Verteidiger besitzt. Wird der Verteidiger **Panisch**, und dieser Angriff bekommt +1 auf seinen Trefferwurf."
+            "Bevor du die Angriffswürfel wirst, wenn diese Einheit mehr oder gleich viele Schlachtreihen wie der Verteidiger besitzt, wird der Verteidiger **Panisch**, und dieser Angriff bekommt +1 auf seinen Trefferwurf."
         ],
         "icons": [
             "melee"
@@ -1791,9 +1785,6 @@
     "PLÄNKLER": {
         "effect": [
             "Feindliche Einheiten, die diese Einheit anstürmen, bekommen keinen Bonus für Ansturm. Wenn diese Einheit aktiviert, und sie sich nicht im Nahkampf befindet, darf sie sich drehen."
-        ],
-        "icons": [
-            "melee"
         ]
     },
     "KLINGE DES MUMMENSCHANZES": {
@@ -2180,21 +2171,13 @@
             "order"
         ]
     },
-    "FLEGEL & SHIELD": {
+    "FLEGEL & SCHILD": {
         "effect": [
             "• **Präzision**",
             "• **Grausam**"
         ],
         "icons": [
             "melee"
-        ]
-    },
-    "BEFEHL: ANGST VERBREITEN": {
-        "effect": [
-            "Immer wenn eine feindliche Einheit, die sich mit dieser Einheit im Nahkampf befindet, an einer Panikprobe scheitert, heilt diese Einheit 2 Wunden."
-        ],
-        "icons": [
-            "order"
         ]
     },
     "BEFEHL: ZORN DER STARKS": {
@@ -2431,7 +2414,12 @@
     },
     "ANGST AUSNUTZEN": {
         "effect": [
-            "**Panisch**-Marker auf feindlich Einheiten die mit dieser Einheit im Nahkampf sind, dürfen sowohl als **Verwundbar**- oder **Geschwächt**-Marker gelten."
+            "Immer wenn ein Feind, der mit dieser Einheit im Nahkampf ist, an einer Panikprobe scheitert, heilt diese Einheit 2 Wunden."
+        ]
+    },
+    "ANGST AUSBEUTEN": {
+        "effect": [
+            "**Panisch**-Marker auf feindlich Einheiten die mit dieser Einheit im Nahkampf sind, dürfen sowohl als **Verwundbar**- oder **Geschwächt**-Marker gelten und ausgegeben werden."
         ]
     },
     "DER PREIS DER EHRE": {
@@ -2641,7 +2629,7 @@
     "ENTSCHLOSSENER SCHLAG": {
         "effect": [
             "• **Kritischer Treffer**",
-            "• Bevor die Angriffswürfel geworfen werden, bestimme eine befreundete Einheit zum Ziel. Sie heilt 1 Wunde und legt ein **Zustandsmarker** ab. Für jeden **Zustandsmarker** auf dem Verteidiger, wiederhole diesen Effekt."
+            "• Bevor die Angriffswürfel geworfen werden, bestimme eine befreundete Einheit zum Ziel. Sie heilt 1 Wunde oder legt ein **Zustandsmarker** ab. Für jeden **Zustandsmarker** auf dem Verteidiger, wiederhole diesen Effekt."
         ],
         "icons": [
             "melee"
@@ -2700,8 +2688,9 @@
     },
     "GNADENLOSE SALVEN": {
         "effect": [
+            "• **Grausam**",
             "• Diese Einheit ignoriert Einheiten und Geländeteile, wenn sie die Sichtlinie bestimmt.",
-            "• Sobald diese Einheit Feinde, die im Nahkampf sind, angreift, erhält der Angriff **Präzision** und es dürfen beliebig viele Angriffswürfel neu geworfen werden."
+            "• Bevor diese Einheit Feinde, die im Nahkampf sind, angreift, wähle diesen Feind zum Ziel. Dieser wir **Verwundbar** und es dürfen beliebig viele Angriffswürfel neu geworfen werden."
         ],
         "icons": [
             "ranged"
@@ -2769,10 +2758,18 @@
             "Falls du das tust, lege eine beliebige Anzahl an Taktikkarten von deiner Hand beiseite und ziehe dann ebenso viele Karten +1. Mische danach die beiseite gelegten Karten in dein Taktikdeck."
         ]
     },
-    "KRUMMSÄBEL": {
+    "SCHWERER KRUMMSÄBEL": {
         "effect": [
             "• **Kritischer Treffer**",
             "• **Spaltschlag**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "KRUMMSÄBEL": {
+        "effect": [
+            "• **Kritischer Treffer**"
         ],
         "icons": [
             "melee"
@@ -2851,7 +2848,7 @@
     },
     "TREUE IM DIENST": {
         "effect": [
-            "Weil dein Gegner nicht [CROWN] beansprucht, darf diese Einheit alle Verteidigungswürfel erneut werfen."
+            "Wenn dein Gegner nicht [CROWN] beansprucht, darf diese Einheit alle Verteidigungswürfel erneut werfen."
         ]
     },
     "GESCHICKTE VORBEREITUNGEN": {
@@ -3140,7 +3137,7 @@
     },
     "DIE RUCHLOSIGKEIT DER STUMMEN": {
         "effect": [
-            "Falls auf dieser Einheit 2 Plündermarker liegen, erleiden feindliche Einheiten innerhalb Kurzer Reichweite –1 auf das Ergebnis von Moralproben."
+            "Falls auf dieser Einheit 2 Plündermarker liegen, erleiden feindliche Einheiten innerhalb Kurzer Reichweite –1 auf das Ergebnis von Moralproben, und feindliche Einheiten, die mit dieser Einheit im Nahkampf sind, erleiden 1 Panikprobe wenn sie aktivieren."
         ]
     },
     "DER OFFENBARTE WEG": {
@@ -3600,10 +3597,10 @@
             "Falls auf dieser Einheit 2 Plündermarker liegen, erhalten alle befreundete Einheiten innerhalb kurzer Reichweite +1 auf das Ergebnis von Moralproben und erleiden -1 Wunde wenn sie an Panikproben scheitern."
         ]
     },
-    "BEFEHL: Zorn der Bärinnen": {
+    "BEFEHL: ZORN DER BÄRINNEN": {
         "trigger": "Zu Beginn eines befreundeten Zuges:",
         "effect": [
-            "Bestimme 1 feindliche Einheit in Langer Reichweite zum Ziel. Sie legt eine Moralprobe mit -1 für jede ihrer verbleibenden Schlachtreihen auf ihren Moralprobenwurf ab. Schlägt diese Moralprobe fehl, wird sie **Panisch** und **Verwundbar**."
+            "Bestimme 1 feindliche Einheit in Langer Reichweite zum Ziel. Sie legt eine Moralprobe mit -1 für jede verbleibende Schlachtreihe in dieser Einheit auf ihren Moralprobenwurf ab. Schlägt diese Moralprobe fehl, wird sie **Panisch** und **Verwundbar**."
         ],
         "icons": [
             "order"
@@ -3731,6 +3728,9 @@
         "effect": [
             "• Diese Einheit ignoriert Einheiten und Geländeteile, wenn sie die Sichtlinie bestimmt.",
             "• Falls diese Einheit Feinde in die Flanke oder den Rücken angreift, erhält dieser Angriff **Präzision** und **Grausam**."
+        ],
+        "icons": [
+            "ranged"
         ]
     },
     "VERSAMMELT DAS GEMEINE VOLK": {
@@ -3774,6 +3774,23 @@
         ],
         "icons": [
             "order"
+        ]
+    },
+    "WERKZEUGE DES MUMMENSCHANZES": {
+        "effect": [
+            "Bevor die Angriffswürfel geworfen werden, wähle 1. Für jeden Zustandsmarker auf dem Verteidiger, wähle +1:",
+            "• **Kritische Treffer**",
+            "• **Spaltschlag**",
+            "• **Grausam**",
+            "• Dieser Angriff darf beliebige Angriffswürfel neu werfen."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "SCHWÄCHE AUSNUTZEN": {
+        "effect": [
+            "**Geschwächt**-Marker auf feindlich Einheiten die mit dieser Einheit im Nahkampf sind, dürfen sowohl als **Panisch**- oder **Verwundbar**-Marker gelten und ausgegeben werden."
         ]
     }
 }

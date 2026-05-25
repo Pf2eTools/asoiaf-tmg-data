@@ -22,8 +22,8 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        6,
-                        5
+                        7,
+                        7
                     ]
                 }
             ],
@@ -44,7 +44,7 @@
             "version": "S07",
             "role": "unit",
             "abilities": [
-			    "Befehl: Linie halten!",
+                "Befehl: Linie halten!",
                 "Kriegshammer",
                 "Gegenschlag"
             ],
@@ -79,7 +79,7 @@
             "abilities": [
                 "Befehl: Bewachen",
                 "Doppelhämmer",
-				"Kämpfend untergehen"
+                "Kämpfend untergehen"
             ],
             "attacks": [
                 {
@@ -150,7 +150,7 @@
             "role": "unit",
             "abilities": [
                 "Treu",
-				"Schwert des Glaubens"
+                "Schwert des Glaubens"
             ],
             "attacks": [
                 {
@@ -194,7 +194,7 @@
             "abilities": [
                 "Kavallerie",
                 "Zorn der Streiter",
-				"Feigheit bestrafen"
+                "Feigheit bestrafen"
             ],
             "attacks": [
                 {
@@ -449,7 +449,7 @@
             "version": "S07",
             "role": "unit",
             "abilities": [
-			    "Befehl: Rascher Rückzug",
+                "Befehl: Rascher Rückzug",
                 "Kavallerie",
                 "Lanze"
             ],
@@ -565,7 +565,7 @@
             "version": "S07",
             "role": "unit",
             "abilities": [
-			    "Befehl: Geschlossen Vorrücken!",
+                "Befehl: Geschlossen Vorrücken!",
                 "Befehl: Spott",
                 "Hellebarde"
             ],
@@ -590,6 +590,39 @@
                 "lore": "Wer dem Haus Baratheon gegenübersteht, hat ein mächtiges Problem. Seine Rüstungen sind dick, seine Streitkräfte entschlossen, und wenn es von Hellebardieren begleitet wird, wird sogar die letzte Lücke in seinen Reihen geschlossen: der Vorteil der Kavallerie gegenüber der Infanterie. Darüber hinaus führt jegliches Zögern oder Versäumnis einer Kavallerie (oder ähnlicher Truppen) zu Wirrungen, die das Haus Baratheon für Angriffe auszunutzen weiß. Jeder fähige Befehlshaber der Baratheons wird vielseitige Verwendung für Hellebardiere in seinen Reihen finden."
             },
             "icon": "infantry"
+        },
+        {
+            "id": "10616",
+            "name": "Kundschafter der Kronlande",
+            "faction": "baratheon",
+            "version": "2021",
+            "role": "unit",
+            "abilities": [
+                "Kavallerie",
+                "Befehl: Ziel Markieren",
+                "Befehl: Taktisches Umstellen"
+            ],
+            "attacks": [
+                {
+                    "name": "Langschwert",
+                    "type": "melee",
+                    "hit": 4,
+                    "dice": [
+                        7,
+                        4
+                    ]
+                }
+            ],
+            "defense": 4,
+            "morale": 6,
+            "speed": 5,
+            "cost": 6,
+            "tray": "cavalry",
+            "fluff": {
+                "lore": "Keine Armee tut ihrem König mit leichtsinnigen Raubzügen einen Gefallen. Je gründlicher die Kundschafter die Lande ausspähen, desto besser kann ein Heerführer seine Truppen auf den Angriff vorbereiten. Die leicht gepanzerten Kundschafter der Kronlande dienen nicht nur als Vorhut für Streitkräfte des Hauses Baratheon, sondern sind auch selbst fähige Kämpfer. Ob sie nun feindlich Schwachstellen aufspüren und ausnutzen oder ihre Verbündeten in Stellung bringen, die Kundschafter sind eine wertvolle Ergänzung für jede Streitmacht."
+            },
+            "icon": "cavalry",
+            "wounds": 3
         }
     ],
     "ncu": [
@@ -654,10 +687,10 @@
                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
                         "Sobald Melisandre Einfluss auf eine befreundete Einheit ausübt, darfst du sie 2 Wunden erleiden lassen. Falls du das tust, erhält sie 1 der folgenden Effekte, +1 zusätzlichen Effekt für jede Wunde die sie erleidet hat.",
                         "• Diese Einheit erhält +2 auf das Ergebnis von Moralproben.",
-						"• Die Angriffe dieser Einheit erhalten **Grausam**",
-						"• Wenn diese Einheit einen Nahkampfangriff ausführt, bevor die Angriffswürfel geworfen werden, bestimme den Verteidiger zum Ziel. Er wird **Verwundbar**.",
-						"• Wenn diese Einheit aktiviert, bestimme eine feindliche Einheit in kurzer Reichweite zum Ziel. Sie wird **Panisch**."
-						 ]
+                        "• Die Angriffe dieser Einheit erhalten **Grausam**",
+                        "• Wenn diese Einheit einen Nahkampfangriff ausführt, bevor die Angriffswürfel geworfen werden, bestimme den Verteidiger zum Ziel. Er wird **Verwundbar**.",
+                        "• Wenn diese Einheit aktiviert, bestimme eine feindliche Einheit in kurzer Reichweite zum Ziel. Sie wird **Panisch**."
+                    ]
                 }
             ],
             "cost": 5,
@@ -783,8 +816,8 @@
                 {
                     "name": "Eine Rose und ihre Dornen",
                     "effect": [
-                         "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
-						 "Solange Margaery Einfluss auf eine befreundete Einheit ausübt, immer wenn diese Einheit Wunden heilt, darfst du 1 feindliche Einheit mit der sie im Nahkampf ist zum Ziel bestimmen. Diese feindliche Einheit erleidet 1 Treffer für jede geheilte Wunde, bis zu einem Maximum von 3."
+                        "**Einfluss** *(Sobald diese Einheit eine Zone auf der Taktiktafel beansprucht, lege diese Karte bis zum Ende der Runde an eine Kampfeinheit an)*:",
+                        "Solange Margaery Einfluss auf eine befreundete Einheit ausübt, immer wenn diese Einheit Wunden heilt, darfst du 1 feindliche Einheit mit der sie im Nahkampf ist zum Ziel bestimmen. Diese feindliche Einheit erleidet 1 Treffer für jede geheilte Wunde, bis zu einem Maximum von 3."
                     ]
                 }
             ],
@@ -844,7 +877,7 @@
                     "effect": [
                         "Ein Mal im Spiel, wenn Eldon eine Zone auf der Taktiktafel beansprucht, darfst du in deinem Taktikdeck nach 1 Karte suchen und diese auf die Hand nehmen. Mische danach dein Taktikdeck.",
                         "Immer wenn Eldon eine Zone auf der Taktiktafel beansprucht, darfst du den Effekt ersetzen durch:",
-						"Ziehe 3 Taktikkarten, dann mische 1 Karte aus deiner Hand zurück in das Taktikdeck."
+                        "Ziehe 3 Taktikkarten, dann mische 1 Karte aus deiner Hand zurück in das Taktikdeck."
                     ]
                 }
             ],

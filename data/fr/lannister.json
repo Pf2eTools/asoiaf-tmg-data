@@ -9,10 +9,11 @@
             "id": "10101",
             "name": "Gardes Lannister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Suprématie des Lannister"
+                "Ordre : Suprématie des Lannister",
+                "Acier Lannister"
             ],
             "attacks": [
                 {
@@ -20,7 +21,7 @@
                     "type": "melee",
                     "hit": 4,
                     "dice": [
-                        6,
+                        7,
                         5,
                         4
                     ]
@@ -72,7 +73,7 @@
             "id": "10103",
             "name": "Hommes de la Montagne de la Maison Clegane",
             "faction": "lannister",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Lames de Soudards",
@@ -82,10 +83,10 @@
                 {
                     "name": "Lames de Soudard",
                     "type": "melee",
-                    "hit": 4,
+                    "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
@@ -325,12 +326,12 @@
             "id": "10110",
             "name": "Garde Royale",
             "faction": "lannister",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Résilience",
-                "Escorte de Joffrey",
-                "Riposte"
+                "Garde Royale",
+                "Riposte",
+                "Déstabilisation"
             ],
             "attacks": [
                 {
@@ -348,6 +349,7 @@
             "speed": 5,
             "cost": 6,
             "tray": "infantry",
+            "wounds": 2,
             "character": true,
             "back_text": [
                 {
@@ -427,20 +429,21 @@
             "id": "10113",
             "name": "Guet de Port-Lannis",
             "faction": "lannister",
-            "version": "S06",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Technique Réactive",
-                "Fierté Dominatrice"
+                "Ordre : Sentinelle",
+                "Lance de Port-Lannis",
+                "Oeil Vigilant"
             ],
             "attacks": [
                 {
-                    "name": "Lance",
+                    "name": "Lance de Port-Lannis",
                     "type": "melee",
                     "hit": 4,
                     "dice": [
                         7,
-                        6,
+                        7,
                         4
                     ]
                 }
@@ -459,7 +462,7 @@
             "id": "10114",
             "name": "Garde d'Honneur de Castral Roc",
             "faction": "lannister",
-            "version": "S05",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Oppression Lannister"
@@ -490,7 +493,7 @@
             "id": "10115",
             "name": "Manteaux d'Or",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Ordre : Lois du Royaume",
@@ -564,24 +567,18 @@
             "id": "30101",
             "name": "Tywin Lannister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Le Grand Lion",
             "abilities": [
                 {
                     "name": "Les Pluies de Castamere",
                     "effect": [
-                        "Une fois par partie, au début de n’importe quel tour, ciblez un nombre d'Unités Combattantes ennemies de votre choix :",
-                        "• 1 de ces ennemis devient **Paniqué**.",
-                        "• 1 de ces ennemis devient **Vulnérable**.",
-                        "• 1 de ces ennemis subit 4 Touches.",
-                        "• 1 de ces ennemis subit 1 Test de Panique.",
-                        "• 1 de ces ennemis perd toutes ses Capacités jusqu’à la fin du Round.",
-                        "*(Une même Unité Combattante peut être ciblée par plusieurs de ces effets.)*"
+                        "Une fois par partie, quand une unité ennemie est Activée, vous pouvez cibler cette unité ennemie. Si vous le faites, elle devient **Paniquée**, **Vulnérable** et **Affaiblie**. Puis, elle subit 3 Touches ou un Test de Panique."
                     ]
                 }
             ],
-            "cost": 6,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "« Il est des batailles qu’on gagne à la pointe des piques et des épées, d’autres à la pointe de la plume et avec des corbeaux. »"
@@ -591,15 +588,17 @@
             "id": "30102",
             "name": "Pycelle",
             "faction": "lannister",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Grand Mestre",
             "abilities": [
                 {
                     "name": "Manipulation et Tromperie",
                     "effect": [
+                        "**Influence** *(Quand cette unité s’empare d’une zone du Tableau Stratégique, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
                         "Pycelle commence la partie avec 3 pions Ordre sur sa carte.",
-                        "Chaque fois que Pycelle est activé, vous pouvez retirer 1 pion Ordre sur sa carte. Si vous le faites, ciblez 1 Unité Combattante ennemie. Elle devient **Affaiblie**."
+                        "Tant que Pycelle influence une unité ennemie, l'unité est considérée comme ayant -1 rang quand elle effectue une Attaque.",
+                        "Quand Pycelle influence une unité ennemie, vous pouvez lui retirer 1 pion Ordre. Si vous le faites, cet ennemi devient **Affaibli**."
                     ]
                 }
             ],
@@ -639,15 +638,17 @@
             "id": "30104",
             "name": "Tyrion Lannister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Le Lutin",
             "abilities": [
                 {
                     "name": "Tacticien de Génie",
                     "effect": [
-                        "Votre limite de cartes Tactique est augmentée de 1. Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main.",
-                        "Une fois par partie, quand un adversaire joue une carte Tactique, avant de résoudre celle-ci, vous pouvez chercher 1 exemplaire de **Contre-Complot** dans votre paquet ou défausse Tactique et le jouer. Mélangez votre paquet Tactique."
+                        "Votre limite de cartes Tactique est augmentée de 1.",
+                        "Vous commencez la partie avec 4 cartes et pouvez piocher jusqu’à avoir 4 cartes quand vous refaites votre main.",
+                        "Chaque fois que vous piochez des cartes Tactiques, vous pouvez piocher 1 carte supplémentaire, puis mélanger 1 carte de votre main avec votre paquet Tactique.",
+                        "Une fois par partie, au début d'un Round, vous pouvez regarder la main de votre adversaire."
                     ]
                 }
             ],
@@ -661,17 +662,16 @@
             "id": "30105",
             "name": "Cersei Lannister",
             "faction": "lannister",
-            "version": "2021",
+            "version": "S07",
             "role": "ncu",
             "title": "Reine Régente",
             "abilities": [
                 {
-                    "name": "Jouer le Jeu",
+                    "name": "Intrigue de la Reine",
                     "effect": [
-                        "Cersei commence la partie avec 2 pions Ordre.",
-                        "Quand Cersei s’empare d’une zone, vous pouvez retirer 1 pion Ordre de cette carte. Si vous le faites, effectuez ce qui suit :",
-                        "Si vous contrôlez [CROWN], cherchez 1 exemplaire de **Je Rugis !** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique.",
-                        "Si vous contrôlez [MONEY], cherchez 1 exemplaire d'**Assujettissement au Pouvoir** dans votre paquet ou défausse Tactique et ajoutez-le à votre main. Mélangez votre paquet Tactique."
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que Cersei influence une unité ennemie, cet ennemi ne peut pas être ciblé par des Ordres ennemis ou des cartes Tactiques ennemies.",
+                        "Si Cersei contrôle [CROWN] ou [MONEY], n'importe quel nombre d'attachements de cette unité perdent leurs capacités."
                     ]
                 }
             ],

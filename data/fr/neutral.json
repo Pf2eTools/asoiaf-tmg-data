@@ -326,7 +326,7 @@
             "id": "10410",
             "name": "Chevaliers Errants",
             "faction": "neutral",
-            "version": "2021",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Cavalerie",
@@ -340,12 +340,12 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 4,
-            "morale": 7,
+            "morale": 6,
             "speed": 5,
             "cost": 7,
             "tray": "cavalry",
@@ -359,11 +359,11 @@
             "id": "10411",
             "name": "Maîtres d'Armes de la Compagnie Dorée",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "unit",
             "abilities": [
-                "Ordre : Technique Réactive",
-                "Épée Longue de Maître"
+                "Épée Longue de Maître",
+                "Réputation Dorée"
             ],
             "attacks": [
                 {
@@ -372,13 +372,13 @@
                     "hit": 3,
                     "dice": [
                         7,
-                        5,
+                        6,
                         4
                     ]
                 }
             ],
-            "defense": 4,
-            "morale": 6,
+            "defense": 3,
+            "morale": 5,
             "speed": 5,
             "cost": 7,
             "tray": "infantry",
@@ -434,25 +434,25 @@
             "id": "10413",
             "name": "Éléphant de Guerre de la Compagnie Dorée",
             "faction": "neutral",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "unit",
             "abilities": [
                 "Éléphant de Guerre",
-                "Écrasement"
+                "Piétinement"
             ],
             "attacks": [
                 {
-                    "name": "Écrasement",
+                    "name": "Piétinement",
                     "type": "melee",
                     "hit": 3,
                     "dice": [
-                        4
+                        5
                     ]
                 }
             ],
             "defense": 3,
             "morale": 6,
-            "speed": 6,
+            "speed": 5,
             "cost": 6,
             "tray": "warmachine",
             "back_text": [
@@ -564,14 +564,14 @@
             "id": "30403",
             "name": "Lord Varys",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "L'Araignée",
             "abilities": [
                 {
                     "name": "Oisillons",
                     "effect": [
-                        "Varys commence la partie avec 3 pions Ordre sur sa carte.",
+                        "Varys commence la partie avec 4 pions Ordre sur sa carte.",
                         "Chaque fois qu’une UNC ennemie s’empare d’une zone, après en avoir résolu l’effet, vous pouvez retirer 1 pion Ordre de Varys. Si vous le faites, gagnez l’effet suivant en fonction de la zone : ",
                         "[CROWN] : 1 ennemi subit 1 Test de Panique.",
                         "[MONEY] : Soignez 2 Blessures de 1 unité alliée.",
@@ -581,7 +581,7 @@
                     ]
                 }
             ],
-            "cost": 4,
+            "cost": 5,
             "character": true,
             "fluff": {
                 "quote": "« Mais il possède l’art de pénétrer les secrets les mieux gardés. »"
@@ -615,21 +615,15 @@
             "id": "30405",
             "name": "Jaqen H'ghar",
             "faction": "neutral",
-            "version": "2021-S03",
+            "version": "S07",
             "role": "ncu",
             "title": "Disciple du Dieu Rouge",
             "abilities": [
                 {
                     "name": "Choisir un Nom",
                     "effect": [
-                        "Chaque fois que Jaqen est activé, il peut, jusqu’à la fin du round, remplacer sa Capacité d’Influence par celle de n’importe quelle UNC alliée ou ennemie."
-                    ]
-                },
-                {
-                    "name": "Un Nom Donné",
-                    "effect": [
-                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
-                        "Tant que cette carte Influence une unité d’Infanterie alliée, les Attaques de Mêlée de celle-ci gagnent **Précision**."
+                        "Jaqen commence la partie avec 3 pions Ordre sur lui.",
+                        "Chaque fois que Jaqen est activé, vous pouvez lui retirer 1 pion Ordre et cibler une autre UNC. Jaqen gagne toutes les Capacités de cette UNC jusqu'à la fin du Round, en remplaçant le nom de l'UNC avec le sien. Il ne peut pas utiliser de Capacité qui s'utilise \"une fois par partie\". Si la Capacité copiée requiert des pions Ordre, il doit dépenser ses propres pions Ordre."
                     ]
                 }
             ],
@@ -664,18 +658,16 @@
             "id": "30407",
             "name": "Walder Frey",
             "faction": "neutral",
-            "version": "S04",
+            "version": "S07",
             "role": "ncu",
             "title": "Sire du Pont",
             "abilities": [
                 {
-                    "name": "Alliance Stratégique",
+                    "name": "Contrôle du Pont",
                     "effect": [
-                        "Une fois par partie, quand Walder s’empare d’une zone, vous pouvez remplacer l’effet de celle-ci par :",
-                        "*Choisissez 2 options:*",
-                        "• *1 ennemi devient Affaibli, Vulnérable et Paniqué.*",
-                        "• *1 unité alliée soigne 3 de ses Blessures.*",
-                        "• *Au début du prochain round, vous devenez le Premier Joueur.*"
+                        "**Influence** *(Quand cette unité s’empare d’une zone, attachez cette carte à une Unité Combattante jusqu’à la fin du round)* :",
+                        "Tant que Walder influence une Unité Combattante alliée, elle gagne +1 [MOVEMENT] et peut pivoter au début de son activation.",
+                        "Tant que Walder influence une Unité Combattante ennemie, elle subit -1 [MOVEMENT] et ne peut pas pivoter à la fin de ses actions de Marche ou de Manoeuvre."
                     ]
                 }
             ],
@@ -949,7 +941,7 @@
             "id": "20412",
             "name": "Daario Naharis",
             "faction": "neutral",
-            "version": "2021",
+            "version": "S06",
             "role": "attachment",
             "title": "Mercenaire Audacieux",
             "abilities": [
