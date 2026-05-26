@@ -532,7 +532,7 @@ class TextEntry:
 
     @staticmethod
     def tokenize(string):
-        tokens = [t for t in re.split(r"(\[.*?]|(?<!\\)\*{1,2}| |\n)", string.strip()) if t.strip(" ")]
+        tokens = [t for t in re.split(r"(\[.*?]|(?<!\\)\*{1,2}| |\n|___)", string.strip()) if t.strip(" ")]
         return tokens
 
     @staticmethod
@@ -578,6 +578,7 @@ class TextRenderer:
     TOKEN_ITALIC = "*"
     TOKEN_BOLD = "**"
     TOKEN_NEWLINE = "\n"
+    TOKEN_HR = "___"
 
     CHAR_BULLET = "•"
 
@@ -780,6 +781,8 @@ class TextRenderer:
         if token == self.TOKEN_ITALIC or token == self.TOKEN_BOLD:
             return 0
         elif token == self.TOKEN_NEWLINE:
+            return self._max_w
+        elif token == self.TOKEN_HR:
             return self._max_w
         elif token.startswith("[") and token.endswith("]"):
             token = token.strip("[]")
@@ -1195,9 +1198,14 @@ class TextRenderer:
                 self.cursor.y += paragraph.padding.bottom
                 if not is_last_paragraph:
                     as_list = list(paragraph.lines)
-                    # there is one line, that one line has one token, and that token is an icon
-                    if len(as_list) == 1 and len(as_list[0]) == 1 and as_list[0][0].startswith("[") and as_list[0][0].endswith("]"):
-                        self.cursor.y -= (self.input.paragraph_padding * 0.4) // 1
+                    # the entire paragraph is one line, and that one line has one token
+                    if len(as_list) == 1 and len(as_list[0]) == 1:
+                        # and that token is an icon
+                        if as_list[0][0].startswith("[") and as_list[0][0].endswith("]"):
+                            self.cursor.y -= (self.input.paragraph_padding * 0.4) // 1
+                        # don't add paragraph padding to horizontal rules
+                        elif as_list[0][0] == self.TOKEN_HR:
+                            self.cursor.y -= self.input.paragraph_padding
                     self.cursor.y += self.input.paragraph_padding
             # bar_pt = Image.new("RGBA", (w, int(section.padding.bottom)), "#ff00ffaa")
             # self.image.alpha_composite(bar_pt, (0, int(self.cursor.y)))
@@ -1224,6 +1232,9 @@ class TextRenderer:
             elif token == self.TOKEN_ITALIC:
                 self.italic = not self.italic
                 continue
+            elif token == self.TOKEN_HR:
+                self.render_horizontal_rule(entry)
+                continue
             elif token.startswith("[") and token.endswith("]"):
                 self.render_icon(entry, token)
                 if ix < len(line) - 1 and line[ix + 1].startswith(","):
@@ -1243,6 +1254,12 @@ class TextRenderer:
                 # self.image.alpha_composite(Image.new("RGBA", (2, int(entry.leading)), "black"), (int(self.cursor.x), int(self.cursor.y)))
             self.cursor.x += entry.tracking + entry.word_spacing
         self.cursor.y += entry.leading
+
+    def render_horizontal_rule(self, entry):
+        w = self._max_w + self.supersample * self.margin.x
+        rule = Image.new("RGBA", (int(0.8 * w), int(0.05 * entry.font_size)), entry.font_color)
+        rule.putalpha(160)
+        self.image.alpha_composite(rule, (int(0.1 * w), int(self.cursor.y)))
 
     def render_icon(self, entry, token):
         token = token.strip("[]")
