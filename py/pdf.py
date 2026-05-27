@@ -33,9 +33,9 @@ def get_images(entity: SongEntity, meta: SongMeta):
     else:
         raise Exception(f"Unimplemented")
 
-    img = Image.open(path).convert("RGBA")
+    img = Image.open(path)
     try:
-        back_img = Image.open(back_path).convert("RGBA")
+        back_img = Image.open(back_path)
     except FileNotFoundError:
         back_img = None
 
@@ -45,13 +45,13 @@ def get_images(entity: SongEntity, meta: SongMeta):
 def apply_print_margin(img: Image, im_size_mm, margin_mm):
     px_per_mm = img.width / im_size_mm["w"]
     margin_px = ceil(margin_mm * px_per_mm)
-    out = Image.new("RGBA", (img.width + 2 * margin_px, img.height + 2 * margin_px))
+    out = Image.new("RGB", (img.width + 2 * margin_px, img.height + 2 * margin_px))
 
     flipped = ImageOps.flip(img)
     mirrored = ImageOps.mirror(img)
     flipped_mirrored = ImageOps.flip(mirrored)
 
-    out.alpha_composite(img, (margin_px, margin_px))
+    out.paste(img, (margin_px, margin_px))
     out.paste(mirrored, (margin_px - img.width, margin_px))
     out.paste(mirrored, (margin_px + img.width, margin_px))
     out.paste(flipped, (margin_px, margin_px - img.height))
@@ -67,6 +67,7 @@ def apply_print_margin(img: Image, im_size_mm, margin_mm):
 
 def create_print_pdf(entities: [SongEntity], meta: SongMeta, margin_mm):
     pdf = FPDF()
+    pdf.set_image_filter("DCTDecode")
 
     for entity in entities:
         img, back = get_images(entity, meta)
@@ -77,9 +78,7 @@ def create_print_pdf(entities: [SongEntity], meta: SongMeta, margin_mm):
         addcount = 2
         if entity.role == "ncu":
             addcount = 1
-        elif isinstance(entity, SongDataAttachment) and entity.character:
-            addcount = 1
-        elif isinstance(entity, SongDataUnit) and entity.character:
+        elif entity.role in ["unit", "attachment"] and entity.character:
             addcount = 1
         elif isinstance(entity, SongDataSpecials) and not entity.id == "50201": # crannog poison
             addcount = 1
