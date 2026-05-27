@@ -620,55 +620,56 @@ LANGUAGES = [l for l in LanguageStore.BASE_LANGUAGES.keys()]
 FACTIONS = [f for f in FactionStore.BASE_FACTIONS.keys()]
 
 
-def convert_legacy_data(path, outpath):
-    print(f"Converting '{path}' to '{outpath}'...")
-    with open(path, "r", encoding="utf-8") as f:
-        legacy_data = json.load(f)
+# def convert_legacy_data(path, outpath):
+#     print(f"Converting '{path}' to '{outpath}'...")
+#     with open(path, "r", encoding="utf-8") as f:
+#         legacy_data = json.load(f)
+#
+#     meta = legacy_data.get("_meta", {
+#         "author": "CMON",
+#         "id": path.split("/")[-1].replace(".json", ""),
+#         "language": path.split("/")[-2],
+#     })
+#
+#     out = {
+#         "_meta": meta,
+#         "languages": legacy_data.get("languages", None),
+#         "factions": legacy_data.get("factions", None),
+#         "icons": legacy_data.get("icons", None),
+#         "abilities": legacy_data.get("abilities", None),
+#         SongRole.unit.value: [SongDataUnit.from_legacy_json(unt).to_json() for unt in legacy_data["units"]],
+#         SongRole.ncu.value: [SongDataNCU.from_legacy_json(ncu).to_json() for ncu in legacy_data["ncus"]],
+#         SongRole.attachment.value: [SongDataAttachment.from_legacy_json(att).to_json() for att in legacy_data["attachments"]],
+#         SongRole.tactics.value: [SongDataTactics.from_legacy_json(tac).to_json() for tac in legacy_data["tactics"]],
+#         SongRole.special.value: [SongDataSpecials.from_legacy_json(sp).to_json() for sp in legacy_data.get("specials", [])],
+#     }
+#     if out["languages"] is None:
+#         del out["languages"]
+#     if out["factions"] is None:
+#         del out["factions"]
+#     if out["icons"] is None:
+#         del out["icons"]
+#     if out["abilities"] is None:
+#         del out["abilities"]
+#
+#     with open(outpath, "w", encoding="utf-8") as f:
+#         json.dump(out, f, indent=4, ensure_ascii=False)
+#
+#
+# def convert_all_legacy_data():
+#     for lang in ["en", "de", "fr"]:
+#         for faction in FACTIONS:
+#             inpath = f"legacy/{lang}/{faction}.json"
+#             outpath = f"data/{lang}/{faction}.json"
+#             Path(outpath).parent.mkdir(parents=True, exist_ok=True)
+#             convert_legacy_data(inpath, outpath)
+#
+#     for file in os.listdir("./custom/data"):
+#         inpath = f"./custom/legacy/{file}"
+#         outpath = f"./custom/data/{file}"
+#         Path(outpath).parent.mkdir(parents=True, exist_ok=True)
+#         convert_legacy_data(inpath, outpath)
 
-    meta = legacy_data.get("_meta", {
-        "author": "CMON",
-        "id": path.split("/")[-1].replace(".json", ""),
-        "language": path.split("/")[-2],
-    })
-
-    out = {
-        "_meta": meta,
-        "languages": legacy_data.get("languages", None),
-        "factions": legacy_data.get("factions", None),
-        "icons": legacy_data.get("icons", None),
-        "abilities": legacy_data.get("abilities", None),
-        SongRole.unit.value: [SongDataUnit.from_legacy_json(unt).to_json() for unt in legacy_data["units"]],
-        SongRole.ncu.value: [SongDataNCU.from_legacy_json(ncu).to_json() for ncu in legacy_data["ncus"]],
-        SongRole.attachment.value: [SongDataAttachment.from_legacy_json(att).to_json() for att in legacy_data["attachments"]],
-        SongRole.tactics.value: [SongDataTactics.from_legacy_json(tac).to_json() for tac in legacy_data["tactics"]],
-        SongRole.special.value: [SongDataSpecials.from_legacy_json(sp).to_json() for sp in legacy_data.get("specials", [])],
-    }
-    if out["languages"] is None:
-        del out["languages"]
-    if out["factions"] is None:
-        del out["factions"]
-    if out["icons"] is None:
-        del out["icons"]
-    if out["abilities"] is None:
-        del out["abilities"]
-
-    with open(outpath, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=4, ensure_ascii=False)
-
-
-def convert_all_legacy_data():
-    for lang in ["en", "de", "fr"]:
-        for faction in FACTIONS:
-            inpath = f"legacy/{lang}/{faction}.json"
-            outpath = f"data/{lang}/{faction}.json"
-            Path(outpath).parent.mkdir(parents=True, exist_ok=True)
-            convert_legacy_data(inpath, outpath)
-
-    for file in os.listdir("./custom/data"):
-        inpath = f"./custom/legacy/{file}"
-        outpath = f"./custom/data/{file}"
-        Path(outpath).parent.mkdir(parents=True, exist_ok=True)
-        convert_legacy_data(inpath, outpath)
 
 # TODO:
 def test():
@@ -680,5 +681,23 @@ def test():
         custom_data = DataLoader.load_structured(f"./custom/data/{file}")
 
 
+def clean_data():
+    for lang in LANGUAGES:
+        with open(f"data/{lang}/abilities.json", "r", encoding="utf-8") as f:
+            abil_data = json.load(f)
+
+        used_abils = set()
+        for faction in FACTIONS:
+            f_data = DataLoader.load_structured(f"data/{lang}/{faction}.json")
+            for ent in f_data.unit + f_data.attachment:
+                for a in ent.abilities:
+                    used_abils.add(a.upper())
+
+        abil_data_filtered = {k: abil_data[k] for k in sorted(abil_data.keys()) if k in used_abils}
+
+        with open(f"data/{lang}/abilities.json", "w", encoding="utf-8") as f:
+            json.dump(abil_data_filtered, f, ensure_ascii=False, indent=4)
+
 if __name__ == "__main__":
-    test()
+    # test()
+    clean_data()
