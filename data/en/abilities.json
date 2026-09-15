@@ -15,7 +15,7 @@
     "ABUNDANT PROMISES": {
         "effect": [
             "• **Precision**",
-            "• After completing a Melee Attack, remove any number of Pillage tokens from this unit. For each token removed, this unit restores 2 Wounds."
+            "• After completing a Melee Attack, remove any number of Pillage tokens from this unit. This unit restores 1 Wound for the first token removed and 2 Wounds for the second."
         ],
         "icons": [
             "melee"
@@ -822,12 +822,12 @@
     },
     "GIANT": {
         "effect": [
-            "• This unit has 8 Wounds.",
+            "• This unit has 7 Wounds.",
             "• This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.",
-            "• This unit can only suffer a maximum of 1 Wounds from failing Panic Tests."
+            "• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests."
         ],
         "icons": [
-            "wounds8"
+            "wounds7"
         ]
     },
     "GIANT'S SPEAR": {
@@ -835,7 +835,7 @@
             "• **Vicious**",
             "• **Sundering**",
             "• If the Defender is Cavalry, Monster or War Machine, this Attack deals 2 Hits for each success.",
-            "**• Ranged Only:** Defenders do not roll Defense Dice. May also suffer -3 to Hit to ignore Line of Sight and gain **Unlimited Range.**"
+            "**• Ranged Only:** Defenders do not roll Defense Dice."
         ],
         "icons": [
             "wounds",
@@ -1398,6 +1398,14 @@
             "melee"
         ]
     },
+    "MASTERWORK BLADE": {
+        "effect": [
+            "• **Precision**"
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
     "MERCENARY'S LONGBOW": {
         "effect": [
             "• While you Control [MONEY], gains **Sundering**.",
@@ -1418,10 +1426,9 @@
     },
     "MIGHTY SWING": {
         "effect": [
-            "• **Critical Blow**",
             "• **Vicious**",
             "• Defenders do not roll Defense Dice.",
-            "• Gains +1 Attack Die for each of the Defender's remaining ranks."
+            "• Rolls +1 Attack Die for each of the Defender's remaining ranks."
         ],
         "icons": [
             "wounds",
@@ -2118,9 +2125,15 @@
     "R'HLLOR'S FIRE": {
         "effect": [
             "• **Vicious**",
-            "• If the Defender fails their Panic Test, they suffer +1 Wound for each enemy R'hllor unit in Long Range.",
-            "• If this Attack destroys the Defender, before they are removed, target all enemies in Long Range. They become **Vulnerable**.",
-            "• After completing this Attack, you may target 1 friendly R'hllor unit in Long Range. They restore 2 Wounds."
+            "• If the Defender fails its Panic Test, it suffers +1 Wound for each enemy R'hllor unit in Short Range, to a maximum of +2."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
+    "LIGHT OF THE LORD": {
+        "effect": [
+            "After completing this Attack, you may target 1 other friendly R'hllor uni in Short Range. It restores 1 Wound."
         ],
         "icons": [
             "ranged"
@@ -2225,9 +2238,13 @@
             "Each time this unit Activates, it restores 1 Wound. If you Control [CROWN], restore +1 Wound."
         ]
     },
-    "RELENTLESS": {
+    "ORDER: RELENTLESS": {
+        "trigger": "After an Attack on this unit is completed:",
         "effect": [
-            "After this unit is Attacked, this unit may perform 1 Melee Attack Action."
+            "This unit may perform 1 Melee Attack Action."
+        ],
+        "icons": [
+            "order"
         ]
     },
     "RENLY'S PROTECTOR": {
@@ -2238,7 +2255,7 @@
     "RESOLUTE STRIKES": {
         "effect": [
             "• **Critical Blow**",
-            "• Before rolling Attack Dice, target 1 firendly unit in Long Range. It restores 1 Wound or removes 1 Condition token. For each Condition token on the Defender, repeat this."
+            "• Before rolling Attack Dice, target 1 firendly unit in Long Range. It restores 1 Wound or removes 1 Condition token. If the Defender has more than 1 Condition token, you may choose to do both or repeat one."
         ],
         "icons": [
             "melee"
