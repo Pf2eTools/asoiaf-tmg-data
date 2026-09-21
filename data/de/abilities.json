@@ -468,6 +468,15 @@
             "order"
         ]
     },
+    "Befehl: UNERMÜDLICH": {
+        "trigger": "Nachdem diese Einheit angegriffen worden ist:",
+        "effect": [
+            "Dies Einheit darf 1 Nahkampfangriffsaktion durchführen."
+        ],
+        "icons": [
+            "order"
+        ]
+    },
     "BEFEHL: VERBORGENE FALLEN": {
         "trigger": "Sobald ein Feind innerhalb Langer Reichweite, der nicht im Nahkampf ist, eine beliebige Aktion durchführt, bevor jene Aktion abgehandelt wird:",
         "effect": [
@@ -935,7 +944,7 @@
     "ENTSCHLOSSENER SCHLAG": {
         "effect": [
             "• **Kritischer Treffer**",
-            "• Bevor die Angriffswürfel geworfen werden, bestimme eine befreundete Einheit zum Ziel. Sie heilt 1 Wunde oder legt ein **Zustandsmarker** ab. Für jeden **Zustandsmarker** auf dem Verteidiger, wiederhole diesen Effekt."
+            "• Bevor die Angriffswürfel geworfen werden, bestimme eine befreundete Einheit in langer Reichweite zum Ziel. Sie heilt 1 Wunde oder legt ein **Zustandsmarker** ab. Hat der Verteidiger 2 oder mehr **Zustandsmarker**, darfst du beides tun oder deine erste Wahl wiederholen."
         ],
         "icons": [
             "melee"
@@ -1607,6 +1616,14 @@
             "Wenn diese Einheit bei einer Panikprobe scheitert, verliert sie 1 angelegte Nachtwache Taktikkarte, statt aller."
         ]
     },
+    "LICHT DES HERREN": {
+        "effect": [
+            "Nachdem diese Einheit einen Fernkampfangriff ausgeführt hat, darfst du 1 andere befreundete R’hllor Kampfeinheit in kurzer Reichweite zum Ziel bestimmen. Sie Heilt 1 Wunde."
+        ],
+        "icons": [
+            "ranged"
+        ]
+    },
     "LICHTBRINGER": {
         "effect": [
             "Bei Spielbeginn wird 1 **Glaubensmarker** auf Beric Dondarrions Einheit gelegt.Immer wenn sie eine Moralprobe besteht, erhält sie 1 **Glaubensmarker**. **Glaubensmarker** können für die folgenden Effekte ausgegeben werden:",
@@ -1696,6 +1713,14 @@
             "Immer wenn diese Einheit einen Nahkampfangriff durchführt, bevor die Angriffswürfel geworfen werden, wähle 1 der folgenden Effekte:",
             "• Dieser Angriff fügt +1 Wunde zu.",
             "• Bestimme 1 Infanterie-Verstärkung in der Einheit des Verteidigers zum Ziel und wirf einen Würfel. Bei 5+ vernichte jene Verstärkung."
+        ],
+        "icons": [
+            "melee"
+        ]
+    },
+    "MEISTERHAFTE KLINGE": {
+        "effect": [
+            "• **Präzision**"
         ],
         "icons": [
             "melee"
@@ -1889,12 +1914,12 @@
     },
     "RIESE": {
         "effect": [
-            "• Diese Einheit kann 8 Wunden erleiden.",
+            "• Diese Einheit kann 7 Wunden erleiden.",
             "• Diese Einheit erleidet nur 1 Wunde für je 2 nicht abgewehrte Treffer jedes Angriffs oder Effekts.",
-            "• Diese Einheit kann maximal 1 Wunden erleiden, wenn sie an einer Panikprobe scheitert."
+            "• Diese Einheit kann maximal 2 Wunden erleiden, wenn sie an einer Panikprobe scheitert."
         ],
         "icons": [
-            "wounds8"
+            "wounds7"
         ]
     },
     "RIESENSPEER": {
@@ -1902,7 +1927,7 @@
             "• **Grausam**",
             "• **Spaltschlag**",
             "• Falls der Verteidiger eine Kavallerie-, Monster- oder Kriegsmaschinen-Einheit ist, fügt dieser Angriff 2 Treffer für jeden Erfolg zu.",
-            "• **Fernkampf:** Verteidiger werfen keine Verteidigungswürfel. Diese Einheit darf –3 auf den Trefferwurf erleiden, um die Sichtlinie zu ignorieren und **Unbegrenzte Reichweite** zu erhalten."
+            "• **Fernkampf:** Verteidiger werfen keine Verteidigungswürfel."
         ],
         "icons": [
             "wounds",
@@ -1972,9 +1997,7 @@
     "R’HLLORS FEUER": {
         "effect": [
             "• **Grausam**",
-            "• Falls der Verteidiger an der Panikprobe scheitert, erleidet er +1 Wunden für jede gegnerische R’hllor Einheit in Langer Reichweite.",
-            "• Wenn dieser Angriff den Verteidiger vernichtet, bevor sie aus dem Spiel genommen wird, nimm jede gegnerische Einheit in Langer Reichweite zum Ziel. Sie werden **Verwundbar**.",
-            "• Wenn dieser Angriff abgehandelt wurde,darfst du eine befreundete R’hllor Einheitin Langer Reichweite zu dieser als Ziel bestimmen. Sie heilt 2 Wunden."
+            "• Falls der Verteidiger an der Panikprobe scheitert, erleidet er +1 Wunden für jede gegnerische R’hllor Einheit in kurzer Reichweite, bis zu einem Maximum von +2 Wunde."
         ],
         "icons": [
             "ranged"
@@ -2339,11 +2362,6 @@
             "Immer wenn diese Einheit aktiviert wird, falls sie einen Ansturm gegen einen Feind durchführen kann, legt sie 1 Moralprobe ab. Bei einem Fehlschlag führt sie 1 Ansturmaktion gegen den nächsten zulässigen Feind durch und zählt, als hätte sie für den Wurf der Bewegungsweite des Ansturms eine 6 gewürfelt."
         ]
     },
-    "UNERMÜDLICH": {
-        "effect": [
-            "Nachdem diese Einheit angegriffen worden ist, darf diese Einheit 1 Nahkampfangriffsaktion durchführen."
-        ]
-    },
     "UNERSCHÜTTERLICHE ÜBERZEUGUNG": {
         "effect": [
             "Immer wennn eine befreundete Kampfeinheit vernichtet wird, lege 1 Befehlsmarker auf Marselen. Diese Einheit erhält die folgenden Effekte basierend auf der Anzahl der Befehlsmarker:",
@@ -2650,7 +2668,6 @@
     },
     "WÜTENDER SCHWINGER": {
         "effect": [
-            "• **Kritischer Treffer**",
             "• **Grausam**",
             "• Verteidiger werfen keine Verteidigungswürfel.",
             "• Wirft +1 Angriffswürfel für jede verbleibende Schlachtreihe des Verteidigers."
@@ -2863,7 +2880,7 @@
     "ÜBERSCHWÄNGLICHE VERSPRECHUNGEN": {
         "effect": [
             "• **Präzision**",
-            "• Nachdem diese Einheit einen Nahkampfangriff abgeschlossen hat, lege eine beliebige Anzahl Plündermarker von ihr ab. Diese Einheit heilt 2 Wunden für jeden abgelegten Marker."
+            "• Nachdem diese Einheit einen Nahkampfangriff abgeschlossen hat, lege eine beliebige Anzahl Plündermarker von ihr ab. Diese Einheit heilt 1 Wunden für den ersten abgelegten Marker und 2 Wunden für den zweiten."
         ],
         "icons": [
             "melee"

@@ -184,12 +184,12 @@ class Generator:
                 "fp": f"./generated/{lang}/{'game' if is_game else entity.faction}/{entity.id}{back_str}.jpg"
             })
             # out[side].append({
-            #     "fp": f"../ASOIAF-Nexus-UI/public/img/{entity.id}{back_str}x2.webp",
+            #     "fp": f"../img/{entity.id}{back_str}x2.webp",
             #     "quality": 75,
             #     "method": 6
             # })
             # out[side].append({
-            #     "fp": f"../ASOIAF-Nexus-UI/public/img/{entity.id}{back_str}x1.webp",
+            #     "fp": f"../img/{entity.id}{back_str}x1.webp",
             #     "quality": 75,
             #     "method": 6,
             #     "preprocess": lambda img: img.resize((img.width // 2, img.height // 2))
